@@ -1,10 +1,10 @@
 ---
-title: Example of API protected by Microsoft identity consent framework
+title: Microsoft identity consent framework API protection example
 description: Design a permissions and consent strategy that provides the best user experience when you implement least privilege.
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
@@ -36,7 +36,7 @@ Let's look at some permissions, or scopes, for the user object in Microsoft Grap
 |`User.Read`       |Sign-in and read user profile          |Allows users to sign-in to the app and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.|
 |`User.ReadWrite`  |Read and write access to user profile  |Allows the app to read the signed-in user's full profile. It also allows the app to update the signed-in user's profile information on their behalf.|
 
-`User.Read` and `User.ReadWrite` exist (as opposed to a single permission like `User.Access` that doesn't exist) so that applications can follow the [Zero Trust](overview.md) principle of least privilege. If the developer doesn't have a requirement and code to update the user's profile, the app doesn't ask for `User.ReadWrite`. Therefore, an attacker can't compromise the application and use it to change data.
+`User.Read` and `User.ReadWrite` exist (as opposed to a single permission like `User.Access` that doesn't exist) so that applications can follow the [Zero Trust](overview.md) principle of least privilege. If the developer doesn't have a requirement and code to update the user's profile, the app doesn't ask for `User.ReadWrite`. Therefore, an bad actor can't compromise the application and use it to change data.
 
 Notice that `User.Read` doesn't just give the application access to the user object. Each permission represents a specific range of operation. It's important that developers and admins read the permission description to see exactly what any specific permission enables. `User.Read`, in addition to enabling reading the current user's full profile, enables the application to see the basic information from the [Organizations](/graph/api/organization-get) object in Microsoft Graph.
 
@@ -59,11 +59,11 @@ As with `User.Read` and `User.ReadWrite`, `User.Read.All` and `User.ReadWrite.Al
 
 `User.Read.All` is interesting because every user in the organization has this capability (for example, open Outlook, go up and down a reporting chain). You, as an individual, can see the full user profile of every other user in your organization. However, the Microsoft Graph API designers decided that only admins should allow an application to perform the same operation because `User.Read.All` includes the tenant's organizational hierarchy. If a bad actor accessed this information, they could mount a targeted phishing attack where the phishing email came from a person's manager or their manager's manager.
 
-`User.ReadWrite.All` is a powerful range of operation. An application granted this permission can update, or even delete, every user in the tenant. As a [delegated permission](developer-strategy-delegated-permission.md), when a user is in front of the app, the app can do only what the current user can do. Regular users can't update or delete other users regardless of the app's permissions. However, when a tenant admin uses the app, then they can perform these operations. When deciding to grant or deny this permission, you should evaluate your app with a tenant admin user in mind.
+`User.ReadWrite.All` is a powerful range of operation. An application with this permission can update, or even delete, every user in the tenant. As a [delegated permission](developer-strategy-delegated-permission.md), when a user is in front of the app, the app can do only what the current user can do. Regular users can't update or delete other users regardless of the app's permissions. However, when a tenant admin uses the app, then they can perform these operations. When you decide to grant or deny this permission, evaluate your app with a tenant admin user in mind.
 
 ## Permissions requiring admin consent
 
-Given the power of `User.Read.All` and `User.ReadWrite.All`, the Microsoft Graph API designers designated these permissions as requiring admin consent. Let's add an **Admin?** Column to our table of permissions to indicate when the permission requires admin consent:
+Given the power of `User.Read.All` and `User.ReadWrite.All`, the Microsoft Graph API designers designated these permissions as requiring admin consent. Let's add an **Admin?** column to our table of permissions to indicate when the permission requires admin consent:
 
 |Permission|Display String|Description|Admin?|
 |----------|--------------|-----------|------|
@@ -73,14 +73,14 @@ Given the power of `User.Read.All` and `User.ReadWrite.All`, the Microsoft Graph
 |`User.Read.All`|Read all users' full profiles|Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user.|**Yes**|
 |`User.ReadWrite.All`|Read and write all users' full profiles|Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. Also allows the app to create and delete users and reset user passwords on behalf of the signed-in user.|**Yes**|
 
-As demonstrated in the [Request permissions that require administrative consent](permissions-require-admin-consent.md) article, tenant admins can overrule requirements and designate any or all application permissions in their tenant as requiring admin consent. You're wise to design your app to gracefully handle when you don't receive a token from your request. Lack of consent is one of many reasons that your app might not receive a token.
+As demonstrated in the [Request permissions that require administrative consent](permissions-require-admin-consent.md) article, tenant admins can overrule requirements and designate any or all application permissions in their tenant as requiring admin consent. Design your app to gracefully handle when you don't receive a token from your request. Lack of consent is one of many reasons that your app might not receive a token.
 
 ## Next steps
 
 - [Call an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API and securely develop your application when it's working on behalf of a user.
 - [Acquire authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
-- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
-- [Configure group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles. These methods help to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application Zero Trust security with least privilege.
+- [Configure group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles. These methods help to improve flexibility and control while increasing application Zero Trust security with least privilege.
 - [Request permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience when application permissions require administrative consent.
 - In this [Quickstart: Protect a web API with the Microsoft identity platform](/entra/identity-platform/index-web-api), download and run a code sample that demonstrates how to protect an ASP.NET web API.
 - In this [Tutorial - Transform and protect your API in Azure API Management](/azure/api-management/transform-api), learn about configuring common policies to hide technology stack info and original URLs in the API HTTP response body.

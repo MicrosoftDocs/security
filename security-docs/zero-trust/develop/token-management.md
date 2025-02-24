@@ -1,10 +1,10 @@
 ---
 title: Manage tokens for Zero Trust
-description: This article helps you, as a developer, to build security into your applications with ID tokens, access tokens, and security tokens that your app can receive from the Microsoft identity platform.
+description: Learn how to build security into applications with ID tokens, access tokens, and security tokens from the Microsoft identity platform.
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
@@ -14,20 +14,20 @@ ms.collection:
 
 In [Zero Trust application development](overview.md), it's important to specifically define your application's intention and its resource access requirements. Your app should request only the access it requires to function as intended. This article helps you, as a developer, to build security into your applications with [ID tokens](/entra/identity-platform/id-tokens), [access tokens](/entra/identity-platform/access-tokens), and [security tokens](/entra/identity-platform/security-tokens) that your app can receive from the [Microsoft identity platform](/entra/identity-platform/)*.*
 
-Ensure that your application adheres to the Zero Trust [principle of least privilege](/entra/identity-platform/secure-least-privileged-access) and prevents usage in ways that compromise your intention. Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. Separate your app's sensitive and powerful sections, providing only authorized user access to these areas. Limit users who can use your application and the capabilities that they have in your app.
+Ensure that your application adheres to the Zero Trust [principle of least privilege](/entra/identity-platform/secure-least-privileged-access) and prevents usage in ways that compromise your intention. Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. Separate your app's sensitive and powerful sections. Provide only authorized user access to these areas. Limit users who can use your application and the capabilities that they have in your app.
 
-Build least privilege into how your application manages ID tokens that it receives from the Microsoft identity platform. Information in ID Tokens allows you to verify that a user is who they claim to be. The user or their organization might specify authentication conditions such as providing an MFA, using a managed device, and being in the correct location.
+Build least privilege into how your application manages ID tokens that it receives from the Microsoft identity platform. Information in ID Tokens allows you to verify that a user is who they claim to be. The user or their organization might specify authentication conditions such as MFA, managed devices, and correct locations.
 
-Make it easy for your customers to manage authorizations to your app. Reduce their user provision overhead and the need for manual processes. [Automatic user provisioning](/entra/identity/app-provisioning/plan-auto-user-provisioning) allows IT admins to automate user identity creation, maintenance, and removal in target identity stores. Your customers can base automations on changes to users and groups with [app provisioning](/entra/identity/app-provisioning/user-provisioning) or [HR driven provisioning](/entra/identity/app-provisioning/what-is-hr-driven-provisioning) in Microsoft Entra ID.
+Make it easy for your customers to manage authorizations to your app. Reduce user creation and configuration overhead and manual processes. [Automatic user provisioning](/entra/identity/app-provisioning/plan-auto-user-provisioning) allows IT admins to automate user identity creation, maintenance, and removal in target identity stores. Your customers can base automation on changes to users and groups with [app provisioning](/entra/identity/app-provisioning/user-provisioning) or [HR driven provisioning](/entra/identity/app-provisioning/what-is-hr-driven-provisioning) in Microsoft Entra ID.
 
 ## Use token claims in your apps
 
-Use claims in ID tokens for UX inside your application, as keys in a database, and providing access to the client application. The ID token is the core extension that [OpenID Connect](/entra/identity-platform/v2-protocols-oidc) (OIDC) makes to OAuth 2.0. Your app can receive ID tokens alongside or instead of access tokens.
+Use claims in ID tokens for user experience inside your application as keys in a database. Provide access to the client application. The ID token is the core extension that [OpenID Connect](/entra/identity-platform/v2-protocols-oidc) (OIDC) makes to OAuth 2.0. Your app can receive ID tokens alongside or instead of access tokens.
 
 In the standard pattern for security token authorization, an issued ID token allows the application to receive information about the user. Don't use the ID token as an authorization process to access resources. The authorization server issues ID tokens that contain claims with user information that include the following.
 
 - The [audience](/entra/identity-platform/access-tokens#payload-claims) (`aud`) claim is your app's client ID. Accept only tokens for your API client ID.
-- The `tid` claim is the ID of the tenant that issued the token. The `oid` claim is an immutable value that uniquely identifies the user. Use the unique combination of the `tid` and `oid` claims as a key when you need to associate data with the user. You can use these claim values to connect your data back to the user's ID in Microsoft Entra ID.
+- The `tid` claim is the ID of the tenant that issued the token. The `oid` claim is an immutable value that uniquely identifies the user. Use the unique combination of the `tid` and `oid` claims as a key when you need to associate data with the user. Use these claim values to connect your data back to the user's ID in Microsoft Entra ID.
 - The `sub` claim is an immutable value that uniquely identities the user. The subject claim is also unique for your application. If you use the `sub` claim to associate data with the user, it's impossible to go from your data and connect it with a user in Microsoft Entra ID.
 
 Your apps can use the `openid` scope to request an ID token from the Microsoft identity platform. The OIDC standard governs the `openid` scope along with the format and contents of the ID token. OIDC specifies these [scopes](/graph/permissions-reference#openid-connect-oidc-scopes):
@@ -47,17 +47,17 @@ Upon authorization, the Microsoft identity platform returns an access token to y
 
 ## Manage token lifetimes
 
-Applications can create a session for a user after the authentication successfully completes with Microsoft Entra ID. User session management drives how frequently a user needs reauthentication. Its role in keeping an explicitly verified user in front of the app with the right privilege and for the right amount of time is crucial. Session lifetime must be based on the `exp` claim in the ID token. The `exp` claim is the time at which the ID token expires and the time after which you can no longer use the token to authenticate the user.
+Applications can create a session for a user after the authentication successfully completes with Microsoft Entra ID. User session management drives how frequently a user needs repeat authentication. Its role in keeping an explicitly verified user in front of the app with the right privilege and for the right amount of time is crucial. Session lifetime must be based on the `exp` claim in the ID token. The `exp` claim is the time at which the ID token expires and the time after which you can no longer use the token to authenticate the user.
 
 Always respect the [token lifetime](/entra/identity-platform/configurable-token-lifetimes) as provided in the token response for access tokens or the `exp` claim in the ID token. Conditions that govern token lifetime can include sign-in frequency for an enterprise. Your application can't configure the token lifetime. You can't request a token lifetime.
 
-In general, tokens must be valid and unexpired. The audience claim (aud) must match your client ID. Make sure the token is coming from a trusted issuer. If you have a multitenant API, you might choose to filter so that only specific tenants can call your API. Make sure you enforce the token's lifetime. Check the `nbf` (not before) and the `exp` (expiration) claims to ensure the current time is within those two claims' values.
+In general, ensure that tokens are valid and unexpired. The audience claim (`aud`) must match your client ID. Make sure the token comes from a trusted issuer. If you have a multitenant API, you might choose to filter so that only specific tenants can call your API. Make sure you enforce the token's lifetime. Check the `nbf` (not before) and the `exp` (expiration) claims to ensure the current time is within those two claims' values.
 
-Don't aim for exceptionally long or short session lifetimes. Let the granted [ID token lifetime](/entra/identity-platform/id-tokens#id-token-lifetime) drive this decision. Keeping your app's sessions active beyond token validity violates the rules, policies, and concerns that drove an IT admin to set a token validity duration to prevent unauthorized access. Short sessions degrade user experience and don't necessarily increase the security posture. Popular frameworks like ASP.NET allow you to set session and cookie timeouts from Microsoft Entra ID's ID token's expiry time. Following the identity provider's token expiry time ensures that your user's sessions are never longer than the policies that the identity provider dictates.
+Don't aim for exceptionally long or short session lifetimes. Let the granted [ID token lifetime](/entra/identity-platform/id-tokens#id-token-lifetime) drive this decision. Keeping your app's sessions active beyond token validity violates the rules, policies, and concerns that drove an IT admin to set a token validity duration to prevent unauthorized access. Short sessions degrade user experience and don't necessarily increase the security posture. Popular frameworks like ASP.NET allow you to set session and cookie time-outs from Microsoft Entra ID token expiry time. Follow the identity provider's token expiry time to ensure that your user's sessions are never longer than the policies that the identity provider dictates.
 
 ## Cache and refresh tokens
 
-Remember to appropriately cache tokens. MSAL automatically caches tokens but the tokens have lifetimes. Use tokens through the full length of their lifetimes and appropriately cache them. If you repeatedly ask for the same token, throttling causes your application to become less responsive. If your app abuses the token issuance, the time required for issuing new tokens to your app lengthens.
+Remember to appropriately cache tokens. MSAL automatically caches tokens but the tokens have lifetimes. Use tokens through the full length of their lifetimes and appropriately cache them. If you repeatedly ask for the same token, throttling causes your application to become less responsive. If your app abuses the token issuance, the time to issue new tokens to your app lengthens.
 
 MSAL libraries manage the details of the OAuth2 protocol including the mechanics of refreshing tokens. If you aren't using MSAL, ensure that your library of choice makes effective use of [refresh tokens](/entra/identity-platform/refresh-tokens).
 
@@ -67,7 +67,7 @@ When your client acquires an access token to access a protected resource, it rec
 
 Your application should never attempt to validate, decode, inspect, interpret, or examine the contents of an access token. These operations are strictly the responsibility of the resource API. If your app attempts to examine the contents of an access token, it's highly likely that your application breaks when the Microsoft identity platform issues encrypted tokens.
 
-Rarely, a call to retrieve a token can fail due to issues like network, infrastructure, or authentication service failure or outage. [Increase authentication experience resiliency](/entra/architecture/resilience-app-development-overview) in your application if a token acquisition failure occurs by following these best practices:
+Rarely, a call to retrieve a token fails due to issues like network, infrastructure, or authentication service failure or outage. [Increase authentication experience resiliency](/entra/architecture/resilience-app-development-overview) in your application if a token acquisition failure occurs by following these best practices:
 
 - Locally cache and secure tokens with encryption.
 - Don't pass security artifacts like tokens around on nonsecure channels.
@@ -81,7 +81,7 @@ You might need to fall back to `AcquireTokenInteractive` and provide claims chal
 
 ## Next steps
 
-- [Customize tokens](zero-trust-token-customization.md) helps you to understand how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Customize tokens](zero-trust-token-customization.md) helps you to understand how to customize tokens to improve flexibility and control while increasing application Zero Trust security with least privilege.
 - [Authenticate users for Zero Trust](user-authentication.md) helps developers to learn best practices for authenticating application users in Zero Trust application development. It describes how to enhance application security with the Zero Trust principles of least privilege and verify explicitly.
 - [Acquire authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Configure how users consent to applications](/entra/identity/enterprise-apps/configure-user-consent)

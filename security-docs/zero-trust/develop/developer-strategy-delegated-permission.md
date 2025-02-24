@@ -1,18 +1,18 @@
 ---
 title: Develop delegated permissions strategy
-description: As a developer, implement the best approach for managing permissions in your application and develop using Zero Trust.
+description: As a developer, implement the best approach for managing permissions in your application and develop with Zero Trust.
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
-# Customer intent: As a developer, I want to implement the best approach for managing permissions in my application and develop using Zero Trust.
+# Customer intent: As a developer, I want to implement the best approach for managing permissions in my application and develop with Zero Trust.
 ---
 # Develop delegated permissions strategy
 
-This article helps you, as a developer, to implement the best approach for managing permissions in your application and [develop using Zero Trust principles](overview.md). As described in [Acquire authorization to access resources](acquire-application-authorization-to-access-resources.md), *delegated permissions* are used with delegated access to allow an application to act on behalf of a user, accessing only what the user can access. *Application permissions* are used with direct access to allow an application to access any data with which the permission is associated. Only administrators and owners of [service principals](/entra/identity-platform/how-applications-are-added#what-are-service-principals-and-where-do-they-come-from) can consent to application permissions.
+This article helps you, as a developer, to implement the best approach for managing permissions in your application and [develop using Zero Trust principles](overview.md). As described in [Acquire authorization to access resources](acquire-application-authorization-to-access-resources.md), *delegated permissions* are used with delegated access to allow an application to act on behalf of a user, accessing only what the user can access. To access any data associated with the permission, use *Application permissions* with direct access to allow an application. Only administrators and owners of [service principals](/entra/identity-platform/how-applications-are-added#what-are-service-principals-and-where-do-they-come-from) can consent to application permissions.
 
 The permission and consent models refer primarily to an application. The permission and consent process has no control over what a user can do. It controls what actions the application is allowed to perform.
 
@@ -34,9 +34,9 @@ As a developer, you should:
 - understand the API documentation and what permissions the API requires.
 - use the least possible permission to accomplish your tasks.
 
-APIs often provide access to organization data stores and attract the attention of attackers who want to access that data.
+APIs often provide access to organization data stores and attract the attention of bad actors who want to access that data.
 
-Evaluate the permissions you request to ensure that you seek the absolute least privileged set to get the job done. Avoid requesting higher privilege permissions; instead, carefully work through the large number of permissions that APIs like Microsoft Graph provide. Locate and use the minimum permissions to address your needs. If you don't write code to update the user's profile, you don't request it for your application. If you only access users and groups, you don't request access to other information in the directory. You don't request permission to manage user email if you don't write code that accesses user email.
+Evaluate the permissions you request to ensure that you seek the absolute least privileged set to get the job done. Avoid requesting higher privilege permissions. Instead, carefully work through the large number of permissions that APIs like Microsoft Graph provide. Locate and use the minimum permissions to address your needs. If you don't write code to update the user's profile, you don't request it for your application. If you only access users and groups, you don't request access to other information in the directory. You don't request permission to manage user email if you don't write code that accesses user email.
 
 In Zero Trust application development:
 
@@ -50,15 +50,15 @@ People who can approve of your requests fall into two categories: admins who can
 
 When an API designer requires admin consent for a permission, that permission always requires admin consent. A tenant admin can't overrule that and require only user consent.
 
-When an API designer defines permissions that require user consent, the tenant admin can overrule the API designer's user consent suggestions. The tenant admins can do that with a "big switch" in the tenant: everything requires admin consent. They can overrule user consent in a more granular way with [permission and consent management](/entra/identity/enterprise-apps/configure-user-consent). For example, they might allow users to consent to user consent requests from [verified publishers](developer-strategy-authorization-best-practices.md#become-a-verified-publisher) but not from other publishers. In another example, they might allow `User.Read` to sign in the user and read their profile but require admin consent to apps that ask permission to mail or to files.
+When an API designer defines permissions that require user consent, the tenant admin can overrule the API designer's user consent suggestions. The tenant admins can do that with a *big switch* in the tenant: everything requires admin consent. They can overrule user consent in a more granular way with [permission and consent management](/entra/identity/enterprise-apps/configure-user-consent). For example, they might allow users to consent to user consent requests from [verified publishers](developer-strategy-authorization-best-practices.md#become-a-verified-publisher) but not from other publishers. In another example, they might allow `User.Read` to sign in the user and read their profile but require admin consent to apps that ask permission to mail or to files.
 
-API designers make their suggestions but tenant admins have the final say. Therefore, as a developer, you don't always know when your app requires admin consent. It's nice to plan and design around that but remember, when you make a token request, it could be denied for any reason. In your code, you need to gracefully handle not getting a token because tenant admins in which your customers or users are running your application decide when permissions require admin consent.
+API designers make their suggestions but tenant admins have the final say. Therefore, as a developer, you don't always know when your app requires admin consent. It's nice to plan and design around that. Remember, when you make a token request, it could be denied for any reason. In your code, you need to gracefully handle not getting a token because tenant admins in which your customers or users who run your application decide when permissions require admin consent.
 
 ## Example using JavaScript MSAL
 
 For the authentication in this example, you use our JavaScript Microsoft Authentication Library (MSAL) to sign in the user in a single page application (SPA) where all the app logic executes from the browser.
 
-From the related [Quickstart article](/entra/identity-platform/index-spa), you can [download](/entra/identity-platform/quickstart-single-page-app-javascript-sign-in#clone-or-download-the-sample-application) and run a code sample. It demonstrates how a JavaScript single-page application (SPA) can sign in users and call Microsoft Graph using the authorization code flow with Proof Key for Code Exchange (PKCE). The code sample shows how to get an access token to call the Microsoft Graph API or any web API.
+From the related [Quickstart article](/entra/identity-platform/index-spa), you can [download](/entra/identity-platform/quickstart-single-page-app-javascript-sign-in#clone-or-download-the-sample-application) and run a code sample. It demonstrates how a JavaScript single-page application (SPA) can sign in users and call Microsoft Graph with the authorization code flow with Proof Key for Code Exchange (PKCE). The code sample shows how to get an access token to call the Microsoft Graph API or any web API.
 
 As shown in the following example code, you instantiate a public client because an application that runs entirely in the browser must be a public client. The user can get their hands on the internals of your application when the code is in the browser.
 
@@ -90,7 +90,7 @@ function signIn() {
 
 Your app can get information about the user, such as their display name or user ID. Next, your app needs authorization to read the full profile of the user from Microsoft Graph by following a pattern that you use throughout our MSAL libraries.
 
-As shown in the example code below, your app attempts to get the authorization by calling `AcquireTokenSilent`. If Microsoft Entra ID can issue the token without interacting with the user, then `AcquireTokenSilent` returns the token that your app needs to access Microsoft Graph on behalf of the user.
+As shown in the following example code, your app attempts to get the authorization by calling `AcquireTokenSilent`. If Microsoft Entra ID can issue the token without interacting with the user, then `AcquireTokenSilent` returns the token that your app needs to access Microsoft Graph on behalf of the user.
 
 ```javascript
 function getTokenPopup(request) {
@@ -130,8 +130,8 @@ A primary step in an enterprise's journey to Zero Trust is to adopt stronger aut
 
 - [Acquire authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Develop application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.
-- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
-- [Configure group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles. These methods help to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application Zero Trust security with least privilege.
+- [Configure group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles. These methods help to improve flexibility and control while increasing application Zero Trust security with least privilege.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
 - [Call an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API and securely develop your application when it's working on behalf of a user.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.

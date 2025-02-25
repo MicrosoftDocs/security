@@ -15,7 +15,7 @@ ms.collection:
 
 Because your organization might already have elements of Zero Trust protections already in place, this documentation set provides conceptual information to get you started and deployment plans and implementation recommendations for end-to-end adherence to Zero Trust principles. Each article acts as a checklist of deployment objectives with steps and links to more information.
 
-You deploy Zero Trust principles across your IT infrastructure by implementing Zero Trust controls and technologies across seven technology pillars. Six of these pillars are signal sources, a control plane for enforcement, and a critical resource to be defended. Across these is the pillar that collects those signals and provides visibility for security incidents and automation and orchestration for responding to and mitigating cybersecurity threats.
+You deploy Zero Trust principles across your IT infrastructure by implementing Zero Trust controls and technologies across seven technology pillars. Six of these pillars are signal sources, a control plane for enforcement, and a critical resource to be defended. The seventh pillar is the pillar that collects signals from the first six pillars and provides visibility for security incidents and automation and orchestration for responding to and mitigating cybersecurity threats.
 
 :::image type="content" source="../media/diagram-zero-trust-security-elements.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 

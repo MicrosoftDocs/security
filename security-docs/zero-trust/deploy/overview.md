@@ -37,7 +37,7 @@ Follow this table for the best Zero Trust documentation sets for your needs.
 
 |Documentation set|Helps you...|Roles|
 |---|---|---|
-|[Adoption framework](zero-trust/adopt/zero-trust-adoption-overview.md) for phase and step guidance for key business solutions and outcomes|Apply Zero Trust protections from the C-suite to the IT implementation.|Security architects, IT teams, and project managers|
+|[Adoption framework](security/zero-trust/adopt/zero-trust-adoption-overview.md) for phase and step guidance for key business solutions and outcomes|Apply Zero Trust protections from the C-suite to the IT implementation.|Security architects, IT teams, and project managers|
 |[Assessment and progress tracking resource](zero-trust/zero-trust-assessment-progress-tracking-resources.md) |Assess your infrastructure's readiness and track your progress. |Security architects, IT teams, and project managers|
 |[Zero Trust partner kit](zero-trust/zero-trust-partner-kit.md) |Co-branded tracking resources, workshop, and architecture illustrations |Partners and security architects |
 |[Deployment for technology pillars](zero-trust/deploy/overview.md) for conceptual information and deployment objectives|Apply Zero Trust protections aligned with typical IT technology areas.|IT teams and security staff|

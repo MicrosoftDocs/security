@@ -8,7 +8,7 @@ ms.author: tahminaahmad
 ms.topic: conceptual
 ---
 
-# February 2025 Deployment Notice - Microsoft Trusted Root Program 
+# February 2025 Microsoft Trusted Root Program deployment notice
 
 On Tuesday, February 25, 2025, Microsoft released an update to the Microsoft Trusted Root Certificate Program. Please note that the NotBefore date is set to April 16, 2025. This means only certificates issued after this date will be distrusted.
 

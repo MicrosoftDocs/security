@@ -4,7 +4,7 @@ description: Get an overview of application security from a developer's perspect
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
@@ -14,11 +14,11 @@ ms.collection:
 
 This article provides overview of application security from a developer's perspective to address the guiding principles of [Zero Trust](overview.md). In the past, code security was all about your own app: if you got it wrong, your own app was at risk. Today, cybersecurity is a high priority for customers and governments worldwide.
 
-Compliance with cybersecurity requirements is a prerequisite for many customers and governments to purchase applications. For example, see [U.S. Executive Order 14028: Improving the Nation's Cybersecurity](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/) and [U.S. General Services Administration requirements summary](https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/information-technology-category/it-security/executive-order-14028). Your application needs to meet customer requirements.
+Compliance with cybersecurity requirements is a prerequisite for many customers and governments to purchase applications. Your application needs to meet customer requirements.
 
-Cloud security is a consideration of organization infrastructure that is only as secure as the weakest link. When a single app is the weakest link, malicious actors can gain access to business-critical data and operations.
+Cloud security is a consideration of organization infrastructure that is only as secure as the weakest link. When a single app is the weakest link, bad actors can gain access to business-critical data and operations.
 
-Application security from a developer perspective includes a Zero Trust approach: applications address the guiding principles of Zero Trust. As a developer, you continuously update your application as the threat landscape and security guidance changes.
+Application security from a developer perspective includes a Zero Trust approach: applications address the guiding principles of Zero Trust. As a developer, continuously update your application as the threat landscape and security guidance changes.
 
 ## Support Zero Trust principles in your code
 
@@ -26,7 +26,7 @@ Two keys to compliance with Zero Trust principles are the ability of your applic
 
 With the [Microsoft identity platform](/entra/identity-platform/v2-overview) and Zero Trust enabling technologies, using Microsoft Entra tokens helps your application to integrate with Microsoft's entire suite of security technologies.
 
-If your application requires passwords, you might be exposing your customers to avoidable risk. Bad actors view the shift to working from any location with any device as an opportunity to access corporate data by perpetrating activities such as password spray attacks. In a password spray attack, bad actors try a promising password across a set of user accounts. For example, they might try GoSeaHawks2022! against user accounts in the Seattle area. This successful attack type is one justification for passwordless authentication.
+If your application requires passwords, you might be exposing your customers to avoidable risk. Bad actors view the shift to working from any location with any device as an opportunity to access corporate data by perpetrating activities such as password spray attacks. In a password spray attack, bad actors try a promising password across a set of user accounts. For example, they might try `GoSeaHawks2022!` against user accounts in the Seattle area. This successful attack type is one justification for passwordless authentication.
 
 ## Acquire access tokens from Microsoft Entra ID
 

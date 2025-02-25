@@ -1,7 +1,7 @@
 ---
 title: Develop using Zero Trust principles
 description: As a developer, learn how to implement the guiding principles of Zero Trust so that you can improve your application security.
-ms.date: 07/24/2024
+ms.date: 02/24/2025
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
@@ -11,38 +11,34 @@ ms.collection:
 ---
 # Develop using Zero Trust principles
 
-This article helps you, as a developer, to understand the guiding principles of Zero Trust so that you can improve your application security. You play a key role in organizational security; applications and their developers can no longer assume that the network perimeter is secure. Compromised applications can affect the entire organization.
+This article helps you, as a developer, to understand the guiding principles of Zero Trust so that you can improve your application security. You play a key role in organizational security. Applications and their developers can no longer assume that the network perimeter is secure. Compromised applications can affect the entire organization.
 
-Organizations are deploying new security models that adapt to complex modern environments and embrace the mobile workforce. New models are designed to protect people, devices, applications, and data wherever they're located. Organizations are striving to achieve [Zero Trust](../zero-trust-overview.md), a security strategy and approach for designing and implementing applications that follow these guiding principles:
+Organizations are deploying new security models that adapt to complex modern environments and embrace the mobile workforce. New models protect people, devices, applications, and data wherever they're located. Organizations are striving to achieve [Zero Trust](../zero-trust-overview.md), a security strategy and approach for designing and implementing applications that follow these guiding principles:
 
 * Verify explicitly
 * Use least privilege access
 * Assume breach
 
-Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model requires us to "never trust, always verify."
+Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model requires us to *never trust, always verify*.
 
 Understand that Zero Trust isn't a replacement for security fundamentals. With work originating from anywhere on any device, design your applications to incorporate Zero Trust principles throughout your development cycle.
 
 ## Why develop with a Zero Trust perspective?
 
 * We see a rise in the level of sophistication of cybersecurity attacks.
-* The "work from anywhere" workforce redefined the security perimeter. Data is being accessed outside the corporate network and shared with external collaborators such as partners and vendors.
-* Corporate applications and data are moving from on-premises to hybrid and cloud environments. Traditional network controls can no longer be relied on for security. Controls need to move to where the data is: on devices and inside apps.
+* The *work from anywhere* workforce redefined the security perimeter. Data is being accessed outside the corporate network and shared with external collaborators such as partners and vendors.
+* Corporate applications and data are moving from on-premises to hybrid and cloud environments. Traditional network controls can no longer be relied on for security. Controls need to move to where the data resides on devices and inside apps.
 
-The development guidance in this section helps you to increase security, reduce the blast radius of a security incident, and swiftly recover by using Microsoft technology.
+The development guidance in this section helps you to increase security, reduce the blast radius of a security incident, and swiftly recover with Microsoft technology.
 
-## Next steps
-
-[Subscribe](/api/search/rss?search=%22Develop+using+Zero+Trust+principles%22&locale=en-us) to  our *Develop using Zero Trust principles* RSS feed for notification of new articles.
-
-### Developer guidance overview
+## Developer guidance overview
 
 * [What do we mean by Zero Trust compliance?](identity-zero-trust-compliance.md) provides an overview of application security from a developer's perspective to address the guiding principles of Zero Trust.
 * Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle to create secure applications.
 * [Standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards and their benefits.
 * [Developer and administrator responsibilities for application registration, authorization, and access](identity-developer-administrator-responsibilities.md) helps you to better collaborate with your IT Pros.
 
-### Permissions and access
+## Permissions and access
 
 * [Build apps that secure identity through permissions and consent](identity.md) provides an overview of permissions and access best practices.
 * [Integrate applications with Microsoft Entra ID and the Microsoft identity platform](integrate-apps-microsoft-identity-platform.md) helps developers to build and integrate apps that IT pros can secure in the enterprise.
@@ -50,7 +46,7 @@ The development guidance in this section helps you to increase security, reduce 
 * [Supported identity and account types for single- and multitenant apps](identity-supported-account-types.md) explains how you can choose if your app allows only users from your Microsoft Entra tenant, any Microsoft Entra tenant, or users with personal Microsoft accounts.
 * [Authenticate users for Zero Trust](user-authentication.md) helps developers to learn best practices for authenticating application users in Zero Trust application development. It describes how to enhance application security with the Zero Trust principles of least privilege and verify explicitly.
 * [Acquire authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
-* [Develop delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
+* [Develop delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop with Zero Trust principles.
 * [Develop application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.
 * [Request permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience when application permissions require administrative consent.
 * [Reduce overprivileged permissions and apps](overprivileged-permissions.md) helps you to limit privilege to manage access and improve security.
@@ -64,14 +60,14 @@ The development guidance in this section helps you to increase security, reduce 
 * [Call an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API. You learn how to securely develop your application when it's working on behalf of a user.
 * [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
 
-### Zero Trust DevSecOps
+## Zero Trust DevSecOps
 
 * [Secure DevOps environments for Zero Trust](secure-devops-environments-zero-trust.md) describes best practices for securing your DevOps environments.
 * [Secure the DevOps platform environment](secure-devops-platform-environment-zero-trust.md) helps you to implement Zero Trust principles in your DevOps platform environment and highlights best practices for secret and certificate management.
 * [Secure the developer environment](secure-dev-environment-zero-trust.md) helps you to implement Zero Trust principles in your development environments with best practices for least privilege, branch security, and trusting tools, extensions, and integrations.
 * [Embed Zero Trust security into your developer workflow](embed-zero-trust-dev-workflow.md) helps you to innovate quickly and securely.
 
-### More Zero Trust documentation
+## More Zero Trust documentation
 
 Reference the following Zero Trust content based on documentation set or roles in your organization.
 

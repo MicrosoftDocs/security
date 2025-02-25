@@ -1,10 +1,10 @@
 ---
-title: Provide application identity credentials when there's no user
-description: In this article, we explain why the best Zero Trust client credentials practice for services (nonuser applications) on Azure is Managed Identities for Azure Resources.
+title: Application identity credentials when there's no user
+description: Learn why the best Zero Trust client credentials practice for services (nonuser applications) on Azure is Managed Identities for Azure Resources.
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
@@ -12,11 +12,11 @@ ms.collection:
 ---
 # Provide application identity credentials when there's no user
 
-When you, as a developer, are building nonuser applications, you don't have a user whom you can prompt for a username and password or Multifactor Authentication (MFA). You need to provide the application's identity on its own. This article explains why the best Zero Trust client credentials practice for services (nonuser applications) on Azure is [Managed Identities for Azure resources](/entra/identity/managed-identities-azure-resources/overview-for-developers?tabs=portal%2Cdotnet).
+When you, as a developer, build nonuser applications, you don't have a user whom you can prompt for a username and password or Multifactor Authentication (MFA). You need to provide the application's identity on its own. This article explains why the best Zero Trust client credentials practice for services (nonuser applications) on Azure is [Managed Identities for Azure resources](/entra/identity/managed-identities-azure-resources/overview-for-developers?tabs=portal%2Cdotnet).
 
 ## Issues with service accounts
 
-Using a "service account" (creating a user account and using it for a service) isn't a good solution. Microsoft Entra ID doesn't have a service account concept. When admins create user accounts for a service and then share passwords with developers, it's insecure. It can't be passwordless or have an MFA. Instead of using a user account as a service account, your best solution is to use one of the following client credential options.
+Use of a *service account* (use of a user account for a service) isn't a good solution. Microsoft Entra ID doesn't have a service account concept. When admins create user accounts for services and then share passwords with developers, it's insecure. It can't be passwordless or have an MFA. Instead of using a user account as a service account, your best solution is to use one of the following client credential options.
 
 ## Client credential options
 
@@ -29,13 +29,13 @@ There are four types of client credentials that can identify an application.
 
 ## Secret key or certificate?
 
-Secret keys are acceptable when you have a sophisticated secrets management infrastructure (such as [Azure Key Vault](/azure/key-vault/general/overview)) in your enterprise. However, secret keys in scenarios where the IT Pro generates a secret key and then emails it to a developer who then might store it in an insecure location like a spreadsheet causes secret keys to not properly protected.
+Secret keys are acceptable in sophisticated secrets management infrastructures (such as [Azure Key Vault](/azure/key-vault/general/overview)). However, you can't properly protect secret keys in scenarios where the IT Pro generates a secret key and then emails it to a developer.
 
-Certificate-based client credentials are more secure than secret keys. Certificates are better managed as they aren't the secret itself. The secret isn't part of a transmission. When you use a secret key, your client sends the actual value of the secret key to Microsoft Entra ID. When you use a certificate, the private key of the certificate never leaves the device. Even if someone intercepts, decodes, and de-encrypts the transmission, the secret is still secure because the intercepting party doesn't have the private key.
+Certificate-based client credentials are more secure than secret keys. You can better manage certificates because they aren't the secret itself. The secret isn't part of a transmission. When you use a secret key, your client sends the actual value of the secret key to Microsoft Entra ID. When you use a certificate, the private key of the certificate never leaves the device. Even if someone intercepts, decodes, and de-encrypts the transmission, the secret is still secure because the intercepting party doesn't have the private key.
 
 ## Best practice: use Managed Identities for Azure Resources
 
-When you're developing services (nonuser applications) in Azure, Managed Identities for Azure Resources provide an automatically managed identity in Microsoft Entra ID. The app can authenticate to any service that supports Microsoft Entra authentication without managing credentials. You don't need to manage secrets; you don't need to address the possibility of losing or mishandling them. Secrets can't be intercepted because they don't move across the network. [Managed Identities for Azure resources](/entra/identity/managed-identities-azure-resources/overview-for-developers?tabs=portal%2Cdotnet) is the best practice if you're building services on Azure.
+When you develop services (nonuser applications) in Azure, Managed Identities for Azure Resources provide an automatically managed identity in Microsoft Entra ID. The app can authenticate to any service that supports Microsoft Entra authentication without managing credentials. You don't need to manage secrets. You don't need to address the possibility of losing or mishandling them. Bad actors can't intercept secrets that don't move across the network. [Managed Identities for Azure resources](/entra/identity/managed-identities-azure-resources/overview-for-developers?tabs=portal%2Cdotnet) is the best practice when you build services on Azure.
 
 ## Next steps
 

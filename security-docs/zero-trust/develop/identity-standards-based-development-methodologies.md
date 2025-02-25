@@ -1,10 +1,10 @@
 ---
 title: Standards-based development methodologies
-description: In this article, we provide an overview of supported standards and their benefits. 
+description: Learn about the benefits of using supported standards in the Microsoft identity platform for Zero Trust development.
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
@@ -16,9 +16,9 @@ As a developer, you can make good use of industry standards for software develop
 
 ## What about protocols?
 
-When implementing protocols, consider costs that include time to write code that is fully up to date with all best practices and follows OAuth 2.0 best practices for secure implementation. Instead, we recommend that you use a well-maintained library (with a preference for MSAL) when you build directly to Microsoft Entra ID or Microsoft Identity.
+When you implement protocols, consider costs that include time to write code that is fully up to date with all best practices and follows OAuth 2.0 best practices for secure implementation. Use a well-maintained library (with a preference for MSAL) when you build directly to Microsoft Entra ID or Microsoft Identity.
 
-We optimize MSALs to build and work with Microsoft Entra ID. If your environment doesn't have MSAL or has unlocked capabilities in its own library, develop your application with the Microsoft identity platform. Build on OAuth 2.0 capabilities and OpenID Connect. Consider costs of correctly falling back to a protocol.
+We optimize MSALs to build and work with Microsoft Entra ID. If your environment doesn't have MSAL or includes unlocked capabilities in its own library, develop your application with the Microsoft identity platform. Build on OAuth 2.0 capabilities and OpenID Connect. Consider costs of correctly falling back to a protocol.
 
 ## How the Microsoft identity platform supports standards
 

@@ -1,16 +1,16 @@
-- name: Program Requirements
+- name: Program requirements
   href: program-requirements.md
-- name: Audit Requirements
+- name: Audit requirements
   href: audit-requirements.md
-- name: Testing Procedures
+- name: Testing procedures
   href: testing.md
-- name: Incident Reporting Procedure
+- name: Incident reporting procedure
   href: Incident-Reporting.md
-- name: Deprecation Definitions
+- name: Deprecation definitions
   href: Deprecation.md
-- name: New Certificate Authority Application Procedure
+- name: New certificate authority application procedure
   href: new-ca-application.md
-- name: Release Notes
+- name: Release notes
   href: Release-Notes.md
 - name: Releases
   expanded: true
@@ -132,6 +132,6 @@
       href: 2019/Feb2019.md
     - name: January 2019
       href: 2019/Jan2019.md
-- name: List of Participants
+- name: List of participants
   href: Participants-List.md
 

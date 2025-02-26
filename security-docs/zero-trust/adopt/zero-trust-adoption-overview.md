@@ -1,7 +1,7 @@
 ---
 title: Zero Trust adoption framework overview
 description: This article gives an overview of the Zero Trust adoption framework.
-ms.date: 04/10/2024
+ms.date: 02/26/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -256,10 +256,8 @@ Once your organization has identified and prioritized your most strategic techni
 
 #### Customizable tracking reports
 
-Microsoft provides customizable PowerPoint and Excel tracking tools. These are pre-populated with objectives and tasks, organized by Zero Trust business scenarios. You can customize these with your own priorities, objectives, and team members.
+Microsoft provides customizable PowerPoint and Excel tracking tools. These are pre-populated with objectives and tasks, organized by Zero Trust business scenarios. You can customize these with your own priorities, objectives, and team members. For more information, see [Assessment and progress tracking resource](../zero-trust-assessment-progress-tracking-resources.md). You can download co-brandable and customizable trackers from the [Zero Trust partner kit](../zero-trust-partner-kit.md). 
 
-- Business leader tracker — A downloadable [PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) with progress tracking slides. These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
-- Implementer tracker — A downloadable [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign ownership and track your progress through the stages, objectives, and tasks. For business scenario project leads, IT leads, and IT implementers. 
 
 #### In-product dashboards
 
@@ -315,32 +313,21 @@ For additional resources, see [Zero Trust assessment and progress tracking resou
 
 See additional Zero Trust content based on a documentation set or your role in your organization.
 
-### Documentation set
+## Documentation set
 
 Follow this table for the best Zero Trust documentation sets for your needs.
 
-| Documentation set | Helps you... | Roles |
-| --- | --- | --- |
-| [Concepts and deployment objectives](../deploy/overview.md) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. | IT teams and security staff |
-| [Zero Trust for small businesses](../guidance-smb-partner.md) | Apply Zero Trust principles to small business customers. | Customers and partners working with Microsoft 365 for business |
-| [Zero Trust Rapid Modernization Plan (RaMP)](../zero-trust-ramp-overview.md) for project management guidance and checklists for easy wins | Quickly implement key layers of Zero Trust protection. | Security architects and IT implementers |
-| [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to your Microsoft 365 tenant. | IT teams and security staff |
-| [Zero Trust for Microsoft Copilots](../copilots/apply-zero-trust-copilots-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Microsoft Copilots. | IT teams and security staff |
-| [Zero Trust for Azure services](../azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. | IT teams and security staff |
-| [Partner integration with Zero Trust](../integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. | Partner developers, IT teams, and security staff |
-| [Develop using Zero Trust principles](../develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. | Application developers |
-
-### Your role
-
-Follow this table for the best documentation sets for your role in your organization.
-
-| Role | Documentation set | Helps you... |
-| --- | --- | --- |
-| Member of an IT or security team | [Concepts and deployment objectives](../deploy/overview.md) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. |
-| Customer or partner for Microsoft 365 for business | [Zero Trust for small businesses](../guidance-smb-partner.md) | Apply Zero Trust principles to small business customers.  |
-| Security architect <br><br> IT implementer | [Zero Trust Rapid Modernization Plan (RaMP)](../zero-trust-ramp-overview.md) for project management guidance and checklists for easy wins | Quickly implement key layers of Zero Trust protection. |
-| Member of an IT or security team for Microsoft 365 | [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance for Microsoft 365 | Apply Zero Trust protections to your Microsoft 365 tenant. |
-| Member of an IT or security team for Microsoft Copilots | [Zero Trust for Microsoft Copilots](../copilots/apply-zero-trust-copilots-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Microsoft Copilots. |
-| Member of an IT or security team for Azure services | [Zero Trust for Azure services](../azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. |
-| Partner developer or member of an IT or security team | [Partner integration with Zero Trust](../integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. |
-| Application developer | [Develop using Zero Trust principles](../develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. |
+|Documentation set|Helps you...|Roles|
+|---|---|---|
+|[Adoption framework](../adopt/zero-trust-adoption-overview.md) for phase and step guidance for key business solutions and outcomes|Apply Zero Trust protections from the C-suite to the IT implementation.|Security architects, IT teams, and project managers|
+|[Assessment and progress tracking resource](../zero-trust-assessment-progress-tracking-resources.md) |Assess your infrastructure's readiness and track your progress. |Security architects, IT teams, and project managers|
+|[Zero Trust partner kit](../zero-trust-partner-kit.md) |Co-branded tracking resources, workshop, and architecture illustrations |Partners and security architects |
+|[Deployment for technology pillars](../deploy/overview.md) for conceptual information and deployment objectives|Apply Zero Trust protections aligned with typical IT technology areas.|IT teams and security staff|
+|[Zero Trust for small businesses](../guidance-smb-partner.md)|Apply Zero Trust principles to small business customers.|Customers and partners working with Microsoft 365 for business|
+|[Zero Trust for Microsoft Copilots](../copilots/apply-zero-trust-copilots-overview.md) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to Microsoft Copilots.|IT teams and security staff|
+|[Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to your Microsoft 365 organization.|IT teams and security staff|
+|[Incident response with XDR and integrated SIEM](../siem-xdr-overview.md)|Set XDR tools and integrate these with Microsoft Sentinel|IT teams and security staff|
+|[Zero Trust for Azure services](../azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to Azure workloads and services.|IT teams and security staff|
+|[Partner integration with Zero Trust](../integrate/overview.md) for design guidance for technology areas and specializations|Apply Zero Trust protections to partner Microsoft cloud solutions.|Partner developers, IT teams, and security staff|
+|[Develop using Zero Trust principles](../develop/overview.md) for application development design guidance and best practices|Apply Zero Trust protections to your application.|Application developers|
+|US Government guidance for [CISA](/security/zero-trust/cisa-zero-trust-maturity-model-intro), [DoD](/security/zero-trust/dod-zero-trust-strategy-intro), and the [Memorandum for Zero Trust architecture](/entra/standards/memo-22-09-meet-identity-requirements) |Prescriptive recommendations for US Government requirements |IT Architects and IT teams|

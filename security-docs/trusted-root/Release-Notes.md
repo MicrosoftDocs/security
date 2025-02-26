@@ -1,7 +1,7 @@
 ---
 title: Release notes - Microsoft Trusted Root Certificate Program
 description: This document gives details about the changes made monthly to the root store.
-ms.date: 5/28/2024
+ms.date: 2/20/2025
 ms.service: security
 author: hasokol-ms
 ms.author: hasokol
@@ -21,6 +21,11 @@ Update packages will be available for download and testing at <https://aka.ms/CT
 Note that the changes listed are accurate at the time of posting but are subject to change.
 
 A list of Root Store participants, updated monthly, can be found here: <https://aka.ms/trustcertpartners>. 
+
+## 2025
+| Month |	Date of Release	| Release Notes |
+|---|---|---|
+| February | February 25 | [Deployment Notice for February 2025](2025/february-2025.md) |
 
 ## 2024
 | Month |	Date of Release	| Release Notes |

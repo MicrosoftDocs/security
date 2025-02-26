@@ -240,7 +240,7 @@ Take this step:
 
 ## Securing Identity in accordance with Executive Order 14028 on Cybersecurity & OMB Memorandum 22-09
 
-The [Executive Order 14028 on Improving the Nations Cyber Security](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity) & [OMB Memorandum 22-09](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) includes specific actions on Zero Trust. Identity actions include employing centralized identity management systems, use of strong phishing-resistant MFA, and incorporating at least one device-level signal in authorization decisions. For detailed guidance on implementing these actions with Microsoft Entra ID, see [Meet identity requirements of memorandum 22-09 with Microsoft Entra ID](/entra/standards/memo-22-09-meet-identity-requirements).
+Executive Order 14028 on Improving the Nations Cyber Security & OMB Memorandum 22-09 include specific actions on Zero Trust. Identity actions include employing centralized identity management systems, use of strong phishing-resistant MFA, and incorporating at least one device-level signal in authorization decisions. For detailed guidance on implementing these actions with Microsoft Entra ID, see [Meet identity requirements of memorandum 22-09 with Microsoft Entra ID](/entra/standards/memo-22-09-meet-identity-requirements).
 
 ## Products covered in this guide
 

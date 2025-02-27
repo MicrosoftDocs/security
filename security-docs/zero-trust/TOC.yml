@@ -2,8 +2,6 @@
   href: index.yml
 - name: What is Zero Trust?
   href: zero-trust-overview.md
-- name: Zero Trust and Secure Future Initiative (SFI)
-  href: zero-trust-sfi.md
 - name: Assessment and progress tracking resources
   href: zero-trust-assessment-progress-tracking-resources.md
 - name: Zero Trust partner kit

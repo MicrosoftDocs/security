@@ -5,13 +5,12 @@ description: "This training workshop is a combination of experiences from Micros
 ms.service: security
 
 ms.topic: tutorial
-
+ms.date: 02/27/2025
 ms.author: joflore
 author: MicrosoftGuyJFlo
 manager: amycolannino
 ms.reviewer: mas
 ---
-
 # Chief Information Security Officer (CISO) Workshop Training
 
 The Chief Information Security Office (CISO) workshop contains a collection of security learnings, principles, and recommendations for modernizing security in your organization. This training workshop is a combination of experiences from Microsoft security teams and learnings from customers.
@@ -27,7 +26,7 @@ The CISO workshop videos and PDF/PowerPoint download content are modular so you 
 
 - [Module 2: Security Management](ciso-workshop-module-2.md): Learn how to increase visibility and control over your hybrid enterprise estate with integrated guidance, automated policy enforcement, and monitoring.
 
-- [Module 3: Identity and Zero Trust User Access](ciso-workshop-module-3.md): Learn how to advance zero trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter
+- [Module 3: Identity and Zero Trust User Access](ciso-workshop-module-3.md): Learn how to advance Zero Trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter
 
 - [Module 4a: Threat Protection Strategy, Part I](ciso-workshop-module-4a.md): Explore key learnings about threat protection, security evolution, strategies, and security road maps.
 

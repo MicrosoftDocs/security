@@ -1,10 +1,10 @@
 ---
 title: What is Zero Trust?
 description: Understand the Zero Trust security model, learn about the principles, and apply the Zero Trust architecture using Microsoft 365 and Microsoft Azure services.  
-ms.date: 01/23/2025
+ms.date: 02/21/2025
 ms.service: security
-author: mjcaparas
-ms.author: macapara
+author: brendacarter
+ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
   - highpri
@@ -12,10 +12,6 @@ ms.collection:
 ---
 
 # What is Zero Trust?
-
-<!---
-:::image type="icon" source="media/icon-introduction-medium.png":::
---->
 
 Zero Trust is a security strategy. It isn't a product or a service, but an approach in designing and implementing the following set of security principles.
 
@@ -35,33 +31,32 @@ Different organizational requirements, existing technology implementations, and 
 
 With Zero Trust, you move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important. You can more easily detect threats, respond to threats, and prevent or block undesired events across your organization.
 
+
+
 ## Zero Trust and the US Executive Order 14028 on Cybersecurity
 
-[US executive order 14028, Improving the Nation's Cyber Security](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity), directs federal agencies on advancing security measures that drastically reduce the risk of successful cyberattacks against the federal government's digital infrastructure. On January 26, 2022, the [Office of Management and Budget (OMB)](https://www.whitehouse.gov/omb/) released the federal Zero Trust strategy in [memorandum 22-09](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf), in support of Executive Order 14028. 
+US executive order 14028, Improving the Nation's Cyber Security, directs federal agencies on advancing security measures that drastically reduce the risk of successful cyberattacks against the federal government's digital infrastructure. On January 26, 2022, the Office of Management and Budget (OMB) released the federal Zero Trust strategy in [memorandum 22-09](https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/01/M-22-09.pdf), in support of Executive Order 14028. Microsoft provides guidance to help organizations meet these requirements — [Meet identity requirements of memorandum 22-09 with Microsoft Entra ID](/entra/standards/memo-22-09-meet-identity-requirements).
 
-<!---
 
-## Zero Trust for Microsoft 365
+## Documentation set
 
-Microsoft 365 is built intentionally with many security and information protection capabilities to help you build Zero Trust into your environment. Many of the capabilities can be extended to protect access to other SaaS apps your organization uses and the data within these apps.
+Follow this table for the best Zero Trust documentation sets for your needs.
 
-See these key resources to get started:
+|Documentation set|Helps you...|Roles|
+|---|---|---|
+|[Adoption framework](adopt/zero-trust-adoption-overview.md) for phase and step guidance for key business solutions and outcomes|Apply Zero Trust protections from the C-suite to the IT implementation.|Security architects, IT teams, and project managers|
+|[Assessment and progress tracking resource](zero-trust-assessment-progress-tracking-resources.md) |Assess your infrastructure's readiness and track your progress. |Security architects, IT teams, and project managers|
+|[Zero Trust partner kit](zero-trust-partner-kit.md) |Co-branded tracking resources, workshop, and architecture illustrations |Partners and security architects |
+|[Deployment for technology pillars](deploy/overview.md) for conceptual information and deployment objectives|Apply Zero Trust protections aligned with typical IT technology areas.|IT teams and security staff|
+|[Zero Trust for small businesses](guidance-smb-partner.md)|Apply Zero Trust principles to small business customers.|Customers and partners working with Microsoft 365 for business|
+|[Zero Trust for Microsoft Copilots](copilots/apply-zero-trust-copilots-overview.md) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to Microsoft Copilots.|IT teams and security staff|
+|[Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to your Microsoft 365 organization.|IT teams and security staff|
+|[Incident response with XDR and integrated SIEM](siem-xdr-overview.md)|Set XDR tools and integrate these with Microsoft Sentinel|IT teams and security staff|
+|[Zero Trust for Azure services](azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to Azure workloads and services.|IT teams and security staff|
+|[Partner integration with Zero Trust](integrate/overview.md) for design guidance for technology areas and specializations|Apply Zero Trust protections to partner Microsoft cloud solutions.|Partner developers, IT teams, and security staff|
+|[Develop using Zero Trust principles](develop/overview.md) for application development design guidance and best practices|Apply Zero Trust protections to your application.|Application developers|
+|US Government guidance for [CISA](/security/zero-trust/cisa-zero-trust-maturity-model-intro), [DoD](/security/zero-trust/dod-zero-trust-strategy-intro), and the [Memorandum for Zero Trust architecture](/entra/standards/memo-22-09-meet-identity-requirements) |Prescriptive recommendations for US Government requirements |IT Architects and IT teams|
 
-- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json)
-- [The Microsoft Zero Trust security model setup guide](https://go.microsoft.com/fwlink/p/?linkid=2222968)
-- [Advanced deployment guide for Zero Trust with Microsoft 365 (requires sign-in)](https://go.microsoft.com/fwlink/p/?linkid=2224820) in the Microsoft 365 admin center
-
-## Zero Trust for Microsoft Azure
-
-These articles help you apply the principles of Zero Trust to your workloads and services in Microsoft Azure based on a multi-disciplinary approach to applying the Zero Trust principles.
-
-- [Azure IaaS](azure-infrastructure-overview.md)
-- [Azure Virtual Desktop](azure-infrastructure-avd.md)
-- [Azure Virtual WAN](azure-virtual-wan.md)
-- [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
-- [Microsoft Sentinel and Microsoft Defender XDR](/security/zero-trust/siem-xdr-overview)
-
---->
 
 ## Recommended training
 
@@ -81,24 +76,9 @@ These articles help you apply the principles of Zero Trust to your workloads and
 
 ## Next steps
 
-Use other Zero Trust content based on a documentation set or the roles in your organization.
+Learn about the [Microsoft Zero Trust adoption framework](adopt/zero-trust-adoption-overview.md).
 
-### Documentation set
-
-Follow this table for the best Zero Trust documentation sets for your needs.
-
-|Documentation set|Helps you...|Roles|
-|---|---|---|
-|[Adoption framework](adopt/zero-trust-adoption-overview.md) for phase and step guidance for key business solutions and outcomes|Apply Zero Trust protections from the C-suite to the IT implementation.|Security architects, IT teams, and project managers|
-|[Deployment for technology pillars](deploy/overview.md) for conceptual information and deployment objectives|Apply Zero Trust protections aligned with typical IT technology areas.|IT teams and security staff|
-|[Zero Trust for small businesses](guidance-smb-partner.md)|Apply Zero Trust principles to small business customers.|Customers and partners working with Microsoft 365 for business|
-|[Zero Trust Rapid Modernization Plan (RaMP)](zero-trust-ramp-overview.md) for project management guidance and checklists for easy wins|Quickly implement key layers of Zero Trust protection.|Security architects and IT implementers|
-|[Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to your Microsoft 365 organization.|IT teams and security staff|
-|[Zero Trust for Microsoft Copilots](copilots/apply-zero-trust-copilots-overview.md) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to Microsoft Copilots.|IT teams and security staff|
-|[Zero Trust for Azure services](azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to Azure workloads and services.|IT teams and security staff|
-|[Partner integration with Zero Trust](integrate/overview.md) for design guidance for technology areas and specializations|Apply Zero Trust protections to partner Microsoft cloud solutions.|Partner developers, IT teams, and security staff|
-|[Develop using Zero Trust principles](develop/overview.md) for application development design guidance and best practices|Apply Zero Trust protections to your application.|Application developers|
-
+<!---
 ### Your role
 
 Follow this table for the best documentation sets for the roles in your organization.
@@ -115,12 +95,14 @@ Follow this table for the best documentation sets for the roles in your organiza
 |Partner developer or member of an IT or security team|[Partner integration with Zero Trust](integrate/overview.md) for design guidance for technology areas and specializations|Apply Zero Trust protections to partner Microsoft cloud solutions.|
 |Application developer|[Develop using Zero Trust principles](develop/overview.md) for application development design guidance and best practices|Apply Zero Trust protections to your application.|
 
-## Related links
+---> 
+
+Related links:
 
 - [Zero Trust Overview](https://www.youtube.com/watch?v=KlEKAzMQEOw&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=13): This video provides information about:
     - Zero Trust definition
     - Zero Trust principles
     - Zero Trust core concepts
-    - Rapid modernization plan (RaMP) quick wins
+
 
 - [Zero Trust - The Open Group](https://www.youtube.com/watch?v=x0xlTVyX968&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=12): This video provides a perspective on Zero Trust from a standards organization.

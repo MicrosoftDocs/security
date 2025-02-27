@@ -53,17 +53,6 @@
       href: deploy/visibility-automation-orchestration.md
 - name: Small businesses
   href: guidance-smb-partner.md
-- name: Rapid Modernization Plan (RaMP)
-  expanded: false
-  items: 
-    - name: Overview
-      href: zero-trust-ramp-overview.md
-    - name: Explicitly validate trust for all access requests
-      href: user-access-productivity-validate-trust.md
-    - name: Ransomware recovery readiness
-      href: data-compliance-gov-ransomware-recovery-readiness.md
-    - name: Data protection
-      href: data-compliance-gov-data.md
 - name: Microsoft Copilots
   expanded: false
   items: 
@@ -189,7 +178,7 @@
         href: deploy-information-protection-saas.md
 - name: Microsoft Defender XDR and Microsoft Sentinel
   items:
-  - name: Incident response with integrated SIEM and XDR
+  - name: Incident response with XDR and integrated SIEM
     href: siem-xdr-overview.md
   - name: Zero Trust security with Microsoft Sentinel and Defender XDR
     href: siem-xdr-implement.md

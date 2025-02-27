@@ -1,10 +1,10 @@
 ---
-title: Zero Trust identity and access management development best practices
-description: Learn best practices for your application development lifecycle so that you can create secure applications that are Zero Trust compliant, starting with identity and access management (IAM).
+title: Zero Trust identity and access management best practices
+description: Learn identity and access management (IAM) best practices for application development to  ensure Zero Trust compliance.
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
@@ -18,16 +18,16 @@ The [Zero Trust](overview.md) security framework uses the principles of explicit
 
 ## Industry security trends affect application requirements
 
-While Zero Trust implementation continues to evolve, each organization's journey is unique, and often begins with user and application identity. Here are policies and controls that many organizations prioritize as they roll out Zero Trust:
+While Zero Trust implementation continues to evolve, each organization's journey is unique. It often begins with user and application identity. Here are policies and controls that many organizations prioritize as they roll out Zero Trust:
 
-1. **Implement credential hygiene and rotation policies for apps and services.** When attackers compromise secrets such as certificates or passwords, they can achieve a depth of system access to acquire tokens under the guise of an app's identity. They then access sensitive data, move laterally, and establish persistence.
-1. **Roll out strong authentication.** IT administrators are configuring policies that require multifactor authentication and passwordless FIDO2 devices.
-1. **Restrict user consent to apps with low-risk permissions to verified publisher apps.** Access to data in APIs like Microsoft Graph allow you to build rich applications. Organizations and customers evaluate your app's permission requests and trustworthiness before granting consent. IT admins are embracing the principle of verify explicitly by requiring publisher verification. They apply the principle of least privilege by only allowing user consent for low-risk permissions.
-1. **Blocking legacy protocols and APIs.** IT admins are blocking older authentication protocols such as "Basic authentication" and requiring modern protocols like OpenID Connect and OAuth2.
+- **Implement credential hygiene and rotation policies for apps and services.** When bad actors compromise secrets such as certificates or passwords, they can achieve a depth of system access to acquire tokens under the guise of an app's identity. They then access sensitive data, move laterally, and establish persistence.
+- **Roll out strong authentication.** IT administrators are configuring policies that require multifactor authentication and passwordless FIDO2 devices.
+- **Restrict user consent to apps with low-risk permissions to verified publisher apps.** Access to data in APIs like Microsoft Graph allow you to build rich applications. Organizations and customers evaluate your app's permission requests and trustworthiness before granting consent. IT admins are embracing the principle of verify explicitly by requiring publisher verification. They apply the principle of least privilege by only allowing user consent for low-risk permissions.
+- **Block legacy protocols and APIs.** IT admins are blocking older authentication protocols such as "Basic authentication" and requiring modern protocols like OpenID Connect and OAuth2.
 
 ## Use trusted, standards-based authentication libraries
 
-Develop your application with known and accepted standards and libraries to increase application portability and security. Trusted, standards-based authentication libraries stay up-to-date so that your apps are responsive to the latest technologies and threats. [Standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards and their benefits.
+To increase application portability and security, develop your application with known and accepted standards and libraries. Trusted, standards-based authentication libraries stay up-to-date so that your apps are responsive to the latest technologies and threats. [Standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards and their benefits.
 
 Rather than using protocols with known vulnerabilities and extensive documentation, develop your application with libraries such as Microsoft Authentication Library (MSAL), [Microsoft Identity Web authentication library](/entra/msal/dotnet/microsoft-identity-web/), and [Azure Software Developer Kits (SDK)](/entra/identity/managed-identities-azure-resources/qs-configure-sdk-windows-vm#azure-sdks-with-managed-identities-for-azure-resources-support). MSAL and Software Developer Kits (SDK) allow you to use these features without needing to write extra code:
 
@@ -57,7 +57,7 @@ Always provide the least privilege required for your user to perform specific ta
 
 Explore scopes in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to call an API and examine required permissions. They're displayed in order from lowest to highest privilege. Picking the lowest possible privilege ensures that your application is less vulnerable to attacks.
 
-Follow the guidance in [Enhance security with the principle of least privilege](/entra/identity-platform/secure-least-privileged-access) to reduce your applications' attack surfaces and security breach blast radius should compromise occur.
+To reduce application vulnerability and security breach blast radius should compromise occur, follow the guidance in [Enhance security with the principle of least privilege](/entra/identity-platform/secure-least-privileged-access).
 
 ## Securely manage tokens
 
@@ -73,10 +73,10 @@ When your application requests tokens from Microsoft Entra ID, securely manage t
 
 Continuous Access Evaluation [(CAE)](/entra/identity-platform/app-resilience-continuous-access-evaluation) allows Microsoft Graph to quickly deny access in response to security events. Examples include these tenant administrator activities:
 
-- Deleting or disabling a user account.
-- Enabling multifactor authentication (MFA) for a user.
-- Explicitly revoking a user's issued tokens.
-- Detecting a user moving to high-risk status.
+- Delete or disable a user account.
+- Enable multifactor authentication (MFA) for a user.
+- Explicitly revoke a user's issued tokens.
+- Detect a user moving to high-risk status.
 
 When you support CAE, tokens that Microsoft Entra ID issues to call Microsoft Graph are valid for 24 hours instead of the standard 60 to 90 minutes. CAE adds resiliency to your app by enabling MSAL to proactively refresh the token well before the token expires.
 
@@ -86,7 +86,7 @@ When you support CAE, tokens that Microsoft Entra ID issues to call Microsoft Gr
 
 ## Become a verified publisher
 
-As a [verified publisher](/entra/identity-platform/publisher-verification-overview), you verify your identity with your Microsoft Partner Network account and completed the established verification process. For developers of multitenant apps, being a verified publisher helps build trust with IT administrators in customer tenants.
+As a [verified publisher](/entra/identity-platform/publisher-verification-overview), verify your identity with your Microsoft Partner Network account and completed the established verification process. For developers of multitenant apps, being a verified publisher helps build trust with IT administrators in customer tenants.
 
 ## Next steps
 

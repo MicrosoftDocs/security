@@ -1,21 +1,20 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 3:Identity, and Access Management"
-description: "Learn how to advance zero trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter."
+description: "Learn how to advance Zero Trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter."
 
 ms.service: security
 
 ms.topic: tutorial
-ms.date: 02/05/2024
+ms.date: 02/27/2025
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
 manager: amycolannino
 ms.reviewer: mas
 ---
-
 # CISO Workshop Module 3: Identity and Zero Trust User Access
 
-Learn how to advance zero trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter.
+Learn how to advance Zero Trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter.
 
 - Download PDF summary: [Module 3: Identity and Zero Trust User Access](https://download.microsoft.com/download/e/0/3/e037fdcb-67f8-43f7-b137-36ffed7e317c/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
 - Download PowerPoint summary: [Module 3: Identity and Zero Trust User Access](https://download.microsoft.com/download/e/0/3/e037fdcb-67f8-43f7-b137-36ffed7e317c/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)

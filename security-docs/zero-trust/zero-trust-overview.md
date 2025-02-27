@@ -1,7 +1,7 @@
 ---
 title: What is Zero Trust?
 description: Understand the Zero Trust security model, learn about the principles, and apply the Zero Trust architecture using Microsoft 365 and Microsoft Azure services.  
-ms.date: 02/21/2025
+ms.date: 02/27/2025
 ms.service: security
 author: brendacarter
 ms.author: bcarter
@@ -39,7 +39,7 @@ US executive order 14028, Improving the Nation's Cyber Security, directs federal
 
 ## Zero Trust and Microsoft Secure Future Initiative (SFI)
 
-Microsoft's Secure Future Initiative (SFI), launched in November of 2023, is a multiyear commitment that advances the way Microsoft designs, builds, tests, and operates our Microsoft technology to ensure that our solutions meet the highest possible standards for security. SFI is Microsoft's implementation of Zero Trust. SFI applies the Zero Trust approach to extremely stringent standards for prioritized areas.
+Microsoft's Secure Future Initiative (SFI), launched in November of 2023, is a multiyear commitment that advances the way Microsoft designs, builds, tests, and operates our Microsoft technology to ensure that our solutions meet the highest possible standards for security. Microsoft’s Secure Future Initiative is, in large part, a rigid implementation of Zero Trust for our unique environment to improve our security posture.
 
 For more information about SFI, see the [Secure Future Initiative website](https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative).
 

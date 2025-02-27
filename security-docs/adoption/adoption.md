@@ -5,7 +5,7 @@ description: Guiding organizations through security program modernization with r
 ms.service: security
 
 ms.topic: overview
-ms.date: 05/07/2024
+ms.date: 02/27/2025
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -48,7 +48,7 @@ Meeting these objectives allows organizations to accelerate business enablement 
 
 ### The Microsoft Cybersecurity Reference Architecture (MCRA)
 
-[The Microsoft Cybersecurity Reference Architecture (MCRA)](/security/cybersecurity-reference-architecture/mcra) shows you how Microsoft security capabilities can integrate with other Microsoft and 3rd party platforms. The MCRA is provided in the form of PowerPoint slides with notes.
+[The Microsoft Cybersecurity Reference Architecture (MCRA)](/security/cybersecurity-reference-architecture/mcra) shows you how Microsoft security capabilities can integrate with other Microsoft and third party platforms. The MCRA is provided in the form of PowerPoint slides with notes.
 
 :::image type="content" source="media/adoption/microsoft-cybersecurity-reference-architecture.png" alt-text="A diagram showing the MCRA at a high level." lightbox="media/adoption/microsoft-cybersecurity-reference-architecture.png":::
 
@@ -63,7 +63,7 @@ Business guidance for security modernization includes multiple planning and exec
 
 ### Common security antipatterns
 
-All of the SAF modules include documentation for antipatterns we commonly observe across organizations, and guidance for overcoming them.  You can down the PDF [Common security antipatterns](https://download.microsoft.com/download/5/d/3/5d3058a9-501b-4c13-9c95-9664c303bb97/antipatterns.pdf) that includes many of the antipatterns from across the SAF modules.
+All of the SAF modules include documentation for antipatterns we commonly observe across organizations, and guidance for overcoming them. You can down the PDF [Common security antipatterns](https://download.microsoft.com/download/5/d/3/5d3058a9-501b-4c13-9c95-9664c303bb97/antipatterns.pdf) that includes many of the antipatterns from across the SAF modules.
 
 ### Microsoft led workshops
 

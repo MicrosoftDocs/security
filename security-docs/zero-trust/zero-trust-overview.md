@@ -1,7 +1,7 @@
 ---
 title: What is Zero Trust?
 description: Understand the Zero Trust security model, learn about the principles, and apply the Zero Trust architecture using Microsoft 365 and Microsoft Azure services.  
-ms.date: 02/21/2025
+ms.date: 02/27/2025
 ms.service: security
 author: brendacarter
 ms.author: bcarter
@@ -37,6 +37,11 @@ With Zero Trust, you move away from a trust-by-default perspective to a trust-by
 
 US executive order 14028, Improving the Nation's Cyber Security, directs federal agencies on advancing security measures that drastically reduce the risk of successful cyberattacks against the federal government's digital infrastructure. On January 26, 2022, the Office of Management and Budget (OMB) released the federal Zero Trust strategy in [memorandum 22-09](https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/01/M-22-09.pdf), in support of Executive Order 14028. Microsoft provides guidance to help organizations meet these requirements — [Meet identity requirements of memorandum 22-09 with Microsoft Entra ID](/entra/standards/memo-22-09-meet-identity-requirements).
 
+## Zero Trust and Microsoft Secure Future Initiative (SFI)
+
+Microsoft's Secure Future Initiative (SFI), launched in November of 2023, is a multiyear commitment that advances the way Microsoft designs, builds, tests, and operates our Microsoft technology to ensure that our solutions meet the highest possible standards for security. Microsoft’s Secure Future Initiative is, in large part, a rigid implementation of Zero Trust for our unique environment to improve our security posture.
+
+For more information about SFI, see the [Secure Future Initiative website](https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative).
 
 ## Documentation set
 

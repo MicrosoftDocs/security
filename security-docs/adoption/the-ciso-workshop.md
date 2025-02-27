@@ -5,7 +5,7 @@ description: "The Chief Information Security Office (CISO) workshop helps accele
 ms.service: security
 
 ms.topic: conceptual
-ms.date: 05/29/2024
+ms.date: 02/27/2025
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -24,7 +24,7 @@ Customers with [Microsoft Unified](https://www.microsoft.com/unifiedsupport/over
 
 ## Why should you make time to watch this workshop?
 
-You'll get actionable advice on how to quickly increase your security program maturity, security posture, and ability to rapidly respond to attacks.
+You get actionable advice on how to quickly increase your security program maturity, security posture, and ability to rapidly respond to attacks.
 These best practices, references, and other guidance are based on real world lessons learned across our customers and from Microsoft’s internal security teams.
 
 ## Who should watch this workshop?
@@ -59,13 +59,13 @@ The workshop videos (about 4 hours total) and [slides](https://github.com/Micros
    - **[Access Control](the-ciso-workshop-videos.md#access-control)** - discusses how the Zero Trust approach is transforming access control, including identity and network access converging into a single coherent approach, and the emergence of the Known-Trusted-Allowed model (which updates the classic authenticated/authorized approach).
    - **[Security Operations](the-ciso-workshop-videos.md#security-operations)** – discusses key leadership aspects of a security operations capability, often called SecOps or a Security Operations Center (SOC) including critical success metrics, key touchpoints with business leaders and functions, and the most important cultural elements.
    - **[Asset Protection](the-ciso-workshop-videos.md#asset-protection)** – discusses two key imperatives for teams that manage and secure assets (often IT Operations or Workload operations in DevOps). These teams must prioritize security work based on business criticality and must strive to efficiently scale security across the large, growing, and continuously evolving set of assets in the technical estate.
-   - **[Security Governance](the-ciso-workshop-videos.md#security-governance)** – discusses the role of Security Governance as a bridge between the world of business goals and technology and how this role is changing with the advent of cloud, digital and zero trust transformations. This section also covers key components of security governance including risk, compliance, security architecture, posture management, (strategic) threat intelligence, and more.
+   - **[Security Governance](the-ciso-workshop-videos.md#security-governance)** – discusses the role of Security Governance as a bridge between the world of business goals and technology and how this role is changing with the advent of cloud, digital and Zero Trust transformations. This section also covers key components of security governance including risk, compliance, security architecture, posture management, (strategic) threat intelligence, and more.
    - **[Innovation Security](the-ciso-workshop-videos.md#innovation-security)** - discussion of how application security evolves into a modern approach (including DevSecOps) and key focus areas to drive success of this capability.
    - **[Security Governance Maturity models](the-ciso-workshop-videos.md#maturity-model---security-governance)** describing real world journeys for *Security Architecture, Posture Management, and IT Security Maintenance* – including specific concrete actions to help you move up to the next level
    - **[Next Steps/Closing](the-ciso-workshop-videos.md#summary--next-steps)** – wraps up the workshop with key quick wins and next steps
 
 > [!NOTE]
-> The Architecture Design Session modules discussed in the video are not yet published
+> The Architecture Design Session modules discussed in the video aren't yet published
 
 > [!NOTE]
 > The previous version of the CISO workshop is archived and available [here](ciso-workshop.md) 

@@ -5,7 +5,7 @@ description: Detailed technical reference architectures for multicloud cybersecu
 ms.service: security
 
 ms.topic: overview
-ms.date: 08/13/2024
+ms.date: 02/27/2025
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -43,7 +43,7 @@ The MCRA includes key information about:
 The MCRA also includes detailed technical diagrams for:
 
 - Microsoft cybersecurity capabilities
-- Zero trust user access
+- Zero Trust user access
 - Security operations (SecOps/SOC)
 - Operational technology (OT)
 - Multicloud and cross-platform capabilities

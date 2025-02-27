@@ -5,14 +5,13 @@ description: Learn how to increase visibility and control over your hybrid enter
 ms.service: security
 
 ms.topic: tutorial
-ms.date: 02/05/2024
+ms.date: 02/27/2025
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
 manager: amycolannino
 ms.reviewer: mas
 ---
-
 # CISO Workshop Module 2: Security Management
 
 Learn how to increase visibility and control over your hybrid enterprise estate with integrated guidance, automated policy enforcement, and monitoring.

@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 On Tuesday, February 25, 2025, Microsoft released an update to the Microsoft Trusted Root Certificate Program. Please note that the NotBefore date is set to April 16, 2025. This means only certificates issued after this date will be distrusted.
 
-This release will NotBefore the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
+This release will NotBefore the following roots (CA \ Root Certificate \ SHA-256 Thumbprint):
 
 Entrust // AffirmTrust 4K TLS Root CA - 2022 // A7DEDF5A842167DD12FDAA0F2080E73295B8B8BEA71B2094EA0950945A482FC1
 

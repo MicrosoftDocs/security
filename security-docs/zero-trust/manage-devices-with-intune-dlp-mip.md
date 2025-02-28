@@ -10,7 +10,7 @@ f1.keywords:
 manager: dougeby
 ms.date: 02/28/2025
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:

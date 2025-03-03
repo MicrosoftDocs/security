@@ -4,7 +4,7 @@ description: Learn how to secure networks using a Zero Trust strategy with Secur
 ms.date: 03/03/2025
 ms.service: security
 author: kenwith
-manager: rKarlin
+manager: rkarlin
 ms.author: kenwith
 ms.topic: concept-article
 ms.collection:

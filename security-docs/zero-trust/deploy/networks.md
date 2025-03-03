@@ -33,9 +33,9 @@ In the Zero Trust model, there are three key objectives when it comes to securin
 
 To make this happen, follow three Zero Trust principles:
 
-- **Verify explicitly.** Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, user and device risk, data classification, and anomalies.
+- **Verify explicitly.** Always authenticate and authorize based on all available data points. Include user identity, location, device health, service or workload, user and device risk, data classification, and anomalies.
 - **Use least-privileged access.** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection to protect both data and productivity.
-- **Assume breach.** Minimize impact radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get [visibility](https://aka.ms/ZTCrossPillars), drive threat detection, and improve defenses.
+- **Assume breach.** Minimize influence radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get [visibility](https://aka.ms/ZTCrossPillars), drive threat detection, and improve defenses.
 
 
 In the Zero Trust model, there are three key objectives when it comes to securing your networks:
@@ -48,16 +48,16 @@ In the Zero Trust model, there are three key objectives when it comes to securin
 
 To achieve the objectives, we follow three Zero Trust principles:
 
-- **Verify explicitly.** Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies.
+- **Verify explicitly.** Authenticate and authorize based on all available data points. Include user identity, location, device health, service or workload, data classification, and anomalies.
 
 - **Use least-privileged access.** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection to protect both data and productivity.
 
-- **Assume breach.** Minimize blast radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get, drive threat detection, and improve defenses.
+- **Assume breach.** Minimize influence radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get, drive threat detection, and improve defenses.
 
 
 ## Zero Trust network deployment objectives
 
-Before most organizations start their Zero Trust journey, they have network security that is characterized by: 
+Before most organizations start their Zero Trust journey, they have network security that is characterized as:
 - Few network security perimeters and open, flat networks.
 - Minimal threat protection and static traffic filtering.
 - Unencrypted internal traffic.
@@ -76,7 +76,7 @@ Before diving into micro-segmentation, it's essential to establish a broader seg
 Concurrently, develop a VPN replacement strategy that uses modern, secure, and scalable alternatives such as Zero Trust Network Access (ZTNA) solutions. These solutions eliminate the need for traditional VPNs by providing secure, identity-based access to applications regardless of the user's location.  
 
 
-Remote users can connect to private apps across hybrid and multicloud environments, private networks, and data centers from any device and network without requiring a VPN solution. The service offers per-app adaptive access based on Conditional Access (CA) policies for more granular security than a traditional VPN solution.
+Remote users connect to private apps across hybrid and multicloud environments, private networks, and data centers. They connect from any device and network without requiring a VPN solution. The service offers per-app adaptive access based on Conditional Access (CA) policies for more granular security than a traditional VPN solution.
 Microsoft Entra Private Access provides users (whether in an office or working remotely) secure access to private corporate resources. Microsoft Entra Private Access builds on the Microsoft Entra application proxy to extend access to any private resource, independent of TCP/IP port and protocol.
 
 Microsoft Entra ID Protection cloud-based identity and access management (IAM) helps protect user identities and credentials from compromise.
@@ -204,13 +204,13 @@ Follow these steps, depending on the type of boundary:
 
 ##### On-premises boundary
 
-- If your app needs connectivity to your on-premises data center or private cloud, use Microsoft Entra Private Access, [Azure ExpressRoute]([use Azure ExpressRoute](/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)) or [Azure VPN for connectivity to your virtual network hub](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal). 
-- [Configure the Azure Firewall](/azure/firewall/tutorial-hybrid-ps) in the virtual network hub to inspect and govern traffic.
+- If your app needs connectivity to your on-premises data center or private cloud, use Microsoft Entra Private Access, [Azure ExpressRoute](/azure/expressroute/expressroute-howto-circuit-portal-resource-manager), or [Azure VPN for connectivity to your virtual network hub](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal). 
+- To inspect and govern traffic in the virtual network hub, [Configure the Azure Firewall](/azure/firewall/tutorial-hybrid-ps).
 
 
 ##### PaaS services boundary
 
- - When using Azure-provided PaaS services (for example, Azure Storage, [Azure Cosmos DB](/azure/private-link/create-private-endpoint-cosmosdb-portal),
+ - When using Azure-provided PaaS services, (Azure Storage, [Azure Cosmos DB](/azure/private-link/create-private-endpoint-cosmosdb-portal),
     or [Azure Web App](/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network.
 
 > [!TIP]
@@ -254,14 +254,14 @@ Enable reviewer decision helpers in access reviews. The User-to-Group Affiliatio
 
 **Automated Workflows**
 
-**Microsoft Defender XDR**
+**Microsoft Defender Extended Detection and Response (XDR)**
 
-Configure automated investigation and response capabilities in Microsoft Defender XDR. 
+Configure automated investigation and response capabilities in Microsoft Defender Extended Detection and Response (XDR). 
 - Automated investigation and response overview
 
 **Microsoft Sentinel playbooks**
 
-Microsoft Sentinel playbooks are based on Logic Apps, a cloud service that schedules, automates, and orchestrates tasks and workflows across enterprise systems. Build response playbooks with templates, deploy solutions from the Microsoft Sentinel content hub. Build custom analytics rules and response actions with Azure Logic Apps.
+Microsoft Sentinel playbooks are based on Logic Apps, a cloud service that schedules, automates, and orchestrates tasks and workflows across enterprise systems. Build response playbooks with templates. Deploy solutions from the Microsoft Sentinel content hub. Build custom analytics rules and response actions with Azure Logic Apps.
 - Microsoft Sentinel playbooks from templates
 - Automate threat response with playbooks
 - Microsoft Sentinel content hub catalog
@@ -286,9 +286,9 @@ Enable reviewer decision helpers in access reviews. The User-to-Group Affiliatio
 
 **Log Analysis**
 
-**Microsoft Defender XDR**
+**Microsoft Defender Extended Detection and Response (XDR)**
 
-Microsoft Defender XDR is a unified pre- and post-breach enterprise defense suite that coordinates detection, prevention, investigation, and response natively across endpoints, identities, email, and applications. Use Defender XDR to protect against and respond to sophisticated attacks.
+Microsoft Defender Extended Detection and Response (XDR) is a unified pre- and post-breach enterprise defense suite that coordinates detection, prevention, investigation, and response natively across endpoints, identities, email, and applications. Use Defender XDR to protect against and respond to sophisticated attacks.
 
 - Investigate alerts
 - Zero Trust with Defender XDR

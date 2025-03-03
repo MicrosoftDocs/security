@@ -1,30 +1,29 @@
 ---
 title: Secure networks with Zero Trust
-description: Due to the cloud, mobile devices, and other endpoints that expand boundaries and change paradigms, there isn't necessarily a contained/defined network to secure. Instead, there is a vast portfolio of devices and networks, all linked by the cloud.
+description: Learn how to secure networks using a Zero Trust strategy with Secure Access Service Edge (SASE) and Secure Service Edge (SSE) solutions.
 ms.date: 03/03/2025
 ms.service: security
 author: kenwith
 manager: rKarlin
 ms.author: kenwith
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection:
   - zerotrust-pillar
+
+#customer intent: As an administrator, I want to understand how I can adopt modern Zero Trust security practices so that I can secure my network and organization.
 ---
 
 # Secure networks with Zero Trust
 
-:::image type="icon" source="../media/icon-networks-medium.png":::
-
-
 In recent years, the landscape of network security has undergone significant transformations. Traditional Virtual Private Networks (VPNs), once the cornerstone of secure remote access, are increasingly being replaced by more advanced and comprehensive solutions. One such solution is Secure Access Service Edge (SASE), which integrates wide-area networking (WAN) capabilities with comprehensive security services, all delivered through a cloud-based architecture. This shift is driven by the need for more flexible, scalable, and efficient security measures that can keep pace with the evolving threat landscape.
 
-The emergence of SASE represents a paradigm shift in how organizations approach network security. By converging networking and security functions into a single, unified service, SASE offers a more streamlined and effective way to protect data and applications, regardless of where they are located. This approach not only simplifies the management of security policies but also enhances the overall security posture of the organization.
-
-Artificial Intelligence (AI) is playing a pivotal role in this new era of network security. AI-driven solutions are capable of analyzing vast amounts of data in real-time, identifying potential threats, and responding to incidents with unprecedented speed and accuracy. By leveraging AI, organizations can proactively detect and mitigate security risks, ensuring a more robust and resilient network infrastructure.
+The emergence of SASE represents a paradigm shift in how organizations approach network security. By converging networking and security functions into a single, unified service, SASE offers a more streamlined and effective way to protect data and applications, regardless of where they are located. This approach not only simplifies the management of security policies but also enhances the overall security posture of the organization. Artificial Intelligence (AI) is playing a pivotal role in this new era of network security. AI-driven solutions are capable of analyzing vast amounts of data in real-time, identifying potential threats, and responding to incidents with unprecedented speed and accuracy. By leveraging AI, organizations can proactively detect and mitigate security risks, ensuring a more robust and resilient network infrastructure.
 
 In summary, the replacement of traditional VPNs with SASE, coupled with the integration of AI, marks a significant advancement in the field of network security. These innovations are enabling organizations to stay ahead of emerging threats and maintain a secure and efficient network environment.
 
 ## Key Principles of the Zero Trust Network Model
+
+:::image type="icon" source="../media/icon-networks-medium.png":::
 
 Instead of assuming that everything behind the corporate firewall is secure, an end-to-end Zero Trust strategy acknowledges that breaches are inevitable. This approach requires verifying each request as if it originates from an uncontrolled network, with identity management playing a crucial role. By incorporating the CISA and NIST Zero Trust models and patterns, organizations can enhance their security posture and better protect their networks.
 
@@ -67,9 +66,7 @@ Before most organizations start their Zero Trust journey, they have network secu
 
 It is crucial to transition from these legacy patterns and consider a structured approach like the CISA Zero Trust Maturity Model (ZTMM). This model guides organizations through different stages of Zero Trust implementation, ensuring a comprehensive and phased adoption of Zero Trust principles.
 
-
 When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on objectives one through four. After these are completed, focus on objectives five through ten.
-
 
 ## Networking Zero Trust deployment guide
 
@@ -98,18 +95,17 @@ In this deployment guide, we'll walk you through the steps to achieve one of tho
 
 With micro-segmentation, organizations can move beyond simple centralized network-based perimeters to comprehensive and distributed segmentation using software-defined micro-perimeters.  
 
-
 #### Applications are partitioned to different Azure Virtual Networks (VNets) and connected using a hub-spoke model
 
 :::image type="content" source="../media/diagram-network-hub-spoke-two-regions.png" alt-text="Diagram of two virtual networks connected in a hub-and-spoke model." border="false":::
 
 Follow these steps:
 
-1.  [Create dedicated virtual networks](/azure/virtual-network/quick-create-portal) for different applications and/or application components.
+- [Create dedicated virtual networks](/azure/virtual-network/quick-create-portal) for different applications and/or application components.
 
-2.  Create a central VNet to set up the security posture for inter-app connectivity and connect the app VNets in [a hub-and-spoke architecture](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke).
+- Create a central VNet to set up the security posture for inter-app connectivity and connect the app VNets in [a hub-and-spoke architecture](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke).
 
-3.  [Deploy Azure Firewall](/azure/firewall/deploy-ps) in the hub VNet to inspect and govern traffic between the VNets.
+- [Deploy Azure Firewall](/azure/firewall/deploy-ps) in the hub VNet to inspect and govern traffic between the VNets.
 
 
 ### 3. Threat protection: Cloud native filtering and protection for known threats
@@ -124,43 +120,41 @@ These types of threats fall into two broad categories:
 
 Take these steps to protect against known threats:
 
-1. Implement Microsoft Entra Internet Access capabilities.
+- Implement Microsoft Entra Internet Access capabilities.
 
-1.  **For endpoints with HTTP/S traffic**, protect using [Azure Web Application Firewall (WAF)](/azure/web-application-firewall/overview) by:
+- **For endpoints with HTTP/S traffic**, protect using [Azure Web Application Firewall (WAF)](/azure/web-application-firewall/overview) by:
 
-    1.  Turning on the default ruleset or [OWASP top 10](https://owasp.org/www-project-top-ten/) protection ruleset to protect against known web-layer attacks
+    - Turning on the default ruleset or [OWASP top 10](https://owasp.org/www-project-top-ten/) protection ruleset to protect against known web-layer attacks
 
-    1.  Turning on the bot protection ruleset to prevent malicious bots from scraping information, conducting credential stuffing, etc.
+    - Turning on the bot protection ruleset to prevent malicious bots from scraping information, conducting credential stuffing, etc.
 
-    1.  Adding custom rules to protect against threats specific to your business.
+    - Adding custom rules to protect against threats specific to your business.
 
     You can use one of two options:
 
     - [Azure Front Door](/azure/frontdoor/front-door-overview)
 
-        1. [Create a Web Application Firewall policy on Azure Front Door](/azure/web-application-firewall/afds/waf-front-door-create-portal).
+        - [Create a Web Application Firewall policy on Azure Front Door](/azure/web-application-firewall/afds/waf-front-door-create-portal).
 
-        1. [Configure bot protection for Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-policy-configure-bot-protection).
+        - [Configure bot protection for Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-policy-configure-bot-protection).
 
-        1. [Custom rules for Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell).
+        - [Custom rules for Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell).
 
     - [Azure Application Gateway](/azure/application-gateway/overview)
 
-       1. [Create an application gateway with a Web Application Firewall](/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal).
+       - [Create an application gateway with a Web Application Firewall](/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal).
 
-       1. [Configure bot protection for Web Application Firewall](/azure/web-application-firewall/ag/bot-protection).
+       - [Configure bot protection for Web Application Firewall](/azure/web-application-firewall/ag/bot-protection).
 
-       1. [Create and use Web Application Firewall v2 custom rules.](/azure/web-application-firewall/ag/create-custom-waf-rules).
+       - [Create and use Web Application Firewall v2 custom rules.](/azure/web-application-firewall/ag/create-custom-waf-rules).
 
 
-2.  **For all endpoints (HTTP or not)**, front with [Azure Firewall](/azure/firewall/overview) for threat intelligence-based filtering at Layer 4:
+- **For all endpoints (HTTP or not)**, front with [Azure Firewall](/azure/firewall/overview) for threat intelligence-based filtering at Layer 4:
 
-    1.  [Deploy and configure Azure Firewall](/azure/firewall/tutorial-firewall-deploy-portal) using the Azure portal.
-
-    1.  [Enable threat intelligence-based filtering](/azure/firewall/threat-intel) for your traffic.
-
-    > [!TIP]
-    > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
+    - [Deploy and configure Azure Firewall](/azure/firewall/tutorial-firewall-deploy-portal) using the Azure portal.
+    - [Enable threat intelligence-based filtering](/azure/firewall/threat-intel) for your traffic.
+        > [!TIP]
+        > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
 
 ### 4. Encryption: User-to-app internal traffic is encrypted
@@ -169,26 +163,15 @@ The third initial objective to focus on is adding encryption to ensure user-to-a
 
 Follow these steps:
 
-1.  Enforce HTTPS-only communication for your internet facing web applications by [redirecting HTTP traffic to HTTPS using Azure Front Door](/azure/frontdoor/front-door-how-to-redirect-https).
-
-2.  Connect remote employees/partners to Microsoft Azure using the [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways).
-
-    1.  [Turn on encryption](/azure/vpn-gateway/vpn-gateway-security-controls#data-protection) for any point-to-site traffic in Azure VPN Gateway service.
-
-3.  Access your Azure virtual machines securely using encrypted communication via [Azure Bastion](/azure/bastion/bastion-overview).
-
-    1.  [Connect using SSH to a Linux virtual machine](/azure/bastion/bastion-connect-vm-ssh).
-
-    1.  [Connect using RDP to a Windows virtual machine](/azure/bastion/bastion-connect-vm-rdp).
+- Enforce HTTPS-only communication for your internet facing web applications by [redirecting HTTP traffic to HTTPS using Azure Front Door](/azure/frontdoor/front-door-how-to-redirect-https).
+- Connect remote employees/partners to Microsoft Azure using the [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways).
+    - [Turn on encryption](/azure/vpn-gateway/vpn-gateway-security-controls#data-protection) for any point-to-site traffic in Azure VPN Gateway service.
+- Access your Azure virtual machines securely using encrypted communication via [Azure Bastion](/azure/bastion/bastion-overview).
+- [Connect using SSH to a Linux virtual machine](/azure/bastion/bastion-connect-vm-ssh).
+- [Connect using RDP to a Windows virtual machine](/azure/bastion/bastion-connect-vm-rdp).
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
-
-
-<br/><br/>
-<!-- H2 heading, "Additional deployment objectives" -->
-[!INCLUDE [H2 heading, Additional deployment objectives](../includes/deployment-objectives-additional.md)]
-
 
 
 ### 5. Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
@@ -203,9 +186,8 @@ Once you've accomplished your initial three objectives, the next step is to furt
 
 Follow these steps:
 
-1.  Within the VNet, [add virtual network subnets](/azure/virtual-network/virtual-network-manage-subnet) so that discrete components of an application can have their own perimeters.
-
-2.  [Apply network security group rules](/azure/virtual-network/tutorial-filter-network-traffic#create-security-rules) to allow traffic only from the subnets that have an app subcomponent identified as a legitimate communications counterpart.
+- Within the VNet, [add virtual network subnets](/azure/virtual-network/virtual-network-manage-subnet) so that discrete components of an application can have their own perimeters.
+- [Apply network security group rules](/azure/virtual-network/tutorial-filter-network-traffic#create-security-rules) to allow traffic only from the subnets that have an app subcomponent identified as a legitimate communications counterpart.
 
 
 #### Segment and enforce the external boundaries
@@ -216,19 +198,16 @@ Follow these steps, depending on the type of boundary:
 
 ##### Internet boundary
 
-1.  If internet connectivity is required for your application that needs to be routed via the hub VNet, [update the network security group rules](/azure/virtual-network/tutorial-filter-network-traffic) in hub VNet to allow internet connectivity.
-
-2.  [Turn on Azure DDoS Protection Standard](/azure/virtual-network/manage-ddos-protection#enable-ddos-for-an-existing-virtual-network)
+- If internet connectivity is required for your application that needs to be routed via the hub VNet, [update the network security group rules](/azure/virtual-network/tutorial-filter-network-traffic) in hub VNet to allow internet connectivity.
+- [Turn on Azure DDoS Protection Standard](/azure/virtual-network/manage-ddos-protection#enable-ddos-for-an-existing-virtual-network)
     to protect the hub VNet from volumetric network layer attacks.
-
-3.  If your application uses HTTP/S protocols, [turn on Azure Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell) to protect against Layer 7 threats.
+- If your application uses HTTP/S protocols, [turn on Azure Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell) to protect against Layer 7 threats.
 
 
 ##### On-premises boundary
 
-1. If your app needs connectivity to your on-premise data center or private cloud, use Microsoft Entra Private Access, [Azure ExpressRoute]([use Azure ExpressRoute](/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)) or [Azure VPN for connectivity to your hub VNet](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal). 
-
-2. [Configure the Azure Firewall](/azure/firewall/tutorial-hybrid-ps) in the hub VNet to inspect and govern traffic.
+- If your app needs connectivity to your on-premise data center or private cloud, use Microsoft Entra Private Access, [Azure ExpressRoute]([use Azure ExpressRoute](/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)) or [Azure VPN for connectivity to your hub VNet](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal). 
+- [Configure the Azure Firewall](/azure/firewall/tutorial-hybrid-ps) in the hub VNet to inspect and govern traffic.
 
 
 ##### PaaS services boundary
@@ -246,9 +225,8 @@ For further threat protection, turn on [Azure DDoS Protection Standard](/azure/v
 
 Follow these steps:
 
-1.  [Configure and manage](/azure/virtual-network/manage-ddos-protection) Azure DDoS Protection Standard.
-
-1.  [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
+- [Configure and manage](/azure/virtual-network/manage-ddos-protection) Azure DDoS Protection Standard.
+- [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
 
 
 ### 7. Encryption: All traffic is encrypted
@@ -257,15 +235,10 @@ Finally, complete your network protection by ensuring that all traffic is encryp
 
 Follow these steps:
 
-1.  [Encrypt application backend traffic](/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell) between virtual networks.
-
-1.  Encrypt traffic between on-premises and cloud:
-
-    1.  [Configure a site-to-site VPN](/azure/expressroute/site-to-site-vpn-over-microsoft-peering) over ExpressRoute Microsoft peering.
-
-    1.  [Configure IPsec transport mode](/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
-
-<a name='discontinue-legacy-network'></a>
+- [Encrypt application backend traffic](/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell) between virtual networks.
+- Encrypt traffic between on-premises and cloud:
+    - [Configure a site-to-site VPN](/azure/expressroute/site-to-site-vpn-over-microsoft-peering) over ExpressRoute Microsoft peering.
+    - [Configure IPsec transport mode](/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
 
 ### 8. Automation and Orchestration
 
@@ -397,8 +370,3 @@ and [Application Security Groups](/azure/virtual-network/application-security-gr
 ## Conclusion
 
 Securing networks is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team or continue to read through the other chapters of this guide, which spans all Zero Trust pillars.
-
-
-<br/><br/>
-<!-- Include the nav bar. -->
-[!INCLUDE [navbar, bottom](../includes/navbar-bottom.md)]

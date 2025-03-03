@@ -112,9 +112,9 @@ Cloud applications that open endpoints to external environments, such as the int
 
 These types of threats fall into two broad categories:
 
-- **Known attacks**. Threats that are discovered by your software provider or the larger community. In such cases, the attack signature is available and you need to ensure that each request is checked against those signatures. The key is to be able to quickly update your detection engine with any newly identified attacks.
+- **Known attacks**. Threats discovered by your software provider or the larger community. In such cases, the attack signature is available and you need to ensure that each request is checked against those signatures. The key is to be able to quickly update your detection engine with any newly identified attacks.
 
-- **Unknown attacks.** These are threats that don't quite match against any known signature. These types of threats include zero-day vulnerabilities and unusual patterns in request traffic. The ability to detect such attacks depends on how well your defenses know what's normal and what isn't. Your defenses should be constantly learning and updating such patterns as your business (and associated traffic) evolves.
+- **Unknown attacks.** These attacks are threats that don't quite match against any known signature. These types of threats include zero-day vulnerabilities and unusual patterns in request traffic. The ability to detect such attacks depends on how well your defenses know what's normal and what isn't. Your defenses should be constantly learning and updating such patterns as your business (and associated traffic) evolves.
 
 Take these steps to protect against known threats:
 
@@ -185,7 +185,7 @@ Once you accomplish your initial three objectives, the next step is to further s
 Follow these steps:
 
 - Within the virtual network, [add virtual network subnets](/azure/virtual-network/virtual-network-manage-subnet) so that discrete components of an application can have their own perimeters.
-- [Apply network security group rules](/azure/virtual-network/tutorial-filter-network-traffic#create-security-rules) to allow traffic only from the subnets that have an app subcomponent identified as a legitimate communications counterpart.
+- To allow traffic only from the subnets that have an app subcomponent identified as a legitimate communications counterpart, [apply network security group rules](/azure/virtual-network/tutorial-filter-network-traffic#create-security-rules).
 
 
 #### Segment and enforce the external boundaries
@@ -196,9 +196,9 @@ Follow these steps, depending on the type of boundary:
 
 ##### Internet boundary
 
-- If internet connectivity is required for your application that needs to be routed via the virtual network hub, [update the network security group rules](/azure/virtual-network/tutorial-filter-network-traffic) in virtual network hub to allow internet connectivity.
-- [Turn on Azure DDoS Protection Standard](/azure/virtual-network/manage-ddos-protection#enable-ddos-for-an-existing-virtual-network)
-    to protect the virtual network hub from volumetric network layer attacks.
+- To provide internet connectivity for your application route via the virtual network hub, [update the network security group rules](/azure/virtual-network/tutorial-filter-network-traffic) in virtual network hub.
+- To protect the virtual network hub from volumetric network layer attacks, [turn on Azure DDoS Protection Standard](/azure/virtual-network/manage-ddos-protection#enable-ddos-for-an-existing-virtual-network).
+    
 - If your application uses HTTP/S protocols, [turn on Azure Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell) to protect against Layer 7 threats.
 
 
@@ -262,10 +262,10 @@ Configure automated investigation and response capabilities in Microsoft Defende
 **Microsoft Sentinel playbooks**
 
 Microsoft Sentinel playbooks are based on Logic Apps, a cloud service that schedules, automates, and orchestrates tasks and workflows across enterprise systems. Build response playbooks with templates. Deploy solutions from the Microsoft Sentinel content hub. Build custom analytics rules and response actions with Azure Logic Apps.
-- Microsoft Sentinel playbooks from templates
+- Build Microsoft Sentinel playbooks from templates
 - Automate threat response with playbooks
-- Microsoft Sentinel content hub catalog
-- Azure Logic Apps
+- Locate the Microsoft Sentinel content hub catalog
+- Learn about Azure Logic Apps
 
 **AI Driven by Analytics decides A&O modifications**
 
@@ -288,17 +288,17 @@ Enable reviewer decision helpers in access reviews. The User-to-Group Affiliatio
 
 **Microsoft Defender Extended Detection and Response (XDR)**
 
-Microsoft Defender Extended Detection and Response (XDR) is a unified pre- and post-breach enterprise defense suite that coordinates detection, prevention, investigation, and response natively across endpoints, identities, email, and applications. Use Defender XDR to protect against and respond to sophisticated attacks.
+Microsoft Defender Extended Detection and Response (XDR) is a unified enterprise defense suite you use before and after a breach. The suite coordinates detection, prevention, investigation, and response natively across endpoints, identities, email, and applications. Use Defender XDR to protect against and respond to sophisticated attacks.
 
 - Investigate alerts
-- Zero Trust with Defender XDR
-- Defender XDR for US government
+- Learn about Zero Trust with Defender XDR
+- Learn about Defender XDR for US government
 
 **Microsoft Sentinel**
 
 Develop custom analytics queries and visualize collected data using workbooks.
 
-- Custom analytics rules to detect threats
+- Detect threats with customized analytics rules
 - Visualize collected data
 - Use workbooks with Global Secure Access
 
@@ -332,9 +332,9 @@ Apply Conditional Access policies with risk conditions to network access to Micr
 
 Discontinue the use of signature-based Network Intrusion Detection/Network Intrusion Prevention (NIDS/NIPS) Systems and Network Data Leakage/Loss Prevention (DLP).
 
-The major cloud service providers already filter for malformed packets and common network layer attacks, so there's no need for a NIDS/NIPS solution to detect those. In addition, traditional NIDS/NIPS solutions are typically driven by signature-based approaches (which are considered outdated) and are easily evaded by attackers and typically produce a high rate of false positives.
+The major cloud service providers already filter for malformed packets and common network layer attacks, so there's no need for a NIDS/NIPS solution to detect the attacks. In addition, traditional NIDS/NIPS solutions typically use signature-based approaches (which are considered outdated) and attackers easily evade them. Signature-based approaches produce a high rate of false positives.
 
-Network-based DLP is decreasingly effective at identifying both inadvertent and deliberate data loss. The reason for this is that most modern protocols and attackers use network-level encryption for inbound and outbound communications. The only viable workaround for this is `SSL-bridging` which provides an "authorized man-in-the-middle" that terminates and then reestablishes encrypted network connections. The `SSL-bridging` approach has fallen out of favor because of the level of trust required for the partner running the solution and the technologies that are being used.
+Network-based DLP is decreasingly effective at identifying both inadvertent and deliberate data loss. The reason for this is that most modern protocols and attackers use network-level encryption for inbound and outbound communications. The only viable workaround is `SSL-bridging` which provides an "authorized man-in-the-middle" that terminates and then reestablishes encrypted network connections. The `SSL-bridging` approach is out of favor because of the level of trust required for the partner running the solution and the technologies that are being used.
 
 Based on this rationale, we offer an all-up recommendation that you discontinue use of these legacy network security technologies. However, if your organizational experience is that these technologies prevent and detect real attacks, consider porting them to your cloud environment.
 

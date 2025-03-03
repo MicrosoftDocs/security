@@ -154,6 +154,8 @@ These types of threats fall into two broad categories:
 
 Take these steps to protect against known threats:
 
+1. Implement Microsoft Entra Internet Access capabilities.
+
 1.  **For endpoints with HTTP/S traffic**, protect using [Azure Web Application Firewall (WAF)](/azure/web-application-firewall/overview) by:
 
     1.  Turning on the default ruleset or [OWASP top 10](https://owasp.org/www-project-top-ten/) protection ruleset to protect against known web-layer attacks
@@ -254,9 +256,9 @@ Follow these steps, depending on the type of boundary:
 
 ##### On-premises boundary
 
-1.  If your app needs connectivity to your on-premise data center, [use Azure ExpressRoute](/azure/expressroute/expressroute-howto-circuit-portal-resource-manager) of Azure VPN [for connectivity to your hub VNet](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal).
+1. If your app needs connectivity to your on-premise data center or private cloud, use Microsoft Entra Private Access, [Azure ExpressRoute]([use Azure ExpressRoute](/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)) or [Azure VPN for connectivity to your hub VNet](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal). 
 
-2.  [Configure the Azure Firewall](/azure/firewall/tutorial-hybrid-ps) in the hub VNet to inspect and govern traffic.
+2. [Configure the Azure Firewall](/azure/firewall/tutorial-hybrid-ps) in the hub VNet to inspect and govern traffic.
 
 
 ##### PaaS services boundary

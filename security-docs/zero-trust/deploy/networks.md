@@ -67,39 +67,9 @@ Before most organizations start their Zero Trust journey, they have network secu
 
 It is crucial to transition from these legacy patterns and consider a structured approach like the CISA Zero Trust Maturity Model (ZTMM). This model guides organizations through different stages of Zero Trust implementation, ensuring a comprehensive and phased adoption of Zero Trust principles.
 
-<table border="0">
-   <tr>
-      <td colspan="2">
-         <p>When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on these <b>initial deployment objectives</b>:</p>
-	  </td>
-   </tr>
-   <tr>
-      <td>
-		 <p><img src="../media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
-      </td>
-      <td>
-		 <p><b>I.</b> <a href="#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation">Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation.</a></p>
-	     <p><b>II.</b> <a href="#ii-threat-protection-cloud-native-filtering-and-protection-for-known-threats">Threat protection: Cloud native filtering and protection for known threats.</a></p>
-		 <p><b>III.</b> <a href="#iii-encryption-user-to-app-internal-traffic-is-encrypted">Encryption: User-to-app internal traffic is encrypted.</a></p>
-      </td>
-   </tr>
-   <tr>
-      <td colspan="2">
-         <p>After these are completed, focus on these <b>additional deployment objectives</b>:</p>
-      </td>
-   </tr>
-   <tr>
-      <td>
-		 <p><img src="../media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
-      </td>
-      <td>
-         <p><b>IV.</b> <a href="#iv-network-segmentation-fully-distributed-ingressegress-cloud-micro-perimeters-and-deeper-micro-segmentation">Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation.</a></p>
-         <p><b>V.</b> <a href="#v-threat-protection-machine-learning-based-threat-protection-and-filtering-with-context-based-signals">Threat protection: Machine learning-based threat protection and filtering with context-based signals.</a></p>
-         <p><b>VI.</b> <a href="#vi-encryption-all-traffic-is-encrypted">Encryption: All traffic is encrypted.</a></p>
-        <p><b>VII.</b> <a href="#vii-discontinue-legacy-network-security-technology">Discontinue legacy network security technology.</a></p>
-      </td>
-   </tr>
-</table>
+
+When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on objectives one through four. After these are completed, focus on objectives five through ten.
+
 
 ## Networking Zero Trust deployment guide
 

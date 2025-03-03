@@ -23,8 +23,6 @@ In summary, the replacement of traditional VPNs with SASE, coupled with the inte
 
 ## Key Principles of the Zero Trust Network Model
 
-:::image type="icon" source="../media/icon-networks-medium.png":::
-
 Instead of assuming that everything behind the corporate firewall is secure, an end-to-end Zero Trust strategy acknowledges that breaches are inevitable. This approach requires verifying each request as if it originates from an uncontrolled network, with identity management playing a crucial role. By incorporating the CISA and NIST Zero Trust models and patterns, organizations can enhance their security posture and better protect their networks.
 
 In the Zero Trust model, there are three key objectives when it comes to securing your networks:

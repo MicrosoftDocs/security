@@ -24,7 +24,8 @@ authentication, the Service principal ID (aka client ID) of an application makin
 2. On the left navigation panel, go to **Identity** > **Show more...** > **Monitoring & health** > **Sign-in logs**.
 3. Go to the **Service principal sign-ins** tab.
 4. Filter by **Service principal ID**, and enter “00000000-0000-0000-0000-000000000000” in the input field.
-5. Change the Date sorting to be **Custom time interval**, and set it to 30 days.  
+5. Change the Date sorting to be **Custom time interval**, and set it to 30 days.
+6. Click on a log to view the details, and navigate to the **Application ID** in the side panel to find the Client Application ID for the next step.
 
 ## Create Enterprise Application:
 Then, as a resource tenant administrator, [create an enterprise application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell) in the resource tenant for each of the named applications. The resource tenant administrator must

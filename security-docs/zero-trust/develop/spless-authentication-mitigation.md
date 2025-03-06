@@ -21,7 +21,7 @@ authentication, the Service principal ID (aka client ID) of an application makin
 
 ## Create Enterprise Application:
 Then, as a resource tenant administrator, [create an enterprise application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell) in the resource tenant for each of the named applications. The resource tenant administrator must
-register the application using the Client App ID noted in the list below, also available from sign-in logs.
+register the application using the Client App ID noted in the email received, also available from sign-in logs.
 
 ## Verify Tokens:
 Finally, the administrator of the resource tenant should verify that the tokens issued to the application are no longer SP-less. This can verified in sign-in logs. The Service principal ID should appear with a unique 
@@ -30,9 +30,7 @@ numerical, non-zero, GUID in the format “########-####-####-####-############.
 # FAQ:
 
 ## What is happening?
-Entra ID will block authentication for multi-tenant applications that are currently able to authenticate without an enterprise application registration in tenants.  This behavior has already been blocked for most resources, 
-but we are now addressing a few remaining exceptions. This scenario is also known as Service-Principal-Less or “SP-Less Authentication.” This is a preventive security measure. SP-less authentication issues tokens without 
-permissions and without an object identifier (object ID). 
+Entra ID will block authentication for multi-tenant applications that are currently able to authenticate without an enterprise application registration in tenants.  This behavior has already been blocked for most resources, but we are now addressing a few remaining exceptions. This scenario is also known as Service-Principal-Less or “SP-Less Authentication.” This is a preventive security measure. SP-less authentication issues tokens without permissions and without an object identifier (object ID). 
 
 ## Why are we making these changes?
 We are deprecating SP-less authentication behavior by making “requireClientServicePrincipal” a requirement for all applications in order to improve our “Security by default” 

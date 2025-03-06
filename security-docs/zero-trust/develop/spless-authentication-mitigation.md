@@ -19,6 +19,13 @@ including verifying access, creating an enterprise application, and verifying to
 First, verify that access by the named application(s) to the resource(s) listed is necessary. The application’s sign-in activity can be reviewed by the resource tenant’s administrator via [sign-in logs](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-ins). In SP-less 
 authentication, the Service principal ID (aka client ID) of an application making an SP-Less auth is shown as “00000000-0000-0000-0000-000000000000” in the sign-in logs of the resource/target tenant.  
 
+### Using Sign-In Logs to Verify Access:
+1. Navigate to the [Entra Portal](https://entra.microsoft.com/#home).
+2. On the left navigation panel, go to **Identity** > **Show more...** > **Monitoring & health** > **Sign-in logs**.
+3. Go to the **Service principal sign-ins** tab.
+4. Filter by **Service principal ID**, and enter “00000000-0000-0000-0000-000000000000” in the input field.
+5. Change the Date sorting to be **Custom time interval**, and set it to 30 days.  
+
 ## Create Enterprise Application:
 Then, as a resource tenant administrator, [create an enterprise application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell) in the resource tenant for each of the named applications. The resource tenant administrator must
 register the application using the Client App ID noted in the email received, also available from sign-in logs.

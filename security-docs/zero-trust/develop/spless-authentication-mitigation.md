@@ -28,7 +28,7 @@ authentication, the Service principal ID (aka client ID) of an application makin
 
 ## Create Enterprise Application:
 Then, as a resource tenant administrator, [create an enterprise application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell) in the resource tenant for each of the named applications. The resource tenant administrator must
-register the application using the Client App ID noted in the email received, also available from sign-in logs.
+register the application using the Client App ID noted in the email received or through the method above, also available from sign-in logs.
 
 ## Verify Tokens:
 Finally, the administrator of the resource tenant should verify that the tokens issued to the application are no longer SP-less. This can verified in sign-in logs. The Service principal ID should appear with a unique 

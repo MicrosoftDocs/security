@@ -330,14 +330,14 @@
 			<title>Sheet.2253</title>
 			<g id="shape2254-77" v:mID="2254" v:groupContext="shape" transform="translate(34.5475,-6.56319)">
 				<title>Sheet.2254</title>
-				<desc>Microsoft Copilot Chat</desc>
+				<desc>Microsoft 365 Copilot Chat</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(137000):26"/>
 				</v:userDefs>
 				<v:textBlock v:margins="rect(4,4,4,4)"/>
-				<v:textRect cx="66.575" cy="364.064" width="133.15" height="21.2237"/>
-				<rect x="0" y="353.453" width="133.15" height="21.2237" rx="4.5" ry="4.5" class="st5"/>
-				<text x="4.8" y="367.66" class="st10" v:langID="1033"><v:paragraph v:spAfter="6" v:horizAlign="1"/><v:tabList/>Microsoft Copilot Chat</text>			</g>
+				<v:textRect cx="85.0091" cy="364.064" width="170.02" height="21.2237"/>
+				<rect x="0" y="353.453" width="170.018" height="21.2237" rx="4.5" ry="4.5" class="st5"/>
+				<text x="11.58" y="367.66" class="st10" v:langID="1033"><v:paragraph v:spAfter="6" v:horizAlign="1"/><v:tabList/>Microsoft 365 Copilot Chat</text>			</g>
 			<g id="shape20-81" v:mID="20" v:groupContext="shape">
 				<title>Sheet.20</title>
 				<v:userDefs>

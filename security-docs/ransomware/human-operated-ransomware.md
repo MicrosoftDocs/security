@@ -56,7 +56,7 @@ Human-operated ransomware attacks involve the following stages:
 
 Meanwhile, Storm-1811 is a threat actor known for social engineering attacks leading to the deployment of BlackBasta using Qakbot and other malware. In late October to early November, Storm-1811 was observed flooding target email addresses with spam (email bombing attack) before posing as help desk personnel offering to help with the spam problem. In this new campaign, Storm-1811 was observed deploying a new malware loader called ReedBed.
 
-Microsoft Defender data shows that the most widespread ransomware variants in the last quarter of 2024 were Akira, FOG, Qilin, Lynx, and the aforementioned RansomHub and BlackBasta. This period also saw the new ransomware variants SafePay and Hellcat.
+Microsoft Defender data shows that the most widespread ransomware variants in the last quarter of 2024 were Akira, FOG, Qilin, Lynx, and the aforementioned RansomHub and BlackBasta. This period also saw the new ransomware variants SafePay and Hellcat. March 2025 has seen the resurface of Qilin ransomware through threat actor Moonstone Sleet.
 
 ## How Microsoft can help with an in-progress ransomware attack
 

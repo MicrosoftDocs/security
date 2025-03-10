@@ -169,25 +169,3 @@ External access users have less access and functionality than guest access users
 Conditional Access policies apply only to guest access users in Teams because there are corresponding Microsoft Entra B2B accounts. External access doesn't use Microsoft Entra B2B accounts and therefore can't use Conditional Access policies.
 
 For recommended policies to allow access with a Microsoft Entra B2B account, see [Policies for allowing guest and external B2B account access](zero-trust-identity-device-access-policies-guest-access.md).
-
-## Teams policies
-
-There are Teams-specific policies that you need to configure to manage specific features in Teams:
-
-- **Team and channel policies**: Control what users can and can't do in teams and channels in the global teams policy (all users) or custom teams policies (specific groups of users). For more information, see [Manage channel policies in Microsoft Teams](/microsoftteams/teams-policies).
-
-  > [!TIP]
-  > Although global teams are available, you're more likely to create smaller and more specific teams and channels to meet your business needs.
-
-- **Messaging policies**: Control access to features in chats and channels in the global messaging policy (all users) or custom messaging policies (specific groups of users). For more information, see [Managing messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).
-
-- **Meeting policies**: Control the join experience and access to features in meetings in the global meeting policy (all users) or custom meeting policies (specific groups of users). For more information, see [Meeting policy reference](/microsoftteams/settings-policies-reference#meetings).
-
-- **Teams app permissions**: Control the availability of Teams apps and agents within Teams:
-  - **App centric management** (if available): Control access to apps for individual users, supported groups, or everyone in the organization.
-  For more information about app permission policies, see [Use app centric management to manage access to apps](/microsoftteams/app-centric-management).
-  - **App permission policies** (if available): Use the global app permission policy (all users) or custom app permission policies (specific groups of users). For more information, see [Use app permission policies to control user access to apps](/microsoftteams/teams-app-permission-policies).
-
-    > [!NOTE]
-    > App centric management is replacing app permission policies. For more information, see [MC688930](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC688930).
- 

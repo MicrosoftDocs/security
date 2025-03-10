@@ -1,7 +1,7 @@
 ---
-title: Building apps that secure identity through permissions and access
-description: Learn about authentication, authorization, and identity management so that you can use a Zero Trust approach to identity in your software development lifecycle (SDLC).
-ms.date: 05/24/2024
+title: Secure app identity with permissions and access
+description: Learn about authentication, authorization, and identity management with a Zero Trust approach to identity in your software development lifecycle (SDLC).
+ms.date: 02/24/2025
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
@@ -20,7 +20,7 @@ Here's an overview of the **Permissions and access** articles in this [Developer
 - [Supported identity and account types for single- and multitenant apps](identity-supported-account-types.md) explains how you can choose if your app allows only users from your Microsoft Entra tenant, any Microsoft Entra tenant, or users with personal Microsoft accounts.
 - [Authenticate users for Zero Trust](user-authentication.md) helps developers to learn best practices for authenticating application users in Zero Trust application development. It describes how to enhance application security with the Zero Trust principles of least privilege and verify explicitly.
 - [Acquire authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
-- [Develop delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
+- [Develop delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop with Zero Trust principles.
 - [Develop application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.
 - [Request permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience when application permissions require administrative consent.
 - [Reduce overprivileged permissions and apps](overprivileged-permissions.md) helps you to understand why applications shouldn't request more permissions than they need (overprivileged). Learn how to limit privilege to manage access and improve security.
@@ -36,11 +36,10 @@ Here's an overview of the **Permissions and access** articles in this [Developer
 
 ## Next steps
 
-- [Subscribe](/api/search/rss?search=%22Develop+using+Zero+Trust+principles%22&locale=en-us) to  our *Develop using Zero Trust principles* RSS feed for notification of new articles.
 - [Develop using Zero Trust principles](overview.md) helps you to understand the guiding principles of Zero Trust so that you can improve your application security.
 - [What do we mean by Zero Trust compliance?](identity-zero-trust-compliance.md) provides an overview of application security from a developer's perspective to address the guiding principles of Zero Trust.
 - Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle to create secure applications.
 - [Standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards and their benefits.
 - [Developer and administrator responsibilities for application registration, authorization, and access](identity-developer-administrator-responsibilities.md) helps you to better collaborate with your IT Pros.
-- [Build Zero Trust-ready apps using Microsoft identity platform features and tools](/entra/identity-platform/zero-trust-for-developers) maps features of the Microsoft identity platform to the principles of Zero Trust.
+- [Build Zero Trust-ready apps with Microsoft identity platform features and tools](/entra/identity-platform/zero-trust-for-developers) maps features of the Microsoft identity platform to the principles of Zero Trust.
 - The [Identity integrations](../integrate/identity.md) guide explains how to integrate security solutions with Microsoft products to create Zero Trust solutions.

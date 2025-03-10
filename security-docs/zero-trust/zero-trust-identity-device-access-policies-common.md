@@ -22,7 +22,7 @@ ms.collection:
   - zerotrust-solution
   - tier2
 search.appverid: met150
-ms.date: 01/22/2025
+ms.date: 03/10/2025
 ---
 
 # Common security policies for Microsoft 365 organizations
@@ -37,9 +37,9 @@ Organizations can take these policies as is or customize them to fit their needs
 
 We group these policies into three protection levels based on where you are on your deployment journey:
 
-- **Starting point** - Basic controls that introduce multifactor authentication, secure password changes, and app protection policies.
-- **Enterprise** - Enhanced controls that introduce device compliance.
-- **Specialized security** - Policies that require multifactor authentication every time for specific data sets or users.
+- **Starting point**: Basic controls that introduce multifactor authentication, secure password changes, and Intune app protection policies for mobile devices.
+- **Enterprise**: Enhanced controls that introduce device compliance.
+- **Specialized security**: Policies that require multifactor authentication every time for specific data sets or users.
 
 The following diagram shows the protection levels that each policy applies to and what types of devices the policies apply to:
 
@@ -48,7 +48,7 @@ The following diagram shows the protection levels that each policy applies to an
 You can download this diagram as a [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) file.
 
 > [!TIP]
-> We recommend requiring multifactor authentication (MFA) for users before enrolling devices in Intune to ensure that the device is in the possession of the intended user. MFA is on by default due to [security defaults](/entra/fundamentals/security-defaults#enforced-security-policies), or you can use [Conditional Access policies to require MFA for all users](/entra/identity/conditional-access/policy-all-users-mfa-strength).
+> We recommend requiring multifactor authentication (MFA) for users before enrolling devices in Intune to ensure they are in possession of the device. MFA is on by default due to [security defaults](/entra/fundamentals/security-defaults#enforced-security-policies), or you can use [Conditional Access policies to require MFA for all users](/entra/identity/conditional-access/policy-all-users-mfa-strength).
 >
 > Devices must be enrolled in Intune before you can enforce device compliance policies.
 
@@ -80,16 +80,16 @@ The following table describes example group assignments and exclusions for MFA a
 
 |&nbsp;|Microsoft Entra Conditional Access policy|Include|Exclude|
 |---|---|:---:|---|
-|**Starting point**|Require multifactor authentication for medium or high sign-in risk|*All users*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
-|**Enterprise**|Require multifactor authentication for low, medium, or high sign-in risk|*Executive staff group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
-|**Specialized security**|Require multifactor authentication always|*Top Secret Project Buckeye group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
+|**Starting point**|Require multifactor authentication for **Medium** or **High** sign-in risk|*All users*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
+|**Enterprise**|Require multifactor authentication for **Low**, **Medium**, or **High** sign-in risk|*Executive staff group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
+|**Specialized security**|Require multifactor authentication **always**|*Top Secret Project Buckeye group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
 
 > [!TIP]
 > Be careful when applying higher levels of protection to users and groups. The goal of security isn't to add unnecessary friction to the user experience. For example, members of the *Top Secret Project Buckeye group* are required to use MFA every time they sign in, even if they aren't working on the specialized content for their project. Excessive security friction can lead to fatigue. Enable [phishing-resistant authentication methods](/entra/identity/authentication/concept-authentication-passwordless) (for example, Windows Hello for Business or FIDO2 security keys) to help reduce the friction caused by security controls.
 
 ### Emergency access accounts
 
-All organizations should have at least one emergency access account that is monitored for use and excluded from policies (and possibly more, depending on the size of the organization). **These accounts are only used in case all other administrator accounts and authentication methods become locked out or otherwise unavailable**. For more information, see [Manage emergency access accounts in Microsoft Entra ID](/entra/identity/role-based-access-control/security-emergency-access).
+All organizations should have at least one emergency access account (and possibly more, depending on the size of the organization) that's monitored for use and excluded from policies. **These accounts are only used in case all other administrator accounts and authentication methods become locked out or otherwise unavailable**. For more information, see [Manage emergency access accounts in Microsoft Entra ID](/entra/identity/role-based-access-control/security-emergency-access).
 
 ### Exclusions
 
@@ -118,17 +118,17 @@ We recommend implementing the [starting point policies](#starting-point) in the 
 
 |Policy|More information|Licensing|
 |---|---|---|
-|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)|Require MFA only when risk is detected by Microsoft Entra ID Protection.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+|[Require MFA when sign-in risk is *Medium* or *High*](#require-mfa-based-on-sign-in-risk)|Require MFA only when risk is detected by Microsoft Entra ID Protection.|<ul><li>Microsoft 365 E5</li><li>Microsoft 365 E3 with the E5 Security add-on</li><li>Microsoft 365 with EMS E5</li><li>Individual Microsoft Entra ID P2 licenses</li></ul>|
 |[Block clients that don't support modern authentication](#block-clients-that-dont-support-multifactor-authentication)|Clients that don't use modern authentication can bypass Conditional Access policies, so it's important to block them.|Microsoft 365 E3 or E5|
-|[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
-|[Apply application protection policies for data protection](#app-protection-policies)|One Intune app protection policy per platform (Windows, iOS/iPadOS, and Android).|Microsoft 365 E3 or E5|
-|[Require approved apps and app protection policies](#require-approved-apps-or-app-protection-policies)|Enforces app protection policies for phones and tablets using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
+|[High risk users must change password](#high-risk-users-must-change-password)|Force users to change their password when signing in if high-risk activity is detected for their account.|<ul><li>Microsoft 365 E5</li><li>Microsoft 365 E3 with the E5 Security add-on</li><li>Microsoft 365 with EMS E5</li><li>Individual Microsoft Entra ID P2 licenses</li></ul>|
+|[Apply Application Protection Policies (APP) for data protection](#app-protection-policies)|One Intune APP per mobile device platform (Windows, iOS/iPadOS, and Android).|Microsoft 365 E3 or E5|
+|[Require approved apps and app protection policies](#require-approved-apps-or-app-protection-policies)|Enforces app protection policies for mobile devices using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
 
 ### Enterprise
 
 |Policy|More information|Licensing|
 |---|---|---|
-|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)|Require MFA only when risk is detected by Microsoft Entra ID Protection.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+|[Require MFA when sign-in risk is **Low**, **Medium**, or **High**](#require-mfa-based-on-sign-in-risk)|Require MFA only when risk is detected by Microsoft Entra ID Protection.|<ul><li>Microsoft 365 E5</li><li>Microsoft 365 E3 with the E5 Security add-on</li><li>Microsoft 365 with EMS E5</li><li>Individual Microsoft Entra ID P2 licenses</li></ul>|
 |[Define device compliance policies](#device-compliance-policies)|Set minimum configuration requirements. One policy for each platform.|Microsoft 365 E3 or E5|
 |[Require compliant PCs and mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces the configuration requirements for devices accessing your organization|Microsoft 365 E3 or E5|
 
@@ -136,7 +136,7 @@ We recommend implementing the [starting point policies](#starting-point) in the 
 
 |Policy|More information|Licensing|
 |---|---|---|
-|[*Always* require MFA](#always-require-mfa)|Users are required to do MFA anytime they sign in to services in the organization.|Microsoft 365 E3 or E5|
+|[Require MFA **Always**](#always-require-mfa)|Users are required to do MFA anytime they sign in to services in the organization.|Microsoft 365 E3 or E5|
 
 ## App protection policies
 

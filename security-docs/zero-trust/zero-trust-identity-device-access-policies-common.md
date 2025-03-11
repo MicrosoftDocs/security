@@ -62,7 +62,7 @@ The following permissions in Microsoft Entra are required:
 - **Manage app protection and device compliance policies**: The [Intune Administrator](/entra/identity/role-based-access-control/permissions-reference#intune-administrator) role.
 - **View configurations only**: The [Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader) role.
 
-For more information about roles and permissions in Microsoft Entra, see the article [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+For more information about roles and permissions in Microsoft Entra, see [Overview of role-based access control in Microsoft Entra ID](/entra/identity/role-based-access-control/custom-overview).
 
 ### User registration
 

@@ -497,17 +497,22 @@
     },
     {
       "source_path": "zero-trust-identity-device-access-policies-exchange.md",
-      "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-workloads",
+      "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-workloads#exchange-online-recommendations-for-zero-trust",
       "redirect_document_id": false
     },
     {
       "source_path": "zero-trust-identity-device-access-policies-sharepoint.md",
-      "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-workloads",
+      "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-workloads#sharepoint-recommendations-for-zero-trust",
       "redirect_document_id": false
     },
     {
       "source_path": "zero-trust-identity-device-access-policies-teams.md",
-      "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-workloads",
+      "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-workloads#microsoft-teams-recommendations-for-zero-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "zero-trust-identity-device-access-policies-mcas-saas.md",
+      "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-workloads#saas-app-recommendations-for-zero-trust",
       "redirect_document_id": false
     },
     {

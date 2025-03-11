@@ -6,7 +6,7 @@ manager: dansimp
 ms.topic: conceptual
 audience: Admin
 ms.author: bcarter
-ms.date: 01/23/2025
+ms.date: 03/10/2025
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -42,10 +42,6 @@ You can begin to manage these apps by doing the following steps:
 1. In Defender for Cloud Apps, create session policies. Create one policy for each control you want to apply.
 
 Permissions to SaaS apps are typically based on business need for access to the app. These permissions can be highly dynamic. Using Defender for Cloud Apps policies ensures protection to app data, regardless of whether users are assigned to a Microsoft Entra group associated with starting point, enterprise, or specialized security protection.
-
-To protect data across your collection of SaaS apps, the following diagram illustrates the necessary Microsoft Entra Conditional Access policy plus suggested policies you can create in Defender for Cloud Apps. In this example, the policies created in Defender for Cloud Apps apply to all SaaS apps you're managing. These policies are designed to apply appropriate controls based on whether devices are managed as well as sensitivity labels that are already applied to files.
-
-:::image type="content" source="media/microsoft-365-policies-configurations/manage-saas-apps-2.svg" alt-text="Diagram that shows the policies for managing SaaS apps in Defender for Cloud Apps." lightbox="media/microsoft-365-policies-configurations/manage-saas-apps-2.svg":::
 
 The following table lists the new Conditional Access policy you must create in Microsoft Entra ID:
 
@@ -90,9 +86,7 @@ Anomaly detection policy templates are added regularly. For examples of how to a
 
 Defender for Cloud Apps can be a valuable tool for configuring protection for compliance regulations. You create specific policies to look for regulated data and configure each policy to take appropriate action.
 
-The following illustration and table provide several examples of policies that you can configure to help comply with the General Data Protection Regulation (GDPR). Based on the sensitivity of the data, each policy is configured to take appropriate action.
-
-:::image type="content" source="media/microsoft-365-policies-configurations/microsoft-cloud-app-security-data-loss-prevention.svg" alt-text="Diagram that shows the Defender for Cloud Apps policies for data loss prevention page." lightbox="media/microsoft-365-policies-configurations/microsoft-cloud-app-security-data-loss-prevention.svg":::
+The following table provides examples of policies you can configure to help comply with the General Data Protection Regulation (GDPR). Based on the sensitivity of the data, each policy is configured to take appropriate action.
 
 |Protection level|Example policies|
 |---|---|

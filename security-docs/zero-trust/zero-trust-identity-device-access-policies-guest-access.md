@@ -21,7 +21,7 @@ ms.collection:
   - zerotrust-solution
   - tier2
 search.appverid: met150
-ms.date: 01/22/2025
+ms.date: 03/10/2025
 ---
 
 # Policies for allowing guest access and B2B external user access
@@ -33,10 +33,6 @@ These recommendations are designed to apply to the **starting point** tier of pr
 Providing a path for B2B accounts to authenticate with your Microsoft Entra organization doesn't give these accounts access to your entire environment. B2B users and their accounts have access to services and resources (for example, files) designated by Conditional Access policy.
 
 ## Updating the common policies to allow and protect guests and external user access
-
-This diagram shows which policies to add or update among the common identity and device access policies, for B2B guest and external user access:
-
-:::image type="content" source="media/microsoft-365-policies-configurations/identity-access-rule-set-guest.svg" alt-text="Diagram that shows the summary of policy updates for protecting guest access." lightbox="media/microsoft-365-policies-configurations/identity-access-rule-set-guest.svg":::
 
 The following table lists the policies you need to create and update. The common policies link to the associated configuration instructions in [Common identity and device access policies](zero-trust-identity-device-access-policies-common.md).
 

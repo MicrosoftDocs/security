@@ -24,6 +24,19 @@ sections:
      lightImageSrc: /security/media/security-hub/security-hero.png
      darkImageSrc: /security/media/security-hub/security-hero.png
 
+
+
+# Embedded video
+  - componentType: bifold
+    blocks:
+      - componentType: text
+        title: "Secure Future Initiative: Tech Tips"
+        summary: "Secure Future Initiative: Tech Tips show provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture."
+      - componentType: "video"
+        src: "https://learn-video.azurefd.net/vod/player?id=cce8f81c-8b21-4a11-b204-7fcbc4840324"
+
+
+
 # Spotlight selections
   - componentType: testimonials-section
     title: 'Discover top picks'

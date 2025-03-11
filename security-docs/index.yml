@@ -30,8 +30,8 @@ sections:
   - componentType: bifold
     blocks:
       - componentType: text
-        title: "Secure Future Initiative: Tech Tips"
-        summary: "Secure Future Initiative: Tech Tips show provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture."
+        title: "Watch: Secure Future Initiative: Tech Tips"
+        summary: "Secure Future Initiative: Tech Tips provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture. '[Click to watch](https://learn.microsoft.com/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios)'"
       - componentType: "video"
         src: "https://learn-video.azurefd.net/vod/player?id=cce8f81c-8b21-4a11-b204-7fcbc4840324"
 

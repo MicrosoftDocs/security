@@ -568,7 +568,6 @@ Example for Event ID 1203:
 
 ![Example of an event 4624](./media/incident-response-playbook-phishing/ir-event-4624.png)
 
-To get the full list of ADFS Event ID per OS Level, refer to [GetADFSEventList](https://adfshelp.microsoft.com/AdfsEventViewer/GetAdfsEventList).
 
 ### Managed scenario
 

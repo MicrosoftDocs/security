@@ -1,10 +1,10 @@
 ---
 title: Identifying Security Bug Reports Based on Report Titles and Noisy Data
-author: TerryLanfear
-ms.author: terrylan
-manager: rkarlin
+author: kenwith
+ms.author: kenwith
+manager: femila
+ms.date: 03/12/2025
 description: Learn about Microsoft's lessons-learned from using machine learning to improve the accuracy of labeling in security bug reports (SCRs).
-ms.date: 03/22/2024
 ms.service: security
 ms.topic: conceptual
 ---

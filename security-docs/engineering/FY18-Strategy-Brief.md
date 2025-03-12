@@ -2,10 +2,11 @@
 layout: Conceptual
 title: Microsoft Cybersecurity Defense Operations Center
 description: Cybersecurity is a shared responsibility. In this brief, we share the state of online security, threat actors, and the sophisticated tactics they employ to advance their goals, and some of the best practices that Microsoft’s Cyber Defense Operations Center uses to combat these threats and help customers protect their sensitive applications and data.
-ms.date: 12/03/2018
+ms.date: 03/12/2025
 ms.service: security
-ms.author: modrake
-author: modrake
+ms.author: kenwith
+author: kenwith
+manager: femila
 ms.topic: conceptual
 ---
 

@@ -2,11 +2,11 @@
 layout: Conceptual
 title: Securing the Future of AI and ML at Microsoft
 description: This research paper shares some of Microsoft's security lessons-learned from designing products and operating online services built on AI.
-ms.date: 01/22/2024
 ms.service: security
-author: TerryLanfear
-ms.author: terrylan
-manager: rkarlin
+author: kenwith
+ms.author: kenwith
+manager: femila
+ms.date: 03/12/2025
 ms.topic: conceptual
 ---
 

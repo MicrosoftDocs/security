@@ -39,31 +39,31 @@ sections:
           text: Get skilled
       - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
-        name: Microsoft Security Copilot Flight School
+        name: Security for AI with Microsoft Purview & Defender for Cloud
         role: Video
-        feedback: Learn what generative AI is and how to use Copilot to quickly analyze and mitigate threats using natural language to empower your security and IT teams to protect at the speed and scale of AI.
+        feedback: Watch this 4-part series and learn to prepare your environment for secure AI adoption to safeguard your data and identify threats to your AI.
         link:
           componentType: link
-          url: /shows/microsoft-security-copilot-flight-school/?wt.mc_id=securityhub_flightschool_webpage_devrelstudios 
+          url: https://developer.microsoft.com/en-us/reactor/series/S-1489/?wt.mc_id=securityhub_LLsecurityAI_webpage_sci 
           text: Watch now
+      - avatarUrl: /security/media/hubpage/blog-icon.png
+        componentType: testimonial-card
+        name: A Guide to Azure Well-Architected Framework's Security Pillar
+        role: Blog
+        feedback: Build more secure, efficient, and reliable cloud applications with the Well-Architected Framework.
+        link:
+          componentType: link
+          url: https://techcommunity.microsoft.com/blog/azureinfrastructureblog/cloud-security-as-a-city-planner-a-guide-to-azure-well-architected-framework%E2%80%99s-s/4382706?wt.mc_id=securityhub_WAFsecurity_webpage_cnl
+          text: Read more
       - avatarUrl: /security/media/hubpage/generic-badge.svg
         componentType: testimonial-card
-        name: Identify and mitigate AI data security risks
+        name: "Security 101: Cybersecurity for beginners"
         role: Training
-        feedback: Learn how to monitor AI activity, enforce security policies, and prevent unauthorized data exposure with Data Security Posture Management.
+        feedback: Learn how to secure IT systems and fundamental cybersecurity concepts to kick-start your security learning.
         link:
           componentType: link
-          url: /training/modules/purview-identify-mitigate-ai-risks/?wt.mc_id=securityhub_DSPM_webpage_sci
-          text: Start now
-      - avatarUrl: /security/media/hubpage/certification.png
-        componentType: testimonial-card
-        name: Validate your critical information security skills
-        role: Blog
-        feedback: Read about the new Microsoft Certification and become part of your team's cybersecurity solution.
-        link:
-          componentType: link
-          url: https://techcommunity.microsoft.com/blog/microsoftlearnblog/validate-critical-information-security-skills-with-our-new-certification/3719269?wt.mc_id=securityhub_sc401_webpage_sci
-          text: Get certified
+          url: /plans/odm7f0p5j6opq5?wt.mc_id=securityhub_security101_webpage_cnl
+          text: Start today
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

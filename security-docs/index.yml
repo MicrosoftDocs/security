@@ -41,6 +41,17 @@ sections:
 
 
 
+# Markdown section for video
+  - componentType: markdown
+    content: |
+      Secure Future Initiative: Tech Tips
+      
+      Secure Future Initiative: Tech Tips provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture.
+      
+      [!VIDEO cce8f81c-8b21-4a11-b204-7fcbc4840324]
+
+
+
 # Spotlight selections
   - componentType: testimonials-section
     title: 'Discover top picks'

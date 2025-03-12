@@ -41,7 +41,7 @@ sections:
 
 
 
-# Markdown section for video
+# Markdown section for video standard
   - componentType: markdown
     content: |
       **Secure Future Initiative: Tech Tips**
@@ -49,6 +49,24 @@ sections:
       Secure Future Initiative: Tech Tips provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture. [Checkout the show on Learn!](/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios)
       >
       > [!VIDEO cce8f81c-8b21-4a11-b204-7fcbc4840324]
+
+
+
+# Markdown section for video with flexbox
+  - componentType: markdown
+    content: |
+      <table>
+        <tr>
+          <td width="50%" valign="top">
+            [!VIDEO cce8f81c-8b21-4a11-b204-7fcbc4840324]
+          </td>
+          <td width="50%" valign="top">
+            <strong>Secure Future Initiative: Tech Tips</strong>
+            <p>Secure Future Initiative: Tech Tips provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture. <a href="/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios">Checkout the show on Learn!</a></p>
+          </td>
+        </tr>
+      </table>
+
 
 
 # Spotlight selections

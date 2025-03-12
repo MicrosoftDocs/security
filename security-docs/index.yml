@@ -62,7 +62,7 @@ sections:
         feedback: Learn how to secure IT systems and fundamental cybersecurity concepts to kick-start your security learning.
         link:
           componentType: link
-          url: /plans/odm7f0p5j6opq5
+          url: https://learn.microsoft.com/plans/odm7f0p5j6opq5?wt.mc_id=securityhub_security101_webpage_cnl
           text: Start today
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

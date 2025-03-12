@@ -82,7 +82,7 @@ sections:
     blocks:
       - componentType: text
         title: "Secure Future Initiative: Tech Tips"
-        summary: "Secure Future Initiative: Tech Tips provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture."
+        summary: "Check out bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture."
         links:
           - componentType: link
             text: "Checkout the show on Learn!"

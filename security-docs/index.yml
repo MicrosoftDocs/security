@@ -24,33 +24,14 @@ sections:
      lightImageSrc: /security/media/security-hub/security-hero.png
      darkImageSrc: /security/media/security-hub/security-hero.png
 
-
-
-# Bifold section for embedded video
-  - componentType: bifold
-    blocks:
-      - componentType: text
-        title: "Secure Future Initiative: Tech Tips"
-        summary: "Secure Future Initiative: Tech Tips provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture."
-        links:
-          - componentType: link
-            text: "Checkout the show on Learn!"
-            url: "/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios"
-      - componentType: "video"
-        src: "https://learn-video.azurefd.net/vod/player?id=cce8f81c-8b21-4a11-b204-7fcbc4840324"
-
-
-
-# Markdown section for embedded video
-  - componentType: markdown
-    content: |
-      **Secure Future Initiative: Tech Tips**
-      
-      [Secure Future Initiative: Tech Tips](/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios) provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture.
-      >
-      > [!VIDEO cce8f81c-8b21-4a11-b204-7fcbc4840324]
-
-
+# Markdown section for embedded video (format hold)
+#  - componentType: markdown
+#    content: |
+#      # **Secure Future Initiative: Tech Tips**
+#      
+#      [Secure Future Initiative: Tech Tips](/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios) provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture.
+#      >
+#      > [!VIDEO cce8f81c-8b21-4a11-b204-7fcbc4840324]
 
 # Spotlight selections
   - componentType: testimonials-section
@@ -95,6 +76,19 @@ sections:
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+
+# Bifold section for embedded video
+  - componentType: bifold
+    blocks:
+      - componentType: text
+        title: "Secure Future Initiative: Tech Tips"
+        summary: "Secure Future Initiative: Tech Tips provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture."
+        links:
+          - componentType: link
+            text: "Checkout the show on Learn!"
+            url: "/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios"
+      - componentType: "video"
+        src: "https://learn-video.azurefd.net/vod/player?id=cce8f81c-8b21-4a11-b204-7fcbc4840324"
 
 ##### Markdown section
 # Jump start your security learning journey

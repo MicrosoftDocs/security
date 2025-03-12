@@ -6,7 +6,7 @@ summary: This collection of resources is designed to help you find security rela
 metadata:
   title: Microsoft security engineering documentation
   description: Find security related documentation and information from across Microsoft.
-  services: security
+  ms.service: security
   ms.topic: landing-page
   author: TerryLanfear
   ms.author: terrylan

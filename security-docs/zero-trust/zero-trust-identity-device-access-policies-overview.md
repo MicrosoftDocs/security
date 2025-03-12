@@ -23,7 +23,7 @@ ms.collection:
   - highpri
   - tier1
 search.appverid: met150
-ms.date: 01/21/2025
+ms.date: 03/12/2025
 ---
 
 # Zero Trust identity and device access configurations
@@ -160,6 +160,16 @@ Microsoft Entra ID provides a full suite of identity management capabilities. We
 Here are the components of Zero Trust identity and device access, including Intune and Microsoft Entra objects, settings, and subservices.
 
 :::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="The Components of Zero Trust identity and device access" lightbox="media/microsoft-365-policies-configurations/identity-device-access-components.png":::
+
+### Continuous access evaluation
+
+Continuous access evaluation for Microsoft 365 and Microsoft Entra ID proactively terminates active user sessions and enforces policy changes in near real time.
+
+Microsoft Entra ID notifies supported Microsoft 365 services when the authentication state of a user account requires reevaluation. When a supported app tries to access a Microsoft 365 service with a revoked access token, the service rejects the token, and the user session is redirected to Microsoft Entra ID for reauthentication. This action is known as *claim challenge*. The result is near real time enforcement of user account and policy changes.
+
+Continuous access evaluation is included in all versions of Office 365 and Microsoft 365. Configuring Conditional Access policies requires Microsoft Entra ID P1, which is included in all Microsoft 365 versions.
+
+For more information, see [Continuous access evaluation](/entra/identity/conditional-access/concept-continuous-access-evaluation).
 
 ### Microsoft Intune
 

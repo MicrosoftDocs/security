@@ -110,8 +110,6 @@
         href: zero-trust-identity-device-access-policies-guest-access.md
       - name: Recommended policies and settings for Microsoft 365 workloads
         href: zero-trust-identity-device-access-policies-workloads.md
-      - name: Continuous access evaluation
-        href: zero-trust-continuous-access-evaluation-microsoft-365.md
     - name: Manage endpoints with Intune and Microsoft 365
       items:
       - name: Overview

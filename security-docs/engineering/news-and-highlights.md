@@ -1,12 +1,11 @@
 ---
 title: Security news and highlights
 description: Security news and highlights from across Microsoft.
-author: TerryLanfear
-ms.service: security
+author: kenwith
+ms.author: kenwith
+manager: femila
+ms.date: 03/12/2025
 ms.topic: article
-ms.author: terrylan
-manager: rkarlin
-ms.date: 02/13/2024
 ---
 
 # Security news and highlights
@@ -30,7 +29,6 @@ Here are past news and highlights that you may have missed or would like to revi
 - [Evaluate and pilot Microsoft Defender XDR (extended detection and response)](/microsoft-365/security/defender/eval-overview)
 - [Learn about Permissions Management, a CIEM (cloud infrastructure entitlement management) solution](/azure/active-directory/cloud-infrastructure-entitlement-management/overview)
 - [Secure IaaS services in Amazon Web Services](/security/zero-trust/secure-iaas-apps)
-- [The BlueHat podcast](https://shows.acast.com/the-bluehat-podcast)
 - [Quickly deploy ransomware protections](/security/ransomware/protect-against-ransomware)
 - [Security rapid modernization plan](/security/privileged-access-workstations/security-rapid-modernization-plan)
 - [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
@@ -71,7 +69,6 @@ Here are past news and highlights that you may have missed or would like to revi
 - [Security hurdles you can sail over — One architect’s viewpoint](/microsoft-365/solutions/security-design-principles)
 - [Azure Security Podcast - Network Isolation and Private Endpoints](https://rss.com/podcasts/azsecpodcast/63940/)
 - [CISO Series: Lessons learned from the Microsoft SOC—Part: A day in the life part 2](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)
-- [Azure Security Podcast](https://azsecuritypodcast.azurewebsites.net/)
 - [Azure threat detection](/azure/security/fundamentals/threat-detection)
 - [Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data](identifying-security-bug-reports.md)
 - [Solving the TLS 1.0 Problem, 2nd Edition](solving-tls1-problem.md)

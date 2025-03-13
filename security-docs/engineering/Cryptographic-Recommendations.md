@@ -9,7 +9,7 @@ ms.date: 05/19/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+
 ms.reviewer: joylynnkirui, raulga
 ---
 # Microsoft SDL cryptographic recommendations

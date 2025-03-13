@@ -5,7 +5,7 @@ ms.date: 02/24/2025
 ms.service: security
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+
 ms.topic: conceptual
 ms.collection:
   - zerotrust-ramp

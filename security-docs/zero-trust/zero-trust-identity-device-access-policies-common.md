@@ -3,7 +3,7 @@ title: Common Zero Trust identity and device access policies - Microsoft 365 for
 description: Describes the recommended common Zero Trust identity and device access policies and configurations.
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+
 ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
 audience: Admin

@@ -9,7 +9,7 @@ ms.date: 06/20/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+
 ms.reviewer: mas
 ---
 # Securing privileged access

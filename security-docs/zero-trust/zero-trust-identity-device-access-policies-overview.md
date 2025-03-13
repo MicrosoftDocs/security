@@ -36,10 +36,6 @@ To address this new world of computing, Microsoft highly recommends the Zero Tru
 - **Use least privilege access**: Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
 - **Assume breach**: Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
 
-Here's the overall architecture of Zero Trust:
-
-:::image type="content" source="media/zero-trust/zero-trust-architecture.png" alt-text="Diagram that shows Microsoft Zero Trust architecture." lightbox="media/zero-trust/zero-trust-architecture.png":::
-
 Zero Trust identity and device access policies address the **Verify explicitly** guiding principle for:
 
 - **Identities**: When an identity attempts to access a resource, verify that identity with strong authentication and ensure that requested access is compliant and typical.

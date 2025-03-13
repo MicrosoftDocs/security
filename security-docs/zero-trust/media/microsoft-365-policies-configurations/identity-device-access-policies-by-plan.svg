@@ -42,10 +42,10 @@
 		.st27 {fill:#000000;font-family:Segoe UI;font-size:0.833336em;font-weight:bold}
 		.st28 {font-size:1em;font-weight:normal}
 		.st29 {fill:#000000;font-family:Segoe UI;font-size:0.75em}
-		.st30 {fill:#2a446f;stroke:none;stroke-width:0.25}
-		.st31 {fill:#000000;font-family:Segoe UI Semibold;font-size:0.833336em}
-		.st32 {font-family:Calibri;font-size:1em}
-		.st33 {fill:none;stroke:none;stroke-width:1}
+		.st30 {fill:#000000;font-family:Segoe UI Semibold;font-size:0.833336em}
+		.st31 {font-family:Calibri;font-size:1em}
+		.st32 {fill:none;stroke:none;stroke-width:1}
+		.st33 {fill:#00b050;stroke:#00b050;stroke-width:1}
 		.st34 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -248,7 +248,7 @@
 			<rect x="0" y="482.537" width="122.616" height="309.463" rx="4.5" ry="4.5" class="st18"/>
 			<text x="5.99" y="497.99" class="st19" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Require compliant <v:lf/><tspan
 						x="5.99" dy="1.2em" class="st10">PCs </tspan><tspan class="st21">and </tspan>mobile <tspan x="5.99"
-						dy="1.2em" class="st10">devices.<v:newlineChar/></tspan><tspan x="5.99" dy="1.771em" class="st22">Enforce Intune </tspan><tspan
+						dy="1.2em" class="st10">devices.<v:newlineChar/></tspan><tspan x="5.99" dy="1.771em" class="st22">Enforces Intune </tspan><tspan
 						x="5.99" dy="1.2em" class="st22">management <v:lf/></tspan><tspan x="5.99" dy="1.2em" class="st22">for PCs and mobile </tspan><tspan
 						x="5.99" dy="1.2em" class="st22">devices.</tspan></text>		</g>
 		<g id="shape1710-70" v:mID="1710" v:groupContext="shape" v:layerMember="3;6" transform="translate(534.228,-106.976)">
@@ -439,7 +439,7 @@
 			</g>
 			<rect x="0" y="724.5" width="122.616" height="67.5" rx="4.5" ry="4.5" class="st18"/>
 			<text x="5.99" y="739.95" class="st19" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Require approved apps.<v:newlineChar/><tspan
-						x="5.99" dy="1.771em" class="st22">Enforce app protection </tspan><tspan x="5.99" dy="1.2em" class="st22">for mobile devices.</tspan></text>		</g>
+						x="5.99" dy="1.771em" class="st22">Enforces app protection </tspan><tspan x="5.99" dy="1.2em" class="st22">for mobile devices.</tspan></text>		</g>
 		<g id="shape1702-149" v:mID="1702" v:groupContext="shape" v:layerMember="3;6" transform="translate(1060.88,-268.975)">
 			<title>Sheet.1702</title>
 			<desc>Apply Level 2 APP data protection</desc>
@@ -568,38 +568,12 @@
 						x="-0" dy="1.2em" class="st10">• </tspan>Microsoft 365 E5<v:newlineChar/><tspan x="-0" dy="1.2em"
 						class="st10">• </tspan>Microsoft 365 E3 with the E5 Identity add-on<v:newlineChar/><tspan x="-0" dy="1.2em"
 						class="st10">• </tspan>Microsoft 365 with EMS E5<v:newlineChar/><tspan x="-0" dy="1.2em" class="st10">• </tspan>Individual Microsoft Entra ID P2 licenses</text>		</g>
-		<g id="group1872-197" transform="translate(461.064,-77.2295)" v:mID="1872" v:groupContext="group" v:layerMember="1">
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(146000):26"/>
-			</v:userDefs>
-			<title>Certificate Dark Blue.1872</title>
-			<g id="shape1873-198" v:mID="1873" v:groupContext="shape" v:layerMember="1" transform="translate(0,-3.77001)">
-				<title>Sheet.1873</title>
-				<path d="M0 788.4 C0 786.41 1.61 784.8 3.6 784.8 C5.59 784.8 7.2 786.41 7.2 788.4 C7.2 790.39 5.59 792 3.6 792 C1.61
-							 792 0 790.39 0 788.4 Z" class="st2"/>
-			</g>
-			<g id="shape1874-200" v:mID="1874" v:groupContext="shape" v:layerMember="1" transform="translate(0.900924,1.13687E-13)">
-				<title>Sheet.1874</title>
-				<path d="M2.7 789.13 C3.71 789.13 4.65 788.79 5.4 788.23 L5.4 791.15 L5.39 791.25 C5.33 791.73 4.76 792 4.34 791.71
-							 L2.7 790.56 L1.06 791.71 L0.98 791.75 C0.54 791.98 0 791.67 0 791.15 L0 788.23 C0.75 788.8 1.69 789.13
-							 2.7 789.13 Z" class="st30"/>
-			</g>
-			<g id="shape1875-202" v:mID="1875" v:groupContext="shape" v:layerMember="1" transform="translate(0.000877457,-3.77118)">
-				<title>Sheet.1875</title>
-				<path d="M2.47 778.5 C1.11 778.5 0 779.61 0 780.98 L0 785.7 C0.82 784.61 2.13 783.9 3.6 783.9 C6.08 783.9 8.1 785.92
-							 8.1 788.4 C8.1 789.41 7.76 790.35 7.2 791.1 L7.2 792 L15.52 792 C16.89 792 18 790.89 18 789.53 L18 780.98
-							 C18 779.61 16.89 778.5 15.52 778.5 L2.47 778.5 ZM13.72 782.1 L4.27 782.1 C3.9 782.1 3.6 782.4 3.6 782.78
-							 C3.6 783.15 3.9 783.45 4.27 783.45 L13.72 783.45 C14.1 783.45 14.4 783.15 14.4 782.78 C14.4 782.4 14.1
-							 782.1 13.72 782.1 ZM9.67 786.6 C9.3 786.6 9 786.9 9 787.28 C9 787.65 9.3 787.95 9.67 787.95 L13.72 787.95
-							 C14.1 787.95 14.4 787.65 14.4 787.28 C14.4 786.9 14.1 786.6 13.72 786.6 L9.67 786.6 Z" class="st30"/>
-			</g>
-		</g>
-		<g id="group2000-204" transform="translate(270.9,-430.976)" v:mID="2000" v:groupContext="group" v:layerMember="3;6">
+		<g id="group2000-197" transform="translate(270.9,-430.976)" v:mID="2000" v:groupContext="group" v:layerMember="3;6">
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(201000):26"/>
 			</v:userDefs>
 			<title>Sheet.2000</title>
-			<g id="shape1719-205" v:mID="1719" v:groupContext="shape" v:layerMember="6;3">
+			<g id="shape1719-198" v:mID="1719" v:groupContext="shape" v:layerMember="6;3">
 				<title>Sheet.1719</title>
 				<desc>Require multifactor authentication (MFA) when sign-in risk is...</desc>
 				<v:userDefs>
@@ -607,7 +581,7 @@
 				</v:userDefs>
 				<v:textBlock v:margins="rect(6,6,6,6)" v:verticalAlign="0"/>
 				<v:textRect cx="61.3076" cy="717.923" width="122.63" height="148.154"/>
-				<g id="shadow1719-206" v:groupContext="shadow" v:shadowOffsetX="4.40873E-24" v:shadowOffsetY="-2" v:shadowType="1"
+				<g id="shadow1719-199" v:groupContext="shadow" v:shadowOffsetX="4.40873E-24" v:shadowOffsetY="-2" v:shadowType="1"
 						v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-0.61308,-5.17923)" class="st16">
 					<rect x="0" y="643.846" width="122.616" height="148.154" rx="4.5" ry="4.5" class="st17"/>
 				</g>
@@ -615,42 +589,13 @@
 				<text x="6" y="659.3" class="st19" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Require multifactor <tspan
 							x="6" dy="1.2em" class="st10">authentication (MFA) </tspan><tspan x="6" dy="1.2em" class="st10">when sign</tspan>-in risk is <tspan
 							x="6" dy="1.2em" class="st25">Medium</tspan> or <tspan class="st25">High</tspan>.</text>			</g>
-			<g id="group1867-215" transform="translate(95.616,-4.50049)" v:mID="1867" v:groupContext="group" v:layerMember="1;3;6">
-				<v:userDefs>
-					<v:ud v:nameU="visNavOrder" v:val="VT0(145000):26"/>
-				</v:userDefs>
-				<title>Certificate Dark Blue.1867</title>
-				<g id="shape1868-216" v:mID="1868" v:groupContext="shape" v:layerMember="1;3;6" transform="translate(0,-3.77001)">
-					<title>Sheet.1868</title>
-					<path d="M0 788.4 C0 786.41 1.61 784.8 3.6 784.8 C5.59 784.8 7.2 786.41 7.2 788.4 C7.2 790.39 5.59 792 3.6 792
-								 C1.61 792 0 790.39 0 788.4 Z" class="st2"/>
-				</g>
-				<g id="shape1869-218" v:mID="1869" v:groupContext="shape" v:layerMember="1;3;6"
-						transform="translate(0.900924,1.13687E-13)">
-					<title>Sheet.1869</title>
-					<path d="M2.7 789.13 C3.71 789.13 4.65 788.79 5.4 788.23 L5.4 791.15 L5.39 791.25 C5.33 791.73 4.76 792 4.34
-								 791.71 L2.7 790.56 L1.06 791.71 L0.98 791.75 C0.54 791.98 0 791.67 0 791.15 L0 788.23 C0.75 788.8
-								 1.69 789.13 2.7 789.13 Z" class="st30"/>
-				</g>
-				<g id="shape1870-220" v:mID="1870" v:groupContext="shape" v:layerMember="1;3;6"
-						transform="translate(0.000877457,-3.77118)">
-					<title>Sheet.1870</title>
-					<path d="M2.47 778.5 C1.11 778.5 0 779.61 0 780.98 L0 785.7 C0.82 784.61 2.13 783.9 3.6 783.9 C6.08 783.9 8.1
-								 785.92 8.1 788.4 C8.1 789.41 7.76 790.35 7.2 791.1 L7.2 792 L15.52 792 C16.89 792 18 790.89 18 789.53
-								 L18 780.98 C18 779.61 16.89 778.5 15.52 778.5 L2.47 778.5 ZM13.72 782.1 L4.27 782.1 C3.9 782.1 3.6
-								 782.4 3.6 782.78 C3.6 783.15 3.9 783.45 4.27 783.45 L13.72 783.45 C14.1 783.45 14.4 783.15 14.4
-								 782.78 C14.4 782.4 14.1 782.1 13.72 782.1 ZM9.67 786.6 C9.3 786.6 9 786.9 9 787.28 C9 787.65 9.3
-								 787.95 9.67 787.95 L13.72 787.95 C14.1 787.95 14.4 787.65 14.4 787.28 C14.4 786.9 14.1 786.6 13.72
-								 786.6 L9.67 786.6 Z" class="st30"/>
-				</g>
-			</g>
 		</g>
-		<g id="group2001-222" transform="translate(270.9,-268.975)" v:mID="2001" v:groupContext="group" v:layerMember="3;6">
+		<g id="group2001-208" transform="translate(270.9,-268.975)" v:mID="2001" v:groupContext="group" v:layerMember="3;6">
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(202000):26"/>
 			</v:userDefs>
 			<title>Sheet.2001</title>
-			<g id="shape1717-223" v:mID="1717" v:groupContext="shape" v:layerMember="6;3">
+			<g id="shape1717-209" v:mID="1717" v:groupContext="shape" v:layerMember="6;3">
 				<title>Sheet.1717</title>
 				<desc>Require MFA when sign-in risk is low, medium, or high</desc>
 				<v:userDefs>
@@ -658,7 +603,7 @@
 				</v:userDefs>
 				<v:textBlock v:margins="rect(6,6,6,6)" v:verticalAlign="0"/>
 				<v:textRect cx="61.3076" cy="717.924" width="122.63" height="148.154"/>
-				<g id="shadow1717-224" v:groupContext="shadow" v:shadowOffsetX="4.40873E-24" v:shadowOffsetY="-2" v:shadowType="1"
+				<g id="shadow1717-210" v:groupContext="shadow" v:shadowOffsetX="4.40873E-24" v:shadowOffsetY="-2" v:shadowType="1"
 						v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-0.61308,-5.17923)" class="st16">
 					<rect x="0" y="643.846" width="122.616" height="148.154" rx="4.5" ry="4.5" class="st17"/>
 				</g>
@@ -666,42 +611,13 @@
 				<text x="6" y="659.3" class="st19" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Require MFA when <v:lf/><tspan
 							x="6" dy="1.2em" class="st10">sign</tspan>-in risk is <tspan class="st25">Low</tspan>, <tspan x="6"
 							dy="1.2em" class="st25">Medium</tspan>, or <tspan class="st25">High</tspan>.</text>			</g>
-			<g id="group1863-233" transform="translate(95.616,-4.50049)" v:mID="1863" v:groupContext="group" v:layerMember="1;3;6">
-				<v:userDefs>
-					<v:ud v:nameU="visNavOrder" v:val="VT0(144000):26"/>
-				</v:userDefs>
-				<title>Certificate Dark Blue.1863</title>
-				<g id="shape1864-234" v:mID="1864" v:groupContext="shape" v:layerMember="1;3;6" transform="translate(0,-3.77001)">
-					<title>Sheet.1864</title>
-					<path d="M0 788.4 C0 786.41 1.61 784.8 3.6 784.8 C5.59 784.8 7.2 786.41 7.2 788.4 C7.2 790.39 5.59 792 3.6 792
-								 C1.61 792 0 790.39 0 788.4 Z" class="st2"/>
-				</g>
-				<g id="shape1865-236" v:mID="1865" v:groupContext="shape" v:layerMember="1;3;6"
-						transform="translate(0.900924,1.13687E-13)">
-					<title>Sheet.1865</title>
-					<path d="M2.7 789.13 C3.71 789.13 4.65 788.79 5.4 788.23 L5.4 791.15 L5.39 791.25 C5.33 791.73 4.76 792 4.34
-								 791.71 L2.7 790.56 L1.06 791.71 L0.98 791.75 C0.54 791.98 0 791.67 0 791.15 L0 788.23 C0.75 788.8
-								 1.69 789.13 2.7 789.13 Z" class="st30"/>
-				</g>
-				<g id="shape1866-238" v:mID="1866" v:groupContext="shape" v:layerMember="1;3;6"
-						transform="translate(0.000877457,-3.77118)">
-					<title>Sheet.1866</title>
-					<path d="M2.47 778.5 C1.11 778.5 0 779.61 0 780.98 L0 785.7 C0.82 784.61 2.13 783.9 3.6 783.9 C6.08 783.9 8.1
-								 785.92 8.1 788.4 C8.1 789.41 7.76 790.35 7.2 791.1 L7.2 792 L15.52 792 C16.89 792 18 790.89 18 789.53
-								 L18 780.98 C18 779.61 16.89 778.5 15.52 778.5 L2.47 778.5 ZM13.72 782.1 L4.27 782.1 C3.9 782.1 3.6
-								 782.4 3.6 782.78 C3.6 783.15 3.9 783.45 4.27 783.45 L13.72 783.45 C14.1 783.45 14.4 783.15 14.4
-								 782.78 C14.4 782.4 14.1 782.1 13.72 782.1 ZM9.67 786.6 C9.3 786.6 9 786.9 9 787.28 C9 787.65 9.3
-								 787.95 9.67 787.95 L13.72 787.95 C14.1 787.95 14.4 787.65 14.4 787.28 C14.4 786.9 14.1 786.6 13.72
-								 786.6 L9.67 786.6 Z" class="st30"/>
-				</g>
-			</g>
 		</g>
-		<g id="group2002-240" transform="translate(797.556,-106.976)" v:mID="2002" v:groupContext="group" v:layerMember="3;6">
+		<g id="group2002-219" transform="translate(797.556,-106.976)" v:mID="2002" v:groupContext="group" v:layerMember="3;6">
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(203000):26"/>
 			</v:userDefs>
 			<title>Sheet.2002</title>
-			<g id="shape1699-241" v:mID="1699" v:groupContext="shape" v:layerMember="6;3">
+			<g id="shape1699-220" v:mID="1699" v:groupContext="shape" v:layerMember="6;3">
 				<title>Sheet.1699</title>
 				<desc>High-risk users must change password This policy forces users...</desc>
 				<v:userDefs>
@@ -709,53 +625,24 @@
 				</v:userDefs>
 				<v:textBlock v:margins="rect(6,6,6,6)" v:verticalAlign="0"/>
 				<v:textRect cx="61.3077" cy="556.614" width="122.63" height="470.772"/>
-				<g id="shadow1699-242" v:groupContext="shadow" v:shadowOffsetX="4.40873E-24" v:shadowOffsetY="-2" v:shadowType="1"
+				<g id="shadow1699-221" v:groupContext="shadow" v:shadowOffsetX="4.40873E-24" v:shadowOffsetY="-2" v:shadowType="1"
 						v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-0.61308,-3.56614)" class="st16">
 					<rect x="0" y="321.228" width="122.616" height="470.772" rx="4.5" ry="4.5" class="st17"/>
 				</g>
 				<rect x="0" y="321.228" width="122.616" height="470.772" rx="4.5" ry="4.5" class="st18"/>
 				<text x="6" y="336.68" class="st19" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>High-risk users must <tspan
 							x="6" dy="1.2em" class="st10">change password.<v:newlineChar/></tspan><tspan x="6" dy="1.771em"
-							class="st22">Force users to change </tspan><tspan x="6" dy="1.2em" class="st22">their password when </tspan><tspan
+							class="st22">Forces users to change </tspan><tspan x="6" dy="1.2em" class="st22">their password when </tspan><tspan
 							x="6" dy="1.2em" class="st22">signing in if high</tspan><tspan class="st22">-</tspan><tspan
 							class="st22">risk </tspan><tspan x="6" dy="1.2em" class="st22">activity is detected for </tspan><tspan
 							x="6" dy="1.2em" class="st22">their account.</tspan></text>			</g>
-			<g id="group1962-255" transform="translate(95.6184,-4.50049)" v:mID="1962" v:groupContext="group" v:layerMember="1;3;6">
-				<v:userDefs>
-					<v:ud v:nameU="visNavOrder" v:val="VT0(174000):26"/>
-				</v:userDefs>
-				<title>Certificate Dark Blue.1962</title>
-				<g id="shape1963-256" v:mID="1963" v:groupContext="shape" v:layerMember="1;3;6" transform="translate(0,-3.77001)">
-					<title>Sheet.1963</title>
-					<path d="M0 788.4 C0 786.41 1.61 784.8 3.6 784.8 C5.59 784.8 7.2 786.41 7.2 788.4 C7.2 790.39 5.59 792 3.6 792
-								 C1.61 792 0 790.39 0 788.4 Z" class="st2"/>
-				</g>
-				<g id="shape1964-258" v:mID="1964" v:groupContext="shape" v:layerMember="1;3;6"
-						transform="translate(0.900924,1.13687E-13)">
-					<title>Sheet.1964</title>
-					<path d="M2.7 789.13 C3.71 789.13 4.65 788.79 5.4 788.23 L5.4 791.15 L5.39 791.25 C5.33 791.73 4.76 792 4.34
-								 791.71 L2.7 790.56 L1.06 791.71 L0.98 791.75 C0.54 791.98 0 791.67 0 791.15 L0 788.23 C0.75 788.8
-								 1.69 789.13 2.7 789.13 Z" class="st30"/>
-				</g>
-				<g id="shape1965-260" v:mID="1965" v:groupContext="shape" v:layerMember="1;3;6"
-						transform="translate(0.000877457,-3.77118)">
-					<title>Sheet.1965</title>
-					<path d="M2.47 778.5 C1.11 778.5 0 779.61 0 780.98 L0 785.7 C0.82 784.61 2.13 783.9 3.6 783.9 C6.08 783.9 8.1
-								 785.92 8.1 788.4 C8.1 789.41 7.76 790.35 7.2 791.1 L7.2 792 L15.52 792 C16.89 792 18 790.89 18 789.53
-								 L18 780.98 C18 779.61 16.89 778.5 15.52 778.5 L2.47 778.5 ZM13.72 782.1 L4.27 782.1 C3.9 782.1 3.6
-								 782.4 3.6 782.78 C3.6 783.15 3.9 783.45 4.27 783.45 L13.72 783.45 C14.1 783.45 14.4 783.15 14.4
-								 782.78 C14.4 782.4 14.1 782.1 13.72 782.1 ZM9.67 786.6 C9.3 786.6 9 786.9 9 787.28 C9 787.65 9.3
-								 787.95 9.67 787.95 L13.72 787.95 C14.1 787.95 14.4 787.65 14.4 787.28 C14.4 786.9 14.1 786.6 13.72
-								 786.6 L9.67 786.6 Z" class="st30"/>
-				</g>
-			</g>
 		</g>
-		<g id="group2004-262" transform="translate(54,-323.328)" v:mID="2004" v:groupContext="group" v:layerMember="3">
+		<g id="group2004-234" transform="translate(54,-323.328)" v:mID="2004" v:groupContext="group" v:layerMember="3">
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(204000):26"/>
 			</v:userDefs>
 			<title>Sheet.2004</title>
-			<g id="shape1725-263" v:mID="1725" v:groupContext="shape" v:layerMember="3" transform="translate(0,-21.4493)">
+			<g id="shape1725-235" v:mID="1725" v:groupContext="shape" v:layerMember="3" transform="translate(0,-21.4493)">
 				<title>Sheet.1725</title>
 				<desc>Enterprise (Recommended for Zero Trust)</desc>
 				<v:userDefs>
@@ -765,7 +652,7 @@
 				<v:textRect cx="53.9995" cy="783" width="108.02" height="18"/>
 				<rect x="0" y="774" width="108" height="18" class="st11"/>
 				<text x="-0.01" y="786.6" class="st13" v:langID="1033"><v:paragraph/><v:tabList/>Enterprise</text>			</g>
-			<g id="shape1878-266" v:mID="1878" v:groupContext="shape" v:layerMember="3">
+			<g id="shape1878-238" v:mID="1878" v:groupContext="shape" v:layerMember="3">
 				<title>Sheet.1878</title>
 				<desc>Enterprise (Recommended for Zero Trust)</desc>
 				<v:userDefs>
@@ -774,15 +661,15 @@
 				<v:textBlock v:margins="rect(0,0,0,0)" v:verticalAlign="0"/>
 				<v:textRect cx="53.9995" cy="783" width="108.02" height="18"/>
 				<rect x="0" y="774" width="108" height="18" class="st11"/>
-				<text x="-0.01" y="781.69" class="st31" v:langID="1033"><v:paragraph v:spLine="-1"/><v:tabList/>(<tspan
-							class="st32">Recommended for<v:newlineChar/></tspan><tspan x="-0.01" dy="1.006em" class="st32">Zero Trust)</tspan></text>			</g>
+				<text x="-0.01" y="781.69" class="st30" v:langID="1033"><v:paragraph v:spLine="-1"/><v:tabList/>(<tspan
+							class="st31">Recommended for<v:newlineChar/></tspan><tspan x="-0.01" dy="1.006em" class="st31">Zero Trust)</tspan></text>			</g>
 		</g>
-		<g id="group2005-271" transform="translate(54,-151.875)" v:mID="2005" v:groupContext="group" v:layerMember="3">
+		<g id="group2005-243" transform="translate(54,-151.875)" v:mID="2005" v:groupContext="group" v:layerMember="3">
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(205000):26"/>
 			</v:userDefs>
 			<title>Sheet.2005</title>
-			<g id="shape1686-272" v:mID="1686" v:groupContext="shape" v:layerMember="3" transform="translate(0,-20.736)">
+			<g id="shape1686-244" v:mID="1686" v:groupContext="shape" v:layerMember="3" transform="translate(0,-20.736)">
 				<title>Sheet.1686</title>
 				<desc>Specialized security (only if needed for specific data sets o...</desc>
 				<v:userDefs>
@@ -793,7 +680,7 @@
 				<rect x="0" y="756.487" width="108" height="35.5133" class="st11"/>
 				<text x="-0.01" y="769.09" class="st13" v:langID="1033"><v:paragraph/><v:tabList/>Specialized <tspan x="-0.01"
 							dy="1.2em" class="st10">security</tspan></text>			</g>
-			<g id="shape1877-276" v:mID="1877" v:groupContext="shape" v:layerMember="3">
+			<g id="shape1877-248" v:mID="1877" v:groupContext="shape" v:layerMember="3">
 				<title>Sheet.1877</title>
 				<desc>Specialized security (only if needed for specific data sets o...</desc>
 				<v:userDefs>
@@ -802,10 +689,10 @@
 				<v:textBlock v:margins="rect(0,0,0,0)" v:verticalAlign="0"/>
 				<v:textRect cx="53.9995" cy="783" width="108.02" height="18"/>
 				<rect x="0" y="774" width="108" height="18" class="st11"/>
-				<text x="-0.01" y="781.69" class="st31" v:langID="1033"><v:paragraph v:spLine="-1"/><v:tabList/>(<tspan
-							class="st32">only if needed for <v:lf/></tspan><tspan x="-0.01" dy="1.006em" class="st32">specific data sets or users)</tspan></text>			</g>
+				<text x="-0.01" y="781.69" class="st30" v:langID="1033"><v:paragraph v:spLine="-1"/><v:tabList/>(<tspan
+							class="st31">only if needed for <v:lf/></tspan><tspan x="-0.01" dy="1.006em" class="st31">specific data sets or users)</tspan></text>			</g>
 		</g>
-		<g id="shape2008-281" v:mID="2008" v:groupContext="shape" v:layerMember="3" transform="translate(1144.08,-18)">
+		<g id="shape2008-253" v:mID="2008" v:groupContext="shape" v:layerMember="3" transform="translate(1144.08,-18)">
 			<title>Sheet.2008</title>
 			<desc>March 2025</desc>
 			<v:userDefs>
@@ -813,24 +700,24 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="7.2" v:verticalAlign="2"/>
 			<v:textRect cx="30.96" cy="783" width="61.92" height="18"/>
-			<rect x="0" y="774" width="61.92" height="18" rx="4.5" ry="4.5" class="st33"/>
+			<rect x="0" y="774" width="61.92" height="18" rx="4.5" ry="4.5" class="st32"/>
 			<text x="4" y="785.3" class="st29" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>March 2025</text>		</g>
-		<g id="group2010-284" transform="translate(45,-20.25)" v:mID="2010" v:groupContext="group">
+		<g id="group2010-256" transform="translate(45,-20.25)" v:mID="2010" v:groupContext="group">
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(210000):26"/>
 			</v:userDefs>
 			<title>Sheet.2010</title>
-			<g id="shape212-285" v:mID="212" v:groupContext="shape" v:layerMember="0;4">
+			<g id="shape212-257" v:mID="212" v:groupContext="shape" v:layerMember="0;4">
 				<title>Sheet.212</title>
 				<v:userDefs>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(209000):26"/>
 				</v:userDefs>
-				<rect v:rectContext="foreign" x="0" y="765" width="108" height="27" rx="4.5" ry="4.5" class="st33"/>
-				<clipPath id="clip-path287" clipPathUnits="userSpaceOnUse">
+				<rect v:rectContext="foreign" x="0" y="765" width="108" height="27" rx="4.5" ry="4.5" class="st32"/>
+				<clipPath id="clip-path259" clipPathUnits="userSpaceOnUse">
 					<rect x="0" y="765" width="108" height="27"/>
 				</clipPath>
 				<image x="-20.25" y="744.75" width="150.741" height="67.5632" preserveAspectRatio="none"
-						clip-path="url(#clip-path287)" overflow="hidden" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEU
+						clip-path="url(#clip-path259)" overflow="hidden" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEU
 							gAAB9gAAAOECAYAAADqv+p/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEE0AABBNAWeMAeAAAGuoSURBV
 							Hhe7N3NkexGki7QFqFFoI0EFKFFoAgUgWYpwIwIVwQuRgBu36xaBIpADYY2CvSzYKO6k+55b2XiJ9yBPIuzcV5WBYAAEBUfEPjLP
 							/7xj78AAAAAAAAAAN+WCgAAAAAAAABAlgoAAAAAAAAAQJYKAAAAAAAAAECWCgAAAAAAAABAlgoAAAAAAAAAQJYKAAAAAAAAAECWC
@@ -1200,8 +1087,36 @@
 							AAAAAAAAOAWAAAAAAAAAMAtAAAAAAAAAIBbAAAAAAAAAAC3AAAAAAAAAABuAQAAAAAAAADcAgAAAAAAAAC4BQAAAAAAAABwCwAAA
 							AAAAADgFgAAAAAAAADALQAAAAAAAACAWwAAAAAAAAAAtwAAAAAAAAAAbgEAAAAAAAAA3AIAAAAAAAAAuAUAAAAAAAAAcAsAAAAAA
 							AAA4BYAAAAAAAAAwC0AAAAAAAAAgFsAAAAAAAAAABdMnR4XPxHlbQAAAABJRU5ErkJggg=="/>
-				<rect v:rectContext="foreign" x="0" y="765" width="108" height="27" rx="4.5" ry="4.5" class="st33"/>
+				<rect v:rectContext="foreign" x="0" y="765" width="108" height="27" rx="4.5" ry="4.5" class="st32"/>
 			</g>
+		</g>
+		<g id="shape1966-261" v:mID="1966" v:groupContext="shape" transform="translate(375.75,-439.875)">
+			<title>Sheet.1966</title>
+			<v:userDefs>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(211000):26"/>
+			</v:userDefs>
+			<ellipse cx="4.5" cy="787.5" rx="4.5" ry="4.5" class="st33"/>
+		</g>
+		<g id="shape1967-263" v:mID="1967" v:groupContext="shape" transform="translate(376.875,-276.75)">
+			<title>Sheet.1967</title>
+			<v:userDefs>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(212000):26"/>
+			</v:userDefs>
+			<ellipse cx="4.5" cy="787.5" rx="4.5" ry="4.5" class="st33"/>
+		</g>
+		<g id="shape1968-265" v:mID="1968" v:groupContext="shape" transform="translate(905.045,-112.5)">
+			<title>Sheet.1968</title>
+			<v:userDefs>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(213000):26"/>
+			</v:userDefs>
+			<ellipse cx="4.5" cy="787.5" rx="4.5" ry="4.5" class="st33"/>
+		</g>
+		<g id="shape1969-267" v:mID="1969" v:groupContext="shape" transform="translate(469.687,-84.4875)">
+			<title>Sheet.1969</title>
+			<v:userDefs>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(214000):26"/>
+			</v:userDefs>
+			<ellipse cx="4.5" cy="787.5" rx="4.5" ry="4.5" class="st33"/>
 		</g>
 	</g>
 </svg>

@@ -108,7 +108,7 @@ sections:
   - componentType: cards
     title: Build foundational security skills
     summary: |
-      Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you're a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.
+      Enhance your foundational knowledge and essential skills to effectively collaborate with security colleagues or kickstart your cybersecurity career. Whether you are a new IT professional, a student, or a business leader aiming to maximize the benefits of Microsoft Security, compliance, and identity solutions, this section provides the resources to rapidly expand your expertise and capabilities.
     blocks:
     - componentType: card
       title: Describe the basic concepts of cybersecurity 
@@ -134,6 +134,21 @@ sections:
         - componentType: link
           url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification
           text: Learn more
+
+# AI skills fest promo banner
+  - componentType: hero
+    title: Microsoft AI Skills Fest 
+    layout: indented
+    size: small
+    # textColor: dark
+    background:
+      componentType: image
+      src: /security/media/security-hub/ai-skills-fest-banner.png
+    summary: Deepen your AI skills over 50 days of learning with deep dives, hackathons, and more. April 8 - May 28, 2025 
+    links:
+      - componentType: link
+        url: https://aka.ms/AISkillsFest_SecurityHub
+        text: Register now
 
 # Modern cybersecurity
   - componentType: grid

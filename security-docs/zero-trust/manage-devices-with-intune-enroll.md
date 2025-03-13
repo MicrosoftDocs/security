@@ -54,7 +54,7 @@ There are several options for enrolling Windows 10 and Windows 11 devices. The m
 
   - Autopilot for existing devices enables you to easily deploy the latest version of Windows to your existing devices.
 
-For additional options, including enrolling BYOD Windows devices, see, [Enroll Windows devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows).
+For additional options, including enrolling BYOD Windows devices, see, [Enroll Windows devices in Microsoft Intune](/mem/intune-service/fundamentals/deployment-guide-enrollment-windows).
 
 ## iOS and iPadOS enrollment
 
@@ -70,7 +70,7 @@ For organizations that buy devices for their users, Intune supports the followin
 - Apple Configurator Setup Assistant enrollment
 - Apple Configurator direct enrollment
 
-For more information, see [Enroll iOS and iPadOS devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados).
+For more information, see [Enroll iOS and iPadOS devices in Microsoft Intune](/mem/intune-service/fundamentals/deployment-guide-enrollment-ios-ipados).
 
 ## Android enrollment
 
@@ -80,7 +80,7 @@ With an Android work profile, the end user’s information is separated distinct
 
 However, if your organization is providing Android devices, you might choose to use what is called a fully managed (User Affinity) or dedicated (no User Affinity) device.
 
-To learn more about Android enrollment, see [Enroll Android devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android).
+To learn more about Android enrollment, see [Enroll Android devices in Microsoft Intune](/mem/intune-service/fundamentals/deployment-guide-enrollment-android).
 
 ## macOS enrollment
 
@@ -89,7 +89,7 @@ Enrollment for macOS can be a tricky subject for lots of IT organizations. Unles
 - **Intune-only enrollment:** This enrollment supports basic management of macOS devices. It requires a manual process much like most other user-based enrollment options. But if you have a small number of Mac devices this might be easier than setting up an entire automated infrastructure just for those few users. With Intune-only enrollment, you can deploy things like certificates, password configurations, and applications. You can also configure compliance policies, enable Conditional Access, and enforce encryption and device wipe.
 - **Intune and Jamf enrollment:** When you want deeper support for Mac management, use Jamf + Intune for Conditional Access. Microsoft has a great solution that combines the extensive Mac management capabilities of Jamf with Intune compliance with Conditional Access policies. In this scenario you're still fully managing the device with Jamf while being able to take those signals from Jamf for increased security.
 
-To learn more about macOS enrollment, see [Enroll macOS devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-macos).
+To learn more about macOS enrollment, see [Enroll macOS devices in Microsoft Intune](/mem/intune-service/fundamentals/deployment-guide-enrollment-macos).
 
 ## Next step
 

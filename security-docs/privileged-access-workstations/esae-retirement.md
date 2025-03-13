@@ -9,7 +9,7 @@ ms.date: 02/14/2023
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+
 ms.reviewer: mas, caseykahsen
 ---
 # Enhanced Security Admin Environment

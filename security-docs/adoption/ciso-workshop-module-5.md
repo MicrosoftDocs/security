@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.date: 02/27/2025
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+
 ms.reviewer: mas
 ---
 # CISO Workshop Module 5: Information Protection

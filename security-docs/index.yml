@@ -136,19 +136,19 @@ sections:
           text: Learn more
 
 # AI skills fest promo banner
-  - componentType: hero
-    title: Microsoft AI Skills Fest 
-    layout: indented
-    size: small
-    # textColor: dark
-    background:
-      componentType: image
-      src: /security/media/security-hub/ai-skills-fest-banner.png
-    summary: Deepen your AI skills over 50 days of learning with deep dives, hackathons, and more. April 8 - May 28, 2025 
-    links:
-      - componentType: link
-        url: https://aka.ms/AISkillsFest_SecurityHub
-        text: Register now
+#  - componentType: hero
+#    title: Microsoft AI Skills Fest 
+#    layout: indented
+#    size: small
+#    # textColor: dark
+#    background:
+#      componentType: image
+#      src: /security/media/security-hub/ai-skills-fest-banner.png
+#    summary: Deepen your AI skills over 50 days of learning with deep dives, hackathons, and more. April 8 - May 28, 2025 
+#    links:
+#      - componentType: link
+#        url: https://aka.ms/AISkillsFest_SecurityHub
+#        text: Register now
 
 # Modern cybersecurity
   - componentType: grid

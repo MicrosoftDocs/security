@@ -57,7 +57,7 @@ sections:
           text: Read more
       - avatarUrl: /security/media/hubpage/generic-badge.svg
         componentType: testimonial-card
-        name: "Security 101: Cybersecurity for beginners"
+        name: Cybersecurity Skilling for Technical Professionals
         role: Training
         feedback: Learn how to secure IT systems and fundamental cybersecurity concepts to kick-start your security learning.
         link:

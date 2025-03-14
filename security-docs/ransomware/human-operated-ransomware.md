@@ -45,6 +45,7 @@ Human-operated ransomware attacks involve the following stages:
 
 - [Microsoft Defender XDR](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr) - Microsoft Defender XDR includes powerful automated attack disruption capabilities that can protect your environment from sophisticated, high-impact attacks, including human-operated ransomware.
 - [Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel) - SIEM solution that stops a ransomware attack in its tracks by using machine learning to combine disparate data—network, identity, SaaS, and endpoints from both Microsoft and Partner data sources.
+- [Security Copilot](https://www.microsoft.com/security/business/ai-machine-learning/microsoft-security-copilot?msockid=3fd141c935036ef610d9506e34696fe7) - During an active ransomware attack, Security Copilot uses machine learning to provide thorough context so security professionals can share clear, concise, and comprehensive summaries of active incidents. This gives targeted entities a deep understanding of the situation, even when an incident occurs after business hours.
 
 ## Common malware used in ransomware campaigns
 

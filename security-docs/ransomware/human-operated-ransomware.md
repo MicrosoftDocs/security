@@ -41,6 +41,8 @@ Human-operated ransomware attacks involve the following stages:
 
 1. **Impact** - The affected user or organization might suffer material or reputational damage.
 
+- [Security Copilot](https://www.microsoft.com/security/business/ai-machine-learning/microsoft-security-copilot?msockid=3fd141c935036ef610d9506e34696fe7) - During an active ransomware attack, Security Copilot uses machine learning to provide thorough context so security professionals can share clear, concise, and comprehensive summaries of active incidents. This gives targeted entities a deep understanding of the situation, even when an incident occurs after business hours.
+
 ## Common malware used in ransomware campaigns
 
 - [Qakbot](https://www.microsoft.com/en-us/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware) – Uses phishing to spread malicious links, malicious attachments, and to drop malicious payloads like Cobalt Strike Beacon

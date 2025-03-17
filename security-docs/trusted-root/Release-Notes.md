@@ -7,7 +7,6 @@ author: hasokol-ms
 ms.author: hasokol
 ms.topic: conceptual
 ---
-
 # Release notes - Microsoft Trusted Root Certificate Program
 
 The Microsoft Trusted Root Certificate Program releases changes to our Root Store on a monthly cadence, except for December. The public can expect the following cadence for releases: 
@@ -23,11 +22,13 @@ Note that the changes listed are accurate at the time of posting but are subject
 A list of Root Store participants, updated monthly, can be found here: <https://aka.ms/trustcertpartners>. 
 
 ## 2025
+
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
 | February | February 25 | [Deployment Notice for February 2025](2025/february-2025.md) |
 
 ## 2024
+
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
 | December | December 24 | [Testing Notice for December 2024](dec-24-testing-notice.md) |
@@ -37,6 +38,7 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 | February | February 27 | [Deployment Notice for February 2024](2024/Feb2024.md) |
 
 ## 2023
+
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
 | November | November 28 | [Deployment Notice for November 2023](2023/Nov2023.md) |
@@ -44,6 +46,7 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 | February | February 28 | [Deployment Notice for February 2023](2023/Feb2023.md) |
 
 ## 2022
+
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
 | November | November 29 | [Deployment Notice for November 2022](2022/November2022.md) |
@@ -56,6 +59,7 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 | February | February 22 | [Deployment Notice for February 2022](2022/February2022.md) |
 
 ## 2021
+
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
 | October | October 26 | [Deployment Notice for October 2021](2021/October2021.md) |
@@ -68,6 +72,7 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 | January | January 26 | [Deployment Notice for January 2021](2021/January2021.md) |
 
 ## 2020
+
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
 | October | October 27 | [Deployment Notice Posted October 27](2020/October2020.md) |
@@ -98,8 +103,3 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 | March | March 26 | [Deployment Notice Posted March 6](2019/Mar2019.md) |
 | February | March 5 | [Deployment Notice Posted February 19](2019/Feb2019.md) |
 | January | January 29 | [Deployment Notice Posted January 23](2019/Jan2019.md) |
-
-
-## 2018 
-2018 and earlier coming soon
-

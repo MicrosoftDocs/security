@@ -1,17 +1,137 @@
-- name: Program Requirements
+- name: Program requirements
   href: program-requirements.md
-- name: Audit Requirements
+- name: Audit requirements
   href: audit-requirements.md
-- name: Testing Procedures
+- name: Testing procedures
   href: testing.md
-- name: Incident Reporting Procedure
+- name: Incident reporting procedure
   href: Incident-Reporting.md
-- name: Deprecation Definitions
+- name: Deprecation definitions
   href: Deprecation.md
-- name: New Certificate Authority Application Procedure
+- name: New certificate authority application procedure
   href: new-ca-application.md
-- name: Release Notes
+- name: Release notes
   href: Release-Notes.md
-- name: List of Participants
+- name: Releases
+  expanded: true
+  items:
+  - name: 2025
+    expanded: true
+    items:
+    - name: February 2025
+      href: 2025/february-2025.md
+  - name: 2024
+    expanded: false
+    items:
+    - name: Testing notice for December 2024 release
+      href: dec-24-testing-notice.md
+    - name: December 2024
+      href: 2024/december-2024.md
+    - name: May 2024
+      href: 2024/may-2024.md
+    - name: March 2024
+      href: 2024/March2024.md
+    - name: February 2024
+      href: 2024/Feb2024.md
+  - name: 2023
+    expanded: false
+    items:
+    - name: November 2023
+      href: 2023/Nov2023.md
+    - name: March 2023
+      href: 2023/March2023.md
+    - name: February 2023
+      href: 2023/Feb2023.md
+  - name: 2022
+    expanded: false
+    items:
+    - name: November 2022
+      href: 2022/November2022.md
+    - name: October 2022
+      href: 2022/October2022.md
+    - name: September 2022
+      href: 2022/September2022.md
+    - name: August 2022
+      href: 2022/August2022.md
+    - name: June 2022
+      href: 2022/June2022.md
+    - name: May 2022
+      href: 2022/May2022.md
+    - name: April 2022
+      href: 2022/April2022.md
+    - name: February 2022
+      href: 2022/February2022.md
+  - name: 2021
+    expanded: false
+    items:
+    - name: October 2021
+      href: 2021/October2021.md
+    - name: September 2021
+      href: 2021/September2021.md
+    - name: August 2021
+      href: 2021/August2021.md
+    - name: June 2021
+      href: 2021/June2021.md
+    - name: May 2021
+      href: 2021/May2021.md
+    - name: April 2021
+      href: 2021/April2021.md
+    - name: February 2021
+      href: 2021/Feb2021.md
+    - name: January 2021
+      href: 2021/January2021.md
+  - name: 2020
+    expanded: false
+    items:
+    - name: October 2020
+      href: 2020/October2020.md
+    - name: September 29, 2020
+      href: 2020/September2020.md
+    - name: September 3, 2020
+      href: 2020/September2020-2.md
+    - name: August
+      href: 2020/august2020.md
+    - name: July
+      href: 2020/july2020.md
+    - name: June
+      href: 2020/June2020.md
+    - name: May
+      href: 2020/May2020.md
+    - name: April 21, 2020
+      href: 2020/April2020-2.md
+    - name: April 1, 2020
+      href: 2020/April2020.md
+    - name: March 2020
+      href: 2020/March2020.md
+    - name: February 2020
+      href: 2020/Feb2020.md
+    - name: January 2020
+      href: 2020/Jan2020.md
+  - name: 2019
+    expanded: false
+    items:
+    - name: October 2019
+      href: 2019/oct2019.md
+    - name: August 14, 2019
+      href: 2019/august2019-2.md
+    - name: August 2, 2019
+      href: 2019/august2019.md
+    - name: July 11, 2019
+      href: 2019/july2019-2.md
+    - name: July 2, 2019
+      href: 2019/July2019.md
+    - name: June 2019
+      href: 2019/june2019.md
+    - name: May 2019
+      href: 2019/May2019.md
+    - name: April 2019
+      href: 2019/April2019.md
+    - name: March 2019
+      href: 2019/Mar2019.md
+    - name: February 2019
+      href: 2019/Feb2019.md
+    - name: January 2019
+      href: 2019/Jan2019.md
+- name: List of participants
   href: Participants-List.md
 

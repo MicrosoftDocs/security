@@ -47,7 +47,7 @@ Be sure to:
 
 For information about these policies, including troubleshooting device profiles in Intune and understanding conflicts between policies, see [Common questions and answers with device policies and profiles in Microsoft Intune](/mem/intune-service/configuration/device-profile-troubleshoot).
 
-To learn more about implementing common identify and device access policies, see [Common security policies for Microsoft 365 organizations)](../security/office-365-security/zero-trust-identity-device-access-policies-common.md).
+To learn more about implementing common identify and device access policies, see [Common security policies for Microsoft 365 organizations](../security/office-365-security/zero-trust-identity-device-access-policies-common.md).
 
 ## Next steps
 

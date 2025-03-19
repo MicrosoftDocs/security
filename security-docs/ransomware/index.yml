@@ -70,8 +70,8 @@ landingContent:
           url:  https://x.com/MsftSecIntel/status/1881751618695094432
         - text: Automatic disruption of ransomware attacks
           url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts
-        - text: Podcast - Doctors’ Perspective - The Rise of healthcare ransomware 
-          url:  https://podcasts.apple.com/us/podcast/doctors-perspective-the-rise-of-healthcare-ransomware/id1710656242
+        - text: Podcast - The Professionalization of the Ransomware Criminal Ecosystem
+          url:  https://thecyberwire.com/podcasts/microsoft-threat-intelligence/40/notes
 
 # Card
   - title: Microsoft Blogs about ransomware

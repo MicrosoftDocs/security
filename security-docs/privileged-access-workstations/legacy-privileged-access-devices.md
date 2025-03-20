@@ -9,7 +9,7 @@ ms.date: 01/26/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+
 ms.reviewer: mas, jnoyce
 ---
 # Legacy privileged access guidance

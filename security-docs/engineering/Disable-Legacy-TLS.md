@@ -1,9 +1,10 @@
 ---
 title: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
 description: Learn how Windows Server 2019 now allows you to block weak TLS versions from being used with individual certificates you designate.
-author: TerryLanfear
-ms.author: terrylan
-ms.date: 04/27/2023
+author: kenwith
+ms.author: kenwith
+manager: femila
+ms.date: 03/12/2025
 ms.topic: article
 ms.service: information-protection
 ---

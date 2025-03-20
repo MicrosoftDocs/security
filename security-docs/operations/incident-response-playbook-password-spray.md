@@ -513,7 +513,6 @@ If there's a data breach, you should inform more agencies, such as the police.
 6. [Enable Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) for the user risk and sign-in risk
 7. Check the compromised data (emails, SharePoint, OneDrive, apps). See how to use the [activity filter in Defender for Cloud Apps](/cloud-app-security/activity-filters).
 8. Maintain password hygiene. For more information, see [Microsoft Entra password protection](https://www.microsoft.com/research/publication/password-guidance/).
-9. You can also refer to [ADFS Help](https://adfshelp.microsoft.com/TroubleshootingGuides/Workflow/a73d5843-9939-4c03-80a1-adcbbf3ccec8).
 
 ## Recovery
 
@@ -594,7 +593,6 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 - [Microsoft Entra sign-in logs schema](/azure/active-directory/reports-monitoring/reference-azure-monitor-sign-ins-log-schema)
 - [Microsoft Entra audit log Graph API](/graph/api/resources/azure-ad-auditlog-overview)
 - [Risky IP Alerts](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/monitor-your-adfs-sign-in-activity-using-azure-ad-connect-health/ba-p/245395)
-- [ADFS Help](https://adfshelp.microsoft.com/TroubleshootingGuides/Workflow/a73d5843-9939-4c03-80a1-adcbbf3ccec8)
 
 ### Recovery
 

@@ -17,7 +17,7 @@ ms.collection:
 - msftsolution-ransomware
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: cxdef-zt-ransomware 
+ms.custom: cx-rw 
 ms.date: 10/16/2024
 ---
 

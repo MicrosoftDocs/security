@@ -63,7 +63,7 @@ Microsoft Teams defines the following users:
 
 For more information, see [Compare external access and guest access in Teams](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-access-and-guest-access).
 
-For more information on securing identity and device access policies for Teams, see [Zero Trust considerations for Microsoft Teams](zero-trust-identity-device-access-policies-workloads.md#microsoft-teams).
+For more information on securing identity and device access policies for Teams, see [Zero Trust considerations for Microsoft Teams](zero-trust-identity-device-access-policies-workloads.md#microsoft-teams-recommendations-for-zero-trust).
 
 ### Require MFA always for guest and external users
 
@@ -85,7 +85,7 @@ Only one organization can manage a device. If you don't exclude guests and exter
 
 Configure additional policies for:
 
-- [Exchange Online](zero-trust-identity-device-access-policies-workloads.md#exchange-online)
-- [SharePoint](zero-trust-identity-device-access-policies-workloads.md#sharepoint)
-- [Microsoft Teams](zero-trust-identity-device-access-policies-workloads.md#microsoft-teams)
+- [Exchange Online](zero-trust-identity-device-access-policies-workloads.md#exchange-online-recommendations-for-zero-trust)
+- [SharePoint](zero-trust-identity-device-access-policies-workloads.md#sharepoint-recommendations-for-zero-trust)
+- [Microsoft Teams](zero-trust-identity-device-access-policies-workloads.md#microsoft-teams-recommendations-for-zero-trust)
 - [Microsoft Defender for Cloud Apps](zero-trust-identity-device-access-policies-mcas-saas.md)

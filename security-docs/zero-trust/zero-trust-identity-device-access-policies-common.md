@@ -112,7 +112,7 @@ Do the following steps to add an exclusion group to any existing policies. As pr
 
 ## Deployment
 
-We recommend implementing the [starting point policies](#starting-point) in the order listed in the following table. You can implement the MFA policies for [enterprise](#enterprise) and [specialized security](#specialized-security) levels of protection at any time.
+We recommend implementing the starting point policies in the order listed in the following table. You can implement the MFA policies for enterprise and specialized security levels of protection at any time.
 
 - **Starting point**:
 
@@ -143,7 +143,7 @@ We recommend implementing the [starting point policies](#starting-point) in the 
 [App protection policies](/mem/intune/apps/app-protection-policy) specify allowed apps and the actions they can take with your organization's data. Although there are many policies to choose from, the following list describes our recommended baselines.
 
 > [!TIP]
-> Although we provide three templates, most organizations should choose Level 2 (maps to [starting point](#starting-point) or [enterprise](#enterprise) level security) and Level 3 (maps to [specialized](#specialized-security) security).
+> Although we provide three templates, most organizations should choose Level 2 (maps to [starting point](#deployment) or [enterprise](#deployment) level security) and Level 3 (maps to [specialized](#deployment) security).
 
 - [Level 1 enterprise basic data protection](/mem/intune/apps/app-protection-framework#level-1-enterprise-basic-data-protection): We recommend this configuration as the minimum data protection for enterprise devices.
 - **[Level 2 enterprise enhanced data protection](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration applies to most mobile users who access work or school data. Some of the controls might affect the user experience.
@@ -181,7 +181,7 @@ iOS/iPadOS supports several enrollment scenarios, two of which are covered by th
 - [Automated device enrollment for corporate-owned devices](/mem/intune/enrollment/device-enrollment-program-enroll-ios): Organization-owned devices that are associated with a single user, and are used exclusively for work.
 
 > [!TIP]
-> As previously described, Level 2 maps to [starting point](#starting-point) or [enterprise](#enterprise) level security, and Level 3 maps to [specialized](#specialized-security) security. For more information, see [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
+> As previously described, Level 2 maps to [starting point](#deployment) or [enterprise](#deployment) level security, and Level 3 maps to [specialized](#deployment) security. For more information, see [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
 
 #### Compliance settings for personally enrolled devices
 
@@ -205,7 +205,7 @@ Android Enterprise supports several enrollment scenarios, two of which are cover
 The Android Enterprise security configuration framework is organized into several distinct configuration scenarios that provide guidance for work profile and fully managed scenarios.
 
 > [!TIP]
-> As previously described, Level 2 maps to [starting point](#starting-point) or [enterprise](#enterprise) level security, and Level 3 maps to [specialized](#specialized-security) security. For more information, see [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
+> As previously described, Level 2 maps to [starting point](#deployment) or [enterprise](#deployment) level security, and Level 3 maps to [specialized](#deployment) security. For more information, see [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
 
 #### Compliance settings for Android Enterprise work profile devices
 

@@ -516,7 +516,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "security-docs/zero-trust/zero-trust-continuous-access-evaluation-microsoft-365",
+      "source_path": "security-docs/zero-trust/zero-trust-continuous-access-evaluation-microsoft-365.md",
       "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-overview#continuous-access-evaluation",
       "redirect_document_id": false
     },

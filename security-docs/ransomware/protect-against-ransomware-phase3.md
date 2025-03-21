@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.collection:
 - msftsolution-ransomware
-ms.custom: cxdef-zt-ransomware
+ms.custom: cx-rw
 description: How to stop ransomware attacks by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
 
 ---

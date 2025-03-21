@@ -292,8 +292,8 @@ When configuring the policy, use the following risk levels:
 
 |Protection level|Risk levels|
 |---|---|---|
-|Starting point|Medium and high|
-|Enterprise|Low, medium, and high|
+|Starting point|Medium and High|
+|Enterprise|Low, Medium, and High|
 
 ### Block clients that don't support multifactor authentication
 
@@ -316,7 +316,7 @@ Blocking legacy authentication for other apps on iOS/iPadOS and Android devices 
 ### Require compliant PCs and mobile devices
 
 > [!CAUTION]
-> Verify that your own device is compliant before you enable this policy. Otherwise, you could get locked out and need to use an [emergency access account](#emergency-access-accounts) to recover your access.
+> Verify your own device is compliant before you enable this policy. Otherwise, you could get locked out and need to use an [emergency access account](#emergency-access-accounts) to recover your access.
 
 Allow access to resources only after the device is determined to be compliant with your Intune compliance policies. For more information, see [Require device compliance with Conditional Access](/entra/identity/conditional-access/policy-all-users-device-compliance).
 

@@ -12,7 +12,7 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.collection: 
 - msftsolution-ransomware
-ms.custom: cxdef-zt-ransomware 
+ms.custom: cx-rw 
 description: Prepare your organization so that you can recover from cybercriminal ransomware attacks without having to pay the ransom.
 
 

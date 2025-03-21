@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.collection: 
 - msftsolution-ransomware
-ms.custom: cxdef-zt-ransomware
+ms.custom: cx-rw
 description: How to prevent ransomware attacks by protecting privileged roles in your organization and limiting the scope of damage a cybercriminal attacker can do.
 
 ---

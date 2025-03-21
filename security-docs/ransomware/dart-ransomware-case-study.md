@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: article
 ms.date: 05/24/2024
 ms.subservice:: m365d
+ms.custom: cx-rw
 
 ---
 

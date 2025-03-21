@@ -23,18 +23,18 @@ ms.collection:
   - highpri
   - tier1
 search.appverid: met150
-ms.date: 03/11/2025
+ms.date: 03/20/2025
 ---
 
 # Recommended policies for specific Microsoft 365 workloads
 
-After you configure the [common security policies for Zero Trust](zero-trust-identity-device-access-policies-common.md) in your Microsoft 365 organization, you need to configure policies for specific apps and workloads based on the three guiding principles of [Zero Trust](zero-trust-identity-device-access-policies-overview.md):
+After you configure the [common security policies for Zero Trust](zero-trust-identity-device-access-policies-common.md) in your Microsoft 365 organization, you need to configure extra policies and settings for specific apps and workloads based on the three guiding principles of [Zero Trust](zero-trust-identity-device-access-policies-overview.md):
 
 - Verify explicitly
 - Use least privilege
 - Assume breach
 
-The policies and settings for specific apps and workloads are described in this article.
+The extra policies and settings for specific apps and workloads are described in this article.
 
 > [!TIP]
 > If possible, test your policies in a nonproduction environment before you roll them out to your production users. Testing is critical to identify and communicate any possible effects to your users.
@@ -44,6 +44,8 @@ The policies and settings for specific apps and workloads are described in this 
 For more information, see [Use Zero Trust security to prepare for AI companions, including Microsoft Copilots](copilots/apply-zero-trust-copilots-overview.md).
 
 ## Exchange Online recommendations for Zero Trust
+
+This section describes the recommended settings for Zero Trust in Exchange Online.
 
 ### Verify automatic email forwarding to external recipients is disabled
 
@@ -118,6 +120,8 @@ For more information, see [Set up Message Encryption](/purview/set-up-new-messag
 
 ## SharePoint recommendations for Zero Trust
 
+This section describes the recommended settings for Zero Trust in SharePoint.
+
 ### Configure SharePoint access control to limit access by unmanaged devices
 
 > [!TIP]
@@ -147,6 +151,8 @@ Consider the following example sites in the Contoso organization. SharePoint acc
 - **The Trade secrets site configure with specialized security protection**: The site is configured with `Block` for unmanaged devices in SharePoint access control. Users with site permissions are blocked from accessing the site on unmanaged devices. They can access the site only on managed devices.
 
 ## Microsoft Teams recommendations for Zero Trust
+
+This section describes the recommended settings for Zero Trust in Microsoft Teams.
 
 ### Teams dependent services architecture
 

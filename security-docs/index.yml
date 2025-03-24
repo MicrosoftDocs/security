@@ -40,12 +40,12 @@ sections:
       - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
         name: Security for AI with Microsoft Purview & Defender for Cloud
-        role: Video
-        feedback: Watch this 4-part series and learn to prepare your environment for secure AI adoption to safeguard your data and identify threats to your AI.
+        role: Event
+        feedback: Join us for this 4-part Learn Live series. Learn how to prepare your environment for secure AI adoption to safeguard your data and identify threats to your AI.
         link:
           componentType: link
           url: https://developer.microsoft.com/en-us/reactor/series/S-1489/?wt.mc_id=securityhub_LLsecurityAI_webpage_sci 
-          text: Watch now
+          text: Register
       - avatarUrl: /security/media/hubpage/blog-icon.png
         componentType: testimonial-card
         name: A Guide to Azure Well-Architected Framework's Security Pillar

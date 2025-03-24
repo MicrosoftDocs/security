@@ -1,0 +1,14 @@
+- name: Security for AI
+  href: index.yml
+  expanded: true
+  items:
+    - name: Build a strong security posture for AI
+      href: posture.md
+    - name: Prepare for AI security
+      href: prepare.md
+    - name: Discover AI apps and data
+      href: discover.md  
+    - name: Protect AI apps and data
+      href: protect.md  
+    - name: Govern AI apps and data
+      href: govern.md             

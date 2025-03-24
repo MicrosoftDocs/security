@@ -1,0 +1,30 @@
+### YamlMime:Landing
+
+title: Discover, protect, and govern you AI apps and data # < 60 chars
+summary: Learn how to build a security posture for AI, including discovering, protecting, and governing your AI apps and data  # < 160 chars
+
+metadata:
+  title: Build a strong security posture for AI # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to build a security posture for AI, including discovering, protecting, and governing your AI apps and data  # Required; article description that is displayed in search results. < 160 chars.
+  services: na
+  ms.service: security
+   # ms.topic: landing-page # Required
+  author: brendacarter #Required; your GitHub user alias, with correct capitalization.
+  ms.author: bcarter #Required; microsoft alias of author; optional team alias.
+  ms.date: 03/24/2025 #Required; mm/dd/yyyy format.
+ 
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+    # Card 
+  - title: Placeholder text
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Placeholder text
+          url:  /security/security-for-ai/posture
+        - text: Placeholder text
+          url:  /security/security-for-ai/protect 

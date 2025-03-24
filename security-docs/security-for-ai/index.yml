@@ -9,12 +9,10 @@ metadata:
   services: na
   ms.service: security
     ms.topic: landing-page # Required
-  ms.collection: zerotrust-solution
   author: brendacarter #Required; your GitHub user alias, with correct capitalization.
   ms.author: bcarterra #Required; microsoft alias of author; optional team alias.
   ms.date: 03/24/2025 #Required; mm/dd/yyyy format.
  
-  
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

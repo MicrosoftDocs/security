@@ -40,12 +40,12 @@ sections:
       - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
         name: Security for AI with Microsoft Purview & Defender for Cloud
-        role: Video
-        feedback: Watch this 4-part series and learn to prepare your environment for secure AI adoption to safeguard your data and identify threats to your AI.
+        role: Event
+        feedback: Join us for this 4-part Learn Live series. Learn how to prepare your environment for secure AI adoption to safeguard your data and identify threats to your AI.
         link:
           componentType: link
           url: https://developer.microsoft.com/en-us/reactor/series/S-1489/?wt.mc_id=securityhub_LLsecurityAI_webpage_sci 
-          text: Watch now
+          text: Register
       - avatarUrl: /security/media/hubpage/blog-icon.png
         componentType: testimonial-card
         name: A Guide to Azure Well-Architected Framework's Security Pillar
@@ -156,6 +156,21 @@ sections:
         - componentType: link
           url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification
           text: Learn more
+
+# AI skills fest promo banner
+  - componentType: hero
+    title: Microsoft AI Skills Fest 
+    layout: indented
+    size: small
+    # textColor: dark
+    background:
+      componentType: image
+      src: /security/media/security-hub/ai-skills-fest-banner.png
+    summary: Deepen your AI skills over 50 days of learning with deep dives, hackathons, and more. April 8 - May 28, 2025 
+    links:
+      - componentType: link
+        url: https://aka.ms/AISkillsFest_SecurityHub
+        text: Register now
 
 # Modern cybersecurity
   - componentType: grid

@@ -1,0 +1,24 @@
+### YamlMime:Landing
+
+title: Microsoft defense against ransomware, extortion, and intrusion # < 60 chars
+summary: Learn how to better protect your organization from ransomware, extortion, and intrusion  # < 160 chars
+
+metadata:
+  title: Microsoft defense against ransomware, extortion, and intrusion # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to better protect your organization from ransomware, extortion, and intrusion  # Required; article description that is displayed in search results. < 160 chars.
+
+  services: na
+  ms.service: microsoft-365-security
+  ms.subservice: m365d
+  ms.topic: landing-page # Required
+  ms.collection: na
+  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
+  ms.author: macapara #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/11/2024 #Required; mm/dd/yyyy format.
+  ms.custom:
+  - cx-ti
+  - cx-rw
+  
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+

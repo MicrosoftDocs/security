@@ -10,7 +10,7 @@ metadata:
   ms.service: security
    # ms.topic: landing-page # Required
   author: brendacarter #Required; your GitHub user alias, with correct capitalization.
-  ms.author: bcarterra #Required; microsoft alias of author; optional team alias.
+  ms.author: bcarter #Required; microsoft alias of author; optional team alias.
   ms.date: 03/24/2025 #Required; mm/dd/yyyy format.
  
     

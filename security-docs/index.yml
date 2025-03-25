@@ -28,9 +28,9 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/security-hub/icon-news.png
+      - avatarUrl: /security/media/hubpage/blog-icon.png
         componentType: testimonial-card
-        name: "UPDATE Mar 25: Confidently adopt AI"
+        name: Confidently adopt AI
         role: Blog
         feedback: Read about new innovations that secure and govern AI, protect your data, and empower your analysts with agents that relieve them of time-consuming work.
         link:

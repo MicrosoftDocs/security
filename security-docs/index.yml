@@ -28,15 +28,15 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/hubpage/plan-icon.png
+      - avatarUrl: /security/media/security-hub/icon-news.png
         componentType: testimonial-card
-        name: Cybersecurity basics for non-security professionals
-        role: Skilling
-        feedback: Help protect your data from online cyberthreats with this introductory Plan to support work or personal tasks.
+        name: Confidently adopt AI
+        role: Blog
+        feedback: Read about new innovations that secure and govern AI, protect your data, and empower your analysts with agents that relieve them of time-consuming work.
         link:
           componentType: link
-          url: https://aka.ms/cybersecuritybasicsPlan
-          text: Get skilled
+          url: https://aka.ms/MSSecureNews_SecurityHub/?wt.mc_id=mssecurenews_blog_blog_scimktg
+          text: Read the announcements
       - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
         name: Security for AI with Microsoft Purview & Defender for Cloud

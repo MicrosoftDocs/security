@@ -27,6 +27,8 @@ Building a strong security posture for AI involves working within your organizat
   - **Protect** the usage of AI tools in your organization. This involves AI-specific data protection capabilities and ensuring your organization has implemented strong threat protection. 
   - **Govern** the use of AI, including tracking your security and compliance status.
   
+ :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Illustration of the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
+  
 ## Understand the motivations of your business leaders
 
 Begin developing your strategy and priorities by gaining alignment with your business leaders. What motivates your leaders and why do they care about your security posture for AI? The following table provides example perspectives, but it’s important for you to meet with each of these leaders and teams and come to a shared understanding of each other’s motivations.

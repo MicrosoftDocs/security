@@ -15,11 +15,11 @@ ms.collection:
 
 # Secure networks with Zero Trust
 
-In recent years, the landscape of network security underwent significant transformations. Advanced and comprehensive solutions are replacing traditional Virtual Private Networks (VPNs) that were once the cornerstone of secure remote access. One such solution is Secure Access Service Edge (SASE), which integrates wide-area networking (WAN) capabilities with comprehensive security services, all delivered through a cloud-based architecture. Replacement is happening with more flexible, scalable, and efficient security measures that keep pace with the evolving threat landscape.
+In recent years, network security has undergone significant transformations. The focus has shifted from traditional perimeter-based approaches to risk-based policy decisions that manage internal and external traffic flows, isolate hosts, enforce encryption, segment activities, and enhance enterprise-wide network visibility. These changes enable security controls to be implemented closer to applications, data, and other resources, augment traditional network-based protections, and improve defense-in-depth strategies. The network can treat each application uniquely based on its requirements for access, priority, reachability, connections to dependency services, and overall connectivity.
 
 The emergence of SASE represents a paradigm shift in how organizations approach network security. SASE converges networking and security functions into a single, unified service. SASE offers a more streamlined and effective way to protect data and applications, regardless of where they're located. This modern approach not only simplifies the management of security policies but also enhances the overall security posture of the organization. Artificial Intelligence (AI) is playing a pivotal role in this new era of network security. AI-driven solutions are capable of analyzing vast amounts of data in real-time, identifying potential threats, and responding to incidents with unprecedented speed and accuracy. By applying AI, organizations can proactively detect and mitigate security risks, ensuring a more robust and resilient network infrastructure.
 
-In summary, the replacement of traditional VPNs with SASE, coupled with the integration of AI, marks a significant advancement in the field of network security. These innovations are enabling organizations to stay ahead of emerging threats and maintain a secure and efficient network environment.
+In summary, the adoption of SASE, coupled with the integration of AI, marks a significant advancement in the field of network security. These innovations are enabling organizations to stay ahead of emerging threats and maintain a secure and efficient network environment.
 
 ## Key Principles of the Zero Trust Network Model
 
@@ -58,11 +58,11 @@ To achieve the objectives, we follow three Zero Trust principles:
 ## Zero Trust network deployment objectives
 
 Before most organizations start their Zero Trust journey, they have network security that is characterized as:
-- Few network security perimeters and open, flat networks.
-- Minimal threat protection and static traffic filtering.
-- Unencrypted internal traffic.
+- Minimal or no identity awareness for network traffic.
+- Limited or no risk based policy decision capabilities.
+- Limited or no governance or lifecycle for application access.
 
-It's crucial to transition from these legacy patterns and consider a structured approach like the CISA Zero Trust Maturity Model (ZTMM). This model guides organizations through different stages of Zero Trust implementation, ensuring a comprehensive and phased adoption of Zero Trust principles.
+It's crucial to transition from these legacy patterns and consider a structured approach like the CISA Zero Trust Maturity Model (ZTMM) and the [National Institute of Standards and Technology (NIST) Zero Trust architecture](https://go.microsoft.com/fwlink/?linkid=2295934&clcid=0x409&culture=en-us&country=us). These models guide organizations through the different stages of a Zero Trust implementation, ensuring a comprehensive and phased adoption of Zero Trust principles.
 
 When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on objectives 1 through 4. After these objectives are completed, focus on objectives 5 through 10.
 
@@ -70,22 +70,18 @@ When implementing an end-to-end Zero Trust framework for securing networks, we r
 
 This guide walks you through the steps required to secure your networks following the principles of a Zero Trust security framework.
 
+### 1. Inventory and policy design. 
+Classify your apps and network flows per risk level. If you are using the CISA model then this step is referred to as *Define Granular Control Access Rules & Policies*. If you are using DOD guidance then this step is referred to as *Data Flow Mapping*.
 
-### 1. Macro segmentation and VPN replacement strategy
+### 2. SDN
+Configure SDN/SD-WAN. For guidance on Azure network, see []().
+
+### 3. Macro segmentation strategy
 Before diving into micro-segmentation, it's essential to establish a broader segmentation strategy. Macro segmentation involves dividing your network into larger segments based on overarching functional or security requirements. This approach simplifies initial management and provides a foundation upon which finer granularity, like micro-segmentation, can be built. 
-Concurrently, develop a VPN replacement strategy that uses modern, secure, and scalable alternatives such as Zero Trust Network Access (ZTNA) solutions. These solutions eliminate the need for traditional VPNs by providing secure, identity-based access to applications regardless of the user's location.  
 
+### 4. Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
 
-Remote users connect to private apps across hybrid and multicloud environments, private networks, and data centers. They connect from any device and network without requiring a VPN solution. The service offers per-app adaptive access based on Conditional Access (CA) policies for more granular security than a traditional VPN solution.
-Microsoft Entra Private Access provides users (whether in an office or working remotely) secure access to private corporate resources. Microsoft Entra Private Access builds on the Microsoft Entra application proxy to extend access to any private resource, independent of TCP/IP port and protocol.
-
-Microsoft Entra ID Protection cloud-based identity and access management (IAM) helps protect user identities and credentials from compromise.
-More details: Microsoft Entra deployment scenario - Modernize remote access - Microsoft Entra | Microsoft Learn
-
-
-### 2. Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
-
-Organizations shouldn't just have one single, large pipe in and out of their network. In a Zero Trust approach, networks are instead segmented into smaller islands where specific workloads are contained. Each segment has its own ingress and egress controls to minimize the "blast radius" of unauthorized access to data. By implementing software-defined perimeters with granular controls, you increase the difficulty for unauthorized actors to propagate throughout your network, and so reduce the lateral movement of threats.
+Organizations shouldn't just have one single, large pipe in and out of their network. In a Zero Trust approach, networks are instead segmented into smaller islands where specific workloads are contained. Each segment has its own ingress and egress controls to minimize the "impact radius" of unauthorized access to data. By implementing software-defined perimeters with granular controls, you increase the difficulty for unauthorized actors to propagate throughout your network, and so reduce the lateral movement of threats.
 
 There's no architecture design that fits the needs of all organizations. You have the option between a few [common design patterns](https://www.microsoft.com/security/blog/2020/06/15/zero-trust-part-1-networking/) for segmenting your network according to the Zero Trust model.
 
@@ -106,7 +102,7 @@ Follow these steps:
 - [Deploy Azure Firewall](/azure/firewall/deploy-ps) in the virtual network hub. Use Azure Firewall to inspect and govern network traffic.
 
 
-### 3. Threat protection: Cloud native filtering and protection for known threats
+### 5. Threat protection: Cloud native filtering and protection for known threats
 
 Cloud applications that open endpoints to external environments, such as the internet or your on-premises footprint, are at risk of attacks coming in from those environments. It's therefore imperative that you scan the traffic for malicious payloads or logic.
 
@@ -155,7 +151,7 @@ Take these steps to protect against known threats:
         > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
 
-### 4. Encryption: User-to-app internal traffic is encrypted
+### 6. Encryption: User-to-app internal traffic is encrypted
 
 The third initial objective to focus on is adding encryption to ensure user-to-app internal traffic is encrypted.
 
@@ -172,7 +168,7 @@ Follow these steps:
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
 
 
-### 5. Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
+### 7. Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
 
 Once you accomplish your initial three objectives, the next step is to further segment your network.
 
@@ -217,7 +213,7 @@ Follow these steps, depending on the type of boundary:
 > [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
 
 
-### 6. Threat protection: Machine learning-based threat protection and filtering with context-based signals
+### 8. Threat protection: Machine learning-based threat protection and filtering with context-based signals
 
 For further threat protection, turn on [Azure DDoS Protection Standard](/azure/virtual-network/ddos-protection-overview) to constantly monitor your Azure-hosted application traffic, use ML-based frameworks to baseline and detect volumetric traffic floods, and apply automatic mitigations.
 
@@ -227,7 +223,7 @@ Follow these steps:
 - [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
 
 
-### 7. Encryption: All traffic is encrypted
+### 9. Encryption: All traffic is encrypted
 
 Finally, complete your network protection by ensuring that all traffic is encrypted.
 
@@ -238,7 +234,7 @@ Follow these steps:
     - [Configure a site-to-site VPN](/azure/expressroute/site-to-site-vpn-over-microsoft-peering) over ExpressRoute Microsoft peering.
     - [Configure IPsec transport mode](/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
 
-### 8. Automation and Orchestration
+### 10. Automation and Orchestration
 
 **Microsoft Sentinel**
 
@@ -282,7 +278,7 @@ Enable reviewer decision helpers in access reviews. The User-to-Group Affiliatio
 - Review recommendations for Access reviews
 
 
-### 9. Monitoring and Visibility
+### 11. Monitoring and Visibility
 
 **Log Analysis**
 
@@ -328,7 +324,7 @@ Apply Conditional Access policies with risk conditions to network access to Micr
 - Universal Conditional Access
 
 
-### 10. Discontinue legacy network security technology
+### 12. Discontinue legacy network security technology
 
 Discontinue the use of signature-based Network Intrusion Detection/Network Intrusion Prevention (NIDS/NIPS) Systems and Network Data Leakage/Loss Prevention (DLP).
 

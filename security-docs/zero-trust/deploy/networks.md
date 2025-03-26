@@ -70,11 +70,16 @@ When implementing an end-to-end Zero Trust framework for securing networks, we r
 
 This guide walks you through the steps required to secure your networks following the principles of a Zero Trust security framework.
 
+### 1. Inventory and policy design. 
+Classify your apps and network flows per risk level. If you are using the CISA model then this step is referred to as *Define Granular Control Access Rules & Policies*. If you are using DOD guidance then this step is referred to as *Data Flow Mapping*.
 
-### 1. Macro segmentation strategy
+### 2. SDN
+Configure SDN/SD-WAN. For guidance on Azure network, see []().
+
+### 3. Macro segmentation strategy
 Before diving into micro-segmentation, it's essential to establish a broader segmentation strategy. Macro segmentation involves dividing your network into larger segments based on overarching functional or security requirements. This approach simplifies initial management and provides a foundation upon which finer granularity, like micro-segmentation, can be built. 
 
-### 2. Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
+### 4. Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
 
 Organizations shouldn't just have one single, large pipe in and out of their network. In a Zero Trust approach, networks are instead segmented into smaller islands where specific workloads are contained. Each segment has its own ingress and egress controls to minimize the "impact radius" of unauthorized access to data. By implementing software-defined perimeters with granular controls, you increase the difficulty for unauthorized actors to propagate throughout your network, and so reduce the lateral movement of threats.
 
@@ -97,7 +102,7 @@ Follow these steps:
 - [Deploy Azure Firewall](/azure/firewall/deploy-ps) in the virtual network hub. Use Azure Firewall to inspect and govern network traffic.
 
 
-### 3. Threat protection: Cloud native filtering and protection for known threats
+### 5. Threat protection: Cloud native filtering and protection for known threats
 
 Cloud applications that open endpoints to external environments, such as the internet or your on-premises footprint, are at risk of attacks coming in from those environments. It's therefore imperative that you scan the traffic for malicious payloads or logic.
 
@@ -146,7 +151,7 @@ Take these steps to protect against known threats:
         > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
 
-### 4. Encryption: User-to-app internal traffic is encrypted
+### 6. Encryption: User-to-app internal traffic is encrypted
 
 The third initial objective to focus on is adding encryption to ensure user-to-app internal traffic is encrypted.
 
@@ -163,7 +168,7 @@ Follow these steps:
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
 
 
-### 5. Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
+### 7. Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
 
 Once you accomplish your initial three objectives, the next step is to further segment your network.
 
@@ -208,7 +213,7 @@ Follow these steps, depending on the type of boundary:
 > [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
 
 
-### 6. Threat protection: Machine learning-based threat protection and filtering with context-based signals
+### 8. Threat protection: Machine learning-based threat protection and filtering with context-based signals
 
 For further threat protection, turn on [Azure DDoS Protection Standard](/azure/virtual-network/ddos-protection-overview) to constantly monitor your Azure-hosted application traffic, use ML-based frameworks to baseline and detect volumetric traffic floods, and apply automatic mitigations.
 
@@ -218,7 +223,7 @@ Follow these steps:
 - [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
 
 
-### 7. Encryption: All traffic is encrypted
+### 9. Encryption: All traffic is encrypted
 
 Finally, complete your network protection by ensuring that all traffic is encrypted.
 
@@ -229,7 +234,7 @@ Follow these steps:
     - [Configure a site-to-site VPN](/azure/expressroute/site-to-site-vpn-over-microsoft-peering) over ExpressRoute Microsoft peering.
     - [Configure IPsec transport mode](/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
 
-### 8. Automation and Orchestration
+### 10. Automation and Orchestration
 
 **Microsoft Sentinel**
 
@@ -273,7 +278,7 @@ Enable reviewer decision helpers in access reviews. The User-to-Group Affiliatio
 - Review recommendations for Access reviews
 
 
-### 9. Monitoring and Visibility
+### 11. Monitoring and Visibility
 
 **Log Analysis**
 
@@ -319,7 +324,7 @@ Apply Conditional Access policies with risk conditions to network access to Micr
 - Universal Conditional Access
 
 
-### 10. Discontinue legacy network security technology
+### 12. Discontinue legacy network security technology
 
 Discontinue the use of signature-based Network Intrusion Detection/Network Intrusion Prevention (NIDS/NIPS) Systems and Network Data Leakage/Loss Prevention (DLP).
 
@@ -359,4 +364,3 @@ and [Application Security Groups](/azure/virtual-network/application-security-gr
 ## Conclusion
 
 Securing networks is central to a successful Zero Trust strategy. For further information or help with implementation, contact your Customer Success team or continue to read through the other chapters of this guide, which spans all Zero Trust pillars.
-L

@@ -22,12 +22,12 @@ Your [security posture](../zero-trust/adopt/rapidly-modernize-security-posture.m
 
 Building a strong security posture for AI involves working within your organization, especially leaders across your organization, to develop a strategy and a set of priorities and objectives. You then identify the technical work necessary to achieve the objectives and lead the various teams to accomplish them. The articles in this library provide a methodology with guidance that is specific to AI: 
 
-  - **Prepare** your environment with foundation security protections. You likely already have many of these protections in place. 
-  - **Discover** the AI apps that are being used in your organization, including the types of data the apps are using. 
-  - **Protect** the usage of AI tools in your organization. This involves AI-specific data protection capabilities and ensuring your organization has implemented strong threat protection. 
-  - **Govern** the use of AI, including tracking your security and compliance status.
+  - [**Prepare**](prepare.md) your environment with foundation security protections. You likely already have many of these protections in place. 
+  - [**Discover**](discover.md) the AI apps that are being used in your organization, including the types of data the apps are using. 
+  - [**Protect**](protect.md) the usage of AI tools in your organization. This involves AI-specific data protection capabilities and ensuring your organization has implemented strong threat protection. 
+  - [**Govern**](govern.md) the use of AI, including tracking your security and compliance status.
   
- :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Illustration of the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
+  :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Illustration of the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
   
 ## Understand the motivations of your business leaders
 
@@ -69,9 +69,9 @@ Currently, the most common security incidents in AI include:
 
  - Data leakage and oversharing—Users might leak sensitive data to shadow AI apps (apps not approved by your IT team). Users might also access sensitive data by using AI apps. 
  - Vulnerabilities and emerging threats—Bad actors might exploit vulnerabilities in AI apps to access valuable resources. 
- - Noncompliance — Regulations, including emerging AI regulations, can increase uncertainty. Noncompliant AI adoption can increase liability. 
+ - Noncompliance—Regulations, including emerging AI regulations, can increase uncertainty. Noncompliant AI adoption can increase liability. 
  
-Two example scenarios highlight the need for building a strong security posture for AI. 
+The following two example scenarios highlight the need for building a strong security posture for AI. 
 
 ### How does oversharing and leakage of data happen? 
 
@@ -88,9 +88,9 @@ Contoso could have mitigated these risks by doing the work of preparing, discove
 
 | Phase | Description |
 | -------- | --------- |
-| Prepare  | Use Entra and SharePoint Advanced Management to right-size employees’ access to resources. <br> Use Purview Information Protection to classify and label sensitive data.  |
-| Discover | Use Purview DSPM for AI to discover data risks. <br> Use an oversharing assessment report to assess oversharing risks. |
-| Protect  | Enforce Purview DLP for Microsoft 365 Copilot to prevent Copilot from summarizing sensitive data. <br> Use Purview Insider Risk Management to detect and investigate anomaly activities. Use Adaptive Protection to dynamically restrict access for high-risk users. <br> Use Defender for Cloud Apps to block high-risk apps. <br> Use Entra Conditional Access to require Adele to accept Terms of Use before granting access to ChatGPT. <br> User Purview endpoint DLP to block pasting sensitive data to consumer AI apps. |
+| Prepare  | Use **Entra and SharePoint Advanced Management** to right-size employees’ access to resources. <br> Use **Purview Information Protection** to classify and label sensitive data.  |
+| Discover | Use **Purview DSPM for AI** to discover data risks. <br> Use an **oversharing assessment report** to assess oversharing risks. |
+| Protect  | Enforce **Purview DLP for Microsoft 365 Copilot** to prevent Copilot from summarizing sensitive data. <br> Use **Purview Insider Risk Management** to detect and investigate anomaly activities. Use **Adaptive Protection** to dynamically restrict access for high-risk users. <br> Use **Defender for Cloud Apps** to block high-risk apps. <br> Use **Entra Conditional Access** to require Adele to accept Terms of Use before granting access to ChatGPT. <br> Use **Purview endpoint DLP** to block pasting sensitive data to consumer AI apps. |
 
 ### How can AI introduce risk for compliance? 
 
@@ -110,9 +110,9 @@ Contoso could have mitigated these risks by doing the work of preparing, discove
 
 | Phase | Description |
 | -------- | --------------- |
-| Prepare  | Use Purview Compliance Manager to get guidance on implementing controls that can help meet compliance requirements.  |
-| Discover | Use Defender for Cloud to discover AI resources deployed in cloud environments. Use Defender for Cloud Apps to discover SaaS AI apps in use. |
-| Govern| Govern AI usage with Microsoft Purview Audit, Data Lifecycle Management, Communication Compliance, and eDiscovery. <br> Use AI reports in Azure AI Foundry for developers to document AI project details. <br> Use Priva Privacy Assessments to proactively evaluate privacy risks for each AI project. <br> Use Azure AI Content Safety to mitigate risks of harmful or ungrounded content. |
+| Prepare  | Use **Purview Compliance Manager** to get guidance on implementing controls that can help meet compliance requirements.  |
+| Discover | Use **Defender for Cloud** to discover AI resources deployed in cloud environments. Use **Defender for Cloud Apps** to discover SaaS AI apps in use. |
+| Govern| Govern AI usage with **Microsoft Purview Audit, Data Lifecycle Management, Communication Compliance,** and **eDiscovery**. <br> Use **AI reports in Azure AI Foundry** for developers to document AI project details. <br> Use **Priva Privacy Assessments** to proactively evaluate privacy risks for each AI project. <br> Use **Azure AI Content Safety** to mitigate risks of harmful or ungrounded content. |
 
 With the proactive use of governance capabilities, organizations can assess and address risk while adopting AI. 
 
@@ -130,11 +130,11 @@ Eighty percent of survey respondents either currently have (45%) or plan to have
 
 Notably, the median team size, or intended team size, of these dedicated security teams was 24 employees—underscoring the substantial resources that companies are committing to safeguarding their AI initiatives. When the size of company was factored in, team sizes varied. 
 
-Here are a few best practices organizations can use to successfully build an effective cross-functional security team for AI. 
+Here are a few best practices that organizations can use to successfully build an effective cross-functional security team for AI. 
 
 #### Form an AI committee to foster collaboration across departments 
 
-Security for AI is a collective effort that goes beyond the IT department. Encourage collaboration among teams like security, IT, legal, compliance, and risk management to create comprehensive security strategies. Having varying perspectives and expertise will enhance the effectiveness of security protocols 
+Security for AI is a collective effort that goes beyond the IT department. Encourage collaboration among teams like security, IT, legal, compliance, and risk management to create comprehensive security strategies. Having varying perspectives and expertise will enhance the effectiveness of security protocols.
 
 #### Hire diverse skill sets 
 
@@ -156,7 +156,7 @@ A significant majority of security and risk leaders (78%) believe their IT secur
 
 Earlier in this article, Microsoft recommends doing the work to understand the motivations of business leaders and different business units across your organization. Identifying top concerns and shared business objectives is an important step toward negotiating resources to accomplish the objectives.  
 
-Allocating funds for compliance assessments, legal consultations, and audits becomes essential to align an organization’s AI strategy to an industry framework and enable more secure, safe, and compliant AI usage and systems. Prioritizing funds for ongoing employee training and skills development—which could include specialized training on security tools for AI, risk management strategies, and ethical considerations in AI use—is also important to consider when allocating budget and resources. 
+Allocating funds for compliance assessments, legal consultations, and audits become essential to align an organization’s AI strategy to an industry framework and enable more secure, safe, and compliant AI usage and systems. Prioritizing funds for ongoing employee training and skills development, which could include specialized training on security tools for AI, risk management strategies, and ethical considerations in AI use is also important to consider when allocating budget and resources. 
 
 ### Step 3—Take a Zero Trust approach 
 
@@ -190,7 +190,7 @@ AI introduces specific risks that traditional security measures might not fully 
 
 A significant majority of companies plan to procure specialized tools and platforms to secure both the usage and development of AI applications. When asked how they plan on securing and protecting the usage and development of AI applications in their organizations, most survey respondents (72%) said they plan to procure a new dedicated security solution to secure the usage and development of AI, while 64% stated they plan to use existing security solutions to secure AI.  
 
-IT and security leaders believe that the primary budget contributors for new solutions for the protection and governance of AI will be IT departments (63%) and information security/ cybersecurity departments (57%). These findings show that in addition to continuing to use existing security solutions, organizations see the need to look for new solutions that can help address the amplified and emerging risks of AI 
+IT and security leaders believe that the primary budget contributors for new solutions for the protection and governance of AI will be IT departments (63%) and information security/ cybersecurity departments (57%). These findings show that in addition to continuing to use existing security solutions, organizations see the need to look for new solutions that can help address the amplified and emerging risks of AI.
 
 On top of Microsoft’s end-to-end security platform, Microsoft provides comprehensive security tooling to secure AI, from discovery of AI tools and data to protections designed specifically to mitigate AI threats. These tools include sophisticated dashboards and compliance resources, helping you stay on top of risks and regulatory obligations.  
 

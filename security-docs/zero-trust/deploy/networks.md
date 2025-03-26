@@ -41,17 +41,12 @@ To make this happen, follow three Zero Trust principles:
 In the Zero Trust model, there are three key objectives when it comes to securing your networks:
 
 - Be ready to handle attacks before they happen. 
-
 - Minimize the extent of the damage and how fast it spreads.
-
-- Increase the difficulty of compromising your cloud footprint.
+- Increase the difficulty of compromising your cloud and on-premises footprint.
 
 To achieve the objectives, we follow three Zero Trust principles:
-
 - **Verify explicitly.** Authenticate and authorize based on all available data points. Include user identity, location, device health, service or workload, data classification, and anomalies.
-
 - **Use least-privileged access.** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection to protect both data and productivity.
-
 - **Assume breach.** Minimize influence radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get, drive threat detection, and improve defenses.
 
 

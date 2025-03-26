@@ -58,9 +58,9 @@ To achieve the objectives, we follow three Zero Trust principles:
 ## Zero Trust network deployment objectives
 
 Before most organizations start their Zero Trust journey, they have network security that is characterized as:
-- Few network security perimeters and open, flat networks.
-- Minimal threat protection and static traffic filtering.
-- Unencrypted internal traffic.
+- Minimal or no identity awareness for network traffic.
+- Limited or no risk based policy decision capabilities.
+- Limited or no governance or lifecycle for application access.
 
 It's crucial to transition from these legacy patterns and consider a structured approach like the CISA Zero Trust Maturity Model (ZTMM). This model guides organizations through different stages of Zero Trust implementation, ensuring a comprehensive and phased adoption of Zero Trust principles.
 
@@ -359,3 +359,4 @@ and [Application Security Groups](/azure/virtual-network/application-security-gr
 ## Conclusion
 
 Securing networks is central to a successful Zero Trust strategy. For further information or help with implementation, contact your Customer Success team or continue to read through the other chapters of this guide, which spans all Zero Trust pillars.
+L

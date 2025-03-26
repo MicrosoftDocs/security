@@ -1,7 +1,7 @@
 ---
-title: How do I apply Zero Trust principles to Microsoft Copilot Chat for web-grounded prompts?
-description: How to apply Zero Trust principles to Microsoft Copilot Chat for web-grounded prompts. 
-ms.date: 02/06/2025
+title: How do I apply Zero Trust principles to Microsoft 365 Copilot Chat for web-grounded prompts?
+description: How to apply Zero Trust principles to Microsoft 365 Copilot Chat for web-grounded prompts. 
+ms.date: 03/04/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -16,9 +16,9 @@ ms.collection:
 ms.custom: [copilot-learning-hub]
 ---
 
-# Apply principles of Zero Trust to Microsoft Copilot Chat
+# Apply principles of Zero Trust to Microsoft 365 Copilot Chat
 
-**Summary:** To apply Zero Trust principles to Microsoft Copilot Chat, you need to:
+**Summary:** To apply Zero Trust principles to Microsoft 365 Copilot Chat, you need to:
 
 1. Implement security protections for web-grounded prompts to the Internet.
 2. Add security protections for Microsoft Edge browser summarization.
@@ -26,7 +26,7 @@ ms.custom: [copilot-learning-hub]
 
 ## Introduction
 
-Copilot Chat is an AI companion in the Microsoft 365 Copilot app, in Edge, and at the following URLs — M365copilot.com and Copilot.cloud.microsoft. It's provided for Entra account users with a [qualifying license](/copilot/manage#microsoft-365--chat-eligibility). Copilot Chat includes enterprise data protection. Enterprise data protection is not included in Copilot Chat for personal use (consumer version). This article helps you implement security protections to keep your organization and data safe while using Copilot Chat. By implementing these protections, you're building a foundation of Zero Trust.
+Microsoft 365 Copilot Chat is an AI companion in the Microsoft 365 Copilot app, in Edge, and at the following URLs — M365copilot.com and Copilot.cloud.microsoft. It's provided for Entra account users with a [qualifying license](/copilot/manage#microsoft-365--chat-eligibility). Copilot Chat includes enterprise data protection. Enterprise data protection is not included in Copilot Chat for personal use (consumer version). This article helps you implement security protections to keep your organization and data safe while using Copilot Chat. By implementing these protections, you're building a foundation of Zero Trust.
 
 Zero Trust security recommendations for Copilot Chat focus on protection for user accounts, user devices, and your organization data that can be summarized by Copilot Chat in Edge. 
 
@@ -85,7 +85,7 @@ Implement the recommendations for E3 and configure the following identity and ac
 
 ## Stage 2. Add security protections for Edge browser summarization
 
-From the Microsoft Edge sidebar, Microsoft Copilot Chat helps you get answers and inspirations from across the web and, if enabled, from some types of information displayed in open browser tabs. 
+From the Microsoft Edge sidebar, Microsoft 365 Copilot Chat helps you get answers and inspirations from across the web and, if enabled, from some types of information displayed in open browser tabs. 
 
 :::image type="content" source="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg" alt-text="Diagram of Web-grounded prompts in Edge with browser tab summarization enabled." lightbox="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg":::
 

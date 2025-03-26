@@ -28,45 +28,67 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/hubpage/plan-icon.png
+      - avatarUrl: /security/media/hubpage/blog-icon.png
         componentType: testimonial-card
-        name: Cybersecurity basics for non-security professionals
-        role: Skilling
-        feedback: Help protect your data from online cyberthreats with this introductory Plan to support work or personal tasks.
+        name: Confidently adopt AI
+        role: Blog
+        feedback: Read about new innovations that secure and govern AI, protect your data, and empower your analysts with agents that relieve them of time-consuming work.
         link:
           componentType: link
-          url: https://aka.ms/cybersecuritybasicsPlan
-          text: Get skilled
+          url: https://aka.ms/MSSecureNews_SecurityHub/?wt.mc_id=mssecurenews_blog_blog_scimktg
+          text: Read the announcements
       - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
-        name: Microsoft Security Copilot Flight School
-        role: Video
-        feedback: Learn what generative AI is and how to use Copilot to quickly analyze and mitigate threats using natural language to empower your security and IT teams to protect at the speed and scale of AI.
+        name: Security for AI with Microsoft Purview & Defender for Cloud
+        role: Event
+        feedback: Join us for this 4-part Learn Live series. Learn how to prepare your environment for secure AI adoption to safeguard your data and identify threats to your AI.
         link:
           componentType: link
-          url: /shows/microsoft-security-copilot-flight-school/?wt.mc_id=securityhub_flightschool_webpage_devrelstudios 
-          text: Watch now
+          url: https://developer.microsoft.com/en-us/reactor/series/S-1489/?wt.mc_id=securityhub_LLsecurityAI_webpage_sci 
+          text: Register
+      - avatarUrl: /security/media/hubpage/blog-icon.png
+        componentType: testimonial-card
+        name: A Guide to Azure Well-Architected Framework's Security Pillar
+        role: Blog
+        feedback: Build more secure, efficient, and reliable cloud applications with the Well-Architected Framework.
+        link:
+          componentType: link
+          url: https://techcommunity.microsoft.com/blog/azureinfrastructureblog/cloud-security-as-a-city-planner-a-guide-to-azure-well-architected-framework%E2%80%99s-s/4382706?wt.mc_id=securityhub_WAFsecurity_webpage_cnl
+          text: Read more
       - avatarUrl: /security/media/hubpage/generic-badge.svg
         componentType: testimonial-card
-        name: Identify and mitigate AI data security risks
+        name: Cybersecurity Skilling for Technical Professionals
         role: Training
-        feedback: Learn how to monitor AI activity, enforce security policies, and prevent unauthorized data exposure with Data Security Posture Management.
+        feedback: Learn how to secure IT systems and fundamental cybersecurity concepts to kick-start your security learning.
         link:
           componentType: link
-          url: /training/modules/purview-identify-mitigate-ai-risks/?wt.mc_id=securityhub_DSPM_webpage_sci
-          text: Start now
-      - avatarUrl: /security/media/hubpage/certification.png
-        componentType: testimonial-card
-        name: Validate your critical information security skills
-        role: Blog
-        feedback: Read about the new Microsoft Certification and become part of your team's cybersecurity solution.
-        link:
-          componentType: link
-          url: https://techcommunity.microsoft.com/blog/microsoftlearnblog/validate-critical-information-security-skills-with-our-new-certification/3719269?wt.mc_id=securityhub_sc401_webpage_sci
-          text: Get certified
+          url: https://learn.microsoft.com/plans/odm7f0p5j6opq5?wt.mc_id=securityhub_security101_webpage_cnl
+          text: Start today
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+
+# Bifold section for embedded video
+  - componentType: bifold
+    blocks:
+      - componentType: text
+        title: "Secure Future Initiative: Tech Tips"
+        summary: "Check out bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture."
+        links:
+          - componentType: link
+            text: "Check out the show on Learn!"
+            url: "/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios"
+      - componentType: "video"
+        src: "https://learn-video.azurefd.net/vod/player?id=cce8f81c-8b21-4a11-b204-7fcbc4840324"
+
+# Markdown section for embedded video (formatting placeholder)
+#  - componentType: markdown
+#    content: |
+#      # **Secure Future Initiative: Tech Tips**
+#      
+#      [Secure Future Initiative: Tech Tips](/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios) provides bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture.
+#      >
+#      > [!VIDEO cce8f81c-8b21-4a11-b204-7fcbc4840324]
 
 ##### Markdown section
 # Jump start your security learning journey
@@ -108,7 +130,7 @@ sections:
   - componentType: cards
     title: Build foundational security skills
     summary: |
-      Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you're a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.
+      Enhance your foundational knowledge and essential skills to effectively collaborate with security colleagues or kickstart your cybersecurity career. Whether you are a new IT professional, a student, or a business leader aiming to maximize the benefits of Microsoft Security, compliance, and identity solutions, this section provides the resources to rapidly expand your expertise and capabilities.
     blocks:
     - componentType: card
       title: Describe the basic concepts of cybersecurity 
@@ -134,6 +156,21 @@ sections:
         - componentType: link
           url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification
           text: Learn more
+
+# AI skills fest promo banner
+  - componentType: hero
+    title: Microsoft AI Skills Fest 
+    layout: indented
+    size: small
+    # textColor: dark
+    background:
+      componentType: image
+      src: /security/media/security-hub/ai-skills-fest-banner.png
+    summary: Deepen your AI skills over 50 days of learning with deep dives, hackathons, and more. April 8 - May 28, 2025 
+    links:
+      - componentType: link
+        url: https://aka.ms/AISkillsFest_SecurityHub
+        text: Register now
 
 # Modern cybersecurity
   - componentType: grid

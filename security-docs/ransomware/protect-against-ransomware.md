@@ -11,8 +11,8 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.collection: 
 - msftsolution-ransomware
-ms.custom: cxdef-zt-ransomware
-ms.localizationpriority:   # medium
+ms.custom: cx-rw
+ms.localizationpriority: medium
 description:  Learn how to protect against ransomware cybercriminals by quickly configuring ransomware prevention for your organization. Get started today!
 
 

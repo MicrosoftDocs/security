@@ -9,7 +9,7 @@ ms.date: 03/19/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+
 ms.reviewer: nborges
 ---
 # AI Risk Assessment for ML Engineers

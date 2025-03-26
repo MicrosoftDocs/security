@@ -9,7 +9,7 @@ ms.date: 02/27/2025
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+
 ms.reviewer: mas
 ---
 # Security Adoption Resources

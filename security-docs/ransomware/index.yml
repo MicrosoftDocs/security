@@ -84,8 +84,8 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
         - text: Octo Tempest - A recurring ransomware threat
           url:  https://www.microsoft.com/en-us/security/blog/2023/10/25/octo-tempest-crosses-boundaries-to-facilitate-extortion-encryption-and-destruction/
-        - text: Building an anti-ransomware program at Microsoft focused on an Optimal Ransomware Resiliency State
-          url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
+        - text: Introducing the Threat Intelligence Briefing Agent
+          url:  https://techcommunity.microsoft.com/blog/defenderthreatintelligence/introducing-the-threat-intelligence-briefing-agent/4390821
 
 # Card
   - title: Protect against ransomware and extortion attacks with Microsoft

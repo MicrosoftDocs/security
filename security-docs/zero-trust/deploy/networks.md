@@ -62,7 +62,7 @@ Before most organizations start their Zero Trust journey, they have network secu
 - Limited or no risk based policy decision capabilities.
 - Limited or no governance or lifecycle for application access.
 
-It's crucial to transition from these legacy patterns and consider a structured approach like the CISA Zero Trust Maturity Model (ZTMM). This model guides organizations through different stages of Zero Trust implementation, ensuring a comprehensive and phased adoption of Zero Trust principles.
+It's crucial to transition from these legacy patterns and consider a structured approach like the CISA Zero Trust Maturity Model (ZTMM) and the [National Institute of Standards and Technology (NIST) Zero Trust architecture](https://go.microsoft.com/fwlink/?linkid=2295934&clcid=0x409&culture=en-us&country=us). These models guide organizations through the different stages of a Zero Trust implementation, ensuring a comprehensive and phased adoption of Zero Trust principles.
 
 When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on objectives 1 through 4. After these objectives are completed, focus on objectives 5 through 10.
 

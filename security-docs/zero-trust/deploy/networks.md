@@ -70,10 +70,10 @@ When implementing an end-to-end Zero Trust framework for securing networks, we r
 
 This guide walks you through the steps required to secure your networks following the principles of a Zero Trust security framework.
 
-### 1. Inventory and policy design. 
+### 1. Inventory and policy design
 Classify your apps and network flows per risk level. If you are using the CISA model then this step is referred to as *Define Granular Control Access Rules & Policies*. If you are using DOD guidance then this step is referred to as *Data Flow Mapping*.
 
-### 2. SDN
+### 2. Configure Software Defined Networking (SDN) / Software Defined Wide Area Network (SD-WAN)
 Configure SDN/SD-WAN. For guidance on Azure network, see []().
 
 ### 3. Macro segmentation strategy

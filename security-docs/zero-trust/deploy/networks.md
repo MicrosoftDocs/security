@@ -69,7 +69,7 @@ This guide walks you through the steps required to secure your networks followin
 Classify your apps and network flows per risk level. If you are using the CISA model then this step is referred to as *Define Granular Control Access Rules & Policies*. If you are using DOD guidance then this step is referred to as *Data Flow Mapping*.
 
 ### 2. Configure Software Defined Networking (SDN) / Software Defined Wide Area Network (SD-WAN)
-Configure SDN/SD-WAN. For guidance on Azure network, see []().
+Configure SDN/SD-WAN. For guidance on Azure network, see [Azure Networking Fundamentals documentation](/azure/networking/fundamentals/).
 
 ### 3. Macro segmentation strategy
 Before diving into micro-segmentation, it's essential to establish a broader segmentation strategy. Macro segmentation involves dividing your network into larger segments based on overarching functional or security requirements. This approach simplifies initial management and provides a foundation upon which finer granularity, like micro-segmentation, can be built. 

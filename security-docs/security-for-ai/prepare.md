@@ -16,7 +16,7 @@ ms.collection:
 
 This article describes the basic security measures you should implement for preparing your environment for AI, including the enablement of security tools used for discovering, protecting, and governing AI. This article is the first one in a series.
 
-  :::image type="content" source="media/security-for-ai-step-prepare.svg" alt-text="Illustration of the process of implementing security for AI." lightbox="/media/security-for-ai-step-prepare.svg":::
+:::image type="content" source="media/security-for-ai-step-prepare.svg" alt-text="Diagram that shows the Prepare part of the security for AI.":::
 
 Preparing for AI focuses on implementing foundation security protections across your digital estate: 
 
@@ -63,7 +63,7 @@ The following table lists the steps illustrated above.
 
 | Step | Task  |
 | ---- | ----------------------------- |
-| 1    | Configure identity and device access policies for Microsoft 365. See [Common Zero Trust identity and device access policies.](../zero-trust/zero-trust-identity-device-access-policies-common.md) The [prerequisites](../zero-trust/zero-trust-identity-device-access-policies-prerequisite.md) for this work include enabling Entra ID Protection. This work includes enrolling devices into management. See [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview?view=o365-worldwide). |
+| 1    | Configure identity and device access policies for Microsoft 365. See [Common Zero Trust identity and device access policies.](../zero-trust/zero-trust-identity-device-access-policies-common.md) The [prerequisites](../zero-trust/zero-trust-identity-device-access-policies-prerequisite.md) for this work include enabling Entra ID Protection. This work includes enrolling devices into management. See [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview). |
 | 2    | Integrate SaaS apps with Entra ID. These can be added through the Microsoft Entra Gallery. Be sure these apps are included in the scope of your identity and device access policies. See [Add SaaS apps to Microsoft Entra ID and to the scope of policies](../zero-trust/add-saas-apps.md).  |
 | 3    | Integrate custom apps in Azure with Entra ID. Be sure these apps are included in the scope of your identity and device access policies. See [Five steps to integrate your apps with Microsoft Entra ID](/entra/fundamentals/five-steps-to-full-application-integration). |
 | 4    | Integrate custom apps in other cloud providers with Entra ID. Be sure these apps are included in the scope of your identity and device access policies. [Five steps to integrate your apps with Microsoft Entra ID](/entra/fundamentals/five-steps-to-full-application-integration) . |
@@ -135,7 +135,7 @@ Use the following resources to enable threat protection.
 | Deploy Microsoft Entra ID Protection | [Plan a Microsoft Entra ID Protection deployment - Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection)<li>    |
 | Deploy Defender for Cloud| [Microsoft Defender for Cloud documentation](/azure/defender-for-cloud/) <br> [Connect your Azure subscriptions](/azure/defender-for-cloud/connect-azure-subscription) <br> [Enable threat protection for AI workloads (preview)](/azure/defender-for-cloud/ai-onboarding#enable-threat-protection-for-ai-workloads) <br> [Protect your resources with Defender CSPM](/azure/defender-for-cloud/tutorial-enable-cspm-plan) <br> [Review the Data and AI security dashboard (Preview)](/azure/defender-for-cloud/data-aware-security-dashboard-overview)  <br> [Connect your AWS account](/azure/defender-for-cloud/quickstart-onboard-aws) <br> [Connect your GCP project](/azure/defender-for-cloud/quickstart-onboard-gcp) |
 | Deploy Defender for IoT     | [Deploy Defender for IoT for OT monitoring](/azure/defender-for-iot/organizations/ot-deploy/ot-deploy-path) |
-| Integrate threat protection tools with Sentinel (SIEM)  | [Incident Response with XDR and Integrated SIEM](../zero-trust/siem-xdr-overview?tabs=defender-portal.md) |
+| Integrate threat protection tools with Sentinel (SIEM)  | [Incident Response with XDR and Integrated SIEM](../zero-trust/siem-xdr-overview.md) |
 
 For information on how to enable threat protection for AI within these tools, see [Protect AI data and apps](protect.md).
 

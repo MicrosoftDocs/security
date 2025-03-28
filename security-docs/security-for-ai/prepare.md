@@ -92,7 +92,7 @@ Microsoft Purview includes Data Security Posture Management (DSPM) capabilities 
 
 By automatically scanning data and activities across your organization, you'll quickly get baseline insights and recommendations focused on unprotected data that can help you quickly get started in DLP, information protection, and insider risk management. DSPM for AI provides ready-to-use policies to help you get started. 
 
-If you’ve already started your data protection journey with policies, use DSPM capabilities to identify gaps in coverage. Ready-to-use policies won’t be provided to ensure these don’t interfere with policies you’ve already implemented.
+If you’ve already started your data protection journey with policies, use DSPM capabilities to identify gaps in coverage.
 
 DSPM (Preview) identifies sensitive data by matching for sensitive information types across your Microsoft 365 environment. 
 
@@ -132,7 +132,7 @@ Use the following resources to enable threat protection.
 | Task| Recommended resources   |
 | ----------- | --------------- |
 | Deploy Microsoft Defender XDR: <br> <li> Defender for Identity <br><li> Defender for Office <br> <li> Defender for Endpoint <br> <li> Defender for Cloud Apps | [Pilot and deploy Microsoft Defender XDR](/defender-xdr/pilot-deploy-overview) |
-| Deploy Microsoft Entra ID Protection | [Plan a Microsoft Entra ID Protection deployment - Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection)<li>    |
+| Deploy Microsoft Entra ID Protection | [Plan a Microsoft Entra ID Protection deployment - Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection)|
 | Deploy Defender for Cloud| [Microsoft Defender for Cloud documentation](/azure/defender-for-cloud/) <br> [Connect your Azure subscriptions](/azure/defender-for-cloud/connect-azure-subscription) <br> [Enable threat protection for AI workloads (preview)](/azure/defender-for-cloud/ai-onboarding#enable-threat-protection-for-ai-workloads) <br> [Protect your resources with Defender CSPM](/azure/defender-for-cloud/tutorial-enable-cspm-plan) <br> [Review the Data and AI security dashboard (Preview)](/azure/defender-for-cloud/data-aware-security-dashboard-overview)  <br> [Connect your AWS account](/azure/defender-for-cloud/quickstart-onboard-aws) <br> [Connect your GCP project](/azure/defender-for-cloud/quickstart-onboard-gcp) |
 | Deploy Defender for IoT     | [Deploy Defender for IoT for OT monitoring](/azure/defender-for-iot/organizations/ot-deploy/ot-deploy-path) |
 | Integrate threat protection tools with Sentinel (SIEM)  | [Incident Response with XDR and Integrated SIEM](../zero-trust/siem-xdr-overview.md) |

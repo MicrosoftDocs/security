@@ -104,21 +104,21 @@
 						x="12" dy="1.579em" class="st8" v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Govern AI for compliance</text>		</g>
 		<g id="shape1047-30" v:mID="1047" v:groupContext="shape" transform="translate(490.338,-185.95)">
 			<title>Sheet.1047</title>
-			<desc>The broader adoption motion for AI, including: AI adoption st...</desc>
+			<desc>End-to-end adoption roadmap for AI: Strategy, including guida...</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(34000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,12)"/>
 			<v:textRect cx="115.2" cy="403.107" width="230.4" height="122.858"/>
 			<rect x="0" y="341.678" width="230.4" height="122.858" rx="4.5" ry="4.5" class="st4"/>
-			<text x="12" y="360.55" class="st6" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>The broader adoption motion for AI, <tspan
-						x="12" dy="1.2em" class="st7">including:<v:newlineChar/><v:paragraph v:indentFirst="-18" v:indentLeft="18"
-							v:spAfter="4" v:bullet="1"/></tspan><tspan x="12" dy="1.575em" class="st8" v:isBullet="true">·</tspan><tspan
-						class="st8"> </tspan>AI adoption strategy<v:newlineChar/><tspan x="12" dy="1.579em" class="st8"
-						v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Prescriptive guidance for people and <tspan x="30"
-						dy="1.204em" class="st7">process <v:newlineChar/></tspan><tspan x="12" dy="1.575em" class="st8"
-						v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Deeper guidance for developing AI apps <tspan x="30"
-						dy="1.204em" class="st7">in Azure</tspan></text>		</g>
+			<text x="12" y="360.55" class="st6" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>End-to-end adoption roadmap for AI:<v:newlineChar/><v:paragraph
+						v:indentFirst="-18" v:indentLeft="18" v:spAfter="4" v:bullet="1"/><tspan x="12" dy="1.575em" class="st8"
+						v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Strategy, including guidance for teams <tspan x="30"
+						dy="1.204em" class="st7">and processes<v:newlineChar/></tspan><tspan x="12" dy="1.575em" class="st8"
+						v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Generative and non-generative AI <v:newlineChar/><tspan
+						x="12" dy="1.579em" class="st8" v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Deeper guidance for developing AI apps <tspan
+						x="30" dy="1.204em" class="st7">in Azure, including AI design and </tspan><tspan x="30" dy="1.2em"
+						class="st7">implementation</tspan></text>		</g>
 		<g id="shape1049-42" v:mID="1049" v:groupContext="shape" transform="translate(237.063,-245.628)">
 			<title>Sheet.1049</title>
 			<v:userDefs>

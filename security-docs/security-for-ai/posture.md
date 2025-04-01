@@ -30,16 +30,16 @@ Building a strong security posture for AI involves working within your organizat
   :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
 
 Use this library together with the following frameworks on Microsoft Learn: 
-- Zero Trust adoption framework 
-- Cloud Adoption Framework for AI 
+- [Zero Trust adoption framework](/zero-trust/adopt/zero-trust-adoption-overview.md) 
+- [Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/)
 
 :::image type="content" source="media/security-for-ai-framework-comparison.svg" alt-text="Diagram that shows the framework of security for AI.":::
 
 In the image: 
 
 - Use this library (Security for AI library) to learn how to implement capabilities to secure AI apps and data in your environment. These protections help build your Zero Trust foundation. 
-- Use the Zero Trust adoption framework to continue to make progress toward end-to-end security. Each of the Zero Trust business scenarios also increases your security for AI apps and data. 
-- Use the Cloud Adoption Framework for AI to develop your broader strategy for adoption of AI, including people roles and organization processes. This framework includes deeper guidance for developing AI apps in Azure. 
+- Use the [Zero Trust adoption framework](/zero-trust/adopt/zero-trust-adoption-overview.md) to continue to make progress toward end-to-end security. Each of the Zero Trust business scenarios also increases your security for AI apps and data. 
+- Use the [Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/) to develop your end-to-end roadmap for adoption of AI, including generative and non-generative AI. This library includes strategy, prescriptive guidance for people roles and organization processes, and deeper guidance for developing AI apps in Azure, including design and implementation guidance. 
 
 ## Understand the motivations of your business leaders
 
@@ -223,10 +223,10 @@ See the following articles:
 
 Follow the guidance in this series of articles to learn more about securing AI and to identify and implement capabilities to achieve your organization’s objectives.  
 
- - Prepare for AI 
- - Discover AI apps and data 
- - Protect AI data and apps 
- - Govern your organization’s use of AI apps and data 
+ - [Prepare for AI](prepare/md) 
+ - [Discover AI apps and data](discover.md)
+ - [Protect AI data and apps](protect.md)
+ - [Govern for AI compliance](govern.md) 
 
 To learn more about optimizing your overall security posture and Zero Trust, see [Rapidly modernize your security posture](../zero-trust/adopt/rapidly-modernize-security-posture.md). 
 

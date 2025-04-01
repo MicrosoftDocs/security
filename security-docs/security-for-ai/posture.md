@@ -18,7 +18,7 @@ Your AI security posture is an important part of your overall security strategy.
 
 Your [security posture](../zero-trust/adopt/rapidly-modernize-security-posture.md) is defined as your organization’s overall cybersecurity defense capability, along with the level of preparation and operational status to deal with ongoing cyber-security threats. This posture should be quantifiable and measurable, similarly to any other major metric that pertains to the operational status or well-being of your organization.
 
-:::image type="content" source="media/security-posture.svg" alt-text="Illustration of the organization's security posture." lightbox="media/security-posture.svg":::
+:::image type="content" source="media/security-posture.svg" alt-text="Diagram that shows the organization's security posture." lightbox="media/security-posture.svg":::
 
 Building a strong security posture for AI involves working within your organization, especially leaders across your organization, to develop a strategy and a set of priorities and objectives. You then identify the technical work necessary to achieve the objectives and lead the various teams to accomplish them. The articles in this library provide a methodology with guidance that is specific to AI: 
 
@@ -27,8 +27,20 @@ Building a strong security posture for AI involves working within your organizat
   - [**Protect**](protect.md) the usage of AI tools in your organization. This involves AI-specific data protection capabilities and ensuring your organization has implemented strong threat protection. 
   - [**Govern**](govern.md) the use of AI, including tracking your security and compliance status.
   
-  :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Illustration of the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
-  
+  :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
+
+Use this library together with the following frameworks on Microsoft Learn: 
+- Zero Trust adoption framework 
+- Cloud Adoption Framework for AI 
+
+:::image type="content" source="media/security-for-ai-framework-comparison.svg" alt-text="Diagram that shows the framework of security for AI.":::
+
+In the image: 
+
+- Use this library (Security for AI library) to learn how to implement capabilities to secure AI apps and data in your environment. These protections help build your Zero Trust foundation. 
+- Use the Zero Trust adoption framework to continue to make progress toward end-to-end security. Each of the Zero Trust business scenarios also increases your security for AI apps and data. 
+- Use the Cloud Adoption Framework for AI to develop your broader strategy for adoption of AI, including people roles and organization processes. This framework includes deeper guidance for developing AI apps in Azure. 
+
 ## Understand the motivations of your business leaders
 
 Begin developing your strategy and priorities by gaining alignment with your business leaders. What motivates your leaders and why do they care about your security posture for AI? The following table provides example perspectives, but it’s important for you to meet with each of these leaders and teams and come to a shared understanding of each other’s motivations.
@@ -56,7 +68,7 @@ Additionally, different parts of your organization will have different motivatio
 
 GenAI introduces new attack surfaces, effectively changing the risk landscape. In addition to managing traditional threat vectors, security and risk leaders also need to address amplified risks such as data leakage and data oversharing, and new risks such as prompt injections, hallucinations, and model vulnerabilities. Addressing the evolving threat landscape is crucial to enabling trustworthy AI. 
 
-:::image type="content" source="media/ai-introduces-new-amplified-risks.png" alt-text="Illustration of the GenAI introducing new risks." lightbox="media/ai-introduces-new-amplified-risks.png":::
+:::image type="content" source="media/ai-introduces-new-amplified-risks.png" alt-text="Diagram that shows the GenAI introducing new risks." lightbox="media/ai-introduces-new-amplified-risks.png":::
 
 In the illustration: 
 
@@ -176,7 +188,7 @@ A shared responsibility model helps security teams guide their organization to c
  - GenAI apps that reduce responsibility for their organizations. 
  - Partners that have earned their trust. 
 
-:::image type="content" source="media/ai-shared-responsibility-model-illustration.svg" alt-text="Illustration of the AI shared responsibilities model." lightbox="media/ai-shared-responsibility-model-illustration.svg":::
+:::image type="content" source="media/ai-shared-responsibility-model-illustration.svg" alt-text="Diagram that shows the AI shared responsibilities model." lightbox="media/ai-shared-responsibility-model-illustration.svg":::
 
 This diagram summarizes the balance of responsibilities for both you and Microsoft. Many organizations use the shared responsibility model to prioritize use of SaaS apps in partnership with trusted providers and to reduce the number of custom-built apps.
 
@@ -196,7 +208,7 @@ On top of Microsoft’s end-to-end security platform, Microsoft provides compreh
 
 This library guides you through the process of implementing security for AI in a staged approach.
 
-:::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Illustration of the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
+:::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
 
 See the following articles:
 

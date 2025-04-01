@@ -41,7 +41,7 @@ Microsoft Purview Data Security Posture Management (DSPM) for AI focuses on how 
 
 The following diagram shows one of the aggregated views into the impact of AI use on your data—Sensitive interactions per generative AI app.
 
-:::image type="content" source="media/ai-hub-senstivie-interactions-report.png" alt-text="Screenshot of the sensitive interactions per generative AI app.":::
+:::image type="content" source="media/ai-hub-sensitive-interactions-report.png" alt-text="Screenshot of the sensitive interactions per generative AI app.":::
 
 DSPM for AI offers a set of capabilities that help you safely adopt AI without having to choose between productivity and protection:
 

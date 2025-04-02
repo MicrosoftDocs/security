@@ -170,7 +170,7 @@ Use the following resources for next steps.
 | --- | --- |
 | Review top scenarios described in this blog | [Secure Generative AI Applications with Microsoft Defender for Cloud](https://techcommunity.microsoft.com/blog/microsoftdefendercloudblog/secure-your-ai-applications-from-code-to-runtime-with-microsoft-defender-for-clo/4127665) |
 | Use CSPM to gain visibility into AI risks in your environment | [Protect your resources with Defender CSPM](/azure/defender-for-cloud/tutorial-enable-cspm-plan) <br>[Review the Data and AI security dashboard (Preview)](/azure/defender-for-cloud/data-aware-security-dashboard-overview) |
-| Enable threat protection for AI workloads (preview) | Enable threat protection for AI workloads (preview) <br>[Alerts for AI workloads (Preview)](/azure/defender-for-cloud/alerts-ai-workloads) |s
+| Enable threat protection for AI workloads (preview) | Enable threat protection for AI workloads (preview) <br>[Alerts for AI workloads (Preview)](/azure/defender-for-cloud/alerts-ai-workloads) |
 
 ## Next step for securing AI
 

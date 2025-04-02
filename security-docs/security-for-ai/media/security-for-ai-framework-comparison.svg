@@ -15,9 +15,9 @@
 		.st5 {fill:#000000;font-family:Segoe UI;font-size:1.00001em}
 		.st6 {fill:#000000;font-family:Segoe UI;font-size:0.916672em}
 		.st7 {font-size:1em}
-		.st8 {font-family:Symbol;font-size:1em}
+		.st8 {font-family:Wingdings;font-size:1em}
 		.st9 {stroke:#0078d4;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
-		.st10 {font-family:Symbol;font-size:0.909089em}
+		.st10 {font-family:Wingdings;font-size:0.909089em}
 		.st11 {font-size:0.909089em}
 		.st12 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
@@ -95,30 +95,30 @@
 			<v:textBlock v:margins="rect(4,4,4,12)"/>
 			<v:textRect cx="115.2" cy="378.136" width="230.4" height="172.8"/>
 			<rect x="0" y="291.736" width="230.4" height="172.8" rx="4.5" ry="4.5" class="st4"/>
-			<text x="12" y="340.09" class="st6" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Implementation of capabilities to secure AI <tspan
+			<text x="12" y="340.06" class="st6" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Implementation of capabilities to secure AI <tspan
 						x="12" dy="1.2em" class="st7">apps and data in your environment:<v:newlineChar/><v:paragraph
-							v:indentFirst="-18" v:indentLeft="18" v:spAfter="4" v:bullet="1"/></tspan><tspan x="12" dy="1.575em"
-						class="st8" v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Prepare for AI apps<v:newlineChar/><tspan
-						x="12" dy="1.579em" class="st8" v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Discover AI apps and data<v:newlineChar/><tspan
-						x="12" dy="1.579em" class="st8" v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Protect AI apps and data<v:newlineChar/><tspan
-						x="12" dy="1.579em" class="st8" v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Govern AI for compliance</text>		</g>
+							v:indentFirst="-18" v:indentLeft="18" v:spAfter="4" v:bullet="3"/></tspan><tspan x="12" dy="1.576em"
+						class="st8" v:isBullet="true">§</tspan><tspan class="st8"> </tspan>Prepare for AI apps<v:newlineChar/><tspan
+						x="12" dy="1.581em" class="st8" v:isBullet="true">§</tspan><tspan class="st8"> </tspan>Discover AI apps and data<v:newlineChar/><tspan
+						x="12" dy="1.581em" class="st8" v:isBullet="true">§</tspan><tspan class="st8"> </tspan>Protect AI apps and data<v:newlineChar/><tspan
+						x="12" dy="1.581em" class="st8" v:isBullet="true">§</tspan><tspan class="st8"> </tspan>Govern AI for compliance</text>		</g>
 		<g id="shape1047-30" v:mID="1047" v:groupContext="shape" transform="translate(490.338,-185.95)">
 			<title>Sheet.1047</title>
-			<desc>The broader adoption motion for AI, including: AI adoption st...</desc>
+			<desc>End-to-end adoption roadmap for AI: Strategy, including guida...</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(34000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,12)"/>
 			<v:textRect cx="115.2" cy="403.107" width="230.4" height="122.858"/>
 			<rect x="0" y="341.678" width="230.4" height="122.858" rx="4.5" ry="4.5" class="st4"/>
-			<text x="12" y="360.55" class="st6" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>The broader adoption motion for AI, <tspan
-						x="12" dy="1.2em" class="st7">including:<v:newlineChar/><v:paragraph v:indentFirst="-18" v:indentLeft="18"
-							v:spAfter="4" v:bullet="1"/></tspan><tspan x="12" dy="1.575em" class="st8" v:isBullet="true">·</tspan><tspan
-						class="st8"> </tspan>AI adoption strategy<v:newlineChar/><tspan x="12" dy="1.579em" class="st8"
-						v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Prescriptive guidance for people and <tspan x="30"
-						dy="1.204em" class="st7">process <v:newlineChar/></tspan><tspan x="12" dy="1.575em" class="st8"
-						v:isBullet="true">·</tspan><tspan class="st8"> </tspan>Deeper guidance for developing AI apps <tspan x="30"
-						dy="1.204em" class="st7">in Azure</tspan></text>		</g>
+			<text x="12" y="360.53" class="st6" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>End-to-end adoption roadmap for AI:<v:newlineChar/><v:paragraph
+						v:indentFirst="-18" v:indentLeft="18" v:spAfter="4" v:bullet="3"/><tspan x="12" dy="1.576em" class="st8"
+						v:isBullet="true">§</tspan><tspan class="st8"> </tspan>Strategy, including guidance for teams <tspan x="30"
+						dy="1.204em" class="st7">and processes<v:newlineChar/></tspan><tspan x="12" dy="1.576em" class="st8"
+						v:isBullet="true">§</tspan><tspan class="st8"> </tspan>Generative and non-generative AI <v:newlineChar/><tspan
+						x="12" dy="1.581em" class="st8" v:isBullet="true">§</tspan><tspan class="st8"> </tspan>Deeper guidance for developing AI apps <tspan
+						x="30" dy="1.204em" class="st7">in Azure, including AI design and </tspan><tspan x="30" dy="1.2em"
+						class="st7">implementation</tspan></text>		</g>
 		<g id="shape1049-42" v:mID="1049" v:groupContext="shape" transform="translate(237.063,-245.628)">
 			<title>Sheet.1049</title>
 			<v:userDefs>
@@ -149,16 +149,16 @@
 			<v:textBlock v:margins="rect(4,4,4,12)"/>
 			<v:textRect cx="102.214" cy="382.628" width="204.43" height="163.815"/>
 			<rect x="0" y="300.72" width="204.429" height="163.815" rx="4.5" ry="4.5" class="st4"/>
-			<text x="12" y="321.53" class="st6" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Focus on business scenarios:<v:newlineChar/><v:paragraph
-						v:indentFirst="-18" v:indentLeft="18" v:spAfter="4" v:bullet="1"/><tspan x="12" dy="1.642em" class="st10"
-						v:isBullet="true">·</tspan><tspan class="st10"> </tspan><tspan class="st11">Rapidly modernize your security </tspan><tspan
-						x="30" dy="1.204em" class="st11">posture<v:newlineChar/></tspan><tspan x="12" dy="1.612em" class="st10"
-						v:isBullet="true">·</tspan><tspan class="st10"> </tspan><tspan class="st11">Secure remote and hybrid work<v:newlineChar/></tspan><tspan
-						x="12" dy="1.616em" class="st10" v:isBullet="true">·</tspan><tspan class="st10"> </tspan><tspan
+			<text x="12" y="321.5" class="st6" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Focus on business scenarios:<v:newlineChar/><v:paragraph
+						v:indentFirst="-18" v:indentLeft="18" v:spAfter="4" v:bullet="3"/><tspan x="12" dy="1.643em" class="st10"
+						v:isBullet="true">§</tspan><tspan class="st10"> </tspan><tspan class="st11">Rapidly modernize your security </tspan><tspan
+						x="30" dy="1.204em" class="st11">posture<v:newlineChar/></tspan><tspan x="12" dy="1.613em" class="st10"
+						v:isBullet="true">§</tspan><tspan class="st10"> </tspan><tspan class="st11">Secure remote and hybrid work<v:newlineChar/></tspan><tspan
+						x="12" dy="1.617em" class="st10" v:isBullet="true">§</tspan><tspan class="st10"> </tspan><tspan
 						class="st11">Identify and protect sensitive business </tspan><tspan x="30" dy="1.204em" class="st11">data<v:newlineChar/></tspan><tspan
-						x="12" dy="1.612em" class="st10" v:isBullet="true">·</tspan><tspan class="st10"> </tspan><tspan
+						x="12" dy="1.613em" class="st10" v:isBullet="true">§</tspan><tspan class="st10"> </tspan><tspan
 						class="st11">Prevent or reduce business damage </tspan><tspan x="30" dy="1.204em" class="st11">from a breach<v:newlineChar/></tspan><tspan
-						x="12" dy="1.612em" class="st10" v:isBullet="true">·</tspan><tspan class="st10"> </tspan><tspan
+						x="12" dy="1.613em" class="st10" v:isBullet="true">§</tspan><tspan class="st10"> </tspan><tspan
 						class="st11">Meet regulatory and compliance </tspan><tspan x="30" dy="1.204em" class="st11">requirements</tspan></text>		</g>
 		<g id="shape1053-71" v:mID="1053" v:groupContext="shape" transform="translate(10.0977,-12.25)">
 			<title>Sheet.1053</title>

@@ -39,7 +39,7 @@ In the image:
 
 - Use this library (Security for AI library) to learn how to implement capabilities to secure AI apps and data in your environment. These protections help build your Zero Trust foundation. 
 - Use the [Zero Trust adoption framework](../zero-trust/adopt/zero-trust-adoption-overview.md) to continue to make progress toward end-to-end security. Each of the Zero Trust business scenarios also increases your security for AI apps and data. 
-- Use the [Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/) to develop your end-to-end roadmap for adoption of AI, including generative and non-generative AI. This library includes strategy, prescriptive guidance for people roles and organization processes, and deeper guidance for developing AI apps in Azure, including design and implementation guidance. 
+- Use the [Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/) to develop your end-to-end roadmap for adoption of AI, including generative and non-generative AI. This library includes strategies for choosing AI technologies, processes for securing and governing AI, and resources for AI design and implementation. 
 
 ## Understand the motivations of your business leaders
 

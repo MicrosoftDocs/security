@@ -219,13 +219,13 @@ The following image is a summary view of all the capabilities Microsoft provides
 | Protect AI against vulnerabilities and emerging threats | |
 | Govern AI to comply with regulatory requirements | |
 
-This library guides you through the process of implementing security for AI in a staged approach.
-
-:::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI.":::
 
 
 
 ## Next steps for securing AI 
+This library guides you through the process of implementing security for AI in a staged approach.
+
+:::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI.":::
 
 Follow the guidance in this series of articles to learn more about securing AI and to identify and implement capabilities to achieve your organization’s objectives.  
 

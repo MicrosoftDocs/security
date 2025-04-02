@@ -490,20 +490,5 @@
 			</g>
 			<rect x="0" y="440.929" width="396" height="27.5711" rx="4.5" ry="4.5" class="st5"/>
 			<text x="4" y="458.31" class="st6" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Data Security Posture Management (DSPM) for AI</text>		</g>
-		<g id="shape1291-118" v:mID="1291" v:groupContext="shape" v:layerMember="0" transform="translate(536.5,-178.955)">
-			<title>Rectangle.1291</title>
-			<desc>Coming soon</desc>
-			<v:userDefs>
-				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(199000):26"/>
-			</v:userDefs>
-			<v:textBlock v:margins="rect(4,4,4,4)"/>
-			<v:textRect cx="63" cy="454.714" width="126" height="27.5711"/>
-			<g id="shadow1291-119" v:groupContext="shadow" v:shadowOffsetX="4.40873E-24" v:shadowOffsetY="-2" v:shadowType="1"
-					v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-0.63,-2.54714)" class="st3">
-				<rect x="0" y="440.929" width="126" height="27.5711" rx="4.5" ry="4.5" class="st20"/>
-			</g>
-			<rect x="0" y="440.929" width="126" height="27.5711" rx="4.5" ry="4.5" class="st21"/>
-			<text x="27.6" y="458.31" class="st6" v:langID="1033"><v:paragraph v:spAfter="6" v:horizAlign="1"/><v:tabList/>Coming soon</text>		</g>
 	</g>
 </svg>

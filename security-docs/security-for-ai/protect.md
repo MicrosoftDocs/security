@@ -37,7 +37,7 @@ Table 1—Data protection capabilities
 | --- | --- | --- |
 | 1   | Apply SharePoint oversharing controls to quickly exempt sensitive sites and data from the scope of AI apps. | Sites and files across your Microsoft 365 environment. |
 | 2   | Use Data Security Posture Management (DSPM) for AI to learn where oversharing is taking place and to find gaps in your policy coverage for sensitivity labels and DLP policies. | Microsoft Copilots <br>[Supported AI sites](/purview/ai-microsoft-purview-supported-sites) |
-| 3   | Within Insider Risk Management (IRM), apply the Risky AI template to identify risky behavior in AI apps. | Generative AI websites<br><br>Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio |
+| 3   | Within Insider Risk Management (IRM), apply the Risky AI template to identify risky behavior in AI apps. | Generative AI websites <br>Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio |
 
 Table 2—Threat protection capabilities
 
@@ -87,7 +87,7 @@ Use the following resources to protect AI apps and data with DSPM for AI.
 | --- | --- |
 | Sign in to DSPM for AI and review the reports and recommendations | [How to use DSPM for AI](/purview/ai-microsoft-purview#how-to-use-data-security-posture-management-for-ai) |
 
-## Step 3—Apply the Risky AI template
+### Step 3—Apply the Risky AI template
 
 Microsoft Purview Insider Risk Management (IRM) includes predefined policy templates you can apply to your environment, including Risky AI usage. IRM templates are predefined policy conditions that define the types of risk indicators and risk scoring model used by the policy.
 
@@ -170,7 +170,7 @@ Use the following resources for next steps.
 | --- | --- |
 | Review top scenarios described in this blog | [Secure Generative AI Applications with Microsoft Defender for Cloud](https://techcommunity.microsoft.com/blog/microsoftdefendercloudblog/secure-your-ai-applications-from-code-to-runtime-with-microsoft-defender-for-clo/4127665) |
 | Use CSPM to gain visibility into AI risks in your environment | [Protect your resources with Defender CSPM](/azure/defender-for-cloud/tutorial-enable-cspm-plan) <br>[Review the Data and AI security dashboard (Preview)](/azure/defender-for-cloud/data-aware-security-dashboard-overview) |
-| Enable threat protection for AI workloads (preview) | Enable threat protection for AI workloads (preview) <br>[Alerts for AI workloads (Preview)](/azure/defender-for-cloud/alerts-ai-workloads) |
+| Enable threat protection for AI workloads (preview) | Enable threat protection for AI workloads (preview) <br>[Alerts for AI workloads (Preview)](/azure/defender-for-cloud/alerts-ai-workloads) |s
 
 ## Next step for securing AI
 

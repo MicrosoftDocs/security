@@ -25,9 +25,9 @@ Building a strong security posture for AI involves working within your organizat
   - [**Prepare**](prepare.md) your environment with foundation security protections. You likely already have many of these protections in place. 
   - [**Discover**](discover.md) the AI apps that are being used in your organization, including the types of data the apps are using. 
   - [**Protect**](protect.md) the usage of AI tools in your organization. This involves AI-specific data protection capabilities and ensuring your organization has implemented strong threat protection. 
-  - [**Govern**](govern.md) the use of AI, including tracking your security and compliance status.
+  - [**Govern**](govern.md) AI for compliance. 
   
-  :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
+  :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI.":::
 
 Use this library together with the following frameworks on Microsoft Learn: 
 - [Zero Trust adoption framework](../zero-trust/adopt/zero-trust-adoption-overview.md) 
@@ -208,7 +208,7 @@ On top of Microsoft’s end-to-end security platform, Microsoft provides compreh
 
 This library guides you through the process of implementing security for AI in a staged approach.
 
-:::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
+:::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI.":::
 
 See the following articles:
 

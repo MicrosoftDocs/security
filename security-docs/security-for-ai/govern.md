@@ -21,5 +21,6 @@ AI regulations and standards are emerging across regions and industries, providi
 - Assess and strengthen your compliance posture against regulations.
 - Implement controls to govern usage of AI apps and data.
 
+:::image type="content" source="media/security-for-ai-step-govern.svg" alt-text="Diagram that shows the Protect aspect of security for AI series.":::
 
-. . . . 
+

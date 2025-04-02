@@ -179,4 +179,4 @@ After protecting AI apps and data in your organization, the next step is to gove
 - Assess and strengthen your compliance posture against regulations.
 - Implement controls to govern usage of AI apps and data.
 
-See the next article in this series: [How do I govern AI apps and data?](govern.md)
+See the next article in this series: [How do I govern AI for compliance?](govern.md)

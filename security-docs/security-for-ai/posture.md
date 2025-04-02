@@ -206,6 +206,8 @@ IT and security leaders believe that the primary budget contributors for new sol
 
 On top of Microsoft’s end-to-end security platform, Microsoft provides comprehensive security tooling to secure AI, from discovery of AI tools and data to protections designed specifically to mitigate AI threats. These tools include sophisticated dashboards and compliance resources, helping you stay on top of risks and regulatory obligations.  
 
+:::image type="content" source="media/security-for-ai-microsoft-solutions.png" alt-text="Graphical view of Microsoft capabilities that help with security for AI." lightbox="media/security-for-ai-microsoft-solutions.png":::
+
 This library guides you through the process of implementing security for AI in a staged approach.
 
 :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI.":::

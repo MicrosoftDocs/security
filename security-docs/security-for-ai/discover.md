@@ -25,7 +25,7 @@ This is the second article in a series. Before using this article, be sure you a
 
 Microsoft provides tools to help you gain visibility into data, access, user, and application risks for the AI you build and use. These capabilities help you proactively address vulnerabilities while you build a strong security posture for AI. 
 
-:::image type="content" source="media/security-for-ai-discover-capabilities.svg" alt-text="Diagram that shows the capabilities of dicovering AI." lightbox="media/security-for-ai-discover-capabilities.svg":::
+:::image type="content" source="media/security-for-ai-discover-capabilities.svg" alt-text="Diagram that shows the capabilities of discovering AI." lightbox="media/security-for-ai-discover-capabilities.svg":::
 
 The following table describes the illustration and also walks through the steps of implementing these capabilities. 
 
@@ -68,7 +68,7 @@ Microsoft Defender for Cloud Apps helps security teams discover SaaS GenAI apps 
 
 The Defender for Cloud Apps app catalog includes a Generative AI category for large language model (LLM) apps, like Microsoft Bing Chat, Google Bard, ChatGPT, and more. Defender for Cloud Apps has added more than a thousand generative AI-related apps to the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
 
-:::image type="content" source="media/generative-ai.png" alt-text="Screenshot of searching apps in cloud app catalogue." lightbox="media/generative-ai.png":::
+:::image type="content" source="media/generative-ai.png" alt-text="Screenshot of searching apps in cloud app catalog." lightbox="media/generative-ai.png":::
 
 With Defender for Cloud Apps, you can:
 

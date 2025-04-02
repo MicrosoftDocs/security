@@ -31,7 +31,7 @@ Microsoft provides a broad set of capabilities for protecting AI apps and data. 
 
 The following two tables describe the illustration and also walk through the steps of implementing these capabilities.
 
-Table 1—Data protection capabilities
+Table 1 - Data protection capabilities
 
 | Step | Task | Scope |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ Table 1—Data protection capabilities
 | 2   | Use Data Security Posture Management (DSPM) for AI to learn where oversharing is taking place and to find gaps in your policy coverage for sensitivity labels and DLP policies. | Microsoft Copilots <br>[Supported AI sites](/purview/ai-microsoft-purview-supported-sites) |
 | 3   | Within Insider Risk Management (IRM), apply the Risky AI template to identify risky behavior in AI apps. | Generative AI websites <br>Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio |
 
-Table 2—Threat protection capabilities
+Table 2 - Threat protection capabilities
 
 | Step | Task | Scope |
 | --- | --- | --- |
@@ -107,7 +107,7 @@ Defender for Cloud Apps and Defender for Cloud include capabilities to keep you 
 
 ### Step 1—Use Defender for Cloud Apps to triage and protect use of AI apps
 
-The previous article in this series, [Discover AI Apps, and Data](discover.md), focused on using Defender for Cloud Apps to discover AI apps in your environment. This article encourages organizations to use Defender for Cloud Apps to stay on top of new AI app use by assessing the risk these pose to your environment, sanctioning or blocking these apps, and applying session controls to apps.
+The previous article in this series, [Discover AI Apps, and Data](discover.md), focused on using Defender for Cloud Apps to discover AI apps in your environment. This article encourages organizations to use Defender for Cloud Apps to stay on top of new AI app use by assessing the risk these poses to your environment, sanctioning or blocking these apps, and applying session controls to apps.
 
 First, create a policy to automatically trigger an alert when a new Generative AI app is being used in your organization.
 

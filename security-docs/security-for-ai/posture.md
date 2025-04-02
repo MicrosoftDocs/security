@@ -206,20 +206,24 @@ IT and security leaders believe that the primary budget contributors for new sol
 
 On top of Microsoft’s end-to-end security platform, Microsoft provides comprehensive security tooling to secure AI, from discovery of AI tools and data to protections designed specifically to mitigate AI threats. These tools include sophisticated dashboards and compliance resources, helping you stay on top of risks and regulatory obligations.  
 
+:::image type="content" source="media/security-for-ai-posture-solution-wheel.png" alt-text="Microsoft capabilities provide full, wrap-around protection for your AI apps and data." lightbox="media/security-for-ai-posture-solution-wheel.png":::
+
+The following image is a summary view of all the capabilities Microsoft provides for protecting adopting AI. These capabilities are also listed in the table below.
+
+
 :::image type="content" source="media/security-for-ai-microsoft-solutions.png" alt-text="Graphical view of Microsoft capabilities that help with security for AI." lightbox="media/security-for-ai-microsoft-solutions.png":::
+
+| Top customer concern| Capabilities |
+|----|-----|
+| Prevent data leak and oversharing|Access and endpoint controls — **Microsoft Entra & Intune** <br> Data Security Posture Management for AI — **Microsoft Purview** <br> Microsoft Defender |
+| Protect AI against vulnerabilities and emerging threats | |
+| Govern AI to comply with regulatory requirements | |
 
 This library guides you through the process of implementing security for AI in a staged approach.
 
 :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI.":::
 
-See the following articles:
 
-| Phase | Capabilities |
-|----|-----|
-| Prepare | |
-| Discover | |
-| Protect | |
-| Govern | |
 
 ## Next steps for securing AI 
 
@@ -228,7 +232,7 @@ Follow the guidance in this series of articles to learn more about securing AI a
  - [Prepare for AI](prepare.md) 
  - [Discover AI apps and data](discover.md)
  - [Protect AI data and apps](protect.md)
- - [Govern for AI compliance](govern.md) 
+ - [Govern AI for compliance](govern.md) 
 
 To learn more about optimizing your overall security posture and Zero Trust, see [Rapidly modernize your security posture](../zero-trust/adopt/rapidly-modernize-security-posture.md). 
 

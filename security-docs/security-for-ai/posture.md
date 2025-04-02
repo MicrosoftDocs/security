@@ -33,7 +33,7 @@ Use this library together with the following frameworks on Microsoft Learn:
 - [Zero Trust adoption framework](../zero-trust/adopt/zero-trust-adoption-overview.md) 
 - [Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/)
 
-:::image type="content" source="media/security-for-ai-framework-comparison.svg" alt-text="Diagram that shows the framework of security for AI.":::
+:::image type="content" source="media/security-for-ai-framework-comparison.svg" alt-text="Diagram that shows the framework of security for AI." lightbox="media/security-for-ai-framework-comparison.svg":::
 
 In the image: 
 

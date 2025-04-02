@@ -172,7 +172,7 @@ Use the following resources for next steps.
 | Use CSPM to gain visibility into AI risks in your environment | [Protect your resources with Defender CSPM](/azure/defender-for-cloud/tutorial-enable-cspm-plan) <br>[Review the Data and AI security dashboard (Preview)](/azure/defender-for-cloud/data-aware-security-dashboard-overview) |
 | Enable threat protection for AI workloads (preview) | Enable threat protection for AI workloads (preview) <br>[Alerts for AI workloads (Preview)](/azure/defender-for-cloud/alerts-ai-workloads) |
 
-# Next step for securing AI
+## Next step for securing AI
 
 After protecting AI apps and data in your organization, the next step is to govern AI apps to meet regulatory compliance requirements:
 

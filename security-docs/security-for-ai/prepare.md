@@ -30,7 +30,7 @@ At the same time, these protections build the foundation upon which AI-specific 
 
 These foundation security protections should be applied across your digital estate, enabling AI security and governance across the breadth of your organization footprint.
 
-:::image type="content" source="media/saas-apps-and-azure-apps.svg" alt-text="Diagram of the digital estate that includes Saas apps, Azure apps, and cloud providers.":::
+:::image type="content" source="media/saas-apps-and-azure-apps.svg" alt-text="Diagram of the digital estate that includes Saas apps, Azure apps, and cloud providers." lightbox="media/saas-apps-and-azure-apps.svg":::
 
 In the illustration, your digital estate includes: 
 
@@ -57,7 +57,7 @@ To prepare for AI, be sure to apply identity and device access protection across
 
 The following graphic suggests an order for doing this work.  
 
-:::image type="content" source="media/order-for-integration.svg" alt-text="Diagram that shows the order for integration.":::
+:::image type="content" source="media/order-for-integration.svg" alt-text="Diagram that shows the order for integration." lightbox="media/order-for-integration.svg":::
 
 The following table lists the steps illustrated above. 
 
@@ -72,7 +72,7 @@ The following table lists the steps illustrated above.
 
 Data protection takes time for an organization to fully implement. Traditionally, this involves waves of deployment steps that you roll out across your organization.  
 
-:::image type="content" source="media/adoption-information-protection.svg" alt-text="Diagram of the process for technical adoption of information protection.":::
+:::image type="content" source="media/adoption-information-protection.svg" alt-text="Diagram of the process for technical adoption of information protection." lightbox="media/adoption-information-protection.svg":::
 
 In the illustration, the technical adoption of information protection involves cascading steps that you can run in parallel:
 
@@ -125,7 +125,7 @@ Finally, turn on Microsoft Defender threat protection capabilities. Some of thes
 
 This work is described in the Microsoft Zero Trust adoption framework: [Implement threat protection and XDR](../zero-trust/adopt/prevent-reduce-business-damage-breach-threat-protection.md).  
 
-:::image type="content" source="media/turn-on-threat-detection-and-response.svg" alt-text="Diagram that shows capabilities of turning on threat detection and response.":::
+:::image type="content" source="media/turn-on-threat-detection-and-response.svg" alt-text="Diagram that shows capabilities of turning on threat detection and response." lightbox="media/turn-on-threat-detection-and-response.svg":::
 
 Use the following resources to enable threat protection. 
 

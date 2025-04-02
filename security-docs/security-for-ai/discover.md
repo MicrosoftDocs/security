@@ -25,7 +25,7 @@ This is the second article in a series. Before using this article, be sure you a
 
 Microsoft provides tools to help you gain visibility into data, access, user, and application risks for the AI you build and use. These capabilities help you proactively address vulnerabilities while you build a strong security posture for AI. 
 
-:::image type="content" source="media/security-for-ai-discover-capabilities.svg" alt-text="Diagram that shows the capabilities of dicovering AI.":::
+:::image type="content" source="media/security-for-ai-discover-capabilities.svg" alt-text="Diagram that shows the capabilities of discovering AI." lightbox="media/security-for-ai-discover-capabilities.svg":::
 
 The following table describes the illustration and also walks through the steps of implementing these capabilities. 
 
@@ -41,7 +41,7 @@ Microsoft Purview Data Security Posture Management (DSPM) for AI focuses on how 
 
 The following diagram shows one of the aggregated views into the impact of AI use on your data—Sensitive interactions per generative AI app.
 
-:::image type="content" source="media/ai-hub-sensitive-interactions-report.png" alt-text="Screenshot of the sensitive interactions per generative AI app.":::
+:::image type="content" source="media/ai-hub-sensitive-interactions-report.png" alt-text="Screenshot of the sensitive interactions per generative AI app." lightbox="media/ai-hub-sensitive-interactions-report.png":::
 
 DSPM for AI offers a set of capabilities that help you safely adopt AI without having to choose between productivity and protection:
 
@@ -68,7 +68,7 @@ Microsoft Defender for Cloud Apps helps security teams discover SaaS GenAI apps 
 
 The Defender for Cloud Apps app catalog includes a Generative AI category for large language model (LLM) apps, like Microsoft Bing Chat, Google Bard, ChatGPT, and more. Defender for Cloud Apps has added more than a thousand generative AI-related apps to the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
 
-:::image type="content" source="media/generative-ai.png" alt-text="Screenshot of searching apps in cloud app catalogue.":::
+:::image type="content" source="media/generative-ai.png" alt-text="Screenshot of searching apps in cloud app catalog." lightbox="media/generative-ai.png":::
 
 With Defender for Cloud Apps, you can:
 
@@ -78,7 +78,7 @@ With Defender for Cloud Apps, you can:
 - Sanction or unsanction (block) the usage of specific apps
 - Create policies that continue to discover AI apps based on criteria you set, including risk score, number of users per day, and others. You can even automatically unsanction apps that meet the criteria.
 
-:::image type="content" source="media/cloud-discovery-defender-cloud-apps.png" alt-text="Screenshot of the Cloud Discovery page in the Microsoft Defender.":::
+:::image type="content" source="media/cloud-discovery-defender-cloud-apps.png" alt-text="Screenshot of the Cloud Discovery page in the Microsoft Defender." lightbox="media/cloud-discovery-defender-cloud-apps.png":::
 
 Use the following resources for next steps.
 
@@ -104,11 +104,11 @@ Use the cloud security explorer to identify generative AI workloads and models r
 - Generative AI vulnerable code repositories that provision Azure OpenAI
 - Containers running container images with known Generative AI vulnerabilities.
 
-:::image type="content" source="media/defender-for-cloud.png" alt-text="Screenshot of the AI workloads and models in use ":::
+:::image type="content" source="media/defender-for-cloud.png" alt-text="Screenshot of the AI workloads and models in use " lightbox="media/defender-for-cloud.png":::
 
 You can also configure your own queries.
 
-:::image type="content" source="media/defender-for-cloud-configure.png" alt-text="Screenshot of the configuration page to configure own queries.":::
+:::image type="content" source="media/defender-for-cloud-configure.png" alt-text="Screenshot of the configuration page to configure own queries." lightbox="media/defender-for-cloud-configure.png":::
 
 Use the following resources for next steps.
 

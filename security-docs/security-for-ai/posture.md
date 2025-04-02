@@ -215,7 +215,7 @@ The following image is a summary view of all the capabilities Microsoft provides
 
 | Top customer concern| Capabilities |
 |----|-----|
-| Prevent data leak and oversharing|Access and endpoint controls — **Microsoft Entra & Intune** <br> Data Security Posture Management for AI — **Microsoft Purview** <br> Microsoft Defender |
+| - Prevent data leak and oversharing|Access and endpoint controls — **Microsoft Entra & Intune** <br> - Data Security Posture Management for AI — **Microsoft Purview** <br> - Microsoft Defender |
 | Protect AI against vulnerabilities and emerging threats | |
 | Govern AI to comply with regulatory requirements | |
 

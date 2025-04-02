@@ -1,7 +1,7 @@
 ---
 title: How do I prepare my environment for AI security?
 description: How to prepare your environment for AI security with identity and device protection, data protection, and threat protection. 
-ms.date: 03/19/2025
+ms.date: 04/01/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter

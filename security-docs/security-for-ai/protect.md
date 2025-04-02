@@ -25,6 +25,9 @@ This is the third article in a series. If you haven’t yet accomplished the tas
 
 :::image type="content" source="media/security-for-ai-step-protect.svg" alt-text="Diagram that shows the Protect aspect of security for AI series.":::
 
+Use this article together with this resource: 
+- Cloud Adoption Framework (CAF) for AI — [Process to secure AI](/azure/cloud-adoption-framework/scenarios/ai/secure)
+
 Microsoft provides a broad set of capabilities for protecting AI apps and data. This article discusses these in two categories—data protection and threat protection.
 
 :::image type="content" source="media/capabilities-for-protecting-ai-apps.svg" alt-text="Diagram that shows the capabilities for protecting AI apps and data." lightbox="media/capabilities-for-protecting-ai-apps.svg":::

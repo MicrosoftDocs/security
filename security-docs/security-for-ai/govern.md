@@ -84,7 +84,7 @@ Currently Compliance Manager includes regulatory templates for the following AI-
 - ISO/IEC 42001:2023
 - NIST AI Risk Management Framework (RMF) 1.0
 
-:::image type="content" source="media/eu-ai-act.png" alt-text="Screenshot that shows the EU Artificial Intelligence Act" lightbox="media/eu-ai-act.png":::
+:::image type="content" source="media/eu-ai-act.png" alt-text="Screenshot that shows the EU Artificial Intelligence Act." lightbox="media/eu-ai-act.png":::
 
 Use the following resources to get started with Compliance Manager
 

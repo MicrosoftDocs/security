@@ -310,7 +310,7 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
 3. Run this PowerShell command.
 
     ```powershell
-    Get-AzureADPSPermissions.ps1 | Export-csv c:\temp\consentgrants\Permissions.csv -NoTypeInformation
+    ./Get-AzureADPSPermissions.ps1 | Export-csv c:\temp\consentgrants\Permissions.csv -NoTypeInformation
     ```
 
 4. Once the script completes, it's recommended to disconnect the Microsoft Entra session with this command.

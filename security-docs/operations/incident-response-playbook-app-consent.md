@@ -5,7 +5,7 @@ keywords: app consent grant, investigation, attack, illicit consent grant, micro
 search.product: DART
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.custom: has-azure-ad-ps-ref
+ms.custom: no-azure-ad-ps-ref
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -57,61 +57,41 @@ To start the investigation process, you need the following data:
 
 Ensure you complete the following installations and configuration requirements:
 
-- The AzureAD PowerShell module is installed.
+- The Microsoft.Graph PowerShell module is installed.
 - You have [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) rights on the tenant that the script run against.
 - You're assigned local administrator role on the computer that you use to run the scripts.
 
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../security-docs/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+#### Install the Microsoft.Graph module
 
-#### Install the AzureAD module
-
-Use this command to install the AzureAD module.
+Use this command to install the Microsoft.Graph module.
 
 ```powershell
-Install-Module -Name AzureAD -Verbose
+Install-Module -Name Microsoft.Graph -Verbose
 ```
 
 > [!NOTE]
 > If you're prompted to install the modules from an untrusted repository, type **Y** and press **Enter**.
 
-#### Install the MSOnline PowerShell module
-
-1. Run the Windows PowerShell app with elevated privileges (run as administrator).
-2. Run this command to allow PowerShell to run signed scripts.
-
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    ```
-
-3. Install the MSOnline module with this command.
-
-    ```powershell
-    Install-Module -Name MSOnline -Verbose
-    ```
-
-    > [!NOTE]
-    > If you're prompted to install the modules from an untrusted repository, type **Y** and press **Enter**.
-
 #### Download the AzureADPSPermissions Script from GitHub
 
 1. Download the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub to a folder from which you run the script. The output file "*permissions.csv*" is also be written to this same folder.
 2. Open a PowerShell instance as an administrator and open the folder in which you saved the script.
-3. Connect to your directory using the `Connect-AzureAD` cmdlet. Here's an example.
+3. Connect to your directory using the `Connect-MgGraph` cmdlet. Here's an example.
 
     ```powershell
-    Connect-AzureAD -tenantid "aaaabbbb-0000-cccc-1111-dddd2222eeee" -AccountId "user1@contoso.onmicrosoft.com"
+    Connect-MgGraph -TenantId "aaaabbbb-0000-cccc-1111-dddd2222eeee" -Scopes "Application.Read.All", "User.Read.All"
     ```
 
 4. Run this PowerShell command.
 
     ```powershell
-    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
+    ./Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
     ```
 
-    Disconnect your AzureAD session with this command.
+    Disconnect your session with this command.
 
     ```powershell
-    Disconnect-AzureAD
+    Disconnect-MgGraph
     ```
 
 ## Consent terminologies
@@ -177,7 +157,7 @@ At a high level, Microsoft has observed the following "root" delegated (App+User
 7. *Directory.AccessAsUser.All*
 8. *User\_Impersonation*
 
-The first seven permissions in the previous list are for Microsoft Graph and the "legacy" API equivalents, such as Azure Active Directory (Azure AD) Graph and Outlook REST. The eighth permission is for Azure Resource Manager (ARM) and could also be dangerous on any API that exposes sensitive data with this blanket impersonation scope.
+The first seven permissions in the previous list are for Microsoft Graph and the "legacy" API equivalents, such as Outlook REST. The eighth permission is for Azure Resource Manager (ARM) and could also be dangerous on any API that exposes sensitive data with this blanket impersonation scope.
 
 Based on Microsoft Incident Response team's observations, attackers use a combination of the first six permissions in 99% of the consent phishing attacks. Most people don't think of the delegated version of *Mail.Read* or *Files.Read* as a high-risk permission, however, the attacks are generally widespread and target end users, rather than spear phishing against admins who can actually consent to the dangerous permissions. It's recommended to bubble apps with these "critical" level of impact permissions. Even if the applications don't have malicious intent, and if a bad actor were to compromise the app identity, then your entire organization could be at risk.
 
@@ -273,7 +253,7 @@ Use this checklist to perform application consent grant validation.
 
   Configure your PowerShell environment with these steps:
 
-  1. Install the Azure AD PowerShell module.
+  1. Install the Microsoft.Graph PowerShell module.
   2. Run the Windows PowerShell app with elevated privileges. (Run as administrator).
   3. Configure PowerShell to run signed scripts.
   4. Download the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script.
@@ -313,7 +293,7 @@ You can use the Microsoft Entra admin center to find applications that individua
 There are several PowerShell tools you can use to investigate illicit consent grants, such as:
 
 - HAWK tool
-- AzureAD incident response module
+- Microsoft Entra incident response module
 - The [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub
 
 PowerShell is the easiest tool and doesn't require you to modify anything in the tenancy. We're going to base our investigation on the public documentation from the Illicit Consent Grant attack.
@@ -321,10 +301,10 @@ PowerShell is the easiest tool and doesn't require you to modify anything in the
 Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants and OAuth apps for all users in your tenancy into a *.csv* file. See the [Prerequisites](#prerequisites) section to download and run the `Get-AzureADPSPermissions` script.
 
 1. Open a PowerShell instance as an administrator and open the folder where you saved the script.
-2. Connect to your directory using the following *Connect-AzureAD* command. Here's an example.
+2. Connect to your directory using the following *Connect-MgGraph* command. Here's an example.
 
     ```powershell
-    Connect-AzureAD -tenantid "aaaabbbb-0000-cccc-1111-dddd2222eeee" -AccountId "user1@contoso.onmicrosoft.com"
+    Connect-MgGraph -TenantId "aaaabbbb-0000-cccc-1111-dddd2222eeee" -Scopes "Application.Read.All", "User.Read.All"
     ```
 
 3. Run this PowerShell command.
@@ -336,7 +316,7 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
 4. Once the script completes, it's recommended to disconnect the Microsoft Entra session with this command.
 
     ```powershell
-     Disconnect-AzureAD
+    Disconnect-MgGraph
     ```
 
     > [!NOTE]
@@ -548,7 +528,7 @@ Audit apps and consented permissions in your organization to ensure applications
 - [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals)
 - [Microsoft Entra Config Documentor](https://github.com/microsoft/AADConnectConfigDocumenter)
 - [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests)
-- [Get-AzureADServicePrincipal](/powershell/module/azuread/get-azureadserviceprincipal)
+- [Get-MgServicePrincipal](/powershell/module/microsoft.graph.applications/get-mgserviceprincipal)
 - [Build 2020: Fostering a secure and trustworthy app ecosystem for all users](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/build-2020-fostering-a-secure-and-trustworthy-app-ecosystem-for/ba-p/1257360)
 - [Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow)
 - [Admins should evaluate all consent requests carefully before approving a request.](/azure/active-directory/manage-apps/configure-user-consent#configure-permission-classifications-preview)

@@ -66,7 +66,7 @@ Additionally, different parts of your organization will have different motivatio
 
 ## Address the evolving threat landscape for AI
 
-GenAI introduces new attack surfaces, effectively changing the risk landscape. In addition to managing traditional threat vectors, security and risk leaders also need to address amplified risks such as data leakage and data oversharing, and new risks such as prompt injections and model vulnerabilities. Addressing the evolving threat landscape is crucial to enabling trustworthy AI. 
+GenAI introduces new attack surfaces, effectively changing the risk landscape. In addition to managing traditional threat vectors, security and risk leaders also need to address amplified risks such as data leakage and data oversharing, and new risks such as prompt injections, incorrect infomation, model vulnerabilities and incorrect information. Addressing the evolving threat landscape is crucial to enabling trustworthy AI. 
 
 :::image type="content" source="media/ai-introduces-new-amplified-risks.png" alt-text="Diagram that shows the GenAI introducing new risks." lightbox="media/ai-introduces-new-amplified-risks.png":::
 
@@ -214,10 +214,10 @@ See the following articles:
 
 | Phase | Capabilities |
 |----|-----|
-| Prepare | |
-| Discover | |
-| Protect | |
-| Govern | |
+| [Prepare](prepare.md) | Foundation security protections|
+| [Discover](discover.md) |AI apps, data and usage |
+| [Protect](protect.md) |AI-specific data and threat protections |
+| [Govern](govern.md)  | Measure and communicate status |
 
 ## Next steps for securing AI 
 

@@ -23,7 +23,7 @@ AI regulations and standards are emerging across regions and industries, providi
 
 This is the fourth article in a series. If you haven’t yet accomplished the tasks in [Prepare for AI security](prepare.md), [Discover AI apps and data](discover.md), and [Protect AI apps and data](protect.md), start with these articles to prepare your environment with capabilities prescribed in this article.
 
-:::image type="content" source="media/security-for-ai-govern.png" alt-text="Diagram that highlights the Govern from the security for AI articles.":::
+:::image type="content" source="media/security-for-ai-step-govern.svg" alt-text="Diagram that highlights the Govern from the security for AI articles.":::
 
 Use this article together with these resources:
 

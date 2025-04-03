@@ -211,7 +211,7 @@ On top of Microsoft’s end-to-end security platform, Microsoft provides compreh
 The following image is a summary view of all the capabilities Microsoft provides for protecting adopting AI. These capabilities are also listed in the table below.
 
 
-:::image type="content" source="media/security-for-ai-microsoft-solutions.png" alt-text="Graphical view of Microsoft capabilities that help with security for AI." lightbox="media/security-for-ai-microsoft-solutions.png":::
+:::image type="content" source="media/security-for-ai-microsoft-solutions.png" alt-text="Diagram of Microsoft products that help with security for AI." lightbox="media/security-for-ai-microsoft-solutions.png":::
 
 | Top customer concern| Capabilities |
 |----|-----|

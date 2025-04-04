@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Discover, protect, and govern you AI apps and data # < 60 chars
-summary: Learn how to build a security posture for AI, including discovering, protecting, and governing your AI apps and data  # < 160 chars
+title: Discover, protect, and govern AI apps and data # < 60 chars
+summary: Build a security posture for AI, including discovering, protecting, and governing your AI apps and data  # < 160 chars
 
 metadata:
   title: Build a strong security posture for AI # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -24,10 +24,6 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-        - text: Placeholder text
-          url:  /security/security-for-ai/posture
-        - text: Placeholder text
-          url:  /security/security-for-ai/protect 
         - text: Build a strong security posture for AI
           url: posture.md
         - text: Prepare for AI security

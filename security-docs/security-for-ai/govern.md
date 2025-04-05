@@ -56,7 +56,7 @@ Lastly, to build responsible AI applications and adhere to new regulatory requir
 
 Microsoft includes capabilities to help organizations connect the dots between regulatory standards and technology solutions.
 
-:::image type="content" source="media/govern-ai-comply-requirements.svg" alt-text="Diagram that shows capabilities of AI, regulatory standards, and technology solutions." lightbox="media/govern-ai-comply-requirements.svg":::
+:::image type="content" source="media/security-for-ai-govern-capabilities.svg" alt-text="Diagram that shows capabilities of AI, regulatory standards, and technology solutions." lightbox="media/security-for-ai-govern-capabilities.svg":::
 
 The following steps describe the illustration and also walk through the steps of implementing these capabilities.
 

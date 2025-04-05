@@ -86,7 +86,7 @@ Currently Compliance Manager includes regulatory templates for the following AI-
 
 :::image type="content" source="media/eu-ai-act.png" alt-text="Screenshot that shows the EU Artificial Intelligence Act." lightbox="media/eu-ai-act.png":::
 
-Use the following resources to get started with Compliance Manager
+Use the following resources to get started with Compliance Manager.
 
 | Task | Recommended resources |
 | --- | --- |
@@ -202,3 +202,11 @@ Use the following resources to get started.
 | Task | Recommended resources |
 | --- | --- |
 | Learn about and get started | [What is Azure AI Content Safety? - Azure AI services \| Microsoft Learn](/azure/ai-services/content-safety/overview) <br> [Use Content Safety in Azure AI Foundry portal](/azure/ai-services/content-safety/how-to/foundry) |
+
+## Next step for securing AI
+Continue to make progress on end-to-end security with Zero Trust resources:
+- [Zero Trust guidance center](/security/zero-trust/)
+- [Zero Trust adoption framework](/security/zero-trust/adopt/zero-trust-adoption-overview)
+- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide&bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fbreadcrumb%2Ftoc.json&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json)
+- [Incident response with XDR and integrated SIEM](/security/zero-trust/siem-xdr-overview)
+- [Apply Zero Trust principles to Azure services](/security/zero-trust/apply-zero-trust-azure-services-overview)

@@ -41,6 +41,8 @@ In the image:
 - Use the [Zero Trust adoption framework](../zero-trust/adopt/zero-trust-adoption-overview.md) to continue to make progress toward end-to-end security. Each of the Zero Trust business scenarios also increases your security for AI apps and data. 
 - Use the [Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/) to develop your end-to-end roadmap for adoption of AI, including generative and non-generative AI. This library includes strategies for choosing AI technologies, processes for securing and governing AI, and resources for AI design and implementation. 
 
+<!---
+
 ## Understand the motivations of your business leaders
 
 Begin developing your strategy and priorities by gaining alignment with your business leaders. What motivates your leaders and why do they care about your security posture for AI? The following table provides example perspectives, but it’s important for you to meet with each of these leaders and teams and come to a shared understanding of each other’s motivations.
@@ -63,6 +65,8 @@ Additionally, different parts of your organization will have different motivatio
 | IT needs | |
 | Operational needs  | |
 | Strategic needs | |
+
+--->
 
 ## Address the evolving threat landscape for AI
 
@@ -216,7 +220,7 @@ The following image is a summary view of all the capabilities Microsoft provides
 | Top customer concern| Capabilities |
 |----|-----|
 | Prevent data leak and oversharing| - Access and endpoint controls — **Microsoft Entra & Intune** <br> - Data Security Posture Management for AI — **Microsoft Purview** <br> - Data classification, labeling, and protection — **Microsoft Purview** <br> - Data Loss Prevention — **Microsoft Purview** <br> - Anomaly and risky activities detection and response — **Microsoft Purview** <br> - SaaS app security — **Microsoft Defender**|
-| Protect AI against vulnerabilities and emerging threats | - Data security and governance — **Microsoft Purview** <br> - Quality, safety, and security controls evaluation — **Azure AI Foundry** <br> - Security posture management for AI assets (apps, models, orchestrators, SDKs) — **Mic rosoft Defender** <br> - Model governance policy — **Azure Portal** <br> - Content safety prompt shield — **Azure AI** <br> - Threat protection for AI workloads — **Microsoft Defender**|
+| Protect AI against vulnerabilities and emerging threats | - Data security and governance — **Microsoft Purview** <br> - Quality, safety, and security controls evaluation — **Azure AI Foundry** <br> - Security posture management for AI assets (apps, models, orchestrators, SDKs) — **Microsoft Defender** <br> - Model governance policy — **Azure Portal** <br> - Content safety prompt shield — **Azure AI** <br> - Threat protection for AI workloads — **Microsoft Defender**|
 | Govern AI to comply with regulatory requirements | - Compliance assessments against AI regulations and standards — **Microsoft Purview** <br> - AI discovery and catalog — **Microsoft Defender** <br> - Prompt & response audits, lifecylce management, eDiscovery, communication compliance — **Microsoft Purview** <br> - AI reports for developers to log project details and controls — **Azure AI Foundry** <br> - Privacy impact assessment — **Microsoft Priva** <br> - Mitigation for harmful content, hallucination, and protected materials — **Azure AI Content Safety**|
 
 

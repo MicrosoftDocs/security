@@ -125,4 +125,4 @@ After discovering the AI usage in your organization, the next step is to apply p
 - Protect sensitive data used with AI apps
 - Implement threat protection specifically for AI use
 
-See the next article in this series: [How do I protect my organization while using AI apps?](protect.md).
+See the next article in this series: [How do I protect my organization while using AI apps?](protect.md)

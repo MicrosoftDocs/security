@@ -34,7 +34,7 @@ Microsoft provides a broad set of capabilities for protecting AI apps and data. 
 
 The following two tables describe the illustration and also walk through the steps of implementing these capabilities.
 
-Table 1 - Data protection capabilities
+**Table 1 - Data protection capabilities**
 
 | Step | Task | Scope |
 | --- | --- | --- |
@@ -42,7 +42,7 @@ Table 1 - Data protection capabilities
 | 2   | Use Data Security Posture Management (DSPM) for AI to learn where oversharing is taking place and to find gaps in your policy coverage for sensitivity labels and DLP policies. | Microsoft Copilots <br>[Supported AI sites](/purview/ai-microsoft-purview-supported-sites) |
 | 3   | Within Insider Risk Management (IRM), apply the Risky AI template to identify risky behavior in AI apps. | Generative AI websites <br>Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio |
 
-Table 2 - Threat protection capabilities
+**Table 2 - Threat protection capabilities**
 
 | Step | Task | Scope |
 | --- | --- | --- |
@@ -61,7 +61,7 @@ SharePoint oversharing controls help you:
 - Quickly identify sites that potentially contain overshared data or sensitive content (data access governance reports).
 - Flag sites so that users can't find them through Copilot or Org-wide search (Restricted Content Discovery).
 
-To get started with oversharing controls, use the following resources
+To get started with oversharing controls, use the following resources.
 
 | Task | Recommended resources |
 | --- | --- |

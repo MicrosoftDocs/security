@@ -207,6 +207,6 @@ Use the following resources to get started.
 Continue to make progress on end-to-end security with Zero Trust resources:
 - [Zero Trust guidance center](/security/zero-trust/)
 - [Zero Trust adoption framework](/security/zero-trust/adopt/zero-trust-adoption-overview)
-- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide&bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fbreadcrumb%2Ftoc.json&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json)
+- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
 - [Incident response with XDR and integrated SIEM](/security/zero-trust/siem-xdr-overview)
 - [Apply Zero Trust principles to Azure services](/security/zero-trust/apply-zero-trust-azure-services-overview)

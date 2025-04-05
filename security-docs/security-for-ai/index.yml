@@ -43,7 +43,7 @@ landingContent:
         - text: Use Zero Trust security to prepare for AI companions
           url:  /security/zero-trust/copilots/apply-zero-trust-copilots-overview
         - text: Microsoft 365 Copilot Chat
-          url:  /security/zero-trust/copilots/apply-zero-trust-microsoft-copilot   
+          url:  /security/zero-trust/copilots/zero-trust-microsoft-copilot   
         - text: Microsoft 365 Copilot
           url:  /security/zero-trust/copilots/zero-trust-microsoft-365-copilot
         - text: Microsoft Security Copilot

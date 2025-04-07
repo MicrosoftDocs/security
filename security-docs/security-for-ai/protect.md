@@ -1,7 +1,7 @@
 ---
 title: How do I protect AI apps and data?
 description: How to use Microsoft capabilities to protect AI apps and data use in your environment. 
-ms.date: 04/01/2025
+ms.date: 04/02/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -10,6 +10,7 @@ ms.collection:
   - msftsolution-security-for-ai
   - msftsolution-scenario
   - zerotrust-solution
+  - magic-ai-copilot
 
 
 
@@ -25,13 +26,16 @@ This is the third article in a series. If you haven’t yet accomplished the tas
 
 :::image type="content" source="media/security-for-ai-step-protect.svg" alt-text="Diagram that shows the Protect aspect of security for AI series.":::
 
+Use this article together with this resource: 
+- Cloud Adoption Framework (CAF) for AI — [Process to secure AI](/azure/cloud-adoption-framework/scenarios/ai/secure)
+
 Microsoft provides a broad set of capabilities for protecting AI apps and data. This article discusses these in two categories—data protection and threat protection.
 
 :::image type="content" source="media/capabilities-for-protecting-ai-apps.svg" alt-text="Diagram that shows the capabilities for protecting AI apps and data." lightbox="media/capabilities-for-protecting-ai-apps.svg":::
 
 The following two tables describe the illustration and also walk through the steps of implementing these capabilities.
 
-Table 1 - Data protection capabilities
+**Table 1 - Data protection capabilities**
 
 | Step | Task | Scope |
 | --- | --- | --- |
@@ -39,7 +43,7 @@ Table 1 - Data protection capabilities
 | 2   | Use Data Security Posture Management (DSPM) for AI to learn where oversharing is taking place and to find gaps in your policy coverage for sensitivity labels and DLP policies. | Microsoft Copilots <br>[Supported AI sites](/purview/ai-microsoft-purview-supported-sites) |
 | 3   | Within Insider Risk Management (IRM), apply the Risky AI template to identify risky behavior in AI apps. | Generative AI websites <br>Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio |
 
-Table 2 - Threat protection capabilities
+**Table 2 - Threat protection capabilities**
 
 | Step | Task | Scope |
 | --- | --- | --- |
@@ -58,7 +62,7 @@ SharePoint oversharing controls help you:
 - Quickly identify sites that potentially contain overshared data or sensitive content (data access governance reports).
 - Flag sites so that users can't find them through Copilot or Org-wide search (Restricted Content Discovery).
 
-To get started with oversharing controls, use the following resources
+To get started with oversharing controls, use the following resources.
 
 | Task | Recommended resources |
 | --- | --- |
@@ -179,4 +183,4 @@ After protecting AI apps and data in your organization, the next step is to gove
 - Assess and strengthen your compliance posture against regulations.
 - Implement controls to govern usage of AI apps and data.
 
-See the next article in this series: [How do I govern AI apps and data?](govern.md)
+See the next article in this series: [How do I govern AI for compliance?](govern.md)

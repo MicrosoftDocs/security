@@ -1,7 +1,7 @@
 ---
 title: How do I govern AI apps and data for regulatory compliance?
 description: How to use Microsoft capabilities to meet regulatory compliance requirements with AI apps and data. 
-ms.date: 04/01/2025
+ms.date: 04/02/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -10,6 +10,7 @@ ms.collection:
   - msftsolution-security-for-ai
   - msftsolution-scenario
   - zerotrust-solution
+  - magic-ai-copilot
 
 
 
@@ -23,7 +24,7 @@ AI regulations and standards are emerging across regions and industries, providi
 
 This is the fourth article in a series. If you haven’t yet accomplished the tasks in [Prepare for AI security](prepare.md), [Discover AI apps and data](discover.md), and [Protect AI apps and data](protect.md), start with these articles to prepare your environment with capabilities prescribed in this article.
 
-:::image type="content" source="media/security-for-ai-govern.png" alt-text="Diagram that highlights the Govern from the security for AI articles.":::
+:::image type="content" source="media/security-for-ai-step-govern.svg" alt-text="Diagram that highlights the Govern from the security for AI articles.":::
 
 Use this article together with these resources:
 
@@ -56,7 +57,7 @@ Lastly, to build responsible AI applications and adhere to new regulatory requir
 
 Microsoft includes capabilities to help organizations connect the dots between regulatory standards and technology solutions.
 
-:::image type="content" source="media/govern-ai-comply-requirements.svg" alt-text="Diagram that shows capabilities of AI, regulatory standards, and technology solutions." lightbox="media/govern-ai-comply-requirements.svg":::
+:::image type="content" source="media/security-for-ai-govern-capabilities.svg" alt-text="Diagram that shows capabilities of AI, regulatory standards, and technology solutions." lightbox="media/security-for-ai-govern-capabilities.svg":::
 
 The following steps describe the illustration and also walk through the steps of implementing these capabilities.
 
@@ -86,7 +87,7 @@ Currently Compliance Manager includes regulatory templates for the following AI-
 
 :::image type="content" source="media/eu-ai-act.png" alt-text="Screenshot that shows the EU Artificial Intelligence Act." lightbox="media/eu-ai-act.png":::
 
-Use the following resources to get started with Compliance Manager
+Use the following resources to get started with Compliance Manager.
 
 | Task | Recommended resources |
 | --- | --- |
@@ -202,3 +203,11 @@ Use the following resources to get started.
 | Task | Recommended resources |
 | --- | --- |
 | Learn about and get started | [What is Azure AI Content Safety? - Azure AI services \| Microsoft Learn](/azure/ai-services/content-safety/overview) <br> [Use Content Safety in Azure AI Foundry portal](/azure/ai-services/content-safety/how-to/foundry) |
+
+## Next step for securing AI
+Continue to make progress on end-to-end security with Zero Trust resources:
+- [Zero Trust guidance center](/security/zero-trust/)
+- [Zero Trust adoption framework](/security/zero-trust/adopt/zero-trust-adoption-overview)
+- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
+- [Incident response with XDR and integrated SIEM](/security/zero-trust/siem-xdr-overview)
+- [Apply Zero Trust principles to Azure services](/security/zero-trust/apply-zero-trust-azure-services-overview)

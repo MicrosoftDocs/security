@@ -10,6 +10,7 @@ ms.collection:
   - msftsolution-security-for-ai
   - msftsolution-scenario
   - zerotrust-solution
+  - magic-ai-copilot
 ---
 
 # Prepare for AI security
@@ -141,4 +142,4 @@ For information on how to enable threat protection for AI within these tools, se
 
 ## Next steps
 
-See the next article in this series: [How do I discover AI apps and the sensitive data these use in my organization?](discover.md).
+See the next article in this series: [How do I discover AI apps and the sensitive data these use in my organization?](discover.md)

@@ -10,6 +10,7 @@ ms.collection:
   - msftsolution-security-for-ai
   - msftsolution-overview
   - zerotrust-solution
+  - magic-ai-copilot
 ---
 
 # Build a strong security posture for AI
@@ -25,9 +26,9 @@ Building a strong security posture for AI involves working within your organizat
   - [**Prepare**](prepare.md) your environment with foundation security protections. You likely already have many of these protections in place. 
   - [**Discover**](discover.md) the AI apps that are being used in your organization, including the types of data the apps are using. 
   - [**Protect**](protect.md) the usage of AI tools in your organization. This involves AI-specific data protection capabilities and ensuring your organization has implemented strong threat protection. 
-  - [**Govern**](govern.md) the use of AI, including tracking your security and compliance status.
+  - [**Govern**](govern.md) AI for compliance. 
   
-  :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
+  :::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI.":::
 
 Use this library together with the following frameworks on Microsoft Learn: 
 - [Zero Trust adoption framework](../zero-trust/adopt/zero-trust-adoption-overview.md) 
@@ -39,7 +40,9 @@ In the image:
 
 - Use this library (Security for AI library) to learn how to implement capabilities to secure AI apps and data in your environment. These protections help build your Zero Trust foundation. 
 - Use the [Zero Trust adoption framework](../zero-trust/adopt/zero-trust-adoption-overview.md) to continue to make progress toward end-to-end security. Each of the Zero Trust business scenarios also increases your security for AI apps and data. 
-- Use the [Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/) to develop your end-to-end roadmap for adoption of AI, including generative and non-generative AI. This library includes strategy, prescriptive guidance for people roles and organization processes, and deeper guidance for developing AI apps in Azure, including design and implementation guidance. 
+- Use the [Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/) to develop your end-to-end roadmap for adoption of AI, including generative and non-generative AI. This library includes strategies for choosing AI technologies, processes for securing and governing AI, and resources for AI design and implementation. 
+
+<!---
 
 ## Understand the motivations of your business leaders
 
@@ -63,6 +66,8 @@ Additionally, different parts of your organization will have different motivatio
 | IT needs | |
 | Operational needs  | |
 | Strategic needs | |
+
+--->
 
 ## Address the evolving threat landscape for AI
 
@@ -206,27 +211,33 @@ IT and security leaders believe that the primary budget contributors for new sol
 
 On top of Microsoft’s end-to-end security platform, Microsoft provides comprehensive security tooling to secure AI, from discovery of AI tools and data to protections designed specifically to mitigate AI threats. These tools include sophisticated dashboards and compliance resources, helping you stay on top of risks and regulatory obligations.  
 
-This library guides you through the process of implementing security for AI in a staged approach.
+:::image type="content" source="media/security-for-ai-posture-solution-wheel.png" alt-text="Microsoft capabilities provide full, wrap-around protection for your AI apps and data." lightbox="media/security-for-ai-posture-solution-wheel.png":::
 
-:::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI." lightbox="media/security-for-ai-step-no-highlight.svg":::
+The following image is a summary view of all the capabilities Microsoft provides for protecting adopting AI. These capabilities are also listed in the table below.
 
-See the following articles:
 
-| Phase | Capabilities |
+:::image type="content" source="media/security-for-ai-microsoft-solutions.png" alt-text="Diagram of Microsoft products that help with security for AI." lightbox="media/security-for-ai-microsoft-solutions.png":::
+
+| Top customer concern| Capabilities |
 |----|-----|
-| [Prepare](prepare.md) | Foundation security protections|
-| [Discover](discover.md) |AI apps, data and usage |
-| [Protect](protect.md) |AI-specific data and threat protections |
-| [Govern](govern.md)  | Measure and communicate status |
+| Prevent data leak and oversharing| - Access and endpoint controls — **Microsoft Entra & Intune** <br> - Data Security Posture Management for AI — **Microsoft Purview** <br> - Data classification, labeling, and protection — **Microsoft Purview** <br> - Data Loss Prevention — **Microsoft Purview** <br> - Anomaly and risky activities detection and response — **Microsoft Purview** <br> - SaaS app security — **Microsoft Defender**|
+| Protect AI against vulnerabilities and emerging threats | - Data security and governance — **Microsoft Purview** <br> - Quality, safety, and security controls evaluation — **Azure AI Foundry** <br> - Security posture management for AI assets (apps, models, orchestrators, SDKs) — **Microsoft Defender** <br> - Model governance policy — **Azure Portal** <br> - Content safety prompt shield — **Azure AI** <br> - Threat protection for AI workloads — **Microsoft Defender**|
+| Govern AI to comply with regulatory requirements | - Compliance assessments against AI regulations and standards — **Microsoft Purview** <br> - AI discovery and catalog — **Microsoft Defender** <br> - Prompt & response audits, lifecylce management, eDiscovery, communication compliance — **Microsoft Purview** <br> - AI reports for developers to log project details and controls — **Azure AI Foundry** <br> - Privacy impact assessment — **Microsoft Priva** <br> - Mitigation for harmful content, hallucination, and protected materials — **Azure AI Content Safety**|
+
+
+
 
 ## Next steps for securing AI 
+This library guides you through the process of implementing security for AI in a staged approach.
+
+:::image type="content" source="media/security-for-ai-step-no-highlight.svg" alt-text="Diagram that shows the process of implementing security for AI.":::
 
 Follow the guidance in this series of articles to learn more about securing AI and to identify and implement capabilities to achieve your organization’s objectives.  
 
  - [Prepare for AI](prepare.md) 
  - [Discover AI apps and data](discover.md)
  - [Protect AI data and apps](protect.md)
- - [Govern for AI compliance](govern.md) 
+ - [Govern AI for compliance](govern.md) 
 
 To learn more about optimizing your overall security posture and Zero Trust, see [Rapidly modernize your security posture](../zero-trust/adopt/rapidly-modernize-security-posture.md). 
 

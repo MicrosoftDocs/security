@@ -180,15 +180,15 @@
 		</g>
 		<g id="shape1089-55" v:mID="1089" v:groupContext="shape" v:layerMember="1" transform="translate(350.719,-23.5894)">
 			<title>Sheet.1089</title>
-			<desc>Measure and communicate status</desc>
+			<desc>Govern AI for compliance</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(89000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(6,6,6,6)"/>
 			<v:textRect cx="52.0847" cy="153.581" width="104.17" height="18.1375"/>
 			<rect x="0" y="144.513" width="104.169" height="18.1375" rx="4.5" ry="4.5" class="st7"/>
-			<text x="23.44" y="150.58" class="st8" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Measure and <tspan
-						x="7.82" dy="1.2em" class="st9">communicate status</tspan></text>		</g>
+			<text x="22.62" y="150.58" class="st8" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Govern AI for <tspan
+						x="26.88" dy="1.2em" class="st9">compliance</tspan></text>		</g>
 		<g id="shape1090-59" v:mID="1090" v:groupContext="shape" v:layerMember="0" transform="translate(132.261,-118.903)">
 			<title>Sheet.1090</title>
 			<v:userDefs>

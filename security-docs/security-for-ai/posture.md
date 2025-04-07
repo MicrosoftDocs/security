@@ -10,6 +10,7 @@ ms.collection:
   - msftsolution-security-for-ai
   - msftsolution-overview
   - zerotrust-solution
+  - magic-ai-copilot
 ---
 
 # Build a strong security posture for AI

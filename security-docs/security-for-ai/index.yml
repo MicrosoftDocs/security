@@ -1,0 +1,82 @@
+### YamlMime:Landing
+
+title: Discover, protect, and govern AI apps and data # < 60 chars
+summary: Build a security posture for AI, including discovering, protecting, and governing your AI apps and data  # < 160 chars
+
+metadata:
+  title: Build a strong security posture for AI # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to build a security posture for AI, including discovering, protecting, and governing your AI apps and data  # Required; article description that is displayed in search results. < 160 chars.
+  services: na
+  ms.service: security
+   # ms.topic: landing-page # Required
+  author: brendacarter #Required; your GitHub user alias, with correct capitalization.
+  ms.author: bcarter #Required; microsoft alias of author; optional team alias.
+  ms.date: 03/24/2025 #Required; mm/dd/yyyy format.
+ 
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+    # Card 
+  - title: Secure and govern AI with Microsoft capabilities (this library)
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+        - text: Build a strong security posture for AI
+          url: posture.md
+        - text: Prepare for AI security
+          url: prepare.md
+        - text: Discover AI apps and data
+          url: discover.md 
+        - text: Protect AI apps and data
+          url: protect.md
+        - text: Govern AI for compliance
+          url: govern.md
+
+# Card 
+  - title: Apply the principles of Zero Trust to Microsoft Copilots and other AI companions
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+        - text: Use Zero Trust security to prepare for AI companions
+          url:  /security/zero-trust/copilots/apply-zero-trust-copilots-overview
+        - text: Microsoft 365 Copilot Chat
+          url:  /security/zero-trust/copilots/zero-trust-microsoft-copilot   
+        - text: Microsoft 365 Copilot
+          url:  /security/zero-trust/copilots/zero-trust-microsoft-365-copilot
+        - text: Microsoft Security Copilot
+          url:  /security/zero-trust/copilots/zero-trust-microsoft-copilot-for-security
+
+# Card 
+  - title: Cloud Adoption Framework (CAF) for AI
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: End-to-end adoption roadmap for generative and non-generative AI
+          url:  /azure/cloud-adoption-framework/scenarios/ai
+        - text: Develop an AI strategy
+          url:  /azure/cloud-adoption-framework/scenarios/ai/strategy  
+        - text: Build AI workloads in Azure
+          url:  /azure/cloud-adoption-framework/scenarios/ai/ready
+        - text: Govern AI
+          url:  /azure/cloud-adoption-framework/scenarios/ai/govern        
+
+# Card 
+  - title: Continue to implement end-to-end security with Zero Trust
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: Zero Trust adoption framework
+          url:  /security/zero-trust/adopt/zero-trust-adoption-overview
+        - text: Rapidly modernize your security posture
+          url:  /security/zero-trust/adopt/rapidly-modernize-security-posture  
+        - text: Secure remote and hybrid work
+          url:  /security/zero-trust/adopt/secure-remote-hybrid-work
+        - text: Identify and protect sensitive business data
+          url:  /security/zero-trust/adopt/identify-protect-sensitive-business-data  
+        - text: Prevent or reduce business damage from a breach
+          url:  /security/zero-trust/adopt/prevent-reduce-business-damage-breach
+        - text: Meet regulatory and compliance requirements
+          url:  /security/zero-trust/adopt/meet-regulatory-compliance-requirements             

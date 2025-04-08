@@ -58,7 +58,7 @@ These capabilities help you efficiently learn about and mitigate the top risks a
 
 ### Step 1 – Apply SharePoint oversharing controls
 
-SharePoint oversharing controls include controls that are built into SharePoint, like scoped permissiona, and add-on capabilities in SharePoint Advanced Management to bolster content governance for the Microsoft Copilot deployment journey. SharePoint oversharing controls help you:
+SharePoint oversharing controls include controls that are built into SharePoint, like scoped permissions, and add-on capabilities in SharePoint Advanced Management to bolster content governance for the Microsoft Copilot deployment journey. SharePoint oversharing controls help you:
 
 - Temporarily limit Copilot search to a list of sites you specify (Restricted SharePoint Search).
 - Quickly identify sites that potentially contain overshared data or sensitive content (data access governance reports).
@@ -98,7 +98,7 @@ Use the following resources to protect AI apps and data with DSPM for AI.
 
 ### Step 3—Continue to identify gaps in sensitivity labels and DLP policies
 
-In [Prepare for AI security](/prepare), you used Microsoft Purview data security posture management tools, DSPM and DSPM for AI, to prioritize protection for your sensitive data. Continue to revisit these tools to idetnify gaps in your policy coverage and to discover where you need to continue to invest in applying sensitivity labels and DLP policies. Also, extend sensitivity labels and DLP policies to SaaS apps by using Defender for Cloud Apps.
+In [Prepare for AI security](/prepare), you used Microsoft Purview data security posture management tools, DSPM and DSPM for AI, to prioritize protection for your sensitive data. Continue to revisit these tools to identify gaps in your policy coverage and to discover where you need to continue to invest in applying sensitivity labels and DLP policies. Also, extend sensitivity labels and DLP policies to SaaS apps by using Defender for Cloud Apps.
 
 Use the following resources to make progress with Microsoft Purview. 
 
@@ -112,9 +112,13 @@ Use the following resources to make progress with Microsoft Purview.
 
 ### Step 4—Apply the Risky AI template in Insider Risk Management (IRM)
 
-Microsoft Purview Insider Risk Management (IRM) includes predefined policy templates you can apply to your environment, including Risky AI usage. IRM templates are predefined policy conditions that define the types of risk indicators and risk scoring model used by the policy.
+Microsoft Purview Insider Risk Management (IRM) includes predefined policy templates you can apply to your environment, including Risky AI usage. IRM templates are predefined policy conditions that define the types of risk indicators and risk scoring model used by the policy. 
+
+The Risky AI usagae policy can help detect and enable risk scoring for prompts and responses across AI tools in your organization. IRM helps you investigate and take action on risk activities related to AI.
 
 Use the following resources to get started with Insider Risk Management and to apply the Risky AI usage policy template.
+
+
 
 | Task | Recommended resources |
 | --- | --- |
@@ -129,11 +133,13 @@ Risky AI usage is discussed again in the next article in this series, [Govern AI
 Adaptive Protection in Microsoft Purview Insider Risk Management dynamically assigns a risk level to users and then applies policies you create to users with moderate or elevated risk. Policies can implement increased data loss prevention actions, preserve deleted content, or enforce higher conditional access requirements.
 
 Use the following resources to get started with Adaptive Protection.
+
 | Task | Recommended resources |
 | --- | --- |
-| Learn about Adaptive Protection | [Help dynamically mitigate risks with Adaptive Protection](/purview/insider-risk-management-adaptive-protection) |
-| Use Adaptive Protection with DLP policies |[Learn about Adaptive Protection in Data Loss Prevention](/purview/dlp-adaptive-protection-learn)  |
-|See example Adaptive Protection policies |[Adaptive Protection configuration guide](/purview/insider-risk-management-adaptive-protection-guide)  |
+| Get started with Insider Risk Management and learn about top scenarios that benefit your organization | [Learn about insider risk management](/purview/insider-risk-management) |
+| Learn about key scenarios for AI and view example reports | [Insider Risk Management empowering risky AI usage visibility and security investigations](https://techcommunity.microsoft.com/blog/microsoft-security-blog/insider-risk-management-empowering-risky-ai-usage-visibility-and-security-invest/4298246) |
+| Apply the Risky AI template | [Learn about insider risk management policy templates \| Microsoft Learn](/purview/insider-risk-management-policy-templates#risky-ai-usage-preview) |
+| Investigate and act on insider risk activities | [Investigate insider risk management activities](/purview/insider-risk-management-activities?tabs=purview-portal) <br> [Take action on insider risk management cases](/purview/insider-risk-management-cases?tabs=purview-portal) |
 
 
 ## Get the most out of threat protection for AI

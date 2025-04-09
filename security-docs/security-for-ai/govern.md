@@ -67,12 +67,11 @@ The following steps describe the illustration and also walk through the steps of
 | 2   | Use Defender for Cloud Apps to manage AI apps based on compliance risk | SaaS AI apps |
 | 3   | Use Cloud Security Posture Management (CSPM) for AI workloads to discover and manage custom-built apps based on compliance risk | Custom-built Azure AI based AI applications |
 | 4   | Configure Purview Communication Compliance to minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization | Microsoft 365 apps and services <br> AI apps connected by Microsoft Entra or Microsoft Purview Data Map connectors |
-| 5   | Apply the Risky AI usage policy template to help you quickly identify, triage, and act on potentially risky activity | Generative AI websites <br> Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio |
-| 6   | Configure Purview Data Lifecycle Management to retain the content that you need to keep, and delete the content that you don't. | Microsoft 365 apps and services |
-| 7   | Use eDiscovery together with audit logs for Microsoft 365 Copilot for investigations, as needed | Microsoft 365 Copilot, Microsoft Copilot |
-| 8   | Use Priva Privacy Assessments to initiate privacy impact assessments for AI apps you build | Any app, any location |
-| 9   | Use AI reports in AI Foundry to document AI project details for apps you develop | AI apps in Azure |
-| 10  | Implement Azure AI Content Safety to block harmful content, and detect and correct ungrounded responses | AI apps in Azure |
+| 5   | Configure Purview Data Lifecycle Management to retain the content that you need to keep, and delete the content that you don't. | Microsoft 365 apps and services |
+| 6   | Use eDiscovery together with audit logs for Microsoft 365 Copilot for investigations, as needed | Microsoft 365 Copilot, Microsoft Copilot |
+| 7   | Use Priva Privacy Assessments to initiate privacy impact assessments for AI apps you build | Any app, any location |
+| 8   | Use AI reports in AI Foundry to document AI project details for apps you develop | AI apps in Azure |
+| 9  | Implement Azure AI Content Safety to block harmful content, and detect and correct ungrounded responses | AI apps in Azure |
 
 ### Step 1—Build and manage assessments in Microsoft Purview Compliance Manager
 
@@ -132,20 +131,9 @@ Use the following resources to get started.
 | Learn about and get started. | [Learn about communication compliance](/purview/communication-compliance) <br> [Plan for communication compliance](/purview/communication-compliance-plan) <br> [Get started with communication compliance](/purview/communication-compliance-configure?tabs=purview-portal) |
 | Configure policies | [Configure a communication compliance policy to detect for generative AI interactions](/purview/communication-compliance-copilot?tabs=purview-portal) <br> [Create and manage communication compliance policies](/purview/communication-compliance-policies?tabs=purview-portal) |
 
-### Step 5—Apply the Risky AI usage policy template
 
-Microsoft Purview Insider Risk Management (IRM) includes predefined policy templates you can apply to your environment, including Risky AI usage. This policy can help detect and enable risk scoring for prompts and responses across AI tools in your organization. IRM helps you investigate and take action on risk activities.
 
-Use the following resources to get started with Insider Risk Management and to apply the Risky AI usage policy template.
-
-| Task | Recommended resources |
-| --- | --- |
-| Get started with Insider Risk Management and learn about top scenarios that benefit your organization | [Learn about insider risk management](/purview/insider-risk-management) |
-| Learn about key scenarios for AI and view example reports | [Insider Risk Management empowering risky AI usage visibility and security investigations](https://techcommunity.microsoft.com/blog/microsoft-security-blog/insider-risk-management-empowering-risky-ai-usage-visibility-and-security-invest/4298246) |
-| Apply the Risky AI template | [Learn about insider risk management policy templates \| Microsoft Learn](/purview/insider-risk-management-policy-templates#risky-ai-usage-preview) |
-| Investigate and act on insider risk activities | [Investigate insider risk management activities](/purview/insider-risk-management-activities?tabs=purview-portal) <br> [Take action on insider risk management cases](/purview/insider-risk-management-cases?tabs=purview-portal) |
-
-### Step 6—Configure Purview Data Lifecycle Management
+### Step 5—Configure Purview Data Lifecycle Management
 
 Microsoft Purview Data Lifecycle Management provides you with tools and capabilities to retain the content that you need to keep, and delete the content that you don't. Proactively deleting content you’re no longer required to keep helps reduce the risk of data overexposure in AI tools. Key features include:
 
@@ -158,7 +146,7 @@ Use the following resources to get started.
 | --- | --- |
 | Learn about and get started | [Learn about Microsoft Purview Data Lifecycle Management](/purview/data-lifecycle-management) <br>[Get started with data lifecycle management](/purview/get-started-with-data-lifecycle-management) |
 
-### Step 7—Use eDiscovery together with audit logs for Microsoft 365 Copilot
+### Step 6—Use eDiscovery together with audit logs for Microsoft 365 Copilot
 
 Use Microsoft Purview eDiscovery to search for keywords in Copilot prompts and responses that might be inappropriate. You can also include this info in an eDiscovery case to review, export, or put this data on hold for an ongoing legal investigation.
 
@@ -170,7 +158,7 @@ Use Microsoft Purview audit logs to identify how, when, and where Copilot intera
 | Get started with eDiscovery | [Learn about eDiscovery solutions](/purview/edisc) |
 | Learn about Purview audit logs | [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview) |
 
-### Step 8—Use Priva Privacy Assessments
+### Step 7—Use Priva Privacy Assessments
 
 Use Priva Privacy Assessments (preview) to initiate privacy impact assessments for AI apps you build. This helps ensure AI apps are being built in a privacy-respectful way. Privacy Assessments automate the discovery, documentation, and evaluation of personal data use across your entire data estate.
 
@@ -181,7 +169,7 @@ Use the following resources to get started with Priva Privacy Assessments and to
 | Learn about and get started | [Learn about privacy assessments](/privacy/priva/privacy-assessments) <br> [Get started with privacy assessments](/privacy/priva/privacy-assessments-setup) |
 | Create an assessment | [Create and manage privacy assessments](/privacy/priva/privacy-assessments-create) |
 
-### Step 9—Use AI reports in AI Foundry
+### Step 8—Use AI reports in AI Foundry
 
 AI reports in Azure AI Foundry can help developers document their project details. Developers can create a report that shows all the details of an AI project, such as model cards, model versions, content safety filter configurations, and evaluation metrics. This report can be exported in PDF or SPDX formats, helping development teams demonstrate production readiness within governance, risk, and compliance (GRC) workflows and facilitate easier, ongoing audits of applications in production.
 
@@ -194,7 +182,7 @@ Use the following resources to get started.
 | Read about AI Reports in AI Foundry (blog) | [AI reports: Improve AI governance and GenAIOps with consistent documentation](https://techcommunity.microsoft.com/blog/aiplatformblog/ai-reports-improve-ai-governance-and-genaiops-with-consistent-documentation/4301914) |
 | Learn about and get started with AI Foundry | [What is Azure AI Foundry?](/azure/ai-foundry/what-is-ai-foundry) |
 
-### Step 10—Implement Azure AI Content Safety
+### Step 9—Implement Azure AI Content Safety
 
 Azure AI Content Safety is an AI service that detects harmful user-generated and AI-generated content in applications and services. Azure AI Content Safety includes text and image APIs that allow you to detect material that is harmful. The interactive Content Safety Studio allows you to view, explore, and try out sample code for detecting harmful content across different modalities.
 

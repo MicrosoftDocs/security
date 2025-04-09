@@ -126,7 +126,6 @@ Use the following resources to get started with Insider Risk Management and to a
 | Apply the Risky AI template | [Learn about insider risk management policy templates \| Microsoft Learn](/purview/insider-risk-management-policy-templates#risky-ai-usage-preview) |
 | Learn about key scenarios for AI and view example reports | [Insider Risk Management empowering risky AI usage visibility and security investigations](https://techcommunity.microsoft.com/blog/microsoft-security-blog/insider-risk-management-empowering-risky-ai-usage-visibility-and-security-invest/4298246) |
 
-Risky AI usage is discussed again in the next article in this series, [Govern AI security](govern.md).
 
 ### Step 5—Configure Adaptive Protection for Insider Risk Management
 
@@ -138,7 +137,7 @@ Use the following resources to get started with Adaptive Protection.
 | --- | --- |
 | Get started with Insider Risk Management and learn about top scenarios that benefit your organization | [Learn about insider risk management](/purview/insider-risk-management) |
 | Learn about key scenarios for AI and view example reports | [Insider Risk Management empowering risky AI usage visibility and security investigations](https://techcommunity.microsoft.com/blog/microsoft-security-blog/insider-risk-management-empowering-risky-ai-usage-visibility-and-security-invest/4298246) |
-| Apply the Risky AI template | [Learn about insider risk management policy templates \| Microsoft Learn](/purview/insider-risk-management-policy-templates#risky-ai-usage-preview) |
+| Apply the Risky AI template | [Learn about insider risk management policy templates](/purview/insider-risk-management-policy-templates#risky-ai-usage-preview) |
 | Investigate and act on insider risk activities | [Investigate insider risk management activities](/purview/insider-risk-management-activities?tabs=purview-portal) <br> [Take action on insider risk management cases](/purview/insider-risk-management-cases?tabs=purview-portal) |
 
 

@@ -78,8 +78,12 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+        - text: How cyberattackers exploit domain controllers using ransomware
+          url: https://www.microsoft.com/en-us/security/blog/2025/04/09/how-cyberattackers-exploit-domain-controllers-using-ransomware
         - text: Why security teams rely on Microsoft Defender Experts for XDR for managed detection and response - January 2025
           url:  https://www.microsoft.com/en-us/security/blog/2025/01/06/why-security-teams-rely-on-microsoft-defender-experts-for-xdr-for-managed-detection-and-response/
+        - text: Exploitation of CLFS zero-day leads to ransomware activity - April 2025
+          url:  https://www.microsoft.com/en-us/security/blog/2025/04/08/exploitation-of-clfs-zero-day-leads-to-ransomware-activity
         - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
           url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
         - text: Octo Tempest - A recurring ransomware threat

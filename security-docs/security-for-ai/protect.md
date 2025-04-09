@@ -98,7 +98,7 @@ Use the following resources to protect AI apps and data with DSPM for AI.
 
 ### Step 3—Continue to identify gaps in sensitivity labels and DLP policies
 
-In [Prepare for AI security](/prepare), you used Microsoft Purview data security posture management tools, DSPM and DSPM for AI, to prioritize protection for your sensitive data. Continue to revisit these tools to identify gaps in your policy coverage and to discover where you need to continue to invest in applying sensitivity labels and DLP policies. Also, extend sensitivity labels and DLP policies to SaaS apps by using Defender for Cloud Apps.
+In [Prepare for AI security](prepare.md), you used Microsoft Purview data security posture management tools, DSPM and DSPM for AI, to prioritize protection for your sensitive data. Continue to revisit these tools to identify gaps in your policy coverage and to discover where you need to continue to invest in applying sensitivity labels and DLP policies. Also, extend sensitivity labels and DLP policies to SaaS apps by using Defender for Cloud Apps.
 
 Use the following resources to make progress with Microsoft Purview. 
 

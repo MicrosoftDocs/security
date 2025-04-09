@@ -22,7 +22,7 @@ ms.collection:
   - zerotrust-solution
   - tier2
 search.appverid: met150
-ms.date: 01/22/2025
+ms.date: 03/20/2025
 ---
 
 # Common security policies for Microsoft 365 organizations
@@ -37,9 +37,9 @@ Organizations can take these policies as is or customize them to fit their needs
 
 We group these policies into three protection levels based on where you are on your deployment journey:
 
-- **Starting point** - Basic controls that introduce multifactor authentication, secure password changes, and app protection policies.
-- **Enterprise** - Enhanced controls that introduce device compliance.
-- **Specialized security** - Policies that require multifactor authentication every time for specific data sets or users.
+- **Starting point**: Basic controls that introduce multifactor authentication, secure password changes, and Intune app protection policies for mobile devices.
+- **Enterprise**: Enhanced controls that introduce device compliance.
+- **Specialized security**: Policies that require multifactor authentication every time for specific data sets or users.
 
 The following diagram shows the protection levels that each policy applies to and what types of devices the policies apply to:
 
@@ -48,7 +48,7 @@ The following diagram shows the protection levels that each policy applies to an
 You can download this diagram as a [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) file.
 
 > [!TIP]
-> We recommend requiring multifactor authentication (MFA) for users before enrolling devices in Intune to ensure that the device is in the possession of the intended user. MFA is on by default due to [security defaults](/entra/fundamentals/security-defaults#enforced-security-policies), or you can use [Conditional Access policies to require MFA for all users](/entra/identity/conditional-access/policy-all-users-mfa-strength).
+> We recommend requiring multifactor authentication (MFA) for users before enrolling devices in Intune to ensure they are in possession of the device. MFA is on by default due to [security defaults](/entra/fundamentals/security-defaults#enforced-security-policies), or you can use [Conditional Access policies to require MFA for all users](/entra/identity/conditional-access/policy-all-users-mfa-strength).
 >
 > Devices must be enrolled in Intune before you can enforce device compliance policies.
 
@@ -62,7 +62,7 @@ The following permissions in Microsoft Entra are required:
 - **Manage app protection and device compliance policies**: The [Intune Administrator](/entra/identity/role-based-access-control/permissions-reference#intune-administrator) role.
 - **View configurations only**: The [Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader) role.
 
-For more information about roles and permissions in Microsoft Entra, see the article [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+For more information about roles and permissions in Microsoft Entra, see [Overview of role-based access control in Microsoft Entra ID](/entra/identity/role-based-access-control/custom-overview).
 
 ### User registration
 
@@ -80,16 +80,16 @@ The following table describes example group assignments and exclusions for MFA a
 
 |&nbsp;|Microsoft Entra Conditional Access policy|Include|Exclude|
 |---|---|:---:|---|
-|**Starting point**|Require multifactor authentication for medium or high sign-in risk|*All users*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
-|**Enterprise**|Require multifactor authentication for low, medium, or high sign-in risk|*Executive staff group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
-|**Specialized security**|Require multifactor authentication always|*Top Secret Project Buckeye group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
+|**Starting point**|Require multifactor authentication for **Medium** or **High** sign-in risk|*All users*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
+|**Enterprise**|Require multifactor authentication for **Low**, **Medium**, or **High** sign-in risk|*Executive staff group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
+|**Specialized security**|Require multifactor authentication **always**|*Top Secret Project Buckeye group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
 
 > [!TIP]
 > Be careful when applying higher levels of protection to users and groups. The goal of security isn't to add unnecessary friction to the user experience. For example, members of the *Top Secret Project Buckeye group* are required to use MFA every time they sign in, even if they aren't working on the specialized content for their project. Excessive security friction can lead to fatigue. Enable [phishing-resistant authentication methods](/entra/identity/authentication/concept-authentication-passwordless) (for example, Windows Hello for Business or FIDO2 security keys) to help reduce the friction caused by security controls.
 
 ### Emergency access accounts
 
-All organizations should have at least one emergency access account that is monitored for use and excluded from policies (and possibly more, depending on the size of the organization). **These accounts are only used in case all other administrator accounts and authentication methods become locked out or otherwise unavailable**. For more information, see [Manage emergency access accounts in Microsoft Entra ID](/entra/identity/role-based-access-control/security-emergency-access).
+All organizations should have at least one emergency access account (and possibly more, depending on the size of the organization) that's monitored for use and excluded from policies. **These accounts are only used in case all other administrator accounts and authentication methods become locked out or otherwise unavailable**. For more information, see [Manage emergency access accounts in Microsoft Entra ID](/entra/identity/role-based-access-control/security-emergency-access).
 
 ### Exclusions
 
@@ -112,38 +112,38 @@ Do the following steps to add an exclusion group to any existing policies. As pr
 
 ## Deployment
 
-We recommend implementing the [starting point policies](#starting-point) in the order listed in the following table. You can implement the MFA policies for [enterprise](#enterprise) and [specialized security](#specialized-security) levels of protection at any time.
+We recommend implementing the starting point policies in the order listed in the following table. You can implement the MFA policies for enterprise and specialized security levels of protection at any time.
 
-### Starting point
+- **Starting point**:
 
-|Policy|More information|Licensing|
-|---|---|---|
-|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)|Require MFA only when risk is detected by Microsoft Entra ID Protection.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
-|[Block clients that don't support modern authentication](#block-clients-that-dont-support-multifactor-authentication)|Clients that don't use modern authentication can bypass Conditional Access policies, so it's important to block them.|Microsoft 365 E3 or E5|
-|[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
-|[Apply application protection policies for data protection](#app-protection-policies)|One Intune app protection policy per platform (Windows, iOS/iPadOS, and Android).|Microsoft 365 E3 or E5|
-|[Require approved apps and app protection policies](#require-approved-apps-or-app-protection-policies)|Enforces app protection policies for phones and tablets using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
+  |Policy|More information|Licensing|
+  |---|---|---|
+  |[Require MFA when sign-in risk is *Medium* or *High*](#require-mfa-based-on-sign-in-risk)|Require MFA only when risk is detected by Microsoft Entra ID Protection.|<ul><li>Microsoft 365 E5</li><li>Microsoft 365 E3 with the E5 Security add-on</li><li>Microsoft 365 with EMS E5</li><li>Individual Microsoft Entra ID P2 licenses</li></ul>|
+  |[Block clients that don't support modern authentication](#block-clients-that-dont-support-multifactor-authentication)|Clients that don't use modern authentication can bypass Conditional Access policies, so it's important to block them.|Microsoft 365 E3 or E5|
+  |[High risk users must change password](#high-risk-users-must-change-password)|Force users to change their password when signing in if high-risk activity is detected for their account.|<ul><li>Microsoft 365 E5</li><li>Microsoft 365 E3 with the E5 Security add-on</li><li>Microsoft 365 with EMS E5</li><li>Individual Microsoft Entra ID P2 licenses</li></ul>|
+  |[Apply Application Protection Policies (APP) for data protection](#app-protection-policies)|One Intune APP per mobile device platform (Windows, iOS/iPadOS, and Android).|Microsoft 365 E3 or E5|
+  |[Require approved apps and app protection policies](#require-approved-apps-or-app-protection-policies)|Enforces app protection policies for mobile devices using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
 
-### Enterprise
+- **Enterprise**:
 
-|Policy|More information|Licensing|
-|---|---|---|
-|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)|Require MFA only when risk is detected by Microsoft Entra ID Protection.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
-|[Define device compliance policies](#device-compliance-policies)|Set minimum configuration requirements. One policy for each platform.|Microsoft 365 E3 or E5|
-|[Require compliant PCs and mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces the configuration requirements for devices accessing your organization|Microsoft 365 E3 or E5|
+  |Policy|More information|Licensing|
+  |---|---|---|
+  |[Require MFA when sign-in risk is **Low**, **Medium**, or **High**](#require-mfa-based-on-sign-in-risk)|Require MFA only when risk is detected by Microsoft Entra ID Protection.|<ul><li>Microsoft 365 E5</li><li>Microsoft 365 E3 with the E5 Security add-on</li><li>Microsoft 365 with EMS E5</li><li>Individual Microsoft Entra ID P2 licenses</li></ul>|
+  |[Define device compliance policies](#device-compliance-policies)|Set minimum configuration requirements. One policy for each platform.|Microsoft 365 E3 or E5|
+  |[Require compliant PCs and mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces the configuration requirements for devices accessing your organization|Microsoft 365 E3 or E5|
 
-### Specialized security
+- **Specialized security**:
 
-|Policy|More information|Licensing|
-|---|---|---|
-|[*Always* require MFA](#always-require-mfa)|Users are required to do MFA anytime they sign in to services in the organization.|Microsoft 365 E3 or E5|
+  |Policy|More information|Licensing|
+  |---|---|---|
+  |[Require MFA **Always**](#always-require-mfa)|Users are required to do MFA anytime they sign in to services in the organization.|Microsoft 365 E3 or E5|
 
 ## App protection policies
 
 [App protection policies](/mem/intune/apps/app-protection-policy) specify allowed apps and the actions they can take with your organization's data. Although there are many policies to choose from, the following list describes our recommended baselines.
 
 > [!TIP]
-> Although we provide three templates, most organizations should choose level 2 (maps to [starting point](#starting-point) or [enterprise](#enterprise) level security) and level 3 (maps to [specialized](#specialized-security) security).
+> Although we provide three templates, most organizations should choose Level 2 (maps to [starting point](#deployment) or [enterprise](#deployment) level security) and Level 3 (maps to [specialized](#deployment) security).
 
 - [Level 1 enterprise basic data protection](/mem/intune/apps/app-protection-framework#level-1-enterprise-basic-data-protection): We recommend this configuration as the minimum data protection for enterprise devices.
 - **[Level 2 enterprise enhanced data protection](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration applies to most mobile users who access work or school data. Some of the controls might affect the user experience.
@@ -153,22 +153,18 @@ We recommend implementing the [starting point policies](#starting-point) in the 
 
   Organizations likely targeted by well-funded and sophisticated attackers should aspire to this configuration.
 
-### Create app protection policies
-
-Create a new app protection policy for each device platform within Microsoft Intune (iOS/iPadOS and Android) using the data protection framework settings by doing the following steps:
+Create a new app protection policy for each device platform within Microsoft Intune (iOS/iPadOS and Android) using the data protection framework settings by using either of the following methods:
 
 - Manually create the policies by following the steps in [How to create and deploy app protection policies with Microsoft Intune](/mem/intune/apps/app-protection-policies).
 - Import the sample [Intune App Protection Policy Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
 
 ## Device compliance policies
 
-Intune device compliance policies define the requirements for devices in order to be compliant. You need to create a policy for each PC, phone, or tablet platform. This article covers recommendations for the following platforms:
+Intune device compliance policies define the requirements for devices to be compliant. You need to create a policy for each PC, phone, or tablet platform. The following sections describe the recommendations for the following platforms:
 
 - [Android](#enrollment-and-compliance-settings-for-android)
 - [iOS/iPadOS](#enrollment-and-compliance-settings-for-iosipados)
 - [Windows 10 and later](#recommended-compliance-settings-for-windows-10-and-later)
-
-### Create device compliance policies
 
 To create device compliance policies, do the following steps:
 
@@ -177,7 +173,7 @@ To create device compliance policies, do the following steps:
 
 For step-by-step guidance, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
-#### Enrollment and compliance settings for iOS/iPadOS
+### Enrollment and compliance settings for iOS/iPadOS
 
 iOS/iPadOS supports several enrollment scenarios, two of which are covered by this framework:
 
@@ -185,21 +181,21 @@ iOS/iPadOS supports several enrollment scenarios, two of which are covered by th
 - [Automated device enrollment for corporate-owned devices](/mem/intune/enrollment/device-enrollment-program-enroll-ios): Organization-owned devices that are associated with a single user, and are used exclusively for work.
 
 > [!TIP]
-> As previously described, level 2 maps to [starting point](#starting-point) or [enterprise](#enterprise) level security, and level 3 maps to [specialized](#specialized-security) security. For more information, see [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
+> As previously described, Level 2 maps to [starting point](#deployment) or [enterprise](#deployment) level security, and Level 3 maps to [specialized](#deployment) security. For more information, see [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
 
-##### Compliance settings for personally enrolled devices
+#### Compliance settings for personally enrolled devices
 
-- [Personal basic security (Level 1)](/mem/intune/enrollment/ios-ipados-personal-device-security-configurations#personal-basic-security-level-1): We recommend this configuration as the minimum security for personal devices that access work or school data. You achieve this configuration by enforcing password policies, device lock characteristics, and disabling certain device functions (for example, untrusted certificates).
-- **[Personal enhanced security (Level 2)](/mem/intune/enrollment/ios-ipados-personal-device-security-configurations#personal-enhanced-security-level-2)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration enables data sharing controls. This configuration applies to most mobile users who access work or school data.
-- **[Personal high security (Level 3)](/mem/intune/enrollment/ios-ipados-personal-device-security-configurations#personal-high-security-level-3)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration enables stronger password policies, disables certain device functions, and enforces extra data transfer restrictions.
+- [Personal basic security (Level 1)](/mem/intune-service/protect/ios-ipados-personal-device-security-configurations#personal-basic-security-level-1): We recommend this configuration as the minimum security for personal devices that access work or school data. You achieve this configuration by enforcing password policies, device lock characteristics, and disabling certain device functions (for example, untrusted certificates).
+- **[Personal enhanced security (Level 2)](/mem/intune-service/protect/ios-ipados-personal-device-security-configurations#personal-enhanced-security-level-2)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration enables data sharing controls. This configuration applies to most mobile users who access work or school data.
+- **[Personal high security (Level 3)](/mem/intune-service/protect/ios-ipados-personal-device-security-configurations#personal-high-security-level-3)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration enables stronger password policies, disables certain device functions, and enforces extra data transfer restrictions.
 
-##### Compliance settings for automated device enrollment
+#### Compliance settings for automated device enrollment
 
-- [Supervised basic security (Level 1)](/mem/intune/enrollment/ios-ipados-supervised-device-security-configurations#supervised-basic-security-level-1): We recommend this configuration as the minimum security for enterprise devices that access work or school data. You achieve this configuration by enforcing password policies, device lock characteristics, and disabling certain device functions (for example, untrusted certificates).
-- **[Supervised enhanced security (Level 2)](/mem/intune/enrollment/ios-ipados-supervised-device-security-configurations#supervised-enhanced-security-level-2)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration enables data sharing controls and blocks access to USB devices. This configuration is applicable to most mobile users accessing work or school data on a device.
-- **[Supervised high security (Level 3)](/mem/intune/enrollment/ios-ipados-supervised-device-security-configurations#supervised-high-security-level-3)** : We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration enables stronger password policies, disables certain device functions, enforces extra data transfer restrictions, and requires apps to be installed through Apple's volume purchase program.
+- [Supervised basic security (Level 1)](/mem/intune-service/protect/ios-ipados-supervised-device-security-configurations#supervised-basic-security-level-1): We recommend this configuration as the minimum security for enterprise devices that access work or school data. You achieve this configuration by enforcing password policies, device lock characteristics, and disabling certain device functions (for example, untrusted certificates).
+- **[Supervised enhanced security (Level 2)](/mem/intune-service/protect/ios-ipados-supervised-device-security-configurations#supervised-enhanced-security-level-2)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration enables data sharing controls and blocks access to USB devices. This configuration is applicable to most mobile users accessing work or school data on a device.
+- **[Supervised high security (Level 3)](/mem/intune-service/protect/ios-ipados-supervised-device-security-configurations#supervised-high-security-level-3)** : We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration enables stronger password policies, disables certain device functions, enforces extra data transfer restrictions, and requires apps to be installed through Apple's volume purchase program.
 
-#### Enrollment and compliance settings for Android
+### Enrollment and compliance settings for Android
 
 Android Enterprise supports several enrollment scenarios, two of which are covered by this framework:
 
@@ -209,23 +205,23 @@ Android Enterprise supports several enrollment scenarios, two of which are cover
 The Android Enterprise security configuration framework is organized into several distinct configuration scenarios that provide guidance for work profile and fully managed scenarios.
 
 > [!TIP]
-> As previously described, level 2 maps to [starting point](#starting-point) or [enterprise](#enterprise) level security, and level 3 maps to [specialized](#specialized-security) security. For more information, see [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
+> As previously described, Level 2 maps to [starting point](#deployment) or [enterprise](#deployment) level security, and Level 3 maps to [specialized](#deployment) security. For more information, see [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
 
-##### Compliance settings for Android Enterprise work profile devices
+#### Compliance settings for Android Enterprise work profile devices
 
-- There's no basic security (level 1) offering for personally owned work profile devices. The available settings don't justify a difference between level 1 and level 2.
+- There's no basic security (Level 1) offering for personally owned work profile devices. The available settings don't justify a difference between Level 1 and Level 2.
 - **[Work profile enhanced security (Level 2)](/mem/intune/protect/compliance-policy-create-android-for-work#personally-owned-work-profile)**: We recommend this configuration as the minimum security for personal devices that access work or school data. This configuration introduces password requirements, separates work and personal data, and validates Android device attestation.
 - **[Work profile high security (Level 3)](/mem/intune/protect/compliance-policy-create-android-for-work#personally-owned-work-profile)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration introduces mobile threat defense or Microsoft Defender for Endpoint, sets the minimum Android version, enables stronger password policies, and further separates work and personal data.
 
-##### Compliance settings for Android Enterprise fully managed devices
+#### Compliance settings for Android Enterprise fully managed devices
 
 - [Fully managed basic security (Level 1)](/mem/intune/fundamentals/protection-configuration-levels#level-1---minimum-protection-and-configuration): We recommend this configuration as the minimum security for an enterprise device. This configuration applies to most mobile users who work or school data. This configuration introduces password requirements, sets the minimum Android version, and enables specific device restrictions.
 - **[Fully managed enhanced security (Level 2)](/mem/intune/fundamentals/protection-configuration-levels#level-2---enhanced-protection-and-configuration)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration enables stronger password policies and disables user/account capabilities.
 - **[Fully managed high security (Level 3)](/mem/intune/fundamentals/protection-configuration-levels#level-3---high-protection-and-configuration)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration increases the minimum Android version, introduces mobile threat defense or Microsoft Defender for Endpoint, and enforces extra device restrictions.
 
-#### Recommended compliance settings for Windows 10 and later
+### Recommended compliance settings for Windows 10 and later
 
-You configure the following settings as described in [Device Compliance settings for Windows 10/11 in Intune](/mem/intune/protect/compliance-policy-create-windows). These settings align with the principles outlined in [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
+Configure the following settings as described in [Device Compliance settings for Windows 10/11 in Intune](/mem/intune/protect/compliance-policy-create-windows). These settings align with the principles outlined in [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
 
 - **Device health \> Windows Health Attestation Service evaluation rules**: 
 
@@ -296,8 +292,8 @@ When configuring the policy, use the following risk levels:
 
 |Protection level|Risk levels|
 |---|---|---|
-|Starting point|Medium and high|
-|Enterprise|Low, medium, and high|
+|Starting point|Medium and High|
+|Enterprise|Low, Medium, and High|
 
 ### Block clients that don't support multifactor authentication
 
@@ -320,7 +316,7 @@ Blocking legacy authentication for other apps on iOS/iPadOS and Android devices 
 ### Require compliant PCs and mobile devices
 
 > [!CAUTION]
-> Verify that your own device is compliant before you enable this policy. Otherwise, you could get locked out and need to use an [emergency access account](#emergency-access-accounts) to recover your access.
+> Verify your own device is compliant before you enable this policy. Otherwise, you could get locked out and need to use an [emergency access account](#emergency-access-accounts) to recover your access.
 
 Allow access to resources only after the device is determined to be compliant with your Intune compliance policies. For more information, see [Require device compliance with Conditional Access](/entra/identity/conditional-access/policy-all-users-device-compliance).
 

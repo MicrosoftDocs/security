@@ -53,7 +53,7 @@ sections:
         feedback: Learn to help your organization manage personal data responsibly and meet compliance requirements with this Microsoft Learn training. 
         link:
           componentType: link
-          url: /learn.microsoft.com/training/modules/priva-understand-priva/?wt.mc_id=securityhub_mspriva_webpage_SCI
+          url: /training/modules/priva-understand-priva/?wt.mc_id=securityhub_mspriva_webpage_SCI
           text: Start now
       - avatarUrl: /security/media/hubpage/video-icon.png
         componentType: testimonial-card
@@ -62,7 +62,7 @@ sections:
         feedback: Learn why AI innovation requires AI security at Microsoft Secure, available on demand.
         link:
           componentType: link
-          url: /aka.ms/AAv23a8?wt.mc_id=securityhub_mssecure_webpage_cnl
+          url: //aka.ms/AAv23a8?wt.mc_id=securityhub_mssecure_webpage_cnl
           text: Watch now
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

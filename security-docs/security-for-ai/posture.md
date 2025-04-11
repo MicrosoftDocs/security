@@ -60,6 +60,8 @@ Begin developing your strategy and priorities by gaining alignment with your bus
 | Chief Operations Officer (COO) |AI automates critical processes in supply chain, logistics, and operations. Attacks on AI systems can disrupt services, increase operational risk, and cause costly delays. A strong AI security posture ensures business continuity and efficiency. |
 | Chief Financial Officer (CFO) |CFOs view a robust AI security posture as essential to protecting the organization. It helps avoid unforeseen financial losses and ensures compliance with laws and reporting obligations. |
 
+<!---
+
 Additionally, different parts of your organization will have different motivations and incentives for doing this work. The following table summarizes some of these motivations. Be sure to connect with your stakeholders to understand their motivations. 
 
 | Area | Motivations |
@@ -69,7 +71,7 @@ Additionally, different parts of your organization will have different motivatio
 | Operational needs  | |
 | Strategic needs | |
 
-
+--->
 
 ## Address the evolving threat landscape for AI
 

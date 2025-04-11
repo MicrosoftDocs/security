@@ -42,21 +42,25 @@ In the image:
 - Use the [Zero Trust adoption framework](../zero-trust/adopt/zero-trust-adoption-overview.md) to continue to make progress toward end-to-end security. Each of the Zero Trust business scenarios also increases your security for AI apps and data. 
 - Use the [Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/) to develop your end-to-end roadmap for adoption of AI, including generative and non-generative AI. This library includes strategies for choosing AI technologies, processes for securing and governing AI, and resources for AI design and implementation. 
 
-<!---
+
 
 ## Understand the motivations of your business leaders
+
+A strong AI security posture enables innovation — it empowers organizations to build and deploy AI with confidence and agility. The goal is to empower the organization to confidently build, deploy, and scale AI systems while safeguarding against risks that could undermine trust, compliance, or operational stability. By embedding security into the foundation of AI initiatives, organizations can unlock the full potential of AI responsibly, ensuring it remains a strategic asset rather than a source of unintended harm.
 
 Begin developing your strategy and priorities by gaining alignment with your business leaders. What motivates your leaders and why do they care about your security posture for AI? The following table provides example perspectives, but it’s important for you to meet with each of these leaders and teams and come to a shared understanding of each other’s motivations.
 
 | Role | Why building a strong security posture for AI is important |
 |-----|------|
-| Chief Executive Officer (CEO) | |
-| Chief Marketing Officer (CMO) | |
-| Chief Information Officer (CIO)  | |
-| Chief Information Security Officer (CISO) | |
-| Chief Technology Officer (CTO) | |
-| Chief Operations Officer (COO) | |
-| Chief Financial Officer (CFO) | |
+| Chief Executive Officer (CEO) |AI systems increasingly shape strategic decisions and customer interactions. A breach or manipulation of AI can lead to poor decisions, regulatory scrutiny, reputational damage, and lost trust. Strong AI security is crucial for the organization to protect the company’s reputation, ensure legal compliance, and ensure a successful AI transformation. |
+| Chief Marketing Officer (CMO) |AI tools drive customer insights, targeting, and personalization. If compromised, these tools can lead to data leaks, biased outputs, or brand damage due to inappropriate content or targeting. Securing AI ensures trust in customer engagement, preserving brand integrity, preventing PR disasters, and demonstrating the company’s commitment to protecting customer privacy. |
+| Chief Information Officer (CIO)  |A secure AI environment is essential to ensure system reliability, prevent unauthorized access, and maintain operational resilience. This enables CIOs to confidently integrate AI technologies that enhance the business without exposing the enterprise to undue risk. |
+| Chief Information Security Officer (CISO) |AI introduces new attack surfaces and new risks while also amplifying existing risks. New attack surfaces include prompts, responses, models, RAG data, model context protocol (MCP), training data and data poisoning, jailbreak attacks, data security, and more. The CISO must lead efforts in threat modeling and securing AI pipelines to maintain the enterprise security posture. Robust AI security is an extension of the overall cyber defense strategy to safeguard the organization’s assets, comply with security frameworks, and maintain customer and stakeholder trust in the age of intelligent systems. |
+| Chief Technology Officer (CTO) |A strong AI security posture is critical for CTOs to protect the organization’s technological assets and ensure that AI systems perform reliably as intended. By embedding security into the AI development lifecycle, the CTO helps prevent breaches of sensitive algorithms and maintain high quality and trust in AI-driven products. This enables innovation to proceed without undue risk. |
+| Chief Operations Officer (COO) |AI automates critical processes in supply chain, logistics, and operations. Attacks on AI systems can disrupt services, increase operational risk, and cause costly delays. A strong AI security posture ensures business continuity and efficiency. |
+| Chief Financial Officer (CFO) |CFOs view a robust AI security posture as essential to protecting the organization. It helps avoid unforeseen financial losses and ensures compliance with laws and reporting obligations. |
+
+<!---
 
 Additionally, different parts of your organization will have different motivations and incentives for doing this work. The following table summarizes some of these motivations. Be sure to connect with your stakeholders to understand their motivations. 
 
@@ -222,7 +226,7 @@ The following image is a summary view of all the capabilities Microsoft provides
 |----|-----|
 | Prevent data leak and oversharing| - Access and endpoint controls — **Microsoft Entra & Intune** <br> - Data Security Posture Management for AI — **Microsoft Purview** <br> - Data classification, labeling, and protection — **Microsoft Purview** <br> - Data Loss Prevention — **Microsoft Purview** <br> - Anomaly and risky activities detection and response — **Microsoft Purview** <br> - SaaS app security — **Microsoft Defender**|
 | Protect AI against vulnerabilities and emerging threats | - Data security and governance — **Microsoft Purview** <br> - Quality, safety, and security controls evaluation — **Azure AI Foundry** <br> - Security posture management for AI assets (apps, models, orchestrators, SDKs) — **Microsoft Defender** <br> - Model governance policy — **Azure Portal** <br> - Content safety prompt shield — **Azure AI** <br> - Threat protection for AI workloads — **Microsoft Defender**|
-| Govern AI to comply with regulatory requirements | - Compliance assessments against AI regulations and standards — **Microsoft Purview** <br> - AI discovery and catalog — **Microsoft Defender** <br> - Prompt & response audits, lifecylce management, eDiscovery, communication compliance — **Microsoft Purview** <br> - AI reports for developers to log project details and controls — **Azure AI Foundry** <br> - Privacy impact assessment — **Microsoft Priva** <br> - Mitigation for harmful content, hallucination, and protected materials — **Azure AI Content Safety**|
+| Govern AI to comply with regulatory requirements | - Compliance assessments against AI regulations and standards — **Microsoft Purview** <br> - AI discovery and catalog — **Microsoft Defender** <br> - Prompt & response audits, lifecycle management, eDiscovery, communication compliance — **Microsoft Purview** <br> - AI reports for developers to log project details and controls — **Azure AI Foundry** <br> - Privacy impact assessment — **Microsoft Priva** <br> - Mitigation for harmful content, hallucination, and protected materials — **Azure AI Content Safety**|
 
 
 

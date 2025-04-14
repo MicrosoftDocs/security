@@ -40,7 +40,7 @@ sections:
       - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
         name: Security for AI with Microsoft Purview & Defender for Cloud
-        role: Event
+        role: Live webinar
         feedback: Join us for this 4-part Learn Live series. Learn how to prepare your environment for secure AI adoption to safeguard your data and identify threats to your AI.
         link:
           componentType: link
@@ -57,7 +57,7 @@ sections:
           text: Start now
       - avatarUrl: /security/media/hubpage/video-icon.png
         componentType: testimonial-card
-        name: Join Microsoft Secure on demand
+        name: Explore Microsoft Secure on demand
         role: Event
         feedback: Learn why AI innovation requires AI security at Microsoft Secure, available on demand.
         link:

@@ -140,14 +140,14 @@ We recommend implementing the starting point policies in the order listed in the
 
 ## App protection policies
 
-[App protection policies](/mem/intune/apps/app-protection-policy) specify allowed apps and the actions they can take with your organization's data. Although there are many policies to choose from, the following list describes our recommended baselines.
+[App protection policies](/intune/intune-service/apps/app-protection-policy) specify allowed apps and the actions they can take with your organization's data. Although there are many policies to choose from, the following list describes our recommended baselines.
 
 > [!TIP]
 > Although we provide three templates, most organizations should choose Level 2 (maps to [starting point](#deployment) or [enterprise](#deployment) level security) and Level 3 (maps to [specialized](#deployment) security).
 
-- [Level 1 enterprise basic data protection](/mem/intune/apps/app-protection-framework#level-1-enterprise-basic-data-protection): We recommend this configuration as the minimum data protection for enterprise devices.
-- **[Level 2 enterprise enhanced data protection](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration applies to most mobile users who access work or school data. Some of the controls might affect the user experience.
-- **[Level 3 enterprise high data protection](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)**: We recommend this configuration in the following scenarios:
+- [Level 1 enterprise basic data protection](/intune/intune-service/apps/app-protection-framework#level-1-enterprise-basic-data-protection): We recommend this configuration as the minimum data protection for enterprise devices.
+- **[Level 2 enterprise enhanced data protection](/intune/intune-service/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration applies to most mobile users who access work or school data. Some of the controls might affect the user experience.
+- **[Level 3 enterprise high data protection](/intune/intune-service/apps/app-protection-framework#level-3-enterprise-high-data-protection)**: We recommend this configuration in the following scenarios:
   - Organizations with larger or more sophisticated security teams.
   - Devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization
 
@@ -155,7 +155,7 @@ We recommend implementing the starting point policies in the order listed in the
 
 Create a new app protection policy for each device platform within Microsoft Intune (iOS/iPadOS and Android) using the data protection framework settings by using either of the following methods:
 
-- Manually create the policies by following the steps in [How to create and deploy app protection policies with Microsoft Intune](/mem/intune/apps/app-protection-policies).
+- Manually create the policies by following the steps in [How to create and deploy app protection policies with Microsoft Intune](/intune/intune-service/apps/app-protection-policies).
 - Import the sample [Intune App Protection Policy Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
 
 ## Device compliance policies
@@ -171,14 +171,14 @@ To create device compliance policies, do the following steps:
 1. In the Microsoft Intune admin center at <https://endpoint.microsoft.com>, go to **Manage devices** \> **Compliance** \> **Policies** tab. Or, to go directly to the **Policies** tab of the **Devices \| Compliance** page, use <https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/compliance>.
 2. On the **Policies** tab of the **Devices \| Compliance** page, select **Create policy**.
 
-For step-by-step guidance, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+For step-by-step guidance, see [Create a compliance policy in Microsoft Intune](/intune/intune-service/protect/create-compliance-policy).
 
 ### Enrollment and compliance settings for iOS/iPadOS
 
 iOS/iPadOS supports several enrollment scenarios, two of which are covered by this framework:
 
-- [Device enrollment for personally owned devices](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados#byod-user-and-device-enrollment): Personally owned devices (also known as bring your own device or BYOD) that are also used for work.
-- [Automated device enrollment for corporate-owned devices](/mem/intune/enrollment/device-enrollment-program-enroll-ios): Organization-owned devices that are associated with a single user, and are used exclusively for work.
+- [Device enrollment for personally owned devices](/intune/intune-service/fundamentals/deployment-guide-enrollment-ios-ipados#byod-user-and-device-enrollment): Personally owned devices (also known as bring your own device or BYOD) that are also used for work.
+- [Automated device enrollment for corporate-owned devices](/intune/intune-service/enrollment/device-enrollment-program-enroll-ios): Organization-owned devices that are associated with a single user, and are used exclusively for work.
 
 > [!TIP]
 > As previously described, Level 2 maps to [starting point](#deployment) or [enterprise](#deployment) level security, and Level 3 maps to [specialized](#deployment) security. For more information, see [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
@@ -199,8 +199,8 @@ iOS/iPadOS supports several enrollment scenarios, two of which are covered by th
 
 Android Enterprise supports several enrollment scenarios, two of which are covered by this framework:
 
-- [Android Enterprise work profile](/mem/intune/enrollment/android-work-profile-enroll): Personally owned devices (also known as bring your own device or BYOD) that are also used for work. Policies controlled by the IT department ensure that work data can't be transferred into the personal profile.
-- [Android Enterprise fully managed devices](/mem/intune/enrollment/android-fully-managed-enroll): Organization-owned devices that are associated with a single user, and are used exclusively for work.
+- [Android Enterprise work profile](/intune/intune-service/enrollment/android-work-profile-enroll): Personally owned devices (also known as bring your own device or BYOD) that are also used for work. Policies controlled by the IT department ensure that work data can't be transferred into the personal profile.
+- [Android Enterprise fully managed devices](/intune/intune-service/enrollment/android-fully-managed-enroll): Organization-owned devices that are associated with a single user, and are used exclusively for work.
 
 The Android Enterprise security configuration framework is organized into several distinct configuration scenarios that provide guidance for work profile and fully managed scenarios.
 
@@ -210,20 +210,21 @@ The Android Enterprise security configuration framework is organized into severa
 #### Compliance settings for Android Enterprise work profile devices
 
 - There's no basic security (Level 1) offering for personally owned work profile devices. The available settings don't justify a difference between Level 1 and Level 2.
-- **[Work profile enhanced security (Level 2)](/mem/intune/protect/compliance-policy-create-android-for-work#personally-owned-work-profile)**: We recommend this configuration as the minimum security for personal devices that access work or school data. This configuration introduces password requirements, separates work and personal data, and validates Android device attestation.
-- **[Work profile high security (Level 3)](/mem/intune/protect/compliance-policy-create-android-for-work#personally-owned-work-profile)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration introduces mobile threat defense or Microsoft Defender for Endpoint, sets the minimum Android version, enables stronger password policies, and further separates work and personal data.
+- **[Work profile enhanced security (Level 2)](/intune/intune-service/protect/android-personally-owned-security-configurations#personally-owned-work-profile-enhanced-security-level-2)**: We recommend this configuration as the minimum security for personal devices that access work or school data. This configuration introduces password requirements, separates work and personal data, and validates Android device attestation.
+- **[Work profile high security (Level 3)](/intune/intune-service/protect/android-personally-owned-security-configurations#personally-owned-work-profile-high-security-level-3)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration introduces mobile threat defense or Microsoft Defender for Endpoint, sets the minimum Android version, enables stronger password policies, and further separates work and personal data.
 
 #### Compliance settings for Android Enterprise fully managed devices
 
-- [Fully managed basic security (Level 1)](/mem/intune/fundamentals/protection-configuration-levels#level-1---minimum-protection-and-configuration): We recommend this configuration as the minimum security for an enterprise device. This configuration applies to most mobile users who work or school data. This configuration introduces password requirements, sets the minimum Android version, and enables specific device restrictions.
-- **[Fully managed enhanced security (Level 2)](/mem/intune/fundamentals/protection-configuration-levels#level-2---enhanced-protection-and-configuration)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration enables stronger password policies and disables user/account capabilities.
-- **[Fully managed high security (Level 3)](/mem/intune/fundamentals/protection-configuration-levels#level-3---high-protection-and-configuration)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration increases the minimum Android version, introduces mobile threat defense or Microsoft Defender for Endpoint, and enforces extra device restrictions.
+- [Fully managed basic security (Level 1)](/intune/intune-service/protect/android-fully-managed-security-configurations#fully-managed-basic-security-level-1): We recommend this configuration as the minimum security for an enterprise device. This configuration applies to most mobile users who work or school data. This configuration introduces password requirements, sets the minimum Android version, and enables specific device restrictions.
+- **[Fully managed enhanced security (Level 2)](/intune/intune-service/protect/android-fully-managed-security-configurations#fully-managed-enhanced-security-level-2)**: We recommend this configuration for devices that access sensitive data or confidential information. This configuration enables stronger password policies and disables user/account capabilities.
+- **[Fully managed high security (Level 3)](/intune/intune-service/protect/android-fully-managed-security-configurations#fully-managed-high-security-level-3)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration increases the minimum Android version, introduces mobile threat defense or Microsoft Defender for Endpoint, and enforces extra device restrictions.
 
 ### Recommended compliance settings for Windows 10 and later
 
-Configure the following settings as described in [Device Compliance settings for Windows 10/11 in Intune](/mem/intune/protect/compliance-policy-create-windows). These settings align with the principles outlined in [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
+Configure the following settings as described in [Device Compliance settings for Windows 10/11 in Intune](/intune/intune-service/protect/compliance-policy-create-windows). These settings align with the principles outlined in [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
 
 - **Device health \> Windows Health Attestation Service evaluation rules**: 
+/intune/intune-service/
 
   |Property|Value|
   |---|---|
@@ -278,7 +279,7 @@ Configure the following settings as described in [Device Compliance settings for
 
   |Property|Value|
   |---|---|
-  |[Require the device to be at or under the machine-risk score](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|
+  |[Require the device to be at or under the machine-risk score](/intune/intune-service/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|
 
 ## Conditional Access policies
 

@@ -28,42 +28,42 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/hubpage/blog-icon.png
+      - avatarUrl: /security/media/hubpage/certification.png
         componentType: testimonial-card
-        name: Confidently adopt AI
-        role: Blog
-        feedback: Read about new innovations that secure and govern AI, protect your data, and empower your analysts with agents that relieve them of time-consuming work.
+        name: Get certified as an Information Security Administrator
+        role: Exam
+        feedback: Take exam SC-401 to validate your ability to implement information protection, implement data loss prevention and retention, and manage risks, alerts, and activities.
         link:
           componentType: link
-          url: https://aka.ms/MSSecureNews_SecurityHub/?wt.mc_id=mssecurenews_blog_blog_scimktg
-          text: Read the announcements
+          url: /credentials/certifications/exams/sc-401/?wt.mc_id=certsustainedmkt_portfolioupdate_blog_wwl&practice-assessment-type=certification
+          text: Schedule your exam
       - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
         name: Security for AI with Microsoft Purview & Defender for Cloud
-        role: Event
+        role: Live webinar
         feedback: Join us for this 4-part Learn Live series. Learn how to prepare your environment for secure AI adoption to safeguard your data and identify threats to your AI.
         link:
           componentType: link
           url: https://developer.microsoft.com/en-us/reactor/series/S-1489/?wt.mc_id=securityhub_LLsecurityAI_webpage_sci 
           text: Register
-      - avatarUrl: /security/media/hubpage/blog-icon.png
-        componentType: testimonial-card
-        name: A Guide to Azure Well-Architected Framework's Security Pillar
-        role: Blog
-        feedback: Build more secure, efficient, and reliable cloud applications with the Well-Architected Framework.
-        link:
-          componentType: link
-          url: https://techcommunity.microsoft.com/blog/azureinfrastructureblog/cloud-security-as-a-city-planner-a-guide-to-azure-well-architected-framework%E2%80%99s-s/4382706?wt.mc_id=securityhub_WAFsecurity_webpage_cnl
-          text: Read more
       - avatarUrl: /security/media/hubpage/generic-badge.svg
         componentType: testimonial-card
-        name: Cybersecurity Skilling for Technical Professionals
+        name: Implement and manage data privacy solutions for compliance
         role: Training
-        feedback: Learn how to secure IT systems and fundamental cybersecurity concepts to kick-start your security learning.
+        feedback: Learn to help your organization manage personal data responsibly and meet compliance requirements with this Microsoft Learn training. 
         link:
           componentType: link
-          url: https://learn.microsoft.com/plans/odm7f0p5j6opq5?wt.mc_id=securityhub_security101_webpage_cnl
-          text: Start today
+          url: /training/modules/priva-understand-priva/?wt.mc_id=securityhub_mspriva_webpage_SCI
+          text: Start now
+      - avatarUrl: /security/media/hubpage/video-icon.png
+        componentType: testimonial-card
+        name: Explore Microsoft Secure on demand
+        role: Event
+        feedback: Learn why AI innovation requires AI security at Microsoft Secure, available on demand.
+        link:
+          componentType: link
+          url: //aka.ms/AAv23a8?wt.mc_id=securityhub_mssecure_webpage_cnl
+          text: Watch now
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

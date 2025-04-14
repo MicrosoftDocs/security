@@ -210,7 +210,7 @@ The Android Enterprise security configuration framework is organized into severa
 #### Compliance settings for Android Enterprise work profile devices
 
 - There's no basic security (Level 1) offering for personally owned work profile devices. The available settings don't justify a difference between Level 1 and Level 2.
-- **[Work profile enhanced security (Level 2)](/intune-service/protect/android-personally-owned-security-configurations#personally-owned-work-profile-enhanced-security-level-2)**: We recommend this configuration as the minimum security for personal devices that access work or school data. This configuration introduces password requirements, separates work and personal data, and validates Android device attestation.
+- **[Work profile enhanced security (Level 2)](/intune/intune-service/protect/android-personally-owned-security-configurations#personally-owned-work-profile-enhanced-security-level-2)**: We recommend this configuration as the minimum security for personal devices that access work or school data. This configuration introduces password requirements, separates work and personal data, and validates Android device attestation.
 - **[Work profile high security (Level 3)](/intune/intune-service/protect/android-personally-owned-security-configurations#personally-owned-work-profile-high-security-level-3)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration introduces mobile threat defense or Microsoft Defender for Endpoint, sets the minimum Android version, enables stronger password policies, and further separates work and personal data.
 
 #### Compliance settings for Android Enterprise fully managed devices
@@ -225,6 +225,7 @@ Configure the following settings as described in [Device Compliance settings for
 
 - **Device health \> Windows Health Attestation Service evaluation rules**: 
 /intune/intune-service/
+
   |Property|Value|
   |---|---|
   |Require BitLocker|Require|

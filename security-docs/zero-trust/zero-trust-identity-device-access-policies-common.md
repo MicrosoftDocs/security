@@ -43,9 +43,9 @@ We group these policies into three protection levels based on where you are on y
 
 The following diagram shows the protection levels that each policy applies to and what types of devices the policies apply to:
 
-:::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-policies-by-plan.svg" alt-text="A diagram showing common identity and device policies that support Zero Trust principles." lightbox="media/microsoft-365-policies-configurations/identity-device-access-policies-by-plan.svg":::
+:::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-policies-three-tiers.svg" alt-text="A diagram showing common identity and device policies that support Zero Trust principles." lightbox="media/microsoft-365-policies-configurations/identity-device-access-policies-three-tiers.svg":::
 
-You can download this diagram as a [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) file.
+You can download this diagram as a [PDF](https://download.microsoft.com/download/3d22de2e-38d8-4119-9f26-f6122b567909/zero-trust-id-and-device-access-policies-contoso.pdf) file or an editable [Visio](https://download.microsoft.com/download/8/b/2/8b23ab16-a3de-4b4e-b8a0-95b393cfbcee/zero-trust-id-and-device-access-policies-contoso.vsdx) file.
 
 > [!TIP]
 > We recommend requiring multifactor authentication (MFA) for users before enrolling devices in Intune to ensure they are in possession of the device. MFA is on by default due to [security defaults](/entra/fundamentals/security-defaults#enforced-security-policies), or you can use [Conditional Access policies to require MFA for all users](/entra/identity/conditional-access/policy-all-users-mfa-strength).

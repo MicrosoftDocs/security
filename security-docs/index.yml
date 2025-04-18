@@ -48,14 +48,14 @@ sections:
           text: Register
       - avatarUrl: /security/media/hubpage/generic-badge.svg
         componentType: testimonial-card
-        name: Implement and manage data privacy solutions for compliance
-        role: Training
-        feedback: Learn to help your organization manage personal data responsibly and meet compliance requirements with this Microsoft Learn training. 
+        name: Get the latest on the Secure Future Initiative
+        role: Blog
+        feedback: Read about the progress on our multiyear commitment to advance the way we design, build, test, and operate our Microsoft technology to ensure that our solutions meet the highest possible standards for security. 
         link:
           componentType: link
-          url: /training/modules/priva-understand-priva/?wt.mc_id=securityhub_mspriva_webpage_SCI
-          text: Start now
-      - avatarUrl: /security/media/hubpage/video-icon.png
+          url: //aka.ms/SFI_MSLearn?wt.mc_id=securityhub_sfi_webpage_cnl
+          text: Read more
+      - avatarUrl: /security/media/hubpage/blog-icon.png
         componentType: testimonial-card
         name: Explore Microsoft Secure on demand
         role: Event

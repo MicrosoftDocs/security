@@ -49,7 +49,7 @@ sections:
       - avatarUrl: /security/media/hubpage/generic-badge.svg
         componentType: testimonial-card
         name: Get the latest on the Secure Future Initiative
-        role: Blog
+        role: Report
         feedback: Read about the progress on our multiyear commitment to advance the way we design, build, test, and operate our Microsoft technology to ensure that our solutions meet the highest possible standards for security. 
         link:
           componentType: link

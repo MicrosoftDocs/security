@@ -16,6 +16,7 @@ ms.reviewer: mas
 
 The Microsoft Cybersecurity Reference Architectures (MCRA) are technical architectures to enable you to adopt end-to-end security using Zero Trust principles. 
 MCRA describes end-to-end security for the ‘hybrid of everything’ technology estate spanning legacy IT, multi-cloud, Internet of Things (IoT), Operational Technology (OT), Artificial Intelligence (AI), and more. 
+
 These reference architectures accelerate planning and execution of security modernization using open standards, Microsoft’s cybersecurity capabilities and technologies, and third-party security technology. MCRA is a component of [Microsoft's Security Adoption Framework (SAF)](/security/ciso-workshop/adoption) that describes a complete security modernization approach helps security teams modernize their strategy, governance, technical architecture, and operations using Zero Trust principles. 
 
 [Download the updated April 2025 version of the MCRA](https://github.com/MicrosoftDocs/security/blob/main/Downloads/mcra-december-2023.pptx?raw=true)

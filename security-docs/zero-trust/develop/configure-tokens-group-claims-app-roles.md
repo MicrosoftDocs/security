@@ -1,10 +1,10 @@
 ---
 title: Configure group claims and app roles in tokens
-description: Learn how to configure app role definitions and security groups to improve flexibility and control while increasing application zero trust security with least privilege.
+description: Configure app role definitions and security groups to improve flexibility and control while increasing app Zero Trust security with least privilege.
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 04/18/2025
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
@@ -16,7 +16,7 @@ This article helps you to configure your apps with app role definitions and assi
 
 Microsoft Entra ID supports sending a user's assigned [security groups](/entra/identity-platform/optional-claims), Microsoft Entra directory roles, and distribution groups as claims in a token. You can use this approach to drive authorization in apps. However, Microsoft Entra ID limits group support in a token by the size of the token. When the user is a member of too many groups, there are no groups in the token.
 
-In this article, you learn an alternative approach to getting user information in tokens using Microsoft Entra group support. Instead, you configure your apps with app role definitions and assign groups to app roles. This [Zero Trust](overview.md) developer best practice improves flexibility and control while [increasing application security with least privilege](/entra/identity-platform/secure-least-privileged-access).
+In this article, you learn an alternative approach to getting user information in tokens using Microsoft Entra group support. Instead, you configure your apps with app role definitions and assign groups to app roles. [Zero Trust developer best practices](overview.md) improve flexibility and control while [increasing application security with least privilege](/entra/identity-platform/secure-least-privileged-access).
 
 You can [configure group claims](/entra/identity-platform/optional-claims#configuring-groups-optional-claims) in tokens that you can use within your applications for authorization. Remember that group information in the token is current only when you receive the token. Group claims support two main patterns:
 
@@ -53,7 +53,7 @@ To add the `groups` and `wids` claims to your tokens, select **All groups** as s
 
 ## Group overages
 
-When you request all groups in your token as shown in the above example, you can't rely on the token having the `groups` claim in your token. There are size limits on tokens and on `groups` claims so that they don't become too large. When the user is a member of too many groups, your app needs to get the user's group membership from Microsoft Graph. The limits for groups in a `groups` claim are:
+When you request all groups in your token as shown in the example, you can't rely on the token having the `groups` claim in your token. There are size limits on tokens and on `groups` claims so that they don't become too large. When the user is a member of too many groups, your app needs to get the user's group membership from Microsoft Graph. The limits for groups in a `groups` claim are:
 
 - 200 groups for JSON web tokens (JWT).
 - 150 groups for Security Assertion Markup Language (SAML) tokens.
@@ -62,8 +62,6 @@ When you request all groups in your token as shown in the above example, you can
   - Implicit flow can be used in web apps for the ID token only, never the access token, in an OAuth2 hybrid flow.
 
 If you're using OpenID Connect or OAuth2, you can have up to 200 groups in your token. If you're using SAML, you can have only 150 groups because SAML tokens are bigger than OAuth2 and OpenID Connect tokens. If you're using the implicit flow, the limit is six because those responses show up in the URL. In all of these cases, instead of having a `groups` claim, you see an indication (known as a group overage) that tells you that the user is a member of too many groups to fit in your token.
-
-The `groups` claim is supposed to be mapped to `src1`. In theory, you'd then look for the `_claim_sources` claim then find the `src1` member. From there, you'd find the Graph query that you'd use to get the group membership. However, there's a problem with what you see in the example Graph query. It goes to Azure AD Graph (which Microsoft is deprecating), so don't use it.
 
 Implicit flow overage indication is done with a `hasgroups` claim instead of the `groups` claim.
 
@@ -88,7 +86,7 @@ Another way to avoid the group overage problem is for the app to define app role
 
 :::image type="content" source="../media/develop/configure-tokens-group-claims-app-roles/screenshot-create-app-role-allow-users-groups-inline.png" alt-text="Screenshot of Create app role screen shows Allowed member types: Users/Groups." lightbox="../media/develop/configure-tokens-group-claims-app-roles/screenshot-create-app-role-allow-users-groups-expanded.png":::
 
-Having [created the app role in the app's registration](/entra/identity-platform/howto-add-app-roles-in-apps), IT Pros can [assign users and groups to the role](/entra/identity-platform/howto-add-app-roles-in-apps#assign-users-and-groups-to-roles). Your app gets a `roles` claim in your token (ID token for app, access token for APIs) with all the signed-in user's assigned roles as shown in the following token example.
+After you [create the app role in the app's registration](/entra/identity-platform/howto-add-app-roles-in-apps), you can [assign users and groups to the role](/entra/identity-platform/howto-add-app-roles-in-apps#assign-users-and-groups-to-roles). Your app gets a `roles` claim in your token (ID token for app, access token for APIs) with all the signed-in user's assigned roles as shown in the following token example.
 
 ```
 "aud": "11112222-bbbb-3333-cccc-4444dddd5555",
@@ -113,17 +111,17 @@ Remember to have your application handle the following conditions:
 
 When you create app roles that allow user and groups as members, always define a baseline user role with no elevated authorization roles. When an Enterprise App configuration requires assignment, only users with direct assignment to an application or membership in a group assigned to the app can use the app.
 
-If your app has defined app roles that allow users and groups as members then, when a user or group is assigned to the app, one of the defined app roles must be part of the user or group's assignment to the app. If your app has only defined elevated roles (such as `admin`) for the app, then all users and groups would  be assigned the admin role. When you define a base role (such as `user`), users and groups assigned to the app can be assigned the base user role.
+If your app includes defined app roles that allow users and groups as members then, when a user or group is assigned to the app, one of the defined app roles must be part of the user or group's assignment to the app. If your app includes only defined elevated roles (such as `admin`) for the app, then all users and groups would  be assigned the admin role. When you define a base role (such as `user`), users and groups assigned to the app can be assigned the base user role.
 
 In addition to avoiding group overage claims, another advantage of using roles isn't needing to map between a group ID or name and what it means in your application. For example, your code can look for the admin role claim instead of iterating through groups in the `groups` claims and deciding which group IDs should be allowed the admin functionality.
 
 ## Verify and use roles in your code
 
-When you define app roles for your app, it is your responsibility to implement authorization logic for those roles. See [Implement role-based access control in applications](/entra/identity-platform/howto-implement-rbac-for-apps) to learn how you can implement authorization logic in your apps.
+When you define app roles for your app, it is your responsibility to implement authorization logic for those roles. To learn how you can implement authorization logic in your apps, see [Implement role-based access control in applications](/entra/identity-platform/howto-implement-rbac-for-apps).
 
 ## Next steps
 
-- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application Zero Trust security with least privilege.
 - [Configure group claims for applications by using Microsoft Entra ID](/entra/identity/hybrid/connect/how-to-connect-fed-group-claims) shows how Microsoft Entra ID can provide a user's group membership information in tokens for use within applications.
 - [Security best practices for application properties](/entra/identity-platform/security-best-practices-for-app-registration) describes redirect URI, access tokens (used for implicit flows), certificates and secrets, application ID URI, and application ownership.
 - [Microsoft identity platform scopes, permissions, & consent](/entra/identity-platform/permissions-consent-overview) explains the foundational concepts of access and authorization to help you build more secure and trustworthy applications.

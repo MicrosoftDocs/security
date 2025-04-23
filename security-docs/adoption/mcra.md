@@ -15,15 +15,15 @@ ms.reviewer: mas
 # Microsoft Cybersecurity Reference Architectures
 
 The Microsoft Cybersecurity Reference Architectures (MCRA) are technical architectures to enable you to adopt end-to-end security using Zero Trust principles. 
-MCRA describes end-to-end security for the ‘hybrid of everything’ technology estate spanning legacy IT, multi-cloud, Internet of Things (IoT), Operational Technology (OT), Artificial Intelligence (AI), and more. 
+MCRA describes end-to-end security for the ‘hybrid of everything’ technology estate spanning legacy IT, multicloud, Internet of Things (IoT), Operational Technology (OT), Artificial Intelligence (AI), and more. 
 
 These reference architectures accelerate planning and execution of security modernization using open standards, Microsoft’s cybersecurity capabilities and technologies, and third-party security technology. MCRA is a component of [Microsoft's Security Adoption Framework (SAF)](/security/ciso-workshop/adoption) that describes a complete security modernization approach helps security teams modernize their strategy, governance, technical architecture, and operations using Zero Trust principles. 
 
 [Download the updated April 2025 version of the MCRA](https://download.microsoft.com/download/956f9359-e6d5-4e77-a36c-117f94620eb3/MCRA-April-2025.pptx)
 
-:::image type="content" source="./media/mcra/mcra-overview.png" alt-text="Screenshot of some of the diagrams included in the updated Microsoft Cybersecurity Reference Architecture" lightbox="./media/mcra/mcra-overview.png":::
+:::image type="content" source="./media/mcra/mcra-overview.png" alt-text="Screenshot of some of the diagrams included in the updated Microsoft Cybersecurity Reference Architecture." lightbox="./media/mcra/mcra-overview.png":::
 
-## Recent Updates
+## Recent updates
 
 These are the key changes since the previous release (December 2023 version)
 - Updated main capabilities diagram to add Microsoft Security Exposure Management, Windows LAPS, passkeys, and Microsoft Entra Verified ID as well as to show Microsoft Security Copilot as a broad capability. 
@@ -39,7 +39,7 @@ These are the key changes since the previous release (December 2023 version)
 - Updated threat intelligence daily signals to 78+ Trillion and updated links/resources on various slides. 
 - Updated closing slides to show the full security modernization journey and associated Microsoft Unified engagements
 
-## MCRA Summary
+## MCRA summary
 
 The MCRA helps you understand how Microsoft capabilities work together to help you achieve your end-to-end security goals.
 The MCRA includes:
@@ -69,7 +69,7 @@ Organizations find this architecture useful because it covers capabilities acros
 - **Learn about Microsoft's integration investments** - The architecture helps architects and technical teams identify how to take advantage of integration points within Microsoft capabilities and with existing security capabilities.
 - **Learn about Cybersecurity** - Some folks, particularly people new to cybersecurity, use this resource as a learning tool as they prepare for their first career or a career change.
 
-## Next Steps
+## Next steps
 
 - [Download the updated April 2025 version of the MCRA](https://download.microsoft.com/download/956f9359-e6d5-4e77-a36c-117f94620eb3/MCRA-April-2025.pptx)
 - [Watch a prerecorded version of this guidance on YouTube](https://youtu.be/6iYxNm3TOiI?si=jOU3TScxup7pWDj0).

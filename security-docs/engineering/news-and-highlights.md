@@ -52,7 +52,6 @@ Here are past news and highlights that you may have missed or would like to revi
 
 - [Microsoft Pluton - CPU security for PCs](https://www.microsoft.com/security/blog/2020/11/17/meet-the-microsoft-pluton-processor-the-security-chip-designed-for-the-future-of-windows-pcs/)
 - [Cyberattacks targeting health care](https://blogs.microsoft.com/on-the-issues/2020/11/13/health-care-cyberattacks-covid-19-paris-peace-forum/)
-- [Microsoft Digital Defense Report](https://www.microsoft.com/download/details.aspx?id=101738)
 - [Security configuration baseline settings for Windows 10 and Windows Server version 2004](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-windows-10-and-windows-server-version/ba-p/1543631)
 - [Azure platform integrity and security](/azure/security/fundamentals/platform)
 - [Microsoft built-in security controls](/security/benchmark/azure/)

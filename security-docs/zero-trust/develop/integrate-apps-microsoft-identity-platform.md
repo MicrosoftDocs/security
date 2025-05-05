@@ -1,7 +1,7 @@
 ---
-title: Integrate applications with Microsoft Entra ID and the Microsoft identity platform
-description: As a developer, you can build and integrate apps that IT pros can secure in the enterprise. This article helps you to understand how to securely integrate your app with Microsoft Entra ID and the Microsoft identity platform.
-ms.date: 05/24/2024
+title: Integrate apps with Microsoft Entra ID
+description: Build and integrate apps to secure in the enterprise. Understand how to securely integrate your app with Microsoft Entra ID and the Microsoft identity platform.
+ms.date: 04/18/2025
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
@@ -29,7 +29,7 @@ The Microsoft cloud-based identity and access management service, Microsoft Entr
    Diagram title: Microsoft identity platform for developers. Diagram subtitle: Build applications and integrate identity with one unified toolkit.
 :::image-end:::
 
-The above diagram illustrates the unified toolkit of the Microsoft identity platform for developers that supports several identities and industry standards. You can build applications and integrate identity with endpoints, libraries, web APIs, publisher verification, user provisioning, and auth brokers.
+The preceding diagram illustrates the unified toolkit of the Microsoft identity platform for developers that supports several identities and industry standards. You can build applications and integrate identity with endpoints, libraries, web APIs, publisher verification, user provisioning, and auth brokers.
 
 ## Get started with app integration
 
@@ -52,7 +52,7 @@ An integrated app can run from any location, including these examples:
 - Your own data centers and servers
 - Desktop computers
 - Mobile devices
-- Internet of Things devices.
+- Internet of Things devices
 
  The app or device, such as a web browser app accessing the authorization endpoint, can natively provide requirements. Cooperation between a disconnected browser and the application satisfies the requirements. For example, apps running on televisions might have the user perform the initial authentication with a browser on a desktop or mobile device.
 

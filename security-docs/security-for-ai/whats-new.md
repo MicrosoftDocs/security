@@ -19,7 +19,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 
 ## May 2025
 
-|Product | Updates |  
+|Product | Feature updates |  
 | ----  | ----------------------------- | 
 |Microsoft Purview | [Public Preview of DLP for Microsoft 365 Copilot in Word, Excel, and PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-public-preview-of-dlp-for-m365-copilot-in-word-excel-and-powerpoint/4409809)
 | Defender for Cloud | - [General Availability for Defender for AI Services](/azure/defender-for-cloud/release-notes#general-availability-for-defender-for-ai-services) <br> - [Microsoft Security Copilot is now Generally Available in Defender for Cloud](/azure/defender-for-cloud/release-notes#microsoft-security-copilot-is-now-generally-available-in-defender-for-cloud) <br> - [General Availability Data and AI security dashboard](/azure/defender-for-cloud/release-notes#general-availability-data-and-ai-security-dashboard)|
@@ -28,7 +28,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 
 ## April 2025
 
-|Product | Updates |  
+|Product | Feature updates |  
 | ----  | ----------------------------- | 
 | Defender for Cloud | [AI Posture Management in GCP vertex AI (Preview)](/azure/defender-for-cloud/release-notes#ai-posture-management-in-gcp-vertex-ai-preview)|
 

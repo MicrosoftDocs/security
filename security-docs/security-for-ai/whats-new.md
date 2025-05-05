@@ -19,8 +19,6 @@ This article lists new capabilities and resources (blogs and videos) related to 
 
 ## May 2025
 
-**Feature updates**
-
 |Product | Updates |  
 | ----  | ----------------------------- | 
 |Microsoft Purview | [Public Preview of DLP for Microsoft 365 Copilot in Word, Excel, and PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-public-preview-of-dlp-for-m365-copilot-in-word-excel-and-powerpoint/4409809)
@@ -29,8 +27,6 @@ This article lists new capabilities and resources (blogs and videos) related to 
 
 
 ## April 2025
-
-**Feature updates**
 
 |Product | Updates |  
 | ----  | ----------------------------- | 

@@ -23,7 +23,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 
 |Product | Updates |  
 | ----  | ----------------------------- | 
-|Microsoft Purview | [Public Preview of DLP for M365 Copilot in Word, Excel, and PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-public-preview-of-dlp-for-m365-copilot-in-word-excel-and-powerpoint/4409809)
+|Microsoft Purview | [Public Preview of DLP for Microsoft 365 Copilot in Word, Excel, and PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-public-preview-of-dlp-for-m365-copilot-in-word-excel-and-powerpoint/4409809)
 | Defender for Cloud | - [General Availability for Defender for AI Services](/azure/defender-for-cloud/release-notes#general-availability-for-defender-for-ai-services) <br> - [Microsoft Security Copilot is now Generally Available in Defender for Cloud](/azure/defender-for-cloud/release-notes#microsoft-security-copilot-is-now-generally-available-in-defender-for-cloud) <br> - [General Availability Data and AI security dashboard](/azure/defender-for-cloud/release-notes#general-availability-data-and-ai-security-dashboard)|
  
 
@@ -49,7 +49,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 - [What's new in Microsoft Purview](/purview/whats-new)
 - [What's new in Compliance Manager](/purview/compliance-manager-whats-new)
 - [What's new in Microsoft Priva](/privacy/priva/priva-whats-new)
-- [What's new in Microsoft Defender for Cloud Apps](defender-cloud-apps/release-notes)
+- [What's new in Microsoft Defender for Cloud Apps](/defender-cloud-apps/release-notes)
 - [What's new in Defender for Cloud](/azure/defender-for-cloud/release-notes)
 - What's new in Azure AI Foundry: [Azure AI Foundry blog](https://devblogs.microsoft.com/foundry/)
 - [What's new in Azure AI Content Safety](/azure/ai-services/content-safety/whats-new)

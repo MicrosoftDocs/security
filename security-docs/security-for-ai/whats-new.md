@@ -20,6 +20,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 ## May 2025
 
 **Feature updates**
+
 |Product | Updates |  
 | ----  | ----------------------------- | 
 |Microsoft Purview | [Public Preview of DLP for M365 Copilot in Word, Excel, and PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-public-preview-of-dlp-for-m365-copilot-in-word-excel-and-powerpoint/4409809)
@@ -30,6 +31,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 ## April 2025
 
 **Feature updates**
+
 |Product | Updates |  
 | ----  | ----------------------------- | 
 | Defender for Cloud | [AI Posture Management in GCP vertex AI (Preview)](/azure/defender-for-cloud/release-notes#ai-posture-management-in-gcp-vertex-ai-preview)|
@@ -46,7 +48,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 
 - [What's new in Microsoft Purview](/purview/whats-new)
 - [What's new in Compliance Manager](/purview/compliance-manager-whats-new)
-- [What's new in Microsoft Priva](https://learn.microsoft.com/en-us/privacy/priva/priva-whats-new)
+- [What's new in Microsoft Priva](/privacy/priva/priva-whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](defender-cloud-apps/release-notes)
 - [What's new in Defender for Cloud](/azure/defender-for-cloud/release-notes)
 - What's new in Azure AI Foundry: [Azure AI Foundry blog](https://devblogs.microsoft.com/foundry/)

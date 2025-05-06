@@ -342,7 +342,7 @@ Securing access to the VNet and applications include:
 
 The following diagram shows both access modes across the reference architecture.
 
-:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-network-7.svg" alt-text="Diagram of access modes in the reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.svg":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-network-7.svg" alt-text="Diagram of access modes in the reference architecture." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-network-7.svg":::
 
 ### Secure traffic within Azure environment for the VNet and application
 

@@ -206,7 +206,7 @@ Across the business scenarios, the implementation stages are roughly aligned so 
 
 ## Starting a Zero Trust journey
 
-If you're embarking on a Zero trust journey that is aligned to a business scenario or looking to embrace Zero Trust as a strategic defense doctrine, success can be difficult to measure. This is because security doesn't pass a simple pass/fail type of evaluation. Rather, security is a commitment and a journey, to which Zero Trust supplies guiding principles.
+If you're embarking on a Zero Trust journey that is aligned to a business scenario or looking to embrace Zero Trust as a strategic defense doctrine, success can be difficult to measure. This is because security doesn't pass a simple pass/fail type of evaluation. Rather, security is a commitment and a journey, to which Zero Trust supplies guiding principles.
 
 Using this adoption guidance as a process framework, first establish and document our security strategy, very similar to a Project Initiation Document (PID).  Using the principles that apply to strategy, at minimum, you should document:
 

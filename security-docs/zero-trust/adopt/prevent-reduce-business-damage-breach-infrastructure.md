@@ -1,7 +1,7 @@
 ---
 title: Implement security breach prevention and recovery infrastructure
 description: Implement security breach prevention and recovery infrastructure.  
-ms.date: 06/12/2024
+ms.date: 05/05/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter

@@ -1,7 +1,7 @@
 ---
 title: Zero Trust adoption framework overview
 description: This article gives an overview of the Zero Trust adoption framework.
-ms.date: 02/26/2025
+ms.date: 05/05/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter

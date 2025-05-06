@@ -1,6 +1,6 @@
 ---
 title: Build a strong security posture for AI
-description: How to approach security for AI apps and data, including building a strong security posture for AI.
+description: How to approach AI security for apps and data with Microsoft AI security capabilities.
 ms.date: 04/01/2025
 ms.service: security
 author: BrendaCarter

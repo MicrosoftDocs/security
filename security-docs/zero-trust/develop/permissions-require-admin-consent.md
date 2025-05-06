@@ -1,10 +1,10 @@
 ---
 title: Request permissions that require administrative consent
-description: Learn about the permission and consent experience when your application requires administrative consent so that you can better collaborate with admins to implement the Zero Trust principle of least privilege in your applications.
+description: Learn about permission and consent when your app requires admin consent to implement Zero Trust principle of least privilege in your apps.
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 04/18/2025
 ms.custom: template-concept 
 ms.collection:
   - zerotrust-dev
@@ -22,7 +22,7 @@ When your application requests permission to access a resource, your user might 
 
 :::image type="content" source="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-sign-in-access-data-inline.png" alt-text="Screenshot of Permissions requested dialog that describes the permissions the app is requesting with Cancel and Accept buttons." lightbox="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-sign-in-access-data-expanded.png":::
 
-In the above example dialog, the user grants consent to allow the app to read the data on their behalf by selecting **Accept** or denies the request by selecting **Cancel**. The application receives an access token and can continue its processes after the user grants consent. Remember to ensure that your app is ready to gracefully handle when it doesn't receive a token.
+In the example dialog, the user grants consent to allow the app to read the data on their behalf by selecting **Accept** or denies the request by selecting **Cancel**. The application receives an access token and can continue its processes after the user grants consent. Remember to ensure that your app is ready to gracefully handle when it doesn't receive a token.
 
 ## Admin consent experience
 
@@ -44,7 +44,7 @@ When your app requests a permission that requires admin consent (by design or ad
 
 :::image type="content" source="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-need-admin-approval-inline.png" alt-text="Screenshot of 'Need admin approval' dialog that describes how admins grant requested permissions." lightbox="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-need-admin-approval-expanded.png":::
 
-The above example dialog shows the default (out of the box) experience for permissions that require admin consent. Most users don't know what to do in this scenario. They don't know who their admin is, they don't know who to go to for approval. This uncertainty can limit the user's ability to achieve desired results.
+The example dialog shows the default (out of the box) experience for permissions that require admin consent. Most users don't know what to do in this scenario. They don't know who their admin is, they don't know who to go to for approval. This uncertainty can limit the user's ability to achieve desired results.
 
 ## Improving the permissions and consent experience
 
@@ -58,27 +58,27 @@ After the tenant admin selects **Yes** on **Users can request admin consent to a
 
 :::image type="content" source="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-admin-approval-required-inline.png" alt-text="Screenshot of 'Approval required' dialog that describes the permissions the app is requesting with a text field to 'Enter justification for requesting this app.'" lightbox="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-admin-approval-required-expanded.png":::
 
-In the above example dialog, the user can **Enter justification for requesting this app** before selecting **Request approval**. The approval request then enters an **Admin consent requests** queue where admins have options to review, accept, or ban applications in their organization based on risk profile.
+In the example dialog, the user can **Enter justification for requesting this app** before selecting **Request approval**. The approval request then enters an **Admin consent requests** queue where admins have options to review, accept, or ban applications in their organization based on risk profile.
 
 When an admin runs an application that requires admin consent without configuring consent in the Microsoft Entra admin center, the admin user sees a **Permissions requested** dialog similar to the following example.
 
 :::image type="content" source="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-consent-obo-org-inline.png" alt-text="Screenshot of 'Permissions requested' dialog that describes the permissions the app is requesting with a checkbox to toggle 'Consent on behalf of your organization.'" lightbox="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-consent-obo-org-expanded.png":::
 
-In the above example, the admin sees a description of the permissions that the application is requesting. The admin can select **Accept** to individually run the application or they can select **Consent on behalf of your organization** before selecting **Accept**. After the admin grants consent for the organization, no future organization user needs to grant permission for this application unless an admin removes consent from the tenant **Admin consent requests** configuration.
+In the example, the admin sees a description of the permissions that the application is requesting. The admin can select **Accept** to individually run the application or they can select **Consent on behalf of your organization** before selecting **Accept**. After the admin grants consent for the organization, no future organization user needs to grant permission for this application unless an admin removes consent from the tenant **Admin consent requests** configuration.
 
 Another method of tenant admin consent is in Microsoft Entra admin center **Permissions** where admins can review the details of previously requested app permissions.
 
 :::image type="content" source="../media/develop/permissions-require-admin-consent/screenshot-entra-permissions-user-consent-inline.png" alt-text="Screenshot of Microsoft Entra admin center 'Permissions' that displays details of existing application requests." lightbox="../media/develop/permissions-require-admin-consent/screenshot-entra-permissions-user-consent-expanded.png":::
 
-In the above **User consent** example, the admin can review the granted permissions for the app along with information about claims, permission type, and who gave consent. The admin can select **Admin consent** to review granted permissions that require admin consent.
+In the **User consent** example, the admin can review the granted permissions for the app along with information about claims, permission type, and who gave consent. The admin can select **Admin consent** to review granted permissions that require admin consent.
 
 ## Requesting admin consent in advance
 
 Your best [application permissions strategy](developer-strategy-application-permissions.md) is to declare in advance all of the permissions that your app might need or request when you [register your app](/entra/identity-platform/quickstart-register-app). You don't have to request all permissions at the same time but, after you declare all of the permissions that your app might need, admins can select **Grant admin consent for** in your app's configuration in the tenant to display a dialog similar to this example.
 
-:::image type="content" source="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-review-for-org-inline.png" alt-text="Screenshot of 'Permissions requested Review for your organization' dialog that describes the permissions the app is requesting with Cancel and Accept buttons." lightbox="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-review-for-org-expanded.png":::
+:::image type="content" source="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-review-for-org-inline.png" alt-text="Permissions requested Review for your organization dialog that describes the permissions the app is requesting with Cancel and Accept buttons." lightbox="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-review-for-org-expanded.png":::
 
-The above example shows how the admin can preconsent to the permissions that you declared and provide the best experience for your users and tenant admins.
+The example shows how the admin can preconsent to the permissions that you declared and provide the best experience for your users and tenant admins.
 
 Requesting admin consent ahead of time is an excellent choice for line of business (LOB) apps, especially the apps that your organization is developing. It's easier to not have to ask your user if your company can access your company's data by preconsenting those applications. You make the admin consent request as part of your app registration process.
 
@@ -87,7 +87,7 @@ Requesting admin consent ahead of time is an excellent choice for line of busine
 - [Acquire authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
-- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application Zero Trust security with least privilege.
 - [Overview of permissions and consent in the Microsoft identity platform](/entra/identity-platform/permissions-consent-overview) helps you to understand foundational concepts of access and authorization.
 - [Overview of consent and permissions](/entra/identity/enterprise-apps/user-admin-consent-overview) helps you to learn foundational concepts and scenarios around consent and permissions in Microsoft Entra ID.
 - Learn module: [Permissions and consent framework](/learn/modules/identity-permissions-consent/) helps you to learn permissions and consent framework models.

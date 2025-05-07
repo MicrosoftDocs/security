@@ -1,7 +1,7 @@
 ---
 title: Rapidly modernize your security posture for Zero Trust
 description: Learn how to rapidly modernize your security posture for Zero Trust.
-ms.date: 11/14/2024
+ms.date: 05/05/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter

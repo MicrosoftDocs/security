@@ -1,7 +1,7 @@
 ---
 title: Secure remote and hybrid work with Zero Trust 
 description: Learn how to secure your remote and hybrid work with Zero Trust.
-ms.date: 04/24/2024
+ms.date: 05/05/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -235,7 +235,7 @@ These resources include prescriptive guidance that you can use as recommended st
 
 | Resource | Description |
 |:-----|:-----|
-| Rapid Modernization Plan (RaMP) checklist: [Explicitly validate trust for all access requests](/security/zero-trust/data-compliance-gov-data) <br><br> ![Image of Rapid Modernization Plan](../media/ramp.png) | This series of checklists enumerate the technical objectives of each security deployment area in priority order and documents the steps you'll need to take to achieving them. It also lists project members who need to be involved for each area. <br><br> Using this resource helps you to identify quick wins. |
+| Rapid Modernization Plan (RaMP) checklist: [Explicitly validate trust for all access requests](/security/zero-trust/user-access-productivity-validate-trust) <br><br> ![Image of Rapid Modernization Plan](../media/ramp.png) | This series of checklists enumerate the technical objectives of each security deployment area in priority order and documents the steps you'll need to take to achieving them. It also lists project members who need to be involved for each area. <br><br> Using this resource helps you to identify quick wins. |
 | [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations) ![Image of identity and device access policies](../media/identity-device-access-policies-byplan-thumb.png) | This solution guide recommends a set of [identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) that have been tested together. It includes: <ul><li>**Starting point** level policies that get you started and do not require managing devices.</li><li>**Enterprise** level policies are recommended for Zero Trust. This requires enrolling devices for endpoint management.</li></ul> Use these recommendations as a starting point and, if needed, adapt the policies for your unique environment and goals. |
 | [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) <br><br> ![Image of managing devices with Intune](../media/adoption-guide/manage-devices-with-intune.png) | This solution guide walks through the phases of managing devices, from actions that don’t require enrolling devices into management to fully managing devices. These recommendations are coordinated with the above resources. |
 | [Intune Enrollment Options](/microsoft-365/solutions/cloud-architecture-models#intune-enrollment-options) <br><br>![Image of Intune enrollment options](../media/adoption-guide/msft-intune-enrollment-options-thumb-landscape.png) <br><br> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br> Updated June 2022 | This poster-set provides an easy-to-scan comparison of device enrollment options per platform. |

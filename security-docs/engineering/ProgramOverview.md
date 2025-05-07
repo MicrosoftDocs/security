@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 The mission of Microsoft's Government Security Program (GSP) is to build trust through transparency.  Microsoft recognizes that people will only use technology they trust and we strive to demonstrate our commitment to building this trust through our transparency, privacy, compliance, and security principles.  Since the program's inception in 2003, Microsoft has provided visibility into our technology which governments and international organizations can use to help protect themselves and their citizens.
 
-The GSP is designed to provide participants with the confidential security information and resources they need to trust Microsoft's products and services.  Participants currently include over 40 countries and international organizations represented by more than 100 agencies.  Participation enables controlled access to source code, exchange of threat and vulnerability information, engagement on technical content about Microsoft's products and services, and access to four globally-distributed Transparency Centers, which are located in the United States, Singapore, Brazil, and Ireland. 
+The GSP is designed to provide participants with the confidential security information and resources they need to trust Microsoft's products and services.  Participants currently include over 40 countries/regions and international organizations represented by more than 100 agencies.  Participation enables controlled access to source code, exchange of threat and vulnerability information, engagement on technical content about Microsoft's products and services, and access to four globally-distributed Transparency Centers, which are located in the United States, Singapore, Brazil, and Ireland. 
 
 ![World Map](../media/worldmap.jpg)
 
@@ -102,11 +102,11 @@ GSP participants typically have a mission which focuses on information security 
  
 Local Microsoft representatives work with government and international organizations to determine if participating in the GSP through one of more offerings would match that agency's needs, assuming that local practices and laws related to confidentiality, information sharing, intellectual property protection, export control, and related areas align to the program. 
  
-If a country would like to have more than one agency participate in the program, the local Microsoft representatives and the agencies can work together to determine whether each agency should have its own GSP offering or have one agency as primary GSP participant that would sponsor additional agencies.   
+If a country/region would like to have more than one agency participate in the program, the local Microsoft representatives and the agencies can work together to determine whether each agency should have its own GSP offering or have one agency as primary GSP participant that would sponsor additional agencies.   
 
 ### **Sponsorship**
  
-For some agencies, access to the benefits of the GSP may be feasible through Sponsorship. A Sponsorship relationship is created when a participating GSP agency (the “Sponsoring Agency”) and another government agency from the same country (the “Sponsored Agency”) sign the same GSP Agreement. A GSP participant (Sponsoring Agency) may request Microsoft's approval to add other government agencies (Sponsored Agencies) as participants to the GSP.  The Sponsoring Agency takes responsibility for the Sponsored Agency's compliance with all contractual terms.
+For some agencies, access to the benefits of the GSP may be feasible through Sponsorship. A Sponsorship relationship is created when a participating GSP agency (the “Sponsoring Agency”) and another government agency from the same country/region (the “Sponsored Agency”) sign the same GSP Agreement. A GSP participant (Sponsoring Agency) may request Microsoft's approval to add other government agencies (Sponsored Agencies) as participants to the GSP.  The Sponsoring Agency takes responsibility for the Sponsored Agency's compliance with all contractual terms.
 
 ## Contact Us
 

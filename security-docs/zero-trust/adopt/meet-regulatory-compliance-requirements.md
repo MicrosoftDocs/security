@@ -1,7 +1,7 @@
 ---
 title: Meet regulatory and compliance requirements with Zero Trust
 description: Learn how to Meet regulatory and compliance requirements with Zero Trust.
-ms.date: 04/24/2024
+ms.date: 05/05/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -237,7 +237,7 @@ In Stage 1, you identify the regulations that apply to your organization and beg
 | Objectives for Stage 1 | Resources |
 | --- | --- |
 | Identify compliance requirements using governance pyramid. | [Compliance Manager assessments](/microsoft-365/compliance/compliance-manager-assessments) |
-| Use Compliance Manager to assess compliance and plan remediation for identified gaps. | Visit the Microsoft Purview compliance portal and review all customer-managed improvement actions relevant to your organization. |
+| Use Compliance Manager to assess compliance and plan remediation for identified gaps. | Visit the Microsoft Purview portal and review all customer-managed improvement actions relevant to your organization. |
 | Review current guidance for regulations that apply to your organization. | See the following table. |
 
 This table lists common regulations or standards.
@@ -364,7 +364,7 @@ You can use content explorer to monitor the status of organizational compliance.
 
 :::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png" alt-text="Example screenshot of a content explorer dashboard." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png":::
 
-By using the greater reporting functionality within the Microsoft Purview compliance portal, you can create and quantify a macro-view of compliance. Here's an example.
+By using the greater reporting functionality within the Microsoft Purview portal, you can create and quantify a macro-view of compliance. Here's an example.
 
 :::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png" alt-text="Example screenshot of a macro-view dashboard for Microsoft Purview Compliance." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png":::
 

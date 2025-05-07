@@ -44,7 +44,7 @@ CAs will need to provide:
         person who will sign the Program contract
     -   A second contact's name, email address, and phone number.
     -   The company's principal place of business (street address).
-    -   The company's place of incorporation (country or
+    -   The company's place of incorporation (country/region or
         state/province).    
         
  The program contract will be sent via Docusign for the CA to sign and return to Microsoft. 

@@ -1,7 +1,7 @@
 ---
 title: Identify and protect sensitive business data with Zero Trust
 description: Learn how to identify and protect sensitive business data with Zero Trust.  
-ms.date: 04/24/2024
+ms.date: 05/05/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -246,9 +246,9 @@ Starting with Microsoft 365, some of the primary tools you use to identify sensi
 
 When data is added to your Microsoft 365 environment or modified, it's automatically analyzed for sensitive content using any SITs that are presently defined in your tenant.
 
-You can use content explorer in the Microsoft Purview compliance portal to see any occurrences of detected sensitive data across the environment. The results let you know if you need to customize or tune the SITs for your environment for greater accuracy. The results also give you a first picture of your data stock and your information protection status. For example, if you're receiving too many false positives for a SIT, or not finding known data, you can create custom copies of the standard SITs and modify them so they work better for your environment. You can also refine these using exact data matching.
+You can use content explorer in the Microsoft Purview portal to see any occurrences of detected sensitive data across the environment. The results let you know if you need to customize or tune the SITs for your environment for greater accuracy. The results also give you a first picture of your data stock and your information protection status. For example, if you're receiving too many false positives for a SIT, or not finding known data, you can create custom copies of the standard SITs and modify them so they work better for your environment. You can also refine these using exact data matching.
 
-Additionally, you can use built-in trainable classifiers to identify documents that belong to certain categories, such as contracts or freight documents. If you have specific classes of documents you know you have to identify and potentially protect, you can use samples in the Microsoft Purview compliance portal to train your own classifiers. These samples can be used to discover the presence of other documents with similar patterns of content.
+Additionally, you can use built-in trainable classifiers to identify documents that belong to certain categories, such as contracts or freight documents. If you have specific classes of documents you know you have to identify and potentially protect, you can use samples in the Microsoft Purview portal to train your own classifiers. These samples can be used to discover the presence of other documents with similar patterns of content.
 
 In addition to the content explorer, organizations have access to the Content search capability to produce custom searches for data in the environment, including using advanced search criteria and custom filters.
 
@@ -315,7 +315,7 @@ For this stage, develop your sensitivity labels and start using them across data
 | Resource | Description |
 | --- | --- |
 | [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) | Enable built-in labeling for supported Office files in SharePoint and OneDrive so that users can apply your sensitivity labels in Office for the web.  |
-| [Manage sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps) | Next, start introducing labels to users where they can see and apply them. When you've published sensitivity labels from the Microsoft Purview compliance portal, they start to appear in Office apps for users to classify and protect data as it's created or edited. |
+| [Manage sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps) | Next, start introducing labels to users where they can see and apply them. When you've published sensitivity labels from the Microsoft Purview portal, they start to appear in Office apps for users to classify and protect data as it's created or edited. |
 | [Apply labels to Microsoft Teams and Microsoft 365 groups](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) | When you’re ready, include Microsoft Teams and Microsoft 365 groups into the scope of your labeling deployment. |
 
 ##### Introduce basic DLP policies

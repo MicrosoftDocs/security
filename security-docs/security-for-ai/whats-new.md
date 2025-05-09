@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft AI security?
 description: What are new Microsoft AI security capabilities and blog articles? 
-ms.date: 04/01/2025
+ms.date: 04/09/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter

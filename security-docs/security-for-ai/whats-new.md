@@ -22,7 +22,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 |Product | Feature updates |  
 | ----  | ----------------------------- | 
 |Microsoft Purview | - [Public Preview of DLP for Microsoft 365 Copilot in Word, Excel, and PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-public-preview-of-dlp-for-m365-copilot-in-word-excel-and-powerpoint/4409809) <br> - [DSPM discoverability for Communication Compliance (public preview)](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enhance-ai-security-and-governance-across-multi-model-and-multi-cloud-environmen/4395593)
-| Defender for Cloud | - [General Availability for Defender for AI Services](/azure/defender-for-cloud/release-notes#general-availability-for-defender-for-ai-services) <br> - [Microsoft Security Copilot is now Generally Available in Defender for Cloud](/azure/defender-for-cloud/release-notes#microsoft-security-copilot-is-now-generally-available-in-defender-for-cloud) <br> - [General Availability Data and AI security dashboard](/azure/defender-for-cloud/release-notes#general-availability-data-and-ai-security-dashboard)|
+| Defender for Cloud | - [General Availability for Defender for AI Services](/azure/defender-for-cloud/release-notes#general-availability-for-defender-for-ai-services) <br> - [General Availability Data and AI security dashboard](/azure/defender-for-cloud/release-notes#general-availability-data-and-ai-security-dashboard)|
  
 
 
@@ -41,6 +41,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 - [RSAC™ 2025: Unveiling new innovations in cloud and AI security](https://techcommunity.microsoft.com/blog/microsoftdefendercloudblog/rsac%E2%84%A2-2025-unveiling-new-innovations-in-cloud-and-ai-security/4408140)
 - [How to use DSPM for AI Data Risk Assessment to Address Internal Oversharing](https://techcommunity.microsoft.com/blog/microsoft-security-blog/how-to-use-dspm-for-ai-data-risk-assessment-to-address-internal-oversharing/4399785)
 - [Explore practical best practices to secure your data with Microsoft Purview](https://www.microsoft.com/en-us/security/blog/2025/04/25/explore-practical-best-practices-to-secure-your-data-with-microsoft-purview/) 
+- [Enhance AI security and governance across multi-model and multi-cloud environments](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enhance-ai-security-and-governance-across-multi-model-and-multi-cloud-environmen/4395593)
 
 
 ## Additional what's new resources

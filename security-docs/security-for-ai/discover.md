@@ -48,7 +48,7 @@ DSPM for AI offers a set of capabilities that help you safely adopt AI without h
 
 - Insights and analytics into AI activity in your organization
 - Ready-to-use policies to protect data and prevent data loss in AI prompts
-- Data assessments to identify, remediate, and monitor potential oversharing of data
+- Data risk assessments to identify, remediate, and monitor potential oversharing of data
 - Recommended actions based on data in your tenant
 - Compliance controls to apply optimal data handling and storing policies
 

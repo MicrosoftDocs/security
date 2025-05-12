@@ -41,7 +41,7 @@ sections:
         componentType: testimonial-card
         name: Security for AI
         role: Documentation
-        feedback: Build a security posture for AI, including discovering, protecting, and governing your AI apps and data
+        feedback: Build a security posture for AI, including discovering, protecting, and governing your AI apps and data.
         link:
           componentType: link
           url: /security/security-for-ai/?wt.mc_id=securityhub_securityAI_webpage_cnl 
@@ -68,18 +68,18 @@ sections:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
 
-# Bifold section for embedded video
-  - componentType: bifold
-    blocks:
-      - componentType: text
-        title: "Secure Future Initiative: Tech Tips"
-        summary: "Check out bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture."
-        links:
-          - componentType: link
-            text: "Check out the show on Learn!"
-            url: "/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios"
-      - componentType: "video"
-        src: "https://learn-video.azurefd.net/vod/player?id=cce8f81c-8b21-4a11-b204-7fcbc4840324"
+# Bifold section for embedded video (removed May 19, 2025)
+#  - componentType: bifold
+#    blocks:
+#      - componentType: text
+#        title: "Secure Future Initiative: Tech Tips"
+#        summary: "Check out bite-sized technical tips from Microsoft security experts about how you can implement recommendations from one of the six engineering pillars of Microsoft's Secure Future Initiative in your own environment to uplift your security posture."
+#        links:
+#          - componentType: link
+#            text: "Check out the show on Learn!"
+#            url: "/shows/secure-future-initiative-tech-tips?wt.mc_id=securityhub_securityhubembeddedvideomar14_webpage_devrelstudios"
+#      - componentType: "video"
+#        src: "https://learn-video.azurefd.net/vod/player?id=cce8f81c-8b21-4a11-b204-7fcbc4840324"
 
 # Markdown section for embedded video (formatting placeholder)
 #  - componentType: markdown
@@ -205,6 +205,10 @@ sections:
         title: Work with Microsoft Cybersecurity Reference Architectures
         summary: Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms. 
         url: https://aka.ms/MCRA
+      - componentType: summary-card
+        title: Security for AI
+        summary: Build a security posture for AI, including discovering, protecting, and governing your AI apps and data.
+        url: /security/security-for-ai/?wt.mc_id=securityhub_securityAI_webpage_cnl  
 
 # Credentials banner
   - componentType: hero

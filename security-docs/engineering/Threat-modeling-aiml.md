@@ -17,9 +17,7 @@ ms.service: security
 By Andrew Marshall, Jugal Parikh, Emre Kiciman and Ram Shankar Siva
 Kumar
 
-Special Thanks to Raul Rojas and the
-[AETHER](https://news.microsoft.com/2018/03/29/satya-nadella-email-to-employees-embracing-our-future-intelligent-cloud-and-intelligent-edge/)
-Security Engineering Workstream
+Special Thanks to Raul Rojas and the AETHER Security Engineering Workstream
 
 November 2019
 

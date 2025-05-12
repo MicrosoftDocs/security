@@ -201,6 +201,17 @@ Follow these steps:
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
 
+#### Encryption: All traffic
+
+Finally, complete your network protection by ensuring that all traffic is encrypted.
+
+Follow these steps:
+
+- [Encrypt application backend traffic](/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell) between virtual networks.
+- Encrypt traffic between on-premises and cloud:
+    - [Configure a site-to-site VPN](/azure/expressroute/site-to-site-vpn-over-microsoft-peering) over ExpressRoute Microsoft peering.
+    - [Configure IPsec transport mode](/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
+    - Configure mTLS between servers across ExpressRoute private peering.
 
 ### 4. Network Visibility & Threat Detection
 

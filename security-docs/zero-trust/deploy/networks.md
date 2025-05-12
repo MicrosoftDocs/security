@@ -84,7 +84,7 @@ Follow these steps, depending on the type of boundary:
 ##### Internet boundary
 
 - To provide internet connectivity for your application route via the virtual network hub, [update the network security group rules](/azure/virtual-network/tutorial-filter-network-traffic) in virtual network hub.
-- To protect the virtual network hub from volumetric network layer attacks, [turn on Azure DDoS Protection Standard](/azure/virtual-network/manage-ddos-protection#enable-ddos-for-an-existing-virtual-network).
+- To protect the virtual network hub from volumetric network layer attacks and protocol attacks, [turn on Azure DDoS Network Protection](/azure/virtual-network/manage-ddos-protection#enable-ddos-for-an-existing-virtual-network).
     
 - If your application uses HTTP/S protocols, [turn on Azure Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell) to protect against Layer 7 threats.
 

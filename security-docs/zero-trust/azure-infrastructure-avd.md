@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to Azure Virtual Desktop
 description: Learn how to secure an Azure Virtual Desktop deployment with Zero Trust principles. 
-ms.date: 02/11/2024
+ms.date: 05/06/2025
 ms.service: security
 author: rudneir2
 ms.author: ruolivei
@@ -155,11 +155,11 @@ Session hosts are virtual machines that run inside a spoke VNet. Implement the s
 
 [Host pools](/azure/virtual-desktop/environment-setup#host-pools) should have separated organizational units (OUs) if managed by [group policies](/windows-server/remote/remote-desktop-services/clients/rdp-files?context=%2Fazure%2Fvirtual-desktop%2Fcontext%2Fcontext) on [Active Directory Domain Services (AD DS)](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview).
 
-Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. You can use Microsoft Defender for Endpoint for session hosts. for more information, see [virtual desktop infrastructure (VDI) devices](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi).
+Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. You can use Microsoft Defender for Endpoint for session hosts. For more information, see [virtual desktop infrastructure (VDI) devices](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi).
 
 ## Step 6: Deploy security, governance, and compliance to Azure Virtual Desktop
 
-Azure Virtual Desktop service allow you to use [Azure Private Link](/azure/virtual-desktop/private-link-overview) to privately connect to your resources by [creating private endpoints](/azure/virtual-desktop/private-link-setup). 
+Azure Virtual Desktop service allows you to use [Azure Private Link](/azure/virtual-desktop/private-link-overview) to privately connect to your resources by [creating private endpoints](/azure/virtual-desktop/private-link-setup). 
 
 Azure Virtual Desktop has built-in advanced security features to protect session hosts. However, see the following articles to improve the security defenses of your Azure Virtual Desktop environment and session hosts:
 

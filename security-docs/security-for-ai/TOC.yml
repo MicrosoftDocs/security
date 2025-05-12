@@ -2,6 +2,8 @@
   href: index.yml
   expanded: true
   items:
+    - name: What's new for AI security?
+      href: whats-new.md
     - name: Build a strong security posture for AI
       href: posture.md
     - name: Prepare for AI security

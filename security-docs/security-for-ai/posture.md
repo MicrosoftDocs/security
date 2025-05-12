@@ -1,6 +1,6 @@
 ---
 title: Build a strong security posture for AI
-description: How to approach security for AI apps and data, including building a strong security posture for AI.
+description: How to approach AI security for apps and data with Microsoft AI security capabilities.
 ms.date: 04/01/2025
 ms.service: security
 author: BrendaCarter
@@ -226,7 +226,7 @@ The following image is a summary view of all the capabilities Microsoft provides
 |----|-----|
 | Prevent data leak and oversharing| - Access and endpoint controls — **Microsoft Entra & Intune** <br> - Data Security Posture Management for AI — **Microsoft Purview** <br> - Data classification, labeling, and protection — **Microsoft Purview** <br> - Data Loss Prevention — **Microsoft Purview** <br> - Anomaly and risky activities detection and response — **Microsoft Purview** <br> - SaaS app security — **Microsoft Defender**|
 | Protect AI against vulnerabilities and emerging threats | - Data security and governance — **Microsoft Purview** <br> - Quality, safety, and security controls evaluation — **Azure AI Foundry** <br> - Security posture management for AI assets (apps, models, orchestrators, SDKs) — **Microsoft Defender** <br> - Model governance policy — **Azure Portal** <br> - Content safety prompt shield — **Azure AI** <br> - Threat protection for AI workloads — **Microsoft Defender**|
-| Govern AI to comply with regulatory requirements | - Compliance assessments against AI regulations and standards — **Microsoft Purview** <br> - AI discovery and catalog — **Microsoft Defender** <br> - Prompt & response audits, lifecycle management, eDiscovery, communication compliance — **Microsoft Purview** <br> - AI reports for developers to log project details and controls — **Azure AI Foundry** <br> - Privacy impact assessment — **Microsoft Priva** <br> - Mitigation for harmful content, hallucination, and protected materials — **Azure AI Content Safety**|
+| Govern AI to comply with regulatory requirements | - Compliance assessments against AI regulations and standards — **Microsoft Purview** <br> - AI discovery and catalog — **Microsoft Defender** <br> - Prompt & response audits, lifecycle management, eDiscovery, communication compliance — **Microsoft Purview** <br> - AI reports for developers to log project details and controls — **Azure AI Foundry** <br> - Privacy impact assessment — **Microsoft Priva** <br> - Mitigation for harmful content, incorrect information, and protected materials — **Azure AI Content Safety**|
 
 
 

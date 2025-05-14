@@ -8,8 +8,8 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 09/15/2024
-  ms.collection: na
+  ms.date: 05/19/2025
+  ms.collection: # na
   brand: azure
 sections:
   # Intro
@@ -57,13 +57,13 @@ sections:
           text: Get secure
       - avatarUrl: /security/media/hubpage/generic-badge.svg
         componentType: testimonial-card
-        name: GitHub Advanced Security Part 2 of 2
+        name: Implement access management for apps
         role: Training
-        feedback: Gain an understanding of GitHub Advanced Security features and apply the skills in your own GitHub environment.
+        feedback: Take this Learning Path and explore how applications can be added to your identity and access solution with Microsoft Entra ID.
         link:
           componentType: link
-          url: /training/paths/github-advanced-security-2?wt.mc_id=securityhub_GHsecurity2_webpage_cnl
-          text: Get more secure
+          url: /training/paths/implement-access-management-for-apps/?wt.mc_id=securityhub_accessmanagement_webpage_wwl
+          text: Explore the Learning Path
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
@@ -87,6 +87,7 @@ sections:
         icon:
           componentType: image
           src: /security/media/security-hub/defender-icon.png
+          alt: The defender
 #      - componentType: icon-card
 #        title: Microsoft Defender for Cloud
 #        summary: Provide unified security management and advanced threat protection across hybrid cloud workloads with Microsoft Defender for Cloud.
@@ -246,10 +247,6 @@ sections:
         title: Work with Microsoft Cybersecurity Reference Architectures
         summary: Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms. 
         url: https://aka.ms/MCRA
-      - componentType: summary-card
-        title: Security for AI
-        summary: Build a security posture for AI, including discovering, protecting, and governing your AI apps and data.
-        url: /security/security-for-ai/?wt.mc_id=securityhub_securityAI_webpage_cnl  
 
 # Credentials banner
   - componentType: hero

@@ -133,9 +133,67 @@ Follow these steps:
 
 ### 2. Secure Access Service Edge (SASE) & Zero Trust Network Access (ZTNA)
 
-- Modernize traditional VPNs with ZTNA to provide least-privilege, identity-aware network access.
-- Leverage SASE architectures to integrate networking and security functions (e.g., SWG, CASB, FWaaS).
-- Implement continuous session validation and risk-based access decisions.
+To effectively secure modern networks, organizations must move beyond legacy solutions and adopt advanced, integrated approaches. This includes replacing traditional VPNs with Zero Trust Network Access (ZTNA) for granular, identity-driven connectivity, leveraging Secure Access Service Edge (SASE) architectures to unify networking and security capabilities, and implementing continuous session validation with risk-based access controls. These strategies work together to ensure that access is always verified, threats are minimized, and security policies adapt dynamically to evolving risks.
+
+#### Zero Trust Network Access (ZTNA)
+
+Zero Trust Network Access (ZTNA) replaces traditional perimeter-based VPN models with a granular, identity-aware, and risk-adaptive approach. Instead of granting broad network access, ZTNA enforces least-privilege connectivity to specific applications and resources based on user identity, device posture, and contextual signals.
+
+Microsoft’s implementation of ZTNA is part of the Global Secure Access (preview) capability under Microsoft Entra, built on the Security Service Edge (SSE) foundation.  
+[Learn more: What is Global Secure Access? (Microsoft Entra)](/entra/global-secure-access/overview-what-is-global-secure-access)
+
+##### Modernize Traditional VPNs with Identity-Aware ZTNA
+
+Traditional VPNs grant broad, flat access to the network—violating Zero Trust principles. With Microsoft's Global Secure Access:
+
+- **Access is app-specific, not network-wide.**
+- **Policies are enforced at the connection edge,** driven by Entra ID identity, device compliance, and risk.
+- **Leverages Private Access,** part of GSA, to securely connect users to on-premises or IaaS-hosted applications without exposing the network.
+
+[Use Private Access in Global Secure Access](/entra/global-secure-access/concept-private-access)
+
+**Key capabilities:**
+
+- Entra Conditional Access enforcement at session start
+- Native device posture integration with Microsoft Defender for Endpoint
+- TLS-based tunnels for secure outbound-only connections (no inbound exposure)
+
+##### Leverage SASE Architecture: Integrate Networking & Security Functions
+
+Microsoft Global Secure Access integrates Security Service Edge (SSE) capabilities into a SASE-aligned framework, combining secure access and inspection in one unified platform.
+
+**Key integrated services:**
+
+- **Secure Web Gateway (SWG):** Outbound internet traffic filtering and logging  
+    [What is Microsoft Entra Internet Access (SWG)?](/entra/global-secure-access/concept-internet-access)
+- **Cloud Access Security Broker (CASB):** App discovery, session controls, and DLP via Defender for Cloud Apps  
+    [Microsoft Defender for Cloud Apps (CASB)](/defender-cloud-apps/what-is-defender-for-cloud-apps)
+- **Firewall as a Service (FWaaS):** Integration with Azure Firewall and Defender for Cloud
+
+This architecture:
+
+- Routes user traffic through Microsoft’s edge network, applying inspection and control
+- Reduces complexity by centralizing security policy enforcement
+- Supports steering and split tunneling for performance and compliance
+
+##### Implement Continuous Session Validation & Risk-Based Access
+
+ZTNA isn't a one-time check—it requires continuous evaluation of session trustworthiness.
+
+Microsoft Global Secure Access and Entra provide:
+
+- **Continuous access evaluation (CAE):** Revoke or modify access in real time when risk conditions change  
+    [What is Continuous Access Evaluation?](/entra/identity/conditional-access/concept-continuous-access-evaluation)
+- **Integration with Microsoft Defender XDR and Sentinel:** Detect threats and feed into adaptive policy responses
+- **Real-time session controls:** Use Defender for Cloud Apps for in-browser policy enforcement (e.g., block downloads)  
+    [Use session controls in Microsoft Defender for Cloud Apps](/defender-cloud-apps/session-controls)
+
+This allows you to:
+
+- Terminate risky sessions or force re-authentication
+- Apply policies dynamically based on signals like location, malware detection, or token anomalies
+- Maintain full audit visibility for every session decision
+
 
 #### Automation and Orchestration
 
@@ -231,7 +289,7 @@ For further threat protection, turn on [Azure DDoS Protection Standard](/azure/v
 
 Follow these steps:
 
-- [Configure and manage](/azure/virtual-network/manage-ddos-protection) Azure DDoS Protection Standard.
+- [Configure and manage](/azure/virtual-network/manage-ddos-protection) Azure DDoS Network Protection.
 - [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
 
 

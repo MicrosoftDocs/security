@@ -133,7 +133,7 @@ Follow these steps:
 
 ### 2. Secure Access Service Edge (SASE) & Zero Trust Network Access (ZTNA)
 
-To effectively secure modern networks, organizations must move beyond legacy solutions and adopt advanced, integrated approaches. This includes replacing traditional VPNs with Zero Trust Network Access (ZTNA) for granular, identity-driven connectivity, leveraging Secure Access Service Edge (SASE) architectures to unify networking and security capabilities, and implementing continuous session validation with risk-based access controls. These strategies work together to ensure that access is always verified, threats are minimized, and security policies adapt dynamically to evolving risks.
+To effectively secure modern networks, organizations must move beyond legacy solutions and adopt advanced, integrated approaches. This includes adopting Zero Trust Network Access (ZTNA) solutions for granular, identity-driven connectivity, leveraging Secure Access Service Edge (SASE) architectures to unify networking and security capabilities, and implementing continuous session validation with risk-based access controls. These strategies work together to ensure that access is always verified, threats are minimized, and security policies adapt dynamically to evolving risks.
 
 #### Zero Trust Network Access (ZTNA)
 
@@ -237,8 +237,6 @@ See Microsoft guidance in 6.2.3 and 6.4.1.
 Enable reviewer decision helpers in access reviews. The User-to-Group Affiliation helper provides a Machine Learning based recommendation to improve the reviewer experience.
 - Access review settings
 - Review recommendations for Access reviews
-
-
 
 
 ### 3. Strong Encryption & Secure Communication

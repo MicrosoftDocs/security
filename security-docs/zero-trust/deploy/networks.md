@@ -186,7 +186,7 @@ Microsoft Global Secure Access and Entra provide:
     [What is Continuous Access Evaluation?](/entra/identity/conditional-access/concept-continuous-access-evaluation)
 - **Integration with Microsoft Defender XDR and Sentinel:** Detect threats and feed into adaptive policy responses
 - **Real-time session controls:** Use Defender for Cloud Apps for in-browser policy enforcement (e.g., block downloads)  
-    [Use session controls in Microsoft Defender for Cloud Apps](/defender-cloud-apps/session-controls)
+    [Use session controls in Microsoft Defender for Cloud Apps](/defender-cloud-apps/session-policy-aad)
 
 This allows you to:
 

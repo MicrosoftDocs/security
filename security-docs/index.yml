@@ -21,8 +21,8 @@ sections:
     summary: "The Security hub on Microsoft Learn offers technical guidance and resources for planning and implementing modern cybersecurity strategy, architecture, processes, and technology for aspiring, new, and experienced cybersecurity professionals. You can also find resources and training offerings for building foundational and advanced cybersecurity skills and for earning Microsoft Credentials. Microsoft Learn provides guidance to help you tackle security challenges while preparing for a competitive future." 
     heroImage:
      componentType: hero-image
-     lightImageSrc: /security/media/security-hub/security-hero.png
-     darkImageSrc: /security/media/security-hub/security-hero.png
+     lightImageSrc: /security/media/security-hub/hero-security-hub.png
+     darkImageSrc: /security/media/security-hub/hero-security-hub.png
 
 # Spotlight selections
   - componentType: testimonials-section
@@ -79,14 +79,14 @@ sections:
         url: /entra/
         icon:
           componentType: image
-          src: /security/media/security-hub/entra-icon.png
+          src: /security/media/security-hub/microsoft-entra.png
       - componentType: icon-card
         title: Microsoft Defender
         summary: Explore the Microsoft Defender products and services available for your business or organization.
         url: /defender/
         icon:
           componentType: image
-          src: /security/media/security-hub/defender-icon.png
+          src: /security/media/security-hub/microsoft-defender.png
           alt: The defender
 #      - componentType: icon-card
 #        title: Microsoft Defender for Cloud
@@ -94,21 +94,21 @@ sections:
 #        url: /azure/defender-for-cloud/
 #        icon:
 #          componentType: image
-#          src: /security/media/security-hub/defender-for-cloud-security.svg
+#          src: /security/media/security-hub/microsoft-defender-for-cloud.png
       - componentType: icon-card
         title: Microsoft Purview
         summary: Unlock the power of data governance, security, and compliance with the dynamic portfolio of solutions from Microsoft Purview.
         url: /purview/
         icon:
           componentType: image
-          src: /security/media/security-hub/purview-icon.png
+          src: /security/media/security-hub/microsoft-purview.png
       - componentType: icon-card
         title: Microsoft Sentinel
         summary: Detect attacks, gain threat visibility, proactively hunt, and respond to threats with Microsoft Sentinel to stop them before they cause harm.
         url: /azure/sentinel/
         icon:
           componentType: image
-          src: /security/media/security-hub/azure-sentinel-icon.png
+          src: /security/media/security-hub/microsoft-sentinel.png
 
 # Bifold section for embedded video (removed May 19, 2025)
 #  - componentType: bifold
@@ -177,7 +177,7 @@ sections:
     - componentType: card
       title: Describe the basic concepts of cybersecurity 
       summary: Find out how you can protect yourself and your organization against cyberthreats and cyberattacks, and explore cybersecurity concepts in this Learning Path.
-      imageUrl: /security/media/security-hub/card-lock.png
+      imageUrl: /security/media/security-hub/describe-basic-concepts-cybersecurity.png
       links:
         - componentType: link
           url: /training/paths/describe-basic-concepts-of-cybersecurity/
@@ -185,7 +185,7 @@ sections:
     - componentType: card
       title: "Take the Microsoft Security Virtual Training Day: Security, Compliance, and Identity Fundamentals"
       summary: Join this training to discover basic concepts, like identity and access management and compliance management. Gain foundational knowledge of privacy and of data governance, protection, and management solutions.
-      imageUrl: /security/media/security-hub/card-laptop.png 
+      imageUrl: /security/media/security-hub/microsoft-security-virtual-training-day.png 
       links: # optional a list of links rendered at the bottom of the card
         - componentType: link
           url: https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&startTime=08:00&endTime=17:00
@@ -193,7 +193,7 @@ sections:
     - componentType: card
       title: "Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification​"
       summary: If you're familiar with Azure and Microsoft 365, demonstrate your foundational knowledge of Microsoft Security, compliance, and identity concepts across these cloud-based solutions.
-      imageUrl: /security/media/security-hub/card-shield.png
+      imageUrl: /security/media/security-hub/microsoft-certified-security-compliance-identity-fundamentals.png
       links:
         - componentType: link
           url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification

@@ -57,17 +57,161 @@ This guide walks you through the steps required to secure your networks followin
 - Utilize Software-Defined Networking (SDN) and Network Access Control (NAC) to dynamically enforce policies.
 - Adopt identity-based segmentation over traditional IP-based methods.
 
+#### Macro segmentation strategy
+
+Before diving into micro-segmentation, it's essential to establish a broader segmentation strategy. Macro segmentation involves dividing your network into larger segments based on overarching functional or security requirements. This approach simplifies initial management and provides a foundation upon which finer granularity, like micro-segmentation, can be built. 
+
+#### Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
+
+Organizations shouldn't just have one single, large pipe in and out of their network. In a Zero Trust approach, networks are instead segmented into smaller islands where specific workloads are contained. Each segment has its own ingress and egress controls to minimize the "impact radius" of unauthorized access to data. By implementing software-defined perimeters with granular controls, you increase the difficulty for unauthorized actors to propagate throughout your network, and so reduce the lateral movement of threats.
+
+There's no architecture design that fits the needs of all organizations. You have the option between a few [common design patterns](https://www.microsoft.com/security/blog/2020/06/15/zero-trust-part-1-networking/) for segmenting your network according to the Zero Trust model.
+
+In this deployment guide, we walk you through the steps to achieve one of those designs: Micro-segmentation.
+
+With micro-segmentation, organizations can move beyond simple centralized network-based perimeters to comprehensive and distributed segmentation using software-defined micro-perimeters.
+
+#### Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
+
+Once you accomplish your initial three objectives, the next step is to further segment your network.
+
+#### Segment and enforce the external boundaries
+
+:::image type="content" source="../media/diagram-servers-devices-boundaries-azure-vpn.png" alt-text="Diagram of servers and devices with connections across boundaries." border="true":::
+
+Follow these steps, depending on the type of boundary:
+
+##### Internet boundary
+
+- To provide internet connectivity for your application route via the virtual network hub, [update the network security group rules](/azure/virtual-network/tutorial-filter-network-traffic) in virtual network hub.
+- To protect the virtual network hub from volumetric network layer attacks and protocol attacks, [turn on Azure DDoS Network Protection](/azure/virtual-network/manage-ddos-protection#enable-ddos-for-an-existing-virtual-network).
+    
+- If your application uses HTTP/S protocols, [turn on Azure Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell) to protect against Layer 7 threats.
+
+
+##### On-premises boundary
+
+- If your app needs connectivity to your on-premises data center or private cloud, use [Microsoft Entra Private Access](/azure/global-secure-access/), [Azure ExpressRoute](/azure/expressroute/expressroute-howto-circuit-portal-resource-manager), or [Azure VPN for connectivity to your virtual network hub](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal). 
+- To inspect and govern traffic in the virtual network hub, [Configure the Azure Firewall](/azure/firewall/tutorial-hybrid-ps).
+
+
+##### PaaS services boundary
+
+ - When using Azure-provided PaaS services, (Azure Storage, [Azure Cosmos DB](/azure/private-link/create-private-endpoint-cosmosdb-portal),
+    or [Azure Web App](/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network.
+
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
+
+##### Partition app components to different subnets
+
+:::image type="content" source="../media/diagram-azure-region-virtual-network-servers.png" alt-text="Diagram of a virtual network of servers in the Azure region." border="true":::
+
+
+Follow these steps:
+
+- Within the virtual network, [add virtual network subnets](/azure/virtual-network/virtual-network-manage-subnet) so that discrete components of an application can have their own perimeters.
+- To allow traffic only from the subnets that have an app subcomponent identified as a legitimate communications counterpart, [apply network security group rules](/azure/virtual-network/tutorial-filter-network-traffic#create-security-rules).
+
+##### Applications are partitioned to different Azure Virtual Networks (VNets) and connected using a hub-spoke model
+
+:::image type="content" source="../media/diagram-network-hub-spoke-two-regions.png" alt-text="Diagram of two virtual networks connected in a hub-and-spoke model." border="false":::
+
+Follow these steps:
+
+- [Create dedicated virtual networks](/azure/virtual-network/quick-create-portal) for different applications and/or application components.
+
+- Create a central virtual network to set up the security posture for inter-app connectivity and connect the app VNets in [a hub-and-spoke architecture](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke).
+
+- [Deploy Azure Firewall](/azure/firewall/deploy-ps) in the virtual network hub. Use Azure Firewall to inspect and govern network traffic.
+
+
+
 ### 2. Secure Access Service Edge (SASE) & Zero Trust Network Access (ZTNA)
 
 - Modernize traditional VPNs with ZTNA to provide least-privilege, identity-aware network access.
 - Leverage SASE architectures to integrate networking and security functions (e.g., SWG, CASB, FWaaS).
 - Implement continuous session validation and risk-based access decisions.
 
+#### Automation and Orchestration
+
+**Microsoft Sentinel**
+
+Enable analytic rules to detect advanced multistage attacks with Fusion and User and Entity Behavior Analytics (UEBA) anomalies in Microsoft Sentinel. Design automation rules and playbooks for security response.
+
+See Microsoft guidance in 6.2.3 and 6.4.1.
+
+**Microsoft Entra ID Governance**
+
+Enable reviewer decision helpers in access reviews. The User-to-Group Affiliation helper provides a Machine Learning based recommendation to improve the reviewer experience.
+- Access review settings
+- Review recommendations for Access reviews
+
+**Automated Workflows**
+
+**Microsoft Defender Extended Detection and Response (XDR)**
+
+Configure automated investigation and response capabilities in Microsoft Defender Extended Detection and Response (XDR). 
+- Automated investigation and response overview
+
+**Microsoft Sentinel playbooks**
+
+Microsoft Sentinel playbooks are based on Logic Apps, a cloud service that schedules, automates, and orchestrates tasks and workflows across enterprise systems. Build response playbooks with templates. Deploy solutions from the Microsoft Sentinel content hub. Build custom analytics rules and response actions with Azure Logic Apps.
+- Build Microsoft Sentinel playbooks from templates
+- Automate threat response with playbooks
+- Locate the Microsoft Sentinel content hub catalog
+- Learn about Azure Logic Apps
+
+**AI Driven by Analytics decides A&O modifications**
+
+**Microsoft Sentinel**
+
+Enable analytic rules to detect advanced multistage attacks with Fusion and UEBA anomalies in Microsoft Sentinel. Design automation rules and playbooks for security response.
+
+See Microsoft guidance in 6.2.3 and 6.4.1.
+
+**Microsoft Entra ID Governance**
+
+Enable reviewer decision helpers in access reviews. The User-to-Group Affiliation helper provides a Machine Learning based recommendation to improve the reviewer experience.
+- Access review settings
+- Review recommendations for Access reviews
+
+
+
+
 ### 3. Strong Encryption & Secure Communication
 
 - Use TLS 1.3+ and end-to-end encryption for all network traffic.
 - Enforce mutual authentication (mTLS) between workloads and devices.
 - Block untrusted or legacy protocols that lack encryption.
+
+#### Encryption: User-to-app internal traffic is encrypted
+
+Add encryption to ensure user-to-app internal traffic is encrypted.
+
+Follow these steps:
+
+- Enforce HTTPS-only communication for your internet facing web applications by [redirecting HTTP traffic to HTTPS using Azure Front Door](/azure/frontdoor/front-door-how-to-redirect-https).
+- Connect remote employees/partners to Microsoft Azure using the [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways).
+    - [Turn on encryption](/azure/vpn-gateway/vpn-gateway-security-controls#data-protection) for any point-to-site traffic in Azure VPN Gateway service.
+- Access your Azure virtual machines securely using encrypted communication via [Azure Bastion](/azure/bastion/bastion-overview).
+- [Connect using SSH to a Linux virtual machine](/azure/bastion/bastion-connect-vm-ssh).
+- [Connect using Remote Desktop Protocol (RDP) to a Windows virtual machine](/azure/bastion/bastion-connect-vm-rdp).
+
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
+
+#### Encryption: All traffic
+
+Finally, complete your network protection by ensuring that all traffic is encrypted.
+
+Follow these steps:
+
+- [Encrypt application backend traffic](/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell) between virtual networks.
+- Encrypt traffic between on-premises and cloud:
+    - [Configure a site-to-site VPN](/azure/expressroute/site-to-site-vpn-over-microsoft-peering) over ExpressRoute Microsoft peering.
+    - [Configure IPsec transport mode](/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
+    - Configure mTLS between servers across ExpressRoute private peering.
 
 ### 4. Network Visibility & Threat Detection
 
@@ -77,17 +221,76 @@ This guide walks you through the steps required to secure your networks followin
 - Deploy Extended Detection and Response (XDR) to analyze traffic patterns, identify anomalies, and prevent breaches.
 - Integrate AI-driven analytics to enhance rapid responses to emerging threats.
 
+#### Threat protection: Machine learning-based threat protection and filtering with context-based signals
+
+For further threat protection, turn on [Azure DDoS Protection Standard](/azure/virtual-network/ddos-protection-overview) to constantly monitor your Azure-hosted application traffic, use ML-based frameworks to baseline and detect volumetric traffic floods, and apply automatic mitigations.
+
+Follow these steps:
+
+- [Configure and manage](/azure/virtual-network/manage-ddos-protection) Azure DDoS Protection Standard.
+- [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
+
+
+#### Monitoring and Visibility
+
+**Log Analysis**
+
+**Microsoft Defender Extended Detection and Response (XDR)**
+
+Microsoft Defender Extended Detection and Response (XDR) is a unified enterprise defense suite you use before and after a breach. The suite coordinates detection, prevention, investigation, and response natively across endpoints, identities, email, and applications. Use Defender XDR to protect against and respond to sophisticated attacks.
+
+- Investigate alerts
+- Learn about Zero Trust with Defender XDR
+- Learn about Defender XDR for US government
+
+**Microsoft Sentinel**
+
+Develop custom analytics queries and visualize collected data using workbooks.
+
+- Detect threats with customized analytics rules
+- Visualize collected data
+- Use workbooks with Global Secure Access
+
+**AI-Enabled Network Access**
+
+
+**Microsoft Sentinel**
+
+Use Azure Firewall to visualize firewall activities, detect threats with AI investigation capabilities, correlate activities, and automate response actions.
+
+- Azure Firewall with Microsoft Sentinel
+
+**Microsoft Entra ID Protection**
+
+Microsoft Entra ID Protection uses machine learning (ML) algorithms to detect users and sign-in risk. Use risk conditions in Conditional Access policies for dynamic access, based on risk level.
+
+- Microsoft Entra ID Protection
+- Risk detections
+- Risk-based access policies
+
+**Global Secure Access**
+
+Apply Conditional Access policies with risk conditions to network access to Microsoft Entra Private Access apps, Quick access apps, and Global Secure Access traffic forwarding profiles.
+
+- Global Secure Access overview
+- Learn about Microsoft Entra Private Access
+- Universal Conditional Access
+
+
+
 ### 5. Policy-Driven Access Control & Least Privilege
 
 - Implement context-aware access policies using User, Device, and Location-based factors.
 - Enforce Just-in-Time (JIT) access and dynamic policy enforcement.
 - Apply deny-by-default principles across all network layers.
 
+
 ### 6. Cloud & Hybrid Network Security
 
 - Secure cloud workloads with micro-perimeters and cloud-native firewalls.
 - Integrate identity-aware proxies to secure SaaS and PaaS environments.
 - Ensure consistent security policy enforcement across hybrid and multi-cloud environments.
+
 
 ### 7. Discontinue legacy network security technology
 

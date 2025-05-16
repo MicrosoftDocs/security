@@ -1,7 +1,7 @@
 ---
 title: Secure networks with Zero Trust
 description: Learn how to secure networks using a Zero Trust strategy with Secure Access Service Edge (SASE) and Secure Service Edge (SSE) solutions.
-ms.date: 05/05/2025
+ms.date: 05/16/2025
 ms.service: security
 author: kenwith
 manager: femila
@@ -45,6 +45,8 @@ Before most organizations start their Zero Trust journey, they have network secu
 - Limited or no risk based policy decision capabilities.
 - Limited or no governance or lifecycle for application access.
 
+Zero Trust (ZT) is a security model that assumes no implicit trust and continuously verifies every access request. The Network Pillar in Zero Trust focuses on securing communications, segmenting environments, and enforcing least privilege access to resources.
+
 When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on [objectives 1 through 4](#1-network-segmentation--software-defined-perimeters). After these objectives are completed, focus on [objectives 5 through 7](#7-discontinue-legacy-network-security-technology).
 
 ## Zero Trust networking deployment guide
@@ -52,6 +54,8 @@ When implementing an end-to-end Zero Trust framework for securing networks, we r
 This guide walks you through the steps required to secure your networks following the principles of a Zero Trust security framework.
 
 ### 1. Network-Segmentation & Software-Defined Perimeters
+
+Network Segmentation and Software-Defined Perimeters (SDP) are fundamental components of the Zero Trust security model, transitioning security measures from traditional, perimeter-based controls to dynamic, resource-focused enforcement. By partitioning your infrastructure into isolated segments through micro-segmentation, the lateral movement of attackers is restricted, thereby minimizing the potential impact of an attack. SDP enhances this approach by establishing on-demand, identity-centric "micro-perimeters" around each user-resource interaction, continuously validating context before granting access. To summarize, organizations should follow these key principles:
 
 - Implement fine-grained network segmentation (Macro & Micro segmentation) to restrict lateral movement.
 - Utilize Software-Defined Networking (SDN) and Network Access Control (NAC) to dynamically enforce policies.
@@ -230,6 +234,54 @@ Follow these steps:
 - [Configure and manage](/azure/virtual-network/manage-ddos-protection) Azure DDoS Protection Standard.
 - [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
 
+
+#### Threat protection: Cloud native filtering and protection for known threats
+
+Cloud applications that open endpoints to external environments, such as the internet or your on-premises footprint, are at risk of attacks coming in from those environments. It's therefore imperative that you scan the traffic for malicious payloads or logic.
+
+These types of threats fall into two broad categories:
+
+- **Known attacks**. Threats discovered by your software provider or the larger community. In such cases, the attack signature is available and you need to ensure that each request is checked against those signatures. The key is to be able to quickly update your detection engine with any newly identified attacks.
+
+- **Unknown attacks.** These attacks are threats that don't quite match against any known signature. These types of threats include zero-day vulnerabilities and unusual patterns in request traffic. The ability to detect such attacks depends on how well your defenses know what's normal and what isn't. Your defenses should be constantly learning and updating such patterns as your business (and associated traffic) evolves.
+
+Take these steps to protect against known threats:
+
+- Implement Microsoft Entra Internet Access capabilities.
+
+- **For endpoints with HTTP/S traffic**, protect using [Azure Web Application Firewall (WAF)](/azure/web-application-firewall/overview) by:
+
+    - Turning on the default ruleset or [OWASP top 10](https://owasp.org/www-project-top-ten/) protection ruleset to protect against known web-layer attacks
+
+    - Turning on the bot protection ruleset to prevent malicious bots from scraping information, conducting credential stuffing, etc.
+
+    - Adding custom rules to protect against threats specific to your business.
+
+    You can use one of two options:
+
+    - [Azure Front Door](/azure/frontdoor/front-door-overview)
+
+        - [Create a Web Application Firewall policy on Azure Front Door](/azure/web-application-firewall/afds/waf-front-door-create-portal).
+
+        - [Configure bot protection for Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-policy-configure-bot-protection).
+
+        - [Custom rules for Web Application Firewall](/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell).
+
+    - [Azure Application Gateway](/azure/application-gateway/overview)
+
+       - [Create an application gateway with a Web Application Firewall](/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal).
+
+       - [Configure bot protection for Web Application Firewall](/azure/web-application-firewall/ag/bot-protection).
+
+       - [Create and use Web Application Firewall v2 custom rules.](/azure/web-application-firewall/ag/create-custom-waf-rules).
+
+
+- **For all endpoints (HTTP or not)**, front with [Azure Firewall](/azure/firewall/overview) for threat intelligence-based filtering at Layer 4:
+
+    - [Deploy and configure Azure Firewall](/azure/firewall/tutorial-firewall-deploy-portal) using the Azure portal.
+    - [Enable threat intelligence-based filtering](/azure/firewall/threat-intel) for your traffic.
+        > [!TIP]
+        > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
 #### Monitoring and Visibility
 

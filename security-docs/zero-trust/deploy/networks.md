@@ -178,7 +178,7 @@ This architecture:
 
 ##### Implement Continuous Session Validation & Risk-Based Access
 
-ZTNA isn't a one-time check—it requires continuous evaluation of session trustworthiness.
+ZTNA isn't a one-time check, it requires continuous evaluation of session trustworthiness.
 
 Microsoft Global Secure Access and Entra provide:
 

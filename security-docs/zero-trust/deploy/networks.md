@@ -324,10 +324,9 @@ Microsoft Entra ID Protection uses machine learning (ML) algorithms to detect us
 
 Apply Conditional Access policies with risk conditions to network access to Microsoft Entra Private Access apps, Quick access apps, and Global Secure Access traffic forwarding profiles.
 
-- Global Secure Access overview
-- Learn about Microsoft Entra Private Access
-- Universal Conditional Access
-
+- [Global Secure Access overview](/entra/global-secure-access/overview-what-is-global-secure-access)
+- [Learn about Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
+- [Universal Conditional Access](/entra/global-secure-access/concept-universal-conditional-access)
 
 
 ### 5. Policy-Driven Access Control & Least Privilege

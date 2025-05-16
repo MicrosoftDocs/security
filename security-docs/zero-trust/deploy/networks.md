@@ -15,7 +15,7 @@ ms.collection:
 
 # Secure networks with Zero Trust
 
-In recent years, network security has undergone significant transformations. The focus has shifted from traditional perimeter-based approaches to risk-based policy decisions that manage internal and external traffic flows, isolate hosts, enforce encryption, segment activities, and enhance enterprise-wide network visibility. These changes enable security controls to be implemented closer to applications, data, and other resources, augment traditional network-based protections, and improve defense-in-depth strategies. The network can treat each application uniquely based on its requirements for access, priority, reachability, connections to dependency services, and overall connectivity.
+Network security changed a lot in recent years. Instead of relying on a single perimeter, organizations now use risk-based policies to control both internal and external traffic. This means isolating hosts, enforcing encryption, segmenting networks, and improving visibility across the enterprise. Security controls are now placed closer to applications and data, making it easier to protect resources and respond to threats. Each application can have its own security settings based on its specific needs for access and connectivity.
 
 The emergence of SASE represents a paradigm shift in how organizations approach network security. SASE converges networking and security functions into a single, unified service. SASE offers a more streamlined and effective way to protect data and applications, regardless of where they're located. This modern approach not only simplifies the management of security policies but also enhances the overall security posture of the organization. Artificial Intelligence (AI) is playing a pivotal role in this new era of network security. AI-driven solutions are capable of analyzing vast amounts of data in real-time, identifying potential threats, and responding to incidents with unprecedented speed and accuracy. By applying AI, organizations can proactively detect and mitigate security risks, ensuring a more robust and resilient network infrastructure.
 
@@ -55,9 +55,9 @@ This guide walks you through the steps required to secure your networks followin
 
 ### 1. Network-Segmentation & Software-Defined Perimeters
 
-Network Segmentation and Software-Defined Perimeters (SDP) are fundamental components of the Zero Trust security model, transitioning security measures from traditional, perimeter-based controls to dynamic, resource-focused enforcement. By partitioning your infrastructure into isolated segments through micro-segmentation, the lateral movement of attackers is restricted, thereby minimizing the potential impact of an attack. SDP enhances this approach by establishing on-demand, identity-centric "micro-perimeters" around each user-resource interaction, continuously validating context before granting access. To summarize, organizations should follow these key principles:
+Network segmentation and Software-Defined Perimeters (SDP) form the foundation of the Zero Trust security model. Instead of relying on static, perimeter-based controls, you enforce security dynamically at the resource level. When you partition your infrastructure into isolated segments using micro-segmentation, you restrict attackers’ lateral movement and minimize the effect of breaches. SDP strengthens this approach by creating on-demand, identity-centric "micro-perimeters" around each user-resource interaction and continuously validating context before granting access. In summary, follow these key principles:
 
-- Implement fine-grained network segmentation (Macro & Micro segmentation) to restrict lateral movement.
+- Restrict lateral movement by implementing fine-grained network segmentation (Macro & Micro segmentation).
 - Utilize Software-Defined Networking (SDN) and Network Access Control (NAC) to dynamically enforce policies.
 - Adopt identity-based segmentation over traditional IP-based methods.
 
@@ -67,7 +67,7 @@ Before diving into micro-segmentation, it's essential to establish a broader seg
 
 #### Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
 
-Organizations shouldn't just have one single, large pipe in and out of their network. In a Zero Trust approach, networks are instead segmented into smaller islands where specific workloads are contained. Each segment has its own ingress and egress controls to minimize the "impact radius" of unauthorized access to data. By implementing software-defined perimeters with granular controls, you increase the difficulty for unauthorized actors to propagate throughout your network, and so reduce the lateral movement of threats.
+Organizations shouldn't just have one single, large pipe in and out of their network. In a Zero Trust approach, networks are instead segmented into smaller islands where specific workloads are contained. Each segment has its own ingress and egress controls to minimize the effect of unauthorized access to data. By implementing software-defined perimeters with granular controls, you increase the difficulty for unauthorized actors to propagate throughout your network, and so reduce the lateral movement of threats.
 
 There's no architecture design that fits the needs of all organizations. You have the option between a few [common design patterns](https://www.microsoft.com/security/blog/2020/06/15/zero-trust-part-1-networking/) for segmenting your network according to the Zero Trust model.
 
@@ -133,7 +133,7 @@ Follow these steps:
 
 ### 2. Secure Access Service Edge (SASE) & Zero Trust Network Access (ZTNA)
 
-To effectively secure modern networks, organizations must move beyond legacy solutions and adopt advanced, integrated approaches. This includes adopting Zero Trust Network Access (ZTNA) solutions for granular, identity-driven connectivity, leveraging Secure Access Service Edge (SASE) architectures to unify networking and security capabilities, and implementing continuous session validation with risk-based access controls. These strategies work together to ensure that access is always verified, threats are minimized, and security policies adapt dynamically to evolving risks.
+To effectively secure modern networks, organizations must move beyond legacy solutions and adopt advanced, integrated approaches. The move includes adopting Zero Trust Network Access (ZTNA) solutions for granular, identity-driven connectivity, applying Secure Access Service Edge (SASE) architectures to unify networking and security capabilities, and implementing continuous session validation with risk-based access controls. These strategies work together to ensure that access is always verified, threats are minimized, and security policies adapt dynamically to evolving risks.
 
 #### Zero Trust Network Access (ZTNA)
 
@@ -148,26 +148,26 @@ Traditional VPNs grant broad, flat access to the network—violating Zero Trust 
 
 - **Access is app-specific, not network-wide.**
 - **Policies are enforced at the connection edge,** driven by Entra ID identity, device compliance, and risk.
-- **Leverages Private Access,** part of GSA, to securely connect users to on-premises or IaaS-hosted applications without exposing the network.
+- **Leverages Private Access,** part of Global Secure Access, to securely connect users to on-premises, or IaaS-hosted applications without exposing the network.
 
 [Use Private Access in Global Secure Access](/entra/global-secure-access/concept-private-access)
 
 **Key capabilities:**
 
-- Entra Conditional Access enforcement at session start
+- Microsoft Entra Conditional Access enforcement at session start
 - Native device posture integration with Microsoft Defender for Endpoint
 - TLS-based tunnels for secure outbound-only connections (no inbound exposure)
 
-##### Leverage SASE Architecture: Integrate Networking & Security Functions
+##### Use SASE Architecture: Integrate Networking & Security Functions
 
 Microsoft Global Secure Access integrates Security Service Edge (SSE) capabilities into a SASE-aligned framework, combining secure access and inspection in one unified platform.
 
 **Key integrated services:**
 
 - **Secure Web Gateway (SWG):** Outbound internet traffic filtering and logging  
-    [What is Microsoft Entra Internet Access (SWG)?](/entra/global-secure-access/concept-internet-access)
+    [What is Microsoft Entra Internet Access Secure Web Gateway (SWG)?](/entra/global-secure-access/concept-internet-access)
 - **Cloud Access Security Broker (CASB):** App discovery, session controls, and DLP via Defender for Cloud Apps  
-    [Microsoft Defender for Cloud Apps (CASB)](/defender-cloud-apps/what-is-defender-for-cloud-apps)
+    [Microsoft Defender for Cloud Apps Cloud Access Security Broker (CASB)](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 - **Firewall as a Service (FWaaS):** Integration with Azure Firewall and Defender for Cloud
 
 This architecture:
@@ -178,19 +178,19 @@ This architecture:
 
 ##### Implement Continuous Session Validation & Risk-Based Access
 
-ZTNA isn't a one-time check, it requires continuous evaluation of session trustworthiness.
+ZTNA isn't a one-time check. It requires continuous evaluation of session trustworthiness.
 
-Microsoft Global Secure Access and Entra provide:
+Microsoft Global Secure Access and Microsoft Entra provide:
 
 - **Continuous access evaluation (CAE):** Revoke or modify access in real time when risk conditions change  
     [What is Continuous Access Evaluation?](/entra/identity/conditional-access/concept-continuous-access-evaluation)
 - **Integration with Microsoft Defender XDR and Sentinel:** Detect threats and feed into adaptive policy responses
-- **Real-time session controls:** Use Defender for Cloud Apps for in-browser policy enforcement (e.g., block downloads)  
+- **Real-time session controls:** Use Defender for Cloud Apps for in-browser policy enforcement (for example, block downloads)  
     [Use session controls in Microsoft Defender for Cloud Apps](/defender-cloud-apps/session-policy-aad)
 
-This allows you to:
+The solutions let's you:
 
-- Terminate risky sessions or force re-authentication
+- Terminate risky sessions or force reauthentication
 - Apply policies dynamically based on signals like location, malware detection, or token anomalies
 - Maintain full audit visibility for every session decision
 
@@ -241,7 +241,7 @@ Enable reviewer decision helpers in access reviews. The User-to-Group Affiliatio
 
 ### 3. Strong Encryption & Secure Communication
 
-- Use TLS 1.3+ and end-to-end encryption for all network traffic.
+- Use Transport Layer Security (TLS) 1.3+ and end-to-end encryption for all network traffic.
 - Enforce mutual authentication (mTLS) between workloads and devices.
 - Block untrusted or legacy protocols that lack encryption.
 
@@ -277,7 +277,7 @@ Follow these steps:
 
 - Deploy Network Detection & Response (NDR) to monitor and analyze network traffic.
 - Use DPI (Deep Packet Inspection) and AI-driven anomaly detection for real-time threat hunting.
-- Maintain a centralized logging and SIEM/SOAR integration for network telemetry analysis.
+- Maintain a centralized logging and SIEM/SOAR integration for network analysis.
 - Deploy Extended Detection and Response (XDR) to analyze traffic patterns, identify anomalies, and prevent breaches.
 - Integrate AI-driven analytics to enhance rapid responses to emerging threats.
 
@@ -396,7 +396,7 @@ Apply Conditional Access policies with risk conditions to network access to Micr
 
 - Secure cloud workloads with micro-perimeters and cloud-native firewalls.
 - Integrate identity-aware proxies to secure SaaS and PaaS environments.
-- Ensure consistent security policy enforcement across hybrid and multi-cloud environments.
+- Ensure consistent security policy enforcement across hybrid and multicloud environments.
 
 
 ### 7. Discontinue legacy network security technology

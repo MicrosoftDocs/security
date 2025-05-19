@@ -384,24 +384,24 @@ Modern Zero Trust networks require granular, adaptive access controls that enfor
 #### 5.1 Implement Context-Aware Access Policies
 
 - Use Microsoft Entra Conditional Access to define policies based on user, device, location, application, and risk signals.
-- Start by [planning your Conditional Access deployment](https://learn.microsoft.com/entra/identity/conditional-access/plan-conditional-access) to align policies with your organizational requirements.
-- Accelerate deployment with [Conditional Access policy templates](https://learn.microsoft.com/entra/identity/conditional-access/howto-policy-templates) for common scenarios.
+- Start by [planning your Conditional Access deployment](/entra/identity/conditional-access/plan-conditional-access) to align policies with your organizational requirements.
+- Accelerate deployment with [Conditional Access policy templates](/entra/identity/conditional-access/howto-policy-templates) for common scenarios.
 
 #### 5.2 Enforce Risk-Based and Adaptive Controls
 
 - Require multifactor authentication (MFA) when risk is detected, such as unfamiliar sign-ins or risky devices.
-- Leverage [sign-in risk-based MFA](https://learn.microsoft.com/entra/identity/conditional-access/howto-conditional-access-policy-risk) to automatically prompt for MFA based on real-time risk assessment.
-- Understand [risk detections in Microsoft Entra ID Protection](https://learn.microsoft.com/entra/identity-protection/overview-identity-protection) to inform policy decisions and automate remediation.
+- Leverage [sign-in risk-based MFA](/entra/identity/conditional-access/howto-conditional-access-policy-risk) to automatically prompt for MFA based on real-time risk assessment.
+- Understand [risk detections in Microsoft Entra ID Protection](/entra/identity-protection/overview-identity-protection) to inform policy decisions and automate remediation.
 
 #### 5.3 Apply Just-in-Time (JIT) and Privileged Access
 
 - Enforce Just-in-Time (JIT) access using Privileged Identity Management (PIM) to grant elevated permissions only when needed.
-- [Secure private application access with PIM and Global Secure Access](https://learn.microsoft.com/entra/global-secure-access/how-to-pim-private-access) to reduce standing privileges and limit exposure.
+- [Secure private application access with PIM and Global Secure Access](/entra/global-secure-access/how-to-pim-private-access) to reduce standing privileges and limit exposure.
 
 #### 5.4 Hybrid and Application-Specific Access
 
-- For hybrid environments, configure per-app access policies using [Global Secure Access Applications](https://learn.microsoft.com/entra/global-secure-access/how-to-applications).
-- Enable secure remote administration by [using SSH with Microsoft Entra Private Access](https://learn.microsoft.com/entra/global-secure-access/how-to-ssh-private-access) for granular, policy-driven server access.
+- For hybrid environments, configure per-app access policies using [Global Secure Access Applications](/entra/global-secure-access/how-to-applications).
+- Enable secure remote administration by [using SSH with Microsoft Entra Private Access](/entra/global-secure-access/how-to-ssh-private-access) for granular, policy-driven server access.
 
 #### 5.5 Deny-by-Default and Continuous Evaluation
 

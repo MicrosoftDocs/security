@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft AI security?
 description: What are new Microsoft AI security capabilities and blog articles? 
-ms.date: 04/09/2025
+ms.date: 05/19/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -21,9 +21,15 @@ This article lists new capabilities and resources (blogs and videos) related to 
 
 |Product | Feature updates |  
 | ----  | ----------------------------- | 
-|Microsoft Purview | - [Public Preview of DLP for Microsoft 365 Copilot in Word, Excel, and PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-public-preview-of-dlp-for-m365-copilot-in-word-excel-and-powerpoint/4409809) <br> - [DSPM discoverability for Communication Compliance (public preview)](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enhance-ai-security-and-governance-across-multi-model-and-multi-cloud-environmen/4395593)
-| Defender for Cloud | - [General Availability for Defender for AI Services](/azure/defender-for-cloud/release-notes#general-availability-for-defender-for-ai-services) <br> - [General Availability Data and AI security dashboard](/azure/defender-for-cloud/release-notes#general-availability-data-and-ai-security-dashboard)|
- 
+|Microsoft Purview | - [Data security and compliance controls now (1) enabled natively for agents built in Copilot Studio and Azure AI Foundry and (2) extended to any new custom-built app with the Microsoft Purview Software Development Kit (SDK)](https://www.microsoft.com/security/blog/2025/05/19/microsoft-extends-zero-trust-to-secure-the-agentic-workforce/) ([Learn](/purview/whats-new?#data-security-posture-management-for-ai))<br> - [Purview DSPM for AI can now provide visibility into unauthenticated interactions with Copilot Studio agents](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enterprise-grade-controls-for-ai-apps-and-agents-built-with-azure-ai-foundry-and/4414757) ([Learn](/purview/whats-new?#data-security-posture-management-for-ai))<br> - [Public Preview of DLP for Microsoft 365 Copilot in Word, Excel, and PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-public-preview-of-dlp-for-m365-copilot-in-word-excel-and-powerpoint/4409809) <br> - [DSPM discoverability for Communication Compliance (public preview)](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enhance-ai-security-and-governance-across-multi-model-and-multi-cloud-environmen/4395593)
+|Microsoft Entra  | [Microsoft Entra Agent ID](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/announcing-microsoft-entra-agent-id-secure-and-manage-your-ai-agents/3827392)—unified directory of all agent identities created across Microsoft Copilot Studio and Azure AI Foundry |
+| Defender for Cloud | - [Microsoft Defender security alerts and recommendations now available in Azure AI Foundry](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enterprise-grade-controls-for-ai-apps-and-agents-built-with-azure-ai-foundry-and/4414757)<br> - [General Availability for Defender for AI Services](/azure/defender-for-cloud/release-notes#general-availability-for-defender-for-ai-services) <br> - [General Availability Data and AI security dashboard](/azure/defender-for-cloud/release-notes#general-availability-data-and-ai-security-dashboard)|
+|Azure AI Foundry  | [Azure AI Foundry enhancements for model security and safety](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enterprise-grade-controls-for-ai-apps-and-agents-built-with-azure-ai-foundry-and/4414757): <br> - **Spotlighting** to detect and block prompt injection attacks in real time <br> - **Task adherence evaluation and mitigation** to ensure agents remain within scope <br> - **Continuous evaluation and monitoring of agentic system** <br> [Azure AI Foundry evaluation integrations with Microsoft Purview, Credo.AI, and Saidot](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enterprise-grade-controls-for-ai-apps-and-agents-built-with-azure-ai-foundry-and/4414757) | 
+
+**Additional blogs, videos, and other resources**
+- [Enterprise-grade controls for AI apps and agents built with Azure AI Foundry and Copilot Studio](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enterprise-grade-controls-for-ai-apps-and-agents-built-with-azure-ai-foundry-and/4414757) (May 19, 2025)
+- [Microsoft extends Zero Trust to secure the agentic workforce](https://www.microsoft.com/en-us/security/blog/2025/05/19/microsoft-extends-zero-trust-to-secure-the-agentic-workforce/) (May 19, 2025)
+- [Announcing Microsoft Entra Agent ID: Secure and manage your AI agents](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/announcing-microsoft-entra-agent-id-secure-and-manage-your-ai-agents/3827392) (May 19, 2025)
 
 
 ## April 2025

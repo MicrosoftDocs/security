@@ -61,11 +61,11 @@ Network segmentation and Software-Defined Perimeters (SDP) form the foundation o
 - Utilize Software-Defined Networking (SDN) and Network Access Control (NAC) to dynamically enforce policies.
 - Adopt identity-based segmentation over traditional IP-based methods.
 
-#### Macro segmentation strategy
+#### 1.1 Macro segmentation strategy
 
 Before diving into micro-segmentation, it's essential to establish a broader segmentation strategy. Macro segmentation involves dividing your network into larger segments based on overarching functional or security requirements. This approach simplifies initial management and provides a foundation upon which finer granularity, like micro-segmentation, can be built. 
 
-#### Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
+#### 1.2 Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
 
 Organizations shouldn't just have one single, large pipe in and out of their network. In a Zero Trust approach, networks are instead segmented into smaller islands where specific workloads are contained. Each segment has its own ingress and egress controls to minimize the effect of unauthorized access to data. By implementing software-defined perimeters with granular controls, you increase the difficulty for unauthorized actors to propagate throughout your network, and so reduce the lateral movement of threats.
 
@@ -75,11 +75,11 @@ In this deployment guide, we walk you through the steps to achieve one of those 
 
 With micro-segmentation, organizations can move beyond simple centralized network-based perimeters to comprehensive and distributed segmentation using software-defined micro-perimeters.
 
-#### Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
+#### 1.3 Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
 
 Once you accomplish your initial three objectives, the next step is to further segment your network.
 
-#### Segment and enforce the external boundaries
+#### 1.4 Segment and enforce the external boundaries
 
 :::image type="content" source="../media/diagram-servers-devices-boundaries-azure-vpn.png" alt-text="Diagram of servers and devices with connections across boundaries." border="true":::
 
@@ -135,7 +135,7 @@ Follow these steps:
 
 To effectively secure modern networks, organizations must move beyond legacy solutions and adopt advanced, integrated approaches. The move includes adopting Zero Trust Network Access (ZTNA) solutions for granular, identity-driven connectivity, applying Secure Access Service Edge (SASE) architectures to unify networking and security capabilities, and implementing continuous session validation with risk-based access controls. These strategies work together to ensure that access is always verified, threats are minimized, and security policies adapt dynamically to evolving risks.
 
-#### Zero Trust Network Access (ZTNA)
+#### 2.1 Zero Trust Network Access (ZTNA)
 
 Zero Trust Network Access (ZTNA) replaces traditional perimeter-based VPN models with a granular, identity-aware, and risk-adaptive approach. Instead of granting broad network access, ZTNA enforces least-privilege connectivity to specific applications and resources based on user identity, device posture, and contextual signals.
 
@@ -195,57 +195,13 @@ The solutions let's you:
 - Maintain full audit visibility for every session decision
 
 
-#### Automation and Orchestration
-
-**Microsoft Sentinel**
-
-Enable analytic rules to detect advanced multistage attacks with Fusion and User and Entity Behavior Analytics (UEBA) anomalies in Microsoft Sentinel. Design automation rules and playbooks for security response.
-
-See Microsoft guidance in 6.2.3 and 6.4.1.
-
-**Microsoft Entra ID Governance**
-
-Enable reviewer decision helpers in access reviews. The User-to-Group Affiliation helper provides a Machine Learning based recommendation to improve the reviewer experience.
-- Access review settings
-- Review recommendations for Access reviews
-
-**Automated Workflows**
-
-**Microsoft Defender Extended Detection and Response (XDR)**
-
-Configure automated investigation and response capabilities in Microsoft Defender Extended Detection and Response (XDR). 
-- Automated investigation and response overview
-
-**Microsoft Sentinel playbooks**
-
-Microsoft Sentinel playbooks are based on Logic Apps, a cloud service that schedules, automates, and orchestrates tasks and workflows across enterprise systems. Build response playbooks with templates. Deploy solutions from the Microsoft Sentinel content hub. Build custom analytics rules and response actions with Azure Logic Apps.
-- Build Microsoft Sentinel playbooks from templates
-- Automate threat response with playbooks
-- Locate the Microsoft Sentinel content hub catalog
-- Learn about Azure Logic Apps
-
-**AI Driven by Analytics decides A&O modifications**
-
-**Microsoft Sentinel**
-
-Enable analytic rules to detect advanced multistage attacks with Fusion and UEBA anomalies in Microsoft Sentinel. Design automation rules and playbooks for security response.
-
-See Microsoft guidance in 6.2.3 and 6.4.1.
-
-**Microsoft Entra ID Governance**
-
-Enable reviewer decision helpers in access reviews. The User-to-Group Affiliation helper provides a Machine Learning based recommendation to improve the reviewer experience.
-- Access review settings
-- Review recommendations for Access reviews
-
-
 ### 3. Strong Encryption & Secure Communication
 
 - Use Transport Layer Security (TLS) 1.3+ and end-to-end encryption for all network traffic.
 - Enforce mutual authentication (mTLS) between workloads and devices.
 - Block untrusted or legacy protocols that lack encryption.
 
-#### Encryption: User-to-app internal traffic is encrypted
+#### 3.1 Encryption: User-to-app internal traffic is encrypted
 
 Add encryption to ensure user-to-app internal traffic is encrypted.
 
@@ -261,7 +217,7 @@ Follow these steps:
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
 
-#### Encryption: All traffic
+#### 3.2 Encryption: All traffic
 
 Finally, complete your network protection by ensuring that all traffic is encrypted.
 
@@ -281,7 +237,7 @@ Follow these steps:
 - Deploy Extended Detection and Response (XDR) to analyze traffic patterns, identify anomalies, and prevent breaches.
 - Integrate AI-driven analytics to enhance rapid responses to emerging threats.
 
-#### Threat protection: Machine learning-based threat protection and filtering with context-based signals
+#### 4.1 Threat protection: Machine learning-based threat protection and filtering with context-based signals
 
 For further threat protection, turn on [Azure DDoS Protection Standard](/azure/virtual-network/ddos-protection-overview) to constantly monitor your Azure-hosted application traffic, use ML-based frameworks to baseline and detect volumetric traffic floods, and apply automatic mitigations.
 
@@ -291,7 +247,7 @@ Follow these steps:
 - [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
 
 
-#### Threat protection: Cloud native filtering and protection for known threats
+#### 4.2 Threat protection: Cloud native filtering and protection for known threats
 
 Cloud applications that open endpoints to external environments, such as the internet or your on-premises footprint, are at risk of attacks coming in from those environments. It's therefore imperative that you scan the traffic for malicious payloads or logic.
 
@@ -339,7 +295,7 @@ Take these steps to protect against known threats:
         > [!TIP]
         > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
-#### Monitoring and Visibility
+#### 4.3 Monitoring and Visibility
 
 **Log Analysis**
 
@@ -385,18 +341,101 @@ Apply Conditional Access policies with risk conditions to network access to Micr
 - [Universal Conditional Access](/entra/global-secure-access/concept-universal-conditional-access)
 
 
+#### 4.4 Automation and Orchestration
+
+**Microsoft Sentinel**
+
+Enable analytic rules to detect advanced multistage attacks with Fusion and User and Entity Behavior Analytics (UEBA) anomalies in Microsoft Sentinel. Design automation rules and playbooks for security response.
+
+See Microsoft guidance in 6.2.3 and 6.4.1.
+
+**Microsoft Entra ID Governance**
+
+Enable reviewer decision helpers in access reviews. The User-to-Group Affiliation helper provides a Machine Learning based recommendation to improve the reviewer experience.
+- Access review settings
+- Review recommendations for Access reviews
+
+**Automated Workflows**
+
+**Microsoft Defender Extended Detection and Response (XDR)**
+
+Configure automated investigation and response capabilities in Microsoft Defender Extended Detection and Response (XDR). 
+- Automated investigation and response overview
+
+**Microsoft Sentinel playbooks**
+
+Microsoft Sentinel playbooks are based on Logic Apps, a cloud service that schedules, automates, and orchestrates tasks and workflows across enterprise systems. Build response playbooks with templates. Deploy solutions from the Microsoft Sentinel content hub. Build custom analytics rules and response actions with Azure Logic Apps.
+- Build Microsoft Sentinel playbooks from templates
+- Automate threat response with playbooks
+- Locate the Microsoft Sentinel content hub catalog
+- Learn about Azure Logic Apps
+
+**AI Driven by Analytics decides A&O modifications**
+
+**Microsoft Sentinel**
+
+Enable analytic rules to detect advanced multistage attacks with Fusion and UEBA anomalies in Microsoft Sentinel. Design automation rules and playbooks for security response.
+
+
 ### 5. Policy-Driven Access Control & Least Privilege
 
-- Implement context-aware access policies using User, Device, and Location-based factors.
-- Enforce Just-in-Time (JIT) access and dynamic policy enforcement.
-- Apply deny-by-default principles across all network layers.
+Modern Zero Trust networks require granular, adaptive access controls that enforce least privilege and respond dynamically to risk. Policy-driven access ensures users and devices only get the minimum permissions needed, for the shortest time required, and only under the right conditions.
+
+#### 5.1 Implement Context-Aware Access Policies
+
+- Use Microsoft Entra Conditional Access to define policies based on user, device, location, application, and risk signals.
+- Start by [planning your Conditional Access deployment](https://learn.microsoft.com/entra/identity/conditional-access/plan-conditional-access) to align policies with your organizational requirements.
+- Accelerate deployment with [Conditional Access policy templates](https://learn.microsoft.com/entra/identity/conditional-access/howto-policy-templates) for common scenarios.
+
+#### 5.2 Enforce Risk-Based and Adaptive Controls
+
+- Require multifactor authentication (MFA) when risk is detected, such as unfamiliar sign-ins or risky devices.
+- Leverage [sign-in risk-based MFA](https://learn.microsoft.com/entra/identity/conditional-access/howto-conditional-access-policy-risk) to automatically prompt for MFA based on real-time risk assessment.
+- Understand [risk detections in Microsoft Entra ID Protection](https://learn.microsoft.com/entra/identity-protection/overview-identity-protection) to inform policy decisions and automate remediation.
+
+#### 5.3 Apply Just-in-Time (JIT) and Privileged Access
+
+- Enforce Just-in-Time (JIT) access using Privileged Identity Management (PIM) to grant elevated permissions only when needed.
+- [Secure private application access with PIM and Global Secure Access](https://learn.microsoft.com/entra/global-secure-access/how-to-pim-private-access) to reduce standing privileges and limit exposure.
+
+#### 5.4 Hybrid and Application-Specific Access
+
+- For hybrid environments, configure per-app access policies using [Global Secure Access Applications](https://learn.microsoft.com/entra/global-secure-access/how-to-applications).
+- Enable secure remote administration by [using SSH with Microsoft Entra Private Access](https://learn.microsoft.com/entra/global-secure-access/how-to-ssh-private-access) for granular, policy-driven server access.
+
+#### 5.5 Deny-by-Default and Continuous Evaluation
+
+- Apply deny-by-default principles at all network layers, granting access only when explicitly allowed by policy.
+- Continuously evaluate session risk and enforce policy changes in real time to minimize attack surface.
+
+By combining context-aware, risk-adaptive, and least-privilege policies, organizations can significantly reduce the risk of unauthorized access and lateral movement within their networks.
 
 
 ### 6. Cloud & Hybrid Network Security
 
-- Secure cloud workloads with micro-perimeters and cloud-native firewalls.
-- Integrate identity-aware proxies to secure SaaS and PaaS environments.
-- Ensure consistent security policy enforcement across hybrid and multicloud environments.
+Securing cloud and hybrid environments requires a combination of modern, cloud-native controls and consistent policy enforcement across all platforms. As organizations adopt multi-cloud and hybrid architectures, it's essential to extend Zero Trust principles beyond traditional data centers to cloud workloads, SaaS, and PaaS environments.
+
+#### 6.1 Secure Cloud Workloads with Micro-Perimeters and Cloud-Native Firewalls
+
+- **Micro-perimeters:** Use micro-segmentation to create granular security boundaries around individual workloads, applications, or services. This limits lateral movement and contains potential breaches within isolated segments.
+- **Cloud-native firewalls:** Deploy solutions like [Azure Firewall](/azure/firewall/overview) to inspect and control traffic between cloud workloads, enforce threat intelligence-based filtering, and apply application and network rules at scale.
+- **Network Security Groups (NSGs):** Use NSGs and [Application Security Groups](/azure/virtual-network/application-security-groups) to define and enforce fine-grained access controls for resources within virtual networks.
+- **Private endpoints:** Leverage [Azure Private Link](/azure/private-link/private-link-overview) to restrict access to PaaS services over private IP addresses, ensuring traffic stays within the trusted Microsoft backbone.
+
+#### 6.2 Integrate Identity-Aware Proxies for SaaS and PaaS Security
+
+- **Identity-aware proxies:** Implement solutions such as [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access) to broker access to SaaS and PaaS applications. These proxies enforce authentication, device compliance, and Conditional Access policies before granting access.
+- **Cloud Access Security Broker (CASB):** Use [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) to discover, monitor, and control SaaS usage, enforce data loss prevention (DLP), and apply session controls for cloud applications.
+- **Continuous session validation:** Apply risk-based, real-time policy enforcement for SaaS and PaaS access, including adaptive controls based on user, device, and session context.
+
+#### 6.3 Ensure Consistent Security Policy Enforcement Across Hybrid and Multicloud Environments
+
+- **Unified policy management:** Use platforms like [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) and [Azure Policy](/azure/governance/policy/overview) to define and enforce consistent security policies across on-premises, Azure, and other cloud providers.
+- **Hybrid connectivity:** Secure hybrid connections using [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways), [ExpressRoute](/azure/expressroute/expressroute-introduction), and enforce encryption and access controls for all cross-environment traffic.
+- **Centralized monitoring and response:** Integrate logs and security events from all environments into [Microsoft Sentinel](/azure/sentinel/overview) or your SIEM/SOAR platform for unified visibility, threat detection, and automated response.
+- **Multicloud security posture management:** Use tools like [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) to assess, monitor, and improve the security posture of resources across Azure, AWS, and Google Cloud.
+
+By implementing these strategies, organizations can achieve robust, end-to-end security for cloud and hybrid networks, ensuring Zero Trust principles are consistently applied regardless of where workloads and data reside.
 
 
 ### 7. Discontinue legacy network security technology

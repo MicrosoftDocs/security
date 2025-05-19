@@ -147,7 +147,7 @@ Microsoft’s implementation of ZTNA is part of the Global Secure Access (previe
 Traditional VPNs grant broad, flat access to the network—violating Zero Trust principles. With Microsoft's Global Secure Access:
 
 - **Access is app-specific, not network-wide.**
-- **Policies are enforced at the connection edge,** driven by Entra ID identity, device compliance, and risk.
+- **Policies are enforced at the connection edge,** driven by Microsoft Entra ID identity, device compliance, and risk.
 - **Leverages Private Access,** part of Global Secure Access, to securely connect users to on-premises, or IaaS-hosted applications without exposing the network.
 
 [Use Private Access in Global Secure Access](/entra/global-secure-access/concept-private-access)
@@ -345,13 +345,11 @@ Apply Conditional Access policies with risk conditions to network access to Micr
 
 **Microsoft Sentinel**
 
-Enable analytic rules to detect advanced multistage attacks with Fusion and User and Entity Behavior Analytics (UEBA) anomalies in Microsoft Sentinel. Design automation rules and playbooks for security response.
-
-See Microsoft guidance in 6.2.3 and 6.4.1.
+Detect advanced multistage attacks with Fusion and User and Entity Behavior Analytics (UEBA) anomalies in Microsoft Sentinel by enabling analytic rules. Design automation rules and playbooks for security response.
 
 **Microsoft Entra ID Governance**
 
-Enable reviewer decision helpers in access reviews. The User-to-Group Affiliation helper provides a Machine Learning based recommendation to improve the reviewer experience.
+Enable reviewer decision helpers in access reviews. The User-to-Group Affiliation helper provides a Machine Learning based recommendation that improves the reviewer experience.
 - Access review settings
 - Review recommendations for Access reviews
 
@@ -390,7 +388,7 @@ Modern Zero Trust networks require granular, adaptive access controls that enfor
 #### 5.2 Enforce Risk-Based and Adaptive Controls
 
 - Require multifactor authentication (MFA) when risk is detected, such as unfamiliar sign-ins or risky devices.
-- Leverage [sign-in risk-based MFA](/entra/identity/conditional-access/howto-conditional-access-policy-risk) to automatically prompt for MFA based on real-time risk assessment.
+- Use [sign-in risk-based MFA](/entra/identity/conditional-access/howto-conditional-access-policy-risk) to automatically prompt for MFA based on real-time risk assessment.
 - Understand [risk detections in Microsoft Entra ID Protection](/entra/identity-protection/overview-identity-protection) to inform policy decisions and automate remediation.
 
 #### 5.3 Apply Just-in-Time (JIT) and Privileged Access

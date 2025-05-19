@@ -450,8 +450,6 @@ Based on this rationale, we offer an all-up recommendation that you discontinue 
 
 ## Products covered in this guide
 
-**Microsoft Azure**
-
 [Azure Networking](/azure/networking/)
 
 [Virtual Networks and Subnets](/azure/virtual-network/virtual-networks-overview)

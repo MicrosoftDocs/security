@@ -30,6 +30,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 - [Enterprise-grade controls for AI apps and agents built with Azure AI Foundry and Copilot Studio](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enterprise-grade-controls-for-ai-apps-and-agents-built-with-azure-ai-foundry-and/4414757) (May 19, 2025)
 - [Microsoft extends Zero Trust to secure the agentic workforce](https://www.microsoft.com/en-us/security/blog/2025/05/19/microsoft-extends-zero-trust-to-secure-the-agentic-workforce/) (May 19, 2025)
 - [Announcing Microsoft Entra Agent ID: Secure and manage your AI agents](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/announcing-microsoft-entra-agent-id-secure-and-manage-your-ai-agents/3827392) (May 19, 2025)
+- [Microsoft Purview SDK Public Preview](https://techcommunity.microsoft.com/blog/microsoft-security-blog/microsoft-purview-sdk-public-preview/4414240)
 
 
 ## April 2025

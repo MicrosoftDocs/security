@@ -406,19 +406,19 @@ Modern Zero Trust networks require granular, adaptive access controls that enfor
 - Apply deny-by-default principles at all network layers, granting access only when explicitly allowed by policy.
 - Continuously evaluate session risk and enforce policy changes in real time to minimize attack surface.
 
-By combining context-aware, risk-adaptive, and least-privilege policies, organizations can significantly reduce the risk of unauthorized access and lateral movement within their networks.
+Use context-aware, risk-based, and least-privilege policies to reduce unauthorized access and limit lateral movement in your network.
 
 
 ### 6. Cloud & Hybrid Network Security
 
-Securing cloud and hybrid environments requires a combination of modern, cloud-native controls and consistent policy enforcement across all platforms. As organizations adopt multi-cloud and hybrid architectures, it's essential to extend Zero Trust principles beyond traditional data centers to cloud workloads, SaaS, and PaaS environments.
+Securing cloud and hybrid environments requires a combination of modern, cloud-native controls and consistent policy enforcement across all platforms. As organizations adopt multicloud and hybrid architectures, it's essential to extend Zero Trust principles beyond traditional data centers to cloud workloads, SaaS, and PaaS environments.
 
 #### 6.1 Secure Cloud Workloads with Micro-Perimeters and Cloud-Native Firewalls
 
 - **Micro-perimeters:** Use micro-segmentation to create granular security boundaries around individual workloads, applications, or services. This limits lateral movement and contains potential breaches within isolated segments.
 - **Cloud-native firewalls:** Deploy solutions like [Azure Firewall](/azure/firewall/overview) to inspect and control traffic between cloud workloads, enforce threat intelligence-based filtering, and apply application and network rules at scale.
-- **Network Security Groups (NSGs):** Use NSGs and [Application Security Groups](/azure/virtual-network/application-security-groups) to define and enforce fine-grained access controls for resources within virtual networks.
-- **Private endpoints:** Leverage [Azure Private Link](/azure/private-link/private-link-overview) to restrict access to PaaS services over private IP addresses, ensuring traffic stays within the trusted Microsoft backbone.
+- **Network Security Groups (NSGs):** Use Network Security Groups (NSGs) and [Application Security Groups](/azure/virtual-network/application-security-groups) to define and enforce fine-grained access controls for resources within virtual networks.
+- **Private endpoints:** Use [Azure Private Link](/azure/private-link/private-link-overview) to restrict access to PaaS services over private IP addresses, ensuring traffic stays within the trusted Microsoft backbone.
 
 #### 6.2 Integrate Identity-Aware Proxies for SaaS and PaaS Security
 
@@ -431,9 +431,9 @@ Securing cloud and hybrid environments requires a combination of modern, cloud-n
 - **Unified policy management:** Use platforms like [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) and [Azure Policy](/azure/governance/policy/overview) to define and enforce consistent security policies across on-premises, Azure, and other cloud providers.
 - **Hybrid connectivity:** Secure hybrid connections using [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways), [ExpressRoute](/azure/expressroute/expressroute-introduction), and enforce encryption and access controls for all cross-environment traffic.
 - **Centralized monitoring and response:** Integrate logs and security events from all environments into [Microsoft Sentinel](/azure/sentinel/overview) or your SIEM/SOAR platform for unified visibility, threat detection, and automated response.
-- **Multicloud security posture management:** Use tools like [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) to assess, monitor, and improve the security posture of resources across Azure, AWS, and Google Cloud.
+- **Multicloud security posture management:** Use tools like [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) to assess, monitor, and improve the security posture of resources across Azure and other cloud providers.
 
-By implementing these strategies, organizations can achieve robust, end-to-end security for cloud and hybrid networks, ensuring Zero Trust principles are consistently applied regardless of where workloads and data reside.
+Organizations that implement these strategies can achieve robust, end-to-end security for cloud and hybrid networks. This approach ensures that Zero Trust principles are consistently applied, regardless of where workloads and data reside.
 
 
 ### 7. Discontinue legacy network security technology

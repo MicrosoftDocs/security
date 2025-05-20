@@ -147,13 +147,13 @@ Microsoft’s implementation of ZTNA is part of the Global Secure Access (previe
 **Global Secure Access**  
 Microsoft’s Global Secure Access replaces broad network tunnels with app-specific, identity-driven connections. When a user requests access, GSA uses Microsoft Entra ID for single sign-on and Conditional Access at the edge—no inbound firewall rules are required. Only approved applications are visible in the user portal, and access decisions are based on device posture (from Defender for Endpoint) and real-time risk signals.
 
-- [Learn more: What is Global Secure Access?](/entra/global-secure-access/overview/what-is-global-secure-access)
+- [Learn more: What is Global Secure Access?](/entra/global-secure-access/overview-what-is-global-secure-access)
 - [Private Access overview](/entra/global-secure-access/concept-private-access)
 
 **Azure VPN Gateway**  
 Modernize point-to-site (P2S) VPNs by integrating authentication with Microsoft Entra ID, enforcing Conditional Access policies (such as MFA, device compliance, and Named Locations) before establishing the tunnel. In Azure Virtual WAN hubs, P2S VPN and ExpressRoute operate at global scale, with centralized security and routing via Azure Firewall Manager. This approach maintains familiar VPN connectivity while ensuring least-privilege, identity-aware access.
 
-- [Set up P2S VPN with Azure AD authentication](/azure/vpn-gateway/openvpn-azure-ad-authentication)
+- [Set up P2S VPN with Azure AD authentication](/azure/vpn-gateway/point-to-site-about)
 - [Azure Virtual WAN overview](/azure/virtual-wan/virtual-wan-about)
 
 ##### Use SASE Architecture: Integrate Networking & Security Functions
@@ -184,13 +184,13 @@ Continuous session validation ensures that access decisions are enforced in real
 Zero Trust Network Access (ZTNA) is not a one-time check. Microsoft Global Secure Access uses Continuous Access Evaluation (CAE) to monitor risk signals—such as detected malware or unusual locations—and can revoke or re-evaluate access tokens instantly when risk is detected. Defender for Cloud Apps enforces live session controls, such as blocking downloads, quarantining sessions, or requiring additional multifactor authentication (MFA) during an active session. Automated response playbooks in Microsoft Sentinel or Microsoft 365 Defender can isolate compromised devices or disable accounts in real time.
 
 - [Learn about Continuous Access Evaluation (CAE)](/entra/identity/conditional-access/concept-continuous-access-evaluation)
-- [Defender for Cloud Apps session controls](/defender-cloud-apps/session-controls)
+- [Defender for Cloud Apps session controls](/defender-cloud-apps/session-policy-aad)
 
 **Azure VPN Gateway**
 For VPN connections authenticated with Microsoft Entra ID, Continuous Access Evaluation applies as well. If Conditional Access detects a compromised device or increased user risk, the point-to-site (P2S) or Virtual WAN tunnel can be terminated or forced to re-authenticate. By sending VPN logs to Microsoft Sentinel using Diagnostic Settings, you can trigger Logic App playbooks to block IP addresses, revoke tokens, or notify security teams—enabling real-time, risk-based decisions for traditional VPNs.
 
 - [VPN Gateway authentication with Microsoft Entra ID](/azure/vpn-gateway/openvpn-azure-ad-authentication)
-- [Automate response with Microsoft Sentinel playbooks](/azure/sentinel/tutorial-respond-threats-playbook)
+- [Automate response with Microsoft Sentinel playbooks](/azure/sentinel/automation/create-playbooks)
 
 ### 3. Strong Encryption & Secure Communication
 

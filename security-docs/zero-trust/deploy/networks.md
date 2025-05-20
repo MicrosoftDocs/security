@@ -189,7 +189,7 @@ Zero Trust Network Access (ZTNA) is not a one-time check. Microsoft Global Secur
 **Azure VPN Gateway**
 For VPN connections authenticated with Microsoft Entra ID, Continuous Access Evaluation applies as well. If Conditional Access detects a compromised device or increased user risk, the point-to-site (P2S) or Virtual WAN tunnel can be terminated or forced to re-authenticate. By sending VPN logs to Microsoft Sentinel using Diagnostic Settings, you can trigger Logic App playbooks to block IP addresses, revoke tokens, or notify security teams—enabling real-time, risk-based decisions for traditional VPNs.
 
-- [VPN Gateway authentication with Microsoft Entra ID](/azure/vpn-gateway/openvpn-azure-ad-authentication)
+- [VPN Gateway authentication with Microsoft Entra ID](/azure/vpn-gateway/openvpn-azure-ad-tenant)
 - [Automate response with Microsoft Sentinel playbooks](/azure/sentinel/automation/create-playbooks)
 
 ### 3. Strong Encryption & Secure Communication

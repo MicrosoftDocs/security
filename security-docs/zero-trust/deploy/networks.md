@@ -137,63 +137,60 @@ To effectively secure modern networks, organizations must move beyond legacy sol
 
 #### 2.1 Zero Trust Network Access (ZTNA)
 
-Zero Trust Network Access (ZTNA) replaces traditional perimeter-based VPN models with a granular, identity-aware, and risk-adaptive approach. Instead of granting broad network access, ZTNA enforces least-privilege connectivity to specific applications and resources based on user identity, device posture, and contextual signals.
+Zero Trust Network Access replaces broad, perimeter-based VPNs with fine-grained, identity- and context-aware connectivity. Below are three core ZTNA capabilities, each described first for Microsoft Global Secure Access (GSA) and then for Azure VPN Gateway options.
 
 Microsoft’s implementation of ZTNA is part of the Global Secure Access (preview) capability under Microsoft Entra, built on the Security Service Edge (SSE) foundation.  
 [Learn more: What is Global Secure Access? (Microsoft Entra)](/entra/global-secure-access/overview-what-is-global-secure-access)
 
 ##### Modernize Traditional VPNs with Identity-Aware ZTNA
 
-Traditional VPNs grant broad, flat access to the network—violating Zero Trust principles. With Microsoft's Global Secure Access:
+**Global Secure Access:**  
+Microsoft’s Global Secure Access replaces broad network tunnels with app-specific, identity-driven connections. When a user requests access, GSA uses Microsoft Entra ID for single sign-on and Conditional Access at the edge—no inbound firewall rules are required. Only approved applications are visible in the user portal, and access decisions are based on device posture (from Defender for Endpoint) and real-time risk signals.
 
-- **Access is app-specific, not network-wide.**
-- **Policies are enforced at the connection edge,** driven by Microsoft Entra ID identity, device compliance, and risk.
-- **Leverages Private Access,** part of Global Secure Access, to securely connect users to on-premises, or IaaS-hosted applications without exposing the network.
+- [Learn more: What is Global Secure Access?](/entra/global-secure-access/overview/what-is-global-secure-access)
+- [Private Access overview](/entra/global-secure-access/concept-private-access)
 
-[Use Private Access in Global Secure Access](/entra/global-secure-access/concept-private-access)
+**Azure VPN Gateway:**  
+Modernize point-to-site (P2S) VPNs by integrating authentication with Microsoft Entra ID, enforcing Conditional Access policies (such as MFA, device compliance, and Named Locations) before establishing the tunnel. In Azure Virtual WAN hubs, P2S VPN and ExpressRoute operate at global scale, with centralized security and routing via Azure Firewall Manager. This approach maintains familiar VPN connectivity while ensuring least-privilege, identity-aware access.
 
-**Key capabilities:**
-
-- Microsoft Entra Conditional Access enforcement at session start
-- Native device posture integration with Microsoft Defender for Endpoint
-- TLS-based tunnels for secure outbound-only connections (no inbound exposure)
+- [Set up P2S VPN with Azure AD authentication](/azure/vpn-gateway/openvpn-azure-ad-authentication)
+- [Azure Virtual WAN overview](/azure/virtual-wan/virtual-wan-about)
 
 ##### Use SASE Architecture: Integrate Networking & Security Functions
 
-Microsoft Global Secure Access integrates Security Service Edge (SSE) capabilities into a SASE-aligned framework, combining secure access and inspection in one unified platform.
+**Integrate Networking & Security Functions with SASE**
 
-**Key integrated services:**
+**Global Secure Access**  
+Global Secure Access brings Security Service Edge (SSE) capabilities—including Secure Web Gateway (SWG), Cloud Access Security Broker (CASB), and Firewall-as-a-Service (FWaaS)—into a unified SASE framework. User traffic, whether destined for the internet or private applications, is routed through Microsoft’s global edge network. Here, TLS inspection, URL filtering, data loss prevention (DLP), and threat intelligence are applied. Defender for Cloud Apps enables inline session control for SaaS applications, while Azure Firewall protects private app access.
 
-- **Secure Web Gateway (SWG):** Outbound internet traffic filtering and logging  
-    [What is Microsoft Entra Internet Access Secure Web Gateway (SWG)?](/entra/global-secure-access/concept-internet-access)
-- **Cloud Access Security Broker (CASB):** App discovery, session controls, and DLP via Defender for Cloud Apps  
-    [Microsoft Defender for Cloud Apps Cloud Access Security Broker (CASB)](/defender-cloud-apps/what-is-defender-for-cloud-apps)
-- **Firewall as a Service (FWaaS):** Integration with Azure Firewall and Defender for Cloud
+- **SWG in Global Secure Access:** [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access)
+- **CASB with Defender for Cloud Apps:** [What is Defender for Cloud Apps?](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 
 This architecture:
+- Routes user traffic through Microsoft’s edge for centralized inspection and control
+- Reduces complexity by unifying security policy enforcement
+- Supports traffic steering and split tunneling for performance and compliance
 
-- Routes user traffic through Microsoft’s edge network, applying inspection and control
-- Reduces complexity by centralizing security policy enforcement
-- Supports steering and split tunneling for performance and compliance
+**Azure VPN Gateway Integration**  
+Traditional VPN endpoints can be integrated with Azure Firewall or partner SWG appliances using forced-tunnel configurations. This allows outbound and inbound VPN traffic to be inspected and controlled with Azure Firewall Manager, threat intelligence, and Conditional Access session controls. You can apply URL filtering, deep packet inspection (DPI), and DLP to VPN sessions. Defender for Cloud Apps session policies can enforce upload/download controls and shadow IT discovery on tunneled traffic.
+
+- [Learn about forced-tunnel VPN with Azure Firewall](/azure/firewall)
 
 ##### Implement Continuous Session Validation & Risk-Based Access
 
-ZTNA isn't a one-time check. It requires continuous evaluation of session trustworthiness.
+Continuous session validation ensures that access decisions are enforced in real time, not just at the initial sign-in. This approach helps organizations respond quickly to changing risk conditions and maintain a strong security posture.
 
-Microsoft Global Secure Access and Microsoft Entra provide:
+**Microsoft Global Secure Access**  
+Zero Trust Network Access (ZTNA) is not a one-time check. Microsoft Global Secure Access uses Continuous Access Evaluation (CAE) to monitor risk signals—such as detected malware or unusual locations—and can revoke or re-evaluate access tokens instantly when risk is detected. Defender for Cloud Apps enforces live session controls, such as blocking downloads, quarantining sessions, or requiring additional multifactor authentication (MFA) during an active session. Automated response playbooks in Microsoft Sentinel or Microsoft 365 Defender can isolate compromised devices or disable accounts in real time.
 
-- **Continuous access evaluation (CAE):** Revoke or modify access in real time when risk conditions change  
-    [What is Continuous Access Evaluation?](/entra/identity/conditional-access/concept-continuous-access-evaluation)
-- **Integration with Microsoft Defender XDR and Sentinel:** Detect threats and feed into adaptive policy responses
-- **Real-time session controls:** Use Defender for Cloud Apps for in-browser policy enforcement (for example, block downloads)  
-    [Use session controls in Microsoft Defender for Cloud Apps](/defender-cloud-apps/session-policy-aad)
+- [Learn about Continuous Access Evaluation (CAE)](/entra/identity/conditional-access/concept-continuous-access-evaluation)
+- [Defender for Cloud Apps session controls](/defender-cloud-apps/session-controls)
 
-The solutions let's you:
+**Azure VPN Gateway**
+For VPN connections authenticated with Microsoft Entra ID, Continuous Access Evaluation applies as well. If Conditional Access detects a compromised device or increased user risk, the point-to-site (P2S) or Virtual WAN tunnel can be terminated or forced to re-authenticate. By sending VPN logs to Microsoft Sentinel using Diagnostic Settings, you can trigger Logic App playbooks to block IP addresses, revoke tokens, or notify security teams—enabling real-time, risk-based decisions for traditional VPNs.
 
-- Terminate risky sessions or force reauthentication
-- Apply policies dynamically based on signals like location, malware detection, or token anomalies
-- Maintain full audit visibility for every session decision
-
+- [VPN Gateway authentication with Microsoft Entra ID](/azure/vpn-gateway/openvpn-azure-ad-authentication)
+- [Automate response with Microsoft Sentinel playbooks](/azure/sentinel/tutorial-respond-threats-playbook)
 
 ### 3. Strong Encryption & Secure Communication
 
@@ -438,13 +435,62 @@ Organizations that implement these strategies can achieve robust, end-to-end sec
 
 ### 7. Discontinue legacy network security technology
 
-Discontinue the use of signature-based Network Intrusion Detection/Network Intrusion Prevention (NIDS/NIPS) Systems and Network Data Leakage/Loss Prevention (DLP).
+Zero Trust rejects implicit trust in any network segment or device. Legacy perimeter-centric controls—such as flat VPN tunnels, “hair-pin” traffic inspection, hard-coded access control lists (ACLs), and static network firewalls—no longer provide the adaptive, identity- and context-aware protection required for modern hybrid and cloud-native environments. To fully realize Zero Trust, organizations must retire these outdated technologies in favor of identity-driven, software-defined security services.
 
-The major cloud service providers already filter for malformed packets and common network layer attacks, so there's no need for a NIDS/NIPS solution to detect the attacks. In addition, traditional NIDS/NIPS solutions typically use signature-based approaches (which are considered outdated) and attackers easily evade them. Signature-based approaches produce a high rate of false positives.
+#### Scope of retirement
 
-Network-based DLP is decreasingly effective at identifying both inadvertent and deliberate data loss. The reason for this is that most modern protocols and attackers use network-level encryption for inbound and outbound communications. The only viable workaround is `SSL-bridging` which provides an "authorized man-in-the-middle" that terminates and then reestablishes encrypted network connections. The `SSL-bridging` approach is out of favor because of the level of trust required for the partner running the solution and the technologies that are being used.
+Legacy technologies to retire include:
 
-Based on this rationale, we offer an all-up recommendation that you discontinue use of these legacy network security technologies. However, if your organizational experience is that these technologies prevent and detect real attacks, consider porting them to your cloud environment.
+- **Traditional VPNs** that grant broad network access based solely on device certificates or shared keys.
+- **Rigid network firewalls** with static rule sets and limited application-level visibility.
+- **Legacy web proxies** that lack inline threat inspection or session control.
+- **Network ACLs or route-based segmentation** without integration into identity or device posture signals.
+
+#### Replacement principles
+
+For each deprecated control, adopt a modern Zero Trust alternative that:
+
+- Enforces least-privilege access at the application or workload layer using Zero Trust Network Access (ZTNA).
+- Integrates identity and device posture (using Microsoft Entra ID and Microsoft Defender for Endpoint) into every access decision.
+- Provides continuous validation with Continuous Access Evaluation and session re-evaluation.
+- Delivers software-defined visibility and control through Secure Access Service Edge (SASE) and Security Service Edge (SSE) solutions, such as Secure Web Gateway (SWG), Cloud Access Security Broker (CASB), Firewall-as-a-Service (FWaaS), and Network Detection and Response (NDR).
+
+#### Transition strategy
+
+1. **Inventory and prioritize**
+    - Catalog all legacy appliances and VPN profiles.
+    - Classify by criticality (public-facing apps, partner connectivity, remote administration).
+
+2. **Pilot and validate**
+    - Stand up ZTNA pilots using Microsoft Global Secure Access or Azure VPN Gateway with Microsoft Entra ID authentication for low-risk application sets.
+    - Validate connectivity, performance, and policy enforcement.
+
+3. **Phased ramp-down**
+    - Migrate user cohorts and application groups in waves, monitoring success metrics (such as time-to-access, helpdesk tickets, and security alerts).
+    - Simultaneously redirect traffic through your chosen SASE or SSE stack.
+
+4. **Formal decommission**
+    - Retire hardware appliances and revoke legacy VPN configurations.
+    - Update network diagrams and operational runbooks to remove deprecated technology.
+
+#### Risk mitigation and metrics
+
+- **Fallback controls:** Keep legacy paths in “read-only” monitoring mode during early migration waves to catch policy gaps.
+- **Telemetry-driven tuning:** Use Microsoft Sentinel and Microsoft Defender logs to identify failed access attempts or policy misses.
+
+**Success criteria:**
+
+- At least 90% of remote access is via ZTNA or SASE by the target date.
+- No critical security findings in legacy technology during the monitoring window.
+- Measurable reduction in lateral-movement alerts.
+
+#### Governance and audit
+
+- Assign a ZTNA migration owner to oversee decommission timelines.
+- Enforce a “no new legacy deployments” policy in procurement.
+- Conduct a post-mortem audit to ensure all legacy interfaces and firewall rules have been fully removed.
+
+For more information on Microsoft Global Secure Access, see [What is Global Secure Access?](/entra/global-secure-access/overview-what-is-global-secure-access).
 
 ## Products covered in this guide
 

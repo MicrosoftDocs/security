@@ -144,13 +144,13 @@ Microsoft’s implementation of ZTNA is part of the Global Secure Access (previe
 
 ##### Modernize Traditional VPNs with Identity-Aware ZTNA
 
-**Global Secure Access:**  
+**Global Secure Access**  
 Microsoft’s Global Secure Access replaces broad network tunnels with app-specific, identity-driven connections. When a user requests access, GSA uses Microsoft Entra ID for single sign-on and Conditional Access at the edge—no inbound firewall rules are required. Only approved applications are visible in the user portal, and access decisions are based on device posture (from Defender for Endpoint) and real-time risk signals.
 
 - [Learn more: What is Global Secure Access?](/entra/global-secure-access/overview/what-is-global-secure-access)
 - [Private Access overview](/entra/global-secure-access/concept-private-access)
 
-**Azure VPN Gateway:**  
+**Azure VPN Gateway**  
 Modernize point-to-site (P2S) VPNs by integrating authentication with Microsoft Entra ID, enforcing Conditional Access policies (such as MFA, device compliance, and Named Locations) before establishing the tunnel. In Azure Virtual WAN hubs, P2S VPN and ExpressRoute operate at global scale, with centralized security and routing via Azure Firewall Manager. This approach maintains familiar VPN connectivity while ensuring least-privilege, identity-aware access.
 
 - [Set up P2S VPN with Azure AD authentication](/azure/vpn-gateway/openvpn-azure-ad-authentication)

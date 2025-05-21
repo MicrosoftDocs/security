@@ -23,7 +23,6 @@ sections:
      componentType: hero-image
      lightImageSrc: /security/media/security-hub/hero-security-hub.png
      darkImageSrc: /security/media/security-hub/hero-security-hub.png
-
 # Spotlight selections
   - componentType: testimonials-section
     title: 'Discover top picks'
@@ -67,7 +66,6 @@ sections:
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
-
 # Microsoft Security product documentation 
   - componentType: grid
     title: Microsoft Security product documentation
@@ -165,8 +163,6 @@ sections:
 #      ---
 #      <br />
 #      <br />
-
-
 
 # Foundational skills
   - componentType: cards

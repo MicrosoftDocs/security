@@ -552,7 +552,7 @@ You can also use the Microsoft Graph PowerShell cmdlet **Get-MgUser** to conduct
 ```powershell
 Get-MgAuditLogSignIn -Filter "userPrincipalName eq ‘johcast@contoso.com’" | Export-Csv -Path ".\UserSignInActivity.csv" -NoTypeInformation
 ```
-Learn more:[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser).
+
 
 Or, you can use this command:
 ```powershell

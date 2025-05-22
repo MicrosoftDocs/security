@@ -20,8 +20,7 @@ ms.topic: article
 ms.subservice:: m365d
 ms.custom: 
   - cxdef-zt-ransomware
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+  - no-azure-ad-ps-ref
 ms.date: 11/06/2024
 ---
 
@@ -501,27 +500,6 @@ The audit log settings and events differ based on the operating system (OS) Leve
 
 See the following sections for different server versions.
 
-#### Server 2012 R2
-
-By default, security events aren't audited on Server 2012 R2. You need to enable this feature on each ADFS Server in the Farm. In the ADFS Management console and select **Edit Federation Service Properties**.
-
-![Screenshot of edit federated properties.](./media/incident-response-playbook-phishing/ir-federated-services.png)
-
-You also need to enable the **OS Auditing Policy**.
-
-Open the command prompt, and run the following command as an administrator.
-
-```DOS
-auditpol.exe /set /subcategory:"Application Generated" /failure:enable /success:enable
-```
-
-For more information, see [how to configure ADFS servers for troubleshooting](/previous-versions/windows/it-pro/windows-server-2003/cc738766(v=ws.10)?redirectedfrom=MSDN#BKMK_97).
-
-You may want to also download the ADFS PowerShell modules from:
-
-- [GitHub](https://github.com/Microsoft/adfsToolbox/tree/master/eventsModule)
-- [Microsoft script center](https://github.com/Microsoft/adfsToolbox/tree/master/eventsModule)
-
 #### Server 2016 and newer
 
 By default, ADFS in Windows Server 2016 has basic auditing enabled. With basic auditing, administrators can see five or less events for a single request. But you can raise or lower the auditing level by using this command:
@@ -538,21 +516,7 @@ If you have Microsoft Entra Connect Health installed, you should also look into 
 
 For more information, see [Risky IP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip).
 
-#### Server 2012 R2
-
-**Event ID 342** – "The user name or password are incorrect" in the ADFS admin logs.
-
-For the actual audit events, you need to look at the Security events logs and you should look for events with Event ID 411 for *Classic Audit Failure* with the source as *ADFS Auditing*. Also look for Event ID 412 on successful authentication.
-
-**Event ID 411** - *SecurityTokenValidationFailureAudit Token* validation failed. See inner exception for more details.
-
-![Screenshot example of an event 411.](./media/incident-response-playbook-phishing/ir-token-validation.png)
-
-![Screenshot example of an event 412.](./media/incident-response-playbook-phishing/ir-event-412.png)
-
-You may need to correlate the Event with the corresponding Event ID 501.
-
-#### Server 2016 and newer
+#### Windows Server 2016 and newer
 
 For the actual audit events, you need to look at the security events logs and you should look for events with look for Event ID 1202 for successful authentication events and 1203 for failures
 
@@ -584,16 +548,15 @@ In the Microsoft Entra admin center, navigate to the [Sign-ins](https://portal.a
 You can also search using Graph API. For example, filter on **User properties** and get **lastSignInDate** along with it. Search for a specific user to get the last signed in date for this user.
 For example, `https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Dhanyah')&$select=displayName,signInActivity`
 
-Or you can use the PowerShell command `Get-AzureADUserLastSignInActivity` to get the last interactive sign-in activity for the user, targeted by their object ID. This example writes the output to a date and time stamped CSV file in the execution directory.
-
+You can also use the Microsoft Graph PowerShell cmdlet **Get-MgUser** to conduct investigations. For example:
 ```powershell
-Get-AzureADUserLastSignInActivity -TenantId aaaabbbb-0000-cccc-1111-dddd2222eeee -UserObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -CsvOutput
+Get-MgAuditLogSignIn -Filter "userPrincipalName eq ‘johcast@contoso.com’" | Export-Csv -Path ".\UserSignInActivity.csv" -NoTypeInformation
 ```
 
-Or you can use this command from the AzureADIncidentResponse PowerShell module:
 
+Or, you can use this command:
 ```powershell
-Get-AzureADIRSignInDetail -UserId johcast@Contoso.com -TenantId aaaabbbb-0000-cccc-1111-dddd2222eeee -RangeFromDaysAgo 29 -RangeToDaysAgo 3
+Get-MgAuditLogSignIn -Filter "userPrincipalName eq ‘johcast@contoso.com’" | Export-Csv -Path ".\UserSignInActivity.csv" -NoTypeInformation
 ```
 
 ### Investigate source IP address
@@ -606,11 +569,18 @@ For a managed scenario, you should start looking at the sign-in logs and filter 
 
 :::image type="content" source="./media/incident-response-playbook-phishing/ir-managed-users-ip.png" alt-text="Screenshot example of a managed user IP address."::: 
  
-Or you can use this command from the AzureADIncidentResponse PowerShell module:
-
 ```powershell
-Get-AzureADIRSignInDetail -IpAddress 1.2.3.4 -TenantId aaaabbbb-0000-cccc-1111-dddd2222eeee -RangeFromDaysAgo 29 -RangeToDaysAgo 3 -OutGridView
+```powershell
+Connect-MgGraph -Scopes "AuditLog.Read.All", "Directory.Read.All"
+$ipAddress = "1.2.3.4"
+$fromDate = (Get-Date).AddDays(-29).ToString("yyyy-MM-ddTHH:mm:ssZ")
+$toDate = (Get-Date).AddDays(-3).ToString("yyyy-MM-ddTHH:mm:ssZ")
+Get-MgAuditLogSignIn -Filter "ipAddress eq '$ipAddress' and createdDateTime ge $fromDate and createdDateTime le $toDate" -All |
+Select-Object UserPrincipalName, AppDisplayName, IPAddress, ResourceDisplayName, Status, CreatedDateTime |
+Out-GridView -Title "Sign-ins from IP $ipAddress"
 ```
+You can also use the Microsoft Graph PowerShell cmdlet **Get-MgUser** to conduct investigations. Learn more:[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser).
+
 
 When you look into the results list, navigate to the **Device info** tab. Depending on the device used, you get varying output. Here are a few examples:
 

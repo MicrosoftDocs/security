@@ -41,7 +41,7 @@ Human-operated ransomware attacks involve the following stages:
 
 1. **Impact** - The affected user or organization might suffer material or reputational damage.
 
-## How Microsoft unified security operations platform helps 
+## How Defender portal services help with unified security operations
 
 - [Microsoft Defender XDR](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr) - Microsoft Defender XDR includes powerful automated attack disruption capabilities that can protect your environment from sophisticated, high-impact attacks, including human-operated ransomware.
 - [Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel) - SIEM solution that stops a ransomware attack in its tracks by using machine learning to combine disparate data—network, identity, SaaS, and endpoints from both Microsoft and Partner data sources.

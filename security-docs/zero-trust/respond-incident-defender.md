@@ -57,7 +57,7 @@ Make sure to take advantage of Microsoft Sentinel's playbook and automation rule
 
 - **Automation rules** are a way to centrally manage automation in Microsoft Sentinel, by allowing you to define and coordinate a small set of rules that can apply across different scenarios. For more information, see [Automate threat response in Microsoft Sentinel with automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules).
 
-After onboarding your Microsoft Sentinel workspace to the Defender portal, note that there are differences in how automation functions in your workspace. For more information, see [Automation with the unified security operations platform](/azure/sentinel/automation).
+After onboarding your Microsoft Sentinel workspace to the Defender portal, note that there are differences in how automation functions in your workspace. For more information, see [Automation with Microsoft Sentinel in the Defender portal](/azure/sentinel/automation).
 
 ## Post-incident response
 

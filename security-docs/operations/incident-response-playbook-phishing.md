@@ -100,13 +100,11 @@ The system should be able to run PowerShell.
 
 The following PowerShell modules are required for the investigation of the cloud environment:
 
-- Azure AD PowerShell for Graph module. For installation instructions, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true).
-
-  If you need older cmdlets in the MSOnline (v1) Azure AD module, see [Microsoft Entra ID (MSOnline)](/powershell/azure/active-directory/install-msonlinev1).
+- Microsoft Graph PowerShell module. For installation instructions, see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation).
 
 - Exchange Online PowerShell module: For installation instructions, see [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
-- Microsoft Entra Incident Response PowerShell module: For installation instructions, see [Microsoft Entra Incident Response PowerShell Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
+- Microsoft Entra Incident Response PowerShell module: For installation instructions, see [Microsoft Entra Incident Response PowerShell Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module).
 
 ## Workflow
 

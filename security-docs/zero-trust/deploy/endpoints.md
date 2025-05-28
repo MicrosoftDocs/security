@@ -4,7 +4,7 @@ description: Not all endpoints are managed or even owned by the organization, le
 ms.date: 09/30/2020
 ms.service: security
 author: garycentric
-ms.author: v-garymoore
+ms.author: brenduns
 ms.topic: conceptual
 ms.collection:
   - zerotrust-pillar

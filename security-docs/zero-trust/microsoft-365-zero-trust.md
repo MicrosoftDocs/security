@@ -49,7 +49,7 @@ A Zero Trust approach extends throughout the entire digital estate and serves as
 
 This illustration provides a representation of the primary elements that contribute to Zero Trust.
 
-:::image type="content" source="media/zero-trust/zero-trust-architecture.svg" alt-text="The Zero Trust security architecture" lightbox="media/zero-trust/zero-trust-architecture.svg":::
+:::image type="content" source="media/zero-trust/zero-trust-architecture.svg" alt-text="Diagram that shows the Zero Trust security architecture." lightbox="media/zero-trust/zero-trust-architecture.svg":::
 
 In the illustration:
 
@@ -102,7 +102,7 @@ In phase 1, start by implementing the starting-point tier. These policies don't 
 
 --->
 
-:::image type="content" source="media/zero-trust/identity-access-starting-point-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Starting-point tier" lightbox="media/zero-trust/identity-access-starting-point-tier.svg":::
+:::image type="content" source="media/zero-trust/identity-access-starting-point-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Starting-point tier." lightbox="media/zero-trust/identity-access-starting-point-tier.svg":::
 
 Go to [**_Zero Trust identity and device access protection_**](zero-trust-identity-device-access-policies-overview.md) for detailed prescriptive guidance. This series of articles describes a set of identity and device access prerequisite configurations and a set of Microsoft Entra Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Microsoft Entra application proxy.
 
@@ -131,7 +131,7 @@ For more information, see [Zero Trust for Microsoft Intune](/mem/intune/fundamen
 With devices enrolled into management, you can now implement the full set of recommended Zero Trust identity and device access policies, requiring compliant devices.
 
  <!---
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="The Zero Trust identity and access policies with device management" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="Diagram that shows the Zero Trust identity and access policies with device management." lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 --->
 
 Return to [**_Common identity and device access policies_**](zero-trust-identity-device-access-policies-common.md) and add the policies in the Enterprise tier.
@@ -148,7 +148,7 @@ Microsoft Defender XDR is an extended detection and response (XDR) solution that
 
 Prevent or reduce business damage from a breach by piloting and deploying Microsoft Defender XDR.
 
-:::image type="content" source="media/zero-trust/m365-zero-trust-architecture-defender.svg" alt-text="The process of adding Microsoft Defender XDR to the Zero Trust architecture" lightbox="media/zero-trust/m365-zero-trust-architecture-defender.svg":::
+:::image type="content" source="media/zero-trust/m365-zero-trust-architecture-defender.svg" alt-text="Diagram that shows the process of adding Microsoft Defender XDR to the Zero Trust architecture." lightbox="media/zero-trust/m365-zero-trust-architecture-defender.svg":::
 
 Go to [**_Pilot and deploy Microsoft Defender XDR_**](/defender-xdr/pilot-deploy-overview) for a methodical guide to piloting and deploying Microsoft Defender XDR components.
 
@@ -168,12 +168,12 @@ Microsoft Purview Information Protection capabilities are included with Microsof
 
 <!--
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="The Information protection capabilities protecting data through policy enforcement" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Diagram that shows the Information protection capabilities protecting data through policy enforcement." lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 -->
 
 Microsoft Purview Information Protection provides a framework, process, and capabilities you can use to accomplish your specific business objectives.
 
-![Microsoft Purview Information Protection](media/zero-trust/mip-solution-overview.png)
+:::image type="content" source="media/zero-trust/m365-protection-solution-overview.png" alt-text="Diagram that shows the overview of Microsoft Purview Information Protection.":::
 
 For more information on how to plan and deploy information protection, see [**_Deploy a Microsoft Purview Information Protection solution_**](/purview/information-protection-solution). 
 
@@ -187,7 +187,7 @@ Start by using Purview Data Security Posture Management (DSPM) for AI. This tool
 
 The following diagram shows one of the aggregated views into the impact of AI use on your data—Sensitive interactions per generative AI app.
 
-:::image type="content" source="media/zero-trust/ai-hub-sensitive-interactions-report.png" alt-text="Sensitive interactions per generative AI app" lightbox="media/zero-trust/ai-hub-sensitive-interactions-report.png":::
+:::image type="content" source="media/zero-trust/ai-hub-sensitive-interactions-report.png" alt-text="Diagram that shows the sensitive interactions per generative AI app." lightbox="media/zero-trust/ai-hub-sensitive-interactions-report.png":::
 
 Use DSPM for AI to:
 - Gain visibility into AI usage, including sensitive data.
@@ -198,7 +198,7 @@ Defender for Cloud Apps is another powerful tool to discover and govern SaaS Gen
 
 In addition to these tools, Microsoft 365 provides a comprehensive set of capabilities for securing and governing AI. See [**Discover, protect, and govern AI apps and data**](/security/security-for-ai) to learn how to get started with these capabilities.
 
-:::image type="content" source="media/zero-trust/security-for-ai-m365-composite.svg" alt-text="Microsoft 365 capabilities for protecting and governing AI" lightbox="media/zero-trust/security-for-ai-m365-composite.svg":::
+:::image type="content" source="media/zero-trust/security-for-ai-m365-composite.svg" alt-text="Diagram that shows the Microsoft 365 capabilities for protecting and governing AI." lightbox="media/zero-trust/security-for-ai-m365-composite.svg":::
 
 The following table lists the Microsoft 365 capabilities with links to more information in the [Security for AI library](/security/security-for-ai).
 

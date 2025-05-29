@@ -31,7 +31,7 @@ Use this article together with this poster.
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of the Microsoft 365 Zero Trust deployment plan.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated April 2025 | **Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md)</li><li>[Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md)</li><li>[Pilot and deploy Microsoft Defender XDR](../security/defender/eval-overview.md)</li><li>[Deploy an information protection solution with Microsoft Purview](../compliance/information-protection-solution.md)</li><li>[Discover, protect, and govern AI apps and data](/security/security-for-ai/) </li><li>[Manage data privacy regulations with Microsoft 365](../solutions/data-privacy-protection.md)  </li></ul>
+|[![Illustration of the Microsoft 365 Zero Trust deployment plan.](./media/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated April 2025 | **Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](zero-trust-identity-device-access-policies-overview.md)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li><li>[Pilot and deploy Microsoft Defender XDR](/defender-xdr/pilot-deploy-overview)</li><li>[Deploy an information protection solution with Microsoft Purview](/purview/information-protection-solution)</li><li>[Discover, protect, and govern AI apps and data](/security/security-for-ai/) </li><li>[Manage data privacy regulations with Microsoft 365](/microsoft-365/solutions/data-privacy-protection) </li></ul>
 
 ## Zero Trust principles and architecture
 
@@ -49,7 +49,7 @@ A Zero Trust approach extends throughout the entire digital estate and serves as
 
 This illustration provides a representation of the primary elements that contribute to Zero Trust.
 
-:::image type="content" source="../media/zero-trust/zero-trust-architecture.svg" alt-text="The Zero Trust security architecture" lightbox="../media/zero-trust/zero-trust-architecture.png":::
+:::image type="content" source="media/zero-trust/zero-trust-architecture.svg" alt-text="The Zero Trust security architecture" lightbox="media/zero-trust/zero-trust-architecture.svg":::
 
 In the illustration:
 
@@ -67,7 +67,7 @@ Microsoft 365 is built intentionally with many security and information protecti
 
 This illustration represents the work of deploying Zero Trust capabilities. This work is aligned to Zero Trust business scenarios in the [Zero Trust adoption framework](/security/zero-trust/adopt/zero-trust-adoption-overview).
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg" alt-text="Diagram that shows the Microsoft 365 Zero Trust deployment plan across five swim lanes." lightbox="../media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg":::
+:::image type="content" source="media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg" alt-text="Diagram that shows the Microsoft 365 Zero Trust deployment plan across five swim lanes." lightbox="media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg":::
 
 In this illustration the deployment work is categorized into five swim lanes:
 
@@ -102,13 +102,13 @@ In phase 1, start by implementing the starting-point tier. These policies don't 
 
 --->
 
-:::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Starting-point tier" lightbox="../media/zero-trust/identity-access-starting-point-tier.svg":::
+:::image type="content" source="media/zero-trust/identity-access-starting-point-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Starting-point tier" lightbox="media/zero-trust/identity-access-starting-point-tier.svg":::
 
-Go to [**_Zero Trust identity and device access protection_**](office-365-security/zero-trust-identity-device-access-policies-overview.md) for detailed prescriptive guidance. This series of articles describes a set of identity and device access prerequisite configurations and a set of Microsoft Entra Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Microsoft Entra application proxy.
+Go to [**_Zero Trust identity and device access protection_**](zero-trust-identity-device-access-policies-overview.md) for detailed prescriptive guidance. This series of articles describes a set of identity and device access prerequisite configurations and a set of Microsoft Entra Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Microsoft Entra application proxy.
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
-|Recommended identity and device access policies for three levels of protection: <ul><li>Starting point</li><li>Enterprise (recommended)</li><li>Specialized</li></ul> <br> Additional recommendations for: <ul><li>External users (guests)</li><li>Microsoft Teams</li><li>SharePoint</li></ul>|Microsoft E3 or E5 <br><br> Microsoft Entra ID in either of these modes: <ul><li>Cloud-only</li><li>Hybrid with password hash sync (PHS) authentication</li><li>Hybrid with pass-through authentication (PTA)</li><li>Federated</li></ul>|Device enrollment for policies that require managed devices. See [Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md) to enroll devices.|
+|Recommended identity and device access policies for three levels of protection: <ul><li>Starting point</li><li>Enterprise (recommended)</li><li>Specialized</li></ul> <br> Additional recommendations for: <ul><li>External users (guests)</li><li>Microsoft Teams</li><li>SharePoint</li></ul>|Microsoft E3 or E5 <br><br> Microsoft Entra ID in either of these modes: <ul><li>Cloud-only</li><li>Hybrid with password hash sync (PHS) authentication</li><li>Hybrid with pass-through authentication (PTA)</li><li>Federated</li></ul>|Device enrollment for policies that require managed devices. See [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) to enroll devices.|
 
 #### Phase 2 — Enroll devices into management with Intune
 
@@ -118,7 +118,7 @@ Next, enroll your devices into management and begin protecting them with more so
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-endpoints.png" alt-text="Diagram that shows the Manage endpoints with Intune element." lightbox="../media/zero-trust/m365-zero-trust-architecture-endpoints.png":::
 
 --->
-See [**_Manage devices with Intune_**](../solutions/manage-devices-with-intune-overview.md) for detailed prescriptive guidance on enrolling devices into management.
+See [**_Manage devices with Intune_**](/microsoft-365/solutions/manage-devices-with-intune-overview) for detailed prescriptive guidance on enrolling devices into management.
 
 |Includes |Prerequisites |Doesn't include |
 |---------|---------|---------|
@@ -134,9 +134,9 @@ With devices enrolled into management, you can now implement the full set of rec
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="The Zero Trust identity and access policies with device management" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 --->
 
-Return to [**_Common identity and device access policies_**](office-365-security/zero-trust-identity-device-access-policies-common.md) and add the policies in the Enterprise tier.
+Return to [**_Common identity and device access policies_**](zero-trust-identity-device-access-policies-common.md) and add the policies in the Enterprise tier.
 
-:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Enterprise (recommended) tier." lightbox="../media/zero-trust/identity-access-enterprise-tier.svg":::
+:::image type="content" source="media/zero-trust/identity-access-enterprise-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Enterprise (recommended) tier." lightbox="media/zero-trust/identity-access-enterprise-tier.svg":::
 
 Read more about how to secure remote and hybrid work in the **Zero Trust adoption framework** — [Secure remote and hybrid work](/security/zero-trust/adopt/secure-remote-hybrid-work).
 
@@ -148,13 +148,13 @@ Microsoft Defender XDR is an extended detection and response (XDR) solution that
 
 Prevent or reduce business damage from a breach by piloting and deploying Microsoft Defender XDR.
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.svg" alt-text="The process of adding Microsoft Defender XDR to the Zero Trust architecture" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.svg":::
+:::image type="content" source="media/zero-trust/m365-zero-trust-architecture-defender.svg" alt-text="The process of adding Microsoft Defender XDR to the Zero Trust architecture" lightbox="media/zero-trust/m365-zero-trust-architecture-defender.svg":::
 
-Go to [**_Pilot and deploy Microsoft Defender XDR_**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft Defender XDR components.
+Go to [**_Pilot and deploy Microsoft Defender XDR_**](/defender-xdr/pilot-deploy-overview) for a methodical guide to piloting and deploying Microsoft Defender XDR components.
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
-|Set up the evaluation and pilot environment for all components: <ul><li>[Defender for Identity](/defender-for-identity/zero-trust)</li><li>[Defender for Office 365](./office-365-security/zero-trust-with-microsoft-365-defender-office-365.md)</li><li>[Defender for Endpoint](./defender-endpoint/zero-trust-with-microsoft-defender-endpoint.md)</li><li>[Defender for Cloud Apps](/defender-cloud-apps/zero-trust)</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats|See the guidance to read about the architecture requirements for each component of Microsoft Defender XDR.| Microsoft Entra ID Protection isn't included in this solution guide. It's included in [Swim lane 1 —  Secure remote and hybrid work](#swim-lane-1).|
+|Set up the evaluation and pilot environment for all components: <ul><li>[Defender for Identity](/defender-for-identity/zero-trust)</li><li>[Defender for Office 365](/defender-office-365/zero-trust-with-microsoft-365-defender-office-365)</li><li>[Defender for Endpoint](/defender-endpoint/zero-trust-with-microsoft-defender-endpoint)</li><li>[Defender for Cloud Apps](/defender-cloud-apps/zero-trust)</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats|See the guidance to read about the architecture requirements for each component of Microsoft Defender XDR.| Microsoft Entra ID Protection isn't included in this solution guide. It's included in [Swim lane 1 —  Secure remote and hybrid work](#swim-lane-1).|
 
 Read more about how to prevent or reduce business damage from a breach in the **Zero Trust adoption framework** — [Prevent or reduce business damage from a breach](/security/zero-trust/adopt/prevent-reduce-business-damage-breach).
 
@@ -173,9 +173,9 @@ Microsoft Purview Information Protection capabilities are included with Microsof
 
 Microsoft Purview Information Protection provides a framework, process, and capabilities you can use to accomplish your specific business objectives.
 
-![Microsoft Purview Information Protection](../media/zero-trust/mip-solution-overview.png)
+![Microsoft Purview Information Protection](media/zero-trust/mip-solution-overview.png)
 
-For more information on how to plan and deploy information protection, see [**_Deploy a Microsoft Purview Information Protection solution_**](../compliance/information-protection-solution.md). 
+For more information on how to plan and deploy information protection, see [**_Deploy a Microsoft Purview Information Protection solution_**](/purview/information-protection-solution). 
 
 Read more about how to identify and protect sensitive business data in the **Zero Trust adoption framework** — [Identify and protect sensitive business data](/security/zero-trust/adopt/identify-protect-sensitive-business-data).
 
@@ -187,7 +187,7 @@ Start by using Purview Data Security Posture Management (DSPM) for AI. This tool
 
 The following diagram shows one of the aggregated views into the impact of AI use on your data—Sensitive interactions per generative AI app.
 
-:::image type="content" source="../media/zero-trust/ai-hub-sensitive-interactions-report.png" alt-text="Sensitive interactions per generative AI app" lightbox="../media/zero-trust/ai-hub-sensitive-interactions-report.png":::
+:::image type="content" source="media/zero-trust/ai-hub-sensitive-interactions-report.png" alt-text="Sensitive interactions per generative AI app" lightbox="media/zero-trust/ai-hub-sensitive-interactions-report.png":::
 
 Use DSPM for AI to:
 - Gain visibility into AI usage, including sensitive data.
@@ -198,7 +198,7 @@ Defender for Cloud Apps is another powerful tool to discover and govern SaaS Gen
 
 In addition to these tools, Microsoft 365 provides a comprehensive set of capabilities for securing and governing AI. See [**Discover, protect, and govern AI apps and data**](/security/security-for-ai) to learn how to get started with these capabilities.
 
-:::image type="content" source="../media/zero-trust/security-for-ai-m365-composite.svg" alt-text="Microsoft 365 capabilities for protecting and governing AI" lightbox="../media/zero-trust/security-for-ai-m365-composite.svg":::
+:::image type="content" source="media/zero-trust/security-for-ai-m365-composite.svg" alt-text="Microsoft 365 capabilities for protecting and governing AI" lightbox="media/zero-trust/security-for-ai-m365-composite.svg":::
 
 The following table lists the Microsoft 365 capabilities with links to more information in the [Security for AI library](/security/security-for-ai).
 
@@ -235,7 +235,7 @@ Use the following resources to meet regulatory and compliance requirements.
 |---------|---------|
 | Zero Trust adoption framework — [Meet regulatory and compliance requirements](/security/zero-trust/adopt/meet-regulatory-compliance-requirements) |Describes a methodical approach your organization can follow, including defining strategy, planning, adopting, and governing. |
 |[Govern AI apps and data for regulatory compliance](/security/security-for-ai/govern) |Addresses regulatory compliance for the emerging AI-related regulations, including specific capabilities that help.|
-| [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../solutions/data-privacy-protection.md)| Assess risks and take appropriate action to protect personal data in your organization's environment using Microsoft Priva and Microsoft Purview.|
+| [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](/microsoft-365/solutions/data-privacy-protection)| Assess risks and take appropriate action to protect personal data in your organization's environment using Microsoft Priva and Microsoft Purview.|
 
 ## Next steps
 

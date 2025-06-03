@@ -173,7 +173,7 @@ sections:
     - componentType: card
       title: Describe the basic concepts of cybersecurity 
       summary: Find out how you can protect yourself and your organization against cyberthreats and cyberattacks, and explore cybersecurity concepts in this Learning Path.
-      imageUrl: /security/media/security-hub/describe-basic-concepts-cybersecurity.png
+      imageUrl: /security/media/security-hub/describe-basic-concepts-cybersecurity-2.png
       links:
         - componentType: link
           url: /training/paths/describe-basic-concepts-of-cybersecurity/
@@ -181,7 +181,7 @@ sections:
     - componentType: card
       title: "Take the Microsoft Security Virtual Training Day: Security, Compliance, and Identity Fundamentals"
       summary: Join this training to discover basic concepts, like identity and access management and compliance management. Gain foundational knowledge of privacy and of data governance, protection, and management solutions.
-      imageUrl: /security/media/security-hub/microsoft-security-virtual-training-day.png 
+      imageUrl: /security/media/security-hub/take-microsoft-security-virtual-training-day.png 
       links: # optional a list of links rendered at the bottom of the card
         - componentType: link
           url: https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&startTime=08:00&endTime=17:00
@@ -189,7 +189,7 @@ sections:
     - componentType: card
       title: "Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification​"
       summary: If you're familiar with Azure and Microsoft 365, demonstrate your foundational knowledge of Microsoft Security, compliance, and identity concepts across these cloud-based solutions.
-      imageUrl: /security/media/security-hub/microsoft-certified-security-compliance-identity-fundamentals.png
+      imageUrl: /security/media/security-hub/earn-microsoft-certified.png
       links:
         - componentType: link
           url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification

@@ -19,7 +19,7 @@ The modern enterprise has an incredible diversity of endpoints that access data.
 
 Zero Trust adheres to the principle, "Never trust, always verify." In terms of endpoints, this means always verify *all* endpoints. That includes not only contractor, partner, and guest devices, but also [apps](https://aka.ms/ZTApplications) and devices used by employees to access work data, regardless of device ownership.
 
-In a Zero Trust approach, the same security policies are applied regardless of whether the device is corporate-owned or personally-owned through bring your own device (BYOD); whether the device is fully managed by IT, or only the apps and data are secured. The policies apply to all endpoints, whether PC, Mac, smartphone, tablet, wearable, or IoT device wherever they are connected, be it the secure corporate [network](https://aka.ms/ZTNetwork), home broadband, or public internet.
+In a Zero Trust approach, the same security policies are applied regardless of whether the device is corporate-owned or personally owned through bring your own device (BYOD); whether the device is fully managed by IT, or only the apps and data are secured. The policies apply to all endpoints, whether PC, Mac, smartphone, tablet, wearable, or IoT device wherever they are connected, be it the secure corporate [network](https://aka.ms/ZTNetwork), home broadband, or public internet.
 Most importantly, the health and trustworthiness of apps that run on those endpoints impacts your security posture. You need to prevent corporate data from leaking to untrusted or unknown apps or services, either accidentally or through malicious intent.
 
 **There are a few key rules for securing devices and endpoints in a Zero Trust model:**
@@ -180,7 +180,7 @@ With the [Intune Data warehouse](/intune/intune-service/developer/reports-nav-cr
 
 OT networks often differ from traditional IT infrastructure and need a specialized approach to Zero Trust. OT systems use unique technology with proprietary protocols and can include aging platforms with limited connectivity and power, specific safety requirements, and unique exposures to physical attacks.
 
-Defender for IoT supports zero trust principles by addressing OT-specific challenges, like:
+Defender for IoT supports Zero Trust principles by addressing OT-specific challenges, like:
 
 - Helping you control remote connections into your OT systems.
 - Reviewing and helping you reduce interconnections between dependent systems.

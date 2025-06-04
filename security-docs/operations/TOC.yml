@@ -34,11 +34,11 @@
           - name: Connect Microsoft Sentinel to the Defender portal (optional)
             href: /defender-xdr/microsoft-sentinel-onboard?toc=/security/zero-trust/toc.json&bc=/security/breadcrumb/toc.json
           - name: Respond to an incident (Defender portal)
-            href: respond-incident-defender.md
+            href: /security/zero-trust/respond-incident-defender.md
           - name: Respond to an incident (Azure portal)
-            href: respond-incident-azure.md
+            href: /security/zero-trust/respond-incident-azure.md
           - name: Recommended training for SIEM and XDR (Azure portal)
-            href: siem-xdr-training.md
+            href: /security/zero-trust/siem-xdr-training.md
 
     - name: Incident response
       items:

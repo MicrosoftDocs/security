@@ -25,7 +25,7 @@ This guidance is for software providers and technology partners who want to enha
 This integration guide includes instructions for integrating with the following products:
 
 - [Microsoft Defender for Endpoint](#microsoft-defender-for-endpoint), which helps enterprise networks prevent, detect, investigate, and respond to advanced threats.
-- [Microsoft Intune](#microsoft-Intune), which provides protection and security for the devices that employees use and the applications that run on those devices.
+- [Microsoft Intune](#microsoft-intune), which provides protection and security for the devices that employees use and the applications that run on those devices.
 - [Microsoft Defender for IoT](#microsoft-defender-for-iot), which provides security across your operational technology (OT) networks.
 
 ### Microsoft Defender for Endpoint
@@ -100,7 +100,7 @@ After you identify a specific policy, you can query to get the state of a device
 
 Compliance information is foundational to Microsoft Entra ID’s Conditional Access feature. Intune determines the device compliance based on compliance policies and writes the compliance state to Microsoft Entra ID. Then, customers use Conditional Access policies to determine whether any actions are taken for noncompliance, including blocking the users from accessing corporate data from a noncompliant device.
 
-For more information about integrating device compliance with conditional access, see [Device compliance policies in Microsoft Intune](/intune/intune/service/protect/device-compliance-get-started#integrate-with-conditional-access).
+For more information about integrating device compliance with conditional access, see [Device compliance policies in Microsoft Intune](/intune/service/protect/device-compliance-get-started#integrate-with-conditional-access).
 
 #### Follow the least privilege access principle
 

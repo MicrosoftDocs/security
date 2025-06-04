@@ -1,8 +1,8 @@
 ---
 title: "What is ransomware?"
-ms.author: sarahkatz
-author: sarit1046
-manager: dansimp
+ms.author: kenwith
+author: kenwith
+manager: dougeby
 audience: Admin
 ms.service: microsoft-365-security
 ms.collection:

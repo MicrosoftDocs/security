@@ -5,7 +5,7 @@ f1.keywords:
 - zero trust strategy
 ms.author: bcarter
 author: brendacarter
-manager: dansimp
+manager: rkarlin
 audience: Admin
 description: Learn how to apply Zero Trust security principles with Microsoft 365 to defend against threats and protect sensitive data.
 ms.topic: solution-overview

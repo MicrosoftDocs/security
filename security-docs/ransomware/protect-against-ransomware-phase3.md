@@ -1,11 +1,11 @@
 ---
 title: "Make it hard for ransomware attacks to happen to your organization"
-ms.author: dansimp
-author: dansimp
+ms.author: kenwith
+author: kenwith
 ms.date: 10/16/2024
 f1.keywords:
 - NOCSH
-manager: dansimp
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-security

@@ -1,7 +1,7 @@
 ---
 title: Endpoint integration overview
-description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Endpoint and Microsoft Endpoint Manager to help customers adopt a Zero Trust model and keep their organizations secure.
-ms.date: 02/21/2025
+description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Endpoint and Microsoft Intune to help customers adopt a Zero Trust model and keep their organizations secure.
+ms.date: 06/04/2025
 ms.service: security
 author: janicericketts
 ms.author: jricketts
@@ -25,7 +25,7 @@ This guidance is for software providers and technology partners who want to enha
 This integration guide includes instructions for integrating with the following products:
 
 - [Microsoft Defender for Endpoint](#microsoft-defender-for-endpoint), which helps enterprise networks prevent, detect, investigate, and respond to advanced threats.
-- [Microsoft Endpoint Manager](#microsoft-endpoint-manager), which provides protection and security for the devices that employees use and the applications that run on those devices.
+- [Microsoft Intune](#microsoft-Intune), which provides protection and security for the devices that employees use and the applications that run on those devices.
 - [Microsoft Defender for IoT](#microsoft-defender-for-iot), which provides security across your operational technology (OT) networks.
 
 ### Microsoft Defender for Endpoint
@@ -41,21 +41,21 @@ The [Microsoft Defender for Endpoint partner opportunities and scenarios](/micro
 
 To become a Defender for Endpoint solution partner, you need to follow and complete the  steps found at [Become a Microsoft Defender for Endpoint partner](/microsoft-365/security/defender-endpoint/get-started-partner-integration).
 
-### Microsoft Endpoint Manager
+### Microsoft Intune
 
-Microsoft Endpoint Manager, which includes Microsoft Intune and Microsoft Configuration Manager, provides protection and security for the devices that employees use and the applications that run on those devices. Endpoint Manager includes device compliance policies that ensure employees are accessing applications and data from devices that meet company security policies. It also includes application protection policies which provide application based security controls for both fully managed and employee-owned devices.
+Microsoft Intune, which includes the Microsoft Intune service and Microsoft Configuration Manager, provides protection and security for the devices that employees use and the applications that run on those devices. Intune includes device compliance policies that ensure employees are accessing applications and data from devices that meet company security policies. It also includes application protection policies which provide application-based security controls for both fully managed and employee-owned devices.
 
-To integrate with Microsoft Endpoint Manager, ISVs use Microsoft Graph and the Microsoft Endpoint Manager application management SDK. Endpoint Manager’s integration with the Microsoft Graph API allows any of the same functionality offered by the administrator console for Endpoint Manager (Intune). Information such as device compliance state, compliance policy configuration, application protection policy settings and more can be found through the Microsoft Graph API. Additionally, you can automate tasks in Endpoint Manager that further enhance your customer’s Zero Trust story. General guidance for [Working with Intune in Microsoft Graph](/graph/api/resources/intune-graph-overview) is available in the Microsoft Graph documentation repo. Here, we focus on scenarios related to Zero Trust.
+To integrate with Microsoft Intune, ISVs use Microsoft Graph and the Microsoft Intune application management SDK. Intune’s integration with the Microsoft Graph API allows any of the same functionality offered by the administrator console for Intune. Information such as device compliance state, compliance policy configuration, application protection policy settings and more can be found through the Microsoft Graph API. Additionally, you can automate tasks in Intune that further enhance your customer’s Zero Trust story. General guidance for [Working with Intune in Microsoft Graph](/graph/api/resources/intune-graph-overview) is available in the Microsoft Graph documentation repo. Here, we focus on scenarios related to Zero Trust.
 
 :::image type="content" source="../media/integrate/endpoints/microsoft-365-platform.png" alt-text="Microsoft Graph, Microsoft Graph data connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.":::
 
 #### Verify devices follow security and compliance standards
 
-ISV solutions can use Endpoint Manager’s device compliance and policy information to support the Zero Trust principle of Verify Explicitly. The compliance data about users and devices from Endpoint Manager allows the ISV's application to determine a device's risk posture as it relates to use of the application. By doing these verifications, the ISV ensures that devices using the service are compliant with the customers’ security and compliance standards and policies.
+ISV solutions can use Intune’s device compliance and policy information to support the Zero Trust principle of Verify Explicitly. The compliance data about users and devices from Intune allows the ISV's application to determine a device's risk posture as it relates to use of the application. By doing these verifications, the ISV ensures that devices using the service are compliant with the customers’ security and compliance standards and policies.
 
-The Microsoft Graph API allows ISVs to integrate with Endpoint Manager (Intune) through a set of RESTful APIs. These APIs are the same ones used by the Endpoint Manager console to view, create, manage, deploy, and report on all actions, data, and activity in Intune. Items of specific interest for ISVs supporting Zero Trust initiatives are the ability to view device compliance state and configure compliance rules and policies. See Microsoft's recommendations for using Microsoft Entra ID and Endpoint Manager for Zero Trust configuration and compliance: [Secure endpoints with Zero Trust](/security/zero-trust/endpoints). Endpoint Manager’s compliance rules are foundational for device based Conditional Access support through Microsoft Entra ID. ISVs should also view the Conditional Access feature and APIs to understand how to complete scenarios for user and device compliance and Conditional Access.
+The Microsoft Graph API allows ISVs to integrate with Intune through a set of RESTful APIs. These APIs are the same ones used by the Microsoft Intune admin center to view, create, manage, deploy, and report on all actions, data, and activity in Intune. Items of specific interest for ISVs supporting Zero Trust initiatives are the ability to view device compliance state and configure compliance rules and policies. See Microsoft's recommendations for using Microsoft Entra ID and Intune for Zero Trust configuration and compliance: [Secure endpoints with Zero Trust](/security/zero-trust/endpoints). Intune’s compliance rules are foundational for device based Conditional Access support through Microsoft Entra ID. ISVs should also view the Conditional Access feature and APIs to understand how to complete scenarios for user and device compliance and Conditional Access.
 
-Ideally as an ISV, your application connects to the Microsoft Graph APIs as a cloud application and establishes a service-to-service connection. Multitenant applications provide ISVs with centralized application definition and control and enable customers to individually consent to the ISV application operating against their tenant data. Review the information on [Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps) for registering and creating single or multitenant Microsoft Entra Applications. Your application’s authentication can use Microsoft Entra ID for single sign-on.
+Ideally as an ISV, your application connects to the Microsoft Graph APIs as a cloud application and establishes a service-to-service connection. Multitenant applications provide ISVs with centralized application definition and control and enable customers to individually consent to the ISV application operating against their tenant data. Review the information on [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps) for registering and creating single or multitenant Microsoft Entra Applications. Your application’s authentication can use Microsoft Entra ID for single sign-on.
 
 After creating your application, you need to access the device and compliance information using the Microsoft Graph API. Documentation for using Microsoft Graph can be found at the [Microsoft Graph dev center](https://developer.microsoft.com/graph/). The Microsoft Graph API is a RESTful set of APIs that follow ODATA standards for data access and querying.
 
@@ -94,19 +94,19 @@ Content-Length: 5095
 }
 ```
 
-You can also retrieve a list of compliance policies, their deployments, and status of users and devices for those compliance policies. Information for calling Graph to get compliance policy information starts here: [Get deviceCompliancePolicy - Microsoft Graph v1.0](/graph/api/intune-deviceconfig-devicecompliancepolicy-get). A good background on device compliance policies and how they're used is here: [Device compliance policies in Microsoft Intune - Azure](/mem/intune/protect/device-compliance-get-started).
+You can also retrieve a list of compliance policies, their deployments, and status of users and devices for those compliance policies. Information for calling Graph to get compliance policy information starts here: [Get deviceCompliancePolicy - Microsoft Graph v1.0](/graph/api/intune-deviceconfig-devicecompliancepolicy-get). A good background on device compliance policies and how they're used is here: [Device compliance policies in Microsoft Intune - Azure](/intune/intune-service/protect/device-compliance-get-started).
 
 After you identify a specific policy, you can query to get the state of a device for a particular compliance policy setting. For example, assuming a compliance policy was deployed to require a passcode on lock, query [Get deviceComplianceSettingState](/graph/api/intune-deviceconfig-devicecompliancesettingstate-get) for the specific state of that setting. This query indicates whether the device is compliant or noncompliant with the passcode lock setting. This same approach can be used for other device compliance policies that customers deployed.
 
 Compliance information is foundational to Microsoft Entra ID’s Conditional Access feature. Intune determines the device compliance based on compliance policies and writes the compliance state to Microsoft Entra ID. Then, customers use Conditional Access policies to determine whether any actions are taken for noncompliance, including blocking the users from accessing corporate data from a noncompliant device.
 
-For more information about integrating device compliance with conditional access, see [Device compliance policies in Microsoft Intune](/mem/intune/protect/device-compliance-get-started#integrate-with-conditional-access).
+For more information about integrating device compliance with conditional access, see [Device compliance policies in Microsoft Intune](/intune/intune/service/protect/device-compliance-get-started#integrate-with-conditional-access).
 
 #### Follow the least privilege access principle
 
-An ISV integrating with Endpoint Manager wants to ensure their application supports the Zero Trust principle to Apply Least Privilege Access. Endpoint Manager integration supports two important methods of access control – delegated permissions or application permissions. The ISV's application must use one of the permission models. Delegated permissions give you fine grained control over the specific objects in Endpoint Manager the application has access to but requires that an administrator sign-in with their credentials. By comparison, application permissions allow the ISV's app to access or control classes of data and objects, rather than specific individual objects, but doesn't require a user to sign in.
+An ISV integrating with Intune wants to ensure their application supports the Zero Trust principle to Apply Least Privilege Access. Intune integration supports two important methods of access control – delegated permissions or application permissions. The ISV's application must use one of the permission models. Delegated permissions give you fine grained control over the specific objects in Intune the application has access to but requires that an administrator sign-in with their credentials. By comparison, application permissions allow the ISV's app to access or control classes of data and objects, rather than specific individual objects, but doesn't require a user to sign in.
 
-In addition to creating your application as a single-tenant or multitenant (preferred) application, you must declare the delegated or application permissions required by your application to access Endpoint Manager information and perform actions against Endpoint Manager. View information about getting started with permissions here: [Quickstart: Configure an app to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
+In addition to creating your application as a single-tenant or multitenant (preferred) application, you must declare the delegated or application permissions required by your application to access Intune information and perform actions against Intune. View information about getting started with permissions here: [Configure app permissions for a web API](/entra/identity-platform/quickstart-configure-app-access-web-apis).
 
 ### Microsoft Defender for IoT
 
@@ -130,5 +130,5 @@ For more information, see:
 ## Next steps
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
-- [Microsoft Endpoint Manager](/mem/)
+- [Microsoft Intune](/intune/)
 - [Microsoft Defender for IoT](/azure/defender-for-iot/organizations)

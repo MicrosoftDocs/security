@@ -5,9 +5,10 @@ description: "Learn how to protect sensitive information wherever it goes with a
 ms.service: security
 
 ms.topic: tutorial
-ms.date: 02/27/2025
-ms.author: joflore
-author: MicrosoftGuyJFlo
+ms.date: 12/01/2019
+
+ms.author: kenwith
+author: kenwith
 
 ms.reviewer: mas
 ---

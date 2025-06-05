@@ -2,7 +2,7 @@
 title: Administration in Azure | Microsoft Docs
 description: Secure administrator accounts in Azure.
 author: MarkSimos
-ms.author: joflore
+ms.author: kenwith
 ms.date: 07/09/2019
 ms.topic: article
 ms.service: security

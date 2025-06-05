@@ -5,14 +5,14 @@ description: "This module covers overviews on critical security hygiene, Microso
 ms.service: security
 
 ms.topic: tutorial
-ms.date: 12/01/2019
+ms.date: 06/05/2025
 
 ms.author: kenwith
 author: kenwith
 
 ms.reviewer: mas
 ---
-# CISO Workshop Module 1: Microsoft Cybersecurity Briefing
+# CISO Workshop Module 1: Microsoft Cybersecurity Briefing (Published December 2019)
 
 This module covers overviews on critical security hygiene, Microsoft cybersecurity reference architecture, cybersecurity resilience, Internet of Things (IoT), and operational tech.
 

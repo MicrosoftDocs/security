@@ -5,14 +5,14 @@ description: "Learn how to protect sensitive information wherever it goes with a
 ms.service: security
 
 ms.topic: tutorial
-ms.date: 12/01/2019
+ms.date: 06/05/2025
 
 ms.author: kenwith
 author: kenwith
 
 ms.reviewer: mas
 ---
-# CISO Workshop Module 5: Information Protection
+# CISO Workshop Module 5: Information Protection (Published December 2019)
 
 Learn how to protect sensitive information wherever it goes with automatic classification and persistent encryption across devices. Includes information on continuous monitoring of data across mobile devices, cloud services, and other corporate assets.
 

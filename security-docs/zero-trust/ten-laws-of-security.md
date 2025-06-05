@@ -7,8 +7,8 @@ ms.subservice: security-fundamentals
 ms.topic: conceptual
 ms.date: 05/23/2024
 
-ms.author: joflore
-author: MicrosoftGuyJFlo
+ms.author: kenwith
+author: kenwith
 
 ms.reviewer: mas
 ---

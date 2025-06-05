@@ -5,10 +5,10 @@ description: Learn how to increase visibility and control over your hybrid enter
 ms.service: security
 
 ms.topic: tutorial
-ms.date: 02/27/2025
+ms.date: 12/01/2019
 
-ms.author: joflore
-author: MicrosoftGuyJFlo
+ms.author: kenwith
+author: kenwith
 
 ms.reviewer: mas
 ---

@@ -6,8 +6,8 @@ ms.service: security
 ms.topic: conceptual
 ms.date: 08/01/2024
 
-ms.author: joflore
-author: MicrosoftGuyJFlo
+ms.author: kenwith
+author: kenwith
 
 ms.collection:
   - zerotrust-pillar

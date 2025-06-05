@@ -5,14 +5,14 @@ description: Explore key learnings about threat protection, security evolution, 
 ms.service: security
 
 ms.topic: tutorial
-ms.date: 02/27/2025
+ms.date: 06/05/2025
 
-ms.author: joflore
-author: MicrosoftGuyJFlo
+ms.author: kenwith
+author: kenwith
 
 ms.reviewer: mas
 ---
-# CISO Workshop Module 4a: Threat Protection Strategy
+# CISO Workshop Module 4a: Threat Protection Strategy (Published December 2019)
 
 Explore key learnings about threat protection, security evolution, strategies, and security road maps.
 

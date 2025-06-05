@@ -5,14 +5,14 @@ description: "This training workshop is a combination of experiences from Micros
 ms.service: security
 
 ms.topic: tutorial
-ms.date: 12/01/2019
+ms.date: 06/05/2025
 
 ms.author: kenwith
 author: kenwith
 
 ms.reviewer: mas
 ---
-# Chief Information Security Officer (CISO) Workshop Training
+# Chief Information Security Officer (CISO) Workshop Training (Published December 2019)
 
 The Chief Information Security Office (CISO) workshop contains a collection of security learnings, principles, and recommendations for modernizing security in your organization. This training workshop is a combination of experiences from Microsoft security teams and learnings from customers.
 

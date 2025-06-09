@@ -1,8 +1,8 @@
 ---
 title: Privileged administration videos and slide decks
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: kenwith
+author: kenwith
+manager: dougeby
 audience: Admin
 ms.topic: article
 ms.service: security

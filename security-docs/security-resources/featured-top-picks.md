@@ -78,9 +78,8 @@ October 1, 2024
 
 - [AI security fundamentals](/training/paths/ai-security-fundamentals/)
 - [Get started with Microsoft Copilot for Security](/training/paths/security-copilot-and-ai/)
-- [Govern and protect sensitive information in the age of AI]
-(/training/paths/purview-protect-govern-ai/)
+- [Govern and protect sensitive information in the age of AI](/training/paths/purview-protect-govern-ai/)
 
 ## Related content
 
-See the current top picks on the [AI learning hub](/security/).
+See the current top picks on the [Security hub](/security/).

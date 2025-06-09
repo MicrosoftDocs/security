@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Security resources # < 60 chars
-summary: Explore AI highlights, foundations content, documentation, learning hubs, and connect with AI communities. # to do
+summary: Explore Security highlights, documentation, and learning hubs.
 
 metadata:
   title: Security Resources 
-  description: Explore AI highlights, foundations content, documentation, learning hubs, and connect with AI communities. # to do
+  description: Explore Security highlights, documentation, and learning hubs.
   ms.service: security
   ms.topic: landing-page
   ms.author: ralyon

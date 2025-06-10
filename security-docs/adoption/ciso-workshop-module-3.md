@@ -5,14 +5,14 @@ description: "Learn how to advance Zero Trust with your identity and user access
 ms.service: security
 
 ms.topic: tutorial
-ms.date: 02/27/2025
+ms.date: 06/05/2025
 
-ms.author: joflore
-author: MicrosoftGuyJFlo
+ms.author: kenwith
+author: kenwith
 
 ms.reviewer: mas
 ---
-# CISO Workshop Module 3: Identity and Zero Trust User Access
+# CISO Workshop Module 3: Identity and Zero Trust User Access (Published December 2019)
 
 Learn how to advance Zero Trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter.
 

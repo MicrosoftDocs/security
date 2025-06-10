@@ -234,6 +234,8 @@ Follow these steps:
 - Maintain a centralized logging and SIEM/SOAR integration for network analysis.
 - Deploy Extended Detection and Response (XDR) to analyze traffic patterns, identify anomalies, and prevent breaches.
 - Integrate AI-driven analytics to enhance rapid responses to emerging threats.
+- Enable improved threat detection and response by adopting Global Secure Access [source IP restoration](/entra/global-secure-access/how-to-source-ip-restoration).
+- Utilize Global Secure Access [logs and monitoring](/entra/global-secure-access/concept-global-secure-access-logs-monitoring).
 
 #### 4.1 Threat protection: Machine learning-based threat protection and filtering with context-based signals
 

@@ -25,11 +25,13 @@ In summary, the adoption of SASE, coupled with the integration of AI, marks a si
 
 Instead of assuming that everything behind the corporate firewall is secure, an end-to-end Zero Trust strategy acknowledges that breaches are inevitable. This approach requires verifying each request as if it originates from an uncontrolled network, with identity management playing a crucial role. When organizations incorporate the Cybersecurity and Infrastructure Security Agency (CISA) and National Institute of Standards and Technology (NIST) Zero Trust models and patterns, they enhance their security posture and better protect their networks.
 
-In the Zero Trust model, there are three key objectives when it comes to securing your networks:
+In the Zero Trust model, securing your networks focuses on three core objectives:
 
-- Be ready to handle attacks before they happen.
-- Minimize the extent of the damage and how fast it spreads.
-- Increase the difficulty of compromising your cloud footprint.
+- **Prevent unauthorized access.** Apply strong authentication, continuous verification, and least-privilege policies to reduce the risk of initial compromise.
+- **Limit the impact of breaches.** Use network segmentation, micro-perimeters, and adaptive controls to contain threats and prevent lateral movement.
+- **Enhance visibility and control.** Leverage solutions like Secure Access Service Edge (SASE) to unify security policy enforcement, monitor traffic, and respond quickly to emerging threats across cloud and hybrid environments.
+
+These objectives align with Zero Trust principles and are supported by modern solutions such as SASE, which integrates networking and security functions to provide comprehensive protection and centralized management.
 
 To make this happen, follow three Zero Trust principles:
 

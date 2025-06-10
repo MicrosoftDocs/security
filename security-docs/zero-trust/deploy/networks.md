@@ -33,7 +33,7 @@ In the Zero Trust model, there are three key objectives when it comes to securin
 
 To make this happen, follow three Zero Trust principles:
 
-- **Verify explicitly.** Always authenticate and authorize based on all available data points. Include user identity, location, device health, service or workload, user and device risk, data classification, and anomalies.
+- **Verify explicitly.** Always authenticate and authorize based on all available data points. Include user identity, network, location, device health, service or workload, user and device risk, data classification, and anomalies.
 - **Use least-privileged access.** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection to protect both data and productivity.
 - **Assume breach.** Minimize influence radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get [visibility](https://aka.ms/ZTCrossPillars), drive threat detection, and improve defenses.
 

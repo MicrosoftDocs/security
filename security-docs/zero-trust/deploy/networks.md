@@ -352,9 +352,11 @@ Detect advanced multistage attacks with Fusion and User and Entity Behavior Anal
 
 **Microsoft Entra ID Governance**
 
-Enable reviewer decision helpers in access reviews. The User-to-Group Affiliation helper provides a Machine Learning based recommendation that improves the reviewer experience.
-- Access review settings
-- Review recommendations for Access reviews
+Zero Trust requires that user and service identities are provisioned, updated, and decommissioned promptly and consistently. Microsoft Entra Identity Governance provides:
+
+- **Lifecycle Workflows (Joiner-Mover-Leaver):** Automate user lifecycle processes by integrating with HR systems or other authoritative sources.
+- **Entitlement Management & Access Packages:** Define catalogs of application access packages for both cloud and on-premises apps (published via Private Access or Application Proxy). Automate assignment workflows, including request, approval, and periodic access reviews.
+- **Access Reviews:** Schedule automated access reviews for all applications. Microsoft Entra ID can send review tasks to application owners or business stakeholders, consolidated across cloud and on-premises apps. Automate escalation and remediation—if a reviewer doesn’t respond, disable access; if an account is flagged, trigger a workflow to investigate.
 
 **Automated Workflows**
 

@@ -339,6 +339,7 @@ Apply Conditional Access policies with risk conditions to network access to Micr
 - [Global Secure Access overview](/entra/global-secure-access/overview-what-is-global-secure-access)
 - [Learn about Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
 - [Universal Conditional Access](/entra/global-secure-access/concept-universal-conditional-access)
+- [Enable compliant network check with Conditional Access](/entra/global-secure-access/how-to-compliant-network)
 
 
 #### 4.4 Automation and Orchestration

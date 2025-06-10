@@ -423,7 +423,7 @@ Securing cloud and hybrid environments requires a combination of modern, cloud-n
 
 #### 6.2 Integrate Identity-Aware Proxies for SaaS and PaaS Security
 
-- **Identity-aware proxies:** Implement solutions such as [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access) to broker access to SaaS and PaaS applications. These proxies enforce authentication, device compliance, and Conditional Access policies before granting access.
+- **Identity-aware proxies:** Implement solutions such as [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access) to broker access to SaaS and PaaS applications. These proxies enforce authentication, device compliance, and Conditional Access policies before granting access. Consider [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access) for identity-aware internet access.
 - **Cloud Access Security Broker (CASB):** Use [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) to discover, monitor, and control SaaS usage, enforce data loss prevention (DLP), and apply session controls for cloud applications.
 - **Continuous session validation:** Apply risk-based, real-time policy enforcement for SaaS and PaaS access, including adaptive controls based on user, device, and session context.
 

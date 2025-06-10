@@ -144,7 +144,7 @@ Zero Trust Network Access replaces broad, perimeter-based VPNs with fine-grained
 Microsoft’s implementation of ZTNA is part of the Global Secure Access (preview) capability under Microsoft Entra, built on the Security Service Edge (SSE) foundation.  
 [Learn more: What is Global Secure Access? (Microsoft Entra)](/entra/global-secure-access/overview-what-is-global-secure-access)
 
-##### Modernize Traditional VPNs with Identity-Aware ZTNA
+#### 2.2 Modernize Traditional VPNs with Identity-Aware ZTNA
 
 **Global Secure Access**  
 Microsoft’s Global Secure Access replaces broad network tunnels with app-specific, identity-driven connections. When a user requests access, GSA uses Microsoft Entra ID for single sign-on and Conditional Access at the edge—no inbound firewall rules are required. Only approved applications are visible in the user portal, and access decisions are based on device posture (from Defender for Endpoint) and real-time risk signals.
@@ -158,7 +158,7 @@ Modernize point-to-site (P2S) VPNs by integrating authentication with Microsoft 
 - [Set up P2S VPN with Azure AD authentication](/azure/vpn-gateway/point-to-site-about)
 - [Azure Virtual WAN overview](/azure/virtual-wan/virtual-wan-about)
 
-##### Use SASE Architecture: Integrate Networking & Security Functions
+#### 2.3 Use SASE Architecture: Integrate Networking & Security Functions
 
 **Integrate Networking & Security Functions with SASE**
 
@@ -178,7 +178,7 @@ Traditional VPN endpoints can be integrated with Azure Firewall or partner SWG a
 
 - [Learn about forced-tunnel VPN with Azure Firewall](/azure/firewall)
 
-##### Implement Continuous Session Validation & Risk-Based Access
+#### 2.4 Implement Continuous Session Validation & Risk-Based Access
 
 Continuous session validation ensures that access decisions are enforced in real time, not just at the initial sign-in. This approach helps organizations respond quickly to changing risk conditions and maintain a strong security posture.
 
@@ -445,7 +445,7 @@ Organizations that implement these strategies can achieve robust, end-to-end sec
 
 Zero Trust rejects implicit trust in any network segment or device. Legacy perimeter-centric controls—such as flat VPN tunnels, “hair-pin” traffic inspection, hard-coded access control lists (ACLs), and static network firewalls—no longer provide the adaptive, identity- and context-aware protection required for modern hybrid and cloud-native environments. To fully realize Zero Trust, organizations must retire these outdated technologies in favor of identity-driven, software-defined security services.
 
-#### Scope of retirement
+#### 7.1 Scope of retirement
 
 Legacy technologies to retire include:
 
@@ -454,7 +454,7 @@ Legacy technologies to retire include:
 - **Legacy web proxies** that lack inline threat inspection or session control.
 - **Network ACLs or route-based segmentation** without integration into identity or device posture signals.
 
-#### Replacement principles
+#### 7.2 Replacement principles
 
 For each deprecated control, adopt a modern Zero Trust alternative that:
 
@@ -463,7 +463,7 @@ For each deprecated control, adopt a modern Zero Trust alternative that:
 - Provides continuous validation with Continuous Access Evaluation and session re-evaluation.
 - Delivers software-defined visibility and control through Secure Access Service Edge (SASE) and Security Service Edge (SSE) solutions, such as Secure Web Gateway (SWG), Cloud Access Security Broker (CASB), Firewall-as-a-Service (FWaaS), and Network Detection and Response (NDR).
 
-#### Transition strategy
+#### 7.3 Transition strategy
 
 1. **Inventory and prioritize**
     - Catalog all legacy appliances and VPN profiles.
@@ -481,7 +481,7 @@ For each deprecated control, adopt a modern Zero Trust alternative that:
     - Retire hardware appliances and revoke legacy VPN configurations.
     - Update network diagrams and operational runbooks to remove deprecated technology.
 
-#### Risk mitigation and metrics
+#### 7.4 Risk mitigation and metrics
 
 - **Fallback controls:** Keep legacy paths in “read-only” monitoring mode during early migration waves to catch policy gaps.
 - **Telemetry-driven tuning:** Use Microsoft Sentinel and Microsoft Defender logs to identify failed access attempts or policy misses.
@@ -492,7 +492,7 @@ For each deprecated control, adopt a modern Zero Trust alternative that:
 - No critical security findings in legacy technology during the monitoring window.
 - Measurable reduction in lateral-movement alerts.
 
-#### Governance and audit
+#### 7.5 Governance and audit
 
 - Assign a ZTNA migration owner to oversee decommission timelines.
 - Enforce a “no new legacy deployments” policy in procurement.

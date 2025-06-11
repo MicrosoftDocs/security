@@ -31,7 +31,7 @@ sections:
         componentType: testimonial-card
         name: Connect Microsoft Sentinel to the Microsoft Defender portal
         role: Documentation
-        feedback: Learn how your experience may change and prerequisites to transitioning your Microsoft Sentinel environment.
+        feedback: Learn how your experience may change and understand how to transition your Microsoft Sentinel environment.
         link:
           componentType: link
           url: /unified-secops-platform/microsoft-sentinel-onboard
@@ -54,7 +54,7 @@ sections:
           componentType: link
           url: /training/paths/github-advanced-security/?wt.mc_id=securityhub_GHsecuirty1_webpage_cnl
           text: Get secure
-      - avatarUrl: /security/media/hubpage/generic-badge.svg
+      - avatarUrl: /security/media/hubpage/github.png
         componentType: testimonial-card
         name: Learn GitHub Advanced Security Part 2 of 2
         role: Training

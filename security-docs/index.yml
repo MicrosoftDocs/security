@@ -194,6 +194,15 @@ sections:
         - componentType: link
           url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification
           text: Learn more
+    - componentType: card
+      title: "Microsoft Security, Compliance, and Identity Fundamentals​"
+      summary: Familiarize yourself with the fundamentals of Microsoft security, compliance, and identity solutions.
+      imageUrl: /security/media/security-hub/earn-microsoft-certified.png # tbd
+      links:
+        - componentType: link
+          url: /training/courses/sc-900t00
+          text: Showcase your skillset
+
 
 # AI skills fest promo banner - to be removed May 29, 2025
 #  - componentType: hero

@@ -197,7 +197,7 @@ sections:
     - componentType: card
       title: "Microsoft Security, Compliance, and Identity Fundamentals​"
       summary: Familiarize yourself with the fundamentals of Microsoft security, compliance, and identity solutions.
-      imageUrl: /security/media/security-hub/earn-microsoft-certified.png # new image to follow
+      imageUrl: /security/media/security-hub/microsoft-security-compliance-identity-fundamentals.png
       links:
         - componentType: link
           url: /training/courses/sc-900t00

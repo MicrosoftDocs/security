@@ -1,0 +1,29 @@
+### YamlMime:TOC
+items:
+- name: Security resources
+  href: index.yml
+- name: Security hub
+  href: /security/
+- name: Featured top picks
+  href: featured-top-picks.md
+- name: Microsoft Security product documentation
+  items:
+  - name: Microsoft Entra
+    href: /entra/
+  - name: Microsoft Defender
+    href: /defender/
+  - name: Microsoft Defender for Cloud
+    href: /azure/defender-for-cloud/
+  - name: Microsoft Purview
+    href: /purview/
+  - name: Microsoft Sentinel
+    href: /azure/sentinel/
+- name: Discover learning hubs
+  items:
+  - name: Security hub
+    href: /security/
+  - name: AI learning hub
+    href: /ai/
+  - name: Copilot learning hub
+    href: /copilot/
+    

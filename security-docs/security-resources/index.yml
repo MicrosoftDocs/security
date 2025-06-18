@@ -1,0 +1,114 @@
+### YamlMime:Landing
+
+title: Security resources # < 60 chars
+summary: Explore Security highlights, documentation, and learning hubs.
+
+metadata:
+  title: Security Resources 
+  description: Explore Security highlights, documentation, and learning hubs.
+  ms.service: security
+  ms.topic: landing-page
+  ms.author: ralyon
+  author: ttorble
+  ms.date: 06/16/2025
+  
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 
+  - title: May top picks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Implement and manage data privacy solutions for compliance
+            url: /training/modules/priva-understand-priva/?wt.mc_id=securityhub_mspriva_webpage_SCI
+          - text: Security for AI
+            url: /security/security-for-ai/?wt.mc_id=securityhub_securityAI_webpage_cnl
+          - text: GitHub Advanced Security Part 1 of 2
+            url: /training/paths/github-advanced-security/?wt.mc_id=securityhub_GHsecuirty1_webpage_cnl
+          - text: Implement access management for apps
+            url: /training/paths/implement-access-management-for-apps/?
+
+  # Card 
+  - title: April top picks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Get the latest on the Secure Future Initiative
+            url: //aka.ms/SFI_MSLearn?wt.mc_id=securityhub_sfi_webpage_cnl
+          - text: Get certified as an Information Security Administrator
+            url: /credentials/certifications/exams/sc-401/?wt.mc_id=certsustainedmkt_portfolioupdate_blog_wwl&practice-assessment-type=certification
+          - text: Security for AI with Microsoft Purview & Defender for Cloud
+            url: https://developer.microsoft.com/en-us/reactor/series/S-1489/?wt.mc_id=securityhub_LLsecurityAI_webpage_sci
+          - text: Implement and manage data privacy solutions for compliance
+            url: /training/modules/priva-understand-priva/?wt.mc_id=securityhub_mspriva_webpage_SCI
+          - text: Explore Microsoft Secure on demand
+            url: //aka.ms/AAv23a8?wt.mc_id=securityhub_mssecure_webpage_cnl
+
+  # Card
+ # - title: Discover more
+ #   linkLists:
+ #     - linkListType: reference
+ #       links:
+ #         - text: Copilot learning hub
+ #           url: /copilot/
+ #         - text: Security hub
+ #           url: /security/
+ #         - text: AI for startups
+ #           url: /startups/
+ #         - text: '"Get AI ready" blog series'
+ #           url: //aka.ms/LearnAIBlogSeries
+ #         - text: Microsoft AI Tour
+ #           url: //aka.ms/LearnAtAITour
+ #         - text: Microsoft Learn for Organizations
+ #           url: //aka.ms/AIforLFO
+ #         - text: Training Services Partners
+ #           url: /credentials/support/partners
+ #         - text: Microsoft Virtual Training Days
+ #           url: //aka.ms/AITrainingDays
+ #         - text: AI Skills Navigator
+ #           url: https://aiskillsnavigator.microsoft.com?wt.mc_id=aihub_aisn_webpage_cnl
+
+  # Card
+#  - title: Connect with AI communities
+#    linkLists:
+#      - linkListType: get-started
+#        links:
+#          - text: AI for developers
+#            url:  https://developer.microsoft.com/ai?wt.mc_id=aihub_aidevelopers_webpage_wwl
+#          - text: Microsoft AI Tour
+#            url: /ai/ai-tour/
+#          - text: AI & ML tech communities
+#            url: https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI
+#          - text: Azure AI Discord community
+#            url: https://discord.com/invite/yrTeVQwpWm
+#          - text: Data & AI Microsoft Learning rooms
+#            url: https://techcommunity.microsoft.com/t5/custom/page/page-id/learn?product=Data%20and%20AI
+#          - text: Global AI community
+#            url: https://globalai.community/
+#          - text: Microsoft 365 Copilot community
+#            url: https://techcommunity.microsoft.com/category/microsoft365copilot/blog/microsoft365copilotblog
+#          - text: Microsoft for Startups Founders Hub
+#            url: https://foundershub.startups.microsoft.com/
+
+  # Card (Optional; Remove if not applicable.)
+#  - title: Explore our AI skills blogs
+#    linkLists:
+#      - linkListType: get-started
+#        links:
+#          - text: '"Get AI ready" blog series'
+#            url: https://techcommunity.microsoft.com/blog/microsoftlearnblog/overcoming-fear-uncertainty-and-doubt-in-the-era-of-ai-transformation/3662204
+#          - text: "Accelerate employee AI Skilling: Insights from Microsoft"
+#            url: https://www.microsoft.com/microsoft-cloud/blog/2025/01/30/accelerate-employee-ai-skilling-insights-from-microsoft/
+#          - text: Transform your business with AI skill building on Microsoft Learn
+#            url: https://www.microsoft.com/microsoft-cloud/blog/2024/03/18/transform-your-business-with-ai-skill-building-on-microsoft-learn/
+#      - linkListType: linkListType
+#        links:
+#          - text: linktext1
+#            url: file1.md
+#          - text: linktext2
+#            url: file2.md
+#          - text: linktext2
+#            url: file3.md

@@ -196,7 +196,7 @@ sections:
           text: Learn more
     - componentType: card
       title: "Microsoft Security, Compliance, and Identity Fundamentals​"
-      summary: Familiarize yourself with the fundamentals of Microsoft security, compliance, and identity solutions.
+      summary: Take this course to familiarize yourself with the fundamentals of Microsoft security, compliance, and identity solutions across cloud-based and related Microsoft services and prepare for the SC-900 exam.
       imageUrl: /security/media/security-hub/microsoft-security-compliance-identity-fundamentals.png
       links:
         - componentType: link

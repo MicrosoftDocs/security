@@ -66,9 +66,9 @@ The following steps describe the illustration and also walk through the steps of
 | 1   | Build and manage assessments in Microsoft Purview Compliance Manager | Enterprise-wide |
 | 2   | Use Defender for Cloud Apps to manage AI apps based on compliance risk | SaaS AI apps |
 | 3   | Use Cloud Security Posture Management (CSPM) for AI workloads to discover and manage custom-built apps based on compliance risk | Custom-built Azure AI based AI applications |
-| 4   | Configure Purview Communication Compliance to minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization | Microsoft 365 apps and services <br> AI apps connected by Microsoft Entra or Microsoft Purview Data Map connectors |
-| 5   | Configure Purview Data Lifecycle Management to retain the content that you need to keep, and delete the content that you don't. | Microsoft 365 apps and services |
-| 6   | Use eDiscovery together with audit logs for Microsoft 365 Copilot for investigations, as needed | Microsoft 365 Copilot, Microsoft Copilot |
+| 4   | Configure Purview Communication Compliance to minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization | Microsoft 365 apps and services <br> AI apps connected by Microsoft Entra or Microsoft Purview Data Map connectors <br> Azure AI services |
+| 5   | Configure Purview Data Lifecycle Management to retain the content that you need to keep, and delete the content that you don't. | Retention policies for AI apps include user prompts and responses for Microsoft 365 Copilot and Copilot Studio, and also user prompts and responses for other Microsoft copilots and generative AI apps when they have a collection policy with the setting to capture content. These messages can then be retained and deleted for compliance reasons. |
+| 6   | Use eDiscovery together with audit logs for Microsoft 365 Copilot for investigations, as needed | Audit logs are automatically generated when a user interacts with Copilot or an AI Application. |
 | 7   | Use Priva Privacy Assessments to initiate privacy impact assessments for AI apps you build | Any app, any location |
 | 8   | Use AI reports in AI Foundry to document AI project details for apps you develop | AI apps in Azure |
 | 9  | Implement Azure AI Content Safety to block harmful content, and detect and correct ungrounded responses | AI apps in Azure |
@@ -145,6 +145,7 @@ Use the following resources to get started.
 | Task | Recommended resources |
 | --- | --- |
 | Learn about and get started | [Learn about Microsoft Purview Data Lifecycle Management](/purview/data-lifecycle-management) <br>[Get started with data lifecycle management](/purview/get-started-with-data-lifecycle-management) |
+| Learn about retention for Copilot & AI apps  | [Learn how retention works with AI apps](/purview/retention-policies-copilot)  |
 
 ### Step 6—Use eDiscovery together with audit logs for Microsoft 365 Copilot
 
@@ -157,6 +158,7 @@ Use Microsoft Purview audit logs to identify how, when, and where Copilot intera
 | Learn where Copilot usage data is stored and how you can audit it | [Microsoft 365 Copilot data protection and auditing architecture](/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing#where-copilot-usage-data-is-stored-and-how-you-can-audit-it) |
 | Get started with eDiscovery | [Learn about eDiscovery solutions](/purview/edisc) |
 | Learn about Purview audit logs | [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview) |
+|Learn about audit logs for AI apps  | [Learn which admin and user activities are logged for AI apps](/purview/audit-copilot) |
 
 ### Step 7—Use Priva Privacy Assessments
 

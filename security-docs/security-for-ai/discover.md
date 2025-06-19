@@ -37,7 +37,7 @@ The following table describes the illustration and also walks through the steps 
 | 3   | Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps | SaaS AI apps |
 | 4   | Discover deployed AI workloads in your environment and gain security insights with Microsoft Defender for Cloud Security Posture Management (CSPM) | Custom-built Azure AI based AI applications |
 
-## Step 1--Gain visibliity into agents with Entra Agent ID (Preview)
+## Step 1--Gain visibility into agents with Entra Agent ID (Preview)
 
 As organizations build and adopt AI agents, it’s challenging to keep track of these non-human actors. The very thing that makes these agents powerful—their ability to autonomously handle complex tasks and act like virtual teammates—also raises concerns. That’s why it’s critical to track agent identities, manage their lifecycle and permissions, and carefully secure their access to your organization’s resources. 
 

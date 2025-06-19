@@ -40,9 +40,9 @@ The following two tables describe the illustration and also walk through the ste
 | Step | Task | Scope |
 | --- | --- | --- |
 | 1   | Apply SharePoint oversharing controls to quickly exempt sensitive sites and data from the scope of AI apps. | Sites and files across your Microsoft 365 environment. |
-| 2   | Use Data Security Posture Management (DSPM) for AI to learn where oversharing is taking place and to find gaps in your policy coverage for sensitivity labels and DLP policies. | Copilots, agents, and other AI apps that use third-party large language modules (LLMs), including [Supported AI sites](/purview/ai-microsoft-purview-supported-sites) |
-| 3 | Continue to make progress on sensitivity labels and data loss prevention (DLP) policies.| Sites, files, and devices across your Microsoft 365 environment. SaaS apps when integrated with Defender for Cloud Apps |
-| 4 | Within Insider Risk Management (IRM), apply the Risky AI template to identify risky behavior in AI apps. | Generative AI websites <br>Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio, Azure AI services |
+| 2   | Use Data Security Posture Management (DSPM) for AI to learn where oversharing is taking place and to find gaps in your policy coverage for sensitivity labels and DLP policies. | Copilots, agents, and other AI apps that use third-party large language modules (LLMs), including [Supported AI sites](/purview/ai-microsoft-purview-supported-sites).<br> AI apps in other cloud providers through the Purview SDK. |
+| 3 | Continue to make progress on sensitivity labels and data loss prevention (DLP) policies.| Sites, files, and devices across your Microsoft 365 environment. <br> SaaS apps when integrated with Defender for Cloud Apps. <br> AI apps in Azure and other cloud providers through the Purview SDK. |
+| 4 | Within Insider Risk Management (IRM), apply the Risky AI template to identify risky behavior in AI apps. | Generative AI websites. <br>Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio, Azure AI services. <br> AI apps in other cloud providers through the Purview SDK. |
 | 5 | Configure Adaptive Protection for Insider Risk Management to increase protection for data based on the risk of users  | Sites, files, and devices across your Microsoft 365 environment. |
 
 **Table 2 - Threat protection capabilities**
@@ -94,7 +94,9 @@ Use the following resources to protect AI apps and data with DSPM for AI.
 
 | Task | Recommended resources |
 | --- | --- |
-| Sign in to DSPM for AI and review the reports and recommendations | [How to use DSPM for AI](/purview/ai-microsoft-purview#how-to-use-data-security-posture-management-for-ai) |
+| Learn about DSPM for AI | [How to use DSPM for AI](/purview/dspm-for-ai) |
+| Learn about prerequisites and how one-click policies and default policies work | [Considerations for DSPM for AI](/purview/dspm-for-ai-considerations) |
+|For AI apps in other cloud providers, learn how to test integration with DSPM for AI by using the Purview SDK  | [How to test an AI application integrated with Purview SDK](/purview/developer/how-to-test-an-ai-application-integrated-with-purview-sdk) |
 
 ### Step 3—Continue to identify gaps in sensitivity labels and DLP policies
 
@@ -109,6 +111,7 @@ Use the following resources to make progress with Microsoft Purview.
 | Define your sensitivity labels and policies that will protect your organization's data  |[Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels) <br> [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels) <br> [Restrict access to content by using sensitivity labels to apply encryption](/purview/encryption-sensitivity-labels) |
 | Label and protect data for Microsoft 365 apps and services |[Manage sensitivity labels in Office apps](/purview/sensitivity-labels-office-apps) <br> [Enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files) |
 |Tune your DLP policies |[Create and Deploy data loss prevention policies](/purview/dlp-create-deploy-policy)  |
+|For AI apps develped in Auzre or other cloud providers, learn how to apply sensitivity labels and DLP policies by using the Purview SDK   | [What is Purview SDK](/purview/developer/microsoft-purview-sdk-documentation-overview) <br> [Use Microsoft Graph Purview APIs](/purview/developer/use-the-api) <br> [How to test an AI application integrated with Purview SDK](/purview/developer/how-to-test-an-ai-application-integrated-with-purview-sdk) |
 
 ### Step 4—Apply the Risky AI template in Insider Risk Management (IRM)
 
@@ -125,6 +128,7 @@ Use the following resources to get started with Insider Risk Management and to a
 | Get started with Insider Risk Management and learn about top scenarios that benefit your organization | [Learn about insider risk management](/purview/insider-risk-management) |
 | Apply the Risky AI template | [Learn about insider risk management policy templates \| Microsoft Learn](/purview/insider-risk-management-policy-templates#risky-ai-usage-preview) |
 | Learn about key scenarios for AI and view example reports | [Insider Risk Management empowering risky AI usage visibility and security investigations](https://techcommunity.microsoft.com/blog/microsoft-security-blog/insider-risk-management-empowering-risky-ai-usage-visibility-and-security-invest/4298246) |
+|For AI apps developed with the Purview SDK, test Insider Risk Managemetn integration  | [How to test an AI application integrated with Purview SDK](/purview/developer/how-to-test-an-ai-application-integrated-with-purview-sdk) |
 
 
 ### Step 5—Configure Adaptive Protection for Insider Risk Management

@@ -35,7 +35,7 @@ Microsoft provides a broad set of capabilities for protecting AI apps and data. 
 
 The following two tables describe the illustration and also walk through the steps of implementing these capabilities.
 
-**Table 1 - Data protection capabilities**
+**Table 1—Data protection capabilities**
 
 | Step | Task | Scope |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ The following two tables describe the illustration and also walk through the ste
 | 4 | Within Insider Risk Management (IRM), apply the Risky AI template to identify risky behavior in AI apps. | Generative AI websites. <br>Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio, Azure AI services. <br> AI apps in other cloud providers through the Purview SDK. |
 | 5 | Configure Adaptive Protection for Insider Risk Management to increase protection for data based on the risk of users  | Sites, files, and devices across your Microsoft 365 environment. |
 
-**Table 2 - Threat protection capabilities**
+**Table 2—Threat protection capabilities**
 
 | Step | Task | Scope |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ The following two tables describe the illustration and also walk through the ste
 
 These capabilities help you efficiently learn about and mitigate the top risks associated with data oversharing, sensitive data use, and risky behaviors of users. These capabilities are scoped to protections for AI apps and data in your environment.
 
-### Step 1 – Apply SharePoint oversharing controls
+### Step 1—Apply SharePoint oversharing controls
 
 SharePoint oversharing controls include controls that are built into SharePoint, like scoped permissions, and add-on capabilities in SharePoint Advanced Management to bolster content governance for the Microsoft Copilot deployment journey. SharePoint oversharing controls help you:
 
@@ -74,7 +74,7 @@ To get started with oversharing controls, use the following resources.
 | Downloadable blueprint to prevent oversharing | [Microsoft 365 Copilot blueprint for oversharing](/copilot/microsoft-365/microsoft-365-copilot-blueprint-oversharing) |
 | Learn about SharePoint Advanced Management | [Microsoft SharePoint Premium - SharePoint Advanced Management overview](/sharepoint/advanced-management)|
 
-### Step 2 – Protect data through DSPM for AI
+### Step 2—Protect data through DSPM for AI
 
 Use DSPM for AI to learn where oversharing is taking place and to find gaps in your policy coverage for sensitivity labels and DLP policies.
 

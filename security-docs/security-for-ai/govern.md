@@ -105,7 +105,7 @@ See the previous articles in this series to get started with and use Defender fo
 | Task | Recommended resources |
 | --- | --- |
 | Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps | See [Step 3 in Discover AI apps and data](discover.md#step-3discover-sanction-and-block-ai-apps-with-microsoft-defender-for-cloud-apps) |
-| Use Defender for Cloud Apps to triage and protect use of AI apps | See [Get the most out of threat protection for AI in Protect AI apps and data](protect.md#step-2Protect-data-through-dspm-for-ai) |
+| Use Defender for Cloud Apps to triage and protect use of AI apps | See [Get the most out of threat protection for AI in Protect AI apps and data](protect.md#step-2--Protect-data-through-dspm-for-ai) |
 
 ### Step 3—Use Cloud Security Posture Management (CSPM) for AI workloads
 

@@ -74,7 +74,7 @@ To get started with oversharing controls, use the following resources.
 | Downloadable blueprint to prevent oversharing | [Microsoft 365 Copilot blueprint for oversharing](/copilot/microsoft-365/microsoft-365-copilot-blueprint-oversharing) |
 | Learn about SharePoint Advanced Management | [Microsoft SharePoint Premium - SharePoint Advanced Management overview](/sharepoint/advanced-management)|
 
-### Step 2—Protect data through DSPM for AI
+### Step 2--Protect data through DSPM for AI
 
 Use DSPM for AI to learn where oversharing is taking place and to find gaps in your policy coverage for sensitivity labels and DLP policies.
 

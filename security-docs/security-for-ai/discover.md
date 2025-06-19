@@ -32,11 +32,24 @@ The following table describes the illustration and also walks through the steps 
 
 | Step | Task | Scope |
 | --- | --- | --- |
-| 1   | Gain visibility into AI usage Microsoft Purview Data Security Posture Management (DSPM) for AI. Apply policies to protect sensitive data. | Microsoft Copilots <br>[Supported AI sites](/purview/ai-microsoft-purview-supported-sites) |
-| 2   | Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps | SaaS AI apps |
-| 3   | Discover deployed AI workloads in your environment and gain security insights with Microsoft Defender for Cloud Security Posture Management (CSPM) | Custom-built Azure AI based AI applications |
+|  1   | Gain visibility into all agent identities created across Microsoft Copilot Studio and Azure AI Foundry with Microsoft Entra Agent ID.  |  Agents created in Microsoft Copilot Studio and Azure AI Foundry   |
+| 2   | Gain visibility into AI usage Microsoft Purview Data Security Posture Management (DSPM) for AI. Apply policies to protect sensitive data. | Microsoft Copilots <br>[Supported AI sites](/purview/ai-microsoft-purview-supported-sites) |
+| 3   | Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps | SaaS AI apps |
+| 4   | Discover deployed AI workloads in your environment and gain security insights with Microsoft Defender for Cloud Security Posture Management (CSPM) | Custom-built Azure AI based AI applications |
 
-## Step 1—Gain visibility into AI usage with Data Security Posture Management (DSPM) for AI
+## Step 1--Gain visibliity into agents with Entra Agent ID (Preview)
+
+As organizations build and adopt AI agents, it’s challenging to keep track of these non-human actors. The very thing that makes these agents powerful—their ability to autonomously handle complex tasks and act like virtual teammates—also raises concerns. That’s why it’s critical to track agent identities, manage their lifecycle and permissions, and carefully secure their access to your organization’s resources. 
+
+Microsoft Entra Agent ID (Preview) provides unified directory of all agent identities created across Microsoft Copilot Studio and Azure AI Foundry. This is a first step in providing even greater visibility, protection, and governance of the rapidly growing volume of agents in organizations. 
+
+| Task | Recommended resources |
+| --- | --- |
+| View all agents in your organization    |  sign in to the Microsoft Entra admin center and navigate to [Enterprise applications](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview). In the filter bar at the top of the list view, set the Application type dropdown to Agent ID (Preview). Instantly, your enterprise application list will narrow down to show the AI agents (created via Copilot Studio or Azure AI Foundry) that are registered in your tenant.   | 
+| Learn more by reviewing this blog  |[Announcing Microsoft Entra Agent ID: Secure and manage your AI agents](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/announcing-microsoft-entra-agent-id-secure-and-manage-your-ai-agents/3827392)    |
+
+
+## Step 2—Gain visibility into AI usage with Data Security Posture Management (DSPM) for AI
 
 Microsoft Purview Data Security Posture Management (DSPM) for AI focuses on how AI is used in your organization, especially how your data interacts with AI tools. It works with generative AI sites. DSPM for AI provides deeper insights for Microsoft Copilots and third-party SaaS applications like ChatGPT Enterprise and Google Gemini.
 
@@ -63,7 +76,7 @@ Use the following resources to discover AI apps and data with DSPM for AI.
 | Start using DSPM for AI | [How to use Data Security Posture Management for AI](/purview/ai-microsoft-purview#how-to-use-data-security-posture-management-for-ai) |
 | Review supported AI sites | [Supported AI sites by Microsoft Purview for data security and compliance protections](/purview/ai-microsoft-purview-supported-sites) |
 
-## Step 2—Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps
+## Step 3—Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps
 
 Microsoft Defender for Cloud Apps helps security teams discover SaaS GenAI apps and usage.
 
@@ -91,7 +104,7 @@ Use the following resources for next steps.
 | Find your cloud app and calculate risk score | [Cloud app catalog and risk scores - Microsoft Defender for Cloud Apps](/defender-cloud-apps/risk-score) |
 | Govern discovered apps | [Govern discovered apps - Microsoft Defender for Cloud Apps](/defender-cloud-apps/governance-discovery) |
 
-## Step 3—Discover deployed AI workloads in your environment and gain security insights with Microsoft Defender for Cloud
+## Step 4—Discover deployed AI workloads in your environment and gain security insights with Microsoft Defender for Cloud
 
 The Defender Cloud Security Posture Management (CSPM) plan in Microsoft Defender for Cloud provides AI security posture management capabilities, starting with discovery of AI Apps built in your environments:
 

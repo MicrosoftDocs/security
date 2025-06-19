@@ -118,7 +118,7 @@ See the previous articles in this series to get started with and use Defender fo
 | Task | Recommended resources |
 | --- | --- |
 | Discover deployed AI workloads in your environment and gain security insights with Microsoft Defender for Cloud | See [Step 4 in Discover AI apps and data](discover.md#step-4discover-deployed-ai-workloads-in-your-environment-and-gain-security-insights-with-microsoft-defender-for-cloud)] |
-| Apply AI protections in Defender for Cloud | See [Step 2 on Get the most out of threat protection for AI in Protect AI apps and data](protect.md#step-2Protect-data-through-dspm-for-ai) |
+| Apply AI protections in Defender for Cloud | See [Step 2 on Get the most out of threat protection for AI in Protect AI apps and data](protect.md#step-2--Protect-data-through-dspm-for-ai) |
 
 ### Step 4—Configure Purview Communication Compliance
 

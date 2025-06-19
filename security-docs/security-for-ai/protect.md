@@ -111,13 +111,13 @@ Use the following resources to make progress with Microsoft Purview.
 | Define your sensitivity labels and policies that will protect your organization's data  |[Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels) <br> [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels) <br> [Restrict access to content by using sensitivity labels to apply encryption](/purview/encryption-sensitivity-labels) |
 | Label and protect data for Microsoft 365 apps and services |[Manage sensitivity labels in Office apps](/purview/sensitivity-labels-office-apps) <br> [Enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files) |
 |Tune your DLP policies |[Create and Deploy data loss prevention policies](/purview/dlp-create-deploy-policy)  |
-|For AI apps develped in Auzre or other cloud providers, learn how to apply sensitivity labels and DLP policies by using the Purview SDK   | [What is Purview SDK](/purview/developer/microsoft-purview-sdk-documentation-overview) <br> [Use Microsoft Graph Purview APIs](/purview/developer/use-the-api) <br> [How to test an AI application integrated with Purview SDK](/purview/developer/how-to-test-an-ai-application-integrated-with-purview-sdk) |
+|For AI apps developed in Auzre or other cloud providers, learn how to apply sensitivity labels and DLP policies by using the Purview SDK   | [What is Purview SDK](/purview/developer/microsoft-purview-sdk-documentation-overview) <br> [Use Microsoft Graph Purview APIs](/purview/developer/use-the-api) <br> [How to test an AI application integrated with Purview SDK](/purview/developer/how-to-test-an-ai-application-integrated-with-purview-sdk) |
 
 ### Step 4—Apply the Risky AI template in Insider Risk Management (IRM)
 
 Microsoft Purview Insider Risk Management (IRM) includes predefined policy templates you can apply to your environment, including Risky AI usage. IRM templates are predefined policy conditions that define the types of risk indicators and risk scoring model used by the policy. 
 
-The Risky AI usagae policy can help detect and enable risk scoring for prompts and responses across AI tools in your organization. IRM helps you investigate and take action on risk activities related to AI.
+The Risky AI usage policy can help detect and enable risk scoring for prompts and responses across AI tools in your organization. IRM helps you investigate and take action on risk activities related to AI.
 
 Use the following resources to get started with Insider Risk Management and to apply the Risky AI usage policy template.
 
@@ -128,7 +128,7 @@ Use the following resources to get started with Insider Risk Management and to a
 | Get started with Insider Risk Management and learn about top scenarios that benefit your organization | [Learn about insider risk management](/purview/insider-risk-management) |
 | Apply the Risky AI template | [Learn about insider risk management policy templates \| Microsoft Learn](/purview/insider-risk-management-policy-templates#risky-ai-usage-preview) |
 | Learn about key scenarios for AI and view example reports | [Insider Risk Management empowering risky AI usage visibility and security investigations](https://techcommunity.microsoft.com/blog/microsoft-security-blog/insider-risk-management-empowering-risky-ai-usage-visibility-and-security-invest/4298246) |
-|For AI apps developed with the Purview SDK, test Insider Risk Managemetn integration  | [How to test an AI application integrated with Purview SDK](/purview/developer/how-to-test-an-ai-application-integrated-with-purview-sdk) |
+|For AI apps developed with the Purview SDK, test Insider Risk Management integration  | [How to test an AI application integrated with Purview SDK](/purview/developer/how-to-test-an-ai-application-integrated-with-purview-sdk) |
 
 
 ### Step 5—Configure Adaptive Protection for Insider Risk Management

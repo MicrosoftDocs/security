@@ -66,9 +66,9 @@ The following steps describe the illustration and also walk through the steps of
 | 1   | Build and manage assessments in Microsoft Purview Compliance Manager | Enterprise-wide |
 | 2   | Use Defender for Cloud Apps to manage AI apps based on compliance risk | SaaS AI apps |
 | 3   | Use Cloud Security Posture Management (CSPM) for AI workloads to discover and manage custom-built apps based on compliance risk | Custom-built Azure AI based AI applications |
-| 4   | Configure Purview Communication Compliance to minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization | Microsoft 365 apps and services <br> AI apps connected by Microsoft Entra or Microsoft Purview Data Map connectors |
-| 5   | Configure Purview Data Lifecycle Management to retain the content that you need to keep, and delete the content that you don't. | Microsoft 365 apps and services |
-| 6   | Use eDiscovery together with audit logs for Microsoft 365 Copilot for investigations, as needed | Microsoft 365 Copilot, Microsoft Copilot |
+| 4   | Configure Purview Communication Compliance to minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization | Microsoft 365 apps and services <br> AI apps connected by Microsoft Entra or Microsoft Purview Data Map connectors <br> Azure AI services |
+| 5   | Configure Purview Data Lifecycle Management to retain the content that you need to keep, and delete the content that you don't. | Retention policies for AI apps include user prompts and responses for Microsoft 365 Copilot and Copilot Studio, and also user prompts and responses for other Microsoft copilots and generative AI apps when they have a collection policy with the setting to capture content. These messages can then be retained and deleted for compliance reasons.<br> To integrate AI apps developed on other cloud providers, use the Purview SDK.|
+| 6   | Use eDiscovery together with audit logs for Microsoft 365 Copilot for investigations, as needed | Audit logs are automatically generated when a user interacts with Copilot or an AI Application. <br> To integrate AI apps developed on other cloud providers, use the Purview SDK. |
 | 7   | Use Priva Privacy Assessments to initiate privacy impact assessments for AI apps you build | Any app, any location |
 | 8   | Use AI reports in AI Foundry to document AI project details for apps you develop | AI apps in Azure |
 | 9  | Implement Azure AI Content Safety to block harmful content, and detect and correct ungrounded responses | AI apps in Azure |
@@ -104,7 +104,7 @@ See the previous articles in this series to get started with and use Defender fo
 
 | Task | Recommended resources |
 | --- | --- |
-| Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps | See [Step 2 in Discover AI apps and data](discover.md#step-2discover-sanction-and-block-ai-apps-with-microsoft-defender-for-cloud-apps) |
+| Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps | See [Step 3 in Discover AI apps and data](discover.md#step-3discover-sanction-and-block-ai-apps-with-microsoft-defender-for-cloud-apps) |
 | Use Defender for Cloud Apps to triage and protect use of AI apps | See [Get the most out of threat protection for AI in Protect AI apps and data](protect.md#step-2--protect-data-through-dspm-for-ai) |
 
 ### Step 3—Use Cloud Security Posture Management (CSPM) for AI workloads
@@ -117,7 +117,7 @@ See the previous articles in this series to get started with and use Defender fo
 
 | Task | Recommended resources |
 | --- | --- |
-| Discover deployed AI workloads in your environment and gain security insights with Microsoft Defender for Cloud | See [Step 3 in Discover AI apps and data](discover.md#step-3discover-deployed-ai-workloads-in-your-environment-and-gain-security-insights-with-microsoft-defender-for-cloud)] |
+| Discover deployed AI workloads in your environment and gain security insights with Microsoft Defender for Cloud | See [Step 4 in Discover AI apps and data](discover.md#step-4discover-deployed-ai-workloads-in-your-environment-and-gain-security-insights-with-microsoft-defender-for-cloud)] |
 | Apply AI protections in Defender for Cloud | See [Step 2 on Get the most out of threat protection for AI in Protect AI apps and data](protect.md#step-2--protect-data-through-dspm-for-ai) |
 
 ### Step 4—Configure Purview Communication Compliance
@@ -145,6 +145,8 @@ Use the following resources to get started.
 | Task | Recommended resources |
 | --- | --- |
 | Learn about and get started | [Learn about Microsoft Purview Data Lifecycle Management](/purview/data-lifecycle-management) <br>[Get started with data lifecycle management](/purview/get-started-with-data-lifecycle-management) |
+| Learn about retention for Copilot & AI apps  | [Learn how retention works with AI apps](/purview/retention-policies-copilot)  |
+| For AI apps developed in other cloud providers, integrate with the Purview SDK | [Learn about the Microsoft Purview SDK](/purview/developer/microsoft-purview-sdk-documentation-overview)  | 
 
 ### Step 6—Use eDiscovery together with audit logs for Microsoft 365 Copilot
 
@@ -157,6 +159,8 @@ Use Microsoft Purview audit logs to identify how, when, and where Copilot intera
 | Learn where Copilot usage data is stored and how you can audit it | [Microsoft 365 Copilot data protection and auditing architecture](/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing#where-copilot-usage-data-is-stored-and-how-you-can-audit-it) |
 | Get started with eDiscovery | [Learn about eDiscovery solutions](/purview/edisc) |
 | Learn about Purview audit logs | [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview) |
+|Learn about audit logs for AI apps  | [Learn which admin and user activities are logged for AI apps](/purview/audit-copilot) |
+| For AI apps developed in other cloud providers, integrate with the Purview SDK | [Learn about the Microsoft Purview SDK](/purview/developer/microsoft-purview-sdk-documentation-overview)  | 
 
 ### Step 7—Use Priva Privacy Assessments
 

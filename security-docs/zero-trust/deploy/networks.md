@@ -250,6 +250,8 @@ Follow these steps:
 
 - [Configure and manage](/azure/virtual-network/manage-ddos-protection) Azure DDoS Network Protection.
 - [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
+- [Use Microsoft Sentinel with Azure Web Application Firewall](/azure/web-application-firewall/waf-sentinel)
+- [Use Azure Firewall with Microsoft Sentinel](/azure/firewall/firewall-sentinel-overview)
 
 
 #### 4.2 Threat protection: Cloud native filtering and protection for known threats

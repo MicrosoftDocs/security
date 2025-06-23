@@ -1,6 +1,6 @@
 ---
-title: Common Zero Trust identity and device access policies - Microsoft 365 for enterprise
-description: Describes the recommended common Zero Trust identity and device access policies and configurations.
+title: Zero Trust Identity and Device Access Policies for Microsoft 365
+description: Learn about Zero Trust identity and device access policies for Microsoft 365, including configurations and benefits for secure deployments.
 ms.author: kenwith
 author: kenwith
 
@@ -22,18 +22,18 @@ ms.collection:
   - zerotrust-solution
   - tier2
 search.appverid: met150
-ms.date: 03/20/2025
+ms.date: 06/18/2025
 ---
 
 # Common security policies for Microsoft 365 organizations
 
-Organizations have a lot to worry about when deploying Microsoft 365 for their organization. The Conditional Access, app protection, and device compliance policies referenced in this article are based on Microsoft's recommendations and the three guiding principles of [Zero Trust](zero-trust-overview.md):
+Many organizations have questions when deploying Microsoft 365 in a secure fashion. The Conditional Access, app protection, and device compliance policies in this article are based on Microsoft's recommendations and the three guiding principles of [Zero Trust](zero-trust-overview.md):
 
 - Verify explicitly
 - Use least privilege
 - Assume breach
 
-Organizations can take these policies as is or customize them to fit their needs. If possible, test your policies in a nonproduction environment before you roll them out to your production users. Testing is critical to identify and communicate any possible effects to your users.
+Organizations can use these policies as is or customize them to fit their needs. Test your policies in a nonproduction environment to identify potential effects and communicate them to users before rolling them out to production. Testing is critical to identify and communicate possible effects to users.
 
 We group these policies into three protection levels based on where you are on your deployment journey:
 
@@ -41,14 +41,14 @@ We group these policies into three protection levels based on where you are on y
 - **Enterprise**: Enhanced controls that introduce device compliance.
 - **Specialized security**: Policies that require multifactor authentication every time for specific data sets or users.
 
-The following diagram shows the protection levels that each policy applies to and what types of devices the policies apply to:
+This diagram shows the protection levels for each policy and the types of devices they apply to:
 
 :::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-policies-three-tiers.svg" alt-text="A diagram showing common identity and device policies that support Zero Trust principles." lightbox="media/microsoft-365-policies-configurations/identity-device-access-policies-three-tiers.svg":::
 
 You can download this diagram as a [PDF](https://download.microsoft.com/download/3d22de2e-38d8-4119-9f26-f6122b567909/zero-trust-id-and-device-access-policies-contoso.pdf) file or an editable [Visio](https://download.microsoft.com/download/8/b/2/8b23ab16-a3de-4b4e-b8a0-95b393cfbcee/zero-trust-id-and-device-access-policies-contoso.vsdx) file.
 
 > [!TIP]
-> We recommend requiring multifactor authentication (MFA) for users before enrolling devices in Intune to ensure they are in possession of the device. MFA is on by default due to [security defaults](/entra/fundamentals/security-defaults#enforced-security-policies), or you can use [Conditional Access policies to require MFA for all users](/entra/identity/conditional-access/policy-all-users-mfa-strength).
+> Require multifactor authentication (MFA) for users before enrolling devices in Intune to confirm the device is with the intended user. MFA is on by default thorough [security defaults](/entra/fundamentals/security-defaults#enforced-security-policies), or you can use Conditional Access policies to [require MFA for all users](/entra/identity/conditional-access/policy-all-users-mfa-strength).
 >
 > Devices must be enrolled in Intune before you can enforce device compliance policies.
 
@@ -66,11 +66,11 @@ For more information about roles and permissions in Microsoft Entra, see [Overvi
 
 ### User registration
 
-Ensure that users register for MFA before you require it. If your licenses include Microsoft Entra ID P2, you can use the [MFA registration policy within Microsoft Entra ID Protection](/entra/id-protection/howto-identity-protection-configure-mfa-policy) to require users to register. We provide [communication templates](https://aka.ms/mfatemplates) that you can download and customize to promote user registration.
+Ensure users register for MFA before they're required to use it. If your licenses include Microsoft Entra ID P2, you can use the [MFA registration policy within Microsoft Entra ID Protection](/entra/id-protection/howto-identity-protection-configure-mfa-policy) to require users to register. We provide [communication templates](https://aka.ms/mfatemplates) that you can download and customize to promote user registration.
 
 ### Groups
 
-All Microsoft Entra groups that you use as part of these recommendations must be Microsoft 365 Groups, **not** security groups. This requirement is important for the deployment of sensitivity labels to secure documents in Microsoft Teams and SharePoint. For more information, see [Learn about groups and access rights in Microsoft Entra ID](/entra/fundamentals/concept-learn-about-groups#group-types).
+All Microsoft Entra groups used in these recommendations must be Microsoft 365 Groups, **not** security groups. This requirement is important for the deployment of sensitivity labels to secure documents in Microsoft Teams and SharePoint. For more information, see [Learn about groups and access rights in Microsoft Entra ID](/entra/fundamentals/concept-learn-about-groups#group-types).
 
 ### Assigning policies
 
@@ -85,36 +85,42 @@ The following table describes example group assignments and exclusions for MFA a
 |**Specialized security**|Require multifactor authentication **always**|*Top Secret Project Buckeye group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
 
 > [!TIP]
-> Be careful when applying higher levels of protection to users and groups. The goal of security isn't to add unnecessary friction to the user experience. For example, members of the *Top Secret Project Buckeye group* are required to use MFA every time they sign in, even if they aren't working on the specialized content for their project. Excessive security friction can lead to fatigue. Enable [phishing-resistant authentication methods](/entra/identity/authentication/concept-authentication-passwordless) (for example, Windows Hello for Business or FIDO2 security keys) to help reduce the friction caused by security controls.
+> Apply higher levels of protection to users and groups carefully. Security's goal isn't to add unnecessary friction to the user experience. For example, members of the *Top Secret Project Buckeye group* are required to use MFA every time they sign in, even if they aren't working on the specialized content for their project. Excessive security friction can lead to fatigue. Enable [phishing-resistant authentication methods](/entra/identity/authentication/concept-authentication-passwordless) (for example, Windows Hello for Business or FIDO2 security keys) to help reduce the friction caused by security controls.
 
 ### Emergency access accounts
 
-All organizations should have at least one emergency access account (and possibly more, depending on the size of the organization) that's monitored for use and excluded from policies. **These accounts are only used in case all other administrator accounts and authentication methods become locked out or otherwise unavailable**. For more information, see [Manage emergency access accounts in Microsoft Entra ID](/entra/identity/role-based-access-control/security-emergency-access).
+Every organization needs at least one emergency access account that is monitored for use and excluded from policies. Larger organizations might require more accounts. **These accounts are only used in case all other administrator accounts and authentication methods become locked out or otherwise unavailable**. For more information, see [Manage emergency access accounts in Microsoft Entra ID](/entra/identity/role-based-access-control/security-emergency-access).
 
-### Exclusions
+### Excluding users
 
-A recommended practice is to create a Microsoft Entra group for Conditional Access exclusions. This group gives you a means to provide access to a user while you troubleshoot access issues.
+We recommend crating a Microsoft Entra group for Conditional Access exclusions. This group gives you a means to provide access to a user while you troubleshoot access issues. Features like access reviews in Microsoft Entra ID Governance help you [manage users excluded from Conditional Access policies](/entra/id-governance/conditional-access-exclusion)
 
 > [!WARNING]
-> We recommend an exclusion group as a temporary solution only. Be sure to continuously monitor this group for changes and verify the group is being used only for its intended purpose.
+> We recommend an exclusion group as a temporary solution only. Continuously monitor this group for changes and ensure it's used only for its intended purpose.
 
-Do the following steps to add an exclusion group to any existing policies. As previously described, you need [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator) permissions.
+Use the following steps to add an exclusion group to existing policies. 
 
-1. In the Microsoft Entra admin center at <https://entra.microsoft.com>, go to **Protection** \> **Conditional Access** \> **Policies**. Or, to go directly to the **Conditional Access \| Policies** page, use <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Policies/fromNav/Identity>.
-2. On the **Conditional Access \| Policies** page, select an existing policy by clicking on the name value.
-3. On the policy detail page that opens, select the link at **Users** in the **Assignments** section.
-4. In the control that opens, select the **Exclude** tab, and then select **Users and groups**.
-5. In the **Select excluded users and groups** flyout that opens, find and select the following identities:
-   - **Users**: The emergency access accounts.
-   - **Groups**: The Conditional Access exclusion group
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator).
+2. Browse to **Protection** > **Conditional Access** > **Policies**.
+3. Select an existing policy by clicking on the name.
+4. Under **Assignments**, select **Users or workload identities**.
+   a. Under **Exclude**, select **Users and groups**, and choose the following identities:
+      - **Users**: Your emergency access accounts.
+      - **Groups**: Your Conditional Access exclusion group.
+   b. Select **Select**.
+5. Make any other modifications.
+6. Select **Save**.
 
-   When you're finished on the **Select excluded users and groups** flyout, select **Select**
+
+### Excluding applications
+
+We recommend creating a baseline multifactor authentication policy targeting all users and all resources (without any application exclusions), like the one explained in [Require multifactor authentication for all users](/entra/identity/conditional-access/policy-all-users-mfa-strength). Excluding certain applications might have unintended security and usability consequences described in [Conditional Access behavior when an all resources policy has an app exclusion](/entra/identity/conditional-access/concept-conditional-access-cloud-apps#conditional-access-behavior-when-an-all-resources-policy-has-an-app-exclusion). Applications, like Microsoft 365 and Microsoft Teams, depend on multiple services making behavior unpredictable when exclusions are made.
 
 ## Deployment
 
 We recommend implementing the starting point policies in the order listed in the following table. You can implement the MFA policies for enterprise and specialized security levels of protection at any time.
 
-- **Starting point**:
+**Starting point**:
 
   |Policy|More information|Licensing|
   |---|---|---|
@@ -124,7 +130,7 @@ We recommend implementing the starting point policies in the order listed in the
   |[Apply Application Protection Policies (APP) for data protection](#app-protection-policies)|One Intune APP per mobile device platform (Windows, iOS/iPadOS, and Android).|Microsoft 365 E3 or E5|
   |[Require approved apps and app protection policies](#require-approved-apps-or-app-protection-policies)|Enforces app protection policies for mobile devices using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
 
-- **Enterprise**:
+**Enterprise**:
 
   |Policy|More information|Licensing|
   |---|---|---|
@@ -132,7 +138,7 @@ We recommend implementing the starting point policies in the order listed in the
   |[Define device compliance policies](#device-compliance-policies)|Set minimum configuration requirements. One policy for each platform.|Microsoft 365 E3 or E5|
   |[Require compliant PCs and mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces the configuration requirements for devices accessing your organization|Microsoft 365 E3 or E5|
 
-- **Specialized security**:
+**Specialized security**:
 
   |Policy|More information|Licensing|
   |---|---|---|
@@ -166,10 +172,12 @@ Intune device compliance policies define the requirements for devices to be comp
 - [iOS/iPadOS](#enrollment-and-compliance-settings-for-iosipados)
 - [Windows 10 and later](#recommended-compliance-settings-for-windows-10-and-later)
 
-To create device compliance policies, do the following steps:
+### Create device compliance policies
 
-1. In the Microsoft Intune admin center at <https://endpoint.microsoft.com>, go to **Manage devices** \> **Compliance** \> **Policies** tab. Or, to go directly to the **Policies** tab of the **Devices \| Compliance** page, use <https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/compliance>.
-2. On the **Policies** tab of the **Devices \| Compliance** page, select **Create policy**.
+Follow these steps to create device compliance policies:
+
+1. Sign in to the [Microsoft Intune admin center](https://intune.microsoft.com/) as an [Intune Administrator](/entra/identity/role-based-access-control/permissions-reference#intune-administrator).
+2. Browse to **Devices** > **Compliance** > **Create policy**.
 
 For step-by-step guidance, see [Create a compliance policy in Microsoft Intune](/intune/intune-service/protect/create-compliance-policy).
 
@@ -223,8 +231,7 @@ The Android Enterprise security configuration framework is organized into severa
 
 Configure the following settings as described in [Device Compliance settings for Windows 10/11 in Intune](/intune/intune-service/protect/compliance-policy-create-windows). These settings align with the principles outlined in [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
 
-- **Device health \> Windows Health Attestation Service evaluation rules**: 
-/intune/intune-service/
+- **Device health** > **Windows Health Attestation Service evaluation rules**: 
 
   |Property|Value|
   |---|---|
@@ -232,7 +239,7 @@ Configure the following settings as described in [Device Compliance settings for
   |Require Secure Boot to be enabled on the device|Require|
   |Require code integrity|Require|
 
-- **Device properties \> Operating System Version**: Specify appropriate values for operating system versions based on your IT and security policies.
+- **Device properties** > **Operating System Version**: Enter appropriate values for operating system versions based on your IT and security policies.
 
   |Property|Value|
   |---|---|

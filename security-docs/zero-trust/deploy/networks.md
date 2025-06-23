@@ -1,7 +1,7 @@
 ---
 title: Secure networks with Zero Trust
 description: Learn how to secure networks using a Zero Trust strategy with Secure Access Service Edge (SASE) and Secure Service Edge (SSE) solutions.
-ms.date: 05/16/2025
+ms.date: 06/23/2025
 ms.service: security
 author: kenwith
 manager: femila
@@ -290,12 +290,13 @@ Take these steps to protect against known threats:
        - [Create and use Web Application Firewall v2 custom rules.](/azure/web-application-firewall/ag/create-custom-waf-rules).
 
 
-- **For all endpoints (HTTP or not)**, front with [Azure Firewall](/azure/firewall/overview) for threat intelligence-based filtering at Layer 4:
+- **For all endpoints (HTTP or not)**, front with [Azure Firewall](/azure/firewall/overview) for threat intelligence-based and IDPS filtering at Layer 4:
 
     - [Deploy and configure Azure Firewall](/azure/firewall/tutorial-firewall-deploy-portal) using the Azure portal.
     - [Enable threat intelligence-based filtering](/azure/firewall/threat-intel) for your traffic.
         > [!TIP]
         > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
+    - [Azure Firewall IDPS detects and prevents threats in network traffic when enabled](/azure/firewall/premium-features#idps)
 
 #### 4.3 Monitoring and Visibility
 

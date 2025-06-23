@@ -241,7 +241,7 @@ Follow these steps:
 
 #### 4.1 Threat protection: Machine learning-based threat protection and filtering with context-based signals
 
-For further threat protection, turn on [Azure DDoS Protection Standard](/azure/virtual-network/ddos-protection-overview) to constantly monitor your Azure-hosted application traffic, use ML-based frameworks to baseline and detect volumetric traffic floods, and apply automatic mitigations.
+For further threat protection, turn on [Azure DDoS Network Protection](/azure/virtual-network/ddos-protection-overview) to constantly monitor your Azure-hosted application traffic, use ML-based frameworks to baseline and detect volumetric traffic floods, detect protocol attacks, and apply automatic mitigations.
 
 Follow these steps:
 

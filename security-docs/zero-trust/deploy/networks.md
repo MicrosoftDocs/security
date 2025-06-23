@@ -208,6 +208,9 @@ For VPN connections authenticated with Microsoft Entra ID, Continuous Access Eva
 - Enforce mutual authentication (mTLS) between workloads and devices.
 - Block untrusted or legacy protocols that lack encryption.
 
+> [!NOTE]
+> Azure Firewall can perform TLS inspection on network traffic. It decrypts the data, stops threats with IDPS or application rules, then re-encrypts it and sends it to its destination. To learn more, see [Azure Firewall TLS inspection](/azure/firewall/premium-features#tls-inspection) and [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).
+
 #### 3.1 Encryption: User-to-app internal traffic is encrypted
 
 Add encryption to ensure user-to-app internal traffic is encrypted.

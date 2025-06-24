@@ -196,7 +196,7 @@ Traditional VPN endpoints can be integrated with Azure Firewall or partner SWG a
 Continuous session validation ensures that access decisions are enforced in real time, not just at the initial sign-in. This approach helps organizations respond quickly to changing risk conditions and maintain a strong security posture.
 
 **Microsoft Global Secure Access**  
-Zero Trust Network Access (ZTNA) isn't a one-time check. Microsoft Global Secure Access uses Continuous Access Evaluation (CAE) to monitor risk signals—such as detected malware or unusual locations—and can revoke or reevaluate application access tokens and terminate network connectivity when risk is detected. Defender for Cloud Apps enforces live session controls, such as blocking downloads, quarantining sessions, or requiring extra multifactor authentication (MFA) during an active session. Automated response playbooks in Microsoft Sentinel or Microsoft Defender XDR can isolate compromised devices or disable accounts in real time.
+Zero Trust Network Access isn't a one-time check. Microsoft Global Secure Access uses Continuous Access Evaluation (CAE) to monitor risk signals—such as detected malware or unusual locations—and can revoke or reevaluate application access tokens and terminate network connectivity when risk is detected. Defender for Cloud Apps enforces live session controls, such as blocking downloads, quarantining sessions, or requiring extra multifactor authentication (MFA) during an active session. Automated response playbooks in Microsoft Sentinel or Microsoft Defender XDR can isolate compromised devices or disable accounts in real time.
 
 - [Learn about Continuous Access Evaluation (CAE)](/entra/identity/conditional-access/concept-continuous-access-evaluation)
 - [Learn about Defender for Cloud Apps session controls](/defender-cloud-apps/session-policy-aad)
@@ -477,7 +477,7 @@ Legacy technologies to retire include:
 
 For each deprecated control, adopt a modern Zero Trust alternative that:
 
-- Enforces least-privilege access at the application or workload layer using Zero Trust Network Access (ZTNA).
+- Enforces least-privilege access at the application or workload layer using Zero Trust Network Access.
 - Integrates identity and device posture (using Microsoft Entra ID and Microsoft Defender for Endpoint) into every access decision.
 - Provides continuous validation with Continuous Access Evaluation and session reevaluation.
 - Delivers software-defined visibility and control through Secure Access Service Edge (SASE) and Security Service Edge (SSE) solutions, such as Secure Web Gateway (SWG), Cloud Access Security Broker (CASB), Firewall-as-a-Service (FWaaS), and Network Detection and Response (NDR).

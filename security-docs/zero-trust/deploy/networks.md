@@ -109,7 +109,7 @@ Follow these steps, depending on the type of boundary:
 ##### PaaS services boundary
 
  - When using Azure-provided PaaS services, Azure Storage, [Azure Cosmos DB](/azure/private-link/create-private-endpoint-cosmosdb-portal),
-    or [Azure Web App](/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network.
+    or [Azure Web App](/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network. 
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).

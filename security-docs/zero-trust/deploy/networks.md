@@ -130,7 +130,7 @@ Follow these steps:
 
 Alternatively, Azure firewall can also be used for segmentation and allowing traffic from specific subnets and Virtual Networks.
 
-- Use Azure Firewall to filter traffic flowing between cloud resources, the internet, and on-premises resources. Use Azure Firewall or [Azure Firewall Manager] (/azure/firewall-manager/overview) to create rules or policies that allow or deny traffic using layer 3 to layer 7 controls. To learn more, see [recommendations for building a segmentation strategy](/azure/well-architected/security/segmentation).
+- Use Azure Firewall to filter traffic flowing between cloud resources, the internet, and on-premises resources. Use Azure Firewall or [Azure Firewall Manager](/azure/firewall-manager/overview) to create rules or policies that allow or deny traffic using layer 3 to layer 7 controls. To learn more, see [recommendations for building a segmentation strategy](/azure/well-architected/security/segmentation).
 
 ##### Applications are partitioned to different Azure Virtual Networks (VNets) and connected using a hub-spoke model
 

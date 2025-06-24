@@ -17,9 +17,7 @@ ms.collection:
 
 Network security is evolving beyond the traditional perimeter, which was once tied to the physical boundaries of data centers. Today, the perimeter is dynamic—extending to users, devices, and data wherever they are. This shift drives the adoption of risk-based policies that isolate hosts, enforce encryption, segment networks, and places controls closer to applications and data.
 
-Secure Access Service Edge (SASE) reflects this evolution by redefining the perimeter entirely.  
-It converges networking and security into a cloud-delivered service that follows users and data across environments.  
-This approach simplifies policy management and strengthens protection.
+Secure Access Service Edge (SASE) reflects this evolution by redefining the perimeter entirely. It converges networking and security into a cloud-delivered service that follows users and data across environments. This approach simplifies policy management and strengthens protection.
 
 Adding a Zero Trust strategy to a SASE framework further enhances security by ensuring that no user or device is trusted by default—regardless of location. This principle aligns seamlessly with SASE’s goal of securing access at the edge.
 
@@ -112,8 +110,10 @@ Follow these steps, depending on the type of boundary:
 
 ##### PaaS services boundary
 
- - When using Azure-provided PaaS services, Azure Storage, [Azure Cosmos DB](/azure/private-link/create-private-endpoint-cosmosdb-portal),
-    or [Azure Web App](/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network. 
+- When using Azure-provided PaaS services, Azure Storage, [Azure Cosmos DB](/azure/private-link/create-private-endpoint-cosmosdb-portal),
+    or [Azure Web App](/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network.
+- If your PaaS services require a secure boundary to communicate with each other and manage public network access, we suggest associating them to a network security perimeter. Private Link connectivity will be honored for traffic coming in through private endpoints of these PaaS services, ensuring all data exchanges are over private IP addresses and the traffic never leaves the Microsoft network.
+[Learn more about Network Security Perimeter](/azure/private-link/network-security-perimeter-concepts) and see the [list of supported PaaS services](/azure/private-link/network-security-perimeter-concepts#onboarded-private-link-resources).
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).

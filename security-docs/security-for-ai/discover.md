@@ -33,7 +33,7 @@ The following table describes the illustration and also walks through the steps 
 | Step | Task | Scope |
 | --- | --- | --- |
 |  1   | Gain visibility into all agent identities created across Microsoft Copilot Studio and Azure AI Foundry with Microsoft Entra Agent ID.  |  Agents created in Microsoft Copilot Studio and Azure AI Foundry   |
-| 2   | Gain visibility into AI usage Microsoft Purview Data Security Posture Management (DSPM) for AI. Apply policies to protect sensitive data. | Copilots, agents, and other AI apps that use third-party large language modules (LLMs), including [Supported AI sites](/purview/ai-microsoft-purview-supported-sites). |
+| 2   | Gain visibility into AI usage with Microsoft Purview Data Security Posture Management (DSPM) for AI. Apply policies to protect sensitive data. | Copilots, agents, and other AI apps that use third-party large language modules (LLMs), including [Supported AI sites](/purview/ai-microsoft-purview-supported-sites). |
 | 3   | Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps | SaaS AI apps |
 | 4   | Discover deployed AI workloads in your environment and gain security insights with Microsoft Defender for Cloud Security Posture Management (CSPM) | Custom-built Azure AI based AI applications |
 

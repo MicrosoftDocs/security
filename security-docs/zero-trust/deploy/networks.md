@@ -10,7 +10,7 @@ ms.topic: concept-article
 ms.collection:
   - zerotrust-pillar
 
-#customer intent: As an administrator, I want to understand how I can adopt modern Zero Trust security practices so that I can secure my network and organization.
+#customer intent: As an administrator, I want to understand how I can adopt modern SASE, Zero Trust, and AI security practices so that I can secure my network and organization.
 ---
 
 # Secure networks with SASE, Zero Trust, and AI

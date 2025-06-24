@@ -187,7 +187,7 @@ This architecture:
 - Supports traffic steering and split tunneling for performance and compliance
 
 **Azure VPN Gateway Integration**  
-Traditional VPN endpoints can be integrated with Azure Firewall or partner SWG appliances using forced-tunnel configurations. This allows outbound and inbound VPN traffic to be inspected and controlled with Azure Firewall Manager, threat intelligence, and Conditional Access session controls. You can apply URL filtering, deep packet inspection (DPI), and DLP to VPN sessions. Defender for Cloud Apps session policies can enforce upload/download controls and shadow IT discovery on tunneled traffic.
+Traditional VPN endpoints can be integrated with Azure Firewall or partner SWG appliances using forced-tunnel configurations. The configuration allows outbound and inbound VPN traffic to be inspected and controlled with Azure Firewall Manager, threat intelligence, and Conditional Access session controls. You can apply URL filtering, deep packet inspection (DPI), and DLP to VPN sessions. Defender for Cloud Apps session policies can enforce upload/download controls and shadow IT discovery on tunneled traffic.
 
 - [Learn about forced-tunnel VPN with Azure Firewall](/azure/firewall)
 
@@ -199,11 +199,11 @@ Continuous session validation ensures that access decisions are enforced in real
 Zero Trust Network Access (ZTNA) isn't a one-time check. Microsoft Global Secure Access uses Continuous Access Evaluation (CAE) to monitor risk signals—such as detected malware or unusual locations—and can revoke or reevaluate application access tokens and terminate network connectivity when risk is detected. Defender for Cloud Apps enforces live session controls, such as blocking downloads, quarantining sessions, or requiring extra multifactor authentication (MFA) during an active session. Automated response playbooks in Microsoft Sentinel or Microsoft Defender XDR can isolate compromised devices or disable accounts in real time.
 
 - [Learn about Continuous Access Evaluation (CAE)](/entra/identity/conditional-access/concept-continuous-access-evaluation)
-- [Defender for Cloud Apps session controls](/defender-cloud-apps/session-policy-aad)
-- [Universal Continuous Access Evaluation (Preview)](/entra/global-secure-access/concept-universal-continuous-access-evaluation)
+- [Learn about Defender for Cloud Apps session controls](/defender-cloud-apps/session-policy-aad)
+- [Learn about Universal Continuous Access Evaluation (Preview)](/entra/global-secure-access/concept-universal-continuous-access-evaluation)
 
 **Azure VPN Gateway**
-For VPN connections authenticated with Microsoft Entra ID, Continuous Access Evaluation applies as well. If Conditional Access detects a compromised device or increased user risk, the point-to-site (P2S) or Virtual WAN tunnel can be terminated or forced to reauthenticate. By sending VPN logs to Microsoft Sentinel using Diagnostic Settings, you can trigger Logic App playbooks to block IP addresses, revoke tokens, or notify security teams—enabling real-time, risk-based decisions for traditional VPNs.
+For VPN connections using Microsoft Entra ID authentication, Continuous Access Evaluation (CAE) is supported. If Conditional Access detects a risky user or device, the VPN tunnel can be closed or require reauthentication. You can send VPN logs to Microsoft Sentinel and use automated playbooks to block IPs, revoke access, or alert security teams—enabling quick, risk-based responses for VPN connections.
 
 - [VPN Gateway authentication with Microsoft Entra ID](/azure/vpn-gateway/openvpn-azure-ad-tenant)
 - [Automate response with Microsoft Sentinel playbooks](/azure/sentinel/automation/create-playbooks)
@@ -215,7 +215,7 @@ For VPN connections authenticated with Microsoft Entra ID, Continuous Access Eva
 - Block untrusted or legacy protocols that lack encryption.
 
 > [!NOTE]
-> Azure Firewall can perform TLS inspection on network traffic. It decrypts the data, stops threats with IDPS or application rules, then re-encrypts it and sends it to its destination. To learn more, see [Azure Firewall TLS inspection](/azure/firewall/premium-features#tls-inspection) and [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).
+> Azure Firewall can perform TLS inspection on network traffic. It decrypts the data, stops threats using the Intrusion Detection and Prevention System (IDPS) or application rules, then re-encrypts it and sends it to its destination. To learn more, see [Azure Firewall TLS inspection](/azure/firewall/premium-features#tls-inspection) and [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).
 
 #### 3.1 Encryption: User-to-app internal traffic is encrypted
 

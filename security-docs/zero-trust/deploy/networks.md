@@ -1,5 +1,5 @@
 ---
-title: Secure networks with Zero Trust
+title: Secure networks with SASE, Zero Trust, and AI
 description: Learn how to secure networks using a Zero Trust strategy with Secure Access Service Edge (SASE) and Secure Service Edge (SSE) solutions.
 ms.date: 06/24/2025
 ms.service: security
@@ -13,7 +13,7 @@ ms.collection:
 #customer intent: As an administrator, I want to understand how I can adopt modern Zero Trust security practices so that I can secure my network and organization.
 ---
 
-# Secure networks with Zero Trust
+# Securing networks with SASE, Zero Trust, and AI
 
 Network security is evolving beyond the traditional perimeter, which was once tied to the physical boundaries of data centers. Today, the perimeter is dynamic—extending to users, devices, and data wherever they are. This shift has driven the adoption of risk-based policies that isolate hosts, enforce encryption, segment networks, and place controls closer to applications and data.
 

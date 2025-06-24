@@ -1,7 +1,7 @@
 ---
 title: Secure networks with Zero Trust
 description: Learn how to secure networks using a Zero Trust strategy with Secure Access Service Edge (SASE) and Secure Service Edge (SSE) solutions.
-ms.date: 06/23/2025
+ms.date: 06/24/2025
 ms.service: security
 author: kenwith
 manager: femila
@@ -15,11 +15,11 @@ ms.collection:
 
 # Secure networks with Zero Trust
 
-Network security changed a lot in recent years. Instead of relying on a single perimeter, organizations now use risk-based policies to control both internal and external traffic. This means isolating hosts, enforcing encryption, segmenting networks, and improving visibility across the enterprise. Security controls are now placed closer to applications and data, making it easier to protect resources and respond to threats. Each application can have its own security settings based on its specific needs for access and connectivity.
+Network security is evolving beyond the traditional perimeter, which was once tied to the physical boundaries of data centers. Today, the perimeter is dynamic—extending to users, devices, and data wherever they are. This shift has led to risk-based policies that isolate hosts, enforce encryption, segment networks, and place controls closer to applications and data.
 
-The emergence of Secure Access Service Edge (SASE) represents a paradigm shift in how organizations approach network security. SASE converges networking and security functions into a single, unified service. SASE offers a more streamlined and effective way to protect data and applications, regardless of where they're located. This modern approach not only simplifies the management of security policies but also enhances the overall security posture of the organization. Artificial Intelligence (AI) is playing a pivotal role in this new era of network security. AI-driven solutions are capable of analyzing vast amounts of data in real-time, identifying potential threats, and responding to incidents with unprecedented speed and accuracy. By applying AI, organizations can proactively detect and mitigate security risks, ensuring a more robust and resilient network infrastructure.
+Secure Access Service Edge (SASE) reflects this shift by redefining the perimeter entirely. It unifies networking and security into a cloud-delivered service that follows users and data across environments, simplifying policy management and strengthening security.
 
-In summary, the adoption of SASE, coupled with the integration of AI, marks a significant advancement in the field of network security. These innovations are enabling organizations to stay ahead of emerging threats and maintain a secure and efficient network environment.
+Artificial Intelligence (AI) enhances this model by analyzing data in real time, detecting threats, and enabling rapid response. Together, SASE and AI empower organizations to secure a perimeter-less world with greater agility and resilience.
 
 ## Key Principles of the Zero Trust Network Model
 

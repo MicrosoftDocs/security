@@ -15,11 +15,13 @@ ms.collection:
 
 # Secure networks with Zero Trust
 
-Network security is evolving beyond the traditional perimeter, which was once tied to the physical boundaries of data centers. Today, the perimeter is dynamic—extending to users, devices, and data wherever they are. This shift has led to risk-based policies that isolate hosts, enforce encryption, segment networks, and place controls closer to applications and data.
+Network security is evolving beyond the traditional perimeter, which was once tied to the physical boundaries of data centers. Today, the perimeter is dynamic—extending to users, devices, and data wherever they are. This shift has driven the adoption of risk-based policies that isolate hosts, enforce encryption, segment networks, and place controls closer to applications and data.
 
-Secure Access Service Edge (SASE) reflects this shift by redefining the perimeter entirely. It unifies networking and security into a cloud-delivered service that follows users and data across environments, simplifying policy management and strengthening security.
+Secure Access Service Edge (SASE) reflects this evolution by redefining the perimeter entirely. It converges networking and security into a cloud-delivered service that follows users and data across environments, simplifying policy management and strengthening protection.
 
-Artificial Intelligence (AI) enhances this model by analyzing data in real time, detecting threats, and enabling rapid response. Together, SASE and AI empower organizations to secure a perimeter-less world with greater agility and resilience.
+Adding a Zero Trust strategy to a SASE framework further enhances security by ensuring that no user or device is trusted by default—regardless of location. This principle aligns seamlessly with SASE’s goal of securing access at the edge.
+
+Artificial Intelligence (AI) amplifies this approach by analyzing data in real time, detecting threats, and enabling rapid, automated responses. Together, SASE, Zero Trust, and AI empower organizations to secure a perimeter-less world with greater agility, precision, and resilience.
 
 ## Key Principles of the Zero Trust Network Model
 

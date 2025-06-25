@@ -146,6 +146,22 @@ Follow these steps:
 
 
 
+#### 1.5 Validate segmentation with Network Watcher Traffic Analytics
+
+To ensure that network segmentation is functioning as intended, organizations should implement [Azure Network Watcher Traffic Analytics](/security/zero-trust/azure-networking-visibility). This capability provides flow-level visibility by analyzing VNET flow Logs, enabling teams to monitor traffic patterns across segmented environments.
+
+Traffic Analytics supports Zero Trust segmentation by:
+
+- **Validating segmentation policies**: Identify whether traffic is flowing only between intended segments and detect any violations of segmentation boundaries.
+
+- **Detecting lateral movement**: Surface unexpected or unauthorized east-west traffic that may indicate a breach or misconfiguration.
+
+- **Enhancing visibility**: Correlate traffic flows with NSG rules and threat intelligence to gain actionable insights into network behavior.
+
+- **Supporting continuous improvement**: Use analytics to refine micro-segmentation strategies and enforce least-privilege access dynamically.
+
+By integrating Traffic Analytics into your Zero Trust deployment, you gain the ability to continuously assess and improve the effectiveness of your segmentation strategy—ensuring that your network boundaries are not only defined but actively monitored and enforced.
+
 ### 2. Secure Access Service Edge (SASE) & Zero Trust Network Access (ZTNA)
 
 To effectively secure modern networks, organizations must move beyond legacy solutions and adopt advanced, integrated approaches. The move includes adopting Zero Trust Network Access (ZTNA) solutions for granular, identity-driven connectivity, applying SASE architectures to unify networking and security capabilities, and implementing continuous session validation with risk-based access controls. These strategies work together to ensure that access is always verified, threats are minimized, and security policies adapt dynamically to evolving risks.
@@ -305,9 +321,9 @@ Consider these steps to protect against known threats:
 
 #### 4.3 Monitoring and Visibility
 
-**Traffic Monitoring**
+**Traffic Analytics**
 
-Network Watcher Traffic Analytics to help monitor and 
+**Network Watcher Traffic Analytics** plays a critical role in Zero Trust segmentation by analyzing NSG flow logs to detect anomalous traffic, validate segmentation policies, and uncover shadow IT or misconfigured access paths. It enables security teams to visualize traffic between segments and enforce adaptive controls based on real-time telemetry. 
 
 **Log Analysis**
 

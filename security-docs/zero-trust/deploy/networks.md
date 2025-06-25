@@ -110,8 +110,7 @@ Follow these steps, depending on the type of boundary:
 
 ##### PaaS services boundary
 
-- When using Azure-provided PaaS services, (Azure Storage, [Azure Cosmos DB](/azure/private-link/create-private-endpoint-cosmosdb-portal),
-    or [Azure Web App](/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network.
+- When using Azure-provided PaaS services, Azure Storage, [Azure Cosmos DB](/azure/private-link/create-private-endpoint-cosmosdb-portal), or [Azure Web App](/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network.
 - If your PaaS services require a secure boundary to communicate with each other and manage public network access, we suggest associating them to a network security perimeter. Private Link connectivity will be honored for traffic coming in through private endpoints of these PaaS services, ensuring all data exchanges are over private IP addresses and the traffic never leaves the Microsoft network.
 [Learn more about Network Security Perimeter](/azure/private-link/network-security-perimeter-concepts) and see the [list of supported PaaS services](/azure/private-link/network-security-perimeter-concepts#onboarded-private-link-resources).
 

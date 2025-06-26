@@ -33,8 +33,8 @@ In the Zero Trust model, securing your networks focuses on three core objectives
 - **Limit the impact of breaches.** Use network segmentation, micro-perimeters, and adaptive controls to contain threats and prevent lateral movement.
 - **Enhance visibility and control.** Use solutions like Secure Access Service Edge (SASE) to unify security policy enforcement, monitor traffic, and respond quickly to emerging threats across cloud and hybrid environments.
 
-These objectives align with Zero Trust principles.  
-They support modern solutions such as SASE, which integrates networking and security functions.  
+These objectives align with Zero Trust principles. 
+They support modern solutions such as SASE, which integrates networking and security functions. 
 This integration provides comprehensive protection and centralized management.
 
 To make this happen, follow three Zero Trust principles:

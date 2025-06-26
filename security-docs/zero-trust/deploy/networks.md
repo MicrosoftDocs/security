@@ -236,7 +236,6 @@ Modern network communication must be strongly encrypted and secured at every sta
 - **Azure App Service & Azure Front Door:** Set the Minimum Inbound TLS Version to 1.3 to ensure only secure cipher suites are used for web apps. To learn more, see [Enforce minimum TLS version for App Service and Front Door](/azure/app-service/configure-ssl-certificate#enforce-minimum-tls-version).
 - **Azure IoT Edge, IoT Hub, and other PaaS services:** Confirm device SDKs support TLS 1.3, or restrict to TLS 1.2+.
 - **Azure Application Gateway (v2):** Supports mTLS using OCP-validated certificates for client verification. To learn more, see [Overview of TLS in App Service](/azure/app-service/overview-tls).
-- **Service Mesh (e.g., Azure Kubernetes Service with Istio or Linkerd):** Provides automated intra-cluster mTLS (workload-to-workload) with full enforcement. To learn more, see [About Istio on Azure Kubernetes Service (AKS)](/azure/aks/istio-about).
 - **Encrypt application backend traffic between virtual networks.**
 - **Encrypt traffic between on-premises and cloud:**
     - Configure site-to-site VPN over ExpressRoute Microsoft peering.

@@ -231,6 +231,12 @@ Modern network communication must be strongly encrypted and secured at every sta
 - **Enforce mutual authentication (mTLS)** between workloads and devices to ensure both client and server identities are verified, preventing unauthorized access even with valid credentials.
 - **Block untrusted or legacy protocols** that lack encryption, such as TLS 1.0/1.1 or outdated ciphers.
 
+> [!NOTE]
+> While TLS secures legitimate traffic, threats like malware and data leakage can still be hidden within encrypted sessions. Microsoft Entra Internet Access TLS inspection provides visibility into encrypted traffic, enabling malware detection, data loss prevention, and advanced security controls. [Learn more about Transport Layer Security inspection](/entra/global-secure-access/concept-transport-layer-security).
+
+> [!NOTE]
+> Azure Firewall can perform TLS inspection on network traffic. It decrypts data, applies Intrusion Detection and Prevention System (IDPS) or application rules, then re-encrypts and forwards it. [Learn more about Azure Firewall TLS inspection](/azure/firewall/premium-features#tls-inspection) and [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).
+
 #### Key recommendations
 
 - **Azure App Service & Azure Front Door:** Set the Minimum Inbound TLS Version to 1.3 to ensure only secure cipher suites are used for web apps. To learn more, see [Enforce minimum TLS version for App Service and Front Door](/azure/app-service/configure-ssl-certificate#enforce-minimum-tls-version).
@@ -251,12 +257,6 @@ Modern network communication must be strongly encrypted and secured at every sta
 #### Prepare for Post-Quantum Cryptography (PQC)
 
 Traditional public-key cryptographic algorithms (such as RSA and ECC) are vulnerable to future quantum computers. Microsoft has integrated quantum-resistant algorithms (LMS and ML-DSA, FIPS 204) into its platform, with broader PQC support coming soon. Begin transitioning to TLS 1.3 and prepare for PQC integration as standards are finalized.
-
-> [!NOTE]
-> While TLS secures legitimate traffic, threats like malware and data leakage can still be hidden within encrypted sessions. Microsoft Entra Internet Access TLS inspection provides visibility into encrypted traffic, enabling malware detection, data loss prevention, and advanced security controls. [Learn more about Transport Layer Security inspection](/entra/global-secure-access/concept-transport-layer-security).
-
-> [!NOTE]
-> Azure Firewall can perform TLS inspection on network traffic. It decrypts data, applies Intrusion Detection and Prevention System (IDPS) or application rules, then re-encrypts and forwards it. [Learn more about Azure Firewall TLS inspection](/azure/firewall/premium-features#tls-inspection) and [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).
 
 #### 3.1 Encryption: User-to-app internal traffic is encrypted
 

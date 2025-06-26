@@ -43,7 +43,7 @@ The DLP policy also specifies the location to apply the policy to, such as Excha
 
 If your data security and privacy team is ready to extend DLP policies to endpoints, you need to coordinate with them to enable devices for Endpoint DLP, test and tune DLP policies, train users, and monitor the results.
 
-:::image type="content" source="../media/devices/endpoint-dlp-steps.png" alt-text="The three steps to implement Endpoint DLP steps for device admins." lightbox="../media/devices/endpoint-dlp-steps.png":::
+:::image type="content" source="media/devices/endpoint-dlp-steps.png" alt-text="The three steps to implement Endpoint DLP steps for device admins." lightbox="media/devices/endpoint-dlp-steps.png":::
 
 Use the following steps to work with your information protection team.
 

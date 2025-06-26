@@ -31,7 +31,7 @@ After your organization deploys Microsoft Defender for Endpoint, you can gain gr
 
 Deploying Microsoft Defender for Endpoint includes onboarding endpoints. If you used Intune to onboard endpoints (recommended), then you've connected Intune to Defender for Endpoint. If you used a different method to onboard endpoints to Defender for Endpoint, see [Configure Microsoft Defender for Endpoint in Intune](/mem/intune-service/protect/advanced-threat-protection-configure) to ensure you set up the service-to-service connection between Intune and Defender for Endpoint.
 
-:::image type="content" source="../media/devices/devices-defender-for-endpoint-steps.svg" alt-text="The integration of Microsoft Intune with Microsoft Defender for Endpoint, including how Defender for Endpoint shares its signals with Microsoft Defender XDR." lightbox="../media/devices/devices-defender-for-endpoint-steps.svg":::
+:::image type="content" source="media/devices/devices-defender-for-endpoint-steps.svg" alt-text="The integration of Microsoft Intune with Microsoft Defender for Endpoint, including how Defender for Endpoint shares its signals with Microsoft Defender XDR." lightbox="media/devices/devices-defender-for-endpoint-steps.svg":::
 
 In this illustration:
 
@@ -66,7 +66,7 @@ To benefit from the latest data on risks and threats and to minimize conflicts a
 
 Using Defender for Endpoint, you can monitor compliance for these baselines. 
 
-:::image type="content" source="../media/devices/secconmgmt-baseline-card.png" alt-text="A screenshot example of the card in Defender for Endpoint for monitoring compliance for security baselines." lightbox="../media/devices/secconmgmt-baseline-card.png":::
+:::image type="content" source="media/devices/secconmgmt-baseline-card.png" alt-text="A screenshot example of the card in Defender for Endpoint for monitoring compliance for security baselines." lightbox="media/devices/secconmgmt-baseline-card.png":::
 
 To deploy security baselines and monitor compliance for these settings, use the steps in this table.
 

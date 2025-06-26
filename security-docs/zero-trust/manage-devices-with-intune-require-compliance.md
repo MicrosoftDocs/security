@@ -30,11 +30,11 @@ Conditional Access provides additional verification of device status before allo
 
 After setting up device compliance policies and assigning these to user groups, Intune lets Microsoft Entra ID know if a device is compliant or not. To use this status as a condition for access, you must work with your Microsoft Entra administrator to create a Conditional Access rule to require compliant PCs and mobile devices.
 
-:::image type="content" source="../media/devices/intune-mdm-step-3.png" alt-text="The third step of Mobile Device Management to restrict access to managed and compliant devices." lightbox="../media/devices/intune-mdm-step-3.png":::
+:::image type="content" source="media/devices/intune-mdm-step-3.png" alt-text="The third step of Mobile Device Management to restrict access to managed and compliant devices." lightbox="media/devices/intune-mdm-step-3.png":::
 
 The recommended Zero Trust identity and device access rule set includes this rule. See [Require compliant PCs and mobile devices](../security/office-365-security/zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices), as seen in the following illustration.
 
-:::image type="content" source="../media/devices/identity-device-require-compliance.svg" alt-text="Highlighted Zero Trust identity and device access policies to require compliant PCs and mobile devices." lightbox="../media/devices/identity-device-require-compliance.svg":::
+:::image type="content" source="media/devices/identity-device-require-compliance.svg" alt-text="Highlighted Zero Trust identity and device access policies to require compliant PCs and mobile devices." lightbox="media/devices/identity-device-require-compliance.svg":::
 
 Be sure to:
 

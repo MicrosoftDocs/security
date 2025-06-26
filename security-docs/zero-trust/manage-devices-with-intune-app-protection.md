@@ -29,7 +29,7 @@ keywords:
 
 Microsoft Intune app protection policies, sometimes referred to as Mobile Application Management (MAM), protect corporate data even if a device itself is not managed. This allows you to enable bring-your-own (BYO) and personal devices at work where users might be reluctant to "enroll" their device into management. App protection policies ensure corporate data in the apps you specify can't be copied and pasted to other apps on the device.
 
-:::image type="content" source="../media/devices/intune-app-steps.png" alt-text="Steps for creating App Protection Policies to separate organization and personal data on a device." lightbox="../media/devices/intune-app-steps.png":::
+:::image type="content" source="media/devices/intune-app-steps.png" alt-text="Steps for creating App Protection Policies to separate organization and personal data on a device." lightbox="media/devices/intune-app-steps.png":::
 
 In this illustration:
 
@@ -49,7 +49,7 @@ This guidance is tightly coordinated with the recommended [Zero Trust identity a
 
 This illustration highlights the two policies (also described in the table following the illustration).
 
-:::image type="content" source="../media/devices/identity-device-starting-point.svg" alt-text="Highlighted Zero Trust identity and device access policies to enforce mobile app protection." lightbox="../media/devices/identity-device-starting-point.svg":::
+:::image type="content" source="media/devices/identity-device-starting-point.svg" alt-text="Highlighted Zero Trust identity and device access policies to enforce mobile app protection." lightbox="media/devices/identity-device-starting-point.svg":::
 
 To configure these policies, use the recommended guidance and settings prescribed in [Zero Trust identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md). The following table links directly to the instructions for configuring these policies in Intune and Microsoft Entra ID.
 

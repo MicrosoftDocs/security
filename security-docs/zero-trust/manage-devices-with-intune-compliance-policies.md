@@ -26,7 +26,7 @@ keywords:
 
 Enrolling devices to Microsoft Intune gives you the ability to achieve even greater security and control of data in your environment. [Step 2. Enroll devices in Intune](manage-devices-with-intune-enroll.md) details how to accomplish this using Intune. This article covers the next step, which is to configure device compliance policies.
 
-:::image type="content" source="../media/devices/intune-mdm-step-2.png" alt-text="The second step of Mobile Device Management to create compliance policies." lightbox="../media/devices/intune-mdm-step-2.png":::
+:::image type="content" source="media/devices/intune-mdm-step-2.png" alt-text="The second step of Mobile Device Management to create compliance policies." lightbox="media/devices/intune-mdm-step-2.png":::
 
 You want to be sure devices that access your apps and data meet minimum requirements. For example, that they’re password or PIN-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. Intune uses these compliance policies to mark a device as compliant or non-compliant. This binary status is passed to Microsoft Entra which can use this status in Conditional Access rules to allow or prevent a device from accessing resources.
 
@@ -36,7 +36,7 @@ This guidance is tightly coordinated with the recommended [Zero Trust identity a
 
 This illustration highlights where the work of defining compliance policies fits into the overall Zero Trust recommended policy set.
 
-:::image type="content" source="../media/devices/identity-device-define-compliance.svg" alt-text="Highlighted Zero Trust identity and device access policies for Intune device compliance." lightbox="../media/devices/identity-device-define-compliance.svg":::
+:::image type="content" source="media/devices/identity-device-define-compliance.svg" alt-text="Highlighted Zero Trust identity and device access policies for Intune device compliance." lightbox="media/devices/identity-device-define-compliance.svg":::
 
 In this illustration, defining device compliance policies is a dependency for achieving the recommended level of protection within the Zero Trust framework.
 

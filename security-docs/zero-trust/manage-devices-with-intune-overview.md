@@ -56,7 +56,7 @@ Protecting the data and apps on devices and the devices themselves is a multi-la
 
 The following diagram illustrates building blocks to achieve a Zero Trust security posture for Microsoft 365 and other SaaS apps that you introduce to this environment. The elements related to devices are numbered 1 through 7. Device admins will coordinate with other administrators to accomplish these layers of protection.
 
-:::image type="content" source="../media/devices/m365-zero-trust-deployment-stack-devices.svg" alt-text="Diagram of the Zero Trust security posture building blocks." lightbox="../media/devices/m365-zero-trust-deployment-stack-devices.svg":::
+:::image type="content" source="media/devices/m365-zero-trust-deployment-stack-devices.svg" alt-text="Diagram of the Zero Trust security posture building blocks." lightbox="media/devices/m365-zero-trust-deployment-stack-devices.svg":::
 
 In this illustration:
 
@@ -76,7 +76,7 @@ This guidance is tightly coordinated with the recommended [**Zero Trust identity
 
 Following is an illustration of the recommended policy set with step callouts for the work you'll do in Intune and the related Conditional Access policies you'll help coordinate in Microsoft Entra ID.
 
-:::image type="content" source="../media/devices/identity-device-overview-steps.svg" alt-text="Zero Trust identity and device access policies." lightbox="../media/devices/identity-device-overview-steps.svg":::
+:::image type="content" source="media/devices/identity-device-overview-steps.svg" alt-text="Zero Trust identity and device access policies." lightbox="media/devices/identity-device-overview-steps.svg":::
 
 In this illustration:
 
@@ -96,7 +96,7 @@ If you follow this guidance, you'll enroll devices into management using Intune 
 
 The following illustration details how this works using Intune.
 
-:::image type="content" source="../media/devices/devices-enroll-onboard-process.svg" alt-text="Process for enrolling and onboarding devices." lightbox="../media/devices/devices-enroll-onboard-process.svg":::
+:::image type="content" source="media/devices/devices-enroll-onboard-process.svg" alt-text="Process for enrolling and onboarding devices." lightbox="media/devices/devices-enroll-onboard-process.svg":::
 
 In the illustration:
 

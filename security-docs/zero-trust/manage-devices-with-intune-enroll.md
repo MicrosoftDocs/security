@@ -33,11 +33,11 @@ The device enrollment process establishes a relationship between the user, the d
 
 This article recommends methods for enrolling devices in Intune. For more information about these methods and how to deploy each one, see [Deployment guidance: Enroll devices in Microsoft Intune](/mem/intune-service/fundamentals/deployment-guide-enrollment).
 
-:::image type="content" source="../media/devices/intune-mdm-step-1.png" alt-text="The first step of Mobile Device Management to enroll devices in Intune." lightbox="../media/devices/intune-mdm-step-1.png":::
+:::image type="content" source="media/devices/intune-mdm-step-1.png" alt-text="The first step of Mobile Device Management to enroll devices in Intune." lightbox="media/devices/intune-mdm-step-1.png":::
 
 Use the guidance in this article together with this illustrated version of enrollment options for each platform.
 
-[![Thumbnail verson of the two pages of the Intune Enrollment Options poster](../media/devices/msft-intune-enrollment-options-thumb-landscape.png)](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) <br/> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) | [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br/> Last reviewed March 2025
+[![Thumbnail verson of the two pages of the Intune Enrollment Options poster](media/devices/msft-intune-enrollment-options-thumb-landscape.png)](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) <br/> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) | [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br/> Last reviewed March 2025
 
 ## Windows enrollment
 

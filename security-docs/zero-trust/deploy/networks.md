@@ -397,7 +397,7 @@ By leveraging Microsoft Entra Global Secure Access logs, organizations can track
 - [Global Secure Access audit logs](/entra/global-secure-access/how-to-access-audit-logs)
 - [Global Secure Access enriched Microsoft 365 logs](/entra/global-secure-access/how-to-view-enriched-logs)
 - [Global Secure Access traffic logs](/entra/global-secure-access/how-to-view-traffic-logs)
-- [Remote Network Health Logs](/entra/global-secure-access/concept-remote-network-health-logs)
+- [Remote Network Health Logs](/entra/global-secure-access/how-to-remote-network-health-logs?tabs=microsoft-entra-admin-center)
 
 #### 4.4 Automation and Orchestration
 
@@ -459,7 +459,7 @@ Key capabilities:
 
 **Example:** Defender for Endpoint detects command-and-control (C2) traffic, XDR isolates the device, and triggers a Sentinel playbook to block the destination in Azure Firewall.
 
-- [Automated investigation and response in Defender XDR](/defender-endpoint/automated-investigations?view=o365-worldwide)
+- [Automated investigation and response in Defender XDR](/defender-endpoint/automated-investigations?view=o365-worldwide&preserve-view=)
 
 
 

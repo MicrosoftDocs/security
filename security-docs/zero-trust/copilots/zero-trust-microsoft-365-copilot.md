@@ -8,7 +8,6 @@ ms.author: bcarter
 ms.topic: concept-article
 ms.collection: 
   - M365copilot
-  - magic-ai-copilot 
   - msftsolution-copilot
   - msftsolution-scenario
   - zerotrust-solution

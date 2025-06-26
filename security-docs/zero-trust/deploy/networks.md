@@ -1,7 +1,7 @@
 ---
 title: Secure networks with SASE, Zero Trust, and AI
 description: Learn how to secure networks using a Zero Trust strategy with Secure Access Service Edge (SASE) and Secure Service Edge (SSE) solutions.
-ms.date: 06/24/2025
+ms.date: 06/26/2025
 ms.service: security
 author: kenwith
 manager: femila
@@ -46,14 +46,18 @@ To make this happen, follow three Zero Trust principles:
 
 ## Zero Trust network deployment objectives
 
-Before most organizations start their Zero Trust journey, they have network security that is characterized as:
-- Minimal or no identity awareness for network traffic.
-- Limited or no risk based policy decision capabilities.
-- Limited or no governance or lifecycle for application access.
-
 Zero Trust (ZT) is a security model that assumes no implicit trust and continuously verifies every access request. The Network Pillar in Zero Trust focuses on securing communications, segmenting environments, and enforcing least privilege access to resources.
 
-When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on [objectives 1 through 4](#1-network-segmentation--software-defined-perimeters). After these objectives are completed, focus on [objectives 5 through 7](#7-discontinue-legacy-network-security-technology).
+When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on:
+
+- [Network-Segmentation & Software-Defined Perimeters](#1-network-segmentation--software-defined-perimeters)
+- [Secure Access Service Edge (SASE) & Zero Trust Network Access (ZTNA)](#2-secure-access-service-edge-sase--zero-trust-network-access-ztna)
+- [Strong Encryption & Secure Communication](#3-strong-encryption--secure-communication)
+- [Network Visibility & Threat Detection](#4-network-visibility--threat-detection)
+- [Policy-Driven Access Control & Least Privilege](#5-policy-driven-access-control--least-privilege)
+
+After these objectives are completed, focus on [objectives 6 and 7](#6-cloud--hybrid-network-security).
+
 
 ## Zero Trust networking deployment guide
 
@@ -288,6 +292,8 @@ Follow these steps:
 
 ### 4. Network Visibility & Threat Detection
 
+In a Zero Trust security model, the principle of “never trust, always verify” applies not just to users and devices, but also to network traffic. Monitoring and logging network activity is critical for enforcing Zero Trust because it provides continuous visibility into how resources are accessed, ensures compliance with security policies, and enables rapid detection of suspicious or unauthorized behavior. Below are the key elements, that this section will cover:
+
 - Deploy Network Detection & Response (NDR) to monitor and analyze network traffic.
 - Use DPI (Deep Packet Inspection) and AI-driven anomaly detection for real-time threat hunting.
 - Maintain a centralized logging and SIEM/SOAR integration for network analysis.
@@ -377,8 +383,6 @@ Use Azure Firewall to visualize firewall activities, detect threats with AI inve
 
 - Azure Firewall with Microsoft Sentinel
 
-**Microsoft Entra ID Protection**
-
 Microsoft Entra ID Protection uses machine learning (ML) algorithms to detect users and sign-in risk. Use risk conditions in Conditional Access policies for dynamic access, based on risk level.
 
 - Microsoft Entra ID Protection
@@ -387,48 +391,76 @@ Microsoft Entra ID Protection uses machine learning (ML) algorithms to detect us
 
 **Global Secure Access**
 
-Apply Conditional Access policies with risk conditions to network access to Microsoft Entra Private Access apps, Quick access apps, and Global Secure Access traffic forwarding profiles.
+By leveraging Microsoft Entra Global Secure Access logs, organizations can track access attempts, monitor data flows, and identify anomalies in real-time. This granular monitoring helps validate that only authorized identities and devices are accessing sensitive resources, supports incident response, and provides vital evidence for audits and investigations. Comprehensive traffic logging is therefore a foundational element in maintaining and proving the effectiveness of a Zero Trust architecture. Besides the traffic logs, additional logs are available for additional signals:
 
-- [Global Secure Access overview](/entra/global-secure-access/overview-what-is-global-secure-access)
-- [Learn about Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
-- [Universal Conditional Access](/entra/global-secure-access/concept-universal-conditional-access)
-- [Enable compliant network check with Conditional Access](/entra/global-secure-access/how-to-compliant-network)
-
+- [Global Secure Access logs and monitoring](/entra/global-secure-access/concept-global-secure-access-logs-monitoring)
+- [Global Secure Access audit logs](/entra/global-secure-access/how-to-access-audit-logs)
+- [Global Secure Access enriched Microsoft 365 logs](/entra/global-secure-access/how-to-view-enriched-logs)
+- [Global Secure Access traffic logs](/entra/global-secure-access/how-to-view-traffic-logs)
+- [Remote Network Health Logs](/entra/global-secure-access/concept-remote-network-health-logs)
 
 #### 4.4 Automation and Orchestration
 
-**Microsoft Sentinel**
+Automation and orchestration are essential for enforcing Zero Trust principles across network infrastructure. By leveraging automatic enforcement, response, and governance, organizations can achieve secure and resilient connectivity.
 
-Detect advanced multistage attacks with Fusion and User and Entity Behavior Analytics (UEBA) anomalies in Microsoft Sentinel by enabling analytic rules. Design automation rules and playbooks for security response.
+##### Azure Networking
 
-**Microsoft Entra ID Governance**
+Azure networking services—including Azure Firewall, Network Security Groups (NSGs), Virtual WAN, and DDoS Protection—can be deployed, governed, and monitored using Infrastructure as Code (IaC) tools such as ARM templates, Bicep, Terraform, and Azure Policy.
 
-Zero Trust requires that user and service identities are provisioned, updated, and decommissioned promptly and consistently. Microsoft Entra Identity Governance provides:
+Key capabilities:
 
-- **Lifecycle Workflows (Joiner-Mover-Leaver):** Automate user lifecycle processes by integrating with HR systems or other authoritative sources.
-- **Entitlement Management & Access Packages:** Define catalogs of application access packages for both cloud and on-premises apps (published via Private Access or Application Proxy). Automate assignment workflows, including request, approval, and periodic access reviews.
-- **Access Reviews:** Schedule automated access reviews for all applications. Microsoft Entra ID can send review tasks to application owners or business stakeholders, consolidated across cloud and on-premises apps. Automate escalation and remediation—if a reviewer doesn’t respond, disable access; if an account is flagged, trigger a workflow to investigate.
+- **Automated deployment:** Use IaC pipelines to auto-deploy network segmentation (NSGs, Azure Firewall) and filtering controls.
+- **Continuous compliance:** Enforce and auto-remediate security standards (e.g., block public IPs, require encryption) with Azure Policy.
+- **DevOps integration:** Integrate with GitOps/DevOps workflows for declarative, version-controlled network configurations.
 
-**Automated Workflows**
+**Example:** Automatically deploy NSG rules and Azure Firewall policies when a new subnet is provisioned using Bicep and Azure DevOps.
 
-**Microsoft Defender Extended Detection and Response (XDR)**
+- [Quickstart: Create an Azure Firewall and a firewall policy - Bicep](/azure/firewall-manager/quick-firewall-policy-bicep?tabs=CLI)
+- [Secure pod traffic with network policies - Azure Kubernetes Service](/azure/aks/use-network-policies)
 
-Configure automated investigation and response capabilities in Microsoft Defender Extended Detection and Response (XDR). 
-- Automated investigation and response overview
+##### Microsoft Entra (Global Secure Access with Identity Governance)
 
-**Microsoft Sentinel playbooks**
+Microsoft Entra Global Secure Access combines identity-aware access with network controls, moving beyond legacy VPNs. Identity Governance extends this with entitlement automation.
 
-Microsoft Sentinel playbooks are based on Logic Apps, a cloud service that schedules, automates, and orchestrates tasks and workflows across enterprise systems. Build response playbooks with templates. Deploy solutions from the Microsoft Sentinel content hub. Build custom analytics rules and response actions with Azure Logic Apps.
-- Build Microsoft Sentinel playbooks from templates
-- Automate threat response with playbooks
-- Locate the Microsoft Sentinel content hub catalog
-- Learn about Azure Logic Apps
+Key capabilities:
 
-**AI Driven by Analytics decides A&O modifications**
+- **Automated onboarding:** Onboard apps/services into Private Access or App Proxy using Microsoft Graph APIs and policy templates.
+- **Entitlement management:** Define network access packages with approval workflows, expirations, and access reviews.
+- **Dynamic deprovisioning:** Automatically remove network entitlements based on role changes or lifecycle events.
 
-**Microsoft Sentinel**
+**Example:** Assign an access package that grants Private Access to specific apps when a user joins a project, with enforced expiration and access review.
 
-Enable analytic rules to detect advanced multistage attacks with Fusion and UEBA anomalies in Microsoft Sentinel. Design automation rules and playbooks for security response.
+- [Automate access package assignments with Entitlement Management](/entra/id-governance/entitlement-management-access-package-assignments)
+
+#### Microsoft Sentinel
+
+Microsoft Sentinel provides playbooks (Logic Apps) to automate network threat detection and response.
+
+Key capabilities:
+
+- **Automated response:** Update NSG or Azure Firewall rules to block malicious IPs/domains.
+- **Resource quarantine:** Disable sessions or quarantine resources by adjusting Conditional Access.
+- **Alert enrichment:** Correlate network alerts with flow logs, DNS, identity, and device telemetry.
+
+**Example:** Sentinel detects communication with a known malicious IP; a playbook updates Azure Firewall IP groups and notifies SecOps.
+
+- [Playbook example: block malicious IP in Azure NSG](/azure/sentinel/automation/tutorial-respond-threats-playbook#playbook-example-block-malicious-ip-address-in-azure-nsg)
+- [Automate threat response with Sentinel playbooks](/azure/sentinel/automation/tutorial-respond-threats-playbook)
+
+##### Microsoft Defender XDR
+
+Microsoft Defender XDR automates detection, investigation, and coordinated response across identity, endpoint, and network signals.
+
+Key capabilities:
+
+- **Correlation:** Detects lateral movement or anomalous network patterns using identity and device context.
+- **Automated isolation:** Isolates compromised devices and triggers enforcement actions across platforms.
+- **Integration:** Works with Sentinel and Entra for end-to-end incident response.
+
+**Example:** Defender for Endpoint detects command-and-control (C2) traffic, XDR isolates the device, and triggers a Sentinel playbook to block the destination in Azure Firewall.
+
+- [Automated investigation and response in Defender XDR](/defender-endpoint/automated-investigations?view=o365-worldwide)
+
 
 
 ### 5. Policy-Driven Access Control & Least Privilege
@@ -531,25 +563,6 @@ For each deprecated control, adopt a modern Zero Trust alternative that:
 4. **Formal decommission**
     - Retire hardware appliances and revoke legacy VPN configurations.
     - Update network diagrams and operational runbooks to remove deprecated technology.
-
-#### 7.4 Risk mitigation and metrics
-
-- **Fallback controls:** Keep legacy paths in “read-only” monitoring mode during early migration waves to catch policy gaps.
-- **Telemetry-driven tuning:** Use Microsoft Sentinel and Microsoft Defender logs to identify failed access attempts or policy misses.
-
-**Success criteria:**
-
-- At least 90% of remote access is via ZTNA or SASE by the target date.
-- No critical security findings in legacy technology during the monitoring window.
-- Measurable reduction in lateral-movement alerts.
-
-#### 7.5 Governance and audit
-
-- Assign a ZTNA migration owner to oversee decommission timelines.
-- Enforce a “no new legacy deployments” policy in procurement.
-- Conduct a post-mortem audit to ensure all legacy interfaces and firewall are fully removed.
-
-For more information on Microsoft Global Secure Access, see [What is Global Secure Access?](/entra/global-secure-access/overview-what-is-global-secure-access).
 
 ## Products covered in this guide
 

@@ -225,12 +225,39 @@ For VPN connections using Microsoft Entra ID authentication, Continuous Access E
 
 ### 3. Strong Encryption & Secure Communication
 
-- Use Transport Layer Security (TLS) 1.3+ and end-to-end encryption for all network traffic.
-- Enforce mutual authentication (mTLS) between workloads and devices.
-- Block untrusted or legacy protocols that lack encryption.
+Modern network communication must be strongly encrypted and secured at every stage. Organizations should:
+
+- **Use Transport Layer Security (TLS) 1.3** and enforce end-to-end encryption for all network traffic. TLS 1.3 delivers stronger security, faster handshakes, and always-encrypted client authentication—essential for protecting modern workloads.
+- **Enforce mutual authentication (mTLS)** between workloads and devices to ensure both client and server identities are verified, preventing unauthorized access even with valid credentials.
+- **Block untrusted or legacy protocols** that lack encryption, such as TLS 1.0/1.1 or outdated ciphers.
+
+#### Key recommendations
+
+- **Azure App Service & Azure Front Door:** Set the Minimum Inbound TLS Version to 1.3 to ensure only secure cipher suites are used for web apps. To learn more, see [Enforce minimum TLS version for App Service and Front Door](/azure/app-service/configure-ssl-certificate#enforce-minimum-tls-version).
+- **Azure IoT Edge, IoT Hub, and other PaaS services:** Confirm device SDKs support TLS 1.3, or restrict to TLS 1.2+.
+- **Azure Application Gateway (v2):** Supports mTLS using OCP-validated certificates for client verification. To learn more, see [Overview of TLS in App Service](/azure/app-service/overview-tls).
+- **Service Mesh (e.g., Azure Kubernetes Service with Istio or Linkerd):** Provides automated intra-cluster mTLS (workload-to-workload) with full enforcement. To learn more, see [About Istio on Azure Kubernetes Service (AKS)](/azure/aks/istio-about).
+- **Encrypt application backend traffic between virtual networks.**
+- **Encrypt traffic between on-premises and cloud:**
+    - Configure site-to-site VPN over ExpressRoute Microsoft peering.
+    - Use IPsec transport mode for ExpressRoute private peering.
+    - Set up mTLS between servers across ExpressRoute private peering.
+
+#### Block untrusted or legacy protocols
+
+- **Azure endpoints (App Service, Storage, SQL, Event Hubs, etc.):** Accept only TLS 1.2+ and ideally enforce 1.3, disabling legacy versions.
+- **Virtual Machines and Network Appliances:** Use Azure Policy and Microsoft Defender for Cloud to scan for outdated protocols (such as SMBv1 or custom TLS <1.2) and enforce remediation.
+- **Operational hygiene:** Disable legacy ciphers and protocols at the OS or application level (for example, disable TLS 1.0/1.1 on Windows Server or SQL Server).
+
+#### Prepare for Post-Quantum Cryptography (PQC)
+
+Traditional public-key cryptographic algorithms (such as RSA and ECC) are vulnerable to future quantum computers. Microsoft has integrated quantum-resistant algorithms (LMS and ML-DSA, FIPS 204) into its platform, with broader PQC support coming soon. Begin transitioning to TLS 1.3 and prepare for PQC integration as standards are finalized.
 
 > [!NOTE]
-> Azure Firewall can perform TLS inspection on network traffic. It decrypts the data, stops threats using the Intrusion Detection and Prevention System (IDPS) or application rules, then re-encrypts it and sends it to its destination. To learn more, see [Azure Firewall TLS inspection](/azure/firewall/premium-features#tls-inspection) and [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).
+> While TLS secures legitimate traffic, threats like malware and data leakage can still be hidden within encrypted sessions. Microsoft Entra Internet Access TLS inspection provides visibility into encrypted traffic, enabling malware detection, data loss prevention, and advanced security controls. [Learn more about Transport Layer Security inspection](/entra/global-secure-access/concept-transport-layer-security).
+
+> [!NOTE]
+> Azure Firewall can perform TLS inspection on network traffic. It decrypts data, applies Intrusion Detection and Prevention System (IDPS) or application rules, then re-encrypts and forwards it. [Learn more about Azure Firewall TLS inspection](/azure/firewall/premium-features#tls-inspection) and [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).
 
 #### 3.1 Encryption: User-to-app internal traffic is encrypted
 

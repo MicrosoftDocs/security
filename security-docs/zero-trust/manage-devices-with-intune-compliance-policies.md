@@ -32,7 +32,7 @@ You want to be sure devices that access your apps and data meet minimum requirem
 
 ## Configuring device compliance policies
 
-This guidance is tightly coordinated with the recommended [Zero Trust identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md).
+This guidance is tightly coordinated with the recommended [Zero Trust identity and device access policies](zero-trust-identity-device-access-policies-overview.md).
 
 This illustration highlights where the work of defining compliance policies fits into the overall Zero Trust recommended policy set.
 
@@ -40,11 +40,11 @@ This illustration highlights where the work of defining compliance policies fits
 
 In this illustration, defining device compliance policies is a dependency for achieving the recommended level of protection within the Zero Trust framework.
 
-To configure device compliance policies, use the recommended guidance and settings prescribed in [Zero Trust identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md). The following table links directly to the instructions for configuring these policies in Intune, including the recommended settings for each platform.
+To configure device compliance policies, use the recommended guidance and settings prescribed in [Zero Trust identity and device access policies](zero-trust-identity-device-access-policies-overview.md). The following table links directly to the instructions for configuring these policies in Intune, including the recommended settings for each platform.
 
 |Policies |More information  |Licensing |
 |---------|---------|---------|
-|[Define device compliance policies](../security/office-365-security/zero-trust-identity-device-access-policies-common.md#create-device-compliance-policies)   |  One policy for each platform       |  Microsoft 365 E3 or E5       |
+|[Define device compliance policies](zero-trust-identity-device-access-policies-common.md#create-device-compliance-policies)   |  One policy for each platform       |  Microsoft 365 E3 or E5       |
 
 ## Next step
 

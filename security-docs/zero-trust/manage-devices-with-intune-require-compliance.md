@@ -32,7 +32,7 @@ After setting up device compliance policies and assigning these to user groups, 
 
 :::image type="content" source="media/devices/intune-mdm-step-3.png" alt-text="The third step of Mobile Device Management to restrict access to managed and compliant devices." lightbox="media/devices/intune-mdm-step-3.png":::
 
-The recommended Zero Trust identity and device access rule set includes this rule. See [Require compliant PCs and mobile devices](../security/office-365-security/zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices), as seen in the following illustration.
+The recommended Zero Trust identity and device access rule set includes this rule. See [Require compliant PCs and mobile devices](zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices), as seen in the following illustration.
 
 :::image type="content" source="media/devices/identity-device-require-compliance.svg" alt-text="Highlighted Zero Trust identity and device access policies to require compliant PCs and mobile devices." lightbox="media/devices/identity-device-require-compliance.svg":::
 
@@ -47,7 +47,7 @@ Be sure to:
 
 For information about these policies, including troubleshooting device profiles in Intune and understanding conflicts between policies, see [Common questions and answers with device policies and profiles in Microsoft Intune](/mem/intune-service/configuration/device-profile-troubleshoot).
 
-To learn more about implementing common identify and device access policies, see [Common security policies for Microsoft 365 organizations](../security/office-365-security/zero-trust-identity-device-access-policies-common.md).
+To learn more about implementing common identify and device access policies, see [Common security policies for Microsoft 365 organizations](zero-trust-identity-device-access-policies-common.md).
 
 ## Next steps
 

@@ -45,18 +45,18 @@ For more information about protecting your line-of-business applications using I
 
 ## Configuring mobile app protection
 
-This guidance is tightly coordinated with the recommended [Zero Trust identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md). After you create the mobile app protection policies in Intune, work with your identity team to configure the Conditional Access policies in Microsoft Entra ID that enforce mobile app protection. 
+This guidance is tightly coordinated with the recommended [Zero Trust identity and device access policies](zero-trust-identity-device-access-policies-overview.md). After you create the mobile app protection policies in Intune, work with your identity team to configure the Conditional Access policies in Microsoft Entra ID that enforce mobile app protection. 
 
 This illustration highlights the two policies (also described in the table following the illustration).
 
 :::image type="content" source="media/devices/identity-device-starting-point.svg" alt-text="Highlighted Zero Trust identity and device access policies to enforce mobile app protection." lightbox="media/devices/identity-device-starting-point.svg":::
 
-To configure these policies, use the recommended guidance and settings prescribed in [Zero Trust identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md). The following table links directly to the instructions for configuring these policies in Intune and Microsoft Entra ID.
+To configure these policies, use the recommended guidance and settings prescribed in [Zero Trust identity and device access policies](zero-trust-identity-device-access-policies-overview.md). The following table links directly to the instructions for configuring these policies in Intune and Microsoft Entra ID.
 
 |Policy  |More information  |Licensing  |
 |---------|---------|---------|
-|  [Apply application protection policies for data protection](../security/office-365-security/zero-trust-identity-device-access-policies-common.md#app-protection-policies)       | One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).        | Microsoft 365 E3 or E5        |
-| [Require approved apps and app protection](../security/office-365-security/zero-trust-identity-device-access-policies-common.md#require-approved-apps-and-app-protection-policies)       |  Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.   |  Microsoft 365 E3 or E5       |
+|  [Apply application protection policies for data protection](zero-trust-identity-device-access-policies-common.md#app-protection-policies)       | One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).        | Microsoft 365 E3 or E5        |
+| [Require approved apps and app protection](zero-trust-identity-device-access-policies-common.md#require-approved-apps-and-app-protection-policies)       |  Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.   |  Microsoft 365 E3 or E5       |
 
 ## Next step
 

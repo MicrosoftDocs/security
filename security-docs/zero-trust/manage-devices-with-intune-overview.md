@@ -72,7 +72,7 @@ In this illustration:
 
 ## Coordinating endpoint management with Zero Trust identity and device access policies
 
-This guidance is tightly coordinated with the recommended [**Zero Trust identity and device access policies**](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md). You'll work with your identity team to carry through protection that you configure with Intune into Conditional Access policies in Microsoft Entra ID.
+This guidance is tightly coordinated with the recommended [**Zero Trust identity and device access policies**](zero-trust-identity-device-access-policies-overview.md). You'll work with your identity team to carry through protection that you configure with Intune into Conditional Access policies in Microsoft Entra ID.
 
 Following is an illustration of the recommended policy set with step callouts for the work you'll do in Intune and the related Conditional Access policies you'll help coordinate in Microsoft Entra ID.
 

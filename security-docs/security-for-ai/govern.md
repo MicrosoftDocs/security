@@ -10,7 +10,7 @@ ms.collection:
   - msftsolution-security-for-ai
   - msftsolution-scenario
   - zerotrust-solution
-  - magic-ai-copilot
+  - msec-ai-copilot
 
 
 

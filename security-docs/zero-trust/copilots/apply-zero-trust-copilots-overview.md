@@ -12,7 +12,7 @@ ms.collection:
   - zerotrust-m365-security
   - zerotrust-solution
   - zerotrust-copilot
-  - magic-ai-copilot
+  - msec-ai-copilot
 ---
 
 # Use Zero Trust security to prepare for AI companions, including Microsoft Copilots

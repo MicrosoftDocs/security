@@ -44,7 +44,7 @@ This article includes these steps:
 - Monitor device risk
 - Monitor compliance for security baselines
 
-If Defender for Endpoint hasn’t already been set up, work with your threat protection admin to [set up the evaluation and pilot environment](../security/defender/eval-defender-endpoint-overview.md). You can work with the pilot group to try out the capabilities in this article.
+If Defender for Endpoint hasn’t already been set up, work with your threat protection admin to [set up the evaluation and pilot environment](/defender-xdr/pilot-deploy-defender-endpoint). You can work with the pilot group to try out the capabilities in this article.
 
 ## Monitor device risk as a condition for access
 
@@ -72,10 +72,10 @@ To deploy security baselines and monitor compliance for these settings, use the 
 
 |Step  |Description  |
 |---------|---------|
-|1     |Review key concepts and compare the Microsoft Defender for Endpoint and the Windows security baselines in Intune. <br><br> To learn about recommendations for Defender for Endpoint, see [Increase compliance to the Microsoft Defender for Endpoint security baseline](../security/defender-endpoint/configure-machines-security-baseline.md). <br><br> To review the list of security baselines that are available with Intune, and how to avoid conflicts, see [Use security baselines to configure Windows devices in Intune](/mem/intune-service/protect/security-baselines).
+|1     |Review key concepts and compare the Microsoft Defender for Endpoint and the Windows security baselines in Intune. <br><br> To learn about recommendations for Defender for Endpoint, see [Increase compliance to the Microsoft Defender for Endpoint security baseline](/defender-endpoint/configure-machines-security-baseline). <br><br> To review the list of security baselines that are available with Intune, and how to avoid conflicts, see [Use security baselines to configure Windows devices in Intune](/mem/intune-service/protect/security-baselines).
 |2     |  Use Intune to deploy the security baseline for Windows settings. For more information, see related guidance in [Step 5. Deploy device profiles](manage-devices-with-intune-configuration-profiles.md).        |
-|3    |  Use Intune to deploy Defender for Endpoint baseline settings. To create the profile and choose the correct baseline, see [Manage security baseline profiles in Microsoft Intune](/mem/intune-service/protect/security-baselines-configure). <br><br> You can also follow the instructions as [Review and assign the Microsoft Defender for Endpoint security baseline](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline) in the Defender for Endpoint documentation. |
-|4     | In the Defender for Endpoint documentation, review [Ensure your devices are configured properly](../security/defender-endpoint/configure-machines.md) and the [Security baseline card on device configuration management](/defender-endpoint/configure-machines-security-baseline#monitor-compliance-to-the-defender-for-endpoint-security-baseline). |
+|3    |  Use Intune to deploy Defender for Endpoint baseline settings. To create the profile and choose the correct baseline, see [Manage security baseline profiles in Microsoft Intune](/intune/intune-service/protect/security-baselines-configure). <br><br> You can also follow the instructions as [Review and assign the Microsoft Defender for Endpoint security baseline](/defender-endpoint/configure-machines-security-baseline#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline) in the Defender for Endpoint documentation. |
+|4     | In the Defender for Endpoint documentation, review [Ensure your devices are configured properly](/defender-endpoint/configure-machines) and the [Security baseline card on device configuration management](/defender-endpoint/configure-machines-security-baseline#monitor-compliance-to-the-defender-for-endpoint-security-baseline). |
 
 ## Next step
 

@@ -51,12 +51,12 @@ Zero Trust (ZT) is a security model that assumes no implicit trust and continuou
 When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on:
 
 - [Network-Segmentation & Software-Defined Perimeters](#1-network-segmentation-and-software-defined-perimeters)
-- [Secure Access Service Edge (SASE) & Zero Trust Network Access (ZTNA)](#2-secure-access-service-edge-sase--zero-trust-network-access-ztna)
-- [Strong Encryption & Secure Communication](#3-strong-encryption--secure-communication)
-- [Network Visibility & Threat Detection](#4-network-visibility--threat-detection)
-- [Policy-Driven Access Control & Least Privilege](#5-policy-driven-access-control--least-privilege)
+- [Secure Access Service Edge (SASE) & Zero Trust Network Access (ZTNA)](#2-secure-access-service-edge-sase-and-zero-trust-network-access-ztna)
+- [Strong Encryption & Secure Communication](#3-strong-encryption-and-secure-communication)
+- [Network Visibility & Threat Detection](#4-network-visibility-and-threat-detection)
+- [Policy-Driven Access Control & Least Privilege](#5-policy-driven-access-control-and-least-privilege)
 
-After these objectives are completed, focus on [objectives 6 and 7](#6-cloud--hybrid-network-security).
+After these objectives are completed, focus on [objectives 6 and 7](#6-cloud-and-hybrid-network-security).
 
 
 ## Zero Trust network deployment guide

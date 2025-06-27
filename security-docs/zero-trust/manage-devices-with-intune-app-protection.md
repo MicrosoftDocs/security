@@ -56,7 +56,7 @@ To configure these policies, use the recommended guidance and settings prescribe
 |Policy  |More information  |Licensing  |
 |---------|---------|---------|
 |  [Apply application protection policies for data protection](zero-trust-identity-device-access-policies-common.md#app-protection-policies)       | One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).        | Microsoft 365 E3 or E5        |
-| [Require approved apps and app protection](zero-trust-identity-device-access-policies-common.md#require-approved-apps-and-app-protection-policies)       |  Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.   |  Microsoft 365 E3 or E5       |
+| [Require approved apps and app protection](zero-trust-identity-device-access-policies-common.md)       |  Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.   |  Microsoft 365 E3 or E5       |
 
 ## Next step
 

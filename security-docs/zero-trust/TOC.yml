@@ -113,29 +113,21 @@
     - name: Manage endpoints with Intune and Microsoft 365
       items:
       - name: Overview
-        href: /microsoft-365/solutions/manage-devices-with-intune-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: manage-devices-with-intune-overview.md
       - name: Step 1. Implement App Protection policies
-        href: /microsoft-365/solutions/manage-devices-with-intune-app-protection?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: manage-devices-with-intune-app-protection.md
       - name: Step 2. Enroll devices into management
-        href: /microsoft-365/solutions/manage-devices-with-intune-enroll?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: manage-devices-with-intune-enroll.md
       - name: Step 3. Set up compliance policies
-        href: /microsoft-365/solutions/manage-devices-with-intune-compliance-policies?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: manage-devices-with-intune-compliance-policies.md
       - name: Step 4. Require healthy and compliant devices
-        href: /microsoft-365/solutions/manage-devices-with-intune-require-compliance?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: manage-devices-with-intune-require-compliance.md
       - name: Step 5. Deploy device profiles
-        href: /microsoft-365/solutions/manage-devices-with-intune-configuration-profiles?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: manage-devices-with-intune-configuration-profiles.md
       - name: Step 6. Monitor device risk and compliance to security baselines
-        href: /microsoft-365/solutions/manage-devices-with-intune-monitor-risk?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: manage-devices-with-intune-monitor-risk.md
       - name: Step 7. Implement data loss prevention (DLP) with information protection capabilities
-        href: /microsoft-365/solutions/manage-devices-with-intune-dlp-mip?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: manage-devices-with-intune-dlp-mip.md
     - name: Deploy a Microsoft information protection solution 
       href: /microsoft-365/compliance/information-protection-solution?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       maintainContext: true

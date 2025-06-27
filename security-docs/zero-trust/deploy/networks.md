@@ -23,7 +23,7 @@ Adding a Zero Trust strategy to a SASE framework further enhances security by en
 
 Artificial Intelligence (AI) amplifies this approach by analyzing data in real time, detecting threats, and enabling rapid, automated responses. Together, SASE, Zero Trust, and AI empower organizations to secure a perimeter-less world with greater agility, precision, and resilience.
 
-## Key Principles of the Zero Trust Network Model
+## Key principles of the Zero Trust network model
 
 Instead of assuming that everything behind the corporate firewall is secure, an end-to-end Zero Trust strategy acknowledges that breaches are inevitable. This approach requires verifying each request as if it originates from an uncontrolled network, with identity management playing a crucial role. When organizations incorporate the Cybersecurity and Infrastructure Security Agency (CISA) and National Institute of Standards and Technology (NIST) Zero Trust models and patterns, they enhance their security posture and better protect their networks.
 
@@ -50,7 +50,7 @@ Zero Trust (ZT) is a security model that assumes no implicit trust and continuou
 
 When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on:
 
-- [Network-Segmentation & Software-Defined Perimeters](#1-network-segmentation--software-defined-perimeters)
+- [Network-Segmentation & Software-Defined Perimeters](#1-network-segmentation-and-software-defined-perimeters)
 - [Secure Access Service Edge (SASE) & Zero Trust Network Access (ZTNA)](#2-secure-access-service-edge-sase--zero-trust-network-access-ztna)
 - [Strong Encryption & Secure Communication](#3-strong-encryption--secure-communication)
 - [Network Visibility & Threat Detection](#4-network-visibility--threat-detection)
@@ -59,11 +59,11 @@ When implementing an end-to-end Zero Trust framework for securing networks, we r
 After these objectives are completed, focus on [objectives 6 and 7](#6-cloud--hybrid-network-security).
 
 
-## Zero Trust networking deployment guide
+## Zero Trust network deployment guide
 
 This guide walks you through the steps required to secure your networks following the principles of a Zero Trust security framework.
 
-### 1. Network-Segmentation & Software-Defined Perimeters
+### 1. Network segmentation and software defined perimeters
 
 Network segmentation and Software-Defined Perimeters (SDP) form the foundation of the Zero Trust security model. Instead of relying on static, perimeter-based controls, you enforce security dynamically at the resource level. When you partition your infrastructure into isolated segments using micro-segmentation, you restrict attackers’ lateral movement and minimize the effect of breaches. SDP strengthens this approach by creating on-demand, identity-centric micro perimeters around each user-resource interaction, and continuously validating context before granting access. In summary, follow these key principles:
 
@@ -128,8 +128,8 @@ Follow these steps, depending on the type of boundary:
 
 Follow these steps:
 
-- Within the virtual network, [add virtual network subnets](/azure/virtual-network/virtual-network-manage-subnet) so that discrete components of an application can have their own perimeters.
-- To allow traffic only from the subnets that have an app subcomponent identified as a legitimate communications counterpart, [apply network security group rules](/azure/virtual-network/tutorial-filter-network-traffic#create-security-rules).
+1. Within the virtual network, [add virtual network subnets](/azure/virtual-network/virtual-network-manage-subnet) so that discrete components of an application can have their own perimeters.
+1. To allow traffic only from the subnets that have an app subcomponent identified as a legitimate communications counterpart, [apply network security group rules](/azure/virtual-network/tutorial-filter-network-traffic#create-security-rules).
 
 Alternatively, Azure firewall can also be used for segmentation and allowing traffic from specific subnets and Virtual Networks.
 
@@ -141,11 +141,9 @@ Alternatively, Azure firewall can also be used for segmentation and allowing tra
 
 Follow these steps:
 
-- [Create dedicated virtual networks](/azure/virtual-network/quick-create-portal) for different applications and/or application components.
-
-- Create a central virtual network to set up the security posture for inter-app connectivity and connect the app VNets in [a hub-and-spoke architecture](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke).
-
-- [Deploy Azure Firewall](/azure/firewall/deploy-ps) in the virtual network hub. Use Azure Firewall to inspect and govern network traffic.
+1. [Create dedicated virtual networks](/azure/virtual-network/quick-create-portal) for different applications and/or application components.
+1. Create a central virtual network to set up the security posture for inter-app connectivity and connect the app VNets in [a hub-and-spoke architecture](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke).
+1. [Deploy Azure Firewall](/azure/firewall/deploy-ps) in the virtual network hub. Use Azure Firewall to inspect and govern network traffic.
 
 
 
@@ -165,7 +163,7 @@ Traffic Analytics supports Zero Trust segmentation by:
 
 By integrating Traffic Analytics into your Zero Trust deployment, you gain the ability to continuously assess and improve the effectiveness of your segmentation strategy—ensuring that your network boundaries are not only defined but actively monitored and enforced.
 
-### 2. Secure Access Service Edge (SASE) & Zero Trust Network Access (ZTNA)
+### 2. Secure Access Service Edge (SASE) and Zero Trust Network Access (ZTNA)
 
 To effectively secure modern networks, organizations must move beyond legacy solutions and adopt advanced, integrated approaches. The move includes adopting Zero Trust Network Access (ZTNA) solutions for granular, identity-driven connectivity, applying SASE architectures to unify networking and security capabilities, and implementing continuous session validation with risk-based access controls. These strategies work together to ensure that access is always verified, threats are minimized, and security policies adapt dynamically to evolving risks.
 
@@ -176,7 +174,7 @@ Zero Trust Network Access replaces broad, perimeter-based VPNs with fine-grained
 Microsoft’s implementation of ZTNA is part of the Global Secure Access (preview) capability under Microsoft Entra, built on the Security Service Edge (SSE) foundation.  
 [Learn more: What is Global Secure Access? (Microsoft Entra)](/entra/global-secure-access/overview-what-is-global-secure-access)
 
-#### 2.2 Modernize Traditional VPNs with Identity-Aware ZTNA
+#### 2.2 Modernize traditional VPNs with identity-aware ZTNA
 
 **Global Secure Access**  
 Microsoft’s Global Secure Access replaces broad network tunnels with app-specific, identity-driven connections. When a user requests access, Global Secure Access uses Microsoft Entra ID for single sign-on and Conditional Access at the edge—no inbound firewall rules are required. Only approved applications are visible in the user portal, and access decisions are based on device posture (from Defender for Endpoint) and real-time risk signals.
@@ -210,7 +208,7 @@ Traditional VPN endpoints can be integrated with Azure Firewall or partner SWG a
 
 - [Learn about forced-tunnel VPN with Azure Firewall](/azure/firewall)
 
-#### 2.4 Implement Continuous Session Validation & Risk-Based Access
+#### 2.4 Implement continuous session validation and risk-based access
 
 Continuous session validation ensures that access decisions are enforced in real time, not just at the initial sign-in. This approach helps organizations respond quickly to changing risk conditions and maintain a strong security posture.
 
@@ -227,7 +225,7 @@ For VPN connections using Microsoft Entra ID authentication, Continuous Access E
 - [VPN Gateway authentication with Microsoft Entra ID](/azure/vpn-gateway/openvpn-azure-ad-tenant)
 - [Automate response with Microsoft Sentinel playbooks](/azure/sentinel/automation/create-playbooks)
 
-### 3. Strong Encryption & Secure Communication
+### 3. Strong encryption and secure communication
 
 Modern network communication must be strongly encrypted and secured at every stage. Organizations should:
 
@@ -268,12 +266,12 @@ Add encryption to ensure user-to-app internal traffic is encrypted.
 
 Follow these steps:
 
-- Enforce HTTPS-only communication for your internet facing web applications by [redirecting HTTP traffic to HTTPS using Azure Front Door](/azure/frontdoor/front-door-how-to-redirect-https).
-- Connect remote employees/partners to Microsoft Azure using the [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways).
-    - [Turn on encryption](/azure/vpn-gateway/vpn-gateway-security-controls#data-protection) for any point-to-site traffic in Azure VPN Gateway service.
-- Access your Azure virtual machines securely using encrypted communication via [Azure Bastion](/azure/bastion/bastion-overview).
-- [Connect using SSH to a Linux virtual machine](/azure/bastion/bastion-connect-vm-ssh).
-- [Connect using Remote Desktop Protocol (RDP) to a Windows virtual machine](/azure/bastion/bastion-connect-vm-rdp).
+1. Enforce HTTPS-only communication for your internet facing web applications by [redirecting HTTP traffic to HTTPS using Azure Front Door](/azure/frontdoor/front-door-how-to-redirect-https).
+1. Connect remote employees/partners to Microsoft Azure using the [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways).
+1. [Turn on encryption](/azure/vpn-gateway/vpn-gateway-security-controls#data-protection) for any point-to-site traffic in Azure VPN Gateway service.
+1. Access your Azure virtual machines securely using encrypted communication via [Azure Bastion](/azure/bastion/bastion-overview).
+1. [Connect using SSH to a Linux virtual machine](/azure/bastion/bastion-connect-vm-ssh).
+1. [Connect using Remote Desktop Protocol (RDP) to a Windows virtual machine](/azure/bastion/bastion-connect-vm-rdp).
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
@@ -283,14 +281,13 @@ Follow these steps:
 Finally, complete your network protection by ensuring that all traffic is encrypted.
 
 Follow these steps:
+1. [Encrypt application backend traffic](/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell) between virtual networks.
+1. Encrypt traffic between on-premises and cloud:
+    1. [Configure a site-to-site VPN](/azure/expressroute/site-to-site-vpn-over-microsoft-peering) over ExpressRoute Microsoft peering.
+    1. [Configure IPsec transport mode](/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
+    1. Configure mTLS between servers across ExpressRoute private peering.
 
-- [Encrypt application backend traffic](/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell) between virtual networks.
-- Encrypt traffic between on-premises and cloud:
-    - [Configure a site-to-site VPN](/azure/expressroute/site-to-site-vpn-over-microsoft-peering) over ExpressRoute Microsoft peering.
-    - [Configure IPsec transport mode](/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
-    - Configure mTLS between servers across ExpressRoute private peering.
-
-### 4. Network Visibility & Threat Detection
+### 4. Network visibility and threat detection
 
 In a Zero Trust security model, the principle of “never trust, always verify” applies not just to users and devices, but also to network traffic. Monitoring and logging network activity is critical for enforcing Zero Trust because it provides continuous visibility into how resources are accessed, ensures compliance with security policies, and enables rapid detection of suspicious or unauthorized behavior. Below are the key elements, that this section will cover:
 
@@ -307,11 +304,10 @@ In a Zero Trust security model, the principle of “never trust, always verify�
 For further threat protection, turn on [Azure DDoS Network Protection](/azure/virtual-network/ddos-protection-overview) to constantly monitor your Azure-hosted application traffic, use ML-based frameworks to baseline and detect volumetric traffic floods, detect protocol attacks, and apply automatic mitigations.
 
 Follow these steps:
-
-- [Configure and manage](/azure/virtual-network/manage-ddos-protection) Azure DDoS Network Protection.
-- [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
-- [Use Microsoft Sentinel with Azure Web Application Firewall](/azure/web-application-firewall/waf-sentinel)
-- [Use Azure Firewall with Microsoft Sentinel](/azure/firewall/firewall-sentinel-overview)
+1. [Configure and manage](/azure/virtual-network/manage-ddos-protection) Azure DDoS Network Protection.
+1. [Configure alerts](/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
+1. [Use Microsoft Sentinel with Azure Web Application Firewall](/azure/web-application-firewall/waf-sentinel)
+1. [Use Azure Firewall with Microsoft Sentinel](/azure/firewall/firewall-sentinel-overview)
 
 
 #### 4.2 Threat protection: Cloud native filtering and protection for known threats
@@ -329,9 +325,9 @@ Consider these steps to protect against known threats:
 - Implement Microsoft Entra Internet Access capabilities such as [web content filtering](/entra/global-secure-access/how-to-configure-web-content-filtering) and [TLS inspection](/entra/global-secure-access/concept-transport-layer-security). To learn more, see [Learn about Microsoft Entra Internet Access for all apps](/entra/global-secure-access/concept-internet-access).
 
 - Protect endpoints using [Azure Web Application Firewall (WAF)](/azure/web-application-firewall/overview) by:
-    - Turning on the default ruleset or [OWASP top 10](https://owasp.org/www-project-top-ten/) protection ruleset to protect against known web-layer attacks
-    - Turning on the bot protection ruleset to prevent malicious bots from scraping information, conducting credential stuffing, etc.
-    - Adding custom rules to protect against threats specific to your business.
+    1. Turning on the default ruleset or [OWASP top 10](https://owasp.org/www-project-top-ten/) protection ruleset to protect against known web-layer attacks
+    1. Turning on the bot protection ruleset to prevent malicious bots from scraping information, conducting credential stuffing, etc.
+    1. Adding custom rules to protect against threats specific to your business.
 
     You can use one of two options:
     - [Azure Front Door](/azure/frontdoor/front-door-overview)
@@ -350,7 +346,7 @@ Consider these steps to protect against known threats:
         > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
     - [Azure Firewall IDPS detects and prevents threats in network traffic when enabled](/azure/firewall/premium-features#idps)
 
-#### 4.3 Monitoring and Visibility
+#### 4.3 Monitoring and visibility
 
 **Traffic Analytics**
 
@@ -399,11 +395,11 @@ By leveraging Microsoft Entra Global Secure Access logs, organizations can track
 - [Global Secure Access traffic logs](/entra/global-secure-access/how-to-view-traffic-logs)
 - [Remote Network Health Logs](/entra/global-secure-access/how-to-remote-network-health-logs?tabs=microsoft-entra-admin-center)
 
-#### 4.4 Automation and Orchestration
+#### 4.4 Automation and orchestration
 
 Automation and orchestration are essential for enforcing Zero Trust principles across network infrastructure. By leveraging automatic enforcement, response, and governance, organizations can achieve secure and resilient connectivity.
 
-##### Azure Networking
+##### Azure networking
 
 Azure networking services—including Azure Firewall, Network Security Groups (NSGs), Virtual WAN, and DDoS Protection—can be deployed, governed, and monitored using Infrastructure as Code (IaC) tools such as ARM templates, Bicep, Terraform, and Azure Policy.
 
@@ -462,34 +458,33 @@ Key capabilities:
 - [Automated investigation and response in Defender XDR](/defender-endpoint/automated-investigations?view=o365-worldwide&preserve-view=)
 
 
-
-### 5. Policy-Driven Access Control & Least Privilege
+### 5. Policy-driven access control and least privilege
 
 Modern Zero Trust networks require granular, adaptive access controls that enforce least privilege and respond dynamically to risk. Policy-driven access ensures users and devices only get the minimum permissions needed, for the shortest time required, and only under the right conditions.
 
-#### 5.1 Implement Context-Aware Access Policies
+#### 5.1 Implement context-aware access policies
 
 - Use Microsoft Entra Conditional Access to define policies based on user, device, location, application, and risk signals.
 - Start by [planning your Conditional Access deployment](/entra/identity/conditional-access/plan-conditional-access) to align policies with your organizational requirements.
 - Accelerate deployment with [Conditional Access policy templates](/entra/identity/conditional-access/concept-conditional-access-policy-common) for common scenarios.
 
-#### 5.2 Enforce Risk-Based and Adaptive Controls
+#### 5.2 Enforce risk-based and adaptive controls
 
 - Require multifactor authentication (MFA) when risk is detected, such as unfamiliar sign-ins or risky devices.
 - Use [sign-in risk-based MFA](/entra/identity/conditional-access/howto-conditional-access-policy-risk) to automatically prompt for MFA based on real-time risk assessment.
 - Understand [risk detections in Microsoft Entra ID Protection](/entra/id-protection/concept-identity-protection-risks) to inform policy decisions and automate remediation.
 
-#### 5.3 Apply Just-in-Time (JIT) and Privileged Access
+#### 5.3 Apply Just-in-Time (JIT) and privileged access
 
 - Enforce Just-in-Time (JIT) access using Privileged Identity Management (PIM) to grant elevated permissions only when needed.
 - [Secure private application access with PIM and Global Secure Access](/entra/global-secure-access/how-to-configure-global-access-with-pim) to reduce standing privileges and limit exposure.
 
-#### 5.4 Hybrid and Application-Specific Access
+#### 5.4 Hybrid and application-specific access
 
 - For hybrid environments, configure per-app access policies using [Global Secure Access Applications](/entra/global-secure-access/how-to-configure-per-app-access).
 - Enable secure remote administration by [using SSH with Microsoft Entra Private Access](/entra/global-secure-access/how-to-manage-ssh-server-administration) for granular, policy-driven server access.
 
-#### 5.5 Deny-by-Default and Continuous Evaluation
+#### 5.5 Deny-by-default and continuous evaluation
 
 - Apply deny-by-default principles at all network layers, granting access only when explicitly allowed by policy.
 - Continuously evaluate session risk and enforce policy changes in real time to minimize attack surface.
@@ -497,24 +492,24 @@ Modern Zero Trust networks require granular, adaptive access controls that enfor
 Use context-aware, risk-based, and least-privilege policies to reduce unauthorized access and limit lateral movement in your network.
 
 
-### 6. Cloud & Hybrid Network Security
+### 6. Cloud and hybrid network security
 
 Securing cloud and hybrid environments requires a combination of modern, cloud-native controls and consistent policy enforcement across all platforms. As organizations adopt multicloud and hybrid architectures, it's essential to extend Zero Trust principles beyond traditional data centers to cloud workloads, SaaS, and PaaS environments.
 
-#### 6.1 Secure Cloud Workloads with Micro-Perimeters and Cloud-Native Firewalls
+#### 6.1 Secure cloud workloads with micro-perimeters and cloud-native firewalls
 
 - **Micro-perimeters:** Use micro-segmentation to create granular security boundaries around individual workloads, applications, or services. This limits lateral movement and contains potential breaches within isolated segments.
 - **Cloud-native firewalls:** Deploy solutions like [Azure Firewall](/azure/firewall/overview) to inspect and control traffic between cloud workloads, enforce threat intelligence-based filtering, and apply application and network rules at scale.
 - **Network Security Groups (NSGs):** Use Network Security Groups (NSGs) and [Application Security Groups](/azure/virtual-network/application-security-groups) to define and enforce fine-grained access controls for resources within virtual networks.
 - **Private endpoints:** Use [Azure Private Link](/azure/private-link/private-link-overview) to restrict access to PaaS services over private IP addresses, ensuring traffic stays within the trusted Microsoft backbone.
 
-#### 6.2 Integrate Identity-Aware Proxies for SaaS and PaaS Security
+#### 6.2 Integrate identity-aware proxies for SaaS and PaaS security
 
 - **Identity-aware proxies:** Implement solutions such as [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access) to broker access to SaaS and PaaS applications. These proxies enforce authentication, device compliance, and Conditional Access policies before granting access. Consider [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access) for identity-aware internet access.
 - **Cloud Access Security Broker (CASB):** Use [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) to discover, monitor, and control SaaS usage, enforce data loss prevention (DLP), and apply session controls for cloud applications.
 - **Continuous session validation:** Apply risk-based, real-time policy enforcement for SaaS and PaaS access, including adaptive controls based on user, device, and session context.
 
-#### 6.3 Ensure Consistent Security Policy Enforcement Across Hybrid and Multicloud Environments
+#### 6.3 Ensure consistent security policy enforcement across hybrid and multicloud environments
 
 - **Unified policy management:** Use platforms like [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) and [Azure Policy](/azure/governance/policy/overview) to define and enforce consistent security policies across on-premises, Azure, and other cloud providers.
 - **Hybrid connectivity:** Secure hybrid connections using [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways), [ExpressRoute](/azure/expressroute/expressroute-introduction), and enforce encryption and access controls for all cross-environment traffic.

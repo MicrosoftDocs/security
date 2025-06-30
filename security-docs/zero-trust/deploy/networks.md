@@ -350,7 +350,7 @@ Consider these steps to protect against known threats:
 
 **Traffic Analytics**
 
-**Network Watcher Traffic Analytics** plays a critical role in Zero Trust segmentation by analyzing NSG flow logs to detect anomalous traffic, validate segmentation policies, and uncover shadow IT or misconfigured access paths. It enables security teams to visualize traffic between segments and enforce adaptive controls based on real-time telemetry. 
+**Network Watcher [Traffic Analytics](/azure/network-watcher/traffic-analytics-zero-trust)** plays a critical role in Zero Trust segmentation by analyzing VNET flow logs to detect anomalous traffic, validate segmentation policies, and uncover shadow IT or misconfigured access paths. It enables security teams to visualize traffic between segments and enforce adaptive controls based on real-time telemetry. 
 
 **Log Analysis**
 

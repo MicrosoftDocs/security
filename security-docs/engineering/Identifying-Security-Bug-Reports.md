@@ -36,7 +36,7 @@ While there are some analytical models that capture the general influence of noi
 
 ### OUR RESEARCH CONTRIBUTIONS:
 
-- We train classifiers for the identification of security bug reports (SBRs) based solely on the title of the reports. To the best of our knowledge this is the first work to do so. Previous works either used the complete bug report or enhanced the bug report with additional complementary features. Classifying bugs based solely on the tile is particularly relevant when the complete bug reports cannot be made available due to privacy concerns. For example, it is notorious the case of bug reports that contain passwords and other sensitive data.
+- We train classifiers for the identification of security bug reports (SBRs) based solely on the title of the reports. To the best of our knowledge this is the first work to do so. Previous works either used the complete bug report or enhanced the bug report with additional complementary features. Classifying bugs based solely on the title is particularly relevant when the complete bug reports cannot be made available due to privacy concerns. For example, it is notorious the case of bug reports that contain passwords and other sensitive data.
 
 - We also provide the first systematic study of the label noise-tolerance of different machine learning models and techniques used for the automatic classification of SBRs. We make a comparative study of robustness of three distinct machine learning techniques (logistic regression, naive Bayes and AdaBoost) against class-dependent and class-independent noise.
 

@@ -93,6 +93,10 @@ landingContent:
   # Card
   - title: Lessons learned
     linkLists:
+      - linkListType: learn
+        links:
+          - text: AI Security Training
+            url: training.md
       - linkListType: overview
         links:
           - text: Lessons from red teaming 100 generative AI products

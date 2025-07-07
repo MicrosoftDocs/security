@@ -5,9 +5,11 @@ author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
 ms.date: 02/24/2025
-ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
+ms.custom:
+  - template-concept
+  - sfi-image-nochange
 # Customer intent: As a developer, I want to implement the best authorization, permission, and consent models for my applications.
 ---
 # Authorization best practices

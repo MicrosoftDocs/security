@@ -8,6 +8,7 @@ ms.author: brenduns
 ms.topic: conceptual
 ms.collection:
   - zerotrust-pillar
+ms.custom: sfi-image-nochange
 ---
 
 

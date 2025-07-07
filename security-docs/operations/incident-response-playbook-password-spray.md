@@ -18,8 +18,12 @@ ms.collection:
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.date: 11/06/2024
+ms.custom:
+  - cxdef-zt-ransomware
+  - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
+  - sfi-image-nochange
 ---
 
 # Password spray investigation

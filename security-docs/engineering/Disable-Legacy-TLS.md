@@ -7,6 +7,7 @@ manager: femila
 ms.date: 03/12/2025
 ms.topic: article
 ms.service: information-protection
+ms.custom: sfi-image-nochange
 ---
 
 TLS version enforcement capabilities now available per certificate binding on Windows Server 2019

@@ -11,6 +11,7 @@ author: kenwith
 
 ms.collection:
   - zerotrust-pillar
+ms.custom: sfi-image-nochange
 ---
 # Securing identity with Zero Trust
 

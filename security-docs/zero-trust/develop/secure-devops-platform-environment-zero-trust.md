@@ -5,9 +5,11 @@ author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
 ms.date: 02/24/2025
-ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
+ms.custom:
+  - template-concept
+  - sfi-image-nochange
 # Customer intent: As a DevOps team member, I want learn best practices for secret and certificate management so that I can secure my DevOps platform environments.
 ---
 # Secure the DevOps platform environment for Zero Trust

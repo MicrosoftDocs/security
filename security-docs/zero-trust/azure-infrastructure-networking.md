@@ -11,6 +11,7 @@ ms.collection:
   - msftsolution-scenario
   - zerotrust-solution
   - zerotrust-azure
+ms.custom: sfi-image-nochange
 ---
 
 # Apply Zero Trust principles to a hub virtual network in Azure

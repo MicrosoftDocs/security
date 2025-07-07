@@ -13,6 +13,7 @@ ms.collection:
   - msftsolution-scenario
   - zerotrust-solution
   - zerotrust-copilot
+ms.custom: sfi-ga-nochange
 ---
 
 # Apply principles of Zero Trust to Microsoft Security Copilot

@@ -84,4 +84,4 @@ After completing this training series, you will understand:
 - Training series episodes: 
 - [Hands-on labs & tools](https://aka.ms/AIRTlabs)
 - [Microsoft AI red team overview](https://aka.ms/airedteam)
-- [PyRIT GitHub repository](https://github.com/Azure/PyRIT)
+- [PyRIT GitHub repository](https://aka.ms/PyRIT)

@@ -68,7 +68,7 @@ Episode 9: Automating Single-Turn Attacks - Hands-on demonstration of configurin
 
 Episode 10: Automating Multi-Turn Attacks - Advanced automation techniques for multi-turn conversations, including adversarial model conversations and testing both text and image generation systems 
 
-## What you learn 
+## What you will learn 
 
 After completing this training series, you understand: 
 

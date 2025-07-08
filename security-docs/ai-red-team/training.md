@@ -18,7 +18,7 @@ ms.custom:
 
 Learn how to secure generative AI systems with Microsoft's AI Red Teaming 101 training series. This comprehensive guide explores vulnerabilities, attack techniques, and defense strategies to help you safeguard AI models against emerging threats. Whether you're a security professional, ML engineer, or business leader, this training equips you with actionable insights, hands-on labs, and real-world case studies to enhance your AI security expertise. Dive into modular episodes covering prompt injection attacks, multi-turn adversarial techniques, automated testing tools, and proven mitigation strategies.
 
-## Why should you watch this training series
+## Why should you watch this training series?
 
 Get actionable advice to identify, exploit, and defend against critical vulnerabilities in generative AI systems. Learn best practices, techniques, and guidance based on real-world lessons from Microsoft's AI Red Team.
 

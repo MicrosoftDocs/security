@@ -70,7 +70,7 @@ Episode 10: Automating Multi-Turn Attacks - Advanced automation techniques for m
 
 ## What you will learn 
 
-After completing this training series, you understand: 
+After completing this training series, you will understand: 
 
 - Fundamentals of AI red teaming vs. traditional red teaming approaches 
 - Core vulnerabilities in generative AI systems like prompt injection and model misalignment 

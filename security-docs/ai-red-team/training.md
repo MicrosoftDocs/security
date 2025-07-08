@@ -31,7 +31,7 @@ The training series is useful for security teams, ML engineers, AI practitioners
 - Enterprise and security architects: create secure AI systems and explore emerging threats.
 
 > [!TIP]
-> The AI Red Teaming 101 videos are modular, so you can jump to any section of interest or start at the beginning and watch them all. [Download the slides](https://download.microsoft.com/download/5b4d1684-798f-4040-ae80-eb8e1a1b3411/AI Red Teaming 101.pptx) and follow along at your own pace.
+> The AI Red Teaming 101 videos are modular, so you can jump to any section of interest or start at the beginning and watch them all. [Download the slides](https://download.microsoft.com/download/5b4d1684-798f-4040-ae80-eb8e1a1b3411/AI Red Teaming 101.pptx), and follow along at your own pace.
 
 ## What's in the training series
 

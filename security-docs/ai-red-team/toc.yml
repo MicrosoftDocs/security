@@ -8,6 +8,8 @@ items:
     href: https://www.microsoft.com/security/blog/2023/08/07/microsoft-ai-red-team-building-future-of-safer-ai/
   - name: The PyRIT framework blog
     href: https://aka.ms/PYRITblog
+  - name: AI Security Training
+    href: training.md
 - name: Concept
   expanded: false
   items:
@@ -39,20 +41,3 @@ items:
     href: /security/engineering/Bug-Bar-aiml?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
   - name: Azure Machine Learning customers guidance on enterprise security and governance
     href: /azure/machine-learning/concept-enterprise-security?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
-
-
-
-
- 
-
- 
-
-
-
- 
-
- 
-
-
-
- 

@@ -40,7 +40,7 @@ The training series is useful for security teams, ML engineers, AI practitioners
 The training series gives guidance on understanding generative AI vulnerabilities, executing attack techniques, and implementing defensive measures. The workshop includes hands-on demonstrations, real-world case studies, and automated testing tools based on Microsoft's production AI security practices. 
 
 > [!TIP] 
-> All episodes include hands-on demonstrations and access to Microsoft's red teaming labs to gain practical experience. 
+> All episodes include [hands-on demonstrations and access to Microsoft's red teaming labs](https://aka.ms/AIRTlabs) to gain practical experience. 
 
 ### Introduction and Fundamentals 
 
@@ -103,7 +103,6 @@ After completing this training series, you'll understand:
 
 ## Related content
 
-- Training series episodes: 
 - [Hands-on labs & tools](https://aka.ms/AIRTlabs)
 - [Microsoft AI red team overview](https://aka.ms/airedteam)
 - [PyRIT GitHub repository](https://aka.ms/PyRIT)

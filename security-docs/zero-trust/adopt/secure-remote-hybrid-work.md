@@ -259,7 +259,7 @@ In addition to these resources, the following sections highlight resources for s
 | --- | --- |
 | Register devices with Microsoft Entra ID | [Microsoft Entra registered devices](/azure/active-directory/devices/concept-azure-ad-register) <br><br> [Plan your Microsoft Entra join implementation](/azure/active-directory/devices/azureadjoin-plan) |
 | Implement Zero Trust identity and device access policies for the **Starting point** protection level  | [Protection levels for Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations#three-levels-of-protection) |
-| Use Microsoft Entra application proxy with on-premises apps for single sign-on | [How to configure single sign-on to an Application Proxy application](/azure/active-directory/app-proxy/application-proxy-config-sso-how-to) |
+| Use Microsoft Entra application proxy with on-premises apps for single sign-on | [How to configure single sign-on to an Application Proxy application](/entra/identity/) |
 
 <a name='stage-3'></a>
 #### Stage 3

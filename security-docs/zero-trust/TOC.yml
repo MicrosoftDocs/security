@@ -358,6 +358,11 @@
 - name: Best practices resources
   expanded: false
   items:
+     - name: Secure Future Initiative (SFI)
+       expanded: false
+       items:                 
+         - name: Phishing-resistant MFA
+           href: phishing-resistant-mfa.md
      - name: US Government guidance
        items:
          - name: CISA Zero Trust Maturity Model

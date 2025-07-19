@@ -1,6 +1,6 @@
 ---
 title: Phishing-resistant MFA
-description: Phishing-resistant multi-factor authentication (MFA) is part of the protect identities and secrets pillar of the Secure Future Initiative (SFI), focusing on hardening authentication, eliminating unmanaged credentials, enforcing Zero Trust principles, and protecting cryptographic keys. 
+description: Phishing-resistant multifactor authentication (MFA) is part of the protect identities and secrets pillar of the Secure Future Initiative (SFI), focusing on hardening authentication, eliminating unmanaged credentials, enforcing Zero Trust principles, and protecting cryptographic keys. 
 ms.date: 08/05/2025
 ms.service: security
 author: brendacarter
@@ -17,7 +17,7 @@ ms.collection:
 **Pillar name: Protect identities and Secrets** <br>
 **Pattern name: Phishing-resistant MFA**
 
-Phishing-resistant multi-factor authentication (MFA) is part of the protect identities and secrets pillar of the Secure Future Initiative (SFI), which focuses on hardening authentication, eliminating unmanaged credentials, enforcing Zero Trust principles, and protecting cryptographic keys. It ensures identity is verifiable, access is accountable, and secrets are defended with rigor across the digital estate. 
+Phishing-resistant multifactor authentication (MFA) is part of the protect identities and secrets pillar of the Secure Future Initiative (SFI), which focuses on hardening authentication, eliminating unmanaged credentials, enforcing Zero Trust principles, and protecting cryptographic keys. It ensures identity is verifiable, access is accountable, and secrets are defended with rigor across the digital estate. 
 
 ## Context and problem
 Traditional MFA methods such as SMS codes, email-based OTPs, and push notifications are becoming less effective against today’s attackers. Sophisticated phishing campaigns have demonstrated that second factors can be intercepted or spoofed. Attackers now exploit social engineering, man-in-the-middle tactics, and user fatigue (e.g., MFA bombing) to bypass these mechanisms. These risks are amplified in distributed, cloud-first organizations with hybrid workforces and varied device ecosystems.  

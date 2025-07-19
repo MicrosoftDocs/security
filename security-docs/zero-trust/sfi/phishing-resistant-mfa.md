@@ -42,11 +42,11 @@ Organizations can adopt a similar pattern using the following actionable practic
 |---|---|---|
 | Workload identities   | Identify and migrate user-based automation (service accounts) to workload identities—or consider using certificate-based authentication.    | [What are workload identities?](/entra/workload-id/workload-identities-overview)   |
 | Time-bound credentials   | Use temporary access passes (TAP) to secure onboarding and recovery with time-bound credentials.   | [Configure Temporary Access Pass](/entra/identity/authentication/howto-authentication-temporary-access-pass)  |
-| Secure onboarding   | Use video verification and liveness detection to prevent fraudulent access.   | [Face liveness detection](azure/ai-services/computer-vision/concept-face-liveness-detection)  |
+| Secure onboarding   | Use video verification and liveness detection to prevent fraudulent access.   | [Face liveness detection](/azure/ai-services/computer-vision/concept-face-liveness-detection)  |
 | Stronger authentication methods   | Prioritize authentication methods that cannot be phished or reused by deploying FIDO2 or passkey solutions.   | [What is FIDO2?](https://www.microsoft.com/security/business/security-101/what-is-fido2)   |
 | Conditional Access  |  Align sign-in policies across all tenants and environments using Conditional Access Policies.  |  [Conditional Access policy templates](/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation)  |
 | User Lifecycle Workflows   |Implement user Lifecycle Workflows to register credentials that are resistant to phishing attacks.    | [What are lifecycle workflows?](/entra/id-governance/what-are-lifecycle-workflows)   |
-|   | Generate TAP credentials based on customized logic. Ensure secure MFA registration and deactivation occur at each user stage. |[Lifecycle Workflow built-in tasks](entra/id-governance/lifecycle-workflow-tasks)    |
+|   | Generate TAP credentials based on customized logic. Ensure secure MFA registration and deactivation occur at each user stage. |[Lifecycle Workflow built-in tasks](/entra/id-governance/lifecycle-workflow-tasks)    |
 
 ## Outcomes
 

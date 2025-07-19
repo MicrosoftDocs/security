@@ -359,22 +359,22 @@
   expanded: false
   items:
      - name: Secure Future Initiative (SFI)
-       expanded: false
-        - name: Protect identities and secrets
-          expand: false
-          items:                 
-            - name: Phishing-resistant MFA
-              href: sfi/phishing-resistant-mfa.md
-        - name: Protect tenants and isolate systems
-          expand: false
-        - name: Protect networks
-          expand: false
-        - name: Protect engineering systems
-          expand: false
-        - name: Monitor and detect cyberthreats
-          expand: false
-        - name: Accelerate resonse and remediation
-          expand: false         
+       items:
+         - name: Protect identities and secrets
+           expand: false
+           items:                 
+              - name: Phishing-resistant MFA
+                href: sfi/phishing-resistant-mfa.md
+         - name: Protect tenants and isolate systems
+           expand: false
+         - name: Protect networks
+           expand: false
+         - name: Protect engineering systems
+           expand: false
+         - name: Monitor and detect cyberthreats
+           expand: false
+         - name: Accelerate resonse and remediation
+           expand: false         
              
      - name: US Government guidance
        items:

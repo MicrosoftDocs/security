@@ -5,9 +5,11 @@ author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
 ms.date: 04/18/2025
-ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
+ms.custom:
+  - template-concept
+  - sfi-image-nochange
 # Customer intent: As a developer, I want to ensure Zero Trust when I have one API that needs to call another API so that I can securely develop my application when it is working on behalf of a user.
 ---
 # Call an API from another API

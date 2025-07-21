@@ -18,10 +18,11 @@ ms.collection:
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: 
+ms.date: 11/06/2024
+ms.custom:
   - cxdef-zt-ransomware
   - no-azure-ad-ps-ref
-ms.date: 11/06/2024
+  - sfi-image-nochange
 ---
 
 # Phishing investigation

@@ -5,9 +5,12 @@ author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
 ms.date: 04/18/2025
-ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
+ms.custom:
+  - template-concept
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 # Customer intent: As a developer, I want to configure app role definitions and security groups to improve flexibility and control while increasing application zero trust security with least privilege.
 ---
 # Configure group claims and app roles in tokens

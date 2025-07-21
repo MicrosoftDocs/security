@@ -5,9 +5,11 @@ author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
 ms.date: 04/18/2025
-ms.custom: template-concept 
 ms.collection:
   - zerotrust-dev
+ms.custom:
+  - template-concept
+  - sfi-image-nochange
 # Customer intent: As a developer, I want to learn about the permission and consent experience when my application requires administrative consent so that I can better collaborate with admins to implement the Zero Trust principle of least privilege in my applications.
 ---
 # Request permissions that require administrative consent

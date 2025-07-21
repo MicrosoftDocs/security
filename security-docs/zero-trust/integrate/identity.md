@@ -8,6 +8,7 @@ ms.author: jricketts
 ms.topic: conceptual
 ms.collection:
   - zerotrust-partner
+ms.custom: sfi-image-nochange
 ---
 
 # Identity integrations

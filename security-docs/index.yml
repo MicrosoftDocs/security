@@ -38,12 +38,12 @@ sections:
           text: Understand what's needed
       - avatarUrl: /security/media/hubpage/applied-skills.png
         componentType: testimonial-card
-        name: Get started with identities and access using Microsoft Entra
-        role: Applied skills
-        feedback: Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra.
+        name: Prepare security and compliance to support Microsoft 365 Copilot
+        role: Credentials
+        feedback: Demonstrate your ability to set up Microsoft 365 security and compliance to support Microsoft Copilot for Microsoft 365.
         link:
           componentType: link
-          url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
+          url: /credentials/applied-skills/prepare-security-and-compliance-to-support-microsoft-365-copilot/?wt.mc_id=appliedskills_copilothub_webpage_wwl
           text: Validate your skills
       - avatarUrl: /security/media/hubpage/github.png
         componentType: testimonial-card
@@ -54,15 +54,15 @@ sections:
           componentType: link
           url: /training/paths/github-advanced-security/?wt.mc_id=securityhub_GHsecuirty1_webpage_cnl
           text: Get secure
-      - avatarUrl: /security/media/hubpage/github.png
+      - avatarUrl: /security/media/hubpage/blog-icon.png
         componentType: testimonial-card
-        name: Learn GitHub Advanced Security Part 2 of 2
-        role: Training
-        feedback: Gain an understanding of GitHub Advanced Security features and apply the skills in your own GitHub environment.
+        name: "Unify your data. Optimize your SOC."
+        role: Blog
+        feedback: Announcing expanded capabilities in our SIEM solution, Microsoft Sentinel, including a unified data lake and dynamic threat intelligence—now in preview.
         link:
           componentType: link
-          url: /training/paths/github-advanced-security-2?wt.mc_id=securityhub_GHsecurity2_webpage_cnl
-          text: Get more secure
+          url: https://aka.ms/SentinelDataLakeBlog
+          text: Learn more
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

@@ -10,13 +10,27 @@ metadata:
   ms.topic: landing-page
   ms.author: ralyon
   author: ttorble
-  ms.date: 06/16/2025
+  ms.date: 07/23/2025
   
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+  # Card 
+  - title: June top picks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Connect Microsoft Sentinel to the Microsoft Defender portal
+            url: /unified-secops-platform/microsoft-sentinel-onboard
+          - text: Get started with identities and access using Microsoft Entra
+            url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
+          - text: GitHub Advanced Security Part 1 of 2
+            url: /training/paths/github-advanced-security/?wt.mc_id=securityhub_GHsecuirty1_webpage_cnl
+          - text: Learn GitHub Advanced Security Part 2 of 2
+            url: /training/paths/github-advanced-security-2?wt.mc_id=securityhub_GHsecurity2_webpage_cnl
+
   # Card 
   - title: May top picks
     linkLists:
@@ -31,23 +45,7 @@ landingContent:
           - text: Implement access management for apps
             url: /training/paths/implement-access-management-for-apps/?
 
-  # Card 
-  - title: April top picks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Get the latest on the Secure Future Initiative
-            url: //aka.ms/SFI_MSLearn?wt.mc_id=securityhub_sfi_webpage_cnl
-          - text: Get certified as an Information Security Administrator
-            url: /credentials/certifications/exams/sc-401/?wt.mc_id=certsustainedmkt_portfolioupdate_blog_wwl&practice-assessment-type=certification
-          - text: Security for AI with Microsoft Purview & Defender for Cloud
-            url: https://developer.microsoft.com/en-us/reactor/series/S-1489/?wt.mc_id=securityhub_LLsecurityAI_webpage_sci
-          - text: Implement and manage data privacy solutions for compliance
-            url: /training/modules/priva-understand-priva/?wt.mc_id=securityhub_mspriva_webpage_SCI
-          - text: Explore Microsoft Secure on demand
-            url: //aka.ms/AAv23a8?wt.mc_id=securityhub_mssecure_webpage_cnl
-
-  # Card
+ # Card
  # - title: Discover more
  #   linkLists:
  #     - linkListType: reference

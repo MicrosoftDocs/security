@@ -6,13 +6,14 @@ ms.service: security
 author: BrendaCarter
 ms.author: bcarter
 ms.topic: concept-article
-ms.collection: 
-  - M365copilot
-  - msec-ai-copilot 
-  - msftsolution-copilot
-  - msftsolution-scenario
-  - zerotrust-solution
-  - zerotrust-copilot
+ms.collection:
+- M365copilot
+- msec-ai-copilot
+- msftsolution-copilot
+- msftsolution-scenario
+- zerotrust-solution
+- zerotrust-copilot
+- trust-pod
 ms.custom: sfi-ga-nochange
 ---
 

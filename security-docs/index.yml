@@ -45,7 +45,7 @@ sections:
           componentType: link
           url: /credentials/applied-skills/prepare-security-and-compliance-to-support-microsoft-365-copilot/?wt.mc_id=appliedskills_copilothub_webpage_wwl
           text: Validate your skills
-      - avatarUrl: /security/media/hubpage/video.icon.png
+      - avatarUrl: /security/media/hubpage/video-icon.png
         componentType: testimonial-card
         name: Microsoft Sentinel data lake demo
         role: Video

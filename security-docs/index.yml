@@ -27,15 +27,15 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/hubpage/document-icon.png
+      - avatarUrl: /security/media/hubpage/generic-badge.svg 
         componentType: testimonial-card
-        name: Connect Microsoft Sentinel to the Microsoft Defender portal
-        role: Documentation
-        feedback: Learn how your experience may change and understand how to transition your Microsoft Sentinel environment.
+        name: VTD
+        role: Virtual Training Day
+        feedback: "The new Microsoft Virtual Training Day: Strengthen Cloud Security with Microsoft Defender for Cloud is available. Learn how to apply strong, unified security measures across your cloud apps."
         link:
           componentType: link
-          url: /unified-secops-platform/microsoft-sentinel-onboard
-          text: Understand what's needed
+          url: https://events.microsoft.com/mvtd-security?language=English&clientTimeZone=1&startTime=08:00&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Strengthen%20Cloud%20Security%20with%20Microsoft%20Defender%20for%20Cloud
+          text: Register now
       - avatarUrl: /security/media/hubpage/applied-skills.png
         componentType: testimonial-card
         name: Prepare security and compliance to support Microsoft 365 Copilot
@@ -45,15 +45,15 @@ sections:
           componentType: link
           url: /credentials/applied-skills/prepare-security-and-compliance-to-support-microsoft-365-copilot/?wt.mc_id=appliedskills_copilothub_webpage_wwl
           text: Validate your skills
-      - avatarUrl: /security/media/hubpage/github.png
+      - avatarUrl: /security/media/hubpage/video.icon.png
         componentType: testimonial-card
-        name: GitHub Advanced Security Part 1 of 2
-        role: Training
-        feedback: Learn how to secure your code with advanced security features at every stage of your development lifecycle.  
+        name: Microsoft Sentinel data lake demo
+        role: Video
+        feedback: Watch the new Sentinel data lake in action.  
         link:
           componentType: link
-          url: /training/paths/github-advanced-security/?wt.mc_id=securityhub_GHsecuirty1_webpage_cnl
-          text: Get secure
+          url: https://www.youtube.com/watch?v=4CUK-eJBNI0
+          text: Watch now
       - avatarUrl: /security/media/hubpage/blog-icon.png
         componentType: testimonial-card
         name: "Unify your data. Optimize your SOC."

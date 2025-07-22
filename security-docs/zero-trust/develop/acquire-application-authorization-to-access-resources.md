@@ -5,9 +5,11 @@ author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
 ms.date: 02/24/2025
-ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
+ms.custom:
+  - template-concept
+  - sfi-ropc-nochange
 # Customer intent: As a developer, I want to understand how to best ensure Zero Trust when acquiring resource access permissions for my application.
 ---
 # Acquire authorization to access resources

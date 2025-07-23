@@ -5,12 +5,21 @@ ms.service: security
 ms.topic: whats-new
 author: ttorble
 ms.author: ralyon
-ms.date: 06/16/2025
+ms.date: 07/23/2025
 ---
 
 # Featured top picks
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
+
+## June 2025
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| June 16 | [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops-platform/microsoft-sentinel-onboard) | Learn how your experience may change and understand how to transition your Microsoft Sentinel environment. |
+|         | [Get started with identities and access using Microsoft Entra](/credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/) | Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra. |
+|         | [GitHub Advanced Security Part 1 of 2](/training/paths/github-advanced-security/?wt.mc_id=securityhub_GHsecuirty1_webpage_cnl) | Learn how to secure your code with advanced security features at every stage of your development lifecycle. |
+|         | [Learn GitHub Advanced Security Part 2 of 2](/training/paths/github-advanced-security-2?wt.mc_id=securityhub_GHsecurity2_webpage_cnl) | Gain an understanding of GitHub Advanced Security features and apply the skills in your own GitHub environment. |
 
 ## May 2025
 

@@ -6,13 +6,14 @@ ms.service: security
 author: BrendaCarter
 ms.author: bcarter
 ms.topic: overview
-ms.collection: 
-  - msftsolution-copilot
-  - msftsolution-scenario
-  - zerotrust-m365-security
-  - zerotrust-solution
-  - zerotrust-copilot
-  - msec-ai-copilot
+ms.collection:
+- msftsolution-copilot
+- msftsolution-scenario
+- zerotrust-m365-security
+- zerotrust-solution
+- zerotrust-copilot
+- msec-ai-copilot
+- trust-pod
 ---
 
 # Use Zero Trust security to prepare for AI companions, including Microsoft Copilots

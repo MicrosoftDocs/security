@@ -6,13 +6,14 @@ ms.service: security
 author: BrendaCarter
 ms.author: bcarter
 ms.topic: concept-article
-ms.collection: 
-  - M365copilot
-  - msftsolution-copilot
-  - msftsolution-scenario
-  - zerotrust-solution
-  - zerotrust-copilot
-  - msec-ai-copilot
+ms.collection:
+- M365copilot
+- msftsolution-copilot
+- msftsolution-scenario
+- zerotrust-solution
+- zerotrust-copilot
+- msec-ai-copilot
+- trust-pod
 ms.custom: [copilot-learning-hub]
 ---
 

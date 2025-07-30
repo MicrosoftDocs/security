@@ -2,6 +2,7 @@
 title: How do I protect AI apps and data?
 description: How to use Microsoft capabilities to protect AI apps and data use in your environment. 
 ms.date: 04/02/2025
+ms.update-cycle: 180-days
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter

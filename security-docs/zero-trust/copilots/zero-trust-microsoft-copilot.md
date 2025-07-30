@@ -2,6 +2,7 @@
 title: How do I apply Zero Trust principles to Microsoft 365 Copilot Chat for web-grounded prompts?
 description: How to apply Zero Trust principles to Microsoft 365 Copilot Chat for web-grounded prompts. 
 ms.date: 03/04/2025
+ms.update-cycle: 180-days
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter

@@ -139,7 +139,7 @@ For more information, use these resources:
 - [Illustrations for data protection and auditing with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing)
 - [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview) 
 - [Considerations for DSPM for AI to manage data security and compliance protections for AI interactions](/purview/ai-microsoft-purview-considerations).
-- [Govern AI apps and data for regulatory compliance](../security/security-for-ai/govern.md)
+- [Govern AI apps and data for regulatory compliance](../security-for-ai/govern.md)
 
 ### Getting started with E3
 

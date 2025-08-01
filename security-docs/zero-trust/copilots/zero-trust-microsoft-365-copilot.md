@@ -110,30 +110,30 @@ To get started with oversharing controls, use the following resources:
 - [Illustration and description of oversharing controls you can use with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing#oversharing-controls-you-can-use-with-microsoft-365-copilot)
 - [Downloadable blueprint to prevent oversharing](/microsoft-365-copilot/microsoft-365-copilot-blueprint-oversharing)
 
-### Implment Microsoft Purview capabilities starting with DSPM for AI
+### Implement Microsoft Purview capabilities starting with DSPM for AI
 
 Use Microsoft Purview to mitigate and manage the risks associated with AI usage, and implement corresponding protection and governance controls.
 
 Microsoft Purview Data Security Posture Management (DSPM) for AI provides easy-to-use graphical tools and reports to quickly gain insights into AI use within your organization. One-click policies help you protect your data and comply with regulatory requirements.
 
-Use DSPM AI to quickly protect sensitive data that interacts with Copilot. Review recommendations regularly, especially each time you aded new users. DSPM for AI helps you:
+Use DSPM AI to quickly protect sensitive data that interacts with Copilot. Review recommendations regularly, especially each time you add new users. DSPM for AI helps you:
 
-- Fix oversharing issues identiifed through your default data risk assessment
+- Fix oversharing issues identified through your default data risk assessment
 - Create a default set of sensitivity labels
 - Create data loss prevention (DLP) policies
 - Detect risky interactions
 - Get guided assistance to AI regulations with Compliance Manager
-- Secure interactinos for Microsoft Copilot experiences
+- Secure interactions for Microsoft Copilot experiences
 - Detect sensitive data shared with AI via network using Secure Access Service Edge or Security Service Edge integration
 
 ### Start using Purview Compliance capabilities
 
-Microsoft Purview provides capabilities to help you stay on top of compliance obligations, including new AI regulations and standards. Get started wtih Microsoft Purview Compliance Manager and use additional capabilities, as needed:
+Microsoft Purview provides capabilities to help you stay on top of compliance obligations, including new AI regulations and standards. Get started with Microsoft Purview Compliance Manager and use additional capabilities, as needed:
 
 - Microsoft Purview **Compliance Manager** is a solution that helps you automatically assess and manage compliance across the regulations that apply to your organization.
 - Purview **Communication Compliance** helps minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization.
-- Purview **Data Lifecycle Management** hepls you retain the content that you need to keep, and delete the content that you don't.
-- Use **eDiscovery** together with **audit logs** for Microsfot 365 Copilot for investigations, as needed. 
+- Purview **Data Lifecycle Management** helps you retain the content that you need to keep, and delete the content that you don't.
+- Use **eDiscovery** together with **audit logs** for Microsoft 365 Copilot for investigations, as needed. 
 
 For more information, use these resources:
 - [Illustrations for data protection and auditing with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing)

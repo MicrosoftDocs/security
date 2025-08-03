@@ -14,7 +14,7 @@ ms.collection:
 
 # Phishing-resistant MFA (Secure Future Initiative)
 
-**Pillar name: Protect identities and Secrets** <br>
+**Pillar name: Protect identities and secrets** <br>
 **Pattern name: Phishing-resistant MFA**
 
 Phishing-resistant multifactor authentication (MFA) is part of the protect identities and secrets pillar of the Secure Future Initiative (SFI), which focuses on hardening authentication, eliminating unmanaged credentials, enforcing Zero Trust principles, and protecting cryptographic keys. It ensures identity is verifiable, access is accountable, and secrets are defended with rigor across the digital estate. 
@@ -49,21 +49,19 @@ Organizations can adopt a similar pattern using the following actionable practic
 |   | Generate TAP credentials based on customized logic. Ensure secure MFA registration and deactivation occur at each user stage. |[Lifecycle Workflow built-in tasks](/entra/id-governance/lifecycle-workflow-tasks)    |
 
 ## Outcomes
-
 -	100% of Microsoft production system accounts now use phishing-resistant MFA. 
 -	92% of employee productivity accounts are protected by cryptographic authentication methods. 
 -	All sign-ins across Microsoft-owned and affiliated tenants now require MFA. 
 -	External user access is secured via phishing-resistant credentials. 
 -	Remote onboarding at scale is achieved with high-assurance identity proofing. 
-Benefits
+### Benefits
 -	Strong defense against phishing: Eliminates the most common compromise vectors. 
 -	Reduced user interaction: Cryptographic keys streamline access and reduce fatigue. 
 -	Scalable identity security: Works across platforms, user types, and geographies. 
 -	Improved recovery and support: TAP and liveness verification ensure secure reauthentication. 
 -	Elevated baseline for tenants: Consistent Conditional Access policies raise security for internal and external identities alike. 
 
-## Trade-offs 
-
+### Trade-offs 
 -	Device provisioning complexity: Hardware keys and passkeys needed to be distributed to both onsite and remote users. 
 -	Platform disparities: Limited native support for passkeys in some operating systems may require engineering workarounds. 
 -	User experience adjustment: Changing behaviors requires training and communication to ensure adoption. 

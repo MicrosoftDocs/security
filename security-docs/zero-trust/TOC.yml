@@ -378,7 +378,6 @@
            expand: false
          - name: Accelerate resonse and remediation
            expand: false         
-             
      - name: US Government guidance
        items:
          - name: CISA Zero Trust Maturity Model

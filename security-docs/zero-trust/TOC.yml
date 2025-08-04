@@ -379,8 +379,11 @@
            items:                 
              - name: Complete production infrastructure inventory
                href: sfi/complete-production-infrastructure-inventory.md
-         - name: Accelerate resonse and remediation
-           expand: false         
+         - name: Accelerate response and remediation
+           expand: false
+           items:                 
+              - name: Accelerate vulnerability mitigation
+                href: sfi/accelerate-vulnerability-mitigation.md
      - name: US Government guidance
        items:
          - name: CISA Zero Trust Maturity Model

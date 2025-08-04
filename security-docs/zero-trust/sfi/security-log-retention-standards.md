@@ -1,5 +1,5 @@
 ---
-title: Security log retention standards – Zero Trust
+title: Security log retention standards (Secure Future Initiative) – Zero Trust
 description: Security log retention standards is part of the monitor and detect threats pillar of the Secure Future Initiative (SFI), focusing on standardizing, centralizing, and extending Microsoft's logging processes.
 ms.date: 08/05/2025
 ms.service: security

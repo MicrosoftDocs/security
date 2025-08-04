@@ -367,6 +367,9 @@
                 href: sfi/phishing-resistant-mfa.md
          - name: Protect tenants and isolate systems
            expand: false
+           items:                 
+              - name: Eliminate identity lateral movement
+                href: sfi/eliminate-identity-lateral-movement.md
          - name: Protect networks
            expand: false
          - name: Protect engineering systems
@@ -375,7 +378,6 @@
            expand: false
          - name: Accelerate resonse and remediation
            expand: false         
-             
      - name: US Government guidance
        items:
          - name: CISA Zero Trust Maturity Model

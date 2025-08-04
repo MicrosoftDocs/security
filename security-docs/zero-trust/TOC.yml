@@ -373,9 +373,11 @@
            expand: false
          - name: Monitor and detect cyberthreats
            expand: false
+           items:                 
+             - name: Complete production infrastructure inventory
+               href: sfi/complete-production-infrastructure-inventory.md
          - name: Accelerate resonse and remediation
            expand: false         
-             
      - name: US Government guidance
        items:
          - name: CISA Zero Trust Maturity Model

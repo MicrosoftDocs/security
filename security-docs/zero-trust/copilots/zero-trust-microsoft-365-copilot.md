@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to Microsoft 365 Copilot?
 description: How to apply Zero Trust principles to Microsoft 365 Copilot. 
-ms.date: 02/07/2025
+ms.date: 08/01/2025
 ms.update-cycle: 180-days
 ms.service: security
 author: BrendaCarter
@@ -72,7 +72,7 @@ This article walks you through the steps to apply the principles of Zero Trust t
 
 | Step | Task | Zero Trust principle(s) applied |
 | --- | --- | --- |
-| 1 | Deploy or validate your data protection | Verify explicitly <br> Use least privileged access |
+| 1 | Deploy or validate your data protection and get started with compliance tools | Verify explicitly <br> Use least privileged access |
 | 2 | Deploy or validate your identity and access policies | Verify explicitly <br> Use least privileged access |
 | 3 | Deploy or validate your App Protection policies | Use least privileged access <br> Assume breach |
 | 4 | Deploy or validate device management and protection | Verify explicitly |
@@ -96,11 +96,11 @@ Because different organizations can be at various stages of deploying Zero Trust
 For the latest Copilot support for security-related and other features of Microsoft 365, see [Copilot requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements).
 
 
-## Step 1. Deploy or validate your data protection
+## Step 1. Deploy or validate your data protection and get started with compliance tools
 
-To prevent your organization’s data from being at risk of overexposure or oversharing, the next step is to protect the data in your Microsoft 365 tenant. Microsoft Purview includes a robust set of capabilities for discovering, classifying, labeling, and protecting data. However, we understand that it can take a while to do this work. Microsoft 365 includes controls you can use immediately to help you prevent oversharing data through Copilot.
+To prevent your organization’s data from being at risk of overexposure or oversharing, the next step is to protect the data in your Microsoft 365 tenant. Microsoft Purview includes a robust set of capabilities for discovering, classifying, labeling, and protecting data. However, we understand that it can take a while to do this work. Microsoft 365 includes controls you can use immediately to help you prevent oversharing data through Copilot. Microsoft 365 also includes capabilities to help you meet compliance obligations.
 
-### Oversharing controls
+### Apply oversharing controls
 
 Microsoft 365 oversharing controls help you:
 - Temporarily limit Copilot search to a list of sites you specify (Restricted SharePoint Search)
@@ -111,28 +111,36 @@ To get started with oversharing controls, use the following resources:
 - [Illustration and description of oversharing controls you can use with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing#oversharing-controls-you-can-use-with-microsoft-365-copilot)
 - [Downloadable blueprint to prevent oversharing](/microsoft-365-copilot/microsoft-365-copilot-blueprint-oversharing)
 
-### Microsoft Purview capabilities
+### Implement Microsoft Purview capabilities starting with DSPM for AI
 
 Use Microsoft Purview to mitigate and manage the risks associated with AI usage, and implement corresponding protection and governance controls.
 
 Microsoft Purview Data Security Posture Management (DSPM) for AI provides easy-to-use graphical tools and reports to quickly gain insights into AI use within your organization. One-click policies help you protect your data and comply with regulatory requirements.
 
-Use Data Security Posture Management for AI together with other Microsoft Purview capabilities to strengthen your data security and compliance for Microsoft 365 Copilot and Microsoft 365 Copilot Chat:
+Use DSPM AI to quickly protect sensitive data that interacts with Copilot. Review recommendations regularly, especially each time you add new users. DSPM for AI helps you:
 
-- Sensitivity labels and content encrypted by Microsoft Purview Information Protection
-- Data classification
-- Customer Key
-- Communication compliance
-- Auditing
-- Content search
-- eDiscovery
-- Retention and deletion
-- Customer Lockbox
+- Fix oversharing issues identified through your default data risk assessment
+- Create a default set of sensitivity labels
+- Create data loss prevention (DLP) policies
+- Detect risky interactions
+- Get guided assistance to AI regulations with Compliance Manager
+- Secure interactions for Microsoft Copilot experiences
+- Detect sensitive data shared with AI via network using Secure Access Service Edge or Security Service Edge integration
+
+### Start using Purview Compliance capabilities
+
+Microsoft Purview provides capabilities to help you stay on top of compliance obligations, including new AI regulations and standards. Get started with Microsoft Purview Compliance Manager and use additional capabilities, as needed:
+
+- Microsoft Purview **Compliance Manager** is a solution that helps you automatically assess and manage compliance across the regulations that apply to your organization.
+- Purview **Communication Compliance** helps minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization.
+- Purview **Data Lifecycle Management** helps you retain the content that you need to keep, and delete the content that you don't.
+- Use **eDiscovery** together with **audit logs** for Microsoft 365 Copilot for investigations, as needed. 
 
 For more information, use these resources:
 - [Illustrations for data protection and auditing with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing)
 - [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview) 
-- [Considerations for deploying Microsoft Purview data security and compliance protections for Copilot](/purview/ai-microsoft-purview-considerations).
+- [Considerations for DSPM for AI to manage data security and compliance protections for AI interactions](/purview/ai-microsoft-purview-considerations).
+- [Govern AI apps and data for regulatory compliance](../../security-for-ai/govern.md)
 
 ### Getting started with E3
 
@@ -374,7 +382,9 @@ To streamline the assignment of Copilot licenses in your tenant with the appropr
 
 :::image type="content" source="../media/copilot/parallel-deployment-for-microsoft-365-copilot.svg" alt-text="Diagram of applying protections and deploying Copilot in parallel." lightbox="../media/copilot/parallel-deployment-for-microsoft-365-copilot.svg":::
 
-As the diagram also shows, you can roll out information protection across your organization while you're deploying identity and device access protections.
+As the diagram also shows, you can extend data protection across your organization as you increase the size of your deployment by continuing to use DSPM for AI and using the recommendations. 
+
+For compliance, you can get started right away with Compliance Manager and implement additional capabilities as you go, as needed.
 
 ## Training 
 

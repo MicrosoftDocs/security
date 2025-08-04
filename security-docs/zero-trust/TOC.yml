@@ -384,6 +384,8 @@
            items:                 
              - name: Complete production infrastructure inventory
                href: sfi/complete-production-infrastructure-inventory.md
+             - name: Security log retention standards
+               href: sfi/security-log-retention-standards.md
          - name: Accelerate response and remediation
            expand: false
            items:                 

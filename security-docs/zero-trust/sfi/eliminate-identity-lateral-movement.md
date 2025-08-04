@@ -1,5 +1,5 @@
 ---
-title: Eliminate identity lateral movement
+title: Eliminate identity lateral movement – Zero Trust
 description: Eliminate identity lateral movement is part of the protect tenants and isolate production systems pillar of the Secure Future Initiative (SFI), focusing on minimizing the potential impact of security incidents through strong tenant isolation, segmentation, and attack surface reduction. 
 ms.date: 08/05/2025
 ms.service: security

@@ -374,6 +374,9 @@
            expand: false
          - name: Protect engineering systems
            expand: false
+           items:                 
+              - name: Standardize secure development pipelines
+                href: sfi/standardize-secure-development-pipelines.md
          - name: Monitor and detect cyberthreats
            expand: false
            items:                 

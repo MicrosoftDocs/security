@@ -372,8 +372,6 @@
                 href: sfi/eliminate-identity-lateral-movement.md
               - name: Remove legacy systems that risk security
                 href: sfi/remove-legacy-systems-that-risk-security.md
-         - name: Protect networks
-           expand: false
          - name: Protect engineering systems
            expand: false
            items:                 

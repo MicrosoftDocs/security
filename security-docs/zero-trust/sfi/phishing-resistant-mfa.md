@@ -25,15 +25,18 @@ Traditional MFA methods such as SMS codes, email-based OTPs, and push notificati
 Traditional MFA is no longer enough—phishing-resistant MFA is the new baseline. 
 
 ## Solution
-To address these challenges, Microsoft launched the Phishing-resistant MFA objective under the Secure Future Initiative. The goal: to drive a companywide shift to phishing-resistant MFA, with 100% of user accounts protected with securely managed, phishing-resistant multifactor authentication. 
+To address these challenges, Microsoft launched the phishing-resistant MFA objective under the Secure Future Initiative. The goal: to drive a companywide shift to phishing-resistant MFA, with 100% of user accounts protected with securely managed, phishing-resistant multifactor authentication. 
 
 This transformation was implemented through a phased rollout built on: 
--	FIDO2 security keys, passkeys, and certificate-based authentication 
+-	Use of passkeys (including but not limited to FIDO2 security keys, Microsoft Authenticator app, Windows Hello for business, macOS Platform SSO Secure enclave etc.)   
 -	Conditional Access enforcement across owned and affiliated tenants 
 - Identifying and migrating user-based automation (service accounts) to workload identities, depending on the scenario and requirements 
 - Strong onboarding protections, including Temporary Access Pass (TAP) and video-based identity verification aligned with NIST SP 800-63-4 
 
-Microsoft also incorporated phishing-resistant MFA into every stage of the employee lifecycle, embedding it in onboarding, transitions, and deactivation workflows. 
+Microsoft also incorporated phishing-resistant MFA into every stage of the employee lifecycle, embedding it in onboarding, transitions, and deactivation workflows resulting in:
+- 92% of employee productivity accounts are protected by phishing-resistant authentication methods
+- External user access is secured via phishing-resistant credentials.  
+- Remote onboarding at scale is achieved with high-assurance identity proofing.
 
 ## Guidance
 Organizations can adopt a similar pattern using the following actionable practices:  
@@ -43,17 +46,11 @@ Organizations can adopt a similar pattern using the following actionable practic
 | Workload identities   | Identify and migrate user-based automation (service accounts) to workload identities—or consider using certificate-based authentication.    | [What are workload identities?](/entra/workload-id/workload-identities-overview)   |
 | Time-bound credentials   | Use temporary access passes (TAP) to secure onboarding and recovery with time-bound credentials.   | [Configure Temporary Access Pass](/entra/identity/authentication/howto-authentication-temporary-access-pass)  |
 | Secure onboarding   | Use video verification and liveness detection to prevent fraudulent access.   | [Face liveness detection](/azure/ai-services/computer-vision/concept-face-liveness-detection)  |
-| Stronger authentication methods   | Prioritize authentication methods that cannot be phished or reused by deploying FIDO2 or passkey solutions.   | [What is FIDO2?](https://www.microsoft.com/security/business/security-101/what-is-fido2)   |
+| Stronger authentication methods   | Prioritize authentication methods that cannot be phished or reused by deploying FIDO2 or passkey solutions.   | [What is FIDO2?](https://www.microsoft.com/security/business/security-101/what-is-fido2)<br>[Passwordless deployment guide](/entra/identity/authentication/how-to-plan-prerequisites-phishing-resistant-passwordless-authentication )  |
 | Conditional Access  |  Align sign-in policies across all tenants and environments using Conditional Access Policies.  |  [Conditional Access policy templates](/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation)  |
 | User Lifecycle Workflows   |Implement user Lifecycle Workflows to register credentials that are resistant to phishing attacks.    | [What are lifecycle workflows?](/entra/id-governance/what-are-lifecycle-workflows)   |
 |   | Generate TAP credentials based on customized logic. Ensure secure MFA registration and deactivation occur at each user stage. |[Lifecycle Workflow built-in tasks](/entra/id-governance/lifecycle-workflow-tasks)    |
-
-## Outcomes
--	100% of Microsoft production system accounts now use phishing-resistant MFA. 
--	92% of employee productivity accounts are protected by cryptographic authentication methods. 
--	All sign-ins across Microsoft-owned and affiliated tenants now require MFA. 
--	External user access is secured via phishing-resistant credentials. 
--	Remote onboarding at scale is achieved with high-assurance identity proofing. 
+  
 ### Benefits
 -	Strong defense against phishing: Eliminates the most common compromise vectors. 
 -	Reduced user interaction: Cryptographic keys streamline access and reduce fatigue. 
@@ -74,7 +71,8 @@ To track success, measure the following:
 -	Percentage of accounts onboarded with secure proofing workflows (e.g., TAP + liveness) 
 -	Conditional Access enforcement coverage across tenants 
 -	Decrease in support tickets related to MFA fatigue or lockouts 
--	Mean time to adopt new credentials securely post-incident 
+-	Mean time to adopt new credentials securely post-incident
+-	Inventory applications and migrate applications to use Entra for authentication
 
 ## Summary
 

@@ -358,6 +358,39 @@
 - name: Best practices resources
   expanded: false
   items:
+     - name: Secure Future Initiative (SFI)
+       items:
+         - name: Protect identities and secrets
+           expand: false
+           items:                 
+              - name: Phishing-resistant MFA
+                href: sfi/phishing-resistant-mfa.md
+         - name: Protect tenants and isolate systems
+           expand: false
+           items:                 
+              - name: Eliminate identity lateral movement
+                href: sfi/eliminate-identity-lateral-movement.md
+              - name: Remove legacy systems that risk security
+                href: sfi/remove-legacy-systems-that-risk-security.md
+         - name: Protect engineering systems
+           expand: false
+           items:                 
+              - name: Standardize secure development pipelines
+                href: sfi/standardize-secure-development-pipelines.md
+         - name: Monitor and detect cyberthreats
+           expand: false
+           items:                 
+             - name: Complete production infrastructure inventory
+               href: sfi/complete-production-infrastructure-inventory.md
+             - name: Security log retention standards
+               href: sfi/security-log-retention-standards.md
+             - name: Rapid anomaly detection and response
+               href: sfi/rapid-anomaly-detection-response.md
+         - name: Accelerate response and remediation
+           expand: false
+           items:                 
+              - name: Accelerate vulnerability mitigation
+                href: sfi/accelerate-vulnerability-mitigation.md
      - name: US Government guidance
        items:
          - name: CISA Zero Trust Maturity Model

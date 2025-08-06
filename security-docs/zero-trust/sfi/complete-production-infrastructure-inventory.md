@@ -17,7 +17,7 @@ ms.collection:
 **Pillar name: Monitor and detect threats**<br>  
 **Pattern name: Complete production infrastructure inventory**
 
-Complete production infrastructure inventory is part of the Monitor and Detect Threats pillar of the Secure Future Initiative (SFI). This pillar is focused on ensuring that Microsoft’s environments provide high-fidelity telemetry, comprehensive visibility, and advanced detection capabilities to identify and respond to evolving threats.
+Complete production infrastructure inventory is part of the monitor and detect threats pillar of the Secure Future Initiative (SFI). This pillar is focused on ensuring that Microsoft’s environments provide high-fidelity telemetry, comprehensive visibility, and advanced detection capabilities to identify and respond to evolving threats.
 
 A complete, accurate, and close to real-time inventory of all production assets is foundational to powering this pillar—enabling consistent policy enforcement, trusted telemetry, and accelerated threat detection and response.
 
@@ -44,7 +44,7 @@ Treating infrastructure visibility as a core security priority becomes essential
 
 ## Solution
 
-To address this challenge, Microsoft launched the Complete production infrastructure inventory objective under the Secure Future Initiative. The goal: continuously maintain a real-time inventory of 100% of production infrastructure assets—including cloud, on-premises, hybrid, and containerized environments. This effort required significant cross-team coordination and investment in scalable automation.
+To address this challenge, Microsoft launched the complete production infrastructure inventory objective under the Secure Future Initiative. The goal: continuously maintain a real-time inventory of 100% of production infrastructure assets—including cloud, on-premises, hybrid, and containerized environments. This effort required significant cross-team coordination and investment in scalable automation.
 
 From it, Microsoft:
 
@@ -70,6 +70,8 @@ Organizations can adopt a similar pattern using the following actionable practic
 | Telemetry standardization |<ul><li>Deploy centrally managed agents to enforce consistent logging</li><li>Confirm API logging coverage and track observability gaps</li></ul>| <ul><li><a href="/azure/logic-apps/enable-enhanced-telemetry-standard-workflows?tabs=portal">Set up and view enhanced telemetry in Application Insights for Standard workflows in Azure Logic Apps</a></li><li><a href="/azure/azure-monitor/app/data-model-complete">Application Insights telemetry data model</a></li><li><a href="/azure/api-management/api-management-howto-use-azure-monitor">Tutorial: Monitor published APIs</a></li></ul> |
 | Threat detection integration |<ul><li>Correlate logs with inventory metadata to improve detection fidelity</li><li>Use analytics and ML to proactively identify anomalies</li></ul>| <ul><li><a href="https://www.microsoft.com/en-sg/security/business/siem-and-xdr/microsoft-defender-threat-intelligence">Microsoft Defender Threat Intelligence</a></li><li><a href="/azure/azure-monitor/app/data-model-complete">Application Insights telemetry data model</a></li><li><a href="/azure/security/fundamentals/threat-detection">Microsoft Defender Threat Intelligence</a></li></ul> |
 | Unused app remediation   |<ul><li>Identify inactive apps using usage and sign-in logs</li><li>Validate with service owners and allow for business-critical exceptions</li><li>Apply soft deletion with a grace period, followed by permanent removal</li><li>Run sensitive workloads in a trusted execution environment</li></ul>| <ul><li><a href="/entra/identity/monitoring-health/recommendation-remove-unused-credential-from-apps?tabs=microsoft-entra-admin-center">Microsoft Entra recommendation: Remove unused credentials from apps</a></li><li><a href="/entra/identity/monitoring-health/recommendation-remove-unused-apps?tabs=microsoft-entra-admin-center">Microsoft Entra recommendation: Remove unused applications</a></li><li><a href="/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview">Data retention, deletion, and destruction in Microsoft 365</a></li><li><a href="/azure/confidential-computing/quick-create-confidential-vm-portal">Quickstart: Create confidential VM on in the Azure portal</a></li></ul>|
+| Run sensitive workloads in a trusted execution environment |Create confidential VM on the Azure portal for sensitive workloads| [Create a confidential VM in the Azure Portal](/azure/confidential-computing/quick-create-confidential-vm-portal)  |
+|
  
 ## Outcomes
 
@@ -107,7 +109,7 @@ To track success, measure the following:
 
 ## Summary
 
-A complete production infrastructure inventory is a foundational enabler of **Secure by Design**, **Secure by Default**, and **Secure Operations** in Microsoft’s Secure Future Initiative.
+A complete production infrastructure inventory is a foundational enabler of Secure by Design, Secure by Default, and Secure Operations in Microsoft’s Secure Future Initiative.
 
 Organizations that commit to real-time asset visibility and telemetry standardization can strengthen their security posture, reduce operational risk, and enable faster, more effective response. Building a complete infrastructure inventory isn't only the best practice; it’s a critical requirement for resilient, scalable cybersecurity in the modern enterprise.
 

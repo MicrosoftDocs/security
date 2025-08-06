@@ -86,6 +86,4 @@ Organizations can track success using the following indicators:
 
 ## Summary
 
-By standardizing CI/CD workflows through governed pipeline templates, Microsoft has reduced risk, accelerated compliance, and empowered engineers to build with security embedded from the start.
-
-**Secure pipelines don’t slow innovation—they power it. Transform your development pipelines into security-first systems, built to adapt, scale, and withstand what’s next.**
+**Learn how Microsoft is transforming development pipelines into security-first systems, ready for whatever comes next.**

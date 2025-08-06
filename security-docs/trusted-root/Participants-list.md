@@ -12,9 +12,9 @@ ms.topic: conceptual
 
 ## Current List
 
-You can view the complete and up-to-date list here: https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT. 
+You can view the complete and up-to-date list here: https://ccadb.my.salesforce-sites.com/microsoft/IncludedCACertificateReportForMSFT
 
-You can download the complete, most recent list here as a CSV: https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFTCSV.
+You can download the complete, most recent list here as a CSV: https://ccadb.my.salesforce-sites.com/microsoft/IncludedCACertificateReportForMSFTCSV
 
 You can download the complete, most recent list here as a machine readable XML: https://download.microsoft.com/download/9/b/9/9b9c7b91-fcee-4d8c-bf3c-98f4ed8a8452/TRPRelease.xml. 
 

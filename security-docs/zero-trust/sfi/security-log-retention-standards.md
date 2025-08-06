@@ -29,7 +29,7 @@ Without standardized log formats, centralized log access, and consistent retenti
 
 ## Solution
 
-To address these issues, Microsoft implemented a comprehensive overhaul of its security logging approach, focused on three key areas: **standardization**, **centralization**, and **extended retention**. These efforts were carried out under the Secure Future Initiative (SFI) as part of the Monitor and Detect Threats pillar.
+To address these issues, Microsoft implemented a comprehensive overhaul of its security logging approach, focused on three key areas: standardization, centralization, and extended retention. These efforts were carried out under the Secure Future Initiative (SFI) as part of the monitor and detect threats pillar.
 
 Key components of Microsoft’s approach included:
 
@@ -58,10 +58,10 @@ Microsoft’s enhanced log retention standards approach has led to:
 
 ### Benefits
 
-- **Higher signal fidelity:** Standardized logs eliminate noise and streamline detection pipelines.
-- **Improved investigation speed:** Centralized access reduces time spent locating and interpreting logs.
-- **Enhanced forensic readiness:** Longer retention ensures full incident timelines are available.
-- **Scalable analytics:** Consistent formats enable machine learning to identify suspicious behaviors more effectively.
+- Higher signal fidelity: Standardized logs eliminate noise and streamline detection pipelines.
+- Improved investigation speed: Centralized access reduces time spent locating and interpreting logs.
+- Enhanced forensic readiness: Longer retention ensures full incident timelines are available.
+- Scalable analytics: Consistent formats enable machine learning to identify suspicious behaviors more effectively.
 
 ### Trade-offs
 
@@ -82,7 +82,7 @@ To track the effectiveness of your log retention strategy, measure:
 
 ## Summary
 
-A comprehensive logging strategy is a foundational enabler of **Secure by Design**, **Secure by Default**, and **Secure Operations** in Microsoft’s Secure Future Initiative.
+A comprehensive logging strategy is a foundational enabler of Secure by Design, Secure by Default, and Secure Operations in Microsoft’s Secure Future Initiative.
 
 Microsoft’s experience shows that with the right patterns and practices:
 

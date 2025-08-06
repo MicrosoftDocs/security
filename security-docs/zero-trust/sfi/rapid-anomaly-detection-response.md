@@ -30,7 +30,7 @@ Without a proactive, intelligent, and automated system for identifying and respo
 
 ## Solution
 
-To strengthen its defensive posture, Microsoft implemented Rapid anomaly detection and response as part of the Secure Future Initiative. The goal: detect anomalous behavior in real time, correlate it to threat actor tactics, and trigger swift, automated responses.
+To strengthen its defensive posture, Microsoft implemented rapid anomaly detection and response as part of the Secure Future Initiative. The goal: detect anomalous behavior in real time, correlate it to threat actor tactics, and trigger swift, automated responses.
 
 Microsoft’s approach includes:
 
@@ -71,10 +71,10 @@ The implementation of this objective has led to:
 
 ### Benefits
 
-- **Real-time defense:** ML models spot threats in seconds, reducing the attack window
-- **Consistent visibility:** Centralized logging ensures no behavior goes unmonitored
-- **Reduced investigation time:** High-quality alerts with contextual enrichment streamline analyst workflows
-- **Secure-by-default environment:** Secrets are blocked from check-in and monitored for exposure, preventing common attack vectors
+- Real-time defense: ML models spot threats in seconds, reducing the attack window
+- Consistent visibility: Centralized logging ensures no behavior goes unmonitored
+- Reduced investigation time: High-quality alerts with contextual enrichment streamline analyst workflows
+- Secure-by-default environment: Secrets are blocked from check-in and monitored for exposure, preventing common attack vectors
 
 ### Trade-offs
 
@@ -99,4 +99,4 @@ To track success, measure the following:
 
 Modern attackers can quickly move across systems, steal data, or gain control before anyone notices. Organizations should therefore treat detection and response as an ongoing effort—constantly updating rules, improving automation, and adapting to new threats.
 
-**By implementing Rapid anomaly detection and response, you can improve your organization’s ability to stay ahead of evolving threats.**
+**By implementing rapid anomaly detection and response, you can improve your organization’s ability to stay ahead of evolving threats.**

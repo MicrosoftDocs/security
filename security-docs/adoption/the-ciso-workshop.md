@@ -16,7 +16,7 @@ ms.reviewer: mas
 
 The Chief Information Security Office (CISO) workshop helps accelerate security program modernization with reference strategies built using Zero Trust principles.
 
-The workshop covers all aspects of a comprehensive security program including strategic initiatives, roles and responsibilities, success metrics, maturity models, and more. [Videos](./the-ciso-workshop-videos.md) and [slides](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/security/ciso-workshop/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) can be found here.
+The workshop covers all aspects of a comprehensive security program including strategic initiatives, roles and responsibilities, success metrics, maturity models, and more. [Videos](./the-ciso-workshop-videos.md) and a [Visio file](https://arch-center.azureedge.net/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) can be found here.
 
 :::image type="content" source="./media/ciso-workshop-overview.png" alt-text="Overview of the CISO workshop" lightbox="./media/ciso-workshop-overview-popout.png":::
 
@@ -42,7 +42,7 @@ The workshop is useful for security teams, IT teams, business leaders, and cloud
 
 Guidance on how to align security to continuously changing business priorities, technology platforms, threat landscape, and security tools. The workshop includes reference strategies and plans, lessons learned, and antipatterns/gotchas based on real world projects.
 
-The workshop videos (about 4 hours total) and [slides](https://github.com/MicrosoftDocs/security/blob/main/Downloads/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) are organized into these discussions:
+The workshop videos (about 4 hours total) and [slides](https://arch-center.azureedge.net/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) are organized into these discussions:
 
 - **[Introduction and Overview](the-ciso-workshop.md)** of the CISO Workshop
 - **[Part A - Key Context and Fundamentals](the-ciso-workshop-videos.md#part-a---key-context-and-fundamentals)**

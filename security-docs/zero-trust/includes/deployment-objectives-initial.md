@@ -2,7 +2,7 @@
 title: Include file - Additional deployment objectives
 description: This include file provides the icon and H2 heading of "Additional deployment objectives"
 ms.date: 09/29/2020
-ms.service: security
+ms.service: zero-trust
 author: garycentric
 ms.author: v-garymoore
 ms.topic: conceptual

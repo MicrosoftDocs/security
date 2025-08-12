@@ -2,7 +2,7 @@
 title: How do I apply Zero Trust principles to Azure networking?
 description: An overview of how to apply Zero Trust principles to Azure networking infrastructure.
 ms.date: 05/29/2024
-ms.service: security
+ms.service: zero-trust
 author: duongau
 ms.author: duau
 ms.reviewer: adtork, maroja, maalgeba

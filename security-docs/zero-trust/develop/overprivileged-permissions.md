@@ -4,6 +4,7 @@ description: Learn why applications shouldn't request more permissions than they
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
+ms.service: zero-trust
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:

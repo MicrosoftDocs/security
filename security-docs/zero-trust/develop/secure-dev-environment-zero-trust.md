@@ -6,6 +6,7 @@ ms.author: jricketts
 ms.topic: conceptual
 ms.date: 02/24/2025
 ms.custom: template-concept
+ms.service: zero-trust
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to secure my development environment and learn best practices for branch security and trusting tools, extensions, and integrations so that I can implement Zero Trust principles.

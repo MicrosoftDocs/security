@@ -2,7 +2,7 @@
 title: RaMP Checklist—Explicitly validate trust for all access requests
 description: Use the steps in this guidance to deploy explicit validation for all access requests that adheres to Zero Trust principles.
 ms.date: 02/24/2025
-ms.service: security
+ms.service: zero-trust
 ms.author: kenwith
 author: kenwith
 

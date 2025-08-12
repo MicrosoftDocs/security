@@ -2,7 +2,7 @@
 title: Overview - Use Zero Trust security to prepare for AI companions, including Microsoft Copilots
 description: Learn how to apply the principles of Zero Trust to your environment to prepare for AI tools that include Web-grounded prompts, Microsoft 365-grounded prompts, and prompts grounded in data from your security tools.
 ms.date: 02/06/2025
-ms.service: security
+ms.service: zero-trust
 author: BrendaCarter
 ms.author: bcarter
 ms.topic: overview

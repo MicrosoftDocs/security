@@ -6,6 +6,7 @@ ms.author: jricketts
 ms.topic: conceptual
 ms.date: 02/24/2025
 ms.custom: template-concept
+ms.service: zero-trust
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to to design a permissions and consent strategy so that I can provide the best user experience when I implement least privilege.

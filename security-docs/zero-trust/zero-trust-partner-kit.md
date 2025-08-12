@@ -2,7 +2,7 @@
 title: Zero Trust partner kit
 description: Download customizable resources for architecting and deploying Zero Trust security recommendations.
 ms.date: 03/25/2025
-ms.service: security
+ms.service: zero-trust
 author: brendacarter
 ms.author: bcarter
 manager: rkarlin

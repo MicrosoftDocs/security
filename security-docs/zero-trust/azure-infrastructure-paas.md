@@ -2,7 +2,7 @@
 title: Apply Zero Trust principles to a spoke VNet with Azure PaaS Services
 description: Learn how to secure a spoke VNet for PaaS workloads with Zero Trust. 
 ms.date: 05/06/2025
-ms.service: security
+ms.service: zero-trust
 author: brsteph
 ms.author: bstephenson
 ms.topic: conceptual

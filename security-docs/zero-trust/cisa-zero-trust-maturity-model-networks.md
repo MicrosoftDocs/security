@@ -1,7 +1,7 @@
 ---
 title: CISA Zero Trust Maturity Model for the networks pillar
 description: For the networks pillar, enable Zero Trust capabilities with integrated security tools for a secure and resilient cybersecurity framework. 
-ms.service: security
+ms.service: zero-trust
 ms.subservice: security-fundamentals
 ms.topic: conceptual
 ms.date: 12/16/2024

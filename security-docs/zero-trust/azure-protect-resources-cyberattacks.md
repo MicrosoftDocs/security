@@ -2,7 +2,7 @@
 title: How do I protect my Azure resources from destructive cyberattacks?
 description: Learn how to protect your Azure resources from destructive cyberattacks. 
 ms.date: 06/17/2024
-ms.service: security
+ms.service: zero-trust
 author: brsteph
 ms.reviewer: sdolgin
 ms.author: bstephenson

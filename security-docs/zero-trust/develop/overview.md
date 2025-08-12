@@ -5,6 +5,7 @@ ms.date: 02/24/2025
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
+ms.service: zero-trust
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to learn how to implement the guiding principles of Zero Trust so that I can improve your application security.

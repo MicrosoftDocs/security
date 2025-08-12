@@ -2,7 +2,7 @@
 title: Apply Zero Trust principles to Azure Virtual Desktop
 description: Learn how to secure an Azure Virtual Desktop deployment with Zero Trust principles. 
 ms.date: 05/06/2025
-ms.service: security
+ms.service: zero-trust
 author: rudneir2
 ms.author: ruolivei
 ms.topic: conceptual

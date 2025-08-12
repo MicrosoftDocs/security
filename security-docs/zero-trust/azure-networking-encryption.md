@@ -2,7 +2,7 @@
 title: Apply Zero Trust principles to encrypting Azure-based network communication
 description: Learn how to apply Zero Trust principles to encrypting Azure-based network communication.
 ms.date: 05/07/2025
-ms.service: security
+ms.service: zero-trust
 author: duongau
 ms.author: duau
 ms.reviewer: adtork, maroja, maalgeba

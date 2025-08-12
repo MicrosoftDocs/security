@@ -4,6 +4,7 @@ description: Learn why the best Zero Trust client credentials practice for servi
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
+ms.service: zero-trust
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:

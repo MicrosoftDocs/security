@@ -2,7 +2,7 @@
 title: Zero Trust deployment for technology pillars overview
 description: Learn how to deploy Zero Trust solutions to keep your organization secure.
 ms.date: 02/26/2025
-ms.service: security
+ms.service: zero-trust
 author: brendacarter
 ms.author: bcarter
 ms.topic: conceptual

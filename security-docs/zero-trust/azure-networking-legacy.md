@@ -2,7 +2,7 @@
 title: Apply Zero Trust principles to discontinue legacy network security technology
 description: Learn how to apply Zero Trust principles to discontinue legacy network security technology.
 ms.date: 06/17/2024
-ms.service: security
+ms.service: zero-trust
 author: duongau
 ms.author: duau
 ms.reviewer: adtork, maroja, maalgeba

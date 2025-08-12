@@ -1,7 +1,7 @@
 ---
 title: Configure Microsoft cloud services for the DoD Zero Trust Strategy
 description: Minimize DoD attack surface, reduce risks, enable data-sharing and collaboration, safeguard the technical estate, and disrupt adversarial activities.
-ms.service: security
+ms.service: zero-trust
 ms.subservice: security-fundamentals
 ms.topic: conceptual
 ms.date: 04/10/2024

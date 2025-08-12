@@ -2,7 +2,7 @@
 title: How do I apply Zero Trust principles to Azure virtual machines?
 description: How to apply Zero Trust principles to virtual machines in Azure.  
 ms.date: 05/20/2025
-ms.service: security
+ms.service: zero-trust
 author: rudneir2
 ms.author: ruolivei
 ms.topic: conceptual

@@ -6,6 +6,7 @@ ms.author: jricketts
 ms.topic: conceptual
 ms.date: 02/24/2025
 ms.custom: template-concept
+ms.service: zero-trust
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to learn best practices for securing my DevOps environments so that I can prevent bad actors from compromising developer boxes, infecting release pipelines with malicious scripts, and gaining access to production data via test environments.

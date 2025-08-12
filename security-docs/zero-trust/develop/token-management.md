@@ -6,6 +6,7 @@ ms.author: jricketts
 ms.topic: conceptual
 ms.date: 02/24/2025
 ms.custom: template-concept
+ms.service: zero-trust
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to secure my applications with ID tokens, access tokens, and security tokens so that I can enhance application security with the principles of least privilege and verify explicitly.

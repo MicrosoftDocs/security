@@ -2,7 +2,7 @@
 title: Integrate SaaS apps for Zero Trust with Microsoft 365
 description: Learn how to integrate SaaS apps for Zero Trust with Microsoft 365.
 ms.date: 04/18/2024
-ms.service: security
+ms.service: zero-trust
 author: mjcaparas
 ms.author: macapara
 ms.topic: solution-overview

@@ -2,9 +2,9 @@
 title: Visibility, automation, and orchestration with Zero Trust
 description: Since Zero Trust doesn't assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
 ms.service: security
+ms.subservice: zero-trust
 author: kenwith
 ms.author: kenwith
-ms.subservice: zero-trust
 manager: femila
 ms.date: 03/12/2025
 ms.topic: conceptual
@@ -18,7 +18,7 @@ ms.collection:
 
 One of the significant changes in perspectives that are a hallmark of a Zero Trust security frameworks is moving away from trust-by-default toward trust-by-exception. However, you need some reliable way to establish trust once trust is needed. Since you no longer assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
 
-In our other Zero Trust guides, we defined the approach to implementing an end-to-end Zero Trust approach across [identities](https://aka.ms/ZTIdentity), [endpoints](https://aka.ms/ZTEndpoints) and devices, [data](https://aka.ms/ZTData), [apps](https://aka.ms/ZTApplications), [infrastructure](https://aka.ms/ZTInfrastructure), and [network](https://aka.ms/ZTNetwork). All these investments increase your visibility, which gives you better data for making trust decisions. However, by adopting a Zero Trust approach in these six areas, you necessarily increase the number of incidents Security Operation Centers (SOC) analysts need to mitigate. Your analysts become busier than ever, at a time when there's already a talent shortage. This can lead to chronic alert fatigue and analysts missing critical alerts.
+In our other Zero Trust guides, we defined the approach to implementing an end-to-end Zero Trust approach across [identities](https://aka.ms/ZTIdentity), [endpoints](https://aka.ms/ZTEndpoints) and devices, [data](https://aka.ms/ZTData), [apps](https://aka.ms/ZTApplications), [infrastructure](https://aka.ms/ZTInfrastructure), and [network](https://aka.ms/ZTNetwork). All these investments increase your visibility, which gives you better data for making trust decisions. However, by adopting a Zero Trust approach in these six areas, you necessarily increase the number of incidents Security Operation Centers (SOC) analysts need to mitigate. Your analysts become busier than ever, at a time when there's already a talent shortage. Too many alerts lead to chronic alert fatigue and analysts missing critical alerts.
 
 :::image type="content" source="../media/diagram-provide-integrated-capabilities-manage-threats.png" alt-text="Diagram of integrated capabilities to manage threats." border="true":::
 
@@ -35,9 +35,9 @@ You want the ability to:
 -  Get help from world class experts
 -  Prevent or block events from happening across the pillars.
 
-Managing threats includes reactive as well as proactive detection and requires tools that support both.
+Managing threats includes reactive and proactive detection and requires tools that support both.
 
-**Reactive detection** is when incidents are triggered from one of the six pillars that can be investigated. Additionally, a management product like a SIEM will likely support another layer of analytics that will enrich and correlate data, resulting in flagging an incident as bad. The next step would then be to investigate to get the full narrative of the attack.
+**Reactive detection** is when incidents are triggered from one of the six pillars that can be investigated. Additionally, a management product like a security information and event management product (SIEM) will likely support another layer of analytics that will enrich and correlate data, resulting in flagging an incident as bad. The next step would then be to investigate to get the full narrative of the attack.
 
 **Proactive detection** is when you apply hunting to the data to prove a compromised hypothesis. Threat hunting starts with the assumption you have been breached--you hunt for proof that there's indeed a breach.
 
@@ -45,7 +45,7 @@ Threat hunting starts with a hypothesis based on current threats, such as COVID-
 
 Either way, once an incident is detected, you need to investigate it to build out the complete story of the attack. What else did the user do? What other systems were involved? What executables were run?
 
-If an investigation results in actionable learnings, you can take remediation steps. For example, if an investigation uncovers gaps in a zero trust deployment, policies can be modified to address these gaps and prevent future unwanted incidents. Whenever possible it is desirable to automate remediation steps, because it reduces the time it takes for a SOC analyst to address the threat and move onto the next incident.
+If an investigation results in actionable learnings, you can take remediation steps. For example, if an investigation uncovers gaps in a Zero Trust deployment, policies can be modified to address these gaps and prevent future unwanted incidents. Whenever possible it's desirable to automate remediation steps, because it reduces the time it takes for a SOC analyst to address the threat and move onto the next incident.
 
 Another key component in the assessment of threats is incorporating known threat intelligence against the ingested data. If an IP, hash, URL, file, executable, etc. are known to be bad, they can be identified, investigated, and remediated.
 
@@ -58,7 +58,7 @@ Security Operation Centers often deploy a combination of SIEM and SOAR technolog
 Microsoft 365 Defender, a key feed into Azure Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context- aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration
 tools, identities, and applications.
 
-It is through this hierarchy that we enable our customers to maximize their focus. Though context-awareness and automated remediation, Microsoft 365 Defender can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of Microsoft 365 Defender brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Azure Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
+It's through this hierarchy that we enable our customers to maximize their focus. Though context-awareness and automated remediation, Microsoft 365 Defender can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of Microsoft 365 Defender brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Azure Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
 
 ## Visibility, automation, and orchestration Zero Trust deployment objectives
 
@@ -137,14 +137,14 @@ Follow these steps:
 
 #### Link Microsoft Purview Data Connectors and relevant third-party products to Microsoft Sentinel
 
-In order to gain visibility into the incidents that result from deploying a Zero Trust model, it is important to connect Microsoft 365 Defender, Microsoft Purview Data Connectors, and relevant third party products to [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.  
+In order to gain visibility into the incidents that result from deploying a Zero Trust model, it's important to connect Microsoft 365 Defender, Microsoft Purview Data Connectors, and relevant third party products to [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.  
   
 As part of the data connection process, relevant analytics can be enabled to trigger incidents and workbooks can be created for a graphical representation of the data over time.
 
 
 #### Link threat intelligence data to Microsoft Sentinel
 
-Although machine learning and fusion analytics are provided out of the box, it is also beneficial to ingest threat intelligence data into Microsoft Sentinel to help identify events that relate to known bad entities.
+Although machine learning and fusion analytics are provided out of the box, it's also beneficial to ingest threat intelligence data into Microsoft Sentinel to help identify events that relate to known bad entities.
 
 
 <br/><br/>

@@ -3,8 +3,9 @@ title: Zero Trust identity and access management best practices
 description: Learn identity and access management (IAM) best practices for application development to  ensure Zero Trust compliance.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
-ms.service: zero-trust
+ms.service: security
 ms.date: 02/24/2025
 ms.collection:
   - zerotrust-dev

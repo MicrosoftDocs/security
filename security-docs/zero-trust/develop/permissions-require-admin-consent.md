@@ -3,8 +3,9 @@ title: Request permissions that require administrative consent
 description: Learn about permission and consent when your app requires admin consent to implement Zero Trust principle of least privilege in your apps.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
-ms.service: zero-trust
+ms.service: security
 ms.date: 04/18/2025
 ms.collection:
   - zerotrust-dev

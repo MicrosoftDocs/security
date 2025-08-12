@@ -2,10 +2,11 @@
 title: Secure networks with SASE, Zero Trust, and AI
 description: Learn how to secure networks using a Zero Trust strategy with Secure Access Service Edge (SASE) and Secure Service Edge (SSE) solutions.
 ms.date: 06/26/2025
-ms.service: zero-trust
+ms.service: security
 author: kenwith
 manager: femila
 ms.author: kenwith
+ms.subservice: zero-trust
 ms.topic: concept-article
 ms.collection:
   - zerotrust-pillar

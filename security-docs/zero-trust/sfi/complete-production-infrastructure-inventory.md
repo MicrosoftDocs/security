@@ -2,9 +2,10 @@
 title: Complete production infrastructure inventory – Zero Trust
 description: Complete production infrastructure inventory is part of the monitor and detect threats pillar of the Secure Future Initiative (SFI), focusing on maintaining a complete, accurate, and close to real-time inventory of all production assets. 
 ms.date: 08/05/2025
-ms.service: zero-trust
+ms.service: security
 author: brendacarter
 ms.author: bcarter
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection: 
   - highpri

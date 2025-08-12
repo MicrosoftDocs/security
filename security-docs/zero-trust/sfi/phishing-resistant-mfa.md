@@ -2,9 +2,10 @@
 title: Phishing-resistant MFA
 description: Phishing-resistant multifactor authentication (MFA) is part of the protect identities and secrets pillar of the Secure Future Initiative (SFI), focusing on hardening authentication, eliminating unmanaged credentials, enforcing Zero Trust principles, and protecting cryptographic keys. 
 ms.date: 08/05/2025
-ms.service: zero-trust
+ms.service: security
 author: brendacarter
 ms.author: bcarter
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection: 
   - highpri

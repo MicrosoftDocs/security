@@ -2,9 +2,10 @@
 title: Zero Trust for Identity integration overview
 description: Independent software vendors and technology partners can integrate their solutions with Microsoft Entra ID to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 03/11/2025
-ms.service: zero-trust
+ms.service: security
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:
   - zerotrust-partner

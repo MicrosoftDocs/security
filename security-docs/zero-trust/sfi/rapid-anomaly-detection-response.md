@@ -2,9 +2,10 @@
 title: Rapid anomaly detection and response (Secure Future Initiative) – Zero Trust
 description: Rapid anomaly detection and response is part of the monitor and detect threats pillar of the Secure Future Initiative (SFI), focusing on implementing proactive, intelligent, and automated system for identifying and responding to anomalies in real time. 
 ms.date: 08/05/2025
-ms.service: zero-trust
+ms.service: security
 author: brendacarter
 ms.author: bcarter
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection: 
   - highpri

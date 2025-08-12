@@ -4,8 +4,9 @@ description: As a developer, learn how to implement the guiding principles of Ze
 ms.date: 02/24/2025
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
-ms.service: zero-trust
+ms.service: security
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to learn how to implement the guiding principles of Zero Trust so that I can improve your application security.

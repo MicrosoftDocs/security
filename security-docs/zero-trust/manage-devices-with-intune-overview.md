@@ -1,6 +1,7 @@
 ---
 title: "Manage devices with Intune"
 ms.author: bcarter
+ms.subservice: zero-trust
 author: brendacarter
 f1.keywords:
 - enroll devices into Intune

@@ -1,12 +1,11 @@
 ---
 title: Identity, the first pillar of a Zero Trust security architecture
 description: Identities, representing people, services, or devices, are the common denominator across today’s many networks, endpoints, and applications. In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to data. 
-ms.service: zero-trust
-
+ms.service: security
 ms.topic: conceptual
 ms.date: 08/01/2024
-
 ms.author: kenwith
+ms.subservice: zero-trust
 author: kenwith
 
 ms.collection:

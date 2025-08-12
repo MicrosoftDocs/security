@@ -3,8 +3,9 @@ title: Identity and account types for single- and multitenant apps
 description: In this article, we explain how developers can determine, during app registration, which users their app allows from single- and multitenants.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
-ms.service: zero-trust
+ms.service: security
 ms.date: 04/18/2025
 ms.custom: template-concept
 ms.collection:

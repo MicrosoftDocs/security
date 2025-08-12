@@ -3,8 +3,9 @@ title: What do we mean by Zero Trust compliance?
 description: Get an overview of application security from a developer's perspective to address the guiding principles of Zero Trust.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
-ms.service: zero-trust
+ms.service: security
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:

@@ -2,9 +2,10 @@
 title: How do I apply Zero Trust principles to spoke virtual networks in Azure?
 description: How to apply Zero Trust principles to a spoke virtual network for Azure IaaS workloads.
 ms.date: 10/22/2024
-ms.service: zero-trust
+ms.service: security
 author: brsteph
 ms.author: bstephenson
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection: 
   - msftsolution-azureiaas

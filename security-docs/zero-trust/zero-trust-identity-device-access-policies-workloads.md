@@ -3,6 +3,7 @@ title: Recommended policies for specific Microsoft 365 workloads
 description: Describes the recommended Zero Trust policies to secure specific workloads in Microsoft 365.
 author: chrisda
 ms.author: chrisda
+ms.subservice: zero-trust
 manager: deniseb
 ms.service: microsoft-365-zero-trust
 ms.topic: conceptual

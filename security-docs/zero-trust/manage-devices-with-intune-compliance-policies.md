@@ -1,6 +1,7 @@
 ---
 title: "Step 3. Set up compliance policies for devices with Intune"
 ms.author: bcarter
+ms.subservice: zero-trust
 author: brendacarter
 f1.keywords:
 - Create compliance policies

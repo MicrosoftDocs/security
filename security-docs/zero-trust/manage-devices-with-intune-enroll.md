@@ -1,6 +1,7 @@
 ---
 title: "Step 2. Enroll devices into management with Intune"
 ms.author: bcarter
+ms.subservice: zero-trust
 author: brendacarter
 f1.keywords:
 - enroll devices into management

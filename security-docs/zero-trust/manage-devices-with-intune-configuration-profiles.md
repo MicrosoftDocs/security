@@ -1,6 +1,7 @@
 ---
 title: "Step 5. Deploy device profiles in Microsoft Intune"
 ms.author: bcarter
+ms.subservice: zero-trust
 author: brendacarter
 f1.keywords:
 - configuration profiles

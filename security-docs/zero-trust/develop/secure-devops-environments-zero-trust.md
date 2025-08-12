@@ -3,10 +3,11 @@ title: Secure DevOps environments for Zero Trust
 description: Learn best practices to secure DevOps environments and prevent compromise of developer boxes, release pipelines, and production data.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.date: 02/24/2025
 ms.custom: template-concept
-ms.service: zero-trust
+ms.service: security
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to learn best practices for securing my DevOps environments so that I can prevent bad actors from compromising developer boxes, infecting release pipelines with malicious scripts, and gaining access to production data via test environments.

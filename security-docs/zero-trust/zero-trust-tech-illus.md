@@ -2,9 +2,10 @@
 title: Zero Trust illustrations for IT architects and implementers
 description: Print or customize technical illustrations in the Zero Trust library for your deployment.
 ms.date: 01/23/2025
-ms.service: zero-trust
+ms.service: security
 author: brendacarter
 ms.author: bcarter
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:
   - zerotrust-illustrations

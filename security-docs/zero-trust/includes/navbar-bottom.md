@@ -2,9 +2,10 @@
 title: Include file - Navigation bar for bottom of the pages
 description: This include file creates a navigation bar that displays images and provides links to the articles in the Zero Trust documentation.
 ms.date: 09/29/2020
-ms.service: zero-trust
+ms.service: security
 author: garycentric
 ms.author: v-garymoore
+ms.subservice: zero-trust
 ms.topic: conceptual
 ---
 

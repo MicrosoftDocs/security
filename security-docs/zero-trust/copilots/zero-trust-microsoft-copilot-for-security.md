@@ -2,9 +2,10 @@
 title: How do I apply Zero Trust principles to Microsoft Security Copilot?
 description: How to apply Zero Trust principles to Microsoft Security Copilot. 
 ms.date: 02/06/2025
-ms.service: zero-trust
+ms.service: security
 author: BrendaCarter
 ms.author: bcarter
+ms.subservice: zero-trust
 ms.topic: concept-article
 ms.collection:
 - M365copilot

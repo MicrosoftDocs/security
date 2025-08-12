@@ -2,9 +2,10 @@
 title: Identify and protect sensitive business data with Zero Trust
 description: Learn how to identify and protect sensitive business data with Zero Trust.  
 ms.date: 05/05/2025
-ms.service: zero-trust
+ms.service: security
 author: BrendaCarter
 ms.author: bcarter
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection: 
   - zerotrust-adopt

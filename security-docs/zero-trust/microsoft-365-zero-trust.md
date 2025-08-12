@@ -4,6 +4,7 @@ f1.keywords:
 - deploy zero trust
 - zero trust strategy
 ms.author: bcarter
+ms.subservice: zero-trust
 author: brendacarter
 manager: rkarlin
 audience: Admin

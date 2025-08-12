@@ -5,6 +5,7 @@ ms.date: 01/23/2025
 ms.service: microsoft-365-zero-trust
 author: batamig
 ms.author: bagol
+ms.subservice: zero-trust
 ms.topic: concept-article
 ms.collection: 
   - zerotrust-solution

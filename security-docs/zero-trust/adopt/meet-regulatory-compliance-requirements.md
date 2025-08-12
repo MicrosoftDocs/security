@@ -2,9 +2,10 @@
 title: Meet regulatory and compliance requirements with Zero Trust
 description: Learn how to Meet regulatory and compliance requirements with Zero Trust.
 ms.date: 05/05/2025
-ms.service: zero-trust
+ms.service: security
 author: BrendaCarter
 ms.author: bcarter
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection: 
   - zerotrust-adopt

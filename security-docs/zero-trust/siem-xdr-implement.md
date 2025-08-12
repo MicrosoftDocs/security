@@ -3,6 +3,7 @@ title: Zero Trust Security with Microsoft Sentinel and Defender XDR
 description: Transform your security posture with Microsoft Sentinel and Defender XDR. Benefit from AI-powered threat detection and incident response for Zero Trust.
 author: batamig
 ms.author: bagol
+ms.subservice: zero-trust
 manager: raynemw
 ms.date: 02/05/2025
 ms.topic: how-to

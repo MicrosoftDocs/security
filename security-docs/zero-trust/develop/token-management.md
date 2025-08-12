@@ -3,10 +3,11 @@ title: Manage tokens for Zero Trust
 description: Learn how to build security into applications with ID tokens, access tokens, and security tokens from the Microsoft identity platform.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.date: 02/24/2025
 ms.custom: template-concept
-ms.service: zero-trust
+ms.service: security
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to secure my applications with ID tokens, access tokens, and security tokens so that I can enhance application security with the principles of least privilege and verify explicitly.

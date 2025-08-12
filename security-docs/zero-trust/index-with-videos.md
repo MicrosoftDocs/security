@@ -2,9 +2,10 @@
 title: Zero Trust Deployment Center (with videos)
 description: The Zero Trust model assumes a breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to never trust and to always verify. This file displays video links.
 ms.date: 09/30/2020
-ms.service: zero-trust
+ms.service: security
 author: garycentric
 ms.author: v-garymoore
+ms.subservice: zero-trust
 ms.topic: conceptual
 ---
 

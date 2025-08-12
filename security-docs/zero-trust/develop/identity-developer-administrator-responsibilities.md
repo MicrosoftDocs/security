@@ -3,8 +3,9 @@ title: Developer and administrator responsibilities
 description: Learn what IT Pros need from developers and what developers need from them to streamline Zero Trust development workflows.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
-ms.service: zero-trust
+ms.service: security
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:

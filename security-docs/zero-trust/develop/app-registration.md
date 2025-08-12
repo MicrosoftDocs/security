@@ -3,8 +3,9 @@ title: Register applications
 description: Learn about application registration process and requirements to ensure Zero Trust principles of use least privileged access and assume breach.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
-ms.service: zero-trust
+ms.service: security
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:

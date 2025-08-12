@@ -2,6 +2,7 @@
 title: Zero Trust Identity and Device Access Policies for Microsoft 365
 description: Learn about Zero Trust identity and device access policies for Microsoft 365, including configurations and benefits for secure deployments.
 ms.author: kenwith
+ms.subservice: zero-trust
 author: kenwith
 
 ms.service: microsoft-365-zero-trust

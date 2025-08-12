@@ -3,8 +3,9 @@ title: Call an API from another API
 description: Ensure Zero Trust when you have one API that needs to call another API and securely develop your application when it's working on behalf of a user.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
-ms.service: zero-trust
+ms.service: security
 ms.date: 04/18/2025
 ms.collection:
   - zerotrust-dev

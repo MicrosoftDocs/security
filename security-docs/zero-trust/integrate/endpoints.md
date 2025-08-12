@@ -2,9 +2,10 @@
 title: Endpoint integration overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Endpoint and Microsoft Intune to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 06/04/2025
-ms.service: zero-trust
+ms.service: security
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:
   - zerotrust-partner

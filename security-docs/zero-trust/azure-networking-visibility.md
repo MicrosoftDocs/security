@@ -2,9 +2,10 @@
 title: Apply Zero Trust principles to gain visibility into network traffic
 description: Learn how to apply Zero Trust principles to gain visibility into network traffic.
 ms.date: 06/12/2024
-ms.service: zero-trust
+ms.service: security
 author: duongau
 ms.author: duau
+ms.subservice: zero-trust
 ms.reviewer: adtork, maroja, maalgeba
 ms.topic: conceptual
 ms.collection: 

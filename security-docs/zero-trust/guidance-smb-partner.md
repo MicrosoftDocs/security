@@ -4,6 +4,7 @@ description: Zero Trust guidance for small and medium-sized business customers a
 search.appverid: MET150
 author: chrisda
 ms.author: chrisda
+ms.subservice: zero-trust
 manager: deniseb
 audience: Admin
 ms.topic: conceptual

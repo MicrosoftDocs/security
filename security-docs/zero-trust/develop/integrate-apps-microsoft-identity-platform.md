@@ -4,8 +4,9 @@ description: Build and integrate apps to secure in the enterprise. Understand ho
 ms.date: 04/18/2025
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
-ms.service: zero-trust
+ms.service: security
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev

@@ -2,9 +2,10 @@
 title: Zero Trust integration with Networks overview
 description: Independent software vendors (ISVs) integrate their solutions with Azure Firewall Manager to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 02/21/2025
-ms.service: zero-trust
+ms.service: security
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:
   - zerotrust-partner

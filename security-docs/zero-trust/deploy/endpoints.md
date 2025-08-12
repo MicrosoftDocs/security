@@ -2,9 +2,10 @@
 title: Secure endpoints with Zero Trust
 description: Not all endpoints are managed or even owned by the organization, leading to different device configurations and software patch levels. In a Zero Trust approach, the same security policies are applied regardless of the type of device or who owns it. 
 ms.date: 06/25/2025
-ms.service: zero-trust
+ms.service: security
 author: garycentric
 ms.author: brenduns
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:
   - zerotrust-pillar

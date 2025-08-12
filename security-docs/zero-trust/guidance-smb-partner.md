@@ -9,7 +9,7 @@ manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.date: 02/19/2025
-ms.service: microsoft-365-security
+ms.service: zero-trust
 ms.subservice: other
 ms.localizationpriority:  medium
 ms.collection:

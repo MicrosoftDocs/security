@@ -2,7 +2,7 @@
 title: Respond to Incidents from the Azure portal
 description: Learn how to resolve an incident using both Microsoft Sentinel in the Azure portal and Microsoft Defender XDR, including triage, investigation, and resolution. 
 ms.date: 01/26/2025
-ms.service: microsoft-365-zero-trust
+ms.service: security
 author: batamig
 ms.author: bagol
 ms.subservice: zero-trust

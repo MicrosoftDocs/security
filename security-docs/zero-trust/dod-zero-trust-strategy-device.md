@@ -2,7 +2,6 @@
 title: DoD Zero Trust Strategy for the device pillar
 description: Minimize the organization's attack surface, reduce risks, enable collaboration, safeguard data, and disrupt adversaries.
 ms.service: security
-ms.subservice: security-fundamentals
 ms.topic: conceptual
 ms.date: 05/08/2024
 ms.author: jricketts

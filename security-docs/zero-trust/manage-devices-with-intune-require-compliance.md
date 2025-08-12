@@ -12,7 +12,7 @@ ms.date: 03/14/2025
 audience: ITPro
 description: Create a conditional access policy in Microsoft Entra ID to require compliant devices, keeping corporate data secure when users work from any device in any location.
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: security
 ms.localizationpriority: high
 ms.collection:
 - highpri

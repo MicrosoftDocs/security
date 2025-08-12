@@ -2,7 +2,6 @@
 title: CISA Zero Trust Maturity Model for the applications and workloads pillar
 description: For the applications and workloads pillar, enable Zero Trust capabilities with integrated security tools for a secure and resilient cybersecurity framework. 
 ms.service: security
-ms.subservice: security-fundamentals
 ms.topic: conceptual
 ms.date: 12/16/2024
 ms.author: jricketts

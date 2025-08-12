@@ -2,7 +2,6 @@
 title: DoD Zero Trust Strategy for the applications and workloads pillar
 description: Minimize attack surface, reduce organizational risks, enable collaboration, safeguard data, and disrupt adversaries.
 ms.service: security
-ms.subservice: security-fundamentals
 ms.topic: conceptual
 ms.date: 04/10/2024
 ms.author: jricketts

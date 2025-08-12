@@ -13,7 +13,7 @@ manager: dougeby
 ms.date: 03/14/2025
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: security
 ms.localizationpriority: high
 ms.collection:
 - highpri

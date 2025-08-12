@@ -7,7 +7,7 @@ ms.subservice: zero-trust
 manager: raynew
 ms.date: 02/12/2025
 ms.topic: article
-ms.service: microsoft-365-zero-trust
+ms.service: security
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops

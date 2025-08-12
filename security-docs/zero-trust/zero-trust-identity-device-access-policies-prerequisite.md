@@ -5,7 +5,7 @@ author: chrisda
 ms.author: chrisda
 ms.subservice: zero-trust
 manager: dansimp
-ms.service: microsoft-365-zero-trust
+ms.service: security
 ms.topic: conceptual
 audience: Admin
 f1.keywords: 

@@ -5,7 +5,7 @@ ms.author: kenwith
 ms.subservice: zero-trust
 author: kenwith
 
-ms.service: microsoft-365-zero-trust
+ms.service: security
 ms.topic: conceptual
 audience: Admin
 f1.keywords:

@@ -7,7 +7,7 @@ ms.subservice: zero-trust
 manager: raynemw
 ms.date: 02/05/2025
 ms.topic: how-to
-ms.service: microsoft-365-zero-trust
+ms.service: security
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops

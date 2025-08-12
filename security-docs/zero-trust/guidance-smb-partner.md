@@ -10,7 +10,6 @@ audience: Admin
 ms.topic: conceptual
 ms.date: 02/19/2025
 ms.service: zero-trust
-ms.subservice: other
 ms.localizationpriority:  medium
 ms.collection:
 - tier1

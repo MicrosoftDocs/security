@@ -2,6 +2,7 @@
 title: How do I apply Zero Trust principles to Microsoft 365 Copilot?
 description: How to apply Zero Trust principles to Microsoft 365 Copilot. 
 ms.date: 08/01/2025
+ms.update-cycle: 180-days
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter

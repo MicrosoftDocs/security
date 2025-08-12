@@ -3,6 +3,8 @@ title: Secure applications with Zero Trust
 description: To get the full benefit of cloud apps and services, organizations must find the right balance of providing access while maintaining control to protect critical data accessed via applications and APIs. 
 author: kenwith
 ms.author: kenwith
+ms.service: security
+ms.subservice: zero-trust
 manager: femila
 ms.date: 03/12/2025
 ms.topic: conceptual

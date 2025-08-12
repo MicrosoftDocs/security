@@ -5,6 +5,7 @@ ms.date: 05/07/2025
 ms.service: security
 author: duongau
 ms.author: duau
+ms.subservice: zero-trust
 ms.reviewer: adtork, maroja, maalgeba
 ms.topic: conceptual
 ms.collection: 

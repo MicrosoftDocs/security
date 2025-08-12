@@ -3,6 +3,7 @@ title: Add SaaS apps to Microsoft Entra ID and to the scope of policies
 description: Learn steps to add SaaS apps to Microsoft Entra ID and to the scope of identity and device policies.
 ms.date: 04/18/2024
 ms.service: security
+ms.subservice: zero-trust
 author: mjcaparas
 ms.author: macapara
 ms.topic: conceptual

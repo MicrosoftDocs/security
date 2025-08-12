@@ -3,9 +3,11 @@ title: Customize Microsoft Entra tokens
 description: Learn about information in Microsoft Entra tokens and how to customize tokens to improve flexibility and control.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.date: 02/24/2025
 ms.custom: template-concept
+ms.service: security
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to learn about the information that I can receive in Microsoft Entra tokens and how I can customize tokens so that I can improve flexibility and control while increasing application security with least privilege.

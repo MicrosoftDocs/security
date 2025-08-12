@@ -2,6 +2,7 @@
 title: "Step 6. Monitor device risk and compliance for security baselines"
 description: Learn how to connect Microsoft Intune to Defender for Endpoint and monitor device risk as a condition for access.
 ms.author: bcarter
+ms.subservice: zero-trust
 author: brendacarter
 f1.keywords:
 - connect Intune to Defender
@@ -12,7 +13,7 @@ manager: dougeby
 ms.date: 03/14/2025
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: security
 ms.localizationpriority: high
 ms.collection:
 - highpri

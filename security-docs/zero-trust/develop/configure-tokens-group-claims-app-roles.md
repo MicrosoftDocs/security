@@ -3,7 +3,9 @@ title: Configure group claims and app roles in tokens
 description: Configure app role definitions and security groups to improve flexibility and control while increasing app Zero Trust security with least privilege.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
+ms.service: security
 ms.date: 04/18/2025
 ms.collection:
   - zerotrust-dev

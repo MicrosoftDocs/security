@@ -3,7 +3,9 @@ title: Protect APIs with registration, permissions, and consent
 description: Learn best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
+ms.service: security
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:

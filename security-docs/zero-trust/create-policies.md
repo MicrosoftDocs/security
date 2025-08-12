@@ -5,6 +5,7 @@ ms.date: 04/18/2024
 ms.service: security
 author: mjcaparas
 ms.author: macapara
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:
   -	m365solution-saas

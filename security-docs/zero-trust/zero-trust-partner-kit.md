@@ -5,6 +5,7 @@ ms.date: 03/25/2025
 ms.service: security
 author: brendacarter
 ms.author: bcarter
+ms.subservice: zero-trust
 manager: rkarlin
 ms.topic: conceptual
 ms.collection:

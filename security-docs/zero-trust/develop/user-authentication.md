@@ -3,9 +3,11 @@ title: Authenticate users for Zero Trust
 description: Learn best practices to authenticate app users and enhance application security with Zero Trust principles of least privilege and verify explicitly.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.date: 04/18/2025
 ms.custom: template-concept
+ms.service: security
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to learn best practices for authenticating my application users in Zero Trust application development so that I can enhance application security with the principles of least privilege and verify explicitly.

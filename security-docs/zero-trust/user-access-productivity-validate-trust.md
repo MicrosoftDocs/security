@@ -4,6 +4,7 @@ description: Use the steps in this guidance to deploy explicit validation for al
 ms.date: 02/24/2025
 ms.service: security
 ms.author: kenwith
+ms.subservice: zero-trust
 author: kenwith
 
 ms.topic: conceptual

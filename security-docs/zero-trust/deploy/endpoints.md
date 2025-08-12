@@ -5,6 +5,7 @@ ms.date: 06/25/2025
 ms.service: security
 author: garycentric
 ms.author: brenduns
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:
   - zerotrust-pillar

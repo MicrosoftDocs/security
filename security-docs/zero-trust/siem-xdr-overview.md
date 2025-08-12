@@ -3,10 +3,11 @@ title: Incident Response with XDR and Integrated SIEM
 description: Learn how to integrate Microsoft Sentinel and Defender XDR to quickly respond to incidents and improve Zero Trust security.
 author: batamig
 ms.author: bagol
+ms.subservice: zero-trust
 manager: raynemw
 ms.date: 02/12/2025
 ms.topic: concept-article
-ms.service: microsoft-365-zero-trust
+ms.service: security
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops

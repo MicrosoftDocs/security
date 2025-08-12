@@ -1,6 +1,7 @@
 ---
 title: "Step 2. Enroll devices into management with Intune"
 ms.author: bcarter
+ms.subservice: zero-trust
 author: brendacarter
 f1.keywords:
 - enroll devices into management
@@ -11,7 +12,7 @@ ms.date: 03/14/2025
 audience: ITPro
 description: Use Intune and Autopilot to enroll devices into management to ensure the apps running on them are compliant and to prevent corporate data leaks.
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: security
 ms.localizationpriority: high
 ms.collection:
 - highpri

@@ -5,6 +5,7 @@ ms.date: 09/29/2020
 ms.service: security
 author: garycentric
 ms.author: v-garymoore
+ms.subservice: zero-trust
 ms.topic: conceptual
 ---
 

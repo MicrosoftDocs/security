@@ -6,6 +6,7 @@ ms.service: security
 author: kenwith
 manager: femila
 ms.author: kenwith
+ms.subservice: zero-trust
 ms.topic: concept-article
 ms.collection:
   - zerotrust-pillar

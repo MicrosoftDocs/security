@@ -2,9 +2,10 @@
 title: Incident Response -- Resolve Incidents in the Microsoft Defender Portal.
 description: This article provides incident response guidance using Microsoft Sentinel in the Defender portal, covering triage, investigation, and resolution.
 ms.date: 01/23/2025
-ms.service: microsoft-365-zero-trust
+ms.service: security
 author: batamig
 ms.author: bagol
+ms.subservice: zero-trust
 ms.topic: concept-article
 ms.collection: 
   - zerotrust-solution

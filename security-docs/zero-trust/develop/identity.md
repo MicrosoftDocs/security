@@ -4,7 +4,9 @@ description: Learn about authentication, authorization, and identity management 
 ms.date: 02/24/2025
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
+ms.service: security
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to learn about authentication, authorization, and identity management so that I can use a Zero Trust approach to identity in my software development lifecyle (SDLC).

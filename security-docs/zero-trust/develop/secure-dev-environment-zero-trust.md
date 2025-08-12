@@ -3,9 +3,11 @@ title: Secure the developer environment for Zero Trust
 description: Learn to secure developer environments with branch security and trusting tools, extensions, and integrations to implement Zero Trust principles.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.date: 02/24/2025
 ms.custom: template-concept
+ms.service: security
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to secure my development environment and learn best practices for branch security and trusting tools, extensions, and integrations so that I can implement Zero Trust principles.

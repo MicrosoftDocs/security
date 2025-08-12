@@ -5,6 +5,7 @@ ms.date: 03/11/2025
 ms.service: security
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:
   - zerotrust-partner

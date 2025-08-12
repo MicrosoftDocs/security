@@ -101,7 +101,7 @@ After you identify a specific policy, you can query to get the state of a device
 
 Compliance information is foundational to Microsoft Entra ID’s Conditional Access feature. Intune determines the device compliance based on compliance policies and writes the compliance state to Microsoft Entra ID. Then, customers use Conditional Access policies to determine whether any actions are taken for noncompliance, including blocking the users from accessing corporate data from a noncompliant device.
 
-For more information about integrating device compliance with conditional access, see [Device compliance policies in Microsoft Intune](/intune/service/protect/device-compliance-get-started#integrate-with-conditional-access).
+
 
 #### Follow the least privilege access principle
 

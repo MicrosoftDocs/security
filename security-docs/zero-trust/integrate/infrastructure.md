@@ -50,7 +50,7 @@ There's a clear mapping from the goals described in the [infrastructure deployme
 |||
 
 ### Protect your  Azure PaaS services with Defender for Cloud
-With Defender for Cloud enabled on your subscription, and the Defender workload protection plans enabled for all available resource types, you have a layer of intelligent threat protection - powered by [Microsoft Threat Intelligence](https://go.microsoft.com/fwlink/?linkid=2128684) - protecting  resources in Azure Key Vault, Azure Storage, Azure DNS, and other Azure PaaS services. For a full list, see the PaaS services listed in the [Support matrix](/azure/defender-for-cloud/support-matrix-defender-for-cloud#features-supported-in-different-azure-cloud-environments).
+With Defender for Cloud enabled on your subscription, and the Defender workload protection plans enabled for all available resource types, you have a layer of intelligent threat protection, protecting  resources in Azure Key Vault, Azure Storage, Azure DNS, and other Azure PaaS services. For a full list, see the PaaS services listed in the [Support matrix](/azure/defender-for-cloud/support-matrix-defender-for-cloud#features-supported-in-different-azure-cloud-environments).
 
 ### Azure Logic Apps
 Use [Azure Logic Apps](/azure/logic-apps/) to build automated scalable workflows, business processes, and enterprise orchestrations to integrate your apps and data across cloud services and on-premises systems.

@@ -3,8 +3,9 @@ title: Zero Trust identity and device access configurations - Microsoft 365 for 
 description: Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations for Zero Trust.
 author: chrisda
 ms.author: chrisda
+ms.subservice: zero-trust
 manager: dansimp
-ms.service: microsoft-365-zero-trust
+ms.service: security
 ms.topic: solution-overview
 audience: Admin
 f1.keywords:

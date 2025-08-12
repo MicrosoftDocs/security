@@ -1,6 +1,7 @@
 ---
 title: "Manage devices with Intune"
 ms.author: bcarter
+ms.subservice: zero-trust
 author: brendacarter
 f1.keywords:
 - enroll devices into Intune
@@ -12,7 +13,7 @@ ms.date: 03/14/2025
 audience: ITPro
 ms.topic: solution-overview
 description: Enroll your endpoint devices in Microsoft Intune as part of your Zero Trust security architecture, protecting against ransomware while building in protection for remote workers.
-ms.service: o365-solutions
+ms.service: security
 ms.localizationpriority: high
 ms.collection:
 - highpri

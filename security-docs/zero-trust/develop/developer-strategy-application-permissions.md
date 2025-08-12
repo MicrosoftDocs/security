@@ -3,7 +3,9 @@ title: Develop application permissions strategy
 description: Learn how to define an application permission approach to credential management to authenticate, authorize, and manage permissions and consent.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
+ms.service: security
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:

@@ -5,6 +5,7 @@ ms.date: 04/30/2024
 ms.service: security
 author: kenwith
 ms.author: kenwith
+ms.subservice: zero-trust
 manager: dougeby
 ms.topic: conceptual
 ms.collection:

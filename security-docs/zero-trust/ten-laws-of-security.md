@@ -3,10 +3,9 @@ title: The immutable laws of security
 description: Busting myths, biases, and uncertainty with the 10 laws of cybersecurity.
 
 ms.service: security
-ms.subservice: security-fundamentals
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.date: 05/23/2024
-
 ms.author: kenwith
 author: kenwith
 

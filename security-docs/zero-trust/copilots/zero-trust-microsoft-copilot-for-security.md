@@ -5,6 +5,7 @@ ms.date: 02/06/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
+ms.subservice: zero-trust
 ms.topic: concept-article
 ms.collection:
 - M365copilot

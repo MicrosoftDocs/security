@@ -3,7 +3,9 @@ title: Standards-based development methodologies
 description: Learn about the benefits of using supported standards in the Microsoft identity platform for Zero Trust development.
 author: janicericketts
 ms.author: jricketts
+ms.subservice: zero-trust
 ms.topic: conceptual
+ms.service: security
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.collection:

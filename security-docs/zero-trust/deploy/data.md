@@ -5,6 +5,7 @@ ms.date: 04/30/2024
 ms.service: security
 author: cabailey
 ms.author: cabailey
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:
   - zerotrust-pillar

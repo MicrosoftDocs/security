@@ -4,7 +4,8 @@ description: Use these playbooks to quickly respond to security incidents in the
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, compromise, Microsoft Defender XDR
 search.product: DART
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: security
+ms.subservice: zero-trust
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +18,6 @@ audience: ITPro
 ms.collection: 
   - msftsolution-secops
 ms.topic: article
-ms.subservice:: m365d
 ms.custom: cxdef-zt-ransomware 
 ms.date: 03/08/2024
 ---

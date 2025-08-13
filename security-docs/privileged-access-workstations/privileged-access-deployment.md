@@ -1,15 +1,12 @@
 ---
 title: Deploying a privileged access solution
 description: Configuring and deploying components of a privileged access solution
-
 ms.service: security
-ms.subservice: 
+ms.subservice: privileged-access
 ms.topic: how-to
 ms.date: 06/20/2024
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: frasim
 ---
 # Privileged access deployment

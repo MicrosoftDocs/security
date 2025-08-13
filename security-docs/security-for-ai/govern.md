@@ -4,6 +4,7 @@ description: How to use Microsoft capabilities to meet regulatory compliance req
 ms.date: 04/02/2025
 ms.update-cycle: 180-days
 ms.service: security
+ms.subservice: security-for-ai
 author: BrendaCarter
 ms.author: bcarter
 ms.topic: concept-article

@@ -1,15 +1,12 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 3:Identity, and Access Management"
 description: "Learn how to advance Zero Trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter."
-
 ms.service: security
-
+ms.subservice: zero-trust
 ms.topic: tutorial
 ms.date: 06/05/2025
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # CISO Workshop Module 3: Identity and Zero Trust User Access (Published December 2019)

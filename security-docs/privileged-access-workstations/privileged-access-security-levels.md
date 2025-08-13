@@ -54,7 +54,7 @@ The security levels used throughout this strategy are:
    - **High impact social media accounts** that could damage the company reputation.
    - **Sensitive IT Admins** with a significant privileges and impact, but are not enterprise-wide. This group typically includes administrators of individual high impact workloads. (for example, enterprise resource planning administrators, banking administrators, help desk /tech support roles, etc.)
 
-   Specialized Account security also serves as an interim step for privileged security, which further builds on these controls. See [privileged access roadmap](security-rapid-modernization-plan.md) for details on recommended order of progression.
+   Specialized account security also serves as an interim step for privileged security, which further builds on these controls. See [privileged access roadmap](security-rapid-modernization-plan.md) for details on recommended order of progression.
 
 ## Privileged
 

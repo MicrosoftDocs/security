@@ -14,7 +14,7 @@ ms.subservice: privileged-access
 Administration is the practice of monitoring, maintaining, and operating
 Information Technology (IT) systems to meet service levels that the business
 requires. Administration introduces some of the highest impact security risks
-because performing these tasks requires privileged access to a very broad set
+because performing these tasks requires privileged access to a broad set
 of these systems and applications. Attackers know that gaining access to an
 account with administrative privileges can get them access to most or all of the
 data they would target, making the security of administration one of the most
@@ -117,7 +117,7 @@ an account to either work within the limited times the admin is already using
 the account or to initiate privilege elevation (which increases their chance of
 being detected and removed from the environment).
 
-Grant privileges required only as required using one of these methods:
+Grant privileges only as required using one of these methods:
 
 -   **Just in Time -** Enable Microsoft Entra Privileged Identity Management (PIM) or a
     third party solution to require following an approval workflow to obtain
@@ -177,7 +177,7 @@ accounts and their workstations
 To contain the risk from a major incident on-premises spilling over to become a
 major compromise of cloud assets, you must eliminate or minimize the means of
 control that on premises resources have to critical impact accounts in the
-cloud. As an example, attackers who compromise the on premises Active Directory
+cloud. As an example, attackers who compromise on-premises Active Directory
 can access and compromise cloud-based assets that rely on those accounts like
 resources in Azure, Amazon Web Services (AWS), ServiceNow, and so on. Attackers
 can also use workstations joined to those on premises domains to gain access to
@@ -206,10 +206,10 @@ security dependencies for critical impact accounts
 
 
 
-## Passwordless Or multi-factor authentication for admins
+## Passwordless Or multifactor authentication for admins
 
 Require all critical impact admins to use passwordless authentication or
-multi-factor authentication (MFA).
+multifactor authentication (MFA).
 
 Attack methods have evolved to the point where passwords alone cannot reliably
 protect an account. This is well documented in a [Microsoft Ignite Session](https://channel9.msdn.com/events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3016).
@@ -228,7 +228,7 @@ lowest cost/difficult to attack:
 -   **Multifactor Authentication**  
     </azure/active-directory/authentication/howto-mfa-userstates>
 
-Note that SMS Text Message based MFA has become very inexpensive for attackers
+Note that SMS Text Message based MFA has become inexpensive for attackers
 to bypass, so we recommend you avoid relying on it. This option is still
 stronger than passwords alone, but is much weaker than other MFA options
 

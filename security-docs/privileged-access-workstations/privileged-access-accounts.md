@@ -11,7 +11,7 @@ ms.reviewer: mas
 ---
 # Privileged access: Accounts
 
-Account security is a critical component of [securing privileged access](overview.md). End to end Zero Trust security for sessions requires strongly establishing that the account being used in the session is actually under the control of the human owner and not an attacker impersonating them.
+Account security is a critical component of [securing privileged access](overview.md). Zero Trust end-to-end security for sessions requires strongly establishing that the account being used in the session is actually under the control of the human owner and not an attacker impersonating them.
 
 Strong account security starts with secure provisioning and full lifecycle management through to deprovisioning, and each session must establish strong assurances that the account isn't currently compromised based on all available data including historical behavior patterns, available threat intelligence, and usage in the current session.
 
@@ -33,7 +33,7 @@ Achieving security for the interfaces requires a combination of technical contro
 
 The controls used in these profiles include:
 
-- Multi-factor authentication - providing diverse sources of proof that the (designed to be as easy as possible for users, but difficult for an adversary to mimic).
+- Multifactor authentication - providing diverse sources of proof that the (designed to be as easy as possible for users, but difficult for an adversary to mimic).
 - Account risk - Threat and Anomaly Monitoring - using UEBA and Threat intelligence to identify risky scenarios
 - Custom monitoring - For more sensitive accounts, explicitly defining allowed/accepted behaviors/patterns allows early detection of anomalous activity. This control is not suitable for general purpose accounts in enterprise as these accounts need flexibility for their roles.
 
@@ -45,7 +45,7 @@ The combination of controls also enables you to improve both security and usabil
 
 The security controls for enterprise accounts are designed to create a secure baseline for all users and provide a secure foundation for specialized and privileged security:
 
-- Enforce strong multi-factor authentication (MFA) - Ensure that the user is authenticated with strong MFA provided by an enterprise-managed identity system (detailed in the diagram below). For more information about multi-factor authentication, see [Azure security best practice 6](/azure/cloud-adoption-framework/security/security-top-10#6-technology-require-passwordless-or-multi-factor-authentication-mfa).
+- Enforce strong multifactor authentication (MFA) - Ensure that the user is authenticated with strong MFA provided by an enterprise-managed identity system (detailed in the diagram below). For more information about multifactor authentication, see [Azure security best practice 6](/azure/cloud-adoption-framework/security/security-top-10#6-technology-require-passwordless-or-multifactor-authentication-mfa).
 
    > [!NOTE]
    > While your organization may choose to use an existing weaker form of MFA during a transition period, attackers are increasingly evading the weaker MFA protections, so all new investment into MFA should be on the strongest forms.
@@ -56,7 +56,7 @@ The security controls for enterprise accounts are designed to create a secure ba
   - [Investigate risk Microsoft Entra ID Protection](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
   - [Troubleshoot/Investigate Conditional Access Sign-in failures](/azure/active-directory/conditional-access/troubleshoot-conditional-access)
 
-The following diagram provides a comparison to different forms of MFA and passwordless authentication. Each option in the best box is considered both high security and high usability. Each has different hardware requirements so you may want to mix and match which ones apply to different roles or individuals. All Microsoft passwordless solutions are recognized by Conditional Access as multi-factor authentication because they require combining something you have with either biometrics, something you know, or both.
+The following diagram provides a comparison to different forms of MFA and passwordless authentication. Each option in box **Best** is both high security and high usability. Each has different hardware requirements so you may want to mix and match which ones apply to different roles or individuals. All Microsoft passwordless solutions are recognized by Conditional Access as multifactor authentication because they require combining something you have with either biometrics, something you know, or both.
 
 ![Comparison of authentication methods good, better, best](./media/privileged-access-accounts/compare-authentication-methods.png)
 
@@ -65,15 +65,15 @@ The following diagram provides a comparison to different forms of MFA and passwo
 
 ### Specialized accounts
 
-Specialized accounts are a higher protection level suitable for sensitive users. Because of their higher business impact, specialized accounts warrant additional monitoring and prioritization during security alerts, incident investigations, and threat hunting.
+Specialized accounts provide a higher protection level that's suitable for sensitive users. Because of their higher business impact, specialized accounts warrant additional monitoring and prioritization during security alerts, incident investigations, and threat hunting.
 
 Specialized security builds on the strong MFA in enterprise security by identifying the most sensitive accounts and ensuring alerts and response processes are prioritized:
 
 1. Identify Sensitive Accounts - See specialized security level guidance for identifying these accounts.
-1. Tag Specialized Accounts - Ensure each sensitive account is tagged
+1. Tag specialized Accounts - Ensure each sensitive account is tagged
    1. [Configure Microsoft Sentinel Watchlists](/azure/sentinel/watchlists) to identify these sensitive accounts
    1. [Configure Priority account protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385) and designate specialized and privileged accounts as priority accounts -
-1. Update Security Operations processes - to ensure these alerts are given the highest priority
+1. Update Security Operations processes to give these alerts the highest priority
 1. Set up Governance - Update or create governance process to ensure that
    1. All new roles to are evaluated for specialized or privileged classifications as they are created or changed
    1. All new accounts are tagged as they are created
@@ -85,7 +85,7 @@ Privileged accounts have the highest level of protection because they represent 
 
 Privileged accounts always include IT Admins with access to most or all enterprise systems, including most or all business critical systems. Other accounts with a high business impact may also warrant this additional level of protection. For more information about which roles and accounts should be protected at what level, see the article [Privileged Security](privileged-access-security-levels.md).
 
-In addition to specialized security , privileged account security increases both:
+In addition to specialized security, privileged account security increases both:
 
 - Prevention - add controls to restrict the usage of these accounts to the designated devices, workstations, and intermediaries.
 - Response - closely monitor these accounts for anomalous activity and rapidly investigate and remediate the risk.

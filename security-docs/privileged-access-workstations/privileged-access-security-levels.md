@@ -21,13 +21,13 @@ Making things simple helps people understand it and lowers the risk they will be
 
 Designing solutions that are focused on the needs of the administrators and end users, will keep it simple for them. Designing solutions that are simple for security and IT personnel to build, assess, and maintain (with automation where possible) leads to less security mistakes and more reliable security assurances. 
 
-The recommended privileged access security strategy implements a simple three level system of assurances, that span across areas, designed to be easy to deploy for: accounts, devices, intermediaries, and interfaces.  
+The recommended privileged access security strategy implements a simple three-level system of assurances across areas, and are designed for easy deployment of accounts, devices, intermediaries, and interfaces.  
 
 ![Increase attacker cost with each level of security investment](./media/privileged-access-security-levels/drive-attacker-cost-with-strategic-investments.png)
 
-Each successive level drives up attacker costs, with additional level of Defender for Cloud investment. The levels are designed to target the 'sweet spots' where defenders get the most return (attacker cost increase) for each security investment they make.
+Each successive level drives up attacker costs, with an additional level of Defender for Cloud investment. The levels are designed to target the 'sweet spots' where yyou get the most return (attacker cost increase) for each security investment you make.
 
-Each role in your environment should be mapped to one of these levels (and optionally increased over time as part of a security improvement plan).  Each profile is clearly defined as a technical configuration and automated where possible to ease deployment and speed up security protections. For implementation details see the article, [Privileged access roadmap](security-rapid-modernization-plan.md).
+Each role in your environment should map to one of these levels, and optionally increased over time as part of a security improvement plan. Each profile is clearly defined as a technical configuration and automated where possible to ease deployment and speed up security protections. For implementation [read about the privileged access roadmap](security-rapid-modernization-plan.md).
 
 ## Security levels
 

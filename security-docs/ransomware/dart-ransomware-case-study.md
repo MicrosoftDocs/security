@@ -15,7 +15,7 @@ ms.collection:
  - msftsolution-ransomware
 ms.topic: article
 ms.date: 05/24/2024
-ms.subservice:: zero-trust
+ms.subservice: zero-trust
 ms.custom: cx-rw
 
 ---
@@ -38,7 +38,7 @@ Here are some common techniques that attackers use for ransomware attacks based 
  
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-methods.png" alt-text="Common techniques that attackers use for ransomware attacks." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-methods.png":::
 
-Microsoft Incident Response used Microsoft Defender for Endpoint to track the attacker through the environment, create a story depicting the incident, and then eradicate the threat and remediate. Once deployed, Defender for Endpoint began detecting successful logons from a brute force attack. Upon discovering this, Microsoft Incident Response reviewed the security data and found several vulnerable Internet-facing devices using the Remote Desktop Protocol (RDP). 
+Microsoft Incident Response used Microsoft Defender for Endpoint to track the attacker through the environment, create a story depicting the incident, and then eradicate the threat and remediate. Once deployed, Defender for Endpoint began detecting successful logons from a brute force attack. When Microsoft Incident Response discovered this, they reviewed the security data and found several vulnerable Internet-facing devices using the Remote Desktop Protocol (RDP). 
 
 After initial access was gained, the threat actor used the Mimikatz credential harvesting tool to dump password hashes, scanned for credentials stored in plaintext, created backdoors with Sticky Key manipulation, and moved laterally throughout the network using remote desktop sessions.
 
@@ -62,7 +62,7 @@ Defender for Endpoint used threat intelligence to determine that there were nume
 
 Once the initial access was successful, environment enumeration and device discovery began. These activities allowed the threat actors to identify information about the organization's internal network and target critical systems such as domain controllers, backup servers, databases, and cloud resources. After the enumeration and device discovery, the threat actors performed similar activities to identify vulnerable user accounts, groups, permissions, and software.
 
-The threat actor leveraged Advanced IP Scanner, an IP address scanning tool, to enumerate the IP addresses used in the environment and perform subsequent port scanning. By scanning for open ports, the threat actor discovered devices that were accessible from the initially compromised device. 
+The threat actor leveraged Advanced IP Scanner, an IP address scanning tool, to enumerate the IP addresses used in the environment and perform subsequent port scanning. The threat actor scanned open ports to discover devices that were accessible from the initially compromised device.
 
 This activity was detected in Defender for Endpoint and used as an indicator of compromise (IoC) for further investigation. Here's an example.
 
@@ -70,7 +70,7 @@ This activity was detected in Defender for Endpoint and used as an indicator of 
 
 ## Credential theft
 
-After gaining initial access, the threat actors performed credential harvesting using the Mimikatz password retrieval tool and by searching for files containing “password” on initially compromised systems. These actions enabled the threat actors to access additional systems with legitimate credentials. In many situations, threat actors use these accounts to create additional accounts to maintain persistence after the initial compromised accounts are identified and remediated.  
+After threat actors gained initial access, they performed credential harvesting using the Mimikatz password retrieval tool and by searching for files containing “password” on initially compromised systems. These actions enabled the threat actors to access additional systems with legitimate credentials. In many situations, threat actors use these accounts to create additional accounts to maintain persistence after the initial compromised accounts are identified and remediated.  
 
 Here's an example of the detected use of the Mimikatz in the Microsoft Defender portal.
  
@@ -80,7 +80,7 @@ Here's an example of the detected use of the Mimikatz in the Microsoft Defender 
 
 Movement across endpoints can vary between different organizations, but threat actors commonly use different varieties of remote management software that already exists on the device. By utilizing methods of remote access that the IT department commonly uses in their day-to-day activities, threat actors can fly under the radar for extended periods of time. 
 
-Using Microsoft Defender for Identity, Microsoft Incident Response was able to map out the path that the threat actor took between devices, displaying the accounts that were used and accessed. Here's an example.
+Microsoft Incident Response used Microsoft Defender for Identity to map out the path that the threat actor took between devices, displaying the accounts that were used and accessed. Here's an example.
  
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-threat-actor-path.png" alt-text="The path that the threat actor took between devices in Microsoft Defender for Identity.":::
 

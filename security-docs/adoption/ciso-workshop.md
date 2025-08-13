@@ -1,6 +1,6 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop""
-description: "This training workshop is based on the experiences of Microsoft security teams customers".
+description: This training workshop is based on the experiences of Microsoft security teams and our customers.
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: tutorial

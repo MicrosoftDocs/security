@@ -1,15 +1,12 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 1: Microsoft Cybersecurity Briefing"
 description: "This module covers overviews on critical security hygiene, Microsoft cybersecurity reference architecture, cybersecurity resilience, Internet of Things (IoT), and operational tech."
-
 ms.service: security
-
+ms.subservice: zero-trust
 ms.topic: tutorial
 ms.date: 06/05/2025
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # CISO Workshop Module 1: Microsoft Cybersecurity Briefing (Published December 2019)

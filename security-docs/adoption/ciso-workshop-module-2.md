@@ -1,15 +1,12 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 2: Security Management"
 description: Learn how to increase visibility and control over your hybrid enterprise estate with integrated guidance, automated policy enforcement, and monitoring.
-
 ms.service: security
-
+ms.subservice: zero-trust
 ms.topic: tutorial
 ms.date: 06/05/2025
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # CISO Workshop Module 2: Security Management (Published December 2019)

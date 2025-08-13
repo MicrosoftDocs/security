@@ -8,7 +8,8 @@ manager: dougeby
 ms.topic: article
 ms.collection: 
   - msftsolution-secops
-ms.service: microsoft-365-security
+ms.service: security
+ms.subservice: zero-trust
 ms.custom: cxdef-zt-ransomware 
 ms.localizationpriority: medium
 ms.date: 11/06/2024

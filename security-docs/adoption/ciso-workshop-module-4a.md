@@ -1,15 +1,12 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 4a: Threat Protection Strategy"
 description: Explore key learnings about threat protection, security evolution, strategies, and security road maps.
-
 ms.service: security
-
+ms.subservice: zero-trust
 ms.topic: tutorial
 ms.date: 06/05/2025
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # CISO Workshop Module 4a: Threat Protection Strategy (Published December 2019)

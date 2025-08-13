@@ -1,28 +1,25 @@
 ---
 title: Why are privileged access devices important
 description: Securing devices as part of the overall privileged access story
-
 ms.service: security
-ms.subservice: 
+ms.subservice: privileged-access
 ms.topic: conceptual
 ms.date: 12/15/2020
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: frasim
 ---
 # Securing devices as part of the privileged access story
 
 This guidance is part of a complete [privileged access strategy](privileged-access-strategy.md) and is implemented as part of the [Privileged access deployment](privileged-access-deployment.md)
 
-End to end zero trust [security for privileged access](overview.md) requires a strong foundation of device security upon which to build other security assurances for the  session. While security assurances may be enhanced in the session, they will always be limited by how strong the security assurances are in the originating device. An attacker with control of this device can impersonate users on it or steal their credentials for future impersonation. This risk undermines other assurances on the account, intermediaries like jump servers, and on the resources themselves. For more information, see [clean source principle](privileged-access-success-criteria.md#clean-source-principle)
+End-to-end Zero Trust [security for privileged access](overview.md) requires a strong foundation of device security upon which to build other security assurances for the  session. While security assurances can be enhanced in the session, they are limited by how strong the security assurances are in the originating device. An attacker with control of this device can impersonate users on it or steal their credentials for future impersonation. This risk undermines other assurances on the account, intermediaries like jump servers, and on the resources themselves. For more information, see [clean source principle](privileged-access-success-criteria.md#clean-source-principle)
 
 The article provides an overview of security controls to provide a secure workstation for sensitive users throughout its lifecycle. 
 
 ![Workflow to acquire and deploy a secure workstation](./media/privileged-access-devices/secure-workstation-deployment-flow.png)
 
-This solution relies on core security capabilities in the Windows 10 operating system, Microsoft Defender for Endpoint, Microsoft Entra ID, and Microsoft InTune.
+This solution relies on core security capabilities in the Windows 10 operating system, Microsoft Defender for Endpoint, Microsoft Entra ID, and Microsoft Intune.
 
 ## Who benefits from a secure workstation?
 
@@ -72,7 +69,7 @@ Essential to a secured workstation is a supply chain solution where you use a tr
 * [System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
 * [Modern Standby](/windows-hardware/design/device-experiences/modern-standby)
 
-For this solution, root of trust will be deployed using [Windows Autopilot](/mem/autopilot/windows-autopilot) technology with hardware that meets the modern technical requirements. To secure a workstation, Autopilot lets you leverage Microsoft OEM-optimized Windows 10 devices. These devices come in a known good state from the manufacturer. Instead of reimaging a potentially insecure device, Autopilot can transform a Windows 10 device into a “business-ready” state. It applies settings and policies, installs apps, and even changes the edition of Windows 10. 
+For this solution, root of trust will be deployed using [Windows Autopilot](/mem/autopilot/windows-autopilot) technology with hardware that meets the modern technical requirements. To secure a workstation, Autopilot lets you leverage Microsoft OEM-optimized Windows 10 devices. These devices come in a known good state from the manufacturer. Instead of reimaging a potentially insecure device, Autopilot can transform a Windows 10 device into a “business-ready” state. It applies settings and policies, installs apps, and changes the Windows 10 edition.
 
 ![Secure workstation Levels](./media/privileged-access-devices/supplychain.png)
 

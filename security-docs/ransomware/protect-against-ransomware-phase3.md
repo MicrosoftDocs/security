@@ -8,7 +8,8 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-security
+ms.service: security
+ms.subservice: zero-trust
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cx-rw

@@ -4,7 +4,8 @@ description: Learn how to investigate if one or more applications in a customer 
 keywords: compromise, malicious, applications, investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, incident response, playbook, guidance, Microsoft Defender XDR
 search.product: DART
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: security
+ms.subservice: zero-trust
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +19,6 @@ audience: ITPro
 ms.collection: 
   - msftsolution-secops
 ms.topic: article
-ms.subservice:: m365d
 ms.custom:
   - cxdef-zt-ransomware
   - has-azure-ad-ps-ref

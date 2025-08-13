@@ -4,6 +4,7 @@ description: What are new Microsoft AI security capabilities and blog articles?
 ms.date: 05/19/2025
 ms.update-cycle: 180-days
 ms.service: security
+ms.subservice: security-for-ai
 author: BrendaCarter
 ms.author: bcarter
 ms.topic: concept-article

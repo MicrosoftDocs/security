@@ -2,7 +2,7 @@
 title: 'AI Security Training: Case Studies and Tools for Generative AI'
 description: Secure generative AI systems with Microsoft's AI Red Teaming 101 series. Learn vulnerabilities, attack techniques, and defense strategies. Gain hands-on experience.
 ms.service: security
-ms.subservice: null
+ms.subservice: ai-red-team
 ms.topic: how-to
 ms.date: 07/09/2025
 ms.author: joflore

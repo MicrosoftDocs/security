@@ -1,15 +1,12 @@
 ---
 title: "The Chief Information Security Officer (CISO) Workshop"
 description: "The Chief Information Security Office (CISO) workshop helps accelerate security program modernization with reference strategies built using Zero Trust principles."
-
 ms.service: security
-
+ms.subservice: zero-trust
 ms.topic: conceptual
 ms.date: 02/27/2025
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # The Chief Information Security Officer (CISO) Workshop Training

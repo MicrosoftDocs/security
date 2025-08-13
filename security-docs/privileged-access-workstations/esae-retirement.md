@@ -1,12 +1,10 @@
 ---
 title: Enhanced Security Admin Environment (ESAE) architecture mainstream retirement
 description: Retiring the red forest as a legacy security mechanism
-
 ms.service: security
-ms.subservice: 
+ms.subservice: privileged-access
 ms.topic: reference
 ms.date: 02/14/2023
-
 ms.author: kenwith
 author: kenwith
 

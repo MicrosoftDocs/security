@@ -1,15 +1,12 @@
 ---
 title: Securing privileged access security levels
 description: Defining the security levels of a privileged access strategy
-
 ms.service: security
-ms.subservice: 
+ms.subservice: privileged-access
 ms.topic: conceptual
 ms.date: 12/15/2020
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # Privileged access security levels
@@ -24,13 +21,13 @@ Making things simple helps people understand it and lowers the risk they will be
 
 Designing solutions that are focused on the needs of the administrators and end users, will keep it simple for them. Designing solutions that are simple for security and IT personnel to build, assess, and maintain (with automation where possible) leads to less security mistakes and more reliable security assurances. 
 
-The recommended privileged access security strategy implements a simple three level system of assurances, that span across areas, designed to be easy to deploy for: accounts, devices, intermediaries, and interfaces.  
+The recommended privileged access security strategy implements a simple three-level system of assurances across areas, and is designed for easy deployment of accounts, devices, intermediaries, and interfaces.  
 
 ![Increase attacker cost with each level of security investment](./media/privileged-access-security-levels/drive-attacker-cost-with-strategic-investments.png)
 
-Each successive level drives up attacker costs, with additional level of Defender for Cloud investment. The levels are designed to target the 'sweet spots' where defenders get the most return (attacker cost increase) for each security investment they make.
+Each successive level drives up attacker costs, with an additional level of Defender for Cloud investment. The levels are designed to target the 'sweet spots' where you get the most return (attacker cost increase) for each security investment you make.
 
-Each role in your environment should be mapped to one of these levels (and optionally increased over time as part of a security improvement plan).  Each profile is clearly defined as a technical configuration and automated where possible to ease deployment and speed up security protections. For implementation details see the article, [Privileged access roadmap](security-rapid-modernization-plan.md).
+Each role in your environment should map to one of these levels, and optionally increased over time as part of a security improvement plan. Each profile is clearly defined as a technical configuration and automated where possible to ease deployment and speed up security protections. For implementation [read about the privileged access roadmap](security-rapid-modernization-plan.md).
 
 ## Security levels
 
@@ -57,7 +54,7 @@ The security levels used throughout this strategy are:
    - **High impact social media accounts** that could damage the company reputation.
    - **Sensitive IT Admins** with a significant privileges and impact, but are not enterprise-wide. This group typically includes administrators of individual high impact workloads. (for example, enterprise resource planning administrators, banking administrators, help desk /tech support roles, etc.)
 
-   Specialized Account security also serves as an interim step for privileged security, which further builds on these controls. See [privileged access roadmap](security-rapid-modernization-plan.md) for details on recommended order of progression.
+   Specialized account security also serves as an interim step for privileged security, which further builds on these controls. See [privileged access roadmap](security-rapid-modernization-plan.md) for details on recommended order of progression.
 
 ## Privileged
 

@@ -1,15 +1,12 @@
 ---
 title: Developing a privileged access strategy
 description: A good strategy is critical on your privileged access journey
-
 ms.service: security
-ms.subservice: 
+ms.subservice: privileged-access
 ms.topic: conceptual
 ms.date: 06/20/2024
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # Privileged access: Strategy

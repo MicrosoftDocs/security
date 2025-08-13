@@ -1,15 +1,12 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 5: Information Protection"
 description: "Learn how to protect sensitive information wherever it goes with automatic classification and persistent encryption across devices."
-
 ms.service: security
-
+ms.subservice: zero-trust
 ms.topic: tutorial
 ms.date: 06/05/2025
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # CISO Workshop Module 5: Information Protection (Published December 2019)

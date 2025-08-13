@@ -1,12 +1,10 @@
 ---
 title: Legacy privileged access guidance
 description: How privileged access workstations can help secure your organization
-
 ms.service: security
-ms.subservice:
+ms.subservice: privileged-access
 ms.topic: conceptual
 ms.date: 01/26/2024
-
 ms.author: kenwith
 author: kenwith
 

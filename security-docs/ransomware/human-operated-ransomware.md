@@ -3,8 +3,8 @@ title: "What is ransomware?"
 ms.author: kenwith
 author: kenwith
 manager: dougeby
-audience: Admin
-ms.service: microsoft-365-security
+ms.service: security
+ms.subservice: zero-trust
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cx-rw

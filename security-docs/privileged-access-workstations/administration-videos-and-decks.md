@@ -6,6 +6,7 @@ manager: dougeby
 audience: Admin
 ms.topic: article
 ms.service: security
+ms.subservice: privileged-access
 ms.localizationpriority: medium
 description: "Learn how to protect accounts with privileged access."
 ms.date: 11/06/2024

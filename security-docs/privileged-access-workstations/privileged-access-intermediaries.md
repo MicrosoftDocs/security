@@ -1,15 +1,12 @@
 ---
 title: Securing privileged access intermediaries
 description: Securing intermediaries is only one part of the privileged access story.
-
 ms.service: security
-ms.subservice: 
+ms.subservice: privileged-access
 ms.topic: conceptual
 ms.date: 12/15/2020
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # Privileged access: Intermediaries

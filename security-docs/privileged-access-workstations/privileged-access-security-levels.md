@@ -1,15 +1,12 @@
 ---
 title: Securing privileged access security levels
 description: Defining the security levels of a privileged access strategy
-
 ms.service: security
-ms.subservice: 
+ms.subservice: privileged-access
 ms.topic: conceptual
 ms.date: 12/15/2020
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # Privileged access security levels

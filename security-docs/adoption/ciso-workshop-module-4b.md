@@ -1,15 +1,12 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 4b: Threat Protection Strategy"
 description: This module reviews the evolution and trajectory of the Microsoft Security Operations Centers (SOC), powered by trillions of signals in the Microsoft Intelligent Security Graph.
-
 ms.service: security
-
+ms.subservice: zero-trust
 ms.topic: tutorial
 ms.date: 06/05/2025
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # CISO Workshop Module 4b: Threat Protection Strategy (Published December 2019)

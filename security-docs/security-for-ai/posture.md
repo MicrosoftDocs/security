@@ -4,6 +4,7 @@ description: How to approach AI security for apps and data with Microsoft AI sec
 ms.date: 04/01/2025
 ms.update-cycle: 180-days
 ms.service: security
+ms.subservice: security-for-ai
 author: BrendaCarter
 ms.author: bcarter
 ms.topic: concept-article

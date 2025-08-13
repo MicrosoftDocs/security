@@ -1,15 +1,12 @@
 ---
 title: Securing privileged access accounts
 description: Securing accounts is only one part of the privileged access story
-
 ms.service: security
-ms.subservice:
+ms.subservice: privileged-access
 ms.topic: conceptual
 ms.date: 01/20/2021
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # Privileged access: Accounts

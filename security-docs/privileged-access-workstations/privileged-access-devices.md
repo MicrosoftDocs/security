@@ -1,15 +1,12 @@
 ---
 title: Why are privileged access devices important
 description: Securing devices as part of the overall privileged access story
-
 ms.service: security
-ms.subservice: 
+ms.subservice: privileged-access
 ms.topic: conceptual
 ms.date: 12/15/2020
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: frasim
 ---
 # Securing devices as part of the privileged access story

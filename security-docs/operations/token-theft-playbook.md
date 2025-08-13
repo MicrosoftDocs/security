@@ -5,8 +5,8 @@ services: active-directory
 author: janicericketts
 manager: martinco
 ms.service: security
+ms.subservice: zero-trust
 ms.workload: identity
-ms.subservice: security-fundamentals
 ms.topic: conceptual
 ms.date: 07/28/2023
 ms.author: jricketts

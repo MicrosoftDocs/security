@@ -1,15 +1,12 @@
 ---
 title: Security Adoption Resources
 description: Guiding organizations through security program modernization with reference strategies built on Zero Trust principles.
-
 ms.service: security
-
+ms.subservice: zero-trust
 ms.topic: overview
 ms.date: 02/27/2025
-
 ms.author: kenwith
 author: kenwith
-
 ms.reviewer: mas
 ---
 # Security Adoption Resources

@@ -141,8 +141,6 @@ Continue with [Phase 2](protect-against-ransomware-phase2.md) to limit the scope
 
 Key information from Microsoft:
 
-- [2023 Microsoft Digital Defense Report](https://www.microsoft.com/en-us/security/security-insider/microsoft-digital-defense-report- 
-  2023) (see pages 17-26)
 - [Microsoft Blog - Ransomware](https://www.microsoft.com/security/blog/threat-intelligence/ransomware/), Latest threats - Ransomware
 - [Human-operated ransomware](human-operated-ransomware.md)
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)

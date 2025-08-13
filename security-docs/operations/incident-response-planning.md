@@ -9,7 +9,7 @@ ms.topic: article
 ms.collection: 
   - msftsolution-secops
 ms.service: security
-ms.subservice: zero-trusty
+ms.subservice: zero-trust
 ms.custom: cxdef-zt-ransomware
 ms.localizationpriority: medium
 ms.date: 11/06/2024

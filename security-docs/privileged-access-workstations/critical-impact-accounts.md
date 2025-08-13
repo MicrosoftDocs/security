@@ -191,7 +191,7 @@ security dependencies for critical impact accounts
     -   Native Microsoft Entra accounts -*Create Native Microsoft Entra accounts that are
         not synchronized with on-premises active directory
 
-    -   Synchronize from on-premises Active Directory (Not Recommended)- Leverage existing accounts hosted in the on premises active directory.
+    -   Synchronize from on-premises Active Directory (Not Recommended)- Leverage existing accounts hosted in the on-premises active directory.
 
 -   **Workstations** – Choose how you will manage and secure the workstations
     used by critical admin accounts:

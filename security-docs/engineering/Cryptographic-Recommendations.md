@@ -166,11 +166,11 @@ _Win32/64_
 
 _.NET_
 
-  - Use [RandomNumberGenerator](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.randomnumbergenerator).
+  - Use [RandomNumberGenerator](https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator).
 
 _PowerShell_
 
-  - Use [Get-SecureRandom (PowerShell)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-securerandom).
+  - Use [Get-SecureRandom (PowerShell)](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-securerandom).
 
 _Windows Store apps_
 
@@ -178,7 +178,7 @@ _Windows Store apps_
 
 _Not Recommended_
 
-  - Insecure functions related to random number generation include: [rand](https://msdn.microsoft.com/library/398ax69y.aspx), [System.Random (.NET)](https://msdn.microsoft.com/library/system.random.aspx), [GetTickCount](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx), [GetTickCount64](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx), and [Get-Random (PowerShell cmdlet)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-random).
+  - Insecure functions related to random number generation include: [rand](https://msdn.microsoft.com/library/398ax69y.aspx), [System.Random (.NET)](https://msdn.microsoft.com/library/system.random.aspx), [GetTickCount](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx), [GetTickCount64](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx), and [Get-Random (PowerShell cmdlet)](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-random).
 
   - Use of the dual elliptic curve random number generator ("DUAL_E\_DRBG") algorithm is not permitted.
 

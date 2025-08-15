@@ -10,7 +10,7 @@ ms.author: laramiller
 author: laramillermsft
 ms.reviewer: laramiller, raulga
 ---
-# Microsoft SDL Cryptographic Recommendations
+# Microsoft SDL cryptographic recommendations
 Use this information as a reference when designing products to use the same APIs, algorithms, protocols, and key lengths that Microsoft requires of its own products and services. Much of the content is based on Microsoft’s own internal security standards used to create the Security Development Lifecycle.
 
 Developers on non-Windows platforms might benefit from these recommendations. While the API and library names might be different, the best practices involving algorithm choice, key length, and data protection are similar across platforms.
@@ -38,7 +38,7 @@ For products using symmetric block ciphers:
 For symmetric block encryption algorithms, we recommend supporting 256-bit keys, 
 but allow down to 128-bits. The only block encryption algorithm recommended for new code is AES (AES-128, AES-192, and AES-256 are all acceptable, noting that AES-192 lacks optimization on some processors).
 
-_Cipher modes_
+#### Cipher modes
 
 Symmetric algorithms can operate in various modes, most of which link together the encryption operations on successive blocks of plaintext and ciphertext.
 
@@ -58,15 +58,15 @@ Some other cipher modes like those that follow have implementation pitfalls that
 
   - Counter (CTR)
 
-  - Anything else not on the preceeding "recommended" list above
+  - Anything else not on the preceding "recommended" list above
 
-_Initialization vectors (IV)_
+#### Initialization vectors (IV)
 
 All symmetric block ciphers should also be used with a cryptographically strong random number as an initialization vector. Initialization vectors should never be a constant or predicable value. See Random Number Generators for recommendations on generating cryptographically strong random numbers.
 
 Initialization vectors should never be reused when performing multiple encryption operations. Reuse can reveal information about the data being encrypted, particularly when using streaming cipher modes like Output Feedback (OFB) or Counter (CTR).
 
-### AES-GCM & AES-CCM recommendations
+### AES-GCM and AES-CCM recommendations
 AES-GCM (Galois/Counter Mode) and AES-CCM (Counter with CBC-MAC) are widely used authenticated encryption modes. They combine confidentiality and integrity protection, making them useful for secure communication. However, their fragility lies in nonce reuse. When the same nonce (initialization vector) is used twice, it can lead to catastrophic consequences.  
 
 We recommend following the nonce guidelines as described in [NIST SP 800-38D, Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf), taking special attention to sections 8.1, 8.2, and 8.3 regarding uniqueness requirements on the key and nonce/IV.
@@ -75,7 +75,8 @@ Another option would be to generate unique AES-GCM/CCM keys for every message be
 
 For encrypting data at rest, you can also consider using AES-CBC with a message authentication code (MAC) as an alternative using an Encrypt-then-MAC scheme, making sure you use separate keys for encryption and for the MAC.
 
-_Integrity verification_
+#### Integrity verification
+
 It's a common misconception that encryption by default provides both confidentiality and integrity assurance. Many encryption algorithms don't provide any integrity checking and might be vulnerable to tampering attacks. Extra steps must be taken to ensure the integrity of data before sending and after receiving.
  
 If you can't use an authenticated encryption algorithm with associated data (AEAD) such as AES-GCM, an alternative would be to validate the integrity with a message authentication code (MAC) using an Encrypt-then-MAC scheme, making sure you use separate keys for encryption and for the MAC.
@@ -83,7 +84,7 @@ If you can't use an authenticated encryption algorithm with associated data (AEA
 Using a separate key for encryption and for the MAC is essential. If it isn't possible to store the two keys, a valid alternative is to derive two keys from the main key using a suitable key derivation function (KDF), one for encryption purposes and one for MAC. For more information, see [SP 800-108 Rev. 1, Recommendation for Key Derivation Using Pseudorandom Functions | CSRC (nist.gov)]([https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf](https://csrc.nist.gov/pubs/sp/800/108/r1/upd1/final).
 
 ### Asymmetric algorithms, key lengths, and padding modes
-_RSA_
+#### RSA
 
   -	RSA can be used for key transport, key exchange, and signatures.
     
@@ -97,13 +98,13 @@ _RSA_
     
   -	A 2048-bit key length is the minimum, but we recommend supporting a 3072-bit key length.
 
-_ECDSA and ECDH_
+#### ECDSA and ECDH
 
   - ECDH-based key exchange and ECDSA-based signatures should use one of the three NIST-approved curves (P-256, P-384, or P521).
   
   -	Support for P-256 should be considered the minimum, but we recommend supporting P-384.
 
-_ML-DSA_
+#### ML-DSA
 
   - Must use the [FIPS 204 standard](https://csrc.nist.gov/pubs/fips/204/final). Do not use the versions in the draft standard.
     
@@ -111,21 +112,21 @@ _ML-DSA_
     
   - For ML-DSA, a valid hybrid (composite) mechanism is to sign the same data with both a classic and ML-DSA, and verify both (if either verification fails, the verification fails).
 
-_ML-KEM_
+#### ML-KEM
 
   - Must use the [FIPS 203 standard](https://csrc.nist.gov/pubs/fips/203/final). Do not use the versions in the draft standard.
     
   -	It is recommended using a combiner or hybrid cryptosystem combining ML-KEM and a classic KEM algorithm (i.e. ECDH). Using combiners defined by [IETF (draft)](https://aka.ms/ietf-lamps-pq-composite-kem) or other standards is preferred for interoperability.
 
-_SLH-DSA_
+#### SLH-DSA
 
   - Must use the [FIPS 205 standard](https://csrc.nist.gov/pubs/fips/205/final). Do not use the versions in the draft standard.
     
   -	All SLH-DSA parameter sets are allowed, but the recommended parameter set will depend on the use case.
     
-  - No known security difference between SHA-2 & SHAKE (SHA-3) versions
+  - No known security difference between SHA-2 and SHAKE (SHA-3) versions
 
-_LMS & XMSS_
+#### LMS and XMSS
 
   - It is safe to support LMS or XMSS for signature verification.
   
@@ -137,7 +138,7 @@ _Integer Diffie-Hellman_
   - Key length >= 2048 bits is recommended0
   - The group parameters should either be a well-known named group (for example, [RFC 7919](https://datatracker.ietf.org/doc/html/rfc7919)), or generated by a trusted party and authenticated before use.
 
-## Key Lifetimes
+## Key lifetimes
 
   - Define a [cryptoperiod](https://csrc.nist.gov/glossary/term/Cryptoperiod#:%7E:text=Cryptoperiod%20Definitions%3A%20The%20time%20span%20during%20which%20a,given%20system%20or%20application%20may%20remain%20in%20effect.) for all keys.
     
@@ -145,14 +146,14 @@ _Integer Diffie-Hellman_
       
   -	You should provide a mechanism or have a process for replacing keys to achieve the limited active lifetime. After the end of its active lifetime, a key must not be used to produce new data (for example, for encryption or signing), but might still be used to read data (for example, for decryption or verification).
 
-## Random Number Generators
+## Random number generators
 All products and services should use cryptographically secure random number generators when randomness is required.
 
-_CNG_
+#### CNG
  
  - Use BCryptGenRandom with the BCRYPT_USE_SYSTEM_PREFERRED_RNG flag.
 
-_Win32/64_
+#### Win32/64
 
   -	Legacy code can use [RtlGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa387694.aspx) in kernel mode.
     
@@ -164,19 +165,19 @@ _Win32/64_
     
   - Rand() must not be used for any cryptographic applications.
 
-_.NET_
+#### .NET
 
   - Use [RandomNumberGenerator](https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator).
 
-_PowerShell_
+#### PowerShell
 
   - Use [Get-SecureRandom (PowerShell)](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-securerandom).
 
-_Windows Store apps_
+#### Windows Store apps
 
   - Windows Store apps can use [CryptographicBuffer.GenerateRandom](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandom.aspx) or [CryptographicBuffer.GenerateRandomNumber](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandomnumber.aspx).
 
-_Not Recommended_
+#### Not Recommended
 
   - Insecure functions related to random number generation include: [rand](https://msdn.microsoft.com/library/398ax69y.aspx), [System.Random (.NET)](https://msdn.microsoft.com/library/system.random.aspx), [GetTickCount](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx), [GetTickCount64](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx), and [Get-Random (PowerShell cmdlet)](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-random).
 
@@ -193,7 +194,7 @@ Any usage decision regarding platform vs nonplatform crypto should be guided by 
     
   -	(Optional) The library should be capable of supporting older security protocols/algorithms for backwards compatibility only.
 
-_Native code_
+#### Native code
 
   -	Crypto Primitives: If your release is on Windows, use CNG if possible.
   
@@ -201,7 +202,7 @@ _Native code_
   
   -	Certificate Validation (as used in restricted certificate validation for code signing or TLS/DTLS): CAPI2 API; for example, [CertGetCertificateChain](https://msdn.microsoft.com/library/windows/desktop/aa376078(v=vs.85).aspx) and [CertVerifyCertificateChainPolicy](https://msdn.microsoft.com/library/windows/desktop/aa377163(v=vs.85).aspx).
 
-## Key Derivation Functions
+## Key derivation functions
 Key derivation is the process of deriving cryptographic key material from a shared secret or an existing cryptographic key. Products should use recommended key derivation functions. Deriving keys from user-chosen passwords, or hashing passwords for storage in an authentication system is a special case not covered by this guidance; developers should consult an expert.
 
 The following standards specify KDF functions recommended for use:

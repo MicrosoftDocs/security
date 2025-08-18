@@ -27,7 +27,7 @@ Products and services should use cryptographically secure versions of TLS/SSL:
   - TLS 1.1, TLS 1.0, SSL 3, and SSL 2 must be disabled
 
 ### Symmetric block ciphers, cipher modes, and initialization vectors
-_Block ciphers_
+#### Block ciphers
 
 For products using symmetric block ciphers:
 
@@ -132,7 +132,7 @@ Using a separate key for encryption and for the MAC is essential. If it isn't po
   
   - It is strongly recommended to consult with a subject matter expert before implementing/deploying infrastructure for signing and key generation. No weakness is known, but human-induced error is very possible and easy to make as it is critical to properly manage the state.
 
-_Integer Diffie-Hellman_
+#### Integer Diffie-Hellman
 
   - Although Integer Diffie-Hellman (DH) is approved for key exchange, it is not the most efficient by modern standards. It is strongly recommended to use ECDH instead.
   - Key length >= 2048 bits is recommended0
@@ -207,7 +207,7 @@ Key derivation is the process of deriving cryptographic key material from a shar
 
 The following standards specify KDF functions recommended for use:
 
-  - [NIST SP 800-108 (Revision 1)]https://csrc.nist.gov/pubs/sp/800/108/r1/upd1/final(): Recommendation For Key Derivation Using Pseudorandom Functions. In particular, the KDF in counter mode, with HMAC as a pseudorandom function
+  - [NIST SP 800-108 (Revision 1)](https://csrc.nist.gov/pubs/sp/800/108/r1/upd1/final): Recommendation For Key Derivation Using Pseudorandom Functions. In particular, the KDF in counter mode, with HMAC as a pseudorandom function
 
   - [NIST SP 800-56A (Revision 3)](https://csrc.nist.gov/pubs/sp/800/56/a/r3/final): Recommendation for Pair-Wise Key Establishment Schemes Using Discrete Logarithm Cryptography. 
 

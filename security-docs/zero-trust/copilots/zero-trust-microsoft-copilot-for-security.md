@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to Microsoft Security Copilot?
 description: How to apply Zero Trust principles to Microsoft Security Copilot. 
-ms.date: 02/06/2025
+ms.date: 08/22/2025
 ms.update-cycle: 180-days
 ms.service: security
 author: BrendaCarter
@@ -200,7 +200,7 @@ The permissions model for Security Copilot includes roles in both Microsoft Entr
 
 | Product | Roles | Description |
 | --- | --- | --- |
-| Microsoft Entra ID | Security Administrator <br><br> Global Administrator | These Microsoft Entra roles inherit the **Copilot owner** role in Security Copilot. Only use these privileged roles to onboard Security Copilot to your organization. |
+| Microsoft Entra ID / Microsoft Purview | [Microsoft Entra ID and Mirosoft Purview supported roles](/copilot/security/authentication#microsoft-entra-and-microsoft-purview-roles) | These Microsoft Entra and Microsoft Purview roles inherit the **Copilot owner** role in Security Copilot. Only use these privileged roles to onboard Security Copilot to your organization. |
 | Security Copilot | Copilot owner <br><br> Copilot contributor | These two roles include access to use Security Copilot. Most of your admin and SecOps staff can use the **Copilot contributor** role. <br><br> The **Copilot owner** role includes the ability to publish custom plugins and to manage settings that affect all of Security Copilot. |
 
 It’s important to know that, by default, *all users in the tenant are given Copilot contributor access*. With this configuration, access to your security tool data is governed by the permissions you configured for each of the security tools. An advantage of this configuration is that the embedded experiences of Security Copilot are immediately available to your admin and SecOps staff within the products they use daily. This works well if you’ve already adopted a strong practice of least privileged access within your organization. 

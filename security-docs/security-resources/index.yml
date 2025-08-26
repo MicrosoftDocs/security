@@ -10,13 +10,27 @@ metadata:
   ms.topic: landing-page
   ms.author: ralyon
   author: ttorble
-  ms.date: 07/23/2025
+  ms.date: 08/29/2025
   
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+  # Card 
+  - title: July top picks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Strengthen Cloud Security with Microsoft Defender for Cloud
+            url: https://events.microsoft.com/en-us/mvtd-security?language=English&clientTimeZone=1&startTime=08:00&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Strengthen%20Cloud%20Security%20with%20Microsoft%20Defender%20for%20Cloud
+          - text: Prepare security and compliance to support Microsoft 365 Copilot
+            url: /credentials/applied-skills/prepare-security-and-compliance-to-support-microsoft-365-copilot/?wt.mc_id=appliedskills_copilothub_webpage_wwl
+          - text: Unify your data and optimize your SOC
+            url: https://aka.ms/SentinelDataLakeBlog
+          - text: Microsoft Sentinel data lake demo
+            url: https://www.youtube.com/watch?v=4CUK-eJBNI0
+
   # Card 
   - title: June top picks
     linkLists:
@@ -30,20 +44,6 @@ landingContent:
             url: /training/paths/github-advanced-security/?wt.mc_id=securityhub_GHsecuirty1_webpage_cnl
           - text: Learn GitHub Advanced Security Part 2 of 2
             url: /training/paths/github-advanced-security-2?wt.mc_id=securityhub_GHsecurity2_webpage_cnl
-
-  # Card 
-  - title: May top picks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Implement and manage data privacy solutions for compliance
-            url: /training/modules/priva-understand-priva/?wt.mc_id=securityhub_mspriva_webpage_SCI
-          - text: Security for AI
-            url: /security/security-for-ai/?wt.mc_id=securityhub_securityAI_webpage_cnl
-          - text: GitHub Advanced Security Part 1 of 2
-            url: /training/paths/github-advanced-security/?wt.mc_id=securityhub_GHsecuirty1_webpage_cnl
-          - text: Implement access management for apps
-            url: /training/paths/implement-access-management-for-apps/?
 
  # Card
  # - title: Discover more

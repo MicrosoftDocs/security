@@ -45,7 +45,7 @@ sections:
           componentType: link
           url: /copilot/security/
           text: Get started
-      - avatarUrl: /security/media/hubpage/event-icon.png 
+      - avatarUrl: /security/media/hubpage/calendar-event-icon.png 
         componentType: testimonial-card
         name: Join us November 17-21 at Microsoft Ignite
         role: Event

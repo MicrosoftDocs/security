@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # August 2025 Microsoft Trusted Root Program deployment notice
 
-On Thursday, August 27, 2025, Microsoft released an update to the Microsoft Trusted Root Certificate Program. Note that the NotBefore date is set to September 15, 2025. This means only certificates issued after this date will be distrusted.
+On Thursday, August 27, 2025, Microsoft released an update to the Microsoft Trusted Root Certificate Program. The NotBefore date is set to September 15, 2025. This means only certificates issued after this date will be distrusted.
 
 This release will fully NotBefore the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
 - Certicámara		\ 	AC Raíz Certicámara S.A. 	\ 	5463283B6793FF55277CEDE39098E80422F912F7

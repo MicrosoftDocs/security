@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 07/23/2025
+  ms.date: 08/29/2025
   ms.collection: # na
   brand: azure
 sections:
@@ -27,33 +27,33 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/hubpage/generic-badge.svg 
-        componentType: testimonial-card
-        name: Strengthen Cloud Security with Microsoft Defender for Cloud
-        role: Virtual Training Day
-        feedback: "The new Microsoft Virtual Training Day is available. Learn how to apply strong, unified security measures across your cloud apps."
-        link:
-          componentType: link
-          url: https://events.microsoft.com/en-us/mvtd-security?language=English&clientTimeZone=1&startTime=08:00&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Strengthen%20Cloud%20Security%20with%20Microsoft%20Defender%20for%20Cloud
-          text: Register now
       - avatarUrl: /security/media/hubpage/applied-skills.png
         componentType: testimonial-card
-        name: Prepare security and compliance to support Microsoft 365 Copilot
-        role: Credentials
-        feedback: Demonstrate your ability to set up Microsoft 365 security and compliance to support Microsoft Copilot for Microsoft 365.
+        name: Get started with identities and access using Microsoft Entra
+        role: Applied Skills
+        feedback: Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra.
         link:
           componentType: link
-          url: /credentials/applied-skills/prepare-security-and-compliance-to-support-microsoft-365-copilot/?wt.mc_id=appliedskills_copilothub_webpage_wwl
+          url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
           text: Validate your skills
-      - avatarUrl: /security/media/hubpage/blog-icon.png
+      - avatarUrl: /security/media/hubpage/document-icon.png 
         componentType: testimonial-card
-        name: Unify your data and optimize your SOC
-        role: Blog
-        feedback: Announcing expanded capabilities in our SIEM solution, Microsoft Sentinel, including a unified data lake and dynamic threat intelligence—now in preview.
+        name: Stay safe with Microsoft Security Copilot
+        role: Documentation
+        feedback: Use Security Copilot to bring the full power of OpenAI architecture to defend your organization at machine speed and scale.
         link:
           componentType: link
-          url: https://aka.ms/SentinelDataLakeBlog
-          text: Learn more
+          url: /copilot/security/
+          text: Get started
+      - avatarUrl: /security/media/hubpage/calendar-event-icon.png 
+        componentType: testimonial-card
+        name: Join us November 17-21 at Microsoft Ignite
+        role: Event
+        feedback: Get the security advantage you need to thrive in the era of AI. Explore our AI-first, end-to-end security platform, attend hands-on labs, get certified, connect with peers, and chat with industry experts.
+        link:
+          componentType: link
+          url: https://aka.ms/MSIgnite_WebEX_Security2
+          text: Register now
       - avatarUrl: /security/media/hubpage/video-icon.png
         componentType: testimonial-card
         name: Microsoft Sentinel data lake demo

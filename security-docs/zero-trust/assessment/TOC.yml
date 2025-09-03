@@ -29,3 +29,5 @@
   items:
   - name: Microsoft Graph
     href: get-started.md
+  - name: Assessment check rubric
+    href: reference-zero-trust-assessment-rubric.md

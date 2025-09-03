@@ -1,5 +1,5 @@
 ---
-title: Get started with the Zero Trust Assessment?
+title: Plan for and run the Zero Trust Assessment
 description: DESCRIPTION
 
 ms.service: security
@@ -12,6 +12,6 @@ author: MicrosoftGuyJFlo
 manager: dougeby
 ms.reviewer: 
 ---
-# Get started with the Zero Trust Assessment?
+# Plan for and run the Zero Trust Assessment
 
 It's a thing we are building.

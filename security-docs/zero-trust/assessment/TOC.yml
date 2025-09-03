@@ -1,4 +1,14 @@
 - name: Zero Trust assessment documentation
   href: index.yml
 - name: Overview
-  items: overview.md
+  items: 
+  - name: What is the Zero Trust assessment?
+    href: overview.md
+- name: Concepts
+  items:
+  - name: Get started with the Zero Trust assessment
+    href: 
+- name: Reference
+  items:
+  - name: 
+    href: 

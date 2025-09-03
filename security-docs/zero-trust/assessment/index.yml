@@ -1,11 +1,12 @@
 ### YamlMime:Landing
 
 title: Zero Trust assessment documentation
-summary: 
+summary: DESCRIPTION
 
 metadata:
   title: Zero Trust assessment documentation
-  description: 
+  description: DESCRIPTION
+  ms.service: security
   ms.subservice: zero-trust
   ms.topic: landing-page
   author: MicrosoftGuyJFlo

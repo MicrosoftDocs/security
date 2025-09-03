@@ -1,9 +1,9 @@
 ---
 title: What is the Zero Trust Assessment?
-description: 
+description: DESCRIPTION
 
-ms.service: entra-id
-ms.subservice: conditional-access
+ms.service: security
+ms.subservice: zero-trust
 ms.topic: overview
 ms.date: 07/01/2025
 
@@ -13,3 +13,5 @@ manager: dougeby
 ms.reviewer: kvenkit
 ---
 # What is the Zero Trust Assessment?
+
+It's a thing we are building.

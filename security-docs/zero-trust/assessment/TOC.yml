@@ -14,7 +14,7 @@
     expanded: true
     items: 
      - name: Identity
-       href: get-started.md
+       href: /entra/fundamentals/configure-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
      - name: Devices
        href: get-started.md
      - name: Apps

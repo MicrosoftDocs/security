@@ -7,8 +7,22 @@
 - name: Concepts
   items:
   - name: Get started with the Zero Trust assessment
-    href: 
+    href: get-started.md
+  - name: Zero Trust pillars
+    items: 
+     - name: Identity
+       href: get-started.md
+     - name: Devices
+       href: get-started.md
+     - name: Apps
+       href: get-started.md
+     - name: Network
+       href: get-started.md
+     - name: Infrastructure
+       href: get-started.md
+     - name: Data
+       href: get-started.md
 - name: Reference
   items:
-  - name: 
-    href: 
+  - name: Microsoft Graph
+    href: get-started.md

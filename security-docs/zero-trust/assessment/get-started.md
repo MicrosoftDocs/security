@@ -7,8 +7,8 @@ ms.subservice: zero-trust
 ms.topic: overview
 ms.date: 07/01/2025
 
-ms.author: joflore
-author: MicrosoftGuyJFlo
+author: HULKsmashGithub
+ms.author: jayrusso
 manager: dougeby
 ms.reviewer: 
 ---

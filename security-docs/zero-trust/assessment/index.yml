@@ -28,7 +28,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Get started
-            url: get-started
+            url: get-started.md
 
   # Card
   - title: Deploy the Zero Trust assessment
@@ -44,6 +44,6 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Identity
-            url:
+            url: get-started.md
           - text: Devices
-            url: 
+            url: get-started.md

@@ -1,0 +1,48 @@
+### YamlMime:Landing
+
+title: Zero Trust assessment documentation
+summary: 
+
+metadata:
+  title: Zero Trust assessment documentation
+  description: 
+  ms.subservice: zero-trust
+  ms.topic: landing-page
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
+  ms.date: 09/03/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: About the Zero Trust assessment
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is the Zero Trust assessment?
+            url: overview.md
+      - linkListType: concept
+        links:
+          - text: 
+            url: 
+
+  # Card
+  - title: Deploy the Zero Trust assessment
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Plan a Zero Trust assessment deployment
+            url: plan-zero-trust-assessment.md
+
+  # Card
+  - title: Zero Trust assessment pillars
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Identity
+            url:
+          - text: Devices
+            url: 

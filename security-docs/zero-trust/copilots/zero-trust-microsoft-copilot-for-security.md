@@ -188,7 +188,7 @@ When configuring these policies for your admin and SecOps staff, create a separa
 
 ### Include security tools in the scope of Conditional Access policies
 
-For now, there's not an easy way to configure Conditional Access for Security Copilot. However, because on-behalf-of authentication is used to access data within security tools, be sure you have configured Conditional Access for these tools, which can include Microsoft Entra ID, Microsoft Intune, Microsoft Purview, and Microsoft Defender XDR. 
+For now, there's not an easy way to configure Conditional Access for Security Copilot. However, because on-behalf-of authentication is used to access data within security tools, be sure you have configured Conditional Access for these tools, which can include Microsoft Entra ID, Microsoft Intune, Microsoft Purview, and Microsoft Defender XDR, and Microsoft Defender Threat Intelligence. 
 
 Note that for Microsoft Defender for Cloud and Azure Firewall, the conditional access policy is applied to the Azure management portal and API. Consequently, any services or clients that depend on the Azure API can be indirectly affected. For more information, see [Conditional Access: Targeting resources](/entra/identity/conditional-access/concept-conditional-access-cloud-apps#windows-azure-service-management-api).
 

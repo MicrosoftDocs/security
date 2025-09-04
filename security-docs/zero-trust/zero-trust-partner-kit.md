@@ -65,7 +65,7 @@ With both of these icon sets, you can download just the SVG files (scalable vect
 To help you get started with these resources, your friendly Zero Trust team at Microsoft provides a tutorial: Draw like and architect quick start. This download includes both a PDF file and the editable Visio file.
 
 > [!div class="button"]
-> [Download Draw like an architect quick start](www.microsoft.com/en-us/download/details.aspx?id=108351)
+> [Download Draw like an architect quick start](https://www.microsoft.com/en-us/download/details.aspx?id=108351)
 
 
 ### Zero Trust architecture illustrations

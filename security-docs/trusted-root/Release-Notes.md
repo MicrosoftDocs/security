@@ -29,6 +29,7 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 | May | May 28 | [Deployment Notice for May 2025](2025/may-2025.md) |
 | June | June 26 | [Deployment Notice for June 2025](2025/june-2025.md) |
 | August | August 28 | [Deployment Notice for August 2025](2025/august-2025.md) |
+| September | September 4 | [Deployment Notice for September 2025](2025/september-2025.md) |
 
 ## 2024
 

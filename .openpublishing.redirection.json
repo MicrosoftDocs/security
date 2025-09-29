@@ -46,6 +46,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "security-docs/zero-trust/index-with-videos.md",
+      "redirect_url": "/security/zero-trust/zero-trust-overview",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "security-docs/zero-trust/develop/integrate-apps-with-azure-ad-microsoft-identity-platform.md",
       "redirect_url": "/security/zero-trust/develop/integrate-apps-microsoft-identity-platform",
       "redirect_document_id": true

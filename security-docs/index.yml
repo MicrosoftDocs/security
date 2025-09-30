@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 08/29/2025
+  ms.date: 09/30/2025
   ms.collection: # na
   brand: azure
 sections:
@@ -18,7 +18,7 @@ sections:
     supertitle: Microsoft Learn
     title: Microsoft Security 
   # size: small
-    summary: "Empower your organization with AI-driven cybersecurity. Microsoft’s integrated security solutions built on Zero Trust principles help you stay ahead of evolving risks. Learn how to predict and protect against threats with Microsoft Defender and Microsoft Sentinel, protect workloads and AI with Microsoft Defender for Cloud. Secure AI with Microsoft Security Copilot, Microsoft Entra, and Microsoft Purview. Explore our curated resources on the Security hub." 
+    summary: "Empower your organization with AI-driven cybersecurity. Microsoft's integrated security solutions built on Zero Trust principles help you stay ahead of evolving risks. Learn how to predict and protect against threats with Microsoft Defender and Microsoft Sentinel, protect workloads and AI with Microsoft Defender for Cloud. Secure AI with Microsoft Security Copilot, Microsoft Entra, and Microsoft Purview. Explore our curated resources on the Security hub." 
     heroImage:
      componentType: hero-image
      lightImageSrc: /security/media/security-hub/hero-security-hub.png
@@ -54,16 +54,15 @@ sections:
           componentType: link
           url: https://aka.ms/MSIgnite_WebEX_Security2
           text: Register now
-      - avatarUrl: /security/media/hubpage/video-icon.png
+      - avatarUrl: /security/media/hubpage/announcement-icon.png
         componentType: testimonial-card
-        name: Microsoft Sentinel data lake demo
-        role: Video
-        feedback: Watch the new Sentinel data lake in action and learn to uncover long-running threats, streamline investigations, and automate defenses within a unified, AI-powered SIEM experience.
+        name: "Microsoft Sentinel: the security platform for the era of agentic AI"
+        role: News announcement
+        feedback: Bringing together data, context, automation, and intelligent agents to enable defenders to protect AI end-to-end.
         link:
           componentType: link
-          url: https://www.youtube.com/watch?v=4CUK-eJBNI0
-          text: Watch now
-
+          url: https://aka.ms/Sept30SecureBlog
+          text: Learn more
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
@@ -222,8 +221,8 @@ sections:
 
 # Modern cybersecurity
   - componentType: grid
-    title: Plan and implement modern cybersecurity
-    summary:  Access technical documentation and learn to use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
+    title: Access Secure Cloud & AI adoption resources
+    summary:  Explore strategic guidance for Zero Trust, AI security frameworks, curated learning paths, and Microsoft's cloud reference architecture—all essential for building secure, scalable, and intelligent solutions.
     blocks:     
       - componentType: summary-card
         title: Zero Trust adoption framework 

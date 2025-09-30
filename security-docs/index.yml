@@ -54,7 +54,7 @@ sections:
           componentType: link
           url: https://aka.ms/MSIgnite_WebEX_Security2
           text: Register now
-      - avatarUrl: /security/media/hubpage/announcement-icon.png
+      - avatarUrl: /security/media/hubpage/whats-new.svg
         componentType: testimonial-card
         name: "Microsoft Sentinel: the security platform for the era of agentic AI"
         role: News announcement
@@ -221,7 +221,7 @@ sections:
 
 # Modern cybersecurity
   - componentType: grid
-    title: Access Secure Cloud & AI adoption resources
+    title: Access secure Cloud & AI adoption resources
     summary:  Explore strategic guidance for Zero Trust, AI security frameworks, curated learning paths, and Microsoft's cloud reference architecture—all essential for building secure, scalable, and intelligent solutions.
     blocks:     
       - componentType: summary-card

@@ -38,12 +38,12 @@ sections:
           text: Validate your skills
       - avatarUrl: /security/media/hubpage/document-icon.png 
         componentType: testimonial-card
-        name: Stay safe with Microsoft Security Copilot
+        name: Microsoft Security Copilot for Developers
         role: Documentation
-        feedback: Use Security Copilot to bring the full power of OpenAI architecture to defend your organization at machine speed and scale.
+        feedback: Learn to create, publish, and test agents in Security Copilot using natural language, agent builder forms, YAMLs, and MCPs. Designed for developers to streamline security workflows.
         link:
           componentType: link
-          url: /copilot/security/
+          url: /copilot/security/developer/
           text: Get started
       - avatarUrl: /security/media/hubpage/calendar-event-icon.png 
         componentType: testimonial-card

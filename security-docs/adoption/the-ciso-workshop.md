@@ -4,7 +4,7 @@ description: "The Chief Information Security Office (CISO) workshop helps accele
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: conceptual
-ms.date: 02/27/2025
+ms.date: 09/29/2025
 ms.author: kenwith
 author: kenwith
 ms.reviewer: mas
@@ -63,9 +63,6 @@ The workshop videos (about 4 hours total) and [slides](https://arch-center.azure
 
 > [!NOTE]
 > The Architecture Design Session modules discussed in the video aren't yet published
-
-> [!NOTE]
-> The previous version of the CISO workshop is archived and available [here](ciso-workshop.md) 
 
 ## Next steps
 

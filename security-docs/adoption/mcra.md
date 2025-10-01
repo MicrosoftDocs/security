@@ -70,5 +70,4 @@ Organizations find this architecture useful because it covers capabilities acros
 
 - [Download the updated April 2025 version of the MCRA](https://download.microsoft.com/download/956f9359-e6d5-4e77-a36c-117f94620eb3/MCRA-April-2025.pptx)
 - [Watch a prerecorded version of this guidance on YouTube](https://youtu.be/6iYxNm3TOiI?si=jOU3TScxup7pWDj0).
-- [Download the December 2023 version of the MCRA](https://github.com/MicrosoftDocs/security/blob/main/Downloads/mcra-december-2023.pptx?raw=true)
 - Continue your journey as part of the [Security Adoption Framework](/security/ciso-workshop/adoption).

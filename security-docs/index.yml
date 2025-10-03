@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 08/29/2025
+  ms.date: 09/30/2025
   ms.collection: # na
   brand: azure
 sections:
@@ -16,9 +16,9 @@ sections:
   # Hero with background image - default transform
   - componentType: hero-learn
     supertitle: Microsoft Learn
-    title: Security hub 
+    title: Microsoft Security 
   # size: small
-    summary: "The Security hub on Microsoft Learn offers technical guidance and resources for planning and implementing modern cybersecurity strategy, architecture, processes, and technology for aspiring, new, and experienced cybersecurity professionals. You can also find resources and training offerings for building foundational and advanced cybersecurity skills and for earning Microsoft Credentials. Microsoft Learn provides guidance to help you tackle security challenges while preparing for a competitive future." 
+    summary: "Empower your organization with AI-driven cybersecurity. Microsoft's integrated security solutions built on Zero Trust principles help you stay ahead of evolving risks. Learn how to predict and protect against threats with Microsoft Defender and Microsoft Sentinel, protect workloads and AI with Microsoft Defender for Cloud. Secure AI with Microsoft Security Copilot, Microsoft Entra, and Microsoft Purview. Explore our curated resources on the Security hub." 
     heroImage:
      componentType: hero-image
      lightImageSrc: /security/media/security-hub/hero-security-hub.png
@@ -38,12 +38,12 @@ sections:
           text: Validate your skills
       - avatarUrl: /security/media/hubpage/document-icon.png 
         componentType: testimonial-card
-        name: Stay safe with Microsoft Security Copilot
+        name: Microsoft Security Copilot for Developers
         role: Documentation
-        feedback: Use Security Copilot to bring the full power of OpenAI architecture to defend your organization at machine speed and scale.
+        feedback: Learn to create, publish, and test agents in Security Copilot using natural language, agent builder forms, YAMLs, and MCPs. Designed for developers to streamline security workflows.
         link:
           componentType: link
-          url: /copilot/security/
+          url: /copilot/security/developer/
           text: Get started
       - avatarUrl: /security/media/hubpage/calendar-event-icon.png 
         componentType: testimonial-card
@@ -54,34 +54,33 @@ sections:
           componentType: link
           url: https://aka.ms/MSIgnite_WebEX_Security2
           text: Register now
-      - avatarUrl: /security/media/hubpage/video-icon.png
+      - avatarUrl: /security/media/hubpage/whats-new.svg
         componentType: testimonial-card
-        name: Microsoft Sentinel data lake demo
-        role: Video
-        feedback: Watch the new Sentinel data lake in action and learn to uncover long-running threats, streamline investigations, and automate defenses within a unified, AI-powered SIEM experience.
+        name: "Microsoft Sentinel: the security platform for the era of agentic AI"
+        role: News announcement
+        feedback: Bringing together data, context, automation, and intelligent agents to enable defenders to protect AI end-to-end.
         link:
           componentType: link
-          url: https://www.youtube.com/watch?v=4CUK-eJBNI0
-          text: Watch now
-
+          url: https://aka.ms/AAy5gzy
+          text: Learn more
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
 # Microsoft Security product documentation 
   - componentType: grid
     title: Microsoft Security product documentation
-    summary: Explore Microsoft Security product documentation and learn how you can keep your organization resilient and agile.
+    summary: Explore Microsoft Security product documentation and learn how you can keep your organization resilient and agile in the age of AI.
     blocks:
       - componentType: icon-card
         title: Microsoft Entra
-        summary: Learn more about the Microsoft Entra family of multicloud identity and network access solutions.
+        summary: Learn about the AI-enabled Microsoft Entra's family of multicloud identity and network access solutions.
         url: /entra/
         icon:
           componentType: image
           src: /security/media/security-hub/microsoft-entra.png
       - componentType: icon-card
         title: Microsoft Defender
-        summary: Explore the Microsoft Defender products and services available for your business or organization.
+        summary: Mitigate threats and protect workloads including cloud, AI, and apps across environments.
         url: /defender/
         icon:
           componentType: image
@@ -96,14 +95,14 @@ sections:
 #          src: /security/media/security-hub/microsoft-defender-for-cloud.png
       - componentType: icon-card
         title: Microsoft Purview
-        summary: Unlock the power of data governance, security, and compliance with the dynamic portfolio of solutions from Microsoft Purview.
+        summary: Secure your Microsoft 365 and AI data with the dynamic portfolio of solutions from Microsoft Purview.
         url: /purview/
         icon:
           componentType: image
           src: /security/media/security-hub/microsoft-purview.png
       - componentType: icon-card
         title: Microsoft Sentinel
-        summary: Detect attacks, gain threat visibility, proactively hunt, and respond to threats with Microsoft Sentinel to stop them before they cause harm.
+        summary: Detect attacks, gain threat visibility, proactively hunt, and respond to threats with the power of AI and stop them before they cause harm.
         url: /azure/sentinel/
         icon:
           componentType: image
@@ -222,33 +221,29 @@ sections:
 
 # Modern cybersecurity
   - componentType: grid
-    title: Plan and implement modern cybersecurity
-    summary:  Access technical documentation and learn to use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
+    title: Access secure Cloud & AI adoption resources
+    summary:  Explore strategic guidance for Zero Trust, AI security frameworks, curated learning paths, and Microsoft's cloud reference architecture—all essential for building secure, scalable, and intelligent solutions.
     blocks:     
       - componentType: summary-card
         title: Zero Trust adoption framework 
         summary: Learn about the Zero Trust security model and follow Microsoft's adoption methodology to rapidly modernize your security posture, secure remote and hybrid work, protect sensitive data, and prevent or reduce business damage from a breach. 
         url: /security/zero-trust/adopt/zero-trust-adoption-overview?view=o365-worldwide
       - componentType: summary-card
-        title: Zero Trust assessment and progress tracking 
-        summary: Use pre-built trackers and assessment tools for implementing end-to-end security. Customize these for your organization. Track based on business scenarios or by pillar (identity, devices, apps, and data).    
-        url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources?view=o365-worldwide
+        title: Security for AI 
+        summary: Build a security posture for AI, including discovering, protecting, and governing your AI apps and data. 
+        url: /security/security-for-ai/?wt.mc_id=securityhub_securityAI_webpage_cnl
 #      - componentType: summary-card
-#        title: Security in the Microsoft Cloud Adoption Framework 
-#        summary: Use the Secure methodology provided in the Cloud Adoption Framework to secure each phase of your organization's adoption journey to cloud workloads in Azure.    
-#        url: /azure/cloud-adoption-framework/secure/
-#      - componentType: summary-card
-#        title: Security guidance quick links 
-#        summary: Use security guidance in the Well-Architected Framework while building new apps and workloads in Azure (or to modernize existing Azure workloads). Security is balanced with reliability, performance, costs, and other concerns.     
-#        url: /azure/well-architected/security/
+#        title: Zero Trust assessment and progress tracking 
+#        summary: Use pre-built trackers and assessment tools for implementing end-to-end security. Customize these for your organization. Track based on business scenarios or by pillar (identity, devices, apps, and data).    
+#        url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources?view=o365-worldwide
       - componentType: summary-card
-        title: Introduction to Azure security 
-        summary: Learn about security services on Azure and best practices for identity, networking, data, applications, and monitoring.     
-        url: /azure/security/fundamentals/overview
+        title: Learn security by role 
+        summary: Stay ahead of cyberthreats and help safeguard your organization's digital assets with our specialized plans that cover Microsoft Security.     
+        url: /training/plans-on-microsoft-learn
 #      - componentType: summary-card
-#        title: Security adoption resources 
-#        summary: Learn about security strategy, attack types, and Zero Trust principles through workshop decks the Microsoft Customer Success Unit refer to as a Security Adoption Framework. Explore how Microsoft security capabilities map to high-level architecture.  
-#        url: /security/adoption/adoption
+#        title: Introduction to Azure security 
+#        summary: Learn about security services on Azure and best practices for identity, networking, data, applications, and monitoring.     
+#        url: /azure/security/fundamentals/overview
       - componentType: summary-card
         title: Work with Microsoft Cybersecurity Reference Architectures
         summary: Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms. 

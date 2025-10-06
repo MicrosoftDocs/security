@@ -374,6 +374,11 @@
                 href: sfi/remove-legacy-systems-that-risk-security.md
               - name: Higher security for Entra ID apps
                 href: sfi/higher-security-entra-id-apps.md
+         - name: Protect networks
+           expand: false
+           items:                 
+              - name: Network isolation
+                href: sfi/network-isolation.md 
          - name: Protect engineering systems
            expand: false
            items:                 

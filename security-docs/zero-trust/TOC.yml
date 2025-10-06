@@ -374,6 +374,11 @@
                 href: sfi/remove-legacy-systems-that-risk-security.md
               - name: Secure all tenants and their resources
                 href: sfi/secure-all-tenants-resources.md
+         - name: Protect networks
+           expand: false
+           items:                 
+              - name: Network isolation
+                href: sfi/network-isolation.md 
          - name: Protect engineering systems
            expand: false
            items:                 

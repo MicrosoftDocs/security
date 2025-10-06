@@ -1,5 +1,5 @@
 ---
-title: Zero Trust for source code access
+title: Zero Trust for source code access (Secure Future Initiative) – Zero Trust 
 description: Secure all tenants and their resources is part of the Protect engineering systems pillar of the Secure Future Initiative (SFI), which focuses on reducing attack surface and lateral movement risk by enforcing strict tenant governance, modernizing platform dependencies, and isolating production access. It emphasizes Zero Trust by default, ensuring that every tenant, system, and user operates under minimum necessary access and hardened boundaries. 
 ms.date: 10/03/2025
 ms.service: security
@@ -18,6 +18,8 @@ ms.collection:
 **Pillar name: Protect engineering systems**<br />
 **Pattern name: Zero Trust for source code access**
 
+Microsoft adopted a Zero Trust approach to protect its source code, requiring identity-verified checks for all code changes. Key measures include multi-factor authentication for pull requests and strict protections for production branches, reducing the risk of unauthorized merges.
+
 ## Context and problem
 Source code is one of the most valuable assets in any organization. At Microsoft, tens of thousands of repositories and millions of lines of code underpin the services and products used by billions worldwide. This makes source code a high-value target for adversaries, who can exploit unauthorized access to inject malicious changes, steal intellectual property, or undermine customer trust.
 
@@ -31,7 +33,7 @@ Microsoft's approach applies Zero Trust principles directly to engineering syste
 
 **Key elements include:**
 
-- **Proof of Presence for Pull Requests (PoP PR):** Introduced in 2024 and rolled out across 61,000 repositories, PoP PR ensures every pull request to a protected branch is authenticated by a real, verified individual using fresh multi-factor authentication (MFA).  
+- **Proof of Presence for Pull Requests (PoP PR):** Introduced in 2024 and rolled out across 61,000 repositories, PoP PR ensures every pull request to a protected branch is authenticated by a real, verified individual using fresh multifactor authentication (MFA).  
 - **Tiered authentication methods:** Depending on project sensitivity, engineers use software authenticators (Windows Hello, Face ID), hardware tokens (FIDO2 YubiKeys), or production identities tied to Secure Access Workstations (SAWs).  
 - **Branch classification and enforcement:** Production branches (`main`, `master`, `default`) are automatically tagged and protected, ensuring uniform enforcement across the enterprise.  
 - **Exception governance:** Limited, reviewed, and auditable exemptions (e.g., for automation) are tracked in a software asset management system with executive sign-off.  
@@ -54,7 +56,7 @@ Organizations can adopt a similar pattern using the following actionable practic
 ## Benefits 
 - **Stronger supply chain resilience:** Prevents unauthorized or automated changes to production code.  
 - **Improved accountability:** Every change is traceable to a verified individual with auditable logs.  
-- **Scalable protection:** Integration into a standardized, shared set of tools and rules that provides protections for over 100,000 engineers with minimal disruption.  
+- **Scalable protection:** Integration into a standardized, shared set of tools and rules that provide protections for over 100,000 engineers with minimal disruption.  
 
 ## Trade-offs 
 - **Developer friction:** Fresh MFA at merge points can add time and perceived inconvenience.  

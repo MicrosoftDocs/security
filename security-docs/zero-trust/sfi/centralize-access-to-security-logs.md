@@ -54,9 +54,9 @@ Organizations can adopt a similar pattern using the following actionable practic
 
 ## Benefits 
 
-* **Improved visibility:** Provides defenders with a unified view of activity across identities, infrastructure, applications and endpoint devices.
+* **Improved visibility:** Provides security teams with a unified view of activity across identities, infrastructure, applications and endpoint devices.
 * **Faster investigations:** Investigators can correlate events across services without manual searches or format conversion.
-* **Forensic readiness:** Extended retention ensures defenders can analyze long-term attack campaigns.
+* **Forensic readiness:** Extended retention ensures security teams can analyze long-term attack campaigns.
 * **Proactive detection:** AI-driven analytics surface emerging attack patterns earlier.
 * **Regulatory alignment:** Supports compliance with standards requiring centralized, retained audit evidence.
 
@@ -81,6 +81,6 @@ To track success, measure the following: 
 Centralizing access to security logs transforms fragmented monitoring data into actionable intelligence. By standardizing log formats, consolidating collection, extending retention, and applying AI-driven analytics,
 Microsoft has improved both the speed and effectiveness of its threat detection and investigation.
 
-Organizations can adopt this approach by ensuring consistent log formats, enforcing central storage and immutability, extending retention for forensic readiness, and integrating logs with advanced analytics platforms. These steps enable defenders to monitor and detect threats with clarity and precision---turning logs from scattered records into a powerful, unified security capability.
+Organizations can adopt this approach by ensuring consistent log formats, enforcing central storage and immutability, extending retention for forensic readiness, and integrating logs with advanced analytics platforms. These steps enable security teams to monitor and detect threats with clarity and precision---turning logs from scattered records into a powerful, unified security capability.
 
 **Centralize your security logs today to reduce blind spots, accelerate investigations, and stay ahead of evolving threats.**

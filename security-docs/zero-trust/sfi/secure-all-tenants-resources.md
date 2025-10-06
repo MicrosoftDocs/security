@@ -18,6 +18,8 @@ ms.collection:
 **Pillar name: Protect tenants and isolate production systems**<br />
 **Pattern name: Secure all tenants and their resources**
 
+To reduce the security risks of untracked tenants and lack of visbility, Microsoft has implemented the Secure all tenants and their resources pattern. This ensures comprehensive governance and security across all tenants, aligning with Zero Trust principles.
+
 ## Context and problem
 
 The first step in tenant security is discovery. Without a complete inventory, security and governance cannot succeed. Many organizations lack visibility into active, legacy, and shadow tenants, leaving untracked environments vulnerable to exploitation.
@@ -33,18 +35,18 @@ Microsoft has invested heavily in identifying and cataloging all tenants across 
 
 As part of the Secure Future Initiative (SFI), Microsoft implemented the secure all tenants and their resources objective by enforcing tenant baselines, governing lifecycle management, and standardizing protections across its cloud environments.
 
-* **Standardized security logging library**: Ensures consistent data capture across services, reducing telemetry gaps.
+* **Standardized security logging library**: Ensures consistent data capture across services, reducing observability gaps.
 * **Centralized log collection**: Specialized investigator accounts provide unified access to cross-service logs, simplifying correlation and speeding up investigations.
 * **Extended log retention**: Audit logs retained for up to two years across Microsoft services, to enable forensic investigation of long-term attack patterns.
 * **Advanced detection analytics**: Integration of machine learning and AI-powered models improves detection of complex attack techniques and reduces false positives.
-* **Expanded customer logging**: Microsoft increased standard audit log retention for Microsoft 365 customers to 180 days at no cost, with options for longer retention.
+* **Expanded customer logging**: Microsoft increased standard audit log retention for Microsoft 365 customers to 180 days, with options for longer retention.
 
 Microsoft's approach includes:
 * **Security baselines**: Preconfigured tenant security templates to ensure consistency and accelerate hardening.
 * **Tenant classification and lifecycle governance**: Categorizing tenants by purpose (production, productivity, auxiliary, ephemeral) and applying default controls accordingly. 
 * **Conditional Access enforcement**: Governing authentication and authorization at scale, including ephemeral tenants and unmanaged accounts.
 * **Secure Admin Workstations (SAWs)**: Hardware-isolated devices separating privileged from productivity access.
-* **Monitoring and analytics:** Centralized telemetry via audit logs, Microsoft Secure Score, and Defender integration.
+* **Monitoring and analytics:** Centralized security data via audit logs, Microsoft Secure Score, and Defender integration.
 * **Secret management and credential isolation**: Preventing shared secrets between tenants and enforcing phishing-resistant MFA.
 * **Lateral movement prevention:** Prevented lateral movement by isolating production vs. non-production tenants.
 * **Legacy and inactive tenants:** Decommissioned legacy and inactive tenants via lifecycle audits.
@@ -62,7 +64,7 @@ Organizations can adopt a similar pattern using the following actionable practic
 | Conditional Access |<ul><li>Deploy baseline Conditional Access (CA) policies: block legacy authentication, require MFA for all users, and enforce device compliance for privileged roles.</li><li>Expand with risk-based and location-aware policies.</li></ul> | <ul><li>[Conditional Access policy templates – Microsoft Entra ID](/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation)</li><li>[Plan your Microsoft Entra Conditional Access deployment](/entra/identity/conditional-access/plan-conditional-access)<br>[Best practices to secure with Microsoft Entra ID](/entra/architecture/secure-best-practices)</li></ul> |
 | Privileged access management | Use Privileged Identity Management (PIM) for just-in-time (JIT) and just-enough-access (JEA) to minimize standing admin privileges. | <ul><li>[Plan a Privileged Identity Management deployment](/entra/id-governance/privileged-identity-management/pim-deployment-plan)</li><li>[Activate Microsoft Entra roles in PIM – Microsoft Entra ID Governance](/entra/id-governance/privileged-identity-management/pim-how-to-activate-role)</li></ul> |
 | Tenant isolation |<ul><li>Separate production and non-production tenants.</li><li>Eliminate shared admin accounts and app registrations across environments.</li><li>Apply distinct Conditional Access baselines per tenant type.</li></ul>| <ul><li>[Resource isolation with multiple tenants to secure with Microsoft Entra ID](/entra/architecture/secure-multiple-tenants)</li><li>[Restrict cross-tenant inbound and outbound access – Power Platform](/power-platform/admin/cross-tenant-restrictions?tabs=new)</li></ul> |
-| Monitoring and threat detection |<ul><li>Combine Microsoft Defender for Identity (on-prem AD signals) with Entra ID Protection (cloud-based risk signals).</li><li>Centralize monitoring to detect lateral movement, token theft, and abnormal sign-in behavior.</li></ul> | <ul><li>[Microsoft Defender for Identity deployment overview](/defender-for-identity/deploy/deploy-defender-identity)</li><li>[What is Microsoft Entra ID Protection?](/entra/id-protection/overview-identity-protection)</li><li>[What are risk detections? – Microsoft Entra ID Protection](/entra/id-protection/concept-identity-protection-risks)</li></ul> |
+| Monitoring and threat detection |<ul><li>Combine Microsoft Defender for Identity (on-premises AD signals) with Microsoft Entra ID Protection (cloud-based risk signals).</li><li>Centralize monitoring to detect lateral movement, token theft, and abnormal sign-in behavior.</li></ul> | <ul><li>[Microsoft Defender for Identity deployment overview](/defender-for-identity/deploy/deploy-defender-identity)</li><li>[What is Microsoft Entra ID Protection?](/entra/id-protection/overview-identity-protection)</li><li>[What are risk detections? – Microsoft Entra ID Protection](/entra/id-protection/concept-identity-protection-risks)</li></ul> |
 
 
 ## Benefits 
@@ -70,7 +72,7 @@ Organizations can adopt a similar pattern using the following actionable practic
 * **Reduced attack surface:** Legacy, shadow, and unused tenants are systematically retired.  
 * **Improved governance:** Central inventory and classification support continuous compliance and oversight.  
 * **Controlled access:** Conditional Access, role-based access control (RBAC), and multifactor authentication (MFA) protect identities and limit external sharing risks.  
-* **Enhanced detection and response:** Integrated telemetry and logs provide visibility across all tenants. 
+* **Enhanced detection and response:** Integrated security data and logs provide visibility across all tenants. 
 
 ## Trade-offs 
 Implementing this approach requires:

@@ -374,6 +374,8 @@
                 href: sfi/remove-legacy-systems-that-risk-security.md
               - name: Higher security for Microsoft Entra ID apps
                 href: sfi/higher-security-microsoft-entra-id-apps.md
+              - name: Secure all tenants and their resources
+                href: sfi/secure-all-tenants-resources.md
          - name: Protect networks
            expand: false
            items:                 
@@ -384,6 +386,8 @@
            items:                 
               - name: Standardize secure development pipelines
                 href: sfi/standardize-secure-development-pipelines.md
+              - name: Protect the software supply chain
+                href: sfi/protect-software-supply-chain.md           
          - name: Monitor and detect cyberthreats
            expand: false
            items:                 
@@ -393,6 +397,8 @@
                href: sfi/security-log-retention-standards.md
              - name: Rapid anomaly detection and response
                href: sfi/rapid-anomaly-detection-response.md
+             - name: Centralize access to security logs
+               href: sfi/centralize-access-to-security-logs.md               
          - name: Accelerate response and remediation
            expand: false
            items:                 

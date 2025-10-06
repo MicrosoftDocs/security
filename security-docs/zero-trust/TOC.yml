@@ -372,6 +372,8 @@
                 href: sfi/eliminate-identity-lateral-movement.md
               - name: Remove legacy systems that risk security
                 href: sfi/remove-legacy-systems-that-risk-security.md
+              - name: Higher security for Entra ID apps
+                href: sfi/higher-security-entra-id-apps.md
          - name: Protect engineering systems
            expand: false
            items:                 

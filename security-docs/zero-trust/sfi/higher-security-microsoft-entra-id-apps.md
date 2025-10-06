@@ -1,5 +1,5 @@
 ---
-title: Higher security for Microsoft Entra ID apps
+title: Higher security for Microsoft Entra ID apps - Microsoft Secure Future Initiative
 description: Higher security for Microsoft Entra ID apps is part of the protect tenants and isolate production systems pillar of the Secure Future Initiative (SFI). This pillar focuses on minimizing the potential impact of security incidents through eliminating legacy and unmanaged tenants, implementing consistent security practices, and enforcing continuous least-privilege access.
 ms.date: 10/03/2025
 ms.service: security
@@ -31,7 +31,7 @@ Microsoft Entra ID applications, if improperly secured, can:
 - Store secrets insecurely or permit outdated legacy protocols  
 - Become shadow infrastructure if their lifecycle is not governed  
 
-A breach in even a non-production or lightly used application can grant access to sensitive environments, especially when multi-tenant configurations or guest users are involved. Recent high-profile attacks have shown that attackers often compromise identity systems through overlooked applications or external service principals. The challenge is ensuring every app—regardless of its tenant or usage level—is governed to a consistent, high security standard.  
+A breach in even a non-production or lightly used application can grant access to sensitive environments, especially when multitenant configurations or guest users are involved. Recent high-profile attacks have shown that attackers often compromise identity systems through overlooked applications or external service principals. The challenge is ensuring every app—regardless of its tenant or usage level—is governed to a consistent, high security standard.  
 
 ## Solution
 
@@ -40,7 +40,7 @@ Microsoft implemented the **Higher security for Microsoft Entra ID apps** object
 **Key measures taken include:**
 
 - Removal of 730,000 unused applications across productivity and production environments.  
-- Deployment of Microsoft Entra application layering policies to restrict multi-tenant app behavior.  
+- Deployment of Microsoft Entra application layering policies to restrict multitenant app behavior.  
 - Mandating global admin consent for any external organization requesting app access.  
 - Application certificate and secret restrictions, including enforcement of Azure Key Vault locality and PKI origin.  
 - Blocking guest user access to all apps not explicitly reviewed and approved.  

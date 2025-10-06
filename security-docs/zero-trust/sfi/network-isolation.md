@@ -33,7 +33,7 @@ multiple systems. The challenge is to standardize network segmentation,
 enforce perimeters, and ensure traffic flows are strictly controlled to
 prevent lateral movement and contain breaches.
 
-## Solution ##
+## Solution
 
 Network isolation secures networks by dividing and isolating
 networks into segments and controlling network access to them. It
@@ -77,7 +77,7 @@ include:  
     hybrid connection mechanisms, improvement of cloud/hybrid security
     posture, and centralized security monitoring.
 
-## Guidance ## 
+## Guidance
 
 Organizations can adopt a similar pattern using the following actionable
 practices: 
@@ -92,21 +92,21 @@ practices: 
 | Layered perimeter defense   |<ul><li>Apply firewalls, service tags, NSGs, and DDoS protection to enforce multi-layer security.</li></ul>| [Azure DDoS Protection Overview](/azure/ddos-protection/ddos-protection-overview) |
 | Centralized policy management   |<ul><li>Use Azure Virtual Network Manager with security admin rules to centrally manage network isolation policies.</li></ul>| [Security admin rules in Azure Virtual Network Manager](/azure/virtual-network-manager/concept-security-admins) |
 
-## Outcomes ##
+## Outcomes
 
-### Benefits ###  
+### Benefits
 * Resiliency: Limits the blast radius of an intrusion.  
 * Scalability: Standardized network isolation supports enterprise-scale environments.  
 * Visibility: Service tagging and monitoring provide clearer attribution of traffic flows.  
 * Regulatory alignment: Supports compliance with frameworks requiring strict segregation of sensitive resources.  
 
-### Trade-offs ###  
+### Trade-offs
 
 * Operational overhead: Designing and maintaining segmented networks requires planning and ongoing updates.
 * Complexity: More segmentation may introduce additional management layers and require automation to scale.  
 * Performance considerations: Some isolation measures may slightly increase latency.  
 
-## Key success factors ## 
+## Key success factors
 
 To track success, measure the following:  
 
@@ -116,7 +116,7 @@ To track success, measure the following:  
 * Compliance with least privileged policies across environments.  
 * Time to detect and remediate anomalous network activity.  
 
-## Summary ## 
+## Summary
 
 Network isolation is a foundational strategy for preventing lateral movement and protecting sensitive workloads. By segmenting resources, enforcing perimeters, and applying layered defenses, organizations reduce their attack surface and build resilience against modern adversaries.
 

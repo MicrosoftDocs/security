@@ -377,7 +377,7 @@
            items:                 
               - name: Standardize secure development pipelines
                 href: sfi/standardize-secure-development-pipelines.md
-              - name: Zero trust for source code access
+              - name: Zero Trust for source code access
                 href: sfi/zero-trust-source-code-access.md 
          - name: Monitor and detect cyberthreats
            expand: false

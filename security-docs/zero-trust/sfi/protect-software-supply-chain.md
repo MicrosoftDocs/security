@@ -1,5 +1,5 @@
 ---
-title: Protect the software supply chain (Secure Future Initiative) – Zero Trust
+title: Protect the software supply chain - Microsoft Secure Future Initiative
 description: Secure all tenants and their resources is part of the Protect engineering systems pillar of the Secure Future Initiative (SFI), which focuses on reducing attack surfaces and lateral movement risk by enforcing strict tenant governance, modernizing platform dependencies, and isolating production access. It emphasizes Zero Trust by default, ensuring that every tenant, system, and user operates under minimum necessary access and hardened boundaries. 
 ms.date: 10/03/2025
 ms.service: security

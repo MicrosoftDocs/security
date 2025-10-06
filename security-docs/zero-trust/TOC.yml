@@ -372,6 +372,8 @@
                 href: sfi/eliminate-identity-lateral-movement.md
               - name: Remove legacy systems that risk security
                 href: sfi/remove-legacy-systems-that-risk-security.md
+              - name: Higher security for Microsoft Entra ID apps
+                href: sfi/higher-security-microsoft-entra-id-apps.md
               - name: Secure all tenants and their resources
                 href: sfi/secure-all-tenants-resources.md
          - name: Protect networks

@@ -1,5 +1,5 @@
 ---
-title: Secure all tenants and their resources
+title: Secure all tenants and their resources - Microsoft Secure Future Initiative
 description: Secure all tenants and their resources is a part of the Protect tenants and isolate production systems pillar of the Secure Future Initiative (SFI). This pillar focuses on minimizing the potential impact of security incidents through strong tenant isolation, segmentation, and attack surface reduction. 
 ms.date: 10/03/2025
 ms.service: security

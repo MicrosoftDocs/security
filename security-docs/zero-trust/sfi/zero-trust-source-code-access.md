@@ -1,5 +1,5 @@
 ---
-title: Zero Trust for source code access (Secure Future Initiative) – Zero Trust 
+title: Zero Trust for source code access - Microsoft Secure Future Initiative 
 description: Secure all tenants and their resources is part of the Protect engineering systems pillar of the Secure Future Initiative (SFI), which focuses on reducing attack surface and lateral movement risk by enforcing strict tenant governance, modernizing platform dependencies, and isolating production access. It emphasizes Zero Trust by default, ensuring that every tenant, system, and user operates under minimum necessary access and hardened boundaries. 
 ms.date: 10/03/2025
 ms.service: security
@@ -46,7 +46,7 @@ Organizations can adopt a similar pattern using the following actionable practic
 
 | **Use case** | **Recommended action** | **Resource** |
 |---------------|------------------------|----------------|
-| **Conditional access** | - Create a Conditional Access policy to require users who access the Azure Service Management API suite to use multifactor authentication (MFA). | [Require MFA for Azure management with Conditional Access](/entra/identity/conditional-access/policy-old-require-mfa-azure-mgmt) |
+| **Conditional access** | - Create a Conditional Access policy to require users who access the classic deployment model to use multifactor authentication (MFA). | [Require MFA for Azure management with Conditional Access](/entra/identity/conditional-access/policy-old-require-mfa-azure-mgmt) |
 | **Authentication strength** | - Use FIDO2 hardware tokens or Secure Access Workstation (SAW)-bound identities for high-sensitivity repositories. | [Plan a phishing-resistant passwordless authentication deployment in Microsoft Entra ID](/entra/identity/authentication/how-to-deploy-phishing-resistant-passwordless-authentication) |
 | **Automation exceptions** | - Limit exemptions to cases where human review is infeasible; track approvals in a governance system. | [Reviewing the audit log for your organization – GitHub Docs](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization) |
 | **Code review rigor** | - Require at least two reviewers and enforce successful build policies before merging. | [Git branch policies and settings – Azure DevOps](/azure/devops/repos/git/branch-policies) |

@@ -84,13 +84,13 @@ practices: 
 
 |Use case|Recommended action |Resource |
 |---|---|---|
-| Micro-segmentation   | <ul><li>Use network security groups (NSGs) and ACLs to enforce least overview privilege access between workloads.</li></ul>|[Azure network security groups overview](https://learn.microsoft.com/azure/virtual-network/network-security-groups-overview) |
-| Isolate virtual networks |<ul><li>Use tools like Microsoft Defender Vulnerability Management to scan systems and prioritize CVEs</li></ul> | [Isolating VNets - Azure Virtual networks](https://learn.microsoft.com/azure/virtual-wan/scenario-isolate-vnets) |
-| Perimeter protection for PaaS resources |<ul><li>Use Azure Network Security secure access to services like Storage, SQL, and Key Vault.</li></ul>| [What is a network security perimeter](https://learn.microsoft.com/azure/private-link/network-security-perimeter-concepts) |
-| Secure connectivity to virtual machines |<ul><li>Use Azure Bastion to establish secure RDP/SSH connectivity to virtual machines without exposing resources to the internet.</li></ul>| [About Azure Bastion](https://learn.microsoft.com/azure/bastion/bastion-overview) |
-| Restrict outbound virtual access |<ul><li>Remove default outbound internet access and apply least privilege Network for service egress.</li></ul>| [Default Outbound Access in Azure - Azure Virtual Network](https://learn.microsoft.com/azure/virtual-network/ip-services/default-outbound-access) |
-| Layered perimeter defense   |<ul><li>Apply firewalls, service tags, NSGs, and DDoS protection to enforce multi-layer security.</li></ul>| [Azure DDoS Protection Overview](https://learn.microsoft.com/azure/ddos-protection/ddos-protection-overview) |
-| Centralized policy management   |<ul><li>Use Azure Virtual Network Manager with security admin rules to centrally manage network isolation policies.</li></ul>| [Security admin rules in Azure Virtual Network Manager](https://learn.microsoft.com/azure/virtual-network-manager/concept-security-admins) |
+| Micro-segmentation   | <ul><li>Use network security groups (NSGs) and ACLs to enforce least overview privilege access between workloads.</li></ul>|[Azure network security groups overview](/azure/virtual-network/network-security-groups-overview) |
+| Isolate virtual networks |<ul><li>Use tools like Microsoft Defender Vulnerability Management to scan systems and prioritize CVEs</li></ul> | [Isolating VNets - Azure Virtual networks](/azure/virtual-wan/scenario-isolate-vnets) |
+| Perimeter protection for PaaS resources |<ul><li>Use Azure Network Security secure access to services like Storage, SQL, and Key Vault.</li></ul>| [What is a network security perimeter](/azure/private-link/network-security-perimeter-concepts) |
+| Secure connectivity to virtual machines |<ul><li>Use Azure Bastion to establish secure RDP/SSH connectivity to virtual machines without exposing resources to the internet.</li></ul>| [About Azure Bastion](/azure/bastion/bastion-overview) |
+| Restrict outbound virtual access |<ul><li>Remove default outbound internet access and apply least privilege Network for service egress.</li></ul>| [Default Outbound Access in Azure - Azure Virtual Network](/azure/virtual-network/ip-services/default-outbound-access) |
+| Layered perimeter defense   |<ul><li>Apply firewalls, service tags, NSGs, and DDoS protection to enforce multi-layer security.</li></ul>| [Azure DDoS Protection Overview](/azure/ddos-protection/ddos-protection-overview) |
+| Centralized policy management   |<ul><li>Use Azure Virtual Network Manager with security admin rules to centrally manage network isolation policies.</li></ul>| [Security admin rules in Azure Virtual Network Manager](/azure/virtual-network-manager/concept-security-admins) |
 
 ## Outcomes ##
 

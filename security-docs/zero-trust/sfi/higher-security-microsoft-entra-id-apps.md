@@ -1,6 +1,6 @@
 ---
-title: Higher security for Entra ID apps
-description: Higher security for Entra ID apps is part of the protect tenants and isolate production systems pillar of the Secure Future Initiative (SFI). This pillar focuses on minimizing the potential impact of security incidents through eliminating legacy and unmanaged tenants, implementing consistent security practices, and enforcing continuous least-privilege access.
+title: Higher security for Microsoft Entra ID apps
+description: Higher security for Microsoft Entra ID apps is part of the protect tenants and isolate production systems pillar of the Secure Future Initiative (SFI). This pillar focuses on minimizing the potential impact of security incidents through eliminating legacy and unmanaged tenants, implementing consistent security practices, and enforcing continuous least-privilege access.
 ms.date: 10/03/2025
 ms.service: security
 author: leonyen
@@ -13,10 +13,12 @@ ms.collection:
   - sfi-zerotrust
 ---
 
-# Higher security for Entra ID apps (Secure Future Initiative)
+# Higher security for Microsoft Entra ID apps (Secure Future Initiative)
 
 **Pillar name: Protect tenants and isolate production systems**<br />
-**Pattern name: Higher security for Entra ID apps**
+**Pattern name: Higher security for Microssoft Entra ID apps**
+
+By implementing the Higher security for Microsoft Entra ID apps pattern, Microsoft ensures that all apps adhere to a high and consistent security standard. This approach significantly reduces the risk of Microsoft Entra ID applications being compromised, protecting them from potential attacker targets.
 
 ## Context and problem
 
@@ -33,12 +35,12 @@ A breach in even a non-production or lightly used application can grant access t
 
 ## Solution
 
-Microsoft implemented the **Higher security for Entra ID apps** objective under the Secure Future Initiative (SFI) to raise the security bar for all applications using Microsoft Entra ID. The goal: manage 100% of apps to a secure, consistent baseline through automation, hardening, and lifecycle governance.
+Microsoft implemented the **Higher security for Microsoft Entra ID apps** objective under the Secure Future Initiative (SFI) to raise the security bar for all applications using Microsoft Entra ID. The goal: manage 100% of apps to a secure, consistent baseline through automation, hardening, and lifecycle governance.
 
 **Key measures taken include:**
 
 - Removal of 730,000 unused applications across productivity and production environments.  
-- Deployment of Entra application layering policies to restrict multi-tenant app behavior.  
+- Deployment of Microsoft Entra application layering policies to restrict multi-tenant app behavior.  
 - Mandating global admin consent for any external organization requesting app access.  
 - Application certificate and secret restrictions, including enforcement of Azure Key Vault locality and PKI origin.  
 - Blocking guest user access to all apps not explicitly reviewed and approved.  
@@ -51,7 +53,7 @@ Organizations can adopt a similar pattern using the following actionable practic
 
 |Use case|Recommended action |Resource |
 |---|---|---|
-| App registration security | <ul><li>Restrict who can register applications in Entra ID and enforce review processes for new app registrations.</li><li>Applications should have explicit assignment or scoped provisioning.</li></ul>| [Delegate application management administrator permissions – Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-app-roles#restrict-who-can-create-applications) |
+| App registration security | <ul><li>Restrict who can register applications in Microsoft Entra ID and enforce review processes for new app registrations.</li><li>Applications should have explicit assignment or scoped provisioning.</li></ul>| [Delegate application management administrator permissions – Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-app-roles#restrict-who-can-create-applications) |
 | Phishing-resistant passwordless authentication | Enforce continuous least-privilege access using phishing-resistant authentication methods. | [Get started with a phishing-resistant passwordless authentication deployment in Microsoft Entra ID](/entra/identity/authentication/how-to-plan-prerequisites-phishing-resistant-passwordless-authentication) |
 | Certificate and secret management | <ul><li>Use Privileged Identity Management (PIM) for just-in-time (JIT) and just-enough-access (JEA) to minimize standing admin privileges.</li><li>Replace long-lived client secrets with certificates or managed identities to reduce credential risk.</li></ul> | [Migrate applications away from secret-based authentication – Microsoft Entra ID](/entra/identity/enterprise-apps/migrate-applications-from-secrets) |
 | Consent and permissions governance | Limit user and admin consent to only approved applications and monitor requested API permissions | [Configure the admin consent workflow – Microsoft Entra ID](/entra/identity/enterprise-apps/configure-admin-consent-workflow) |
@@ -67,7 +69,7 @@ Organizations can adopt a similar pattern using the following actionable practic
 
 
 ## Trade-offs 
-- Deep discovery and classification of existing Entra apps across multiple environments.  
+- Deep discovery and classification of existing Microsoft Entra apps across multiple environments.  
 - Automation of lifecycle controls, including expiration, consent management, and soft deletion.  
 - Reduction in user autonomy around app consent, replaced with administrative workflows.  
 - Changes to service principal management, certificate issuance, and default authentication behaviors.  
@@ -81,6 +83,6 @@ Organizations can adopt a similar pattern using the following actionable practic
 
 ## Summary
 
-Entra ID applications can become a strategic security advantage. By applying practices such as lifecycle governance and credential control, apps that were previously potential risk points can become trusted, hardened access pathways that are essential to your Zero Trust architecture.  
+Microsoft Entra ID applications can become a strategic security advantage. By applying practices such as lifecycle governance and credential control, apps that were previously potential risk points can become trusted, hardened access pathways that are essential to your Zero Trust architecture.  
 
-**Further harden your Entra ID apps today and better secure every identity, app, and access point across your tenant ecosystem.**  
+**Further harden your Microsoft Entra ID apps today and better secure every identity, app, and access point across your tenant ecosystem.**  

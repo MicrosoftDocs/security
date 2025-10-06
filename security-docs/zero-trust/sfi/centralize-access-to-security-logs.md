@@ -1,5 +1,5 @@
 ---
-title: Centralize access to security logs (Secure Future Initiative) – Zero Trust 
+title: Centralize access to security logs - Microsoft Secure Future Initiative
 description: Centralize access to security logs is part of the Monitor and detect threats pillar of the Secure Future Initiative (SFI). This pillar supports Microsoft environments providing high-fidelity signals, comprehensive visibility, and advanced detection capabilities to identify and respond to evolving threats 
 ms.date: 10/03/2025
 ms.service: security
@@ -24,7 +24,7 @@ Security logs are essential for monitoring threats and supporting investigations
 
 Security logs are critical tools for security staff, as they reveal who accessed what, when, and how. Logs support continuous monitoring of threat activity, speed up incident response, and provide forensic records for security investigations.
 
-Yet without centralization and standardization, logs can create more problems than they solve. Inconsistent formats, disparate storage locations, and variable retention periods make it difficult to quickly piece together a complete picture of an attack. At Microsoft, investigations were slowed by fragmented log sources and gaps in retention that left defenders unable to trace initial access points or lateral movement paths.
+Yet without centralization and standardization, logs can create more problems than they solve. Inconsistent formats, disparate storage locations, and variable retention periods make it difficult to quickly piece together a complete picture of an attack. At Microsoft, investigations were slowed by fragmented log sources and gaps in retention that left security teams unable to trace initial access points or lateral movement paths.
 
 ## Solution
 

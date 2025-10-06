@@ -18,7 +18,7 @@ ms.collection:
 **Pillar name: Protect engineering systems**<br />
 **Pattern name: Zero Trust for source code access**
 
-Microsoft adopted a Zero Trust approach to protect its source code, requiring identity-verified checks for all code changes. Key measures include multi-factor authentication for pull requests and strict protections for production branches, reducing the risk of unauthorized merges.
+Microsoft adopted a Zero Trust approach to protect its source code, requiring identity-verified checks for all code changes. Key measures include multifactor authentication for pull requests and strict protections for production branches, reducing the risk of unauthorized merges.
 
 ## Context and problem
 Source code is one of the most valuable assets in any organization. At Microsoft, tens of thousands of repositories and millions of lines of code underpin the services and products used by billions worldwide. This makes source code a high-value target for adversaries, who can exploit unauthorized access to inject malicious changes, steal intellectual property, or undermine customer trust.

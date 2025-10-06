@@ -18,6 +18,8 @@ ms.collection:
 **Pillar name: Monitor and detect threats**<br>
 **Practice name: Security log retention standards** 
 
+Security logs are crucial for threat detection and incident investigation, but their efficacy is dependent on various factors, including format and retention period. To improve threat detection and incident investigation measures, the Security log retention standards practice enhances security logging by standardizing formats, centralizing storage, and extending retention periods.
+
 ## Context and problem
 
 Security logs play a critical role in detecting threats, investigating incidents, and maintaining compliance. However, Microsoft identified several challenges that limited the effectiveness of security logging across services:

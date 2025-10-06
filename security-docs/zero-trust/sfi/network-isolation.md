@@ -4,7 +4,7 @@ description: Network isolation is part of the protect networks pillar of the Sec
 ms.date: 10/03/2025
 ms.service: security
 author: leonyen
-ms.author: lyen
+ms.author: v-leonyen
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:

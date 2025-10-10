@@ -94,7 +94,7 @@ When you connect using Microsoft Graph PowerShell, it requests these permissions
 - Read privileged access to Azure AD
 - Read all usage reports
 - Read all eligible role assignments for your company's directory
-- Read, update, and delete all eligible role assignments for your company's directory
+- [Read, update, and delete all eligible role assignments for your company's directory](#why-is-the-roleeligibilityschedulereadwritedirectory-permission-requested-for-a-read-only-report)
 - Read role management data for all Azure Role-Based Access Control (RBAC) providers
 - Read all users' authentication methods
 - View users' basic profile
@@ -183,6 +183,27 @@ To remove the Zero Trust Assessment module, follow these steps:
 
 ## FAQs
 
-For frequently asked questions, see [Zero Trust Assessment FAQ](faq-zero-trust-assessment.yml).
+### Why is the RoleEligibilitySchedule.ReadWrite.Directory permission requested for a read-only report?
+
+The [List roleAssignmentScheduleRequests](/graph/api/rbacapplication-list-roleassignmentschedulerequests) Graph API call requires the `RoleEligibilitySchedule.ReadWrite.Directory` permission. To avoid making changes, run this report as a Global Reader.
+
+### How can I know what the script is doing?
+
+The code for this assessment is open source. Review it at `https://github.com/microsoft/zerotrustassessment/tree/psnext/src/powershell`.
+
+
+### Why did I get the exception error, "The type initializer for 'DuckDB.NET.Data.DuckDBConnectionStringBuilder' threw an exception."?
+
+On a new installation of Windows, you might run into the following error:
+
+> The type initializer for 'DuckDB.NET.Data.DuckDBConnectionStringBuilder' threw an exception.
+> Inner exception: Unable to load DLL 'duckdb' or one of its dependencies: The specified module could not be found. (0x8007007E)
+> Inner exception type: DllNotFoundException
+
+This error occurs because you're running on a system that doesn't include Microsoft Visual C++ 2015-2022 Redistributable (x64) - Microsoft.VCRedist.2015+.x64. VCRedist usually installs when you install Microsoft products like Microsoft Office or Microsoft Entra Connect Sync. If you're using a new device, you might need to install this component manually using the following link: [Latest Microsoft Visual C++ Redistributable version](/cpp/windows/latest-supported-vc-redist).
+
+### How do I get support?
+
+Raise support issues on the [Zero Trust Assessment GitHub repo](https://github.com/microsoft/zerotrustassessment/issues).
 
 ## Related content

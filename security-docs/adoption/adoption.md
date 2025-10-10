@@ -4,7 +4,7 @@ description: Guiding organizations through security program modernization with r
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 02/27/2025
+ms.date: 09/29/2025
 ms.author: kenwith
 author: kenwith
 ms.reviewer: mas
@@ -39,7 +39,7 @@ Meeting these objectives allows organizations to accelerate business enablement 
 
 ### The Chief Information Security Officer (CISO) Workshop
 
-[The Chief Information Security Officer (CISO) Workshop](ciso-workshop.md) is a collection of security learnings, principles, and recommendations for modernizing security in your organization in both PowerPoint and video form.
+[The Chief Information Security Officer (CISO) Workshop](the-ciso-workshop.md) is a collection of security learnings, principles, and recommendations for modernizing security in your organization in both PowerPoint and video form.
 
 :::image type="content" source="media/adoption/chief-information-security-officer-workshop.png" alt-text="A diagram of the CISO Workshop at a high level." lightbox="media/adoption/chief-information-security-officer-workshop.png":::
 

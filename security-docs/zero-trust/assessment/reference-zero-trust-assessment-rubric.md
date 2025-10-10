@@ -1,18 +1,17 @@
 ---
-title: Zero Trust Rating Overview
-description: "Learn about the Zero Trust rubrics used to qualify Risk Level, User Impact, and Implementation Cost."
+title: "Zero Trust Rubric: Risk, User Impact, and Cost"
+description: "Learn how to use the Zero Trust assessment rubric to measure Risk Level, User Impact, and Implementation Cost, ensuring a structured approach to security."
 author: HULKsmashGithub
 ms.author: jayrusso
 manager: dougeby
 ms.service: entra
 ms.topic: concept-article
-ms.date: 07/22/2025
+ms.date: 10/10/2025
 ms.reviewer: merill
 
 #customer intent: As a security admin, I want to understand the Zero Trust rating used to qualify Risk Level, User Impact, and Implementation Cost.
-
 ---
-# Zero Trust rating overview
+# Zero Trust assessment rubric
 
 Each recommendation in the Zero Trust guidelines includes a rating for three areas: **Risk Level**, **User Impact**, and **Implementation Cost**. The rating uses the rubric in this article. 
 
@@ -20,8 +19,8 @@ Each recommendation in the Zero Trust guidelines includes a rating for three are
 
 | Risk Level | Description |
 |------------|-------------|
-| **High**       | There's environment-wide exposure to threats until you mitigate the issue. |
-| **Medium**     | There's moderate exposure to threats until you mitigate the issue. |
+| **High**       | There's a potential for environment-wide exposure to threats until you mitigate the issue. |
+| **Medium**     | There's a potential for moderate exposure to threats until you mitigate the issue. |
 | **Low**        | Mitigation is a defense in depth or an operational optimization. |
 
 ## User Impact 
@@ -43,4 +42,5 @@ Each recommendation in the Zero Trust guidelines includes a rating for three are
 ## Related content
 
 - [Install the Zero Trust Assessment module](how-to-zero-trust-assessment.md)
-- [Configure Microsoft Entra for increased security](configure-security.md)
+- [Configure Microsoft Entra for increased security](/entra/fundamentals/configure-security) 
+- [Configure Microsoft Intune for increased security](/intune/intune-service/protect/zero-trust-configure-security)

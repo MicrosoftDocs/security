@@ -1,42 +1,40 @@
 ---
-title: Get started with the Zero Trust Assessment?
-description: DESCRIPTION
+title: How to Use Zero Trust Assessment for Your Tenant
+description: Run an automated Zero Trust Assessment to evaluate your tenant's security configuration. Learn how to install, connect, and review results for improved security.
 
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 07/01/2025
+ms.date: 10/10/2025
 
 author: HULKsmashGithub
 ms.author: jayrusso
 manager: dougeby
-ms.reviewer: 
+ms.reviewer: joflore
+
+ms.custom: sfi-ga-nochange
 ---
 # Get started with the Zero Trust Assessment
 
 As the security threat landscape evolves, Microsoft responds and reevaluates default tenant security settings. Microsoft uses insights, experience, and learnings to update these settings over time.
 
-Microsoft publishes guidance on how to [Configure Microsoft Entra for increased security](configure-security.md). This guidance helps you act quickly, reevaluate existing tenant security settings, and make changes ahead of product updates.
+Microsoft publishes guidance on how to [Configure Microsoft Entra for increased security](/entra/fundamentals/configure-security) and [Configure Microsoft Intune for increased security](/intune/intune-service/protect/zero-trust-configure-security). This guidance helps you act quickly, reevaluate existing tenant security settings, and make changes ahead of product updates.
 
 Manually checking a tenant's configuration against published guidance can be time consuming and error prone.   
 
 Use the Zero Trust Assessment module to run an automated security assessment. It checks your tenant configuration and recommends ways to improve security.
 
 > [!TIP]
-> This initial release works only with Microsoft Entra.
+> This release works only with Microsoft Entra and Microsoft Intune.
 
 ## Prerequisites
 
-- PowerShell 7. To install it, see [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell?view=powershell-7.4).
-- Global Administrator role
+- PowerShell 7. To install it, see [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell).
+- You need to be a [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to connect and consent to permissions the first time. Subsequent runs can use the [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role.
 
-> [!NOTE]
-> You need to be a Global Administrator to connect to Microsoft Graph and consent to permissions.   
-> You can run the Zero Trust Assessment with the Global Reader role.
+## Install or update the PowerShell modules
 
-## Install the PowerShell modules
-
-Follow these steps to install the assessment and connect to Microsoft Graph and your tenant:
+Follow these steps to install or update the assessment and connect to Microsoft Graph and your tenant:
 
 ### Open PowerShell 7
 
@@ -198,3 +196,7 @@ This error occurs because you're running on a system that doesn't include Micros
 Raise support issues on the [Zero Trust Assessment GitHub repo](https://github.com/microsoft/zerotrustassessment/issues).
 
 ## Related content
+
+- [Zero Trust assessment rubric](reference-zero-trust-assessment-rubric.md)
+- [Configure Microsoft Entra for increased security](/entra/fundamentals/configure-security) 
+- [Configure Microsoft Intune for increased security](/intune/intune-service/protect/zero-trust-configure-security)

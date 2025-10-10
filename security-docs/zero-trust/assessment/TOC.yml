@@ -19,7 +19,5 @@
        href: /intune/intune-service/protect/zero-trust-configure-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
 - name: Reference
   items:
-  - name: Microsoft Graph
-    href: get-started.md
   - name: Assessment check rubric
     href: reference-zero-trust-assessment-rubric.md

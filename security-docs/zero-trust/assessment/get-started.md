@@ -154,15 +154,15 @@ You can use the `-Path` parameter to provide a custom location to store the asse
 
 After the assessment runs, the report opens the **Overview** tab in your default browser. The **Overview** tab shows key Zero Trust-related information about the tenant.
 
-:::image type="content" source="media/results-overview.png" alt-text="Screenshot of assessment results on the Overview tab." lightbox="media/results-overview-expanded.png":::
+:::image type="content" source="media/results-overview.png" alt-text="Screenshot of assessment results on the Overview tab." lightbox="media/results-overview.png":::
 
 The **Identity** tab shows a list of results from the checks run against the tenant. The results show the **Risk** and test result **Status** of each check.
 
-:::image type="content" source="media/results-identity.png" alt-text="Screenshot of assessment results on the Identity tab." lightbox="media/results-identity-expanded.png":::   
+:::image type="content" source="media/results-identity.png" alt-text="Screenshot of assessment results on the Identity tab." lightbox="media/results-identity.png":::   
 
 To see more details, select a result. The details describe what was checked and list recommended remediation actions to address the tenant configuration.
 
-:::image type="content" source="media/results-details-expanded.png" alt-text="Screenshot of the detail of a test result that includes what was checked and remediation actions." lightbox="media/results-details-expanded.png":::   
+:::image type="content" source="media/results-details.png" alt-text="Screenshot of the detail of a test result that includes what was checked and remediation actions." lightbox="media/results-details.png":::   
 
 ## Remove the Zero Trust Assessment module
 

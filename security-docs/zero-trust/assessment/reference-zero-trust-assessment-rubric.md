@@ -41,6 +41,6 @@ Each recommendation in the Zero Trust guidelines includes a rating for three are
 
 ## Related content
 
-- [Install the Zero Trust Assessment module](how-to-zero-trust-assessment.md)
+- [Install the Zero Trust Assessment module](get-started.md)
 - [Configure Microsoft Entra for increased security](/entra/fundamentals/configure-security) 
 - [Configure Microsoft Intune for increased security](/intune/intune-service/protect/zero-trust-configure-security)

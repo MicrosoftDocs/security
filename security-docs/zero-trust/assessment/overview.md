@@ -1,16 +1,16 @@
 ---
-title: What is the Zero Trust Assessment?
-description: DESCRIPTION
+title: Zero Trust Assessment Overview
+description: Explore the Zero Trust Assessment to automate security checks, implement industry standards, and strengthen your organization’s Zero Trust architecture.
 
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 07/01/2025
+ms.date: 10/10/2025
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
 manager: dougeby
-ms.reviewer: 
+ms.reviewer: joflore
 ---
 # What is the Zero Trust Assessment?
 
@@ -24,3 +24,8 @@ Many are familiar with the pillars of Zero Trust architecture including identity
 - Accelerate response and remediation
 
 We recommend that all of the controls be implemented where licenses are available and alignment exists with organizational risk appetite. These checks help to provide a foundation for other resources built on top of the solutions they underpin.
+
+## Next steps
+
+Learn more about the recommended controls for [Microsoft Entra](/entra/fundamentals/configure-security) and [Microsoft Intune](/intune/intune-service/protect/zero-trust-configure-security).
+Learn how to check your environment [using our automated assessment](get-started.md).

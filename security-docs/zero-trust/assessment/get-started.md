@@ -18,19 +18,19 @@ ms.custom: sfi-ga-nochange
 
 As the security threat landscape evolves, Microsoft responds and reevaluates default tenant security settings. Microsoft uses insights, experience, and learnings to update these settings over time.
 
-Microsoft publishes guidance on how to [Configure Microsoft Entra for increased security](/entra/fundamentals/configure-security) and [Configure Microsoft Intune for increased security](/intune/intune-service/protect/zero-trust-configure-security). This guidance helps you act quickly, reevaluate existing tenant security settings, and make changes ahead of product updates.
+We publish guidance on how to [Configure Microsoft Entra for increased security](/entra/fundamentals/configure-security) and [Configure Microsoft Intune for increased security](/intune/intune-service/protect/zero-trust-configure-security). This guidance helps you act quickly, reevaluate existing tenant security settings, and make changes ahead of product updates.
 
 Manually checking a tenant's configuration against published guidance can be time consuming and error prone.   
 
 Use the Zero Trust Assessment module to run an automated security assessment. It checks your tenant configuration and recommends ways to improve security.
 
 > [!TIP]
-> This release works only with Microsoft Entra and Microsoft Intune.
+> This release works only with Microsoft Entra and Intune.
 
 ## Prerequisites
 
 - PowerShell 7. To install it, see [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell).
-- You need to be a [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to connect and consent to permissions the first time. Subsequent runs can use the [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role.
+- To connect and consent to permissions the first time, you need to be a [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator). Subsequent runs can use the [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role.
 
 ## Install or update the PowerShell modules
 
@@ -70,7 +70,7 @@ Run these commands to update the modules to the latest versions:
 
 ## Connect to Microsoft Graph and Microsoft Azure
 
-To run the Zero Trust Assessment module, connect to Microsoft Graph and, optionally, Microsoft Azure. The Zero Trust Assessment module connects to Microsoft Graph first, then to Microsoft Azure.
+To run the Zero Trust Assessment module, connect to Microsoft Graph and Microsoft Azure. The Zero Trust Assessment module connects to Microsoft Graph first, then to Microsoft Azure.
 
 Run this command to connect to Microsoft Graph:
 
@@ -109,15 +109,15 @@ When you connect using Microsoft Graph PowerShell, it requests these permissions
 1. Select **Accept**.   
 
 > [!NOTE]
-> The consent prompt appears only if the Microsoft Graph PowerShell app doesn't already have these permissions. The next time you connect, you don't need to consent to the permissions again.
+> The consent prompt appears only if the Microsoft Graph PowerShell app doesn't already have these permissions. The next time you connect, you won't need to consent to the permissions again.
 
 :::image type="content" source="media/graph-permissions.png" alt-text="Screenshot of the Microsoft Graph permissions requested list.":::   
 
 ### Sign in to Microsoft Azure
 
-A second window opens for the Microsoft Azure sign-in. When prompted, sign in to Microsoft Azure as a Global Administrator.
+A second window opens for the Microsoft Azure sign-in. When you're prompted, sign in to Microsoft Azure as a Global Administrator.
 
-The Microsoft Azure sign-in is required to check for the export of audit and sign-in logs. If you don't have Microsoft Azure, close the window without signing in, and ignore the warning. The assessment skips the test that relies on Microsoft Azure.
+The Microsoft Azure sign-in is required to check for the export of audit and sign-in logs. If you don't have Microsoft Azure, close the window without signing in and ignore the warning. The assessment skips the test that relies on Microsoft Azure.
 
 :::image type="content" source="media/azure-sign-in.png" alt-text="Screenshot of the Microsoft Azure sign in page.":::   
 
@@ -129,24 +129,24 @@ If you have multiple subscriptions, select a tenant and a subscription when prom
 
 The Zero Trust Assessment is read-only. It runs and stores all data locally on the desktop. It's a good practice to store the assessment report securely and delete the generated folder and its contents from the local drive once the assessment is complete.
 
-After providing Global Administrator consent to the permissions, you can run the assessment as a Global Reader.
+After you provide Global Administrator consent to the permissions, run the assessment as a Global Reader.
 
-Use this command to run the assessment:
+To run the assessment, use this command:
 
    ```powershell
    Invoke-ZtAssessment
    ```
 
-The assessment saves the results in the current working folder `.\ZeroTrustReport\ZeroTrustAssessmentReport.html`. After the assessment completes, the report automatically opens in the default browser.
+The assessment saves the results in the current working folder `.\ZeroTrustReport\ZeroTrustAssessmentReport.html`. After the assessment completes, the report opens automatically in the default browser.
 
-You can use the `-Path` parameter to provide a custom location to store the assessment report. For example, the following command saves the report in the folder `C:/MyAssessment01/ZeroTrustAssessmentReport.html`:
+Use the `-Path` parameter to provide a custom location to store the assessment report. For example, the following command saves the report in the folder `C:/MyAssessment01/ZeroTrustAssessmentReport.html`:
 
    ```powershell
    Invoke-ZtAssessment --Path C:/MyAssessment01
    ```
 
 > [!NOTE]
-> For large tenants, the Zero Trust Assessment might take more than 24 hours to run. Don't abort the assessment while it's running, even if the assessment logs warnings and errors.
+> For large tenants, the Zero Trust Assessment might take more than 24 hours to run. Don't stop the assessment while it's running, even if the assessment logs warnings and errors.
 
 ## Review assessment results
 
@@ -158,17 +158,17 @@ The **Identity** tab shows a list of results from the checks run against the ten
 
 :::image type="content" source="media/results-identity.png" alt-text="Screenshot of assessment results on the Identity tab." lightbox="media/results-identity.png":::   
 
-To see more details, select a result. The details describe what was checked and list recommended remediation actions to address the tenant configuration.
+To see more details about a check, select a result. The details describe what was checked and list recommended remediation actions to address the tenant configuration.
 
 :::image type="content" source="media/results-details.png" alt-text="Screenshot of the detail of a test result that includes what was checked and remediation actions." lightbox="media/results-details.png":::   
 
 ## Remove the Zero Trust Assessment module
 
-To remove the Zero Trust Assessment module, follow these steps: 
+To remove the Zero Trust Assessment module: 
 
-1. Remove the PowerShell module. 
-1. Remove the app registration and consent. 
-1. Delete the folder created by the Zero Trust Assessment module.
+1. Remove the PowerShell module.
+1. Remove the app registration and consent.
+1. Delete the folder that the Zero Trust Assessment module created.
 
 ## FAQs
 
@@ -176,20 +176,19 @@ To remove the Zero Trust Assessment module, follow these steps:
 
 The [List roleAssignmentScheduleRequests](/graph/api/rbacapplication-list-roleassignmentschedulerequests) Graph API call requires the `RoleEligibilitySchedule.ReadWrite.Directory` permission. To avoid making changes, run this report as a Global Reader.
 
-### How can I know what the script is doing?
+### How can I know what the script does?
 
 The code for this assessment is open source. Review it at `https://github.com/microsoft/zerotrustassessment/tree/psnext/src/powershell`.
 
-
 ### Why did I get the exception error, "The type initializer for 'DuckDB.NET.Data.DuckDBConnectionStringBuilder' threw an exception."?
 
-On a new installation of Windows, you might run into the following error:
+On a new installation of Windows, you might see the following error:
 
 > The type initializer for 'DuckDB.NET.Data.DuckDBConnectionStringBuilder' threw an exception.
 > Inner exception: Unable to load DLL 'duckdb' or one of its dependencies: The specified module could not be found. (0x8007007E)
 > Inner exception type: DllNotFoundException
 
-This error occurs because you're running on a system that doesn't include Microsoft Visual C++ 2015-2022 Redistributable (x64) - Microsoft.VCRedist.2015+.x64. VCRedist usually installs when you install Microsoft products like Microsoft Office or Microsoft Entra Connect Sync. If you're using a new device, you might need to install this component manually using the following link: [Latest Microsoft Visual C++ Redistributable version](/cpp/windows/latest-supported-vc-redist).
+This error occurs because you're running on a system that doesn't include Microsoft Visual C++ 2015-2022 Redistributable (x64) - Microsoft.VCRedist.2015+.x64. VCRedist usually installs when you install Microsoft products such as Microsoft Office or Microsoft Entra Connect Sync. If you're using a new device, you might need to install this component manually. See [Latest Microsoft Visual C++ Redistributable version](/cpp/windows/latest-supported-vc-redist).
 
 ### How do I get support?
 

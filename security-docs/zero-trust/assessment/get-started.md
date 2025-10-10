@@ -46,29 +46,29 @@ Launch PowerShell 7.
 
 1. Run this command to install the `ZeroTrustAssessmentV2` module:
 
-```powershell
-Install-Module ZeroTrustAssessmentV2 -Scope CurrentUser
-```
+   ```powershell
+   Install-Module ZeroTrustAssessmentV2 -Scope CurrentUser
+   ```
 
-2. When you're prompted to install modules from an untrusted repository, type `A`, and then press **Enter** to select **Yes to All**.
+1. When you're prompted to install modules from an untrusted repository, type `A`, and then press **Enter** to select **Yes to All**.
 
 
 ### Install the Az.Accounts module
 
 Run this command to install the `Az.Accounts` module:
 
-```powershell
-Install-Module Az.Accounts -Scope CurrentUser
-```
+   ```powershell
+   Install-Module Az.Accounts -Scope CurrentUser
+   ```
 
 ### Update the modules
 
 Run these commands to update the modules to the latest versions:
 
-```powershell
-Update-Module ZeroTrustAssessmentV2 -Force -Scope CurrentUser
-Update-Module Az.Accounts -Force -Scope CurrentUser
-```
+   ```powershell
+   Update-Module ZeroTrustAssessmentV2 -Force -Scope CurrentUser
+   Update-Module Az.Accounts -Force -Scope CurrentUser
+   ```
 
 ## Connect to Microsoft Graph and Microsoft Azure
 
@@ -76,9 +76,9 @@ To run the Zero Trust Assessment module, connect to Microsoft Graph and, optiona
 
 Run this command to connect to Microsoft Graph:
 
-```powershell
-Connect-ZtAssessment
-```
+   ```powershell
+   Connect-ZtAssessment
+   ```
 
 When you connect using Microsoft Graph PowerShell, it requests these permissions:  
 
@@ -135,17 +135,17 @@ After providing Global Administrator consent to the permissions, you can run the
 
 Use this command to run the assessment:
 
-```powershell
-Invoke-ZtAssessment
-```
+   ```powershell
+   Invoke-ZtAssessment
+   ```
 
 The assessment saves the results in the current working folder `.\ZeroTrustReport\ZeroTrustAssessmentReport.html`. After the assessment completes, the report automatically opens in the default browser.
 
 You can use the `-Path` parameter to provide a custom location to store the assessment report. For example, the following command saves the report in the folder `C:/MyAssessment01/ZeroTrustAssessmentReport.html`:
 
-```powershell
-Invoke-ZtAssessment --Path C:/MyAssessment01
-```
+   ```powershell
+   Invoke-ZtAssessment --Path C:/MyAssessment01
+   ```
 
 > [!NOTE]
 > For large tenants, the Zero Trust Assessment might take more than 24 hours to run. Don't abort the assessment while it's running, even if the assessment logs warnings and errors.
@@ -164,23 +164,10 @@ To see more details, select a result. The details describe what was checked and 
 
 :::image type="content" source="media/how-to-zero-trust-assessment/results-details-expanded.png" alt-text="Screenshot of the detail of a test result that includes what was checked and remediation actions." lightbox="media/how-to-zero-trust-assessment/results-details-expanded.png":::   
 
-## Report issues
-
-If you run into any issues or have questions about the results, report them to the account contact who suggested that you run the assessment. If an issue occurs, export a troubleshooting log by following these steps:
-
-1. Create an export package by running this command in the same session where you ran the assessment. Set the date to match the date of your run.
-
-```powershell
-New-PSFSupportPackage -Path C:\AssessmentLog_2025_01_01 -Force
-```
-
-2. Zip the **AssessmentLog** folder.
-1. Zip the folder created by Invoke-ZtAssessment (the default is `ZeroTrustAssessment`). 
-1. Share both folders with your contact at Microsoft.
-
 ## Remove the Zero Trust Assessment module
 
 To remove the Zero Trust Assessment module, follow these steps: 
+
 1. Remove the PowerShell module. 
 1. Remove the app registration and consent. 
 1. Delete the folder created by the Zero Trust Assessment module.

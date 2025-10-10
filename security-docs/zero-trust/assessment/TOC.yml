@@ -5,7 +5,7 @@
   items: 
   - name: What is the Zero Trust assessment?
     href: overview.md
-- name: Concepts
+- name: How to
   expanded: true
   items:
   - name: Get started with the Zero Trust assessment

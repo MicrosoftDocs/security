@@ -113,7 +113,7 @@ When you connect using Microsoft Graph PowerShell, it requests these permissions
 > [!NOTE]
 > The consent prompt appears only if the Microsoft Graph PowerShell app doesn't already have these permissions. The next time you connect, you don't need to consent to the permissions again.
 
-:::image type="content" source="media/how-to-zero-trust-assessment/graph-permissions.png" alt-text="Screenshot of the Microsoft Graph permissions requested list.":::   
+:::image type="content" source="media/graph-permissions.png" alt-text="Screenshot of the Microsoft Graph permissions requested list.":::   
 
 ### Sign in to Microsoft Azure
 
@@ -121,11 +121,11 @@ A second window opens for the Microsoft Azure sign-in. When prompted, sign in to
 
 The Microsoft Azure sign-in is required to check for the export of audit and sign-in logs. If you don't have Microsoft Azure, close the window without signing in, and ignore the warning. The assessment skips the test that relies on Microsoft Azure.
 
-:::image type="content" source="media/how-to-zero-trust-assessment/azure-sign-in.png" alt-text="Screenshot of the Microsoft Azure sign in page.":::   
+:::image type="content" source="media/azure-sign-in.png" alt-text="Screenshot of the Microsoft Azure sign in page.":::   
 
 If you have multiple subscriptions, select a tenant and a subscription when prompted.
 
-:::image type="content" source="media/how-to-zero-trust-assessment/subscription-options.png" alt-text="Screenshot of the Azure subscription selection options in the PowerShell 7 console.":::   
+:::image type="content" source="media/subscription-options.png" alt-text="Screenshot of the Azure subscription selection options in the PowerShell 7 console.":::   
 
 ## Run the assessment
 
@@ -154,15 +154,15 @@ You can use the `-Path` parameter to provide a custom location to store the asse
 
 After the assessment runs, the report opens the **Overview** tab in your default browser. The **Overview** tab shows key Zero Trust-related information about the tenant.
 
-:::image type="content" source="media/how-to-zero-trust-assessment/results-overview.png" alt-text="Screenshot of assessment results on the Overview tab." lightbox="media/how-to-zero-trust-assessment/results-overview-expanded.png":::
+:::image type="content" source="media/results-overview.png" alt-text="Screenshot of assessment results on the Overview tab." lightbox="media/results-overview-expanded.png":::
 
 The **Identity** tab shows a list of results from the checks run against the tenant. The results show the **Risk** and test result **Status** of each check.
 
-:::image type="content" source="media/how-to-zero-trust-assessment/results-identity.png" alt-text="Screenshot of assessment results on the Identity tab." lightbox="media/how-to-zero-trust-assessment/results-identity-expanded.png":::   
+:::image type="content" source="media/results-identity.png" alt-text="Screenshot of assessment results on the Identity tab." lightbox="media/results-identity-expanded.png":::   
 
 To see more details, select a result. The details describe what was checked and list recommended remediation actions to address the tenant configuration.
 
-:::image type="content" source="media/how-to-zero-trust-assessment/results-details-expanded.png" alt-text="Screenshot of the detail of a test result that includes what was checked and remediation actions." lightbox="media/how-to-zero-trust-assessment/results-details-expanded.png":::   
+:::image type="content" source="media/results-details-expanded.png" alt-text="Screenshot of the detail of a test result that includes what was checked and remediation actions." lightbox="media/results-details-expanded.png":::   
 
 ## Remove the Zero Trust Assessment module
 

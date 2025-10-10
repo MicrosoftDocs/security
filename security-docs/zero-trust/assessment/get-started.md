@@ -98,6 +98,10 @@ When you connect using Microsoft Graph PowerShell, it requests these permissions
 - Read role management data for all Azure Role-Based Access Control (RBAC) providers
 - Read all users' authentication methods
 - View users' basic profile
+- Read Microsoft Intune apps
+- Read Microsoft Intune device configuration and policies
+- Read Microsoft Intune RBAC settings
+- Read Microsoft Intune configuration
 - Maintain existing access to data
 
 ### Sign in to Microsoft Graph 

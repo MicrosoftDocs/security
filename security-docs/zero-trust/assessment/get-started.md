@@ -16,13 +16,7 @@ ms.custom: sfi-ga-nochange
 ---
 # Get started with the Zero Trust Assessment
 
-As the security threat landscape evolves, Microsoft responds and reevaluates default tenant security settings. Microsoft uses insights, experience, and learnings to update these settings over time.
-
-We publish guidance on how to [Configure Microsoft Entra for increased security](/entra/fundamentals/configure-security) and [Configure Microsoft Intune for increased security](/intune/intune-service/protect/zero-trust-configure-security). This guidance helps you act quickly, reevaluate existing tenant security settings, and make changes ahead of product updates.
-
-Manually checking a tenant's configuration against published guidance can be time consuming and error prone.
-
-Use the Zero Trust Assessment module to run an automated security assessment. It checks your tenant configuration and recommends ways to improve security.
+The Zero Trust Assessment checks your tenant configuration and recommends ways to improve security.
 
 :::image type="content" source="media/results-overview.png" alt-text="Screenshot of a sample report output from the Zero Trust Assessment tool." lightbox="media/results-overview.png":::
 
@@ -34,10 +28,6 @@ Use the Zero Trust Assessment module to run an automated security assessment. It
 ## Install or update the PowerShell modules
 
 Follow these steps to install or update the assessment and connect to Microsoft Graph and your tenant:
-
-### Open PowerShell 7
-
-Launch PowerShell 7.
 
 ### Install the Zero Trust Assessment module
 

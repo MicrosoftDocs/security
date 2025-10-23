@@ -23,26 +23,21 @@ The Zero Trust Assessment checks your tenant configuration and recommends ways t
 ## Prerequisites
 
 - PowerShell 7. To install it, see [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell).
-- To connect and consent to permissions the first time, you need to be a [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator). Subsequent runs can use the [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role.
+- To connect and consent to the required permissions the first time, you need to be a [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator). 
+   - Subsequent runs can use the [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role.
 
-## Install or update the PowerShell modules
+## Install the PowerShell modules
 
 Follow these steps to install or update the assessment and connect to Microsoft Graph and your tenant:
 
-### Install the Zero Trust Assessment module
-
-1. Run this command to install the `ZeroTrustAssessmentV2` module:
+1. Open a new PowerShell 7 window 
+1. Run the following command to install the `ZeroTrustAssessmentV2` module:
 
    ```powershell
    Install-Module ZeroTrustAssessmentV2 -Scope CurrentUser
    ```
 
-1. When you're prompted to install modules from an untrusted repository, type `A`, and then press **Enter** to select **Yes to All**.
-
-
-### Install the Az.Accounts module
-
-Run this command to install the `Az.Accounts` module:
+1. Run the following command to install the `Az.Accounts` module:
 
    ```powershell
    Install-Module Az.Accounts -Scope CurrentUser
@@ -50,7 +45,7 @@ Run this command to install the `Az.Accounts` module:
 
 ### Update the modules
 
-Run these commands to update the modules to the latest versions:
+If you've already installed the module in the past you can update the modules to the latest version using the following:
 
    ```powershell
    Update-Module ZeroTrustAssessmentV2 -Force -Scope CurrentUser
@@ -91,24 +86,19 @@ When you connect using Microsoft Graph PowerShell, it requests these permissions
 - Read Microsoft Intune configuration
 - Maintain existing access to data
 
-### Sign in to Microsoft Graph 
-
-1. Sign in to Microsoft Graph as a Global Administrator.
-1. Select **Consent on behalf of your organization** to accept the requested permissions.
-1. Select **Accept**.   
-
 > [!NOTE]
 > The consent prompt appears only if the Microsoft Graph PowerShell app doesn't already have these permissions. The next time you connect, you won't need to consent to the permissions again.
 
-:::image type="content" source="media/graph-permissions.png" alt-text="Screenshot of the Microsoft Graph permissions requested list.":::   
+### Sign in to Microsoft Graph 
+
+1. Sign in to Microsoft Graph as a Global Administrator.
+1. Select **Accept**.   
 
 ### Sign in to Microsoft Azure
 
 A second window opens for the Microsoft Azure sign-in. When you're prompted, sign in to Microsoft Azure as a Global Administrator.
 
 The Microsoft Azure sign-in is required to check for the export of audit and sign-in logs. If you don't have Microsoft Azure, close the window without signing in and ignore the warning. The assessment skips the test that relies on Microsoft Azure.
-
-:::image type="content" source="media/azure-sign-in.png" alt-text="Screenshot of the Microsoft Azure sign in page.":::   
 
 If you have multiple subscriptions, select a tenant and a subscription when prompted.
 
@@ -118,7 +108,7 @@ If you have multiple subscriptions, select a tenant and a subscription when prom
 
 The Zero Trust Assessment is read-only. It runs and stores all data locally on the desktop. It's a good practice to store the assessment report securely and delete the generated folder and its contents from the local drive once the assessment is complete.
 
-After you provide Global Administrator consent to the permissions, run the assessment as a Global Reader.
+After you provide Global Administrator consent to the permissions in the first run, subsequent runs can be performed as a Global Reader.
 
 To run the assessment, use this command:
 
@@ -134,7 +124,7 @@ Use the `-Path` parameter to provide a custom location to store the assessment r
    Invoke-ZtAssessment --Path C:/MyAssessment01
    ```
 
-> [!NOTE]
+> [!TIP]
 > For large tenants, the Zero Trust Assessment might take more than 24 hours to run. Don't stop the assessment while it's running, even if the assessment logs warnings and errors.
 
 ## Review assessment results
@@ -143,13 +133,13 @@ After the assessment runs, the report opens the **Overview** tab in your default
 
 :::image type="content" source="media/results-overview.png" alt-text="Screenshot of assessment results on the Overview tab." lightbox="media/results-overview.png":::
 
-The **Identity** tab shows a list of results from the checks run against the tenant. The results show the **Risk** and test result **Status** of each check.
+The **Identity** and **Devices** tabs show a list of results from the tests run against the tenant. The results show the **Risk** and result **Status** of each test.
 
 :::image type="content" source="media/results-identity.png" alt-text="Screenshot of assessment results on the Identity tab." lightbox="media/results-identity.png":::   
 
-To see more details about a check, select a result. The details describe what was checked and list recommended remediation actions to address the tenant configuration.
+To see more details about a test, select a result. The details describe what was tested and list recommended remediation actions to address the tenant configuration.
 
-:::image type="content" source="media/results-details.png" alt-text="Screenshot of the detail of a test result that includes what was checked and remediation actions." lightbox="media/results-details.png":::   
+:::image type="content" source="media/results-details.png" alt-text="Screenshot of the detail of a test result that includes what was tested and remediation actions." lightbox="media/results-details.png":::   
 
 ## Remove the Zero Trust Assessment module
 

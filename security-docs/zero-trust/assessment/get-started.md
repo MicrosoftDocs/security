@@ -137,9 +137,9 @@ The **Identity** and **Devices** tabs show a list of results from the tests run 
 
 :::image type="content" source="media/results-identity.png" alt-text="Screenshot of assessment results on the Identity tab." lightbox="media/results-identity.png":::   
 
-To see more details about a test, select a result. The details describe what was tested and list recommended remediation actions to address the tenant configuration.
+To see more details about a test, select a result. The details describe what was tested and list recommended remediation actions to address the tenant configuration. For more detail about some of the terms used in each check see our [glossary](glossary.md).
 
-:::image type="content" source="media/results-details.png" alt-text="Screenshot of the detail of a test result that includes what was tested and remediation actions." lightbox="media/results-details.png":::   
+:::image type="content" source="media/sample-test.png" alt-text="Screenshot of a sample test from the Zero Trust Assessment tool." lightbox="media/sample-test.png":::
 
 ## Remove the Zero Trust Assessment module
 
@@ -175,6 +175,6 @@ Raise support issues on the [Zero Trust Assessment GitHub repo](https://github.c
 
 ## Related content
 
-- [Zero Trust assessment rubric](reference-zero-trust-assessment-rubric.md)
+- [Zero Trust assessment glossary](glossary.md)
 - [Configure Microsoft Entra for increased security](/entra/fundamentals/configure-security) 
 - [Configure Microsoft Intune for increased security](/intune/intune-service/protect/zero-trust-configure-security)

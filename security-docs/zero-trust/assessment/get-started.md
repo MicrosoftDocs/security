@@ -1,6 +1,6 @@
 ---
-title: How to Use Zero Trust Assessment for Your Tenant
-description: Run an automated Zero Trust Assessment to evaluate your tenant's security configuration. Learn how to install, connect, and review results for improved security.
+title: Evaluate Tenant Security with the Zero Trust Assessment
+description: "Run an automated Zero Trust Assessment to evaluate your tenants security configuration. Learn how to install, connect, and review results for improved security."
 
 ms.service: security
 ms.subservice: zero-trust

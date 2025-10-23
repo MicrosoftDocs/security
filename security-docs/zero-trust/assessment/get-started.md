@@ -64,27 +64,23 @@ Run this command to connect to Microsoft Graph:
 
 When you connect using Microsoft Graph PowerShell, it requests these permissions:  
 
-- Read audit log data
-- Read cross-tenant basic information
-- Read directory data
-- Read Azure AD recommendations
-- Read identity risk event information
-- Read identity risky user information
-- Read your organization's policies
-- Read your organization's Conditional Access policies
-- Read consent and permission grant policies
-- Read privileged access to Azure AD
-- Read all usage reports
-- Read all eligible role assignments for your company's directory
-- [Read, update, and delete all eligible role assignments for your company's directory](#why-is-the-roleeligibilityschedulereadwritedirectory-permission-requested-for-a-read-only-report)
-- Read role management data for all Azure Role-Based Access Control (RBAC) providers
-- Read all users' authentication methods
-- View users' basic profile
-- Read Microsoft Intune apps
-- Read Microsoft Intune device configuration and policies
-- Read Microsoft Intune RBAC settings
-- Read Microsoft Intune configuration
-- Maintain existing access to data
+- AuditLog.Read.All
+CrossTenantInformation.ReadBasic.All
+DeviceManagementApps.Read.All
+DeviceManagementConfiguration.Read.All
+DeviceManagementRBAC.Read.All
+DeviceManagementServiceConfig.Read.All
+Directory.Read.All
+DirectoryRecommendations.Read.All
+IdentityRiskEvent.Read.All
+IdentityRiskyUser.Read.All
+Policy.Read.All
+Policy.Read.ConditionalAccess
+Policy.Read.PermissionGrant
+PrivilegedAccess.Read.AzureAD
+Reports.Read.All
+RoleManagement.Read.All
+UserAuthenticationMethod.Read.All
 
 > [!NOTE]
 > The consent prompt appears only if the Microsoft Graph PowerShell app doesn't already have these permissions. The next time you connect, you won't need to consent to the permissions again.

@@ -72,6 +72,14 @@ Implicit flow overage indication is done with a `hasgroups` claim instead of the
 
 To ensure proper authorization using group membership, have your app check for the `groups` claim. If present, use that claim to determine the user's group membership. If there's no `groups` claim, check for the existence of a `hasgroups` claim or a `_claim_names` claim with a `groups` member of the array. If either of these claims are present, the user is a member of too many groups for the token. In this case, your app must use Microsoft Graph to determine the group membership for the user. See [List a user's memberships (direct and transitive)](/graph/api/user-list-transitivememberof) to find all the groups, both direct and transitive, of which the user is a member.
 
+> [!NOTE]
+> For Entra ID, _claim_sources claim's endpoint attribute in some tokens still reference AAD Graph endpoints instead of Microsoft Graph, which can break apps if legacy endpoints are blocked. Applications must not rely on the actual claim values in the token when _claim_sources is present. Instead, the application should detect the overage claim and if present should call the appropriate Microsoft Graph API endpoint to retrieve group information.
+ 
+Mitigation
+To avoid this issue:
+Use group filtering to keep the number of groups returned under 200. Applications should not rely on the value of the overage claim, only its presence.
+If the overage claim is present, the application should call the appropriate Microsoft Graph API to retrieve group information.
+
 If your application requires real time group membership information, use Microsoft Graph to determine group membership. Remember that the information in the token that you receive is up to date only at the time you acquire the token.
 
 See the following example of the **App registrations** | **Token configuration** | **Optional claims** | **Edit groups claim** screen. One way to avoid hitting a group overage claim is to select **Groups assigned to the application** on the **Edit groups claim** screen instead of **All groups**.

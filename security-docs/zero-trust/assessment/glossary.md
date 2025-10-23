@@ -1,6 +1,6 @@
 ---
-title: "Zero Trust Rubric: Risk, User Impact, and Cost"
-description: "Learn how to use the Zero Trust assessment rubric to measure Risk Level, User Impact, and Implementation Cost, ensuring a structured approach to security."
+title: "Zero Trust glossary: Risk, User Impact, and Cost"
+description: "Learn how to use the Zero Trust assessment glossary to measure Risk Level, User Impact, and Implementation Cost, ensuring a structured approach to security."
 author: HULKsmashGithub
 ms.author: jayrusso
 manager: dougeby
@@ -11,7 +11,7 @@ ms.reviewer: merill
 
 #customer intent: As a security admin, I want to understand the Zero Trust rating used to qualify Risk Level, User Impact, and Implementation Cost.
 ---
-# Zero Trust assessment rubric
+# Zero Trust assessment glossary
 
 Each recommendation in the Zero Trust guidelines includes a rating for three areas: **Risk Level**, **User Impact**, and **Implementation Cost**. The rating uses the rubric in this article. 
 

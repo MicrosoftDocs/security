@@ -40,7 +40,7 @@ sections:
         componentType: testimonial-card
         name: Microsoft Security Copilot for Developers
         role: Documentation
-        feedback: Learn to create, publish, and test agents in Security Copilot using natural language, agent builder forms, YAMLs, and MCPs. Designed for developers to streamline security workflows.
+        feedback: Learn to create, publish, and test agents in Security Copilot using natural language, lite experience forms, YAMLs, and MCPs. Designed for developers to streamline security workflows.
         link:
           componentType: link
           url: /copilot/security/developer/

@@ -18,7 +18,7 @@ ms.custom: sfi-ga-nochange
 
 The Zero Trust Assessment checks your tenant configuration and recommends ways to improve security.
 
-:::image type="content" source="media/results-overview.png" alt-text="Screenshot of a sample report output from the Zero Trust Assessment tool." lightbox="media/results-overview.png":::
+:::image type="content" source="media/sample-test.png" alt-text="Screenshot of a sample test from the Zero Trust Assessment tool." lightbox="media/sample-test.png":::
 
 ## Prerequisites
 

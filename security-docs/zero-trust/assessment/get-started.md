@@ -20,12 +20,11 @@ As the security threat landscape evolves, Microsoft responds and reevaluates def
 
 We publish guidance on how to [Configure Microsoft Entra for increased security](/entra/fundamentals/configure-security) and [Configure Microsoft Intune for increased security](/intune/intune-service/protect/zero-trust-configure-security). This guidance helps you act quickly, reevaluate existing tenant security settings, and make changes ahead of product updates.
 
-Manually checking a tenant's configuration against published guidance can be time consuming and error prone.   
+Manually checking a tenant's configuration against published guidance can be time consuming and error prone.
 
 Use the Zero Trust Assessment module to run an automated security assessment. It checks your tenant configuration and recommends ways to improve security.
 
-> [!TIP]
-> This release works only with Microsoft Entra and Intune.
+:::image type="content" source="media/results-overview.png" alt-text="Screenshot of a sample report output from the Zero Trust Assessment tool." lightbox="media/results-overview.png":::
 
 ## Prerequisites
 

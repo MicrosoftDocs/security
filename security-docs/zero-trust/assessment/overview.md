@@ -14,7 +14,11 @@ ms.reviewer: joflore
 ---
 # What is the Zero Trust Assessment?
 
-Many are familiar with the pillars of Zero Trust architecture including identity, devices, apps, network, infrastructure, and data. Within Microsoft we used the Secure Future Initiative as a program to implement a Zero Trust architecture at Microsoft. The Zero Trust Assessment tool provides automation of top security configuration items aligned with the Secure Future Initiative (SFI) and Zero Trust. It guides customers through remediation steps and helps operationalize Zero Trust principles. These checks come out of learnings influenced by accepted industry standards like those developed by NIST, the configuration baselines we use internally at Microsoft, and our experiences with customers. We've chosen to organize our recommendations by [Secure Future Initiative](https://www.microsoft.com/trust-center/security/secure-future-initiative?msockid=2bad2df65a416adb0e5838355b3e6b95#SFI-pillars) pillars:
+The Zero Trust Assessment tool provides automation of top security configuration items aligned with the Secure Future Initiative (SFI) and Zero Trust pillars. It guides customers through remediation steps and helps operationalize Zero Trust principles. These checks come out of learnings influenced by accepted industry standards like those developed by NIST, the configuration baselines we use internally at Microsoft, and our experiences with customers.
+
+:::image type="content" source="media/results-overview.png" alt-text="Screenshot of a sample report output from the Zero Trust Assessment tool." lightbox="media/results-overview.png":::
+
+We've chosen to organize our recommendations inside each of the larger Zero Trust pillars by [Secure Future Initiative](https://www.microsoft.com/trust-center/security/secure-future-initiative?msockid=2bad2df65a416adb0e5838355b3e6b95#SFI-pillars) pillars:
 
 - Protect identities and secrets
 - Protect tenants and isolate production systems

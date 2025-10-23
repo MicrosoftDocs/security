@@ -16,7 +16,7 @@ ms.reviewer: joflore
 
 We publish extensive guidance on how to configure [Microsoft Entra](/entra/fundamentals/configure-security) and [Microsoft Intune](/intune/intune-service/protect/zero-trust-configure-security) for increased security, but manually checking a tenant's configuration can be time consuming and error prone. The Zero Trust Assessment tool provides automation to check hundreds of these security configuration items aligned with the Secure Future Initiative (SFI) and Zero Trust pillars. 
 
-It guides customers through remediation steps and helps operationalize Zero Trust principles. These checks come out of learnings influenced by accepted industry standards like those developed by NIST, the configuration baselines we use internally at Microsoft, and our experiences with customers.
+It guides customers through remediation steps to help operationalize Zero Trust principles. These checks come out of learnings influenced by accepted industry standards like those developed by NIST, the configuration baselines we use internally at Microsoft, and our experiences with customers.
 
 :::image type="content" source="media/results-overview.png" alt-text="Screenshot of a sample report output from the Zero Trust Assessment tool." lightbox="media/results-overview.png":::
 

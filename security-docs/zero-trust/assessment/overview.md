@@ -29,6 +29,6 @@ Use the Zero Trust Assessment PowerShell module to run an automated security ass
 
 ## Related content
 
-Learn more about the recommended controls for [Microsoft Entra](/entra/fundamentals/configure-security) and [Microsoft Intune](/intune/intune-service/protect/zero-trust-configure-security).
-Learn how to check your environment [using our automated assessment](get-started.md).
+- Learn more about the recommended controls for [Microsoft Entra](/entra/fundamentals/configure-security) and [Microsoft Intune](/intune/intune-service/protect/zero-trust-configure-security).
+- Learn how to check your environment [using our automated assessment](get-started.md).
 [Secure Future Initiative](https://www.microsoft.com/trust-center/security/secure-future-initiative?msockid=2bad2df65a416adb0e5838355b3e6b95#SFI-pillars) pillars

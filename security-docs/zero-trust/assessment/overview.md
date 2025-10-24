@@ -18,7 +18,7 @@ We publish extensive guidance on how to configure [Microsoft Entra](/entra/funda
 
 It guides customers through remediation steps to help operationalize Zero Trust principles. These checks come out of learnings influenced by accepted industry standards like those developed by NIST, the configuration baselines we use internally at Microsoft, and our experiences with customers.
 
-:::image type="content" source="media/results-overview.png" alt-text="Screenshot of a sample report output from the Zero Trust Assessment tool." lightbox="media/results-overview.png":::
+:::image type="content" source="media/results-overview.png" alt-text="Screenshot of a sample report output from the Zero Trust Assessment tool." lightbox="media/results-overview-full.png":::
 
 Use the Zero Trust Assessment PowerShell module to run an automated security assessment. It checks your tenant configuration and recommends ways to improve security. The automated assessment helps you act quickly, reevaluate existing tenant security settings, and make changes ahead of product updates. 
 

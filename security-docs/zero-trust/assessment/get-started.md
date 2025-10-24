@@ -65,22 +65,22 @@ Run this command to connect to Microsoft Graph:
 When you connect using Microsoft Graph PowerShell, it requests these permissions:  
 
 - AuditLog.Read.All
-CrossTenantInformation.ReadBasic.All
-DeviceManagementApps.Read.All
-DeviceManagementConfiguration.Read.All
-DeviceManagementRBAC.Read.All
-DeviceManagementServiceConfig.Read.All
-Directory.Read.All
-DirectoryRecommendations.Read.All
-IdentityRiskEvent.Read.All
-IdentityRiskyUser.Read.All
-Policy.Read.All
-Policy.Read.ConditionalAccess
-Policy.Read.PermissionGrant
-PrivilegedAccess.Read.AzureAD
-Reports.Read.All
-RoleManagement.Read.All
-UserAuthenticationMethod.Read.All
+- CrossTenantInformation.ReadBasic.All
+- DeviceManagementApps.Read.All
+- DeviceManagementConfiguration.Read.All
+- DeviceManagementRBAC.Read.All
+- DeviceManagementServiceConfig.Read.All
+- Directory.Read.All
+- DirectoryRecommendations.Read.All
+- IdentityRiskEvent.Read.All
+- IdentityRiskyUser.Read.All
+- Policy.Read.All
+- Policy.Read.ConditionalAccess
+- Policy.Read.PermissionGrant
+- PrivilegedAccess.Read.AzureAD
+- Reports.Read.All
+- RoleManagement.Read.All
+- UserAuthenticationMethod.Read.All
 
 > [!NOTE]
 > The consent prompt appears only if the Microsoft Graph PowerShell app doesn't already have these permissions. The next time you connect, you won't need to consent to the permissions again.
@@ -127,7 +127,7 @@ Use the `-Path` parameter to provide a custom location to store the assessment r
 
 After the assessment runs, the report opens the **Overview** tab in your default browser. The **Overview** tab shows key Zero Trust-related information about the tenant.
 
-:::image type="content" source="media/results-overview.png" alt-text="Screenshot of assessment results on the Overview tab." lightbox="media/results-overview.png":::
+:::image type="content" source="media/results-overview.png" alt-text="Screenshot of assessment results on the Overview tab." lightbox="media/results-overview-full.png":::
 
 The **Identity** and **Devices** tabs show a list of results from the tests run against the tenant. The results show the **Risk** and result **Status** of each test.
 
@@ -146,10 +146,6 @@ To remove the Zero Trust Assessment module:
 1. Delete the folder that the Zero Trust Assessment module created.
 
 ## FAQs
-
-### Why is the RoleEligibilitySchedule.ReadWrite.Directory permission requested for a read-only report?
-
-The [List roleAssignmentScheduleRequests](/graph/api/rbacapplication-list-roleassignmentschedulerequests) Graph API call requires the `RoleEligibilitySchedule.ReadWrite.Directory` permission. To avoid making changes, run this report as a Global Reader.
 
 ### How can I know what the script does?
 

@@ -5,7 +5,7 @@ description: "Run an automated Zero Trust Assessment to evaluate your tenant's s
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 10/29/2025
+ms.date: 11/03/2025
 
 author: HULKsmashGithub
 ms.author: jayrusso
@@ -16,7 +16,7 @@ ms.custom: sfi-ga-nochange
 ---
 # Get started with the Zero Trust Assessment
 
-The Zero Trust Assessment checks your tenant configuration and recommends ways to improve security.
+The Zero Trust Assessment checks your tenant configuration and recommends ways to improve security as described in our [overview](overview.md).
 
 :::image type="content" source="media/sample-test.png" alt-text="Screenshot of a sample test from the Zero Trust Assessment tool." lightbox="media/sample-test.png":::
 
@@ -25,6 +25,7 @@ The Zero Trust Assessment checks your tenant configuration and recommends ways t
 - PowerShell 7. To install it, see [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell).
 - To connect and consent to the required permissions the first time, you need to be a [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator). 
    - Subsequent runs can use the [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role.
+- If you installed a previous version of the Zero Trust Assessment, [uninstall](#uninstall-previous-versions) it before continuing.
 
 ## Install the PowerShell modules
 
@@ -34,22 +35,7 @@ Follow these steps to install or update the assessment and connect to Microsoft 
 1. Run the following command to install the `ZeroTrustAssessmentV2` module:
 
    ```powershell
-   Install-Module ZeroTrustAssessmentV2 -Scope CurrentUser
-   ```
-
-1. Run the following command to install the `Az.Accounts` module:
-
-   ```powershell
-   Install-Module Az.Accounts -Scope CurrentUser
-   ```
-
-### Update the modules
-
-If you've already installed the module in the past, you can update the modules to the latest version using the following:
-
-   ```powershell
-   Update-Module ZeroTrustAssessmentV2 -Force -Scope CurrentUser
-   Update-Module Az.Accounts -Force -Scope CurrentUser
+   Install-Module ZeroTrustAssessment -Scope CurrentUser
    ```
 
 ## Connect to Microsoft Graph and Microsoft Azure
@@ -68,10 +54,12 @@ When you connect by using Microsoft Graph PowerShell, it requests these permissi
 - CrossTenantInformation.ReadBasic.All
 - DeviceManagementApps.Read.All
 - DeviceManagementConfiguration.Read.All
+- DeviceManagementManagedDevices.Read.All
 - DeviceManagementRBAC.Read.All
 - DeviceManagementServiceConfig.Read.All
 - Directory.Read.All
 - DirectoryRecommendations.Read.All
+- EntitlementManagement.Read.All
 - IdentityRiskEvent.Read.All
 - IdentityRiskyUser.Read.All
 - Policy.Read.All
@@ -144,11 +132,37 @@ To see more details about a test, select a result. The details describe what was
 
 To remove the Zero Trust Assessment module: 
 
-1. Remove the PowerShell module.
+1. [Remove the PowerShell module](#uninstall-previous-versions).
 1. Remove the app registration and consent.
 1. Delete the folder that the Zero Trust Assessment module created.
 
 ## FAQs
+
+### Uninstall previous versions
+
+Run the following commands to ensure all versions of the past modules are uninstalled
+
+```powershell
+Uninstall-Module ZeroTrustAssessment -Force -AllVersions
+Uninstall-Module ZeroTrustAssessmentv2 -Force -AllVersions
+```
+
+Restart PowerShell and [install the latest version](#install-the-powershell-modules).
+
+### Could not load file or assembly Microsoft.Graph.Authentication
+
+This error happens when you have conflicting versions of Microsoft Graph PowerShell installed.
+
+To fix this error we recommend uninstalling all Microsoft Graph PowerShell modules installed on your system. You can use a helper module like [uninstall-graph.merill.net](https://uninstall-graph.merill.net/) to run the cleanup.
+
+When uninstalling Microsoft Graph you should also uninstall all versions of the Zero Trust Assessment, restart PowerShell and then [install the latest version](#install-the-powershell-modules).
+
+```powershell
+Install-Module Uninstall-Graph
+Uninstall-Module ZeroTrustAssessment -Force -AllVersions
+Uninstall-Module ZeroTrustAssessmentv2 -Force -AllVersions
+Uninstall-Graph
+```
 
 ### How can I know what the script does?
 

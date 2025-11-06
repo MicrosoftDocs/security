@@ -19,5 +19,5 @@
        href: /intune/intune-service/protect/zero-trust-configure-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
 - name: Reference
   items:
-  - name: Assessment glossary
+  - name: Assessment terminology
     href: glossary.md

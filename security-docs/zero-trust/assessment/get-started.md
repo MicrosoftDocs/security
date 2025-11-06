@@ -184,6 +184,6 @@ Raise support issues on the [Zero Trust Assessment GitHub repo](https://github.c
 
 ## Related content
 
-- [Zero Trust assessment glossary](glossary.md)
+- [Zero Trust assessment terminology](glossary.md)
 - [Configure Microsoft Entra for increased security](/entra/fundamentals/configure-security) 
 - [Configure Microsoft Intune for increased security](/intune/intune-service/protect/zero-trust-configure-security)

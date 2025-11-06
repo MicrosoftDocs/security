@@ -25,25 +25,25 @@ landingContent:
         links:
           - text: What is the Zero Trust assessment?
             url: overview.md
-      - linkListType: concept
+      - linkListType: reference
         links:
-          - text: Get started
-            url: get-started.md
+          - text: Zero Trust Assessment Terminology
+            url: glossary.md
 
   # Card
-  - title: Deploy the Zero Trust assessment
+  - title: Run the Zero Trust assessment
     linkLists:
       - linkListType: deploy
         links:
-          - text: Plan a Zero Trust assessment deployment
-            url: plan-zero-trust-assessment.md
+          - text: Run a Zero Trust assessment
+            url: get-started.md
 
   # Card
   - title: Zero Trust assessment pillars
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: reference
         links:
           - text: Identity
-            url: get-started.md
+            url: /entra/fundamentals/configure-security
           - text: Devices
-            url: get-started.md
+            url: /intune/intune-service/protect/zero-trust-configure-security

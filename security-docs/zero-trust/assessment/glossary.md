@@ -11,7 +11,7 @@ ms.reviewer: merill
 
 #customer intent: As a security admin, I want to understand the Zero Trust rating used to qualify Risk Level, User Impact, and Implementation Cost.
 ---
-# Zero Trust assessment glossary
+# Zero Trust assessment terminology
 
 Each recommendation in the Zero Trust guidelines includes a rating for three areas: **Risk Level**, **User Impact**, and **Implementation Cost**. The rating uses the rubric in this article. 
 

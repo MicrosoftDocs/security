@@ -107,15 +107,17 @@ For IT department project leads and implementers.
 
 :::image type="content" source="./media/adoption-guide/zero-trust-posture-assessment-example.png" alt-text="Screenshot of assessment questions for identities." lightbox="./media/adoption-guide/zero-trust-posture-assessment-example.png":::
 
-### Zero Trust Assessment strategy workshop
+### Zero Trust Assessment and strategy workshop
 
 Evaluate your Zero Trust security posture and maturity level.
 
-For IT department project leads and implementers.
-
-Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztworkshop](https://aka.ms/ztworkshop)
+IT department project leads and implementers can use the Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztworkshop](https://aka.ms/ztworkshop) to track progress.
 
 :::image type="content" source="./media/zero-trust-assessment-strategy-workshop.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/zero-trust-assessment-strategy-workshop.png":::
+
+Learn how to automate the process of checking your tenant's configuration against Microsoft's best practices with the [Zero Trust Assessment](assessment/overview.md).
+
+:::image type="content" source="assessment/media/results-overview.png" alt-text="Screenhot of a sample run of the Zero Trust Assessment showing results for an example company called Contoso.":::
 
 ## Recommended training
 

@@ -120,7 +120,7 @@ After the assessment runs, the report opens the **Overview** tab in your default
 
 :::image type="content" source="media/results-overview.png" alt-text="Screenshot of assessment results on the Overview tab." lightbox="media/results-overview-full.png":::
 
-The **Identity** and **Devices** tabs show a list of results from the tests run against the tenant. The results show the **Risk** and result **Status** of each test.
+The **Identity** and **Devices** tabs show a list of results from the tests run against the tenant. The results show the [**Risk**](glossary.md#risk-level) and result **Status** of each test.
 
 :::image type="content" source="media/results-identity.png" alt-text="Screenshot of assessment results on the Identity tab." lightbox="media/results-identity.png":::   
 

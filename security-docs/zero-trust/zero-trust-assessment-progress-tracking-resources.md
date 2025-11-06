@@ -1,16 +1,14 @@
 ---
-title: Zero Trust assessment and progress tracking resources
-description: Get the assessment and progress tracking resources in the Zero Trust library.
+title: Zero Trust Readiness and Progress Assessment
+description: Discover Zero Trust assessment tools and progress tracking resources to evaluate your security posture and streamline your Zero Trust implementation journey.
 ms.date: 01/23/2025
 ms.service: security
-author: brendacarter
-ms.author: bcarter
+author: MicrosoftGuyJFlo
+ms.author: joflore
 ms.subservice: zero-trust
 ms.topic: conceptual
-ms.collection:
-  - zerotrust
+ms.collection: zerotrust
 ---
-
 # Zero Trust assessment and progress tracking resources
 
 [Zero Trust](zero-trust-overview.md) is a security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request came from or what resource it accessed, the Zero Trust model teaches us to "never trust, always verify."

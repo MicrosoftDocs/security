@@ -32,7 +32,7 @@ The Zero Trust Assessment checks your tenant configuration and recommends ways t
 Follow these steps to install or update the assessment and connect to Microsoft Graph and your tenant.
 
 1. Open a new PowerShell 7 window. 
-1. Run the following command to install the `ZeroTrustAssessmentV2` module:
+1. Run the following command to install the `ZeroTrustAssessment` module:
 
    ```powershell
    Install-Module ZeroTrustAssessment -Scope CurrentUser

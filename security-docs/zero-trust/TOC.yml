@@ -360,6 +360,8 @@
   items:
      - name: Secure Future Initiative (SFI)
        items:
+         - name: Integrate NIST CSF 2.0 governance into annual cybersecurity assessments
+           href: sfi/integrate-nist2-governance.md
          - name: Protect identities and secrets
            expand: false
            items:                 

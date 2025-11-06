@@ -49,7 +49,7 @@ Organizations can use these functions to structure annual assessments as follows
 Microsoft conducts an annual self-assessment aligned with NIST CSF 2.0 to benchmark cybersecurity maturity and drive continuous improvement.
 - **Scoping:** Organizational units and services are selected via a risk-based intake process. Scope is reviewed annually to reflect business and threat landscape changes.
 - **Assessment structure:** A standardized questionnaire evaluates maturity across the six CSF functions: Govern, Identify, Protect, Detect, Respond, and Recover.
-- **Scoring:** Based on NIST’s implementation tiers which enables objective benchmarking.
+- **Scoring:** Based on NIST’s implementation tiers which enable objective benchmarking.
 - **Continuous improvement:** Microsoft’s methodology is refined regularly to enhance objectivity and reduce complexity. This way, engagement and transparency are prioritized.
 - **Risk management integration:** Key risks and opportunities are logged in the Risk Register for prioritization and follow-up.
 

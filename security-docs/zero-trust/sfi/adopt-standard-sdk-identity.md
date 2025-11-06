@@ -53,7 +53,7 @@ Organizations can adopt a similar pattern using the following actionable practic
 |---------------|------------------------|----------------|
 | **Consistent authentication** | <ul><li>Use Microsoft Authentication Library (MSAL) to simplify and standardize authentication flows across applications.</li><li>For services on .NET use Microsoft.Identity.Web that wraps MSAL.</li></ul>|<ul><li>[Learn about MSAL \| Microsoft Learn](/entra/msal/overview)</li><li>[Microsoft Identity Web authentication library \| Microsoft Learn](/entra/msal/dotnet/microsoft-identity-web)</li></ul>|
 | **Token management** | Adopt SDK features that securely acquire, cache, and refresh tokens, instead of building custom token handling logic. | [Acquiring and using an access token - Microsoft Authentication Library for JavaScript \| Microsoft Learn](/entra/msal/javascript/browser/acquire-token) |
-| **Security best practices** | - Apply built-in SDK features like secure defaults, token validation, and certificate handling to reduce misconfigurations. | [Secure applications and APIs by validating claims \| Microsoft Learn](/entra/identity-platform/claims-validation) |
+| **Security best practices** | Apply built-in SDK features like secure defaults, token validation, and certificate handling to reduce misconfigurations. | [Secure applications and APIs by validating claims \| Microsoft Learn](/entra/identity-platform/claims-validation) |
 | **Integration with the Microsoft identity platform** | Use SDKs to connect applications with Azure AD, enabling modern authentication protocols such as OAuth 2.0 and OpenID Connect. | [Microsoft identity platform overview \| Azure Docs](/entra/identity-platform/v2-overview) |
 
 ## Benefits 

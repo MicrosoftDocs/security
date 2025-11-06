@@ -366,7 +366,7 @@
               - name: Phishing-resistant MFA
                 href: sfi/phishing-resistant-mfa.md
               - name: Adopt standard SDKs for identity
-                href: sfi/adopt-standard-sdks-identity.md
+                href: sfi/adopt-standard-sdk-identity.md
          - name: Protect tenants and isolate systems
            expand: false
            items:                 

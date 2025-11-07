@@ -165,18 +165,12 @@ Microsoft Copilot for Security:
 OpenAI key ransomware mitigation strategies, in ChatGPT’s own words, include: 
 
 1. **Training data curation**
-
-2. **Safety layers and filters**
-
-3. **Empirical testing and red teaming**
-
-4. **Continuous monitoring**
-
-5. **Alignment and safety research**
-
-6. **Community reporting and feedback**
-
-7. **Partnerships and policies**
+1. **Safety layers and filters**
+1. **Empirical testing and red teaming**
+1. **Continuous monitoring**
+1. **Alignment and safety research**
+1. **Community reporting and feedback**
+1. **Partnerships and policies**
 
 For more detailed information, refer to OpenAI's official documentation on their approach to [AI safety and misuse mitigation](https://openai.com/safety).
 

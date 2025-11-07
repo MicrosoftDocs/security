@@ -89,9 +89,12 @@ Make the attackers work a lot harder to [gain access to multiple business critic
 
 ### Step 3. Make it hard for cybercriminals to get in
 
-This last set of tasks is important to raise friction for entry but will take time to complete as part of a larger security journey. The goal of this step is to make the attackers' work *much* harder as they try to [obtain access to your on-premises or cloud infrastructures](protect-against-ransomware-phase3.md) at the various common points of entry. There are many tasks, so it’s important to prioritize your work here based on how fast you can accomplish these with your current resources.
+This last set of tasks is important to raise friction for entry but will take time to complete as part of a larger security journey. The goal of this step is to make the attackers' work *much* harder as they try to [obtain access to your on-premises or cloud infrastructures](protect-against-ransomware-phase3.md) at the various common points of entry. There are many tasks, so it's important to prioritize your work here based on how fast you can accomplish these with your current resources.
 
-While many of these will be familiar and easy to quickly accomplish, it’s critically important that ***your work on step 3 should not slow down your progress on steps 1 and 2***.
+While many of these will be familiar and easy to quickly accomplish, it's critically important that ***your work on step 3 should not slow down your progress on steps 1 and 2***.
+
+> [!TIP]
+> For Azure-specific guidance on preparing for, detecting, and responding to ransomware attacks in cloud environments, see [Ransomware protection in Azure](/azure/security/fundamentals/ransomware-protection).
 
 ## Ransomware protection at a glance
 
@@ -136,6 +139,11 @@ Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
+- [Ransomware protection in Azure](/azure/security/fundamentals/ransomware-protection)
+- [Prepare for a ransomware attack in Azure](/azure/security/fundamentals/ransomware-prepare)
+- [Detect and respond to ransomware attacks in Azure](/azure/security/fundamentals/ransomware-detect-respond)
+- [Azure features and resources for ransomware protection](/azure/security/fundamentals/ransomware-features-resources)
+- [Improve security defenses with Azure Firewall Premium](/azure/security/fundamentals/ransomware-protection-with-azure-firewall)
 - [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)

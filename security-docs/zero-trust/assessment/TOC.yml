@@ -1,0 +1,23 @@
+- name: Zero Trust assessment documentation
+  href: index.yml
+- name: Overview
+  expanded: true
+  items: 
+  - name: What is the Zero Trust assessment?
+    href: overview.md
+- name: How to
+  expanded: true
+  items:
+  - name: Get started with the Zero Trust assessment
+    href: get-started.md
+  - name: Zero Trust pillars
+    expanded: false
+    items: 
+     - name: Identity
+       href: /entra/fundamentals/configure-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
+     - name: Devices
+       href: /intune/intune-service/protect/zero-trust-configure-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
+- name: Reference
+  items:
+  - name: Assessment terminology
+    href: glossary.md

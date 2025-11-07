@@ -1,16 +1,14 @@
 ---
-title: Zero Trust assessment and progress tracking resources
-description: Get the assessment and progress tracking resources in the Zero Trust library.
+title: Zero Trust Readiness and Progress Assessment
+description: Discover Zero Trust assessment tools and progress tracking resources to evaluate your security posture and streamline your Zero Trust implementation journey.
 ms.date: 01/23/2025
 ms.service: security
-author: brendacarter
-ms.author: bcarter
+author: MicrosoftGuyJFlo
+ms.author: joflore
 ms.subservice: zero-trust
 ms.topic: conceptual
-ms.collection:
-  - zerotrust
+ms.collection: zerotrust
 ---
-
 # Zero Trust assessment and progress tracking resources
 
 [Zero Trust](zero-trust-overview.md) is a security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request came from or what resource it accessed, the Zero Trust model teaches us to "never trust, always verify."
@@ -107,15 +105,17 @@ For IT department project leads and implementers.
 
 :::image type="content" source="./media/adoption-guide/zero-trust-posture-assessment-example.png" alt-text="Screenshot of assessment questions for identities." lightbox="./media/adoption-guide/zero-trust-posture-assessment-example.png":::
 
-### Zero Trust Assessment strategy workshop
+### Zero Trust Assessment and strategy workshop
 
 Evaluate your Zero Trust security posture and maturity level.
 
-For IT department project leads and implementers.
-
-Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztworkshop](https://aka.ms/ztworkshop)
+IT department project leads and implementers can use the Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztworkshop](https://aka.ms/ztworkshop) to track progress.
 
 :::image type="content" source="./media/zero-trust-assessment-strategy-workshop.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/zero-trust-assessment-strategy-workshop.png":::
+
+Learn how to automate the process of checking your tenant's configuration against Microsoft's best practices with the [Zero Trust Assessment](assessment/overview.md).
+
+:::image type="content" source="assessment/media/results-overview.png" alt-text="Screenhot of a sample run of the Zero Trust Assessment showing results for an example company called Contoso.":::
 
 ## Recommended training
 

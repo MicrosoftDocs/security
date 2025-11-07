@@ -90,6 +90,9 @@ Activities might take place during maintenance windows and involve security conf
 > [!IMPORTANT]
 > These attacks can be *catastrophic* to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware that usually only requires malware remediation, **human-operated ransomware will continue to threaten your business operations after the initial encounter**.
 
+> [!TIP]
+> For Azure-specific protection strategies and native capabilities to defend against ransomware in cloud environments, see [Ransomware protection in Azure](/azure/security/fundamentals/ransomware-protection).
+
 
 [The impact and likelihood that human-operated ransomware attacks will continue](media/human-operated-ransomware/ransomware-extortion-based-attack.png)
 
@@ -152,6 +155,8 @@ Microsoft Defender for Cloud Apps:
 Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Ransomware protection in Azure](/azure/security/fundamentals/ransomware-protection)
+
 
 Microsoft Copilot for Security:
 
@@ -160,17 +165,11 @@ Microsoft Copilot for Security:
 OpenAI key ransomware mitigation strategies, in ChatGPT’s own words, include: 
 
 1. **Training data curation**
-
 1. **Safety layers and filters**
-
 1. **Empirical testing and red teaming**
-
 1. **Continuous monitoring**
-
 1. **Alignment and safety research**
-
 1. **Community reporting and feedback**
-
 1. **Partnerships and policies**
 
 For more detailed information, refer to OpenAI's official documentation on their approach to [AI safety and misuse mitigation](https://openai.com/safety).

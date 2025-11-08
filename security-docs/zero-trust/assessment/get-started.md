@@ -108,7 +108,7 @@ The assessment saves the results in the current working folder `.\ZeroTrustRepor
 Use the `-Path` parameter to provide a custom location to store the assessment report. For example, the following command saves the report in the folder `C:/MyAssessment01/ZeroTrustAssessmentReport.html`:
 
    ```powershell
-   Invoke-ZtAssessment --Path C:/MyAssessment01
+   Invoke-ZtAssessment -Path C:\MyAssessment01
    ```
 
 > [!TIP]
@@ -144,7 +144,6 @@ Run the following commands to ensure all versions of the past modules are uninst
 
 ```powershell
 Uninstall-Module ZeroTrustAssessment -Force -AllVersions
-Uninstall-Module ZeroTrustAssessmentv2 -Force -AllVersions
 ```
 
 Restart PowerShell and [install the latest version](#install-the-powershell-modules).
@@ -160,7 +159,6 @@ When uninstalling Microsoft Graph you should also uninstall all versions of the 
 ```powershell
 Install-Module Uninstall-Graph
 Uninstall-Module ZeroTrustAssessment -Force -AllVersions
-Uninstall-Module ZeroTrustAssessmentv2 -Force -AllVersions
 Uninstall-Graph
 ```
 
@@ -177,6 +175,8 @@ On a new installation of Windows, you might see the following error:
 > Inner exception type: DllNotFoundException
 
 This error occurs because you're running on a system that doesn't include `Microsoft Visual C++ 2015-2022 Redistributable (x64) - Microsoft.VCRedist.2015+.x64`. VCRedist usually installs when you install Microsoft products such as Microsoft Office or Microsoft Entra Connect Sync. If you're using a new device, you might need to install this component manually. See [Latest Microsoft Visual C++ Redistributable version](/cpp/windows/latest-supported-vc-redist).
+
+Support for Windows on ARM64 devices is not available at this time.
 
 ### How do I get support?
 

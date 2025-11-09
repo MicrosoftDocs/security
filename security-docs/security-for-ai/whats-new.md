@@ -23,13 +23,15 @@ This article lists new capabilities and resources (blogs and videos) related to 
 
 |Product | Feature updates |  
 | ----  | ----------------------------- | 
-|Microsoft Agent 365  |  |
+|Microsoft Agent 365 (Preview)  | [Microsoft Agent 365 introduces a unified control plane for securing AI agents across the enterprise](agent-365-security.md)   |
 |Microsoft Purview |  |
 |Microsoft Entra  |  |
 |Defender for Cloud |  |
-|Defender for Cloud Apps |  |
+|Defender for Cloud Apps |[Posture management, threat protection] https://review.learn.microsoft.com/en-us/defender-cloud-apps/ai-agent-protection?branch=pr-en-us-5435 |
 |Azure AI Foundry  |  |
-|Azure AI Foundry  |  |
+
+**Additional blogs, videos, and other resources**
+- 
 
 ## May 2025
 

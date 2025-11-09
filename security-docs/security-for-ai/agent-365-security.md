@@ -1,7 +1,7 @@
 ---
 title: How do I manage AI agent security in my organization?
-description: How to use Microsoft capabilities to manage AI agent security in your environment. 
-ms.date: 04/01/2025
+description: How to use Microsoft Agent 365 to secure all of the AI agents in your environment. 
+ms.date: 11/09/2025
 ms.update-cycle: 180-days
 ms.service: security
 ms.subservice: security-for-ai
@@ -14,14 +14,13 @@ ms.collection:
   - zerotrust-solution
   - msec-ai-copilot
 
-# Customer intent: As a SOC manager, I want to manage AI agent security in my organization using Microsoft security capabilities so that I can ensure the safe use of AI. 
+# Customer intent: As a SOC manager, I want to manage the security of all of the AI agents in my organization so that I can ensure the safety of our data and systems.
 
 ---
 
-# Manage AI agent security with Microsoft Agent 365
+# Secure all of your AI agents with Microsoft Agent 365
 
-
-Manage AI agent in Microsoft Copilot 365 and Microsoft 365 admin center using Agent 365.
+Secure AI agents in Microsoft Copilot 365 and Microsoft 365 admin center using Microsoft Agent 365.
 
 Agent 365 provides comprehensive observability and security capabilities for AI agents within your organization built on Microsoft security core primitives provided by Microsoft Purview, Microsoft Defender, and Microsoft Entra.
 

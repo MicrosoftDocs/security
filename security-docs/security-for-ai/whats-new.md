@@ -5,8 +5,8 @@ ms.date: 05/19/2025
 ms.update-cycle: 180-days
 ms.service: security
 ms.subservice: security-for-ai
-author: BrendaCarter
-ms.author: bcarter
+author: gyuwi-ms
+ms.author: guywild
 ms.topic: concept-article
 ms.collection: 
   - msftsolution-security-for-ai
@@ -18,6 +18,18 @@ ms.collection:
 # What's new in Microsoft AI security
 
 This article lists new capabilities and resources (blogs and videos) related to Microsoft AI security. 
+
+## November 2025
+
+|Product | Feature updates |  
+| ----  | ----------------------------- | 
+|Microsoft Agent 365  |  |
+|Microsoft Purview |  |
+|Microsoft Entra  |  |
+|Defender for Cloud |  |
+|Defender for Cloud Apps |  |
+|Azure AI Foundry  |  |
+|Azure AI Foundry  |  |
 
 ## May 2025
 

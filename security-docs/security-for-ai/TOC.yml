@@ -13,4 +13,6 @@
     - name: Protect AI apps and data
       href: protect.md  
     - name: Govern AI for compliance
-      href: govern.md             
+      href: govern.md 
+    - name: Protect AI agents with Microsoft Agent 365
+      href: agent-365-security.md

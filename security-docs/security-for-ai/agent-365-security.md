@@ -24,7 +24,7 @@ As organizations adopt AI agents to automate workflows and enhance productivity,
 
 This article introduces the core security capabilities of Microsoft Agent 365 and shows how it builds on Microsoft’s existing security foundation to manage AI agents effectively.
 
-## Microsoft Agent 365 extends the Microsoft security infrastructure to managing agents
+## Extend your Microsoft security infrastructure to secure your AI agents
 
 Microsoft Agent 365 provides a centralized framework for securing all of the AI agents in your environment. By integrating with Microsoft’s security suite—Microsoft Entra, Microsoft Purview, Microsoft Defender—and Microsoft 365 Admin Center, Agent 365 delivers:
 

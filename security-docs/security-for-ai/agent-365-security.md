@@ -36,7 +36,6 @@ Security tools: Purview, Defender, Entra
 - Threat Detection: Leverage Microsoft Defender to identify and respond to potential threats or anomalies in AI agent behavior.
 
 Link from A365 Learn page to this doc.
-All products (Abby, Sarah, ...) link to this doc.
 
 Defender: Posture management and threat protectionfor AI agents, investigation and hunting
 

@@ -26,8 +26,8 @@ This article lists new capabilities and resources (blogs and videos) related to 
 |Microsoft Agent 365 (Preview)  | [Microsoft Agent 365 introduces a unified control plane for securing AI agents across the enterprise](agent-365-security.md)   |
 |Microsoft Purview |  |
 |Microsoft Entra  |  |
-|Defender for Cloud |  |
-|Defender for Cloud Apps |[Posture management, threat protection for Microsoft Copilot Studio AI agents](https://review.learn.microsoft.com/en-us/defender-cloud-apps/ai-agent-protection?branch=pr-en-us-5435)|
+|Defender for Cloud | [Posture management and threat protection for Azure Foundry AI agents](https://review.learn.microsoft.com/en-us/azure/defender-for-cloud/ai-security-posture?branch=pr-en-us-1983#discover-ai-agents-preview)|
+|Defender for Cloud Apps |[Posture management and threat protection for Microsoft Copilot Studio AI agents](https://review.learn.microsoft.com/en-us/defender-cloud-apps/ai-agent-protection?branch=pr-en-us-5435)|
 |Azure AI Foundry  |  |
 
 **Additional blogs, videos, and other resources**

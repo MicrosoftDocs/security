@@ -20,6 +20,20 @@ ms.collection:
 
 # Manage AI agent security using Microsoft Agent 365
 
+As organizations adopt AI agents to automate workflows and enhance productivity, securing these agents has become a critical concern. Unlike traditional applications, AI agents operate autonomously, interact with sensitive data, and execute tasks across multiple systems - making them high-value targets for intentional attacks and also vulnerable to unintentional compromise caused by misconfigurations or excessive permissions.
+
+This article introduces the core security capabilities of Microsoft Agent 365 and shows how it builds on Microsoft’s existing security foundation to manage AI agents effectively.
+
+## Microsoft Agent 365 extends the Microsoft security infrastructure to managing agents
+
+Microsoft Agent 365 provides a centralized framework for securing all of the AI agents in your environment. By integrating with Microsoft’s security suite—Microsoft Entra, Microsoft Purview, Microsoft Defender—and Microsoft 365 Admin Center, Agent 365 delivers:
+
+- **Full observability**: Gain complete visibility into your agent fleet, including inventory and activity tracking.
+- **Identity-first security**: Enforce strong identity controls through Entra Agent ID, ensuring agents are authenticated and governed like human identities.
+- **Compliance enforcement**: Apply governance policies and regulatory controls with Purview’s compliance tools.
+- **Threat protection & posture management**: Detect risks, enforce security baselines, and remediate vulnerabilities using Microsoft Defender.
+
+
 Secure AI agents in Microsoft Copilot 365 and Microsoft 365 admin center using Microsoft Agent 365.
 
 Agent 365 provides comprehensive observability and security capabilities for AI agents within your organization built on Microsoft security core primitives provided by Microsoft Purview, Microsoft Defender, and Microsoft Entra.

@@ -27,7 +27,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 |Microsoft Purview |  |
 |Microsoft Entra  |  |
 |Defender for Cloud |  |
-|Defender for Cloud Apps |[Posture management, threat protection] https://review.learn.microsoft.com/en-us/defender-cloud-apps/ai-agent-protection?branch=pr-en-us-5435 |
+|Defender for Cloud Apps |[Posture management, threat protection for Microsoft Copilot Studio AI agents](https://review.learn.microsoft.com/en-us/defender-cloud-apps/ai-agent-protection?branch=pr-en-us-5435)|
 |Azure AI Foundry  |  |
 
 **Additional blogs, videos, and other resources**

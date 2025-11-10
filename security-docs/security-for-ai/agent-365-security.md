@@ -1,5 +1,5 @@
 ---
-title: How do I manage AI agent security in my organization?
+title: Manage AI agent security using Microsoft Agent 365
 description: How to use Microsoft Agent 365 to secure all of the AI agents in your environment. 
 ms.date: 11/09/2025
 ms.update-cycle: 180-days
@@ -18,7 +18,7 @@ ms.collection:
 
 ---
 
-# Secure all of your AI agents with Microsoft Agent 365
+# Manage AI agent security using Microsoft Agent 365
 
 Secure AI agents in Microsoft Copilot 365 and Microsoft 365 admin center using Microsoft Agent 365.
 

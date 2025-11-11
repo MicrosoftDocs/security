@@ -26,7 +26,7 @@ Microsoft Agent 365, Microsoft's unified control plane for AI agents, lets you s
 
 This article outlines the core security capabilities of Microsoft Agent 365 and shows how it builds on Microsoft’s existing security foundation to manage AI agents effectively.
 
-## Extend your Microsoft security infrastructure to secure your AI agents
+## Extend your Microsoft security infrastructure to secure all of your AI agents
 
 Microsoft Agent 365 provides a centralized framework for securing all of the AI agents in your environment. By integrating with Microsoft’s security suite - Microsoft Entra, Microsoft Purview, Microsoft Defender - and Microsoft 365 Admin Center, Agent 365 delivers:
 
@@ -35,31 +35,6 @@ Microsoft Agent 365 provides a centralized framework for securing all of the AI 
 - **Data security**: Enforce regulatory policies, apply sensitivity labels, and prevent data leaks with Microsoft Purview.
 - **Threat protection and posture management**: Detect risks, enforce security baselines, and remediate vulnerabilities using Microsoft Defender.
 
+## Next step
 
-Secure AI agents in Microsoft Copilot 365 and Microsoft 365 admin center using Microsoft Agent 365.
-
-
-
-Secure agents created using Foundry, Copilot Studio, Copilot 365, and third-parties
-
-For the SOC
-
-Security tools: Purview, Defender, Entra
-
-- Observability: Monitor AI agent activities, data access, and interactions across your organization.
-- Access Control: Implement role-based access controls (RBAC) and conditional access policies to manage who can create, deploy, and interact with AI agents.
-- Data Protection: Use data loss prevention (DLP) policies and encryption to safeguard sensitive information accessed or processed by AI agents.
-- Threat Detection: Leverage Microsoft Defender to identify and respond to potential threats or anomalies in AI agent behavior.
-
-Link from A365 Learn page to this doc.
-
-Defender: Posture management and threat protectionfor AI agents, investigation and hunting
-
-## Next step for securing AI
-
-After discovering the AI usage in your organization, the next step is to apply protections:
-
-- Protect sensitive data used with AI apps
-- Implement threat protection specifically for AI use
-
-See the next article in this series: [How do I protect my organization while using AI apps?](protect.md)
+Learn more about [Microsoft Agent 365 security capabilities](https://review.learn.microsoft.com/en-us/microsoft-agent-365/overview?branch=main).

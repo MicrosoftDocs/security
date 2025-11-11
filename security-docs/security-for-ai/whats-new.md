@@ -25,7 +25,8 @@ This article lists new capabilities and resources (blogs and videos) related to 
 | ----  | ----------------------------- | 
 |Microsoft Agent 365 (Preview)  | [Microsoft Agent 365 introduces a unified control plane for securing AI agents across the enterprise](agent-365-security.md)   |
 |Microsoft Purview | Purview Data Loss Prevention (DLP) enforcement, insider risk, audit, and compliance for agents |
-|Microsoft Entra  | Entra identity and access for agents  |
+|Microsoft Entra  | [Microsoft Entra Agent ID](https://review.learn.microsoft.com/en-us/entra/agent-id/identity-platform/what-is-agent-id-platform?branch=release-ignite-entra-docs-pr) - Identity and access management capabilities specifically designed for AI agents<br>
+[Microsoft Entra Agent Platform](https://review.learn.microsoft.com/en-us/entra/agent-id/identity-platform/what-is-agent-id-platform?branch=release-ignite-entra-docs-pr) - A developer-first platform for managing AI agent identities and access to Entra ID  |
 |Defender for Cloud | [Posture management and threat protection for Azure Foundry AI agents](https://review.learn.microsoft.com/en-us/azure/defender-for-cloud/ai-security-posture?branch=pr-en-us-1983#discover-ai-agents-preview)|
 |Defender for Cloud Apps |[Threat protection for Microsoft Copilot Studio AI agents](https://review.learn.microsoft.com/en-us/defender-cloud-apps/ai-agent-protection?branch=pr-en-us-5435)|
 |Azure AI Foundry  | Agent control plane for Azure AI Foundry: <br> - Secure, observe, and operate agents directly in AI Foundry<br> - Identify code and runtime risks in Microsoft Defender and auto-fix in GitHub with Copilot  |

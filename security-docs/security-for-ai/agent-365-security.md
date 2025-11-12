@@ -26,6 +26,8 @@ Microsoft Agent 365 provides a unified control plane that lets you oversee the s
 
 This article outlines the core security capabilities of Microsoft Agent 365 and shows how it builds on Microsoft’s existing security foundation to manage AI agents effectively.
 
+For more information about Microsoft Agent 365, see [Microsoft Agent 365 documentation](https://review.learn.microsoft.com/en-us/microsoft-agent-365/overview/)
+
 ## A unified control plane for managing agent security
 
 Agent 365 works seamlessly with Microsoft 365 Copilot by automatically applying identity, compliance, and security controls to Copilot agents. It also integrates with Microsoft 365 Admin Center, giving IT teams a familiar interface to configure policies, apply Conditional Access, and monitor compliance across the agent fleet.
@@ -58,4 +60,4 @@ By integrating with Microsoft’s security suite - which now provides agent-spec
 
 ## Next step
 
-Learn more about [Microsoft Agent 365 security capabilities](https://review.learn.microsoft.com/en-us/microsoft-agent-365/?branch=main).
+Learn more about [Microsoft Agent 365](https://review.learn.microsoft.com/en-us/microsoft-agent-365/?branch=main).

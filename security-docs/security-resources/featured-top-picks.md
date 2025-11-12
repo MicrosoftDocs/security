@@ -5,12 +5,22 @@ ms.service: security
 ms.topic: whats-new
 author: ttorble
 ms.author: ralyon
-ms.date: 09/30/2025
+ms.date: 11/14/2025
 ---
 
 # Featured top picks
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
+
+## September 2025
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| September 30 | [Get started with identities and access using Microsoft Entra](/credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/) | Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra. |
+|              | [Microsoft Security Copilot for Developers](/copilot/security/developer/) | Learn to create, publish, and test agents in Security Copilot using natural language, lite experience forms, YAMLs, and MCPs. Designed for developers to streamline security workflows. |
+|              | [Join us November 17-21 at Microsoft Ignite](https://aka.ms/MSIgnite_WebEX_Security2) | Get the security advantage you need to thrive in the era of AI. Explore our AI-first, end-to-end security platform, attend hands-on labs, get certified, connect with peers, and chat with industry experts. |
+|              | [Microsoft Sentinel: the security platform for the era of agentic AI](https://aka.ms/AAy5gzy) | Bringing together data, context, automation, and intelligent agents to enable defenders to protect AI end-to-end. |
+
 
 ## July 2025
 

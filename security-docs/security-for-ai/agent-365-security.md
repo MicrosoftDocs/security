@@ -30,6 +30,8 @@ This article outlines the core security capabilities of Microsoft Agent 365 and 
 
 Agent 365 works seamlessly with Microsoft 365 Copilot by automatically applying identity, compliance, and security controls to Copilot agents. It also integrates with Microsoft 365 Admin Center, giving IT teams a familiar interface to configure policies, apply Conditional Access, and monitor compliance across the agent fleet.
 
+:::image type="content" source="media/agent-365-admin-center.png" alt-text="Diagram that shows the second article in series of security for ai, that is Discover.":::
+
 This control plane provides centralized visibility and lets you drill down into Microsoft's suite of security tools to manage posture, configure policies, investigate issues, and remediate risks.
 
 ## Extend your Microsoft security infrastructure to secure all of your AI agents
@@ -39,13 +41,13 @@ Microsoft Agent 365 provides a centralized framework for securing all of the AI 
 -	**Security posture**: Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents.
 Product: Microsoft Defender, Microsoft Security Exposure Management
 
-•	**Detection & Response**: Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
+-	**Detection & Response**: Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
 Product: Microsoft Defender. 
 
-•	**Runtime defense**: Use AI-powered intelligence to block prompt injection attacks, malicious traffic and prevent data exfiltration due to risky agent behavior in real time.
+-	**Runtime defense**: Use AI-powered intelligence to block prompt injection attacks, malicious traffic and prevent data exfiltration due to risky agent behavior in real time.
 Product: Microsoft Defender, Microsoft Entra SASE, Microsoft Purview Insider Risk Management
 
-•	**Data security**: Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies.
+-	**Data security**: Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies.
 Product: Microsoft Purview DLP, Information Protection, Data Security Posture Management
 
 

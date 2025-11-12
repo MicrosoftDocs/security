@@ -5,7 +5,7 @@ ms.date: 05/19/2025
 ms.update-cycle: 180-days
 ms.service: security
 ms.subservice: security-for-ai
-author: gyuwi-ms
+author: guywi-ms
 ms.author: guywild
 ms.topic: concept-article
 ms.collection: 

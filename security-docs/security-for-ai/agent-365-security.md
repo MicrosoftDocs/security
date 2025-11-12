@@ -30,7 +30,7 @@ This article outlines the core security capabilities of Microsoft Agent 365 and 
 
 Agent 365 works seamlessly with Microsoft 365 Copilot by automatically applying identity, compliance, and security controls to Copilot agents. It also integrates with Microsoft 365 Admin Center, giving IT teams a familiar interface to configure policies, apply Conditional Access, and monitor compliance across the agent fleet.
 
-:::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center.":::
+:::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center." lightbox="media/agent-365-admin-center.png":::
 
 This control plane provides centralized visibility and lets you drill down into Microsoft's suite of security tools to manage posture, configure policies, investigate issues, and remediate risks.
 

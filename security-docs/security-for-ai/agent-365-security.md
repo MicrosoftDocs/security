@@ -1,5 +1,5 @@
 ---
-title: Manage AI agent security using Microsoft Agent 365
+title: Oversee AI agent security using Microsoft Agent 365
 description: How to use Microsoft Agent 365 to secure all of the AI agents in your environment. 
 ms.date: 11/09/2025
 ms.update-cycle: 180-days
@@ -47,13 +47,13 @@ By integrating with Microsoft’s security suite - which now provides agent-spec
 
     Security products: Microsoft Defender.
 
--	**Runtime defense**: Use AI-powered intelligence to block prompt injection attacks, malicious traffic and prevent data exfiltration due to risky agent behavior in real time.
+-	**Runtime defense**: Use AI-powered intelligence to block prompt injection attacks, malicious traffic, and prevent data exfiltration due to risky agent behavior in real time.
   
-    Security products: Microsoft Defender, Microsoft Entra SASE, Microsoft Purview Insider Risk Management
+    Security products: Microsoft Defender, Microsoft Entra Secure Access Service Edge, Microsoft Purview Insider Risk Management
 
 -	**Data security**: Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies.
 
-    Security products: Microsoft Purview DLP, Information Protection, Data Security Posture Management
+    Security products: Microsoft Purview Data Loss Prevention, Information Protection, Data Security Posture Management
 
 
 ## Next step

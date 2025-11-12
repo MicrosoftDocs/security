@@ -27,6 +27,15 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
+      - avatarUrl: /security/media/hubpage/generic-badge.svg
+        componentType: testimonial-card
+        name: "Microsoft Ignite Skills Challenge - Secure & Govern AI with Confidence"
+        role: Skills challenge
+        feedback: Take the challenge, prove your skills, and lead the future of AI security.
+        link:
+          componentType: link
+          url: https://azure.github.io/azure-skilling-challenges-2025/#challenges
+          text: Join the challenge
       - avatarUrl: /security/media/hubpage/applied-skills.png
         componentType: testimonial-card
         name: Get started with identities and access using Microsoft Entra
@@ -54,18 +63,49 @@ sections:
           componentType: link
           url: https://aka.ms/MSIgnite_WebEX_Security2
           text: Register now
-      - avatarUrl: /security/media/hubpage/whats-new.svg
-        componentType: testimonial-card
-        name: "Microsoft Sentinel: the security platform for the era of agentic AI"
-        role: News announcement
-        feedback: Bringing together data, context, automation, and intelligent agents to enable defenders to protect AI end-to-end.
-        link:
-          componentType: link
-          url: https://aka.ms/AAy5gzy
-          text: Learn more
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+
+# Plans
+  - componentType: cards
+    title: Develop your security skills
+    summary: |
+      Level up your security expertise with four guided skilling plans that blend hands-on modules, real-world scenarios, and actionable best practices. Choose your path and start building capabilities you can apply right away to data protection, access governance, threat operations, and AI security
+    blocks:
+    - componentType: card
+      title: Protect sensitive data with Microsoft Purview 
+      summary: Build foundational and advanced skills to secure sensitive data with Microsoft Purview across M365 & hybrid environments.
+      imageUrl: ""
+      links:
+        - componentType: link
+          url: /plans/w4q8uztk3og0xo?sharingId=1DB7ACD9A156B8F9%3Fwt.mc_id%3Dlfo_plans_webpage_wwl_security&wt.mc_id=lfo_plans_webpage_wwl_secondary
+          text: Start the Purview plan
+    - componentType: card
+      title: Secure workforce access
+      summary: Advance your identity governance skills with Microsoft Entra. Learn to secure access, manage permissions, and protect resources across hybrid environments.
+      imageUrl: ""
+      links: 
+        - componentType: link
+          url: plans/d4yju1te7jpj6m?sharingId=1DB7ACD9A156B8F9%3Fwt.mc_id%3Dlfo_plans_webpage_wwl_security&wt.mc_id=lfo_plans_webpage_wwl_secondary/security/media/security-hub/take-microsoft-security-virtual-training-day.png 
+          text: Start the access plan
+    - componentType: card
+      title: Detect, analyze, investigate, and hunt threats
+      summary: Learn to implement Microsoft Defender for Cloud. Strengthen cloud security posture, manage risks, and protect workloads effectively
+      imageUrl: ""
+      links:
+        - componentType: link
+          url: /plans/yjr0fetqgj4q2j?sharingId=1DB7ACD9A156B8F9%3Fwt.mc_id%3Dlfo_plans_webpage_wwl_security&wt.mc_id=lfo_plans_webpage_wwl_secondary
+          text: Start the threat operations plan
+    - componentType: card
+      title: "Secure AI: Protect, govern, and defend"
+      summary: Secure AI workloads with Microsoft Purview & Defender. Learn governance, risk management, and protection strategies for hybrid environments.
+      imageUrl: ""
+      links:
+        - componentType: link
+          url: /plans/nq2bjtpp657o?wt.mc_id=ignite25-plans-SecuringAIProtectGovernDefend-scimktg
+          text: Start the AI security plan
+
 # Microsoft Security product documentation 
   - componentType: grid
     title: Microsoft Security product documentation

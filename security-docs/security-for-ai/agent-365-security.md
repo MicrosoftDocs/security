@@ -39,23 +39,14 @@ This control plane provides centralized visibility and lets you drill down into 
 
 ## Microsoft security infrastructure extended to AI agents
 
-By integrating with Microsoft’s security suite - which now provides agent-specific controls and capabilities - Agent 365 lets you manage AI agent security across key areas:
+By integrating with Microsoft’s security suite - which now provides agent-specific controls and capabilities - Agent 365 lets you manage AI agent security across key areas. Drill down into each security product from the Agent 365 control plane to act on agent-specific insights and recommendations, including:
 
--	**Security posture**: Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents.
-
-    Security products: Microsoft Defender, Microsoft Security Exposure Management
-
--	**Detection and response**: Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
-
-    Security products: Microsoft Defender.
-
--	**Runtime defense**: Use AI-powered intelligence to block prompt injection attacks, malicious traffic, and prevent data exfiltration due to risky agent behavior in real time.
-  
-    Security products: Microsoft Defender, Microsoft Entra Secure Access Service Edge, Microsoft Purview Insider Risk Management
-
--	**Data security**: Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies.
-
-    Security products: Microsoft Purview Data Loss Prevention, Information Protection, Data Security Posture Management
+| Area | Description | Products |
+|------|-------------|----------|
+| **Security posture** | Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents. | Microsoft Defender<br>Microsoft Security Exposure Management |
+| **Detection and response** | Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level. | Microsoft Defender |
+| **Runtime defense** | Use AI-powered intelligence to block prompt injection attacks, malicious traffic, and prevent data exfiltration due to risky agent behavior in real time. | Microsoft Defender<br>Microsoft Entra Secure Access Service Edge<br>Microsoft Purview Insider Risk Management |
+| **Data security** | Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies. | Microsoft Purview Data Loss Prevention<br> Microsoft Purview Information Protection<br>Microsoft Purview Data Security Posture Management |
 
 
 ## Next step

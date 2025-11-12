@@ -24,7 +24,7 @@ As organizations adopt AI agents to automate workflows and enhance productivity,
 
 Microsoft Agent 365 provides a unified control plane that lets you oversee the security of all AI agents in your organization. It integrates with Microsoft’s security suite - now extended to secure AI agents - to secure agents built in Microsoft 365 Copilot, Microsoft Copilot Studio, AI Foundry, and third-party solutions.
 
-This article outlines the core security capabilities of Microsoft Agent 365 and shows how it builds on Microsoft’s existing security foundation to manage AI agents effectively.
+This article outlines the core security capabilities that Microsoft Agent 365 provides based on Microsoft’s extended security infrastructure for AI agents.
 
 For more information about Microsoft Agent 365, see [Microsoft Agent 365 documentation](https://review.learn.microsoft.com/en-us/microsoft-agent-365/overview/).
 

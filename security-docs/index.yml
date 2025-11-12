@@ -75,7 +75,7 @@ sections:
     blocks:
     - componentType: card
       title: Protect sensitive data with Microsoft Purview 
-      summary: Build foundational and advanced skills to secure sensitive data with Microsoft Purview across M365 & hybrid environments.
+      summary: Build foundational and advanced skills to secure sensitive data with Microsoft Purview across Microsoft 365 & hybrid environments.
       imageUrl: ""
       links:
         - componentType: link
@@ -87,7 +87,7 @@ sections:
       imageUrl: ""
       links: 
         - componentType: link
-          url: plans/d4yju1te7jpj6m?sharingId=1DB7ACD9A156B8F9%3Fwt.mc_id%3Dlfo_plans_webpage_wwl_security&wt.mc_id=lfo_plans_webpage_wwl_secondary/security/media/security-hub/take-microsoft-security-virtual-training-day.png 
+          url: /plans/d4yju1te7jpj6m?sharingId=1DB7ACD9A156B8F9%3Fwt.mc_id%3Dlfo_plans_webpage_wwl_security&wt.mc_id=lfo_plans_webpage_wwl_secondary/security/media/security-hub/take-microsoft-security-virtual-training-day.png 
           text: Start the access plan
     - componentType: card
       title: Detect, analyze, investigate, and hunt threats

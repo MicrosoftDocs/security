@@ -18,7 +18,7 @@ ms.collection:
 
 ---
 
-# Manage AI agent security using Microsoft Agent 365
+# Oversee AI agent security using Microsoft Agent 365
 
 As organizations adopt AI agents to automate workflows and enhance productivity, securing these agents has become a critical concern. Unlike traditional applications, AI agents operate autonomously, interact with sensitive data, and execute tasks across multiple systems - making them high-value targets for intentional attacks and also vulnerable to unintentional compromise caused by misconfigurations or excessive permissions.
 
@@ -26,15 +26,29 @@ Microsoft Agent 365, Microsoft's unified control plane for AI agents, lets you s
 
 This article outlines the core security capabilities of Microsoft Agent 365 and shows how it builds on Microsoft’s existing security foundation to manage AI agents effectively.
 
+## A unified control plane for managing agent security
+
+Agent 365 works seamlessly with Microsoft 365 Copilot by automatically applying identity, compliance, and security controls to Copilot agents. It also integrates with Microsoft 365 Admin Center, giving IT teams a familiar interface to configure policies, apply Conditional Access, and monitor compliance across the agent fleet.
+
+This control plane provides centralized visibility and lets you drill down into Microsoft's suite of security tools to manage posture, configure policies, investigate issues, and remediate risks.
+
 ## Extend your Microsoft security infrastructure to secure all of your AI agents
 
 Microsoft Agent 365 provides a centralized framework for securing all of the AI agents in your environment. By integrating with Microsoft’s security suite - Microsoft Entra, Microsoft Purview, Microsoft Defender - and Microsoft 365 Admin Center, Agent 365 delivers:
 
-- **Full observability**: Gain complete visibility into your agent fleet, including inventory and activity tracking.
-- **Identity-first security**:  Enforce strong identity controls with Entra Agent ID and apply conditional access to ensure agents are authenticated and governed like human identities.
-- **Data security**: Enforce regulatory policies, apply sensitivity labels, and prevent data leaks with Microsoft Purview.
-- **Threat protection and posture management**: Detect risks, enforce security baselines, and remediate vulnerabilities using Microsoft Defender.
+-	**Security posture**: Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents.
+Product: Microsoft Defender, Microsoft Security Exposure Management
+
+•	**Detection & Response**: Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
+Product: Microsoft Defender. 
+
+•	**Runtime defense**: Use AI-powered intelligence to block prompt injection attacks, malicious traffic and prevent data exfiltration due to risky agent behavior in real time.
+Product: Microsoft Defender, Microsoft Entra SASE, Microsoft Purview Insider Risk Management
+
+•	**Data security**: Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies.
+Product: Microsoft Purview DLP, Information Protection, Data Security Posture Management
+
 
 ## Next step
 
-Learn more about [Microsoft Agent 365 security capabilities](https://review.learn.microsoft.com/en-us/microsoft-agent-365/overview?branch=main).
+Learn more about [Microsoft Agent 365 security capabilities](https://review.learn.microsoft.com/en-us/microsoft-agent-365/?branch=main).

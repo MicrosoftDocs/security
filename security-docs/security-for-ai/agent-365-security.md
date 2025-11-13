@@ -82,7 +82,7 @@ Understand your agent and data security posture and attack paths that attackers 
 
 Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
 
-:::image type="content" source="media/agent-365-microsoft-defender-incident.png" alt-text="A screenshot showing the Overview tab on the Agent page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-incident.png":::
+:::image type="content" source="media/agent-365-microsoft-defender-incident.png" alt-text="A screenshot showing the Incident page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-incident.png":::
 
 ### Runtime defense
 

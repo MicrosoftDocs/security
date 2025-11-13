@@ -38,18 +38,35 @@ This control plane provides centralized visibility and lets you drill down into 
 :::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center." lightbox="media/agent-365-admin-center.png":::
 
 
-## Extend your Microsoft security infrastructure to AI agents
+## Microsoft security infrastructure extended to AI agents
 
 Agent 365 extends your existing security and governance practices to AI agents, so teams can use familiar tools and processes without disruption.
 
 By integrating with Microsoft’s security suite - enhanced with agent-specific controls and capabilities - Agent 365 lets you manage AI agent security across key areas. Drill down into each security product from the Agent 365 control plane to act on agent-specific insights and recommendations, including:
 
-| Area | Description | Products |
-|------|-------------|----------|
-| **Security posture** | Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents. | Microsoft Defender<br>Microsoft Security Exposure Management |
-| **Detection and response** | Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level. | Microsoft Defender |
-| **Runtime defense** | Use AI-powered intelligence to block prompt injection attacks, malicious traffic, and prevent data exfiltration due to risky agent behavior in real time. | Microsoft Defender<br>Microsoft Entra Secure Access Service Edge<br>Microsoft Purview Insider Risk Management |
-| **Data security** | Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies. | Microsoft Purview Data Loss Prevention<br> Microsoft Purview Information Protection<br>Microsoft Purview Data Security Posture Management |
+### Security posture
+
+**Microsoft Defender | Microsoft Security Exposure Management**
+
+Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents.
+
+### Detection and response
+
+**Microsoft Defender**
+
+Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
+
+### Runtime defense
+
+**Microsoft Defender | Microsoft Entra Secure Access Service Edge | Microsoft Purview Insider Risk Management**
+
+Use AI-powered intelligence to block prompt injection attacks, malicious traffic, and prevent data exfiltration due to risky agent behavior in real time.
+
+### Data security
+
+**Microsoft Purview Data Loss Prevention | Microsoft Purview Information Protection | Microsoft Purview Data Security Posture Management**
+
+Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies.
 
 
 ## Next step

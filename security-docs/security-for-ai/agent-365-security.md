@@ -58,15 +58,13 @@ Get the complete view of all of the agents used in your organization, including 
 
 Bring agents under management and limit their access to only resources they need. Prevent agents compromise with risk-based conditional access policies.
 
--	IT-defined guardrails. Set policies that define who can create, onboard, and manage agents, assign agent sponsors to keep them under supervision, and ensure that agents start secure with security policy templates.
-Product: Microsoft Entra lifecycle workflows, Policy templates (Entra, Purview)
+-	Define guardrails - Set policies that define who can create, onboard, and manage agents, assign agent sponsors to keep them under supervision, and ensure that agents start secure with security policy templates.
 
--	Access governance. Enforce least privilege access by only giving agents access rights to the apps and resources they need to complete tasks.
-Product: Microsoft Entra ID governance 
+-	Governance access - Enforce least privilege access by only giving agents access rights to the apps and resources they need to complete tasks.
 
--	Conditional access. Enforce real-time intelligent access decisions based on agent context and risk, conditions you define and resource they are trying to access.
-Product: Microsoft Entra Conditional Access and Identity Protection 
+-	Set conditional access - Enforce real-time intelligent access decisions based on agent context and risk, conditions you define and resource they are trying to access.
 
+:::image type="content" source="media/agent-365-conditional-access.png" alt-text="A screenshot showing the Conditional Access page in Microsoft 365 Admin Center." lightbox="media/agent-365-conditional-access.png":::
 
 ### Security posture
 

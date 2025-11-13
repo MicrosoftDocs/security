@@ -44,6 +44,30 @@ Agent 365 extends your existing security and governance practices to AI agents, 
 
 By integrating with Microsoft’s security suite - enhanced with agent-specific controls and capabilities - Agent 365 lets you manage AI agent security across key areas. Drill down into each security product from the Agent 365 control plane to act on agent-specific insights and recommendations, including:
 
+### Identity management
+
+**Microsoft Entra Registry | Microsoft 365 admin center**
+
+Get the complete view of all of the agents used in your organization, including agents with agent ID, agents you register yourself, and shadow agents.
+
+:::image type="content" source="media/agent-365-registry.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center." lightbox="media/agent-365-registry.png":::
+
+### Access control
+
+**Microsoft Entra lifecycle workflows | Microsoft Entra ID governance | Microsoft Entra Conditional Access and Identity Protection**
+
+Bring agents under management and limit their access to only resources they need. Prevent agents compromise with risk-based conditional access policies.
+
+-	IT-defined guardrails. Set policies that define who can create, onboard, and manage agents, assign agent sponsors to keep them under supervision, and ensure that agents start secure with security policy templates.
+Product: Microsoft Entra lifecycle workflows, Policy templates (Entra, Purview)
+
+-	Access governance. Enforce least privilege access by only giving agents access rights to the apps and resources they need to complete tasks.
+Product: Microsoft Entra ID governance 
+
+-	Conditional access. Enforce real-time intelligent access decisions based on agent context and risk, conditions you define and resource they are trying to access.
+Product: Microsoft Entra Conditional Access and Identity Protection 
+
+
 ### Security posture
 
 **Microsoft Defender | Microsoft Security Exposure Management**
@@ -67,6 +91,7 @@ Use AI-powered intelligence to block prompt injection attacks, malicious traffic
 **Microsoft Purview Data Loss Prevention | Microsoft Purview Information Protection | Microsoft Purview Data Security Posture Management**
 
 Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies.
+
 
 
 ## Next step

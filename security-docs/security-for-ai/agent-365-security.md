@@ -72,6 +72,8 @@ Bring agents under management and limit their access to only resources they need
 
 Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents.
 
+:::image type="content" source="media/agent-365-microsoft-defender-posture.png" alt-text="A screenshot showing the Overview tab on the Agent page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-posture.png":::
+
 ### Detection and response
 
 **Microsoft Defender**
@@ -84,12 +86,15 @@ Detect known and emerging threats targeting agents and enable a rapid response w
 
 Use AI-powered intelligence to block prompt injection attacks, malicious traffic, and prevent data exfiltration due to risky agent behavior in real time.
 
+:::image type="content" source="media/agent-365-runtime-defense.png" alt-text="A screenshot showing the Security and Compliance tab of the Agent page in Microsoft 365 Admin Center." lightbox="media/agent-365-runtime-defense.png"::
+
 ### Data security
 
 **Microsoft Purview Data Loss Prevention | Microsoft Purview Information Protection | Microsoft Purview Data Security Posture Management**
 
 Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies.
 
+:::image type="content" source="media/agent-365-purview.png" alt-text="A screenshot showing the Agent page in Microsoft Purview." lightbox="media/agent-365-purview.png":::
 
 
 ## Next step

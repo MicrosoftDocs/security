@@ -42,7 +42,9 @@ This control plane provides centralized visibility and lets you drill down into 
 
 Agent 365 extends your existing security and governance practices to AI agents, so teams can use familiar tools and processes without disruption.
 
-By integrating with Microsoft’s security suite - enhanced with agent-specific controls and capabilities - Agent 365 lets you manage AI agent security across key areas. Drill down into each security product from the Agent 365 control plane to act on agent-specific insights and recommendations, including:
+By integrating with Microsoft’s security suite - enhanced with agent-specific controls and capabilities - Agent 365 lets you manage AI agent security across key areas. Drill down into each security product from the Agent 365 control plane to act on agent-specific insights and recommendations.
+
+The following sections outline the core security capabilities that Microsoft Agent 365 provides by integrating with Microsoft’s security suite.
 
 ### Identity management
 
@@ -62,7 +64,7 @@ Bring agents under management and limit their access to only resources they need
 
 -	Governance access - Enforce least privilege access by only giving agents access rights to the apps and resources they need to complete tasks.
 
--	Set conditional access - Enforce real-time intelligent access decisions based on agent context and risk, conditions you define and resource they are trying to access.
+-	Set conditional access - Enforce real-time intelligent access decisions based on agent context and risk, conditions you define and resource they're trying to access.
 
 :::image type="content" source="media/agent-365-conditional-access.png" alt-text="A screenshot showing the Conditional Access page in Microsoft 365 Admin Center." lightbox="media/agent-365-conditional-access.png":::
 

@@ -58,7 +58,7 @@ Get the complete view of all of the agents used in your organization, including 
 
 **Microsoft Entra lifecycle workflows | Microsoft Entra ID governance | Microsoft Entra Conditional Access and Identity Protection**
 
-Bring agents under management and limit their access to only resources they need. Prevent agents compromise with risk-based conditional access policies.
+Limit agents' access to resources they need only and prevent agent compromise with risk-based conditional access policies.
 
 -	Define guardrails - Set policies that define who can create, onboard, and manage agents, assign agent sponsors to keep them under supervision, and ensure that agents start secure with security policy templates.
 
@@ -81,6 +81,8 @@ Understand your agent and data security posture and attack paths that attackers 
 **Microsoft Defender**
 
 Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
+
+:::image type="content" source="media/agent-365-microsoft-defender-incident.png" alt-text="A screenshot showing the Overview tab on the Agent page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-incident.png":::
 
 ### Runtime defense
 

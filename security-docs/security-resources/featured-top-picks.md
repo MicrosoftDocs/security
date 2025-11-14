@@ -5,14 +5,23 @@ ms.service: security
 ms.topic: whats-new
 author: ttorble
 ms.author: ralyon
-ms.date: 09/30/2025
+ms.date: 11/14/2025
 ---
 
 # Featured top picks
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
 
-## July 2025
+## September 2025
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| September 30 | [Get started with identities and access using Microsoft Entra](/credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/) | Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra. |
+|              | [Microsoft Security Copilot for Developers](/copilot/security/developer/) | Learn to create, publish, and test agents in Security Copilot using natural language, lite experience forms, YAMLs, and MCPs. Designed for developers to streamline security workflows. |
+|              | [Join us November 17-21 at Microsoft Ignite](https://aka.ms/MSIgnite_WebEX_Security2) | Get the security advantage you need to thrive in the era of AI. Explore our AI-first, end-to-end security platform, attend hands-on labs, get certified, connect with peers, and chat with industry experts. |
+|              | [Microsoft Sentinel: the security platform for the era of agentic AI](https://aka.ms/AAy5gzy) | Bringing together data, context, automation, and intelligent agents to enable defenders to protect AI end-to-end. |
+
+## August 2025
 
 | Featured date  | Title  | Description  |
 |---------|---------|---------|
@@ -20,6 +29,11 @@ This article brings together the history of top picks from the Security hub orga
 |           | [Stay safe with Microsoft Security Copilot](/copilot/security/) | Use Security Copilot to bring the full power of OpenAI architecture to defend your organization at machine speed and scale. |
 |           | [Join us November 17-21 at Microsoft Ignite](https://aka.ms/MSIgnite_WebEX_Security2) | Get the security advantage you need to thrive in the era of AI. Explore our AI-first, end-to-end security platform, attend hands-on labs, get certified, connect with peers, and chat with industry experts. |
 |          | [Microsoft Sentinel data lake demo](https://www.youtube.com/watch?v=4CUK-eJBNI0) | Watch the new Sentinel data lake in action and learn to uncover long-running threats, streamline investigations, and automate defenses within a unified, AI-powered SIEM experience.|
+
+## July 2025
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
 | July 23 | [Strengthen Cloud Security with Microsoft Defender for Cloud](https://events.microsoft.com/en-us/mvtd-security?language=English&clientTimeZone=1&startTime=08:00&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Strengthen%20Cloud%20Security%20with%20Microsoft%20Defender%20for%20Cloud) | The new Microsoft Virtual Training Day is available. Learn how to apply strong, unified security measures across your cloud apps. |
 |         | [Prepare security and compliance to support Microsoft 365 Copilot](/credentials/applied-skills/prepare-security-and-compliance-to-support-microsoft-365-copilot/?wt.mc_id=appliedskills_copilothub_webpage_wwl) | Demonstrate your ability to set up Microsoft 365 security and compliance to support Microsoft Copilot for Microsoft 365. |
 |         | [Unify your data and optimize your SOC](https://aka.ms/SentinelDataLakeBlog) | Announcing expanded capabilities in our SIEM solution, Microsoft Sentinel, including a unified data lake and dynamic threat intelligence—now in preview. |

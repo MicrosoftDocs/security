@@ -26,7 +26,7 @@ Microsoft Agent 365 provides a unified control plane that lets you oversee the s
 
 This article outlines the core security capabilities that Microsoft Agent 365 provides based on Microsoft’s extended security infrastructure for AI agents.
 
-For more information about Microsoft Agent 365, see [Microsoft Agent 365 documentation](https://review.learn.microsoft.com/en-us/microsoft-agent-365/overview/).
+For more information about Microsoft Agent 365, see [Microsoft Agent 365 documentation](/microsoft-agent-365/overview/).
 
 ## A unified control plane for managing agent security
 
@@ -103,4 +103,4 @@ Gain visibility into AI-related data exposure risks and dynamically block agent 
 
 ## Next step
 
-Learn more about [Microsoft Agent 365](https://review.learn.microsoft.com/en-us/microsoft-agent-365/?branch=main).
+Learn more about [Microsoft Agent 365](/microsoft-agent-365).

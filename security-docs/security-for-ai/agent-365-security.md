@@ -54,6 +54,11 @@ Get the complete view of all of the agents used in your organization, including 
 
 :::image type="content" source="media/agent-365-registry.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center." lightbox="media/agent-365-registry.png":::
 
+Learn more about identity management in Microsoft Agent 365:
+
+- [Agent 365 Overview page in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-365-overview).
+- [What is the Microsoft Entra Agent Registry?](/entra/agent-id/identity-platform/what-is-agent-registry)
+
 ### Access control
 
 **Microsoft Entra lifecycle workflows | Microsoft Entra ID governance | Microsoft Entra Conditional Access and Identity Protection**
@@ -67,6 +72,10 @@ Limit agents' access to resources they need only and prevent agent compromise wi
 -	Set conditional access - Enforce real-time intelligent access decisions based on agent context and risk, conditions you define and resource they're trying to access.
 
 :::image type="content" source="media/agent-365-conditional-access.png" alt-text="A screenshot showing the Conditional Access page in Microsoft 365 Admin Center." lightbox="media/agent-365-conditional-access.png":::
+
+Learn more about access control in Microsoft Agent 365:
+
+- [
 
 ### Security posture
 

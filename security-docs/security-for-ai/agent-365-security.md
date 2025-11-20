@@ -35,7 +35,7 @@ Agent 365 integrates with Microsoft 365 Admin Center, giving IT teams a familiar
 This control plane provides centralized visibility and lets you drill down into Microsoft's suite of security tools - the same tools you use to manage, secure, and govern users - to manage posture, configure policies, investigate issues, and remediate risks for agents. 
 
 
-:::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center." lightbox="media/agent-365-admin-center.png":::
+:::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the Agent 365 overview page in Microsoft 365 Admin Center." lightbox="media/agent-365-admin-center.png":::
 
 
 ## Microsoft security infrastructure extended to AI agents
@@ -56,7 +56,8 @@ Get the complete view of all of the agents used in your organization, including 
 
 Learn more about identity management in Microsoft Agent 365:
 
-- [Agent 365 Overview page in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-365-overview).
+- [Agent 365 Overview page in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-365-overview)
+- [Agent Registry in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-registry?view=o365-worldwide)
 - [What is the Microsoft Entra Agent Registry?](/entra/agent-id/identity-platform/what-is-agent-registry)
 
 ### Access control
@@ -89,6 +90,10 @@ Understand your agent and data security posture and attack paths that attackers 
 
 :::image type="content" source="media/agent-365-microsoft-defender-posture.png" alt-text="A screenshot showing the Overview tab on the Agent page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-posture.png":::
 
+Learn more about managing agent security posture using Microsoft Agent 365:
+
+- [Discover and protect your AI Agents (Preview)](/defender-cloud-apps/ai-agent-inventory)
+
 ### Detection and response
 
 **Microsoft Defender**
@@ -104,6 +109,10 @@ Detect known and emerging threats targeting agents and enable a rapid response w
 Use AI-powered intelligence to block prompt injection attacks, malicious traffic, and prevent data exfiltration due to risky agent behavior in real time.
 
 :::image type="content" source="media/agent-365-runtime-defense.png" alt-text="A screenshot showing the Security and Compliance tab of the Agent page in Microsoft 365 Admin Center." lightbox="media/agent-365-runtime-defense.png":::
+
+Learn more about runtime defense for agents in Microsoft Agent 365:
+
+- [Protect your environment in real-time during agent runtime](/defender-cloud-apps/real-time-agent-protection-during-runtime)
 
 ### Data security
 

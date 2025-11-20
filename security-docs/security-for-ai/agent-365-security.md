@@ -48,7 +48,7 @@ The following sections outline the core security capabilities that Microsoft Age
 
 ### Identity management
 
-**Microsoft Entra Registry | Microsoft 365 admin center**
+**Microsoft 365 admin center | Microsoft Entra Registry**
 
 Get the complete view of all of the agents used in your organization, including agents with agent ID, agents you register yourself, and shadow agents.
 
@@ -75,7 +75,11 @@ Limit agents' access to resources they need only and prevent agent compromise wi
 
 Learn more about access control in Microsoft Agent 365:
 
-- [
+- [Agent identity sponsor tasks in Lifecycle Workflows (Preview)](/entra/id-governance/agent-sponsor-tasks)
+- [What is Microsoft agent identity platform](/entra/agent-id/identity-platform/what-is-agent-id-platform)
+- [Governing Agent Identities (Preview)](/entra/id-governance/agent-sponsor-tasks)
+- [Conditional Access for Agent ID (Preview)](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes)
+
 
 ### Security posture
 

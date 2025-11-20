@@ -24,11 +24,11 @@ This article lists new capabilities and resources (blogs and videos) related to 
 |Product | Feature updates |  
 | ----  | ----------------------------- | 
 |Microsoft Agent 365 (Preview)  | [Microsoft Agent 365 is a unified control plane that lets you secure  AI agents across the enterprise](agent-365-security.md)   |
-|Microsoft Purview | Purview Data Loss Prevention (DLP) enforcement, insider risk, audit, and compliance for agents |
+|Microsoft Purview | [Purview Data Loss Prevention (DLP) enforcement, insider risk, audit, and compliance for agents](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-new-microsoft-purview-capabilities-to-protect-genai-agents/4470696) |
 |Microsoft Entra  | - [Microsoft Entra Agent ID](/entra/agent-id/identity-platform/what-is-agent-id-platform) - Identity and access management capabilities specifically designed for AI agents, applying Zero Trust principles to autonomous systems.<br>- [Microsoft Entra Agent Platform](/entra/agent-id/identity-platform/what-is-agent-id-platform) - A developer-first platform for managing AI agent identities and access<br> - [Agent risk management in Microsoft Entra ID Protection](/entra/id-protection/concept-risky-agents)<br>- [AI Prompt Shield](/entra/global-secure-access/how-to-ai-prompt-shield) - Real-time blocking of prompt injection attacks at the network layer<br>- [Specialized roles for Agent ID management](/entra/agent-id/identity-platform/agent-owners-sponsors-managers) |
-|Defender for Cloud | [Posture management and threat protection for Azure Foundry AI agents](/azure/defender-for-cloud/ai-security-posture#discover-ai-agents-preview)|
+|Defender for Cloud | [Posture management and threat protection for Microsoft Foundry agents](/azure/defender-for-cloud/ai-security-posture#discover-ai-agents-preview)|
 |Defender for Cloud Apps |[Threat protection for Microsoft Copilot Studio AI agents](/defender-cloud-apps/ai-agent-protection)|
-|Microsoft Foundry (formerly called Azure AI Foundry)  | [Agent control plane for Microsoft Foundry](/azure/ai-foundry/control-plane/overview?view=foundry): <br> - Secure, observe, and operate agents directly in AI Foundry<br> - Identify code and runtime risks in Microsoft Defender and auto-fix in GitHub with Copilot  |
+|Microsoft Foundry (formerly called Azure AI Foundry)  | [Agent control plane for Microsoft Foundry](/azure/ai-foundry/control-plane/overview?view=foundry): <br> - Secure, observe, and operate agents directly in Microsoft Foundry<br> - Identify code and runtime risks in Microsoft Defender and auto-fix in GitHub with Copilot  |
 
 **Additional blogs, videos, and other resources**
 - 

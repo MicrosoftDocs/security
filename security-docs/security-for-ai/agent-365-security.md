@@ -102,6 +102,10 @@ Detect known and emerging threats targeting agents and enable a rapid response w
 
 :::image type="content" source="media/agent-365-microsoft-defender-incident.png" alt-text="A screenshot showing the Incident page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-incident.png":::
 
+Learn more about detecting and responding to threats using Microsoft Agent 365:
+
+- [Threat protection in Microsoft Agent 365](/microsoft-agent-365/admin/threat-protection)
+
 ### Runtime defense
 
 **Microsoft Defender | Microsoft Entra Secure Access Service Edge | Microsoft Purview Insider Risk Management**
@@ -122,6 +126,10 @@ Gain visibility into AI-related data exposure risks and dynamically block agent 
 
 :::image type="content" source="media/agent-365-purview.png" alt-text="A screenshot showing the Agent page in Microsoft Purview." lightbox="media/agent-365-purview.png":::
 
+Learn more about protecting data from agents in Microsoft Agent 365:
+
+- [Data security in Microsoft Agent 365](/microsoft-agent-365/admin/data-security)
+- [Use Microsoft Purview to manage data security & compliance for AI agents](/purview/ai-agents)
 
 ## Next step
 

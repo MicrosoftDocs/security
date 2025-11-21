@@ -30,7 +30,8 @@ This article lists new capabilities and resources (blogs and videos) related to 
 |Microsoft Foundry (formerly called Azure AI Foundry)  | [Agent control plane for Microsoft Foundry](/azure/ai-foundry/control-plane/overview?view=foundry): <br> - Secure, observe, and operate agents directly in Microsoft Foundry<br> - Identify code and runtime risks in Microsoft Defender and auto-fix in GitHub with Copilot  |
 
 **Additional blogs, videos, and other resources**
-- 
+- [Microsoft Agent 365: The control plane for AI agents](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/)
+- [Security as the core primitive in the agentic era: New innovations to secure AI agents and apps](https://techcommunity.microsoft.com/blog/microsoft-security-blog/security-as-the-core-primitive-in-the-agentic-era-new-innovations-to-secure-ai-a/4470197)
 
 ## May 2025
 

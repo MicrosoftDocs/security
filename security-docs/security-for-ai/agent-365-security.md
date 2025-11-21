@@ -133,4 +133,6 @@ Learn more about protecting data from agents in Microsoft Agent 365:
 
 ## Next step
 
-Learn more about [Microsoft Agent 365](/microsoft-agent-365).
+Learn more about Microsoft Agent 365: 
+- [Microsoft Agent 365 documentation](/microsoft-agent-365).
+- [Microsoft Agent 365 blog post: The control plane for AI agents](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/)

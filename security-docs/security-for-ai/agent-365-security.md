@@ -117,6 +117,7 @@ Use AI-powered intelligence to block prompt injection attacks, malicious traffic
 Learn more about runtime defense for agents in Microsoft Agent 365:
 
 - [Protect your environment in real-time during agent runtime](/defender-cloud-apps/real-time-agent-protection-during-runtime)
+- [Security posture management for AI apps and agents](/azure/defender-for-cloud/ai-security-posture)
 
 ### Data security
 

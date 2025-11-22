@@ -20,9 +20,9 @@ ms.collection:
 
 # Oversee AI agent security using Microsoft Agent 365
 
-As organizations adopt AI agents to automate workflows and enhance productivity, securing these agents has become a critical concern. Unlike traditional applications, AI agents operate autonomously, interact with sensitive data, and execute tasks across multiple systems - making them high-value targets for intentional attacks and also vulnerable to unintentional compromise caused by misconfigurations or excessive permissions.
+As organizations adopt AI agents to automate workflows and boost productivity, securing these agents has become a critical concern. Unlike traditional applications, AI agents operate autonomously, interact with sensitive data, and execute tasks across multiple systems - making them high-value targets for intentional attacks and also vulnerable to unintentional compromise caused by misconfigurations or excessive permissions.
 
-Microsoft Agent 365 provides a unified control plane that lets you oversee the security of all AI agents in your organization. It integrates with Microsoft’s security suite - now extended to secure AI agents - to secure agents built in Microsoft Copilot Studio, AI Foundry, and third-party solutions.
+Microsoft Agent 365 provides a unified control plane that lets you oversee the security of all AI agents in your organization. It integrates with Microsoft’s security suite - now extended to secure AI agents - to secure agents built in Microsoft Copilot Studio, Microsoft Foundry (formerly called Azure AI Foundry), and third-party solutions.
 
 This article outlines the core security capabilities that Microsoft Agent 365 provides based on Microsoft’s extended security infrastructure for AI agents.
 
@@ -57,8 +57,9 @@ Get the complete view of all of the agents used in your organization, including 
 Learn more about identity management in Microsoft Agent 365:
 
 - [Agent 365 Overview page in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-365-overview)
-- [Agent Registry in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-registry?view=o365-worldwide)
 - [What is the Microsoft Entra Agent Registry?](/entra/agent-id/identity-platform/what-is-agent-registry)
+- [Agent Registry in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-registry?view=o365-worldwide)
+- [Administrative relationships in Microsoft Entra Agent ID (Owners, sponsors, and managers)](/entra/agent-id/identity-platform/agent-owners-sponsors-managers)
 
 ### Access control
 
@@ -76,9 +77,9 @@ Limit agents' access to resources they need only and prevent agent compromise wi
 
 Learn more about access control in Microsoft Agent 365:
 
-- [Agent identity sponsor tasks in Lifecycle Workflows (Preview)](/entra/id-governance/agent-sponsor-tasks)
+- [Agent identity sponsor tasks in lifecycle workflows (Preview)](/entra/id-governance/agent-sponsor-tasks)
 - [What is Microsoft agent identity platform](/entra/agent-id/identity-platform/what-is-agent-id-platform)
-- [Governing Agent Identities (Preview)](/entra/id-governance/agent-sponsor-tasks)
+- [Governing agent identities (Preview)](/entra/id-governance/agent-sponsor-tasks)
 - [Conditional Access for Agent ID (Preview)](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes)
 
 
@@ -93,6 +94,7 @@ Understand your agent and data security posture and attack paths that attackers 
 Learn more about managing agent security posture using Microsoft Agent 365:
 
 - [Discover and protect your AI Agents (Preview)](/defender-cloud-apps/ai-agent-inventory)
+- [Security posture management for AI apps and agents](/azure/defender-for-cloud/ai-security-posture)
 
 ### Detection and response
 
@@ -117,7 +119,7 @@ Use AI-powered intelligence to block prompt injection attacks, malicious traffic
 Learn more about runtime defense for agents in Microsoft Agent 365:
 
 - [Protect your environment in real-time during agent runtime](/defender-cloud-apps/real-time-agent-protection-during-runtime)
-- [Security posture management for AI apps and agents](/azure/defender-for-cloud/ai-security-posture)
+- [AI Prompt Shield](/entra/global-secure-access/how-to-ai-prompt-shield)
 
 ### Data security
 

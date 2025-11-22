@@ -1,5 +1,5 @@
 ---
-title: Secure AI agents at scale with Microsoft Agent 365
+title: Secure AI agents at scale using Microsoft Agent 365
 description: How to use Microsoft Agent 365 to secure all of the AI agents in your environment. 
 ms.date: 11/09/2025
 ms.update-cycle: 180-days
@@ -18,7 +18,7 @@ ms.collection:
 
 ---
 
-# Secure AI agents at scale with Microsoft Agent 365
+# Secure AI agents at scale using Microsoft Agent 365
 
 As organizations adopt AI agents to automate workflows and boost productivity, securing these agents has become a critical concern. Unlike traditional applications, AI agents operate autonomously, interact with sensitive data, and execute tasks across multiple systems - making them high-value targets for intentional attacks and also vulnerable to unintentional compromise caused by misconfigurations or excessive permissions.
 

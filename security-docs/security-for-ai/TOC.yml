@@ -14,5 +14,5 @@
       href: protect.md  
     - name: Govern AI for compliance
       href: govern.md 
-    - name: Secure AI agents at scale with Microsoft Agent 365
+    - name: Secure AI agents at scale using Microsoft Agent 365
       href: agent-365-security.md

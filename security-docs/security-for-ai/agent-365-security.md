@@ -57,9 +57,9 @@ Get the complete view of all of the agents used in your organization, including 
 Learn more about identity management in Microsoft Agent 365:
 
 - [Agent 365 Overview page in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-365-overview)
-- [What is the Microsoft Entra Agent Registry?](/entra/agent-id/identity-platform/what-is-agent-registry)
 - [Agent Registry in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-registry?view=o365-worldwide)
-- [Administrative relationships in Microsoft Entra Agent ID (Owners, sponsors, and managers)](/entra/agent-id/identity-platform/agent-owners-sponsors-managers)
+- [What is the Microsoft Entra Agent Registry?](/entra/agent-id/identity-platform/what-is-agent-registry)
+- [Administrative relationships in Microsoft Entra Agent ID (owners, sponsors, and managers)](/entra/agent-id/identity-platform/agent-owners-sponsors-managers)
 
 ### Access control
 

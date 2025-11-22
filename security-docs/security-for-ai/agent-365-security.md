@@ -77,11 +77,10 @@ Limit agents' access to resources they need only and prevent agent compromise wi
 
 Learn more about access control in Microsoft Agent 365:
 
-- [Agent identity sponsor tasks in lifecycle workflows (Preview)](/entra/id-governance/agent-sponsor-tasks)
-- [What is Microsoft agent identity platform](/entra/agent-id/identity-platform/what-is-agent-id-platform)
+- [What is Microsoft agent identity platform?](/entra/agent-id/identity-platform/what-is-agent-id-platform)
 - [Governing agent identities (Preview)](/entra/id-governance/agent-sponsor-tasks)
 - [Conditional Access for Agent ID (Preview)](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes)
-
+- [Agent identity sponsor tasks in lifecycle workflows (Preview)](/entra/id-governance/agent-sponsor-tasks)
 
 ### Security posture
 
@@ -93,8 +92,9 @@ Understand your agent and data security posture and attack paths that attackers 
 
 Learn more about managing agent security posture using Microsoft Agent 365:
 
-- [Discover and protect your AI Agents (Preview)](/defender-cloud-apps/ai-agent-inventory)
 - [Security posture management for AI apps and agents](/azure/defender-for-cloud/ai-security-posture)
+- [Discover and protect your AI agents (Preview)](/defender-cloud-apps/ai-agent-inventory)
+
 
 ### Detection and response
 

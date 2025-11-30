@@ -5,8 +5,8 @@ ms.date: 05/19/2025
 ms.update-cycle: 180-days
 ms.service: security
 ms.subservice: security-for-ai
-author: BrendaCarter
-ms.author: bcarter
+author: guywi-ms
+ms.author: guywild
 ms.topic: concept-article
 ms.collection: 
   - msftsolution-security-for-ai
@@ -18,6 +18,20 @@ ms.collection:
 # What's new in Microsoft AI security
 
 This article lists new capabilities and resources (blogs and videos) related to Microsoft AI security. 
+
+## November 2025
+
+|Product | Feature updates |  
+| ----  | ----------------------------- | 
+|Microsoft Agent 365 (Preview)  | [Microsoft Agent 365 is a unified control plane that lets you secure  AI agents across the enterprise](agent-365-security.md)   |
+|Microsoft Purview | - [Data Loss Prevention (DLP) enforcement, insider risk management, audit, and compliance for agents](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-new-microsoft-purview-capabilities-to-protect-genai-agents/4470696)<br>- [Enhanced Data Security Posture Management](https://techcommunity.microsoft.com/blog/microsoft-security-blog/beyond-visibility-the-new-microsoft-purview-data-security-posture-management-dsp/4470984)<br>- [Enhanced security for Microsoft 365 Copilot](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-new-microsoft-purview-capabilities-to-protect-genai-agents/4470696) - Including data loss prevention, priority cleanup for Microsoft 365 Copilot assets, and on-demand classification for meeting transcripts<br>- [AI regulation compliance capabilities](https://techcommunity.microsoft.com/blog/microsoft-security-blog/announcing-new-microsoft-purview-capabilities-to-protect-genai-agents/4470696) - Including AI-powered regulatory templates, visibility into agent activity, monitoring for risky agent prompts and responses, retention and deletion policies for agent-generated content|
+|Microsoft Entra  | - [Microsoft Entra Agent ID](/entra/agent-id/identity-platform/what-is-agent-id-platform) - Identity and access management capabilities specifically designed for AI agents, applying Zero Trust principles to autonomous systems.<br>- [Conditional Access for Agent ID (Preview)](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes) - Extends the same Zero Trust conditional access controls that already protect human users and apps to your agents. <br>- [Microsoft Entra Agent Platform](/entra/agent-id/identity-platform/what-is-agent-id-platform) - A developer-first platform for managing AI agent identities and access<br> - [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry) -  Provides a complete inventory of all agents used in your organization, including Microsoft and third-party agents. <br> - [Agent risk management in Microsoft Entra ID Protection (Preview)](/entra/id-protection/concept-risky-agents)<br>- [AI Prompt Shield (Preview)](/entra/global-secure-access/how-to-ai-prompt-shield) - Real-time blocking of prompt injection attacks at the network layer<br>- [Specialized roles for Agent ID management](/entra/agent-id/identity-platform/agent-owners-sponsors-managers) |
+|Microsoft Defender | [Security posture management and threat protection for agents](https://techcommunity.microsoft.com/blog/microsoft-security-blog/start-secure-and-stay-secure-on-your-ai-agent-journey-with-microsoft-defender/4469430), including:  <br> - [Microsoft Copilot Studio AI agent protection (Preview)](/defender-cloud-apps/ai-agent-protection)<br> - [Security posture management for AI apps and agents](/azure/defender-for-cloud/ai-security-posture)|
+|Microsoft Foundry (formerly called Azure AI Foundry)  | [Agent control plane for Microsoft Foundry](/azure/ai-foundry/control-plane/overview?view=foundry): <br> - Secure, observe, and operate agents directly in Microsoft Foundry<br> - Identify code and runtime risks in Microsoft Defender and auto-fix in GitHub with Copilot  |
+
+**Additional blogs, videos, and other resources**
+- [Microsoft Agent 365: The control plane for AI agents](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/)
+- [Security as the core primitive in the agentic era: New innovations to secure AI agents and apps](https://techcommunity.microsoft.com/blog/microsoft-security-blog/security-as-the-core-primitive-in-the-agentic-era-new-innovations-to-secure-ai-a/4470197)
 
 ## May 2025
 
@@ -50,7 +64,7 @@ This article lists new capabilities and resources (blogs and videos) related to 
 - [RSAC™ 2025: Unveiling new innovations in cloud and AI security](https://techcommunity.microsoft.com/blog/microsoftdefendercloudblog/rsac%E2%84%A2-2025-unveiling-new-innovations-in-cloud-and-ai-security/4408140)
 - [How to use DSPM for AI Data Risk Assessment to Address Internal Oversharing](https://techcommunity.microsoft.com/blog/microsoft-security-blog/how-to-use-dspm-for-ai-data-risk-assessment-to-address-internal-oversharing/4399785)
 - [Explore practical best practices to secure your data with Microsoft Purview](https://www.microsoft.com/en-us/security/blog/2025/04/25/explore-practical-best-practices-to-secure-your-data-with-microsoft-purview/) 
-- [Enhance AI security and governance across multi-model and multi-cloud environments](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enhance-ai-security-and-governance-across-multi-model-and-multi-cloud-environmen/4395593)
+- [Enhance AI security and governance across multi-model and multicloud environments](https://techcommunity.microsoft.com/blog/microsoft-security-blog/enhance-ai-security-and-governance-across-multi-model-and-multi-cloud-environmen/4395593)
 
 
 ## Additional what's new resources

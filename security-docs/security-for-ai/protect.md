@@ -5,8 +5,8 @@ ms.date: 04/02/2025
 ms.update-cycle: 180-days
 ms.service: security
 ms.subservice: security-for-ai
-author: BrendaCarter
-ms.author: bcarter
+author: guywi-ms
+ms.author: guywild
 ms.topic: concept-article
 ms.collection: 
   - msftsolution-security-for-ai
@@ -113,7 +113,7 @@ Use the following resources to make progress with Microsoft Purview.
 | Define your sensitivity labels and policies that will protect your organization's data  |[Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels) <br> [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels) <br> [Restrict access to content by using sensitivity labels to apply encryption](/purview/encryption-sensitivity-labels) |
 | Label and protect data for Microsoft 365 apps and services |[Manage sensitivity labels in Office apps](/purview/sensitivity-labels-office-apps) <br> [Enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files) |
 |Tune your DLP policies |[Create and Deploy data loss prevention policies](/purview/dlp-create-deploy-policy)  |
-|For AI apps developed in Auzre or other cloud providers, learn how to apply sensitivity labels and DLP policies by using the Purview SDK   | [What is Purview SDK](/purview/developer/microsoft-purview-sdk-documentation-overview) <br> [Use Microsoft Graph Purview APIs](/purview/developer/use-the-api) <br> [How to test an AI application integrated with Purview SDK](/purview/developer/how-to-test-an-ai-application-integrated-with-purview-sdk) |
+|For AI apps developed in Azure or other cloud providers, learn how to apply sensitivity labels and DLP policies by using the Purview SDK   | [What is Purview SDK](/purview/developer/microsoft-purview-sdk-documentation-overview) <br> [Use Microsoft Graph Purview APIs](/purview/developer/use-the-api) <br> [How to test an AI application integrated with Purview SDK](/purview/developer/how-to-test-an-ai-application-integrated-with-purview-sdk) |
 
 ### Step 4—Apply the Risky AI template in Insider Risk Management (IRM)
 

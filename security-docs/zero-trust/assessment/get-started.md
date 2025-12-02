@@ -154,7 +154,7 @@ This error happens when you have conflicting versions of Microsoft Graph PowerSh
 
 To fix this error we recommend uninstalling all Microsoft Graph PowerShell modules installed on your system. You can use a helper module like [uninstall-graph.merill.net](https://uninstall-graph.merill.net/) to run the cleanup.
 
-When uninstalling Microsoft Graph you should also uninstall all versions of the Zero Trust Assessment, restart PowerShell and then [install the latest version](#install-the-powershell-modules).
+When uninstalling Microsoft Graph PowerShell you should also uninstall all versions of the Zero Trust Assessment, restart PowerShell and then [install the latest version](#install-the-powershell-modules).
 
 ```powershell
 Install-Module Uninstall-Graph
@@ -164,7 +164,7 @@ Uninstall-Graph
 
 ### How can I know what the script does?
 
-The code for this assessment is open source. Review it at `https://github.com/microsoft/zerotrustassessment/tree/psnext/src/powershell`.
+The code for this assessment is open source. Review it at `https://github.com/microsoft/zerotrustassessment/tree/main/src/powershell`.
 
 ### Why did I get the exception error, "The type initializer for 'DuckDB.NET.Data.DuckDBConnectionStringBuilder' threw an exception."?
 

@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 11/14/2025
+  ms.date: 12/04/2025
   ms.collection: # na
   brand: azure
 sections:
@@ -54,15 +54,15 @@ sections:
           componentType: link
           url: /copilot/security/developer/
           text: Get started
-      - avatarUrl: /security/media/hubpage/calendar-event-icon.png 
+      - avatarUrl: /security/media/hubpage/watch-icon.png 
         componentType: testimonial-card
-        name: Join us November 17-21 at Microsoft Ignite
+        name: "Security in the Agentic Era - the Core Primitive"
         role: Event
-        feedback: Get the security advantage you need to thrive in the era of AI. Explore our AI-first, end-to-end security platform, attend hands-on labs, get certified, connect with peers, and chat with industry experts.
+        feedback: Hear from Vasu Jakkal, CVP, Microsoft Security Business, and Charlie Bell, EVP, Microsoft Security, as they outline why digital trust is the foundation for innovation in the agentic era.
         link:
           componentType: link
-          url: https://aka.ms/MSIgnite_WebEX_Security2
-          text: Register now
+          url: https://aka.ms/Ignite/InnovationSession
+          text: Watch now
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

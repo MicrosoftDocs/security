@@ -27,15 +27,15 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/hubpage/generic-badge.svg
+      - avatarUrl: /security/media/hubpage/applied-skills.png
         componentType: testimonial-card
-        name: "Microsoft Ignite Skills Challenge - Secure & Govern AI with Confidence"
-        role: Skills challenge
-        feedback: Take the challenge, prove your skills, and lead the future of AI security.
+        name: Secure AI solutions in the cloud
+        role: Applied Skills
+        feedback: Validate your technical skills and open doors to new possibilities of advancement with Microsoft Defender for Cloud and Microsoft Foundry.
         link:
           componentType: link
-          url: https://azure.github.io/azure-skilling-challenges-2025/#challenges
-          text: Join the challenge
+          url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
+          text: Start learning
       - avatarUrl: /security/media/hubpage/applied-skills.png
         componentType: testimonial-card
         name: Get started with identities and access using Microsoft Entra
@@ -54,15 +54,15 @@ sections:
           componentType: link
           url: /copilot/security/developer/
           text: Get started
-      - avatarUrl: /security/media/hubpage/watch-icon.png 
+      - avatarUrl: /security/media/hubpage/generic-badge.svg
         componentType: testimonial-card
-        name: "Security in the Agentic Era - the Core Primitive"
-        role: Event
-        feedback: Hear from Vasu Jakkal, CVP, Microsoft Security Business, and Charlie Bell, EVP, Microsoft Security, as they outline why digital trust is the foundation for innovation in the agentic era.
+        name: Mitigate incidents using Microsoft Defender
+        role: Training
+        feedback: Learn how the Microsoft Defender portal provides a unified view of incidents from the Microsoft Defender family of products.
         link:
           componentType: link
-          url: https://aka.ms/Ignite/InnovationSession
-          text: Watch now
+          url: /training/modules/mitigate-incidents-microsoft-365-defender/
+          text: Learn more
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

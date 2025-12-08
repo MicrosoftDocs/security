@@ -38,26 +38,15 @@ Core capabilities that drive and simplify AI risk management include:
 Security Dashboard for AI requires no additional licensing beyond the underlying Microsoft Security products. It's available to all customers to support secure, governed AI deployments.
 
 **Required products:**
-- Microsoft Security suite components (Entra, Defender, Purview, Intune)
-- Security Copilot (for AI-powered insights)
+- Microsoft Security suite components - Microsoft Entra, Microsoft Defender, and Microsoft Purview
+- Microsoft Security Copilot for AI-powered insights
 
 ## Permissions
 
-### Accessing the Dashboard
+Users must be granted explicit access to the Security Dashboard for AI
 
-1. **Primary Access**: Navigate to [https://ai.security.microsoft.com](https://ai.security.microsoft.com)
-2. **Portal Integration**: Access from any Microsoft Security practitioner portal
-3. **User Permissions**: Users must be granted explicit access to the Security Dashboard for AI
 
-### Initial Setup
-
-1. **Verify Access**: Ensure your account has the necessary permissions
-2. **Review Integration Status**: Check connections to underlying Microsoft Security products
-3. **Configure User Preferences**: Customize dashboard views and notification settings
-
-## Dashboard Navigation and Core Features
-
-### Executive Overview Dashboard
+## Executive Overview Dashboard
 
 The main dashboard provides a strategic view of AI risk across your organization.
 
@@ -73,7 +62,7 @@ The main dashboard provides a strategic view of AI risk across your organization
 - **Time Range Selector** - Analyze trends over different periods
 - **Export Options** - Generate reports for executive presentation
 
-### AI Inventory and Asset Management
+## AI Inventory and Asset Management
 
 Access comprehensive visibility into all AI applications and agents across your environment.
 
@@ -89,7 +78,7 @@ Access comprehensive visibility into all AI applications and agents across your 
 - **Data Access** - Information about data sources and permissions
 - **Security Configuration** - Current protection status and gaps
 
-### Risk Assessment and Prioritization
+## Risk Assessment and Prioritization
 
 Understand and prioritize AI-related security risks across your organization.
 
@@ -105,7 +94,7 @@ Understand and prioritize AI-related security risks across your organization.
 - **Remediation Recommendations** - Specific actions to reduce risk
 - **Timeline Tracking** - Progress monitoring for risk mitigation efforts
 
-### Security Copilot Integration
+## Security Copilot Integration
 
 Leverage AI-powered insights for enhanced security intelligence and decision-making.
 

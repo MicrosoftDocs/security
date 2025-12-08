@@ -50,14 +50,15 @@ Microsoft Security and partner products provide the sensors and signals the dash
 
 | **Product**      | **Key capabilities**                                                                 |
 |----------------------------|--------------------------------------------------------------------------------------|
-| **Microsoft Entra**        | - **Identity management**: Centralized user and application identity governance<br>- **Conditional access**: Risk-based access controls for AI applications<br>- **Privileged identity management**: Elevated access monitoring and control |
-| **Microsoft Defender**     | - **Threat protection**: Real-time monitoring of AI workloads and endpoints<br>- **Cloud security posture**: Infrastructure vulnerability assessment<br>- **App security**: SaaS AI application risk evaluation |
-| **Microsoft Purview**      | - **Data classification**: Automated labeling and protection of AI-accessible data<br>- **Data loss prevention**: Prevent sensitive information exposure through AI<br>- **Insider risk management**: Detect anomalous AI usage patterns |
+| **Microsoft Entra**        | <ul><li>**Identity management**: Centralized user and application identity governance</li><li>**Conditional access**: Risk-based access controls for AI applications</li><li>**Privileged identity management**: Elevated access monitoring and control</li></ul> |
+| **Microsoft Defender**     | <ul><li>**Threat protection**: Real-time monitoring of AI workloads and endpoints</li><li>**Cloud security posture**: Infrastructure vulnerability assessment</li><li>**App security**: SaaS AI application risk evaluation</li></ul> |
+| **Microsoft Purview**      | <ul><li>**Data classification**: Automated labeling and protection of AI-accessible data</li><li>**Data loss prevention**: Prevent sensitive information exposure through AI</li><li>**Insider risk management**: Detect anomalous AI usage patterns</li></ul> |
+| **Microsoft Security Copilot**| <ul><li>**Prompt-based exploration**: Explore AI risks, agent activity, and security recommendations via prompts</li><li>**Enhanced AI risk insights**: Aggregates signals across Microsoft and partner security solutions for deeper analysis</li><li>**Enhanced agent discovery and categorization**: Improves identification of managed, unmanaged, and shadow AI agents to strengthen your AI security posture</li></ul> |
 
 
 ## Permissions
 
-Users must be granted explicit access to the Security Dashboard for AI
+You must be granted explicit access to the dashboard to view AI security data. By default, only Global Administrators and Security Administrators have access.
 
 ## Executive Overview Dashboard
 

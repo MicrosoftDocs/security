@@ -9,14 +9,14 @@
     - name: Prepare for AI security
       href: prepare.md
     - name: Discover AI apps and data
-      items:
-        - name: Discover AI apps and data
-          href: discover.md
-        - name: Security dashboard for AI
-          href: security-dashboard-for-ai.md
+      href: discover.md
     - name: Protect AI apps and data
       href: protect.md  
     - name: Govern AI for compliance
       href: govern.md 
-    - name: Secure AI agents at scale using Microsoft Agent 365
-      href: agent-365-security.md
+    - name: Security for AI goverance tools 
+      items:
+        - name: Assess AI security with Security Dashboard for AI
+          href: security-dashboard-for-ai.md
+        - name: Secure AI agents at scale using Microsoft Agent 365
+          href: agent-365-security.md

@@ -10,9 +10,10 @@
       href: prepare.md
     - name: Discover AI apps and data
       items:
+        - name: Discover AI apps and data
+          href: discover.md
         - name: Security dashboard for AI
           href: security-dashboard-for-ai.md
-        - name: Discover AI apps and data
     - name: Protect AI apps and data
       href: protect.md  
     - name: Govern AI for compliance

@@ -7,7 +7,7 @@ ms.service: security
 ms.subservice: security-for-ai
 author: guywi-ms
 ms.author: guywild
-ms.topic: how-to-guide
+ms.topic: concept-article
 ms.collection: 
   - msftsolution-security-for-ai
   - msftsolution-overview
@@ -17,18 +17,20 @@ ms.collection:
 
 # Assess your organization's AI risk with Microsoft Security Dashboard for AI
 
-[Microsoft Security Dashboard for AI](https://ai.security.microsoft.com) is a unified security dashboard that helps security leaders understand and address the AI risk in their organization. This article how to access, navigate, and effectively use the dashboard to manage AI security across your enterprise.
+[Microsoft Security Dashboard for AI](https://ai.security.microsoft.com) is a unified security dashboard that helps security leaders understand and address the AI risk in their organization. This article explains how to use the dashboard effectively to manage AI security across your enterprise.
 
-## Key capabilities
+## End-to-end AI risk management
 
-Security Dashboard for AI is designed for:
+The Security Dashboard for AI provides a unified, real-time view of AI security posture and risk across Microsoft Security solutions. It connects insights from Microsoft Entra, Microsoft Defender, and Microsoft Purview, enabling both proactive governance and reactive threat protection.
+
+The dashboard is designed for:
 
 - **Chief Information Security Officers (CISOs)** - Strategic oversight and executive reporting
-- **Security Leaders and Delegates** - Operational security management and decision-making
-- **AI Security Leaders** - Specialized AI risk management and governance
-- **Risk Management Leaders** - Compliance and regulatory oversight
+- **Security leaders** - Operational security management and decision-making
+- **AI security leaders** - Specialized AI risk management and governance
+- **Risk management leaders** - Compliance and regulatory oversight
 
-Security Dashboard for AI aggregates and surfaces real-time AI posture and risk insights across Microsoft Security solutions, providing a single, integrated view that spans proactive governance and reactive threat protection. The dashboard connects security and data posture insights from Microsoft Entra, Defender, and Purview.
+Core capabilities include:
 
 - **Unified AI risk visibility** - Aggregates insights across Microsoft Entra, Defender, and Purview
 - **AI-powered insights** - Leverages Security Copilot for intelligent risk assessment and recommendations  

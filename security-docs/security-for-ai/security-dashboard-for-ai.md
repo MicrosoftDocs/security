@@ -19,7 +19,7 @@ ms.collection:
 
 [Microsoft Security Dashboard for AI](https://ai.security.microsoft.com) is a unified security dashboard that helps security leaders understand and address the AI risk in their organization. The dashboard equips leadership with a governance tool that provides clear and comprehensive AI security insights and answers the most pressing questions about AI risk, including:
 
-- Which AI apps and agents exist in our environment?
+- Which AI assets exist in our environment?
 - What’s their current security posture?
 - Where must we take action?
 
@@ -32,7 +32,7 @@ Security Dashboard for AI provides a real-time view of AI security posture and r
 The dashboard provides:
 
 - **Real-time visibility of AI risk**: Aggregated insights across Microsoft Entra, Defender, and Purview.
-- **Comprehensive inventory of AI assets**: The dashboard covers Microsoft AI solutions - including Microsoft 365 Copilot, Microsoft Copilot Studio agents, and Microsoft Foundry apps and agents - as well as third-party AI applications and agents such as Google Gemini, OpenAI ChatGPT, and MCP servers.
+- **Comprehensive inventory of AI assets**: The dashboard covers Microsoft AI solutions - including Microsoft 365 Copilot, Microsoft Copilot Studio agents, and Microsoft Foundry apps and agents - as well as third-party AI models, applications, and agents such as Google Gemini, OpenAI ChatGPT, and MCP servers.
 - **Recommendations and remediation paths**: Direct integration with Microsoft productivity tools and practitioner portals.
 - **AI-powered insights**: Leverages Security Copilot for intelligent risk assessment and recommendations.  
 - **Executive reporting**: Board-ready analytics and compliance insights.
@@ -60,24 +60,19 @@ Microsoft Security and partner products provide the sensors and signals the dash
 
 You must be granted explicit access to the dashboard to view AI security data. By default, only Global Administrators and Security Administrators have access.
 
-## Executive Overview Dashboard
+## Delegate security recommendations
 
-The main dashboard provides a strategic view of AI risk across your organization.
+The **Overview** page of the dashboard lists actionable recommendations to help reduce AI risk. To delegate these recommendations to specific teams or individuals for remediation:
 
-**Key Components:**
-- **Risk Summary Cards** - High-level KPIs and critical metrics
-- **Trend Analysis** - Historical risk patterns and emerging threats
-- **Priority Risks** - Most critical issues requiring immediate attention
-- **Coverage Metrics** - Visibility into AI asset discovery and protection status
+1. Select a recommendation on the **Overview** page.
 
-**Navigation Elements:**
-- **Global Search** - Find specific AI applications or agents
-- **Filter Controls** - Refine views by risk level, asset type, or business unit
-- **Time Range Selector** - Analyze trends over different periods
-- **Export Options** - Generate reports for executive presentation
+   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-delegate-recommendation.png" alt-text="A screenshot showing the Overview page with one of the security recommendations highlighted." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-delegate-recommendation.png":::
 
-## AI Inventory and Asset Management
+1. On the recommendation details page, select **Delegate**.
 
+   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-recommendation-details.png"  alt-text="A screenshot showing the recommendation details page with the Delegate button highlighted." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-recommendation-details.png":::" 
+
+1. On the **Delegate to** page, select a user or group to assign the recommendation to.
 Access comprehensive visibility into all AI applications and agents across your environment.
 
 **Discovery Capabilities:**

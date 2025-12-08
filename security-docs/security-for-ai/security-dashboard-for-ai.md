@@ -1,5 +1,5 @@
 ---
-title: Assess your organization's AI risk with Microsoft Security Dashboard for AI
+title: Assess your organization's AI risk with Microsoft Security Dashboard for AI (Preview)
 description: Use the Microsoft Security Dashboard for AI dashboard to discover, assess, and mitigate AI risks across your organization.
 ms.date: 12/05/2025
 ms.update-cycle: 90-days
@@ -15,7 +15,7 @@ ms.collection:
   - msec-ai-copilot
 ---
 
-# Assess your organization's AI risk with Microsoft Security Dashboard for AI
+# Assess your organization's AI risk with Microsoft Security Dashboard for AI (Preview)
 
 [Microsoft Security Dashboard for AI](https://ai.security.microsoft.com) is a unified security dashboard that helps security leaders understand and address the AI risk in their organization. The dashboard equips leadership with a governance tool that provides clear and comprehensive AI security insights and answers the most pressing questions about AI risk, including:
 

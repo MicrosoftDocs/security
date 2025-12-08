@@ -70,9 +70,12 @@ The **Overview** page of the dashboard lists actionable recommendations to help 
 
 1. On the recommendation details page, select **Delegate**.
 
-   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-recommendation-details.png"  alt-text="A screenshot showing the recommendation details page with the Delegate button highlighted." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-recommendation-details.png":::" 
+   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-recommendation-details.png"  alt-text="A screenshot showing the recommendation details page with the Delegate button highlighted." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-recommendation-details.png"::: 
 
 1. On the **Delegate to** page, select a user or group to assign the recommendation to.
+
+
+
 Access comprehensive visibility into all AI applications and agents across your environment.
 
 **Discovery Capabilities:**

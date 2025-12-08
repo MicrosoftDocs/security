@@ -17,7 +17,11 @@ ms.collection:
 
 # Assess your organization's AI risk with Microsoft Security Dashboard for AI
 
-[Microsoft Security Dashboard for AI](https://ai.security.microsoft.com) is a unified security dashboard that helps security leaders understand and address the AI risk in their organization. As AI adoption accelerates, the dashboard equips leadership with a powerful governance tool that provides clear and comprehensive AI security insights - enabling informed decision-making and effective risk mitigation.
+[Microsoft Security Dashboard for AI](https://ai.security.microsoft.com) is a unified security dashboard that helps security leaders understand and address the AI risk in their organization. The dashboard equips leadership with a powerful governance tool that provides clear and comprehensive AI security insights that answer the most pressing questions about AI risk, including:
+
+- What AI systems exist in our environment?
+- What’s their current security posture?
+- Where should we take action?
 
 This article explains the core capabilities of the Security Dashboard for A and how to use the dashboard effectively to manage AI security across your enterprise.
 

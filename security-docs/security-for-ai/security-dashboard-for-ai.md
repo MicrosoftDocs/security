@@ -32,7 +32,7 @@ Security Dashboard for AI provides a real-time view of AI security posture and r
 The dashboard provides:
 
 - **Real-time visibility of AI risk**: Aggregated insights across Microsoft Entra, Defender, and Purview.
-- **Comprehensive inventory of AI assets**: The dashboard covers Microsoft AI solutions — including Microsoft 365 Copilot, Microsoft Copilot Studio agents, and Microsoft Foundry apps and agents - as well as third-party AI applications and agents such as Google Gemini, OpenAI ChatGPT, and MCP servers.
+- **Comprehensive inventory of AI assets**: The dashboard covers Microsoft AI solutions - including Microsoft 365 Copilot, Microsoft Copilot Studio agents, and Microsoft Foundry apps and agents - as well as third-party AI applications and agents such as Google Gemini, OpenAI ChatGPT, and MCP servers.
 - **Actionable remediation paths and recommendations**: Direct integration with Microsoft productivity tools and practitioner portals.
 - **AI-powered insights**: Leverages Security Copilot for intelligent risk assessment and recommendations.  
 - **Executive reporting**: Board-ready analytics and compliance insights.
@@ -46,8 +46,14 @@ Security Dashboard for AI requires no additional licensing beyond the underlying
 Microsoft Security and partner products provide the sensors and signals the dashboard uses. If a required service isn’t deployed, the dashboard guides security leaders on which capabilities are missing and how to strengthen AI security.
 
 **Supported products:**
-- Microsoft Security suite components - Microsoft Entra, Microsoft Defender, and Microsoft Purview
-- Microsoft Security Copilot for AI-powered insights
+
+
+| **Product**      | **Key capabilities**                                                                 |
+|----------------------------|--------------------------------------------------------------------------------------|
+| **Microsoft Entra**        | - **Identity management**: Centralized user and application identity governance<br>- **Conditional access**: Risk-based access controls for AI applications<br>- **Privileged identity management**: Elevated access monitoring and control |
+| **Microsoft Defender**     | - **Threat protection**: Real-time monitoring of AI workloads and endpoints<br>- **Cloud security posture**: Infrastructure vulnerability assessment<br>- **App security**: SaaS AI application risk evaluation |
+| **Microsoft Purview**      | - **Data classification**: Automated labeling and protection of AI-accessible data<br>- **Data loss prevention**: Prevent sensitive information exposure through AI<br>- **Insider risk management**: Detect anomalous AI usage patterns |
+
 
 ## Permissions
 

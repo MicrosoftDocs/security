@@ -17,21 +17,9 @@ ms.collection:
 
 # Assess your organization's AI risk with Microsoft Security Dashboard for AI
 
-Microsoft Security Dashboard for AI is a unified security dashboard designed for security leaders to answer the strategic question ***What is the AI risk in my organization?*** This comprehensive guide covers how to access, navigate, and effectively use the dashboard to manage AI security across your enterprise.
+[Microsoft Security Dashboard for AI](https://ai.security.microsoft.com) is a unified security dashboard that helps security leaders understand and address the AI risk in their organization. This article how to access, navigate, and effectively use the dashboard to manage AI security across your enterprise.
 
-## Overview
-
-Security Dashboard for AI aggregates and surfaces real-time AI posture and risk insights across Microsoft Security solutions, providing a single, integrated view that spans proactive governance and reactive threat protection. The dashboard connects security and data posture insights from Microsoft Entra, Defender, and Purview.
-
-### Key Capabilities
-
-- **Unified AI risk visibility** - Aggregates insights across Microsoft Entra, Defender, and Purview
-- **AI-powered insights** - Leverages Security Copilot for intelligent risk assessment and recommendations  
-- **Actionable remediation** - Direct integration with Microsoft productivity tools and practitioner portals
-- **Comprehensive coverage** - Supports Microsoft AI solutions (Microsoft 365 Copilot, Copilot Studio, Foundry, Agent 365) and third-party AI applications
-- **Executive reporting** - Board-ready analytics and compliance insights
-
-## Target Audience
+## Key capabilities
 
 Security Dashboard for AI is designed for:
 
@@ -40,15 +28,23 @@ Security Dashboard for AI is designed for:
 - **AI Security Leaders** - Specialized AI risk management and governance
 - **Risk Management Leaders** - Compliance and regulatory oversight
 
-## Getting Started
+Security Dashboard for AI aggregates and surfaces real-time AI posture and risk insights across Microsoft Security solutions, providing a single, integrated view that spans proactive governance and reactive threat protection. The dashboard connects security and data posture insights from Microsoft Entra, Defender, and Purview.
 
-### Prerequisites and Licensing
+- **Unified AI risk visibility** - Aggregates insights across Microsoft Entra, Defender, and Purview
+- **AI-powered insights** - Leverages Security Copilot for intelligent risk assessment and recommendations  
+- **Actionable remediation** - Direct integration with Microsoft productivity tools and practitioner portals
+- **Comprehensive coverage** - Supports Microsoft AI solutions (Microsoft 365 Copilot, Copilot Studio, Foundry, Agent 365) and third-party AI applications
+- **Executive reporting** - Board-ready analytics and compliance insights
+
+## Prerequisites
 
 Security Dashboard for AI requires no additional licensing beyond the underlying Microsoft Security products. It's available to all customers to support secure, governed AI deployments.
 
 **Required Products:**
 - Microsoft Security suite components (Entra, Defender, Purview, Intune)
 - Security Copilot (for AI-powered insights)
+
+## Permissions
 
 ### Accessing the Dashboard
 

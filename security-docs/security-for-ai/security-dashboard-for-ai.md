@@ -17,17 +17,17 @@ ms.collection:
 
 # Assess your organization's AI risk with Microsoft Security Dashboard for AI
 
-[Microsoft Security Dashboard for AI](https://ai.security.microsoft.com) is a unified security dashboard that helps security leaders understand and address the AI risk in their organization. The dashboard equips leadership with a powerful governance tool that provides clear and comprehensive AI security insights that answer the most pressing questions about AI risk, including:
+[Microsoft Security Dashboard for AI](https://ai.security.microsoft.com) is a unified security dashboard that helps security leaders understand and address the AI risk in their organization. The dashboard equips leadership with a governance tool that provides clear and comprehensive AI security insights and answers the most pressing questions about AI risk, including:
 
-- What AI systems exist in our environment?
+- Which AI apps and agents exist in our environment?
 - What’s their current security posture?
-- Where should we take action?
+- Where must we take action?
 
 This article explains the core capabilities of the Security Dashboard for A and how to use the dashboard effectively to manage AI security across your enterprise.
 
-## End-to-end AI risk management
+## End-to-end AI security visibility and management
 
-The Security Dashboard for AI provides a real-time view of AI security posture and risk across Microsoft Security solutions - including Microsoft Entra, Microsoft Purview, and Microsoft Defender - enabling both proactive governance and reactive threat protection.
+Security Dashboard for AI provides a real-time view of AI security posture and risk across Microsoft Security solutions - including Microsoft Entra, Microsoft Purview, and Microsoft Defender - enabling proactive governance and reactive threat protection. This lets security teams keep using the tools they trust while empowering security leaders to govern and collaborate seamlessly.
 
 The dashboard provides:
 
@@ -39,18 +39,19 @@ The dashboard provides:
 
 :::image type="content" source="media/security-dashboard-for-ai/security-for-ai-dashboard-overview.png" alt-text="A screenshot showing the Overview page of the Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-for-ai-dashboard-overview.png":::
 
-## Prerequisites
+## How Security Dashboard for AI works
 
 Security Dashboard for AI requires no additional licensing beyond the underlying Microsoft Security products. It's available to all customers to support secure, governed AI deployments.
 
-**Required products:**
+Microsoft Security and partner products provide the sensors and signals the dashboard uses. If a required service isn’t deployed, the dashboard guides security leaders on which capabilities are missing and how to strengthen AI security.
+
+**Supported products:**
 - Microsoft Security suite components - Microsoft Entra, Microsoft Defender, and Microsoft Purview
 - Microsoft Security Copilot for AI-powered insights
 
 ## Permissions
 
 Users must be granted explicit access to the Security Dashboard for AI
-
 
 ## Executive Overview Dashboard
 

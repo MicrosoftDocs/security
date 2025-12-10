@@ -6,7 +6,7 @@ ms.author: kenwith
 manager: femila
 ms.date: 03/12/2025
 ms.topic: article
-ms.service: information-protection
+ms.service: azure-information-protection
 ms.custom: sfi-image-nochange
 ---
 

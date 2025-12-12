@@ -112,9 +112,11 @@ Access comprehensive visibility into all AI applications and agents across your 
 
 The **AI risk** page of the dashboard provides a consolidated view of AI-related security risks, enabling you to prioritize and address threats effectively. Each risk category links directly to the relevant Microsoft Security product for remediation.
 
+:::image type="content" source="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png" alt-text="A screenshot showing the AI risk page of the Security Dahboard for AI." lightbox="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png":::
+
 **Risk Categories:**
 
-| **Risk Category** | **Subcategory** | **Description** | **Managed by** |
+| **Risk category** | **Subcategory** | **Description** | **Managed by** |
 |---|---|---|---|
 | **Identity and access risks** | - | Authentication and authorization vulnerabilities across AI platforms | [Microsoft Entra](https://entra.microsoft.com) |
 | **Data security risks** | Exfiltration by platform | Unauthorized data extraction through AI applications | [Microsoft Purview](https://compliance.microsoft.com) |

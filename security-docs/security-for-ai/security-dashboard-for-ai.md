@@ -110,12 +110,18 @@ Access comprehensive visibility into all AI applications and agents across your 
 
 ## View and prioritize AI-related security risks across your organization
 
-The **AI risk** page of the dashboard provides a consolidated view of AI-related security risks, enabling you to prioritize and address threats effectively.
+The **AI risk** page of the dashboard provides a consolidated view of AI-related security risks, enabling you to prioritize and address threats effectively. Each risk category links directly to the relevant Microsoft Security product for remediation.
 
 **Risk Categories:**
-- **Identity and access risks** - Authentication and authorization vulnerabilities
-- **Data security risks** - Information exposure and oversharing threats
-- **Cloud security risks** - Infrastructure and configuration vulnerabilities
+
+| **Risk Category** | **Subcategory** | **Description** | **Managed by** |
+|---|---|---|---|
+| **Identity and access risks** | - | Authentication and authorization vulnerabilities across AI platforms | [Microsoft Entra](https://entra.microsoft.com) |
+| **Data security risks** | Exfiltration by platform | Unauthorized data extraction through AI applications | [Microsoft Purview](https://compliance.microsoft.com) |
+| | Oversharing by platform | Excessive data exposure via AI platform interactions | |
+| | Unethical activity by platform | Inappropriate or harmful AI usage patterns | |
+| **Cloud security risks** | Misconfiguration by platform | Infrastructure and security setting errors in AI deployments | [Microsoft Defender](https://security.microsoft.com) |
+| | Attack paths by platform | Potential exploitation routes through AI infrastructure | |
 
 
 ## Security Copilot Integration
@@ -182,8 +188,3 @@ Leverage AI-powered insights for enhanced security intelligence and decision-mak
    - Verify that remediation actions are effective
    - Monitor for similar risks across other assets
    - Update security policies based on lessons learned
-
-
-
-
-

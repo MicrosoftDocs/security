@@ -36,7 +36,9 @@ The dashboard provides:
 - **Recommendations and remediation paths**: Direct integration with Microsoft productivity tools and practitioner portals.
 - **AI-powered insights**: Leverages Security Copilot for intelligent risk assessment and recommendations.  
 - **Executive reporting**: Board-ready analytics and compliance insights.
+
 <br>
+
 :::image type="content" source="media/security-dashboard-for-ai/security-for-ai-dashboard-overview.png" alt-text="A screenshot showing the Overview page of the Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-for-ai-dashboard-overview.png":::
 
 ## How Security Dashboard for AI works

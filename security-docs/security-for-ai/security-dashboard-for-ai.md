@@ -43,9 +43,9 @@ The dashboard provides:
 
 ## How Security Dashboard for AI works
 
-Security Dashboard for AI requires no additional licensing beyond the underlying Microsoft Security products. It's available to all customers to support secure, governed AI deployments.
+Security Dashboard for AI requires no additional licensing beyond the underlying Microsoft Security products. It's available to all customers to support secure, and govern AI deployments.
 
-Microsoft Security and partner products provide the sensors and signals the dashboard uses. If a required service isn’t deployed, the dashboard guides security leaders on which capabilities are missing and how to strengthen AI security.
+Microsoft Security and partner products provide the sensors and signals the dashboard uses. If a required service isn’t deployed, the dashboard guides you on which capabilities are missing and how to strengthen AI security.
 
 **Supported products:**
 
@@ -73,9 +73,10 @@ Microsoft Security and partner products provide the sensors and signals the dash
 | **Agent ID Administrator** | View recommendations for communication compliance, insider risk, DLP and data related to identity and access risk |
 
 For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+
 ## Review and delegate security recommendations
 
-The **Overview** page of the dashboard lists actionable recommendations to help reduce AI risk. To delegate the implementation of these recommendations to a specific group or user:
+The **Overview** page of the dashboard provides key insights about your AI assets and related security risks. It also assesses your organization's implementation of Microsoft security for AI capabilities and provides recommendations for improving your organization's AI security posture. To delegate the implementation of these recommendations to a specific group or user:
 
 1. Select a recommendation on the **Overview** page.
 
@@ -87,6 +88,10 @@ The **Overview** page of the dashboard lists actionable recommendations to help 
 
 1. On the **Delegate to** page, select a user or group to assign the recommendation to and click **Select**.
 1. Select the Microsoft Outlook or Microsoft Teams icons to notify the assignee of the delegated recommendation. Select the ellipsis (...) next to the icons to remove or change the delegation.
+
+## Review AI inventory and manage security risks
+
+The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across all of the AI agents, AI models, and MCP servers, and AI applications in your organization.
 
 
 Access comprehensive visibility into all AI applications and agents across your environment.
@@ -103,21 +108,15 @@ Access comprehensive visibility into all AI applications and agents across your 
 - **Data Access** - Information about data sources and permissions
 - **Security Configuration** - Current protection status and gaps
 
-## Risk Assessment and Prioritization
+## View and prioritize AI-related security risks across your organization
 
-Understand and prioritize AI-related security risks across your organization.
+The **AI risk** page of the dashboard provides a consolidated view of AI-related security risks, enabling you to prioritize and address threats effectively.
 
 **Risk Categories:**
-- **Identity and Access Risks** - Authentication and authorization vulnerabilities
-- **Data Security Risks** - Information exposure and oversharing threats
-- **Cloud Security Risks** - Infrastructure and configuration vulnerabilities
-- **Compliance Risks** - Regulatory and policy violations
+- **Identity and access risks** - Authentication and authorization vulnerabilities
+- **Data security risks** - Information exposure and oversharing threats
+- **Cloud security risks** - Infrastructure and configuration vulnerabilities
 
-**Prioritization Features:**
-- **Risk Scoring** - AI-powered assessment of threat severity
-- **Business Impact Analysis** - Evaluation based on organizational priorities
-- **Remediation Recommendations** - Specific actions to reduce risk
-- **Timeline Tracking** - Progress monitoring for risk mitigation efforts
 
 ## Security Copilot Integration
 
@@ -184,19 +183,6 @@ Leverage AI-powered insights for enhanced security intelligence and decision-mak
    - Monitor for similar risks across other assets
    - Update security policies based on lessons learned
 
-
-
-### Integration Configuration
-
-1. **Data Source Management**
-   - Verify connections to all Microsoft Security products
-   - Configure data retention and processing policies
-   - Monitor integration health and performance
-
-2. **API Access and Automation**
-   - Set up API access for custom integrations
-   - Configure automated workflows with other security tools
-   - Implement PowerBI integration for advanced analytics
 
 
 

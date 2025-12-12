@@ -36,7 +36,7 @@ The dashboard provides:
 - **Recommendations and remediation paths**: Direct integration with Microsoft productivity tools and practitioner portals.
 - **AI-powered insights**: Leverages Security Copilot for intelligent risk assessment and recommendations.  
 - **Executive reporting**: Board-ready analytics and compliance insights.
-
+<br>
 :::image type="content" source="media/security-dashboard-for-ai/security-for-ai-dashboard-overview.png" alt-text="A screenshot showing the Overview page of the Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-for-ai-dashboard-overview.png":::
 
 ## How Security Dashboard for AI works
@@ -62,13 +62,13 @@ Microsoft Security and partner products provide the sensors and signals the dash
 
 | Role | Dashboard access |
 |:-----|:-----------------|
-| Global Administrator | View all data |
-| AI Administrator | View all data except Microsoft Entra conditional access, Microsoft Purview audit, and most Microsoft Defender capabilities |
-| Compliance Administrator | View all data except Microsoft Entra conditional access and some Microsoft Defender capabilities |
-| Security Administrator | View all data except Microsoft Purview audit and app governance recommendation |
-| Global Reader | View all data except app governance recommendations |
-| Agent Registry Administrator | View recommendations for communication compliance, insider risk, DLP |
-| Agent ID Administrator | View recommendations for communication compliance, insider risk, DLP and data related to identity and access risk |
+| **Global Administrator** | View all data |
+| **AI Administrator** | View all data except Microsoft Entra conditional access, Microsoft Purview audit, and most Microsoft Defender capabilities |
+| **Compliance Administrator** | View all data except Microsoft Entra conditional access and some Microsoft Defender data |
+| **Security Administrator** | View all data except Microsoft Purview audit and app governance recommendations |
+| **Global Reader** | View all data except app governance recommendations |
+| **Agent Registry Administrator** | View recommendations for communication compliance, insider risk, DLP |
+| **Agent ID Administrator** | View recommendations for communication compliance, insider risk, DLP and data related to identity and access risk |
 
 For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 ## Review and delegate security recommendations

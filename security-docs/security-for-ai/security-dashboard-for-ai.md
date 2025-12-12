@@ -23,7 +23,7 @@ ms.collection:
 - What’s their current security posture?
 - Where must we take action?
 
-This article explains the core capabilities of the Security Dashboard for A and how to use the dashboard effectively to manage AI security across your enterprise.
+This article explains the core capabilities of the Security Dashboard for AI and how to use the dashboard effectively to manage AI security across your enterprise.
 
 ## End-to-end AI security visibility and management
 
@@ -58,11 +58,22 @@ Microsoft Security and partner products provide the sensors and signals the dash
 
 ## Permissions
 
-You must be granted explicit access to the dashboard to view AI security data. By default, only Global Administrators and Security Administrators have access.
+ By default, only Global Administrators have access to all dashboard data. This table outlines the data access levels for Microsoft Entra built-in roles:
 
-## Delegate security recommendations
+| Role | Dashboard access |
+|:-----|:-----------------|
+| Global Administrator | View all data |
+| AI Administrator | View all data except Microsoft Entra conditional access, Microsoft Purview audit, and most Microsoft Defender capabilities |
+| Compliance Administrator | View all data except Microsoft Entra conditional access and some Microsoft Defender capabilities |
+| Security Administrator | View all data except Microsoft Purview audit and app governance recommendation |
+| Global Reader | View all data except app governance recommendations |
+| Agent Registry Administrator | View recommendations for communication compliance, insider risk, DLP |
+| Agent ID Administrator | View recommendations for communication compliance, insider risk, DLP and data related to identity and access risk |
 
-The **Overview** page of the dashboard lists actionable recommendations to help reduce AI risk. To delegate these recommendations to specific teams or individuals for remediation:
+For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+## Review and delegate security recommendations
+
+The **Overview** page of the dashboard lists actionable recommendations to help reduce AI risk. To delegate the implementation of these recommendations to a specific group or user:
 
 1. Select a recommendation on the **Overview** page.
 
@@ -72,8 +83,8 @@ The **Overview** page of the dashboard lists actionable recommendations to help 
 
    :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-recommendation-details.png"  alt-text="A screenshot showing the recommendation details page with the Delegate button highlighted." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-recommendation-details.png"::: 
 
-1. On the **Delegate to** page, select a user or group to assign the recommendation to.
-
+1. On the **Delegate to** page, select a user or group to assign the recommendation to and click **Select**.
+1. Select the Microsoft Outlook or Microsoft Teams icons to notify the assignee of the delegated recommendation. Select the ellipsis (...) next to the icons to remove or change the delegation.
 
 
 Access comprehensive visibility into all AI applications and agents across your environment.

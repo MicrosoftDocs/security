@@ -89,7 +89,7 @@ The **Overview** page of the dashboard provides key insights about your AI asset
 1. On the **Delegate to** page, select a user or group to assign the recommendation to and click **Select**.
 1. Select the Microsoft Outlook or Microsoft Teams icons to notify the assignee of the delegated recommendation. Select the ellipsis (...) next to the icons to remove or change the delegation.
 
-## Review AI assets and manage asset security risks 
+## Explore AI assets and manage asset security risks 
 
 The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across all of the AI agents, AI models, and MCP servers, and AI applications in your organization.
 

@@ -23,7 +23,7 @@ ms.collection:
 - What’s their current security posture?
 - Where must we take action?
 
-This article explains the core capabilities of the Security Dashboard for AI and how to use the dashboard effectively to manage AI security across your enterprise.
+This article explains the core capabilities of the Security Dashboard for AI and how to use the dashboard to manage AI security across your enterprise.
 
 ## End-to-end AI security visibility and management
 

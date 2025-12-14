@@ -89,13 +89,13 @@ The **Overview** page of the dashboard provides key insights about your AI asset
 1. On the **Delegate to** page, select a user or group to assign the recommendation to and click **Select**.
 1. Select the Microsoft Outlook or Microsoft Teams icons to notify the assignee of the delegated recommendation. Select the ellipsis (...) next to the icons to remove or change the delegation.
 
-## Review AI inventory and manage security risks
+## Review your AI assets and manage security risks using the AI inventory 
 
 The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across all of the AI agents, AI models, and MCP servers, and AI applications in your organization.
 
 ### AI agents 
 
-View and manage all AI agents operating in your environment, including key insights from the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry) and [Microsoft Purview Data Security Posture Management (DSPM) for AI](/purview/dspm-for-ai).
+View and manage the security of all AI agents operating in your environment, including key insights from the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry) and [Microsoft Purview Data Security Posture Management (DSPM) for AI](/purview/dspm-for-ai).
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png" alt-text="A screenshot showing the Agents tab of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png":::
 
@@ -104,17 +104,18 @@ Select an AI agent to:
 
    :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png" alt-text="A screenshot showing the Agent Overview page of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png":::
 
-- Review and apply security recommendations specific to the selected agent.
+- Review and apply security recommendations for protecting sensitive data in agent activities.
 
    :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png" alt-text="A screenshot showing the Agent Recommendations page of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png":::
 
 
 ### AI models
 
-### MCP servers
+View and manage the security of all AI models in use across your organization. This information is gathered from the [Microsoft Defender cloud asset inventory](/azure/defender-for-cloud/asset-inventory?pivots=defender-portal).
 
-### Other AI applications
+### MCP servers and other AI applications
 
+View and manage the security of all AI models in use across your organization. This information is gathered from the [Microsoft Defender for Cloud Apps applications inventory](/defender-cloud-apps/applications-inventory).
 
 Access comprehensive visibility into all AI applications and agents across your environment.
 

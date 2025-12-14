@@ -43,7 +43,7 @@ The dashboard provides:
 
 ## How Security Dashboard for AI works
 
-Security Dashboard for AI doesn't require any licensing beyond the underlying Microsoft Security products. It's available to all customers to support secure, and govern AI deployments.
+Security Dashboard for AI doesn't require any special licensing beyond the underlying Microsoft Security products. It's available to all customers to support secure, and govern AI deployments.
 
 Microsoft Security and partner products provide the sensors and signals the dashboard uses. If you haven't deployed a required service, the dashboard guides you on which capabilities are missing and how to strengthen your AI security.
 

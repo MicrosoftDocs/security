@@ -89,7 +89,7 @@ The **Overview** page of the dashboard provides key insights about your AI asset
 1. On the **Delegate to** page, select a user or group to assign the recommendation to and click **Select**.
 1. Select the Microsoft Outlook or Microsoft Teams icons to notify the assignee of the delegated recommendation. Select the ellipsis (...) next to the icons to remove or change the delegation.
 
-## Review your AI assets and manage security risks using the AI inventory 
+## Review AI assets and manage security risks using the AI inventory 
 
 The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across all of the AI agents, AI models, and MCP servers, and AI applications in your organization.
 
@@ -102,34 +102,26 @@ View and manage the security of all AI agents operating in your environment, inc
 Select an AI agent to:
 - View agent details and activities. Select **View all activities** to open the [Activity Explorer in DSPM for AI](/purview/dspm-for-ai-considerations#activity-explorer-events) and review agent activity related to content that contains sensitive information or has labels applied.
 
-   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png" alt-text="A screenshot showing the Agent Overview page of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png":::
+   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png" alt-text="A screenshot showing the Agent Overview page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png":::
 
 - Review and apply security recommendations for protecting sensitive data in agent activities.
 
-   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png" alt-text="A screenshot showing the Agent Recommendations page of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png":::
+   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png" alt-text="A screenshot showing the Agent Recommendations page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png":::
 
 
 ### AI models
 
 View and manage the security of all AI models in use across your organization. This information is gathered from the [Microsoft Defender cloud asset inventory](/azure/defender-for-cloud/asset-inventory?pivots=defender-portal).
 
+:::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png" alt-text="A screenshot showing the AI models page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png":::
+
+
 ### MCP servers and other AI applications
 
 View and manage the security of all AI models in use across your organization. This information is gathered from the [Microsoft Defender for Cloud Apps applications inventory](/defender-cloud-apps/applications-inventory).
 
-Access comprehensive visibility into all AI applications and agents across your environment.
 
-**Discovery Capabilities:**
-- **Managed AI Applications** - Microsoft-native AI solutions with full governance
-- **Unmanaged AI Applications** - Shadow AI and unapproved applications  
-- **Third-party AI Solutions** - External AI services and platforms
-- **Agent Classification** - Automated categorization by function and risk level
-
-**Asset Details:**
-- **Application Profiles** - Detailed information about each AI asset
-- **Usage Patterns** - User behavior and access analytics
-- **Data Access** - Information about data sources and permissions
-- **Security Configuration** - Current protection status and gaps
+:::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-mcp-and-other-ai-apps.png" alt-text="A screenshot showing the Other AI apps page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-mcp-and-other-ai-apps.png":::
 
 ## View and prioritize AI-related security risks across your organization
 

@@ -93,6 +93,28 @@ The **Overview** page of the dashboard provides key insights about your AI asset
 
 The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across all of the AI agents, AI models, and MCP servers, and AI applications in your organization.
 
+### AI agents 
+
+View and manage all AI agents operating in your environment, including key insights from the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry) and [Microsoft Purview Data Security Posture Management (DSPM) for AI](/purview/dspm-for-ai).
+
+:::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png" alt-text="A screenshot showing the Agents tab of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png":::
+
+Select an AI agent to:
+- View agent details and activities. Select **View all activities** to open the [Activity Explorer in DSPM for AI](/purview/dspm-for-ai-considerations#activity-explorer-events) and review agent activity related to content that contains sensitive information or has labels applied.
+
+   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png" alt-text="A screenshot showing the Agent Overview page of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png":::
+
+- Review and apply security recommendations specific to the selected agent.
+
+   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png" alt-text="A screenshot showing the Agent Recommendations page of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png":::
+
+
+### AI models
+
+### MCP servers
+
+### Other AI applications
+
 
 Access comprehensive visibility into all AI applications and agents across your environment.
 
@@ -119,7 +141,7 @@ The **AI risk** page of the dashboard provides a consolidated view of AI-related
 | **Risk category** | **Subcategory** | **Description** | **Managed by** |
 |---|---|---|---|
 | **Identity and access risks** | - | Authentication and authorization vulnerabilities across AI platforms | [Microsoft Entra](https://entra.microsoft.com) |
-| **Data security risks** | Exfiltration by platform | Unauthorized data extraction through AI applications | [Microsoft Purview](https://compliance.microsoft.com) |
+| **Data security risks** | Exfiltration by platform | Unauthorized data extraction through AI applications | [Microsoft Purview](/purview/ai-microsoft-purview)|
 | | Oversharing by platform | Excessive data exposure via AI platform interactions | [Microsoft Purview](/purview/ai-microsoft-purview)|
 | | Unethical activity by platform | Inappropriate or harmful AI usage patterns | |
 | **Cloud security risks** | Misconfiguration by platform | Infrastructure and security setting errors in AI deployments | [Microsoft Defender](https://security.microsoft.com) |

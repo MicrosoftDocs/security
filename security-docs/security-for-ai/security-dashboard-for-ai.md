@@ -120,7 +120,7 @@ The **AI risk** page of the dashboard provides a consolidated view of AI-related
 |---|---|---|---|
 | **Identity and access risks** | - | Authentication and authorization vulnerabilities across AI platforms | [Microsoft Entra](https://entra.microsoft.com) |
 | **Data security risks** | Exfiltration by platform | Unauthorized data extraction through AI applications | [Microsoft Purview](https://compliance.microsoft.com) |
-| | Oversharing by platform | Excessive data exposure via AI platform interactions | |
+| | Oversharing by platform | Excessive data exposure via AI platform interactions | [Microsoft Purview](/purview/ai-microsoft-purview)|
 | | Unethical activity by platform | Inappropriate or harmful AI usage patterns | |
 | **Cloud security risks** | Misconfiguration by platform | Infrastructure and security setting errors in AI deployments | [Microsoft Defender](https://security.microsoft.com) |
 | | Attack paths by platform | Potential exploitation routes through AI infrastructure | |

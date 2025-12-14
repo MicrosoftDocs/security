@@ -45,17 +45,17 @@ The dashboard provides:
 
 Security Dashboard for AI requires no additional licensing beyond the underlying Microsoft Security products. It's available to all customers to support secure, and govern AI deployments.
 
-Microsoft Security and partner products provide the sensors and signals the dashboard uses. If a required service isn’t deployed, the dashboard guides you on which capabilities are missing and how to strengthen AI security.
+Microsoft Security and partner products provide the sensors and signals the dashboard uses. If you haven't deployed a required service, the dashboard guides you on which capabilities are missing and how to strengthen your AI security.
 
 **Supported products:**
 
 
 | **Product**      | **Key capabilities**                                                                 |
 |----------------------------|--------------------------------------------------------------------------------------|
-| **Microsoft Entra**        | <ul><li>**Identity management**: Centralized user and application identity governance</li><li>**Conditional access**: Risk-based access controls for AI applications</li><li>**Privileged identity management**: Elevated access monitoring and control</li></ul> |
-| **Microsoft Defender**     | <ul><li>**Threat protection**: Real-time monitoring of AI workloads and endpoints</li><li>**Cloud security posture**: Infrastructure vulnerability assessment</li><li>**App security**: SaaS AI application risk evaluation</li></ul> |
-| **Microsoft Purview**      | <ul><li>**Data classification**: Automated labeling and protection of AI-accessible data</li><li>**Data loss prevention**: Prevent sensitive information exposure through AI</li><li>**Insider risk management**: Detect anomalous AI usage patterns</li></ul> |
-| **Microsoft Security Copilot**| <ul><li>**Prompt-based exploration**: Explore AI risks, agent activity, and security recommendations via prompts</li><li>**Enhanced AI risk insights**: Aggregates signals across Microsoft and partner security solutions for deeper analysis</li><li>**Enhanced agent discovery and categorization**: Improves identification of managed, unmanaged, and shadow AI agents to strengthen your AI security posture</li></ul> |
+| **Microsoft Entra**        | <ul><li>**Identity management**: Centralized user and application identity governance</li><li>**Conditional access**: Risk-based access controls for AI applications</li><li>**Privileged identity management**: Elevated access monitoring and control</li></ul> For more information, see [What is Microsoft agent identity platform](/entra/agent-id/identity-platform/what-is-agent-id-platform).|
+| **Microsoft Defender**     | <ul><li>**Threat protection**: Real-time monitoring of AI workloads and endpoints</li><li>**Cloud security posture**: Infrastructure vulnerability assessment</li><li>**App security**: SaaS AI application risk evaluation</li></ul> For more information, see [Microsoft Defender AI security posture management](/azure/defender-for-cloud/ai-security-posture).|
+| **Microsoft Purview**      | <ul><li>**Data classification**: Automated labeling and protection of AI-accessible data</li><li>**Data loss prevention**: Prevent sensitive information exposure through AI</li><li>**Insider risk management**: Detect anomalous AI usage patterns</li></ul> For more information, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview). |
+| **Microsoft Security Copilot**| <ul><li>**Prompt-based exploration**: Explore AI risks, agent activity, and security recommendations via prompts</li><li>**Enhanced AI risk insights**: Aggregates signals across Microsoft and partner security solutions for deeper analysis</li><li>**Enhanced agent discovery and categorization**: Improves identification of managed, unmanaged, and shadow AI agents to strengthen your AI security posture</li></ul> For more information, see [What is Microsoft Security Copilot?](/copilot/security/microsoft-security-copilot).|
 
 
 ## Permissions

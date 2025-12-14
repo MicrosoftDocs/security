@@ -93,9 +93,16 @@ The **Overview** page of the dashboard provides key insights about your AI asset
 
 The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across all of the AI agents, AI models, and MCP servers, and AI applications in your organization.
 
+To discover and manage AI assets:
+
+1. Select **AI Inventory** review the complete list of discovered AI applications and agents.
+1. Apply filters to focus on specific asset types or risk levels.
+1. Select any AI asset to view detailed information, review security configuration and compliance status, and analyze user access patterns and data interactions.
+1. Select **Export** to export filtered views for targeted analysis and reporting.
+   
 ### AI agents 
 
-View and manage the security of all AI agents operating in your environment, including key insights from the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry) and [Microsoft Purview Data Security Posture Management (DSPM) for AI](/purview/dspm-for-ai).
+The **AI agents** tab of the **AI inventory** page presents all of the AI agents operating in your environment and provides key insights from the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry) and [Microsoft Purview Data Security Posture Management (DSPM) for AI](/purview/dspm-for-ai).
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png" alt-text="A screenshot showing the Agents tab of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png":::
 
@@ -161,28 +168,6 @@ Leverage AI-powered insights for enhanced security intelligence and decision-mak
 - **Trend Identification** - Pattern recognition across multiple data sources
 - **Recommendation Prioritization** - Intelligent ranking of security actions
 
-## Detailed Operational Workflows
-
-### Discovering AI Assets
-
-1. **Navigate to AI Inventory**
-   - Access the inventory section from the main dashboard
-   - Review the complete list of discovered AI applications and agents
-
-2. **Apply Filters and Search**
-   - Use filters to focus on specific asset types or risk levels
-   - Search for particular applications or business units
-   - Sort by discovery date, risk score, or usage frequency
-
-3. **Investigate Asset Details**
-   - Click on any AI asset to view detailed information
-   - Review security configuration and compliance status
-   - Analyze user access patterns and data interactions
-
-4. **Export Inventory Data**
-   - Generate comprehensive reports for stakeholder review
-   - Export filtered views for targeted analysis
-   - Schedule regular inventory updates
 
 ### Assessing and Managing Risks
 

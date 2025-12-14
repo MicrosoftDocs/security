@@ -89,7 +89,7 @@ The **Overview** page of the dashboard provides key insights about your AI asset
 1. On the **Delegate to** page, select a user or group to assign the recommendation to and click **Select**.
 1. Select the Microsoft Outlook or Microsoft Teams icons to notify the assignee of the delegated recommendation. Select the ellipsis (...) next to the icons to remove or change the delegation.
 
-## Review AI assets and manage security risks using the AI inventory 
+## Review AI assets and manage asset security risks 
 
 The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across all of the AI agents, AI models, and MCP servers, and AI applications in your organization.
 
@@ -118,7 +118,7 @@ Select an AI agent to:
 
 ### AI models
 
-View and manage the security of all AI models in use across your organization. This information is gathered from the [Microsoft Defender cloud asset inventory](/azure/defender-for-cloud/asset-inventory?pivots=defender-portal).
+The **AI models** tab of the **AI inventory** page presents all of the AI models in use across your organization. The dashboard gathers this information from the [Microsoft Defender cloud asset inventory](/azure/defender-for-cloud/asset-inventory?pivots=defender-portal).
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png" alt-text="A screenshot showing the AI models page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png":::
 

@@ -134,12 +134,13 @@ View and manage the security of all AI models in use across your organization. T
 
 The **AI risk** page of the dashboard provides a consolidated view of AI-related security risks, enabling you to prioritize and address threats effectively. Each risk category links directly to the relevant Microsoft Security product for remediation.
 
-:::image type="content" source="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png" alt-text="A screenshot showing the AI risk page of the Security Dahboard for AI." lightbox="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png":::
-
 To investigate and remediate AI security risks:
 
 1. Review risk summary cards for immediate priorities, examine trend charts to identify emerging threats, and use Microsoft Security Copilot's suggested prompts to explore complex risk scenarios.
 1.  Select **View in Microsoft Purview** or **View in Microsoft Defender** to navigate to the relevant Microsoft Security product for detailed risk analysis and remediation. 
+
+:::image type="content" source="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png" alt-text="A screenshot showing the AI risk page of the Security Dahboard for AI." lightbox="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png":::
+
 
 
 

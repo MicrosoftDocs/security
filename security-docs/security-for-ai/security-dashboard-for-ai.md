@@ -50,7 +50,7 @@ Microsoft Security and partner products provide the sensors and signals the dash
 **Supported products:**
 
 
-| **Product**      | **Key capabilities**                                                                 |
+| **Product**      | **Key capabilities and dashboard insights**                                                                 |
 |----------------------------|--------------------------------------------------------------------------------------|
 | **Microsoft Entra**        | <ul><li>**Identity management**: Centralized user and application identity governance</li><li>**Conditional access**: Risk-based access controls for AI applications</li><li>**Privileged identity management**: Elevated access monitoring and control</li></ul> For more information, see [What is Microsoft agent identity platform](/entra/agent-id/identity-platform/what-is-agent-id-platform).|
 | **Microsoft Defender**     | <ul><li>**Threat protection**: Real-time monitoring of AI workloads and endpoints</li><li>**Cloud security posture**: Infrastructure vulnerability assessment</li><li>**App security**: SaaS AI application risk evaluation</li></ul> For more information, see [Microsoft Defender AI security posture management](/azure/defender-for-cloud/ai-security-posture).|

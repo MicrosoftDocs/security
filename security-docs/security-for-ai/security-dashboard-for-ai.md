@@ -139,7 +139,7 @@ To investigate and remediate AI security risks:
 1. Review risk summary cards for immediate priorities, examine trend charts to identify emerging threats, and use Microsoft Security Copilot's suggested prompts to explore complex risk scenarios.
 1.  Select **View in Microsoft Purview** or **View in Microsoft Defender** to navigate to the relevant Microsoft Security product for detailed risk analysis and remediation. 
 
-:::image type="content" source="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png" alt-text="A screenshot showing the AI risk page of the Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png":::
+:::image type="content" source="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png" alt-text="A screenshot showing the AI risk page of the Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png":::
 
 
 

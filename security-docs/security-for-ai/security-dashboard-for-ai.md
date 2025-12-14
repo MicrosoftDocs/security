@@ -34,7 +34,7 @@ The dashboard provides:
 - **Real-time visibility of AI risk**: Aggregated insights across Microsoft Entra, Defender, and Purview.
 - **Comprehensive inventory of AI assets**: The dashboard covers Microsoft AI solutions - including Microsoft 365 Copilot, Microsoft Copilot Studio agents, and Microsoft Foundry apps and agents - as well as third-party AI models, applications, and agents such as Google Gemini, OpenAI ChatGPT, and MCP servers.
 - **Recommendations and remediation paths**: Direct integration with Microsoft productivity tools and practitioner portals.
-- **AI-powered insights**: Leverages Security Copilot for intelligent risk assessment and recommendations.  
+- **AI-powered insights**: Microsoft Security Copilot provides suggested prompts that help you drill down to key insights, and quickly access intelligent risk assessments, summaries, and recommendations.  
 - **Executive reporting**: Board-ready analytics and compliance insights.
 
 <br>
@@ -136,57 +136,11 @@ The **AI risk** page of the dashboard provides a consolidated view of AI-related
 
 :::image type="content" source="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png" alt-text="A screenshot showing the AI risk page of the Security Dahboard for AI." lightbox="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png":::
 
-**Risk Categories:**
+To investigate and remediate AI security risks:
 
-| **Risk category** | **Subcategory** | **Description** | **Managed by** |
-|---|---|---|---|
-| **Identity and access risks** | - | Authentication and authorization vulnerabilities across AI platforms | [Microsoft Entra](https://entra.microsoft.com) |
-| **Data security risks** | Exfiltration by platform | Unauthorized data extraction through AI applications | [Microsoft Purview](/purview/ai-microsoft-purview)|
-| | Oversharing by platform | Excessive data exposure via AI platform interactions | [Microsoft Purview](/purview/ai-microsoft-purview)|
-| | Unethical activity by platform | Inappropriate or harmful AI usage patterns | |
-| **Cloud security risks** | Misconfiguration by platform | Infrastructure and security setting errors in AI deployments | [Microsoft Defender](https://security.microsoft.com) |
-| | Attack paths by platform | Potential exploitation routes through AI infrastructure | |
+1. Review risk summary cards for immediate priorities, examine trend charts to identify emerging threats, and use Microsoft Security Copilot's suggested prompts to explore complex risk scenarios.
+1.  Select **View in Microsoft Purview** or **View in Microsoft Defender** to navigate to the relevant Microsoft Security product for detailed risk analysis and remediation. 
 
 
-## Security Copilot Integration
-
-Leverage AI-powered insights for enhanced security intelligence and decision-making.
-
-**Natural Language Queries:**
-- Ask questions about AI risks using conversational prompts
-- Explore agent activity and security recommendations
-- Generate insights by aggregating signals across security solutions
-
-**Guided Prompts:**
-- **Risk Exploration** - "What are the highest priority AI risks in my environment?"
-- **Agent Discovery** - "Show me all unmanaged AI agents accessing sensitive data"
-- **Remediation Guidance** - "What steps should I take to reduce data leakage risks?"
-- **Compliance Assessment** - "Are there any AI applications violating our data policies?"
-
-**AI-Generated Insights:**
-- **Risk Summaries** - Automated analysis of complex security data
-- **Trend Identification** - Pattern recognition across multiple data sources
-- **Recommendation Prioritization** - Intelligent ranking of security actions
 
 
-### Assessing and Managing Risks
-
-1. **Risk Dashboard Analysis**
-   - Review risk summary cards for immediate priorities
-   - Examine trend charts to identify emerging threats
-   - Use Security Copilot to explore complex risk scenarios
-
-2. **Individual Risk Investigation**
-   - Click on specific risks for detailed analysis
-   - Review affected assets and potential business impact
-   - Understand the root cause and attack vectors
-
-3. **Remediation Planning**
-   - Follow recommended remediation steps
-   - Assign responsibilities to appropriate teams
-   - Set timelines and track progress
-
-4. **Validation and Monitoring**
-   - Verify that remediation actions are effective
-   - Monitor for similar risks across other assets
-   - Update security policies based on lessons learned

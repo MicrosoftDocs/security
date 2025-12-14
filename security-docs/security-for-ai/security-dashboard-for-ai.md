@@ -130,7 +130,7 @@ View and manage the security of all AI models in use across your organization. T
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-mcp-and-other-ai-apps.png" alt-text="A screenshot showing the Other AI apps page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-mcp-and-other-ai-apps.png":::
 
-## View and prioritize AI-related security risks across your organization
+## View and prioritize AI security risks across your organization
 
 The **AI risk** page of the dashboard provides a consolidated view of AI-related security risks, enabling you to prioritize and address threats effectively. Each risk category links directly to the relevant Microsoft Security product for remediation.
 

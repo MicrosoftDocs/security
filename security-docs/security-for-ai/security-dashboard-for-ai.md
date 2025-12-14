@@ -43,7 +43,7 @@ The dashboard provides:
 
 ## How Security Dashboard for AI works
 
-Security Dashboard for AI requires no additional licensing beyond the underlying Microsoft Security products. It's available to all customers to support secure, and govern AI deployments.
+Security Dashboard for AI doesn't require any licensing beyond the underlying Microsoft Security products. It's available to all customers to support secure, and govern AI deployments.
 
 Microsoft Security and partner products provide the sensors and signals the dashboard uses. If you haven't deployed a required service, the dashboard guides you on which capabilities are missing and how to strengthen your AI security.
 
@@ -55,7 +55,7 @@ Microsoft Security and partner products provide the sensors and signals the dash
 | **Microsoft Entra**        | <ul><li>**Identity management**: Centralized user and application identity governance</li><li>**Conditional access**: Risk-based access controls for AI applications</li><li>**Privileged identity management**: Elevated access monitoring and control</li></ul> For more information, see [What is Microsoft agent identity platform](/entra/agent-id/identity-platform/what-is-agent-id-platform).|
 | **Microsoft Defender**     | <ul><li>**Threat protection**: Real-time monitoring of AI workloads and endpoints</li><li>**Cloud security posture**: Infrastructure vulnerability assessment</li><li>**App security**: SaaS AI application risk evaluation</li></ul> For more information, see [Microsoft Defender AI security posture management](/azure/defender-for-cloud/ai-security-posture).|
 | **Microsoft Purview**      | <ul><li>**Data classification**: Automated labeling and protection of AI-accessible data</li><li>**Data loss prevention**: Prevent sensitive information exposure through AI</li><li>**Insider risk management**: Detect anomalous AI usage patterns</li></ul> For more information, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview). |
-| **Microsoft Security Copilot**| <ul><li>**Prompt-based exploration**: Explore AI risks, agent activity, and security recommendations via prompts</li><li>**Enhanced AI risk insights**: Aggregates signals across Microsoft and partner security solutions for deeper analysis</li><li>**Enhanced agent discovery and categorization**: Improves identification of managed, unmanaged, and shadow AI agents to strengthen your AI security posture</li></ul> For more information, see [What is Microsoft Security Copilot?](/copilot/security/microsoft-security-copilot).|
+| **Microsoft Security Copilot**| <ul><li>**Prompt-based exploration**: Explore AI risks, agent activity, and security recommendations via prompts</li><li>**Enhanced AI risk insights**: Aggregate signals across Microsoft and partner security solutions for deeper analysis</li><li>**Enhanced agent discovery and categorization**: Improve identification of managed, unmanaged, and shadow AI agents to strengthen your AI security posture</li></ul> For more information, see [What is Microsoft Security Copilot?](/copilot/security/microsoft-security-copilot)|
 
 
 ## Permissions
@@ -70,7 +70,7 @@ Microsoft Security and partner products provide the sensors and signals the dash
 | **Security Administrator** | View all data except Microsoft Purview audit and app governance recommendations |
 | **Global Reader** | View all data except app governance recommendations |
 | **Agent Registry Administrator** | View recommendations for communication compliance, insider risk, DLP |
-| **Agent ID Administrator** | View recommendations for communication compliance, insider risk, DLP and data related to identity and access risk |
+| **Agent ID Administrator** | View recommendations for communication compliance, insider risk, DLP, and data related to identity and access risk |
 
 For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
@@ -139,7 +139,7 @@ To investigate and remediate AI security risks:
 1. Review risk summary cards for immediate priorities, examine trend charts to identify emerging threats, and use Microsoft Security Copilot's suggested prompts to explore complex risk scenarios.
 1.  Select **View in Microsoft Purview** or **View in Microsoft Defender** to navigate to the relevant Microsoft Security product for detailed risk analysis and remediation. 
 
-:::image type="content" source="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png" alt-text="A screenshot showing the AI risk page of the Security Dahboard for AI." lightbox="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png":::
+:::image type="content" source="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png" alt-text="A screenshot showing the AI risk page of the Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/ security-dashboard-for-ai-risks.png.png":::
 
 
 

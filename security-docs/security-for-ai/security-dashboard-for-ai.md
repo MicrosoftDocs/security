@@ -93,7 +93,7 @@ The **Overview** page of the dashboard provides key insights about your AI asset
 
 The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across all of the AI agents, AI models, and MCP servers, and AI applications in your organization.
 
-To discover and manage AI assets:
+To discover and manage AI asset security risks:
 
 1. Select **AI Inventory** review the complete list of discovered AI applications and agents.
 1. Apply filters to focus on specific asset types or risk levels.

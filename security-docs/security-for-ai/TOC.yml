@@ -14,7 +14,7 @@
       href: protect.md  
     - name: Govern AI for compliance
       href: govern.md 
-    - name: Security for AI discovery and goverance tools 
+    - name: Security for AI discovery and governance tools 
       items:
         - name: Assess AI security with Security Dashboard for AI
           href: security-dashboard-for-ai.md

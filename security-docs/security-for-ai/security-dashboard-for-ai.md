@@ -74,7 +74,7 @@ These roles can view data on the summary cards on the **Overview** page.
 | **AI risk: Misconfigurations and attack paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **AI risk: Agents with sensitive interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
-These roles can all view instructions and delegate tasks on the **Overview** page, but cannot view the status of the recommendation unless specified below: view security recommendations and delegate tasks on the **Overview** page, as described in [Review and delegate security recommendations](#review-and-delegate-security-recommendations).
+These roles can all view instructions and delegate tasks on the **Overview** page, as described in [Review and delegate security recommendations](#review-and-delegate-security-recommendations), but cannot view the status of the recommendation unless specified below:
 
 | Recommendation category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:------------------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|

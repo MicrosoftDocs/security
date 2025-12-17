@@ -78,15 +78,14 @@ For more information about Microsoft Entra roles, see [Microsoft Entra built-in 
 
 The **Overview** page of the dashboard provides key insights about your AI assets and related security risks. It also assesses your organization's implementation of Microsoft security for AI capabilities and provides recommendations for improving your organization's AI security posture. 
 
-he following roles can view data on the **AI Risk** page:
+These roles can view security recommendations and delegate tasks on the **Overview** page:
 
-| Risk category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
-|:--------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
-| **Identity and access risk** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Data security risk** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Cloud security risk** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Misconfigurations and attack paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
-| **Agents with sensitive interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| Recommendation category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
+|:------------------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
+| **Prevent agent sprawl and unauthorized access** (Microsoft Entra) | ✅ | ✅ | ✅ | ✅ Except configure global collection in Entra agent registry | ✅ | ❌ | ❌ |
+| **Prevent data leaks and oversharing** (Microsoft Purview) | ✅ | ✅ Except turn on audit | ✅ | ✅ Except turn on audit | ✅ | ✅ Only turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management | ✅ Only turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management |
+| **Address AI risk and vulnerability** (Microsoft Defender) | ✅ | ✅ | ✅ | ✅ Except enable app governance | ✅ | ❌ | ❌ |
+
 
 To delegate the implementation of these recommendations to a specific group or user:
 

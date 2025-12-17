@@ -108,7 +108,7 @@ These roles can view data on the **AI Inventory** page:
 
 | Asset type | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:-----------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
-| **Agents** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **AI agents** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **AI models** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **MCP servers** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **Other AI apps** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |

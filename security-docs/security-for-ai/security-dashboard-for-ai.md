@@ -60,11 +60,8 @@ Microsoft Security and partner products provide the sensors and signals the dash
 
 ## Permissions
 
- By default, only Global Administrators have access to all dashboard data. This table outlines the data access levels for Microsoft Entra built-in roles:
+ By default, only Global Administrators have access to all dashboard data. The tables in this section outline the data access levels for Microsoft Entra built-in roles. For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
-## Permissions
-
-By default, only Global Administrators have access to all dashboard data. The following tables outline the data access levels for Microsoft Entra built-in roles across different areas of the Security Dashboard for AI.
 
 ### Overview page permissions
 
@@ -76,7 +73,7 @@ These roles can view security recommendations and delegate tasks on the **Overvi
 | **Prevent data leaks and oversharing** (Microsoft Purview) | ✅ | ✅ Except turn on audit | ✅ | ✅ Except turn on audit | ✅ | ✅ Only turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management | ✅ Only turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management |
 | **Address AI risk and vulnerability** (Microsoft Defender) | ✅ | ✅ | ✅ | ✅ Except enable app governance | ✅ | ❌ | ❌ |
 
-### AI Inventory page permissions
+### AI inventory page permissions
 
 These roles can view data on the **AI Inventory** page:
 
@@ -87,7 +84,7 @@ These roles can view data on the **AI Inventory** page:
 | **MCP dervers** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **Other AI apps** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
-### AI Risk page permissions
+### AI risk page permissions
 
 These roles can view data on the **AI Risk** page:
 
@@ -99,7 +96,7 @@ These roles can view data on the **AI Risk** page:
 | **Misconfigurations and attack paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **Agents with sensitive interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
-For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+
 
 ## Review and delegate security recommendations
 

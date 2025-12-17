@@ -61,6 +61,7 @@ Microsoft Security and partner products provide the sensors and signals the dash
 ## Permissions
 
 By default, only Global Administrators have access to all dashboard data. The tables in this section outline the data access levels for Microsoft Entra built-in roles. For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+<br><br>
 
 <details>
 <summary><b>Overview page permissions</b></summary>
@@ -82,7 +83,7 @@ These roles can view security recommendations and delegate tasks on the **Overvi
 | **Address AI risk and vulnerability** (Microsoft Defender) | ✅ | ✅ | ✅ | ✅ Except *Enable app governance* | ✅ | ❌ | ❌ |
 
 </details>
-
+<br>
 <details>
 <summary><b>AI inventory page permissions</b></summary>
 
@@ -96,7 +97,7 @@ These roles can view data on the **AI inventory** page, as described in [Explore
 | **Other AI apps** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
 </details>
-
+<br>
 <details>
 <summary><b>AI risk page permissions</b></summary>
 

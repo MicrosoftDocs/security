@@ -65,6 +65,14 @@ Microsoft Security and partner products provide the sensors and signals the dash
 
 ### Overview page permissions
 
+These roles can view data on the summary cards on the **Overview** page:
+
+| Summary card | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
+|:-------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
+| **AI Inventory** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **AI Risk: Misconfigurations and Attack Paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| **AI Risk: Agents with Sensitive Interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+
 These roles can view security recommendations and delegate tasks on the **Overview** page:
 
 | Recommendation category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |

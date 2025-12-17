@@ -68,7 +68,7 @@ By default, only Global Administrators have access to all dashboard data. The fo
 
 ### Overview page permissions
 
-The following roles can view security recommendations and delegate tasks on the **Overview** page:
+These roles can view security recommendations and delegate tasks on the **Overview** page:
 
 | Recommendation category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:------------------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
@@ -78,7 +78,7 @@ The following roles can view security recommendations and delegate tasks on the 
 
 ### AI Inventory page permissions
 
-The following roles can view data on the **AI Inventory** page:
+These roles can view data on the **AI Inventory** page:
 
 | Asset type | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:-----------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
@@ -89,7 +89,7 @@ The following roles can view data on the **AI Inventory** page:
 
 ### AI Risk page permissions
 
-The following roles can view data on the **AI Risk** page:
+These roles can view data on the **AI Risk** page:
 
 | Risk category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:--------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|

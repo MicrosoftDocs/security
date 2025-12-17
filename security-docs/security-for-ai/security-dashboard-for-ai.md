@@ -69,21 +69,21 @@ These roles can view data on the summary cards on the **Overview** page:
 
 | Summary card | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:-------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
-| **AI Inventory** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **AI Risk: Misconfigurations and Attack Paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
-| **AI Risk: Agents with Sensitive Interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **AI inventory** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **AI risk: Misconfigurations and attack paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| **AI risk: Agents with sensitive interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
 These roles can view security recommendations and delegate tasks on the **Overview** page:
 
 | Recommendation category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:------------------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
-| **Prevent agent sprawl and unauthorized access** (Microsoft Entra) | ✅ | ✅ | ✅ | ✅ Except configure global collection in Entra agent registry | ✅ | ❌ | ❌ |
-| **Prevent data leaks and oversharing** (Microsoft Purview) | ✅ | ✅ Except turn on audit | ✅ | ✅ Except turn on audit | ✅ | ✅ Only turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management | ✅ Only turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management |
-| **Address AI risk and vulnerability** (Microsoft Defender) | ✅ | ✅ | ✅ | ✅ Except enable app governance | ✅ | ❌ | ❌ |
+| **Prevent agent sprawl and unauthorized access** (Microsoft Entra) | ✅ | ✅ | ✅ | ✅ Except *Configure global collection in Entra agent registry* | ✅ | ❌ | ❌ |
+| **Prevent data leaks and oversharing** (Microsoft Purview) | ✅ | ✅ Except *Enable Microsoft Purview audit* | ✅ | ✅ Except *Enable Microsoft Purview audit* | ✅ | ✅ Only *Turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management* | ✅ Only *Turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management* |
+| **Address AI risk and vulnerability** (Microsoft Defender) | ✅ | ✅ | ✅ | ✅ Except *Enable app governance* | ✅ | ❌ | ❌ |
 
 ### AI inventory page permissions
 
-These roles can view data on the **AI Inventory** page:
+These roles can view data on the **AI inventory** page:
 
 | Asset type | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:-----------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
@@ -94,7 +94,7 @@ These roles can view data on the **AI Inventory** page:
 
 ### AI risk page permissions
 
-These roles can view data on the **AI Risk** page:
+These roles can view data on the **AI risk** page:
 
 | Risk category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:--------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|

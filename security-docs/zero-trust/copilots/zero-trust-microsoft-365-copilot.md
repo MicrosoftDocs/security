@@ -272,7 +272,7 @@ Microsoft 365 E3 includes several key security features. Additionally, Windows 1
 
 #### Built-in security features for all cloud mailboxes
 
-Microsoft 365 E3 includes [the built-in security features for all cloud mailboxes](/defender-office-365/eop-about). These features help helps protect your email and collaboration tools from phishing, impersonation, and other threats. Use these resources to configure anti-malware, anti-spam, and anti-phishing protection:
+Microsoft 365 E3 includes [the built-in security features for all cloud mailboxes](/defender-office-365/eop-about). These features help protect your email and collaboration tools from phishing, impersonation, and other threats. Use these resources to configure anti-malware, anti-spam, and anti-phishing protection:
 
 - [Get started with Microsoft Defender for Office 365](/defender-office-365/mdo-deployment-guide) (much of the information also applies to the built-in security features for all cloud mailboxes)
 - [Preset security policies in cloud organizations](/defender-office-365/preset-security-policies)

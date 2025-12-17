@@ -60,10 +60,10 @@ Microsoft Security and partner products provide the sensors and signals the dash
 
 ## Permissions
 
- By default, only Global Administrators have access to all dashboard data. The tables in this section outline the data access levels for Microsoft Entra built-in roles. For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+By default, only Global Administrators have access to all dashboard data. The tables in this section outline the data access levels for Microsoft Entra built-in roles. For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
-
-### Overview page permissions
+<details>
+<summary><b>Overview page permissions</b></summary>
 
 These roles can view data on the summary cards on the **Overview** page. 
 
@@ -81,7 +81,10 @@ These roles can view security recommendations and delegate tasks on the **Overvi
 | **Prevent data leaks and oversharing** (Microsoft Purview) | ✅ | ✅ Except *Enable Microsoft Purview audit* | ✅ | ✅ Except *Enable Microsoft Purview audit* | ✅ | ✅ Only *Turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management* | ✅ Only *Turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management* |
 | **Address AI risk and vulnerability** (Microsoft Defender) | ✅ | ✅ | ✅ | ✅ Except *Enable app governance* | ✅ | ❌ | ❌ |
 
-### AI inventory page permissions
+</details>
+
+<details>
+<summary><b>AI inventory page permissions</b></summary>
 
 These roles can view data on the **AI inventory** page, as described in [Explore AI assets and manage asset security risks](#explore-ai-assets-and-manage-asset-security-risks).
 
@@ -89,10 +92,13 @@ These roles can view data on the **AI inventory** page, as described in [Explore
 |:-----------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
 | **AI agents** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **AI models** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
-| **MCP dervers** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **MCP servers** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **Other AI apps** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
-### AI risk page permissions
+</details>
+
+<details>
+<summary><b>AI risk page permissions</b></summary>
 
 These roles can view data on the **AI risk** page, as described in [View and prioritize AI security risks across your organization](#view-and-prioritize-ai-security-risks-across-your-organization).
 
@@ -103,6 +109,8 @@ These roles can view data on the **AI risk** page, as described in [View and pri
 | **Cloud security risk** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **Misconfigurations and attack paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **Agents with sensitive interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+
+</details>
 
 
 

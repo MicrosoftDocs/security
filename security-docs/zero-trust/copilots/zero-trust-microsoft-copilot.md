@@ -139,9 +139,8 @@ For more information about Copilot in Edge, see:
 
 - Implement Intune [app protection policies (APP)](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common#app-protection-policies) for data protection. APP can prevent the inadvertent or intentional copying of Copilot-generated content to apps on a device that aren’t included in the list of permitted apps. APP can limit the blast radius of an attacker using a compromised device.
 
-- Turn on [Microsoft Defender for Office 363 Plan 1](/microsoft-365/security/defender/eval-defender-office-365-overview), which include Exchange Online Protection (EOP) for Safe Attachments, Safe Links, advanced phishing thresholds and impersonation protection, and real-time detections.
-
-
+- **E3**: [Purchase](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365#Pricing) and [deploy](/defender-xdr/pilot-deploy-defender-office-365) Microsoft Defender for Office 365 Plan 1 or Plan 2, which adds Safe Attachments, Safe Links, impersonation protection, and phishing email thresholds.
+- **E5**: [Configure Microsoft Defender for Office 365 Plan 2](/defender-office-365/mdo-deployment-guide).
 
 ## Next steps
 

@@ -65,7 +65,7 @@ Microsoft Security and partner products provide the sensors and signals the dash
 
 ### Overview page permissions
 
-These roles can view data on the summary cards on the **Overview** page:
+These roles can view data on the summary cards on the **Overview** page. 
 
 | Summary card | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:-------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
@@ -73,7 +73,7 @@ These roles can view data on the summary cards on the **Overview** page:
 | **AI risk: Misconfigurations and attack paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **AI risk: Agents with sensitive interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
-These roles can view security recommendations and delegate tasks on the **Overview** page:
+These roles can view security recommendations and delegate tasks on the **Overview** page, as described in [Review and delegate security recommendations](#review-and-delegate-security-recommendations).
 
 | Recommendation category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:------------------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
@@ -83,7 +83,7 @@ These roles can view security recommendations and delegate tasks on the **Overvi
 
 ### AI inventory page permissions
 
-These roles can view data on the **AI inventory** page:
+These roles can view data on the **AI inventory** page, as described in [Explore AI assets and manage asset security risks](#explore-ai-assets-and-manage-asset-security-risks).
 
 | Asset type | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:-----------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
@@ -94,7 +94,7 @@ These roles can view data on the **AI inventory** page:
 
 ### AI risk page permissions
 
-These roles can view data on the **AI risk** page:
+These roles can view data on the **AI risk** page, as described in [View and prioritize AI security risks across your organization](#view-and-prioritize-ai-security-risks-across-your-organization).
 
 | Risk category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:--------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|

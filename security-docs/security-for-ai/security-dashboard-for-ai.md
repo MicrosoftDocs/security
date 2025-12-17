@@ -76,7 +76,19 @@ For more information about Microsoft Entra roles, see [Microsoft Entra built-in 
 
 ## Review and delegate security recommendations
 
-The **Overview** page of the dashboard provides key insights about your AI assets and related security risks. It also assesses your organization's implementation of Microsoft security for AI capabilities and provides recommendations for improving your organization's AI security posture. To delegate the implementation of these recommendations to a specific group or user:
+The **Overview** page of the dashboard provides key insights about your AI assets and related security risks. It also assesses your organization's implementation of Microsoft security for AI capabilities and provides recommendations for improving your organization's AI security posture. 
+
+he following roles can view data on the **AI Risk** page:
+
+| Risk category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
+|:--------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
+| **Identity and access risk** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Data security risk** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Cloud security risk** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Misconfigurations and attack paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| **Agents with sensitive interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+
+To delegate the implementation of these recommendations to a specific group or user:
 
 1. Select a recommendation on the **Overview** page.
 
@@ -93,6 +105,15 @@ The **Overview** page of the dashboard provides key insights about your AI asset
 
 The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across all of the AI agents, AI models, and MCP servers, and AI applications in your organization.
 
+These roles can view data on the **AI Inventory** page:
+
+| Asset type | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
+|:-----------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
+| **Agents** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **AI models** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| **MCP servers** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Other AI apps** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
+
 To discover and manage AI asset security risks:
 
 1. Select **AI Inventory** review the complete list of discovered AI applications and agents.
@@ -102,12 +123,12 @@ To discover and manage AI asset security risks:
    
 ### AI agents 
 
-The **AI agents** tab of the **AI inventory** page presents all of the AI agents operating in your environment and provides key insights from the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry) and [Microsoft Purview Data Security Posture Management (DSPM) for AI](/purview/dspm-for-ai).
+The **AI agents** tab of the **AI inventory** page presents all of the AI agents operating in your environment and provides key insights from the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry) and [Microsoft Purview Data Security Posture Management (DSPM) for AI](/purview/data-security-posture-management-learn-about).
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png" alt-text="A screenshot showing the Agents tab of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png":::
 
 Select an AI agent to:
-- View agent details and activities. Select **View all activities** to open the [Activity Explorer in DSPM for AI](/purview/dspm-for-ai-considerations#activity-explorer-events) and review agent activity related to content that contains sensitive information or has labels applied.
+- View agent details and activities. Select **View all activities** to open the [Activity Explorer in DSPM for AI](/purview/data-security-posture-management-considerations#activity-explorer-events-in-data-security-posture-management) and review agent activity related to content that contains sensitive information or has labels applied.
 
    :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png" alt-text="A screenshot showing the Agent Overview page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png":::
 
@@ -118,14 +139,14 @@ Select an AI agent to:
 
 ### AI models
 
-The **AI models** tab of the **AI inventory** page presents all of the AI models in use across your organization. Select **View more in Defender** to open the [Microsoft Defender cloud asset inventory](/azure/defender-for-cloud/asset-inventory?pivots=defender-portal) for detailed information and risk mitigation.
+The **AI models** tab of the **AI inventory** page presents all of the AI models in use across your organization. Select **Show more in Defender** to open the [Microsoft Defender cloud asset inventory](/azure/defender-for-cloud/asset-inventory?pivots=defender-portal) for detailed information and risk mitigation.
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-models.png" alt-text="A screenshot showing the AI models page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-models.png":::
 
 
 ### MCP servers and other AI applications
 
-View and manage the security of all AI models in use across your organization. Select **View more in Defender** to open the [Microsoft Defender for Cloud Apps applications inventory](/defender-cloud-apps/applications-inventory)for detailed information and risk mitigation.
+View and manage the security of all AI models in use across your organization. Select **Show more in Defender** to open the [Microsoft Defender for Cloud Apps applications inventory](/defender-cloud-apps/applications-inventory)for detailed information and risk mitigation.
 
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-mcp-and-other-ai-apps.png" alt-text="A screenshot showing the Other AI apps page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-mcp-and-other-ai-apps.png":::
@@ -133,6 +154,16 @@ View and manage the security of all AI models in use across your organization. S
 ## View and prioritize AI security risks across your organization
 
 The **AI risk** page of the dashboard provides a consolidated view of AI-related security risks, enabling you to prioritize and address threats effectively. Each risk category links directly to the relevant Microsoft Security product for remediation.
+
+These roles can view data on the **AI risk** page:
+
+| Risk category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
+|:--------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
+| **Identity and access risk** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Data security risk** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Cloud security risk** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Misconfigurations and Attack Paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| **Agents with Sensitive Interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
 To investigate and remediate AI security risks:
 

@@ -80,11 +80,11 @@ The **Overview** page of the dashboard provides key insights about your AI asset
 
 These roles can view security recommendations and delegate tasks on the **Overview** page:
 
-| Recommendation category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
-|:------------------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
-| **Prevent agent sprawl and unauthorized access** (Microsoft Entra) | ✅ | ✅ | ✅ | ✅ Except configure global collection in Entra agent registry | ✅ | ❌ | ❌ |
-| **Prevent data leaks and oversharing** (Microsoft Purview) | ✅ | ✅ Except turn on audit | ✅ | ✅ Except turn on audit | ✅ | ✅ Only turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management | ✅ Only turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management |
-| **Address AI risk and vulnerability** (Microsoft Defender) | ✅ | ✅ | ✅ | ✅ Except enable app governance | ✅ | ❌ | ❌ |
+| Recommendation category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader |
+|:------------------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|
+| **Prevent agent sprawl and unauthorized access** (Microsoft Entra) | ✅ | ✅ | ✅ | ✅ Except configure global collection in Entra agent registry | ✅ |
+| **Prevent data leaks and oversharing** (Microsoft Purview) | ✅ | ✅ Except turn on audit | ✅ | ✅ Except turn on audit | ✅ |
+| **Address AI risk and vulnerability** (Microsoft Defender) | ✅ | ✅ | ✅ | ✅ Except enable app governance | ✅ |
 
 
 To delegate the implementation of these recommendations to a specific group or user:
@@ -106,12 +106,12 @@ The **AI inventory** page of the dashboard provides detailed views to help you d
 
 These roles can view data on the **AI Inventory** page:
 
-| Asset type | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
-|:-----------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
-| **AI agents** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **AI models** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
-| **MCP servers** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Other AI apps** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| Asset type | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader |
+|:-----------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|
+| **AI agents** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **AI models** | ✅ | ❌ | ❌ | ✅ | ✅ |
+| **MCP servers** | ✅ | ❌ | ✅ | ✅ | ✅ |
+| **Other AI apps** | ✅ | ❌ | ✅ | ✅ | ✅ |
 
 To discover and manage AI asset security risks:
 
@@ -156,13 +156,13 @@ The **AI risk** page of the dashboard provides a consolidated view of AI-related
 
 These roles can view data on the **AI risk** page:
 
-| Risk category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
-|:--------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
-| **Identity and access risk** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Data security risk** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Cloud security risk** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Misconfigurations and Attack Paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
-| **Agents with Sensitive Interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| Risk category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader |
+|:--------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|
+| **Identity and access risk** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Data security risk** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Cloud security risk** | ✅ | ❌ | ✅ | ✅ | ✅ |
+| **Misconfigurations and Attack Paths** | ✅ | ❌ | ❌ | ✅ | ✅ |
+| **Agents with Sensitive Interactions** | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 To investigate and remediate AI security risks:
 

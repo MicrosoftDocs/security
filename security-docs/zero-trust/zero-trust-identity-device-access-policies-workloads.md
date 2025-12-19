@@ -4,9 +4,9 @@ description: Describes the recommended Zero Trust policies to secure specific wo
 author: chrisda
 ms.author: chrisda
 ms.subservice: zero-trust
-manager: deniseb
+manager: bagol
 ms.service: security
-ms.topic: conceptual
+ms.topic: article
 audience: Admin
 f1.keywords: 
   - NOCSH

@@ -41,7 +41,7 @@ This article provides steps to apply the [principles of Zero Trust](../zero-trus
 | --- | --- | --- |
 | Verify explicitly | Always authenticate and authorize based on all available data points. | Enforce the validation of user credentials, device requirements, and app permissions and behaviors. |
 | Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Validate JEA across your organization to eliminate oversharing by ensuring that correct permissions are assigned to files, folders, Teams, and email. Use sensitivity labels and data loss prevention policies to protect data.  |
-| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Use Exchange Online Protection (EOP) and Microsoft Defender XDR services to automatically prevent common attacks and to detect and respond to security incidents. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Use [the built-in security features for all cloud mailboxes](/defender-office-365/eop-about) and Microsoft Defender XDR services to automatically prevent common attacks and to detect and respond to security incidents. |
 
 For the basics of Copilot, see the [overview](/microsoft-365-copilot/microsoft-365-copilot-overview) and [how to get started](/microsoft-365-copilot/microsoft-365-copilot-setup).
 
@@ -268,14 +268,17 @@ To detect the activities of bad actors and keep them from gaining access to Copi
 
 ### Getting started with E3
 
-Microsoft 365 E3 includes several key capabilities in Defender for Office 365 and Defender for Endpoint. Additionally, Windows 11 and Windows 10 include many threat protection capabilities.
+Microsoft 365 E3 includes several key security features. Additionally, Windows 11 and Windows 10 include many threat protection capabilities.
 
-#### Microsoft Defender for Office 365 P1
+#### Built-in security features for all cloud mailboxes
 
-Microsoft Defender for Office 365 P1 includes Exchange Online Protection (EOP), which are included in Microsoft 365 E3. EOP helps protect your email and collaboration tools from phishing, impersonation, and other threats. Use these resources to configure anti-malware, anti-spam, and anti-phishing protection:
+Microsoft 365 E3 includes [the built-in security features for all cloud mailboxes](/defender-office-365/eop-about). These features help protect your email and collaboration tools from phishing, impersonation, and other threats. Use these resources to configure anti-malware, anti-spam, and anti-phishing protection:
 
-- [EOP overview ](/microsoft-365/security/office-365-security/eop-about)
-- [Preset security policies ](/microsoft-365/security/office-365-security/preset-security-policies)
+- [Get started with Microsoft Defender for Office 365](/defender-office-365/mdo-deployment-guide) (much of the information also applies to the built-in security features for all cloud mailboxes)
+- [Preset security policies in cloud organizations](/defender-office-365/preset-security-policies)
+
+> [!TIP]
+> E3 organizations can purchase [Microsoft Defender for Office 365 P1 or P2](/defender-office-365/mdo-about) as an add-on. For more information, see [Microsoft Security | Microsoft Defender for Office 365](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365).
 
 #### Defender for Endpoint P1
 

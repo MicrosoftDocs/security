@@ -15,23 +15,25 @@ ms.collection:
 
 # Secure Future Initiative overview
 
-The Secure Future Initiative (SFI) initiative launched as a multiyear effort to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services.For the first year or so after the launch, we dedicated extensive internal engineering resources to improve security and mitigate security risk across Microsoft. Over time, SFI efforts continue to evolve in structured waves, keeping pace with shifts in the threat landscape.
+The Secure Future Initiative (SFI) initiative launched in November 2023 as a multiyear effort to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services.For the first year or so after the launch, we shifted to security as a number one priority across Microsoft, trained employees, and dedicated extensive internal engineering resources to improve security and mitigate security risk across Microsoft.
 
-This ongoing evolution informs innovation, development, and best practices across the Microsoft security portfolio. It also provides Microsoft with ongoing opportunities to work with customers and with the broader security industry to strengthen our collective defenses.
+Over time, SFI efforts continue to evolve as a cross-company initiative in structured waves, keeping pace with shifts in the threat landscape. The ongoing SFI evolution informs innovation, development, and best practices across the Microsoft security portfolio. It also provides Microsoft with ongoing opportunities to work with customers and with the broader security industry to strengthen our collective defenses.
 
 
 ## SFI progress reports
 
-Microsoft produces periodic SFI progress reports with detailed information about initiative updates and progress. Reports cover areas such as new security capabilities, news from engineering pillars, mapping to the NIST Cybersecurity Framework, and implementation guidance aligned with Zero Trust principles. [Review the latest report from from November 2025](https://www.microsoft.com/trust-center/security/secure-future-initiative/sfi-progress-report-november-2025).
+Microsoft produces periodic SFI progress reports with detailed information about initiative updates and progress. Reports cover areas such as new security capabilities, news from engineering pillars, mapping to the NIST Cybersecurity Framework, and implementation guidance aligned with Zero Trust principles.
 
+- [Review the latest SFI report from November 2025](https://www.microsoft.com/trust-center/security/secure-future-initiative/sfi-progress-report-november-2025).
+- [SFI report - April 2025](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/sfi-april-2025-progress-report.pdf).
+- [SFI report - September 2024](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/SFI_September_2024_progress_report.pdf).
 
 
 ## Initiative architecture
 
-SFI is designed and developed around a set of security principles that are adopted, delivered, and governed across Microsoft. These security principles are applied to a set of focus areas by means of processes, standards, and continuous improvements.
+SFI is designed and developed around a set of security principles that are adopted, delivered into Microsoft security culture and governance. These security principles are applied to a set of focus areas (engineering pillars) by means of processes, standards, and continuous improvements.
 
 :::image type="content" source="media/secure-future-initiative/secure-future-initiative-overview.png" alt-text="Diagram summarizing the secure future initiative (SFI)." border="true":::
-
 
 
 ## Security principles
@@ -42,9 +44,9 @@ Microsoft's security standards, processes, culture, and governance focuses on th
 
 Using these principles, we:
 
-- Innovate by designing and building security into platforms and services.
-- Implement innovations into prodocts and features with secure defaults and enforced standards.
-- Guide customers into using these principles to deploy, operate, and continuously improve security. 
+- Innovate: Design and build security into platforms and services.
+- Implement: Build innovations into products and features with secure defaults and enforced standards.
+- Guide: Provide customers with guidance and best practices to deploy, operate, and continuously improve security. 
 
 The table summarizes some examples. For a full list review the [latest SFI progress report from November 2025](https://www.microsoft.com/trust-center/security/secure-future-initiative/sfi-progress-report-november-2025).
 

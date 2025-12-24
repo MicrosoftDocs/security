@@ -15,9 +15,9 @@ ms.collection:
 
 # Secure Future Initiative overview
 
-The Secure Future Initiative (SFI) initiative launched in November 2023 as a multiyear effort to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services.For the first year or so after the launch, we shifted to security as a number one priority across Microsoft, trained employees, and dedicated extensive internal engineering resources to improve security and mitigate security risk across Microsoft.
+The Secure Future Initiative (SFI) initiative launched in November 2023 as a multiyear effort to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services. For the first year or so after the launch, we shifted to security as a number one priority across Microsoft, provided security training, and dedicated extensive internal engineering resources to improve security and mitigate risk across Microsoft.
 
-Over time, SFI efforts continue to evolve as a cross-company initiative in structured waves, keeping pace with shifts in the threat landscape. The ongoing SFI evolution informs innovation, development, and best practices across the Microsoft security portfolio. It also provides Microsoft with ongoing opportunities to work with customers and with the broader security industry to strengthen our collective defenses.
+Over time, SFI efforts continue to evolve as a cross-company initiative in structured waves, keeping pace with shifts in the threat landscape. The ongoing evolution informs innovation, development, and best practices across the Microsoft security portfolio. It also provides Microsoft with ongoing opportunities to work with customers and with the broader security industry to strengthen our collective defenses.
 
 
 ## SFI progress reports
@@ -29,31 +29,37 @@ Microsoft produces periodic SFI progress reports with detailed information about
 - [SFI report - September 2024](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/SFI_September_2024_progress_report.pdf).
 
 
-## Initiative architecture
+## SFI architecture
 
-SFI is designed and developed around a set of security principles that are adopted, delivered into Microsoft security culture and governance. These security principles are applied to a set of focus areas (engineering pillars) by means of processes, standards, and continuous improvements.
+SFI is designed and developed around a set of security principles that are adopted across Microsoft security culture and governance. These principles are applied to a set of focus areas (engineering pillars) by means of processes, standards, and continuous improvements.
 
 :::image type="content" source="media/secure-future-initiative/secure-future-initiative-overview.png" alt-text="Diagram summarizing the secure future initiative (SFI)." border="true":::
 
 
 ## Security principles
 
-Microsoft's security standards, processes, culture, and governance focuses on these principles.
+SFI focuses on these principles.
 
 :::image type="content" source="media/secure-future-initiative/secure-future-initiative-security-principles.png" alt-text="Diagram summarizing the security principles in secure future initiative (SFI)." border="true":::
 
-Using these principles, we:
+We use these principles to:
 
-- Innovate: Design and build security into platforms and services.
-- Implement: Build innovations into products and features with secure defaults and enforced standards.
-- Guide: Provide customers with guidance and best practices to deploy, operate, and continuously improve security. 
+- **Innovate**: Design and build security into platforms and services.
+- **Implement**: Build innovations into products and features with secure defaults and enforced standards.
+- **Guide**: Provide customers with guidance and best practices to deploy, operate, and continuously improve security. 
 
-The table summarizes some examples. For a full list review the [latest SFI progress report from November 2025](https://www.microsoft.com/trust-center/security/secure-future-initiative/sfi-progress-report-november-2025).
+The tables summarizes some of the latest examples of innovation, implementation, and guidance. A full list is available in the [November report](https://www.microsoft.com/trust-center/security/secure-future-initiative/sfi-progress-report-november-2025).
 
-**Platform** | **Innovation** | **Implementation** | **Guidance**
---- | --- | --- | ---
-**[Azure](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=18)** | Secure defaults were expanded. Azure Bastion Developer is now available across many Azure regions, providing secure web-based VM access to reduce attack surfaces.<br/><br/>Sizable increase in the security settings enabled by default in Azure Local.<br/><br/>We introduce Introduction of Microsoft-designed hardware-security module (HSM) tamper-resistant chips that meet FIPS 140-3 Level 3 standards, and embed directly on servers to keep encryption keys within secure hardware boundaries, eliminating latency and exposure risk.<br/><br/> Improved user experience and early product security integration with an internal and [public Secure by Design UX Toolkit](https://microsoft.design/articles/secure-by-design-a-ux-toolkit/). | Mandatory enforcement of strong multifactor authentication emphasizing phishing-resistant authentication methods for all Azure service users, neutralizing stolen credentials at scale.| Release of Microsoft Cloud Security Benchmark v2 with its comprehensive security best practices that can be enforced using Microsoft security services and Azure Policy.
-**[Microsoft 365](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=19)** | Microsoft 365 introduces a dedicated AI Admin role improves secure Copilot management without global access, enforcing least-privilege principles.<br/><br/>Centralized agent control and governance allows IT admins to easily manage, configure, and monitor Microsoft 365 agents installed on endpoints. | Compliance at scale with Microsoft Purview adaptive labelling now classifying and securing more thatn 50 million items monthly. | Guiding customers to use the AI admin roles for Copilot tasks, enforcing least-privilege.<br/><br/> Use Microsoft Purview DSPM for AI to monitor Copilot data usage, and detect misuse.
+### Azure 
+
+Some [Azure](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=18) examples.
+
+**[Azure](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=18)**
+**Innovation** | **Implementation** | **Guidance**
+--- | --- | ---
+Secure defaults were expanded. Azure Bastion Developer is now available across many Azure regions, providing secure web-based VM access to reduce attack surfaces.<br/><br/>Sizable increase in the security settings enabled by default in Azure Local.<br/><br/>We introduce Introduction of Microsoft-designed hardware-security module (HSM) tamper-resistant chips that meet FIPS 140-3 Level 3 standards, and embed directly on servers to keep encryption keys within secure hardware boundaries, eliminating latency and exposure risk.<br/><br/> Improved user experience and early product security integration with an internal and [public Secure by Design UX Toolkit](https://microsoft.design/articles/secure-by-design-a-ux-toolkit/). | Mandatory enforcement of strong multifactor authentication emphasizing phishing-resistant authentication methods for all Azure service users, neutralizing stolen credentials at scale.| Release of Microsoft Cloud Security Benchmark v2 with its comprehensive security best practices that can be enforced using Microsoft security services and Azure Policy.
+**[Microsoft 365](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=19)**
+Microsoft 365 introduces a dedicated AI Admin role improves secure Copilot management without global access, enforcing least-privilege principles.<br/><br/>Centralized agent control and governance allows IT admins to easily manage, configure, and monitor Microsoft 365 agents installed on endpoints. | Compliance at scale with Microsoft Purview adaptive labelling now classifying and securing more thatn 50 million items monthly. | Guiding customers to use the AI admin roles for Copilot tasks, enforcing least-privilege.<br/><br/> Use Microsoft Purview DSPM for AI to monitor Copilot data usage, and detect misuse.
 **[Windows/Surface](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/ | Windows 11 with Windows Hello and passkeys integration offers a more secure, phishing-resistant passwordless sign-in experience.<br/><br/>Surface is advacing Windows security through the Open Device Partnership, an open-source firmware initiative that replaces legacy firmware with a transparent, secure, and reusable platform.| Improvements in Hotpatch to support ARM64 devices. Hotpatch is now enabled by default when creating a new Quality Update Policy in Autopatch, making it easier to maintain security and compliance with less disruption. | Guiding customers to enable Quick Machine Recovery on Windows 11 to automatically remediate boot failures and protect against boot-time attacks.<br/><br/> Hleping customers to adopt passwordless sign-ins, integrating with password managers such as 1Password or Bitwarden.
 **[Security](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=21)** | Microsoft Sentinel data lake enabled a tenant-wide repository for collecting, storing, and managing large volumes of security-related data.<br/><br/>More than 35 Mkicrosoft and partner agents work to automate repetitive tasks and reduce manual workloads. Partner-developed agents are availble via the new Microsoft Security Store. | Microsoft Entra ID entitlement management is being used to govern access across Microsoft engineering teams.<br/><br/> In Microsoft Purivew, adaptive protection with data loss prevention policies blocks risky sharing activities based on user behavior across USB drives, web, email, and Team for proactive and consistent protection. | Help customers to consolidate security data with Microsoft Sentinel data lake and Microsoft Sentinel graph.<br/><br/>Help customers to enable Security Copilot agents for analysts to benefits fron AI capabilities during incident triage, reporting, and more.
 

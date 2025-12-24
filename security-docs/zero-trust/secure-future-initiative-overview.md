@@ -13,31 +13,31 @@ ms.collection:
   - sfi-zerotrust
 ---
 
-# Secure Future Initiative (SFI) overview
+# Secure Future Initiative overview
 
-The SFI initiative launched as a multiyear effort to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services. For the first year or so, the initiative dedicated extensive internal engineering resources to mitigate risk and improve security across Microsoft.
+The Secure Future Initiative (SFI) initiative launched as a multiyear effort to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services. 
 
-SFI efforts continue to evolve in structured waves and keep pace with shifts in the threat landscape. This evolution provides Microsoft with ongoing opportunities to work with customers and the broader security industry to strengthen our collective defenses.
+For the first year or so, the initiative dedicated extensive internal engineering resources to mitigate risk and improve security across Microsoft. Over time, SFI efforts continue to evolve in structured waves and keep pace with shifts in the threat landscape. This evolution informs Microsoft's ongoing security best practices, development, and innovation across the Microsoft security portfolio. It also provides Microsoft with ongoing opportunities to work with customers and the broader security industry to strengthen our collective defenses.
 
-Additionally, SFI efforts inform Microsoft's ongoing security best practices, and development and innovation across the Microsoft security portfolio.
 
 ## SFI progress reports
 
-Microsoft produces periodic SFI progress reports that contain detailed updates on initiative progress across Microsoft. Reports cover areas such as new security capabilities, updates from engineering pillars, mapping to NIST Cybersecurity Framework, and implementation guidance aligned with Zero Trust principles. Review the latest report from from November 2025.
+Microsoft produces periodic SFI progress reports that contain detailed information about initiative updates and progress across Microsoft. Reports cover areas such as new security capabilities, news from engineering pillars, mapping to the NIST Cybersecurity Framework, and implementation guidance aligned with Zero Trust principles. [Review the latest report from from November 2025](https://www.microsoft.com/trust-center/security/secure-future-initiative/sfi-progress-report-november-2025).
+
 
 
 ## Initiative architecture
 
 SFI is designed and developed around a set of security principles that are adopted, delivered, and governed across Microsoft. These security principles are applied to a set of focus areas by means of processes, standards, and continuous improvements.
 
-:::image type="content" source="../media/zero-trust/secure-future-initiative-overview.png" alt-text="Diagram summarizing the secure future initiative (SFI)." border="true":::
+:::image type="content" source="../../media/zero-trust/secure-future-initiative-overview.png" alt-text="Diagram summarizing the secure future initiative (SFI)." border="true":::
 
 
 ## Security principles
 
 Microsoft's security standards, processes, culture, and governance focuses on these principles.
 
-:::image type="content" source="../media/zero-trust/secure-future-initiative-security-principles.png" alt-text="Diagram summarizing the security principles in secure future initiative (SFI)." border="true":::
+:::image type="content" source="../../media/zero-trust/secure-future-initiative-security-principles.png" alt-text="Diagram summarizing the security principles in secure future initiative (SFI)." border="true":::
 
 Using these principles, we:
 

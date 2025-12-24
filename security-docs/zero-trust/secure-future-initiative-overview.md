@@ -30,14 +30,14 @@ Microsoft produces periodic SFI progress reports that contain detailed informati
 
 SFI is designed and developed around a set of security principles that are adopted, delivered, and governed across Microsoft. These security principles are applied to a set of focus areas by means of processes, standards, and continuous improvements.
 
-:::image type="content" source="../../media/zero-trust/secure-future-initiative-overview.png" alt-text="Diagram summarizing the secure future initiative (SFI)." border="true":::
+:::image type="content" source="media/zero-trust/secure-future-initiative-overview.png" alt-text="Diagram summarizing the secure future initiative (SFI)." border="true":::
 
 
 ## Security principles
 
 Microsoft's security standards, processes, culture, and governance focuses on these principles.
 
-:::image type="content" source="../../media/zero-trust/secure-future-initiative-security-principles.png" alt-text="Diagram summarizing the security principles in secure future initiative (SFI)." border="true":::
+:::image type="content" source="media/zero-trust/secure-future-initiative-security-principles.png" alt-text="Diagram summarizing the security principles in secure future initiative (SFI)." border="true":::
 
 Using these principles, we:
 

@@ -48,6 +48,8 @@ We use these principles to:
 - **Implement**: Implement security innovations in Microsoft products and features with secure defaults and enforced standards.
 - **Guide**: Provide customers with guidance and best practices to deploy, operate, and continuously improve security. 
 
+## Latest updates
+
 The table summarizes some of the latest examples of innovation, implementation, and guidance. A full list is available in the [November report](https://www.microsoft.com/trust-center/security/secure-future-initiative/sfi-progress-report-november-2025).
 
 **Platform** | **Updates** 

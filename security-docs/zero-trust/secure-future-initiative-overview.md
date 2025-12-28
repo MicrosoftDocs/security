@@ -140,15 +140,49 @@ This pillar ensures software lifecycle security across code, build systems, and 
 **4.Standardize secure development pipelines**<br/><br/>Apply network isolation and microsegmentation to Microsoft production environments. Secure development, build, test, and release environments with standardized, governed pipelines, and infrastructure isolation.| Nearly all production build pipelines and 94% of release pipelines use centrally governed templates. Increased network isolation (~89% complete) blocks direct access to public registries and flags unvetted dependencies.| **Verify explicitly**: Validate build and release pipelines and ensure compliance with security guardrails.<br/><br/> **Use least privilege**: Limit access within pipelines and enforce standardized workflows that reduce unnecessary rights.<br/><br/> **Assume breach**: Pipeline isolation and governance contain potential compromise.| **PR.DS-01**: Data‑at‑rest protection: Protect pipeline artifacts and metadata.<br/><br/>**PR.DS-02**: Data‑in‑transit protection: Secure communication between pipeline stages.<br/><br/>**PR.DS-10**: Data security assurance: Pipeline controls ensure consistent data protection.<br/><br/> **PR.IR-01**: Infrastructure resilience: Pipeline systems resilient to attacks and misconfigurations.<br/><br/>**PR.PS-06**: Platform Security: Secure build/run platforms enforce isolation and protection.
 **5. Protect the software supply chain**<br/><br/>Secure the software supply chain to protect Microsoft production environments.| Supply chain protections are maturing: internal artifact feeds broadly adopted and component governance runs by default. AI agents now remediate open‑source vulnerabilities asynchronously, reducing detection‑to‑resolution latency. | **Use least privilege**: Limit access and usage of third‑party components.<br/><br/> **Assume breach**: Protect supply chain and assume component compromise risk.| **Govern-Cybersecurity Supply Chain Risk Management (GV.SC-01)**: Supply chain governance: Source component selection and oversight.<br/><br/>**GV.SC-02**: Supplier risk assessment: Evaluate risks across software supply partners.<br/><br/>**GV.SC-03**: Contractual security requirements: Enforce vendor security terms.<br/><br/> **GV.SC-04**: Shared responsibility models: Define roles for secure engineering.<br/><br/>**GV.SC-07**: Transparency and reporting: Share security findings and metrics with stakeholders.<br/><br/>**GVS.C-09**: Continuous supply chain monitoring: Monitor third‑party components and flows.<br/><br/>**Identity-Risk Assessment (ID.RA-10)**: Risk assessment: Ongoing risk analysis across the supply chain.<br/><br/>**.PR.PS-06**: Platform Security: Secure build/run platforms enforce isolation and protection.
 
-## Monitor and detect cyberthreats
+## Pillar 5: Monitor and detect threats
 
 This pillar aims to continuously monitor and rapidly detect security threats. Focus is on on proactive, intelligence-driven detection to surface attacker behavior early,  and enable rapid coordinated investigation across all business areas. Microsoft objectives for this pillar are summarized in the following table.
 
+**Objective** | **Progress** | **Zero Trust** | **NIST mapping**
+--- | --- | --- | ---
+**1. Centralize telemetry and infrastructure tracking**<br/><br/>Maintain a current resource inventory across Microsoft production infrastructure and services.| ~98% of production infrastructure is centrally tracked, improving visibility into system and security states and enabling long‑term trend analysis and investigation. | **Verify explicitly**:Ensure logging and telemetry originate from authenticated, trusted sources.<br/><br/>**Assume breach**: Centralized logs support detection even when attackers evade initial controls.| **ID.AM-02**: Inventory of organizational resources: Maintain a complete view of monitored assets.<br/><br/>** **Detect:Continuous Monitoring (DE-AM-02)**: Monitoring processes. Centralized telemetry supports continuous observation.
 
-**Objective** | **Details**
---- | ---
-**1. Complete production infrastructure inventory** | Maintain a current resource inventory across Microsoft production infrastructure and services.
-**2. Security log retention standards** | Retain security logs for at least two years, and make six months of appropriate logs available.
+**2. Retain logs for forensic analysis and trending**<br/><br/>Retain security logs for at least two years, and make six months of appropriate logs available.| Logs are retained for 2 years, supporting deeper investigation and detection accuracy across incident timelines. | **Verify explicitly**: Retained logs allow verification of past events and patterns.<br/><br/>**Assume breach**: Long retention ensures detection windows cover advanced stealth techniques.| **DE.CM-02**: Inventory of organizational resources: Maintain a complete view of monitored assets.<br/><br/>** **DE/DP-01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)**: Monitoring processes. Centralized telemetry supports continuous observation.
+
+**1. Complete production infrastructure inventory** | 
+**2. Security log retention standards** | 
 **3. Centralize access to security logs** | Ensure security logs are accessible from a central data lake for efficient and effective investigation and threat hunting.
 **4. Rapid anomaly detection and response** | Detect and respond quickly and automatically to anomalous access, behavior, and configurations across Microsoft production infrastructure and services.
 

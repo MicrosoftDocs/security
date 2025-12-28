@@ -114,7 +114,7 @@ The goal of this pillar is to contain potential threat blast radius by preventin
 **6. Secure devices used for access**<br/><br/> Adopt fine-grained partitioning of identity signing keys and platform keys. Ensure that only secure, managed, healthy devices are granted access to Microsoft tenants.  | **Verify explicitly**: ach device identity is validated and continuously assessed.<br/><br/>**Use least privilege**: Device posture gating ensures minimal risk access. | **PR.PS-01**: Platform Security. Devices and endpoints hardened per secure baseline to reduce risk.<br/><br/>**PR.IR‑01**: Infrastructure Resilience. Endpoints resilient to compromise and aligned to service baselines
 
 
-## Pillar 3: Protect networks
+### Pillar 3: Protect networks
 
 This pillar aims to limit adversary movement and unauthorized access across corporate networks. Networks are segmented and isolated with fine-grained network controls. Every connection is verified, controlled, and continuously monitored. Microsoft objectives for this pillar are summarized in the following table.
 
@@ -126,7 +126,7 @@ This pillar aims to limit adversary movement and unauthorized access across corp
 **4. Improve network acccess controls and protective technologies**<br/><br/>Strengthen network defenses with modern firewalling, segmentation policies, and platform-level enforcement, ensuring that only authorized traffic can flow and that potential breaches are contained. | **Verify explicitly**: Access control policies verify traffic flows and endpoints. <br/><br/>**Use least privileged access**: Policy enforcement limits access to minimal required paths.<br/><br/>**Assume breach**: Contain attacks via strong network controls and visibility. | **PR.AA-03**: Access enforcement. Enforce network access decisions.br/><br/> **PR.PS-01**: Platform Security. Infrastructure (firewalls, NSGs, segmentation) enforced at platform level.
 
 
-## Pillar 4 - Protect engineering systems
+### Pillar 4 - Protect engineering systems
 
 This pillar ensures software lifecycle security across code, build systems, and pipelines. Every software artifact is verifiably authentic and securely produced in an isolated, monitored environment to ensure the integrity of the supply chain. Microsoft objectives for this pillar are summarized in the following table.
 
@@ -138,7 +138,7 @@ This pillar ensures software lifecycle security across code, build systems, and 
 **4.Standardize secure development pipelines**<br/><br/>Apply network isolation and microsegmentation to Microsoft production environments. Secure development, build, test, and release environments with standardized, governed pipelines, and infrastructure isolation.|  **Verify explicitly**: Validate build and release pipelines and ensure compliance with security guardrails.<br/><br/> **Use least privilege**: Limit access within pipelines and enforce standardized workflows that reduce unnecessary rights.<br/><br/> **Assume breach**: Pipeline isolation and governance contain potential compromise.| **PR.DS-01**: Data‑at‑rest protection: Protect pipeline artifacts and metadata.<br/><br/>**PR.DS-02**: Data‑in‑transit protection: Secure communication between pipeline stages.<br/><br/>**PR.DS-10**: Data security assurance: Pipeline controls ensure consistent data protection.<br/><br/> **PR.IR-01**: Infrastructure resilience: Pipeline systems resilient to attacks and misconfigurations.<br/><br/>**PR.PS-06**: Platform Security: Secure build/run platforms enforce isolation and protection.
 **5. Protect the software supply chain**<br/><br/>Secure the software supply chain to protect Microsoft production environments. | **Use least privilege**: Limit access and usage of third‑party components.<br/><br/> **Assume breach**: Protect supply chain and assume component compromise risk.| **Govern-Cybersecurity Supply Chain Risk Management (GV.SC-01)**: Supply chain governance: Source component selection and oversight.<br/><br/>**GV.SC-02**: Supplier risk assessment: Evaluate risks across software supply partners.<br/><br/>**GV.SC-03**: Contractual security requirements: Enforce vendor security terms.<br/><br/> **GV.SC-04**: Shared responsibility models: Define roles for secure engineering.<br/><br/>**GV.SC-07**: Transparency and reporting: Share security findings and metrics with stakeholders.<br/><br/>**GVS.C-09**: Continuous supply chain monitoring: Monitor third‑party components and flows.<br/><br/>**Identity-Risk Assessment (ID.RA-10)**: Risk assessment: Ongoing risk analysis across the supply chain.<br/><br/>**.PR.PS-06**: Platform Security: Secure build/run platforms enforce isolation and protection.
 
-## Pillar 5: Monitor and detect threats
+### Pillar 5: Monitor and detect threats
 
 This pillar aims to continuously monitor and rapidly detect security threats. Focus is on on proactive, intelligence-driven detection to surface attacker behavior early,  and enable rapid coordinated investigation across all business areas. Microsoft objectives for this pillar are summarized in the following table.
 

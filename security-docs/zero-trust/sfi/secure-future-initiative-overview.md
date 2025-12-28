@@ -26,6 +26,7 @@ Over time, SFI efforts continue to evolve as a cross-company initiative in struc
 
 We produces periodic SFI progress reports with detailed information about initiative updates and progress. Reports cover new security capabilities, news from engineering pillars, mapping to the NIST Cybersecurity Framework, and implementation guidance aligned with Zero Trust principles.
 
+- [Get a summary of the latest updates](ecure-future-initiative-whats-new.md) in What's new in SFI?
 - [Read the latest SFI blog](https://www.microsoft.com/security/blog/2025/11/10/securing-our-future-november-2025-progress-report-on-microsofts-secure-future-initiative/), and [review the SFI November 2025 report](https://www.microsoft.com/trust-center/security/secure-future-initiative/sfi-progress-report-november-2025).
 - [SFI report - April 2025](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/sfi-april-2025-progress-report.pdf).
 - [SFI report - September 2024](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/SFI_September_2024_progress_report.pdf).

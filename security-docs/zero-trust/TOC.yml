@@ -30,6 +30,65 @@
           maintainContext: true
     - name: Meet regulatory and compliance requirements
       href: adopt/meet-regulatory-compliance-requirements.md
+- name: Secure Future Initiative (SFI)
+  items:
+  - name: Overview
+    href: sfi/secure-future-initiative-overview.md
+  - name: What's new in SFI v2.0
+    href: sfi/secure-future-initiative-whats-new.md
+  - name: Adopt SFI best practices
+    href: sfi/secure-future-initiative-guidance.md
+  - name: Integrate NIST CSF 2.0 governance
+    href: sfi/integrate-nist-2-governance.md
+  - name: Protect identities and secrets
+    expand: false
+    items:                 
+    - name: Phishing-resistant MFA
+      href: sfi/phishing-resistant-mfa.md
+    - name: Adopt standard SDKs for identity
+      href: sfi/adopt-standard-sdk-identity.md
+  - name: Protect tenants and isolate systems
+    expand: false
+    items:                 
+    - name: Eliminate identity lateral movement
+      href: sfi/eliminate-identity-lateral-movement.md
+    - name: Remove legacy systems that risk security
+      href: sfi/remove-legacy-systems-that-risk-security.md
+    - name: Higher security for Microsoft Entra ID apps
+      href: sfi/higher-security-microsoft-entra-id-apps.md
+    - name: Secure all tenants and their resources
+      href: sfi/secure-all-tenants-resources.md
+  - name: Protect networks
+    expand: false
+    items:                 
+    - name: Network isolation
+      href: sfi/network-isolation.md 
+  - name: Protect engineering systems
+    expand: false
+    items:                 
+    - name: Standardize secure development pipelines
+      href: sfi/standardize-secure-development-pipelines.md
+    - name: Zero Trust for source code access
+      href: sfi/zero-trust-source-code-access.md 
+    - name: Protect the software supply chain
+      href: sfi/protect-software-supply-chain.md           
+  - name: Monitor and detect cyberthreats
+    expand: false
+    items:                 
+    - name: Complete production infrastructure inventory
+      href: sfi/complete-production-infrastructure-inventory.md
+    - name: Security log retention standards
+      href: sfi/security-log-retention-standards.md
+    - name: Rapid anomaly detection and response
+      href: sfi/rapid-anomaly-detection-response.md
+    - name: Centralize access to security logs
+      href: sfi/centralize-access-to-security-logs.md               
+  - name: Accelerate response and remediation
+    expand: false
+    items:                 
+    - name: Accelerate vulnerability mitigation
+      href: sfi/accelerate-vulnerability-mitigation.md
+
 - name: Technology pillars
   expanded: false
   items:
@@ -358,62 +417,7 @@
 - name: Best practices resources
   expanded: false
   items:
-  - name: Secure Future Initiative (SFI)
-    items:
-    - name: Overview
-      href: sfi/secure-future-initiative-overview.md
-    - name: Adopt SFI best practices
-      href: sfi/secure-future-initiative-guidance.md
-    - name: Integrate NIST CSF 2.0 governance
-      href: sfi/integrate-nist-2-governance.md
-    - name: Protect identities and secrets
-      expand: false
-      items:                 
-      - name: Phishing-resistant MFA
-        href: sfi/phishing-resistant-mfa.md
-      - name: Adopt standard SDKs for identity
-        href: sfi/adopt-standard-sdk-identity.md
-    - name: Protect tenants and isolate systems
-      expand: false
-      items:                 
-      - name: Eliminate identity lateral movement
-        href: sfi/eliminate-identity-lateral-movement.md
-      - name: Remove legacy systems that risk security
-        href: sfi/remove-legacy-systems-that-risk-security.md
-      - name: Higher security for Microsoft Entra ID apps
-        href: sfi/higher-security-microsoft-entra-id-apps.md
-      - name: Secure all tenants and their resources
-        href: sfi/secure-all-tenants-resources.md
-    - name: Protect networks
-      expand: false
-      items:                 
-      - name: Network isolation
-        href: sfi/network-isolation.md 
-    - name: Protect engineering systems
-      expand: false
-      items:                 
-      - name: Standardize secure development pipelines
-        href: sfi/standardize-secure-development-pipelines.md
-      - name: Zero Trust for source code access
-        href: sfi/zero-trust-source-code-access.md 
-      - name: Protect the software supply chain
-        href: sfi/protect-software-supply-chain.md           
-    - name: Monitor and detect cyberthreats
-      expand: false
-      items:                 
-      - name: Complete production infrastructure inventory
-        href: sfi/complete-production-infrastructure-inventory.md
-      - name: Security log retention standards
-        href: sfi/security-log-retention-standards.md
-      - name: Rapid anomaly detection and response
-        href: sfi/rapid-anomaly-detection-response.md
-      - name: Centralize access to security logs
-        href: sfi/centralize-access-to-security-logs.md               
-    - name: Accelerate response and remediation
-      expand: false
-      items:                 
-      - name: Accelerate vulnerability mitigation
-        href: sfi/accelerate-vulnerability-mitigation.md
+  
     - name: US Government guidance
       items:
       - name: CISA Zero Trust Maturity Model
@@ -435,7 +439,7 @@
         expanded: false
         items:
         - name: Introduction
-          href: dod-zero-trust-strategy-intro.md
+          href: dod-zero-trust-strategy-intro.
         - name: User
           href: dod-zero-trust-strategy-user.md
         - name: Device
@@ -479,3 +483,10 @@
 
 
         
+
+
+
+
+
+
+

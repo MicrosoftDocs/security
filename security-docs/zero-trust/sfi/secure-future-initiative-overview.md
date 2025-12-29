@@ -88,5 +88,5 @@ Here's how the SFI pillars map to Zero Trust and NIST.
 
 ## Next steps
 
-- [Review the objectives] for [identity protection](secure-future-initiative-identity-overview.md), [tenant protection](secure-future-initiative-tenant-overview.md), [network protection](secure-future-initiative-network-overview.md), [engineering system protection](secure-future-initiative-engineering-overview.md), [threat monitoring and detection](secure-future-initiative-threat-overview.md), and [threat response and remediation](secure-future-initiative-response-overview.md).
+- Review the objectives for [identity protection](secure-future-initiative-identity-overview.md), [tenant protection](secure-future-initiative-tenant-overview.md), [network protection](secure-future-initiative-network-overview.md), [engineering system protection](secure-future-initiative-engineering-overview.md), [threat monitoring and detection](secure-future-initiative-threat-overview.md), and [threat response and remediation](secure-future-initiative-response-overview.md).
 - [Learn about](secure-future-initiative-guidance.md) adopting Microsoft SFI best practices.

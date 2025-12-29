@@ -15,15 +15,20 @@ ms.collection:
 
 # What's new in the Secure Future Initiative
 
-The Secure Future Initiative (SFI) initiative launched in November 2023 as a multiyear effort to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services. For the first year or so after the launch, we shifted to security as a number one priority across Microsoft, provided security training, and dedicated extensive internal engineering resources to improve security and mitigate risk across Microsoft.
+The Secure Future Initiative (SFI) initiative is a multiyear, cross-Microsoft initiative to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services. 
 
-Over time, SFI efforts continue to evolve as a cross-company initiative in structured waves, keeping pace with shifts in the threat landscape. This a
+SFI is build upon:
 
-## Latest updates
+- A set of security principles that drive the way in which we innovate on security design, implement those innovations into Microsoft products as secure defaults and standards, and provide internal and external security guidance. [Learn more](secure-future-initiative-overview.md#security-principles).
+- A set of prioritized security pillars and objectives. [Learn more](secure-future-initiative-overview.md#sfi-pillars-zero-trust-and-nist).
 
-This articles summarizes the latest examples of innovation, implementation, and guidance in the [November 2025 report](https://www.microsoft.com/trust-center/security/secure-future-initiative/sfi-progress-report-november-2025).
+This article summarizes our latest progress on innovation, implementation, and guidance, as well as on the pillar objectives.
 
-Review early reports at:
+## Track ongoing progress
+
+Get addition details of ongoikng SFI efforts and progress in the [November 2025 report](https://www.microsoft.com/trust-center/security/secure-future-initiative/sfi-progress-report-november-2025).
+
+You can also review early reports at:
 
 - [SFI report - April 2025](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/sfi-april-2025-progress-report.pdf).
 - [SFI report - September 2024](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/SFI_September_2024_progress_report.pdf).
@@ -37,37 +42,10 @@ Review early reports at:
 [Windows and Surface](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/) enhanced Zero Trust principles with expanded passkeys, automatic recovery capabilities, and memory-safe improvements. | **Innovate**: In Windows 11, Windows Hello and [passkeys integration](/windows/security/identity-protection/passkeys) offers a more secure, phishing-resistant passwordless sign-in experience. Surface is [advancing Windows security through the Open Device Partnership](https://blogs.windows.com/windowsexperience/2025/11/10/advancing-security-with-windows-and-surface-microsoft-sfi-report-nov-2025/), an open-source firmware initiative that replaces legacy firmware with a transparent, secure, and reusable platform.<br/><br/>**Implement**: Improvements in Hotpatch to [support ARM64 devices](https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatching-now-available-for-64-bit-arm-architecture/4430949). Hotpatch is now enabled by default when creating a new Quality Update Policy in Autopatch, making it easier to maintain security and compliance with less disruption.<br/><br/>**Guidance**: Guiding customers to [enable Quick Machine Recovery on Windows 11](/windows/configuration/quick-machine-recovery) to automatically remediate boot failures and protect against boot-time attacks. Helping customers to [adopt passwordless sign-ins](/windows/security/book/identity-protection-passwordless-sign-in), integrating with password managers such as 1Password or Bitwarden.
 [Microsoft security](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=21) introduced data security posture management for AI, and shifted Microsoft Sentinel into a AI-first security platform. | **Innovate**: [Microsoft Sentinel data lake](/azure/sentinel/datalake/sentinel-lake-overview) enables a tenant-wide repository for collecting, storing, and managing large volumes of security-related data. More than 35 Microsoft and partner agents work to automate repetitive tasks and reduce manual workloads. Partner-developed agents are availble via the new [Microsoft Security Store](https://securitystore.microsoft.com/agents).<br/><br/>**Implement**: [Microsoft Entra entitlement management](/entra/id-governance/entitlement-management-overview) is being used to govern access across Microsoft engineering teams. In Microsoft Purview, [adaptive protection with data loss prevention policies](/purview/dlp-adaptive-protection-learn) blocks risky sharing activities based on user behavior across USB drives, web, email, and Team for proactive and consistent protection.<br/><br/>**Guidance**: Help customers to consolidate security data with [onboarding to Microsoft Sentinel data lake and Microsoft Sentinel graph](/azure/sentinel/datalake/sentinel-lake-onboarding).<br/><br/>Help customers to [enable Security Copilot agents](https://www.microsoft.com/security/blog/2025/11/18/agents-built-into-your-workflow-get-security-copilot-with-microsoft-365-e5/) for analysts to benefits fron AI capabilities during incident triage, reporting, and more.
 
-## SFI pillars, Zero Trust, NIST
 
-The SFI initiative focuses on six prioritized engineering pillars. Multiple objectives are aligned with each pillar. Each objective represents a significant effort to improve security and reduce risk for Microsoft and our customers in a specific pillar area.
+## Progress on pillar objectives
 
- Microsoft discloses the progress of these objectives against principles and pillars in our periodic SFI reports. Goals and objectives might shift over time in response to dynamic security priorities and emerging threat landscapes.
-
-The pillars and objectives clearly align with Microsoft's Zero Trust principles and the [National Institute of Standards and Technology (NIST) Cybersecurity Framework](https://www.nist.gov/cyberframework). NIST functions referenced in the table are as follows:
-
-- Govern (GV): Establish policies, procedures, and culture for managing cybersecurity risk, aligning it with overall business strategy and outcomes of the other NIST functions.
-- Identify (ID): Understand assets, systems, data, and potential threats to build a strong organizational understanding of cyber risk.
-- Protect (PR): Implement safeguards like access controls, data security, and training to ensure critical services can be delivered.
-- Detect (DE): Develop and implement activities to identify the occurrence of cybersecurity events, such as continuous monitoring.
-- Respond (RS): Take action regarding a detected incident, including analysis, containment, eradication, and communication.
-- Recover (RC): Restore systems and operations post-incident, emphasizing planning, communication, and improvement to minimize disruption.
-
-
-**Pillar** | **Zero Trust principle** | **NIST CSF Function**
---- | --- | --- 
-**1. Protect identities and secrets**<br/> Ensure that only verified and authorized identities can access resources.  | **Verify explicitly**: Enforce continuous, context-aware, passwordless authentication (Windows Hello, FIDO2 passkeys, certificate etc.).<br/><br/>**Use least privilege**: Reduce overprivileged identities and enforce privileged identity management/just-in-time access.<br/><br/>**Assume breach**: Rotate credentials rapidly and use short-lived tokens to reduce blast radius. | **Protect (PR)**: Implement controls to secure credentials, secrets, and access.<br/><br/>**Detect (DE)**: Continuously monitor identity activities for anomalies.
-**2. Protect tenants and isolate systems**<br/> Minimize compromise blast radius by ensuring that tenants, environments, and systems are independently isolated and secured, with no implicit trust between them.  | **Verify explicitly**: Apply inter-tenant authentication and authorization with explicit approval and logging.<br/><br/>**Use least privilege**: Limit access between environments to approved paths only.<br/><br/>**Assume breach**: Use tenant isolation as a containment boundary. | **Identify (ID)**: Discover tenant and production assets.<br/><br/>**Protect (PR)**: Apply isolation, seigmentation, and strong boundaries.<br/><br/>**Detect (DE)**: Look for isolation boundary violations or lateral movement.
-**3. Protect networks**<br/> Limit lateral movement and unauthorized access by means of granular network segmentation and identity-aware connectivity.  | **Verify explicitly**: Shift from implicit network trust to policy-based, identity-verified connections.<br/><br/>**Use least privilege**: Enforce micro-segmentation and just-enough access for workloads and endpoints.<br/><br/>**Assume breach**: Treat every network zone as potentially hostile. Isolate high-value assets and enforce strict egress control. | **Identify (ID)**: Inventory and understand networking assets.<br/><br/>**Protect (PR)**: Apply network security controls (segementation, encryption etc).
-**4. Protect engineering systems**<br/> Secure the entire software development lifecycle (SDLC) and delivery lifecycle by ensuring that code, build systems, and pipelines are tamper-resistant, auditable, and trustworthy.  | **Verify explicitly**: Authenticate every action in the SDLC, from code commits to builds, with traceable, signed identities.<br/>**Use least privilege**: Restrict developer, agent, and pipeline access based on role and build context.<br/><br/>**Assume breach**: Segregate build systems and enforce code signed and reproducible builds to prevent tampering. | **Identify (ID)**: Understand build/test/deployment systems and dependencies.<br/><br/>**Protect (PR)**: Secure software pipelines, development tooling and artifacts.<br/><br/>**Govern (GV)**: Apply engineering policies, standards, secure design.
-**5. Monitor and detect threats**<br/> Quickly detect, correlate, and prioritize security threats across Microsoft systems by unifying telemetry and analytics.  | **Verify explicitly**: Use telemetry-driven, continuous validation of user, device, and workload behavior.<br/><br/>**Use least privilege**: Enforce adaptive access control with detection and dynamic conditional access policies.<br/><br/>**Assume breach**: Detect anomalies and behavior deviations on the premise that attackers might already have access to resources. | **Identify (ID)**: Maintain awareness of all monitored systems.<br/><br/>**Protect (PR)**: Ensure protective controls generate telemetry.<br/><br/>**Detect (DE)**: Analyze logs and alerts to identity threats.<br/><br/>**Respond (RS)**: Detect trigger response workflows.
-**6. Accelerate response and remediation**<br/> Minimize the impact and duration of security incidents with automation, coordinated response, and continuous learning..  | **Verify explicitly**: Continuously reassess trust in identities, devices, and systems after detection events.<br/><br/>**Use least privilege**: Automate token revocation, key rotation, and access removal during response.<br/><br/>**Assume breach**: Continuously feed incident learnings into system improvments for rapid containment and ongoing hardening. | **Identify (ID)**: Understand scope and assets for response. Track changes and re-baseline post-incident.<br/><br/>**Recover (RC)**: Restore secure operations after incidents. Remediate vulnerabilities and ensure resilience.<br/><br/>**Detect (DE)**: Analyze logs and alerts to identity threats.<br/><br/>**Respond (RS)**: Detect trigger response workflows.br/><br/>**Govern (GV)**: Apply lessons in governance and standards.
-
-
-## Pillar progress
-
-The SFI initiative focuses on six prioritized engineering pillars. Multiple objectives are aligned with each pillar. Each objective represents a significant effort to improve security and reduce risk for Microsoft and our customers in a specific pillar area. [Learn more about pillars adn objectives](secure-future-initiative-overview.md).
-
-Microsoft discloses the progress of these objectives against principles and pillars in our periodic SFI reports. Goals and objectives might shift over time in response to dynamic security priorities and emerging threat landscapes.
+We discloses progress on pillar objectives as periodic SFI reports are published. Each objective represents a significant effort to improve security and reduce risk for Microsoft and our customers in a specific pillar area. Pillars, goals, and objectives might shift over time in response to dynamic security priorities and emerging threat landscapes.
 
 
 **Pillar** | **Objective** | **Progress**

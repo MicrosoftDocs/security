@@ -42,7 +42,9 @@
     href: sfi/integrate-nist-2-governance.md
   - name: Protect identities and secrets
     expand: false
-    items:                 
+    items:  
+    - name: Overview   
+      href: sfi/secure-future-initiative-identity-overview.md         
     - name: Phishing-resistant MFA
       href: sfi/phishing-resistant-mfa.md
     - name: Adopt standard SDKs for identity
@@ -50,6 +52,8 @@
   - name: Protect tenants and isolate systems
     expand: false
     items:                 
+    - name: Overview   
+      href: sfi/secure-future-initiative-tenant-overview.md  
     - name: Eliminate identity lateral movement
       href: sfi/eliminate-identity-lateral-movement.md
     - name: Remove legacy systems that risk security
@@ -61,11 +65,15 @@
   - name: Protect networks
     expand: false
     items:                 
+    - name: Overview   
+      href: sfi/secure-future-initiative-network-overview.md  
     - name: Network isolation
       href: sfi/network-isolation.md 
   - name: Protect engineering systems
     expand: false
-    items:                 
+    items:  
+    - name: Overview   
+      href: sfi/secure-future-initiative-engineering-overview.md                 
     - name: Standardize secure development pipelines
       href: sfi/standardize-secure-development-pipelines.md
     - name: Zero Trust for source code access
@@ -74,7 +82,9 @@
       href: sfi/protect-software-supply-chain.md           
   - name: Monitor and detect cyberthreats
     expand: false
-    items:                 
+    items: 
+    - name: Overview   
+      href: sfi/secure-future-initiative-threat-overview.md                
     - name: Complete production infrastructure inventory
       href: sfi/complete-production-infrastructure-inventory.md
     - name: Security log retention standards
@@ -85,7 +95,9 @@
       href: sfi/centralize-access-to-security-logs.md               
   - name: Accelerate response and remediation
     expand: false
-    items:                 
+    items:  
+    - name: Overview   
+      href: sfi/secure-future-initiative-response-overview.md               
     - name: Accelerate vulnerability mitigation
       href: sfi/accelerate-vulnerability-mitigation.md
 

@@ -13,11 +13,11 @@ ms.collection:
   - sfi-zerotrust
 ---
 
-# Protect identities and secrets in SFI
+# Overview - Protect engineering systems in SFI
 
 The [Secure Future Initiative (SFI) initiative](secure-future-initiative-overview.md) launched in November 2023 as a multiyear effort to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services.
 
-SFI architecture design focuses on a set of security principles that are adopted and integrated into Microsoft culture and governance. These security principles are applied to a set of engineering pillars by means of processes, standards, and continuous improvements.
+SFI architecture design focuses on a set of security principles that are adopted and integrated into Microsoft culture and governance. These security principles are applied to a set of focused engineering pillars by means of processes, standards, and continuous improvements.
 
 This article summarizes the "Protect identities and secrets" SFI pillar.
 

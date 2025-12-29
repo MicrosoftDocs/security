@@ -15,23 +15,25 @@ ms.collection:
 
 # Overview - Protect identities and secrets
 
-The [Secure Future Initiative (SFI) initiative](secure-future-initiative-overview.md) launched in November 2023 as a multiyear effort to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services.
+The [Secure Future Initiative (SFI) initiative](secure-future-initiative-overview.md) is a multiyear, cross-Microsoft initiative to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services. SFI is build upon:
 
-SFI architecture design focuses on a set of security principles that are adopted and integrated into Microsoft culture and governance. These security principles are applied to a set of engineering pillars by means of processes, standards, and continuous improvements.
+- A set of security principles that drive the way in which we innovate on security design, implement those innovations into Microsoft products as secure defaults and standards, and provide internal and external security guidance. [Learn more](secure-future-initiative-overview.md#security-principles).
+- A set of prioritized security pillars and objectives. [Learn more](secure-future-initiative-overview.md#sfi-pillars-zero-trust-and-nist).
 
-This article summarizes the "Protect identities and secrets" SFI pillar.
+This article provides an overview of the "Protect identities and secrets" SFI pillar. 
 
 ## Before you start
 
-- [Review](secure-future-initiative-overview.md#sfi-pillars-zero-trust-and-nist) the SFI pillars
-- [Review tthe latest progress on pillar objectives](secure-future-initiative-whats-new.md#pillar-progress) in What's New.
-
+- [Learn about](secure-future-initiative-overview.md#sfi-pillars-zero-trust-and-nist) the SFI pillars.
+- [Review and track the latest progress on pillar objectives](secure-future-initiative-whats-new.md#progress-on-pillar-objectives) in the SFI What's New article.
+- Pillar objectives map to [Zero Trust principles](zero-trust/zero-trust-overview), and to  [NIST CSF functions and categories](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf).
+- [Get a list of NIST categories and acronyms}(secure-future-initiative-overview.md#nist-functions) to help as you review the table.
 
 ## Pillar and objectives 
 
 The aim of the "Protect identities and secrets" pillar aims to strengthen trust in every identity and credential used across Microsoft systems by eliminating weaknesses in how accounts, tokens, and secrets are issued, stored, and used. It reduces the risk of unauthorized access by enforcing standards to harden the identity and secrets infrastructure, and to control user and application authentication and authorization. 
 
-Microsoft objectives for this pillar are summarized in the following table. You can see how each objective maps toZero Trust principles, and to  [NIST CSF functions and categories](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf).
+Microsoft objectives for this pillar are summarized in the following table. 
 
 **Pillar objective** | **Zero Trust** | **NIST mapping**
 --- | --- | --- 
@@ -46,4 +48,5 @@ Microsoft objectives for this pillar are summarized in the following table. You 
 
 ## Next steps
 
-[Learn about](secure-future-initiative-guidance.md) adopting Microsoft SFI best practices.
+- [Review the latest progress on pillar objectives](secure-future-initiative-whats-new.md#pillar-progress) in What's New.
+- [Learn about](secure-future-initiative-guidance.md) adopting Microsoft SFI best practices.

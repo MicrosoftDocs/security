@@ -45,7 +45,7 @@ You can also review early reports at:
 
 ## Progress on pillar objectives
 
-We discloses progress on pillar objectives as periodic SFI reports are published. Each objective represents a significant effort to improve security and reduce risk for Microsoft and our customers in a specific pillar area. Pillars, goals, and objectives might shift over time in response to dynamic security priorities and emerging threat landscapes.
+We disclosesprogress on pillar objectives as periodic SFI reports are published. Each objective represents a significant effort to improve security and reduce risk for Microsoft and our customers in a specific pillar area. Pillars, goals, and objectives might shift over time in response to dynamic security priorities and emerging threat landscapes.
 
 
 **Pillar** | **Objective** | **Progress**

@@ -34,17 +34,18 @@ This article summarizes the "Monitor and detect threats" SFI pillar.
 
 The aim of this pillar is to continuously monitor and rapidly detect security threats. Focus is on on proactive, intelligence-driven detection to surface attacker behavior early,  and enable rapid coordinated investigation across all business areas. 
 
-Microsoft objectives for this pillar are summarized in the following table. 
+Microsoft objectives and Zero Trust/NIST mapping for this pillar are summarized in the following table.
 
 
 **Objective** |  **Zero Trust** | **NIST mapping**
 --- | --- | --- 
-**1. Centralize telemetry and infrastructure tracking**<br/><br/>Maintain a current resource inventory across Microsoft production infrastructure and services. | **Verify explicitly**:Ensure logging and telemetry originate from authenticated, trusted sources.<br/><br/>**Assume breach**: Centralized logs support detection even when attackers evade initial controls.| **ID.AM-02**: Inventory of organizational resources: Maintain a complete view of monitored assets.<br/><br/>** **Detect:Continuous Monitoring (DE-AM-02)**: Monitoring processes. Centralized telemetry supports continuous observation.
-**2. Retain logs for forensic analysis and trending**<br/><br/>Retain security logs for at least two years, and make six months of appropriate logs available. | **Verify explicitly**: Retained logs allow verification of past events and patterns.<br/><br/>**Assume breach**: Long retention ensures detection windows cover advanced stealth techniques.| **DE.CM-02**: Inventory of organizational resources: Maintain a complete view of monitored assets.<br/><br/>** **DE/DP-01
+**1. Centralize telemetry and infrastructure tracking**<br/><br/>Maintain a current resource inventory across Microsoft production infrastructure and services. | **Verify explicitly**:Ensure logging and telemetry originate from authenticated, trusted sources.<br/><br/>**Assume breach**: Centralized logs support detection even when attackers evade initial controls.| **ID.AM-02** (*Inventory of organizational resources*). <br/>Maintain a complete view of monitored assets.<br/><br/>** **DE-AM-02** (*Monitoring processes. Centralized telemetry supports continuous observation*).
+**2. Retain logs for forensic analysis and trending**<br/><br/>Retain security logs for at least two years, and make six months of appropriate logs available. | **Verify explicitly**: Retained logs allow verification of past events and patterns.<br/><br/>**Assume breach**: Long retention ensures detection windows cover advanced stealth techniques.| **DE.CM-02** (*Inventory of organizational resources: Maintain a complete view of monitored assets*).<br/><br/>** **DE/DP-01
 
 
 
 ## Next steps
 
-[Learn about](secure-future-initiative-guidance.md) adopting Microsoft SFI best practices.
+- [Review the latest progress on pillar objectives](secure-future-initiative-whats-new.md#pillar-progress) in What's New.
+- Learn about [adopting Microsoft SFI best practices](secure-future-initiative-guidance.md).
 

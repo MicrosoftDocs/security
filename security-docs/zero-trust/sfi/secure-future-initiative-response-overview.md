@@ -35,7 +35,7 @@ This article summarizes the "Accelerate response and remediation" SFI pillar.
 The aim of this pillar is to quickly contain threats, restore trust, and improve resilience. It aims to minimize the impact and duration of security events and attacker dwell time in internal networks.
 
 
-Microsoft objectives for this pillar are summarized in the following table. 
+Microsoft objectives and Zero Trust/NIST mapping for this pillar are summarized in the following table.
 
 **Objective** | **Details**
 --- | ---
@@ -47,5 +47,5 @@ Microsoft objectives for this pillar are summarized in the following table.
 
 ## Next steps
 
-[Learn about](secure-future-initiative-guidance.md) adopting Microsoft SFI best practices.
-
+- [Review the latest progress on pillar objectives](secure-future-initiative-whats-new.md#pillar-progress) in What's New.
+- Learn about [adopting Microsoft SFI best practices](secure-future-initiative-guidance.md).

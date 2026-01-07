@@ -49,4 +49,5 @@ Microsoft objectives and Zero Trust/NIST mapping for this pillar are summarized 
 
 ## Next steps
 
-[Learn about](secure-future-initiative-guidance.md) adopting Microsoft SFI best practices.
+- [Review the latest progress on pillar objectives](secure-future-initiative-whats-new.md#pillar-progress) in What's New.
+- Learn about [adopting Microsoft SFI best practices](secure-future-initiative-guidance.md).

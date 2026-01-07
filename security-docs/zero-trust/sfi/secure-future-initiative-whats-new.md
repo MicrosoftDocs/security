@@ -128,4 +128,4 @@ This table presents a progress summary. Get [the latest full progress details](h
 
 ## Next steps
 
-[Learn about](secure-future-initiative-guidance.md) adopting Microsoft SFI best practices.
+Learn about [adopting Microsoft SFI best practices](secure-future-initiative-adoption.md).

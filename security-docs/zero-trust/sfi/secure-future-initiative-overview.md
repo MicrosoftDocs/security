@@ -97,4 +97,4 @@ The following table summarizes core NIST functions and categories, taken from th
     - [Monitor and detect threats](secure-future-initiative-threat-overview.md)
     - [Accelerate response and remediation(secure-future-initiative-response-overview.md).
     - 
-- [Learn about](secure-future-initiative-guidance.md) adopting Microsoft SFI best practices.
+- Learn about [adopting Microsoft SFI best practices](secure-future-initiative-adoption.md).

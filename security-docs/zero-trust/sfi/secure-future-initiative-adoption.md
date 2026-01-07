@@ -15,7 +15,7 @@ ms.collection:
 
 # Adopt Secure Future Initiative (SFI) best practices
 
-Microsoft's SFI initiative launched as a multiyear effort to further secure the way that  Microsoft designs, builds, tests, and operates its infrastructure, products, and services.
+Microsoft's SFI initiative launched as a multiyear effort to further secure the way that Microsoft designs, builds, tests, and operates its infrastructure, products, and services.
 
 This article shows how your organization might consider and adopt some of these SFI best practices.
 

@@ -26,13 +26,13 @@ This article summarizes the "Protect tenants and isolate systems" SFI pillar.
 
 - [Learn about](secure-future-initiative-overview.md#sfi-pillars-zero-trust-and-nist) the SFI pillars.
 - [Review and track the latest progress on pillar objectives](secure-future-initiative-whats-new.md#progress-on-pillar-objectives) in the SFI What's New article.
-- Pillar objectives map to [Zero Trust principles](zero-trust/zero-trust-overview), and to  [NIST CSF functions and categories](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf).
+- Learn about [Zero Trust principles](zero-trust/zero-trust-overview), and [NIST CSF functions and categories](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf).
 - [Get a list of NIST categories and acronyms](secure-future-initiative-overview.md#nist-functions) to help as you review the table.
 
 
-## Pillar and objectives 
+## Pillar and objectives
 
-The aim of the "Protect tenants and isolate systems pillar is to contain potential threat blast radius by preventing lateral movement or privilege escalation. It ensures that tenant-level security boundaries are correctly configured, hardened, and isolated.
+The aim of the "Protect tenants and isolate systems" pillar is to contain potential threat blast radius by preventing lateral movement or privilege escalation. It ensures that tenant-level security boundaries are correctly configured, hardened, and isolated.
 
 Microsoft objectives and Zero Trust/NIST mapping for this pillar are summarized in the following table.
 

@@ -88,5 +88,13 @@ The following table summarizes core NIST functions and categories, taken from th
 
 ## Next steps
 
-- Review the objectives for [identity protection](secure-future-initiative-identity-overview.md), [tenant protection](secure-future-initiative-tenant-overview.md), [network protection](secure-future-initiative-network-overview.md), [engineering system protection](secure-future-initiative-engineering-overview.md), [threat monitoring and detection](secure-future-initiative-threat-overview.md), and [threat response and remediation](secure-future-initiative-response-overview.md).
+- Review the detailed objectives for each engineering pillar:
+
+    - [Protect identities and secrets](secure-future-initiative-identity-overview.md).
+    - [Protect tenants and isolate systems](secure-future-initiative-tenant-overview.md).
+    - [Protect networks](secure-future-initiative-network-overview.md).
+    - [Protect engineering systems](secure-future-initiative-engineering-overview.md).
+    - [Monitor and detect threats](secure-future-initiative-threat-overview.md)
+    - [Accelerate response and remediation(secure-future-initiative-response-overview.md).
+    - 
 - [Learn about](secure-future-initiative-guidance.md) adopting Microsoft SFI best practices.

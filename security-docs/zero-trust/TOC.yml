@@ -36,10 +36,10 @@
     href: sfi/secure-future-initiative-overview.md
   - name: What's new in SFI v2.0
     href: sfi/secure-future-initiative-whats-new.md
-  - name: Adopt SFI best practices
-    href: sfi/secure-future-initiative-adoption.md
   - name: Integrate NIST CSF 2.0 governance
     href: sfi/integrate-nist-2-governance.md
+  - name: Adopt SFI best practices
+    href: sfi/secure-future-initiative-adoption.md
   - name: Protect identities and secrets
     expand: false
     items:  

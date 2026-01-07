@@ -1,4 +1,4 @@
---
+---
 title: Adopting Microsoft Secure Future Initiative (SFI) best practices
 description: Learn about adopting Microsoft's Secure Future Initiative (SFI) best practice patterns. 
 ms.date: 11/03/2025
@@ -21,7 +21,7 @@ This article shows how your organization might consider and adopt some of these 
 
 > [!NOTE]
 > - We're continuously working on content that details each best practice pattern within pillars. Links to these best practices are included where available and we're planning to publish more over time.
-> - Before you start, [read about the SFI architecture, principles, and engineering pillars](secure-future-initiative-overview.md).
+> - Before you start, [get an overview of SFI](secure-future-initiative-overview.md).
 
 ## Protect identities and secrets
 

@@ -451,7 +451,7 @@
         expanded: false
         items:
         - name: Introduction
-          href: dod-zero-trust-strategy-intro.
+          href: dod-zero-trust-strategy-intro.md
         - name: User
           href: dod-zero-trust-strategy-user.md
         - name: Device

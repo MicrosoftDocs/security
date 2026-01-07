@@ -48,5 +48,5 @@ analysis, vulernability status, and remediation process. <br/><br/>**Use least p
 
 ## Next steps
 
-- [Review the latest progress on pillar objectives](secure-future-initiative-whats-new.md#pillar-progress) in What's New.
+- [Review the latest progress on pillar objectives](secure-future-initiative-whats-new.md#progress-on-pillar-objectives) in What's New.
 - Learn about [adopting Microsoft SFI best practices](secure-future-initiative-guidance.md).

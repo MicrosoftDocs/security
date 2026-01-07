@@ -58,7 +58,7 @@ We use these principles to:
 
 The SFI initiative focuses on six prioritized engineering pillars. Multiple objectives align with each pillar. Each objective represents a significant effort to improve security and reduce risk for Microsoft and our customers in a specific pillar area.
 
-The pillars and objectives clearly align to Microsoft's [Zero Trust principles](/zero-trust/zero-trust-overview) and the [National Institute of Standards and Technology (NIST) Cybersecurity Framework](https://www.nist.gov/cyberframework). 
+The pillars and objectives clearly align to Microsoft's [Zero Trust principles](../zero-trust-overview.md) and the [National Institute of Standards and Technology (NIST) Cybersecurity Framework](https://www.nist.gov/cyberframework). 
 
 ## Pillar mapping
 

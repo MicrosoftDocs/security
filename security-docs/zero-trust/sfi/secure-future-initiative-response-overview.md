@@ -26,7 +26,7 @@ This article summarizes the "Accelerate response and remediation" SFI pillar.
 
 - [Learn about](secure-future-initiative-overview.md#sfi-pillars-zero-trust-and-nist) the SFI pillars.
 - [Review and track the latest progress on pillar objectives](secure-future-initiative-whats-new.md#progress-on-pillar-objectives) in the SFI What's New article.
-- Pillar objectives map to [Zero Trust principles](../zero-trust-overview,md), and to  [NIST CSF functions and categories](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf).
+- Pillar objectives map to [Zero Trust principles](../zero-trust-overview.md), and to  [NIST CSF functions and categories](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf).
 - [Get a list of NIST categories and acronyms](secure-future-initiative-overview.md#nist-functions) to help as you review the table.
 
 

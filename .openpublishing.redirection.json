@@ -431,6 +431,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "security-docs/privileged-access-workstations/administration-videos-and-decks.md",
+      "redirect_url": "/entra/architecture/protect-m365-from-on-premises-attacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/privileged-access-workstations/critical-impact-accounts.md",
+      "redirect_url": "/entra/architecture/protect-m365-from-on-premises-attacks",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "security-docs/compass/overview.md",
       "redirect_url": "/security/privileged-access-workstations/overview",
       "redirect_document_id": false

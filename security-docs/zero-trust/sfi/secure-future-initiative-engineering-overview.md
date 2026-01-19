@@ -30,7 +30,7 @@ This article summarizes the "Protect engineering systems" SFI pillar.
 
 ## Pillar and objectives 
 
-The "Protect engineering systems" pillar aims to strengthen security across development and engineering by operationationalizing the asset inventory, implementing Zero Trust principles, securing pipelines, and strengthening isolation and resiliency.
+The "Protect engineering systems" pillar aims for strengthening security across development and engineering by operationationalizing the asset inventory, implementing Zero Trust principles, securing pipelines, and strengthening isolation and resiliency.
 
 Microsoft objectives and Zero Trust/NIST mapping for this pillar are summarized in the following table.
 

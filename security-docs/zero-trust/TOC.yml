@@ -2,11 +2,11 @@
   href: index.yml
 - name: What is Zero Trust?
   href: zero-trust-overview.md
-- name: Assessment and progress tracking resources
+- name: Assessment and tracking resources
   href: zero-trust-assessment-progress-tracking-resources.md
 - name: Zero Trust partner kit
   href: zero-trust-partner-kit.md
-- name: Adoption framework
+- name: Security adoption framework
   expanded: false
   items:
     - name: Overview
@@ -30,6 +30,77 @@
           maintainContext: true
     - name: Meet regulatory and compliance requirements
       href: adopt/meet-regulatory-compliance-requirements.md
+- name: Secure Future Initiative (SFI)
+  items:
+  - name: Overview
+    href: sfi/secure-future-initiative-overview.md
+  - name: What's new in SFI v2.0
+    href: sfi/secure-future-initiative-whats-new.md
+  - name: Integrate NIST CSF 2.0 governance
+    href: sfi/integrate-nist-2-governance.md
+  - name: Adopt SFI best practices
+    href: sfi/secure-future-initiative-adoption.md
+  - name: Protect identities and secrets
+    expand: false
+    items:  
+    - name: Overview   
+      href: sfi/secure-future-initiative-identity-overview.md         
+    - name: Phishing-resistant MFA
+      href: sfi/phishing-resistant-mfa.md
+    - name: Adopt standard SDKs for identity
+      href: sfi/adopt-standard-sdk-identity.md
+  - name: Protect tenants and isolate systems
+    expand: false
+    items:                 
+    - name: Overview   
+      href: sfi/secure-future-initiative-tenant-overview.md  
+    - name: Eliminate identity lateral movement
+      href: sfi/eliminate-identity-lateral-movement.md
+    - name: Remove legacy systems that risk security
+      href: sfi/remove-legacy-systems-that-risk-security.md
+    - name: Higher security for Microsoft Entra ID apps
+      href: sfi/higher-security-microsoft-entra-id-apps.md
+    - name: Secure all tenants and their resources
+      href: sfi/secure-all-tenants-resources.md
+  - name: Protect networks
+    expand: false
+    items:                 
+    - name: Overview   
+      href: sfi/secure-future-initiative-network-overview.md  
+    - name: Network isolation
+      href: sfi/network-isolation.md 
+  - name: Protect engineering systems
+    expand: false
+    items:  
+    - name: Overview   
+      href: sfi/secure-future-initiative-engineering-overview.md                 
+    - name: Standardize secure development pipelines
+      href: sfi/standardize-secure-development-pipelines.md
+    - name: Zero Trust for source code access
+      href: sfi/zero-trust-source-code-access.md 
+    - name: Protect the software supply chain
+      href: sfi/protect-software-supply-chain.md           
+  - name: Monitor and detect threats
+    expand: false
+    items: 
+    - name: Overview   
+      href: sfi/secure-future-initiative-threat-overview.md                
+    - name: Complete production infrastructure inventory
+      href: sfi/complete-production-infrastructure-inventory.md
+    - name: Security log retention standards
+      href: sfi/security-log-retention-standards.md
+    - name: Rapid anomaly detection and response
+      href: sfi/rapid-anomaly-detection-response.md
+    - name: Centralize access to security logs
+      href: sfi/centralize-access-to-security-logs.md               
+  - name: Accelerate response and remediation
+    expand: false
+    items:  
+    - name: Overview   
+      href: sfi/secure-future-initiative-response-overview.md               
+    - name: Accelerate vulnerability mitigation
+      href: sfi/accelerate-vulnerability-mitigation.md
+
 - name: Technology pillars
   expanded: false
   items:
@@ -309,7 +380,7 @@
         href: develop/permissions-require-admin-consent.md
       - name: Overprivileged permissions
         href: develop/overprivileged-permissions.md
-      - name: Non-user application identity
+      - name: Application identity
         href: develop/identity-non-user-applications.md
       - name: Token management
         href: develop/token-management.md
@@ -358,95 +429,76 @@
 - name: Best practices resources
   expanded: false
   items:
-     - name: Secure Future Initiative (SFI)
-       items:
-         - name: Integrate NIST CSF 2.0 governance
-           href: sfi/integrate-nist-2-governance.md
-         - name: Protect identities and secrets
-           expand: false
-           items:                 
-              - name: Phishing-resistant MFA
-                href: sfi/phishing-resistant-mfa.md
-              - name: Adopt standard SDKs for identity
-                href: sfi/adopt-standard-sdk-identity.md
-         - name: Protect tenants and isolate systems
-           expand: false
-           items:                 
-              - name: Eliminate identity lateral movement
-                href: sfi/eliminate-identity-lateral-movement.md
-              - name: Remove legacy systems that risk security
-                href: sfi/remove-legacy-systems-that-risk-security.md
-              - name: Higher security for Microsoft Entra ID apps
-                href: sfi/higher-security-microsoft-entra-id-apps.md
-              - name: Secure all tenants and their resources
-                href: sfi/secure-all-tenants-resources.md
-         - name: Protect networks
-           expand: false
-           items:                 
-              - name: Network isolation
-                href: sfi/network-isolation.md 
-         - name: Protect engineering systems
-           expand: false
-           items:                 
-              - name: Standardize secure development pipelines
-                href: sfi/standardize-secure-development-pipelines.md
-              - name: Zero Trust for source code access
-                href: sfi/zero-trust-source-code-access.md 
-              - name: Protect the software supply chain
-                href: sfi/protect-software-supply-chain.md           
-         - name: Monitor and detect cyberthreats
-           expand: false
-           items:                 
-             - name: Complete production infrastructure inventory
-               href: sfi/complete-production-infrastructure-inventory.md
-             - name: Security log retention standards
-               href: sfi/security-log-retention-standards.md
-             - name: Rapid anomaly detection and response
-               href: sfi/rapid-anomaly-detection-response.md
-             - name: Centralize access to security logs
-               href: sfi/centralize-access-to-security-logs.md               
-         - name: Accelerate response and remediation
-           expand: false
-           items:                 
-              - name: Accelerate vulnerability mitigation
-                href: sfi/accelerate-vulnerability-mitigation.md
-     - name: US Government guidance
-       items:
-         - name: CISA Zero Trust Maturity Model
-           expanded: false
-           items:
-           - name: Introduction
-             href: cisa-zero-trust-maturity-model-intro.md
-           - name: Identity
-             href: cisa-zero-trust-maturity-model-identity.md
-           - name: Devices
-             href: cisa-zero-trust-maturity-model-devices.md
-           - name: Networks
-             href: cisa-zero-trust-maturity-model-networks.md
-           - name: Applications and workloads
-             href: cisa-zero-trust-maturity-model-apps.md
-           - name: Data
-             href: cisa-zero-trust-maturity-model-data.md
-         - name: DoD Zero Trust Strategy
-           expanded: false
-           items:
-           - name: Introduction
-             href: dod-zero-trust-strategy-intro.md
-           - name: User
-             href: dod-zero-trust-strategy-user.md
-           - name: Device
-             href: dod-zero-trust-strategy-device.md
-           - name: Applications and workloads
-             href: dod-zero-trust-strategy-apps.md
-           - name: Data
-             href: dod-zero-trust-strategy-data.md
-           - name: Network
-             href: dod-zero-trust-strategy-network.md
-           - name: Automation and orchestration
-             href: dod-zero-trust-strategy-automation.md
-           - name: Visibility and analytics
-             href: dod-zero-trust-strategy-visibility.md
-     - name: More best practices
-       items:
-       - name: The immutable laws of security
-         href: ten-laws-of-security.md
+  
+    - name: US Government guidance
+      items:
+      - name: CISA Zero Trust Maturity Model
+        expanded: false
+        items:
+        - name: Introduction
+          href: cisa-zero-trust-maturity-model-intro.md
+        - name: Identity
+          href: cisa-zero-trust-maturity-model-identity.md
+        - name: Devices
+          href: cisa-zero-trust-maturity-model-devices.md
+        - name: Networks
+          href: cisa-zero-trust-maturity-model-networks.md
+        - name: Applications and workloads
+          href: cisa-zero-trust-maturity-model-apps.md
+        - name: Data
+          href: cisa-zero-trust-maturity-model-data.md
+      - name: DoD Zero Trust Strategy
+        expanded: false
+        items:
+        - name: Introduction
+          href: dod-zero-trust-strategy-intro.md
+        - name: User
+          href: dod-zero-trust-strategy-user.md
+        - name: Device
+          href: dod-zero-trust-strategy-device.md
+        - name: Applications and workloads
+          href: dod-zero-trust-strategy-apps.md
+        - name: Data
+          href: dod-zero-trust-strategy-data.md
+        - name: Network
+          href: dod-zero-trust-strategy-network.md
+        - name: Automation and orchestration
+          href: dod-zero-trust-strategy-automation.md
+        - name: Visibility and analytics
+          href: dod-zero-trust-strategy-visibility.md
+    - name: More best practices
+      items:
+      - name: The immutable laws of security
+        href: ten-laws-of-security.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+

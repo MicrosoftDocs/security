@@ -380,7 +380,7 @@
         href: develop/permissions-require-admin-consent.md
       - name: Overprivileged permissions
         href: develop/overprivileged-permissions.md
-      - name: Non-user application identity
+      - name: Application identity
         href: develop/identity-non-user-applications.md
       - name: Token management
         href: develop/token-management.md

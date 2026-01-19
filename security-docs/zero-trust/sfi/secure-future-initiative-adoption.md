@@ -1,16 +1,12 @@
 ---
 title: Adopting Microsoft Secure Future Initiative (SFI) best practices
 description: Learn about adopting Microsoft's Secure Future Initiative (SFI) best practice patterns. 
-ms.date: 11/03/2025
+ms.date: 01/19/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
-ms.collection:
-  - highpri
-  - zerotrust
-  - sfi-zerotrust
 ---
 
 # Adopt Secure Future Initiative (SFI) best practices

@@ -80,7 +80,7 @@
       href: sfi/zero-trust-source-code-access.md 
     - name: Protect the software supply chain
       href: sfi/protect-software-supply-chain.md           
-  - name: Monitor and detect cyberthreats
+  - name: Monitor and detect threats
     expand: false
     items: 
     - name: Overview   

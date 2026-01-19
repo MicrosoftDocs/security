@@ -49,7 +49,7 @@ The table summarizes the latest updates.
 
 We disclose progress on pillar objectives as periodic SFI reports are published. Each objective represents a significant effort to improve security and reduce risk for Microsoft and our customers in a specific pillar area. Pillars, goals, and objectives might shift over time in response to dynamic security priorities and emerging threat landscapes.
 
-## Protect identities and secrets
+### Protect identities and secrets
 
 This table presents a progress summary. Get [the latest full progress details](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=23) in the November 2025 report.
 
@@ -65,7 +65,7 @@ This table presents a progress summary. Get [the latest full progress details](h
 **7. Introduce quantum-safe PKI systems**<br/><br/>Ensure identity and certificate PKI systems are ready for a post-quantum cryptography world. | Early planning, with some post-quantum PKI pilots in progress. 
 
 
-## Protect tenants and isolate systems
+### Protect tenants and isolate systems
 
 This table presents a progress summary. Get [the latest full progress details](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=25) in the November 2025 report.
 
@@ -79,7 +79,7 @@ This table presents a progress summary. Get [the latest full progress details](h
 **6. Secure devices used for access**<br/><br/> Adopt fine-grained partitioning of identity signing keys and platform keys. Ensure that only secure, managed, healthy devices are granted access to tenants.  | - All production access across Microsoft tenants required locked-down endpoints.<br/>- We're deploying increased production-ready locked down devices.<br/>- Our security posture ensures that privileged operations can only be performed from compliant endpoints.
 
 
-## Protect networks
+### Protect networks
 
 This table presents a progress summary. Get [the latest full progress details](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=27) in the November 2025 report.
 
@@ -90,7 +90,7 @@ This table presents a progress summary. Get [the latest full progress details](h
 **3. Accelerate adoption of Network Security Perimeter (NSP)**<br/><br/>Place entries resources under modern perimeter enforcement and segmentation to ensure network traffic is validated and only allowed where necessary to reduce the risk of lateral movement and unauthorized access. | - We're continuing to expand network isolation across production environments. <br/>- NSP adoption has grown to over 1.1 million resources in learning mode and around 500,000 in enfnrced mode. Public access has been disable for thousands of resources.<br/>- Tagged first party IPs increased to 21%, supporting fine-grained segmentation.<br/> - Network Manager now enforces centralized ACLs across more than 6000 devices, reducing lateral risk and strengthening defense layers. 
 **4. Secure customer cloud networks**<br/><br/>Strengthen network defenses with modern firewalling, segmentation policies, and platform-level enforcement, ensuring that only authorized traffic can flow and that potential breaches are contained. | - The NSP feature has reached general avaiability, allowing customers to define logical isolation boundaries around PaaS resources.<br/>- Azure Bastion Developer now supports private connectivity to AKS clusters for more secure access to AKS API severs without public exposure or VPN setup.
 
-## Protect engineering systems
+### Protect engineering systems
 
 This table presents a progress summary. Get [the latest full progress details](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=28) in the November 2025 report.
 
@@ -103,7 +103,7 @@ This table presents a progress summary. Get [the latest full progress details](h
 **5. Protect the software supply chain**<br/><br/>Secure the software supply chain to protect Microsoft production environments.| - Supply chain protections are maturing. internal artifact feeds are broadly adopted and component governance runs by default.<br/>-  AI agents now remediate open‑source vulnerabilities asynchronously, reducing detection‑to‑resolution latency.
 
 
-## Monitor and detect threats
+### Monitor and detect threats
 
 This table presents a progress summary. Get [the latest full progress details](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=31) in the November 2025 report.
 
@@ -115,7 +115,7 @@ This table presents a progress summary. Get [the latest full progress details](h
 **4. Detect and respond quickly**<br/><br/> Detect and respond automatically to anomalous access, behavior, and configurations across Microsoft production infrastructure and services. | - For our strategy to continuously evaluate detection  coverage, identify gaps, and stay ahead of emerging threats, security and engineering teams collaborated to expand and refine our detection capabilities. This resulted in the deployment of more than 50 new detections targeting  high-priority TTPs (including data exfiltration, credential access, and  remote code execution).This brings our total to more than 250 active  detections across production infrastructure – applicable detections will be  added to Microsoft Defender.<br/> - AI-driven imporivement are leveraged at every stage of the detection lifecycle, from identifying new detection capabilities to development/test acceleration and improved signals. This helps us to scale detection coverage which maintaining precision and resilience. 
 
 
-## Accelerate response and remediation
+### Accelerate response and remediation
 
 This table presents a progress summary. Get [the latest full progress details](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/sfi-nov-2025-progress-report.pdf#page=33) in the November 2025 report.
 

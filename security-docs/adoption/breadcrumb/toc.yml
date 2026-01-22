@@ -1,0 +1,11 @@
+items:
+- name: Security
+  tocHref: /security/
+  topicHref: /security/index
+  items:
+  - name: Adoption
+    tocHref: /security/zero-trust/
+    topicHref: /security/adoption/
+  - name: Adoption
+    tocHref: /security/zero-trust/deploy/
+    topicHref: /security/adoption/

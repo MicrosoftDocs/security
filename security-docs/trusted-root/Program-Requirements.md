@@ -10,12 +10,16 @@ ms.topic: conceptual
 
 
 # Program Requirements - Microsoft Trusted Root Program
-## 1. Introduction
 
+## About
 The Microsoft Root Certificate Program supports the distribution of root certificates, enabling customers to trust Windows products. 
 
+
  > [!NOTE]
- > * The program requirements have been moved to <https://aka.ms/RootCert> (https://github.com/TrustedRootProgram) 
+ > * For information on the most-recent updates shipped, please see <https://aka.ms/rootupdates> 
+
+This page has been superceded. The program technical requirements can be found here: <https://github.com/TrustedRootProgram/Program-Requirements> or on the bookmark here: <https://aka.ms/RootCert>. 
+
 
 
 

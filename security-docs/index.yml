@@ -81,29 +81,29 @@ sections:
     title: ""
     blocks:
       - componentType: icon-card
-        title: Secure AI solutions in the cloud
-        summary: Validate your technical skills and open doors to new possibilities of advancement with Microsoft Defender for Cloud and Microsoft Foundry.
+        title: "Applied Skill: Secure AI solutions in the cloud"
+        summary: Gain your Microsoft Applied Skill with your understanding of Microsoft Defender for Cloud and Microsoft Foundry.
         url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
       - componentType: icon-card
-        title: Get started with identities and access using Microsoft Entra
-        summary: Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra.
+        title: "Applied Skill: Identities and access using Microsoft Entra"
+        summary: Complete this Microsoft Applied Skill to demonstrate your ability to manage identities and access in Microsoft Entra. 
         url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/get-started-1-blue.png
       - componentType: icon-card
-        title: Security agents in your daily workflow
-        summary: Enable autonomous and proactive protection with Security Copilot agents built directly into your workflow.
+        title: Learn about Security Copilot agents
+        summary: Use this documentation to enable autonomous and proactive protection with Security Copilot agents built directly into your workflow.
         url: /copilot/security/security-copilot-inclusion?wt.mc_id=securityhub_inclusion_webpage_sci
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/overview-magenta.png
       - componentType: icon-card
         title: Mitigate incidents using Microsoft Defender
-        summary: Learn how the Microsoft Defender portal provides a unified view of incidents from the Microsoft Defender family of products.
+        summary: Complete this training module to understand how the Microsoft Defender portal provides a unified view of incidents.
         url: /training/modules/mitigate-incidents-microsoft-365-defender/
         icon:
           componentType: image

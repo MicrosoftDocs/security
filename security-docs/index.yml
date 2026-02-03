@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 12/04/2025
+  ms.date: 02/04/2026
   ms.collection: # na
   brand: azure
 sections:
@@ -24,48 +24,90 @@ sections:
      lightImageSrc: /security/media/security-hub/hero-security-hub.png
      darkImageSrc: /security/media/security-hub/hero-security-hub.png
 # Spotlight selections
-  - componentType: testimonials-section
-    title: 'Discover top picks'
-    cards:
-      - avatarUrl: /security/media/hubpage/applied-skills.png
-        componentType: testimonial-card
-        name: Secure AI solutions in the cloud
-        role: Applied Skills
-        feedback: Validate your technical skills and open doors to new possibilities of advancement with Microsoft Defender for Cloud and Microsoft Foundry.
-        link:
-          componentType: link
-          url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
-          text: Start learning
-      - avatarUrl: /security/media/hubpage/applied-skills.png
-        componentType: testimonial-card
-        name: Get started with identities and access using Microsoft Entra
-        role: Applied Skills
-        feedback: Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra.
-        link:
-          componentType: link
-          url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
-          text: Validate your skills
-      - avatarUrl: /security/media/hubpage/document-icon.png 
-        componentType: testimonial-card
-        name: Microsoft Security Copilot for Developers
-        role: Documentation
-        feedback: Learn to create, publish, and test agents in Security Copilot using natural language, lite experience forms, YAMLs, and MCPs. Designed for developers to streamline security workflows.
-        link:
-          componentType: link
-          url: /copilot/security/developer/
-          text: Get started
-      - avatarUrl: /security/media/hubpage/generic-badge.svg
-        componentType: testimonial-card
-        name: Mitigate incidents using Microsoft Defender
-        role: Training
-        feedback: Learn how the Microsoft Defender portal provides a unified view of incidents from the Microsoft Defender family of products.
-        link:
-          componentType: link
-          url: /training/modules/mitigate-incidents-microsoft-365-defender/
-          text: Learn more
-    backgroundImage:
-      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
-      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+#  - componentType: testimonials-section
+#    title: 'Discover top picks'
+#    cards:
+#      - avatarUrl: /security/media/hubpage/applied-skills.png
+#        componentType: testimonial-card
+#        name: Secure AI solutions in the cloud
+#        role: Applied Skills
+#        feedback: Validate your technical skills and open doors to new possibilities of advancement with Microsoft Defender for Cloud and Microsoft Foundry.
+#        link:
+#          componentType: link
+#          url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
+#          text: Start learning
+#      - avatarUrl: /security/media/hubpage/applied-skills.png
+#        componentType: testimonial-card
+#        name: Get started with identities and access using Microsoft Entra
+#        role: Applied Skills
+#        feedback: Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra.
+#        link:
+#          componentType: link
+#          url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
+#          text: Validate your skills
+#      - avatarUrl: /security/media/hubpage/document-icon.png 
+#        componentType: testimonial-card
+#        name: Microsoft Security Copilot for Developers
+#        role: Documentation
+#        feedback: Learn to create, publish, and test agents in Security Copilot using natural language, lite experience forms, YAMLs, and MCPs. Designed for developers to streamline security workflows.
+#        link:
+#          componentType: link
+#          url: /copilot/security/developer/
+#          text: Get started
+#      - avatarUrl: /security/media/hubpage/generic-badge.svg
+#        componentType: testimonial-card
+#        name: Mitigate incidents using Microsoft Defender
+#        role: Training
+#        feedback: Learn how the Microsoft Defender portal provides a unified view of incidents from the Microsoft Defender family of products.
+#        link:
+#          componentType: link
+#          url: /training/modules/mitigate-incidents-microsoft-365-defender/
+#          text: Learn more
+#    backgroundImage:
+#      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+#      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+
+# New top picks tiles from 4 February 2026
+  - componentType: markdown
+    content: |
+      :::row:::
+        :::column:::       
+            > [!div style="text-align:center;"]
+            > # Discover top picks
+        :::column-end:::
+      :::row-end:::
+
+  - componentType: grid
+    title: ""
+    blocks:
+      - componentType: icon-card
+        title: "Applied Skill: Secure AI solutions in the cloud"
+        summary: Gain your Microsoft Applied Skill with your understanding of Microsoft Defender for Cloud and Microsoft Foundry.
+        url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
+      - componentType: icon-card
+        title: "Applied Skill: Identities and access using Microsoft Entra"
+        summary: Complete this Microsoft Applied Skill to demonstrate your ability to manage identities and access in Microsoft Entra. 
+        url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/get-started-1-blue.png
+      - componentType: icon-card
+        title: Learn about Security Copilot agents
+        summary: Use this documentation to enable autonomous and proactive protection with Security Copilot agents built directly into your workflow.
+        url: /copilot/security/security-copilot-inclusion?wt.mc_id=securityhub_inclusion_webpage_sci
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/overview-magenta.png
+      - componentType: icon-card
+        title: Configure your Microsoft Sentinel Environment
+        summary: Strengthen your Microsoft Sentinel skills to learn how data lake and graph enhance performance, context, and investigation speed in this updated learning path.
+        url: /training/paths/sc-200-configure-azure-sentinel-environment/
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
 
 # Plans
   - componentType: cards

@@ -102,9 +102,9 @@ sections:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/overview-magenta.png
       - componentType: icon-card
-        title: Mitigate incidents using Microsoft Defender
-        summary: Complete this training module to understand how the Microsoft Defender portal provides a unified view of incidents.
-        url: /training/modules/mitigate-incidents-microsoft-365-defender/
+        title: Configure your Microsoft Sentinel Environment
+        summary: Strengthen your Microsoft Sentinel skills to learn how data lake and graph enhance performance, context, and investigation speed in this updated learning path.
+        url: /training/paths/sc-200-configure-azure-sentinel-environment/
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/training-1-purple.png

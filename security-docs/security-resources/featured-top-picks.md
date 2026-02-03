@@ -5,12 +5,21 @@ ms.service: security
 ms.topic: whats-new
 author: ttorble
 ms.author: ralyon
-ms.date: 12/04/2025
+ms.date: 02/04/2026
 ---
 
 # Featured top picks
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
+
+## December 2025
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| December 4 | [Secure AI solutions in the cloud](/credentials/applied-skills/secure-ai-solutions-in-the-cloud/) | Validate your technical skills and open doors to new possibilities of advancement with Microsoft Defender for Cloud and Microsoft Foundry. |
+|            | [Get started with identities and access using Microsoft Entra](/credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/) | Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra. |
+|            | [Microsoft Security Copilot for Developers](/copilot/security/developer/) | Learn to create, publish, and test agents in Security Copilot using natural language, lite experience forms, YAMLs, and MCPs. Designed for developers to streamline security workflows. |
+|            | [Mitigate incidents using Microsoft Defender](/training/modules/mitigate-incidents-microsoft-365-defender/) | Learn how the Microsoft Defender portal provides a unified view of incidents from the Microsoft Defender family of products. |
 
 ## November 2025
 

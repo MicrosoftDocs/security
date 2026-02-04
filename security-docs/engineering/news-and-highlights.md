@@ -1,11 +1,10 @@
 ---
 title: Security news and highlights
 description: Security news and highlights from across Microsoft.
-author: kenwith
-ms.author: kenwith
-manager: femila
 ms.date: 03/12/2025
 ms.topic: article
+ms.service: security
+ms.subservice:
 ---
 
 # Security news and highlights

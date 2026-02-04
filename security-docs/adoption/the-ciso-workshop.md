@@ -5,8 +5,6 @@ ms.service: security
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.date: 09/29/2025
-ms.author: kenwith
-author: kenwith
 ms.reviewer: mas
 ---
 # The Chief Information Security Officer (CISO) Workshop Training

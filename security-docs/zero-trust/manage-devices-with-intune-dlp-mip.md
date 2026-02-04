@@ -1,14 +1,11 @@
 ---
 title: "Step 7. Implement data loss prevention (DLP) with information protection capabilities"
 description: Implement Endpoint DLP by working with your data security and privacy team to create DLP policies for your organization.    
-ms.author: bcarter
 ms.subservice: zero-trust
-author: brendacarter
 f1.keywords:
 - Endpoint dlp
 - data loss prevention
 - dlp policies
-manager: dougeby
 ms.date: 02/28/2025
 audience: ITPro
 ms.topic: how-to

@@ -5,8 +5,6 @@ ms.service: security
 ms.subservice: privileged-access
 ms.topic: how-to
 ms.date: 06/20/2024
-ms.author: kenwith
-author: kenwith
 ms.reviewer: frasim
 ---
 # Privileged access deployment

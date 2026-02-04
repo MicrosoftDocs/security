@@ -46,7 +46,9 @@
       "uhfHeaderId": "MSDocsHeader-Security",
       "breadcrumb_path": "/security/breadcrumb/toc.json",
       "feedback_system": "Standard",
-      "feedback_help_link_type": "get-help-at-qna"
+      "feedback_help_link_type": "get-help-at-qna",
+      "ms.author": "kenwith",
+      "author": "kenwith"
     },
     "fileMetadata": {
       "titleSuffix": {
@@ -54,6 +56,14 @@
         "*.yml": "Security",
         "privileged-access-workstations/*.md": "Privileged access",
         "privileged-access-workstations/*.yml": "Privileged access"
+      },
+      "author": {
+        "security-docs/ransomeware/**/*.md": "poliveria",
+        "security-docs/ransomeware/**/*.yml": "poliveria"
+      },
+      "ms.author": {
+        "security-docs/ransomeware/**/*.md": "pauloliveria",
+        "security-docs/ransomeware/**/*.yml": "pauloliveria"
       },
       "feedback_system": {
         "privileged-access-workstations/**/*.md": "None",

@@ -1,9 +1,6 @@
 ---
 title: Security operations  | Microsoft Docs
 description: Learn about security operations and how they detect, respond, and recover the system when it's attacked.
-ms.author: kenwith
-author: kenwith
-manager: dougeby
 ms.collection: 
   - msftsolution-secops
 ms.topic: article

@@ -9,7 +9,6 @@ ms.date: 10/30/2025
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: dougeby
 ms.reviewer: joflore
 ---
 # What is the Zero Trust Assessment?

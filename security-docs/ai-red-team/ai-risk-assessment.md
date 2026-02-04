@@ -5,8 +5,6 @@ ms.service: security
 ms.subservice: ai-red-team
 ms.topic: how-to
 ms.date: 03/19/2024
-ms.author: kenwith
-author: kenwith
 ms.reviewer: nborges
 ---
 # AI Risk Assessment for ML Engineers

@@ -4,9 +4,6 @@
 # Mandatory fields.
 title: Threat Modeling AI/ML Systems and Dependencies
 description: Threat Mitigation/Security Feature Technical Guidance
-author: kenwith
-ms.author: kenwith
-manager: femila
 ms.date: 03/12/2025
 ms.topic: article
 ms.service: security

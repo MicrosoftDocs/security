@@ -3,8 +3,6 @@ title: Network isolation
 description: Network isolation is part of the protect networks pillar of the Secure Future Initiative (SFI)and aligns with the Zero Trust principles of Verify Explicitly, Least Privilege, and Assume Breach to ensure that corporate and cloud networks are secured against unauthorized internal access and external intrusions. 
 ms.date: 10/03/2025
 ms.service: security
-author: leonyen
-ms.author: v-leonyen
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:

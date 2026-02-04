@@ -3,8 +3,6 @@ title: Adopt standard SDKs for identity
 description: Adopt standard SDKs for identity is part of the Protect identities and secrets pillar of the Secure Future Initiative (SFI), which focuses on hardening authentication, eliminating unmanaged credentials, enforcing Zero Trust principles, and protecting cryptographic keys. It ensures identity is verifiable, access is auditable, and secrets are defended with rigor across the digital estate. 
 ms.date: 11/06/2025
 ms.service: security
-author: leonyen
-ms.author: v-leonyen
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:

@@ -4,9 +4,6 @@
 # Mandatory fields.
 title: Failure Modes in Machine Learning
 description: Machine Learning Threat Taxonomy
-author: orspod
-ms.author: orspodek
-manager: orspodek
 ms.date: 03/12/2025
 ms.topic: article
 ms.service: security

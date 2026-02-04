@@ -57,6 +57,14 @@
         "privileged-access-workstations/*.md": "Privileged access",
         "privileged-access-workstations/*.yml": "Privileged access"
       },
+      "author": {
+        "security-docs/ransomeware/**/*.md": "poliveria",
+        "security-docs/ransomeware/**/*.yml": "poliveria"
+      },
+      "ms.author": {
+        "security-docs/ransomeware/**/*.md": "pauloliveria",
+        "security-docs/ransomeware/**/*.yml": "pauloliveria"
+      },
       "feedback_system": {
         "privileged-access-workstations/**/*.md": "None",
         "ai-red-team/**/*.md": "None"

@@ -8,9 +8,9 @@ metadata:
   description: Find security related documentation and information from across Microsoft.
   ms.service: security
   ms.topic: landing-page
-  author: kenwith
-  ms.author: kenwith
-  manager: femila
+  author: orspod
+  ms.author: orspodek
+  manager: orspodek
   ms.date: 03/12/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new

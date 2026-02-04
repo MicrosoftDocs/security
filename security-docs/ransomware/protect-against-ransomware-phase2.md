@@ -1,7 +1,5 @@
 ---
 title: "Limit the impact that ransomware attacks can have"
-ms.author: kenwith
-author: kenwith
 ms.date: 10/16/2024
 f1.keywords:
 - NOCSH

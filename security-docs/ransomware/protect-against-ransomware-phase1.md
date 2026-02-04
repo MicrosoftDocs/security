@@ -1,8 +1,6 @@
 ---
 title: "Prepare for ransomware attacks with a backup and recovery plan"
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
-ms.author: kenwith
-author: kenwith
 ms.date: 10/16/2024
 f1.keywords:
 - NOCSH

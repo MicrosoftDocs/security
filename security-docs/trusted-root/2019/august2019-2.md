@@ -3,8 +3,6 @@ title: August 2019 Deployment Notice for Microsoft Trusted Root Program
 description: This document provides details about the deployment Notice for Microsoft Trusted Root Program.
 ms.date: 08/14/2019
 ms.service: security
-ms.author: kenwith
-author: kenwith
 manager: dougeby
 ms.topic: conceptual
 ---

@@ -5,8 +5,6 @@ ms.service: security
 ms.subservice: privileged-access
 ms.topic: overview
 ms.date: 06/20/2024
-ms.author: kenwith
-author: kenwith
 
 ms.reviewer: mas
 ---

@@ -3,8 +3,6 @@ title: Zero Trust for source code access - Microsoft Secure Future Initiative
 description: Secure all tenants and their resources is part of the Protect engineering systems pillar of the Secure Future Initiative (SFI), which focuses on reducing attack surface and lateral movement risk by enforcing strict tenant governance, modernizing platform dependencies, and isolating production access. It emphasizes Zero Trust by default, ensuring that every tenant, system, and user operates under minimum necessary access and hardened boundaries. 
 ms.date: 10/03/2025
 ms.service: security
-author: leonyen
-ms.author: v-leonyen
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:

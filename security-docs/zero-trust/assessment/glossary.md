@@ -3,7 +3,6 @@ title: "Zero Trust glossary: Risk, User Impact, and Cost"
 description: "Learn how to use the Zero Trust assessment glossary to measure Risk Level, User Impact, and Implementation Cost, ensuring a structured approach to security."
 author: HULKsmashGithub
 ms.author: jayrusso
-manager: dougeby
 ms.service: entra
 ms.topic: concept-article
 ms.date: 10/10/2025

@@ -5,8 +5,6 @@ ms.service: security
 ms.subservice: privileged-access
 ms.topic: conceptual
 ms.date: 12/15/2020
-ms.author: kenwith
-author: kenwith
 ms.reviewer: mas
 ---
 # Privileged access: Intermediaries

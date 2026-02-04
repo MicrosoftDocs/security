@@ -4,8 +4,6 @@ description: Learn how to apply the principles of Zero Trust to your environment
 ms.date: 02/06/2025
 ms.update-cycle: 180-days
 ms.service: security
-author: BrendaCarter
-ms.author: bcarter
 ms.subservice: zero-trust
 ms.topic: overview
 ms.collection:

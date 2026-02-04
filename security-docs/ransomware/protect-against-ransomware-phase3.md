@@ -1,11 +1,8 @@
 ---
 title: "Make it hard for ransomware attacks to happen to your organization"
-ms.author: kenwith
-author: kenwith
 ms.date: 10/16/2024
 f1.keywords:
 - NOCSH
-manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: security

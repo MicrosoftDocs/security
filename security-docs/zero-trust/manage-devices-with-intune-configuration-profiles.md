@@ -1,13 +1,10 @@
 ---
 title: "Step 5. Deploy device profiles in Microsoft Intune"
-ms.author: bcarter
 ms.subservice: zero-trust
-author: brendacarter
 f1.keywords:
 - configuration profiles
 - Windows security baselines for Intune
 - customize configuration profiles
-manager: dougeby
 ms.date: 03/14/2025
 audience: ITPro
 description: Get started with configuration profiles to enforce secure settings on devices using Intune to transition these security controls to the cloud.

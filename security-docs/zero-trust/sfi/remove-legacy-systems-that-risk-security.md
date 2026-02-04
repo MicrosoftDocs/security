@@ -3,8 +3,6 @@ title: Remove legacy systems that risk security – Zero Trust
 description: Remove legacy systems that risk security is part of the protect tenants and isolate production systems pillar of the Secure Future Initiative (SFI), focusing on removing legacy and unmanaged tenants to reduce Microsoft’s attack surface.
 ms.date: 08/05/2025
 ms.service: security
-author: brendacarter
-ms.author: bcarter
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection: 

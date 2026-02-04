@@ -5,8 +5,6 @@ ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
 ms.date: 09/29/2025
-ms.author: kenwith
-author: kenwith
 ms.reviewer: mas
 ---
 # Security Adoption Resources

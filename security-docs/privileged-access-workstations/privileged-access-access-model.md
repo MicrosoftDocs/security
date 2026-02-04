@@ -5,8 +5,6 @@ ms.service: security
 ms.subservice: privileged-access
 ms.topic: conceptual
 ms.date: 04/27/2021
-ms.author: kenwith
-author: kenwith
 
 ms.reviewer: mas
 ---

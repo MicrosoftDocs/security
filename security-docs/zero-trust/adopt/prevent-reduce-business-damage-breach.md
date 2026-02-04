@@ -3,8 +3,6 @@ title: Prevent or reduce business damage from a breach with Zero Trust
 description: Prevent or reduce business damage from a breach with Zero Trust.  
 ms.date: 05/05/2025
 ms.service: security
-author: BrendaCarter
-ms.author: bcarter
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection: 

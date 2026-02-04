@@ -3,8 +3,6 @@ title: Higher security for Microsoft Entra ID apps - Microsoft Secure Future Ini
 description: Higher security for Microsoft Entra ID apps is part of the protect tenants and isolate production systems pillar of the Secure Future Initiative (SFI). This pillar focuses on minimizing the potential impact of security incidents through eliminating legacy and unmanaged tenants, implementing consistent security practices, and enforcing continuous least-privilege access.
 ms.date: 10/03/2025
 ms.service: security
-author: leonyen
-ms.author: v-leonyen
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:

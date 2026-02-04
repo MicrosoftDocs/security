@@ -11,9 +11,6 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: kenwith
-author: kenwith
-manager: dougeby
 audience: ITPro
 ms.collection:
   - msftsolution-secops

@@ -1,15 +1,12 @@
 ---
 title: "Step 1. Implement App Protection Policies"
-ms.author: bcarter
 ms.subservice: zero-trust
-author: brendacarter
 f1.keywords:
 - Intune App Protection policies
 - APP
 - mobile application management
 - MAM
 - set up mobile ap protection
-manager: dougeby
 ms.date: 03/14/2025
 audience: ITPro
 ms.topic: how-to

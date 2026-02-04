@@ -1,8 +1,5 @@
 ---
 title: "What is ransomware?"
-ms.author: kenwith
-author: kenwith
-manager: dougeby
 ms.service: security
 ms.subservice: zero-trust
 ms.collection:

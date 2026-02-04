@@ -3,8 +3,6 @@ title: Visibility, automation, and orchestration with Zero Trust
 description: Since Zero Trust doesn't assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
 ms.service: security
 ms.subservice: zero-trust
-author: kenwith
-ms.author: kenwith
 manager: femila
 ms.date: 03/12/2025
 ms.topic: conceptual

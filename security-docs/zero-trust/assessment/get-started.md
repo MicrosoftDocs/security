@@ -9,7 +9,6 @@ ms.date: 11/03/2025
 
 author: HULKsmashGithub
 ms.author: jayrusso
-manager: dougeby
 ms.reviewer: joflore
 
 ms.custom: sfi-ga-nochange

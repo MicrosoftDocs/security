@@ -3,8 +3,6 @@ title: Centralize access to security logs - Microsoft Secure Future Initiative
 description: Centralize access to security logs is part of the Monitor and detect threats pillar of the Secure Future Initiative (SFI). This pillar supports Microsoft environments providing high-fidelity signals, comprehensive visibility, and advanced detection capabilities to identify and respond to evolving threats 
 ms.date: 10/03/2025
 ms.service: security
-author: leonyen
-ms.author: v-leonyen
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection:

@@ -1,11 +1,8 @@
 ---
 title: "Get started quickly configuring ransomware prevention so you can stop ransomware cybercriminals from targeting your organization."
-ms.author: kenwith
-author: kenwith
 ms.date: 10/13/2024
 f1.keywords:
 - NOCSH
-manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: security

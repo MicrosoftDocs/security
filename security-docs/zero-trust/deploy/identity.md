@@ -4,9 +4,7 @@ description: Identities, representing people, services, or devices, are the comm
 ms.service: security
 ms.topic: conceptual
 ms.date: 08/01/2024
-ms.author: kenwith
 ms.subservice: zero-trust
-author: kenwith
 
 ms.collection:
   - zerotrust-pillar

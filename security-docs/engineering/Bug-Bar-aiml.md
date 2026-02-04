@@ -4,9 +4,6 @@
 # Mandatory fields.
 title: AI/ML Pivots to the Security Development Lifecycle Bug Bar
 description: Machine Learning Bug Triage Guidance
-author: msmbaldwin
-ms.author: mbaldwin
-manager: rkarlin
 ms.date: 09/25/2024
 ms.topic: article
 ms.service: security

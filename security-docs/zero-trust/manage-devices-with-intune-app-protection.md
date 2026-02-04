@@ -7,7 +7,6 @@ f1.keywords:
 - mobile application management
 - MAM
 - set up mobile ap protection
-manager: dougeby
 ms.date: 03/14/2025
 audience: ITPro
 ms.topic: how-to

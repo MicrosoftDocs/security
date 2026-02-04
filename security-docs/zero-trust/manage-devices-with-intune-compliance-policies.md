@@ -4,7 +4,6 @@ ms.subservice: zero-trust
 f1.keywords:
 - Create compliance policies
 - Intune device compliance policy
-manager: dougeby
 ms.date: 03/14/2025
 audience: ITPro
 description: Learn how to create device compliance policies that specify the minimum requirements for a device to access your environment.

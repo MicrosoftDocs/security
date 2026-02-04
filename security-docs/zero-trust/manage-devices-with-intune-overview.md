@@ -6,7 +6,6 @@ f1.keywords:
 - manage device endpoints
 - zero trust deployment stack
 - device management with zero trust
-manager: dougeby
 ms.date: 03/14/2025
 audience: ITPro
 ms.topic: solution-overview

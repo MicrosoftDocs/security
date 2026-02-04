@@ -2,7 +2,6 @@
 title: Incident response overview | Microsoft Security
 description: Understand the role of incident response and the process of responding to an incident.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, incident response, cyber-attack, respond
-manager: dougeby
 ms.topic: article
 ms.collection: 
   - msftsolution-secops

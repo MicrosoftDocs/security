@@ -6,7 +6,6 @@ f1.keywords:
 - Endpoint dlp
 - data loss prevention
 - dlp policies
-manager: dougeby
 ms.date: 02/28/2025
 audience: ITPro
 ms.topic: how-to

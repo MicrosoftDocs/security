@@ -7,7 +7,6 @@ f1.keywords:
 - monitor device risk
 - monitor device compliance
 - deploy security baselines
-manager: dougeby
 ms.date: 03/14/2025
 audience: ITPro
 ms.topic: how-to

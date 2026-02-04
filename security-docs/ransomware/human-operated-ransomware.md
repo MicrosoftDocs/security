@@ -1,6 +1,5 @@
 ---
 title: "What is ransomware?"
-manager: dougeby
 ms.service: security
 ms.subservice: zero-trust
 ms.collection:

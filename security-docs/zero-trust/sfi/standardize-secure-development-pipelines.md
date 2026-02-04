@@ -3,8 +3,6 @@ title: Standardize secure development pipelines – Zero Trust
 description: Standardize secure development pipelines is part of the protect engineering systems  pillar of the Secure Future Initiative (SFI), focusing on developing governed pipeline templates for implementing centrally managed production pipelines.
 ms.date: 08/05/2025
 ms.service: security
-author: brendacarter
-ms.author: bcarter
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection: 

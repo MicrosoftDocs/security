@@ -1,8 +1,6 @@
 ---
 title: "Step 4. Require healthy and compliant devices with Intune"
-ms.author: bcarter
 ms.subservice: zero-trust
-author: brendacarter
 f1.keywords:
 - Conditional access policy
 - Microsoft Intune

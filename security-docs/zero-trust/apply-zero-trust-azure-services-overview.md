@@ -3,8 +3,6 @@ title: How do I apply Zero Trust principles to Azure services?
 description: An overview of the set of articles that describe how to apply Zero Trust principles to Microsoft Azure services.
 ms.date: 05/06/2025    
 ms.service: security
-author: BrendaCarter
-ms.author: bcarter
 ms.subservice: zero-trust
 ms.topic: conceptual
 ms.collection: 

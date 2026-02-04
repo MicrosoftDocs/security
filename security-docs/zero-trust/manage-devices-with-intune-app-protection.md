@@ -1,8 +1,6 @@
 ---
 title: "Step 1. Implement App Protection Policies"
-ms.author: bcarter
 ms.subservice: zero-trust
-author: brendacarter
 f1.keywords:
 - Intune App Protection policies
 - APP

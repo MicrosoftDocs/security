@@ -76,7 +76,7 @@ sections:
     - componentType: card
       title: Verify explicitly
       summary: Always authenticate and authorize based on all available data points including user identity, location, device health, service or workload, data classification, and anomalies.
-      imageUrl: /security/media/security-hub/microsoft-entra.png
+      imageUrl: ""
       links:
         - componentType: link
           url: /security/zero-trust/zero-trust-overview
@@ -84,7 +84,7 @@ sections:
     - componentType: card
       title: Use least privilege access
       summary: Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection to help minimize risk and protect productivity.
-      imageUrl: /security/media/security-hub/microsoft-defender.png
+      imageUrl: ""
       links: 
         - componentType: link
           url: /security/zero-trust/deploy/identity
@@ -92,7 +92,7 @@ sections:
     - componentType: card
       title: Assume breach
       summary: Minimize blast radius and segment access. Verify end-to-end encryption. Use analytics to get visibility, drive threat detection, and improve defenses continuously.
-      imageUrl: /security/media/security-hub/microsoft-sentinel.png
+      imageUrl: ""
       links:
         - componentType: link
           url: /security/zero-trust/deploy/visibility-automation-orchestration
@@ -103,48 +103,30 @@ sections:
     title: Deploy Zero Trust by pillar
     summary: Implement Zero Trust across your organization with comprehensive technical deployment guides for each security pillar. Each guide provides step-by-step instructions, configuration recommendations, and best practices.
     blocks:
-      - componentType: icon-card
+      - componentType: summary-card
         title: Identity
         summary: Secure identities with strong authentication, conditional access, and comprehensive identity protection across cloud and on-premises environments.
         url: /security/zero-trust/deploy/identity
-        icon:
-          componentType: image
-          src: /security/media/security-hub/microsoft-entra.png
-      - componentType: icon-card
+      - componentType: summary-card
         title: Endpoints
         summary: Protect devices with comprehensive endpoint security, compliance policies, and unified endpoint management using Microsoft Intune and Defender.
         url: /security/zero-trust/deploy/endpoints
-        icon:
-          componentType: image
-          src: /security/media/security-hub/microsoft-defender.png
-      - componentType: icon-card
+      - componentType: summary-card
         title: Applications
         summary: Secure applications with modern authentication, API protection, and application security policies across SaaS, on-premises, and custom apps.
         url: /security/zero-trust/deploy/applications
-        icon:
-          componentType: image
-          src: /security/media/security-hub/microsoft-defender.png
-      - componentType: icon-card
+      - componentType: summary-card
         title: Data
         summary: Protect sensitive information with classification, encryption, data loss prevention, and comprehensive information protection policies.
         url: /security/zero-trust/deploy/data
-        icon:
-          componentType: image
-          src: /security/media/security-hub/microsoft-purview.png
-      - componentType: icon-card
+      - componentType: summary-card
         title: Infrastructure
         summary: Secure your infrastructure with workload protection, configuration management, and security controls for Azure, hybrid, and multicloud environments.
         url: /security/zero-trust/deploy/infrastructure
-        icon:
-          componentType: image
-          src: /security/media/security-hub/microsoft-defender-for-cloud.png
-      - componentType: icon-card
+      - componentType: summary-card
         title: Networks
         summary: Implement network security with segmentation, encryption, threat protection, and secure connectivity for modern hybrid work scenarios.
         url: /security/zero-trust/deploy/networks
-        icon:
-          componentType: image
-          src: /security/media/security-hub/microsoft-sentinel.png
 
 # Assessment and Progress Tracking
   - componentType: cards

@@ -67,6 +67,48 @@ sections:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
 
+# Most Viewed Content
+  - componentType: cards
+    title: Most viewed Zero Trust content
+    summary: |
+      Discover the most popular Zero Trust resources based on thousands of visits from security professionals and IT implementers. Start with these highly valued guides and frameworks.
+    blocks:
+    - componentType: card
+      title: What is Zero Trust?
+      summary: Understand the Zero Trust security model, learn about the core principles, and discover how to apply Zero Trust architecture using Microsoft 365 and Azure services. 6,800+ monthly views.
+      imageUrl: /security/media/hubpage/document-icon.png
+      links:
+        - componentType: link
+          url: /security/zero-trust/zero-trust-overview
+          text: Read overview
+    - componentType: card
+      title: Zero Trust Assessment
+      summary: Automate security checks across hundreds of configuration items with the open-source Zero Trust Assessment tool. Over 7,400+ monthly views for assessment resources.
+      imageUrl: /security/media/hubpage/document-icon.png
+      links:
+        - componentType: link
+          url: /security/zero-trust/assessment/overview
+          text: Learn about assessment
+        - componentType: link
+          url: /security/zero-trust/assessment/get-started
+          text: Get started
+    - componentType: card
+      title: Zero Trust for Microsoft 365 Copilot
+      summary: Apply Zero Trust principles to Microsoft 365 Copilot and Copilot for web-grounded prompts with comprehensive security guidance. 2,500+ monthly views.
+      imageUrl: /security/media/hubpage/document-icon.png
+      links:
+        - componentType: link
+          url: /security/zero-trust/copilots/zero-trust-microsoft-365-copilot
+          text: Secure Copilot
+    - componentType: card
+      title: Identity and device access configurations
+      summary: Recommended Zero Trust identity and device access policies for Microsoft 365 enterprise environments. 2,200+ monthly views across configuration guides.
+      imageUrl: /security/media/hubpage/document-icon.png
+      links:
+        - componentType: link
+          url: /security/zero-trust/zero-trust-identity-device-access-policies-overview
+          text: View configurations
+
 # Zero Trust Principles
   - componentType: cards
     title: Understanding Zero Trust
@@ -76,7 +118,7 @@ sections:
     - componentType: card
       title: Verify explicitly
       summary: Always authenticate and authorize based on all available data points including user identity, location, device health, service or workload, data classification, and anomalies.
-      imageUrl: ""
+      imageUrl: /security/media/hubpage/id-admin.png
       links:
         - componentType: link
           url: /security/zero-trust/zero-trust-overview
@@ -84,7 +126,7 @@ sections:
     - componentType: card
       title: Use least privilege access
       summary: Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection to help minimize risk and protect productivity.
-      imageUrl: ""
+      imageUrl: /security/media/hubpage/sec-op.png
       links: 
         - componentType: link
           url: /security/zero-trust/deploy/identity
@@ -92,7 +134,7 @@ sections:
     - componentType: card
       title: Assume breach
       summary: Minimize blast radius and segment access. Verify end-to-end encryption. Use analytics to get visibility, drive threat detection, and improve defenses continuously.
-      imageUrl: ""
+      imageUrl: /security/media/hubpage/info-prot.png
       links:
         - componentType: link
           url: /security/zero-trust/deploy/visibility-automation-orchestration
@@ -103,30 +145,48 @@ sections:
     title: Deploy Zero Trust by pillar
     summary: Implement Zero Trust across your organization with comprehensive technical deployment guides for each security pillar. Each guide provides step-by-step instructions, configuration recommendations, and best practices.
     blocks:
-      - componentType: summary-card
+      - componentType: icon-card
         title: Identity
         summary: Secure identities with strong authentication, conditional access, and comprehensive identity protection across cloud and on-premises environments.
         url: /security/zero-trust/deploy/identity
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security/media/hubpage/id-admin.svg
+      - componentType: icon-card
         title: Endpoints
         summary: Protect devices with comprehensive endpoint security, compliance policies, and unified endpoint management using Microsoft Intune and Defender.
         url: /security/zero-trust/deploy/endpoints
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security/media/hubpage/sec-op.svg
+      - componentType: icon-card
         title: Applications
         summary: Secure applications with modern authentication, API protection, and application security policies across SaaS, on-premises, and custom apps.
         url: /security/zero-trust/deploy/applications
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security/media/hubpage/sec-eng.svg
+      - componentType: icon-card
         title: Data
         summary: Protect sensitive information with classification, encryption, data loss prevention, and comprehensive information protection policies.
         url: /security/zero-trust/deploy/data
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security/media/hubpage/info-prot.svg
+      - componentType: icon-card
         title: Infrastructure
         summary: Secure your infrastructure with workload protection, configuration management, and security controls for Azure, hybrid, and multicloud environments.
         url: /security/zero-trust/deploy/infrastructure
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security/media/hubpage/sec-eng.svg
+      - componentType: icon-card
         title: Networks
         summary: Implement network security with segmentation, encryption, threat protection, and secure connectivity for modern hybrid work scenarios.
         url: /security/zero-trust/deploy/networks
+        icon:
+          componentType: image
+          src: /security/media/hubpage/sec-op.svg
 
 # Assessment and Progress Tracking
   - componentType: cards
@@ -266,7 +326,7 @@ sections:
     - componentType: card
       title: Establish the guiding principles and core components of Zero Trust
       summary: Complete learning path covering Zero Trust fundamentals across all technology pillars—identity, endpoints, applications, networks, infrastructure, and data. Perfect for beginners seeking comprehensive understanding.
-      imageUrl: ""
+      imageUrl: /security/media/hubpage/learn.png
       links:
         - componentType: link
           url: /training/paths/zero-trust-principles/
@@ -274,7 +334,7 @@ sections:
     - componentType: card
       title: Introduction to Zero Trust and best practice frameworks
       summary: Advanced training module for cybersecurity architects covering Zero Trust concepts, Microsoft Cybersecurity Reference Architectures (MCRA), Cloud Adoption Framework (CAF), and Well-Architected Framework (WAF).
-      imageUrl: ""
+      imageUrl: /security/media/hubpage/learn.png
       links:
         - componentType: link
           url: /training/modules/introduction-zero-trust-best-practice-frameworks/
@@ -282,7 +342,7 @@ sections:
     - componentType: card
       title: Apply principles of Zero Trust to Microsoft Copilots
       summary: Intermediate training on implementing robust Zero Trust security frameworks for Microsoft Copilot and Microsoft 365 Copilot deployments with data protection and access controls.
-      imageUrl: ""
+      imageUrl: /security/media/hubpage/learn.png
       links:
         - componentType: link
           url: /training/modules/apply-principles-zero-trust-microsoft-copilot/
@@ -293,30 +353,48 @@ sections:
     title: Validate your Zero Trust expertise with Microsoft Credentials
     summary: Demonstrate your technical capabilities with Microsoft Applied Skills credentials that validate real-world Zero Trust scenarios, or prove comprehensive security knowledge with role-based Certifications that align with Zero Trust principles.
     blocks:
-      - componentType: summary-card
+      - componentType: icon-card
         title: Applied Skills - Prepare security and compliance for Microsoft 365 Copilot
         summary: Validate your ability to prepare Microsoft 365 security and compliance to support Copilot using Microsoft Defender XDR, Microsoft Entra, Microsoft Intune, and Microsoft Purview.
         url: /credentials/applied-skills/prepare-security-and-compliance-to-support-microsoft-365-copilot/
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security/media/hubpage/applied-skills.png
+      - componentType: icon-card
         title: Applied Skills - Defend against cyberthreats with Microsoft Defender XDR
         summary: Demonstrate your ability to use Microsoft Defender XDR to detect and respond to cyberthreats, including endpoint investigation and evidence gathering capabilities.
         url: /credentials/applied-skills/defend-against-cyberthreats-with-microsoft-defender-xdr/
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security/media/hubpage/applied-skills.png
+      - componentType: icon-card
         title: Applied Skills - Secure Azure services with Defender for Cloud
         summary: Show your ability to implement regulatory compliance controls as recommended by the Microsoft cloud security benchmark using Microsoft Defender for Cloud.
         url: /credentials/applied-skills/secure-azure-services-and-workloads-with-microsoft-defender-for-cloud-regulatory-compliance-controls/
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security/media/hubpage/applied-skills.png
+      - componentType: icon-card
         title: Applied Skills - Implement information protection with Microsoft Purview
         summary: Validate your ability to discover, classify, and protect sensitive data in Microsoft 365 using Microsoft Purview Information Protection and Data Loss Prevention.
         url: /credentials/applied-skills/implement-information-protection-and-data-loss-prevention-by-using-microsoft-purview/
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security/media/hubpage/applied-skills.png
+      - componentType: icon-card
         title: Certification - Microsoft Certified Security Operations Analyst Associate
         summary: Prove your expertise in investigating, searching for, and mitigating threats using Microsoft Sentinel, Defender XDR, and Microsoft Defender for Cloud.
         url: /credentials/certifications/security-operations-analyst/
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security/media/hubpage/certification.png
+      - componentType: icon-card
         title: Certification - Microsoft Certified Cybersecurity Architect Expert
         summary: Demonstrate advanced skills in designing and evolving cybersecurity strategy across Zero Trust, governance risk compliance, security operations, and data and applications.
         url: /credentials/certifications/cybersecurity-architect-expert/
+        icon:
+          componentType: image
+          src: /security/media/hubpage/certification.png
 
 # Assessment Tools
   - componentType: cards
@@ -327,15 +405,15 @@ sections:
     - componentType: card
       title: Zero Trust Security Posture Assessment
       summary: Interactive online tool to evaluate your Zero Trust maturity level across all pillars. Get instant insights into your current security posture and prioritized recommendations for improvement.
-      imageUrl: ""
+      imageUrl: /security/media/hubpage/plan-icon.png
       links:
         - componentType: link
           url: https://www.microsoft.com/security/business/zero-trust/maturity-model-assessment-tool
           text: Take assessment
     - componentType: card
       title: Zero Trust Assessment automated tool
-      summary: PowerShell-based open source tool that automatically tests hundreds of security configuration items against Microsoft best practices, industry standards, and Zero Trust principles.
-      imageUrl: ""
+      summary: PowerShell-based open source tool that automatically tests hundreds of security configuration items against Microsoft best practices, industry standards, and Zero Trust principles. 7,400+ monthly views.
+      imageUrl: /security/media/hubpage/github.png
       links:
         - componentType: link
           url: /security/zero-trust/assessment/overview
@@ -346,7 +424,7 @@ sections:
     - componentType: card
       title: Zero Trust Assessment strategy workshop
       summary: Downloadable Excel workbook for IT teams to evaluate maturity, track implementation progress, and plan Zero Trust initiatives across your organization's security pillars.
-      imageUrl: ""
+      imageUrl: /security/media/hubpage/plan-icon.png
       links:
         - componentType: link
           url: https://aka.ms/ztworkshop
@@ -360,16 +438,16 @@ sections:
     blocks:
     - componentType: card
       title: Technical illustrations and architecture
-      summary: Visual guides and architecture diagrams that illustrate Zero Trust concepts, deployment patterns, and integration scenarios.
-      imageUrl: ""
+      summary: Visual guides and architecture diagrams that illustrate Zero Trust concepts, deployment patterns, and integration scenarios. 700+ monthly views.
+      imageUrl: /security/media/hubpage/document-icon.png
       links:
         - componentType: link
           url: /security/zero-trust/zero-trust-tech-illus
           text: View illustrations
     - componentType: card
       title: Partner resources
-      summary: Resources for Microsoft partners to help customers implement Zero Trust, including guidance, tools, and best practices for partner-led implementations.
-      imageUrl: ""
+      summary: Resources for Microsoft partners to help customers implement Zero Trust, including guidance, tools, and best practices for partner-led implementations. 800+ monthly views.
+      imageUrl: /security/media/hubpage/document-icon.png
       links:
         - componentType: link
           url: /security/zero-trust/zero-trust-partner-kit
@@ -377,7 +455,7 @@ sections:
     - componentType: card
       title: Integration and orchestration
       summary: Integrate SaaS applications, implement visibility and automation, and orchestrate security operations with Zero Trust principles.
-      imageUrl: ""
+      imageUrl: /security/media/hubpage/document-icon.png
       links:
         - componentType: link
           url: /security/zero-trust/integrate-saas-apps

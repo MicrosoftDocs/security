@@ -75,10 +75,10 @@ conceptualContent:
     ## CARD 1 ######################
     - title: Getting started
       links:
-        - text: What is Zero Trust? (6,800+ monthly views)
+        - text: What is Zero Trust?
           url: /security/zero-trust/zero-trust-overview
           itemType: concept
-        - text: Zero Trust Guidance Center (5,500+ views)
+        - text: Zero Trust Guidance Center
           url: /security/zero-trust/
           itemType: get-started
         - text: Zero Trust deployment overview
@@ -90,10 +90,10 @@ conceptualContent:
     ## CARD 2 ######################
     - title: Assessment & adoption
       links:
-        - text: Zero Trust Assessment overview (4,200+ views)
+        - text: Zero Trust Assessment overview
           url: /security/zero-trust/assessment/overview
           itemType: overview
-        - text: Run the Zero Trust Assessment (3,300+ views)
+        - text: Run the Zero Trust Assessment
           url: /security/zero-trust/assessment/get-started
           itemType: how-to-guide
         - text: Zero Trust Adoption Framework
@@ -105,7 +105,7 @@ conceptualContent:
     ## CARD 3 ######################
     - title: Microsoft Copilots
       links:
-        - text: Zero Trust for Microsoft 365 Copilot (1,900+ views)
+        - text: Zero Trust for Microsoft 365 Copilot
           url: /security/zero-trust/copilots/zero-trust-microsoft-365-copilot
           itemType: concept
         - text: Zero Trust for Microsoft Copilot
@@ -120,7 +120,7 @@ conceptualContent:
     ## CARD 4 ######################
     - title: Identity & device access
       links:
-        - text: Identity - Zero Trust pillar (1,700+ views)
+        - text: Identity - Zero Trust pillar
           url: /security/zero-trust/deploy/identity
           itemType: concept
         - text: Identity and device access policies
@@ -129,7 +129,7 @@ conceptualContent:
         - text: Common identity and device access policies
           url: /security/zero-trust/zero-trust-identity-device-access-policies-common
           itemType: reference
-        - text: Zero Trust partner kit (800+ views)
+        - text: Zero Trust partner kit
           url: /security/zero-trust/zero-trust-partner-kit
           itemType: reference
     ## CARD 5 ######################
@@ -138,7 +138,7 @@ conceptualContent:
         - text: Secure Future Initiative overview
           url: /security/zero-trust/sfi/secure-future-initiative-overview
           itemType: overview
-        - text: Phishing-resistant MFA (1,200+ views)
+        - text: Phishing-resistant MFA
           url: /security/zero-trust/sfi/phishing-resistant-mfa
           itemType: concept
         - text: Eliminate identity lateral movement
@@ -209,7 +209,7 @@ additionalContent:
         - title: "Certification: Security Operations Analyst Associate"
           summary: "Prove expertise in threat investigation and mitigation using Microsoft security solutions."
           url: /credentials/certifications/security-operations-analyst/
-    - title: Assessment tools (7,400+ monthly views)
+    - title: Assessment tools
       items:
         - title: "Zero Trust Security Posture Assessment"
           summary: "Interactive online tool to evaluate your Zero Trust maturity level across all pillars."

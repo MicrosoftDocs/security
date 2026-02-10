@@ -36,16 +36,6 @@ The automated Zero Trust Assessment is an open-source PowerShell tool that tests
 
 :::image type="content" source="assessment/media/results-overview.png" alt-text="Screenshot of a sample run of the Zero Trust Assessment showing results for an example company called Contoso.":::
 
-### Interactive Security Posture Assessment
-
-The Microsoft Zero Trust Security Posture Assessment is an interactive online tool that evaluates your Zero Trust maturity level across all security pillars. Complete a guided questionnaire to receive a customized maturity score and recommendations.
-
-**Best for:** Security architects and project leads who want to evaluate organizational readiness and build executive buy-in.
-
-[Take the Security Posture Assessment](https://www.microsoft.com/security/business/zero-trust/maturity-model-assessment-tool)
-
-:::image type="content" source="./media/adoption-guide/zero-trust-posture-assessment-example.png" alt-text="Screenshot of assessment questions for identities." lightbox="./media/adoption-guide/zero-trust-posture-assessment-example.png":::
-
 ### Zero Trust Assessment Strategy Workshop
 
 Download the Zero Trust Assessment strategy workshop Excel workbook to manually assess your environment and track your improvement roadmap. This structured workbook guides you through each Zero Trust pillar with clear evaluation criteria.
@@ -55,6 +45,16 @@ Download the Zero Trust Assessment strategy workshop Excel workbook to manually 
 [Download the workshop (Excel)](https://aka.ms/ztworkshop)
 
 :::image type="content" source="./media/zero-trust-assessment-strategy-workshop.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/zero-trust-assessment-strategy-workshop.png":::
+
+### Interactive Security Posture Assessment
+
+The Microsoft Zero Trust Security Posture Assessment is an interactive online tool that evaluates your Zero Trust maturity level across all security pillars. Complete a guided questionnaire to receive a customized maturity score and recommendations.
+
+**Best for:** Security architects and project leads who want to evaluate organizational readiness and build executive buy-in.
+
+[Take the Security Posture Assessment](https://www.microsoft.com/security/business/zero-trust/maturity-model-assessment-tool)
+
+:::image type="content" source="./media/adoption-guide/zero-trust-posture-assessment-example.png" alt-text="Screenshot of assessment questions for identities." lightbox="./media/adoption-guide/zero-trust-posture-assessment-example.png":::
 
 ## Progress tracking for adoption scenarios
 

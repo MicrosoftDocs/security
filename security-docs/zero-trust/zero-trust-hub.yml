@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Zero Trust documentation
+title: Zero Trust security guidance
 summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using deployment plans, assessment tools, and strategic guidance.
 brand: azure
 
 metadata:
-  title: Zero Trust documentation
+  title: Zero Trust security guidance
   description: Comprehensive Zero Trust guidance, assessment tools, deployment plans, and resources to implement a modern security strategy across your organization. Learn about Zero Trust principles, adoption frameworks, and technical implementation guidance.
   ms.service: security
   ms.subservice: zero-trust
@@ -78,9 +78,6 @@ conceptualContent:
         - text: What is Zero Trust?
           url: /security/zero-trust/zero-trust-overview
           itemType: concept
-        - text: Zero Trust Guidance Center
-          url: /security/zero-trust/
-          itemType: get-started
         - text: Zero Trust deployment overview
           url: /security/zero-trust/deploy/overview
           itemType: overview
@@ -90,13 +87,13 @@ conceptualContent:
     ## CARD 2 ######################
     - title: Assessment & adoption
       links:
-        - text: Zero Trust Assessment overview
+        - text: Zero Trust assessment overview
           url: /security/zero-trust/assessment/overview
           itemType: overview
-        - text: Run the Zero Trust Assessment
+        - text: Run the Zero Trust assessment
           url: /security/zero-trust/assessment/get-started
           itemType: how-to-guide
-        - text: Zero Trust Adoption Framework
+        - text: Zero Trust adoption framework
           url: /security/zero-trust/adopt/zero-trust-adoption-overview
           itemType: concept
         - text: Rapidly modernize security posture
@@ -105,18 +102,18 @@ conceptualContent:
     ## CARD 3 ######################
     - title: Microsoft Copilots
       links:
+        - text: Zero Trust Copilots overview
+          url: /security/zero-trust/copilots/apply-zero-trust-copilots-overview
+          itemType: overview
+        - text: Zero Trust for Security Copilot
+          url: /security/zero-trust/copilots/zero-trust-microsoft-copilot-for-security
+          itemType: concept
         - text: Zero Trust for Microsoft 365 Copilot
           url: /security/zero-trust/copilots/zero-trust-microsoft-365-copilot
           itemType: concept
         - text: Zero Trust for Microsoft Copilot
           url: /security/zero-trust/copilots/zero-trust-microsoft-copilot
           itemType: concept
-        - text: Zero Trust for Security Copilot
-          url: /security/zero-trust/copilots/zero-trust-microsoft-copilot-for-security
-          itemType: concept
-        - text: Zero Trust Copilots overview
-          url: /security/zero-trust/copilots/apply-zero-trust-copilots-overview
-          itemType: overview
     ## CARD 4 ######################
     - title: Identity & device access
       links:

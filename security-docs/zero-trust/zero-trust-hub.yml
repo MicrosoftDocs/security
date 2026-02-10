@@ -28,7 +28,7 @@ highlightedContent:
     - title: Assess your organization's Zero Trust posture
       url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
       itemType: get-started
-    - title: SFI: How Microsoft operationalized a Zero Trust strategy
+    - title: SFI - How Microsoft operationalized a Zero Trust strategy
       url: /security/zero-trust/sfi/secure-future-initiative-overview
       itemType: concept
 

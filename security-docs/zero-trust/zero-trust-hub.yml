@@ -19,13 +19,13 @@ highlightedContent:
     - title: What is Zero Trust?
       itemType: overview
       url: /security/zero-trust/zero-trust-overview
-    - title: Zero Trust Assessment
-      url: /security/zero-trust/assessment/overview
+    - title: Zero Trust assessment
+      url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
       itemType: overview
-    - title: Zero Trust Adoption Framework
+    - title: Zero Trust adoption framework
       url: /security/zero-trust/adopt/zero-trust-adoption-overview
       itemType: concept
-    - title: Secure Future Initiative
+    - title: Microsoft's Secure Future Initiative
       url: /security/zero-trust/sfi/secure-future-initiative-overview
       itemType: overview
 
@@ -36,31 +36,31 @@ productDirectory:
   summary: Implement Zero Trust across your organization with comprehensive technical deployment guides for each security pillar.
   items:
     - title: Identity
-      imageSrc: /security/media/hubpage/id-admin.svg
+      imageSrc: /security/media/hubpage/security-icons/microsoft-entra.svg
       summary: "Secure identities with strong authentication, conditional access, and comprehensive identity protection."
       url: /security/zero-trust/deploy/identity
     - title: Endpoints
-      imageSrc: /security/media/hubpage/sec-op.svg
+      imageSrc: /security/media/hubpage/security-icons/microsoft-intune.svg
       summary: "Protect devices with comprehensive endpoint security and compliance policies."
       url: /security/zero-trust/deploy/endpoints
     - title: Applications
-      imageSrc: /security/media/hubpage/sec-eng.svg
+      imageSrc: /security/media/hubpage/app-type-desktop.svg
       summary: "Secure applications with modern authentication and API protection."
       url: /security/zero-trust/deploy/applications
     - title: Data
-      imageSrc: /security/media/hubpage/info-prot.svg
+      imageSrc: /security/media/hubpage/security-icons/microsoft-purview.svg
       summary: "Protect sensitive information with classification, encryption, and data loss prevention."
       url: /security/zero-trust/deploy/data
     - title: Infrastructure
-      imageSrc: /security/media/hubpage/sec-eng.svg
+      imageSrc: /security/media/hubpage/security-icons/microsoft-defender.svg
       summary: "Secure infrastructure with workload protection and configuration management."
       url: /security/zero-trust/deploy/infrastructure
     - title: Networks
-      imageSrc: /security/media/hubpage/sec-op.svg
+      imageSrc: /security/media/hubpage/azure-networking.svg
       summary: "Implement network security with segmentation, encryption, and threat protection."
       url: /security/zero-trust/deploy/networks
     - title: Visibility, automation, and orchestration
-      imageSrc: /security/media/hubpage/plan-icon.png
+      imageSrc: /security/media/hubpage/security-icons/microsoft-sentinel.svg
       summary: "Enable comprehensive visibility and automated threat response across your environment."
       url: /security/zero-trust/deploy/visibility-automation-orchestration
     - title: Developer guidance

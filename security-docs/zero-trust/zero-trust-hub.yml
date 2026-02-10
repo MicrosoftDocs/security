@@ -21,7 +21,7 @@ highlightedContent:
       url: /security/zero-trust/zero-trust-overview
     - title: Zero Trust assessments and workshops
       url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
-      itemType: deploy
+      itemType: get-started
     - title: Zero Trust adoption framework
       url: /security/zero-trust/adopt/zero-trust-adoption-overview
       itemType: deploy

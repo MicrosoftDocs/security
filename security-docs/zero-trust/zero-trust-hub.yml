@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 title: Zero Trust security guidance
-summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using deployment plans, assessment tools, and strategic guidance.
+summary: Zero Trust is a security strategy that assumes breach and verifies every request. Implement Zero Trust protections that secure and enable your organization using deployment guides, assessment tools, and adoption frameworks aligned with the three core principles—verify explicitly, use least privilege access, and assume breach.
 brand: azure
 
 metadata:
   title: Zero Trust security guidance
-  description: Comprehensive Zero Trust guidance, assessment tools, deployment plans, and resources to implement a modern security strategy across your organization. Learn about Zero Trust principles, adoption frameworks, and technical implementation guidance.
+  description: Learn about Zero Trust, a security strategy that assumes breach and verifies every request. Find deployment guides, assessment tools, and adoption frameworks to implement Zero Trust principles that protect and enable secure operations across identity, endpoints, applications, data, infrastructure, and networks in your organization.
   ms.service: security
   ms.subservice: zero-trust
   ms.topic: hub-page

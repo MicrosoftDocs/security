@@ -21,13 +21,13 @@ highlightedContent:
       url: /security/zero-trust/zero-trust-overview
     - title: Zero Trust assessments
       url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
-      itemType: overview
+      itemType: deploy
     - title: Zero Trust adoption framework
       url: /security/zero-trust/adopt/zero-trust-adoption-overview
-      itemType: concept
+      itemType: deploy
     - title: Microsoft's Secure Future Initiative
       url: /security/zero-trust/sfi/secure-future-initiative-overview
-      itemType: overview
+      itemType: concept
 
 ## HIGHLIGHTED CONTENT END ##############################################
 

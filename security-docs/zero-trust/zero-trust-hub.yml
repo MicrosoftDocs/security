@@ -19,7 +19,7 @@ highlightedContent:
     - title: What is Zero Trust?
       itemType: overview
       url: /security/zero-trust/zero-trust-overview
-    - title: Zero Trust assessments
+    - title: Zero Trust assessments and workshops
       url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
       itemType: deploy
     - title: Zero Trust adoption framework

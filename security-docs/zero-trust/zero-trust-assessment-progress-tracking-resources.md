@@ -1,7 +1,7 @@
 ---
-title: Zero Trust Readiness and Progress Assessment
-description: Discover Zero Trust assessment tools and progress tracking resources to evaluate your security posture and streamline your Zero Trust implementation journey.
-ms.date: 01/23/2025
+title: Zero Trust Assessment Tools and Progress Tracking
+description: Learn how to assess your Zero Trust readiness, pinpoint security gaps, and create a roadmap for implementation. Track your progress with actionable resources.
+ms.date: 02/10/2026
 ms.service: security
 author: MicrosoftGuyJFlo
 ms.author: joflore
@@ -13,7 +13,7 @@ ms.collection: zerotrust
 
 [Zero Trust](zero-trust-overview.md) is a security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request came from or what resource it accessed, the Zero Trust model teaches us to "never trust, always verify."
 
-Before implementing a Zero Trust security model, start by assessing your current security posture. The assessment tools in this article help you:
+Before implementing a Zero Trust security model, assess your current security posture. The assessment tools in this article help you:
 
 - Discover where you are on your Zero Trust journey
 - Identify which security controls are already in place
@@ -99,7 +99,7 @@ Use other Zero Trust content based on a documentation set or the roles in your o
 
 ### Documentation set
 
-Follow this table for the best Zero Trust documentation set for your needs.
+Follow this table to find the best Zero Trust documentation set for your needs.
 
 |Documentation set|Helps you...|Roles|
 |---|---|---|

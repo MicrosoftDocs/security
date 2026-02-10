@@ -87,6 +87,9 @@ conceptualContent:
     ## CARD 2 ######################
     - title: Assessment & adoption
       links:
+        - text: Zero Trust assessment and progress tracking resources
+          url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
+          itemType: overview
         - text: Zero Trust assessment overview
           url: /security/zero-trust/assessment/overview
           itemType: overview
@@ -96,9 +99,6 @@ conceptualContent:
         - text: Zero Trust adoption framework
           url: /security/zero-trust/adopt/zero-trust-adoption-overview
           itemType: concept
-        - text: Rapidly modernize security posture
-          url: /security/zero-trust/adopt/rapidly-modernize-security-posture
-          itemType: how-to-guide
     ## CARD 3 ######################
     - title: Microsoft Copilots
       links:

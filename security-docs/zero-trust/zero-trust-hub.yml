@@ -218,7 +218,7 @@ additionalContent:
           summary: "Interactive online tool to evaluate your Zero Trust maturity level across all pillars."
           url: https://www.microsoft.com/security/business/zero-trust/maturity-model-assessment-tool
         - title: "Zero Trust Assessment automated tool"
-          summary: "Open source PowerShell tool that tests hundreds of security configuration items."
+          summary: "Open source tool that evaluates your Microsoft tenant configuration to determine alignment with Zero Trust security guidance."
           url: /security/zero-trust/assessment/overview
         - title: "Zero Trust Assessment strategy workshop"
           summary: "Downloadable Excel workbook for tracking implementation progress."

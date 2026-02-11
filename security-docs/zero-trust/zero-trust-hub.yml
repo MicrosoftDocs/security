@@ -21,10 +21,10 @@ highlightedContent:
       url: /security/zero-trust/zero-trust-overview
     - title: Zero Trust strategy approach
       url: /security/zero-trust/adopt/zero-trust-adoption-overview
-      itemType: deploy
+      itemType: concept
     - title: Deploying Zero Trust end-to-end
       url: https://microsoft.github.io/zerotrustassessment/
-      itemType: training
+      itemType: deploy
     - title: Assess your organization's Zero Trust posture
       url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
       itemType: get-started

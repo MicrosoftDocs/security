@@ -4,9 +4,9 @@ description: Describes the recommended Zero Trust policies to secure specific wo
 author: chrisda
 ms.author: chrisda
 ms.subservice: zero-trust
-manager: deniseb
+manager: bagol
 ms.service: security
-ms.topic: conceptual
+ms.topic: article
 audience: Admin
 f1.keywords: 
   - NOCSH
@@ -50,7 +50,7 @@ This section describes the recommended settings for Zero Trust in Exchange Onlin
 
 ### Verify automatic email forwarding to external recipients is disabled
 
-By default, outbound spam policies in Exchange Online Protection (EOP) block automatic email forwarding to external recipients done by [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) or by [mailbox forwarding](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as *SMTP forwarding*). For more information, see [Control automatic external email forwarding in Microsoft 365](/defender-office-365/outbound-spam-policies-external-email-forwarding).
+By default, outbound spam policies in [the built-in security features for all cloud mailboxes](/defender-office-365/eop-about) block automatic email forwarding to external recipients done by [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) or by [mailbox forwarding](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as *SMTP forwarding*). For more information, see [Control automatic external email forwarding in Microsoft 365](/defender-office-365/outbound-spam-policies-external-email-forwarding).
 
 In all outbound spam policies, verify the value of the **Automatic forwarding rules** setting is **Automatic - System-controlled** (the default value) or **Off - Forwarding is disabled**. Both values block automatic email forwarding to external recipients by affected users. A default policy applies to all users, and admins can create custom policies that apply to specific groups of users. For more information, see [Configure outbound spam policies in EOP](/defender-office-365/outbound-spam-policies-configure).
 

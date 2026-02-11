@@ -109,21 +109,6 @@ conceptualContent:
           url: /security/zero-trust/adopt/zero-trust-adoption-overview
           itemType: concept
     ## CARD 3 ######################
-    - title: Microsoft Copilots
-      links:
-        - text: Zero Trust Copilots overview
-          url: /security/zero-trust/copilots/apply-zero-trust-copilots-overview
-          itemType: overview
-        - text: Zero Trust for Security Copilot
-          url: /security/zero-trust/copilots/zero-trust-microsoft-copilot-for-security
-          itemType: concept
-        - text: Zero Trust for Microsoft 365 Copilot
-          url: /security/zero-trust/copilots/zero-trust-microsoft-365-copilot
-          itemType: concept
-        - text: Zero Trust for Microsoft Copilot
-          url: /security/zero-trust/copilots/zero-trust-microsoft-copilot
-          itemType: concept
-    ## CARD 4 ######################
     - title: Identity & device access
       links:
         - text: Identity - Zero Trust pillar
@@ -138,52 +123,22 @@ conceptualContent:
         - text: Zero Trust partner kit
           url: /security/zero-trust/zero-trust-partner-kit
           itemType: reference
+    ## CARD 4 ######################
+    - title: Microsoft Copilots
+      links:
+        - text: Zero Trust Copilots overview
+          url: /security/zero-trust/copilots/apply-zero-trust-copilots-overview
+          itemType: overview
+        - text: Zero Trust for Security Copilot
+          url: /security/zero-trust/copilots/zero-trust-microsoft-copilot-for-security
+          itemType: concept
+        - text: Zero Trust for Microsoft 365 Copilot
+          url: /security/zero-trust/copilots/zero-trust-microsoft-365-copilot
+          itemType: concept
+        - text: Zero Trust for Microsoft Copilot
+          url: /security/zero-trust/copilots/zero-trust-microsoft-copilot
+          itemType: concept
     ## CARD 5 ######################
-    - title: Secure Future Initiative
-      links:
-        - text: Secure Future Initiative overview
-          url: /security/zero-trust/sfi/secure-future-initiative-overview
-          itemType: overview
-        - text: Phishing-resistant MFA
-          url: /security/zero-trust/sfi/phishing-resistant-mfa
-          itemType: concept
-        - text: Eliminate identity lateral movement
-          url: /security/zero-trust/sfi/eliminate-identity-lateral-movement
-          itemType: concept
-        - text: Network isolation
-          url: /security/zero-trust/sfi/network-isolation
-          itemType: concept
-    ## CARD 6 ######################
-    - title: Specialized scenarios
-      links:
-        - text: Zero Trust for Azure IaaS
-          url: /security/zero-trust/azure-infrastructure-overview
-          itemType: overview
-        - text: Zero Trust for Azure Virtual Desktop
-          url: /security/zero-trust/azure-infrastructure-avd
-          itemType: concept
-        - text: Small business guidance
-          url: /security/zero-trust/guidance-smb-partner
-          itemType: concept
-        - text: Technical illustrations
-          url: /security/zero-trust/zero-trust-tech-illus
-          itemType: reference
-    ## CARD 7 ######################
-    - title: Developer resources
-      links:
-        - text: Develop using Zero Trust principles
-          url: /security/zero-trust/develop/overview
-          itemType: overview
-        - text: Configure tokens, group claims, and app roles
-          url: /security/zero-trust/develop/configure-tokens-group-claims-app-roles
-          itemType: how-to-guide
-        - text: Register applications
-          url: /security/zero-trust/develop/app-registration
-          itemType: how-to-guide
-        - text: Secure with Continuous Access Evaluation
-          url: /security/zero-trust/develop/secure-with-cae
-          itemType: concept
-    ## CARD 8 ######################
     - title: Compliance frameworks
       links:
         - text: CISA Zero Trust Maturity Model
@@ -198,6 +153,51 @@ conceptualContent:
         - text: Zero Trust assessment resources
           url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
           itemType: reference
+    ## CARD 6 ######################
+    - title: Secure Future Initiative
+      links:
+        - text: Secure Future Initiative overview
+          url: /security/zero-trust/sfi/secure-future-initiative-overview
+          itemType: overview
+        - text: Phishing-resistant MFA
+          url: /security/zero-trust/sfi/phishing-resistant-mfa
+          itemType: concept
+        - text: Eliminate identity lateral movement
+          url: /security/zero-trust/sfi/eliminate-identity-lateral-movement
+          itemType: concept
+        - text: Network isolation
+          url: /security/zero-trust/sfi/network-isolation
+          itemType: concept
+    ## CARD 7 ######################
+    - title: Specialized scenarios
+      links:
+        - text: Zero Trust for Azure IaaS
+          url: /security/zero-trust/azure-infrastructure-overview
+          itemType: overview
+        - text: Zero Trust for Azure Virtual Desktop
+          url: /security/zero-trust/azure-infrastructure-avd
+          itemType: concept
+        - text: Small business guidance
+          url: /security/zero-trust/guidance-smb-partner
+          itemType: concept
+        - text: Technical illustrations
+          url: /security/zero-trust/zero-trust-tech-illus
+          itemType: reference
+    ## CARD 8 ######################
+    - title: Developer resources
+      links:
+        - text: Develop using Zero Trust principles
+          url: /security/zero-trust/develop/overview
+          itemType: overview
+        - text: Configure tokens, group claims, and app roles
+          url: /security/zero-trust/develop/configure-tokens-group-claims-app-roles
+          itemType: how-to-guide
+        - text: Register applications
+          url: /security/zero-trust/develop/app-registration
+          itemType: how-to-guide
+        - text: Secure with Continuous Access Evaluation
+          url: /security/zero-trust/develop/secure-with-cae
+          itemType: concept
 
 additionalContent:
   sections:

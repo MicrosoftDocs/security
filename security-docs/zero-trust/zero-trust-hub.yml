@@ -19,13 +19,16 @@ highlightedContent:
     - title: What is Zero Trust?
       itemType: overview
       url: /security/zero-trust/zero-trust-overview
-    - title: Zero Trust assessments and workshops
-      url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
-      itemType: get-started
-    - title: Zero Trust adoption framework
+    - title: Zero Trust strategy approach
       url: /security/zero-trust/adopt/zero-trust-adoption-overview
       itemType: deploy
-    - title: Microsoft's Secure Future Initiative
+    - title: Deploying Zero Trust end to end guidance
+      url: https://microsoft.github.io/zerotrustassessment/
+      itemType: get-started
+    - title: Assess your organization's Zero Trust posture
+      url: /security/zero-trust/assessment/overview
+      itemType: get-started
+    - title: "SFI: How Microsoft operationalized a Zero Trust strategy"
       url: /security/zero-trust/sfi/secure-future-initiative-overview
       itemType: concept
 
@@ -212,7 +215,7 @@ additionalContent:
           summary: "Interactive online tool to evaluate your Zero Trust maturity level across all pillars."
           url: https://www.microsoft.com/security/business/zero-trust/maturity-model-assessment-tool
         - title: "Zero Trust Assessment automated tool"
-          summary: "Open source PowerShell tool that tests hundreds of security configuration items."
+          summary: "Open source tool that evaluates your Microsoft tenant configuration to determine alignment with Zero Trust security guidance."
           url: /security/zero-trust/assessment/overview
         - title: "Zero Trust Assessment strategy workshop"
           summary: "Downloadable Excel workbook for tracking implementation progress."

@@ -22,13 +22,13 @@ highlightedContent:
     - title: Zero Trust strategy approach
       url: /security/zero-trust/adopt/zero-trust-adoption-overview
       itemType: deploy
-    - title: Deploying Zero Trust end to end guidance
+    - title: Deploying Zero Trust end-to-end
       url: https://microsoft.github.io/zerotrustassessment/
-      itemType: get-started
+      itemType: training
     - title: Assess your organization's Zero Trust posture
-      url: /security/zero-trust/assessment/overview
+      url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
       itemType: get-started
-    - title: "SFI: How Microsoft operationalized a Zero Trust strategy"
+    - title: SFI - How Microsoft operationalized a Zero Trust strategy
       url: /security/zero-trust/sfi/secure-future-initiative-overview
       itemType: concept
 
@@ -86,6 +86,9 @@ conceptualContent:
           itemType: overview
         - text: Microsoft 365 Zero Trust deployment plan
           url: /security/zero-trust/microsoft-365-zero-trust
+          itemType: deploy
+        - text: Deploy your identity infrastructure for Microsoft 365
+          url: /microsoft-365/enterprise/deploy-identity-solution-overview
           itemType: deploy
     ## CARD 2 ######################
     - title: Assessment & adoption

@@ -27,8 +27,6 @@ In this download:
 > [!div class="button"]
 > [Download co-branded Zero Trust trackers](https://download.microsoft.com/download/d/7/6/d76f4b4d-6315-4018-a2bf-984b3067c0fe/microsoft-co-branded-zero-trust-trackers-contoso.zip)
 
-To learn more about these trackers, see [Progress tracking resources for the adoption framework business scenarios](zero-trust-assessment-progress-tracking-resources.md#progress-tracking-resources-for-the-adoption-framework-business-scenarios).
-
 :::image type="content" source="media/zero-trust-phase-grid-tracker-contoso-thumb.png" alt-text="Small preview of the co-branded Zero Trust blueprint.":::
 
 ## Microsoft Zero Trust workshop and assessment

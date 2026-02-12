@@ -130,7 +130,7 @@ When Defender for Endpoint detects a threat, it triggers an alert. The alert is 
 
 #### Other EDR solutions
 
-Defender for Cloud provides hardening recommendations to ensure you're securing your organization's resources according to the guidance of [Microsoft cloud security benchmark (MCSB)](/security/benchmark/azure/introduction). One of the controls in the benchmark relates to endpoint security: [ES-1: Use Endpoint Detection and Response (EDR)](/security/benchmark/azure/security-controls-v2-endpoint-security).
+Defender for Cloud provides hardening recommendations to ensure you're securing your organization's resources according to the guidance of [Microsoft cloud security benchmark (MCSB)](/security/benchmark/azure/introduction). One of the controls in the benchmark relates to endpoint security: [ES-1: Use Endpoint Detection and Response (EDR)](/security/benchmark/azure/mcsb-v2-endpoint-security).
 
 There are two recommendations in Defender for Cloud to ensure you enabled endpoint protection and it's running well. These recommendations are checking for the presence and operational health of EDR solutions from:
 

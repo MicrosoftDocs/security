@@ -1,171 +1,242 @@
-### YamlMime:Landing
-
-title: Zero Trust Guidance Center # < 60 chars
-summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using the deployment plans.  # < 160 chars
+### YamlMime:Hub
+title: Zero Trust security guidance
+summary: Zero Trust is a security strategy that assumes breach and verifies every request. Implement Zero Trust protections that secure and enable your organization using deployment guides, assessment tools, and adoption frameworks aligned with the three core principles—verify explicitly, use least privilege access, and assume breach.
+brand: azure
 
 metadata:
-  title: Zero Trust Guidance Center # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn what the Zero Trust security model is and how to implement deployment steps to apply the security architecture in your organization.  # Required; article description that is displayed in search results. < 160 chars.
-  services: na
-  ms.service: microsoft-365-security
-  ms.subservice: m365d
-  ms.topic: landing-page # Required
-  ms.collection: na
-  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
-  ms.author: macapara #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/14/2021 #Required; mm/dd/yyyy format.
-  
-    
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Zero Trust security guidance
+  description: Learn about Zero Trust, a security strategy that assumes breach and verifies every request. Find deployment guides, assessment tools, and adoption frameworks to implement Zero Trust principles that protect and enable secure operations across identity, endpoints, applications, data, infrastructure, and networks in your organization.
+  ms.service: security
+  ms.subservice: zero-trust
+  ms.topic: hub-page
+  ms.author: joflore
+  author: MicrosoftGuyJFlo
+  ms.date: 02/10/2026
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Zero Trust implementation guidance
-    linkLists:
-      - linkListType: concept
-        links:
+## HIGHLIGHTED CONTENT ##############################################
+highlightedContent:
+  items:
+    - title: What is Zero Trust?
+      itemType: overview
+      url: /security/zero-trust/zero-trust-overview
+    - title: Assess your organization's Zero Trust posture
+      url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
+      itemType: get-started
+    - title: Zero Trust strategy approach
+      url: /security/zero-trust/adopt/zero-trust-adoption-overview
+      itemType: concept
+    - title: SFI - How Microsoft operationalized a Zero Trust strategy
+      url: /security/zero-trust/sfi/secure-future-initiative-overview
+      itemType: concept
+    - title: Deploying Zero Trust end-to-end
+      url: https://microsoft.github.io/zerotrustassessment/
+      itemType: deploy
+    - title: Zero Trust guidance for small businesses
+      url: /security/zero-trust/guidance-smb-partner
+      itemType: how-to-guide
+
+## HIGHLIGHTED CONTENT END ##############################################
+
+productDirectory:
+  title: Deploy Zero Trust by pillar
+  summary: Implement Zero Trust across your organization with comprehensive technical deployment guides for each security pillar.
+  items:
+    - title: Identity
+      imageSrc: /security/media/hubpage/security-icons/microsoft-entra.svg
+      summary: "Secure identities with strong authentication, conditional access, and comprehensive identity protection."
+      url: /security/zero-trust/deploy/identity
+    - title: Endpoints
+      imageSrc: /security/media/hubpage/security-icons/microsoft-intune.svg
+      summary: "Protect devices with comprehensive endpoint security and compliance policies."
+      url: /security/zero-trust/deploy/endpoints
+    - title: Applications
+      imageSrc: /security/media/hubpage/app-type-desktop.svg
+      summary: "Secure applications with modern authentication and API protection."
+      url: /security/zero-trust/deploy/applications
+    - title: Data
+      imageSrc: /security/media/hubpage/security-icons/microsoft-purview.svg
+      summary: "Protect sensitive information with classification, encryption, and data loss prevention."
+      url: /security/zero-trust/deploy/data
+    - title: Infrastructure
+      imageSrc: /security/media/hubpage/security-icons/microsoft-defender.svg
+      summary: "Secure infrastructure with workload protection and configuration management."
+      url: /security/zero-trust/deploy/infrastructure
+    - title: Networks
+      imageSrc: /security/media/hubpage/azure-networking.svg
+      summary: "Implement network security with segmentation, encryption, and threat protection."
+      url: /security/zero-trust/deploy/networks
+    - title: Visibility, automation, and orchestration
+      imageSrc: /security/media/hubpage/security-icons/microsoft-sentinel.svg
+      summary: "Enable comprehensive visibility and automated threat response across your environment."
+      url: /security/zero-trust/deploy/visibility-automation-orchestration
+    - title: Developer guidance
+      imageSrc: /security/media/hubpage/github.png
+      summary: "Embed Zero Trust principles into your development workflow and applications."
+      url: /security/zero-trust/develop/overview
+
+conceptualContent:
+  title: Most viewed content
+  summary: Discover the most popular Zero Trust resources based on thousands of visits from security professionals and IT implementers.
+  items:
+    ## CARD 1 ######################
+    - title: Getting started
+      links:
         - text: What is Zero Trust?
-          url:  zero-trust-overview.md
-        - text: Identity
-          url:  deploy/identity.md
-        - text: Endpoints
-          url:  deploy/endpoints.md
-        - text: Data
-          url:  deploy/data.md
-        - text: Applications
-          url:  deploy/applications.md
-        - text: Infrastructure
-          url:  deploy/infrastructure.md
-        - text: Networks
-          url:  deploy/networks.md
-        - text: Visibility, automation, and orchestration
-          url:  deploy/visibility-automation-orchestration.md
-        - text: Small business guidance 
-          url: guidance-smb-partner.md
- 
-  # Card (optional)
-  - title: Zero Trust adoption framework
-    linkLists:
-      - linkListType: concept
-        links:
-        - text: Overview
-          url:  adopt/zero-trust-adoption-overview.md
-        - text: Rapidly modernize your security posture
-          url:  adopt/rapidly-modernize-security-posture.md
-        - text: Secure remote and hybrid work
-          url:  adopt/secure-remote-hybrid-work.md
-        - text: Identify and protect sensitive business data
-          url:  adopt/identify-protect-sensitive-business-data.md
-        - text: Prevent or reduce business damage from a breach
-          url:  adopt/prevent-reduce-business-damage-breach.md
-        - text: Meet regulatory and compliance requirements
-          url:  adopt/meet-regulatory-compliance-requirements.md
-        - text: Progress tracking resources
-          url:  zero-trust-assessment-progress-tracking-resources.md#progress-tracking-resources-for-the-adoption-framework-business-scenarios
+          url: /security/zero-trust/zero-trust-overview
+          itemType: concept
+        - text: Zero Trust deployment overview
+          url: /security/zero-trust/deploy/overview
+          itemType: overview
+        - text: Microsoft 365 Zero Trust deployment plan
+          url: /security/zero-trust/microsoft-365-zero-trust
+          itemType: deploy
+        - text: Deploy your identity infrastructure for Microsoft 365
+          url: /microsoft-365/enterprise/deploy-identity-solution-overview
+          itemType: deploy
+    ## CARD 2 ######################
+    - title: Assessment & adoption
+      links:
+        - text: Zero Trust assessment and progress tracking resources
+          url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
+          itemType: overview
+        - text: Zero Trust assessment overview
+          url: /security/zero-trust/assessment/overview
+          itemType: overview
+        - text: Run the Zero Trust assessment
+          url: /security/zero-trust/assessment/get-started
+          itemType: how-to-guide
+        - text: Zero Trust adoption framework
+          url: /security/zero-trust/adopt/zero-trust-adoption-overview
+          itemType: concept
+    ## CARD 3 ######################
+    - title: Identity & device access
+      links:
+        - text: Identity - Zero Trust pillar
+          url: /security/zero-trust/deploy/identity
+          itemType: concept
+        - text: Identity and device access policies
+          url: /security/zero-trust/zero-trust-identity-device-access-policies-overview
+          itemType: overview
+        - text: Common identity and device access policies
+          url: /security/zero-trust/zero-trust-identity-device-access-policies-common
+          itemType: reference
+        - text: Zero Trust partner kit
+          url: /security/zero-trust/zero-trust-partner-kit
+          itemType: reference
+    ## CARD 4 ######################
+    - title: Microsoft Copilots
+      links:
+        - text: Zero Trust Copilots overview
+          url: /security/zero-trust/copilots/apply-zero-trust-copilots-overview
+          itemType: overview
+        - text: Zero Trust for Security Copilot
+          url: /security/zero-trust/copilots/zero-trust-microsoft-copilot-for-security
+          itemType: concept
+        - text: Zero Trust for Microsoft 365 Copilot
+          url: /security/zero-trust/copilots/zero-trust-microsoft-365-copilot
+          itemType: concept
+        - text: Zero Trust for Microsoft Copilot
+          url: /security/zero-trust/copilots/zero-trust-microsoft-copilot
+          itemType: concept
+    ## CARD 5 ######################
+    - title: Compliance frameworks
+      links:
+        - text: CISA Zero Trust Maturity Model
+          url: /security/zero-trust/cisa-zero-trust-maturity-model-intro
+          itemType: overview
+        - text: DoD Zero Trust Strategy
+          url: /security/zero-trust/dod-zero-trust-strategy-intro
+          itemType: overview
+        - text: US Federal Zero Trust requirements
+          url: /entra/standards/memo-22-09-meet-identity-requirements
+          itemType: reference
+        - text: Zero Trust assessment resources
+          url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
+          itemType: reference
+    ## CARD 6 ######################
+    - title: Secure Future Initiative
+      links:
+        - text: Secure Future Initiative overview
+          url: /security/zero-trust/sfi/secure-future-initiative-overview
+          itemType: overview
+        - text: Phishing-resistant MFA
+          url: /security/zero-trust/sfi/phishing-resistant-mfa
+          itemType: concept
+        - text: Eliminate identity lateral movement
+          url: /security/zero-trust/sfi/eliminate-identity-lateral-movement
+          itemType: concept
+        - text: Network isolation
+          url: /security/zero-trust/sfi/network-isolation
+          itemType: concept
+    ## CARD 7 ######################
+    - title: Specialized scenarios
+      links:
+        - text: Zero Trust for Azure IaaS
+          url: /security/zero-trust/azure-infrastructure-overview
+          itemType: overview
+        - text: Zero Trust for Azure Virtual Desktop
+          url: /security/zero-trust/azure-infrastructure-avd
+          itemType: concept
+        - text: Small business guidance
+          url: /security/zero-trust/guidance-smb-partner
+          itemType: concept
+        - text: Technical illustrations
+          url: /security/zero-trust/zero-trust-tech-illus
+          itemType: reference
+    ## CARD 8 ######################
+    - title: Developer resources
+      links:
+        - text: Develop using Zero Trust principles
+          url: /security/zero-trust/develop/overview
+          itemType: overview
+        - text: Configure tokens, group claims, and app roles
+          url: /security/zero-trust/develop/configure-tokens-group-claims-app-roles
+          itemType: how-to-guide
+        - text: Register applications
+          url: /security/zero-trust/develop/app-registration
+          itemType: how-to-guide
+        - text: Secure with Continuous Access Evaluation
+          url: /security/zero-trust/develop/secure-with-cae
+          itemType: concept
 
- # Card
-  - title: Microsoft 365 deployment plan for Zero Trust
-    linkLists:
-      - linkListType: deploy
-        links:
-          - text: Deploy your identity infrastructure for Microsoft 365
-            url: /microsoft-365/enterprise/deploy-identity-solution-overview
-          - text: Zero Trust identity and device configurations
-            url: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations
-          - text: Manage endpoints with Microsoft Defender XDR
-            url: /microsoft-365/solutions/manage-devices-with-intune-overview
-          - text: Pilot and deploy Microsoft Defender XDR
-            url: /microsoft-365/security/defender/eval-overview
-          - text: Deploy a Microsoft information protection solution
-            url: /microsoft-365/compliance/information-protection-solution
-          - text: Deploy information protection for data privacy regulations
-            url: /microsoft-365/solutions/information-protection-deploy
-          - text: Integrate SaaS apps for Zero Trust with Microsoft 365 
-            url: integrate-saas-apps.md
-          - text: Setup guide for Zero Trust with Microsoft 365 
-            url: https://go.microsoft.com/fwlink/?linkid=2222968
-          - text: Advanced deployment guide for Zero Trust with Microsoft 365 (requires sign-in)
-            url: https://go.microsoft.com/fwlink/?linkid=2224820
-
-# Card
-  - title: Zero Trust for Microsoft Copilots
-    linkLists:
-      - linkListType: deploy
-        links:
-        - text: Overview
-          url:  copilots/apply-zero-trust-copilots-overview.md
-        - text: Microsoft Copilot
-          url:  copilots/zero-trust-microsoft-copilot.md
-        - text: Microsoft 365 Copilot
-          url:  copilots/zero-trust-microsoft-365-copilot.md
-        - text: Copilot for Security
-          url:  copilots/zero-trust-microsoft-copilot-for-security.md
-
- # Card
-  - title: Zero Trust deployment plans with Microsoft Azure
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Azure IaaS
-            url:  azure-infrastructure-overview.md
-          - text: Azure Virtual Desktop
-            url:  azure-infrastructure-avd.md
-          - text: Azure Virtual WAN
-            url:  azure-virtual-wan.md
-          - text: IaaS applications in Amazon Web Services
-            url:  secure-iaas-apps.md
-          - text: Protect Azure resources from cyberattacks 
-            url: azure-protect-resources-cyberattacks.md
-          - text: Microsoft Sentinel and Microsoft Defender XDR
-            url: /security/operations/siem-xdr-overview
-          - text: Azure networking
-            url: azure-networking-overview.md
-
- # Card
-  - title: Technology partner integrations
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Integrate with Microsoft's Zero Trust solutions
-            url:  integrate/overview.md
-          - text: Identity
-            url:  integrate/identity.md
-          - text: Endpoints
-            url:  integrate/endpoints.md
-          - text: Applications
-            url:  integrate/applications.md
-          - text: Data
-            url:  integrate/data.md
-          - text: Infrastructure
-            url:  integrate/infrastructure.md
-          - text: Networks
-            url:  integrate/networks.md
-          - text: Visibility, automation, and orchestration
-            url:  integrate/visibility-automation-orchestration.md
-
-# Card
-  - title: Developer guidance
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Develop using Zero Trust principles
-            url:  develop/overview.md
-          - text: Building apps that secure identity through permissions and consent
-            url:  develop/identity.md
-          - text: Securing DevOps environments for Zero Trust
-            url:  develop/secure-devops-environments-zero-trust.md
-
-# Card
-  - title: Rapid Modernization Plan (RaMP)
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Explicitly validate trust for all access requests
-            url:  user-access-productivity-validate-trust.md
-             
-            
-
-
-             
+additionalContent:
+  sections:
+    - title: Training and credentials
+      items:
+        - title: "Zero Trust learning path"
+          summary: "Complete learning path covering Zero Trust fundamentals across all technology pillars. Beginner level."
+          url: /training/paths/zero-trust-principles/
+        - title: "Introduction to Zero Trust and best practices"
+          summary: "Advanced training for cybersecurity architects covering Zero Trust concepts and Microsoft frameworks."
+          url: /training/modules/introduction-zero-trust-best-practice-frameworks/
+        - title: "Applied Skills: Prepare security for Microsoft 365 Copilot"
+          summary: "Validate your ability to prepare Microsoft 365 security and compliance to support Copilot."
+          url: /credentials/applied-skills/prepare-security-and-compliance-to-support-microsoft-365-copilot/
+        - title: "Certification: Security Operations Analyst Associate"
+          summary: "Prove expertise in threat investigation and mitigation using Microsoft security solutions."
+          url: /credentials/certifications/security-operations-analyst/
+    - title: Assessment tools
+      items:
+        - title: "Zero Trust Security Posture Assessment"
+          summary: "Interactive online tool to evaluate your Zero Trust maturity level across all pillars."
+          url: https://www.microsoft.com/security/business/zero-trust/maturity-model-assessment-tool
+        - title: "Zero Trust Assessment automated tool"
+          summary: "Open source tool that evaluates your Microsoft tenant configuration to determine alignment with Zero Trust security guidance."
+          url: /security/zero-trust/assessment/overview
+        - title: "Zero Trust Assessment strategy workshop"
+          summary: "Downloadable Excel workbook for tracking implementation progress."
+          url: https://aka.ms/ztworkshop
+    - title: Additional resources
+      items:
+        - title: "Microsoft Security documentation"
+          summary: "Technical guidance to help security professionals build cybersecurity strategy and architecture."
+          url: /security/
+        - title: "Microsoft Entra documentation"
+          summary: "Learn about Microsoft Entra's family of multicloud identity and network access solutions."
+          url: /entra/
+        - title: "Security Copilot documentation"
+          summary: "Learn how to use Security Copilot to enhance your security posture."
+          url: /copilot/security/
+        - title: "Secure Future Initiative"
+          summary: "Microsoft's multiyear commitment to advancing security across our technology."
+          url: https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative

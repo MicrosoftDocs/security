@@ -132,7 +132,6 @@ To see more details about a test, select a result. The details describe what was
 To remove the Zero Trust Assessment module: 
 
 1. [Remove the PowerShell module](#uninstall-previous-versions).
-1. Remove the app registration and consent.
 1. Delete the folder that the Zero Trust Assessment module created.
 
 ## FAQs

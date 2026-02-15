@@ -31,7 +31,7 @@ Running this assessment helps you confirm you've configured a strong baseline of
 
 **See exactly what the assessment does.** The entire codebase is open source and available for review:
 
-- View the source code: [GitHub repository](https://github.com/microsoft/zerotrustassessment/tree/psnext/src/powershell)
+- View the source code: [GitHub repository](https://github.com/microsoft/zerotrustassessment/tree/main/src/powershell)
 - Report issues: [GitHub issues](https://github.com/microsoft/zerotrustassessment/issues)
 - Contribute improvements: Community contributions welcome
 

@@ -4,7 +4,7 @@ description: Busting myths, biases, and uncertainty with the 10 laws of cybersec
 
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/23/2024
 
 ms.reviewer: mas

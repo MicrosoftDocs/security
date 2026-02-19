@@ -4,7 +4,7 @@ description: Configure app role definitions and security groups to improve flexi
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: security
 ms.date: 04/18/2025
 ms.collection:

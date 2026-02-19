@@ -4,7 +4,7 @@ description: This article gives an overview of how to apply Zero Trust principle
 ms.date: 05/20/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: 
   - zerotrust-solution
   - msftsolution-awsiaas

@@ -4,7 +4,7 @@ description: As a developer, learn how to best ensure Zero Trust when acquiring 
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: security
 ms.date: 02/24/2025
 ms.collection:

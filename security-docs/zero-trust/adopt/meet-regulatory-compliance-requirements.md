@@ -4,7 +4,7 @@ description: Learn how to Meet regulatory and compliance requirements with Zero 
 ms.date: 05/05/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: 
   - zerotrust-adopt
 ---

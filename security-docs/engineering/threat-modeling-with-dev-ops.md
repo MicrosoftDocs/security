@@ -6,7 +6,7 @@ ms.date: 11/07/2022
 ms.service: security
 ms.author: simonec
 author: simonec73
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Integrating threat modeling with DevOps   

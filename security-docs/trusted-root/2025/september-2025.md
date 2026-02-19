@@ -5,7 +5,7 @@ ms.date: 9/5/2025
 ms.service: security
 author: kasirota
 ms.author: kasirota
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # September 2025 Deployment Notice - Microsoft Trusted Root Program 
 

@@ -4,7 +4,7 @@ description: Ensure Zero Trust when you have one API that needs to call another 
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: security
 ms.date: 04/18/2025
 ms.collection:

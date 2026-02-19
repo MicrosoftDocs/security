@@ -6,7 +6,7 @@ ms.service: security
 ms.subservice: zero-trust
 author: mjcaparas
 ms.author: macapara
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection:
   -	m365solution-saas
   -	m365solution-scenario

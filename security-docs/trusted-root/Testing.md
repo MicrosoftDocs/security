@@ -5,7 +5,7 @@ ms.date: 02/15/2024
 ms.service: security
 author: kasirota
 ms.author: kasirota
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Testing Instruction - Microsoft Trusted Root Certificate Program

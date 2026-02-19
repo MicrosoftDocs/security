@@ -4,7 +4,7 @@ description: Centralize access to security logs is part of the Monitor and detec
 ms.date: 10/03/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection:
   - highpri
   - zerotrust

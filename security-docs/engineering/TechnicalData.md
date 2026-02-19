@@ -5,7 +5,7 @@ ms.date: 11/20/2023
 ms.service: security
 ms.author: laramiller
 author: laramillermsft
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Technical Data

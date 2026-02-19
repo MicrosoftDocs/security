@@ -2,7 +2,7 @@
 title: DoD Zero Trust Strategy for the user pillar
 description: Minimize attack surface, reduce risks, enable collaboration, safeguard data, and disrupt adversaries.
 ms.service: security
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/15/2024
 ms.author: jricketts
 ms.subservice: zero-trust

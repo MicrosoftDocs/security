@@ -4,7 +4,7 @@ description: Learn how to define an application permission approach to credentia
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: security
 ms.date: 02/24/2025
 ms.custom: template-concept

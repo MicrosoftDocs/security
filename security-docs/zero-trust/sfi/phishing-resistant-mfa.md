@@ -4,7 +4,7 @@ description: Phishing-resistant multifactor authentication (MFA) is part of the 
 ms.date: 08/05/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection: 
   - highpri
   - zerotrust

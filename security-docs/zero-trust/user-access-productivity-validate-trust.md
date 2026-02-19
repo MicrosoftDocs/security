@@ -5,7 +5,7 @@ ms.date: 02/24/2025
 ms.service: security
 ms.subservice: zero-trust
 
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection:
   - zerotrust-ramp
 ---

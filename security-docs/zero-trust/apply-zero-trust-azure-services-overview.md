@@ -4,7 +4,7 @@ description: An overview of the set of articles that describe how to apply Zero 
 ms.date: 05/06/2025    
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: 
   - msftsolution-azureiaas
   - msftsolution-overview

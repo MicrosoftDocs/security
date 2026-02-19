@@ -6,7 +6,7 @@ ms.service: security
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection:
   - zerotrust-partner
 ---

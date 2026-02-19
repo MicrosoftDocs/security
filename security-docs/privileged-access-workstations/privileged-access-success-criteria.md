@@ -3,7 +3,7 @@ title: Success criteria for privileged access strategy
 description: How can organizations measure success in their privileged access strategy?
 ms.service: security
 ms.subservice: privileged-access
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/15/2020
 ms.reviewer: mas
 ---

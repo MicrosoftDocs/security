@@ -6,7 +6,7 @@ ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection:
   - highpri
   - zerotrust

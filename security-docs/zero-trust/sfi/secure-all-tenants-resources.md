@@ -4,7 +4,7 @@ description: Secure all tenants and their resources is a part of the Protect ten
 ms.date: 10/03/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection:
   - highpri
   - zerotrust

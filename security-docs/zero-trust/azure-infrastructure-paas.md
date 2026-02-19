@@ -4,7 +4,7 @@ description: Learn how to secure a spoke VNet for PaaS workloads with Zero Trust
 ms.date: 05/06/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: 
   - msftsolution-azurepaas
   - msftsolution-scenario

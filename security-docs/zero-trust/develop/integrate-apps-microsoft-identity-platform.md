@@ -5,7 +5,7 @@ ms.date: 04/18/2025
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: security
 ms.custom: template-concept
 ms.collection:

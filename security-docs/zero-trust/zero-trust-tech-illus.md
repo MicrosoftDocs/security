@@ -4,7 +4,7 @@ description: Print or customize technical illustrations in the Zero Trust librar
 ms.date: 01/23/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection:
   - zerotrust-illustrations
 ---

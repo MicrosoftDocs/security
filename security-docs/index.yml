@@ -114,7 +114,7 @@ sections:
     title: Turn Security Knowledge into Security Outcomes
 
     summary: |
-      Today's threats don't wait—and neither should your skills. Build real-world security expertise by completing Microsoft Security learning paths and hands-on modules designed for practitioners. Learn how to **detect threats faster, secure identities and data**, and **protect AI and cloud workloads** using the tools you already use every day.
+      Today's threats don't wait—and neither should your skills. Build real-world security expertise by completing Microsoft Security learning paths and hands-on modules designed for practitioners. Learn how to detect threats faster, secure identities and data, and protect AI and cloud workloads using the tools you already use every day.
     blocks:
     - componentType: card
       title: AI security fundamentals 

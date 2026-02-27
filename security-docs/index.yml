@@ -88,12 +88,12 @@ sections:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
       - componentType: icon-card
-        title: "Applied Skill: Identities and access using Microsoft Entra"
-        summary: Complete this Microsoft Applied Skill to demonstrate your ability to manage identities and access in Microsoft Entra. 
-        url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
+        title: "Azure Decoded: Kickstart AI Security with Microsoft Defender for Cloud"
+        summary: Learn how Defender for Cloud provides foundational protection for your AI solutions and why it's essential for modern security strategies. 
+        url: https://developer.microsoft.com/reactor/events/26842/?wt.mc_id=securityhub_AzureDecoded_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/ignite-glyphs/get-started-1-blue.png
+          src: /security/media/hubpage/ignite-glyphs/video-1-yellow.png
       - componentType: icon-card
         title: Learn about Security Copilot agents
         summary: Use this documentation to enable autonomous and proactive protection with Security Copilot agents built directly into your workflow.

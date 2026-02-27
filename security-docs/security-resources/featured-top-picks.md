@@ -12,7 +12,7 @@ ms.date: 03/04/2026
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
 
-## January 2026
+## February 2026
 
 | Featured date  | Title  | Description  |
 |---------|---------|---------|

@@ -238,7 +238,7 @@ Remove all privileges where you're able, by deleting the sensitive data itself w
 
 Take this step:
 
-- [Implement Data Lifecycle Management and records management](https://aka.ms/MIPC/OSS)
+- [Deploy data lifecycle management and records management](/purview/data-governance-solution)
 
 Minimize duplication of sensitive data by favoring in-place sharing and use rather than data transfers.
 

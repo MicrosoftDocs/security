@@ -34,7 +34,7 @@ Bookmark this page as your starting point for the steps.
 >- [Make it hard to get in](protect-against-ransomware-phase3.md)
 
 > [!NOTE]
-> What is ransomware? See the ransomware definition [here](/security/compass/human-operated-ransomware).
+> What is ransomware? See the ransomware definition [here](/security/ransomware/human-operated-ransomware).
 
 ## Important information about this article
 
@@ -115,7 +115,7 @@ Key information from Microsoft:
 - [Human-operated ransomware](human-operated-ransomware.md)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
-- Microsoft Incident Response team (formerly DART/CRSP) ransomware [approach](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
+- Microsoft Incident Response team (formerly DART/CRSP) ransomware [approach](/security/ransomware/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 
@@ -123,7 +123,7 @@ Microsoft 365:
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com/windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
 

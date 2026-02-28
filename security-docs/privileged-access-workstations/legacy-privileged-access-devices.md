@@ -302,7 +302,7 @@ Phase 1 includes the following steps:
    >
    > Ensure that the hardware used for the PAW is sourced from a manufacturer and supplier whose security practices are trusted by the organization. This is an application of the clean source principle to supply chain security.
    >
-   > For more background on the importance of supply chain security, visit [this site](https://www.microsoft.com/security/cybersecurity/).
+   > For more background on the importance of supply chain security, visit [this site](https://www.microsoft.com/security/business/security-101/what-is-cybersecurity).
 
 1. **Acquire and validate the required Windows 11 Enterprise Edition and application software**.
 

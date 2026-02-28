@@ -161,7 +161,7 @@ We recommend implementing the starting point policies in the order listed in the
 Create a new app protection policy for each device platform within Microsoft Intune (iOS/iPadOS and Android) using the data protection framework settings by using either of the following methods:
 
 - Manually create the policies by following the steps in [How to create and deploy app protection policies with Microsoft Intune](/intune/intune-service/apps/app-protection-policies).
-- Import the sample [Intune App Protection Policy Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
+- Import the sample Intune App Protection Policy Configuration Framework JSON templates with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
 
 ## Device compliance policies
 

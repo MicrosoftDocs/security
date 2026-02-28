@@ -228,7 +228,7 @@ Before you embark on the technical work, Microsoft recommends getting to know th
 
 | Resource | Description |
 |:-----|:-----|
-| Deployment Acceleration Guide-[Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) | Learn best practices from the Microsoft Customer Engagement teams. This guidance leads organizations to maturity through a crawl, walk, run model, which aligns with the recommended stages in this adoption guidance.  |
+| Deployment Acceleration Guide-[Information Protection and Data Loss Prevention](https://aka.ms/MIPC/OSS) | Learn best practices from the Microsoft Customer Engagement teams. This guidance leads organizations to maturity through a crawl, walk, run model, which aligns with the recommended stages in this adoption guidance.  |
 | RaMP checklist: [Data protection](/security/zero-trust/data-compliance-gov-data) <br><br> ![Thumbnail of the Rapid Modernization Plan documentation set.](../media/ramp.png) | Another resource for listing and prioritizing the recommended work, including stakeholders. |
 | [Introduction to Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp) (beginner) | In this resource, you learn about DLP in Microsoft Purview Information Protection. |
 |  :::image type="icon" source="../media/adoption-guide/introduction-information-governance.svg" border="false"::: <br> Learn module-[Icon for the Introduction to information protection and data lifecycle management in Microsoft Purview Microsoft Learn module.](/training/modules/m365-compliance-information-governance/) (Intermediate) | Learn how Microsoft 365 information protection and data lifecycle management solutions help you protect and govern your data, throughout its lifecycle – wherever it lives and travels. |
@@ -440,7 +440,7 @@ Note the following dependencies on other business scenarios:
 - Extending information protection to endpoint devices requires coordination with Intune (included in the [Secure remote and hybrid work](secure-remote-hybrid-work.md) article).
 - Extending information protection to data in SaaS apps requires Microsoft Defender for Cloud Apps. Piloting and deploying Defender for Cloud Apps is included in the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario.
 
-As you finalize your adoption plans, be sure to revisit the [Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) Deployment Acceleration Guide to review the recommendations and fine-tune your strategy.
+As you finalize your adoption plans, be sure to revisit the [Information Protection and Data Loss Prevention](https://aka.ms/MIPC/OSS) Deployment Acceleration Guide to review the recommendations and fine-tune your strategy.
 
 ## Adopt phase
 

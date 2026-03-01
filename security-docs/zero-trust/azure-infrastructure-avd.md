@@ -73,9 +73,9 @@ The reference architecture aligns to the architecture described in the [Enterpri
 
 ## Logical architecture
 
-In this diagram, the Azure infrastructure for an Azure Virtual Desktop deployment is contained within a Microsoft Entra ID tenant.
+In this diagram, the Azure infrastructure for an Azure Virtual Desktop deployment is contained within a Microsoft Entra tenant.
 
-:::image type="content" source="media/avd/logical-arch-avd.svg" alt-text="Diagram of the components of Azure Virtual Desktop in a Microsoft Entra ID tenant." lightbox="media/avd/logical-arch-avd.svg":::
+:::image type="content" source="media/avd/logical-arch-avd.svg" alt-text="Diagram of the components of Azure Virtual Desktop in a Microsoft Entra tenant." lightbox="media/avd/logical-arch-avd.svg":::
 
 The elements of the logical architecture are:
 
@@ -122,7 +122,7 @@ To apply Zero Trust principles to the identities used in Azure Virtual Desktop:
 
 ## Step 2: Secure your endpoints with Zero Trust
 
-Endpoints are the devices through which users access the Azure Virtual Desktop environment and session host virtual machines. Use the instructions in the [Endpoint integration overview](integrate/endpoints.md) and use Microsoft Defender for Endpoint and Microsoft Endpoint Manager to ensure that your endpoints adhere to your security and compliance requirements.
+Endpoints are the devices through which users access the Azure Virtual Desktop environment and session host virtual machines. Use the instructions in the [Endpoint integration overview](integrate/endpoints.md) and use Microsoft Defender for Endpoint and Microsoft Intune to ensure that your endpoints adhere to your security and compliance requirements.
 
 ## Step 3: Apply Zero Trust principles to Azure Virtual Desktop storage resources
 

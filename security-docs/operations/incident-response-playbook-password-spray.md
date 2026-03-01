@@ -94,7 +94,7 @@ Set-AdfsProperties -AuditLevel <None | Basic | Verbose>
 
 The Microsoft Entra Connect Health for ADFS agent allows you to have greater visibility into your federation environment. It provides you with several preconfigured dashboards like usage, performance monitoring and risky IP reports.
 
-To install ADFS Connect Health, go through the [requirements for using Microsoft Entra Connect Health](/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Azure ADFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
+To install ADFS Connect Health, go through the [requirements for using Microsoft Entra Connect Health](/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Microsoft Entra IDFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
 
 ### Set up risky IP alerts using the [ADFS Risky IP Report Workbook](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip-workbook#:~:text=The%20risky%20IP%20workbook%20analyzes%20data%20from%20ADFSSignInLogs,on%20designated%20error%20thresholds%20and%20detection%20window%20length.)
 
@@ -507,7 +507,7 @@ If there's a data breach, you should inform more agencies, such as the police.
 ## Immediate remedial actions
 
 1. Change the password of any account that you suspect has been breached or the account password discovered. Additionally, block the user. Make sure you follow the guidelines for [revoking emergency access](/azure/active-directory/enterprise-users/users-revoke-access).
-2. Mark any compromised account as "*compromised*" in Microsoft Entra ID Identity Protection.
+2. Mark any compromised account as "*compromised*" in Microsoft Entra Identity Protection.
 3. Block the IP address of the attacker. Be cautious while performing this action as attackers can use legitimate VPNs and could create more risk as they change IP addresses as well. If you're using Cloud Authentication, then block the IP address in Defender for Cloud Apps or Microsoft Entra ID. If federated, you need to block the IP address at the firewall level in front of the ADFS service.
 4. [Block legacy authentication](/azure/active-directory/conditional-access/block-legacy-authentication) if it's being used (this action, however, could impact business).
 5. [Enable MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa) if it isn't already done.

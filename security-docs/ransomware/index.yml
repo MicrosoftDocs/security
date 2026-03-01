@@ -33,7 +33,7 @@ landingContent:
         - text: What is ransomware?
           url:  https://learn.microsoft.com/security/ransomware/human-operated-ransomware
         - text: Get ransomware incident response help from Microsoft
-          url:  https://learn.microsoft.com/security/ransomware/human-operated-ransomware#how-microsoft-can-help-once-an-attack-has-begun
+          url:  https://learn.microsoft.com/security/ransomware/human-operated-ransomware#how-microsoft-can-help-with-an-in-progress-ransomware-attack
         - text: Latest ransomware blogs
           url:  https://www.microsoft.com/security/blog/threat-intelligence/ransomware
         - text: Microsoft Defender XDR for in-depth ransomware investigation
@@ -129,6 +129,6 @@ landingContent:
         - text: Responding to ransomware attacks
           url:  /microsoft-365/security/defender/playbook-responding-ransomware-m365-defender
         - text: Ransomware Incident Response playbook template
-          url:  //download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
+          url:  https://download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
         - text: Azure Defenses for Ransomware Attack ebook
           url:  https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/

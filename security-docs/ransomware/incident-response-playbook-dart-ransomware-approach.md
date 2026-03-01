@@ -36,7 +36,7 @@ This article describes how Microsoft Incident Response handles ransomware attack
 
 ## How Microsoft Incident Response uses Microsoft security services
 
-Microsoft Incident Response relies heavily on data for all investigations and uses Microsoft security services such as [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security), [Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security), [Microsoft Defender for Identity](/defender-for-identity), and [Microsoft Defender for Cloud Apps](/cloud-app-security/).
+Microsoft Incident Response relies heavily on data for all investigations and uses Microsoft security services such as [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security), [Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint), [Microsoft Defender for Identity](/defender-for-identity), and [Microsoft Defender for Cloud Apps](/cloud-app-security/).
 
 For the Microsoft Incident Response team's latest security measure updates, [check out their Ninja Hub](https://techcommunity.microsoft.com/blog/microsoftsecurityexperts/welcome-to-the-microsoft-incident-response-ninja-hub/4243594).
 
@@ -200,7 +200,7 @@ Microsoft Incident Response recommends implementing the following security recom
 
 ### PAM
 
-Using the [PAM](/security/compass/privileged-access-access-model) (formerly known as the tiered administration model) enhances Microsoft Entra ID's security posture, which involves:
+Using the [PAM](/security/privileged-access-workstations/privileged-access-access-model) (formerly known as the tiered administration model) enhances Microsoft Entra ID's security posture, which involves:
 
   - Breaking out administrative accounts in a "planed" environment, meaning one account for each level (usually four levels):
 
@@ -241,8 +241,8 @@ You can download LAPS from the [Microsoft Download Center](https://www.microsoft
 
 The following Microsoft resources help detect ransomware attacks and protect organizational assets:
 
-- [Human-operated ransomware](/security/compass/human-operated-ransomware)
-- [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
+- [Human-operated ransomware](/security/ransomware/human-operated-ransomware)
+- [Rapidly protect against ransomware and extortion](/security/ransomware/protect-against-ransomware)
 - [2023 Microsoft Digital Defense Report](https://www.microsoft.com/en-us/security/security-insider/microsoft-digital-defense-report-2023) (see pages 17-26)
 
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) Threat analytics report in the Microsoft Defender portal
@@ -255,7 +255,7 @@ Microsoft 365:
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com/windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
 - [Leverage AI to defend against ransomware with Microsoft Security Copilot](/copilot/security/get-started-security-copilot)
@@ -268,7 +268,7 @@ Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
-- [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
+- [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)

@@ -81,29 +81,29 @@ sections:
     title: ""
     blocks:
       - componentType: icon-card
-        title: "Applied Skill: Secure AI solutions in the cloud"
+        title: Secure AI solutions in the cloud
         summary: Gain your Microsoft Applied Skill with your understanding of Microsoft Defender for Cloud and Microsoft Foundry.
         url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
       - componentType: icon-card
-        title: "Azure Decoded: Kickstart AI Security with Microsoft Defender for Cloud"
-        summary: Learn how Defender for Cloud provides foundational protection for your AI solutions and why it's essential for modern security strategies. 
+        title: Register for Azure Decoded on March 18
+        summary: Kickstart AI security with Microsoft Defender for Cloud and why it's essential for modern security. 
         url: https://developer.microsoft.com/reactor/events/26842/?wt.mc_id=securityhub_AzureDecoded_webpage_sci
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/video-1-yellow.png
       - componentType: icon-card
         title: Learn about Security Copilot agents
-        summary: Use this documentation to enable autonomous and proactive protection with Security Copilot agents built directly into your workflow.
+        summary: Enable autonomous and proactive protection with Security Copilot agents built directly into your workflow.
         url: /copilot/security/security-copilot-inclusion?wt.mc_id=securityhub_inclusion_webpage_sci
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/overview-magenta.png
       - componentType: icon-card
         title: Configure your Microsoft Sentinel Environment
-        summary: Strengthen your Microsoft Sentinel skills to learn how data lake and graph enhance performance, context, and investigation speed in this updated learning path.
+        summary: Learn how data lake and graph enhance performance, context, and investigation speed in this learning path.
         url: /training/paths/sc-200-configure-azure-sentinel-environment/
         icon:
           componentType: image

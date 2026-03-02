@@ -91,7 +91,7 @@ Independent software vendors can take advantage of conditional access by surfaci
 
 :::image type="content" source="../media/integrate/identity/diagram-access-control.png" alt-text="Diagram showing a user using an application, which then calls Microsoft Entra ID to set conditions for a conditional access policy based on the user activity." border="true" lightbox="../media/integrate/identity/diagram-access-control-expanded.png":::
 
-For more, check out the [configure conditional access policies using the Microsoft Graph API](https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure/graphapi) sample on GitHub.
+For more, check out the [configure conditional access policies using the Microsoft Graph API](/entra/identity/conditional-access/howto-conditional-access-apis) documentation.
 
 ##### Confirm compromise and risky user APIs
 

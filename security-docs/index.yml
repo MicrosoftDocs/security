@@ -110,44 +110,77 @@ sections:
           src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
 
 # Modules
-  - componentType: cards
-    title: Turn Security Knowledge into Security Outcomes
+#  - componentType: cards
+#    title: Turn Security Knowledge into Security Outcomes
+#    summary: |
+#      Today's threats don't wait—and neither should your skills. Build real-world security expertise by completing Microsoft Security learning paths and hands-on modules designed for practitioners. Learn how to detect threats faster, secure identities and data, and protect AI and cloud workloads using the tools you already use every day.
+#    blocks:
+#    - componentType: card
+#      title: AI security fundamentals 
+#      summary: Want to learn more about AI security? This learning path helps you understand the basic concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement in AI systems to increase the security posture of AI environments.
+#      imageUrl: ""
+#      links:
+#        - componentType: link
+#          url: /training/paths/ai-security-fundamentals/
+#          text: Start the learning path
+#    - componentType: card
+#      title: Understand Data Security Investigations
+#      summary: Data security investigations help organizations understand data risk beyond activity alone. This module focuses on the concepts that define data security investigations, how they differ from alerts and audit, and when deeper, data-focused investigation adds value to security decisions.
+#      imageUrl: ""
+#      links: 
+#        - componentType: link
+#          url: /training/modules/purview-data-security-investigations-understand/ 
+#          text: Start the module
+#    - componentType: card
+#      title: Mitigate incidents using Microsoft Defender
+#      summary: Investigate and respond to incidents using Microsoft Sentinel and Defender XDR. Correlate alerts, hunt threats, manage incidents, and stop attacks faster with unified security operations workflows.
+#      imageUrl: ""
+#      links:
+#        - componentType: link
+#          url: /training/modules/mitigate-incidents-microsoft-365-defender/
+#          text: Start the module
+#    - componentType: card
+#      title: Plan, implement, and administer Conditional Access
+#      summary: Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe.
+#      imageUrl: ""
+#      links:
+#        - componentType: link
+#          url: /training/modules/plan-implement-administer-conditional-access/
+#          text: Start the module
 
-    summary: |
-      Today's threats don't wait—and neither should your skills. Build real-world security expertise by completing Microsoft Security learning paths and hands-on modules designed for practitioners. Learn how to detect threats faster, secure identities and data, and protect AI and cloud workloads using the tools you already use every day.
+# Modules
+  - componentType: grid
+    title: Turn security knowledge into security outcomes
+    summary: Today's threats don't wait—and neither should your skills. Build real-world security expertise by completing Microsoft Security learning paths and training modules designed for practitioners. Learn how to detect threats faster, secure identities and data, and protect AI and cloud workloads using the tools you already use every day.
     blocks:
-    - componentType: card
-      title: AI security fundamentals 
-      summary: Want to learn more about AI security? This learning path helps you understand the basic concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement in AI systems to increase the security posture of AI environments.
-      imageUrl: ""
-      links:
-        - componentType: link
-          url: /training/paths/ai-security-fundamentals/
-          text: Start the learning path
-    - componentType: card
-      title: Understand Data Security Investigations
-      summary: Data security investigations help organizations understand data risk beyond activity alone. This module focuses on the concepts that define data security investigations, how they differ from alerts and audit, and when deeper, data-focused investigation adds value to security decisions.
-      imageUrl: ""
-      links: 
-        - componentType: link
-          url: /training/modules/purview-data-security-investigations-understand/ 
-          text: Start the module
-    - componentType: card
-      title: Mitigate incidents using Microsoft Defender
-      summary: Investigate and respond to incidents using Microsoft Sentinel and Defender XDR. Correlate alerts, hunt threats, manage incidents, and stop attacks faster with unified security operations workflows.
-      imageUrl: ""
-      links:
-        - componentType: link
-          url: /training/modules/mitigate-incidents-microsoft-365-defender/
-          text: Start the module
-    - componentType: card
-      title: Plan, implement, and administer Conditional Access
-      summary: Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe.
-      imageUrl: ""
-      links:
-        - componentType: link
-          url: /training/modules/plan-implement-administer-conditional-access/
-          text: Start the module
+      - componentType: icon-card
+        title: Learn AI security fundamentals
+        summary: Understand AI security, types of security controls that apply to AI systems, and security testing procedures to increase the security posture of AI environments in this learning path.
+        url: /training/paths/ai-security-fundamentals/?wt.mc_id=securityhub_fundamentals_webpage_sci
+        icon:
+          componentType: image
+          src: /security/media/hubpage/generic-trophy.svg
+      - componentType: icon-card
+        title: Understand data security investigations
+        summary: Learn concepts that define data security investigations, how they differ from alerts and audit, and when deeper, data-focused investigation adds value to security decisions.
+        url: /training/modules/purview-data-security-investigations-understand/?wt.mc_id=securityhub_securityinvestigations_webpage_sci
+        icon:
+          componentType: image
+          src: /security/media/hubpage/generic-badge.svg
+      - componentType: icon-card
+        title: Mitigate incidents using Microsoft Defender
+        summary: Investigate and respond to incidents using Microsoft Sentinel and Defender XDR. Correlate alerts, hunt threats, manage incidents, and stop attacks faster with unified security operations workflows.
+        url: /training/modules/mitigate-incidents-microsoft-365-defender/?wt.mc_id=securityhub_defendertraining_webpage_sci
+        icon:
+          componentType: image
+          src: /security/media/hubpage/training-clipboard.png
+      - componentType: icon-card
+        title: Plan, implement, and administer Conditional Access
+        summary: Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe.
+        url: /training/modules/plan-implement-administer-conditional-access//?wt.mc_id=securityhub_conditionalaccess_webpage_sci
+        icon:
+          componentType: image
+          src: /security/media/hubpage/training-whiteboard.png
 
 # Microsoft Security product documentation 
   - componentType: grid

@@ -10,7 +10,7 @@
         - name: Incident response with XDR and integrated SIEM
           href: siem-xdr-overview.md
         - name: Zero Trust security with Microsoft Sentinel and Defender XDR
-          href: /security/zero-trust/siem-xdr-implement.md
+          href: /security/zero-trust/siem-xdr-implement
         - name: Pilot and deploy Microsoft Defender XDR
           items: 
             - name: Overview
@@ -34,11 +34,11 @@
           - name: Connect Microsoft Sentinel to the Defender portal (optional)
             href: /defender-xdr/microsoft-sentinel-onboard?toc=/security/zero-trust/toc.json&bc=/security/breadcrumb/toc.json
           - name: Respond to an incident (Defender portal)
-            href: /security/zero-trust/respond-incident-defender.md
+            href: /security/zero-trust/respond-incident-defender
           - name: Respond to an incident (Azure portal)
-            href: /security/zero-trust/respond-incident-azure.md
+            href: /security/zero-trust/respond-incident-azure
           - name: Recommended training for SIEM and XDR (Azure portal)
-            href: /security/zero-trust/siem-xdr-training.md
+            href: /security/zero-trust/siem-xdr-training
 
     - name: Incident response
       items:

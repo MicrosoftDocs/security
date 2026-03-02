@@ -196,7 +196,7 @@ A Zero Trust approach solves several security problems arising from security bre
 | Lower cyber insurance premiums | To evaluate the cost of cyber insurance, you need a robust and well-defined security model and architecture. By implementing Zero Trust security, you have control, visibility, and governance with real-time analysis for protecting your network and endpoints. Your security team can detect and overcome gaps in your overall security posture and prove to insurers that you have proactive strategies and systems. A Zero Trust approach also improves cyber-resilience and may even help pay for itself by reducing insurance premiums. |
 | Increase security team efficiency and morale | Zero Trust deployments reduce manual efforts for your security team by automating routine tasks such as resource provisioning, access reviews, and attestation. As a result, you can empower your security teams with the time and telemetry they need to detect, deter, and defeat the most critical attacks and risks, both internally and externally, which in turn boosts IT and security team morale. |
 
-For more information to share with business leaders, see the [Minimize the impact of internal or external bad actors e-book](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWZlng).
+For more information to share with business leaders, see the [Minimize the impact of internal or external bad actors](/security/zero-trust/adopt/prevent-reduce-business-damage-breach) scenario guidance.
 
 ## The adoption cycle for preventing or reducing business damage from a breach
 

@@ -80,7 +80,7 @@ This article assumes you're using cloud identity. If you need guidance for this 
 
 
 > [!TIP]
-> When you understand the steps and the end-to-end deployment process, you can use the [Set up your Microsoft Zero Trust security model](https://go.microsoft.com/fwlink/?linkid=2224820) advanced deployment guide when signed in to the Microsoft 365 admin center. This guide steps you through applying Zero Trust principles for standard and advanced technology pillars. To step through the guide without signing in, go to the [Microsoft 365 Setup portal](https://go.microsoft.com/fwlink/?linkid=2222968).
+> When you understand the steps and the end-to-end deployment process, you can use the [Set up your Microsoft Zero Trust security model](https://go.microsoft.com/fwlink/?linkid=2224820) advanced deployment guide when signed in to the Microsoft 365 admin center. This guide steps you through applying Zero Trust principles for standard and advanced technology pillars.
 
 
 <a name='swim-lane-1'></a>

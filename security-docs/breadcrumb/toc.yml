@@ -28,8 +28,8 @@ items:
     tocHref: /security/zero-trust/
     topicHref: /security/zero-trust/
   - name: Zero Trust Assessment
-    tocHref: /security/zero-trust/asessment
-    topicHref: /security/zero-trust/asessment
+    tocHref: /security/zero-trust/assessment
+    topicHref: /security/zero-trust/assessment
 
 
 ## USX

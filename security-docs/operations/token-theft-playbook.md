@@ -116,7 +116,7 @@ The Microsoft Entra ID Protection feature has the following triggers:
 
    ![Screenshot of a list of suspicious activity.](./media/token-theft-playbook/suspicious-urls.png)
 
-* **Other suspicious behaviors** - Defender for Microsoft 365 advanced hunter alert evidence and alert tables show actions that indicate token theft. Review the logs to determine:
+* **Other suspicious behaviors** - Defender for Office 365 advanced hunter alert evidence and alert tables show actions that indicate token theft. Review the logs to determine:
   * Mass file download by a user
   * Unusual file download by a user
   * Addition of multifactor authentication, or passwordless credential to an account

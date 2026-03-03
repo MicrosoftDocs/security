@@ -133,7 +133,7 @@ From the Azure portal:
 1. Change the **MDM user scope** setting to **All**.
 1. Select **Save**.
 
-These steps allow you to manage any device with Microsoft Endpoint Manager. For more information, see [Set up automatic enrollment for Windows 10/11 devices](/mem/intune/enrollment/quickstart-setup-auto-enrollment). You create Intune configuration and compliance policies in a future step.
+These steps allow you to manage any device with Microsoft Intune. For more information, see [Set up automatic enrollment for Windows 10/11 devices](/mem/intune/enrollment/quickstart-setup-auto-enrollment). You create Intune configuration and compliance policies in a future step.
 
 <a name='azure-ad-conditional-access'></a>
 
@@ -150,7 +150,7 @@ To block unauthorized devices from being able to access cloud management interfa
  > [!NOTE]
  > You will need to create a user group, and include your emergency user that can bypass the Conditional Access policy. For our example we have a security group called **Emergency BreakGlass**
 
-This policy set ensures that your Administrators must use a device that is able to present a specific device attribute value, that MFA is satisfied, and the device is marked as compliant by Microsoft Endpoint Manager and Microsoft Defender for Endpoint.
+This policy set ensures that your Administrators must use a device that is able to present a specific device attribute value, that MFA is satisfied, and the device is marked as compliant by Microsoft Intune and Microsoft Defender for Endpoint.
 
 Organizations should also consider blocking legacy authentication protocols in their environments. For more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Microsoft Entra ID with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
 
@@ -241,7 +241,7 @@ For more information about Windows Update policies, see [Policy CSP - Update](/w
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and Microsoft Intune work together to help prevent security breaches. They can also limit the impact of breaches. These capabilities provide real-time threat detection and enable extensive auditing and logging of the end-point devices.
 
-To configure integration of Windows Defender for Endpoint and Microsoft Endpoint Manager:
+To configure integration of Windows Defender for Endpoint and Microsoft Intune:
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Endpoint Security** > **Microsoft Defender ATP**.
 1. In step 1 under **Configuring Windows Defender ATP**, select **Connect Windows Defender ATP to Microsoft Intune in the Windows Defender Security Center**.
@@ -251,7 +251,7 @@ To configure integration of Windows Defender for Endpoint and Microsoft Endpoint
    1. For **Microsoft Intune connection**, choose **On**.
    1. Select **Save preferences**.
 
-1. After a connection is established, return to Microsoft Endpoint Manager and select **Refresh** at the top.
+1. After a connection is established, return to Microsoft Intune and select **Refresh** at the top.
 1. Set **Connect Windows devices version(20H2) 19042.450 and above to Windows Defender ATP** to **On**.
 1. Select **Save**.
 
@@ -391,7 +391,7 @@ In a secured mode, application installation is restricted to managed application
 
 In some situations, applications like the Microsoft Visual Studio Code are required on the secured workstation. The following example provides instructions to install Microsoft Visual Studio Code to users in the security group **Secure Workstation Users**.
 
-Visual Studio Code is provided as an EXE package so it needs to be packaged as an `.intunewin` format file for deployment using Microsoft Endpoint Manager using the [Microsoft Win32 Content Prep Tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool).
+Visual Studio Code is provided as an EXE package so it needs to be packaged as an `.intunewin` format file for deployment using Microsoft Intune using the [Microsoft Win32 Content Prep Tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool).
 
 Download the Microsoft Win32 Content Prep Tool locally to a workstation and copy it to a directory for packaging, for example, C:\Packages. Then create a Source and Output directory under C:\Packages.
 
@@ -403,9 +403,9 @@ Download the Microsoft Win32 Content Prep Tool locally to a workstation and copy
 1. Type `.\IntuneWinAppUtil.exe -c C:\Packages\Source\ -s C:\Packages\Source\VSCodeUserSetup-x64-1.51.1.exe -o C:\Packages\Output\VSCodeUserSetup-x64-1.51.1`
 1. Type `Y` to create the new output folder. The intunewin file for Visual Studio Code is created in this folder.
 
-#### Upload VS Code to Microsoft Endpoint Manager
+#### Upload VS Code to Microsoft Intune
 
-1. In the **Microsoft Endpoint Manager admin center**, browse to **Apps** > **Windows** > **Add**
+1. In the **Microsoft Intune admin center**, browse to **Apps** > **Windows** > **Add**
 1. Under **Select app type**, choose **Windows app (Win32)**
 1. Click **Select app package file**, click **Select a file**, then select the `VSCodeUserSetup-x64-1.51.1.intunewin` from `C:\Packages\Output\VSCodeUserSetup-x64-1.51.1`. Click **OK**
 1. Enter `Visual Studio Code 1.51.1` in the Name field
@@ -480,7 +480,7 @@ This method works for Virtual Machines or physical devices that haven't been pre
 
 ## Import devices into Autopilot
 
-1. In the **Microsoft Endpoint Manager admin center**, go to **Devices** > **Windows Devices** > **Windows enrollment** > **Devices**
+1. In the **Microsoft Intune admin center**, go to **Devices** > **Windows Devices** > **Windows enrollment** > **Devices**
 1. Select **Import** and choose your CSV file.
 1. Wait for the `Group Tag` to be updated to `PAW` and the `Profile Status` to change to `Assigned`. 
 

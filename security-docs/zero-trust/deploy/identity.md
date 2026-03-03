@@ -244,7 +244,7 @@ Executive Order 14028 on Improving the Nations Cyber Security & OMB Memorandum 2
 
 - [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/)
 - [Microsoft Defender for Identity](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)
-- [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
+- [Microsoft Intune](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 (includes Microsoft Intune)
 - [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
 - [SharePoint Online](https://www.microsoft.com/microsoft-365/sharepoint/collaboration)

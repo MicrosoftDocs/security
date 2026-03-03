@@ -229,7 +229,7 @@ Follow these steps:
 
 [Cloud Discovery](/cloud-app-security/set-up-cloud-discovery)
 
-[Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
+[Microsoft Intune](https://www.microsoft.com/endpointmanager)
 (includes Microsoft Intune and Configuration Manager)
 
 [Mobile Application Management](/mem/intune/apps/mam-faq)

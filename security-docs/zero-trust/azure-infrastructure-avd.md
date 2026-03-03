@@ -241,7 +241,7 @@ For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 Refer to the links below to learn about the various services and technologies mentioned in this article.
 
 - [What is Azure - Microsoft Cloud Services](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/)
-- [Azure Infrastructure as a Service (IaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/azure-iaas/)
+- [Azure Infrastructure as a Service (IaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-iaas/)
 - [Virtual Machines (VMs) for Linux and Windows](https://azure.microsoft.com/products/virtual-machines/)
 - [Introduction to Azure Storage - Cloud storage on Azure](/azure/storage/common/storage-introduction)
 - [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview)

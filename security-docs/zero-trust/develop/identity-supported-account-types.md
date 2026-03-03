@@ -27,8 +27,8 @@ A required part of application registration in Microsoft Entra ID is your select
 You choose from the following supported account type options when registering your application.
 
 - `Accounts in this organizational directory only (O365 only - Single tenant)`
-- `Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)`
-- `Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)`
+- `Accounts in any organizational directory (Any Azure AD directory - Multitenant)`
+- `Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)`
 - `Personal Microsoft accounts only`
 
 ## Accounts in this organizational directory only - single tenant

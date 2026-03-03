@@ -87,7 +87,7 @@ It's critical to work together as an organization, create partnerships, and educ
    > - For automated scripts
    > - For external users
 
-If you don't have Microsoft Entra Privileged Identity Management in your organization, you can use the PowerShell API. Start with the Global Administrator role, because it has the same permissions across all cloud services for which your organization has subscribed. These permissions are granted no matter where they were assigned: in the Microsoft 365 admin center, the Azure portal, or by the Microsoft Entra ID module for Microsoft PowerShell.
+If you don't have Microsoft Entra Privileged Identity Management in your organization, you can use the PowerShell API. Start with the Global Administrator role, because it has the same permissions across all cloud services for which your organization has subscribed. These permissions are granted no matter where they were assigned: in the Microsoft 365 admin center, the Azure portal, or by the Microsoft Entra PowerShell module.
 - **Measure key results:** Review and Identification of privileged access roles has been completed within the past 90 days
 
 ### Separate accounts (On-premises AD accounts)

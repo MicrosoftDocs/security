@@ -298,7 +298,7 @@ After the script successfully executes, you can make updates to profiles and pol
 
 Run the Intune data export script `DeviceConfiguration_Export.ps1` from the [DeviceConfiguration GitHub repository](https://github.com/microsoftgraph/powershell-intune-samples/tree/master/DeviceConfiguration) to export all current Intune profiles for comparison, and evaluation of the profiles.
 
-## Set rules in the Endpoint Protection Configuration Profile for Windows Defender Firewall
+## Set rules in the Endpoint Protection Configuration Profile for Microsoft Defender Firewall
 
 Windows Firewall policy settings are included in the Endpoint Protection Configuration Profile. The behavior of the policy applied in described in the following table.
 
@@ -336,7 +336,7 @@ Windows Firewall policy settings are included in the Endpoint Protection Configu
 | Delivery Optimization (UDP-In) | Inbound | Allow | DoSvc | UDP | 7680 | All ports |
 
 > [!NOTE]
-> There are two rules defined for each rule in the Windows Defender Firewall configuration. To restrict the inbound and outbound rules to Windows Services, e.g. DNS Client, both the service name, DNSCache, and the executable path, C:\Windows\System32\svchost.exe, need to be defined as separate rule rather than a single rule that is possible using Group Policy.
+> There are two rules defined for each rule in the Microsoft Defender Firewall configuration. To restrict the inbound and outbound rules to Windows Services, e.g. DNS Client, both the service name, DNSCache, and the executable path, C:\Windows\System32\svchost.exe, need to be defined as separate rule rather than a single rule that is possible using Group Policy.
 
 You can make additional changes to the management of both inbound and outbound rules as needed for your permitted and blocked services. For more information, see [Firewall configuration service](/windows/security/threat-protection/windows-firewall/create-windows-firewall-rules-in-intune).
 

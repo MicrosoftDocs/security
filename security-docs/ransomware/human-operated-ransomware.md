@@ -5,7 +5,7 @@ ms.subservice: zero-trust
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cx-rw
-ms.topic: article
+ms.topic: concept-article
 description: Learn what ransomware is, how it works, and how to protect against it with links to the Microsoft products that help prevent ransomware.
 ms.date: 10/16/2024
 ---

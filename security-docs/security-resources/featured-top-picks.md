@@ -5,12 +5,21 @@ ms.service: security
 ms.topic: whats-new
 author: ttorble
 ms.author: ralyon
-ms.date: 02/04/2026
+ms.date: 03/04/2026
 ---
 
 # Featured top picks
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
+
+## February 2026
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| February 4 | [Applied Skill: Secure AI solutions in the cloud](/credentials/applied-skills/secure-ai-solutions-in-the-cloud/) | Gain your Microsoft Applied Skill with your understanding of Microsoft Defender for Cloud and Microsoft Foundry. |
+|            | [Applied Skill: Identities and access using Microsoft Entra](/credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/) | Complete this Microsoft Applied Skill to demonstrate your ability to manage identities and access in Microsoft Entra.  |
+|            | [Learn about Security Copilot agents](/copilot/security/security-copilot-inclusion?wt.mc_id=securityhub_inclusion_webpage_sci) | Use this documentation to enable autonomous and proactive protection with Security Copilot agents built directly into your workflow. |
+|            | [Configure your Microsoft Sentinel Environment](/training/paths/sc-200-configure-azure-sentinel-environment/) | Strengthen your Microsoft Sentinel skills to learn how data lake and graph enhance performance, context, and investigation speed in this updated learning path. |
 
 ## December 2025
 

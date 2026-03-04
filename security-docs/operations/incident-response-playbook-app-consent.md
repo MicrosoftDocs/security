@@ -18,7 +18,7 @@ ms.date: 03/12/2025
 audience: ITPro
 ms.collection:
   - msftsolution-secops
-ms.topic: article
+ms.topic: how-to
 ms.custom:
   - no-azure-ad-ps-ref
   - sfi-image-nochange

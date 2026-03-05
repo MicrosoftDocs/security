@@ -104,7 +104,7 @@ Track and review, at least quarterly:
 
 ## Summary
 
-Organizations that systematically **discover, segment, and eliminate** legacy systems and unmanaged tenants dramatically improve their security posture. As enterprises shrink the attack surface, enforce tenant lifecycle governance, and align with Zero Trust architecture, they build resilience against modern threats without sacrificing agility where short‑lived tenants are appropriate. 
+Organizations that systematically discover, segment, and eliminate legacy systems and unmanaged tenants dramatically improve their security posture. As enterprises shrink the attack surface, enforce tenant lifecycle governance, and align with Zero Trust architecture, they build resilience against modern threats without sacrificing agility where short‑lived tenants are appropriate. 
 
 By removing legacy systems that risk security, you can improve your organizations security posture by reducing
 attack surfaces and eliminating legacy vulnerabilities.

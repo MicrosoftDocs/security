@@ -423,7 +423,7 @@ You can inventory apps for your users using the Microsoft Entra admin center, Po
 
 You can use the Microsoft Entra admin center to see the list of apps to which individual users granted permissions.
 
-1. Sign in to the **Azure Portal** with administrative rights.
+1. Sign in to the **Azure portal** with administrative rights.
 2. Select the **Microsoft Entra ID** icon.
 3. Select **Users**.
 4. Select the user that you want to review.

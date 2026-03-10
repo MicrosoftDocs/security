@@ -68,11 +68,11 @@ The following steps describe the illustration and also walk through the steps of
 | 1   | Build and manage assessments in Microsoft Purview Compliance Manager | Enterprise-wide |
 | 2   | Use Defender for Cloud Apps to manage AI apps based on compliance risk | SaaS AI apps |
 | 3   | Use Cloud Security Posture Management (CSPM) for AI workloads to discover and manage custom-built apps based on compliance risk | Custom-built Azure AI based AI applications |
-| 4   | Configure Purview Communication Compliance to minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization | Microsoft 365 apps and services <br> AI apps connected by Microsoft Entra or Microsoft Purview Data Map connectors <br> Azure AI services |
+| 4   | Configure Purview Communication Compliance to minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization | Microsoft 365 apps and services <br> AI apps connected by Microsoft Entra or Microsoft Purview Data Map connectors <br> Foundry Tools |
 | 5   | Configure Purview Data Lifecycle Management to retain the content that you need to keep, and delete the content that you don't. | Retention policies for AI apps include user prompts and responses for Microsoft 365 Copilot and Copilot Studio, and also user prompts and responses for other Microsoft copilots and generative AI apps when they have a collection policy with the setting to capture content. These messages can then be retained and deleted for compliance reasons.<br> To integrate AI apps developed on other cloud providers, use the Purview SDK.|
 | 6   | Use eDiscovery together with audit logs for Microsoft 365 Copilot for investigations, as needed | Audit logs are automatically generated when a user interacts with Copilot or an AI Application. <br> To integrate AI apps developed on other cloud providers, use the Purview SDK. |
 | 7   | Use Priva Privacy Assessments to initiate privacy impact assessments for AI apps you build | Any app, any location |
-| 8   | Use AI reports in AI Foundry to document AI project details for apps you develop | AI apps in Azure |
+| 8   | Use AI reports in Microsoft Foundry to document AI project details for apps you develop | AI apps in Azure |
 | 9  | Implement Azure AI Content Safety to block harmful content, and detect and correct ungrounded responses | AI apps in Azure |
 
 ### Step 1—Build and manage assessments in Microsoft Purview Compliance Manager
@@ -175,9 +175,9 @@ Use the following resources to get started with Priva Privacy Assessments and to
 | Learn about and get started | [Learn about privacy assessments](/privacy/priva/privacy-assessments) <br> [Get started with privacy assessments](/privacy/priva/privacy-assessments-setup) |
 | Create an assessment | [Create and manage privacy assessments](/privacy/priva/privacy-assessments-create) |
 
-### Step 8—Use AI reports in AI Foundry
+### Step 8—Use AI reports in Foundry
 
-AI reports in Azure AI Foundry can help developers document their project details. Developers can create a report that shows all the details of an AI project, such as model cards, model versions, content safety filter configurations, and evaluation metrics. This report can be exported in PDF or SPDX formats, helping development teams demonstrate production readiness within governance, risk, and compliance (GRC) workflows and facilitate easier, ongoing audits of applications in production.
+AI reports in Foundry can help developers document their project details. Developers can create a report that shows all the details of an AI project, such as model cards, model versions, content safety filter configurations, and evaluation metrics. This report can be exported in PDF or SPDX formats, helping development teams demonstrate production readiness within governance, risk, and compliance (GRC) workflows and facilitate easier, ongoing audits of applications in production.
 
 :::image type="content" source="media/azure-ai-studio-reports.png" alt-text="Screenshot that shows AI reports in Azure AI Studio." lightbox="media/azure-ai-studio-reports.png":::
 
@@ -185,8 +185,8 @@ Use the following resources to get started.
 
 | Task | Recommended resources |
 | --- | --- |
-| Read about AI Reports in AI Foundry (blog) | [AI reports: Improve AI governance and GenAIOps with consistent documentation](https://techcommunity.microsoft.com/blog/aiplatformblog/ai-reports-improve-ai-governance-and-genaiops-with-consistent-documentation/4301914) |
-| Learn about and get started with AI Foundry | [What is Azure AI Foundry?](/azure/ai-foundry/what-is-ai-foundry) |
+| Read about AI Reports in Foundry (blog) | [AI reports: Improve AI governance and GenAIOps with consistent documentation](https://techcommunity.microsoft.com/blog/aiplatformblog/ai-reports-improve-ai-governance-and-genaiops-with-consistent-documentation/4301914) |
+| Learn about and get started with Foundry | [What is Foundry?](/azure/ai-foundry/what-is-ai-foundry) |
 
 ### Step 9—Implement Azure AI Content Safety
 
@@ -196,7 +196,7 @@ Use the following resources to get started.
 
 | Task | Recommended resources |
 | --- | --- |
-| Learn about and get started | [What is Azure AI Content Safety? - Azure AI services \| Microsoft Learn](/azure/ai-services/content-safety/overview) <br> [Use Content Safety in Azure AI Foundry portal](/azure/ai-services/content-safety/how-to/foundry) |
+| Learn about and get started | [What is Azure AI Content Safety? - Foundry Tools \| Microsoft Learn](/azure/ai-services/content-safety/overview) <br> [Use Content Safety in Foundry portal](/azure/ai-services/content-safety/how-to/foundry) |
 
 ## Next step for securing AI
 Continue to make progress on end-to-end security with Zero Trust resources:

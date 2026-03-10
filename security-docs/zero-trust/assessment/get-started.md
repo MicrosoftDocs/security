@@ -23,7 +23,10 @@ The Zero Trust Assessment checks your tenant configuration and recommends ways t
 
 - PowerShell 7. To install it, see [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell).
 - To connect and consent to the required permissions the first time, you need to be a [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator). 
-   - Subsequent runs can use the [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role.
+- Subsequent runs require a user with the following roles.
+   - [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader)
+   - [Exchange Administrator](/entra/identity/role-based-access-control/permissions-reference#exchange-administrator)
+   - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator)
 - If you installed a previous version of the Zero Trust Assessment, [uninstall](#uninstall-previous-versions) it before continuing.
 
 ## Install the PowerShell modules
@@ -39,9 +42,9 @@ Follow these steps to install or update the assessment and connect to Microsoft 
 
 ## Connect to Microsoft Graph and Microsoft Azure
 
-To run the Zero Trust Assessment module, you connect to Microsoft Graph and Microsoft Azure. The Zero Trust Assessment module connects to Microsoft Graph first, and then to Microsoft Azure.
+To run the Zero Trust Assessment module, you connect to multiple Microsoft cloud services including Microsoft Graph, Microsoft Azure, Microsoft Exchange, Microsoft SharePoint and Azure Information Protection.
 
-Run this command to connect to Microsoft Graph:
+Run this command to connect to all the services.
 
    ```powershell
    Connect-ZtAssessment
@@ -85,6 +88,8 @@ The Microsoft Azure sign-in is required to check for the export of audit and sig
 
 If you have multiple subscriptions, select a tenant and a subscription when prompted.
 
+Multiple sign in prompts will be displayed for each cloud services (including Microsoft SharePoint and Microsoft Exchange).
+
 :::image type="content" source="media/subscription-options.png" alt-text="Screenshot of the Azure subscription selection options in the PowerShell 7 console.":::   
 
 ## Run the assessment
@@ -119,7 +124,7 @@ After the assessment runs, the report opens the **Overview** tab in your default
 
 :::image type="content" source="media/results-overview.png" alt-text="Screenshot of assessment results on the Overview tab." lightbox="media/results-overview-full.png":::
 
-The **Identity** and **Devices** tabs show a list of results from the tests run against the tenant. The results show the [**Risk**](glossary.md#risk-level) and result **Status** of each test.
+The **Identity**, **Devices**, **Network** and **Data** tabs show a list of results from the tests run against the tenant. The results show the [**Risk**](glossary.md#risk-level) and result **Status** of each test.
 
 :::image type="content" source="media/results-identity.png" alt-text="Screenshot of assessment results on the Identity tab." lightbox="media/results-identity.png":::   
 
@@ -135,6 +140,23 @@ To remove the Zero Trust Assessment module:
 1. Delete the folder that the Zero Trust Assessment module created.
 
 ## FAQs
+
+### Export troubleshooting logs
+
+If an issue occurs, export a log using these instructions.
+
+Run the following command in the same session where you ran the
+assessment to create the export package (update the date to reflect the date of your run).
+
+```powershell
+New-PSFSupportPackage -Path C:\AssessmentLog_2025_01_01 -Force
+```
+
+Zip this folder along with the folder that was created by `Invoke-ZtAssessment` (default is `ZeroTrustAssessment`).
+
+### Viewing logs during test execution
+
+To view the progress of long running tests, open the `/zt-export/logs` folder found inside your assessment folder.
 
 ### Uninstall previous versions
 

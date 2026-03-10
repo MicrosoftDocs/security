@@ -88,7 +88,7 @@ The Microsoft Azure sign-in is required to check for the export of audit and sig
 
 If you have multiple subscriptions, select a tenant and a subscription when prompted.
 
-Multiple sign in prompts will be displayed for each cloud services (including Microsoft SharePoint and Microsoft Exchange).
+A sign-in prompt appears for each cloud service, including Microsoft SharePoint and Microsoft Exchange.
 
 :::image type="content" source="media/subscription-options.png" alt-text="Screenshot of the Azure subscription selection options in the PowerShell 7 console.":::   
 

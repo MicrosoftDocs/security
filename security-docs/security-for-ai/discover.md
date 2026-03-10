@@ -34,7 +34,7 @@ The following table describes the illustration and also walks through the steps 
 
 | Step | Task | Scope |
 | --- | --- | --- |
-|  1   | Gain visibility into all agent identities created across Microsoft Copilot Studio and Azure AI Foundry with Microsoft Entra Agent ID.  |  Agents created in Microsoft Copilot Studio and Azure AI Foundry   |
+|  1   | Gain visibility into all agent identities created across Microsoft Copilot Studio and Microsoft Foundry with Microsoft Entra Agent ID.  |  Agents created in Microsoft Copilot Studio and Foundry   |
 | 2   | Gain visibility into AI usage with Microsoft Purview Data Security Posture Management (DSPM) for AI. Apply policies to protect sensitive data. | Copilots, agents, and other AI apps that use third-party large language modules (LLMs), including [Supported AI sites](/purview/ai-microsoft-purview-supported-sites). |
 | 3   | Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps | SaaS AI apps |
 | 4   | Discover deployed AI workloads in your environment and gain security insights with Microsoft Defender for Cloud Security Posture Management (CSPM) | Custom-built Azure AI based AI applications |
@@ -43,11 +43,11 @@ The following table describes the illustration and also walks through the steps 
 
 As organizations build and adopt AI agents, it’s challenging to keep track of these non-human actors. The very thing that makes these agents powerful—their ability to autonomously handle complex tasks and act like virtual teammates—also raises concerns. That’s why it’s critical to track agent identities, manage their lifecycle and permissions, and carefully secure their access to your organization’s resources. 
 
-Microsoft Entra Agent ID (Preview) provides unified directory of all agent identities created across Microsoft Copilot Studio and Azure AI Foundry. This is a first step in providing even greater visibility, protection, and governance of the rapidly growing volume of agents in organizations. 
+Microsoft Entra Agent ID (Preview) provides unified directory of all agent identities created across Microsoft Copilot Studio and Foundry. This is a first step in providing even greater visibility, protection, and governance of the rapidly growing volume of agents in organizations. 
 
 | Task | Recommended resources |
 | --- | --- |
-| View all agents in your organization    |  sign in to the Microsoft Entra admin center and navigate to [Enterprise applications](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview). In the filter bar at the top of the list view, set the Application type dropdown to Agent ID (Preview). Instantly, your enterprise application list will narrow down to show the AI agents (created via Copilot Studio or Azure AI Foundry) that are registered in your tenant.   | 
+| View all agents in your organization    |  sign in to the Microsoft Entra admin center and navigate to [Enterprise applications](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview). In the filter bar at the top of the list view, set the Application type dropdown to Agent ID (Preview). Instantly, your enterprise application list will narrow down to show the AI agents (created via Copilot Studio or Foundry) that are registered in your tenant.   | 
 | Learn more by reviewing this blog  |[Announcing Microsoft Entra Agent ID: Secure and manage your AI agents](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/announcing-microsoft-entra-agent-id-secure-and-manage-your-ai-agents/3827392)    |
 
 

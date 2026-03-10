@@ -44,7 +44,7 @@ The following two tables describe the illustration and also walk through the ste
 | 1   | Apply SharePoint oversharing controls to quickly exempt sensitive sites and data from the scope of AI apps. | Sites and files across your Microsoft 365 environment. |
 | 2   | Use Data Security Posture Management (DSPM) for AI to learn where oversharing is taking place and to find gaps in your policy coverage for sensitivity labels and DLP policies. | Copilots, agents, and other AI apps that use third-party large language modules (LLMs), including [Supported AI sites](/purview/ai-microsoft-purview-supported-sites).<br> AI apps in other cloud providers through the Purview SDK. |
 | 3 | Continue to make progress on sensitivity labels and data loss prevention (DLP) policies.| Sites, files, and devices across your Microsoft 365 environment. <br> SaaS apps when integrated with Defender for Cloud Apps. <br> AI apps in Azure and other cloud providers through the Purview SDK. |
-| 4 | Within Insider Risk Management (IRM), apply the Risky AI template to identify risky behavior in AI apps. | Generative AI websites. <br>Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio, Azure AI services. <br> AI apps in other cloud providers through the Purview SDK. |
+| 4 | Within Insider Risk Management (IRM), apply the Risky AI template to identify risky behavior in AI apps. | Generative AI websites. <br>Microsoft 365 Copilot, Microsoft Copilot, Copilot Studio, Foundry Tools. <br> AI apps in other cloud providers through the Purview SDK. |
 | 5 | Configure Adaptive Protection for Insider Risk Management to increase protection for data based on the risk of users  | Sites, files, and devices across your Microsoft 365 environment. |
 
 **Table 2—Threat protection capabilities**

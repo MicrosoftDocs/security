@@ -23,7 +23,7 @@ The Zero Trust Assessment checks your tenant configuration and recommends ways t
 
 - PowerShell 7. To install it, see [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell).
 - To connect and consent to the required permissions the first time, you need to be a [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator). 
-- Subsequent runs require a user with the following roles.
+- Subsequent runs require a user with the following roles:
    - [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader)
    - [Exchange Administrator](/entra/identity/role-based-access-control/permissions-reference#exchange-administrator)
    - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator)

@@ -145,7 +145,7 @@ To remove the Zero Trust Assessment module:
 
 If an issue occurs, export a log using these instructions.
 
-Run the following command in the same session where you ran the
+Run the following command in the same session where you ran the assessment to create the export package (update the date to reflect the date of your run).
 assessment to create the export package (update the date to reflect the date of your run).
 
 ```powershell

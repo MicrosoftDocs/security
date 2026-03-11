@@ -54,17 +54,17 @@ Organizations can adopt similar practices using the following steps:
 |---|---|---|
 | AI-native audit logging  | Log copilot and agent interaction events, including contextual metadata    | [Microsoft Purview](https://www.microsoft.com/security/business/microsoft-purview)   |
 | Standardize data   | Align with OpenTelemetry (OTel) GenAI semantic conventions so spans and traces are consistent. Stay tuned—OTel’s attribute families are [potentially expanding](https://github.com/open-telemetry/semantic-conventions/issues/2664) with proposals to support multi-agent orchestration (including tasks and memory).   | [OTel GenAI semantic conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/)  |
-| Understand and debug agent behavior   | Trace tool invocations, agent decisions, and inter-service dependencies   | [Microsoft Foundry agent tracing (preview)](https://learn.microsoft.com/azure/foundry/observability/concepts/trace-agent-concept)  |
-| Measure quality, safety, and reliability   | Score model or agent outputs on outcomes such as groundedness, safety/risk, and tool use correctness, for regression testing or gating releases on quality    | [Microsoft Foundry evaluators](https://learn.microsoft.com/azure/foundry/concepts/built-in-evaluators)  |
-| Governance for tools, agents, and models  |  Onboard your agents to Foundry, using Microsoft-supported frameworks or register your own custom agents.  |  [Microsoft Foundry Control Plane](https://learn.microsoft.com/azure/foundry/control-plane/overview?view=foundry)  |
-| Production monitoring  |  Create an Application Insights resource and use built-in experiences and workbooks to publish dashboards  |  [Azure Monitor Application Insights](https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview)  |
+| Understand and debug agent behavior   | Trace tool invocations, agent decisions, and inter-service dependencies   | [Microsoft Foundry agent tracing (preview)](/azure/foundry/observability/concepts/trace-agent-concept)  |
+| Measure quality, safety, and reliability   | Score model or agent outputs on outcomes such as groundedness, safety/risk, and tool use correctness, for regression testing or gating releases on quality    | [Microsoft Foundry evaluators](/azure/foundry/concepts/built-in-evaluators)  |
+| Governance for tools, agents, and models  |  Onboard your agents to Foundry, using Microsoft-supported frameworks or register your own custom agents.  |  [Microsoft Foundry Control Plane](/azure/foundry/control-plane/overview?view=foundry)  |
+| Production monitoring  |  Create an Application Insights resource and use built-in experiences and workbooks to publish dashboards  |  [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)  |
 | Detecting misuse  |  Ingest logs (Purview) and traces (Foundry + App Insights) for signal correlation  |  \[Microsoft Sentinel](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-sentinel)  |
 
 For enterprises using Agent 365: 
 
 |Use case|Recommended action |Resource |
 |---|---|---|
-| Enterprise observability and governance integration  | Use the Microsoft Agent 365 Observability SDK (part of Agent 365 SDK) to emit OTel-aligned telemetry for Agent 365 governance, including admin visibility and Defender/Purview integration    | [Microsoft Agent 365 Observability SDK (Frontier preview)](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/monitor-agents)   |
+| Enterprise observability and governance integration  | Use the Microsoft Agent 365 Observability SDK (part of Agent 365 SDK) to emit OTel-aligned telemetry for Agent 365 governance, including admin visibility and Defender/Purview integration    | [Microsoft Agent 365 Observability SDK (Frontier preview)](/microsoft-agent-365/admin/monitor-agents)   |
 | Tenant-wide governance   | Use Microsoft Agent 365 in the Microsoft 365 admin center to govern all agents across the tenant.   | [Microsoft Agent 365 (Frontier preview)](https://www.microsoft.com/en-us/microsoft-agent-365)  |
 
 ##Outcomes

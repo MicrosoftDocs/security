@@ -65,9 +65,9 @@ For enterprises using Agent 365:
 |Use case|Recommended action |Resource |
 |---|---|---|
 | Enterprise observability and governance integration  | Use the Microsoft Agent 365 Observability SDK (part of Agent 365 SDK) to emit OTel-aligned telemetry for Agent 365 governance, including admin visibility and Defender/Purview integration    | [Microsoft Agent 365 Observability SDK (Frontier preview)](/microsoft-agent-365/admin/monitor-agents)   |
-| Tenant-wide governance   | Use Microsoft Agent 365 in the Microsoft 365 admin center to govern all agents across the tenant.   | [Microsoft Agent 365 (Frontier preview)](https://www.microsoft.com/en-us/microsoft-agent-365)  |
+| Tenant-wide governance   | Use Microsoft Agent 365 in the Microsoft 365 admin center to govern all agents across the tenant.   | [Microsoft Agent 365 (Frontier preview)](https://www.microsoft.com/microsoft-agent-365)  |
 
-##Outcomes
+## Outcomes
 
 ### Benefits
 
@@ -83,6 +83,7 @@ For enterprises using Agent 365:
 - AI observability is rarely “set-it and forget it.” It’s a continuous process that incurs operational overhead.  
 
 ## Key success factors
+
 Track these KPIs to measure progress:  
 
 - Coverage of AI system observability—the proportion of total AI systems that are observable (emitting logs and traces into monitoring backends).

@@ -64,6 +64,8 @@ When you connect by using Microsoft Graph PowerShell, it requests these permissi
 - EntitlementManagement.Read.All
 - IdentityRiskEvent.Read.All
 - IdentityRiskyUser.Read.All
+- IdentityRiskyServicePrincipal.Read.All
+- NetworkAccess.Read.All
 - Policy.Read.All
 - Policy.Read.ConditionalAccess
 - Policy.Read.PermissionGrant

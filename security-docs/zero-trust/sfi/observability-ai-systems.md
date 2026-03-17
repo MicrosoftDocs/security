@@ -40,7 +40,7 @@ Evolve logs, metrics, and traces to be AI-native.
 1. Log request identity context, timestamp, and conversation/run identifiers, along with execution details such as user inputs and system responses, retrieval source provenance, and agent/tool invocations (tool name, arguments, permissions, and outputs), and represent traces and metrics with OpenTelemetry GenAI semantic conventions. What to capture and retain should be governed by clear data contracts that balance forensic needs against privacy, data residency, data minimization, retention requirements, and compliance with legal and regulatory obligations, with access controls and encryption aligned to enterprise policy and risk assessments.
 1. Monitor the system through token usage, latency, error rate, volume of tool calls or requests, and other metrics.
     - Capture the end-to-end journey of a request (traces), linking each step in an agent’s execution. 
-    - Standardize using OpenTelemetry (OTel). Remember that logging and telemetry should be sufficient for incident reconstruction.    
+    - Standardize using OpenTelemetry (OTel). Remember that logging and telemetry should be sufficient for incident reconstruction.
 1. Incorporate evaluation to continuously track quality and safety and capture policy decisions.
 1. Establish behavioral baselines and alert on deviations. Determine what “normal” looks like for your AI systems. 
 1. Think beyond observability to consider controls, security, governance, and foundational primitives. 
@@ -59,7 +59,7 @@ Organizations can adopt similar practices using the following steps:
 | Measure quality, safety, and reliability   | Score model or agent outputs on outcomes such as groundedness, safety/risk, and tool use correctness, for regression testing or gating releases on quality    | [Microsoft Foundry evaluators](/azure/foundry/concepts/built-in-evaluators)  |
 | Governance for tools, agents, and models  |  Onboard your agents to Foundry using Microsoft-supported frameworks, or register your own custom agents.  |  [Microsoft Foundry Control Plane](/azure/foundry/control-plane/overview)  |
 | Production monitoring  |  Create an Application Insights resource and use built-in experiences and workbooks to publish dashboards  |  [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)  |
-| Detecting misuse  |  Ingest logs (Purview) and traces (Foundry + Application Insights) for signal correlation  |  \[Microsoft Sentinel](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-sentinel)  |
+| Detecting misuse  |  Ingest logs (Purview) and traces (Foundry + Application Insights) for signal correlation  |  [Microsoft Sentinel](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-sentinel)  |
 
 For enterprises using Microsoft Agent 365: 
 

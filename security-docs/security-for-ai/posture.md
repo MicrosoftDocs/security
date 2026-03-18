@@ -77,7 +77,7 @@ Additionally, different parts of your organization will have different motivatio
 
 ## Address the evolving threat landscape for AI
 
-GenAI introduces new attack surfaces, effectively changing the risk landscape. In addition to managing traditional threat vectors, security and risk leaders also need to address amplified risks such as data leakage and data oversharing, and new risks such as prompt injections, incorrect information, model vulnerabilities and incorrect information. Addressing the evolving threat landscape is crucial to enabling trustworthy AI. 
+GenAI introduces new attack surfaces, effectively changing the risk landscape. In addition to managing traditional threat vectors, security and risk leaders also need to address amplified risks such as data leakage and data oversharing, and new risks such as prompt injections, model vulnerabilities and incorrect information. Addressing the evolving threat landscape is crucial to enabling trustworthy AI. 
 
 :::image type="content" source="media/ai-introduces-new-amplified-risks.png" alt-text="Diagram that shows the GenAI introducing new risks." lightbox="media/ai-introduces-new-amplified-risks.png":::
 
@@ -98,13 +98,13 @@ The following two example scenarios highlight the need for building a strong sec
 
 ### How does oversharing and leakage of data happen? 
 
-In this example, a Contoso employee, Adele, finds, and uses sensitive data with several AI apps.
+In this example, a Contoso employee, Adele, finds and uses sensitive data with several AI apps.
 
 | Step | Description | Unmitigated risks |
 | ---- | ---------- | ------------ |
 | 1 | Adele overhears a team member referencing Project Obsidian. She uses Microsoft 365 Copilot to find more information about it. Copilot provides her with a summary and a link to the documents. | Copilot can process sensitive data without limitations. Sensitive data is overexposed to employees, including those who shouldn’t have access. |
 | 2 | Adele continues using Copilot to find and gather more information about Project Obsidian.| There are no controls in place to detect anomalies in AI apps.|
-| 3 | Out of curiosity, Adele wants to see what ChatGPT would summarize, so she pastes the content of the file into ChatGTP. | There's no data loss prevention (DLP) in place to prevent data leakage to consumer AI apps.|
+| 3 | Out of curiosity, Adele wants to see what ChatGPT would summarize, so she pastes the content of the file into ChatGPT. | There's no data loss prevention (DLP) in place to prevent data leakage to consumer AI apps.|
 | 4 | The project details were prematurely revealed, resulting in data breaches. So, Contoso banned all AI apps in the workplace. | Banning consumer AI outright can lead to increased dark usage.|
 
 Contoso could have mitigated these risks by doing the work of preparing, discovering, and protecting AI app usage.
@@ -123,7 +123,7 @@ In this next example, Jane is assigned to lead AI governance for Contoso.
 | ---- | ---------------------| ---------------------- |
 | 1 | Jane struggles to interpret regulatory requirements into actionable controls for IT teams to implement. | Lack of experts who are well-versed in both regulatory requirements and technology.|
 | 2 | Jane starts preparing for risk assessments but is unaware of the AI systems being built and used at Contoso. She also doesn’t have visibility into the usage and potential compliance risks.| No visibility into AI systems deployed in the environment. No governance of AI usage. |
-| 3 | After several internal interviews, Jane realizes that developers are building around 14 AI apps simultaneously, which various standards of security, safety, and privacy controls implemented. | No visibility into the controls built in AI systems by developers.  |
+| 3 | After several internal interviews, Jane realizes that developers are building around 14 AI apps simultaneously, with various standards of security, safety, and privacy controls implemented. | No visibility into the controls built in AI systems by developers.  |
 | 4 | Some AI apps use personal data with no standard guardrails to assess risks.| No risk assessment in place. |
 | 5 | Customers are complaining about Contoso AI creating harmful and ungrounded content.| Lack of controls for AI outputs.|
 
@@ -179,7 +179,7 @@ A significant majority of security and risk leaders (78%) believe their IT secur
 
 Earlier in this article, Microsoft recommends doing the work to understand the motivations of business leaders and different business units across your organization. Identifying top concerns and shared business objectives is an important step toward negotiating resources to accomplish the objectives.  
 
-Allocating funds for compliance assessments, legal consultations, and audits become essential to align an organization’s AI strategy to an industry framework and enable more secure, safe, and compliant AI usage and systems. Prioritizing funds for ongoing employee training and skills development, which could include specialized training on security tools for AI, risk management strategies, and ethical considerations in AI use is also important to consider when allocating budget and resources. 
+Allocating funds for compliance assessments, legal consultations, and audits becomes essential to align an organization’s AI strategy to an industry framework and enable more secure, safe, and compliant AI usage and systems. Prioritizing funds for ongoing employee training and skills development, which could include specialized training on security tools for AI, risk management strategies, and ethical considerations in AI use is also important to consider when allocating budget and resources. 
 
 ### Step 3—Take a Zero Trust approach 
 
@@ -219,7 +219,7 @@ On top of Microsoft’s end-to-end security platform, Microsoft provides compreh
 
 :::image type="content" source="media/security-for-ai-posture-solution-wheel.png" alt-text="Microsoft capabilities provide full, wrap-around protection for your AI apps and data." lightbox="media/security-for-ai-posture-solution-wheel.png":::
 
-The following image is a summary view of all the capabilities Microsoft provides for protecting adopting AI. These capabilities are also listed in the table below.
+The following image is a summary view of all the capabilities Microsoft provides for protecting organizations adopting AI. These capabilities are also listed in the table below.
 
 
 :::image type="content" source="media/security-for-ai-microsoft-solutions.png" alt-text="Diagram of Microsoft products that help with security for AI." lightbox="media/security-for-ai-microsoft-solutions.png":::

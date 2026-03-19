@@ -14,7 +14,7 @@ ms.collection:
 # Higher security for Microsoft Entra ID apps (Secure Future Initiative)
 
 **Pillar name: Protect tenants and isolate production systems**<br />
-**Pattern name: Higher security for Microssoft Entra ID apps**
+**Pattern name: Higher security for Microsoft Entra ID apps**
 
 By implementing the Higher security for Microsoft Entra ID apps pattern, Microsoft ensures that all apps adhere to a high and consistent security standard. This approach significantly reduces the risk of Microsoft Entra ID applications being compromised, protecting them from potential attacker targets.
 

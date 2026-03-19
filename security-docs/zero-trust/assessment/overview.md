@@ -13,7 +13,7 @@ ms.reviewer: joflore
 ---
 # What is the Zero Trust Assessment?
 
-We publish extensive guidance on how to configure [Microsoft Entra](/entra/fundamentals/configure-security), [Microsoft Intune](/intune/intune-service/protect/zero-trust-configure-security), and [Microsoft Purview](/purview/configure-security) for increased security, but manually checking these against a tenant's configuration can be time-consuming and error-prone. The Zero Trust Assessment transforms this process with automation to test for hundreds of security configuration items aligned with the Secure Future Initiative (SFI) and Zero Trust pillars, then guides you through remediation steps to help operationalize Zero Trust principles.
+We publish extensive guidance on how to configure [Microsoft Entra](/entra/fundamentals/configure-security), [Microsoft Intune](/intune/intune-service/protect/zero-trust-configure-security), [Azure networks](/azure/networking/security/zero-trust-network-security) and [Microsoft Purview](/purview/configure-security) for increased security, but manually checking these against a tenant's configuration can be time-consuming and error-prone. The Zero Trust Assessment transforms this process with automation to test for hundreds of security configuration items aligned with the Secure Future Initiative (SFI) and Zero Trust pillars, then guides you through remediation steps to help operationalize Zero Trust principles.
 
 These tests are drawn from trusted sources in cybersecurity, including:
 

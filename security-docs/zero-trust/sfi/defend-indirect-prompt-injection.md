@@ -39,7 +39,7 @@ Implement a defense-in-depth strategy that layers multiple probabilistic and det
 - **Human-in-the-loop:** The last line of defense against an attack is to verify risky actions with the user
 
 
-#\3 Guidance
+## Guidance
 
 Organizations seeking to adopt this pattern can apply the following actionable practices:
 
@@ -90,7 +90,7 @@ Indirect prompt injection Attacks pose a significant threat to generative AI sys
 
 
 
-## Additional e5sources**
+## Additional resources**
 
 
 - [OWASP Top Ten Vulnerabilities for LLMs](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)

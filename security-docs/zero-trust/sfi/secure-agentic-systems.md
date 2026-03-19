@@ -23,7 +23,7 @@ ms.collection:
 
 Autonomous agentic AI systems can plan, invoke tools, access data, and execute actions with limited human intervention. As autonomy increases, so does the potential impact of misalignment, misuse, and compromise.
 
-The companion Patterns & Practices article, *Understanding Autonomous Agentic AI System Risks*, outlines the design, security, and governance risks introduced by agentic behavior. This pattern shifts from **risk identification** to **risk reduction**, focusing on the controls and design decisions that mitigate those risks in practice.
+The companion Patterns & Practices article [Reduce autonomous agentic AI system risk](manage-agentic-risk.md) outlines the design, security, and governance risks introduced by agentic behavior. This pattern shifts from **risk identification** to **risk reduction**, focusing on the controls and design decisions that mitigate those risks in practice.
 
 
 
@@ -31,7 +31,7 @@ The companion Patterns & Practices article, *Understanding Autonomous Agentic AI
 
 Securing agentic systems requires a **defense‑in‑depth** strategy that assumes failure at individual layers and designs systems so that no single failure results in unacceptable harm.
 
-### Controls within mitigation Layers
+### Controls within mitigation layers
 
 #### Model layer controls
 
@@ -99,14 +99,17 @@ The controls above describe what to implement. The following Microsoft solutions
 ### Safety system and runtime mitigations
 
 - **Microsoft Foundry (Guardrails, Content Filters, Abuse Monitoring)** to enforce task adherence, filter untrusted inputs and outputs, and detect misuse patterns.
+    
     *Supports: Prompt injection mitigation, leakage prevention.*
 
 ### Identity and data protection
 
 - **Microsoft Entra** for identity, conditional access, and role‑based access control for agents.
+
     *Supports: least privilege, access control.*
 
 - **Microsoft Purview** for data classification, governance, and policy enforcement.
+    
     *Supports: sensitive data protection.*
 
 ### UX design

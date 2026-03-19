@@ -181,7 +181,7 @@ Organizations seeking to adopt this pattern can apply the following actionable p
 - Clear disclosure and intelligibility require intentional UX planning and may add friction to workflows.
 
 
-## Key success Factors
+## Key success factors
 
 - **Task adherence:** The agent executes actions as intended.
 - **Human involvement:** Humans remain accountable for high impact or ambiguous agent actions.

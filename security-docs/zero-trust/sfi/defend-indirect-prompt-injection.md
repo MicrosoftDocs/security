@@ -18,12 +18,12 @@ ms.collection:
 **Pattern name: Defend against indirect prompt injection attacks**
 
 
-# Context and problem
+## Context and problem
 
 Generative AI systems, such as copilots and agentic assistants, are increasingly integrated into enterprise workflows. These systems often process untrusted content from external sources like emails, documents, websites, and plugins. This opens a critical vulnerability: **indirect prompt injection attacks**. In indirect prompt injection, adversaries embed malicious instructions within third-party content, which the AI misinterprets as legitimate commands. This can lead to unauthorized actions, data breaches, and loss of system integrity. The challenge is compounded by the AI’s inability to distinguish between user input and external content, making traditional input validation insufficient.
 
 
-# Solution
+## Solution
 
 Implement a defense-in-depth strategy that layers multiple probabilistic and deterministic mitigations to reduce the risk and impact of indirect prompt injection. This approach includes:
 
@@ -39,7 +39,7 @@ Implement a defense-in-depth strategy that layers multiple probabilistic and det
 - **Human-in-the-loop:** The last line of defense against an attack is to verify risky actions with the user
 
 
-# Guidance
+#\3 Guidance
 
 Organizations seeking to adopt this pattern can apply the following actionable practices:
 
@@ -53,7 +53,7 @@ Organizations seeking to adopt this pattern can apply the following actionable p
 | Tailor to context | Choose mitigations based on the product type, threat vector, and user interaction model. | [Secure AI](/azure/cloud-adoption-framework/scenarios/ai/secure) and [Prompt Injection Mitigation in MCP](https://devblogs.microsoft.com/blog/protecting-against-indirect-injection-attacks-mcp) |
 
 
-# Outcomes
+## Outcomes
 
 **Benefits:**
 
@@ -72,7 +72,7 @@ Organizations seeking to adopt this pattern can apply the following actionable p
 - **Resource investment**: Developing, testing, and tuning layered defenses demands ongoing investment in tooling, expertise, and infrastructure.
 - **Customization required**: There is no universal solution, each system must be evaluated to determine the appropriate combination of defenses.
 
-# Key success factors:
+## Key success factors:
 
 - **Defense-in-depth mindset is adopted:** Rely on multiple, layered defenses—both probabilistic and deterministic—to ensure system resilience in the face of failures.
 - **Risk evaluation is integrated early:** Embed indirect prompt injection threat modeling and risk assessments into the UX design, prompt engineering, and system architecture phases, rather than adding them after the fact.
@@ -83,19 +83,18 @@ Organizations seeking to adopt this pattern can apply the following actionable p
 - **Leverage community and research:** Collaborate with internal and external security experts, research institutions, and partner ecosystems to identify emerging threats and refine defenses.
 - **Use policy-based controls:** Implement guidelines and controls like Prompt Shields and IFC to enforce strong boundaries on model behavior and prevent unauthorized actions.
 
-# Summary
+## Summary
 
 Indirect prompt injection Attacks pose a significant threat to generative AI systems by exploiting their reliance on untrusted content. A Defense-in-Depth approach—combining prompt sanitization, content isolation, behavioral monitoring, and policy enforcement—provides a robust framework for mitigating these risks. By assuming indirect prompt injection is inevitable and designing systems to contain and respond to it, organizations can protect the integrity, privacy, and trustworthiness of their AI-powered solutions.
 
 
 
 
-**Additional Resources**
+## Additional e5sources**
 
 
-[OWASP Top Ten Vulnerabilities for LLMs](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)
+- [OWASP Top Ten Vulnerabilities for LLMs](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)
 <br>Learn about all the ways that LLMs are currently vulnerabile to maliscious attacks
 
-
-[Microsoft Defender Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection)
+- [Microsoft Defender Prompt Shields](/azure/ai-services/content-safety/concepts/jailbreak-detection)
 <br>Find out how Microsoft is defending against indirect prompt injection attacks in Microsoft Defender using Prompt Shields

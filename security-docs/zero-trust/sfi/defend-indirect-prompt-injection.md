@@ -72,20 +72,20 @@ Organizations seeking to adopt this pattern can apply the following actionable p
 - **Resource investment**: Developing, testing, and tuning layered defenses demands ongoing investment in tooling, expertise, and infrastructure.
 - **Customization required**: There is no universal solution, each system must be evaluated to determine the appropriate combination of defenses.
 
-## Key success factors:
+## Key success factors
 
 - **Defense-in-depth mindset is adopted:** Rely on multiple, layered defenses—both probabilistic and deterministic—to ensure system resilience in the face of failures.
 - **Risk evaluation is integrated early:** Embed indirect prompt injection threat modeling and risk assessments into the UX design, prompt engineering, and system architecture phases, rather than adding them after the fact.
 - **Design with indirect prompt injection:** Design with the expectation that prompt injection attacks are inevitable, enabling proactive containment and recovery strategies.
 - **Untrusted content is isolated:** Leverage techniques such as Information Flow Control (IFC), spotlighting, and datamarking to prevent untrusted data from influencing critical inference or system processes.
-- **Continuous monitoring****: **Employ runtime monitoring tools—such as plan drift detection and critic agents—to detect and respond to abnormal behaviors in real time.
+- **Continuous monitoring**: Employ runtime monitoring tools—such as plan drift detection and critic agents—to detect and respond to abnormal behaviors in real time.
 - **Defenses tailored to context:** Adapt mitigation measures to fit the specific application, threat landscape, user interaction patterns, and deployment environment.
 - **Leverage community and research:** Collaborate with internal and external security experts, research institutions, and partner ecosystems to identify emerging threats and refine defenses.
 - **Use policy-based controls:** Implement guidelines and controls like Prompt Shields and IFC to enforce strong boundaries on model behavior and prevent unauthorized actions.
 
 ## Summary
 
-Indirect prompt injection Attacks pose a significant threat to generative AI systems by exploiting their reliance on untrusted content. A Defense-in-Depth approach—combining prompt sanitization, content isolation, behavioral monitoring, and policy enforcement—provides a robust framework for mitigating these risks. By assuming indirect prompt injection is inevitable and designing systems to contain and respond to it, organizations can protect the integrity, privacy, and trustworthiness of their AI-powered solutions.
+Indirect prompt injection attacks pose a significant threat to generative AI systems by exploiting their reliance on untrusted content. A defense-in-depth approach—combining prompt sanitization, content isolation, behavioral monitoring, and policy enforcement—provides a robust framework for mitigating these risks. By assuming indirect prompt injection is inevitable and designing systems to contain and respond to it, organizations can protect the integrity, privacy, and trustworthiness of their AI-powered solutions.
 
 
 

@@ -17,6 +17,8 @@
        href: /entra/fundamentals/configure-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
      - name: Devices
        href: /intune/intune-service/protect/zero-trust-configure-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
+     - name: Network
+       href: /azure/networking/security/zero-trust-network-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
      - name: Data
        href: /purview/configure-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
 - name: Reference

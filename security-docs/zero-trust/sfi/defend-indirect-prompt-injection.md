@@ -46,7 +46,7 @@ Organizations seeking to adopt this pattern can apply the following actionable p
 | **Practice category** | **Recommended actions** | **Link for article (how to do it)** |
 | --- | --- | --- |
 | Assume indirect prompt injection will happen | Design systems with the expectation that some attacks will succeed. | [Secure AI](/azure/cloud-adoption-framework/scenarios/ai/secure) |
-| Integrate early<br> | Apply indirect prompt injection risk evaluations during UX design, prompt engineering, and system architecture. | [Secure AI](/azure/cloud-adoption-framework/scenarios/ai/secure) |
+| Integrate early | Apply indirect prompt injection risk evaluations during UX design, prompt engineering, and system architecture. | [Secure AI](/azure/cloud-adoption-framework/scenarios/ai/secure) |
 | Use multiple layers | No single solution is sufficient—combine probabilistic and deterministic defenses. | [Prompt Shields](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/azure-ai-announces-prompt-shields-for-jailbreak-and-indirect-prompt-injection-at/4099140) and [Spotlighting](https://arxiv.org/html/2403.14720v1) |
 | Isolate untrusted content | Use IFC to prevent untrusted data from influencing critical inference or planning.<br> | [Spotlighting research](https://arxiv.org/html/2403.14720v1) |
 | Monitor continuously | Implement runtime checks like plan drift detection and critic agents to catch anomalies. | [Monitor generative AI apps](/azure/ai-foundry/how-to/monitor-applications) |
@@ -90,7 +90,7 @@ Indirect prompt injection attacks pose a significant threat to generative AI sys
 
 
 
-## Additional resources**
+## Additional resources
 
 
 - [OWASP Top Ten Vulnerabilities for LLMs](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)

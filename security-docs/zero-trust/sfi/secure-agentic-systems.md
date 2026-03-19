@@ -98,19 +98,13 @@ The controls above describe what to implement. The following Microsoft solutions
 
 ### Safety system and runtime mitigations
 
-- **Microsoft Foundry (Guardrails, Content Filters, Abuse Monitoring)** to enforce task adherence, filter untrusted inputs and outputs, and detect misuse patterns.
-    
-    *Supports: Prompt injection mitigation, leakage prevention.*
+- **Microsoft Foundry (Guardrails, Content Filters, Abuse Monitoring)** to enforce task adherence, filter untrusted inputs and outputs, and detect misuse patterns: *Supports: Prompt injection mitigation, leakage prevention.*
 
 ### Identity and data protection
 
-- **Microsoft Entra** for identity, conditional access, and role‑based access control for agents.
+- **Microsoft Entra** for identity, conditional access, and role‑based access control for agents: *Supports: least privilege, access control.*
 
-    *Supports: least privilege, access control.*
-
-- **Microsoft Purview** for data classification, governance, and policy enforcement.
-    
-    *Supports: sensitive data protection.*
+- **Microsoft Purview** for data classification, governance, and policy enforcement: *Supports: sensitive data protection.*
 
 ### UX design
 

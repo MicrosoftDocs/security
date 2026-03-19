@@ -127,9 +127,9 @@ Organizations seeking to adopt this pattern can apply the following actionable p
 
 | Practice Category | Recommended Actions | Resource |
 |------------------|---------------------|----------|
-| Governance for tools, agents, and models | Onboard agents to Foundry using supported frameworks or register custom agents | [Microsoft Foundry Control Plane](/azure/foundry/control-plane/overview?view=foundry) |
+| Governance for tools, agents, and models | Onboard agents to Foundry using supported frameworks or register custom agents | [Microsoft Foundry Control Plane](/azure/foundry/control-plane/overview) |
 | Content safety & prompt injection resilience | Filter inputs and outputs; treat retrieved content as untrusted; block indirect prompt injection | [Foundry Content Filtering and Prompt Shields](/azure/ai-services/content-safety/overview) |
-| Task adherence & tool safety | Enforce tool allowlists and deterministic validation | [Foundry Agent Guardrails](/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2) |
+| Task adherence & tool safety | Enforce tool allowlists and deterministic validation | [Foundry Agent Guardrails](/azure/machine-learning/concept-responsible-ai-dashboard) |
 | AI red‑teaming | Continuously test for prompt injection, intent breaking, unsafe tool selection, and leakage | [Foundry AI Red Teaming Agent / PyRIT](/azure/foundry/concepts/ai-red-teaming-agent) |
 | Identity & access for agents | Apply least privilege, conditional access, and lifecycle governance | [Microsoft Entra](/entra/agent-id/) |
 | Data governance & compliance | Classify and protect sensitive data | [Microsoft Purview](/purview/data-security-posture-management-learn-about) |

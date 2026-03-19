@@ -1,6 +1,6 @@
 --- 
-title: Secure agentic AI systems
-description: Learn about defense-in-depth for agaentic AI systems
+title: Secure autonomous agentic AI systems
+description: Learn about securing autonomous agaentic AI systems
 ms.date: 03/19/2026
 ms.service: security
 ms.subservice: zero-trust
@@ -12,7 +12,7 @@ ms.collection:
 ---
 
 
-# Secure agentic systems
+# Secure autonomous agentic AI systems
 
 **Pillar name: Monitor and detect threats**<br/>
 **Pattern name: Secure agentic AI systems**
@@ -23,7 +23,7 @@ ms.collection:
 
 Autonomous agentic AI systems can plan, invoke tools, access data, and execute actions with limited human intervention. As autonomy increases, so does the potential impact of misalignment, misuse, and compromise.
 
-The companion Patterns & Practices article [Reduce autonomous agentic AI system risk](manage-agentic-risk.md) outlines the design, security, and governance risks introduced by agentic behavior. This pattern shifts from **risk identification** to **risk reduction**, focusing on the controls and design decisions that mitigate those risks in practice.
+The companion Patterns & Practices article [Reduce risk for autonomous agentic AI systems](manage-agentic-risk.md) outlines the design, security, and governance risks introduced by agentic behavior. This pattern shifts from **risk identification** to **risk reduction**, focusing on the controls and design decisions that mitigate those risks in practice.
 
 
 
@@ -82,14 +82,15 @@ The positioning layer shapes how people understand, trust, and rely on an agenti
 - **Secure UX patterns:** Ensure review, approval, and shutdown mechanisms are accessible and protected. Mitigates misuse and over‑reliance.
 
 
-## Microsoft solutions for securing agentic systems
+## Microsoft solutions 
 
 The controls above describe what to implement. The following Microsoft solutions help operationalize these mitigations across identity, governance, runtime enforcement, and detection.
 
 ### Primary control plane
 
-- **Microsoft Agent 365** for centralized inventory, governance, access boundaries, and cross‑agent visibility.
-- *Supports: agent sprawl prevention, least privilege, and governance. Supports: agent sprawl prevention, least privilege, governance.*
+- **Microsoft Agent 365**:
+    - Provides centralized inventory, governance, access boundaries, and cross‑agent visibility.
+    - Supports: agent sprawl prevention, least privilege, and governance. Supports: agent sprawl prevention, least privilege, governance.
 
 ### Model selection and svaluation
 
@@ -98,13 +99,19 @@ The controls above describe what to implement. The following Microsoft solutions
 
 ### Safety system and runtime mitigations
 
-- **Microsoft Foundry (Guardrails, Content Filters, Abuse Monitoring)** to enforce task adherence, filter untrusted inputs and outputs, and detect misuse patterns: *Supports: Prompt injection mitigation, leakage prevention.*
+- **Microsoft Foundry (Guardrails, Content Filters, Abuse Monitoring)**
+    - Enforces task adherence, filter untrusted inputs and outputs, and detect misuse patterns.
+    - Supports: Prompt injection mitigation, leakage prevention.
 
 ### Identity and data protection
 
-- **Microsoft Entra** for identity, conditional access, and role‑based access control for agents: *Supports: least privilege, access control.*
+- **Microsoft Entra**:
+    - Provides identity, conditional access, and role‑based access control for agents.
+    - Supports: least privilege, access control.
 
-- **Microsoft Purview** for data classification, governance, and policy enforcement: *Supports: sensitive data protection.*
+- **Microsoft Purview**:
+    - Provides data classification, governance, and policy enforcement.
+    - Supports: sensitive data protection.
 
 ### UX design
 

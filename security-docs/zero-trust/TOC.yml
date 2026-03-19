@@ -89,10 +89,11 @@
       href: sfi/threat-modeling-ai.md   
     - name: Implement AI observability          
       href: sfi/observability-ai-systems.md
-    - name: Secure agentic AI systems
-      href: sfi/secure-agentic-systems.md
-    - name: Reduce autonomous agentic AI risk
+    - name: Identity risk for autonomous agentic AI 
       href: sfi/manage-agentic-risk.md
+    - name: Secure autonomous agentic AI systems
+      href: sfi/secure-agentic-systems.md
+    
     - name: Defend against indirect prompt injection attacks
       href: sfi/defend-indirect-prompt-injection.md
     - name: Complete production infrastructure inventory

@@ -12,7 +12,7 @@ ms.collection:
 ---
 
 
-# Reduce autonomous agentic AI system risks (Secure Future Initiative)
+# Identify risk for autonomous agentic AI systems 
 
 **Pillar name: Monitor and detect threats**<br/>
 **Pattern name: Reduce autonomous agentic AI system risk**

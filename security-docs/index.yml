@@ -88,9 +88,9 @@ sections:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
       - componentType: icon-card
-        title: Join Azure Decoded on March 18
-        summary: Kickstart AI security with Microsoft Defender for Cloud and why it's essential for modern security. 
-        url: https://developer.microsoft.com/reactor/events/26842/?wt.mc_id=securityhub_AzureDecoded_webpage_sci
+        title: Join Azure Decoded on April 8th
+        summary: Learn how to secure your AI workloads with Microsoft Defender for Cloud.
+        url: https://developer.microsoft.com/en-us/reactor/events/26862/
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/video-1-yellow.png

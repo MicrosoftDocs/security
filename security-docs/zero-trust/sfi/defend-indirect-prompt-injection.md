@@ -48,9 +48,11 @@ Organizations seeking to adopt this pattern can apply the following actionable p
 | Assume indirect prompt injection will happen | Design systems with the expectation that some attacks will succeed. | [Secure AI](/azure/cloud-adoption-framework/scenarios/ai/secure) |
 | Integrate early | Apply indirect prompt injection risk evaluations during UX design, prompt engineering, and system architecture. | [Secure AI](/azure/cloud-adoption-framework/scenarios/ai/secure) |
 | Use multiple layers | No single solution is sufficient—combine probabilistic and deterministic defenses. | [Prompt Shields](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/azure-ai-announces-prompt-shields-for-jailbreak-and-indirect-prompt-injection-at/4099140) and [Spotlighting](https://arxiv.org/html/2403.14720v1) |
-| Isolate untrusted content | Use IFC to prevent untrusted data from influencing critical inference or planning.<br> | [Spotlighting research](https://arxiv.org/html/2403.14720v1) |
+| Isolate untrusted content | Use IFC to prevent untrusted data from influencing critical inference or planning.<br> | [Securing AI agents with information flow control](https://arxiv.org/pdf/2505.23643) | 
 | Monitor continuously | Implement runtime checks like plan drift detection and critic agents to catch anomalies. | [Monitor generative AI apps](/azure/ai-foundry/how-to/monitor-applications) |
 | Tailor to context | Choose mitigations based on the product type, threat vector, and user interaction model. | [Secure AI](/azure/cloud-adoption-framework/scenarios/ai/secure) and [Prompt Injection Mitigation in MCP](https://devblogs.microsoft.com/blog/protecting-against-indirect-injection-attacks-mcp) |
+
+Securing AI Agents with Information-Flow Control
 
 
 ## Outcomes

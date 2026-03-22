@@ -34,7 +34,7 @@ Implement a defense-in-depth strategy that layers multiple probabilistic and det
 - **Tool chain analysis**: Assess and block risky sequences of tool execution.
 - **Security guardrails**: Embed final-layer protections within skills to catch bypassed threats.
 - **Information flow control (IFC)**: Enforce policy-based isolation of untrusted content using metadata and quarantined inference environments.
-- **Principle of least privilege**: Give agents only the minimal amount of short-lived privileges needed to complete their tasks
+- **Principle of least privilege**: Give agents only the minimal number of short-lived privileges needed to complete their tasks
 - **Short lived privileges:** Give agents privileges only when needed and remove privileges after each use
 - **Human-in-the-loop:** The last line of defense against an attack is to verify risky actions with the user
 
@@ -79,7 +79,7 @@ Securing AI Agents with Information-Flow Control
 - **Defense-in-depth mindset is adopted:** Rely on multiple, layered defenses—both probabilistic and deterministic—to ensure system resilience in the face of failures.
 - **Risk evaluation is integrated early:** Embed indirect prompt injection threat modeling and risk assessments into the UX design, prompt engineering, and system architecture phases, rather than adding them after the fact.
 - **Design with indirect prompt injection:** Design with the expectation that prompt injection attacks are inevitable, enabling proactive containment and recovery strategies.
-- **Untrusted content is isolated:** Leverage techniques such as Information Flow Control (IFC), spotlighting, and datamarking to prevent untrusted data from influencing critical inference or system processes.
+- **Untrusted content is isolated:** Leverage techniques such as Information Flow Control (IFC), spotlighting, and data marking to prevent untrusted data from influencing critical inference or system processes.
 - **Continuous monitoring**: Employ runtime monitoring tools—such as plan drift detection and critic agents—to detect and respond to abnormal behaviors in real time.
 - **Defenses tailored to context:** Adapt mitigation measures to fit the specific application, threat landscape, user interaction patterns, and deployment environment.
 - **Leverage community and research:** Collaborate with internal and external security experts, research institutions, and partner ecosystems to identify emerging threats and refine defenses.
@@ -96,7 +96,7 @@ Indirect prompt injection attacks pose a significant threat to generative AI sys
 
 
 - [OWASP Top Ten Vulnerabilities for LLMs](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)
-<br>Learn about all the ways that LLMs are currently vulnerabile to maliscious attacks
+<br>Learn about all the ways that LLMs are currently vulnerable to malicious attacks.
 
 - [Microsoft Defender Prompt Shields](/azure/ai-services/content-safety/concepts/jailbreak-detection)
-<br>Find out how Microsoft is defending against indirect prompt injection attacks in Microsoft Defender using Prompt Shields
+<br>Find out how Microsoft is defending against indirect prompt injection attacks in Microsoft Defender using Prompt Shields.

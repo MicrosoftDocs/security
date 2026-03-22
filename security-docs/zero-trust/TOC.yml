@@ -5,11 +5,11 @@
 - name: Assess Zero Trust posture
   items:
   - name: Overview
-    href: assessment/overview
+    href: assessment/overview.md
   - name: Get started
-    href: assessment/get-started
+    href: assessment/get-started.md
   - name: Assessment terminology
-    href: assessment/glossary
+    href: assessment/glossary.md
 - name: Zero Trust partner kit
   href: zero-trust-partner-kit.md
 - name: Zero Trust adoption

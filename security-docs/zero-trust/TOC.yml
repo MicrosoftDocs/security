@@ -2,8 +2,14 @@
   href: index.yml
 - name: What is Zero Trust?
   href: zero-trust-overview.md
-- name: Assessment and tracking resources
-  href: zero-trust-assessment-progress-tracking-resources.md
+- name: Assess Zero Trust posture
+  items:
+  - name: Overview
+    href: assessment/overview.md
+  - name: Get started
+    href: assessment/get-started.md
+  - name: Assessment terminology
+    href: assessment/glossary.md
 - name: Zero Trust partner kit
   href: zero-trust-partner-kit.md
 - name: Zero Trust adoption

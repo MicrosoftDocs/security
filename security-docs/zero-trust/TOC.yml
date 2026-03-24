@@ -2,8 +2,14 @@
   href: index.yml
 - name: What is Zero Trust?
   href: zero-trust-overview.md
-- name: Assessment and tracking resources
-  href: zero-trust-assessment-progress-tracking-resources.md
+- name: Assess Zero Trust posture
+  items:
+  - name: Overview
+    href: assessment/overview.md
+  - name: Get started
+    href: assessment/get-started.md
+  - name: Assessment terminology
+    href: assessment/glossary.md
 - name: Zero Trust partner kit
   href: zero-trust-partner-kit.md
 - name: Zero Trust adoption
@@ -89,11 +95,10 @@
       href: sfi/threat-modeling-ai.md   
     - name: Implement AI observability          
       href: sfi/observability-ai-systems.md
-    - name: Identity risk for autonomous agentic AI 
+    - name: Identify risk for autonomous agentic AI 
       href: sfi/manage-agentic-risk.md
     - name: Secure autonomous agentic AI systems
       href: sfi/secure-agentic-systems.md
-    
     - name: Defend against indirect prompt injection attacks
       href: sfi/defend-indirect-prompt-injection.md
     - name: Complete production infrastructure inventory

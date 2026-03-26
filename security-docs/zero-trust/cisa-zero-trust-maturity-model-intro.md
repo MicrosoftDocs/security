@@ -2,7 +2,7 @@
 title: Configure Microsoft cloud services for the CISA Zero Trust Maturity Model
 description: Enable Zero Trust capabilities with integrated security tools for a secure and resilient cybersecurity framework. 
 ms.service: security
-ms.topic: conceptual
+ms.topic: solution-overview
 ms.date: 12/16/2024
 ms.author: jricketts
 ms.subservice: zero-trust

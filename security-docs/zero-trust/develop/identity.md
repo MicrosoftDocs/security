@@ -5,7 +5,7 @@ ms.date: 02/24/2025
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: hub-page
 ms.service: security
 ms.collection:
   - zerotrust-dev

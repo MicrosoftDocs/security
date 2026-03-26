@@ -4,7 +4,7 @@ description: Learn about automnomous agentic AI system risk, and how to reduce i
 ms.date: 03/19/2026
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: design-pattern
 ms.collection:
   - highpri
   - zerotrust

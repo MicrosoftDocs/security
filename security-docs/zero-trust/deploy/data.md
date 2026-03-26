@@ -6,7 +6,7 @@ ms.service: security
 author: cabailey
 ms.author: cabailey
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.collection:
   - zerotrust-pillar
 ---

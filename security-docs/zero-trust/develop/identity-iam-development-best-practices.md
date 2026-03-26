@@ -4,7 +4,7 @@ description: Learn identity and access management (IAM) best practices for appli
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.service: security
 ms.date: 02/24/2025
 ms.collection:

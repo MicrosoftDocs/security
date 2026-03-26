@@ -4,7 +4,7 @@ description: Learn how to secure your remote and hybrid work with Zero Trust.
 ms.date: 05/05/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.collection: 
   - zerotrust-adopt
 ms.custom: sfi-image-nochange

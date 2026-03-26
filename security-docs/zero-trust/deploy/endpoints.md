@@ -6,7 +6,7 @@ ms.service: security
 author: garycentric
 ms.author: brenduns
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.collection:
   - zerotrust-pillar
 ms.custom: sfi-image-nochange

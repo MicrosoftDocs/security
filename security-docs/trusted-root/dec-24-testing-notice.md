@@ -5,7 +5,7 @@ ms.date: 12/16/2024
 ms.service: security
 author: tahminaahmad
 ms.author: tahminaahmad
-ms.topic: conceptual
+ms.topic: release-notes
 ---
 
 #  December 2024 Test Environment Deployment Notice - Microsoft Trusted Root Program 

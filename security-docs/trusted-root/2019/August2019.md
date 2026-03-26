@@ -5,7 +5,7 @@ ms.date: 08/02/2019
 ms.service: security
 author: kasirota
 ms.author: kasirota
-ms.topic: conceptual
+ms.topic: release-notes
 ---
 
 # August 2019 Deployment Notice: Microsoft Trusted Root Program

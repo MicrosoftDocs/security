@@ -4,7 +4,7 @@ description: Understand the Zero Trust security model, learn about the principle
 ms.date: 02/27/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: 
   - highpri
   - zerotrust

@@ -4,7 +4,7 @@ description: Learn about Zero Trust identity and device access policies for Micr
 ms.subservice: zero-trust
 
 ms.service: security
-ms.topic: conceptual
+ms.topic: best-practice
 audience: Admin
 f1.keywords:
   - NOCSH

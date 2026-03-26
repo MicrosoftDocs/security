@@ -4,7 +4,7 @@ description: Learn best practices for secret and certificate management so that 
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.service: security
 ms.date: 02/24/2025
 ms.collection:

@@ -5,7 +5,7 @@ ms.date: 02/04/2024
 ms.service: security
 ms.author: kasirota
 author: kasirota
-ms.topic: conceptual
+ms.topic: checklist
 ---
 
 # Security Incident Response Requirements - Microsoft Trusted Root Program

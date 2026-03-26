@@ -4,7 +4,7 @@ description: Design a permissions and consent strategy that provides the best us
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.service: security

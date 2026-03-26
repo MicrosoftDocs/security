@@ -7,7 +7,7 @@ manager: martinco
 ms.service: security
 ms.subservice: zero-trust
 ms.workload: identity
-ms.topic: conceptual
+ms.topic: solution-overview
 ms.date: 07/28/2023
 ms.author: jricketts
 ms.reviewer: jricketts

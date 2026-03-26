@@ -6,7 +6,7 @@ ms.author: chrisda
 ms.subservice: zero-trust
 manager: bagol
 ms.service: security
-ms.topic: article
+ms.topic: best-practice
 audience: Admin
 f1.keywords: 
   - NOCSH

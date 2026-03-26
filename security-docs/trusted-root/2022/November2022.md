@@ -5,7 +5,7 @@ ms.date: 11/29/2022
 ms.service: security
 author: hasokol-ms
 ms.author: hasokol
-ms.topic: conceptual
+ms.topic: release-notes
 ---
 
 # November 2022 Deployment Notice - Microsoft Trusted Root Program 

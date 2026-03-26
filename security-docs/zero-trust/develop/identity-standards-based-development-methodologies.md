@@ -4,7 +4,7 @@ description: Learn about the benefits of using supported standards in the Micros
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: security
 ms.date: 02/24/2025
 ms.custom: template-concept

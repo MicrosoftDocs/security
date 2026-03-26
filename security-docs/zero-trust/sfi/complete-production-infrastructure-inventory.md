@@ -4,7 +4,7 @@ description: Complete production infrastructure inventory is part of the monitor
 ms.date: 08/05/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: design-pattern
 ms.collection: 
   - highpri
   - zerotrust

@@ -5,7 +5,7 @@ ms.date: 02/01/2014
 ms.service: security
 author: kasirota
 ms.author: kasirota
-ms.topic: conceptual
+ms.topic: reference
 ---
 
 # List of Participants - Microsoft Trusted Root Program 

@@ -4,7 +4,7 @@ description: Eliminate identity lateral movement is part of the protect tenants 
 ms.date: 08/05/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.collection: 
   - highpri
   - zerotrust

@@ -4,7 +4,7 @@ description: Learn how to deploy Zero Trust solutions to keep your organization 
 ms.date: 02/26/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: checklist
 ms.collection:
   - highpri
   - zerotrust-pillar

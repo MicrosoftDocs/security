@@ -5,7 +5,7 @@ ms.date: 2/24/2025
 ms.service: security
 author: tahmad2
 ms.author: tahminaahmad
-ms.topic: conceptual
+ms.topic: release-notes
 ---
 
 # February 2025 Microsoft Trusted Root Program deployment notice

@@ -4,7 +4,7 @@ description: Learn how to develop your apps using Zero Trust principles so that 
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.service: security
 ms.date: 04/18/2025
 ms.custom: template-concept

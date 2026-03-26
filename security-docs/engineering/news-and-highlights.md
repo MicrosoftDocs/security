@@ -2,7 +2,7 @@
 title: Security news and highlights
 description: Security news and highlights from across Microsoft.
 ms.date: 03/12/2025
-ms.topic: article
+ms.topic: whats-new
 ms.service: security
 ms.subservice:
 ---

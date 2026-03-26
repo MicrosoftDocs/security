@@ -4,7 +4,7 @@ description: Best practices and guidance for using encryption on Microsoft platf
 
 ms.service: security
 ms.subservice: 
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 05/19/2024
 ms.author: laramiller
 author: laramillermsft

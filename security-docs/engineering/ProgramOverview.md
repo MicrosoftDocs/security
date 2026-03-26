@@ -5,7 +5,7 @@ ms.date: 6/9/2023
 ms.service: security
 ms.author: xili13
 author: LaraMillerMSFT
-ms.topic: conceptual
+ms.topic: overview
 ---
 
 # Program Overview

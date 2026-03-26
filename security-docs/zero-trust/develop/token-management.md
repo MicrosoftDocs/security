@@ -4,7 +4,7 @@ description: Learn how to build security into applications with ID tokens, acces
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.service: security

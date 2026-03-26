@@ -3,7 +3,7 @@ title: "Chief Information Security Officer (CISO) Workshop - Videos"
 description: "These are the videos for the CISO Workshop."
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: episode
 ms.date: 02/27/2025
 ms.reviewer: mas
 ---

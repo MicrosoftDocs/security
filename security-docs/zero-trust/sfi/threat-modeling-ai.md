@@ -4,7 +4,7 @@ description: AI threat modeling in the Microsoft SFI focuses on remediating uniq
 ms.date: 08/05/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: design-pattern
 ms.collection: 
   - highpri
   - zerotrust

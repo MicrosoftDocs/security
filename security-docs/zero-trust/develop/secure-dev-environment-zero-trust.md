@@ -4,7 +4,7 @@ description: Learn to secure developer environments with branch security and tru
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.service: security

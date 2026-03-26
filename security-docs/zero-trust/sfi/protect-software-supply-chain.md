@@ -4,7 +4,7 @@ description: Secure all tenants and their resources is part of the Protect engin
 ms.date: 10/03/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: design-pattern
 ms.collection:
   - highpri
   - zerotrust

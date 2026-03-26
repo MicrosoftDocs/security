@@ -5,7 +5,7 @@ ms.date: 11/8/2023
 ms.service: security
 author: hasokol-ms
 ms.author: hasokol
-ms.topic: conceptual
+ms.topic: release-notes
 ---
 
 # March 2023 Deployment Notice - Microsoft Trusted Root Program 

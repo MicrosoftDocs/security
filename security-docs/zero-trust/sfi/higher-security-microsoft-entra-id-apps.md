@@ -4,7 +4,7 @@ description: Higher security for Microsoft Entra ID apps is part of the protect 
 ms.date: 10/03/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: design-pattern
 ms.collection:
   - highpri
   - zerotrust

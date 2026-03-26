@@ -3,7 +3,7 @@ title: Security operations  | Microsoft Docs
 description: Learn about security operations and how they detect, respond, and recover the system when it's attacked.
 ms.collection: 
   - msftsolution-secops
-ms.topic: article
+ms.topic: concept-article
 ms.service: security
 ms.subservice: zero-trust
 ms.date: 11/06/2024

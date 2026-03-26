@@ -4,7 +4,7 @@ description: How to apply Zero Trust principles to virtual machines in Azure.
 ms.date: 05/20/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.collection: 
   - msftsolution-azureiaas
   - msftsolution-scenario

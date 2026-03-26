@@ -5,7 +5,7 @@ ms.date: 10/29/2024
 ms.service: security
 ms.author: xili13
 author: laramillermsft
-ms.topic: conceptual
+ms.topic: overview
 ---
 
 # Transparency Centers

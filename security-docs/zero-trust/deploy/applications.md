@@ -5,7 +5,7 @@ ms.service: security
 ms.subservice: zero-trust
 manager: femila
 ms.date: 03/12/2025
-ms.topic: conceptual
+ms.topic: best-practice
 ms.collection:
   - zerotrust-pillar
 ---

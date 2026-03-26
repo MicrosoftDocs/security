@@ -6,7 +6,7 @@ ms.service: security
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: integration
 ms.collection:
   - zerotrust-partner
 ms.custom: sfi-image-nochange

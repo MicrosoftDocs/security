@@ -4,7 +4,7 @@ description: An overview of how to apply Zero Trust principles to Azure IaaS com
 ms.date: 05/20/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: 
   - msftsolution-azureiaas
   - msftsolution-overview

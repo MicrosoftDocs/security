@@ -5,7 +5,7 @@ ms.date: 6/23/2023
 ms.service: security
 ms.author: xili13
 author: laramillermsft
-ms.topic: conceptual
+ms.topic: feature-guide
 ---
 
 # Online Access to Source Code

@@ -4,7 +4,7 @@ description: Infrastructure represents a critical threat vector. A Zero Trust st
 ms.date: 04/30/2024
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.collection:
   - zerotrust-pillar
 ---

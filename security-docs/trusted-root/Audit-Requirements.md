@@ -5,7 +5,7 @@ ms.date: 07/08/2024
 ms.service: security
 author: kasirota
 ms.author: kasirota
-ms.topic: conceptual
+ms.topic: checklist
 ---
 # Audit Requirements - Microsoft Trusted Root Certificate Program
 

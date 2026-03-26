@@ -14,7 +14,7 @@ f1.keywords:
 audience: ITPro
 ms.collection:
   - msftsolution-secops
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/06/2024
 ms.custom:
   - cxdef-zt-ransomware

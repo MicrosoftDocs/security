@@ -12,7 +12,7 @@ f1.keywords:
 audience: ITPro
 ms.collection: 
 - msftsolution-ransomware
-ms.topic: article
+ms.topic: best-practice
 ms.subservice: zero-trust
 ms.custom: cx-rw 
 ms.date: 10/16/2024

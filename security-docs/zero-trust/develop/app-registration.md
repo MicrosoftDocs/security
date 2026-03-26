@@ -4,7 +4,7 @@ description: Learn about application registration process and requirements to en
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: security
 ms.date: 02/24/2025
 ms.custom: template-concept

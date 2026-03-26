@@ -5,7 +5,7 @@ ms.date: 06/17/2024
 ms.service: security
 ms.reviewer: sdolgin
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: reference-architecture
 ms.collection: 
   - msftsolution-azurepaas
   - msftsolution-scenario

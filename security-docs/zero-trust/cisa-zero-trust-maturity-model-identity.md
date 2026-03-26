@@ -2,7 +2,7 @@
 title: CISA Zero Trust Maturity Model for the identity pillar
 description: For the identity pillar, enable Zero Trust capabilities with integrated security tools for a secure and resilient cybersecurity framework. 
 ms.service: security
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 12/16/2024
 ms.author: jricketts
 ms.subservice: zero-trust

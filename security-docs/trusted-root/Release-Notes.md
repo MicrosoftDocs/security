@@ -5,7 +5,7 @@ ms.date: 2/20/2025
 ms.service: security
 author: hasokol-ms
 ms.author: hasokol
-ms.topic: conceptual
+ms.topic: release-notes
 ---
 # Release notes - Microsoft Trusted Root Certificate Program
 

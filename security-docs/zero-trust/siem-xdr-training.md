@@ -6,7 +6,7 @@ ms.author: bagol
 ms.subservice: zero-trust
 manager: raynew
 ms.date: 02/12/2025
-ms.topic: article
+ms.topic: best-practice
 ms.service: security
 ms.collection: 
   - zerotrust-solution

@@ -5,7 +5,7 @@ description: Learn how to evolve observability for AI systems such as Generative
 ms.date: 03/17/2026
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: design-pattern
 ms.collection: 
   - highpri
   - zerotrust

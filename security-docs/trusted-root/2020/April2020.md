@@ -5,7 +5,7 @@ ms.date: 04/01/2020
 ms.service: security
 author: kasirota
 ms.author: kasirota
-ms.topic: conceptual
+ms.topic: release-notes
 ---
 
 # April 2020 Deployment Notice: Microsoft Trusted Root Program 

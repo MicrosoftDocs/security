@@ -4,7 +4,7 @@ description: Remove legacy systems that risk security is part of the protect ten
 ms.date: 03/05/2026
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: design-pattern
 ms.collection: 
   - highpri
   - zerotrust

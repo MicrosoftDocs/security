@@ -4,7 +4,7 @@ description: Learn about permission and consent when your app requires admin con
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: security
 ms.date: 04/18/2025
 ms.collection:

@@ -4,7 +4,7 @@ ms.date: 10/13/2024
 f1.keywords:
 - NOCSH
 audience: ITPro
-ms.topic: article
+ms.topic: best-practice
 ms.service: security
 ms.subservice: zero-trust
 ms.collection: 

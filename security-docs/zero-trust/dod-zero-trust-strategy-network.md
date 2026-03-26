@@ -2,7 +2,7 @@
 title: DoD Zero Trust Strategy for the network pillar
 description: Learn to minimize your attack surface, reduce risks, enable collaboration, safeguard data, and disrupt adversaries.
 ms.service: security
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 04/10/2024
 ms.author: jricketts
 ms.subservice: zero-trust

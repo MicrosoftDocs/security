@@ -4,7 +4,7 @@ title: Securing the Future of AI and ML at Microsoft
 description: This research paper shares some of Microsoft's security lessons-learned from designing products and operating online services built on AI.
 ms.service: security
 ms.date: 03/12/2025
-ms.topic: conceptual
+ms.topic: best-practice
 ---
 
 # Securing the Future of Artificial Intelligence and Machine Learning at Microsoft

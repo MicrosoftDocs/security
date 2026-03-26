@@ -4,7 +4,7 @@ description: Implement threat protection and XDR.
 ms.date: 05/05/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: solution-overview
 ms.collection: 
   - zerotrust-adopt
 ---

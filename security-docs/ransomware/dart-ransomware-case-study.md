@@ -11,7 +11,7 @@ f1.keywords:
  - NOCSH
 ms.collection: 
  - msftsolution-ransomware
-ms.topic: article
+ms.topic: example-scenario
 ms.date: 05/24/2024
 ms.subservice: zero-trust
 ms.custom: cx-rw

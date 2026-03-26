@@ -5,7 +5,7 @@ ms.date: 02/15/2024
 ms.service: security
 ms.author: kasirota
 author: kasirota
-ms.topic: conceptual
+ms.topic: article
 
 ---
 

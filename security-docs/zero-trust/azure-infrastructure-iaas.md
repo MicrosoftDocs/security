@@ -4,7 +4,7 @@ description: How to apply Zero Trust principles to a spoke virtual network for A
 ms.date: 10/22/2024
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: reference-architecture
 ms.collection: 
   - msftsolution-azureiaas
   - msftsolution-scenario

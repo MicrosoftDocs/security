@@ -2,7 +2,7 @@
 title: DoD Zero Trust Strategy for the visibility and analytics pillar
 description: Learn how to minimize attack surface, reduce risks, enable collaboration, safeguard data, and disrupt adversaries.
 ms.service: security
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 04/10/2024
 ms.author: jricketts
 ms.subservice: zero-trust

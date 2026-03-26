@@ -7,7 +7,7 @@ author: duongau
 ms.author: duau
 ms.subservice: zero-trust
 ms.reviewer: adtork, maroja, maalgeba
-ms.topic: conceptual
+ms.topic: best-practice
 ms.collection: 
   - msftsolution-azureiaas
   - msftsolution-scenario

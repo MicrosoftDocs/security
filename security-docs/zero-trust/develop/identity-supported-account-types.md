@@ -4,7 +4,7 @@ description: In this article, we explain how developers can determine, during ap
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: security
 ms.date: 04/18/2025
 ms.custom: template-concept

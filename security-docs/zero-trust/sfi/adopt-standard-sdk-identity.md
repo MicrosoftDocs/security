@@ -4,7 +4,7 @@ description: Adopt standard SDKs for identity is part of the Protect identities 
 ms.date: 11/06/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: design-pattern
 ms.collection:
   - highpri
   - zerotrust

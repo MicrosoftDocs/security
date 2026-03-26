@@ -6,7 +6,7 @@ ms.author: chrisda
 ms.subservice: zero-trust
 manager: dansimp
 ms.service: security
-ms.topic: conceptual
+ms.topic: checklist
 audience: Admin
 f1.keywords: 
   - NOCSH

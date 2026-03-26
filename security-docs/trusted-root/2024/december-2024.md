@@ -5,7 +5,7 @@ ms.date: 12/4/2024
 ms.service: security
 author: kasirota
 ms.author: kasirota
-ms.topic: conceptual
+ms.topic: release-notes
 ---
 # December 2024 Deployment Notice - Microsoft Trusted Root Program 
 

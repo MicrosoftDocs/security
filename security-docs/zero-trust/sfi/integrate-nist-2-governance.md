@@ -4,7 +4,7 @@ description: Integrate NIST CSF 2.0 governance into annual cybersecurity assessm
 ms.date: 11/06/2025
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: design-pattern
 ms.collection:
   - highpri
   - zerotrust

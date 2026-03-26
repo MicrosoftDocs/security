@@ -3,7 +3,7 @@ title: Identifying Security Bug Reports Based on Report Titles and Noisy Data
 ms.date: 03/12/2025
 description: Learn about Microsoft's lessons-learned from using machine learning to improve the accuracy of labeling in security bug reports (SCRs).
 ms.service: security
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Identifying Security Bug Reports Based on Report Titles and Noisy Data
 

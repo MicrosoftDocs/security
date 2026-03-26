@@ -5,7 +5,7 @@
 title: Threat Modeling AI/ML Systems and Dependencies
 description: Threat Mitigation/Security Feature Technical Guidance
 ms.date: 03/12/2025
-ms.topic: article
+ms.topic: best-practice
 ms.service: security
 ---
 

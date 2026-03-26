@@ -5,7 +5,7 @@ ms.date: 09/29/2020
 ms.service: security
 author: kasirota
 ms.author: kasirota
-ms.topic: conceptual
+ms.topic: release-notes
 ---
 
 # September 2020 Microsoft Trusted Root Program Deployment Notice

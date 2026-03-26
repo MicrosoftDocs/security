@@ -4,7 +4,7 @@ description: Learn what IT Pros need from developers and what developers need fr
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: best-practice
 ms.service: security
 ms.date: 02/24/2025
 ms.custom: template-concept

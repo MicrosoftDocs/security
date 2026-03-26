@@ -5,7 +5,7 @@ ms.date: 7/9/2024
 ms.service: security
 author: tahmad2
 ms.author: tahminaahmad
-ms.topic: conceptual
+ms.topic: release-notes
 ---
 
 # August 2024 Deployment Notice - Microsoft Trusted Root Program 

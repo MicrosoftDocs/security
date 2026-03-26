@@ -4,7 +4,7 @@ description: Learn about information in Microsoft Entra tokens and how to custom
 author: janicericketts
 ms.author: jricketts
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/24/2025
 ms.custom: template-concept
 ms.service: security

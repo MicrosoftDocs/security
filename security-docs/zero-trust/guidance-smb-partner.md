@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.subservice: zero-trust
 manager: deniseb
 audience: Admin
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 02/19/2025
 ms.service: security
 ms.localizationpriority:  medium

@@ -1,12 +1,7 @@
 ---
 title: "Step 4. Require healthy and compliant devices with Intune"
 ms.subservice: zero-trust
-f1.keywords:
-- Conditional access policy
-- Microsoft Intune
-- Intune device management 
 ms.date: 03/14/2025
-audience: ITPro
 description: Create a conditional access policy in Microsoft Entra ID to require compliant devices, keeping corporate data secure when users work from any device in any location.
 ms.topic: how-to
 ms.service: security

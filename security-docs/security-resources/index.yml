@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page
   ms.author: ralyon
   author: ttorble
-  ms.date: 03/04/2026
+  ms.date: 04/03/2026
   
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -19,6 +19,19 @@ landingContent:
 # Start card title with a verb
   # Card 
     # Card 
+  - title: March top picks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Secure AI solutions in the cloud
+            url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
+          - text: Join Azure Decoded on April 8th
+            url: https://developer.microsoft.com/en-us/reactor/events/26862/
+          - text: Learn about Security Copilot agents
+            url: /copilot/security/security-copilot-inclusion?wt.mc_id=securityhub_inclusion_webpage_sci
+          - text: Configure your Microsoft Sentinel Environment
+            url: /training/paths/sc-200-configure-azure-sentinel-environment/
+
   - title: February top picks
     linkLists:
       - linkListType: overview
@@ -32,18 +45,7 @@ landingContent:
           - text: Configure your Microsoft Sentinel Environment
             url: /training/paths/sc-200-configure-azure-sentinel-environment/
 
-  - title: December top picks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Secure AI solutions in the cloud
-            url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
-          - text: Get started with identities and access using Microsoft Entra
-            url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
-          - text: Microsoft Security Copilot for Developers
-            url: /copilot/security/developer/
-          - text: Mitigate incidents using Microsoft Defender
-            url: /training/modules/mitigate-incidents-microsoft-365-defender/
+
 
  # Card
  # - title: Discover more

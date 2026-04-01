@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 03/04/2026
+  ms.date: 04/03/2026
   ms.collection: # na
   brand: azure
 sections:
@@ -193,14 +193,14 @@ sections:
         url: /entra/
         icon:
           componentType: image
-          src: /security/media/security-hub/microsoft-entra.png
+          src: /security/media/security-hub/microsoft-entra-icon-2026.png
       - componentType: icon-card
         title: Microsoft Defender
         summary: Mitigate threats and protect workloads including cloud, AI, and apps across environments.
         url: /defender/
         icon:
           componentType: image
-          src: /security/media/security-hub/microsoft-defender.png
+          src: /security/media/security-hub/defender-icon-2026.png
           alt: The defender
 #      - componentType: icon-card
 #        title: Microsoft Defender for Cloud
@@ -215,14 +215,14 @@ sections:
         url: /purview/
         icon:
           componentType: image
-          src: /security/media/security-hub/microsoft-purview.png
+          src: /security/media/security-hub/purview-icon-2026.png
       - componentType: icon-card
         title: Microsoft Sentinel
         summary: Detect attacks, gain threat visibility, proactively hunt, and respond to threats with the power of AI and stop them before they cause harm.
         url: /azure/sentinel/
         icon:
           componentType: image
-          src: /security/media/security-hub/microsoft-sentinel.png
+          src: /security/media/security-hub/sentinel-icon-2026.png
 
 # Bifold section for embedded video (removed May 19, 2025)
 #  - componentType: bifold

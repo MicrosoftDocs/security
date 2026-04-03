@@ -5,12 +5,21 @@ ms.service: security
 ms.topic: whats-new
 author: ttorble
 ms.author: ralyon
-ms.date: 03/04/2026
+ms.date: 04/03/2026
 ---
 
 # Featured top picks
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
+
+## March 2026
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| March 3 | [Secure AI solutions in the cloud](/credentials/applied-skills/secure-ai-solutions-in-the-cloud/) | Gain your Microsoft Applied Skill with your understanding of Microsoft Defender for Cloud and Microsoft Foundry. |
+|         | [Join Azure Decoded on April 8th](https://developer.microsoft.com/en-us/reactor/events/26862/) | Learn how to secure your AI workloads with Microsoft Defender for Cloud. |
+|         | [Learn about Security Copilot agents](/copilot/security/security-copilot-inclusion?wt.mc_id=securityhub_inclusion_webpage_sci) | Enable autonomous and proactive protection with Security Copilot agents built directly into your workflow. |
+|         | [Configure your Microsoft Sentinel Environment](/training/paths/sc-200-configure-azure-sentinel-environment/) | Learn how data lake and graph enhance performance, context, and investigation speed in this learning path. |
 
 ## February 2026
 

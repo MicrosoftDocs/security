@@ -2,14 +2,10 @@
 title: Microsoft Incident Response ransomware approach and best practices
 description: Understand how Microsoft Incident Response responds to ransomware attacks and their recommendations for containment and post-incident activities.
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, Microsoft Defender XDR
-search.appverid: met150
 ms.service: security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
-- NOCSH
-audience: ITPro
 ms.collection: 
 - msftsolution-ransomware
 ms.topic: best-practice

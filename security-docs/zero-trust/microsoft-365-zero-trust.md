@@ -1,17 +1,11 @@
 ---
 title: "Zero Trust deployment plan with Microsoft 365"
-f1.keywords:
-- deploy zero trust
-- zero trust strategy
 ms.subservice: zero-trust
 manager: rkarlin
-audience: Admin
 description: Learn how to apply Zero Trust security principles with Microsoft 365 to defend against threats and protect sensitive data.
 ms.topic: solution-overview
 ms.service: security
 ms.localizationpriority: medium
-search.appverid:
-- MET150
 ms.collection:
 - m365solution-zerotrust
 - m365solution-overview

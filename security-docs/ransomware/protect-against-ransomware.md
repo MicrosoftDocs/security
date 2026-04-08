@@ -1,9 +1,6 @@
 ---
 title: "Get started quickly configuring ransomware prevention so you can stop ransomware cybercriminals from targeting your organization."
 ms.date: 10/13/2024
-f1.keywords:
-- NOCSH
-audience: ITPro
 ms.topic: best-practice
 ms.service: security
 ms.subservice: zero-trust

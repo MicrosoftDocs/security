@@ -7,9 +7,6 @@ ms.subservice: zero-trust
 manager: dansimp
 ms.service: security
 ms.topic: solution-overview
-audience: Admin
-f1.keywords:
-  - NOCSH
 ms.reviewer: martincoetzer
 ms.custom:
   - it-pro
@@ -23,7 +20,6 @@ ms.collection:
   - zerotrust-solution
   - highpri
   - tier1
-search.appverid: met150
 ms.date: 03/12/2025
 ---
 

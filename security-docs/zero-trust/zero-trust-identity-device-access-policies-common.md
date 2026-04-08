@@ -5,9 +5,6 @@ ms.subservice: zero-trust
 
 ms.service: security
 ms.topic: best-practice
-audience: Admin
-f1.keywords:
-  - NOCSH
 ms.reviewer: martincoetzer
 ms.custom:
   - it-pro
@@ -20,7 +17,6 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - tier2
-search.appverid: met150
 ms.date: 06/18/2025
 ---
 

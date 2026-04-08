@@ -1,14 +1,7 @@
 ---
 title: "Step 1. Implement App Protection Policies"
 ms.subservice: zero-trust
-f1.keywords:
-- Intune App Protection policies
-- APP
-- mobile application management
-- MAM
-- set up mobile ap protection
 ms.date: 03/14/2025
-audience: ITPro
 ms.topic: how-to
 description: Configure mobile app protection with App Protection policies (APP) to prevent specified corporate data from being copied and pasted to other apps. 
 ms.service: security

@@ -3,15 +3,11 @@ title: Password spray investigation | Microsoft Security
 description: Learn how to identify and investigate password spray attacks, protect data, and minimize further risks.
 keywords: password spray, password, investigation, attack, email, microsoft threat protection, microsoft 365, search, security, query, telemetry, security events, antivirus, firewall, Microsoft Defender XDR
 search.product: DART
-search.appverid: met150
 ms.service: security
 ms.subservice: zero-trust
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-  - NOCSH
-audience: ITPro
 ms.collection:
   - msftsolution-secops
 ms.topic: how-to

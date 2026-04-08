@@ -7,9 +7,6 @@ ms.subservice: zero-trust
 manager: dansimp
 ms.service: security
 ms.topic: checklist
-audience: Admin
-f1.keywords: 
-  - NOCSH
 ms.reviewer: martincoetzer
 ms.custom: 
   - it-pro
@@ -21,7 +18,6 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - tier2
-search.appverid: met150
 ms.date: 03/10/2025
 ---
 

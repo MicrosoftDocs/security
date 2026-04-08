@@ -3,15 +3,11 @@ title: Phishing investigation | Microsoft Security
 description: Learn how to identify and investigate phishing attacks, protect data, and minimize further risks.
 keywords: phishing, investigation, attack, email, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, Microsoft Defender XDR
 search.product: DART
-search.appverid: met150
 ms.service: security
 ms.subservice: zero-trust
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-  - NOCSH
-audience: ITPro
 ms.collection:
   - msftsolution-secops
 ms.topic: how-to

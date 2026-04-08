@@ -3,19 +3,15 @@ title: Compromised and malicious applications investigation | Microsoft Security
 description: Learn how to investigate if one or more applications in a customer tenant are compromised.
 keywords: compromise, malicious, applications, investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, incident response, playbook, guidance, Microsoft Defender XDR
 search.product: DART
-search.appverid: met150
 ms.service: security
 ms.subservice: zero-trust
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
-  - NOCSH
 ms.author: godonnell
 author: garrodonnell
 manager: CelesteDG
 ms.date: 03/12/2025
-audience: ITPro
 ms.collection: 
   - msftsolution-secops
 ms.topic: how-to

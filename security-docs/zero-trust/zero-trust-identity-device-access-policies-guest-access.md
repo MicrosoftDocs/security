@@ -6,10 +6,7 @@ ms.topic: best-practice
 author: chrisda
 ms.author: chrisda
 ms.subservice: zero-trust
-audience: Admin
 manager: dansimp
-f1.keywords:
-  - NOCSH
 ms.reviewer: martincoetzer
 ms.custom:
   - it-pro
@@ -21,7 +18,6 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - tier2
-search.appverid: met150
 ms.date: 03/10/2025
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: "Make it hard for ransomware attacks to happen to your organization"
 ms.date: 10/16/2024
-f1.keywords:
-- NOCSH
-audience: ITPro
 ms.topic: concept-article
 ms.service: security
 ms.subservice: zero-trust

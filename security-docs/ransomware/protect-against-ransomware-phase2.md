@@ -1,9 +1,6 @@
 ---
 title: "Limit the impact that ransomware attacks can have"
 ms.date: 10/16/2024
-f1.keywords:
-- NOCSH
-audience: ITPro
 ms.topic: best-practice
 ms.service: security
 ms.subservice: zero-trust

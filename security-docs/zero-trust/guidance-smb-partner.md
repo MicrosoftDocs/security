@@ -1,12 +1,10 @@
 ---
 title: Zero Trust guidance for small businesses
 description: Zero Trust guidance for small and medium-sized business customers and Microsoft partners.
-search.appverid: MET150
 author: chrisda
 ms.author: chrisda
 ms.subservice: zero-trust
 manager: deniseb
-audience: Admin
 ms.topic: best-practice
 ms.date: 02/19/2025
 ms.service: security
@@ -20,7 +18,6 @@ ms.collection:
 - m365solution-zero-trust
 ms.custom: intro-overview
 ms.reviewer: bcarter
-f1.keywords: NOCSH
 ---
 
 # Zero Trust guidance for small businesses

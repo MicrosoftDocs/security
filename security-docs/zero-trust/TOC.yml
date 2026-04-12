@@ -113,7 +113,9 @@
     expand: false
     items:  
     - name: Overview   
-      href: sfi/secure-future-initiative-response-overview.md               
+      href: sfi/secure-future-initiative-response-overview.md  
+    - name: Respond to incidents in AI systems
+      href: sfi/incident-response-ai-systems.md             
     - name: Accelerate vulnerability mitigation
       href: sfi/accelerate-vulnerability-mitigation.md
 
@@ -211,7 +213,7 @@
         href: manage-devices-with-intune-require-compliance.md
       - name: Step 5. Deploy device profiles
         href: manage-devices-with-intune-configuration-profiles.md
-      - name: Step 6. Monitor device risk and compliance to security baselines
+      - name: Step 6. Monitor device risk and compliance 
         href: manage-devices-with-intune-monitor-risk.md
       - name: Step 7. Implement data loss prevention (DLP) with information protection capabilities
         href: manage-devices-with-intune-dlp-mip.md

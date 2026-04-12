@@ -12,7 +12,7 @@ ms.collection:
   - sfi-zerotrust
 ---
 
-# Prepare for incident response in AI systems
+# Respond to incidents in AI systems
 
 **Pillar name: Accelerate response and remediation**<br/>
 **Pattern name: Incident response readiness for AI systems**
@@ -23,7 +23,7 @@ Traditional incident response assumes deterministic systems. A given input produ
 
 Four properties create specific incident response challenges:
 
-- **Taxonomy gaps**. Gaps might result in generating dangerous instructions, enabling misuse through natural-language interfaces, and targeting specific groups are harm categories that confidentiality/integrity/availability frameworks don't cover. Triage loses signal when incidents default to generic buckets.
+- **Taxonomy gaps**. Gaps might result in harm categories such as generating dangerous instructions, enabling misuse through natural-language interfaces, and targeting specific groups that confidentiality/integrity/availability frameworks don't cover. Triage loses signal when incidents default to generic buckets.
 - **Context-dependent severity**. A model producing inaccurate medical guidance presents a fundamentally different risk than the same model producing inaccurate trivia. Severity depends on who is affected, how, and in which domain.
 - **Ambiguous root cause**. Problematic behavior can emerge from the interaction of training data, fine-tuning choices, retrieval inputs, and user context. Investigation may narrow contributing factors without isolating a single defect.
 - **Telemetry gaps**. Standard security monitoring doesn't capture anomalous output patterns, classifier confidence shifts, or unexpected post-update behavior. Privacy-by-design defaults further narrow the forensic record.
@@ -50,15 +50,15 @@ Organizations can adopt similar practices using the following steps:
 
 |Use case|Recommended action |Resource |
 |---|---|---|
-| Incident classification | Add AI-specific harm categories to taxonomies; weight severity by deployment context and affected population alongside traditional technical metrics.   | [Azure AI content safety](https://azure.microsoft.com/products/ai-services/ai-content-safety).   |
-| Playbook development  | Codify staged remediation with explicit entry/exit criteria, ownership, and escalation triggers per stage. Include decision trees for containment actions.   | [Microsoft SDL](https://www.microsoft.com/securityengineering/sdl)  |
-| Telemetry and observability  | Instrument for output anomalies, classifier confidence shifts, and report-volume spikes. Document retention policies reconciled with privacy requirements. | [Azure Monitor](/azure/azure-monitor/fundamentals/overview) |
-| AI-assisted detection  | Deploy AI tooling to detect anomalous outputs at scale; automate pattern analysis during the expand-and-strengthen stage. | [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot)  |
+| Incident classification | Add AI-specific harm categories to taxonomies; weight severity by deployment context and affected population alongside traditional technical metrics.   | [Content safety in Microsoft Foundry control plan](https://azure.microsoft.com/products/ai-services/ai-content-safety).   |
+| Playbook development  | Codify staged remediation with explicit entry/exit criteria, ownership, and escalation triggers per stage. Include decision trees for containment actions.   | [Microsoft Security Development Lifecycle (SDL) ](https://www.microsoft.com/securityengineering/sdl)  |
+| Telemetry and observability  | Instrument for output anomalies, classifier confidence shifts, and report-volume spikes. Document retention policies reconciled with privacy requirements. | [Azure Monitor overview](/azure/azure-monitor/fundamentals/overview) |
+| AI-assisted detection  | Deploy AI tooling to detect anomalous outputs at scale; automate pattern analysis during the expand-and-strengthen stage. | [Microsoft Security Copilot overview](/copilot/security/microsoft-security-copilot)  |
 | Post-remediation monitoring  |  Define watch periods with explicit closure criteria after each stage; validate fixes across varied input conditions, not single-pass verification. |  [Microsoft Sentinel](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-sentinel)  |
 | Severity adaptation  |  Supplement traditional metrics with contextual factors: domain, user population, content nature, and misuse potential.  |  [OWASP Top 10 for LLMs](https://genai.owasp.org/llm-top-10/)  |
-| Cross-functional coordination |  Pre-establish channels spanning security, engineering, legal, ethics, communications, and customer support. Test through exercises, not during live incidents. |  [Microsoft Zero Trust practices](https://www.microsoft.com/security/business/zero-trust)  |
+| Cross-functional coordination |  Pre-establish channels spanning security, engineering, legal, ethics, communications, and customer support. Test through exercises, not during live incidents. |  [Protect your organization with a Zero Trust strategy](https://www.microsoft.com/security/business/zero-trust)  |
 | Responder well-being |  Implement rotation schedules, cognitive break activities, and peer mentoring; draw on content moderation teams for exposure management practices. |  [Azure AI content safety overview](/azure/ai-services/content-safety/overview)  |
-| Tabletop exercises |  Include AI-specific scenarios — novel harm types, ambiguous root cause, high-volume output events — in at least one exercise per year. |  [NIST SP 800-61r2](https://csrc.nist.gov/pubs/sp/800/61/r2/final) |
+| Tabletop exercises |  Include AI-specific scenarios — novel harm types, ambiguous root cause, high-volume output events — in at least one exercise per year. |  [Computer security incident handling guide (NIST SP 800-61 Rev.2)](https://csrc.nist.gov/pubs/sp/800/61/r2/final) |
 
 
 ## Outcomes

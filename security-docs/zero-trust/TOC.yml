@@ -114,7 +114,7 @@
     items:  
     - name: Overview   
       href: sfi/secure-future-initiative-response-overview.md  
-    - name: Prepare for incident response in AI systems
+    - name: Respond to incidents in AI systems
       href: sfi/incident-response-ai-systems.md             
     - name: Accelerate vulnerability mitigation
       href: sfi/accelerate-vulnerability-mitigation.md

@@ -39,6 +39,9 @@ The table summarizes the latest updates.
 
 **Platform** | **Updates** 
 --- | --- 
+New pattern | **Accelerate response and remediation**: [Prepare for incident response in AI systems](incident-response-ai-systems.md).
+New pattern | **Monitor and detect**: [Complete AI threat modeling](threat-modeling-ai.md).
+New pattern | **Monitor and detect**: [Implement AI observability](observability-ai-systems.md).
 New pattern | **Monitor and detect**: [Secure autonomous agentic AI systems](secure-agentic-systems.md).
 New pattern | **Monitor and detect**: [Identity risk for agentic AI systems](manage-agentic-risk.md).
 New pattern | **Monitor and detect**: [Protect against indirect prompt injection attacks](defend-indirect-prompt-injection.md).

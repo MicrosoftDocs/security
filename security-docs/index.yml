@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 04/03/2026
+  ms.date: 04/15/2026
   ms.collection: # na
   brand: azure
 sections:
@@ -88,13 +88,6 @@ sections:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
       - componentType: icon-card
-        title: Join Azure Decoded on April 8th
-        summary: Learn how to secure your AI workloads with Microsoft Defender for Cloud.
-        url: https://developer.microsoft.com/en-us/reactor/events/26862/
-        icon:
-          componentType: image
-          src: /security/media/hubpage/ignite-glyphs/video-1-yellow.png
-      - componentType: icon-card
         title: Learn about Security Copilot agents
         summary: Enable autonomous and proactive protection with Security Copilot agents built directly into your workflow.
         url: /copilot/security/security-copilot-inclusion?wt.mc_id=securityhub_inclusion_webpage_sci
@@ -108,6 +101,14 @@ sections:
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
+      - componentType: icon-card
+        title: "Build security skills: Download the kit"
+        summary: Curated resources, learning paths, and engagement ideas to strengthen your teams' security skills.
+        url: https://aka.ms/SecuritySkillingKit?wt.mc_id=lfo_content_webpage_wwl
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/download-1-rainbow.png
+
 
 # Modules
 #  - componentType: cards

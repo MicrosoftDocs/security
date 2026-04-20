@@ -5,8 +5,6 @@ ms.date: 12/05/2025
 ms.update-cycle: 90-days
 ms.service: security
 ms.subservice: security-for-ai
-author: guywi-ms
-ms.author: guywild
 ms.topic: concept-article
 ms.collection: 
   - msftsolution-security-for-ai

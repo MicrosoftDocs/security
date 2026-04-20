@@ -12,8 +12,6 @@ metadata:
   ms.subservice: m365d
   ms.topic: landing-page # Required
   ms.collection: na
-  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
-  ms.author: macapara #Required; microsoft alias of author; optional team alias.
   ms.date: 10/11/2024 #Required; mm/dd/yyyy format.
   ms.custom:
   - cx-ti

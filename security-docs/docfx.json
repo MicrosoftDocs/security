@@ -58,12 +58,22 @@
         "privileged-access-workstations/*.yml": "Privileged access"
       },
       "author": {
-        "security-docs/ransomware/**/*.md": "poliveria",
-        "security-docs/ransomware/**/*.yml": "poliveria"
+        "ransomware/**/*.md": "poliveria",
+        "ransomware/**/*.yml": "poliveria",
+        "security-for-ai/**/*.md": "guywi-ms",
+        "security-for-ai/**/*.yml": "guywi-ms"
       },
       "ms.author": {
-        "security-docs/ransomware/**/*.md": "pauloliveria",
-        "security-docs/ransomware/**/*.yml": "pauloliveria"
+        "ransomware/**/*.md": "pauloliveria",
+        "ransomware/**/*.yml": "pauloliveria",
+        "security-for-ai/**/*.md": "guywild",
+        "security-for-ai/**/*.yml": "guywild"
+      },
+      "manager": {
+        "ransomware/**/*.md": "orspodek",
+        "ransomware/**/*.yml": "orspodek",
+        "security-for-ai/**/*.md": "orspodek",
+        "security-for-ai/**/*.yml": "orspodek"
       },
       "feedback_system": {
         "privileged-access-workstations/**/*.md": "None",

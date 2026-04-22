@@ -68,3 +68,5 @@ Use AI Security Posture Management (AI-SPM) in Defender for Cloud to inventory a
 - [Stay current on Microsoft software](stay-current-microsoft-software.md)
 - [Scan and secure your source code](scan-secure-source-code.md)
 - [Minimize internet-facing exposure](minimize-internet-exposure.md)
+- [Implement baseline security measures](baseline-security-measures.md)
+- [Secure Now overview](secure-now-overview.md)

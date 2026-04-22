@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 Monthly installation of security updates (patching) is necessary but insufficient when threat actors exploit vulnerabilities in days, not weeks. Devices that lag in patching accumulate risk no update cycle can eliminate. The attack surface also extends beyond Windows to Microsoft 365, browsers, drivers, firmware, and other operating systems. As AI accelerates software vulnerability discovery, chasing Common Vulnerabilities and Exposures (CVEs) is inevitable, but staying current across the entire estate is the strongest defense.
 
-As noted in the Exposure Management hub, you can use the following capabilities to accelerate your update assessment and deployment.
+Use the following capabilities to accelerate your update assessment and deployment.
 
 ## Understand your software landscape across platforms
 
@@ -94,3 +94,5 @@ Migrate to cloud-joined and managed Windows devices.
 - [Scan and secure your source code](scan-secure-source-code.md)
 - [Adopt updates for open-source software (OSS) components](adopt-open-source-updates.md)
 - [Minimize internet-facing exposure](minimize-internet-exposure.md)
+- [Implement baseline security measures](baseline-security-measures.md)
+- [Secure Now overview](secure-now-overview.md)

@@ -22,7 +22,7 @@ Inventory what's exposed and remove what doesn't need to be there. You can use *
 
 ## Apply Zero Trust network protection
 
-- **Zero Trust protection for Azure: internet exposure and east-west traffic.** Enable **Azure DDoS Protection** to protect public IP addresses and use the HTTP DDoS Ruleset in **Azure Web Application Firewall (WAF)** to defend against L3–L7 availability attacks. Control and selectively allow north-south inbound traffic using **Azure Firewall** and Azure WAF, enforcing stateful inspection and application-aware filtering.
+- Enable **Azure DDoS Protection** to protect public IP addresses and use the HTTP DDoS Ruleset in **Azure Web Application Firewall (WAF)** to defend against L3–L7 availability attacks. Control and selectively allow north-south inbound traffic using **Azure Firewall** and Azure WAF, enforcing stateful inspection and application-aware filtering.
 - Implement Zero Trust micro-segmentation for east-west traffic using **Azure Network Security Groups (NSGs)** and Azure Firewall rules to restrict lateral movement between workloads. Route north-south and required east-west traffic through Azure Firewall and, where needed, enable TLS inspection and intrusion detection and prevention system (IDPS) to inspect encrypted traffic and detect or block malicious activity.
 - Remove public IPs from all virtual machines and eliminate inbound RDP/SSH entirely by using **Azure Bastion** for secure management access. Monitor and analyze Azure Firewall, WAF, and DDoS logs with **Microsoft Sentinel** to automatically detect, respond to, and block threats.
 - Eliminate public endpoints for PaaS services with **Azure Private Link**. Replace public access to Azure Storage, SQL, Key Vault, and other services with Private Endpoints, ensuring traffic stays on the Microsoft backbone. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview)
@@ -32,7 +32,7 @@ Inventory what's exposed and remove what doesn't need to be there. You can use *
 
 - The **Threat Intelligence Briefing Agent** generates tailored threat briefings by integrating signals from Microsoft Defender External Attack Surface Management (EASM), Defender for Endpoint, and Microsoft Threat Intelligence. EASM enriches each briefing with your organization's discovered external assets and exposures, enabling prioritized remediation recommendations based on your actual attack surface. For more information, see [Microsoft Security Copilot Threat Intelligence Briefing Agent](/copilot/security/threat-intel-briefing-agent).
 
-## Next steps
+## Related content
 
 - [Stay current on Microsoft software](stay-current-microsoft-software.md)
 - [Scan and secure your source code](scan-secure-source-code.md)

@@ -57,7 +57,7 @@ Secure your development lifecycle from code to cloud by connecting your source c
 
 - The **Threat Hunting Agent** in Microsoft Defender enables analysts to investigate suspicious activity across code, pipelines, and runtime workloads using natural language queries, translating them into Kusto Query Language (KQL) and surfacing contextual insights without requiring manual query composition. For more information, see [Microsoft Security Copilot Threat Hunting Agent in advanced hunting](/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent).
 
-## Next steps
+## Related content
 
 - [Stay current on Microsoft software](stay-current-microsoft-software.md)
 - [Adopt updates for open-source software (OSS) components](adopt-open-source-updates.md)

@@ -89,7 +89,7 @@ Migrate to cloud-joined and managed Windows devices.
 - The **Vulnerability Remediation Agent** in Microsoft Intune is an AI-powered capability that uses data from Microsoft Defender Vulnerability Management to identify, prioritize, and provide step-by-step remediation guidance for Common Vulnerabilities and Exposures (CVEs) on managed devices, helping administrators accelerate patching and improve organizational security posture. For more information, see [Vulnerability Remediation Agent in Microsoft Intune](/intune/copilot/agents/vulnerability-remediation-agent).
 - The **Dynamic Threat Detection Agent** in Microsoft Defender is an always-on AI-driven capability in Microsoft Defender that continuously analyzes and correlates security telemetry across identities, endpoints, cloud workloads, and email to uncover hidden threats missed by traditional rules and signatures, including those exploiting unpatched or misconfigured assets. For more information, see [Microsoft Security Copilot Dynamic Threat Detection Agent](/defender-xdr/dynamic-threat-detection-agent).
 
-## Next steps
+## Related content
 
 - [Scan and secure your source code](scan-secure-source-code.md)
 - [Adopt updates for open-source software (OSS) components](adopt-open-source-updates.md)

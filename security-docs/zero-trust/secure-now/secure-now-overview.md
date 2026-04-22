@@ -31,7 +31,7 @@ You can take meaningful action now to strengthen your foundational security post
 
 The detailed guidance in the following sections covers the highest-impact actions you can take today with existing Microsoft products and services.
 
-## Next steps
+## Related content
 
 - [Stay current on Microsoft software](stay-current-microsoft-software.md)
 - [Scan and secure your source code](scan-secure-source-code.md)

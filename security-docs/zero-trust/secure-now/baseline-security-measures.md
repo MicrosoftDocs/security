@@ -57,7 +57,7 @@ Once the controls are in place, track posture over time using the built-in scori
 - The **Policy Configuration Agent** in Microsoft Intune is an AI-powered capability that interprets regulatory frameworks, compliance baselines, and uploaded policy documents such as Security Technical Implementation Guides (STIGs), Center for Internet Security (CIS) benchmarks, and National Institute of Standards and Technology (NIST) guidelines, and translates them into actionable Intune settings catalog policies, reducing manual configuration effort and policy drift. For more information, see [Policy Configuration Agent in Microsoft Intune](/intune/copilot/agents/policy-configuration-agent).
 - The **Change Review Agent** in Microsoft Intune is an AI-driven capability that evaluates Multi-Admin Approval requests for PowerShell scripts by performing risk-based analysis using signals from Microsoft Defender, Microsoft Entra ID, and Intune, providing contextual insights that help administrators make informed approve-or-deny decisions. For more information, see [Change Review Agent overview](/intune/copilot/agents/change-review-agent).
 
-## Next steps
+## Related content
 
 - [Stay current on Microsoft software](stay-current-microsoft-software.md)
 - [Scan and secure your source code](scan-secure-source-code.md)

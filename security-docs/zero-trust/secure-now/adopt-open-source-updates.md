@@ -63,7 +63,7 @@ Use AI Security Posture Management (AI-SPM) in Defender for Cloud to inventory a
 
 The Threat Intelligence Briefing Agent in Microsoft Defender generates tailored threat intelligence briefings based on real-time threat actor activity, including emerging supply-chain and CI/CD attack campaigns relevant to your environment, with actionable recommendations and MITRE ATT&CK framework mapping. For more information, see [Microsoft Security Copilot Threat Intelligence Briefing Agent](/copilot/security/threat-intel-briefing-agent).
 
-## Next steps
+## Related content
 
 - [Stay current on Microsoft software](stay-current-microsoft-software.md)
 - [Scan and secure your source code](scan-secure-source-code.md)

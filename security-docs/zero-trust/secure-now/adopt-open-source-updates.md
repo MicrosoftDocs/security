@@ -1,5 +1,5 @@
 ---
-title: Adopt updates for open-source software (OSS) components
+title: Adopt updates for open-source software (OSS) components - Microsoft Zero Trust
 description: Harden your open-source supply chain by centralizing ingestion, scanning dependencies and containers, generating SBOMs, and protecting AI workloads.
 ms.date: 04/21/2026
 ms.service: security
@@ -21,7 +21,7 @@ Expect leaked credentials to be abused quickly, so scan and update images, IaC m
 
 Centralize open-source ingestion through a governed feed so every package is cached, scanned, and retained under your control.
 
-- Use **Azure Artifacts** feeds with upstream sources as the single ingestion point for open source packages. For more information, see [What are upstream sources?](/azure/devops/artifacts/concepts/upstream-sources) and [Azure Artifacts best practices](/azure/devops/artifacts/concepts/best-practices).
+- Use **Azure Artifacts** feeds with upstream sources as the single ingestion point for open source packages. For more information, see [What are upstream sources](/azure/devops/artifacts/concepts/upstream-sources) and [Azure Artifacts best practices](/azure/devops/artifacts/concepts/best-practices).
 - Reference a single feed per repository in configuration files (for example, `nuget.config`, `.npmrc`, and `settings.xml`). For NuGet, include a `<clear />` element so higher-level configurations cannot reintroduce public sources.
 - Block externally sourced versions by default. For more information, see [Safeguard against malicious public packages](/azure/devops/artifacts/concepts/upstream-behavior).
 - Order upstreams intentionally. Place internally modified or hardened upstreams ahead of public registries so hardened copies are preferred over public ones.
@@ -34,7 +34,7 @@ Turn on dependency scanning and automated updates for every repository.
 - For GitHub repositories, enable dependency scanning. For more information, see [Securing your supply chain](https://docs.github.com/code-security/supply-chain-security) and [About GitHub Advanced Security](https://docs.github.com/get-started/learning-about-github/about-github-advanced-security).
 - For Azure repositories (Azure DevOps), enable dependency scanning. For more information, see [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features).
 - Turn on Dependabot version updates and alerts on GitHub repositories. For more information, see [About Dependabot version updates](https://docs.github.com/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates) and [Dependabot supported ecosystems and repositories](https://docs.github.com/code-security/dependabot/working-with-dependabot/dependabot-options-reference).
-- Enable Copilot Autofix for code scanning. For more information, see [About Copilot Autofix for code scanning](https://docs.github.com/code-security/code-scanning/managing-your-code-scanning-configuration/about-copilot-autofix-for-code-scanning).
+- Enable Copilot Autofix for code scanning. For more information, see [About Copilot Autofix for code scanning](https://docs.github.com/code-security/concepts/code-scanning/copilot-autofix-for-code-scanning).
 - Block pull-request merges on new high- or critical-severity dependency findings. For more information, see [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features).
 - Aggregate findings across repositories by connecting your GitHub and Azure DevOps organizations to DevOps security in **Microsoft Defender for Cloud**. For more information, see [Overview of Microsoft Defender for Cloud DevOps security](/azure/defender-for-cloud/defender-for-devops-introduction), [Connect Azure DevOps environments to Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-devops), and [Quick Start: Connect your GitHub Environment to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-github).
 
@@ -61,7 +61,7 @@ Use AI Security Posture Management (AI-SPM) in Defender for Cloud to inventory a
 
 ## Accelerate with AI-powered agents
 
-- The Threat Intelligence Briefing Agent in Microsoft Defender generates tailored threat intelligence briefings based on real-time threat actor activity, including emerging supply-chain and CI/CD attack campaigns relevant to your environment, with actionable recommendations and MITRE ATT&CK framework mapping. For more information, see [Microsoft Security Copilot Threat Intelligence Briefing Agent](/copilot/security/threat-intel-briefing-agent).
+The Threat Intelligence Briefing Agent in Microsoft Defender generates tailored threat intelligence briefings based on real-time threat actor activity, including emerging supply-chain and CI/CD attack campaigns relevant to your environment, with actionable recommendations and MITRE ATT&CK framework mapping. For more information, see [Microsoft Security Copilot Threat Intelligence Briefing Agent](/copilot/security/threat-intel-briefing-agent).
 
 ## Next steps
 

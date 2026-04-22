@@ -1,5 +1,5 @@
 ---
-title: Implement baseline security measures
+title: Implement baseline security measures - Microsoft Zero Trust
 description: Apply Microsoft's foundational controls across identity, devices, data, network, and servers to measurably reduce exposure across every tenant.
 ms.date: 04/21/2026
 ms.service: security
@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 Microsoft has defined and operationalized a set of foundational controls that measurably reduce exposure at scale—and most intrusions still map back to organizations simply not enabling them. Use **Microsoft Baseline Security Mode (BSM)** to apply these defaults across Microsoft 365 apps and Microsoft Entra, with impact simulation before enforcement. Then, run the **Zero Trust Assessment** to produce an evidence-backed, scored gap list across identity, devices, data, and network so you can prioritize the highest-value fixes first and start burning down risk now. Threat actors aren't waiting for your next planning cycle.
 
-The goal is coverage, not perfection: get every tenant onto a defensible baseline across identity, device, data, network, and servers, rather than bespoke excellence in one pillar while the others stay unmanaged. Protecting the few accounts that hold privileged roles pays back faster than any other control; compromise of a single Global Administrator is tenant-ending. Turn on diagnostic settings for Entra, Intune, and Azure Firewall and ship them to a workspace you actually query: logs you don't ship, you can't investigate.
+The goal is coverage, not perfection: get every tenant onto a defensible baseline across identity, device, data, network, and servers, rather than bespoke excellence in one pillar while the others stay unmanaged. Protecting the few accounts that hold privileged roles pays back faster than any other control; compromise of a single Global Administrator is tenant-ending. Turn on diagnostic settings for Microsoft Entra, Microsoft Intune, and Azure Firewall and ship them to a workspace you actually query: logs you don't ship, you can't investigate.
 
 ## Take these steps
 
@@ -47,9 +47,9 @@ The goal is coverage, not perfection: get every tenant onto a defensible baselin
 Once the controls are in place, track posture over time using the built-in scoring surfaces. Don't rebuild them:
 
 - **Microsoft Secure Score**—Tenant-wide posture across identity, data, devices, apps, and infrastructure in the Microsoft Defender portal.
-- **Identity Security Initiative**—Provides posture and recommendations across Microsoft Entra, Active Directory, software as a service (SaaS) applications, and non-Microsoft identity providers, and appears in Microsoft Security Exposure Management, Microsoft Secure Score, and the Entra Admin Center. (Requires Defender for Identity and Defender for Cloud Apps.)
+- **Identity Security Initiative**—Provides posture and recommendations across Microsoft Entra, Active Directory, software as a service (SaaS) applications, and non-Microsoft identity providers, and appears in Microsoft Security Exposure Management, Microsoft Secure Score, and the Microsoft Entra admin center. (Requires Defender for Identity and Defender for Cloud Apps.)
 - **Microsoft Cloud Security Benchmark in Defender for Cloud**—Posture for Azure, AWS, and GCP workloads, measured against MCSB. Its latest version, currently in preview, adds an AI Security domain covering more than 420 controls across more than 65 services.
-- **Zero Trust Assessment report**—Point-in-time evidence across Entra, Intune, and Microsoft Purview, with per-check risk, user-impact, and implementation-cost.
+- **Zero Trust Assessment report**—Point-in-time evidence across Microsoft Entra, Microsoft Intune, and Microsoft Purview, with per-check risk, user-impact, and implementation-cost.
 
 ## Accelerate with AI-powered agents
 

@@ -1,5 +1,5 @@
 ---
-title: Stay current on Microsoft software
+title: Stay current on Microsoft software - Microsoft Zero Trust
 description: Learn how to maintain currency across Windows, Microsoft 365, browsers, drivers, firmware, and other operating systems to reduce exposure to vulnerabilities.
 ms.date: 04/21/2026
 ms.service: security
@@ -27,7 +27,7 @@ Before you can enforce currency, you need full visibility into what software is 
 
 ## Deploy fast updates at scale with Windows Autopatch
 
-**Windows Autopatch** rolls out updates through predefined deployment rings, allowing you to validate changes in groups before broad rollout. This capability shifts IT focus to policy and exceptions while Autopatch handles timing and sequencing. When critical vulnerabilities arise, expedited rollouts reduce time-to-secure, especially as AI shortens the gap between disclosure and exploitation. Autopatch update readiness also helps admins quickly pinpoint and resolve what's blocking devices from being deployment-ready. For more information, see [What is Windows Autopatch?](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview).
+**Windows Autopatch** rolls out updates through predefined deployment rings, allowing you to validate changes in groups before broad rollout. This capability shifts IT focus to policy and exceptions while Autopatch handles timing and sequencing. When critical vulnerabilities arise, expedited rollouts reduce time-to-secure, especially as AI shortens the gap between disclosure and exploitation. Autopatch update readiness also helps admins quickly pinpoint and resolve what's blocking devices from being deployment-ready. For more information, see [What is Windows Autopatch?](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
 
 ## Secure devices without requiring reboots for eligible security updates using Hotpatch
 
@@ -78,7 +78,7 @@ Migrate to cloud-joined and managed Windows devices.
 
 ## Manage your cloud fleet
 
-- Use **Azure Update Manager** for your server fleet specifically to schedule, assess, and deploy OS patches across Windows and Linux servers in Azure, on-premises, and multicloud environments. Azure Update Manager handles traditional patch orchestration for server workloads where coordinated maintenance windows and compliance reporting are required. For more information, see [What is Azure Update Manager?](/azure/update-manager/overview).
+- Use **Azure Update Manager** for your server fleet specifically to schedule, assess, and deploy OS patches across Windows and Linux servers in Azure, on-premises, and multicloud environments. Azure Update Manager handles traditional patch orchestration for server workloads where coordinated maintenance windows and compliance reporting are required. For more information, see [What is Azure Update Manager?](/azure/update-manager/overview)
 - Identify servers missing critical updates using both Defender for Cloud and Microsoft Defender to assess devices for missing system updates and patches, surfacing recommendations that highlight which servers are outdated and prioritizing remediation by severity and exposure. For more information, see:
   - [Remediate system update and patch recommendations](/azure/defender-for-cloud/enable-periodic-system-updates)
   - [Software inventory](/defender-vulnerability-management/tvm-software-inventory)

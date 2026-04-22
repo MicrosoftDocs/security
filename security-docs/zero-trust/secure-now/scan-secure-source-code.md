@@ -1,5 +1,5 @@
 ---
-title: Scan and secure your source code
+title: Scan and secure your source code - Microsoft Zero Trust
 description: Connect your repositories, pipelines, registries, and runtime workloads to Microsoft Defender for Cloud to secure your development lifecycle from code to cloud.
 ms.date: 04/21/2026
 ms.service: security
@@ -51,7 +51,7 @@ Secure your development lifecycle from code to cloud by connecting your source c
 - Connect your source-control organizations to Defender for Cloud and enable **Defender Cloud Security Posture Management (CSPM)**. For more information, see:
   - [Overview of Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
   - [Identify and remediate attack paths](/azure/defender-for-cloud/how-to-manage-attack-path)
-- Track organization-wide vulnerability exposure in **Microsoft Security Exposure Management**, which aggregates signal from Defender products to produce an end-to-end exposure score and prioritized remediation. See [What is Microsoft Security Exposure Management?](/security-exposure-management/microsoft-security-exposure-management).
+- Track organization-wide vulnerability exposure in **Microsoft Security Exposure Management**, which aggregates signal from Defender products to produce an end-to-end exposure score and prioritized remediation. See [What is Microsoft Security Exposure Management?](/security-exposure-management/microsoft-security-exposure-management)
 
 ## Accelerate with AI-powered agents
 

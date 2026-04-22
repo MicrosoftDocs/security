@@ -1,5 +1,5 @@
 ---
-title: Minimize internet-facing exposure
+title: Minimize internet-facing exposure - Microsoft Zero Trust
 description: Inventory internet-facing assets, remove unnecessary exposure, and apply Zero Trust network protections across Azure and multicloud workloads.
 ms.date: 04/21/2026
 ms.service: security
@@ -25,7 +25,7 @@ Inventory what's exposed and remove what doesn't need to be there. You can use *
 - **Zero Trust protection for Azure: internet exposure and east-west traffic.** Enable **Azure DDoS Protection** to protect public IP addresses and use the HTTP DDoS Ruleset in **Azure Web Application Firewall (WAF)** to defend against L3–L7 availability attacks. Control and selectively allow north-south inbound traffic using **Azure Firewall** and Azure WAF, enforcing stateful inspection and application-aware filtering.
 - Implement Zero Trust micro-segmentation for east-west traffic using **Azure Network Security Groups (NSGs)** and Azure Firewall rules to restrict lateral movement between workloads. Route north-south and required east-west traffic through Azure Firewall and, where needed, enable TLS inspection and intrusion detection and prevention system (IDPS) to inspect encrypted traffic and detect or block malicious activity.
 - Remove public IPs from all virtual machines and eliminate inbound RDP/SSH entirely by using **Azure Bastion** for secure management access. Monitor and analyze Azure Firewall, WAF, and DDoS logs with **Microsoft Sentinel** to automatically detect, respond to, and block threats.
-- Eliminate public endpoints for PaaS services with **Azure Private Link**. Replace public access to Azure Storage, SQL, Key Vault, and other services with Private Endpoints, ensuring traffic stays on the Microsoft backbone. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+- Eliminate public endpoints for PaaS services with **Azure Private Link**. Replace public access to Azure Storage, SQL, Key Vault, and other services with Private Endpoints, ensuring traffic stays on the Microsoft backbone. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview)
 - Extend network protection to multicloud workloads. Use **Defender for Cloud's** network security recommendations for AWS and GCP to identify overly permissive security groups, public-facing storage, and exposed management ports across all cloud providers. For more information, see [Networking security recommendations](/azure/defender-for-cloud/recommendations-reference-networking).
 
 ## Accelerate with AI-powered agents

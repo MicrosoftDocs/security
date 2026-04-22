@@ -1,5 +1,5 @@
 ---
-title: Stay current on Microsoft software - Microsoft Zero Trust
+title: Stay current on Microsoft software
 description: Learn how to maintain currency across Windows, Microsoft 365, browsers, drivers, firmware, and other operating systems to reduce exposure to vulnerabilities.
 ms.date: 04/21/2026
 ms.service: security

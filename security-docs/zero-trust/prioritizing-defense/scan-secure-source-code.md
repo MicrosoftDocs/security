@@ -1,5 +1,5 @@
 ---
-title: Scan and secure your source code - Microsoft Zero Trust
+title: Scan and secure your source code
 description: Connect your repositories, pipelines, registries, and runtime workloads to Microsoft Defender for Cloud to secure your development lifecycle from code to cloud.
 ms.date: 04/21/2026
 ms.service: security

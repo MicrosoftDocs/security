@@ -1,5 +1,5 @@
 ---
-title: Minimize internet-facing exposure - Microsoft Zero Trust
+title: Minimize internet-facing exposure
 description: Inventory internet-facing assets, remove unnecessary exposure, and apply Zero Trust network protections across Azure and multicloud workloads.
 ms.date: 04/21/2026
 ms.service: security

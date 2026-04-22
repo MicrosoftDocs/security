@@ -1,5 +1,5 @@
 ---
-title: Implement baseline security measures - Microsoft Zero Trust
+title: Implement baseline security measures
 description: Apply Microsoft's foundational controls across identity, devices, data, network, and servers to measurably reduce exposure across every tenant.
 ms.date: 04/21/2026
 ms.service: security

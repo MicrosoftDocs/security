@@ -1,5 +1,5 @@
 ---
-title: Adopt updates for open-source software (OSS) components - Microsoft Zero Trust
+title: Adopt updates for open-source software (OSS) components
 description: Harden your open-source supply chain by centralizing ingestion, scanning dependencies and containers, generating SBOMs, and protecting AI workloads.
 ms.date: 04/21/2026
 ms.service: security

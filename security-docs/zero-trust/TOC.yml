@@ -119,6 +119,22 @@
     - name: Accelerate vulnerability mitigation
       href: sfi/accelerate-vulnerability-mitigation.md
 
+- name: Prioritizing defense
+  expand: false
+  items:
+  - name: Overview
+    href: prioritizing-defense/prioritizing-defense-overview.md
+  - name: Stay current on Microsoft software
+    href: prioritizing-defense/stay-current-microsoft-software.md
+  - name: Scan and secure your source code
+    href: prioritizing-defense/scan-secure-source-code.md
+  - name: Adopt updates for open-source software (OSS) components
+    href: prioritizing-defense/adopt-open-source-updates.md
+  - name: Minimize internet-facing exposure
+    href: prioritizing-defense/minimize-internet-exposure.md
+  - name: Implement baseline security measures
+    href: prioritizing-defense/baseline-security-measures.md
+
 - name: Technology pillars
   expanded: false
   items:

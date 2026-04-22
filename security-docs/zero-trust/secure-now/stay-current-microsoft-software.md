@@ -67,8 +67,6 @@ Deploy endpoint security policies for antivirus, firewall, disk encryption, endp
 
 ## Migrate to cloud-joined and managed Windows devices
 
-Migrate to cloud-joined and managed Windows devices.
-
 - [Plan your Microsoft Entra join deployment](/entra/identity/devices/device-join-plan)
 
 ## Microsoft Defender Vulnerability Management

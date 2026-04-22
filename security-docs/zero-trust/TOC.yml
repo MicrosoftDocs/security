@@ -118,7 +118,6 @@
       href: sfi/incident-response-ai-systems.md             
     - name: Accelerate vulnerability mitigation
       href: sfi/accelerate-vulnerability-mitigation.md
-
 - name: Prioritizing defense
   expand: false
   items:
@@ -134,7 +133,6 @@
     href: prioritizing-defense/minimize-internet-exposure.md
   - name: Implement baseline security measures
     href: prioritizing-defense/baseline-security-measures.md
-
 - name: Technology pillars
   expanded: false
   items:

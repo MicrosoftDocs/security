@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 There's a fundamental shift underway in security. Advances in AI model capabilities mean that vulnerabilities can now be discovered, chained, and exploited autonomously—compressing the window between discovery and exploitation. This isn't a theoretical risk; it's an active change in the threat landscape that affects every organization.
 
-Microsoft is already using these same AI capabilities to scan its own code, surface vulnerabilities, and develop mitigations before attackers can act. Through industry partnerships, Microsoft pairs leading AI models with our security tooling and expertise to turn AI-driven discovery into protection at scale. <!-- TODO: insert companion blog link when published -->
+Microsoft is already using these same AI capabilities to scan its own code, surface vulnerabilities, and develop mitigations before attackers can act. As **[BLOG TITLE]** <!-- TODO: replace with [title](url) when published --> describes, we're partnering across the industry to pair leading AI models with our security tooling and expertise to turn AI-driven discovery into protection at scale.
 
 But AI-accelerated defense must be met with AI-ready security posture. The speed at which threats now emerge makes foundational security practices—staying current on patches, reducing attack surface, securing source code, and enforcing baseline protections—not just best practices, but urgent priorities. Organizations that have these foundations in place are better positioned to absorb and respond to AI-driven threats; those that don't face compounding risk as the pace of discovery accelerates.
 

@@ -13,12 +13,12 @@ ai-usage: ai-assisted
 
 # Scan and secure your source code
 
-Secure your development lifecycle from code to cloud by connecting your source code repositories, CI/CD pipelines, container registries, and runtime workloads to DevOps security in **Microsoft Defender for Cloud**. This gives your security and engineering teams a single view to catch risks early, focus on what's actually exploitable in production, and fix issues without blocking developers.
+Secure your development lifecycle from code to cloud by connecting your source code repositories, CI/CD pipelines, container registries, and runtime workloads to [DevOps security in **Microsoft Defender for Cloud**](/azure/defender-for-cloud/defender-for-devops-introduction). This gives your security and engineering teams a single view to catch risks early, focus on what's actually exploitable in production, and fix issues without blocking developers.
 
 ## Connect, scan, and trace from code to cloud
 
 - **Connect your repositories and pipelines**—Onboard your GitHub, Azure DevOps, and GitLab environments into Defender for Cloud to get unified visibility across code repositories, pipelines, Infrastructure as Code (IaC) templates, and container images in one place.
-- **Scan code and infrastructure before it ships**—Enable agentless code and IaC scanning to catch misconfigurations and vulnerabilities at the pull request stage. For tighter control, add the Defender for Cloud CLI directly into your CI/CD pipelines to enforce scanning as part of every build.
+- **Scan code and infrastructure before it ships**—Enable agentless code and IaC scanning to catch misconfigurations and vulnerabilities at the pull request stage. For tighter control, add the [Defender for Cloud CLI](/azure/defender-for-cloud/defender-cli-overview) directly into your CI/CD pipelines to enforce scanning as part of every build.
 - **Trace vulnerabilities from code to running workload**—Use code-to-cloud contextualization to map findings back through build artifacts, registries, and runtime environments. This lets you prioritize the vulnerabilities that are actually reachable in production rather than chasing every finding.
 - **Lock down your container supply chain**—Scan container images at build time, enforce policy-based gating to block vulnerable images from deploying, and correlate build-time findings with runtime behavior to catch threats that emerge after deployment. For more information, see [Enable gated deployment in Defender for Containers](/azure/defender-for-cloud/enablement-guide-runtime-gated).
 

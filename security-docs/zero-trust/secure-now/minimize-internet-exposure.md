@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Minimize internet-facing exposure
 
-Inventory what's exposed and remove what doesn't need to be there. You can use **Microsoft Defender External Attack Surface Management (EASM)** to discover and map your internet-facing assets continuously. This service is pay-for-service and includes a 30-day free trial. Provision it from the Azure portal to inventory what's exposed and identify what should be removed or protected.
+Inventory what's exposed and remove what doesn't need to be there. You can use **[Microsoft Defender External Attack Surface Management (EASM)](/azure/external-attack-surface-management/overview)** to discover and map your internet-facing assets continuously. This service is pay-for-service and includes a 30-day free trial. Provision it from the Azure portal to inventory what's exposed and identify what should be removed or protected.
 
 ## Discover and analyze your attack surface
 

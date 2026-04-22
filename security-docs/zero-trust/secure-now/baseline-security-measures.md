@@ -22,8 +22,8 @@ The goal is coverage, not perfection: get every tenant onto a defensible baselin
 1. **Enable Baseline Security Mode.** BSM is available to all Microsoft 365 customers, so confirm if you're already running it. If not, turn it on today. See [Baseline security mode settings](https://admin.cloud.microsoft/).
 1. **Run the Zero Trust Assessment, and work through the gap list.** Get an automated assessment of your tenant's posture across identity, data, devices, and network. Every check is scored by risk level, user impact, and implementation cost, so start where risk reduction is high and cost is low, then work outward. Manually checking these controls is slow and error-prone; this is the automation. For more information, see:
 
-   - [What is the Zero Trust Assessment?](https://learn.microsoft.com/security/zero-trust/assessment/overview)
-   - [Get started with the Zero Trust Assessment](https://learn.microsoft.com/security/zero-trust/assessment/get-started)
+   - [What is the Zero Trust Assessment?](../assessment/overview.md)
+   - [Get started with the Zero Trust Assessment](../assessment/get-started.md)
 
    The three pillar-indexes the assessment runs against are:
 

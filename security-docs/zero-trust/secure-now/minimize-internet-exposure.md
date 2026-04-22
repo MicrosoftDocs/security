@@ -38,4 +38,3 @@ Inventory what's exposed and remove what doesn't need to be there. You can use *
 - [Scan and secure your source code](scan-secure-source-code.md)
 - [Adopt updates for open-source software (OSS) components](adopt-open-source-updates.md)
 - [Implement baseline security measures](baseline-security-measures.md)
-- [Secure Now overview](secure-now-overview.md)

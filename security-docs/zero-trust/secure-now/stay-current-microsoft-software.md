@@ -95,4 +95,3 @@ Migrate to cloud-joined and managed Windows devices.
 - [Adopt updates for open-source software (OSS) components](adopt-open-source-updates.md)
 - [Minimize internet-facing exposure](minimize-internet-exposure.md)
 - [Implement baseline security measures](baseline-security-measures.md)
-- [Secure Now overview](secure-now-overview.md)

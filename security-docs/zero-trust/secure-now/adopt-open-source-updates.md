@@ -69,4 +69,3 @@ The Threat Intelligence Briefing Agent in Microsoft Defender generates tailored 
 - [Scan and secure your source code](scan-secure-source-code.md)
 - [Minimize internet-facing exposure](minimize-internet-exposure.md)
 - [Implement baseline security measures](baseline-security-measures.md)
-- [Secure Now overview](secure-now-overview.md)

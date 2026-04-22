@@ -63,4 +63,3 @@ Secure your development lifecycle from code to cloud by connecting your source c
 - [Adopt updates for open-source software (OSS) components](adopt-open-source-updates.md)
 - [Minimize internet-facing exposure](minimize-internet-exposure.md)
 - [Implement baseline security measures](baseline-security-measures.md)
-- [Secure Now overview](secure-now-overview.md)

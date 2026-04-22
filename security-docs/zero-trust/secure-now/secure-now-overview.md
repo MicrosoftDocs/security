@@ -33,4 +33,8 @@ The detailed guidance in the following sections covers the highest-impact action
 
 ## Next steps
 
-Start with [Stay current on Microsoft software](stay-current-microsoft-software.md) to establish the patching and lifecycle foundation that the other dimensions build on.
+- [Stay current on Microsoft software](stay-current-microsoft-software.md)
+- [Scan and secure your source code](scan-secure-source-code.md)
+- [Adopt updates for open-source software (OSS) components](adopt-open-source-updates.md)
+- [Minimize internet-facing exposure](minimize-internet-exposure.md)
+- [Implement baseline security measures](baseline-security-measures.md)

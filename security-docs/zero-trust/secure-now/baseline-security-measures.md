@@ -63,4 +63,3 @@ Once the controls are in place, track posture over time using the built-in scori
 - [Scan and secure your source code](scan-secure-source-code.md)
 - [Adopt updates for open-source software (OSS) components](adopt-open-source-updates.md)
 - [Minimize internet-facing exposure](minimize-internet-exposure.md)
-- [Secure Now overview](secure-now-overview.md)

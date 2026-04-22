@@ -17,7 +17,7 @@ Inventory what's exposed and remove what doesn't need to be there. As noted in t
 
 ## Discover and analyze your attack surface
 
-- [Discover your assets](/azure/external-attack-surface-management/what-is-discovery).
+- Use Microsoft Defender External Attack Surface Management to inventory internet-exposed assets across your estate. For more information, see [Discover your assets](/azure/external-attack-surface-management/what-is-discovery).
 - Use Microsoft Security Exposure Management's [attack path analysis](/security-exposure-management/cross-workload-attack-surfaces) to find internet-exposed assets with critical vulnerabilities.
 
 ## Apply Zero Trust network protection

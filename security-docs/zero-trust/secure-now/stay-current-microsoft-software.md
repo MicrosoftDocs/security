@@ -21,9 +21,9 @@ As noted in the Exposure Management hub, you can use the following capabilities 
 
 Before you can enforce currency, you need full visibility into what software is running, where, and what vulnerabilities exist across every OS and cloud.
 
-- Deploy **Microsoft Defender for Endpoint** across all platforms — Onboard Windows, macOS, and Linux endpoints to gain unified visibility into installed software, OS versions, and active threats. For more information, see [Onboard devices to Microsoft Defender for Endpoint](/defender-endpoint/onboard-configure).
-- Use **Microsoft Defender Vulnerability Management** software inventory — Get a near real-time view of all installed software, versions, known CVEs, and active threat campaigns across your device fleet, regardless of operating system. For more information, see [Software inventory](/defender-vulnerability-management/tvm-software-inventory).
-- Enforce device compliance with **Microsoft Intune** — Create compliance policies across Windows, macOS, Linux, iOS, and Android to enforce minimum OS versions, encryption, and threat defense signals. Integrate with Conditional Access to block non-compliant devices. For more information, see [Device compliance policies in Microsoft Intune](/mem/intune/protect/device-compliance-get-started).
+- Deploy **Microsoft Defender for Endpoint** across all platforms—Onboard Windows, macOS, and Linux endpoints to gain unified visibility into installed software, OS versions, and active threats. For more information, see [Onboard devices to Microsoft Defender for Endpoint](/defender-endpoint/onboard-configure).
+- Use **Microsoft Defender Vulnerability Management** software inventory—Get a near real-time view of all installed software, versions, known CVEs, and active threat campaigns across your device fleet, regardless of operating system. For more information, see [Software inventory](/defender-vulnerability-management/tvm-software-inventory).
+- Enforce device compliance with **Microsoft Intune**—Create compliance policies across Windows, macOS, Linux, iOS, and Android to enforce minimum OS versions, encryption, and threat defense signals. Integrate with Conditional Access to block non-compliant devices. For more information, see [Device compliance policies in Microsoft Intune](/mem/intune/protect/device-compliance-get-started).
 
 ## Deploy fast updates at scale with Windows Autopatch
 
@@ -35,12 +35,12 @@ Before you can enforce currency, you need full visibility into what software is 
 
 ## Extend to cloud and hybrid workloads
 
-- Tenant-attach **Configuration Manager** for server management — Organizations already managing servers through Configuration Manager can extend that investment by enabling tenant attach, bringing those endpoints into the Microsoft Intune admin center for cloud-powered insights, actions, and policy without requiring a full migration.
+- Tenant-attach **Configuration Manager** for server management—Organizations already managing servers through Configuration Manager can extend that investment by enabling tenant attach, bringing those endpoints into the Microsoft Intune admin center for cloud-powered insights, actions, and policy without requiring a full migration.
   - [Configure tenant attach to support endpoint security policies from Intune](/mem/intune/protect/tenant-attach-intune)
-- Onboard non-Azure servers with **Azure Arc** — Bring Amazon Web Services (AWS), Google Cloud Platform (GCP), and on-premises servers into Azure's management plane for centralized policy, patching, and monitoring. For more information, see:
+- Onboard non-Azure servers with **Azure Arc**—Bring Amazon Web Services (AWS), Google Cloud Platform (GCP), and on-premises servers into Azure's management plane for centralized policy, patching, and monitoring. For more information, see:
   - [Azure Arc overview](/azure/azure-arc/overview)
   - [Onboard VMs to Azure Arc through the multicloud connector](/azure/azure-arc/multicloud-connector/onboard-multicloud-vms-arc?tabs=aws)
-- Scan cloud servers with **Microsoft Defender for Cloud** — Use Microsoft Defender for Servers to run vulnerability assessments across Azure, AWS, and GCP workloads with risk-based prioritization. For more information, see:
+- Scan cloud servers with **Microsoft Defender for Cloud**—Use Microsoft Defender for Servers to run vulnerability assessments across Azure, AWS, and GCP workloads with risk-based prioritization. For more information, see:
   - [Configure vulnerability scanning for machines](/azure/defender-for-cloud/auto-deploy-vulnerability-assessment?pivots=defender-portal)
   - [Connect AWS accounts to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws)
   - [Connect your GCP project to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-gcp)

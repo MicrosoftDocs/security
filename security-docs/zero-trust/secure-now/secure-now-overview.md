@@ -1,5 +1,5 @@
 ---
-title: Secure Now overview
+title: 'Secure Now: What customers can do today'
 description: Learn how to strengthen foundational security posture today across five high-impact dimensions using existing Microsoft products and services.
 ms.date: 04/21/2026
 ms.service: security
@@ -11,7 +11,7 @@ ms.collection:
 ai-usage: ai-assisted
 ---
 
-# Secure Now overview
+# Secure Now: What customers can do today
 
 There's a fundamental shift underway in security. Advances in AI model capabilities mean that vulnerabilities can now be discovered, chained, and exploited autonomously—compressing the window between discovery and exploitation. This isn't a theoretical risk; it's an active change in the threat landscape that affects every organization.
 

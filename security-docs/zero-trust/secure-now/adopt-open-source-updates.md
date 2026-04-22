@@ -23,7 +23,7 @@ Centralize open-source ingestion through a governed feed so every package is cac
 
 - Use **Azure Artifacts** feeds with upstream sources as the single ingestion point for open source packages. For more information, see [What are upstream sources?](https://learn.microsoft.com/azure/devops/artifacts/concepts/upstream-sources) and [Azure Artifacts best practices](https://learn.microsoft.com/azure/devops/artifacts/concepts/best-practices).
 - Reference a single feed per repository in configuration files (for example, `nuget.config`, `.npmrc`, and `settings.xml`). For NuGet, include a `<clear />` element so higher-level configurations cannot reintroduce public sources.
-- Block externally sourced versions by default. For more information, see [Safeguard against malicious public packages](https://learn.microsoft.com/azure/devops/artifacts/concepts/upstream-sources#safeguard-against-malicious-public-packages). <!-- TODO: link Safeguard against malicious public packages -->
+- Block externally sourced versions by default. For more information, see [Safeguard against malicious public packages](https://learn.microsoft.com/azure/devops/artifacts/concepts/upstream-behavior?view=azure-devops).
 - Order upstreams intentionally. Place internally modified or hardened upstreams ahead of public registries so hardened copies are preferred over public ones.
 - Apply retention policies to feeds to remove old, unpatched package versions automatically. Promote released versions to an immutable view so they are protected from cleanup. For more information, see [Azure Artifacts best practices](https://learn.microsoft.com/azure/devops/artifacts/concepts/best-practices).
 
@@ -42,7 +42,7 @@ Turn on dependency scanning and automated updates for every repository.
 
 Generate a Software Bill of Materials (SBOM) on every build so you can answer the question "where is CVE-X in our estate?" in minutes.
 
-- Generate a Software Package Data Exchange (SPDX)-compliant SBOM on every build using the open-source Microsoft SBOM tool, referenced from Microsoft documentation or Defender for Cloud. Ship the SBOM as a build artifact alongside the binary. For more information, see [microsoft/sbom-tool on GitHub](https://github.com/microsoft/sbom-tool) and [Defender for Cloud CLI Reference](https://learn.microsoft.com/cli/azure/security). <!-- TODO: link Defender for Cloud CLI Reference -->
+- Generate a Software Package Data Exchange (SPDX)-compliant SBOM on every build using the open-source Microsoft SBOM tool, referenced from Microsoft documentation or Defender for Cloud. Ship the SBOM as a build artifact alongside the binary. For more information, see [microsoft/sbom-tool on GitHub](https://github.com/microsoft/sbom-tool) and [Defender for Cloud CLI Reference](https://learn.microsoft.com/azure/defender-for-cloud/defender-cli-syntax).
 - Enforce SBOM generation in a central pipeline template. For more information, see [Use YAML templates in pipelines for reusable and secure processes](https://learn.microsoft.com/azure/devops/pipelines/process/templates).
 - Measure SBOM compliance (percentage of production builds that produce an SBOM automatically) as a program-level metric.
 
@@ -61,7 +61,7 @@ Use AI Security Posture Management (AI-SPM) in Defender for Cloud to inventory a
 
 ## Accelerate with AI-powered agents
 
-- The Threat Intelligence Briefing Agent in Microsoft Defender generates tailored threat intelligence briefings based on real-time threat actor activity, including emerging supply-chain and CI/CD attack campaigns relevant to your environment, with actionable recommendations and MITRE ATT&CK framework mapping. For more information, see [Microsoft Security Copilot Threat Intelligence Briefing Agent](https://learn.microsoft.com/copilot/security/agents-overview). <!-- TODO: link Microsoft Security Copilot Threat Intelligence Briefing Agent -->
+- The Threat Intelligence Briefing Agent in Microsoft Defender generates tailored threat intelligence briefings based on real-time threat actor activity, including emerging supply-chain and CI/CD attack campaigns relevant to your environment, with actionable recommendations and MITRE ATT&CK framework mapping. For more information, see [Microsoft Security Copilot Threat Intelligence Briefing Agent](https://learn.microsoft.com/copilot/security/threat-intel-briefing-agent).
 
 ## Next steps
 

@@ -19,17 +19,17 @@ The goal is coverage, not perfection: get every tenant onto a defensible baselin
 
 ## Take these steps
 
-1. **Enable Baseline Security Mode.** BSM is available to all Microsoft 365 customers, so confirm if you're already running it. If not, turn it on today. See <!-- TODO: link Baseline security mode settings -->Baseline security mode settings.
+1. **Enable Baseline Security Mode.** BSM is available to all Microsoft 365 customers, so confirm if you're already running it. If not, turn it on today. See [Baseline security mode settings](https://admin.cloud.microsoft/).
 1. **Run the Zero Trust Assessment, and work through the gap list.** Get an automated assessment of your tenant's posture across identity, data, devices, and network. Every check is scored by risk level, user impact, and implementation cost, so start where risk reduction is high and cost is low, then work outward. Manually checking these controls is slow and error-prone; this is the automation. For more information, see:
 
-   - <!-- TODO: link What is the Zero Trust Assessment? -->What is the Zero Trust Assessment?
-   - <!-- TODO: link Get started with the Zero Trust Assessment -->Get started with the Zero Trust Assessment
+   - [What is the Zero Trust Assessment?](https://learn.microsoft.com/security/zero-trust/assessment/overview)
+   - [Get started with the Zero Trust Assessment](https://learn.microsoft.com/security/zero-trust/assessment/get-started)
 
    The three pillar-indexes the assessment runs against are:
 
-   - <!-- TODO: link Configure Microsoft Entra for increased security -->Configure Microsoft Entra for increased security — Entra-side index.
-   - <!-- TODO: link Configure Microsoft Intune for increased security -->Configure Microsoft Intune for increased security — Intune-side index.
-   - <!-- TODO: link Configure Microsoft Purview for increased security -->Configure Microsoft Purview for increased security — Microsoft Purview-side index.
+   - [Configure Microsoft Entra for increased security](https://learn.microsoft.com/entra/fundamentals/configure-security?toc=%2Fsecurity%2Fzero-trust%2Fassessment%2Ftoc.json&bc=%2Fsecurity%2Fzero-trust%2Fassessment%2Ftoc.json) — Entra-side index.
+   - [Configure Microsoft Intune for increased security](https://learn.microsoft.com/intune/device-security/ref-zero-trust-security?toc=%2Fsecurity%2Fzero-trust%2Fassessment%2Ftoc.json&bc=%2Fsecurity%2Fzero-trust%2Fassessment%2Ftoc.json) — Intune-side index.
+   - [Configure Microsoft Purview for increased security](https://learn.microsoft.com/purview/configure-security) — Microsoft Purview-side index.
 1. **Deploy Intune security baselines for endpoints.** Apply Microsoft's recommended configurations for Windows, Microsoft Edge, Defender for Endpoint, and Windows 365. These baselines reflect settings validated by Microsoft security teams and report compliance directly in Intune. Intune enrollment is also the prerequisite for the most effective identity control available — Conditional Access that requires a compliant, managed device — so treat devices as identities and plan enrollment accordingly. For more information, see [Use security baselines to help secure Windows devices you manage with Microsoft Intune](https://learn.microsoft.com/mem/intune/protect/security-baselines).
 1. **Apply Azure security baselines for cloud services.** Use **Microsoft Defender for Cloud's** regulatory compliance dashboard to measure your Azure, AWS, and GCP workloads against the **Microsoft Cloud Security Benchmark (MCSB)**. For more information, see:
 
@@ -40,7 +40,7 @@ The goal is coverage, not perfection: get every tenant onto a defensible baselin
 
    - [OSConfig overview](https://learn.microsoft.com/windows-server/security/osconfig/osconfig-overview)
    - [Deploy Windows Server 2025 security baselines locally with OSConfig](https://learn.microsoft.com/windows-server/security/osconfig/osconfig-how-to-configure-security-baselines)
-   - <!-- TODO: link Windows security baseline -->Windows security baseline
+   - [Windows security baseline](https://learn.microsoft.com/azure/governance/policy/samples/guest-configuration-baseline-windows)
 
 ## Track posture with built-in scoring surfaces
 
@@ -53,9 +53,9 @@ Once the controls are in place, track posture over time using the built-in scori
 
 ## Accelerate with AI-powered agents
 
-- The **Conditional Access Optimization Agent** in Microsoft Entra is an AI-driven capability that continuously monitors Conditional Access policies to identify coverage gaps, policy conflicts, and optimization opportunities, recommending refinements that strengthen Zero Trust access controls without disrupting user productivity. For more information, see <!-- TODO: link Microsoft Entra Conditional Access Optimization Agent -->Microsoft Entra Conditional Access Optimization Agent.
-- The **Policy Configuration Agent** in Microsoft Intune is an AI-powered capability that interprets regulatory frameworks, compliance baselines, and uploaded policy documents such as Security Technical Implementation Guides (STIGs), Center for Internet Security (CIS) benchmarks, and National Institute of Standards and Technology (NIST) guidelines, and translates them into actionable Intune settings catalog policies, reducing manual configuration effort and policy drift. For more information, see <!-- TODO: link Policy Configuration Agent in Microsoft Intune -->Policy Configuration Agent in Microsoft Intune.
-- The **Change Review Agent** in Microsoft Intune is an AI-driven capability that evaluates Multi-Admin Approval requests for PowerShell scripts by performing risk-based analysis using signals from Microsoft Defender, Microsoft Entra ID, and Intune, providing contextual insights that help administrators make informed approve-or-deny decisions. For more information, see <!-- TODO: link Change Review Agent overview -->Change Review Agent overview.
+- The **Conditional Access Optimization Agent** in Microsoft Entra is an AI-driven capability that continuously monitors Conditional Access policies to identify coverage gaps, policy conflicts, and optimization opportunities, recommending refinements that strengthen Zero Trust access controls without disrupting user productivity. For more information, see [Microsoft Entra Conditional Access Optimization Agent](https://learn.microsoft.com/entra/security-copilot/conditional-access-agent-optimization).
+- The **Policy Configuration Agent** in Microsoft Intune is an AI-powered capability that interprets regulatory frameworks, compliance baselines, and uploaded policy documents such as Security Technical Implementation Guides (STIGs), Center for Internet Security (CIS) benchmarks, and National Institute of Standards and Technology (NIST) guidelines, and translates them into actionable Intune settings catalog policies, reducing manual configuration effort and policy drift. For more information, see [Policy Configuration Agent in Microsoft Intune](https://learn.microsoft.com/intune/copilot/agents/policy-configuration-agent).
+- The **Change Review Agent** in Microsoft Intune is an AI-driven capability that evaluates Multi-Admin Approval requests for PowerShell scripts by performing risk-based analysis using signals from Microsoft Defender, Microsoft Entra ID, and Intune, providing contextual insights that help administrators make informed approve-or-deny decisions. For more information, see [Change Review Agent overview](https://learn.microsoft.com/intune/copilot/agents/change-review-agent).
 
 ## Next steps
 

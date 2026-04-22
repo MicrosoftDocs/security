@@ -39,9 +39,9 @@ Before you can enforce currency, you need full visibility into what software is 
   - [Configure tenant attach to support endpoint security policies from Intune](https://learn.microsoft.com/mem/intune/protect/tenant-attach-intune)
 - Onboard non-Azure servers with **Azure Arc** — Bring Amazon Web Services (AWS), Google Cloud Platform (GCP), and on-premises servers into Azure's management plane for centralized policy, patching, and monitoring. For more information, see:
   - [Azure Arc overview](https://learn.microsoft.com/azure/azure-arc/overview)
-  - Onboard VMs to Azure Arc through the multicloud connector <!-- TODO: link Onboard VMs to Azure Arc through the multicloud connector -->
+  - [Onboard VMs to Azure Arc through the multicloud connector](https://learn.microsoft.com/azure/azure-arc/multicloud-connector/onboard-multicloud-vms-arc?tabs=aws)
 - Scan cloud servers with **Microsoft Defender for Cloud** — Use Microsoft Defender for Servers to run vulnerability assessments across Azure, AWS, and GCP workloads with risk-based prioritization. For more information, see:
-  - Configure vulnerability scanning for machines <!-- TODO: link Configure vulnerability scanning for machines -->
+  - [Configure vulnerability scanning for machines](https://learn.microsoft.com/azure/defender-for-cloud/auto-deploy-vulnerability-assessment?pivots=defender-portal)
   - [Connect AWS accounts to Microsoft Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-aws)
   - [Connect your GCP project to Microsoft Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-gcp)
 
@@ -80,14 +80,14 @@ Migrate to cloud-joined and managed Windows devices.
 
 - Use **Azure Update Manager** for your server fleet specifically to schedule, assess, and deploy OS patches across Windows and Linux servers in Azure, on-premises, and multicloud environments. Azure Update Manager handles traditional patch orchestration for server workloads where coordinated maintenance windows and compliance reporting are required. For more information, see [What is Azure Update Manager?](https://learn.microsoft.com/azure/update-manager/overview).
 - Identify servers missing critical updates using both Defender for Cloud and Microsoft Defender to assess devices for missing system updates and patches, surfacing recommendations that highlight which servers are outdated and prioritizing remediation by severity and exposure. For more information, see:
-  - Remediate system update and patch recommendations <!-- TODO: link Remediate system update and patch recommendations -->
+  - [Remediate system update and patch recommendations](https://learn.microsoft.com/azure/defender-for-cloud/enable-periodic-system-updates)
   - [Software inventory](https://learn.microsoft.com/defender-vulnerability-management/tvm-software-inventory)
 - Onboard your servers with **Microsoft Defender for Servers** to ensure servers are visible to your security stack. Defender for Servers also provides posture management, threat protection, and EDR coverage that ensures no server is a blind spot. For more information, see [Plan Defender for Servers deployment](https://learn.microsoft.com/azure/defender-for-cloud/plan-defender-for-servers).
 
 ## Accelerate with AI-powered agents
 
-- The **Vulnerability Remediation Agent** in Microsoft Intune is an AI-powered capability that uses data from Microsoft Defender Vulnerability Management to identify, prioritize, and provide step-by-step remediation guidance for Common Vulnerabilities and Exposures (CVEs) on managed devices, helping administrators accelerate patching and improve organizational security posture. For more information, see the Vulnerability Remediation Agent in Microsoft Intune. <!-- TODO: link Vulnerability Remediation Agent in Microsoft Intune -->
-- The **Dynamic Threat Detection Agent** in Microsoft Defender is an always-on AI-driven capability in Microsoft Defender that continuously analyzes and correlates security telemetry across identities, endpoints, cloud workloads, and email to uncover hidden threats missed by traditional rules and signatures, including those exploiting unpatched or misconfigured assets. For more information, see Microsoft Security Copilot Dynamic Threat Detection Agent. <!-- TODO: link Microsoft Security Copilot Dynamic Threat Detection Agent -->
+- The **Vulnerability Remediation Agent** in Microsoft Intune is an AI-powered capability that uses data from Microsoft Defender Vulnerability Management to identify, prioritize, and provide step-by-step remediation guidance for Common Vulnerabilities and Exposures (CVEs) on managed devices, helping administrators accelerate patching and improve organizational security posture. For more information, see [Vulnerability Remediation Agent in Microsoft Intune](https://learn.microsoft.com/intune/copilot/agents/vulnerability-remediation-agent).
+- The **Dynamic Threat Detection Agent** in Microsoft Defender is an always-on AI-driven capability in Microsoft Defender that continuously analyzes and correlates security telemetry across identities, endpoints, cloud workloads, and email to uncover hidden threats missed by traditional rules and signatures, including those exploiting unpatched or misconfigured assets. For more information, see [Microsoft Security Copilot Dynamic Threat Detection Agent](https://learn.microsoft.com/defender-xdr/dynamic-threat-detection-agent).
 
 ## Next steps
 

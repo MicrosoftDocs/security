@@ -73,8 +73,8 @@ Migrate to cloud-joined and managed Windows devices.
 
 ## Microsoft Defender Vulnerability Management
 
-- Asset discovery <!-- TODO: link Asset discovery -->
-- Scan and remediate endpoints. <!-- TODO: link Scan and remediate end points -->
+- [Asset discovery](https://learn.microsoft.com/defender-vulnerability-management/defender-vulnerability-management#continuous-asset-discovery-and-monitoring)
+- [Scan and remediate endpoints](https://learn.microsoft.com/defender-vulnerability-management/tvm-remediation)
 
 ## Manage your cloud fleet
 

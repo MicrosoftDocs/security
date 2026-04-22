@@ -30,7 +30,7 @@ Inventory what's exposed and remove what doesn't need to be there. As noted in t
 
 ## Accelerate with AI-powered agents
 
-- The **Threat Intelligence Briefing Agent** generates tailored threat briefings by integrating signals from Microsoft Defender External Attack Surface Management (EASM), Defender for Endpoint, and Microsoft Threat Intelligence. EASM enriches each briefing with your organization's discovered external assets and exposures, enabling prioritized remediation recommendations based on your actual attack surface. For more information, see [Microsoft Security Copilot Threat Intelligence Briefing Agent](/copilot/security/threat-intelligence-briefing-agent).
+- The **Threat Intelligence Briefing Agent** generates tailored threat briefings by integrating signals from Microsoft Defender External Attack Surface Management (EASM), Defender for Endpoint, and Microsoft Threat Intelligence. EASM enriches each briefing with your organization's discovered external assets and exposures, enabling prioritized remediation recommendations based on your actual attack surface. For more information, see [Microsoft Security Copilot Threat Intelligence Briefing Agent](/copilot/security/threat-intel-briefing-agent).
 
 ## Next steps
 

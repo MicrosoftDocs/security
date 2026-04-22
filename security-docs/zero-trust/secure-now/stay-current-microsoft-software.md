@@ -31,7 +31,7 @@ Before you can enforce currency, you need full visibility into what software is 
 
 ## Secure devices without requiring reboots for eligible security updates using Hotpatch
 
-**Hotpatch** applies supported security fixes directly to running processes with no reboot required for eligible monthly updates. Eligible Windows 11 Enterprise devices are protected the moment the patch arrives, and updates that require a restart are reduced to just a few baseline updates per year. This means faster security response with less user disruption, eliminating the exposure gap that typically persists while users delay restarts. For more information, see [Hotpatch updates](/windows/deployment/updates/hotpatch-enterprise).
+**Hotpatch** applies supported security fixes directly to running processes with no reboot required for eligible monthly updates. Eligible Windows 11 Enterprise devices are protected the moment the patch arrives, and updates that require a restart are reduced to just a few baseline updates per year. This means faster security response with less user disruption, eliminating the exposure gap that typically persists while users delay restarts. For more information, see [Hotpatch updates](/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates).
 
 ## Extend to cloud and hybrid workloads
 

@@ -119,6 +119,22 @@
     - name: Accelerate vulnerability mitigation
       href: sfi/accelerate-vulnerability-mitigation.md
 
+- name: Secure Now
+  expand: false
+  items:
+  - name: Overview
+    href: secure-now/secure-now-overview.md
+  - name: Stay current on Microsoft software
+    href: secure-now/stay-current-microsoft-software.md
+  - name: Scan and secure your source code
+    href: secure-now/scan-secure-source-code.md
+  - name: Adopt updates for open-source software (OSS) components
+    href: secure-now/adopt-open-source-updates.md
+  - name: Minimize internet-facing exposure
+    href: secure-now/minimize-internet-exposure.md
+  - name: Implement baseline security measures
+    href: secure-now/baseline-security-measures.md
+
 - name: Technology pillars
   expanded: false
   items:

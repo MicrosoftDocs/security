@@ -3,8 +3,6 @@ title: How do I discover AI apps and the sensitive data these use in my organiza
 description: How to use Microsoft capabilities to discover AI apps and data use in your environment. 
 ms.date: 04/01/2025
 ms.update-cycle: 180-days
-ms.service: security
-ms.subservice: security-for-ai
 ms.topic: concept-article
 ms.collection: 
   - msftsolution-security-for-ai

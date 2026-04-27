@@ -3,8 +3,6 @@ title: How do I govern AI apps and data for regulatory compliance?
 description: How to use Microsoft capabilities to meet regulatory compliance requirements with AI apps and data. 
 ms.date: 04/02/2025
 ms.update-cycle: 180-days
-ms.service: security
-ms.subservice: security-for-ai
 ms.topic: concept-article
 ms.collection: 
   - msftsolution-security-for-ai

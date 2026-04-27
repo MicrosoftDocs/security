@@ -8,8 +8,6 @@ metadata:
   description: Learn how to better protect your organization from ransomware, extortion, and intrusion  # Required; article description that is displayed in search results. < 160 chars.
 
   services: na
-  ms.service: microsoft-365-security
-  ms.subservice: m365d
   ms.topic: landing-page # Required
   ms.collection: na
   ms.date: 10/11/2024 #Required; mm/dd/yyyy format.

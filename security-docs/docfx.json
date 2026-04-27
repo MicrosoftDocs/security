@@ -75,6 +75,18 @@
         "security-for-ai/**/*.md": "orspodek",
         "security-for-ai/**/*.yml": "orspodek"
       },
+      "ms.service": {
+        "ransomware/**/*.md": "security",
+        "ransomware/**/*.yml": "security",
+        "security-for-ai/**/*.md": "security",
+        "security-for-ai/**/*.yml": "security"
+      },
+      "ms.subservice": {
+        "ransomware/**/*.md": "",
+        "ransomware/**/*.yml": "",
+        "security-for-ai/**/*.md": "",
+        "security-for-ai/**/*.yml": ""
+      },
       "feedback_system": {
         "privileged-access-workstations/**/*.md": "None",
         "ai-red-team/**/*.md": "None"

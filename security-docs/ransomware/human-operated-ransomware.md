@@ -1,7 +1,5 @@
 ---
 title: "What is ransomware?"
-ms.service: security
-ms.subservice: zero-trust
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cx-rw

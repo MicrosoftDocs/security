@@ -2,8 +2,6 @@
 title: "Get started quickly configuring ransomware prevention so you can stop ransomware cybercriminals from targeting your organization."
 ms.date: 10/13/2024
 ms.topic: best-practice
-ms.service: security
-ms.subservice: zero-trust
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cx-rw

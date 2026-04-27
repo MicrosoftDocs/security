@@ -2,8 +2,6 @@
 title: "Make it hard for ransomware attacks to happen to your organization"
 ms.date: 10/16/2024
 ms.topic: concept-article
-ms.service: security
-ms.subservice: zero-trust
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cx-rw

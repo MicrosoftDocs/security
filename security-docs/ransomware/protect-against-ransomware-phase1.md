@@ -3,8 +3,6 @@ title: "Prepare for ransomware attacks with a backup and recovery plan"
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
 ms.date: 10/16/2024
 ms.topic: best-practice
-ms.service: security
-ms.subservice: zero-trust
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cx-rw 

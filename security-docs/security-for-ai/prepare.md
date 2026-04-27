@@ -3,8 +3,6 @@ title: How do I prepare my environment for AI security?
 description: How to prepare your environment for AI security with identity and device protection, data protection, and threat protection. 
 ms.date: 04/01/2025
 ms.update-cycle: 180-days
-ms.service: security
-ms.subservice: security-for-ai
 ms.topic: concept-article
 ms.collection: 
   - msftsolution-security-for-ai

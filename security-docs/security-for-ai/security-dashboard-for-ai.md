@@ -3,8 +3,6 @@ title: Assess your organization's AI risk with Microsoft Security Dashboard for 
 description: Use the Microsoft Security Dashboard for AI dashboard to discover, assess, and mitigate AI risks across your organization.
 ms.date: 12/05/2025
 ms.update-cycle: 90-days
-ms.service: security
-ms.subservice: security-for-ai
 ms.topic: concept-article
 ms.collection: 
   - msftsolution-security-for-ai

@@ -1,7 +1,7 @@
 ---
 title: Assess your organization's AI risk with Microsoft Security Dashboard for AI (Preview)
 description: Use the Microsoft Security Dashboard for AI dashboard to discover, assess, and mitigate AI risks across your organization.
-ms.date: 12/05/2025
+ms.date: 04/28/2026
 ms.update-cycle: 90-days
 ms.topic: concept-article
 ms.collection: 
@@ -56,24 +56,28 @@ Microsoft Security and partner products provide the sensors and signals the dash
 
 ## Permissions
 
-By default, only Global Administrators have access to all dashboard data. The tables in this section outline the data access levels for Microsoft Entra built-in roles. For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
-<br><br>
+The tables in this section outline the data access levels for Microsoft Entra built-in roles. For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+
+> [!IMPORTANT]
+> **Security Reader** is the minimum Microsoft Entra role required to view all Security Dashboard for AI data and delegate security recommendations. Any role with equal or higher privileges, such as Security Administrator, also has full dashboard access. This role is recommended for CISOs and security leaders who need full visibility into AI security posture without requiring tenant-level administrative permissions, such as editing policies. For more information about the Security Reader role, see [Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader).
+
+<br>
 
 <details>
 <summary><b>Overview page permissions</b></summary>
 
 These roles can view data on the summary cards on the **Overview** page. 
 
-| Summary card | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
-|:-------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
+| Summary card | Security Reader | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
+|:-------------|:-----------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
 | **AI inventory** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **AI risk: Misconfigurations and attack paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **AI risk: Agents with sensitive interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
 These roles can all view instructions and delegate tasks on the **Overview** page, as described in [Review and delegate security recommendations](#review-and-delegate-security-recommendations), but cannot view the status of the recommendation unless specified below:
 
-| Recommendation category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
-|:------------------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
+| Recommendation category | Security Reader | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
+|:------------------------|:-----------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
 | **Prevent agent sprawl and unauthorized access** (Microsoft Entra) | ✅ | ✅ | ✅ | ✅ Except *Configure global collection in Entra agent registry* | ✅ | ❌ | ❌ |
 | **Prevent data leaks and oversharing** (Microsoft Purview) | ✅ | ✅ Except *Enable Microsoft Purview audit* | ✅ | ✅ Except *Enable Microsoft Purview audit* | ✅ | ✅ Only *Turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management* | ✅ Only *Turn on Communication Compliance, Insider Risk Management, and Data Lifecycle Management* |
 | **Address AI risk and vulnerability** (Microsoft Defender) | ✅ | ✅ | ✅ | ✅ Except *Enable app governance* | ✅ | ❌ | ❌ |
@@ -85,8 +89,8 @@ These roles can all view instructions and delegate tasks on the **Overview** pag
 
 These roles can view data on the **AI inventory** page, as described in [Explore AI assets and manage asset security risks](#explore-ai-assets-and-manage-asset-security-risks).
 
-| Asset type | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
-|:-----------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
+| Asset type | Security Reader | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
+|:-----------|:-----------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
 | **AI agents** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **AI models** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **MCP servers** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |
@@ -99,8 +103,8 @@ These roles can view data on the **AI inventory** page, as described in [Explore
 
 These roles can view data on the **AI risk** page, as described in [View and prioritize AI security risks across your organization](#view-and-prioritize-ai-security-risks-across-your-organization).
 
-| Risk category | Global Administrator | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
-|:--------------|:---------------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
+| Risk category | Security Reader | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
+|:--------------|:-----------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
 | **Identity and access risk** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **Data security risk** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **Cloud security risk** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ |

@@ -62,8 +62,7 @@ Microsoft Security and partner products provide the sensors and signals the dash
 The tables in this section outline the data access levels for Microsoft Entra built-in roles. For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
 > [!IMPORTANT]
-> **Security Reader** is the minimum Microsoft Entra role required to view all Security Dashboard for AI data and delegate security recommendations. Any role with equal or higher privileges, such as Security Administrator, also has full dashboard access. This role is recommended for CISOs and security leaders who need full visibility into AI security posture without requiring tenant-level administrative permissions, such as editing policies. For more information about the Security Reader role, see [Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader).
-
+> **Security Reader** is the minimum Microsoft Entra role required to view all Security Dashboard for AI data and delegate security recommendations. This role is recommended for CISOs and security leaders who need full visibility into AI security posture without requiring tenant-level administrative permissions, such as editing policies. 
 <br>
 
 <details>

@@ -15,6 +15,12 @@ ms.collection:
 
 This article lists new capabilities and resources (blogs and videos) related to Microsoft AI security. 
 
+## April 2026
+
+|Product | Feature updates |  
+| ----  | ----------------------------- | 
+|Security Dashboard for AI | - [General availability of Security Dashboard for AI](security-dashboard-for-ai.md)<br>- **Security Reader role support** — Minimum Microsoft Entra role required to view all dashboard data and assign recommendations. See [Permissions](security-dashboard-for-ai.md#permissions).<br>- **Recommendation assignments with due dates** — Assign recommendations to users or groups with due date tracking and Teams or email notifications.|
+
 ## November 2025
 
 |Product | Feature updates |  

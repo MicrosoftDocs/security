@@ -44,7 +44,7 @@ Security Dashboard for AI requires one of the following licenses:
 - **Microsoft 365 E7**
 - **Microsoft 365 E5** with the **A365** add-on
 
-Microsoft Security and partner products provide the sensors and signals the dashboard uses. If you haven't deployed a required service, the dashboard guides you on which capabilities are missing and how to strengthen your AI security.
+Microsoft Security services provide the sensors and signals the dashboard uses. If you haven't deployed a required service, the dashboard guides you on which capabilities are missing and how to strengthen your AI security.
 
 **Supported products:**
 

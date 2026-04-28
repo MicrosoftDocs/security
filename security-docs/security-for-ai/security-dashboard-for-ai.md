@@ -62,7 +62,7 @@ Microsoft Security and partner products provide the sensors and signals the dash
 The tables in this section outline the data access levels for Microsoft Entra built-in roles. For more information about Microsoft Entra roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
 > [!IMPORTANT]
-> **Security Reader** is the minimum Microsoft Entra role required to view all Security Dashboard for AI data and delegate security recommendations. This role is recommended for CISOs and security leaders who need full visibility into AI security posture without requiring tenant-level administrative permissions, such as editing policies. 
+> **Security Reader** is the minimum Microsoft Entra role required to view all Security Dashboard for AI data and assign security recommendations. This role is recommended for CISOs and security leaders who need full visibility into AI security posture without requiring tenant-level administrative permissions, such as editing policies. 
 <br>
 
 <details>
@@ -76,7 +76,7 @@ These roles can view data on the summary cards on the **Overview** page.
 | **AI risk: Misconfigurations and attack paths** | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **AI risk: Agents with sensitive interactions** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
-These roles can all view instructions and delegate tasks on the **Overview** page, as described in [Review and delegate security recommendations](#review-and-delegate-security-recommendations), but cannot view the status of the recommendation unless specified below:
+These roles can all view instructions and assign tasks on the **Overview** page, as described in [Review and assign security recommendations](#review-and-assign-security-recommendations), but cannot view the status of the recommendation unless specified below:
 
 | Recommendation category | Security Reader | AI Administrator | Compliance Administrator | Security Administrator | Global Reader | Agent ID Administrator | Agent Registry Administrator |
 |:------------------------|:-----------------|:-----------------|:-------------------------|:-----------------------|:--------------|:-----------------------|:-----------------------------|
@@ -117,7 +117,7 @@ These roles can view data on the **AI risk** page, as described in [View and pri
 
 
 
-## Review and delegate security recommendations
+## Review and assign security recommendations
 
 The **Overview** page of the dashboard provides key insights about your AI assets and related security risks. It also assesses your organization's implementation of Microsoft security for AI capabilities and provides recommendations for improving your organization's AI security posture.
 
@@ -125,7 +125,7 @@ Each recommendation shows its current status, such as **Not started** or **Compl
 
 ### Assign a recommendation
 
-To delegate the implementation of a recommendation to a specific user or group:
+To assign the implementation of a recommendation to a specific user or group:
 
 1. Select a recommendation on the **Overview** page.
 
@@ -139,7 +139,12 @@ To delegate the implementation of a recommendation to a specific user or group:
    - **Assign to**: Select **Assign to user or group** to choose an assignee.
    - **Due date**: Set a due date for the recommendation. The dashboard displays a countdown showing the number of days remaining.
    - **Create a notification**: Choose how to notify the assignee — **Teams**, **Email**, or **Don't create a notification**. When you save the assignment, this creates a pre-populated notification you can edit and send.
-1. Select **Save assignment**. The recommendation details page now shows a **Delegated to** card with the assignee, the due date countdown, and icons to send follow-up notifications by email or Teams. To update or remove the assignment, select **Manage assignment**.
+
+   :::image type="content" source="media/security-dashboard-for-ai/assignment-details-save-assignment.png" alt-text="Screenshot of Assignment details dialog with assignee, due date, notification options, and Save assignment button highlighted." lightbox="media/security-dashboard-for-ai/assignment-details-save-assignment.png":::
+
+1. Select **Save assignment**. The recommendation details page now shows a **Delegated to** card with the assignee, the due date countdown, and assignment details. To update or remove the assignment, select **Manage assignment**.
+
+   :::image type="content" source="media/security-dashboard-for-ai/assignment-summary.png" alt-text="Screenshot of Assignment details dialog showing assignee selection, due date, notification options, and Manage assignment button." lightbox="media/security-dashboard-for-ai/assignment-summary.png":::
 
 Assigned recommendations display an **Assigned** indicator on the **Overview** page.
 
@@ -148,6 +153,9 @@ Assigned recommendations display an **Assigned** indicator on the **Overview** p
 If a recommendation isn't relevant to your organization, you can skip it to keep the dashboard focused on actionable items:
 
 1. On the recommendation details page, select the ellipsis (**...**) next to the **Assign** button.
+
+   :::image type="content" source="media/security-dashboard-for-ai/skip-recommendation.png" alt-text="Screenshot of recommendation details dialog with Turn on Data Loss Prevention steps, Assign button, ellipsis menu, and Skip this recommendation highlighted." lightbox="media/security-dashboard-for-ai/skip-recommendation.png":::
+
 1. Select **Skip this recommendation**.
 
 Skipped recommendations are hidden from the default view. To view or restore skipped recommendations, select **Show skipped recommendations** on the **Overview** page.
@@ -195,7 +203,7 @@ View and manage the security of all AI models in use across your organization. S
 
 ## View and prioritize AI security risks across your organization
 
-The **AI risk** page of the dashboard provides a consolidated view of AI-related security risks, enabling you to prioritize and address threats effectively. Each risk category links directly to the relevant Microsoft Security product for remediation.
+The **AI risk** page of the dashboard provides a consolidated view of AI-related security risks — including identity and access risks, data security risks, and cloud security risks — enabling you to prioritize and address threats effectively. Each risk category links directly to the relevant Microsoft Security product for remediation.
 
 To investigate and remediate AI security risks:
 
@@ -203,15 +211,6 @@ To investigate and remediate AI security risks:
 1.  Select **View in Microsoft Purview**, **View in Microsoft Defender**, or **View details in Entra** to navigate to the relevant Microsoft Security product for detailed risk analysis and remediation. 
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-risks.png" alt-text="A screenshot showing the AI risk page of the Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-risks.png":::
-
-### Identity and access risk for agents
-
-The **Identity and access risk for agents** section on the **AI risk** page shows identity and access-based risks for Microsoft and non-Microsoft agents registered in Microsoft Entra Agent ID. This section includes:
-
-- **Risky agents by risk level**: A breakdown of agents by risk level (High Risk, Medium Risk, and others), based on changes from an agent's normal activity. Select **View details in Entra** to investigate risky agents in the Microsoft Entra admin center.
-- **Agent risk states**: A summary of agent risk states, including **At risk**, **Confirmed compromised**, **Confirmed safe**, and **Dismissed**. Admins can review at-risk agents, choose their risk state to limit access, and prevent damage. Select **View details in Entra** to manage agent risk states.
-
-For more information, see [Agent risk management in Microsoft Entra ID Protection](/entra/id-protection/concept-risky-agents).
 
 
 

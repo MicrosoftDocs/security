@@ -1,7 +1,7 @@
 ---
 title: Program Requirements - Microsoft Trusted Root Program 
 description: This document provides details about the requirements all Certificate Authorities are required to adhere to in order to be compliant with our program. 
-ms.date: 10/22/2024
+ms.date: 04/28/2026
 ms.service: security
 author: kasirota
 ms.author: kasirota
@@ -16,8 +16,7 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 
 
  > [!NOTE]
- > * For information on the most-recent updates shipped, please see <https://aka.ms/rootupdates> 
- > * Bookmark this page as: <https://aka.ms/RootCert> 
+ > * This page has been superceded. The program technical requirements can be found here: <https://github.com/TrustedRootProgram/Program-Requirements> or on the bookmark here: <https://aka.ms/RootCert>. 
 
 
 ## 2. Continuing Program Requirements

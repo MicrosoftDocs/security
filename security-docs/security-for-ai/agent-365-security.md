@@ -16,7 +16,7 @@ ms.collection:
 
 # Secure AI agents at scale using Microsoft Agent 365
 
-As organizations adopt AI agents at scale, securing them has become a critical concern. [Microsoft Agent 365](/microsoft-agent-365/overview/) extends your existing security infrastructure — Microsoft Defender, Microsoft Entra, and Microsoft Purview — to agents, with purpose-built capabilities tailored for agent needs.
+As organizations adopt AI agents at scale, securing them has become a critical concern. [Microsoft Agent 365](/microsoft-agent-365/overview/) extends your existing security infrastructure - Microsoft Defender, Microsoft Entra, and Microsoft Purview - to agents, with purpose-built capabilities tailored for agent needs.
 
 This article outlines the security capabilities that Microsoft Defender, Microsoft Entra, and Microsoft Purview provide for AI agents through Agent 365.
 

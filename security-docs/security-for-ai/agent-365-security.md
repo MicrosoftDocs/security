@@ -16,7 +16,13 @@ ms.collection:
 
 # Secure AI agents at scale using Microsoft Agent 365
 
-As organizations adopt AI agents to automate workflows and boost productivity, securing these agents has become a critical concern. Unlike traditional applications, AI agents can act, connect to tools, access data, interact with other agents, and operate autonomously. This creates new security challenges, including:
+As organizations adopt AI agents at scale, securing them has become a critical concern. [Microsoft Agent 365](/microsoft-agent-365/overview/) extends your existing security infrastructure — Microsoft Defender, Microsoft Entra, and Microsoft Purview — to agents, with purpose-built capabilities tailored for agent needs.
+
+This article outlines the security capabilities that Microsoft Defender, Microsoft Entra, and Microsoft Purview provide for AI agents through Agent 365.
+
+## A distributed control plane for managing agent security
+
+Unlike traditional applications, AI agents can act, connect to tools, access data, interact with other agents, and operate autonomously. This creates new security challenges, including:
 
 - Agent sprawl from user-created and SaaS agents that expands the attack surface.
 - Over-privileged agents with excessive access to resources.
@@ -24,15 +30,7 @@ As organizations adopt AI agents to automate workflows and boost productivity, s
 - Misconfigured or vulnerable agents that lack proper authentication or boundaries.
 - Traditional AI threats like prompt injection and data leakage that now span all agent interactions.
 
-Microsoft Agent 365 extends your existing security infrastructure — Microsoft Defender, Microsoft Entra, and Microsoft Purview — to agents, with purpose-built capabilities tailored for agent needs. Agent 365 supports agents built on Microsoft platforms like Microsoft Copilot Studio and Microsoft Foundry, as well as agents created on third-party platforms.
-
-This article outlines these security capabilities.
-
-For more information about Microsoft Agent 365, see [Microsoft Agent 365 documentation](/microsoft-agent-365/overview/).
-
-## A distributed control plane for managing agent security
-
-Agent 365 integrates with the Microsoft 365 admin center to give IT teams centralized visibility into AI agents across the organization. Admins can review agent usage and take action based on performance and behavior signals.
+Agent 365 supports agents built on Microsoft platforms like Microsoft Copilot Studio and Microsoft Foundry, as well as agents created on third-party platforms. It integrates with the Microsoft 365 admin center to give IT teams centralized visibility into AI agents across the organization. Admins can review agent usage and take action based on performance and behavior signals.
 
 Security teams define governance requirements by creating policy templates, such as access packages in Microsoft Entra. During onboarding, IT teams apply these templates to agents, ensuring governance and compliance are enforced from the start.
 

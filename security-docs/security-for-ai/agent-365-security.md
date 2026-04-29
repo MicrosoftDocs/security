@@ -30,13 +30,13 @@ Unlike traditional applications, AI agents can act, connect to tools, access dat
 - Misconfigured or vulnerable agents that lack proper authentication or boundaries.
 - Traditional AI threats like prompt injection and data leakage that now span all agent interactions.
 
-As part of Microsoft Agent 365, Microsoft Defender, Microsoft Entra, and Microsoft Purview now provide agent-specific controls and capabilities. This allows security practitioners to continue working in the tools they already use, with agent-specific insights and recommendations surfaced directly in each product's portal. 
+As part of Microsoft Agent 365, **Microsoft Defender, Microsoft Entra, and Microsoft Purview provide agent-specific controls and capabilities**. This allows security practitioners to continue working in the tools they already use, with agent-specific insights and recommendations surfaced directly in each product's portal. 
 
-The Agent 365 Overview in the Microsoft 365 admin center gives admins centralized visibility into AI agents across the organization, where they can review agent usage and take action based on performance and behavior signals.
+Admins get **centralized visibility into AI agents** through the Agent 365 Overview in the Microsoft 365 admin center, where they can review agent usage and take action based on performance and behavior signals.
 
 :::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the Agent 365 overview page in Microsoft 365 Admin Center." lightbox="media/agent-365-admin-center.png":::
 
-Security teams define governance requirements by creating policy templates, such as access packages in Microsoft Entra. During onboarding, IT teams apply these templates to agents, ensuring governance and compliance are enforced from the start.
+**Security teams define governance requirements** by creating policy templates, such as access packages in Microsoft Entra. During onboarding, IT teams apply these templates to agents, ensuring governance and compliance are enforced from the start.
 
 ## Access control
 

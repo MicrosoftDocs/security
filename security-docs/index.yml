@@ -102,7 +102,7 @@ sections:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
       - componentType: icon-card
-        title: Get *In the Loop*
+        title: Get In the Loop
         summary: Catch up on the latest product drops, security updates, and demos—all in one place.
         url: https://aka.ms/SecurityProductDrops_April26
         icon:

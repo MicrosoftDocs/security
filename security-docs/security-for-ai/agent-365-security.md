@@ -42,13 +42,9 @@ Microsoft Defender, Microsoft Entra, and Microsoft Purview now provide agent-spe
 
 Protect agent identities and prevent breaches by extending conditional access and identity protection from users to agents.
 
-**Microsoft 365 admin center | Microsoft Entra Registry**
-
 Get the complete view of all of the agents used in your organization, including agents with an Entra Agent ID, agents you register yourself, and shadow agents.
 
 :::image type="content" source="media/agent-365-registry.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center." lightbox="media/agent-365-registry.png":::
-
-**Microsoft Entra lifecycle workflows | Microsoft Entra ID governance | Microsoft Entra Conditional Access and Identity Protection**
 
 Limit agents' access to only the resources they need and prevent agent compromise with risk-based conditional access policies.
 
@@ -71,8 +67,6 @@ Learn more about access control:
 
 Gain visibility into AI-related data exposure, protect the data agents create and access from oversharing, leaks, and risky behavior.
 
-**Microsoft Purview Data Loss Prevention | Microsoft Purview Information Protection | Microsoft Purview Data Security Posture Management**
-
 Dynamically block agent interactions with sensitive data based on data security labels and policies.
 
 :::image type="content" source="media/agent-365-purview.png" alt-text="A screenshot showing the Agent page in Microsoft Purview." lightbox="media/agent-365-purview.png":::
@@ -86,8 +80,6 @@ Learn more about data security:
 
 Protect agents from threats, vulnerabilities, and adversarial attacks. Detect, investigate, and remediate incidents quickly, with visibility into attack paths.
 
-**Microsoft Defender**
-
 Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents.
 
 :::image type="content" source="media/agent-365-microsoft-defender-posture.png" alt-text="A screenshot showing the Overview tab on the Agent page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-posture.png":::
@@ -95,8 +87,6 @@ Understand your agent and data security posture and attack paths that attackers 
 Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
 
 :::image type="content" source="media/agent-365-microsoft-defender-incident.png" alt-text="A screenshot showing the Incident page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-incident.png":::
-
-**Microsoft Defender | Microsoft Entra Secure Access Service Edge | Microsoft Purview Insider Risk Management**
 
 Use AI-powered intelligence to block prompt injection attacks, malicious traffic, and prevent data exfiltration due to risky agent behavior in real time.
 
@@ -106,8 +96,6 @@ Learn more about threat protection:
 
 - [AI agent inventory in Microsoft Defender XDR](/defender-xdr/security-for-ai/ai-agent-inventory)
 - [AI agent detection and protection in Microsoft Defender XDR](/defender-xdr/security-for-ai/ai-agent-detection-protection)
-- [Protect your environment in real-time during agent runtime](/defender-cloud-apps/real-time-agent-protection-during-runtime)
-- [AI Prompt Shield](/entra/global-secure-access/how-to-ai-prompt-shield)
 
 ## Next steps
 

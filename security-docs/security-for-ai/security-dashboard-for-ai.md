@@ -39,11 +39,6 @@ The dashboard provides:
 
 ## How Security Dashboard for AI works
 
-Security Dashboard for AI requires one of the following licenses:
-
-- **Microsoft 365 E7**
-- **Microsoft 365 E5** with the **A365** add-on
-
 Microsoft Security services provide the sensors and signals the dashboard uses. If you haven't deployed a required service, the dashboard guides you on which capabilities are missing and how to strengthen your AI security.
 
 **Supported products:**
@@ -116,7 +111,6 @@ These roles can view data on the **AI risk** page, as described in [View and pri
 </details>
 
 
-
 ## Review and assign security recommendations
 
 The **Overview** page of the dashboard provides key insights about your AI assets and related security risks. It also assesses your organization's implementation of Microsoft security for AI capabilities and provides recommendations for improving your organization's AI security posture.
@@ -177,15 +171,9 @@ The **AI agents** tab of the **AI inventory** page presents all of the AI agents
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png" alt-text="A screenshot showing the Agents tab of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png":::
 
-Select an AI agent to:
-- View agent details and activities. Select **View all activities** to open the [Activity Explorer in DSPM for AI](/purview/data-security-posture-management-considerations#activity-explorer-events-in-data-security-posture-management) and review agent activity related to content that contains sensitive information or has labels applied.
+Select an AI agent to view agent details and activities. Select **View all activities** to open the [Activity Explorer in DSPM for AI](/purview/data-security-posture-management-considerations#activity-explorer-events-in-data-security-posture-management) and review agent activity related to content that contains sensitive information or has labels applied.
 
-   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png" alt-text="A screenshot showing the Agent Overview page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png":::
-
-- Review and apply security recommendations for protecting sensitive data in agent activities.
-
-   :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png" alt-text="A screenshot showing the Agent Recommendations page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-recommendations.png":::
-
+:::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png" alt-text="A screenshot showing the Agent Overview page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-agent-overview.png":::
 
 ### AI models
 

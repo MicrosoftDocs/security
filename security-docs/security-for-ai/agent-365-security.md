@@ -24,7 +24,7 @@ As organizations adopt AI agents to automate workflows and boost productivity, s
 - Misconfigured or vulnerable agents that lack proper authentication or boundaries.
 - Traditional AI threats like prompt injection and data leakage that now span all agent interactions.
 
-Microsoft Agent 365 is the control plane for managing AI agents. It extends your existing security infrastructure — Microsoft Defender, Microsoft Entra, and Microsoft Purview — to agents, with purpose-built capabilities tailored for agent needs. Agent 365 supports agents built on Microsoft platforms like Microsoft Copilot Studio and Microsoft Foundry, as well as agents created on third-party platforms.
+Microsoft Agent 365 extends your existing security infrastructure — Microsoft Defender, Microsoft Entra, and Microsoft Purview — to agents, with purpose-built capabilities tailored for agent needs. Agent 365 supports agents built on Microsoft platforms like Microsoft Copilot Studio and Microsoft Foundry, as well as agents created on third-party platforms.
 
 This article outlines these security capabilities.
 

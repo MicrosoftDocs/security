@@ -88,8 +88,7 @@ Understand your agent and data security posture and attack paths that attackers 
 
 Learn more about managing agent security posture using Microsoft Agent 365:
 
-- [Security posture management for AI apps and agents](/azure/defender-for-cloud/ai-security-posture)
-- [Discover and protect your AI agents (Preview)](/defender-cloud-apps/ai-agent-inventory)
+- [AI agent inventory in Microsoft Defender XDR](/defender-xdr/security-for-ai/ai-agent-inventory)
 
 
 ### Detection and response
@@ -102,7 +101,7 @@ Detect known and emerging threats targeting agents and enable a rapid response w
 
 Learn more about detecting and responding to threats using Microsoft Agent 365:
 
-- [Threat protection in Microsoft Agent 365](/microsoft-agent-365/admin/threat-protection)
+- [AI agent detection and protection in Microsoft Defender XDR](/defender-xdr/security-for-ai/ai-agent-detection-protection)
 
 ### Runtime defense
 

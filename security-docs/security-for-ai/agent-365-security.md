@@ -40,7 +40,7 @@ Security teams define governance requirements by creating policy templates, such
 
 ## Access control | Microsoft Entra
 
-Agents that sprawl across the organization or accumulate excessive permissions create risk. Microsoft Entra helps you maintain visibility into all agent identities and enforce least-privilege access:
+Agents that sprawl across the organization or accumulate excessive permissions create risk. Microsoft Entra helps you maintain visibility into all agent identities and enforce least-privilege access with agent-specific access control capabilities:
 
 - **Visibility into agent identities** – Get the complete view of all agents in your organization, including agents with an Entra Agent ID, agents you register yourself, and shadow agents.
 
@@ -63,7 +63,7 @@ Learn more about access control:
 
 ## Data security | Microsoft Purview
 
-Agents create, access, and share data across systems – increasing the risk of oversharing, leaks, and exposure of sensitive information. Microsoft Purview helps you maintain control over what data agents can interact with:
+Agents create, access, and share data across systems – increasing the risk of oversharing, leaks, and exposure of sensitive information. Microsoft Purview helps you maintain control over what data agents can interact with and how they can use it, with agent-specific data security capabilities:
 
 - **Data security posture management** – Get deep interaction visibility for agents and identify AI-related data exposure risks.
 - **Sensitivity labels** – Agents inherit and honor data sensitivity labels, ensuring consistent data protection across human and agent interactions.

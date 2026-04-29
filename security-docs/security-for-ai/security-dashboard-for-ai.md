@@ -39,7 +39,7 @@ The dashboard provides:
 
 ## How Security Dashboard for AI works
 
-Microsoft Security services provide the sensors and signals the dashboard uses. If you haven't deployed a required service, the dashboard guides you on which capabilities are missing and how to strengthen your AI security.
+Microsoft Security and partener services provide the sensors and signals the dashboard uses. If you haven't deployed a required service, the dashboard guides you on which capabilities are missing and how to strengthen your AI security.
 
 **Supported products:**
 
@@ -47,7 +47,7 @@ Microsoft Security services provide the sensors and signals the dashboard uses. 
 | **Product**      | **Key capabilities and dashboard insights**                                                                 |
 |----------------------------|--------------------------------------------------------------------------------------|
 | **Microsoft Entra**        | <ul><li>**Identity management**: Centralized user and application identity governance</li><li>**Conditional access**: Risk-based access controls for AI applications</li><li>**Privileged identity management**: Elevated access monitoring and control</li></ul> For more information, see [What is Microsoft agent identity platform](/entra/agent-id/identity-platform/what-is-agent-id-platform).|
-| **Microsoft Defender**     | <ul><li>**Threat detection**: Continuous monitoring and observability of AI agents and workloads</li><li>**Real-time protection**: Blocking of dangerous actions initiated by AI agents, for supported agents</li><li>**Cloud security posture**: Infrastructure vulnerability assessment</li><li>**App security**: SaaS AI application risk evaluation</li></ul> For more information, see [Microsoft Defender AI security posture management](/azure/defender-for-cloud/ai-security-posture).|
+| **Microsoft Defender**     | <ul><li>**Threat detection**: Continuous monitoring and observability of AI agents and workloads</li><li>**Real-time protection**: Blocking of dangerous actions initiated by AI agents, for supported agents</li><li>**Cloud security posture**: Infrastructure vulnerability assessment</li><li>**App security**: SaaS AI application risk evaluation</li></ul> For more information, see [Protect AI assets from emerging threats and vulnerabilities using Microsoft Defender](/defender-xdr/security-for-ai/defender-security-for-ai).|
 | **Microsoft Purview**      | <ul><li>**Data classification**: Automated labeling and protection of AI-accessible data</li><li>**Data loss prevention**: Prevent sensitive information exposure through AI</li><li>**Insider risk management**: Detect anomalous AI usage patterns</li></ul> For more information, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview). |
 | **Microsoft Security Copilot**| <ul><li>**Prompt-based exploration**: Explore AI risks, agent activity, and security recommendations via prompts</li><li>**Enhanced AI risk insights**: Aggregate signals across Microsoft and partner security solutions for deeper analysis</li><li>**Enhanced agent discovery and categorization**: Improve identification of managed, unmanaged, and shadow AI agents to strengthen your AI security posture</li></ul> For more information, see [What is Microsoft Security Copilot?](/copilot/security/microsoft-security-copilot)|
 

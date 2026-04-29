@@ -26,7 +26,7 @@ As organizations adopt AI agents to automate workflows and boost productivity, s
 
 Microsoft Agent 365 is the control plane for managing AI agents. It extends your existing security infrastructure — Microsoft Defender, Microsoft Entra, and Microsoft Purview — to agents, with purpose-built capabilities tailored for agent needs. Agent 365 supports agents built on Microsoft platforms like Microsoft Copilot Studio and Microsoft Foundry, as well as agents created on third-party platforms.
 
-This article outlines the core security capabilities that Microsoft Agent 365 provides based on Microsoft's extended security infrastructure for AI agents.
+This article outlines these security capabilities.
 
 For more information about Microsoft Agent 365, see [Microsoft Agent 365 documentation](/microsoft-agent-365/overview/).
 
@@ -38,12 +38,7 @@ Security teams define governance requirements by creating policy templates, such
 
 :::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the Agent 365 overview page in Microsoft 365 Admin Center." lightbox="media/agent-365-admin-center.png":::
 
-
-## Microsoft security infrastructure extended to AI agents
-
 Microsoft Defender, Microsoft Entra, and Microsoft Purview now provide agent-specific controls and capabilities. Security practitioners continue to work in the tools they already use, with agent-specific insights and recommendations surfaced directly in each product's portal.
-
-The following sections outline these capabilities.
 
 ## Access control
 
@@ -57,13 +52,13 @@ Get the complete view of all of the agents used in your organization, including 
 
 **Microsoft Entra lifecycle workflows | Microsoft Entra ID governance | Microsoft Entra Conditional Access and Identity Protection**
 
-Limit agents' access to resources they need only and prevent agent compromise with risk-based conditional access policies.
+Limit agents' access to only the resources they need and prevent agent compromise with risk-based conditional access policies.
 
 -	Define guardrails - Set policies that define who can create, onboard, and manage agents, assign agent sponsors to keep them under supervision, and ensure that agents start secure with security policy templates.
 
 -	Governance access - Enforce least privilege access by only giving agents access rights to the apps and resources they need to complete tasks.
 
--	Set conditional access - Enforce real-time intelligent access decisions based on agent context and risk, conditions you define and resource they're trying to access.
+-	Set conditional access - Enforce real-time intelligent access decisions based on agent context and risk, conditions you define, and the resource they're trying to access.
 
 :::image type="content" source="media/agent-365-conditional-access.png" alt-text="A screenshot showing the Conditional Access page in Microsoft 365 Admin Center." lightbox="media/agent-365-conditional-access.png":::
 
@@ -93,13 +88,11 @@ Learn more about data security:
 
 Protect agents from threats, vulnerabilities, and adversarial attacks. Detect, investigate, and remediate incidents quickly, with visibility into attack paths.
 
-**Microsoft Defender | Microsoft Security Exposure Management**
+**Microsoft Defender**
 
 Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents.
 
 :::image type="content" source="media/agent-365-microsoft-defender-posture.png" alt-text="A screenshot showing the Overview tab on the Agent page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-posture.png":::
-
-**Microsoft Defender**
 
 Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
 
@@ -118,7 +111,7 @@ Learn more about threat protection:
 - [Protect your environment in real-time during agent runtime](/defender-cloud-apps/real-time-agent-protection-during-runtime)
 - [AI Prompt Shield](/entra/global-secure-access/how-to-ai-prompt-shield)
 
-## Next step
+## Next steps
 
 Learn more about Microsoft Agent 365: 
 - [Microsoft Agent 365 documentation](/microsoft-agent-365).

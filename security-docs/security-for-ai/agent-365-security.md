@@ -75,7 +75,7 @@ Learn more about access control in Microsoft Agent 365:
 
 - [What is Microsoft agent identity platform?](/entra/agent-id/identity-platform/what-is-agent-id-platform)
 - [Governing agent identities (Preview)](/entra/id-governance/agent-sponsor-tasks)
-- [Conditional Access for Agent ID (Preview)](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes)
+- [Conditional Access for Agent ID](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes)
 - [Agent identity sponsor tasks in lifecycle workflows (Preview)](/entra/id-governance/agent-sponsor-tasks)
 
 ### Security posture

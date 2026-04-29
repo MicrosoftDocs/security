@@ -30,9 +30,9 @@ Unlike traditional applications, AI agents can act, connect to tools, access dat
 - Misconfigured or vulnerable agents that lack proper authentication or boundaries.
 - Traditional AI threats like prompt injection and data leakage that now span all agent interactions.
 
-As part of Microsoft Agent 365, these products now provide agent-specific controls and capabilities. Security practitioners continue working in the tools they already use, with agent-specific insights and recommendations surfaced directly in each product's portal.
+As part of Microsoft Agent 365, Microsoft Defender, Microsoft Entra, and Microsoft Purview now provide agent-specific controls and capabilities. Security practitioners continue working in the tools they already use, with agent-specific insights and recommendations surfaced directly in each product's portal.
 
-The **Agent 365 Overview** in the Microsoft 365 admin center gives admins centralized visibility into AI agents across the organization, where they can review agent usage and take action based on performance and behavior signals.
+The **Agent 365 overview** in the Microsoft 365 admin center gives admins centralized visibility into AI agents across the organization, where they can review agent usage and take action based on performance and behavior signals.
 
 :::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the Agent 365 overview page in Microsoft 365 Admin Center." lightbox="media/agent-365-admin-center.png":::
 
@@ -59,7 +59,7 @@ Learn more about access control:
 - [What is Microsoft agent identity platform?](/entra/agent-id/identity-platform/what-is-agent-id-platform)
 - [Governing agent identities (Preview)](/entra/id-governance/agent-sponsor-tasks)
 - [Conditional Access for Agent ID](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes)
-- [AI Prompt Shield](/entra/global-secure-access/how-to-ai-prompt-shield)
+- [Secure Access Service Edge for agents](/entra/global-secure-access/how-to-ai-prompt-shield)
 
 ## Data security | Microsoft Purview
 
@@ -93,7 +93,7 @@ Agents can be manipulated into misusing authorized tools, misconfigured without 
 
 - **Threat investigation and hunting** – Collect unified agent observability logs and hunt for threats across agent interactions.
 
-  :::image type="content" source="media/agent-365-runtime-defense.png" alt-text="A screenshot showing the Security and Compliance tab of the Agent page in Microsoft 365 Admin Center." lightbox="media/agent-365-runtime-defense.png":::
+  :::image type="content" source="media/agent-365-runtime-defense.png" alt-text="A screenshot showing the threat investigation and hunting page in Microsoft Defender." lightbox="media/agent-365-runtime-defense.png":::
 
 Learn more about threat protection:
 
@@ -102,6 +102,7 @@ Learn more about threat protection:
 
 ## Next steps
 
-Learn more about Microsoft Agent 365: 
-- [Microsoft Agent 365 documentation](/microsoft-agent-365).
+Learn more about Microsoft Agent 365:
+
+- [Microsoft Agent 365 documentation](/microsoft-agent-365)
 - [Microsoft Agent 365 blog post: The control plane for AI agents](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/)

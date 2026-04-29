@@ -45,7 +45,7 @@ Microsoft Defender, Microsoft Entra, and Microsoft Purview now provide agent-spe
 
 The following sections outline these capabilities.
 
-### Access control
+## Access control
 
 Protect agent identities and prevent breaches by extending conditional access and identity protection from users to agents.
 
@@ -74,7 +74,7 @@ Learn more about access control:
 - [Governing agent identities (Preview)](/entra/id-governance/agent-sponsor-tasks)
 - [Conditional Access for Agent ID](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes)
 
-### Data security
+## Data security
 
 Gain visibility into AI-related data exposure, protect the data agents create and access from oversharing, leaks, and risky behavior.
 
@@ -89,7 +89,7 @@ Learn more about data security:
 - [Data security in Microsoft Agent 365](/microsoft-agent-365/admin/data-security)
 - [Use Microsoft Purview to manage data security & compliance for AI agents](/purview/ai-agents)
 
-### Threat protection
+## Threat protection
 
 Protect agents from threats, vulnerabilities, and adversarial attacks. Detect, investigate, and remediate incidents quickly, with visibility into attack paths.
 

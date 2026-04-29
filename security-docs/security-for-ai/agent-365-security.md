@@ -38,23 +38,19 @@ The **Agent 365 Overview** in the Microsoft 365 admin center gives admins centra
 
 **Security teams define governance requirements** by creating policy templates, such as access packages in Microsoft Entra. During onboarding, IT teams apply these templates to agents, ensuring governance and compliance are enforced from the start.
 
-## Access control
+## Access control | Microsoft Entra
 
-Protect agent identities and prevent breaches by extending conditional access and identity protection from users to agents.
+Agents that sprawl across the organization or accumulate excessive permissions create risk. Microsoft Entra helps you maintain visibility into all agent identities and enforce least-privilege access.
 
-Get the complete view of all of the agents used in your organization, including agents with an Entra Agent ID, agents you register yourself, and shadow agents.
+**Visibility into agent identities** — Get the complete view of all agents in your organization, including agents with an Entra Agent ID, agents you register yourself, and shadow agents.
 
 :::image type="content" source="media/agent-365-registry.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center." lightbox="media/agent-365-registry.png":::
 
-Limit agents' access to only the resources they need and prevent agent compromise with risk-based conditional access policies.
-
--	Define guardrails - Set policies that define who can create, onboard, and manage agents, assign agent sponsors to keep them under supervision, and ensure that agents start secure with security policy templates.
-
--	Governance access - Enforce least privilege access by only giving agents access rights to the apps and resources they need to complete tasks.
-
--	Set conditional access - Enforce real-time intelligent access decisions based on agent context and risk, conditions you define, and the resource they're trying to access.
+**Conditional access and identity protection** — Extend conditional access and identity protection policies from users to agents. Enforce real-time access decisions based on agent context and risk, conditions you define, and the resource they're trying to access.
 
 :::image type="content" source="media/agent-365-conditional-access.png" alt-text="A screenshot showing the Conditional Access page in Microsoft 365 Admin Center." lightbox="media/agent-365-conditional-access.png":::
+
+**Secure Access Service Edge (SASE)** — Monitor and block malicious and non-compliant network traffic from agents that operate on user endpoint devices and Copilot Studio agents.
 
 Learn more about access control:
 
@@ -62,33 +58,40 @@ Learn more about access control:
 - [What is Microsoft agent identity platform?](/entra/agent-id/identity-platform/what-is-agent-id-platform)
 - [Governing agent identities (Preview)](/entra/id-governance/agent-sponsor-tasks)
 - [Conditional Access for Agent ID](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes)
+- [AI Prompt Shield](/entra/global-secure-access/how-to-ai-prompt-shield)
 
-## Data security
+## Data security | Microsoft Purview
 
-Gain visibility into AI-related data exposure, protect the data agents create and access from oversharing, leaks, and risky behavior.
+Agents create, access, and share data across systems — increasing the risk of oversharing, leaks, and exposure of sensitive information. Microsoft Purview helps you maintain control over what data agents can interact with.
 
-Dynamically block agent interactions with sensitive data based on data security labels and policies.
+**Data Security Posture Management** — Get deep interaction visibility for agents and identify AI-related data exposure risks.
+
+**Sensitivity labels** — Agents inherit and honor data sensitivity labels, ensuring consistent data protection across human and agent interactions.
+
+**Data loss prevention** — Block agents from accessing and sharing sensitive content based on data security labels and policies.
 
 :::image type="content" source="media/agent-365-purview.png" alt-text="A screenshot showing the Agent page in Microsoft Purview." lightbox="media/agent-365-purview.png":::
+
+**Insider Risk Management** — Detect anomalous and risky agent activities and extend insider risk management capabilities to agents.
 
 Learn more about data security:
 
 - [Data security in Microsoft Agent 365](/microsoft-agent-365/admin/data-security)
 - [Use Microsoft Purview to manage data security & compliance for AI agents](/purview/ai-agents)
 
-## Threat protection
+## Threat protection | Microsoft Defender
 
-Protect agents from threats, vulnerabilities, and adversarial attacks. Detect, investigate, and remediate incidents quickly, with visibility into attack paths.
+Agents can be manipulated into misusing authorized tools, misconfigured without proper authentication, or targeted by prompt injection attacks. Microsoft Defender helps you identify these risks and respond quickly.
 
-Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents.
+**Agent Security Posture Management** — Identify and remediate agent misconfigurations and exposure risks. Visualize attack paths from agents to critical assets.
 
 :::image type="content" source="media/agent-365-microsoft-defender-posture.png" alt-text="A screenshot showing the Overview tab on the Agent page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-posture.png":::
 
-Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
+**Threat detection and blocking** — Detect suspicious agent activity, receive alerts, and block malicious tool invocations.
 
 :::image type="content" source="media/agent-365-microsoft-defender-incident.png" alt-text="A screenshot showing the Incident page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-incident.png":::
 
-Use AI-powered intelligence to block prompt injection attacks, malicious traffic, and prevent data exfiltration due to risky agent behavior in real time.
+**Threat hunting and investigation** — Collect unified agent observability logs and hunt for threats across agent interactions.
 
 :::image type="content" source="media/agent-365-runtime-defense.png" alt-text="A screenshot showing the Security and Compliance tab of the Agent page in Microsoft 365 Admin Center." lightbox="media/agent-365-runtime-defense.png":::
 

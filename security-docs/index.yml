@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 04/15/2026
+  ms.date: 05/05/2026
   ms.collection: # na
   brand: azure
 sections:
@@ -81,33 +81,33 @@ sections:
     title: ""
     blocks:
       - componentType: icon-card
-        title: Secure AI solutions in the cloud
-        summary: Gain your Microsoft Applied Skill with your understanding of Microsoft Defender for Cloud and Microsoft Foundry.
-        url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
+        title: Secure autonomous agentic AI systems
+        summary: Apply solutions to operationalize mitigation across identity, governance, runtime enforcement, and detection.
+        url: /security/zero-trust/sfi/secure-agentic-systems
         icon:
           componentType: image
-          src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
+          src: /security/media/hubpage/ignite-glyphs/concept-1-yellow.png
       - componentType: icon-card
-        title: Learn about Security Copilot agents
-        summary: Enable autonomous and proactive protection with Security Copilot agents built directly into your workflow.
-        url: /copilot/security/security-copilot-inclusion?wt.mc_id=securityhub_inclusion_webpage_sci
+        title: "Quickstart: Build agents using MCP tools (Security Copilot)"
+        summary: Build a Security Copilot agent that calls MCP tools — quickstart with sample code.
+        url: /copilot/security/developer/mcp-quickstart
         icon:
           componentType: image
-          src: /security/media/hubpage/ignite-glyphs/overview-magenta.png
+          src: /security/media/hubpage/ignite-glyphs/quickstart-2-rainbow.png
       - componentType: icon-card
-        title: Configure your Microsoft Sentinel Environment
-        summary: Learn how data lake and graph enhance performance, context, and investigation speed in this learning path.
-        url: /training/paths/sc-200-configure-azure-sentinel-environment/
+        title: AI Agent Service Security Controls
+        summary: Configure RBAC and security controls for Azure AI Agent Service in this 20-minute module.
+        url: /training/modules/intro-ai-agent-service-security-controls/
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
       - componentType: icon-card
-        title: "Build security skills: Download the kit"
-        summary: Curated resources, learning paths, and engagement ideas to strengthen your teams' security skills.
-        url: https://aka.ms/SecuritySkillingKit?wt.mc_id=lfo_content_webpage_wwl
+        title: Get *In the Loop*
+        summary: Catch up on the latest product drops, security updates, and demos—all in one place.
+        url: https://aka.ms/SecurityProductDrops_April26
         icon:
           componentType: image
-          src: /security/media/hubpage/ignite-glyphs/download-1-rainbow.png
+          src: /security/media/hubpage/ignite-glyphs/whats-new-1-magenta.png
 
 
 # Modules

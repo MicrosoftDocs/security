@@ -30,13 +30,15 @@ Unlike traditional applications, AI agents can act, connect to tools, access dat
 - Misconfigured or vulnerable agents that lack proper authentication or boundaries.
 - Traditional AI threats like prompt injection and data leakage that now span all agent interactions.
 
-Agent 365 supports agents built on Microsoft platforms like Microsoft Copilot Studio and Microsoft Foundry, as well as agents created on third-party platforms. It integrates with the Microsoft 365 admin center to give IT teams centralized visibility into AI agents across the organization. Admins can review agent usage and take action based on performance and behavior signals.
+As part of Microsoft Agent 365, Microsoft Defender, Microsoft Entra, and Microsoft Purview now provide agent-specific controls and capabilities. 
 
-Security teams define governance requirements by creating policy templates, such as access packages in Microsoft Entra. During onboarding, IT teams apply these templates to agents, ensuring governance and compliance are enforced from the start.
+Security practitioners continue to work in the tools they already use, with agent-specific insights and recommendations surfaced directly in each product's portal. 
+
+The Agent 365 Overview in the Microsoft 365 admin center gives IT teams centralized visibility into AI agents across the organization, where admins can review agent usage and take action based on performance and behavior signals.
 
 :::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the Agent 365 overview page in Microsoft 365 Admin Center." lightbox="media/agent-365-admin-center.png":::
 
-Microsoft Defender, Microsoft Entra, and Microsoft Purview now provide agent-specific controls and capabilities. Security practitioners continue to work in the tools they already use, with agent-specific insights and recommendations surfaced directly in each product's portal.
+Security teams define governance requirements by creating policy templates, such as access packages in Microsoft Entra. During onboarding, IT teams apply these templates to agents, ensuring governance and compliance are enforced from the start.
 
 ## Access control
 

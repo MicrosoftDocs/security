@@ -32,7 +32,7 @@ Unlike traditional applications, AI agents can act, connect to tools, access dat
 
 As part of Microsoft Agent 365, **Microsoft Defender, Microsoft Entra, and Microsoft Purview provide agent-specific controls and capabilities**. This allows security practitioners to continue working in the tools they already use, with agent-specific insights and recommendations surfaced directly in each product's portal. 
 
-Admins get **centralized visibility into AI agents** through the Agent 365 Overview in the Microsoft 365 admin center, where they can review agent usage and take action based on performance and behavior signals.
+The **Agent 365 Overview** in the Microsoft 365 admin center gives admins centralized visibility into AI agents across the organization, where they can review agent usage and take action based on performance and behavior signals.
 
 :::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the Agent 365 overview page in Microsoft 365 Admin Center." lightbox="media/agent-365-admin-center.png":::
 

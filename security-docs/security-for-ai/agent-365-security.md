@@ -46,7 +46,7 @@ Agents that sprawl across the organization or accumulate excessive permissions c
 
   :::image type="content" source="media/agent-365-registry.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center." lightbox="media/agent-365-registry.png":::
 
-- **Conditional Access and Identity Protection** – Extend conditional access and identity protection policies from users to agents. Enforce real-time access decisions based on agent context and risk, conditions you define, and the resource they're trying to access.
+- **Conditional access and identity protection** – Extend conditional access and identity protection policies from users to agents. Enforce real-time access decisions based on agent context and risk, conditions you define, and the resource they're trying to access.
 
   :::image type="content" source="media/agent-365-conditional-access.png" alt-text="A screenshot showing the Conditional Access page in Microsoft 365 Admin Center." lightbox="media/agent-365-conditional-access.png":::
 
@@ -65,11 +65,11 @@ Learn more about access control:
 
 Agents create, access, and share data across systems – increasing the risk of oversharing, leaks, and exposure of sensitive information. Microsoft Purview helps you maintain control over what data agents can interact with:
 
-- **Data Security Posture Management** – Get deep interaction visibility for agents and identify AI-related data exposure risks.
+- **Data security posture management** – Get deep interaction visibility for agents and identify AI-related data exposure risks.
 - **Sensitivity labels** – Agents inherit and honor data sensitivity labels, ensuring consistent data protection across human and agent interactions.
-- **Data Loss Prevention** – Block agents from accessing and sharing sensitive content based on data security labels and policies.
-- **Insider Risk Management** – Detect anomalous and risky agent activities and extend insider risk management capabilities to agents.
-- **Communication Compliance** – Monitor agent communications for policy violations and unethical interactions.
+- **Data loss prevention** – Block agents from accessing and sharing sensitive content based on data security labels and policies.
+- **Insider risk management** – Detect anomalous and risky agent activities and extend insider risk management capabilities to agents.
+- **Communication compliance** – Monitor agent communications for policy violations and unethical interactions.
 - **Auditing** – Log and audit all agent interactions for compliance review and forensic investigation.
 
 :::image type="content" source="media/agent-365-purview.png" alt-text="A screenshot showing the Agent page in Microsoft Purview." lightbox="media/agent-365-purview.png":::
@@ -81,17 +81,17 @@ Learn more about data security:
 
 ## Threat protection | Microsoft Defender
 
-Agents can be manipulated into misusing authorized tools, misconfigured without proper authentication, or targeted by prompt injection attacks. Microsoft Defender helps you identify these risks and respond quickly:
+Agents can be manipulated into misusing authorized tools, misconfigured without proper authentication, or targeted by prompt injection attacks. Microsoft Defender helps you identify these risks and respond quickly by providing agent-specific threat protection capabilities:
 
-- **Agent Security Posture Management** – Identify and remediate agent misconfigurations and exposure risks. Visualize attack paths from agents to critical assets.
+- **Agent security posture management** – Identify and remediate agent misconfigurations and exposure risks. Visualize attack paths from agents to critical assets.
 
   :::image type="content" source="media/agent-365-microsoft-defender-posture.png" alt-text="A screenshot showing the Overview tab on the Agent page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-posture.png":::
 
-- **Threat Detection and Blocking** – Detect suspicious agent activity, receive alerts, and block malicious tool invocations.
+- **Threat detection and blocking** – Detect suspicious agent activity, receive alerts, and block malicious tool invocations.
 
   :::image type="content" source="media/agent-365-microsoft-defender-incident.png" alt-text="A screenshot showing the Incident page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-incident.png":::
 
-- **Threat Investigation and Hunting** – Collect unified agent observability logs and hunt for threats across agent interactions.
+- **Threat investigation and hunting** – Collect unified agent observability logs and hunt for threats across agent interactions.
 
   :::image type="content" source="media/agent-365-runtime-defense.png" alt-text="A screenshot showing the threat investigation and hunting page in Microsoft Defender." lightbox="media/agent-365-runtime-defense.png":::
 

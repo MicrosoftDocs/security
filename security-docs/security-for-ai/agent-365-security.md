@@ -62,22 +62,23 @@ Learn more about access control:
 
 ## Data security with Microsoft Purview
 
-Agents create, access, and share data across systems – increasing the risk of oversharing and sensitive data exposure. Microsoft Purview controls what data agents can access and how they use it:
+Agents create, access, and share data across systems – increasing the risk of oversharing and sensitive data exposure. Microsoft Purview controls what data agents can access and how they use it, and helps you meet compliance obligations across the agent lifecycle:
 
 - **Data security posture management** – Get deep interaction visibility for agents and identify AI-related data exposure risks.
-
 - **Sensitivity labels** – Agents inherit and honor data sensitivity labels, ensuring consistent data protection across human and agent interactions.
 - **Data loss prevention** – Block agents from accessing and sharing sensitive content based on data security labels and policies.
-
 - **Insider risk management and communication compliance** – Detect risky activity and monitor interactions for policy violations.
 - **Auditing** – Log and audit all agent interactions for compliance review and forensic investigation.
+- **Data lifecycle management** – Apply retention and deletion policies to agent-generated content so data is kept only as long as needed.
+- **eDiscovery** – Search, preserve, and export agent interactions and outputs to support legal, regulatory, and internal investigations.
+- **Compliance Manager** – Assess agent instances against AI regulations using built-in assessments to track and improve your compliance posture.
 
 :::image type="content" source="media/agent-365-purview.png" alt-text="A screenshot showing the Agent page in Microsoft Purview." lightbox="media/agent-365-purview.png":::
 
-Learn more about data security:
+Learn more about data security and compliance:
 
 - [Data security in Microsoft Agent 365](/microsoft-agent-365/admin/data-security)
-- [Use Microsoft Purview to manage data security & compliance for AI agents](/purview/ai-agents)
+- [Microsoft Purview data security and compliance protections for Microsoft Agent 365](/purview/ai-agent-365)
 
 ## Threat protection with Microsoft Defender
 

@@ -1,7 +1,7 @@
 ---
 title: Secure AI agents at scale using Microsoft Agent 365
 description: How to use Microsoft Agent 365 to secure all of the AI agents in your environment. 
-ms.date: 11/09/2025
+ms.date: 04/29/2026
 ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.collection: 
@@ -16,122 +16,94 @@ ms.collection:
 
 # Secure AI agents at scale using Microsoft Agent 365
 
-As organizations adopt AI agents to automate workflows and boost productivity, securing these agents has become a critical concern. Unlike traditional applications, AI agents operate autonomously, interact with sensitive data, and execute tasks across multiple systems - making them high-value targets for intentional attacks and also vulnerable to unintentional compromise caused by misconfigurations or excessive permissions.
+As organizations adopt AI agents at scale, securing them has become a critical concern. [Microsoft Agent 365](/microsoft-agent-365/overview/) extends your existing security infrastructure – Microsoft Defender, Microsoft Entra, and Microsoft Purview – to agents, with purpose-built capabilities for securing agents.
 
-Microsoft Agent 365 provides a unified control plane that lets you oversee the security of all AI agents in your organization. It integrates with Microsoft’s security suite - now extended to secure AI agents - to secure agents built in Microsoft Copilot Studio, Microsoft Foundry (formerly called Azure AI Foundry), and third-party solutions.
+This article outlines how Microsoft Agent 365 secures AI agents.
 
-This article outlines the core security capabilities that Microsoft Agent 365 provides based on Microsoft’s extended security infrastructure for AI agents.
+## A distributed security model with centralized visibility
 
-For more information about Microsoft Agent 365, see [Microsoft Agent 365 documentation](/microsoft-agent-365/overview/).
+AI agents introduce new security challenges, including:
+- Agent sprawl from user-created and SaaS agents that expands the attack surface
+- Over-privileged agents with excessive resource access
+- Tool misuse when agents are manipulated into abusing authorized tools
+- Misconfigured or vulnerable agents without proper authentication or boundaries
+- Traditional AI threats, such as prompt injection and data leakage, that now extend across agent interactions
 
-## A unified control plane for managing agent security
+As part of Microsoft Agent 365, Microsoft Defender, Microsoft Entra, and Microsoft Purview now provide purpose-built controls for agents. Security practitioners continue working in the tools they already use, with agent insights and recommendations surfaced directly in each product's portal.
 
-Agent 365 integrates with Microsoft 365 Admin Center, giving IT teams a familiar interface to configure policies, apply Conditional Access, and monitor compliance across the agent fleet. 
-
-This control plane provides centralized visibility and lets you drill down into Microsoft's suite of security tools - the same tools you use to manage, secure, and govern users - to manage posture, configure policies, investigate issues, and remediate risks for agents. 
-
+The Agent 365 overview in the Microsoft 365 admin center provides centralized visibility into AI agents across the organization, including usage insights and security signals that help administrators take action.
 
 :::image type="content" source="media/agent-365-admin-center.png" alt-text="A screenshot showing the Agent 365 overview page in Microsoft 365 Admin Center." lightbox="media/agent-365-admin-center.png":::
 
+Security teams define governance requirements by creating policy templates, such as access packages in Microsoft Entra. During onboarding, IT teams apply these templates to agents, ensuring governance and compliance are enforced from the start.
 
-## Microsoft security infrastructure extended to AI agents
+## Access control with Microsoft Entra
 
-Agent 365 extends your existing security and governance practices to AI agents, so teams can use familiar tools and processes without disruption.
+Agents that sprawl or accumulate excessive permissions create risk. Microsoft Entra gives you visibility into all agent identities and helps enforce least-privilege access:
 
-By integrating with Microsoft’s security suite - enhanced with agent-specific controls and capabilities - Agent 365 lets you manage AI agent security across key areas. Drill down into each security product from the Agent 365 control plane to act on agent-specific insights and recommendations.
+- **Visibility into agent identities** – Get the complete view of all agents in your organization, including agents with an Entra Agent ID, agents you register yourself, and shadow agents.
 
-The following sections outline the core security capabilities that Microsoft Agent 365 provides by integrating with Microsoft’s security suite.
+  :::image type="content" source="media/agent-365-registry.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center." lightbox="media/agent-365-registry.png":::
 
-### Identity management
+- **Conditional access and identity protection** – Extend conditional access and identity protection policies from users to agents. Enforce real-time access decisions based on agent context, risk level, and resource sensitivity.
 
-**Microsoft 365 admin center | Microsoft Entra Registry**
+  :::image type="content" source="media/agent-365-conditional-access.png" alt-text="A screenshot showing the Conditional Access page in Microsoft 365 Admin Center." lightbox="media/agent-365-conditional-access.png":::
 
-Get the complete view of all of the agents used in your organization, including agents with agent ID, agents you register yourself, and shadow agents.
+- **Secure Access Service Edge (SASE)** – Monitor and block malicious and non-compliant network traffic from agents running on user devices, including Copilot Studio agents.
+- **Agent governance and lifecycles** – Ensure agents have responsible sponsors providing oversight, and manage access so it doesn't persist longer than needed.
 
-:::image type="content" source="media/agent-365-registry.png" alt-text="A screenshot showing the agent identities tab in Microsoft 365 Admin Center." lightbox="media/agent-365-registry.png":::
+Learn more about access control:
 
-Learn more about identity management in Microsoft Agent 365:
-
-- [Agent 365 Overview page in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-365-overview)
-- [Agent Registry in the Microsoft 365 admin center](/microsoft-365/admin/manage/agent-registry)
-- [What is the Microsoft Entra Agent Registry?](/entra/agent-id/identity-platform/what-is-agent-registry)
-- [Administrative relationships in Microsoft Entra Agent ID (owners, sponsors, and managers)](/entra/agent-id/identity-platform/agent-owners-sponsors-managers)
-
-### Access control
-
-**Microsoft Entra lifecycle workflows | Microsoft Entra ID governance | Microsoft Entra Conditional Access and Identity Protection**
-
-Limit agents' access to resources they need only and prevent agent compromise with risk-based conditional access policies.
-
--	Define guardrails - Set policies that define who can create, onboard, and manage agents, assign agent sponsors to keep them under supervision, and ensure that agents start secure with security policy templates.
-
--	Governance access - Enforce least privilege access by only giving agents access rights to the apps and resources they need to complete tasks.
-
--	Set conditional access - Enforce real-time intelligent access decisions based on agent context and risk, conditions you define and resource they're trying to access.
-
-:::image type="content" source="media/agent-365-conditional-access.png" alt-text="A screenshot showing the Conditional Access page in Microsoft 365 Admin Center." lightbox="media/agent-365-conditional-access.png":::
-
-Learn more about access control in Microsoft Agent 365:
-
+- [Protect agent identities with Microsoft Entra](/microsoft-agent-365/admin/capabilities-entra)
 - [What is Microsoft agent identity platform?](/entra/agent-id/identity-platform/what-is-agent-id-platform)
 - [Governing agent identities (Preview)](/entra/id-governance/agent-sponsor-tasks)
-- [Conditional Access for Agent ID (Preview)](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes)
-- [Agent identity sponsor tasks in lifecycle workflows (Preview)](/entra/id-governance/agent-sponsor-tasks)
+- [Conditional Access for Agent ID](/entra/identity/conditional-access/agent-id?tabs=custom-security-attributes)
+- [Secure Access Service Edge for agents](/entra/global-secure-access/how-to-ai-prompt-shield)
 
-### Security posture
+## Data security with Microsoft Purview
 
-**Microsoft Defender | Microsoft Security Exposure Management**
+Agents create, access, and share data across systems – increasing the risk of oversharing and sensitive data exposure. Microsoft Purview controls what data agents can access and how they use it, and helps you meet compliance obligations across the agent lifecycle:
 
-Understand your agent and data security posture and attack paths that attackers can create from agents to other critical assets. Remediate misconfigurations, exposures, and vulnerabilities in agents.
-
-:::image type="content" source="media/agent-365-microsoft-defender-posture.png" alt-text="A screenshot showing the Overview tab on the Agent page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-posture.png":::
-
-Learn more about managing agent security posture using Microsoft Agent 365:
-
-- [Security posture management for AI apps and agents](/azure/defender-for-cloud/ai-security-posture)
-- [Discover and protect your AI agents (Preview)](/defender-cloud-apps/ai-agent-inventory)
-
-
-### Detection and response
-
-**Microsoft Defender**
-
-Detect known and emerging threats targeting agents and enable a rapid response with a complete view of the cyberattack chain and prioritized investigation and response at the incident level.
-
-:::image type="content" source="media/agent-365-microsoft-defender-incident.png" alt-text="A screenshot showing the Incident page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-incident.png":::
-
-Learn more about detecting and responding to threats using Microsoft Agent 365:
-
-- [Threat protection in Microsoft Agent 365](/microsoft-agent-365/admin/threat-protection)
-
-### Runtime defense
-
-**Microsoft Defender | Microsoft Entra Secure Access Service Edge | Microsoft Purview Insider Risk Management**
-
-Use AI-powered intelligence to block prompt injection attacks, malicious traffic, and prevent data exfiltration due to risky agent behavior in real time.
-
-:::image type="content" source="media/agent-365-runtime-defense.png" alt-text="A screenshot showing the Security and Compliance tab of the Agent page in Microsoft 365 Admin Center." lightbox="media/agent-365-runtime-defense.png":::
-
-Learn more about runtime defense for agents in Microsoft Agent 365:
-
-- [Protect your environment in real-time during agent runtime](/defender-cloud-apps/real-time-agent-protection-during-runtime)
-- [AI Prompt Shield](/entra/global-secure-access/how-to-ai-prompt-shield)
-
-### Data security
-
-**Microsoft Purview Data Loss Prevention | Microsoft Purview Information Protection | Microsoft Purview Data Security Posture Management**
-
-Gain visibility into AI-related data exposure risks and dynamically block agent interactions with sensitive data based on data security labels and policies.
+- **Data security posture management** – Get deep interaction visibility for agents and identify AI-related data exposure risks.
+- **Sensitivity labels** – Agents inherit and honor data sensitivity labels, ensuring consistent data protection across human and agent interactions.
+- **Data loss prevention** – Block agents from accessing and sharing sensitive content based on data security labels and policies.
+- **Insider risk management and communication compliance** – Detect risky activity and monitor interactions for policy violations.
+- **Auditing** – Log and audit all agent interactions for compliance review and forensic investigation.
+- **Data lifecycle management** – Apply retention and deletion policies to agent-generated content so data is kept only as long as needed.
+- **eDiscovery** – Search, preserve, and export agent interactions and outputs to support legal, regulatory, and internal investigations.
+- **Compliance Manager** – Assess agent instances against AI regulations using built-in assessments to track and improve your compliance posture.
 
 :::image type="content" source="media/agent-365-purview.png" alt-text="A screenshot showing the Agent page in Microsoft Purview." lightbox="media/agent-365-purview.png":::
 
-Learn more about protecting data from agents in Microsoft Agent 365:
+Learn more about data security and compliance:
 
 - [Data security in Microsoft Agent 365](/microsoft-agent-365/admin/data-security)
-- [Use Microsoft Purview to manage data security & compliance for AI agents](/purview/ai-agents)
+- [Microsoft Purview data security and compliance protections for Microsoft Agent 365](/purview/ai-agent-365)
 
-## Next step
+## Threat protection with Microsoft Defender
 
-Learn more about Microsoft Agent 365: 
-- [Microsoft Agent 365 documentation](/microsoft-agent-365).
+Agents can be manipulated into misusing authorized tools, misconfigured without proper authentication, or targeted by prompt injection attacks. Microsoft Defender identifies these risks and enables rapid response:
+
+- **Agent security posture management** – Identify and remediate agent misconfigurations and exposure risks. Visualize attack paths from agents to critical assets.
+
+  :::image type="content" source="media/agent-365-microsoft-defender-posture.png" alt-text="A screenshot showing the Overview tab on the Agent page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-posture.png":::
+
+- **Threat detection and blocking** – Detect suspicious agent activity, receive alerts, and block malicious tool invocations in real-time.
+
+  :::image type="content" source="media/agent-365-microsoft-defender-incident.png" alt-text="A screenshot showing the Incident page in Microsoft Defender." lightbox="media/agent-365-microsoft-defender-incident.png":::
+
+- **Threat investigation and hunting** – Collect unified agent observability logs and hunt for threats across agent activity.
+
+  :::image type="content" source="media/agent-365-runtime-defense.png" alt-text="A screenshot showing the threat investigation and hunting page in Microsoft Defender." lightbox="media/agent-365-runtime-defense.png":::
+
+Learn more about threat protection:
+
+- [AI agent inventory in Microsoft Defender XDR](/defender-xdr/security-for-ai/ai-agent-inventory)
+- [AI agent detection and protection in Microsoft Defender XDR](/defender-xdr/security-for-ai/ai-agent-detection-protection)
+
+## Next steps
+
+Learn more about Microsoft Agent 365:
+
+- [Microsoft Agent 365 documentation](/microsoft-agent-365)
 - [Microsoft Agent 365 blog post: The control plane for AI agents](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/)

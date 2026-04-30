@@ -219,7 +219,7 @@ sections:
           src: /security/media/security-hub/purview-icon-2026.png
       - componentType: icon-card
         title: Microsoft Sentinel
-        summary: Detect attacks, gain threat visibility, proactively hunt, and respond to threats with the power of AI and stop them before they cause harm.
+        summary: Build agentic defense on Microsoft Sentinel. Query the data lake, reason with the graph, and respond with AI at cloud scale.
         url: /azure/sentinel/
         icon:
           componentType: image

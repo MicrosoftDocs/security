@@ -9,6 +9,7 @@ ms.collection:
   - msftsolution-overview
   - zerotrust-solution
   - msec-ai-copilot
+ai-usage: ai-assisted
 ---
 
 # Assess your organization's AI risk with Microsoft Security Dashboard for AI
@@ -158,9 +159,21 @@ Skipped recommendations are hidden from the default view. To view or restore ski
 
 The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across the AI agents registered in [Microsoft Agent 365](/microsoft-agent-365/overview), as well as the AI models, MCP servers, and AI applications in your organization.
 
+### What's included in the AI inventory
+
+The dashboard inventories AI assets surfaced by the underlying Microsoft services. Coverage and terminology are defined by those source services — the following table summarizes what each asset type means in the dashboard and what's in scope.
+
+| Asset type | What it means in the dashboard | Coverage source | Learn more |
+|---|---|---|---|
+| **AI agents** | Software entities that perform tasks on behalf of users, typically using AI models and tools. | Agents registered in Microsoft Agent 365. | [What is Microsoft Agent 365?](/microsoft-agent-365/overview) |
+| **AI models** | Generative AI and other models deployed in your environment, including those that power your AI agents and applications. | Models discovered by Microsoft Defender. | [Protect AI assets using Microsoft Defender](/defender-xdr/security-for-ai/defender-security-for-ai) |
+| **MCP servers and other AI applications** | SaaS AI applications and Model Context Protocol (MCP) servers used in your organization. | Apps and servers discovered by Microsoft Defender. | [Protect AI assets using Microsoft Defender](/defender-xdr/security-for-ai/defender-security-for-ai) |
+
+Assets that aren't registered in Microsoft Agent 365 or aren't visible to Microsoft Defender don't appear in the inventory. To expand coverage, register additional agents in Agent 365 and ensure Microsoft Defender is deployed across your environment.
+
 To discover and manage AI asset security risks:
 
-1. Select **AI Inventory** to review the list of discovered AI applications and AI agents registered in Microsoft Agent 365.
+1. Select **AI Inventory** to review the discovered AI assets in your organization.
 1. Apply filters to focus on specific asset types or risk levels.
 1. Select any AI asset to view detailed information, review security configuration and compliance status, and analyze user access patterns and data interactions.
 1. Select **Export** to export filtered views for targeted analysis and reporting.

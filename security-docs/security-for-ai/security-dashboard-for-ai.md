@@ -156,7 +156,7 @@ Skipped recommendations are hidden from the default view. To view or restore ski
 
 ## Explore AI assets and manage asset security risks 
 
-The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across the AI agents registered in Microsoft Agent 365, as well as the AI models, MCP servers, and AI applications in your organization.
+The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across the AI agents registered in [Microsoft Agent 365](/microsoft-agent-365/overview), as well as the AI models, MCP servers, and AI applications in your organization.
 
 To discover and manage AI asset security risks:
 

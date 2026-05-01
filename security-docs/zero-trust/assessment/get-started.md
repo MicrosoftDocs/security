@@ -25,6 +25,7 @@ The Zero Trust Assessment checks your tenant configuration and recommends ways t
 - To connect and consent to the required permissions the first time, you need to be a [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator). 
 - Subsequent runs require a user with the following roles:
    - [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader)
+   - [Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader)
    - [Exchange Administrator](/entra/identity/role-based-access-control/permissions-reference#exchange-administrator)
    - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator)
 - If you installed a previous version of the Zero Trust Assessment, [uninstall](#uninstall-previous-versions) it before continuing.

@@ -177,14 +177,14 @@ Select an AI agent to view agent details and activities. Select **View all activ
 
 ### AI models
 
-The **AI models** tab of the **AI inventory** page presents all of the AI models in use across your organization. Select **Show more in Defender** to open the [Microsoft Defender cloud asset inventory](/azure/defender-for-cloud/asset-inventory?pivots=defender-portal) for detailed information and risk mitigation.
+The **AI models** tab of the **AI inventory** page presents AI models discovered by [Microsoft Defender](/defender-xdr/security-for-ai/defender-security-for-ai) across your environment. Select **Show more in Defender** to open the [Microsoft Defender cloud asset inventory](/azure/defender-for-cloud/asset-inventory?pivots=defender-portal) for detailed information and risk mitigation.
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-models.png" alt-text="A screenshot showing the AI models page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-models.png":::
 
 
 ### MCP servers and other AI applications
 
-View and manage the security of all AI models in use across your organization. Select **Show more in Defender** to open the [Microsoft Defender for Cloud Apps applications inventory](/defender-cloud-apps/applications-inventory)for detailed information and risk mitigation.
+View and manage the security of MCP servers and other AI applications discovered by [Microsoft Defender](/defender-xdr/security-for-ai/defender-security-for-ai) across your environment. Select **Show more in Defender** to open the [Microsoft Defender for Cloud Apps applications inventory](/defender-cloud-apps/applications-inventory) for detailed information and risk mitigation.
 
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-mcp-and-other-ai-apps.png" alt-text="A screenshot showing the Other AI apps page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-mcp-and-other-ai-apps.png":::

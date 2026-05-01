@@ -156,18 +156,18 @@ Skipped recommendations are hidden from the default view. To view or restore ski
 
 ## Explore AI assets and manage asset security risks 
 
-The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across all of the AI agents, AI models, and MCP servers, and AI applications in your organization.
+The **AI inventory** page of the dashboard provides detailed views to help you discover AI assets, assess risks, and implement remediation actions across the AI agents registered in Microsoft Agent 365, as well as the AI models, MCP servers, and AI applications in your organization.
 
 To discover and manage AI asset security risks:
 
-1. Select **AI Inventory** review the complete list of discovered AI applications and agents.
+1. Select **AI Inventory** to review the list of discovered AI applications and AI agents registered in Microsoft Agent 365.
 1. Apply filters to focus on specific asset types or risk levels.
 1. Select any AI asset to view detailed information, review security configuration and compliance status, and analyze user access patterns and data interactions.
 1. Select **Export** to export filtered views for targeted analysis and reporting.
    
 ### AI agents 
 
-The **AI agents** tab of the **AI inventory** page presents all of the AI agents registered in Microsoft Agent 365 and provides key insights from the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry) and [Microsoft Purview Data Security Posture Management (DSPM) for AI](/purview/data-security-posture-management-learn-about).
+The **AI agents** tab of the **AI inventory** page presents AI agents that are registered in Microsoft Agent 365, and provides key insights from the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry) and [Microsoft Purview Data Security Posture Management (DSPM) for AI](/purview/data-security-posture-management-learn-about).
 
 :::image type="content" source="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png" alt-text="A screenshot showing the Agents tab of the AI inventory page of Security Dashboard for AI." lightbox="media/security-dashboard-for-ai/security-dashboard-for-ai-inventory.png":::
 

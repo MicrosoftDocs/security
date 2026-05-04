@@ -171,20 +171,22 @@
   items:
   - name: Overview
     href: workshop-zero-trust-overview.md
+  - name: Launch the Zero Trust Workshop
+    href: https://zerotrust.microsoft.com
   - name: Identity workshop
     href: workshop-zero-trust-identity.md
   - name: Devices workshop
     href: workshop-zero-trust-devices.md
   - name: Data workshop
     href: workshop-zero-trust-data.md
-  - name: Infrastructure workshop
-    href: workshop-zero-trust-infrastructure.md
   - name: Networking workshop
     href: workshop-zero-trust-networking.md
+  - name: Infrastructure workshop
+    href: workshop-zero-trust-infrastructure.md
   - name: SecOps workshop
     href: workshop-zero-trust-security-operations.md
-  - name: DevOps workshop
-    href: workshop-zero-trust-developer-operations.md
+  - name: AI workshop
+    href: workshop-zero-trust-ai-security.md
   - name: Implementation workshops for partners
     items:
     - name: Workshop delivery guide 

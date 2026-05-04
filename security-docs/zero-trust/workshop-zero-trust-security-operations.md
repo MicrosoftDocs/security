@@ -9,15 +9,38 @@ ms.subservice: zero-trust
 ms.topic: conceptual
 ---
 
-# SecOps in the Microsoft Zero Trust Workshop
+## SecOps in the Microsoft Zero Trust Workshop
 
-Security oerations (SecOps) is fundamental to Zero Trust because it ensures that you’re not just preventing bad things, but also detecting, investigating, and responding to threats continuously. In a Zero Trust model, you assume breach, so having strong SecOps capabilities is essential to contain attacks, mitigate impact, and maintain resilience.
+Security operations (SecOps) is foundational to Zero Trust because it ensures not only that threats are prevented, but also that they are continuously detected, investigated, and responded to. In a Zero Trust model, organizations assume breach, making strong SecOps capabilities essential to contain attacks, reduce impact, and maintain resilience.
 
-SecOps pillar guidance focuses monitoring security across the organization and collecting security data, detecting threats and issuing security alerts, incident response, orchestration, and automation, proactive threat hunting and threat intelligence. The SecOps workshop covers these implementation areas:
+SecOps pillar guidance focuses on collecting and correlating security signals across the environment, detecting and analyzing threats, orchestrating and automating response actions, proactively hunting for threats, and continuously improving security operations.
 
-- **Centralize detection**: Integrate logs and telemetry from across your environment (identity, endpoints, infrastructure) into a centralized system such as Microsoft Defender/Sentinel for unified visibility. Ensure your SecOps team has the right sources and analytics to detect compromise early.
-- **Automate threat response**: Use tools such as Microsoft Sentinel playbooks to automate response workflows. For example, isolating compromised machines or disabling risky accounts. Define incident-response rules that are triggered automatically, reducing human reaction time and error.
-- **Proactively hunt for threats**: Leverage threat-hunting capabilities. Use built-in or custom queries to detect suspicious patterns before they become incidents. Use advanced tools such as Microsoft Defender/Sentinel to hunt for attacker behaviors or anomalies.
-- **Manage incidents and alerts**: Tune and suppress noisy alerts so that SecOps focuses on meaningful alerts. Build playbooks for investigation and response, to optimize containment and remediation.
-- **Proactively review and remediate risk**: Use tools such as Cloud Security Explorer in Microsoft Defender for Cloud to map attack paths, identify risky exposures, and remediate them. Prioritize remediation based on risk, not just on alert volume, to ensure high-risk issues are addressed first.
-- **Continuously optimize SecOps processes**: Regularly review and update your incident-response playbooks, runbooks, and detection logic in response to new threats. Incorporate lessons from incidents and threat-hunting into your SecOps strategy, ensuring your team evolves.
+The SecOps workshop covers the following implementation areas:
+
+- **Centralize security data and telemetry**  
+  Integrate logs and signals from identity, devices, network, data, and infrastructure into centralized platforms for unified visibility. Ensure comprehensive coverage of security-relevant events across the environment.
+- **Detect threats and generate high-quality alerts**  
+  Use analytics rules, behavioral detection, and threat intelligence to identify potential compromises. Generate high-confidence alerts and continuously refine detections to improve signal quality and reduce false positives.
+- **Correlate alerts into incidents and prioritize response**  
+  Group related alerts into incidents and apply prioritization based on risk, severity, and potential impact. Provide a structured approach to triage and incident management.
+- **Investigate and respond to incidents**  
+  Execute structured investigation workflows to understand the scope and impact of incidents. Contain threats through actions such as isolating devices or disabling accounts, and ensure consistent remediation processes.
+- **Automate response and orchestration**  
+  Use automation tools and playbooks to standardize and accelerate response actions. Enable automated containment and remediation where appropriate, reducing response time and limiting attacker movement.
+- **Proactively hunt for threats**  
+  Perform threat hunting using queries and analytics to identify suspicious patterns and attacker behaviors that may not yet trigger alerts. Continuously refine hunting hypotheses based on emerging threats.
+- **Leverage threat intelligence**  
+  Incorporate internal and external threat intelligence to enrich detections and investigations. Use indicators and contextual data to improve understanding of attacker behavior and enhance detection coverage.
+- **Identify exposure and prioritize risk remediation**  
+  Analyze attack paths, misconfigurations, and security exposures across the environment. Use exposure management capabilities to prioritize remediation and reduce the likelihood and impact of potential attacks.
+- **Continuously tune and optimize detections**  
+  Review and refine alerting, suppression rules, and detection logic to reduce noise and improve operational efficiency. Ensure SecOps focuses on high-value, actionable signals.
+- **Correlate signals across domains for full attack visibility**  
+  Combine identity, device, network, data, and infrastructure signals to detect complex, multi-stage attack chains. Use cross-domain visibility to improve investigation depth and response effectiveness.
+- **Continuously improve SecOps processes**  
+  Regularly update playbooks, runbooks, and detection strategies based on incident learnings and evolving threats. Incorporate feedback loops from incidents, threat hunting, and exposure analysis into ongoing operational improvements.
+
+
+## What's next?
+
+Begin the [SecOps workshop](https://zerotrust.microsoft.com/).

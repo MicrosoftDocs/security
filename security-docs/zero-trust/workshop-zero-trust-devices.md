@@ -11,17 +11,36 @@ ms.topic: conceptual
 
 # Device security in the Microsoft Zero Trust Workshop
 
-In a Zero Trust model, devices are a critical piece of the trust equation. Even if a user’s identity is validated, access should depend on the security health of their device. The Devices pillar focuses on making sure managed devices meet security standards, reducing device risk, and enabling conditional access based on device posture.
-Device pillar Workshop guidance focuses on managing device enrollment, enforcing compliance policies, securing devices against endpoint threats, controlling admin access to devices, and ensuring least-privilege and segmentation for device operations. The Devices workshop covers these implementation areas:
+In a Zero Trust model, devices are a critical part of the trust evaluation. Even when a user’s identity is validated, access decisions must also depend on the security health, configuration, and risk state of the device. The Devices pillar focuses on ensuring that devices are managed, continuously assessed, and protected against threats, enabling access decisions based on device posture.
 
-- **Manage device enrollment and compliance**: Enroll devices using mobile device management (Microsoft Intune) so they can be managed and evaluated. Define and enforce device compliance policies (OS, health, risk) that are required for access.
-- **Enforce device-based conditional access**: Use Conditional Access policies that require devices to be marked as “compliant” before accessing corporate resources. Integrate compliance states with identity to ensure only healthy devices access sensitive apps.
-- **Reduce device attack surfaces**: Apply Attack Surface Reduction (ASR) rules via Intune to limit risky behaviors (e.g., untrusted scripts, removable media). se exploit protection and application control (e.g., via WDAC) to limit what can run on devices.
-- **Implement least-privilege admin control**: Use Role-Based Access Control (RBAC) in Intune to limit who can manage devices.
-- **Automate Identity lifecycle/provisioning**: Deploy connectors and workflows to automate user provisioning, updates, and deprovisioning. Map attributes to applications to ensure correct access assignments. Define scope tags or administrative segmentation so device management is limited to what each team needs.
-- **Support shared/frontline devices**: Leverage Microsoft Entra Shared Device Mode (for iOS/Android) so multiple users can use one device securely. Ensure that after each use session, the device signs out, protecting user identity and corporate data.
+Device pillar workshop guidance focuses on managing device lifecycle and enrollment, enforcing compliance and configuration standards, protecting endpoints from threats, reducing attack surface, and integrating device risk into access and security operations.
+
+The Devices workshop covers the following implementation areas:
+
+- **Manage device enrollment and lifecycle**  
+  Enroll and provision devices using modern management (such as Microsoft Intune and Windows Autopilot). Standardize device onboarding and configuration to ensure devices start in a known, trusted state and remain consistently managed throughout their lifecycle.
+- **Define and enforce device compliance posture**  
+  Define device compliance policies based on security requirements such as OS version, configuration baseline, and risk level. Continuously assess device health to determine whether devices meet organizational standards.
+- **Enforce posture-based access with Conditional Access**  
+  Integrate device compliance and risk signals into Conditional Access policies to ensure only healthy and compliant devices can access corporate resources. Apply differentiated access controls for managed, unmanaged, and high-risk devices.
+- **Secure device configuration and baseline standards**  
+  Apply security baselines and configuration policies to enforce consistent hardening across devices. Standardize settings for operating systems, security controls, and management configurations to reduce misconfigurations.
+- **Reduce device attack surface and restrict risky behaviors**  
+  Implement controls such as Attack Surface Reduction (ASR) rules, exploit protection, and application control (for example, Windows Defender Application Control) to limit exploitable behaviors and restrict untrusted or unauthorized code execution.
+- **Protect endpoints with threat detection and response**  
+  Deploy endpoint protection and detection capabilities to identify, investigate, and remediate threats on devices. Generate risk signals from endpoint protection systems and use them to drive remediation and inform access decisions.
+- **Implement least-privilege and administrative control**  
+  Minimize local administrator access and enforce least privilege on devices. Apply role-based access control and administrative segmentation to ensure only authorized personnel can manage device configurations and management policies.
+- **Support secure access for diverse device scenarios**  
+  Enable secure use of personally owned, shared, and frontline devices. Apply appropriate controls such as app protection policies, shared device modes, or session-based protections to secure access where full device management is not feasible.
+- **Integrate device signals into security operations (SecOps)**  
+  Stream device health, compliance, and threat signals into centralized monitoring and response workflows. Correlate these signals with identity, data, and network telemetry to detect and respond to device-based threats.
 -
 
-## Assess identity**
+## Assess device posture
 
-The Zero Trust Assessment tool (currently in preview) can assess your device configuration against a range of security best practices. [Learn more](/security/zero-trust/assessment/overview).
+The Zero Trust Assessment tool can assess your device configuration against a range of security best practices. [Learn more](/security/zero-trust/assessment/overview).
+
+## What's next?
+
+[Run an assessment](assessment/get-started.md), and begin the [Devices workshop](https://zerotrust.microsoft.com/).

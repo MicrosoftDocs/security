@@ -11,16 +11,30 @@ ms.topic: conceptual
 
 # Infrastructure security in the Microsoft Zero Trust Workshop
 
-In a Zero Trust architecture, infrastructure security is about securing your foundational compute and platform resources in the multicloud and on-premises, to support a Zero Trust architecture. Rather than trusting infrastructure implicitly, this pillar ensures that your servers, containers, storage, and other infrastructure services are hardened, monitored, and configured to assume breach. The goal is to build a resilient platform where infrastructure is not a weak link, but a well‑protected part of your Zero Trust strategy.
+In a Zero Trust architecture, infrastructure security focuses on protecting the foundational compute and platform resources that host applications and services across multicloud and on-premises environments. Rather than implicitly trusting infrastructure, this pillar ensures that servers, containers, storage, and platform services are continuously assessed, hardened, and monitored under an assume-breach mindset.
 
-Infrastructure pillar guidance focuses protecting servers running workloads, infrastructure security posture management and governance, container security, managing vulnerability risk and security alerts, and controlling access to infrastructure resources. The Infrastructure workshop covers these implementation areas:
+Infrastructure pillar guidance focuses on managing security posture, protecting workloads at runtime, governing infrastructure configurations, controlling administrative access, and integrating infrastructure signals into security operations.
 
-- **Protect VMs**: Protect multicloud VMs in Azure and on-premises. Use a product such as Microsoft Defender for Cloud (using the Defender for Servers plan) to continuously monitor and evaluate the security posture of these workloads and remediate misconfigurations.
-- **Harden container environments**: Monitor and assess your container configuration against recommended settings. For example, apply the CIS Kubernetes Benchmark for Kubernetes clusters and enforce it via Defender for Cloud (using the Defender for Containers plan). Continuously monitor container security, use secure configurations, and apply runtime protections.
-- **Assess and manage vulnerabilities**: Scan for vulnerabilities and configuration issues using a service such as Defender for Cloud. Remediate issues as needed, or suppress specific findngs to reduce noise and alert fatigue. 
-- **Control admin access to infrastructure**: Implement just-in-time access or role-based controls for infrastructure admin tasks such as server modifications, container configuration etc. Enforce the principle of least privilege for infrastructure administrators.
-- **Improve visiblity and monitoring**: Monitor infrastructure resources to detect real-time threats and issue security alerts. Create and manage alert suppression rules to reduce false positives and streamline security operations. Integrate infrasIructure logs and alerts into SecOps tools for detection and response.
+The Infrastructure workshop covers the following implementation areas:
 
-## Assess infrastructure posture**
+- **Establish infrastructure security posture management (CSPM)**  
+  Continuously assess infrastructure resources for misconfigurations, policy violations, and exposure risks. Use posture management capabilities to identify configuration drift, enforce governance policies, and prioritize remediation across cloud and hybrid environments.
+- **Protect compute workloads across virtual machines and containers**  
+  Secure multicloud virtual machines, container environments, and on-premises servers using workload protection capabilities. Continuously monitor security posture, detect threats, and remediate vulnerabilities affecting compute workloads.
+- **Secure and govern platform services and control planes**  
+  Apply security controls to platform services such as storage, databases, and application services. Govern access, configurations, and exposure of platform resources to reduce risk across cloud control planes.
+- **Assess and manage vulnerabilities**  
+  Continuously scan infrastructure resources for vulnerabilities and configuration issues. Prioritize and remediate findings based on risk, and tune alerts to reduce noise while maintaining visibility.
+- **Control access to infrastructure resources**  
+  Enforce least-privilege access using role-based access control (RBAC) and just-in-time (JIT) access. Integrate identity-based access controls to ensure administrative access is granted only when required and scoped appropriately.
+- **Harden configurations and enforce security baselines**  
+  Define and apply secure configuration baselines across infrastructure resources. Standardize settings for compute, networking, and platform services to prevent misconfigurations and ensure consistent protection.
+- **Monitor workloads and detect threats at runtime**  
+  Continuously monitor infrastructure for suspicious activity and security threats. Use runtime protection and analytics to detect attacks targeting virtual machines, containers, and platform services.
+- **Integrate infrastructure signals into security operations (SecOps)**  
+  Stream posture findings, runtime alerts, and threat signals into centralized monitoring and response systems. Correlate infrastructure data with identity, device, network, and data signals to support investigation and response.
 
-Use the [worksheet tool](workshop-tool.md) provided in the Zero Trust Workshop to help assess your current infrastructure security state. We have an automated Zero Trust Assessment tool currently in preview for the Identity and Devices pillars. It's not yet available for infrastructure assessment. [Learn more](/security/zero-trust/assessment/overview).
+
+## What's next?
+
+Begin the [Infrastructure workshop](https://zerotrust.microsoft.com/).

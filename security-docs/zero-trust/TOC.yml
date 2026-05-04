@@ -230,6 +230,8 @@
       href: /security/security-for-ai/govern
     - name: Govern AI for compliance
       href: /security/security-for-ai/govern
+  - name: Take the Zero Trust AI workshop
+    href: workshop-zero-trust-ai-security.md
   - name: Secure Microsoft Copilot
     items:
     - name: Overview
@@ -352,30 +354,38 @@
     items:
     - name: Overview
       href: deploy/identity.md
-    - name: Integrate with Microsoft identity
+    - name: Take the Zero Trust identity workshop
+      href: workshop-zero-trust-identity.md
+    - name: ISVs-Integrate with Microsoft 
       href: integrate/identity.md
   - name: Secure endpoints
     items:
     - name: Overview
       href: deploy/endpoints.md
-    - name: Integrate with Microsoft solutions
+    - name: Take the Zero Trust devices workshop
+      href: workshop-zero-trust-devices.md
+    - name: ISVs-Integrate with Microsoft 
       href: integrate/endpoints.md
   - name: Secure data
     items:
     - name: Overview
       href: deploy/data.md
-    - name: Integrate with Microsoft solutions
+    - name: Take the Zero Trust data workshop
+      href: workshop-zero-trust-data.md
+    - name: ISVs-Integrate with Microsoft 
       href: integrate/data.md
   - name: Secure apps
     items:
     - name: Overview
       href: deploy/applications.md
-    - name: Integrate with Microsoft solutions
+    - name: ISVs-Integrate with Microsoft
       href: integrate/applications.md
   - name: Secure infrastructure
     items:
     - name: Overview
       href: deploy/infrastructure.md
+    - name: Take the Zero Trust infrastructure workshop
+      href: workshop-zero-trust-infrastructure.md
     - name: Apply Zero Trust principles to Azure IaaS
       href: azure-infrastructure-overview.md
     - name: Secure VMs with Zero Trust
@@ -390,6 +400,8 @@
     items:
     - name: Overview
       href: deploy/networks.md
+    - name: Take the Zero Trust network workshop
+      href: workshop-zero-trust-networking.md
     - name: Apply Zero Trust to hub/spoke networks
       items:
       - name: Deploy Azure Virtual WAN with Zero Trust
@@ -408,12 +420,14 @@
         href: azure-networking-legacy.md
       - name: Integrate with Microsoft solution
         href: integrate/networks.md
-
+ 
   - name: Secure SecOps
     items:
     - name: Overview
       href: deploy/visibility-automation-orchestration.md
-    - name: Integrate with Microsoft solutions
+    - name: Take the Zero Trust SecOps workshop
+      href: workshop-zero-trust-security-operations.md
+    - name: ISVs-Integrate with Microsoft solutions
       href: integrate/visibility-automation-orchestration.md
       
   - name: Secure development/DevOps

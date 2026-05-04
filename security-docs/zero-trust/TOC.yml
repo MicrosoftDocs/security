@@ -219,132 +219,132 @@
   items:
   - name: Overview
     href: deploy/zero-trust-deployment-overview.md
-  - name: Adopt/secure AI and data
+- name: Adopt/secure AI and data
+  items:
+  - name: Secure AI
     items:
-    - name: Secure AI
-      items:
-      - name: Build a strong AI posture
-        href: /security/security-for-ai/posture
-      - name: Prepare for AI security
-        href: /security/security-for-ai/prepare
-      - name: Discover AI apps/data
-        href: /security/security-for-ai/discover
-      - name: Protect AI apps/data
-        href: /security/security-for-ai/govern
-      - name: Govern AI for compliance
-        href: /security/security-for-ai/govern
-    - name: Secure Microsoft Copilot
-      items:
-      - name: Overview
-        href: copilots/apply-zero-trust-copilots-overview.md
-      - name: Secure Microsoft 365 Copilot Chat
-        href: copilots/zero-trust-microsoft-copilot.md
-      - name: Secure Microsoft 365 Copilot
-        href: copilots/zero-trust-microsoft-365-copilot.md
-      - name: Secure Microsoft Security Copilot
-        href: copilots/zero-trust-microsoft-copilot-for-security.md
-    - name: Protect endpoints/data access
-      items:
-      - name: Overview
-        href: manage-devices-with-intune-overview.md
-      - name: Step 1. Protect apps
-        href: manage-devices-with-intune-app-protection.md
-      - name: Step 2. Enroll devices 
-        href: manage-devices-with-intune-enroll.md
-      - name: Step 3. Set up compliance policies
-        href: manage-devices-with-intune-compliance-policies.md
-      - name: Step 4. Require device compliance
-        href: manage-devices-with-intune-require-compliance.md
-      - name: Step 5. Deploy device profiles
-        href: manage-devices-with-intune-configuration-profiles.md
-      - name: Step 6. Monitor risk/compliance
-        href: manage-devices-with-intune-monitor-risk.md
-      - name: Step 7. Implement DLP
-        href: manage-devices-with-intune-dlp-mip.md
-    - name: Protect sensitive data
-      items:
-      - name: Overview
-        href: /purview/information-protection?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-      - name: Deploy information protection
-        href: /purview/information-protection-solution?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-  
-  - name: Enable people to work securely
-    items:  
-    - name: Secure remote/hybrid/work
-      href: adopt/secure-remote-hybrid-work.md
-    - name: Deploy identity in Microsoft 365
-      items:
-      - name: Overview
-        href: /microsoft-365/enterprise/deploy-identity-solution-overview?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-      - name: Step 1 - Select an identity model
-        href: /microsoft-365/enterprise/deploy-identity-solution-identity-model?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-      - name: Step 2 - Protect privileged accounts
-        href: /microsoft-365/enterprise//protect-your-global-administrator-accounts?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-      - name: Step 3 - Protect user accounts
-        href: /microsoft-365/enterprise/microsoft-365-secure-sign-in??toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-      - name: Step  4- Deploy cloud/hybrid
-        items:
-        - name: Cloud-only identity
-          href: /microsoft-365/enterprise/cloud-only-identities?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-        - name: Hybrid identity
-          items:
-          - name: Prepare for directory synchronization
-            href: /microsoft-365/enterprise/prepare-for-directory-synchronization?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-          - name: Prepare a non-routable domain
-            href: /microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-          - name: Set up directory synchronization
-            href: /microsoft-365/enterprise/set-up-directory-synchronization?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-    - name: Configure secure access in Microsoft 365
-      items:
-      - name: Overview
-        href: zero-trust-identity-device-access-policies-overview.md
-      - name: Review prerequisites
-        href: zero-trust-identity-device-access-policies-prerequisite.md
-      - name: Configure identity/device policy
-        href: zero-trust-identity-device-access-policies-common.md
-      - name: Configure guest/external policy
-        href: zero-trust-identity-device-access-policies-guest-access.md
-      - name: Review policy recommendations for workloads
-        href: zero-trust-identity-device-access-policies-workloads.md
-    - name: Protect SaaS app access
-      items:
-      - name: Overview
-        href: integrate-saas-apps.md
-      - name: Step 1. Add SaaS apps to Microsoft Entra 
-        href: add-saas-apps.md
-      - name: Step 2. Create Defender for Cloud Apps policies
-        href: create-policies.md
-      - name: Step 3. Deploy information protection
-        href: deploy-information-protection-saas.md
-
-  - name: Protect critical assets
+    - name: Build a strong AI posture
+      href: /security/security-for-ai/posture
+    - name: Prepare for AI security
+      href: /security/security-for-ai/prepare
+    - name: Discover AI apps/data
+      href: /security/security-for-ai/discover
+    - name: Protect AI apps/data
+      href: /security/security-for-ai/govern
+    - name: Govern AI for compliance
+      href: /security/security-for-ai/govern
+  - name: Secure Microsoft Copilot
     items:
-    - name: Protect sensitive data
-      href: adopt/identify-protect-sensitive-business-data.md
-
-  - name: Improve posture/compliance
-    items:
-    - name: Modernize security posture
-      href: adopt/rapidly-modernize-security-posture.md
-    - name: Meet regulatory compliance requirements
-      href: adopt/meet-regulatory-compliance-requirements.md
-
-  - name: Minimize damage from incidents
-    items: 
     - name: Overview
-      href: adopt/prevent-reduce-business-damage-breach.md
-    - name: Implement a prevention/recovery infrastructure
-      href: adopt/prevent-reduce-business-damage-breach-infrastructure.md
-    - name: Respond to incidents with Microsoft Defender
-      href: siem-xdr-overview.md
-    - name: Investigate and respond with Defender XDR
-      href: /defender-xdr/investigate-respond-incidents?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-    - name: Protect Azure resources from attack
-      href: azure-protect-resources-cyberattacks.md
-    - name: Monitor Zero Trust with Microsoft Sentinel
-      href: /azure/sentinel/sentinel-solution?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
-  - name: Configure Zero Trust for small businesses
-    href: guidance-smb-partner.md
+      href: copilots/apply-zero-trust-copilots-overview.md
+    - name: Secure Microsoft 365 Copilot Chat
+      href: copilots/zero-trust-microsoft-copilot.md
+    - name: Secure Microsoft 365 Copilot
+      href: copilots/zero-trust-microsoft-365-copilot.md
+    - name: Secure Microsoft Security Copilot
+      href: copilots/zero-trust-microsoft-copilot-for-security.md
+  - name: Protect endpoints/data access
+    items:
+    - name: Overview
+      href: manage-devices-with-intune-overview.md
+    - name: Step 1. Protect apps
+      href: manage-devices-with-intune-app-protection.md
+    - name: Step 2. Enroll devices 
+      href: manage-devices-with-intune-enroll.md
+    - name: Step 3. Set up compliance policies
+      href: manage-devices-with-intune-compliance-policies.md
+    - name: Step 4. Require device compliance
+      href: manage-devices-with-intune-require-compliance.md
+    - name: Step 5. Deploy device profiles
+      href: manage-devices-with-intune-configuration-profiles.md
+    - name: Step 6. Monitor risk/compliance
+      href: manage-devices-with-intune-monitor-risk.md
+    - name: Step 7. Implement DLP
+      href: manage-devices-with-intune-dlp-mip.md
+  - name: Protect sensitive data
+    items:
+    - name: Overview
+      href: /purview/information-protection?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+    - name: Deploy information protection
+      href: /purview/information-protection-solution?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+  
+- name: Enable people to work securely
+  items:  
+  - name: Secure remote/hybrid/work
+    href: adopt/secure-remote-hybrid-work.md
+  - name: Deploy identity in Microsoft 365
+    items:
+    - name: Overview
+      href: /microsoft-365/enterprise/deploy-identity-solution-overview?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+    - name: Step 1 - Select an identity model
+      href: /microsoft-365/enterprise/deploy-identity-solution-identity-model?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+    - name: Step 2 - Protect privileged accounts
+      href: /microsoft-365/enterprise//protect-your-global-administrator-accounts?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+    - name: Step 3 - Protect user accounts
+      href: /microsoft-365/enterprise/microsoft-365-secure-sign-in??toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+    - name: Step  4- Deploy cloud/hybrid
+      items:
+      - name: Cloud-only identity
+        href: /microsoft-365/enterprise/cloud-only-identities?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+      - name: Hybrid identity
+        items:
+        - name: Prepare for directory synchronization
+          href: /microsoft-365/enterprise/prepare-for-directory-synchronization?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+        - name: Prepare a non-routable domain
+          href: /microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+        - name: Set up directory synchronization
+          href: /microsoft-365/enterprise/set-up-directory-synchronization?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+  - name: Configure secure access in Microsoft 365
+    items:
+    - name: Overview
+      href: zero-trust-identity-device-access-policies-overview.md
+    - name: Review prerequisites
+      href: zero-trust-identity-device-access-policies-prerequisite.md
+    - name: Configure identity/device policy
+      href: zero-trust-identity-device-access-policies-common.md
+    - name: Configure guest/external policy
+      href: zero-trust-identity-device-access-policies-guest-access.md
+    - name: Review policy recommendations for workloads
+      href: zero-trust-identity-device-access-policies-workloads.md
+  - name: Protect SaaS app access
+    items:
+    - name: Overview
+      href: integrate-saas-apps.md
+    - name: Step 1. Add SaaS apps to Microsoft Entra 
+      href: add-saas-apps.md
+    - name: Step 2. Create Defender for Cloud Apps policies
+      href: create-policies.md
+    - name: Step 3. Deploy information protection
+      href: deploy-information-protection-saas.md
+
+- name: Protect critical assets
+  items:
+  - name: Protect sensitive data
+    href: adopt/identify-protect-sensitive-business-data.md
+
+- name: Improve posture/compliance
+  items:
+  - name: Modernize security posture
+    href: adopt/rapidly-modernize-security-posture.md
+  - name: Meet regulatory compliance requirements
+    href: adopt/meet-regulatory-compliance-requirements.md
+
+- name: Minimize damage from incidents
+  items: 
+  - name: Overview
+    href: adopt/prevent-reduce-business-damage-breach.md
+  - name: Implement a prevention/recovery infrastructure
+    href: adopt/prevent-reduce-business-damage-breach-infrastructure.md
+  - name: Respond to incidents with Microsoft Defender
+    href: siem-xdr-overview.md
+  - name: Investigate and respond with Defender XDR
+    href: /defender-xdr/investigate-respond-incidents?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+  - name: Protect Azure resources from attack
+    href: azure-protect-resources-cyberattacks.md
+  - name: Monitor Zero Trust with Microsoft Sentinel
+    href: /azure/sentinel/sentinel-solution?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+- name: Configure Zero Trust for small businesses
+  href: guidance-smb-partner.md
 
 - name: Secure technology pillars
   items:

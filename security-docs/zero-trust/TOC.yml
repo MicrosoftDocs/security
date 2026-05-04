@@ -192,7 +192,7 @@
     - name: Workshop delivery guide 
       href: https://microsoft.github.io/zerotrustassessment/docs/workshop-guidance/delivery-guide
     - name: Zero trust partner kit 
-      href: /zero-trust-partner-kit.md
+      href: zero-trust-partner-kit.md
     - name: Workshop partner FAQ 
       href: https://microsoft.github.io/zerotrustassessment/docs/zFAQs/partnerFAQs
 

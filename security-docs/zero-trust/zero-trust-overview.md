@@ -86,7 +86,7 @@ A structured approach to Zero Trust security adoption ensures that Zero Trust pr
 
 :::image type="content" source="./media/zero-trust-principles-adoption.png" alt-text="Diagram of Zero Trust principles applied to security adoption, showing connections between business scenarios, security disciplines, and technology pillars." lightbox="./media/zero-trust-principles-adoption.png":::
 
-## What next?
+## What's next?
 
 - To begin by assessing your current Zero Trust posture, start [Zero Trust assessment](assessment/overview.md).
 - To get started with structured adoption, follow our [Zero Trust adoption path](security-adoption-model.md).

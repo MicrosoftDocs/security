@@ -214,12 +214,7 @@
      - name: Assessment terminology
        href: assessment/glossary.md
 
-- name: Implement Zero Trust security
-  expanded: false
-  items:
-  - name: Overview
-    href: deploy/zero-trust-deployment-overview.md
-- name: Adopt/secure AI and data
+- name: Adopt and secure AI and data
   items:
   - name: Secure AI
     items:
@@ -268,7 +263,7 @@
     - name: Deploy information protection
       href: /purview/information-protection-solution?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
   
-- name: Enable people to work securely
+- name: Enable secure work
   items:  
   - name: Secure remote/hybrid/work
     href: adopt/secure-remote-hybrid-work.md
@@ -322,7 +317,7 @@
   - name: Protect sensitive data
     href: adopt/identify-protect-sensitive-business-data.md
 
-- name: Improve posture/compliance
+- name: Improve posture and compliance
   items:
   - name: Modernize security posture
     href: adopt/rapidly-modernize-security-posture.md
@@ -343,6 +338,7 @@
     href: azure-protect-resources-cyberattacks.md
   - name: Monitor Zero Trust with Microsoft Sentinel
     href: /azure/sentinel/sentinel-solution?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
+
 - name: Configure Zero Trust for small businesses
   href: guidance-smb-partner.md
 

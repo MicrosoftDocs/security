@@ -78,7 +78,7 @@ For information, see [Implementing the CISA Zero Trust Maturity Model with Micro
 
 ## The Open Group Zero Trust Reference Model
 
-The Open Group [Zero Trust Reference Model](https://www.opengroup.org/forum/zero-trust-model) approaches Zero Trust from an enterprise capability and integration perspective. Rather than defining specific implementation steps, it describes the capabilities and governance structures that organizations need to define, integrate, and operate Zero Trust at scale. 
+The Open Group [Zero Trust Reference Model](https://www.opengroup.org/forum/security/Zerotrust) approaches Zero Trust from an enterprise capability and integration perspective. Rather than defining specific implementation steps, it describes the capabilities and governance structures that organizations need to define, integrate, and operate Zero Trust at scale. 
 
 - **Capabilities + Architecture Building Blocks (ABBs)** define security capabilities that drive durable security outcomes and the people, process, and technology to enable them.
 - **Collaboration and Integration Models** show how to integrate security with strategy, risk management, operations, and other aspects of the organization.

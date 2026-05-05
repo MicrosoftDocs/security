@@ -47,7 +47,7 @@ Microsoft participated as one of the vendors providing technology to implement Z
 
 This diagram is the result of the NIST SP 1800-35 collaboration and can be downloaded from [Microsoft Cybersecurity Reference Architecture (MCRA)](https://aka.ms/MCRA). 
 
-:::image type="content" source="./media/adoption-map-nist.png" alt-text="Diagram showing Microsoft products mapped to NIST Zero Trust Architecture." lightbox="./media/adoption-map-nist.png":::
+:::image type="content" source="./media/adoption-map-national-institute.png" alt-text="Diagram showing Microsoft products mapped to NIST Zero Trust Architecture." lightbox="./media/adoption-map-national-institute.png":::
 
 
 ## CISA Zero Trust Maturity Model

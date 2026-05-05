@@ -9,7 +9,7 @@ ms.subservice: zero-trust
 ms.topic: conceptual
 ---
 
-## SecOps in the Microsoft Zero Trust Workshop
+# SecOps in the Microsoft Zero Trust Workshop
 
 Security operations (SecOps) is foundational to Zero Trust because it ensures not only that threats are prevented, but also that they are continuously detected, investigated, and responded to. In a Zero Trust model, organizations assume breach, making strong SecOps capabilities essential to contain attacks, reduce impact, and maintain resilience.
 

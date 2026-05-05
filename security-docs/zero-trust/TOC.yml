@@ -223,7 +223,7 @@
       - name: Understand SecOps roles 
         href: security-adoption-discipline-security-operations-roles.md
       - name: Avoid SecOps antipatterns
-        href: security-adoption-discipline-security-operations-antipatterns.md
+        href: security-adoption-discipline-security-operations-common-issues.md
       - name: Run a SecOps planning workshop
         href: workshop-business-security-operations.md
       - name: Plan incident response

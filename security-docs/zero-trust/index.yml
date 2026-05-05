@@ -40,9 +40,41 @@ highlightedContent:
 
 ## HIGHLIGHTED CONTENT END ##############################################
 
+conceptualContent:
+  title: Achieve business outcomes 
+  summary: Build a strategy, design an architecture, and implement key business scenarios.
+  items:
+    ## CARD 1 ######################
+      - title: Review business scenarios
+        links:
+          - text: Protect AI and data
+            url: /security/zero-trust/security-adoption-scenario-secure-ai
+          - text: Allow work from anywhere
+            url: /security/zero-trust/security-adoption-scenario-secure-remote-work
+          - text: Secure critical business assets
+            url: /security/zero-trust/security-adoption-scenario-secure-assets
+          - text: Strengthen posture and compliance
+            url: /security/zero-trust/security-adoption-scenario-improve-posture
+          - text: Minimize the impact of security incidents
+            url: /security/zero-trust/security-adoption-scenario-minimize-impact
+    ## CARD 2 ######################
+      - title: Explore security disciplines
+        links:
+          - text: Strategy, integration, and governance
+            url: /security/zero-trust/security-adoption-discipline-strategy
+          - text: Security architecture
+            url: /security/zero-trust/ecurity-adoption-discipline-architecture
+          - text: Data security
+            url: /security/zero-trust/security-adoption-discipline-data
+          - text: Security operations
+            url: /security/zero-trust/security-adoption-discipline-security-operations
+          - text: Developer operations
+            url: /security/zero-trust/security-adoption-discipline-development
+
+
 productDirectory:
-  title: Deploy Zero Trust by pillar
-  summary: Implement Zero Trust across your organization with comprehensive technical deployment guides for each security pillar.
+  title: Protect your organization
+  summary: Implement Zero Trust security to achieve business outcomes and protect technology pillars.
   items:
     - title: Identity
       imageSrc: /security/media/hubpage/security-icons/microsoft-entra.svg
@@ -77,130 +109,7 @@ productDirectory:
       summary: "Embed Zero Trust principles into your development workflow and applications."
       url: /security/zero-trust/develop/overview
 
-conceptualContent:
-  title: Most viewed content
-  summary: Discover the most popular Zero Trust resources based on thousands of visits from security professionals and IT implementers.
-  items:
-    ## CARD 1 ######################
-    - title: Getting started
-      links:
-        - text: What is Zero Trust?
-          url: /security/zero-trust/zero-trust-overview
-          itemType: concept
-        - text: Zero Trust deployment overview
-          url: /security/zero-trust/deploy/overview
-          itemType: overview
-        - text: Microsoft 365 Zero Trust deployment plan
-          url: /security/zero-trust/microsoft-365-zero-trust
-          itemType: deploy
-        - text: Deploy your identity infrastructure for Microsoft 365
-          url: /microsoft-365/enterprise/deploy-identity-solution-overview
-          itemType: deploy
-    ## CARD 2 ######################
-    - title: Assessment & adoption
-      links:
-        - text: Zero Trust assessment and progress tracking resources
-          url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
-          itemType: overview
-        - text: Zero Trust assessment overview
-          url: /security/zero-trust/assessment/overview
-          itemType: overview
-        - text: Run the Zero Trust assessment
-          url: /security/zero-trust/assessment/get-started
-          itemType: how-to-guide
-        - text: Zero Trust adoption framework
-          url: /security/zero-trust/adopt/zero-trust-adoption-overview
-          itemType: concept
-    ## CARD 3 ######################
-    - title: Identity & device access
-      links:
-        - text: Identity - Zero Trust pillar
-          url: /security/zero-trust/deploy/identity
-          itemType: concept
-        - text: Identity and device access policies
-          url: /security/zero-trust/zero-trust-identity-device-access-policies-overview
-          itemType: overview
-        - text: Common identity and device access policies
-          url: /security/zero-trust/zero-trust-identity-device-access-policies-common
-          itemType: reference
-        - text: Zero Trust partner kit
-          url: /security/zero-trust/zero-trust-partner-kit
-          itemType: reference
-    ## CARD 4 ######################
-    - title: Microsoft Copilots
-      links:
-        - text: Zero Trust Copilots overview
-          url: /security/zero-trust/copilots/apply-zero-trust-copilots-overview
-          itemType: overview
-        - text: Zero Trust for Security Copilot
-          url: /security/zero-trust/copilots/zero-trust-microsoft-copilot-for-security
-          itemType: concept
-        - text: Zero Trust for Microsoft 365 Copilot
-          url: /security/zero-trust/copilots/zero-trust-microsoft-365-copilot
-          itemType: concept
-        - text: Zero Trust for Microsoft Copilot
-          url: /security/zero-trust/copilots/zero-trust-microsoft-copilot
-          itemType: concept
-    ## CARD 5 ######################
-    - title: Compliance frameworks
-      links:
-        - text: CISA Zero Trust Maturity Model
-          url: /security/zero-trust/cisa-zero-trust-maturity-model-intro
-          itemType: overview
-        - text: DoD Zero Trust Strategy
-          url: /security/zero-trust/dod-zero-trust-strategy-intro
-          itemType: overview
-        - text: US Federal Zero Trust requirements
-          url: /entra/standards/memo-22-09-meet-identity-requirements
-          itemType: reference
-        - text: Zero Trust assessment resources
-          url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
-          itemType: reference
-    ## CARD 6 ######################
-    - title: Secure Future Initiative
-      links:
-        - text: Secure Future Initiative overview
-          url: /security/zero-trust/sfi/secure-future-initiative-overview
-          itemType: overview
-        - text: Phishing-resistant MFA
-          url: /security/zero-trust/sfi/phishing-resistant-mfa
-          itemType: concept
-        - text: Eliminate identity lateral movement
-          url: /security/zero-trust/sfi/eliminate-identity-lateral-movement
-          itemType: concept
-        - text: Network isolation
-          url: /security/zero-trust/sfi/network-isolation
-          itemType: concept
-    ## CARD 7 ######################
-    - title: Specialized scenarios
-      links:
-        - text: Zero Trust for Azure IaaS
-          url: /security/zero-trust/azure-infrastructure-overview
-          itemType: overview
-        - text: Zero Trust for Azure Virtual Desktop
-          url: /security/zero-trust/azure-infrastructure-avd
-          itemType: concept
-        - text: Small business guidance
-          url: /security/zero-trust/guidance-smb-partner
-          itemType: concept
-        - text: Technical illustrations
-          url: /security/zero-trust/zero-trust-tech-illus
-          itemType: reference
-    ## CARD 8 ######################
-    - title: Developer resources
-      links:
-        - text: Develop using Zero Trust principles
-          url: /security/zero-trust/develop/overview
-          itemType: overview
-        - text: Configure tokens, group claims, and app roles
-          url: /security/zero-trust/develop/configure-tokens-group-claims-app-roles
-          itemType: how-to-guide
-        - text: Register applications
-          url: /security/zero-trust/develop/app-registration
-          itemType: how-to-guide
-        - text: Secure with Continuous Access Evaluation
-          url: /security/zero-trust/develop/secure-with-cae
-          itemType: concept
+
 
 additionalContent:
   sections:

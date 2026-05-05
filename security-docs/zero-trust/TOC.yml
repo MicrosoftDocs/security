@@ -151,6 +151,8 @@
     href: security-adoption-model.md
   - name: Start a security adoption journey
     href: security-adoption-journey.md
+  - name: Review security reference architectures
+    href: mcra.md
   - name: Align with Zero Trust frameworks
     href: security-zero-trust-frameworks.md
   - name: Review roles and responsibilities 

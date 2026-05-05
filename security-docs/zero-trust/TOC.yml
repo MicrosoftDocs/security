@@ -363,7 +363,8 @@
        href: /purview/configure-security?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
      - name: Assessment terminology
        href: assessment/glossary.md
-
+- name: Implement Zero Trust solutions
+  href: implement-overview.md
 - name: Adopt and secure AI and data
   items:
   - name: Secure AI

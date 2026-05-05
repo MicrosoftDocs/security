@@ -1,38 +1,41 @@
 ### YamlMime:Hub
 title: Zero Trust security guidance
-summary: Zero Trust is a security strategy that assumes breach and verifies every request. Implement Zero Trust protections that secure and enable your organization using deployment guides, assessment tools, and adoption frameworks aligned with the three core principles—verify explicitly, use least privilege access, and assume breach.
+summary: Zero Trust is a modern security strategy that “assumes breach,” “never trusts,” and “always verifies.” The Zero Trust Guidance Center helps you adopt Zero Trust security, deliver business outcomes using Zero Trust security controls, and protect technology pillars such as identity, devices, and data across your organization.
 brand: azure
 
 metadata:
-  title: Zero Trust security guidance
+  title: Zero Trust Guidance Center
   description: Learn about Zero Trust, a security strategy that assumes breach and verifies every request. Find deployment guides, assessment tools, and adoption frameworks to implement Zero Trust principles that protect and enable secure operations across identity, endpoints, applications, data, infrastructure, and networks in your organization.
   ms.service: security
   ms.subservice: zero-trust
   ms.topic: hub-page
   ms.author: joflore
   author: MicrosoftGuyJFlo
-  ms.date: 02/10/2026
+  ms.date: 05/05/2026
 
 ## HIGHLIGHTED CONTENT ##############################################
 highlightedContent:
   items:
     - title: What is Zero Trust?
-      itemType: overview
       url: /security/zero-trust/zero-trust-overview
-    - title: Assess your organization's Zero Trust posture
+      itemType: overview
+    - title: Follow Zero Trust adoption model
+      url: /security/zero-trust/security-adoption-model
+      itemType: get-started
+    - title: Review SFI patterns and best practices
+      url: /security/zero-trust/sfi/secure-future-initiative-overview
+      itemType: learn
+    - title: Prioritize business outcomes with scenarios
+      url: /security/zero-trust/security-adoption-business-scenarios-overview
+      itemType: concept
+    - title: Assess your Zero Trust posture
       url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
       itemType: get-started
-    - title: Zero Trust strategy approach
-      url: /security/zero-trust/adopt/zero-trust-adoption-overview
-      itemType: concept
-    - title: SFI - How Microsoft operationalized a Zero Trust strategy
-      url: /security/zero-trust/sfi/secure-future-initiative-overview
-      itemType: concept
-    - title: Deploying Zero Trust end-to-end
+    - title: Accelerate Zero Trust deployment
       url: https://microsoft.github.io/zerotrustassessment/
       itemType: deploy
-    - title: Zero Trust guidance for small businesses
-      url: /security/zero-trust/guidance-smb-partner
+    - title: Implement Zero Trust security solutions
+      url: /security/zero-trust/implement-overview
       itemType: how-to-guide
 
 ## HIGHLIGHTED CONTENT END ##############################################

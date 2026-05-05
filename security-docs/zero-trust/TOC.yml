@@ -466,6 +466,20 @@
   items:
   - name: Protect sensitive data
     href: adopt/identify-protect-sensitive-business-data.md
+  - name: Secure privileged access 
+    items: 
+    - name: Overview
+      href: adopt/implement-privileged-access.md
+    - name: Plan a privileged access architecture
+      href: adopt/implement-privileged-access-plan.md
+    - name: Phase 1 - Configure the identity control plane
+      href: adopt/implement-privileged-access-identity.md
+    - name: Phase 2 - Secure privileged devices 
+      href: adopt/implement-privileged-access-devices.md
+    - name: Phase 3 - Enforce privileged access policy
+      href: adopt/implement-privileged-access-enforce.md
+    - name: Phase 4 Monitor and protect privileged access
+      href: adopt/implement-privileged-access-monitor.md
 
 - name: Improve posture and compliance
   items:

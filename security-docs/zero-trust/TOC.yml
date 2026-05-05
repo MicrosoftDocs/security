@@ -301,6 +301,12 @@
         href: security-adoption-discipline-infrastructure.md
       - name: Integrate OT/IoT security
         href: security-adoption-discipline-iot.md
+    
+    - name: OT/IoT
+      items:
+      - name: Overview
+        href: security-adoption-discipline-iot.md
+  
     - name: Security posture
       items:
       - name: Overview

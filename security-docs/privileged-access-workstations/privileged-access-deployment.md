@@ -9,7 +9,7 @@ ms.reviewer: frasim
 ---
 # Privileged access deployment
 
-This document guides you through implementing the technical components of the [privileged access strategy](), including secure accounts, workstations and devices, and interface security (with conditional access policy).
+This document guides you through implementing the technical components of the [privileged access strategy](privileged-access-strategy.md), including secure accounts, workstations and devices, and interface security (with conditional access policy).
 
 ![Summary of security level profiles](./media/privileged-access-deployment/privileged-access-deployment-profile-summary.png)
 
@@ -430,7 +430,7 @@ Download the Microsoft Win32 Content Prep Tool locally to a workstation and copy
 
 There are some configuration settings that we recommend, including two Defender for Endpoint recommendations that must be set using PowerShell. These configuration changes can't be set via policies in Intune.
 
-You can also use PowerShell to extend host management capabilities. The [PAW-DeviceConfig.ps1]() script from GitHub is an example script that configures the following settings:
+You can also use PowerShell to extend host management capabilities. The [PAW-DeviceConfig.ps1](https://github.com/Azure/securedworkstation/blob/master/PAW/Scripts/PAW-DeviceConfig.ps1) script from GitHub is an example script that configures the following settings:
 
 * Removes Internet Explorer
 * Removes PowerShell 2.0
@@ -446,9 +446,9 @@ You can also use PowerShell to extend host management capabilities. The [PAW-Dev
 * Configures Windows Time to use NTP and sets the Auto Time service to Automatic
 * Downloads and sets the desktop background to a specific image to easily identify the device as a ready-to-use, privileged workstation.
 
-The [PAW-DeviceConfig.ps1]() script from GitHub.
+The [PAW-DeviceConfig.ps1](https://github.com/Azure/securedworkstation/blob/master/PAW/Scripts/PAW-DeviceConfig.ps1) script from GitHub.
 
-1. Download the script [PAW-DeviceConfig.ps1] to a local device.
+1. Download the script [PAW-DeviceConfig.ps1](https://github.com/Azure/securedworkstation/blob/master/PAW/Scripts/PAW-DeviceConfig.ps1) to a local device.
 1. Browse to the **Azure portal** > **Microsoft Intune** > **Device configuration** > **PowerShell scripts** > **Add**.
 vProvide a **Name** for the script and specify the **Script location**.
 1. Select **Configure**.

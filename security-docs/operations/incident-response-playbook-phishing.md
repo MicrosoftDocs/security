@@ -425,8 +425,8 @@ To verify or investigate IP addresses identified from the previous investigation
 - VirusTotal
 - Microsoft Defender for Endpoint
 - Public Sources:
-  - [Ipinfo.io](http://ipinfo.io/) - Has a free option to obtain geo-location
-  - [Censys.io](http://censys.io/) - Has a free option to obtain information about what their passive scans of the internet know
+  - [Ipinfo.io](https://ipinfo.io/) - Has a free option to obtain geo-location
+  - [Censys.io](https://censys.io/) - Has a free option to obtain information about what their passive scans of the internet know
   - [AbuseIPDB.com](https://www.abuseipdb.com/) - Has a free option that provides some geolocation
   - Ask Bing and Google - Search on the IP address
 

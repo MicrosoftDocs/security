@@ -79,11 +79,11 @@ Executive leadership establishes Zero Trust as an organizational priority and cr
 
 **Responsibilities include**:
 
-- Sponsor Zero Trust as a business and risk-management strategy
-- Align security objectives with business goals, regulatory obligations, and risk tolerance
-- Provide sustained funding, staffing, and organizational support
-- Establish governance models and accountability structures
-- Hold leaders responsible for measurable security outcomes
+- Sponsoring Zero Trust as a business and risk-management strategy
+- Aligning security objectives with business goals, regulatory obligations, and risk tolerance
+- Providing sustained funding, staffing, and organizational support
+- Establishing governance models and accountability structures
+- Holding leaders responsible for measurable security outcomes
 
 When leadership treats Zero Trust as a business enabler rather than a technical project, adoption gains momentum and durability.
 
@@ -94,11 +94,11 @@ Business leaders and operational managers ensure that Zero Trust supports produc
 
 **Responsibilities include**:
 
-- Integrate Zero Trust requirements into business processes and workflows
-- Balance security controls with user experience and operational efficiency
-- Identify critical business assets, processes, and data to prioritize protection
-- Support change adoption across teams and functions
-- Measure business impact of security decisions
+- Integrating Zero Trust requirements into business processes and workflows
+- Balancing security controls with user experience and operational efficiency
+- Identifying critical business assets, processes, and data to prioritize protection
+- Supporting change adoption across teams and functions
+Measuring business impact of security decisions
 
 Zero Trust succeeds when security enables business operations instead of being perceived as an obstacle.
 
@@ -108,11 +108,11 @@ Zero Trust succeeds when security enables business operations instead of being p
 
 **Responsibilities include**:
 
-- Translate Zero Trust principles into risk, compliance, and privacy requirements
-- Ensure alignment with regulatory, legal, and industry obligations
-- Validate controls through audit, assessment, and assurance activities
-- Advise leadership on risk tradeoffs and residual risk
-- Coordinate across security, compliance, and governance domains
+- Translating Zero Trust principles into risk, compliance, and privacy requirements
+- Ensuring alignment with regulatory, legal, and industry obligations
+- Validating controls through audit, assessment, and assurance activities
+- Advising leadership on risk tradeoffs and residual risk
+- Coordinating across security, compliance, and governance domains
 
 Their involvement ensures Zero Trust is defensible, auditable, and aligned with organizational obligations.
 
@@ -137,11 +137,11 @@ Technical leaders bridge business intent and engineering execution.
 
 **Responsibilities include**:
 
-- Define technical priorities aligned to Zero Trust outcomes
-- Coordinate across platforms, domains, and engineering teams
-- Make tradeoff decisions between security, performance, and usability
-- Ensure consistency across identity, endpoint, application, data, and infrastructure domains
-- Support modernization of legacy systems
+- Defining technical priorities aligned to Zero Trust outcomes
+- Coordinating across platforms, domains, and engineering teams
+- Making tradeoff decisions between security, performance, and usability
+- Ensuring consistency across identity, endpoint, application, data, and infrastructure domains
+- Supporting modernization of legacy systems
 
 Strong technical leadership prevents siloed implementations and fragmented security posture.
 
@@ -152,11 +152,11 @@ Security and enterprise architects ensure Zero Trust principles are applied cons
 
 **Responsibilities include**:
 
-- Define target-state Zero Trust architectures
-- Map Zero Trust concepts to platforms, services, and workloads
-- Identify architectural gaps, dependencies, and integration points
-- Provide design guidance and reference patterns
-- Ensure solutions scale with business and technology change
+- Defining target-state Zero Trust architectures
+- Mapping Zero Trust concepts to platforms, services, and workloads
+- Identifying architectural gaps, dependencies, and integration points
+- Providing design guidance and reference patterns
+- Ensuring solutions scale with business and technology change
 
 Architecture turns principles into systems that can evolve over time.
 
@@ -167,11 +167,11 @@ Development teams play a critical role in enforcing Zero Trust at the applicatio
 
 **Responsibilities include**:
 
-- Design applications that verify explicitly and enforce least privilege
-- Integrate identity, access control, and data protection into applications
-- Support secure APIs, service-to-service access, and workload identities
-- Partner with security teams to reduce risk without harming velocity
-- Address security early in the development lifecycle
+- Designing applications that verify explicitly and enforce least privilege
+- Integrating identity, access control, and data protection into applications
+- Supporting secure APIs, service-to-service access, and workload identities
+- Partnering with security teams to reduce risk without harming velocity
+- Addressing security early in the development lifecycle
 
 Zero Trust is strongest when applications assume no implicit trust.
 
@@ -182,11 +182,11 @@ These roles focus on people, policy, and sustained security effectiveness.
 
 **Responsibilities include**:
 
-- Define security strategy, standards, and roadmaps
-- Manage insider risk and user-related threats
-- Drive security awareness, education, and culture
-- Oversee security compliance and policy enforcement
-- Measure maturity and progress against Zero Trust objectives
+- Defining security strategy, standards, and roadmaps
+- Managing insider risk and user-related threats
+- Driving security awareness, education, and culture
+- Overseeing security compliance and policy enforcement
+- Measuring maturity and progress against Zero Trust objectives
 
 They ensure Zero Trust becomes embedded in how the organization operates, not just how it deploys technology.
 
@@ -197,11 +197,11 @@ Engineering and operations teams turn designs into functioning systems.
 
 **Responsibilities include**:
 
-- Deploy security controls across identity, devices, applications, data, and infrastructure
-- Integrate security into operational workflows and platforms
-- Manage change, testing, and roll out to minimize disruption
-- Maintain system reliability, availability, and performance
-- Continuously improve controls based on feedback and telemetry
+- Deploying security controls across identity, devices, applications, data, and infrastructure
+- Integrating security into operational workflows and platforms
+- Managing change, testing, and roll out to minimize disruption
+- Maintaining system reliability, availability, and performance
+- Continuously improving controls based on feedback and telemetry
 
 These teams make Zero Trust real and reliable.
 
@@ -212,11 +212,11 @@ Security operations teams close the loop between design and reality.
 
 **Responsibilities include**:
 
-- Monitor telemetry and signals across users, devices, and workloads
-- Detect threats, policy violations, and anomalous behavior
-- Respond to incidents and coordinating containment and recovery
-- Feed operational insights back into policies, architecture, and automation
-- Measure effectiveness through detection, response, and impact metrics
+- Monitoring telemetry and signals across users, devices, and workloads
+- Detecting threats, policy violations, and anomalous behavior
+- Responding to incidents and coordinating containment and recovery
+- Feeding operational insights back into policies, architecture, and automation
+- Measuring effectiveness through detection, response, and impact metrics
 
 Zero Trust assumptions are tested and refined through daily operations.
 

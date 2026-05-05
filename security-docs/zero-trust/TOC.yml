@@ -145,19 +145,47 @@
 - name: Adopt Zero Trust security
   expanded: false
   items:
-    - name: Current TOC
+  - name: Overview - old 
+    href: adopt/zero-trust-adoption-overview.md
+  - name: Follow a security adoption model
+    href: security-adoption-model.md
+  - name: Start a security adoption journey
+    href: security-adoption-journey.md
+  - name: Align with Zero Trust frameworks
+    href: security-zero-trust-frameworks.md
+  - name: Review roles and responsibilities 
+    href: security-adoption-roles.md
+
+  - name: Adoption (SAF) workshops
+    items:
+    - name: Overview
+      href: workshop-business-overview.md
+    - name: CISO workshop
+      href: workshop-business-ciso.md
+    - name: CISO workshop videos
+      href: workshop-business-ciso-video.md
+
+  - name: Business scenarios
+    items:
+    - name: Overview
+      href: security-adoption-business-scenarios-overview.md
+    - name: Enable scenarios with Microsoft technologies
+      href: security-adoption-business-scenarios-technologies.md
+    - name: Accelerate and secure AI adoption
+      href: security-adoption-scenario-secure-ai.md
+    - name: Enable and secure hybrid work
+      href: security-adoption-scenario-remote-work.md
+    - name: Secure critical business assets
       items:
-    - name: Overview - old 
-      href: adopt/zero-trust-adoption-overview.md
-    - name: Follow a security adoption model
-      href: security-adoption-model.md
-    - name: Start a security adoption journey
-      href: security-adoption-journey.md
-    - name: Align with Zero Trust frameworks
-      href: security-zero-trust-frameworks.md
-    - name: Review roles and responsibilities 
-      href: security-adoption-roles.md
-   
+      - name: Overview
+        href: security-adoption-scenario-secure-assets.md
+      - name: Secure and govern privileged access 
+        href: security-adoption-scenario-privileged-access.md
+    - name: Strengthen security posture and compliance
+      href: security-adoption-scenario-improve-posture.md
+    - name: Minimize the impact of security incidents
+      href: security-adoption-scenario-minimize-impact.md
+
 - name: Zero Trust workshops
   items:
   - name: Overview

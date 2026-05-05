@@ -39,10 +39,10 @@ highlightedContent:
 
 conceptualContent:
   sections:
-  - title: Build a strategy and architecture and implement key business outcomes
-    summary: Explore business scenarios that help customer to achieve common security outcomes.
+  - title: Secure key business scenarios 
+    summary: Review key business outcomes and the security disciplines that support them.
     items:
-      - title: Review business scenarios
+      - title: Explore business scenarios
         links:
           - url: /security/zero-trust/security-adoption-scenario-secure-ai
             itemType: concept
@@ -59,7 +59,7 @@ conceptualContent:
           - url: /security/zero-trust/security-adoption-scenario-minimize-impact
             itemType: concept
             text: Minimize the impact of security incidents
-      - title: Explore security disciplines
+      - title: Build security disciplines
         links:
           - url: /security/zero-trust/security-adoption-discipline-strategy
             itemType: concept
@@ -82,7 +82,7 @@ conceptualContent:
 
 
 productDirectory:
-  title: Protect your organization
+  title: Secure technology pillars across the business
   summary: Implement Zero Trust security to achieve business outcomes and protect technology pillars.
   items:
     - title: Identity

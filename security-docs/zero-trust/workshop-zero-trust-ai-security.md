@@ -1,6 +1,6 @@
 ---
-title: Microsoft Zero Trust Workshop - Secops
-description: Learn about the SecOps pillar in the Microsoft Zero Trust Workshop
+title: Microsoft Zero Trust Workshop - AI security
+description: Learn about the AI security pillar in the Microsoft Zero Trust Workshop
 ms.date: 04/18/2024
 ms.service: security
 author: rayne-wiselman

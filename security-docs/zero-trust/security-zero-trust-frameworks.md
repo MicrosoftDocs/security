@@ -85,7 +85,7 @@ The Open Group [Zero Trust Reference Model](https://www.opengroup.org/forum/zero
 
 The capabilities are composed of people, process, and technology elements working together:
 
-- **People**: defined as roles in [The Open Group Roles and Glossary standard](https://www.opengroup.org/togaf-roles-and-responsibilities)
+- **People**: defined as roles in [The Open Group Roles and Glossary standard](https://publications.opengroup.org/s252)
 - **Process**: defined as architecture building blocks (ABBs) in the same Zero Trust Reference Model standard
 - **Technology**: defined as ABBs in the same Zero Trust Reference Model standard
 

@@ -39,35 +39,46 @@ highlightedContent:
 
 conceptualContent:
   sections:
-  - title: Achieve business outcomes 
-    summary: Build a strategy, design an architecture, and implement key business scenarios.
+  - title: Build a strategy and architecture and implement key business outcomes
+    summary: Explore business scenarios that help customer to achieve common security outcomes.
     items:
-      ## CARD 1 ######################
-        - title: Review business scenarios
-          links:
-            - text: Protect AI and data
-              url: /security/zero-trust/security-adoption-scenario-secure-ai
-            - text: Allow work from anywhere
-              url: /security/zero-trust/security-adoption-scenario-secure-remote-work
-            - text: Secure critical business assets
-              url: /security/zero-trust/security-adoption-scenario-secure-assets
-            - text: Strengthen posture and compliance
-              url: /security/zero-trust/security-adoption-scenario-improve-posture
-            - text: Minimize the impact of security incidents
-              url: /security/zero-trust/security-adoption-scenario-minimize-impact
-      ## CARD 2 ######################
-        - title: Explore security disciplines
-          links:
-            - text: Strategy, integration, and governance
-              url: /security/zero-trust/security-adoption-discipline-strategy
-            - text: Security architecture
-              url: /security/zero-trust/ecurity-adoption-discipline-architecture
-            - text: Data security
-              url: /security/zero-trust/security-adoption-discipline-data
-            - text: Security operations
-              url: /security/zero-trust/security-adoption-discipline-security-operations
-            - text: Developer operations
-              url: /security/zero-trust/security-adoption-discipline-development
+      - title: Review business scenarios
+        links:
+          - url: /security/zero-trust/security-adoption-scenario-secure-ai
+            itemType: concept
+            text: Protect AI and data
+          - url: /security/zero-trust/security-adoption-scenario-secure-remote-work
+            itemType: concept
+            text: Allow work from anywhere
+          - url: /security/zero-trust/security-adoption-scenario-secure-assets
+            itemType: concept
+            text: Secure critical business assets
+          - url: /security/zero-trust/security-adoption-scenario-improve-posture
+            itemType: concept
+            text: Strengthen posture and compliance
+          - url: /security/zero-trust/security-adoption-scenario-minimize-impact
+            itemType: concept
+            text: Minimize the impact of security incidents
+      - title: Explore security disciplines
+        links:
+          - url: /security/zero-trust/security-adoption-discipline-strategy
+            itemType: concept
+            text: Strategy, integration, and governance
+          - url: /security/zero-trust/ecurity-adoption-discipline-architecture
+            itemType: concept
+            text: Security architecture
+          - url: /security/zero-trust/security-adoption-discipline-identity
+            itemType: concept
+            text: Identity
+          - url: /security/zero-trust/security-adoption-discipline-data
+            itemType: concept
+            text: Data security
+          - url: /security/zero-trust/security-adoption-discipline-security-operations
+            itemType: concept
+            text: Security operations
+          - url: /security/zero-trust/security-adoption-discipline-development
+            itemType: concept
+            text: Developer operations
 
 
 productDirectory:

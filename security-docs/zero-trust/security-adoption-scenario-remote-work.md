@@ -90,4 +90,4 @@ Technology pillars represent the core Microsoft security capabilities that suppo
 
 ## What's next?
 
-[Learn how to implement secure remote work](/deploy/identity.md) to design a privileged access architecture.
+[Learn how to implement secure remote work](deploy/identity.md) to design a privileged access architecture.

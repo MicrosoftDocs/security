@@ -185,6 +185,127 @@
       href: security-adoption-scenario-improve-posture.md
     - name: Minimize the impact of security incidents
       href: security-adoption-scenario-minimize-impact.md
+  
+  - name: Security disciplines
+    items:
+    - name: Overview
+      href: security-adoption-discipline-overview.md
+    - name: Strategy, integration and governance
+      items:
+      - name: Overview
+        href: security-adoption-discipline-strategy.md
+      - name: Engage business leaders in security strategy
+        href: security-adoption-discipline-strategy-engage.md
+    - name: Security architecture
+      items:
+      - name: Overview
+        href: security-adoption-discipline-architecture.md
+      - name: Tips for effective security architecture
+        href: security-adoption-discipline-architecture-tips.md
+    - name: Access and identities
+      items:
+      - name: Overview
+        href: security-adoption-discipline-identity-access.md
+      - name: Design an enterprise access architecture
+        href: security-adoption-discipline-identity-access-enterprise-model.md
+      - name: Design a privileged access architecture
+        href: security-adoption-discipline-identity-access-privileged-model.md
+    - name: Data
+      items:
+      - name: Overview
+        href: security-adoption-discipline-data.md
+    - name: SecOps
+      items:
+      - name: Overview
+        href: security-adoption-discipline-security-operations.md
+      - name: Understand SecOps roles 
+        href: security-adoption-discipline-security-operations-roles.md
+      - name: Avoid SecOps antipatterns
+        href: security-adoption-discipline-security-operations-antipatterns.md
+      - name: Run a SecOps planning workshop
+        href: workshop-business-security-operations.md
+      - name: Plan incident response
+        items:
+        - name: Overview
+          href: security-adoption-discipline-security-operations-incidents.md
+        - name: Playbooks
+          items:
+          - name: Phishing investigation
+            href: security-operations-playbook-phishing.md
+
+    - name: Development
+      items:
+      - name: Overview
+        href: security-adoption-discipline-development.md
+      - name: Shift DevOps to DevSecOps
+        href: security-adoption-discipline-development-security.md
+      - name: Review secure development imperatives
+        href: security-adoption-discipline-development-imperatives.md
+      - name: Secure the developer environment
+        href: develop/secure-dev-environment-zero-trust.md
+      - name: Embed Zero Trust in developer workflow
+        href: develop/embed-zero-trust-dev-workflow.md
+      - name: Identity/Access development
+        items:
+        - name: Best practices for Identity/Access development
+          href: develop/identity-iam-development-best-practices.md
+        - name: Integrate apps with Microsoft Entra
+          href: develop/integrate-apps-microsoft-identity-platform.md
+        - name: Register apps with Microsoft Entra
+          href: develop/app-registration.md
+        - name: Use industry standards
+          href: develop/identity-standards-based-development-methodologies.md
+        - name: Develop permissions and access
+          items:
+          - name: Build apps with Microsoft Entra security
+            href: develop/identity.md
+          - name: Choose an account type for an app
+            href: develop/identity-supported-account-types.md
+          - name: Authenticate users in your app
+            href: develop/user-authentication.md
+          - name: Access resources
+            href: develop/acquire-application-authorization-to-access-resources.md
+          - name: Delegate permissions
+            href: develop/developer-strategy-delegated-permission.md
+          - name: Configure app permissions
+            href: develop/developer-strategy-application-permissions.md
+          - name: Request admin consent
+            href: develop/permissions-require-admin-consent.md
+          - name: Restrict permissions
+            href: develop/overprivileged-permissions.md
+          - name: Authenticate apps
+            href: develop/identity-non-user-applications.md
+          - name: Use token claims
+            href: develop/token-management.md
+          - name: Customize tokens
+            href: develop/zero-trust-token-customization.md
+          - name: Use Continuous Access Evaluation
+            href: develop/secure-with-cae.md
+          - name: Configure group claims/app roles in tokens
+            href: develop/configure-tokens-group-claims-app-roles.md  
+          - name: Protect APIs
+            items:
+            - name: Overview
+              href: develop/protect-api.md
+            - name: Protected API example
+              href: develop/protected-api-example.md  
+            - name: Call another API
+              href: develop/api-calls-api.md
+        - name: Follow authorization best practices
+          href: develop/developer-strategy-authorization-best-practices.md
+
+     
+    - name: Infrastructure and networking
+      items:
+      - name: Overview
+        href: security-adoption-discipline-infrastructure.md
+      - name: Integrate OT/IoT security
+        href: security-adoption-discipline-iot.md
+    - name: Security posture
+      items:
+      - name: Overview
+        href: security-adoption-discipline-posture.md
+
 
 - name: Zero Trust workshops
   items:

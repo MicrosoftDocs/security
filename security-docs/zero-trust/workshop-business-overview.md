@@ -4,7 +4,7 @@ description: Learn how Microsoft expert-led workshops simplify security moderniz
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 01/23/2026
+ms.date: 05/05/2026
 ms.author: raynew
 author: rayne-wiselman
 ---

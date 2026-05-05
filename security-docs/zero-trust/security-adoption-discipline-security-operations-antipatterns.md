@@ -1,11 +1,11 @@
 ---
-title: Avoid antipatterns in SecOps modernization
+title: Avoid common issues in SecOps modernization
 description: Understand common antipatterns in security operations modernization. 
 ms.date: 01/29/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to identity common antipatterns to avoid during SecOps modernization
@@ -153,7 +153,7 @@ Key best practices to avoid this antipattern:
 Modern attacks routinely bypass traditional network choke points using identity abuse, cloud APIs, SaaS integrations, and automation.
 
 
-:::image type="content" source="./media/security-adoption-discipline-operations-network.png" alt-text="Diagram for SecOps antipattern 'Network isn't the only source of truth'.":::
+:::image type="content" source="./media/security-adoption-discipline-operations-network.png" alt-text="Diagram explaining that networks aren't the only source of truth.":::
 
 Organizations that rely primarily on network telemetry miss:
 

@@ -63,7 +63,6 @@ Within our security adoption model, SecOps guidance focuses on the operational c
 
 By aligning SecOps to Zero Trust principles, organizations move from reactive incident handling to a resilient operating model where every incident strengthens detection, response, and prevention across the enterprise.
 
-The SecOps workshop focuses on these Zero Trust principles for SecOps. [Learn more](workshop-business-security-operations.md).
 
 ## Manage change
 

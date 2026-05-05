@@ -145,28 +145,19 @@
 - name: Adopt Zero Trust security
   expanded: false
   items:
-    - name: Overview
-      href: adopt/zero-trust-adoption-overview.md
-    - name: Rapidly modernize your security posture
-      href: adopt/rapidly-modernize-security-posture.md
-    - name: Secure remote and hybrid work
-      href: adopt/secure-remote-hybrid-work.md
-    - name: Identify and protect sensitive business data
-      href: adopt/identify-protect-sensitive-business-data.md
-    - name: Prevent or reduce business damage from a breach
+    - name: Current TOC
       items:
-        - name: Overview
-          href: adopt/prevent-reduce-business-damage-breach.md
-          maintainContext: true
-        - name: Implement security breach prevention and recovery infrastructure
-          href: adopt/prevent-reduce-business-damage-breach-infrastructure.md
-          maintainContext: true
-        - name: Implement threat protection and XDR
-          href: adopt/prevent-reduce-business-damage-breach-threat-protection.md
-          maintainContext: true
-    - name: Meet regulatory and compliance requirements
-      href: adopt/meet-regulatory-compliance-requirements.md
-
+    - name: Overview - old 
+      href: adopt/zero-trust-adoption-overview.md
+    - name: Follow a security adoption model
+      href: security-adoption-model.md
+    - name: Start a security adoption journey
+      href: security-adoption-journey.md
+    - name: Align with Zero Trust frameworks
+      href: security-zero-trust-frameworks.md
+    - name: Review roles and responsibilities 
+      href: security-adoption-roles.md
+   
 - name: Zero Trust workshops
   items:
   - name: Overview

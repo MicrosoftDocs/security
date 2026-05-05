@@ -27,7 +27,7 @@ The Microsoft security platform is designed to deliver the following outcomes:
 
 - **Unified signal visibility**: Telemetry is continuously collected and centralized across identities, devices, applications, data, and infrastructure.
 - **Identity-driven decision making**: Access and enforcement decisions are based on identity, device state, risk signals, and session context.
-- **Consistent enforcement**:Zero Trust controls are applied across endpoints, cloud services, and applications at access time and during use.
+- **Consistent enforcement**: Zero Trust controls are applied across endpoints, cloud services, and applications at access time and during use.
 - **Integrated detection and response**: Signals and alerts are correlated across domains to detect and respond to threats as unified incidents.
 - **Continuous validation and improvement**: Detection and risk signals feed back into policy decisions to strengthen protection over time.
 
@@ -52,7 +52,7 @@ Core security services span multiple technology pillars, each contributing signa
 
 ## Network protection services
 
-The table summarizes Azure networking capabilities and how they they directly integrate with other security services.
+The table summarizes Azure networking capabilities and how they directly integrate with other security services.
 
 **Service** | **Protection** | **Integration**
 --- | --- | ---
@@ -63,15 +63,15 @@ The table summarizes Azure networking capabilities and how they they directly in
 **Azure Web Application Firewall (WAF)** | Protects HTTP/HTTPS applications using OWASP rule sets. Helps prevent common web attacks such as SQL injection and cross-site scripting (XSS).| WAF logs are ingested into Azure Monitor/Log Analytics and can be analyzed by Microsoft Sentinel.<br/><br/>Defender for Cloud evaluates WAF configuration posture.
 **Azure Front Door** | Provides a global entry point for web applications with routing, acceleration, and edge security capabilities. Integrates with WAF for application protection. | Diagnostic logs (Front Door/WAF) are ingested into Log Analytics and can be analyzed by Microsoft Sentinel.<br/><br/>Defender for Cloud evaluates configuration posture.
 **Azure Application Gateway** | Provides regional load balancing with built-in web application firewall capabilities to protect and route application traffic. | Access and WAF logs are ingested into Log Analytics and can be analyzed by Microsoft Sentinel.<br/><br/>Defender for Cloud evaluates configuration posture and exposure settings.
-**Azure VPN Gateway** | Provides encrypted IPsec/IKE connectivity between on-premises environments and Azure VNets. Protects data in transit over public networks. |  onnection and tunnel logs are ingested into Log Analytics and cCan be analyzed in Microsoft Sentinel.<br/><br/>Defender for Cloud evaluates configuration posture, including encryption settings.
-**Azure ExpressRoute** |  Provides private, dedicated connectivity between on-premises environments and Azure over the Microsoft backbone, avoiding the public internet. |  Operational telemetry (such as BGP, circuit status) is available througa Azure Monitor and can be analyzed in Microsoft Sentinel.<br/><br/>Defender for Cloud evaluates high-level configuration posture.
+**Azure VPN Gateway** | Provides encrypted IPsec/IKE connectivity between on-premises environments and Azure VNets. Protects data in transit over public networks. |  onnection and tunnel logs are ingested into Log Analytics and can be analyzed in Microsoft Sentinel.<br/><br/>Defender for Cloud evaluates configuration posture, including encryption settings.
+**Azure ExpressRoute** |  Provides private, dedicated connectivity between on-premises environments and Azure over the Microsoft backbone, avoiding the public internet. |  Operational telemetry (such as BGP, circuit status) is available through Azure Monitor and can be analyzed in Microsoft Sentinel.<br/><br/>Defender for Cloud evaluates high-level configuration posture.
 **Azure Bastion** | Provides secure RDP and SSH access to virtual machines through a browser, eliminating the need for public IP exposure. | Diagnostic logs are ingested into Log Analytics and can be analyzed by Microsoft Sentinel.<br/><br/>Defender for Cloud evaluates reduced VM, but not Azure Bastion configuration directly.
 **Azure Private Link** | Provides private connectivity to Azure PaaS services and customer services using private IP addresses, eliminating public exposure. | Service-level logs (for services accessed via Private Link such as Storage, SQL, Key Vault) are ingested into Log Analytics and can be analyzed by Microsoft Sentinel.<br/><br/>Defender for Cloud evaluates whether private links are used to reduce exposure. 
 **Azure Network Watcher** | Provides network diagnostics, monitoring, and flow-level visibility across Azure resources. | NSG flow logs and diagnostics are ingested into Log Analytics and can be analyzed in Microsoft Sentinel.<br/><br/>Defender for Cloud evaluates underlying resource configuration state such as NSG settings, rather than Network Watcher directly.
 
 ## Integration activity/flow
 
-Security services operate as a continuous pipeline, where signals are collected, evaluated, enforced, and used to drive detection and respons
+Security services operate as a continuous pipeline, where signals are collected, evaluated, enforced, and used to drive detection and response.
 
 **Pipeline** | **Action** | **Key technologies**
 --- | --- | ---
@@ -92,7 +92,7 @@ Together, these flows operate as a cohesive system:
 - **Policy** defines what access is allowed or blocked based on evaluated conditions.
 - **Actions** enforce decisions through automated controls and response.
 
-As signals move through the platform, they are enriched, evaluated against policy, and acted on, creating a continuous cycle of protection and response.
+As signals move through the platform, they're enriched, evaluated against policy, and acted on, creating a continuous cycle of protection and response.
 
 ### Service activity interaction
 
@@ -100,7 +100,7 @@ As signals move through the platform, they are enriched, evaluated against polic
 --- | --- | ---
 **Microsoft Entra ID** | **Signals**: Authentication activity (sign-ins, risk events). Device compliance status from Microsoft Intune.<br/><br/>**Context**: Device context for access decisions from Defender for Endpoint. Session context for access decisions from Defender for Cloud Apps. | **Actions**:  Conditional Access decisions (allow, block, restrict, require controls).
 **Microsoft Intune** | **Signals**: Managed devices inventory, health, compliance state. <br/><br/>**Context**: Identity association from Microsoft Entra ID. | **Output**:<br/>- Device compliance posture to Microsoft Entra ID. Device audit logs to Microsoft Sentinel.
-**Microsoft Purview** | **Signals**: Enterprise data across Microsoft 365, SaaS apps, and on-premises systems.<br/><br/> **Context**: Data classification (sensitivity labels, content inspection, user activity). | **Output**<br/>- Insider risk and data loss protection (DLP) alerts to Defender XDR. Compliance and audit logs to Microsoft Sentinel.<br/><br/>**Actions**: DLP enforcement across endpoints (Defender for Endpoint), and sesssions (Defender for Cloud Apps).
+**Microsoft Purview** | **Signals**: Enterprise data across Microsoft 365, SaaS apps, and on-premises systems.<br/><br/> **Context**: Data classification (sensitivity labels, content inspection, user activity). | **Output**<br/>- Insider risk and data loss protection (DLP) alerts to Defender XDR. Compliance and audit logs to Microsoft Sentinel.<br/><br/>**Actions**: DLP enforcement across endpoints (Defender for Endpoint), and sessions (Defender for Cloud Apps).
 **Defender for Endpoint** | **Signals**: Endpoint telemetry (process, file, network activity).<br/><br/>**Context**: Microsoft Entra ID (identity context). Microsoft Intune (device posture). Microsoft Purview (DLP policies). | **Outputs**: Endpoint alerts and telemetry to Defender XDR and Microsoft Sentinel.<br/><br/>**Actions**: Endpoint enforcement (device isolation, blocking, remediation).
 **Defender for Identity** | **Signals**: Active Directory identity signals. | **Output**:<br/>- Identity threat alerts to Defender XDR and Microsoft Sentinel.
 **Defender for Cloud Apps** | **Signals**: SaaS app activity (cloud usage). Network and shadow IT telemetry from Defender for Endpoint.<br/><br/>**Context**:  Session and authentication context from Microsoft Entra ID. DLP policies from Microsoft Purview. | **Outputs**:<br/> - Cloud app alerts to Defender XDR and Microsoft Sentinel.<br/><br/>**Actions**: Session enforcement (block, monitor, restrict access).

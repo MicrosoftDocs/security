@@ -19,12 +19,12 @@ Zero Trust is a modern security approach based on a simple idea: **never trust, 
 
 Access is granted only after verifying:
 
-- Who is requesting access.
-- What device they are using.
-- Their location and behavior.
-- The level of risk.
+- Who is requesting access?
+- What device they are using?
+- What's their location and behavior?
+- What's their risk level?
 
-This verification doesn’t happen just once. It is continuous, ensuring that trust is maintained throughout the session.
+This verification doesn’t happen once. It is continuous, ensuring that trust is maintained throughout the session.
 
 
 ## Zero Trust principles
@@ -68,7 +68,7 @@ Key shifts to Zero Trust security mean that:
 
 - **Protection follows the asset**: Assets aren't inherently protected by where they reside. Every access request is explicitly validated, access to sensitive resources is tightly restricted, and activity is continuously monitored for threats.
 - **Access is always validated and monitored**: Security decisions are based on current conditions.
-- **Security isn't just technology**: People and processes introduce risk. Human behavior (unauthorized data/credential sharing, insufficinet security hygiene, shortcuts/tradeoffs) can introduce exposure that attackers exploit. Processes such as system deployment, data sharing, and security control enforcement directly influence risk. 
+- **Security isn't just technology**: People and processes introduce risk. Human behavior (unauthorized data/credential sharing, insufficient security hygiene, shortcuts/tradeoffs) can introduce exposure that attackers exploit. Processes such as system deployment, data sharing, and security control enforcement directly influence risk. 
 
 
 We must recognize that security is everyone's job. Continuous verification and least privilege reduce the impact of human factors, while aligning security controls with real‑world usage and decision‑making.

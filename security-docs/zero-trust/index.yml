@@ -1,6 +1,6 @@
 ### YamlMime:Hub
-title: Zero Trust security guidance
-summary: Zero Trust is a modern security strategy that “assumes breach,” “never trusts,” and “always verifies.” The Zero Trust Guidance Center helps you adopt Zero Trust security, deliver business outcomes using Zero Trust security controls, and protect technology pillars such as identity, devices, and data across your organization.
+title: Zero Trust Guidance Center
+summary: Zero Trust security “assumes breach,” “never trusts,” and “always verifies.”<br/>The Zero Trust Guidance Center helps you adopt Zero Trust security, deliver business outcomes using Zero Trust security controls, and protect technology pillars such as identity, devices, and data across your organization.
 brand: azure
 
 metadata:
@@ -16,10 +16,7 @@ metadata:
 ## HIGHLIGHTED CONTENT ##############################################
 highlightedContent:
   items:
-    - title: What is Zero Trust?
-      url: /security/zero-trust/zero-trust-overview
-      itemType: overview
-    - title: Follow Zero Trust adoption model
+    - title: Follow the Zero Trust adoption model
       url: /security/zero-trust/security-adoption-model
       itemType: get-started
     - title: Review SFI patterns and best practices
@@ -41,35 +38,36 @@ highlightedContent:
 ## HIGHLIGHTED CONTENT END ##############################################
 
 conceptualContent:
-  title: Achieve business outcomes 
-  summary: Build a strategy, design an architecture, and implement key business scenarios.
-  items:
-    ## CARD 1 ######################
-      - title: Review business scenarios
-        links:
-          - text: Protect AI and data
-            url: /security/zero-trust/security-adoption-scenario-secure-ai
-          - text: Allow work from anywhere
-            url: /security/zero-trust/security-adoption-scenario-secure-remote-work
-          - text: Secure critical business assets
-            url: /security/zero-trust/security-adoption-scenario-secure-assets
-          - text: Strengthen posture and compliance
-            url: /security/zero-trust/security-adoption-scenario-improve-posture
-          - text: Minimize the impact of security incidents
-            url: /security/zero-trust/security-adoption-scenario-minimize-impact
-    ## CARD 2 ######################
-      - title: Explore security disciplines
-        links:
-          - text: Strategy, integration, and governance
-            url: /security/zero-trust/security-adoption-discipline-strategy
-          - text: Security architecture
-            url: /security/zero-trust/ecurity-adoption-discipline-architecture
-          - text: Data security
-            url: /security/zero-trust/security-adoption-discipline-data
-          - text: Security operations
-            url: /security/zero-trust/security-adoption-discipline-security-operations
-          - text: Developer operations
-            url: /security/zero-trust/security-adoption-discipline-development
+  sections:
+  - title: Achieve business outcomes 
+    summary: Build a strategy, design an architecture, and implement key business scenarios.
+    items:
+      ## CARD 1 ######################
+        - title: Review business scenarios
+          links:
+            - text: Protect AI and data
+              url: /security/zero-trust/security-adoption-scenario-secure-ai
+            - text: Allow work from anywhere
+              url: /security/zero-trust/security-adoption-scenario-secure-remote-work
+            - text: Secure critical business assets
+              url: /security/zero-trust/security-adoption-scenario-secure-assets
+            - text: Strengthen posture and compliance
+              url: /security/zero-trust/security-adoption-scenario-improve-posture
+            - text: Minimize the impact of security incidents
+              url: /security/zero-trust/security-adoption-scenario-minimize-impact
+      ## CARD 2 ######################
+        - title: Explore security disciplines
+          links:
+            - text: Strategy, integration, and governance
+              url: /security/zero-trust/security-adoption-discipline-strategy
+            - text: Security architecture
+              url: /security/zero-trust/ecurity-adoption-discipline-architecture
+            - text: Data security
+              url: /security/zero-trust/security-adoption-discipline-data
+            - text: Security operations
+              url: /security/zero-trust/security-adoption-discipline-security-operations
+            - text: Developer operations
+              url: /security/zero-trust/security-adoption-discipline-development
 
 
 productDirectory:

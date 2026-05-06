@@ -53,7 +53,7 @@ Because modern environments are interconnected, implementation solutions usually
 
 ## Choose your starting point
 
-You can start implementing Zero Trust using a [business scenario]() that's important for your business. However, you might want to focus on mproving security for a domain, such as "securing endpoints across the organzation"", and start with a specific technology pillar 
+You can start implementing Zero Trust using a [business scenario](security-adoption-business-scenarios-overview.md) that's important for your business. However, you might want to focus on mproving security for a domain, such as "securing endpoints across the organzation"", and start with a specific technology pillar 
 
 Both approaches use the same technical solutions and technologies. Scenario-based adoption ensures alignment to business priorities, while technology-focused adoption helps address immediate risks in specific areas.
 

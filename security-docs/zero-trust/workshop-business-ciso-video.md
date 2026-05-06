@@ -37,7 +37,7 @@ This video introduces the CISO workshop and provides an overview of its content.
 
 These videos discuss threat trends, security role and responsibility evolution, and the recommended strategy and the strategic initiatives to structure your security transformation.
 
-:::image type="content" source="./media/security-executive-workshop-part-a.png" alt-text="Diagram showing CISO workshop Part A covering threat environment and trends, roles and responsibilities, and strategy and recommended initiatives." lightbox="./media/ciso-workshop-part-a-large.png":::
+:::image type="content" source="./media/security-executive-workshop-part-a.png" alt-text="Diagram showing CISO workshop Part A covering threat environment and trends, roles and responsibilities, and strategy and recommended initiatives." lightbox="./media/security-executive-workshop-part-a-large.png":::
 
 ### Threat environment and trends
 
@@ -61,7 +61,7 @@ This video discusses the Zero Trust transformation and modern security strategy 
 
 These videos discuss how to engage business leaders on security, align to business priorities and risks, integrate security in IT/Business and build business resilience.
 
-:::image type="content" source="./media/security-executive-workshop-part-b.png" alt-text="Diagram showing CISO workshop Part B covering engaging business leaders, risk insights, security integration, business resilience, and maturity models." lightbox="./media/ciso-workshop-part-b-large.png":::
+:::image type="content" source="./media/security-executive-workshop-part-b.png" alt-text="Diagram showing CISO workshop Part B covering engaging business leaders, risk insights, security integration, business resilience, and maturity models." lightbox="./media/security-executive-workshop-part-b-large.png":::
 
 ### Engaging business leaders on security
 

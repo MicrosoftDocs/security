@@ -47,7 +47,7 @@ conceptualContent:
           - url: /security/zero-trust/security-adoption-scenario-secure-ai
             itemType: concept
             text: Protect AI and data
-          - url: /security/zero-trust/security-adoption-scenario-secure-remote-work
+          - url: /security/zero-trust/security-adoption-scenario-remote-work
             itemType: concept
             text: Allow work from anywhere
           - url: /security/zero-trust/security-adoption-scenario-secure-assets
@@ -64,7 +64,7 @@ conceptualContent:
           - url: /security/zero-trust/security-adoption-discipline-strategy
             itemType: concept
             text: Strategy, integration, and governance
-          - url: /security/zero-trust/ecurity-adoption-discipline-architecture
+          - url: /security/zero-trust/security-adoption-discipline-architecture
             itemType: concept
             text: Security architecture
           - url: /security/zero-trust/security-adoption-discipline-identity

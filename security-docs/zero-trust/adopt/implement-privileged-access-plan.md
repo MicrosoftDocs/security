@@ -21,7 +21,7 @@ This article is the first step in the [Implement a privileged access architectur
 
 ## Before you start
 
-- Our adoption and implementation model starts with a set of critical business scenarios aimed at business leaders and decision makers. Learn more about the [**Secure and govern privileged access to critical systems**](security-adoption-scenario-privileged-access.md) business scenario.
+- Our adoption and implementation model starts with a set of critical business scenarios aimed at business leaders and decision makers. Learn more about the [**Secure and govern privileged access to critical systems**](../security-adoption-scenario-privileged-access.md) business scenario.
 - We use [security disciplines](../security-adoption-discipline-overview.md) to help teams deliver security outcomes across the business. Learn about the [disciplines associated with privileged access architecture](../security-adoption-discipline-identity-access-privileged-model.md)
 
 

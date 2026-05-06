@@ -145,7 +145,7 @@ Our implementation guidance treats identity systems and elevation paths as part 
 
 The privileged access architecture is implemented using a phased adoption model aligned to Microsoft best practices.
 
-1. Kick off adoption with our [structured adoption model](/security-adoption-model.md). Adoption guidance helps business leaders to identify critical business-level outcomes for secure identity, and to understand the access and identity discipline, including the teams and efforts needed to drive identity initiatives such as privileged access.
+1. Kick off adoption with our [structured adoption model](../security-adoption-model.md). Adoption guidance helps business leaders to identify critical business-level outcomes for secure identity, and to understand the access and identity discipline, including the teams and efforts needed to drive identity initiatives such as privileged access.
 1. Plan the solution. Planning helps you to identity design goals, assign security levels to determine privileged access strategy, and plan for implementation.
 1. Follow the implementation phases summarized in the following table.  Each phase has a specific objective and is implemented using concrete configuration steps in the corresponding articles.
 

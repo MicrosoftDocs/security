@@ -51,7 +51,7 @@ Our [structured security adoption model](security-adoption-model.md) helps you t
 
 This visual shows common SecOps antipatterns.
 
-:::image type="content" source="./media/security-adoption-discipline-operations-antipatterns.png" alt-text="Screenshot of common SecOps antipatterns diagram." lightbox="./media/security-adoption-discipline-operations-antipatterns.png":::
+:::image type="content" source="./media/security-adoption-discipline-operations-issues.png" alt-text="Screenshot of common SecOps antipatterns diagram." lightbox="./media/security-adoption-discipline-operations-issues.png":::
 
 The following antipatterns appear repeatedly across organizations of all sizes. While they differ in form, they share a common root cause: misalignment between the SecOps mission and day‑to‑day execution.
 

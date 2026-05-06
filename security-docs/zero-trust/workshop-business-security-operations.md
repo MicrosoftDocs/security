@@ -75,7 +75,7 @@ A SecOps adoption workshop typically covers the following topics. The intent is 
     - Technology (at a strategy level, not product configuration)
     
     This discussion is guided by the [SecOps discipline](security-adoption-discipline-security-operations.md).
-1. **Review common antipatterns** - Discuss [common SecOps antipatterns](security-adoption-discipline-security-operations-antipatterns.md) and how to avoid.
+1. **Review common antipatterns** - Discuss [common SecOps antipatterns](security-adoption-discipline-security-operations-common-issues.md) and how to avoid.
 1. **Address burnout risk** - Openly discuss sources of frustration and burnout, such as manual repetitive work, unclear ownership, and constant crisis mode. This builds awareness of how operational stress impacts both people and risk outcomes.
 1. **Review roles and the operating model** - Walk through the [SecOps team model](security-adoption-discipline-security-operations-roles.md) to ensure everyone understands:
 

@@ -67,7 +67,7 @@ conceptualContent:
           - url: /security/zero-trust/security-adoption-discipline-architecture
             itemType: concept
             text: Security architecture
-          - url: /security/zero-trust/security-adoption-discipline-identity
+          - url: /security/zero-trust/security-adoption-discipline-identity-access
             itemType: concept
             text: Identity
           - url: /security/zero-trust/security-adoption-discipline-data

@@ -25,11 +25,11 @@ This article describes Phase 2 of the solution.  It deploys and hardens Privileg
 
 Phase 2 ensures that privileged access:
 
-- Originates only from trusted, hardened devices
-- Is isolated from high‑risk productivity activities
-- Produces a clean, reliable device signal for later enforcement
-- Reduces credential theft, token replay, and session hijacking risk
-- Limits blast radius if a device is compromised
+- Originates only from trusted, hardened devices.
+- Is isolated from high‑risk productivity activities.
+- Produces a clean, reliable device signal for later enforcement.
+- Reduces credential theft, token replay, and session hijacking risk.
+- Limits blast radius if a device is compromised.
 
 ## Protection scope
 

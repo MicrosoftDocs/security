@@ -31,7 +31,7 @@ We offered all of our SAF as expert-led, and provide a subset of self-help resou
 - **Free**:  We publish free videos and downloadable files for some workshops. Use these self-service resources to accelerate your organization's security journey without a formal engagement.
 
 
-:::image type="content" source="./media/workshops-unified.png" alt-text="Diagram showing how the Security Adoption Framework (SAF) connects the business with security and technology." lightbox="./media/workshops-unified.png":::
+:::image type="content" source="./media/workshops-unified.png" alt-text="Diagram showing how the adoption framework connects the business with security and technology." lightbox="./media/workshops-unified.png":::
 
 
 ## Expert-led workshops (Microsoft Unified)
@@ -41,7 +41,7 @@ There are a two types of Security Adoption Framework workshops available through
 - **Security Architecture and Strategy** workshops that focus on how to achieve security discipline outcomes by using technical strategy, technical architecture, processes, and more. 
 - **Technology Adoption** workshops that accelerate realization of this strategy by using education, product architecture, onboarding assistance, plus assessment and optimization of existing implementations.
 
-:::image type="content" source="./media/workshop-unified-engagement.png" alt-text="Diagram showing how the Security Adoption Framework (SAF) connects the business with security and technology." lightbox="./media/workshop-unified-engagement.png":::
+:::image type="content" source="./media/workshop-unified-engagement.png" alt-text="Diagram showing how the adoption workshop shows how to achieve outcomes." lightbox="./media/workshop-unified-engagement.png":::
 
 ### How do I get the workshop?
 
@@ -74,7 +74,7 @@ The workshop you need depends upon where you are in your security adoption journ
 
 These workshops helps you to plan, implement, and optimize using Microsoft security products. These workshops show you how to plan, implement, and operate these technologies to align with Microsoft security best practices.
 
-:::image type="content" source="./media/workshop-unified-technologies.png" alt-text="Diagram showing how the Security Adoption Framework (SAF) connects the business with security and technology." lightbox="./media/workshop-unified-technologies.png":::
+:::image type="content" source="./media/workshop-unified-technologies.png" alt-text="Diagram showing how the adoption workshops help you plan and deploy Microsoft technologies." lightbox="./media/workshop-unified-technologies.png":::
 
 ## What should we start with?
 

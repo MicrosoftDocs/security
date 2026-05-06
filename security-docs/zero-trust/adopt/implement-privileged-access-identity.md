@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
 
-This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access business scenario](/security-adoption-discipline-identity-access-privileged-model.md).
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access business scenario](security-adoption-discipline-identity-access-privileged-model.md).
 
 This article describes Phase 1 of the implementation, which secures the identity control plane by defining and protecting privileged identities, role assignments, and authorized elevation paths.
 

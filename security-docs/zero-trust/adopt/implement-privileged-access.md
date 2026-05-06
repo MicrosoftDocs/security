@@ -17,7 +17,7 @@ ms.custom: sfi-image-nochange
 
 This article introduces an end-to-end solution for implmenting a privileged access architecture. It's aimed at security/identity planners and implementers.
 
-In the Microsoft security adoption and implementation model, solution guides provided prescriptive deployment guidance.  In the model, [business scenarios](security-adoption-business-scenarios-overview.md) define the outcomes leaders need. [Discipline guidance](../security-adoption-discipline-identity-access-privileged-model.md) defines the architecture and process decisions required to deliver those outcomes. Solution guides turn those architectures and decisions into practical implementations that you plan and deploy. 
+In the Microsoft security adoption and implementation model, solution guides provided prescriptive deployment guidance.  In the model, [business scenarios](../security-adoption-business-scenarios-overview.md) define the outcomes leaders need. [Discipline guidance](../security-adoption-discipline-identity-access-privileged-model.md) defines the architecture and process decisions required to deliver those outcomes. Solution guides turn those architectures and decisions into practical implementations that you plan and deploy. 
 
 Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets. This guide describes a Zero Trust privileged access solution that treats privileged access as an end-to-end access path (identity → device → interface → target → monitoring → response). The goal is to reduce risk by:
 

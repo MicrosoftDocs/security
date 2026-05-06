@@ -349,7 +349,7 @@ Refer to these links to learn about the various services and technologies mentio
 - [Zero Trust implementation guidance](zero-trust-overview.md)
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [Building the first layer of defense with Azure security services](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)
-- [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)
+- [Microsoft Cybersecurity Reference Architectures](microsoft-reference-architecture.md)
 
 ## Technical illustrations
 

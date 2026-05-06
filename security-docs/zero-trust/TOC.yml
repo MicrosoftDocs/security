@@ -152,7 +152,7 @@
   - name: Start a security adoption journey
     href: security-adoption-journey.md
   - name: Review security reference architectures
-    href: mcra.md
+    href: microsoft-reference-architecture.md
   - name: Align with Zero Trust frameworks
     href: security-zero-trust-frameworks.md
   - name: Review roles and responsibilities 

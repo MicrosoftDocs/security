@@ -97,7 +97,7 @@ The table summarizes publically available SAF workshop resources.
 [**The Chief Information Security Officer (CISO) Workshop**](workshop-business-ciso.md) | This workshop helps you to accelerate security strategy and modernize security posture. It aligns to the [security strategy, integration, and governance*](security-adoption-discipline-strategy.md), and [security posture management](security-adoption-discipline-posture.md) disciplines that we use during [security adoption](security-adoption-model.md). 
 [**Zero Trust Workshop**](/security/zero-trust/zero-trust-assessment-progress-tracking-resources) | This workshop helps accelerate Zero Trust security adoption for [technology pillars*](implement-overview.md) across the organization.
 [**SecOps Workshop**](workshop-business-security-operations.md) | This workshop helps accelerate and modernization SecOps across the business. It aligns to the [security operations (SecOps/SOC)*](security-adoption-discipline-security-operations.md) discipline that we use during security adoption.
-[**Microsoft Cybersecurity Reference Architectures (MCRA)**](mcra.md) | MRCA provides a set of technical architectures that can help to you plan and adopt recommended security architectures. It aligns to the [security architecture](security-adoption-discipline-architecture.md) discipline. 
+[**Microsoft Cybersecurity Reference Architectures (MCRA)**](microsoft-reference-architecture.md) | MRCA provides a set of technical architectures that can help to you plan and adopt recommended security architectures. It aligns to the [security architecture](security-adoption-discipline-architecture.md) discipline. 
 
 ## What next?
 

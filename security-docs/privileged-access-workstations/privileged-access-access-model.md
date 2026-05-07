@@ -4,7 +4,7 @@ description: Securing privileged access is part of an enterprise access model
 ms.service: security
 ms.subservice: privileged-access
 ms.topic: concept-article
-ms.date: 04/27/2021
+ms.date: 05/06/2026
 
 ms.reviewer: mas
 ---
@@ -54,11 +54,11 @@ Providing consistent access control in the organization that enables productivit
    - Continuously audit for configuration vulnerabilities enabling inadvertent escalation
    - Monitor and respond to anomalies that could represent potential attacks
 	
-## Evolution from the legacy AD tier model
+## Evolution from the AD tier model
 
-The enterprise access model supersedes and replaces the legacy tier model that was focused on containing unauthorized escalation of privilege in an on-premises Windows Server Active Directory environment. 
+The enterprise access model builds on the AD tier model, which focused on containing unauthorized escalation of privilege in an on-premises Windows Server Active Directory environment. 
 
-![Legacy AD tier model](./media/privileged-access-strategy/legacy-tier-model.png)
+![AD tier model](./media/privileged-access-strategy/legacy-tier-model.png)
 
 The enterprise access model incorporates these elements as well as full access management requirements of a modern enterprise that spans on-premises, multiple clouds, internal or external user access, and more. 
 

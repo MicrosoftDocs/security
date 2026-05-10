@@ -13,7 +13,7 @@ ms.reviewer: ehudi
 # Customer intent: I'm a security architect, and I need to learn how Microsoft cloud services align to the DoD Zero Trust Strategy so I can prioritize, deploy, and configure Zero Trust capabilities. My goal is to complete DoD Zero Trust activities for my organization. 
 ---
 
-# Configure Microsoft cloud services for the DoD Zero Trust Strategy
+# Align Microsoft services with the DoD Zero Trust Strategy
 
 The U.S. Department of Defense (DoD) Zero Trust Portfolio Management Office (ZT PfMO) was established to orchestrate DoD-wide Zero Trust adoption and execution. In November 2022, the DoD ZT PfMO released the [DoD Zero Trust Strategy and Roadmap](https://www.defense.gov/News/Releases/Release/Article/3225919/department-of-defense-releases-zero-trust-strategy-and-roadmap/). 
 

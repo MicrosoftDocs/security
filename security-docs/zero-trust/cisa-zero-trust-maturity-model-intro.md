@@ -13,7 +13,7 @@ ms.reviewer: kbrewer
 # Customer intent: As a security architect, I need to learn about the CISA Zero Trust Maturity Model so I can prioritize, deploy, and configure Zero Trust capabilities. My goal is to complete Maturity Model activities for users.
 ---
 
-# Configure Microsoft cloud services for the CISA Zero Trust Maturity Model
+# Align Microsoft services with the CISA Zero Trust Maturity Model
 
 As cyber threats become increasingly sophisticated, the need for robust cybersecurity measures is more critical than ever. The U.S. Cybersecurity & Infrastructure Security Agency ([CISA](https://www.cisa.gov/)) plays a central role in defending cyberspace, spearheading national efforts to enhance the resilience of vital functions, and promoting a strong technology ecosystem. The CISA mission includes maintaining cyber situational awareness among Federal Civilian Executive Branch (FCEB) agencies, and securing the **.gov** domain. CISA assists federal agencies and industry partners with effective management of significant cyber incidents. In April 2023, CISA released the [Zero Trust Maturity Model Version 2.0](https://www.cisa.gov/zero-trust-maturity-model) (ZTMM).  
 

@@ -12,30 +12,47 @@ ms.topic: conceptual
 ---
 # Align adoption with Zero Trust frameworks 
 
-This article explains how Microsoft's Zero Trust adoption guidance aligns with commonly used security frameworks. It helps you understand how these frameworks relate to Zero Trust principles and how to use them to guide your security strategy.
+This article explains how **Microsoft's Zero Trust adoption model aligns with commonly used security frameworks**. It helps you understand how external frameworks relate to Zero Trust principles and how they can be used to guide your security strategy.
 
-Zero Trust isn't a single framework. It's a security model that aligns with multiple industry and government standards. These different standards aren't competing solutions. Instead, each addresses a different aspect of Zero Trust, such as defining core concepts, assessing progress, or coordinating adoption across an organization.
+Zero Trust isn't a single framework. It's a security model that aligns with multiple industry and government standards. These standards aren't competing solutions. Each addresses a different aspect of Zero Trust, such as defining core concepts, assessing progress, or coordinating adoption across an organization.
 
-While these industry frameworks help define what Zero Trust should achieve, organizations still need a way to translate that guidance into security solution planning, design, and deployment. 
+While industry frameworks help define what Zero Trust should achieve, organizations still need a way to translate that guidance into security solution planning, design, and implementation.
 
-Microsoft's Zero Trust adoption and implementation guidance does just that. It aligns to and builds on industry frameworks to provide a structured adoption model for applying consistent security principles, architectures, and processes, helping you to adopt and implement Zero Trust security in organized, phased, and practical way.
+Microsoft's Zero Trust adoption model does just that. It aligns to and builds on industry frameworks to provide a structured adoption path that applies consistent security principles, architectures, and processes as you prioritize, modernize, and implement Zero Trust security in organized, phased, and practical way.
 
 > [!TIP]
-> Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops* that align to guidance for our structured adoption model. These expert-led workshops help you plan and align your security strategy with Microsoft best practices, and with external Zero Trust frameworks such as those described in this article. Learn more about our [SAF workshops](workshop-business-overview.md).
+> Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model described here aligns with the expert-led guidance from Microsoft Unified available in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
 
 ## NIST Zero Trust
 
 [NIST Special Publication (SP) 800‑207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) establishes an industry-recognized definition of Zero Trust architecture. It explains what Zero Trust is and how trust decisions are made, independent of any specific vendor, product, or deployment roadmap.
 
-- NIST SP 800-207 is most useful when organizations need a common, authoritative definition of Zero Trust concepts that can be shared across security, IT, and architecture teams.
-- NIST explicitly positions Zero Trust as an architecture where access to resources is never implicitly trusted. 
-- Zero Trust principles include assuming compromise (assuming breach) to drive a holistic and practical security approach, verifying trust explicitly before granting access to assets, and limiting the blast radius by granting the least privilege necessary.
+NIST SP 800-207 is most useful when organizations need a common, authoritative definition of Zero Trust concepts that can be shared across security, IT, and architecture teams.
 
-Key architectural concepts focus on continuous dynamic evaluation of access requests using contextual signals. Centralized policy decision logic that evaluates signals against organizational policy, and policy enforcement functionality close to protected resources applies the decision.
+### NIST features
 
-NIST SP 800-270 doesn't define technology pillars or security domains such as identity, endpoints, or data protection. Its logical Zero Trust architecture focuses on how access decisions are evaluated and enforced using policy engines, enforcements points, and contextual signals. Identity, devices posture, apps, and data appear in the model as subjects, resources, and source of context. 
+NIST explicitly positions Zero Trust as an architecture where access to resources is never implicitly trusted. 
 
-Microsoft's [security adoption model](security-adoption-model.md) builds on this architecture by focusing on Zero Trust operations. Zero Trust adoption across security disciplines and technology pillars supports business planning, ownership, design, implementation, and progress tracking.
+Zero Trust principles in NIST include:
+
+- Assuming compromise (breach) to drive a holistic and practical security approach.
+- Verifying trust explicitly before granting access to assets.
+- Limiting the blast radius by granting the least privilege necessary.
+
+
+Key architectural concepts focus on:
+
+- Continuous dynamic evaluation of access requests using contextual signals. 
+- Centralized policy decision logic that evaluates signals against organizational policy.
+- Policy enforcement functionality close to protected resources applies the decision.
+
+NIST SP 800-270 doesn't define technology pillars or security domains such as identity, endpoints, or data protection. 
+
+
+The Zero Trust conceptual architecture defined by NIST focuses on how access decisions are evaluated and enforced using policy engines, enforcement points, and contextual signals. Identity, device posture, applications, and data are modeled as subjects, resources, and sources of context that inform trust decisions, rather than as separate architectural domains.
+
+Microsoft’s [security adoption model](security-adoption-model.md) builds on this architecture by applying its principles and components within an operational framework. While NIST defines how trust decisions are made and enforced, the adoption model organizes these capabilities across security disciplines and technology pillars to guide business planning, ownership, solution design, implementation, and progress tracking.
+
 
 ### Implementation
 
@@ -54,9 +71,13 @@ This diagram is the result of the NIST SP 1800-35 collaboration and can be downl
 
 The [Cybersecurity and Infrastructure Security Agency (CISA) Zero Trust Maturity Model](https://www.cisa.gov/zero-trust-maturity-model) is organized around adoption and assessment. It provides a roadmap rather than a reference architecture. It helps organizations to organize and assess current posture, prioritize improvements and track progress. 
 
+### CISA features
+
 - The model uses domain-style pillars that include Identity, Devices, Networks/Environment, Apps/Workloads, and Data.
 - It looks at three cross-cutting capabilities - Visibility and Analytics, Automation and Orchestration, Governance.
 - It captures four possible maturity states: Traditional, Initial, Advanced, and Optimal. 
+
+### Implementation
 
 The model maps to our recommended adoption model.
 

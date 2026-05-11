@@ -12,13 +12,14 @@ ms.topic: conceptual
 ---
 # Align adoption with Zero Trust frameworks 
 
-This article explains how **Microsoft's Zero Trust adoption model aligns with commonly used security frameworks**. It helps you understand how external frameworks relate to Zero Trust principles and how they can be used to guide your security strategy.
+This article explains the role played by well known Zero Trust frameworks, and how **Microsoft's Zero Trust adoption model helps you to move from understanding to adoption at scale**. 
 
-Zero Trust isn't a single framework. It's a security model that aligns with multiple industry and government standards. These standards aren't competing solutions. Each addresses a different aspect of Zero Trust, such as defining core concepts, assessing progress, or coordinating adoption across an organization.
+Zero Trust isn't a single framework. It's a security model that aligns with multiple industry and government standards. These standards aren't competing solutions. Each addresses a different aspect of Zero Trust, such as definingcore concepts, assessing progress, or coordinating adoption across an organization.
 
-While industry frameworks help define what Zero Trust should achieve, organizations still need a way to translate that guidance into security solution planning, design, and implementation.
+While industry frameworks help define what Zero Trust should achieve, organizations still need a way to translate that guidance into a specific strategy and architecture to enable planning, design, and deployment.
 
-Microsoft's Zero Trust adoption model does just that. It aligns to and builds on industry frameworks to provide a structured adoption path that applies consistent security principles, architectures, and processes as you prioritize, modernize, and implement Zero Trust security in organized, phased, and practical way.
+Microsoft's Zero Trust adoption model does just that. It provides a reference strategy and architecture that aligns to and builds on industry frameworks to accelerate Zero Trust adoption and implementation.
+
 
 > [!TIP]
 > Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model described here aligns with the expert-led guidance from Microsoft Unified available in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
@@ -62,14 +63,16 @@ For implementation guidance, NIST collaborated with 24 vendors, including Micros
 
 Microsoft participated as one of the vendors providing technology to implement Zero Trust capabilities across identity and access management, endpoint management and configuration, threat protection and monitoring, and secure access to distributed resources.
 
-This diagram is the result of the NIST SP 1800-35 collaboration and can be downloaded from [Microsoft Cybersecurity Reference Architecture (MCRA)](https://aka.ms/MCRA). 
+This diagram is the result of the NIST SP 1800-35 collaboration and can be downloaded from [Microsoft Cybersecurity Reference Architectures (MCRAs)](https://aka.ms/MCRA). Learn more about [MCRAs](microsoft-reference-architecture.md)
 
 :::image type="content" source="./media/adoption-map-national-institute.png" alt-text="Diagram showing Microsoft products mapped to NIST Zero Trust Architecture." lightbox="./media/adoption-map-national-institute.png":::
 
 
+
+
 ## CISA Zero Trust Maturity Model
 
-The [Cybersecurity and Infrastructure Security Agency (CISA) Zero Trust Maturity Model](https://www.cisa.gov/zero-trust-maturity-model)  is organized around adoption and assessment rather than architectural design. It provides a roadmap rather than a reference architecture, helping organizations assess their current maturity and posture, prioritize improvements, and track progress over time.
+The [Cybersecurity and Infrastructure Security Agency (CISA) Zero Trust Maturity Model](https://www.cisa.gov/zero-trust-maturity-model)  is organized around adoption and assessment. This maturity model helps organizations organize and assess their current posture, prioritize improvements, and track progress.
 
 ### CISA features
 
@@ -84,19 +87,16 @@ Unlike NIST, CISA does not define a reference architecture and instead evaluates
 
 The model aligns with and informs the Microsoft security adoption model, while Microsoft further extends it by introducing disciplines such as Architecture to bridge conceptual frameworks like NIST SP 800‑207 with practical implementation.
 
-**CISA** | **Adoption discipline** | **Alignment**
+**CISA** | **Adoption discipline/pillar** | **Details**
 --- | --- | --
-**Identity - Apps & Workloads**<br/><br/>Identity covers authentication, authorization, identity risk, lifecycle; Apps & Workloads covers application access controls, workload identity, and secure application interaction. | Identity and access security. | Access in Microsoft spans both identity and application layers. CISA intentionally separates these to allow independent maturity tracking while supporting identity‑centric access decisions.
-**Data**<br/><br/>Data classification, inventory, access control, encryption, and protection independent of network location. | Data security | Both models place data as a primary protection target, reinforcing the Zero Trust shift from perimeter security to data‑centric controls.
-**Visibility & Analytics + Automation & Orchestration**<br/><br/>Telemetry collection, continuous monitoring, detection, response automation, and policy enforcement at scale. | SecOps | CISA’s cross‑cutting capabilities map directly to SecOps outcomes: detect threats, automate response, and continuously reassess trust across all domains.
-**Apps & Workloads**<br/><br/>Application security controls, workload protection, runtime security, and secure service interactions. | Dev security | CISA’s workload focus aligns with DevSecOps goals by embedding security into application and service lifecycles rather than treating it as a post‑deployment activity.
-**Devices, Networks/Environments**<br/><br/>Device inventory, posture, compliance; network segmentation, secure connectivity, environmental controls.br/><br/>Non‑traditional, constrained, and specialized devices; segmented environments and limited trust assumptions. | Infrastructure security, including OT/IoT security | Infrastructure trust is established through device health and controlled connectivity, aligning with Zero Trust’s goal of minimizing blast radius and lateral movement.<br/><br/>CISA intentionally includes OT/IoT within device and network pillars, while Microsoft elevates them as a discipline for ownership and risk management reasons.
+**Identity**<br/>Identity covers authentication, authorization, identity risk, lifecycle. Apps and workloads covers app access controls,workload identity, and secure app interaction. |  **Discipline**: Identity and Access<br/><br/>**Technology**: Identity | Access control in Microsoft spans both identity and application layers while CISA separates these.
+**Governance**<br/>Enterprise-wide policies, controls, and enforcement. |  **Discipline**: Strategy, Integratation, Governance<br/>Security Architecture<br/><br/>**Technology**: All. | CISA’s policy and control capabilities map directly to SecOps outcomes. Microsoft adds additional focus on other aspects of governance (business alignment, risk management, roles, and more), and dedicated focus on architectural discipline and reference architectures.
+**Devices**<br/>Device inventory, posture, compliance; network segmentation, secure connectivity, environmental controls. Including non‑traditional, constrained, and specialized devices. | **Discipline**: Identity and Access, Infrastructure security, OT/IoT security<br/><br/>**Technology**: Endpoints | Infrastructure trust is established through device health and controlled connectivity, aligning with the Zero Trust goal to minimize blast radius and lateral movement.<br/><br/>Microsoft considers OT/IoT devices as a dinstinct discipline due to unique ownership, and risk management reasons.
+**Apps and workloads**<br/>Apps & Workloads covers application access controls, workload identity, and secure application interaction. | **Discipline**: Development Security<br/><br/>**Technology**: Apps | CISA’s workload focus aligns with DevSecOps goals by embedding security into application and service lifecycles, rather than treating it as a post‑deployment activity. 
+**Networks**<br/>Network segmentation, secure connectivity, environmental controls. |  **Discipline**: Identity and Access<br/><br/>**Technology**: Networks | Microsoft combines all access (identity, apps, and networks) into a single discipline to help drive clear strategy, architecture, and policy consistency across technologies.
+**Data**<br/>Data classification, inventory, access control, encryption, and protection independent of network location. | **Discipline**: Data Security<br/><br/>**Technology**: Data  | Both models place data as a primary protection target, and reinforce the Zero Trust shift from perimeter security to data‑centric controls.
+**Visibility & Analytics, Automation & Orchestration**<br/><br/>Telemetry collection, continuous monitoring, detection, response automation, and policy enforcement at scale. | **Discipline**: SecOps<br/><br/>**Technology**: All | CISA’s cross‑cutting capabilities map directly to SecOps outcomes that include detecting threats, automating response, and continuously reassessing trust across all domains.
 **Maturity stages across all pillars** | Security posture | Posture management is the core purpose of the CISA model: assess current state, identify gaps, prioritize improvements, and track Zero Trust progress over time.
-
-> [!NOTE]
-> Governance isn't a specific pillar in CISA. Both CISA and Microsoft treat governance as foundational to Zero Trust adoption, ensuring business alignment, clear ownership, and measurable outcomes rather than isolated technical controls.
-> Security architecture isn't a specific pillar in CISA. CISA doesn't define reference architectures. It assumes architectures exist, and evaluates capabilities regardless of design pattern.
-> Microsoft fills the gaps between a conceptual architecture such as NIST SP 900-207 and adoption with the Architecture discipline. CISA on the other hand informs architectural priorities through maturity targets.
 
 For information, see [Implementing the CISA Zero Trust Maturity Model with Microsoft cloud services](cisa-zero-trust-maturity-model-intro.md).
 

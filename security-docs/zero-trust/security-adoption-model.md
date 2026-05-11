@@ -14,24 +14,24 @@ ms.topic: conceptual
 # Follow a security adoption model
 
 
-**Adopting Zero Trust security across your organization** is a complex, multi-year effort spanning business strategy and planning, technical design/architecture, deployment, and operations.
+**Adopting Zero Trust security across your organization** is a complex, multi-year effort spanning business strategy and planning, technical design and architecture, deployment, and operations.
 
 Without a structured approach to adoption, security modernization programs can become fragmented, reactive, and difficult to sustain.
 
 Our structured security adoption model provides a standardized, repeatable, role-aware process that helps you to you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multi-platform environments.
 
-Our adoption model aligns critical business outcomes, security disciplines, and solution implementation so that business leaders, security managers, architects, and practitioners can move forward together at a controlled and sustainable pace across the organization.
+Our adoption model aligns critical business outcomes, security disciplines, and solution implementations so that business leaders, security managers, architects and practitioners can move forward together at a controlled and sustainable pace across the organization.
 
 
 > [!TIP]
-> Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model described here aligns with the expert-led guidance from Microsoft Unified available in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
+> Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model guidance aligns with the expert-led guidance from Microsoft Unified available in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
 
 ## Why use an adoption model?
 
 A structured adoption model helps you to:
 
 - **Align with security best practices** - Align with Zero Trust principles, [Microsoft Secure Future Initiative (SFI) patterns](sfi/secure-future-initiative-overview.md), other best practices, and [open standards and guidance](security-zero-trust-frameworks.md).
-- **Maximize existing investments** - Get more value from your existing tools, before introducing new capabilities.
+- **Maximize existing investments** - Get value from your existing tools, before introducing new capabilities.
 - **Deliver an end-to-end security strategy** - Connect business priorities to security architecture, controls, processes, and operations.
 - **Adapt continuously** - Evolve security posture and strategy as threats, business needs, and technologies change.
 - **Prioritize action** - Provide practical role-specific guidance for teams and stakeholders, grounded in best practices, lessons learned, and real-world examples.
@@ -52,12 +52,12 @@ The adoption model is built on three core components that help organizations mov
 
 :::image type="content" source="media/adoption-navigation-structure.png" alt-text="Diagram showing overall structure of the Microsoft Security Adoption Framework (SAF)." lightbox="media/adoption-navigation-structure.png":::
 
-Each component targets a specific audience and role in the adoption process.
+Each component of the adoption model targets a specific audience and role.
 
 **Section** | **Primary audience** | **Aim**
 --- | --- | ---
-**[Business scenarios](security-adoption-business-scenarios-overview.md)** | Business leaders | Define and communicate critical business outcomes that security must support.<br/><br/>Translate business priorities into actionable security goals that guide planning and decision-making.<br/><br/>Provide practical, repeatable guidance for common business outcomes, with clear paths to the roles and disciplines involved in delivering the scenario.
-**[Security disciplines](security-adoption-discipline-overview.md)** | Security leaders/teams, IT leaders, designers, architects. | Bridge business scenarios and implementation.<br/><br/> Ensure that security investments and priorities translate into measurable outcomes through clear planning, architecture, and operational practices.<br/><br/>Business scenarios usually map to multiple security disciplines. 
+**[Business scenarios](security-adoption-business-scenarios-overview.md)** | Business leaders | Define and communicate critical business outcomes that security must support.<br/><br/>Translate business priorities into actionable security goals that guide planning and decision-making.<br/><br/>Provide practical, repeatable guidance for business outcomes, with clear paths to the roles and disciplines involved in delivering the outcome.
+**[Security disciplines](security-adoption-discipline-overview.md)** | Security leaders/teams, IT leaders, designers, architects. | Bridge business scenarios and security deployment/implementation.<br/><br/> Ensure that security investments and priorities translate into measurable outcomes through clear planning, architecture, and operational practices.<br/><br/>Business scenarios usually map to multiple security disciplines. 
 **[Technology pillars](implement-overview.md)** | Technical and security implementers and partners. |  Define what types of assets must be secured, and where Zero Trust principles and security controls must be applied.<br/><br/>Connect security strategy to implementation by grouping related technologies, controls, and capabilities.<br/><br/>Business scenarios are likely to cross multiple technology pillars. For example, if our business outcome is to improve security posture across the enterprise, then we must improve posture across devices, data, infrastructure, networks, and more.
 
 ## Adoption guidance
@@ -73,7 +73,7 @@ Structured adoption guidance focuses on:
 
 ## What's next? 
 
-Review the options for [beginning your security adoption journey](security-adoption-journey.md).
+Review options for [beginning your security adoption journey](security-adoption-journey.md).
 
 
 

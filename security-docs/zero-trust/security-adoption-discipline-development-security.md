@@ -82,6 +82,9 @@ This approach enables development, security, and operations teams to:
 
 Security becomes part of how software is built and delivered, rather than a control applied after delivery.
 
+:::image type="content" source="./media/development-security-operations.png" alt-text="Graphic showing how development, security, and operations fit together" lightbox="./media/development-security-operations.png":::
+
+
 ## Secure innovation lifecycle
 
 Innovation typically progresses through two lifecycle stages:
@@ -97,6 +100,8 @@ After initial release, development becomes iterative as workloads evolve with:
 - Application requirements and maturity
 - Regulatory obligations
 - Threat conditions
+
+:::image type="content" source="./media/develop-security-agile.png" alt-text="Diagram showing how DevSecOps keeps the development cycle agile and continuously improving" lightbox="./media/develop-security-agile.png":::
 
 ## Integrated development
 
@@ -115,8 +120,6 @@ DevSecOps enables continuous integration of security throughout development and 
 In traditional waterfall design models, security validation typically occurs late in the lifecycle as part of final testing, after design and implementation are complete.
 
 This late-stage approach often results in vulnerabilities being discovered when they are more complex and costly to fix, driving rework, delays, and increased risk exposure compared to integrating security earlier in the lifecycle.
-
-:::image type="content" source="./media/waterfall-devops.png" alt-text="Security Throughout the Process" lightbox="./media/waterfall-devops.png":::
 
 As security is modernized, organizations should adopt a shift-left approach, integrating security earlier in development and operations processes.
 

@@ -4,8 +4,8 @@ description: Use the Microsoft security adoption model to modernize and secure d
 ms.date: 01/29/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand how I can use the Microsoft security adoption model to modernize and secure dev functions and processes across the business.

@@ -18,8 +18,8 @@ No two organizations are alike, and companies modernize security in different wa
 This article describes three common patterns for starting a Zero Trust security adoption journey. 
 
 - **Top down** - Start with a high-level strategy. Resolve the strategy into detailed plans, and deliver on those plans.
-- **Buildup** - Start with one or more top priority areas to focus on quick wins. Expand to more areas and build out an overall strategy.
-- **Scenario -driven** - Start with a specific business scenario and drive a coherent approach for that scenario across multiple disciplines.
+- **Build up** - Start with one or more top priority areas to focus on quick wins. Expand to more areas and build out an overall strategy.
+- **Scenario-driven** - Start with a specific business scenario and drive a coherent approach for that scenario across multiple disciplines.
 
 Use this guidance to choose a starting point, rather than a pattern. It's important that your starting point enables progress without disrupting critical business operations.
 
@@ -77,6 +77,6 @@ This pattern is suitable when there's executive support and funding for a partic
 
 What you do next depends on the model you're using.
 
-- **Top-down**: If you're approaching adoption top down, start by reading about our [structured security adoption path](security-adoption-model.md), and then take a look at the [prioritized business scenarios](security-adoption-business-scenarios-overview.md).
+- **Top-down**: If you're approaching adoption top down, start by reading about our [structured security adoption path](security-adoption-model.md), and then take a look at the [prioritized business scenarios](security-adoption-business-scenarios-overview.md)
 - **Build-up**: If you're looking for a quick win, [pick a business scenario](security-adoption-business-scenarios-overview.md), and then dig into the primary discipline.
 - **Scenario-driven**: To modernize around specific areas, [pick a business scenario](security-adoption-business-scenarios-overview.md), design the scenario across the required disciplines, and then start implementing it.

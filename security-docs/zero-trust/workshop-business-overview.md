@@ -15,9 +15,7 @@ This article summarizes our available Security Adoption Framework (SAF) workshop
 
 ## What are SAF workshops?
 
-Security adoption is complex and time-consuming. Our SAF workshops focus on the high-level security strategy and business alignment to help you navigate complexity, and to accelerate security modernization with technical expertise, security maturity models, reference plans, architectural deep dives, assessments, and more.
-
-Note that SAF workshops align with our [structured Zero Trust security adoption guidance](security-adoption-model.md).
+Security adoption is complex and time-consuming. Our SAF workshops focus on high-level security strategy and business alignment to help you navigate complexity, and to accelerate security modernization with technical expertise, security maturity models, reference plans, architectural deep dives, assessments, and more.
 
 
 > [!TIP]
@@ -25,9 +23,9 @@ Note that SAF workshops align with our [structured Zero Trust security adoption 
 
 ## What SAF workshops do we have?
 
-We offered all of our SAF as expert-led, and provide a subset of self-help resources for some of our popular workshops.
+We offer all of our SAF as expert-led, and provide a subset of self-help resources for some popular workshops.
 
-- **Expert-led**: Expert-led facilitated workshops focus on security architecture/strategy, and technology adoption and are available as [Microsoft Unified](https://www.microsoft.com/microsoft-unified) engagements. 
+- **Expert-led**: Expert facilitated workshops focus on security architecture, strategy, and technology adoption. They're available as [Microsoft Unified](https://www.microsoft.com/microsoft-unified) engagements. 
 - **Free**:  We publish free videos and downloadable files for some workshops. Use these self-service resources to accelerate your organization's security journey without a formal engagement.
 
 
@@ -36,10 +34,10 @@ We offered all of our SAF as expert-led, and provide a subset of self-help resou
 
 ## Expert-led workshops (Microsoft Unified)
 
-There are a two types of Security Adoption Framework workshops available through [Microsoft Unified](https://www.microsoft.com/microsoft-unified).
+There are a two types of SAF workshops available through [Microsoft Unified](https://www.microsoft.com/microsoft-unified).
 
-- **Security Architecture and Strategy** workshops that focus on how to achieve security discipline outcomes by using technical strategy, technical architecture, processes, and more. 
-- **Technology Adoption** workshops that accelerate realization of this strategy by using education, product architecture, onboarding assistance, plus assessment and optimization of existing implementations.
+- **Security Architecture and Strategy** workshops that focus on how to build security disciplines using technical strategy, architecture, and processes.
+- **Technology Adoption** workshops that accelerate realization of security strategy with education, product architecture, onboarding assistance, as well as assessment and optimization of existing security implementations.
 
 :::image type="content" source="./media/workshop-unified-engagement.png" alt-text="Diagram showing how the adoption workshop shows how to achieve outcomes." lightbox="./media/workshop-unified-engagement.png":::
 
@@ -53,22 +51,22 @@ Contact your Microsoft Customer Success Account Manager (CSAM) to learn more abo
 
 Architecture and strategy Workshop engagements range from a couple of hours to days. For example:
 
-- A Topic Summary engagement is a discussion workshop (less than four hours) focused on key learnings and best practices.
+- A Topic Summary engagement is a discussion workshop that takes less than four hours, and focuses on key learnings and best practices.
 - A full Security Architecture Design Session (Security ADS) is a two-day detailed workshop focusing on a Microsoft case study, maturity model discussion, and reference modernization plans.
 
-The workshop you need depends upon where you are in your security adoption journey.
+The best workshop for you depends upon where you are in your security adoption journey.
 
 **Journey stage** | **Workshop** | **Details** | **Adoption team**
 --- | --- | --- | ---
-**Get started** |**Security Overview and Planning** | Chat with an expert to help you choose the best way to get your organization started with security modernization. Duration: Four hours. | Relevant for all adoption disciplines.
-**Assess security** | **Enterprise Security Assessment** | Assess and identify potential weaknesses across your organization and get recommendations to rapidly improve security postrue. Duration: One day. | Relevant for all adoption disciplines.
-**Adopt Microsoft security products** | **Security Capability Adoption Planning** | Learn how you maximise value from current product licenses and agreements, including Microsoft 365 E5 and Microsoft Unified. Understand product capabilities and business problems they solve, Prioritze and plan. Duration: One to two days. | Relevant for all adoption disciplines.
-**Define a more mature security strategy** | **CISO Workshop** | Develop a more mature security strategy to address challenges with getting support from business and technology stakeholders, integrating security with the business, connecting siloed technical teams, finding good references for security strategy, metrics, roles, and governance. Duration: Four hours to one day. | Relevant for Strategy, Integration, and Governance discipline, and for Posture Management discipline.
-**Build end-to-end technical architectures** | **Microsoft Cybersecurity Reference Architectures (MCRA)** workshop. | Build more mature security architectures to manage common challenge with incomplete or network-centric architectures that aren't agile, create architectures to integrate siloed teams and technologies, plan and prioritize security modernization initiatives, and plan Microsoft security solution integration with existing technologies. Duration: Four hours. | Relevant for End-to-end security architecture discipline.
-**Improve access management** | **Security Adoption workshop - Access and Identities** | Address common access management challenges such as integrating disjointed identity and network access strategies, adopting Zero Trust and Security Service Edge (SSE) approaches to access management, focusing on privileged access to control attack escalation, shifting from flat, open networks to segmented context-aware access, and securing remote work. Duration: Four hours. | Relevant for Access and Identities discipline.
-**Improve infrastructure and DevOps security** | **Security Adoption workshop - Architecture design (infrastructure and development)** | Address security challenges that include siloed approaches to development and infrastructure security, DevOps Projects that aren't sufficiently secured, on-premises to cloud apps security control adaptation and inconsistency. Duration: Four hours. | Relevant for the Infrastructure and Development security discipline.
-**Improve data security and prepare for AI** | **Security Adoption workshop - architecture design (Data)** | Learn how to build a data strategy to address challenges such as securing data through the lifecyle (wherever it goes), supporting AI security with data classification and protection, and meeting evolving compliance and regulatory compliants. Duration: Four hours. | Relevant for the Data security discipline.
-**Establish and improve SecOps** | **Security Adoption workshop - architecture design (modern security operations)** | Learn how to build a SecOps strategy that can handle challenges such as the difficulty in SecOps detecting and keeping up with ever-shifting threats, noisy detections and high false positives, Analyst recruitment, atrrition and fatigue, custom tooling and integration, and manual repetative incident handling. Duration: Between four hours and two days. | Relevant for the SecOps discipline.
+**Get started**<br/>Four hours |**Security Overview and Planning** | Chat with an expert to help you choose the best way to get your organization started with security modernization. | Relevant for all adoption disciplines.
+**Assess security**<br/>One day | **Enterprise Security Assessment** | Assess and identify potential weaknesses across your organization and get recommendations to rapidly improve security posture. | Relevant for all adoption disciplines.
+**Adopt Microsoft security**<br/>One to two days | **Security Capability Adoption Planning** | Learn how you maximise value from current product licenses and agreements, including Microsoft 365 E5 and Microsoft Unified. Understand product capabilities and business problems they solve, Prioritize and plan. | Relevant for all adoption disciplines.
+**Mature security strategy**<br/> Four hours to a one day | **CISO Workshop** | Develop a more mature security strategy to address challenges with getting support from business and technology stakeholders, integrating security with the business, connecting siloed technical teams, finding good references for security strategy, metrics, roles, and governance. | Relevant for Strategy, Integration, and Governance discipline, and for Posture Management discipline.
+**Build end-to-end technical architectures**<br/>Four hours | **Microsoft Cybersecurity Reference Architectures (MCRA)** workshop. | Build more mature security architectures to manage common challenge with incomplete or network-centric architectures that aren't agile, create architectures to integrate siloed teams and technologies, plan and prioritize security modernization initiatives, and plan Microsoft security solution integration with existing technologies.  | Relevant for End-to-end security architecture discipline.
+**Improve access management**<br/>Four hours | **Security Adoption workshop - Access and Identities** | Address common access management challenges such as integrating disjointed identity and network access strategies, adopting Zero Trust and Security Service Edge (SSE) approaches to access management, focusing on privileged access to control attack escalation, shifting from flat, open networks to segmented context-aware access, and securing remote work.  | Relevant for Access and Identities discipline.
+**Improve infrastructure and DevOps security**<br/>Four hours | **Security Adoption workshop - Architecture design (infrastructure and development)** | Address security challenges that include siloed approaches to development and infrastructure security, DevOps Projects that aren't sufficiently secured, on-premises to cloud apps security control adaptation and inconsistency.  | Relevant for the Infrastructure and Development security discipline.
+**Improve data security and prepare for AI**<br/>Four hours | **Security Adoption workshop - architecture design (Data)** | Learn how to build a data strategy to address challenges such as securing data through the lifecyle (wherever it goes), supporting AI security with data classification and protection, and meeting evolving compliance and regulatory compliants.  | Relevant for the Data security discipline.
+**Establish and improve SecOps**<br/> Four hours to two days | **Security Adoption workshop - architecture design (modern security operations)** | Learn how to build a SecOps strategy that can handle challenges such as the difficulty in SecOps detecting and keeping up with ever-shifting threats, noisy detections and high false positives, Analyst recruitment, atrrition and fatigue, custom tooling and integration, and manual repetative incident handling. . | Relevant for the SecOps discipline.
 
 ### Technology adoption workshops
 

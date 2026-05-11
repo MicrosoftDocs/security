@@ -69,17 +69,20 @@ This diagram is the result of the NIST SP 1800-35 collaboration and can be downl
 
 ## CISA Zero Trust Maturity Model
 
-The [Cybersecurity and Infrastructure Security Agency (CISA) Zero Trust Maturity Model](https://www.cisa.gov/zero-trust-maturity-model) is organized around adoption and assessment. It provides a roadmap rather than a reference architecture. It helps organizations to organize and assess current posture, prioritize improvements and track progress. 
+The [Cybersecurity and Infrastructure Security Agency (CISA) Zero Trust Maturity Model](https://www.cisa.gov/zero-trust-maturity-model)  is organized around adoption and assessment rather than architectural design. It provides a roadmap rather than a reference architecture, helping organizations assess their current maturity and posture, prioritize improvements, and track progress over time.
 
 ### CISA features
 
-- The model uses domain-style pillars that include Identity, Devices, Networks/Environment, Apps/Workloads, and Data.
-- It looks at three cross-cutting capabilities - Visibility and Analytics, Automation and Orchestration, Governance.
-- It captures four possible maturity states: Traditional, Initial, Advanced, and Optimal. 
+Unlike NIST, CISA does not define a reference architecture and instead evaluates capabilities independently of specific design patterns.
+
+- The model uses pillar-based domains, including Identity, Devices, Networks/Environment, Applications/Workloads, and Data. 
+- It also defines three cross-cutting capabilities - Visibility and Analytics, Automation and Orchestration, and Governance.
+- And it captures four maturity stages: Traditional, Initial, Advanced, and Optimal.
+- Governance is also not treated as a standalone pillar, but as a cross-cutting capability that ensures business alignment, clear ownership, and measurable outcomes across all domains.
 
 ### Implementation
 
-The model maps to our recommended adoption model.
+The model aligns with and informs the Microsoft security adoption model, while Microsoft further extends it by introducing disciplines such as Architecture to bridge conceptual frameworks like NIST SP 800‑207 with practical implementation.
 
 **CISA** | **Adoption discipline** | **Alignment**
 --- | --- | --
@@ -101,6 +104,10 @@ For information, see [Implementing the CISA Zero Trust Maturity Model with Micro
 
 The Open Group [Zero Trust Reference Model](https://www.opengroup.org/forum/security/Zerotrust) approaches Zero Trust from an enterprise capability and integration perspective. Rather than defining specific implementation steps, it describes the capabilities and governance structures that organizations need to define, integrate, and operate Zero Trust at scale. 
 
+### Open Group features
+
+Features include:
+
 - **Capabilities + Architecture Building Blocks (ABBs)** define security capabilities that drive durable security outcomes and the people, process, and technology to enable them.
 - **Collaboration and Integration Models** show how to integrate security with strategy, risk management, operations, and other aspects of the organization.
 
@@ -117,6 +124,9 @@ This diagram shows these capabilities:
 This diagram shows how these capabilities align to the functions of the NIST Cybersecurity Framework (NIST CSF):
  
 :::image type="content" source="./media/adoption-zero-trust-open-capabilities.png" alt-text="Diagram that shows The Open Group Security Capabilities mapped to the NIST Cybersecurity Framework functions." lightbox="./media/adoption-zero-trust-open-capabilities.png":::
+
+
+### Implementation
 
 The model maps to our recommended adoption model.
 

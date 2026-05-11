@@ -15,7 +15,9 @@ ms.reviewer: mas
 ---
 # CISO workshop videos
 
-The CISO Workshop helps organizations modernize their security programs using Zero Trust strategy and real‑world lessons learned. It is designed to support security and technology leaders as they align security strategy with evolving business priorities, technology platforms, and the threat landscape.
+The [CISO Workshop](workshop-business-ciso.md) is one of our Security Adoption Framework (SAF) workshops that are designed to help organizations modernize their security programs using Zero Trust strategy, security best practices, and real‑world lessons learned. 
+
+The CISO Workshop is designed to support security and technology leaders as they align security strategy with evolving business priorities, technology platforms, and the threat landscape.
 
 We recommend participating in an expert-led workshop to:
 
@@ -25,6 +27,9 @@ We recommend participating in an expert-led workshop to:
 If you have [Microsoft Unified](https://www.microsoft.com/unifiedsupport/overview), contact your Customer Success Account Manager (CSAM) to request an expert-led workshop delivery.
 
 If you're unable to organize an expert-led workshop, the workshop is available as a series of publically-available prerecorded videos. summarized in this article. A [pdf slide presentation of accompanying materials](https://arch-center.azureedge.net/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) is also available for download/review.
+
+> [!TIP]
+> Our SAF workshops align with our structured security adoption model. Learn more about our [Zero Trust security adoption guidance](security-adoption-model.md).
 
 
 ## Introduction and overview
@@ -141,6 +146,6 @@ Wrap-up of the workshop with key quick wins and next steps.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=407fd10c-ef1d-4a4b-829d-2ecec1457952]
 
-## What next?
+## What's next?
 
 There are a number of approaches to get started with security adoption. [Review the options](security-adoption-journey.md).

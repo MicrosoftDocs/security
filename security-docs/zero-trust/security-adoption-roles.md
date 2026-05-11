@@ -18,7 +18,7 @@ This article describes the key organizational roles involved in Zero Trust adopt
 
 ## Why roles matter in adoption
 
-Zero Trust shifts security from a perimeter-based model to one that continuously verifies users, devices, applications, and data. This shift affects business processes, user experience, IT operations, and risk management.
+Zero Trust shifts security from a perimeter-based model to one that continuously verifies users, devices, applications, data, and more. This shift affects business processes, user experiences, IT operations, and risk management.
 
 Without clear roles and responsibilities:
 
@@ -38,7 +38,7 @@ Security is fundamentally a human discipline that manages risk from human threat
 - For effective security risk management, every person must understand security in the context of their role, and actively support security objectives.
 - Since anyone in the organization can create or amplify security risk, everyone must apply security principles in their daily actions and decisions.
 
-This diagram from the standard illustrates how to delegate security accountability and responsibility throughout an organization:
+This diagram illustrates how to delegate security accountability and responsibility across an organization:
 
 :::image type="content" source="./media/adoption-role-delegation.png" alt-text="Illustration of how to delegate security accountability and responsibility through an organization" lightbox="./media/adoption-role-delegation.png":::
 
@@ -49,7 +49,7 @@ Managing security risk effectively requires accountability and collaboration:
 - Collaboration between accountable and responsible parties is critical.
 - Making good security decisions requires a healthy and relationship where accountable decision-makers and security experts can safely share ideas and challenge assumptions.
 
-Following these tenets, security risk should be managed in a similar way to financial and legal risk. Each role has policies and education/training that guide their daily decisions, rather than assigning responsibility and even blame to security teams only.
+With these tenets in mind, security risk should be managed in a similar way to financial and legal risk. Each role has policies and education/training that guide their daily decisions, rather than assigning responsibility and even blame to security teams only.
 
 :::image type="content" source="./media/adoption-role-collaboration.png" alt-text="Illustration of how accountable and responsible parties should collaborate" lightbox="./media/adoption-role-collaboration.png":::
 
@@ -57,20 +57,22 @@ Following these tenets, security risk should be managed in a similar way to fina
 
 When roles are clearly defined, aligned, and connected:
 
-- Leadership sets priorities and accountability
-- Business and risk functions align security to outcomes
-- Architecture and technical leadership design scalable solutions
-- Engineering and operations implement and sustain controls
-- Security operations validate effectiveness
-- Everyone participates in protecting the organization
+- Leadership sets priorities and accountability.
+- Business and risk functions align security to outcomes.
+- Architecture and technical leadership design scalable solutions.
+- Engineering and operations implement and sustain controls.
+- Security operations validate effectiveness.
+- Everyone participates in protecting the organization.
 
 Clear ownership and shared responsibility turn Zero Trust from an aspiration into a durable, measurable security strategy.
 
 ## Roles and terminology
 
-Role terminology and definitions are based on the [Open Group Security Roles and Glossary Standard](https://publications.opengroup.org/s252). This diagram illustrates the list of roles.
+Role terminology and definitions are based on the [Open Group Security Roles and Glossary Standard](https://publications.opengroup.org/s252). This graphic illustrates the list of roles.
 
 :::image type="content" source="./media/adoption-role-list.png" alt-text="Illustration of security roles in the Microsoft Security Adoption Framework" lightbox="./media/adoption-role-list.png":::
+
+## Role responsibilities
 
 ### Organizational leadership and governance
 
@@ -79,11 +81,11 @@ Executive leadership establishes Zero Trust as an organizational priority and cr
 
 **Responsibilities include**:
 
-- Sponsoring Zero Trust as a business and risk-management strategy
-- Aligning security objectives with business goals, regulatory obligations, and risk tolerance
-- Providing sustained funding, staffing, and organizational support
-- Establishing governance models and accountability structures
-- Holding leaders responsible for measurable security outcomes
+- Sponsoring Zero Trust as a business and risk-management strategy.
+- Aligning security objectives with business goals, regulatory obligations, and risk tolerance.
+- Providing sustained funding, staffing, and organizational support.
+- Establishing governance models and accountability structures.
+- Holding leaders responsible for measurable security outcomes.
 
 When leadership treats Zero Trust as a business enabler rather than a technical project, adoption gains momentum and durability.
 
@@ -94,39 +96,41 @@ Business leaders and operational managers ensure that Zero Trust supports produc
 
 **Responsibilities include**:
 
-- Integrating Zero Trust requirements into business processes and workflows
-- Balancing security controls with user experience and operational efficiency
-- Identifying critical business assets, processes, and data to prioritize protection
-- Supporting change adoption across teams and functions
-Measuring business impact of security decisions
+- Integrating Zero Trust requirements into business processes and workflows.
+- Balancing security controls with user experience and operational efficiency.
+- Identifying critical business assets, processes, and data to prioritize protection.
+- Supporting change adoption across teams and functions.
+Measuring business impact of security decisions.
 
 Zero Trust succeeds when security enables business operations instead of being perceived as an obstacle.
 
 ### Security-adjacent leadership (CSO, CRO, CPO, compliance, audit)
 
-**Purpose**: Align security strategy with enterprise risk, compliance, and protection objectives. These roles connect Zero Trust to broader enterprise risk management and assurance functions.
+**Purpose**: Security-adjacent leadership roles such as Chief of Staff, Chief Product Officer, Chief Compliance/Audit officer etc must align security strategy with enterprise risk, compliance, and protection objectives. 
+
+These roles connect Zero Trust to broader enterprise risk management and assurance functions.
 
 **Responsibilities include**:
 
-- Translating Zero Trust principles into risk, compliance, and privacy requirements
-- Ensuring alignment with regulatory, legal, and industry obligations
-- Validating controls through audit, assessment, and assurance activities
-- Advising leadership on risk tradeoffs and residual risk
-- Coordinating across security, compliance, and governance domains
+- Translating Zero Trust principles into risk, compliance, and privacy requirements.
+- Ensuring alignment with regulatory, legal, and industry obligations.
+- Validating controls through audit, assessment, and assurance activities.
+- Advising leadership on risk tradeoffs and residual risk.
+- Coordinating across security, compliance, and governance domains.
 
 Their involvement ensures Zero Trust is defensible, auditable, and aligned with organizational obligations.
 
-### Other cross-functional disciplines (legal, finance, communications, PR)
+### Other cross-functional disciplines 
 
-**Purpose**: Enable Zero Trust adoption across non-technical dimensions.
+**Purpose**: Cross-functional disciplines such as legal, finance, PR, and communications must enable Zero Trust adoption across non-technical dimensions.
 Zero Trust impacts contracts, budgets, communications, and external trust.
 
 **Responsibilities include**:
 
-- Legal: supporting data protection, contracts, and regulatory interpretation
-- Finance: funding models, cost governance, and investment prioritization
-- Communications and PR: internal and external messaging during incidents or changes
-- HR and people teams: policy enforcement, training alignment, and workforce engagement
+- Legal: supporting data protection, contracts, and regulatory interpretation.
+- Finance: funding models, cost governance, and investment prioritization.
+- Communications and PR: internal and external messaging during incidents or changes.
+- HR and people teams: policy enforcement, training alignment, and workforce engagement.
 
 These roles help ensure Zero Trust adoption is sustainable, compliant, and well-communicated.
 
@@ -137,11 +141,11 @@ Technical leaders bridge business intent and engineering execution.
 
 **Responsibilities include**:
 
-- Defining technical priorities aligned to Zero Trust outcomes
-- Coordinating across platforms, domains, and engineering teams
-- Making tradeoff decisions between security, performance, and usability
-- Ensuring consistency across identity, endpoint, application, data, and infrastructure domains
-- Supporting modernization of legacy systems
+- Defining technical priorities aligned to Zero Trust outcomes.
+- Coordinating across platforms, domains, and engineering teams.
+- Making tradeoff decisions between security, performance, and usability.
+- Ensuring consistency across identity, endpoint, application, data, and infrastructure domains.
+- Supporting modernization of legacy systems.
 
 Strong technical leadership prevents siloed implementations and fragmented security posture.
 
@@ -152,11 +156,11 @@ Security and enterprise architects ensure Zero Trust principles are applied cons
 
 **Responsibilities include**:
 
-- Defining target-state Zero Trust architectures
-- Mapping Zero Trust concepts to platforms, services, and workloads
-- Identifying architectural gaps, dependencies, and integration points
-- Providing design guidance and reference patterns
-- Ensuring solutions scale with business and technology change
+- Defining target-state Zero Trust architectures.
+- Mapping Zero Trust concepts to platforms, services, and workloads.
+- Identifying architectural gaps, dependencies, and integration points.
+- Providing design guidance and reference patterns.
+- Ensuring solutions scale with business and technology change.
 
 Architecture turns principles into systems that can evolve over time.
 
@@ -167,26 +171,26 @@ Development teams play a critical role in enforcing Zero Trust at the applicatio
 
 **Responsibilities include**:
 
-- Designing applications that verify explicitly and enforce least privilege
-- Integrating identity, access control, and data protection into applications
-- Supporting secure APIs, service-to-service access, and workload identities
-- Partnering with security teams to reduce risk without harming velocity
-- Addressing security early in the development lifecycle
+- Designing applications that verify explicitly and enforce least privilege.
+- Integrating identity, access control, and data protection into applications.
+- Supporting secure APIs, service-to-service access, and workload identities.
+- Partnering with security teams to reduce risk without harming velocity.
+- Addressing security early in the development lifecycle.
 
 Zero Trust is strongest when applications assume no implicit trust.
 
-### Security strategy roles and responsibilities (insider risk, security education, compliance management)
+### Security strategy roles and responsibilities 
 
-**Purpose**: Shape long-term security behavior and maturity.
+**Purpose**: Security strategy roles such as security education, insider risk, and compliance management help shape long-term security behavior and maturity.
 These roles focus on people, policy, and sustained security effectiveness.
 
 **Responsibilities include**:
 
-- Defining security strategy, standards, and roadmaps
-- Managing insider risk and user-related threats
-- Driving security awareness, education, and culture
-- Overseeing security compliance and policy enforcement
-- Measuring maturity and progress against Zero Trust objectives
+- Defining security strategy, standards, and roadmaps.
+- Managing insider risk and user-related threats.
+- Driving security awareness, education, and culture.
+- Overseeing security compliance and policy enforcement.
+- Measuring maturity and progress against Zero Trust objectives.
 
 They ensure Zero Trust becomes embedded in how the organization operates, not just how it deploys technology.
 
@@ -197,11 +201,11 @@ Engineering and operations teams turn designs into functioning systems.
 
 **Responsibilities include**:
 
-- Deploying security controls across identity, devices, applications, data, and infrastructure
-- Integrating security into operational workflows and platforms
-- Managing change, testing, and roll out to minimize disruption
-- Maintaining system reliability, availability, and performance
-- Continuously improving controls based on feedback and telemetry
+- Deploying security controls across identity, devices, applications, data, and infrastructure.
+- Integrating security into operational workflows and platforms.
+- Managing change, testing, and roll out to minimize disruption.
+- Maintaining system reliability, availability, and performance.
+- Continuously improving controls based on feedback and telemetry.
 
 These teams make Zero Trust real and reliable.
 
@@ -212,11 +216,11 @@ Security operations teams close the loop between design and reality.
 
 **Responsibilities include**:
 
-- Monitoring telemetry and signals across users, devices, and workloads
-- Detecting threats, policy violations, and anomalous behavior
-- Responding to incidents and coordinating containment and recovery
-- Feeding operational insights back into policies, architecture, and automation
-- Measuring effectiveness through detection, response, and impact metrics
+- Monitoring telemetry and signals across users, devices, and workloads.
+- Detecting threats, policy violations, and anomalous behavior.
+- Responding to incidents and coordinating containment and recovery.
+- Feeding operational insights back into policies, architecture, and automation.
+- Measuring effectiveness through detection, response, and impact metrics.
 
 Zero Trust assumptions are tested and refined through daily operations.
 

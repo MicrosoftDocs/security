@@ -1,11 +1,11 @@
 ---
 title: Minimize business damage from security incidents
 description: Use the Microsoft security adoption model to minimize impact from security threats based on Zero Trust principles and security best practices.
-ms.date: 01/29/2026
+ms.date: 05/1/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand I can use the Microsoft security adoption model to minimize impact and damage from security incidents.
@@ -24,9 +24,9 @@ As a business leader, you know attacks are inevitable. What matters is how quick
 
 Security success is attacker failure, but you can't guarantee that you stop every attack. Because you inevitably experience damage from successful cybersecurity attacks, it's critical to focus on building resilience by ensuring that you can:
 
-- **Prevent** as many attacks as possible
-- **Respond** effectively when they happen to limit damage, and rapidly recover business assets and services
-- **Learn** to apply lessons learned and continuously increase resilience
+- **Prevent** as many attacks as possible.
+- **Respond** effectively when they happen to limit damage, and rapidly recover business assets and services.
+- **Learn** to apply lessons learned and continuously increase resilience.
 
 :::image type="content" source="./media/security-adoption-minimize-damage-success.png" alt-text="Diagram showing security success equals attacker failure through a continuous cycle of prevent attacks, respond and recover when attacks succeed, and learn to improve resilience." lightbox="./media/security-adoption-minimize-damage-success.png":::
 
@@ -34,7 +34,7 @@ Security success is attacker failure, but you can't guarantee that you stop ever
 
 ## Business value 
 
-The value of investing into minimizing business damage benefits the entire organization, but differs by role.
+The value of investing in minimizing business damage benefits the entire organization, but differs by role.
 
 
 | **Roles** | **Value** |
@@ -73,7 +73,9 @@ Security disciplines represent the structured areas of accountability required t
 **Discipline** | **Action**
 --- | ---
 [**SecOps**](security-adoption-discipline-security-operations.md)  | Establish a continuous learning approach to improve SecOps response and share threat intelligence insights on top attack techniques and threat actors. This approach enables improvements to focus on the highest business impact attacks, the most frequently seen attacks, and others that disproportionately affect SecOps, security, and technology staff.
-[**Security posture management**](security-adoption-discipline-posture.md) | Establish a continuous learning approach to improve SecOps response and share threat intelligence insights on top attack techniques and threat actors. This approach enables improvements to focus on the highest business impact attacks, the most frequently seen attacks, and others that disproportionately affect SecOps, security, and technology staff.
+[**Security posture management**](security-adoption-discipline-posture.md) | Establish a continuous learning approach to integrate threat intelligence insights from SecOps and business context to monitor and help technology teams mitigate high vulnerabilities with high business impact that disproportionately impact business risk.
+
+
 
 ## Required technology pillars
 

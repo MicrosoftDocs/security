@@ -13,7 +13,9 @@ ms.topic: conceptual
 
 # Establish an Access and Identities discipline
 
-[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. In the security adoption model, disciplines provide the bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation, ensuring that security investments translate into real, measurable outcomes.
+This article helps security and technology teams establish and modernize a Security Architecture discipline that provides a clear, end‑to‑end technical vision for security across the organization.
+
+[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
 
 This article helps security and technology teams establish and modernize an Access and Identities discipline that protects access to business assets, enables productivity, and reduces organizational risk.
 
@@ -177,3 +179,6 @@ Microsoft Unified offers cybersecurity reference architectures, Zero Trust guida
 
 :::image type="content" source="./media/security-adoption-discipline-access-workshop.png" alt-text="Diagram of Microsoft Unified workshops for Access and Identity technology adoption, showing key phases and activities." lightbox="./media/security-adoption-discipline-access-workshop.png":::
 
+## What's next?
+
+Make sure you've [reviewed the other security disciplines](security-adoption-discipline-overview.md).

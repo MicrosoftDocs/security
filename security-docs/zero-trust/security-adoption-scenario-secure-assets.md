@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 # Identify and protect critical assets
 
-This business scenario is part of our structured adoption model that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
+This business scenario is part of our [structured adoption model](security-adoption-model.md)  that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
 
 Use this guidance to achieve the following business outcome: **Identifying and protecting critical business assets**.
 
@@ -27,7 +27,7 @@ This diagram illustrates how these business critical assets must be secured at a
 
 :::image type="content" source="./media/security-adoption-protect-critical.png" alt-text="Diagram illustrating two categories of business critical assets: high-value assets with intrinsic business value, and privileged access accounts and systems that control those assets." lightbox="./media/security-adoption-protect-critical.png":::
 
-Not all systems and data carry equal business impact. Business‑critical assets fall into two categories. 
+Not all systems and data carry equal business impact. Business‑critical assets fall into two categories:
 
 - **High value assets** - High‑value assets are systems and data whose compromise could cause severe financial or operational damage, up to and including bankruptcy or insolvency, and are . These assets are often targeted for theft, extortion, or destruction.
 - **Privileged access** -  Privileged access represents concentrated risk—identities, accounts, and tools that control high‑value assets. Compromise of privileged access (via IT admin accounts, workstations, and other systems) enables widespread impact and must be protected at the same level or above the level of high‑value assets.

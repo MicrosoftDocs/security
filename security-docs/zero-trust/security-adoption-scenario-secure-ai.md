@@ -13,9 +13,9 @@ ms.topic: conceptual
 
 # Adopt and secure AI and data 
 
-This business scenario is part of our structured adoption model that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
+This business scenario is part of our [structured adoption model](security-adoption-model.md) that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
 
-Use this guidance to achieve the following business outcome: **Rapidly and securely adopt AI technology**.
+Use this guidance to achieve the following business outcome: **Rapidly and securely adopt AI technology**. 
 
 As a business leader, you're under pressure to adopt AI quickly for competitive advantage, while protecting your organization from new and evolving risks. This article helps you and your security teams enable AI adoption without compromising security, data protection, or business resilience.
 
@@ -27,7 +27,7 @@ As a business leader, you're under pressure to adopt AI quickly for competitive 
 
 ## Why AI adoption requires a new approach
 
-Generative AI technologies and AI agents are powerful business enablers, but they also introduce new classes of risk. These risks include (but aren't limited to):
+Generative AI technologies and AI agents are powerful business enablers, but they also introduce new classes of risk. These include (but aren't limited to):
 
 - Acceleration and amplification of existing cybersecurity risk using AI.
 - Unintended data exposure causing loss of intellectual property (IP) and competitive advantage.

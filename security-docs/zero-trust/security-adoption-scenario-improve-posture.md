@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 # Strengthen security posture and compliance
 
-This business scenario is part of our structured adoption model that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
+This business scenario is part of our [structured adoption model](security-adoption-model.md) that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
 
 Use this guidance to achieve the following business outcome: **Continuously improving security posture and compliance**.
 

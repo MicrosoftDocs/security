@@ -14,17 +14,19 @@ ms.topic: conceptual
 
 # Engage business leaders on security
 
-[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. In the security adoption model, disciplines provide the bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation, ensuring that security investments translate into real, measurable risk reduction.
+This article describes key executive communication techniques for engaging business leaders as you establish and execute on a Security Strategy, Integration, and Governance discipline.  
+
+[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
 
 The Security Strategy, Integration, and Governance discipline establishes:
 
 - **A cross‑organizational strategy** for security outcomes and priorities
 - **An integration model** that embeds security into business and technology operations
-0 **A governance model** that sustains and continuously improves the security program
+- **A governance model** that sustains and continuously improves the security program
 
 As part of establishing this discipline, security leaders must be able to engage business stakeholders effectively. This article provides guidance and actionable insights to help security leaders communicate with business leaders, align priorities, and drive sustained security transformation.
 
-This video from the [Chief Information Security Officer (CISO) Workshop](workshop-business-ciso-video.md##engaging-business-leaders-on-security illustrates the use of communication techniques in action:
+This video from the [CISO Workshop](workshop-business-ciso-video.md##engaging-business-leaders-on-security) illustrates the use of communication techniques in action:
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=2e4ab785-460f-4a81-83e7-efabfa6ccd04]
 
@@ -36,21 +38,24 @@ Effective security transformation depends on strong alignment between business o
 
 Engaging business leaders on security enables organizations to:
 
-- Align security strategy with business objectives and risk tolerance
-- Build shared understanding of security risks and outcomes
-- Address communication gaps between security and business teams
-- Secure executive sponsorship and sustained leadership support
-Drive coordinated, organization‑wide security change
+- Align security strategy with business objectives and risk tolerance.
+- Build shared understanding of security risks and outcomes.
+- Address communication gaps between security and business teams.
+- Secure executive sponsorship and sustained leadership support.
+- Drive coordinated, organization‑wide security change.
 
-Without this alignment, security initiatives often stall, compete with business priorities, or focus on technical controls that fail to reduce meaningful business risk.
+Without this alignment, security initiatives often stall, compete with business priorities, or focus on technical controls that fail to reduce business risk at any meaningful level.
 
 
 ## Recognize the changing security context
 
-Security leaders must recognize that the business context of technology and security is changing rapidly, shaping risk and prioritization.
+Security leaders must:
+
+- Recognize that the business context of technology and security is changing rapidly, shaping risk and prioritization.
+- Help business leadership understand the security implications of these changes and help their business colleagues navigate these challenges.  
 
 
-Digital transformation, and AI, has fundamentally changed how organizations operate. These shifts introduce continuous change in business models, processes, and assets. As a result:
+Digital transformation and AI has fundamentally changed how organizations operate. These shifts introduce continuous change in business models, processes, and assets. As a result:
 
 - The assets that security teams must protection are constantly evolving.
 - Traditional perimeter‑based or compliance‑driven security models no longer meet requirements for cloud adoption, agility, user experience, and AI usage.
@@ -68,15 +73,15 @@ Business leaders and boards should understand the following core tenets.
 
 **Tenet** | **Details**
 --- | ---
-**Security is everyone's responsibility** | Security risk is created by everyday actions across the business.<br/><br/> **Individuals** introduce risk through behaviors such as clicking malicious links, mishandling  sensitive data, or sharing credentials.<br/>**Business leaders** can unintentionally amplify risk through decisions, such as approving releases without security review or constraining budgets required for basic system maintenance.
-**Most security work isn't done by the security team** | Technology, engineering, and operations teams implement most security controls in practice.<br/>The security team acts like a bodyguard—helping others protect themselves, anticipating risks others may not see, and focusing on high‑impact threats. Security cannot protect what it does not understand, making integration with business and technology operations essential.
-**Security is a continuous journey** |  Perfect security is not achievable. Organizations are complex systems with accumulated technical debt built before today’s threat landscape.<br/><br/>  Threat actors are persistent, well‑funded, and highly motivated. True resilience requires sustained investment in system quality, modernization, and maintenance.
+**Security is everyone's responsibility** | Security risk is created by everyday actions across the business.<br/><br/> **Individuals** introduce risk through behaviors such as clicking malicious links, mishandling  sensitive data, or sharing credentials.<br/>**Business leaders** can unintentionally amplify risk through decisions, such as approving releases without security review or constraining budgets required for basic system maintenance.<br/>**Board members and senior leaders** often have a formal fiduciary duty to management organizational risk, including material damage from security incidents.
+**Most security work isn't done by the security team** | Technology, engineering, and operations teams implement most security controls in practice.<br/><br/>The security team acts as a bodyguard, helping others protect themselves, anticipating risks others may not see, and focusing on high‑impact threats.<br/><br/>In addition, security teams can't protect what they don't understand, making integration with business and technology operations essential.
+**Security is a continuous journey** |  Perfect security isn't achievable. Organizations are complex systems that have accumulated technical debt over years that now represents security risk.<br/><br/>  Threat actors are persistent, well‑funded, and highly motivated. True resilience requires sustained investment in system quality, modernization, and maintenance.
 
 Establishing strong feedback loops between security, business, and technology teams helps leaders prioritize security investments based on real threat activity and real business impact.
 
 ## Get the right level of business support
 
-Security transformation requires visible and sustained leadership support. Effective security depends on shared accountability across executives, business units, and technology teams—not on the security organization alone.
+Security transformation requires visible and sustained leadership support. Effective security depends on shared accountability across executives, business units, and technology teams. Security can't be effective if only the security organization is accountable. 
 
 A Zero Trust–based approach protects business assets wherever they are and wherever they go. This requires leadership commitment to:
 
@@ -88,11 +93,6 @@ A Zero Trust–based approach protects business assets wherever they are and whe
 
 Security leaders must communicate clearly, simply, and in language their audience understands. Cybersecurity concepts are unfamiliar to many business leaders, and learning accelerates when new ideas connect to existing knowledge.
 
-Effective communication practices include:
-
-Keep it simple: Distill complexity without denying it exists
-Use relatable analogies: Draw from everyday life, past roles, or industry experience
-Personalize where appropriate: Relate concepts to interests, experiences, or goals
 
 Here are some tips for communicating security to business leaders:
 
@@ -122,7 +122,7 @@ Clear, practical scenarios help bridge the gap between business priorities and s
 
 By grounding conversations in real outcomes, such as protecting revenue‑generating systems, sustaining operations, or safeguarding sensitive data, leaders can make informed decisions that support both business success and security resilience.
 
-## What next?
+## What's next?
 
 We recommend taking the CISO workshop. 
 

@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 # Enable secure remote work
 
-This business scenario is part of our structured adoption model that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
+This business scenario is part of our [structured adoption model](security-adoption-model.md) that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
 
 Use this guidance to achieve the following business outcome: **Enabling people to do their job securely from anywhere**.
 
@@ -51,18 +51,18 @@ Security disciplines represent the structured areas of accountability required t
 
 **Discipline** | **Action**
 --- | ---
-**[Strategy, integration, and governance](security-adoption-discipline-strategy.md)** | Define clear business and security objectives for secure remote work, aligned with organizational priorities and risk tolerance.<br/><br/>Ensure cross-functional alignment across IT, security, HR, and business units.<br/><br/>Jointly define measurable goals, success criteria, and cross-team processes to guide implementation and maturity.<br/><br/>Establish governance structures to oversee policy enforcement, compliance, and decision-making throughout the remote work lifecycle.
-**[End-to-end security architecture](security-adoption-discipline-architecture.md)** | Ensure the organization has an end-to-end architecture that enables and secures remote work (access and identities).<br/><br/>Ensure response and recovery capabilities are updated (Security Operations).<br/><br/>Ensure data is appropriately protected (Data Security), and more.<br/><br/>Ensure all components are interoperable, scalable, and adaptable to evolving threats and business needs.
+**[Strategy, Integration, and Governance](security-adoption-discipline-strategy.md)** | Define clear business and security objectives for secure remote work, aligned with organizational priorities and risk tolerance.<br/><br/>Ensure cross-functional alignment across IT, security, HR, and business units.<br/><br/>Jointly define measurable goals, success criteria, and cross-team processes to guide implementation and maturity.<br/><br/>Establish governance structures to oversee policy enforcement, compliance, and decision-making throughout the remote work lifecycle.
+**[Security Architecture](security-adoption-discipline-architecture.md)** | Ensure the organization has an end-to-end architecture that enables and secures remote work (access and identities).<br/><br/>Ensure response and recovery capabilities are updated (Security Operations).<br/><br/>Ensure data is appropriately protected (Data Security), and more.<br/><br/>Ensure all components are interoperable, scalable, and adaptable to evolving threats and business needs.
 
 ### Technical strategy disciplines
 
 **Discipline** | **Action**
 --- | ---
-**[Access and identities](security-adoption-discipline-identity-access.md)| Implement strong authentication (MFA), centralized identity management, and Conditional Access policies to verify users and devices before granting access.<br/><br/> Ensure least privilege and just-in-time access for sensitive roles.<br/><br/>Secure access to applications through modern authentication, session controls, and runtime protections. <br/><br/>Ensure apps are onboarded to identity platforms and monitored for anomalous behavior.
-[**Data security**](security-adoption-discipline-data.md) | Classify and protect sensitive data using encryption, labeling, and data loss prevention.<br/><br/>Ensure data remains secure across devices, locations, and applications, with persistent access controls.
-[**Infrastructure security**](security-adoption-discipline-infrastructure.md) | Secure cloud and on-premises infrastructure with segmentation, encryption, and continuous monitoring.<br/><br/>Apply Zero Trust controls to all network paths and administrative interfaces.
-[**Development security**](security-adoption-discipline-development.md)| Ensure that development standards require the use of modern authentication protocols to remove the need for retrofitting security onto older protocols and mechanisms.
-[**OT and IoT security**](security-adoption-discipline-iot.md) | Carefully consider business needs for remotely accessing these systems versus potential security risk of current remote access solutions and potential improvements to them.
+**[Access and Identities](security-adoption-discipline-identity-access.md)**| Implement strong authentication (MFA), centralized identity management, and Conditional Access policies to verify users and devices before granting access.<br/><br/> Ensure least privilege and just-in-time access for sensitive roles.<br/><br/>Secure access to applications through modern authentication, session controls, and runtime protections. <br/><br/>Ensure apps are onboarded to identity platforms and monitored for anomalous behavior.
+**[Data Security](security-adoption-discipline-data.md)** | Classify and protect sensitive data using encryption, labeling, and data loss prevention.<br/><br/>Ensure data remains secure across devices, locations, and applications, with persistent access controls.
+**[Infrastructure security](security-adoption-discipline-infrastructure.md)** | Secure cloud and on-premises infrastructure with segmentation, encryption, and continuous monitoring.<br/><br/>Apply Zero Trust controls to all network paths and administrative interfaces.
+**[Development security](security-adoption-discipline-development.md)**| Ensure that development standards require the use of modern authentication protocols to remove the need for retrofitting security onto older protocols and mechanisms.
+**[OT and IoT security](security-adoption-discipline-iot.md)** | Carefully consider business needs for remotely accessing these systems versus potential security risk of current remote access solutions and potential improvements to them.
 **Application security** | Secure access to applications through modern authentication, session controls, and runtime protections.<br/><br/>Ensure apps are onboarded to identity platforms and monitored for anomalous behavior.
 
 ### Operational disciplines

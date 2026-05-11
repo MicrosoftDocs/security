@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 # Overview - Adopt business scenarios
 
-Organizations rarely modernize security all at once. Instead, they generally focus first on the risks that matter most to the business.
+Organizations rarely modernize security all at once. Instead, most focus first on the risks that matter most to the business.
 
 
 This article explains how business scenarios help you prioritize security adoption based on business outcomes rather than individual technologies.
@@ -51,7 +51,7 @@ A business scenario represents a recognizable business situation that drives sec
 - Highlights the most critical security risks in that situation,
 - Emphasizes the security outcomes that we recommend should be prioritized first.
 
-For example, an organization modernizing legacy infrastructure faces different immediate risks than a business building cloud‑native applications. Business scenarios capture these differences so that security investments can be aligned to real business needs.
+For example, an organization modernizing legacy infrastructure faces different immediate risks than a "digital-native" business that only oprations and builds cloud‑native applications. Business scenarios capture these differences so that security investments can be aligned to real business needs.
 
 **Business scenarios are**:
 
@@ -66,7 +66,7 @@ For example, an organization modernizing legacy infrastructure faces different i
 - A replacement for security disciplines.
 - A deployment sequence or maturity model,
 
-Business scenarios don't describe how to implement security controls. Implementation is covered by security disciplines and technical solutions that align to the priorities/outcomes of business scenarios.
+Business scenarios don't describe how to implement security controls. Implementation is covered by security disciplines and technical solutions that align to the priorities and outcomes of business scenarios.
 
 ## Align with disciplines/technical solutions
 

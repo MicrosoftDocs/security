@@ -13,13 +13,13 @@ ms.topic: conceptual
 
 # OT/IoT security
 
-[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help teams to consistently deliver security outcomes across the entire technology estate.
-
-Security disciplines are used in our security adoption model. They provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation, ensuring that security investments translate into real, measurable outcomes. 
 
 This article helps you to integrate OT/IoT security into the [Infrastructure and networking security discipline](security-adoption-discipline-infrastructure.md), and to modernize OT/IoT security while preserving continuity and safety.
 
-## Why this discipline?
+
+
+
+## Why OT/IoT security?
 
 OT/IoT security is a subset of the Infrastructure Security discipline. It addresses OT and IoT systems that often have unique safety, availability, and reliability constraints. 
 

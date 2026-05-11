@@ -41,13 +41,13 @@ This diagram illustrates how these elements come together in an adoption model.
 :::image type="content" source="media/adoption-guidance-context.png" alt-text="Diagram showing how the adoption model includes learnings and guidance from Microsoft and external sources." lightbox="media/adoption-guidance-context.png":::
 
 
-## Model structure
+## Adoption model structure
 
 The adoption model is built on three core components that help organizations move from business intent to detailed implementation:
 
 - **Business scenarios** define typical business outcomes and how security must be adapted to achieve them.
 - **Security disciplines** define how teams organize, plan, and operate to modernize security and achieve business outcomes.
-- **Technology pillars** gather organizational assets and resources into types (pillars) that we want to secure. For example identity, devices, and data.
+- **Technology pillars** describe organizational assets and resources that we want to secure. For example identity, devices, and data.
 
 
 :::image type="content" source="media/adoption-navigation-structure.png" alt-text="Diagram showing overall structure of the Microsoft Security Adoption Framework (SAF)." lightbox="media/adoption-navigation-structure.png":::
@@ -56,8 +56,8 @@ Each component of the adoption model targets a specific audience and role.
 
 **Section** | **Primary audience** | **Aim**
 --- | --- | ---
-**[Business scenarios](security-adoption-business-scenarios-overview.md)** | Business leaders | Define and communicate critical business outcomes that security must support.<br/><br/>Translate business priorities into actionable security goals that guide planning and decision-making.<br/><br/>Provide practical, repeatable guidance for business outcomes, with clear paths to the roles and disciplines involved in delivering the outcome.
-**[Security disciplines](security-adoption-discipline-overview.md)** | Security leaders/teams, IT leaders, designers, architects. | Bridge business scenarios and security deployment/implementation.<br/><br/> Ensure that security investments and priorities translate into measurable outcomes through clear planning, architecture, and operational practices.<br/><br/>Business scenarios usually map to multiple security disciplines. 
+**[Business scenarios](security-adoption-business-scenarios-overview.md)** | Business leaders | Identify, define, and communicate critical business outcomes that security must support.<br/><br/>Translate business priorities into actionable security goals that guide planning and decision-making.<br/><br/>Provide practical, repeatable guidance for business outcomes, with clear paths to the roles and disciplines involved in delivering the outcome.
+**[Security disciplines](security-adoption-discipline-overview.md)** | Security leaders and teams, IT leaders, designers, architects. | Bridge business scenarios and security deployment/implementation.<br/><br/> Ensure that security investments and priorities translate into measurable outcomes through clear planning, architecture, and operational practices.<br/><br/>Business scenarios usually map to multiple security disciplines. 
 **[Technology pillars](implement-overview.md)** | Technical and security implementers and partners. |  Define what types of assets must be secured, and where Zero Trust principles and security controls must be applied.<br/><br/>Connect security strategy to implementation by grouping related technologies, controls, and capabilities.<br/><br/>Business scenarios are likely to cross multiple technology pillars. For example, if our business outcome is to improve security posture across the enterprise, then we must improve posture across devices, data, infrastructure, networks, and more.
 
 ## Adoption guidance

@@ -13,9 +13,11 @@ ms.topic: conceptual
 
 # Establish a Security Architecture discipline
 
-[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across their entire technology estate. In the security adoption model, disciplines provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation, ensuring that security investments translate into real, measurable outcomes.
-
 This article helps security and technology teams establish and modernize a Security Architecture discipline that provides a clear, end‑to‑end technical vision for security across the organization.
+
+[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
+
+
 
 ## Why this discipline?
 
@@ -26,9 +28,9 @@ Traditional security architecture approaches are often:
 - Limited to static diagrams or reference documents
 - Disconnected from day‑to‑day design, implementation, and operations
 
-These limitations make it difficult to manage security as a system. Instead, organizations end up optimizing individual tools or platforms in isolation, which leads to inconsistency and increased risk.
+These limitations make it difficult to manage security as a system. Instead, organizations end up optimizing individual tools or platforms in isolation, which leads to inconsistencies, gaps, conflicts, and increased risk.
 
-The Security Architecture discipline modernizes this model by establishing a coherent, end‑to‑end technical vision that connects people, processes, and technology. Rather than focusing on individual controls, this discipline ensures that all security capabilities work together as an integrated system aligned to Zero Trust principles.
+The Security Architecture discipline modernizes this model by establishing a coherent, end‑to‑end technical vision that connects people, processes, and technology. Rather than focusing on individual controls in isolation, this discipline ensures that all security controls and capabilities work together as an integrated system aligned to Zero Trust principles.
 
 Without an effective Security Achitecture discipline in place, organizations commonly experience:
 
@@ -42,7 +44,7 @@ Without an effective Security Achitecture discipline in place, organizations com
 A mature security architecture overcomes these limitations by: 
 
 - **Using a common architecture**: Ensure that controls and decisions align to a shared architectural model rather than isolated technical solutions.
-- **Connecting strategy to execution**. A common security architecturet translates security strategy, policies, and standards into a coordinated technical approach that guides design, implementation, and operations across the full security lifecycle.
+- **Connecting strategy to execution**. A common security architecture translates security strategy, policies, and standards into a coordinated technical approach that guides design, implementation, and operations across the full security lifecycle.
 - **Applying Zero Trust consistently**. Ensuring Zero Trust principles are applied uniformly across all security planning, design, and implementation efforts.
 
 The following diagram illustrates how security architecture enables resilience across the enterprise with Zero Trust principles.
@@ -54,8 +56,8 @@ The following diagram illustrates how security architecture enables resilience a
 The Security Architecture discipline provides technical clarity and structure for how security capabilities fit together across the organization. It enables organizations to:
 
 - **Define a clear end state**: Establish a shared understanding of how security platforms, controls, and technologies work together to protect business assets.
-- **Integrate security across the technology estate**: Ensure identities, devices, networks, infrastructure, applications, data, and emerging technologies are protected through a coherent, end‑to‑end architecture..
-- **Improve consistency and integration**: Reduce fragmentation by guiding teams to implement controls that align to architectural principles rather than point‑in‑time or tool‑specific decisions..
+- **Integrate security across the technology estate**: Ensure identities, devices, networks, infrastructure, applications, data, and emerging technologies are protected through a coherent, end‑to‑end architecture.
+- **Improve consistency and integration**: Reduce fragmentation by guiding teams to implement controls that align to architectural principles rather than point‑in‑time or tool‑specific decisions.
 - **Enable effective prioritization**: Focus effort on the most impactful risks using a Zero Trust‑aligned, data‑driven approach instead of reacting to the most visible or urgent issues.
 - **Reduce incident frequency and impact**: Improve resilience by eliminating systemic weaknesses, accelerating response, and reducing repeat incidents over time.
 
@@ -70,7 +72,8 @@ Comprehensive coverage reduces blind spots, prevents silos, and ensures security
 
 
 ### Ruthless prioritization
-Security architecture must continually drive prioritization so limited resources are focused on the most impactful risks. Without clear prioritization, organizations waste effort on low‑value or overly complex solutions that do little to improve real security outcomes.
+
+Security architecture must continually drive prioritization so that limited resources are focused on the most impactful risks. Without clear prioritization, organizations waste effort on low‑value (and seemingly urgent) distractions, or overly complex solutions that do little to improve real security outcomes.
 
 ### Data‑driven prioritization
 
@@ -78,7 +81,7 @@ Effective prioritization is grounded in data and focuses on three factors:
 
 - **Cheap, easy, and reliable attacks**: Address the attack techniques that are easiest for adversaries to execute and most likely to succeed. This maximizes attacker disruption and security return on investment.
 - **Business impact**: Prioritize defenses that protect the highest‑value business assets or have broad organizational impact.
-- **Effective mitigations**: Invest first in the simplest, cheapest, and most effective mitigations to reduce risk quickly and measurably.
+- **Effective and efficient mitigations**: For the most important risks, invest first in the simplest, cheapest, and most effective mitigations to reduce risk quickly and measurably.
 
 ### Continuous improvement
 
@@ -148,8 +151,9 @@ Security architecture ensures that controls across all technology pillars align 
 
 Microsoft Unified offers cybersecurity reference architectures, Zero Trust guidance, and expert-led workshops to help organizations with end to end security architecture.
 
-The security adoption Microsoft Cybersecurity Reference Architectures engagement helps accelerate modernization of security strategy, integration, and governance. 
+- Learn more about [Microsoft Cybersecurity Reference Architectures](microsoft-reference-architecture.md).
+- Learn more about [Security Adoption Framework (SAF) workshops](workshop-business-overview.md).
 
-- It's available from Microsoft Unified as a four hour discussion focused on key learnings, best practices, and reference architectures.
-- The Microsoft Cybersecurity Reference Architectures (MCRA) are also [available as a download](https://download.microsoft.com/download/956f9359-e6d5-4e77-a36c-117f94620eb3/MCRA-April-2025.pptx) for you to use independently.
+## What's next?
 
+Make sure you've [reviewed the other security disciplines](security-adoption-discipline-overview.md).

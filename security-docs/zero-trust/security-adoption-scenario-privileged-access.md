@@ -13,9 +13,13 @@ ms.topic: conceptual
 
 # Secure and govern privileged access
 
-This article introduces *Secure and govern privileged administrative access* implementation within the [Secure and critical business assets](security-adoption-scenario-secure-assets.md) business scenario.
+This article introduces the business outcome *Securing and governing privileged administrative access* within the [Secure critical business assets](security-adoption-scenario-secure-assets.md) business scenario.
 
-The article explain's why privilege access is a critical risk path, describes a Zero Trust approach, and summarizes the business outcomes we want to achieve, and the relevant security disciplines and technology pillars.
+As a business leader, you're obligated to protect organization assets against all types of risk, including attacks by criminal and nation state threat actors. One of the common methods threat actors use to gain access to large parts of a digital estate is by targeting IT administrators who have broad access to systems and data in order to operate and maintain them.
+
+The article explains why privilege access is a critical risk path, describes a Zero Trust approach, and summarizes the business outcomes we want to achieve, and the relevant security disciplines and technology pillars.
+
+As 
 
 > [!NOTE]
 > - Microsoft's [security adoption model](security-adoption-model.md) connects the security modernization journey from strategy through end-to-end implementation.
@@ -25,7 +29,9 @@ The article explain's why privilege access is a critical risk path, describes a 
 
 ## Privileged access
 
-Privileged access refers to administrative identities and roles that have elevated control over critical systems that include identity platforms, cloud/infrastructure control planes, and security controls.
+Privileged access refers to administrative identities and roles that have elevated control over an organization's most critical systems.
+
+A small number of highly trusted accounts are responsible for managing access to most or all business assets because they administer powerful systems such as identity platforms, cloud control planes, infrastructure, and security controls. These accounts can change configurations, grant access, and directly influence large portions of the  organizational security posture. 
 
  These accounts can modify configurations, grant access, and directly impact the organization’s security posture.
 
@@ -42,6 +48,11 @@ Today’s hybrid and cloud-based environments increase both the likelihood and i
 - Protects administrative identities.
 - Secures administrative access paths.
 - Applies Zero Trust controls consistently across identities, devices, infrastructure, and operations.
+
+The following diagram illustrates how a privileged access strategy creates a separate access channel and secures it at a higher level for these privileged accounts, devices, and more.
+
+:::image type="content" source="./media/end-to-end-approach.png" alt-text="Diagram showing security success equals attacker failure through a continuous cycle of prevent attacks, respond and recover when attacks succeed, and learn to improve resilience." lightbox="./media/end-to-end-approach.png":::
+
 
 
 ## Why privileged access requires a new approach

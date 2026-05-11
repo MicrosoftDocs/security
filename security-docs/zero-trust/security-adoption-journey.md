@@ -54,7 +54,7 @@ This approach works well for organizations where CISOs and security leaders have
 
 ## Build-up
 
-Build-up is an incremental approach that starts with targeted improvements and expands over time. To use this pattern:
+Build up is an incremental approach that starts with targeted improvements and expands over time. To use this pattern:
 
 1. Start with a high-impact quick win that addresses and urgent risk or operational gap. For example focuses on a specific discipline or pillar to begin.
 1. Demonstrate measurable value of the quick win to build credibility and support.
@@ -77,6 +77,6 @@ This pattern is suitable when there's executive support and funding for a partic
 
 What you do next depends on the model you're using.
 
-- **Top-down**: If you're approaching adoption top down, start by reading about our [structured security adoption path](security-adoption-model.md), and then take a look at the [prioritized business scenarios](security-adoption-business-scenarios-overview.md)
-- **Build-up**: If you're looking for a quick win, [pick a business scenario](security-adoption-business-scenarios-overview.md), and then dig into the primary discipline.
+- **Top down**: If you're approaching adoption top down, start by reading about our [structured security adoption path](security-adoption-model.md), and then take a look at the [prioritized business scenarios](security-adoption-business-scenarios-overview.md)
+- **Build up**: If you're looking for a quick win, [pick a business scenario](security-adoption-business-scenarios-overview.md), and then dig into the primary discipline.
 - **Scenario-driven**: To modernize around specific areas, [pick a business scenario](security-adoption-business-scenarios-overview.md), design the scenario across the required disciplines, and then start implementing it.

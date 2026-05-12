@@ -15,18 +15,21 @@ ms.custom: sfi-image-nochange
 
 # Overview - Implement a privileged access architecture
 
-This article introduces an end-to-end solution for implmenting a privileged access architecture. It's aimed at security/identity planners and implementers.
+This article introduces an end-to-end solution for implementing a privileged access architecture. It's aimed at security/identity planners and implementers.
 
-In the Microsoft security adoption and implementation model, solution guides provided prescriptive deployment guidance.  In the model, [business scenarios](../security-adoption-business-scenarios-overview.md) define the outcomes leaders need. [Discipline guidance](../security-adoption-discipline-identity-access-privileged-model.md) defines the architecture and process decisions required to deliver those outcomes. Solution guides turn those architectures and decisions into practical implementations that you plan and deploy. 
+In the Microsoft security adoption model, implementation solutions provide prescriptive deployment guidance. Implementation solutions align to [business scenarios](../security-adoption-business-scenarios-overview.md) that define high priority security outcomes.
 
-Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets. This guide describes a Zero Trust privileged access solution that treats privileged access as an end-to-end access path (identity → device → interface → target → monitoring → response). The goal is to reduce risk by:
+Privileged access represents one of the highest-impact risks in any organization because it provides direct control over identity systems, cloud control planes, and critical business resources.
 
-- Strictly limiting who can perform privileged actions
-- Enforcing where and how privileged actions can occur
-- Continuously monitoring and validating privileged activity
+This guide defines a Zero Trust approach to privileged access by treating it as an end-to-end access path, spanning identity, device, interface, target resource, and monitoring. Instead of securing individual components in isolation, this model ensures the entire access pathway is governed and continuously validated.
 
-The architecture is implemented using Microsoft Entra ID, Microsoft Intune, and Microsoft Defender for Endpoint. It’s deployed in phases so you can establish a safe foundation first (identity control plane, then trusted devices), then enforce policy, and finally operationalize monitoring and response.
+The objective is to reduce risk by:
 
+- Limiting who can perform privileged actions.
+- Controlling where and how those actions can occur.
+- Continuously monitoring and responding to privileged activity.
+
+This architecture is implemented using Microsoft Entra ID, Microsoft Intune, and Microsoft Defender for Endpoint. It's deployed in phases: establishing a secure foundation (identity control plane and trusted devices), enforcing policy controls, and operationalizing monitoring and response.
 
 
 ## Privileged access risk
@@ -59,7 +62,7 @@ Privileged access risk is unique and systemic for a number of reasons.
 **High business impact by design** | Privileged access exists to manage critical systems, so abuse of that access has immediate and severe consequences.<br/><br/>With privileged access, attackers can:<br/><br/>- Exfiltrate or destroy sensitive data<br/>- Shut down or manipulate business operations<br/>- Encrypt entire environments for extortion (human‑operated ransomware)<br/>- Subvert systems in ways that can cause real‑world harm.<br/><br/>These outcomes are not theoretical. They have been observed repeatedly across industries, making privileged access one of the most reliable ways attackers achieve maximum impact.
 **Loud and disruptive** | Unlike stealthy data theft, many privileged access attacks—especially human‑operated ransomware—are intentionally disruptive. They halt operations, break customer‑facing services, and force executive‑level decision‑making under extreme time pressure.<br/><br/>Because all organizations are financially and operationally motivated to restore service quickly, these attacks are universally applicable and highly effective, regardless of industry or size.
 **Risk growing not shrinking** | Attackers are flexible and technology‑agnostic. They don't target a single product or control, but exploit whatever privileged access path is weakest in the moment. <br/><br/>The privileged access attack surface is broad and interconnected, spanning:<br/><br/>- - Accounts and identity systems<br/> - Workstations and devices<br/>- Intermediary systems such as remote access tools and PAM/PIM solutions.<br/>- Management interfaces, portals, APIs, and elevation paths.<br/><br/>Compromise of any one of these elements can provide a path to full enterprise control, and new access paths are continuously introduced as environments evolve.
-**Single‑solution approaches fail** | Deploying only one class of control such as PAM/PIM, network restrictions, or detection toolingd, oes not sufficiently reduce risk. These controls address parts of the problem, not the system.<br/><br/> If privileged access is not protected end‑to‑end, attackers simply route around isolated defenses and exploit an unprotected link in the access path.<br/><br/>This is why privileged access must be treated as a complete system—from identity and device trust, through elevation and execution, to monitoring and response—rather than as a collection of independent tools.
+**Single‑solution approaches fail** | Deploying only one class of control such as PAM/PIM, network restrictions, or detection tooling, does not sufficiently reduce risk. These controls address parts of the problem, not the system.<br/><br/> If privileged access is not protected end‑to‑end, attackers simply route around isolated defenses and exploit an unprotected link in the access path.<br/><br/>This is why privileged access must be treated as a complete system—from identity and device trust, through elevation and execution, to monitoring and response—rather than as a collection of independent tools.
 
 :::image type="content" source="../media/implement-privileged-assets-attacks.png" alt-text="Diagram showing privileged identity attackers." lightbox="../media/implement-privileged-assets-attacks.png":::
 
@@ -88,7 +91,9 @@ Track these measures monthly for progress, and review quarterly as part of privi
 
 ## Understand privileged access paths
 
-Privileged access is best understood as access paths that form a complete chain from identity to execution. 
+Privileged access is best understood as access paths that form a complete chain from identity to execution, as illustrated in this diagram.
+
+:::image type="content" source="../media/security-adoption-discipline-access-enterprise-privileged-path.png" alt-text="Diagram showing how privileged access pathways are limited and protected." lightbox="../media/security-adoption-discipline-access-enterprise-privileged-path.png"::
 
 If any link in the chain is weak, the entire path is vulnerable.
 

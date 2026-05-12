@@ -88,8 +88,7 @@ The goal is to ensure that privileged credentials and actions are never exposed 
 
 The following diagram shows how the PAW in the only trusted access point into the control plane.
 
-:::image type="content" source="./media/security-adoption-discipline-access-enterprise-privileged-device.png" alt-text="Diagram showing Microsoft technologies that protect the identity control plane." lightbox="./media/security-adoption-discipline-access-enterprise-privileged-device
-.png":::
+:::image type="content" source="./media/security-adoption-discipline-access-enterprise-privileged-device.png" alt-text="Diagram showing Microsoft technologies that protect privileged devices." lightbox="./media/security-adoption-discipline-access-enterprise-privileged-device.png":::
 
 
 As shown in the diagram, all administrative actions flow through the PAW and are controlled as summarized in the table.

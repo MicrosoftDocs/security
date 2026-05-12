@@ -17,11 +17,11 @@ This article helps security and technology teams establish and modernize a Secur
 
 [Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
 
-This article helps security and technology teams establish and modernize an Access and Identities discipline that protects access to business assets, enables productivity, and reduces organizational risk.
+
 
 ## Why this discipline?
 
-Access and identity is the security discipline that most people interact with first—and most often. Users experience it every time they sign in to a device, access an application, share a file, connect remotely, or use physical credentials to enter a building.
+Access and identity is the security discipline that most people interact with first—and most often. Every user experiences it every time they sign in to a device, access an application, share a file, connect remotely, or use physical credentials to enter a building.
 
 Because access controls sit at the intersection of security and productivity, they directly influence both organizational risk and user experience.
 
@@ -29,16 +29,16 @@ The Access and Identities discipline:
 
 - 
 - **Reduces risk** by shaping and governing access paths to business assets, ensuring the right entities have the right access under the right conditions, while preventing abuse by attackers.
-- **Enables productivity** by consistent, low‑friction access that discourages insecure workarounds and shadow IT
+- **Enables productivity** with consistent, low‑friction access that discourages insecure workarounds and shadow IT
 - **Provides a common strategy** that security leaders and practitioners can align to and execute consistently across the organization
 
-Access and identities is a strategic priority because identities are the most common entry point for attacks. Techniques such as password spray, phishing, token theft, pass‑the‑hash, and pass‑the‑ticket are routinely used to gain an initial foothold. Nearly all multistage attacks rely on identity compromise to move laterally, escalate privileges, and reach high‑value assets.
+This is a strategic priority because identities are the most common entry point for attacks, and because [privileged access](security-adoption-discipline-identity-access-privileged-model.md) compromise dramatically amplifies attack impact. Techniques such as password spray, phishing, and token theft are routinely used to gain an initial foothold. Pass‑the‑hash, pass‑the‑ticket, and similar identity compromise attacks are regularly used to move laterally, escalate privileges, and reach high‑value assets.
 
 Without an effective Access and Identities discipline, organizations face increased risk from:
 
 - **External compromise**: Attackers can rapidly take over legitimate user or service identities, including privileged accounts, and use them to discover and exploit business assets.
 - **Insider abuse and privilege misuse**: Malicious, negligent or compromised insiders can abuse elevated privileges to access sensitive systems and data.
-- **Productivity loss and insecure workarounds**: Overly restrictive or inconsistent access controls frustrate users and drive the adoption of shadow IT with weaker controls and imited visibility, increasing risk and blast radius.
+- **Productivity loss and insecure workarounds**: Overly restrictive or inconsistent access controls frustrate users and drive the adoption of shadow IT with weaker controls and limited visibility, increasing risk and blast radius.
 
 ## Mission and outcomes
 
@@ -73,7 +73,7 @@ A modern Access and Identities discipline goes beyond individual technologies. I
 - **Consistent and comprehensive:** Cover all access paths—human and non‑human—and apply security assurances uniformly to eliminate gaps and improve user experience.
 - **Integrated:** Use centralized policy and a minimal number of policy engines to enforce controls consistently at scale, avoiding configuration drift. 
 - **Identity-centric**: Prioritize identity‑based controls, which provide richer context than network‑only signals. Use network controls as a complementary layer, not the primary trust boundary.
-- 
+
 This diagram from the [Enterprise Access Model](security-adoption-discipline-identity-access-enterprise-model.md) illustrates all of the different types of access paths an organization must secure across multiple workloads, multiple clouds, various business sensitivity levels, and access by both people and devices.
 
 :::image type="content" source="./media/security-adoption-discipline-access-enterprise.png" alt-text="Diagram of the Enterprise Access Model showing secure, consistent, and integrated access paths across users, devices, and workloads." lightbox="./media/security-adoption-discipline-access-enterprise.png":::
@@ -112,9 +112,8 @@ An effective access and identity strategy secures the full lifecycle of authoriz
 
 Access security starts with knowing who or what is requesting access:
 
-- **All identity types**: Secure human users, workload identities, AI agents, applications, service principals, certificates, and cryptographic keys.
-- - **The full identity lifecycle1**: The full identity lifecycle
-Manage identities from creation, through changes and privilege elevation, to deprovisioning and return to no identity when access is no longer required.
+- **All identity types**: Secure human user accounts, workload identities, AI agents, applications, service principals, certificates, and cryptographic keys.
+- - **The full identity lifecycle1**: Manage identities from no access to identity creation, through changes and privilege elevation, to deprovisioning and returning to no access when it's no longer required.
 - **Identity sources**: Define which internal and external identity providers are trusted, how identities are governed, and how lifecycle controls are enforced across those sources.
 
 ### Access verb (how)

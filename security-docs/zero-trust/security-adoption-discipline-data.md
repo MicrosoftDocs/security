@@ -15,9 +15,10 @@ ms.topic: conceptual
 
 # Establish a Data Security discipline
 
-[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. In the security adoption model, disciplines provide the bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation, ensuring that security investments translate into real, measurable outcomes.
+This article helps security and technology teams establish and modernize a Data Security discipline that helps organizations protect data wherever it is created, stored, processed, shared, or used, while still enabling collaboration, analytics, cloud services, and AI adoption.
 
-The Data Security discipline helps organizations protect data wherever it is created, stored, processed, shared, or used—while still enabling collaboration, analytics, cloud services, and AI adoption. This article helps security and technology teams across the business to establish and modernize an Data Security discipline across the company.
+[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
+
 
 ## Why this discipline
 
@@ -26,7 +27,7 @@ Data is the lifeblood of modern organizations. It underpins business operations,
 Traditional, network‑centric data protection approaches are no longer sufficient in environments that use cloud services, encryption, mobile devices, and distributed collaboration. A modern Data Security discipline moves beyond perimeter controls to identity‑aware, lifecycle‑based protection, aligned to business value and risk.
 Without effective data security, organizations face material business risk, including:
 
-- Unintentional data exposure by employees using cloud services and personal devices.
+- Unintentional data exposure by employees using cloud service, personal devices, and AI.
 - Malicious insider activity targeting sensitive information.
 - Threat actors bypassing perimeter‑based controls in distributed environments.
 - Ransomware and extortion attacks disrupting operations.
@@ -58,7 +59,7 @@ Traditional data security approaches often rely on a single control point, such 
 - Must perfectly balance protection and productivity in a single moment,
 - Fails when data is encrypted, shared via cloud services, or accessed on personal devices.
 
-This diagram aummarizes the challenges to overcome using a modern approach to data security.
+This diagram summarizes the challenges to overcome using a modern approach to data security.
 
 :::image type="content" source="./media/security-adoption-discipline-data-challenges.png" alt-text="Diagram of the data security lifecycle highlighting challenges at each stage, including creation, storage, and transfer." lightbox="./media/security-adoption-discipline-data-challenges.png":::
 
@@ -110,9 +111,9 @@ Key collaborators include:
 
 ## Alignment with other disciplines
 
-The Data Security discipline works in close coordinations with other disciplines:
+The Data Security discipline works in close coordination with other disciplines:
 
-- **Access and Identities discpline**– Identity and access policies determine who can access data.
+- **Access and Identities discipline**– Identity and access policies determine who can access data.
 - **Security Architecture discipline** – Architecture defines end-to-end patterns for protecting data.
 - **Security Operations (SecOps) discipline** – Detects and responds to data-related incidents.
 - **Security Posture discipline** – Measures and improves data protection maturity.

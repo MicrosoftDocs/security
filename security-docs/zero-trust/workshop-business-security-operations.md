@@ -14,9 +14,10 @@ ms.topic: conceptual
 # Run a SecOps adoption workshop
 
 
-Security Operations (SecOps) is a complex, high‑pressure discipline that depends on strong coordination across people, process, and technology. Modernizing SecOps requires more than deploying tools—it requires a shared understanding of mission, priorities, roles, and operating model.
+This article is for any role involved in SecOps modernization. It explains how to use a structured planning workshop to kick off SecOps strategy and architecture modernization and describes Microsoft‑led engagements available through Microsoft Unified to support this process.
 
-This article is for any role planning for/involved in SecOps modernization. It explains how to use a structured planning workshop to kick off SecOps strategy and architecture modernization and describes Microsoft‑led engagements available through Microsoft Unified to support this process.
+[Security Operations (SecOps) is a complex, high‑pressure discipline](security-adoption-discipline-security-operations.md) that depends on strong coordination across people, process, and technology. Modernizing SecOps requires more than deploying tools—it requires a shared understanding of mission, priorities, roles, and operating model.
+
 
 ## SecOps workshop goals
 
@@ -34,7 +35,7 @@ A well‑run SecOps adoption workshop helps organizations:
 - Surface constraints, risks, and improvement opportunities
 - Build trust and working relationships across teams that collaborate during incidents
 
-The workshop is designed to start the modernization journey, not to solve everything at once.
+The workshop is designed to start or accelerate the modernization journey, not to solve everything at once.
 
 ## Who should attend?
 
@@ -55,7 +56,7 @@ The workshop should include stakeholders who collectively represent all aspects 
 
 - **Executive and senior leadership (CISO, CIO, directors)** – Provide sponsorship, strategic context, and alignment with business and IT initiatives. 
 - **Cloud platform leads or teams** – Important for aligning monitoring, detection, and response with cloud initiatives.
-- **Ooutsourcing partners or managed service provider**: - Any supporting organizations or outsourcers selected by primary participants.
+- **Outsourcing partners or managed service provider**: - Any supporting organizations or outsourcers selected by primary participants.
 
 [Learn more](security-adoption-discipline-security-operations-roles.md) about SecOps roles. 
 
@@ -65,7 +66,7 @@ A SecOps adoption workshop typically covers the following topics. The intent is 
 
 1. **Define SecOps mission and success** - Align on what success looks like for SecOps and how it supports organizational goals, risk management, and Zero Trust outcomes. Starting here anchors all later discussions.
 1. **Review the current SecOps/SOC approach** - Establish a common view of the existing SecOps environment, including:
-    - Teams and responsbilities
+    - Teams and responsibilities
     - Processes and workflows
     - Current tools and data sources
 1. **Discuss SecOps modernization** - Review what modern SecOps requires across:
@@ -99,7 +100,7 @@ A SecOps adoption workshop typically covers the following topics. The intent is 
 These recommendations are based on Microsoft’s experience guiding organizations through SecOps modernization:
 
 - **Be* practical** - Reinforce that modernization is a journey. Work with current skills, tools, and constraints.
-- **Be inclusive** - Include both hands‑on practitioners and leaders responsible for outcomes. Ensure all voices are heard.
+- **Be inclusive** - Include both hands‑on practitioners and leaders responsible for outcomes. Ensure all voices are heard, including those who don't initially speak up.
 - **Be outcome-centric** - Include both hands‑on practitioners and leaders responsible for outcomes. Ensure all voices are heard.
 - **Be honest and constructive** - Look critically at what isn’t working while staying respectful and focused on learning and improvement.
 

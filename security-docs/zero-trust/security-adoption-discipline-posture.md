@@ -1,11 +1,11 @@
 ---
 title: Establish a Security Posture discipline
 description: Use the Microsoft security adoption model to optimize security posture across the business, based on Zero Trust principles.
-ms.date: 01/29/2026
+ms.date: 05/12/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand how I can use the Microsoft security adoption model to optimize security posture across the business.
@@ -13,12 +13,10 @@ ms.topic: conceptual
 
 # Establish a Security Posture discipline
 
+This article helps security and technology leaders establish or modernize a Security Posture Management discipline. This discipline focuses on continuously reducing the organizational exposure to attacks by identifying and eliminating the most likely attack paths to critical assets.
 
+[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
 
-[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. In the security adoption model, disciplines provide the bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation, ensuring that security investments translate into real, measurable outcomes.
-
-
-This article helps security and technology leaders establish or modernize a Security Posture discipline that focuses on continuously reducing the organization’s exposure to cyberrisk by identifying and eliminating the most likely attack paths to business-critical assets.
 
 ## Why this discipline
 
@@ -29,7 +27,7 @@ The Security Posture discipline exists to prevent attacks before they occur, com
 - Security Posture reduces opportunity for attackers.
 - Security Operations limits impact when prevention fails.
 
-Together, they form a balanced security operating model.
+Together, they form a complete security operating model.
 
 Without a dedicated Security Posture discipline, organizations often treat posture management as:
 
@@ -67,10 +65,13 @@ Modern Security Posture management represents a shift from static vulnerability 
 
 **Tradional approach** | **Modern discipline**
 --- | ---
-Periodic vulnerability scans | Continuous asset and risk discovery
-Compliance-driven prioritization | Threat-informed prioritization
-Security-owned findings | Shared accountability with engineering teams
-One-time remediation | Ongoing hygiene and improvement
+Periodic vulnerability scans | Continuous asset and risk discovery.
+Compliance-driven prioritization | Threat-informed prioritization.
+Security-owned findings | Shared accountability with engineering teams and business owners of systems.
+One-time remediation | Continuous remediation and improvement.
+Patch by exception | Patch by default.
+
+
 
 The following diagram shows the key elements of the Security Posture discipline.
 
@@ -121,7 +122,7 @@ Security Posture is inherently cross-functional.
 
 Primary roles include:
 
-- **Engineering and Operations teams**:  Technology and Security Managers, Security and Automation Engineers aacountable for implementing mitigations and maintaining hygiene across:
+- **Engineering and Operations teams**:  Technology and Security Managers, Security and Automation Engineers accountable for implementing mitigations and maintaining hygiene across:
    - Identity and access
    - Networking
    - Endpoints and user productivity

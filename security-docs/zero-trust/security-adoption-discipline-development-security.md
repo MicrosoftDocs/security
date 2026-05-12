@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 # Shift DevOps to DevSecOps
 
-This article outlines how integrating security into development practices enables organizations to shift from DevOps to DevSecOps and deliver applications more securely.
+As you create or modernize a [Development Security discipline](security-adoption-discipline-development.md), this article outlines how integrating security into development practices enables organizations to shift from DevOps to DevSecOps, and deliver applications more securely.
 
 Modern organizations rely on rapid software development to deliver innovation, respond to changing business requirements, and maintain competitive advantage. DevOps practices enable this agility by allowing teams to continuously build, test, and release application workloads through automated integration and deployment pipelines.
 
@@ -23,6 +23,7 @@ While DevOps improves delivery speed and responsiveness, it also introduces new 
 - Vulnerable dependencies
 - Configuration errors
 - Infrastructure automation flaws
+- Poor secrets management or hygiene.
 
 ## DevOps risks
 
@@ -56,14 +57,21 @@ Application workloads can be compromised through weaknesses introduced during de
 --- | --- | ---
 **App design/implementation** | Security issues introduced during design or development may expose workloads to attack techniques such as:<br/><br/>- Improper input validation<br/>- Insecure authentication or authorization logic<br/>- Weak or improperly implemented cryptography<br/>- Exposure of sensitive data through application logic | These weaknesses might allow attackers to:<br/><br/>- Access or manipulate application data<br/>- Execute unauthorized operations<br/>- Maintain persistent access through implanted logic flaws
 **Dev infrastructure/automation** | Attacks might target:<br/><br/>- Source code repos<br/>- Build pipelines<br/>- Deployment automation<br/>- Infrastructure-as-code (IaC) templates<br/>- Develop endpoints or service identities | Compromise might allow attackers to:<br/><br/>- Insert malicious code into build artifacts<br/>- Modify deployment configurations<br/>- Maintain persistent access through implanted logic flaw<br/>sObtain credentials or secrets used in production environments.
-**Dev infrastructure/automation** | Applications commonly rely on:<br/><br/>- Third‑party libraries<br/>- Open‑source packages<br/>- Container images<br/>- Platform services | Vulnerabilities or malicious code introduced through these dependencies might affect:<br/><br/>- Organizational production workloads<br/>- Customer or partner environments
+**Dev software supply chain** | Applications commonly rely on:<br/><br/>- Third‑party libraries<br/>- Open‑source packages<br/>- Container images<br/>- Platform services | Vulnerabilities or malicious code introduced through these dependencies might affect:<br/><br/>- Organizational production workloads<br/>- Customer or partner environments
 
 Integrating security into development processes reduces the likelihood that these risks propagate into production releases.
 
+## Shifting left
+
+Shift left is a security engineering approach that integrates security earlier in the development lifecycle and operations processes. By moving security activities closer to the beginning—during envisioning, design, implementation, and operations—organizations can identify and address issues earlier and at lower cost.
+
+As organizations adopt DevOps and cloud technologies, security must be built in from the start using practices such as the [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/practices), rather than added late in the process where it becomes expensive and difficult to fix. To sustain this approach, organizations incorporate governance, risk, and compliance (GRC) into their strategy.
+
+DevSecOps extends DevOps by integrating security into every stage of the lifecycle, from idea inception through design, development, and operations. It reduces friction between development, operations, and security teams, aligning them around shared goals of innovation speed, reliability, and security resilience, and enabling teams to address the most important issues early and continuously.
 
 ## What is DevSecOps?
 
-DevSecOps extends DevOps by integrating security into every stage of the software development lifecycle rather than applying it at the end of development.
+DevSecOps delivers on the Shift Left approach by extending DevOps by integrating security into every stage of the software development lifecycle rather than applying it at the end of development.
 
 In traditional development approaches, security validation was often performed as a final quality gate before release. This created delays, increased remediation cost, and allowed vulnerabilities to persist until late in the lifecycle. DevSecOps shifts security earlier and embeds it continuously into development and operational processes.
 
@@ -83,6 +91,8 @@ This approach enables development, security, and operations teams to:
 Security becomes part of how software is built and delivered, rather than a control applied after delivery.
 
 :::image type="content" source="./media/development-security-operations.png" alt-text="Graphic showing how development, security, and operations fit together" lightbox="./media/development-security-operations.png":::
+
+
 
 
 ## Secure innovation lifecycle

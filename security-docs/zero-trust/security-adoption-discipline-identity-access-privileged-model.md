@@ -1,11 +1,11 @@
 ---
 title: Build a privileged access architecture across the security adoption Identities and Access discipline
 description: Learn how to design an architecture for privileged access within the security adoption Identities and Access discipline
-ms.date: 01/29/2026
+ms.date: 05/12/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand how I can design an privileged access architecture across the security adoption Identities and Access discipline
@@ -14,12 +14,13 @@ ms.topic: conceptual
 
 # Design an privileged access architecture
 
+This article describes how to design a privileged access architecture as part of an [Access and Identities discipline](security-adoption-discipline-identity-access.md).  
 
-This article is for security architects and designers who need to translate the [privileged access business scenario](security-adoption-scenario-privileged-access.md) into an end-to-end architecture that can be implemented and operated.
+This article helps security architects and designers who need to translate the [privileged access business outcome](security-adoption-scenario-privileged-access.md) into an end-to-end architecture that can be implemented and operated.
 
-[Security disciplines](security-adoption-discipline-overview.md) group security work across teams and processes so organizations can deliver outcomes consistently. In the Microsoft security adoption and implementation model, disciplines provide the bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation. They define the decisions, ownership, and integration points that implementation teams then turn into configurations, enforcement, and monitoring.
+## Why a privileged access architecture?
 
-[**Securing and governing privileged access**](security-adoption-scenario-privileged-access.md) because privileged access controls the identity system, management interfaces, and enforcement mechanisms that protect everything else. 
+Securing and governing privileged access is critically important because privileged access controls the identity system, management interfaces, and enforcement mechanisms that protect everything else. 
 
 The goal of this article is to help you design an architecture that:
 
@@ -37,7 +38,7 @@ Designing privileged access is not a single technical decision and it isn't owne
 **Discipline** | **Role in scenario**
 --- | ---
 **Security strategy, integration and governance** | Defines why privileged access exists and what must be protected. It sets priorities, risk tolerance, and success criteria. These decisions establish the scope and intent of the privileged access architecture before any controls are designed.
-**End-to-end security architecture** | Translates strategy into a coherent technical design. It ensures privileged access controls work together rather than as isolated tools. This discipline defines the closed‑loop model authorized access paths that are enforced, validated, and continuously monitored across control, management, and workload planes.
+**End-to-end security architecture** | Translates strategy into a coherent technical design. It ensures privileged access controls work together across identities, endpoints, apps, and infrastructure, instead of as isolated tools. This discipline defines the closed‑loop model authorized access paths that are enforced, validated, and continuously monitored across control, management, and workload planes.
 **Access and identity** | Defines who can perform privileged actions and under what conditions. It designs privileged identities, role models, approval workflows, and access lifecycles so that elevated access is explicit, limited, and time‑bound. It ensures identity signals (risk, context, role) are reliable inputs into privileged access decisions.
 **Infrastructure security** | Infrastructure provides the enforcement layer that limits blast radius. It isolates privileged access paths from standard user environments, reduces attack surface on systems used for administration, and supports conditional enforcement based on identity and device trust. Infrastructure design ensures privileged access constraints are technically enforceable, not just policy‑defined.
 **Security posture** | Measures whether privileged access controls remain effective over time. It tracks coverage, configuration drift, and compliance against defined security levels or profiles, providing feedback to governance and architecture. Posture management ensures privileged access protections scale, adapt, and improve rather than degrade.
@@ -58,18 +59,18 @@ Within a privileged access architecture, this discipline enables the organizatio
 - **Govern decisions and investments**: Establish policies, standards, and accountability that drive consistent prioritization and execution across identity, infrastructure, applications, and security operations.
 - **Enable better business decisions**: Provide leaders with the risk context needed to approve access, technology changes, and new initiatives safely—rather than blocking progress or accepting unmanaged risk.
 - **Focus and prioritize**: Translate business priorities into actionable privileged access strategy so teams focus on the most consequential risks, not just the most visible issues.
-- **Adapt to change**: Continuously update privileged access strategies as shift happens in evolving thrats, new technologies, and business needs.
+- **Adapt to change**: Continuously update privileged access strategies as shift happens in evolving threats, new technologies, and business needs.
 - **Reduce incident impact**: Improve consistency, coordination, and accountability, reducing both the likelihood and severity of privileged access–related incidents and improving recovery outcomes.
 
 ### Implementation readiness
 
-**Decision before implementation** | **Details** | **Why this matters**
+**Decide** | **Details** | **Why?**
 --- | --- | ---
-**What “privileged access” means in your organization** | Define which roles, actions, and systems count as high-impact.<br/><br/> For example: Entra Global Admins, Azure subscription owners, production DB admins, identity platform operators. | Without this, teams don’t know which accounts get PIM, PAWs, stricter CA, or monitoring. Everything becomes “kind of privileged”.
+**What does privileged access mean in your organization?** | Define which roles, actions, and systems count as high-impact.<br/><br/> For example: Entra Global Admins, Azure subscription owners, production DB admins, identity platform operators. | Without this, teams don’t know which accounts . Everything becomes “kind of privileged”.get PIM, PAWs, stricter CA, or monitoring
 **Which business-critical systems are in scope?** | List the systems where loss of admin control would cause real damage (identity systems, core infrastructure, production workloads, sensitive data platforms). | Prevents teams from protecting low‑value systems first or skipping high‑impact ones because “ownership wasn’t clear”.
 **Which privileged access paths are allowed, restricted, or eliminated?** | Decide how admins are allowed to reach those systems (for example: only from PAWs, only via approved portals, no legacy protocols, no direct RDP from personal devices). | Implementation teams need this to know which access patterns to block vs. design for. Otherwise, they preserve risky paths for “compatibility”.
 **Trade offs you're willing to accept** | Explicitly state where convenience wins and where it doesn’t (for example: emergency access allowed with logging vs. no standing admin access ever). | Stops endless debates during rollout and prevents security from being blamed for “breaking operations”.
-**Who is allowed or approved to change privileged access design** | Define decision‑makers for role creation, exceptions, scope expansion, and emergency changes (not just “IT decides”). | Without clear ownership, exceptions accumulate silently and architecture erodes over time.
+**Who is allowed/approved to change privileged access design** | Define decision‑makers for role creation, exceptions, scope expansion, and emergency changes (not just “IT decides”). | Without clear ownership, exceptions accumulate silently and risks increases over time.
 **Which standards are non-negotiable for privileged access**? | Document rules like “all human admins use PIM”, “no standing Global Admins”, “privileged access requires compliant devices”. | Gives implementers guardrails — they don’t have to interpret intent or reinvent policy per team.
 
 

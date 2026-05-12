@@ -11,24 +11,21 @@ ms.topic: conceptual
 #customer intent: As a business leader or security adopter, I want to understand how I can use the Microsoft security adoption model to effectively secure cloud infrastructure and networking across the business.
 ---
 
-# Establish an Infrastructure and Networking discipline
+# Establish an Infrastructure Security discipline
 
-[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help teams to consistently deliver security outcomes across the entire technology estate.
+This article helps security and technology teams establish and modernize an Infrastructure Security discipline across the company.  This discipline focuses on protecting the foundational systems and platforms that underpin the security of systems and data across the organization. 
 
-Security disciplines are used in our security adoption model. They provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation, ensuring that security investments translate into real, measurable outcomes. 
+[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
 
-This article helps security and technology teams across the business to establish and modernize an Infrastructure and Networking security discipline across the company.
 
 ## Why this discipline?
 
-The Infrastructure and Networking security discipline focuses on protecting the foundational systems and platforms that underpin the security of systems and data across the organization.
+The Infrastructure Security discipline helps organizations reduce risk from large‑scale compromise by preventing and limiting damage to datacenters, servers, containers, networks, storage, cloud services, and other resources that store and process sensitive data and workloads. 
 
-This discipline helps organizations reduce risk from large‑scale compromise by preventing and limiting damage to datacenters, servers, containers, networks, storage, cloud services, and other resources that store and process sensitive data and workloads. 
+It's a key strategic priority frequently targeted by threat actors because compromise allows them access to many systems at once. A modern, disciplined approach to infrastructure security limits blast radius, improves resilience, and enables secure operations at scale.
 
-It's a key strategic priority becuase threat actors frequently target infrastructure because a single weakness can expose many systems at once. A modern, disciplined approach to infrastructure security limits blast radius, improves resilience, and enables secure operations at scale.
-
-Infrasrucutre underpins every security outcome.  If networks, servers, containers, or cloud platforms are compromised, attackers can rapidly access workloads, data, and identities across the organization.
-Without effective infrastructure and networking security, organizations face:
+Infrastructure underpins every security outcome. If the cloud, containers, virtualization or other infrastructure platforms are compromised, attackers can rapidly access workloads, data, and identities across the organization.
+Without effective infrastructure and networking security, organizations might experience:
 
 - Ransomware and extortion attacks
 - Large‑scale data breaches
@@ -60,12 +57,14 @@ The Infrastructure Security Technology Strategy defines how an organization leve
 - Strategy aligns technology investments with risk reduction goals, enabling secure connectivity, resilience against cyberattacks, and compliance with regulatory standards.
 - Without a clear strategy, organizations face fragmented security controls, increased vulnerabilities, and higher risks of data breaches, service outages, and regulatory penalties.
 
-Modernization of this discipline is focused on continuously improving infrastructure security throughout the lifecycle of govern, identify, protect, detect, respond, and recover. It focuses on 
-***Modernization focuses on implementing advanced security controls such as zero trust architecture, automated patching, and continuous monitoring toenhance visibility and address evolving threats and compliance requirements. 
+Modernization of this discipline is focused on:
+
+- Continuously improving infrastructure security throughout the lifecycle of govern, identify, protect, detect, respond, and recover. 
+- Implementing security controls such as Zero Trust architecture, automated patching, and continuous monitoring to enhance visibility and address evolving threats/compliance requirements. 
 
 These efforts ensure confidentiality, integrity, and availability of data by reducing attack surfaces, preventing unauthorized access, and maintaining resilience against disruptions.
 
-Technology infrastructure is highly complex, has many moving parts, is constantly evolving, and must stay secure against against persistent and evolving threats. This means that effective infrastructure security must be:
+Technology infrastructure is highly complex, has many moving parts, is constantly evolving, and must stay secure against persistent and evolving threats. This means that effective infrastructure security must be:
 
 - **Comprehensive** - Controls must address the various technical elements of infrastructure including networks, endpoints (servers, containers, and more), data, apps, and more to avoid providing threat actors an unguarded access path they can exploit. This requires using a combination of well-know security techniques and the integration of advanced automation and technology as it becomes available. 
 - **Consistent and Rigorous** - Security controls must be applied consistently and rigorously across all instances of each technology to avoid providing threat actors an opportunity to exploit vulnerabilities in overlooked or undiscovered resources.
@@ -75,17 +74,12 @@ Change management is critical. Infrastructure operators must be involved early a
 
 ## Discipline roles and collaborators
 
-The Infrastructure Security discipline typically requires close collaboration between technical and security teams. infrastructure Security roles are responsible for planning, designing, and operating secure foundational systems (networks, compute, storage etc) where critical data resides. These roles ensure that security controls are embedded across infrastructure layers to maintain confidentiality, integrity, and availability of data.
+The Infrastructure Security discipline typically requires close collaboration between technical and security teams. These roles must:
+
+- Work together to ensure that security controls are embedded across infrastructure layers to maintain confidentiality, integrity, and availability of data.
+- Are responsible for planning, designing, and operating secure foundational systems (networks, compute, storage, and cloud platforms) where critical data resides.
 
 In larger organizations, infrastructure security responsibilities are typically owned by dedicated specialists. In smaller organizations, roles might be combined with other technical roles.
-
-Primary roles in this discipline typically include:
-
-- Data Officer / Data Governance and team
-- Data and Artificial Intelligence (AI) Architect
-- Data and Artificial Intelligence (AI) Technical Engineering and Operations
-
-Infrastructure Security roles are responsible for planning, designing, and operating secure foundational systems—networks, compute, storage, and cloud platforms—where critical data resides. These roles ensure that security controls are embedded across infrastructure layers to maintain confidentiality, integrity, and availability of data. In smaller organizations, these responsibilities may be combined with other technical roles, while larger enterprises typically assign dedicated specialists.
 
 Primary Roles:
 
@@ -101,7 +95,7 @@ Key internal collaborators include:
 - Developers and Application Teams – Collaborate to ensure infrastructure supports secure application deployment and data protection.
 - CISO and Security Leadership – Define strategic priorities, risk tolerance, and compliance objectives for infrastructure security.
 
-No role operates in isolation. Infrastructure architects must understand how identity, network, and platform security intersect to protect workloads effectively.
+Infrastructure architects must understand how identity, network, and platform security intersect to protect workloads effectively.
 
 ## Alignment with other disciplines
 
@@ -112,7 +106,7 @@ Infrastructure and Networking security works in concert with other SAF disciplin
 - Data Security – Protects sensitive data hosted and processed on infrastructure
 - Security Architecture and Governance – Aligns controls with risk and business priorities
 
-This alignment ensures infrastructure security supports end‑to‑end security outcomes rather than operating as a silo.
+This alignment ensures infrastructure security supports end‑to‑end security outcomes rather than operating as an isolated silo.
 
 ## Alignment with technology pillars
 
@@ -125,8 +119,8 @@ Executing the strategy of the infrastructure security discipline requires securi
 
 **Pillar** | **Role of Infrastructure Security**
 --- | ---
-**Identities** | dentity controls form the foundation of all access control - just as you can't form a sentence without a subject and object, you cannot establish reliable access policies that determine who can access what if you don't have accounts and identities assigned to employees, partners, customers, AI agents, computers, applications, microservices, and more. Attackers regularly try to compromise and abuse accounts, credentials, tokens, and other identity artifacts to gain access to business assets in the organization (often prioritizing privileged accounts like IT admins to get access to many or all digital assets in the organization).
-**Endpoints**| Access control assurances rely on endpoint security to be effective. Attackers who compromise an endpoint can impersonate accounts that sign onto the endpoint and can steal credentials, tokens, and other identity artifacts for later attacks. Retiring legacy authentication protocols and cryptography often requires updating and reconfiguring endpoints.
+**Identities** | Identity controls form the foundation of all access control - just as you can't form a sentence without a subject and object, you cannot establish reliable access policies that determine who can access what if you don't have accounts and identities assigned to employees, partners, customers, AI agents, computers, applications, microservices, and more. Attackers regularly try to compromise and abuse accounts, credentials, tokens, and other identity artifacts to gain access to business assets in the organization (often prioritizing privileged accounts like IT admins to get access to many or all digital assets in the organization).
+**Endpoints** | Access control assurances rely on endpoint security to be effective. Attackers who compromise an endpoint can impersonate accounts that sign onto the endpoint and can steal credentials, tokens, and other identity artifacts for later attacks. Retiring legacy authentication protocols and cryptography often requires updating and reconfiguring endpoints.
 **Infrastructure**| The organization's infrastructure hosts identity systems (such as Active Directory Domain Controllers, LDAP servers, federation servers, and more), so any compromise of these assets can result in a compromise of many or all accounts and identities in the organization. Additionally, IT administrators must follow identity and access best practices for privileged accounts used to manage infrastructure assets (including infrastructure as code (IAC) and other automation). Retiring legacy authentication protocols and cryptography often requires updating and reconfiguring infrastructure.
 **Apps** | Applications are a key store of value for the organization and are commonly used as entry points by threat actors to gain access to other assets. All apps must follow access and identity security best practices including commercial Software as a Service (SaaS) and mobile apps, custom developed apps, CI/CD processes for development, and more.
 **Data** | Data is a key store of value for the organization and often targeted by attackers for intellectual property theft, encryption to gain leverage for extortion or ransomware, planning future attacks, and other purposes. Security best practices must be followed rigorously because access and identity is the primary means of protecting data.

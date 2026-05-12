@@ -11,17 +11,16 @@ ms.topic: conceptual
 #customer intent: As a business leader or security adopter, I want to understand how I can use the Microsoft security adoption model to secure OT/IoT assets across the business.
 ---
 
-# OT/IoT security
+# Establish an OT/IoT discipline
 
+This article outlines the OT/IoT Security discipline. It focuses on establishing or modernizing security for specialized Internet of Things (IoT) and Operational Technology (OT) devices, while preserving operational continuity and safety.
 
-This article helps you to integrate OT/IoT security into the [Infrastructure and networking security discipline](security-adoption-discipline-infrastructure.md), and to modernize OT/IoT security while preserving continuity and safety.
-
-
+[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
 
 
 ## Why OT/IoT security?
 
-OT/IoT security is a subset of the Infrastructure Security discipline. It addresses OT and IoT systems that often have unique safety, availability, and reliability constraints. 
+OT/IoT security addresses systems with unique safety, availability, and reliability constraints. 
 
 OT and IoT systems increasingly appear in modern attack paths as entry points, lateral movement paths, and high‑impact targets. The key challenge is that most OT environments are composed of legacy (“brownfield”) systems that are fragile, unsupportable, or difficult to modify. Common constraints include:
 
@@ -55,14 +54,14 @@ The mission is to protect OT systems and IoT devices that control physical proce
 
 
 
-The following diagram from the [Microsoft Cybersecurity Reference Architectures (MCRA)](microsoft-reference-architecture.md) illustrates the range of OT and IoT Devices that must be secured.  
+The following diagram from the [Microsoft Cybersecurity Reference Architecture (MCRA)](microsoft-reference-architecture.md) illustrates the range of OT and IoT Devices that must be secured.  
 
 :::image type="content" source="./media/internet-of-things-devices.png" alt-text="OT and IoT device types" lightbox="./media/internet-of-things-devices.png":::
 
 
 ## Manage change
 
-OT and IoT security modernization focuses on improving organizational ability to discover, monitor, and protect specialized OT/IoT devices. It requires incremental, risk‑based change management, not wholesale replacement.
+OT and IoT Security modernization focuses on improving organizational ability to discover, monitor, and protect specialized OT/IoT devices that often aren't included in IT security efforts, controls, or scope. Unlike IT environments, most OT/IoT systems are long-live, safety-critical, and difficult ot change. 
 
 Key change principles include:
 
@@ -75,9 +74,9 @@ Key change principles include:
 
 ## Modernization strategy
 
-The OT and IoT security technology strategy combines near‑term risk reduction with long‑term structural improvements to reduce the likelihood and impact of cybersecurity incidents that could cause human harm, physical damage, or business disruption.
+The OT/IoT security strategy combines near‑term risk reduction with long‑term structural improvements to reduce the likelihood and impact of cybersecurity incidents that could cause human harm, physical damage, or business disruption.
 
-Unlike IT environments, most OT and IoT systems are long‑lived, safety‑critical, and difficult to change. This strategy acknowledges those constraints and focuses on practical, sustainable controls that protect operations without disrupting safety or availability.
+Unlike IT security, OT/IoT security have few viable security controls. Security strategy must acknowledge constraints, focus on consistently and effectively executing available on practical, sustainable controls without disrupting safety or availability.
 
 
 ## Strategic priorities
@@ -97,20 +96,20 @@ This diagram shows key priorities.
 
 ### Short-term - Isolate OT/IoT environments
 
-Effective isolation requires more than just simple network segmentation with firewall rules to block traffic. A comprehensive isolation process over time ensures business continuity and threat resistance.
+Effective isolation requires more than just simple network segmentation with firewall rules to block traffic. Achieving effective isolation against threats that doesn't disrupt operations requires a comprehensive and thoughtful approach implemented consistently over time. 
 
-The process of isolation should include:
+The approach should include:
 
- - **Model business processes, technology, and threats** - Discover and document OT/IoT systems. How they're used in business workflows, how the technology is configured, and how threats actors might gain access. 
- - **Account for people, process, and technology** - From modelling through to implementation, take a holistic approach. For example:
+ - **Modelling business processes, technology, and threats**: Discover and document OT/IoT systems. How they're used in business workflows, how the technology is configured, and how threats actors might gain access. 
+ - **Accounting for people, process, and technology** - Take a holistic approach. For example:
 
     - **For technology**, block unauthorized communications, detect threats, and establish rigorous security controls for all bridging/transit devices.
     - **For processes**, establish, monitor, and update organizational policy, business and technical procedures, and governance to sustain assurances over time.
     - **For people**, train all stakeholders on what, why, and how to execute procedures.
 
- - **Apply to all layers** - Don't restrict analysis, design, and implementation to only networking. Consider the whole system, including identities and access, network connectivity, physical access, operating systems, and apps.
- - **Secure transient devices** - Device access to isolated OT/IoT environments must be strongly controlled. Apply rigorous people, process, and techology controls to: 
-    - Devices that are permanently connected to the environment, such as monitoring workstations.
+ - **Apply to all layers** - Don't restrict analysis, design, and implementation to only one control such as networking. Consider the whole system, including identities and access, network connectivity, physical access, operating systems, and apps.
+ - **Secure transient devices** - Device access to isolated OT/IoT environments must be strongly secured to ensure the safety of fragile environments. Apply rigorous people, process, and techology controls to:
+    - All devices that are permanently connected to the environment, such as monitoring workstations.
     - Devices that transit in or out, such as vendor maintenance laptops. Ensure you follow [privileged device principles](security-adoption-scenario-privileged-access.md). 
 
 This diagram shows key points for isolating high value assets.
@@ -150,9 +149,11 @@ Obviously, security requirements must be balanced with other business priorities
 Be proactive in asking for updates, upgrades, and replacement systems and equipment.
 
 - Don't assume that the cost of replacing a legacy system is always too expensive.
-- Perform a full analysis of lifetime cost for legacy maintenance versus upgrade.
+- Consider the business and security benefits or upgrade or replacement.
+- Productivity gains from newer equipment might offset upgrade costs.
 - Consider the hidden cost of legacy systems in terms of maintenance, business agility, and security risk and operational disruption. 
-- Productivity gainsfrom newer equipment might offset upgrade costs.
+- Perform a full analysis of lifetime cost for legacy maintenance versus upgrade.
+
 
 ## Discipline roles and collaborators
 
@@ -205,12 +206,6 @@ Executing the strategy of the OT and IoT security discipline requires security c
 
 ## Microsoft resources
 
-### Workshops
-
-Microsoft Unified offers expert-led workshops to help organizations modernize their IOT/IoT security strategy. These workshops include:
-
-- **Architecture and strategy workshops** - The *Security Adoption Framework (SAF) - Architecture Design Session: Infrastructure and Development Security* workshop focuses on accelerating development security modernization and integration with infrastructure security.. This workshop is available as a less than four-hour topic summary/discussion focused on key learnings and best practices.
-- **Technology adoption workshops** - Microsoft Unified has workshops to help organizations learn about, plan, implement, and optimize the use of Microsoft infrastructure and networking technologies.
 
 ### Technologies
 

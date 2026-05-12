@@ -14,10 +14,11 @@ ms.topic: conceptual
 # Establish a Development Security discipline
 
 
-[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across their entire technology estate. In the security adoption model, disciplines provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation, ensuring that security investments translate into real, measurable outcomes.
+This article helps security and technology teams establish and modernize a Development Security discipline. This discipline helps security, engineering, and technology teams ensure that software is designed, built, integrated, and deployed securely—without slowing innovation.
+
+[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
 
 
-This article outlines the DeveLopment Security discipline. This discipline helps security, engineering, and technology teams ensure that software is designed, built, integrated, and deployed securely—without slowing innovation.
 
 ## Why this discipline?
 
@@ -78,7 +79,7 @@ Rather than choosing between speed and security, DevSecOps focuses on securing k
 **Secure the pipeline** – Validate the pipeline process and protect CI/CD systems from compromise and unauthorized change. Ensure traceability of changes to the pipeline and the software going through the pipeline.
 **Secure operations** – Ensure deployed workloads follow configuration, patching, and operational best practices.
 
-Development security modernization is incremental. Teams improve outcomes by continuously refining collaboration between development, security, and operations, balancing delivery goals with risk reduction.
+Teams improve outcomes by continuously refining collaboration between development, security, and operations, balancing delivery goals with risk reduction. This continuous incremental improvement should be applied to both work production (software code produced in the lifecycle) as well as the maturing of the development lifecycle itself.
 
 
 ## Define a DevSecOps process

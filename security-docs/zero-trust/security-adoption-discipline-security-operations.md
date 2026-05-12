@@ -13,14 +13,16 @@ ms.topic: conceptual
 
 # Establish a SecOps discipline
 
-[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. In the security adoption model, disciplines provide the bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation, ensuring that security investments translate into real, measurable outcomes.
+This article helps security and technology teams establish and modernize a Security Operations (SecOps) discipline that helps organizations detect, investigate, and respond to active threats that bypass preventive controls. 
 
-The Security Operations (SecOps) discipline helps organizations detect, investigate, and respond to active threats that bypass preventive controls. This article helps security and technology teams establish and modernize a SecOps discipline across the organization.
+[Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
+
 
 ## Why this discipline?
 
-No preventive control is perfect. Despite strong security architecture and posture management, threat actors will sometimes gain initial access to environments.
-SecOps focuses on managing active attacks and security incidents, limiting the damage attackers can cause after compromise. Effective SecOps reduces risk by:
+Not all attacks can be prevented. Even with strong security architecture and posture management that blocks most attacks, threat actors sometimes gain initial access to environments.
+
+SecOps focuses on managing those active attacks and security incidents, limiting the damage attackers can cause after compromise. Effective SecOps reduces risk by:
 
 - Detecting malicious activity quickly.
 - Shortening attacker dwell time.
@@ -43,11 +45,11 @@ Regardless of team size or operating model, mature SecOps delivers these outcome
 - **Shared threat intelligence** – Centralized signals and insights that inform analysts, automation, and downstream security controls
 - **Proactive threat discovery** – Threat hunting and attack simulation to uncover emerging techniques and attacker behavior
 
-SecOps teams may range from a single individual to globally distributed 24/7 operations, and functions may be partially or fully outsourced. Regardless of structure, the outcomes remain the same.
+SecOps teams may range from a single individual to large globally distributed 24/7 operations, and functions may be partially or fully outsourced. Regardless of structure and size, the outcomes remain the same.
 
 ### Adopt Zero Trust in SecOps
 
-Security Operations (SecOps) is foundational to a Zero Trust strategy. Zero Trust assumes breach and focuses on minimizing impact when controls fail. SecOps turns that assumption into action by continuously detecting, investigating, and responding to threats across the environment.
+Security Operations (SecOps) is foundational to a Zero Trust strategy. Zero Trust assumes compromise and focuses on minimizing impact when controls fail. SecOps turns that assumption into action by continuously detecting, investigating, and responding to threats across the environment.
 
 In a Zero Trust model, prevention alone is insufficient. Organizations must expect attackers to bypass controls and rely on SecOps to identify malicious activity early, contain attacks quickly, and generate insights that improve security posture over time.
 
@@ -57,7 +59,7 @@ Within our security adoption model, SecOps guidance focuses on the operational c
 - **Automate response and containment**: Use orchestration and automation to execute repeatable response actions, such as isolating compromised devices or disabling risky accounts. Automation reduces response time, lowers analyst cognitive load, and ensures consistent execution under pressure.
 - **Proactively hunt for threats**: Treat threat hunting as a core SecOps capability. Use hypothesis‑driven hunting and advanced analytics to find attacker activity that evades automated detections, reducing dwell time and uncovering gaps in controls.
 - **Manage alerts and incidents effectively**: Tune detections to reduce noise and ensure analysts focus on meaningful alerts. Standardize investigation and response workflows using playbooks so incidents are handled consistently and efficiently.
-- **Continuously reduce exposure based on risk**: Use attack‑path analysis and exposure insights to identify conditions that could enable compromise. Prioritize remediation based on business impact and likelihood, not alert volume alone, so effort is focused where it matters most.
+- **Continuously reduce exposure based on risk**: Use attack‑path analysis and exposure insights to identify conditions that could enable compromise. Prioritize remediation based on business impact and likelihood, so effort is focused where it matters most.
 - **Continuously evolve SecOps processes**: Regularly review detections, playbooks, and response outcomes based on real incidents and threat intelligence. Feed these learnings back into SecOps strategy to ensure capabilities adapt as attackers, technologies, and business priorities change.
 
 
@@ -72,11 +74,11 @@ SecOps modernization is a continuous improvement journey, not a one-time tooling
 
 A modern SecOps approach aligned with Zero Trust principles emphasizes:
 
-- **Mission alignment** - Prioritizing what matters most to the business when alerts and threats exceed human capacity.threats based on business impact when alert volume exceeds human capacity.
+- **Mission alignment** - Prioritizing what matters most to the business when alerts and threats exceed your capacity to respond with humans and automation, including AI. 
 - **Continuous learning** - Adapting detections, skills, and processes as threat actors, platforms, and business priorities change.
 - **Collaboration and sharing** - Treating SecOps as a team effort across security, IT operations, engineering, legal, communications, and leadership.
 
-Threat actors tend to reuse techniques that are cheap, effective, and reliable until they fail. For this reason, SecOps threat intelligence should directly inform security control design, prioritization, and posture improvement, alongside business and compliance requirements.
+Threat actors tend to reuse techniques that are cheap, effective, and reliable until they fail, so it's critical to capture and share threat intelligence as insights on past attacks. SecOps threat intelligence should directly inform security control design, prioritization, and posture improvement, alongside business and compliance requirements.
 
 
 ## Discipline roles and collaborators
@@ -94,14 +96,14 @@ Primary roles in this discipline typically include:
 - Digital forensics and incident response specialists
 - Threat intelligence analysts
 - Incident coordination and management roles
-- Attack simulation specialists (red, purple, tabletop exercises)
+- Attack simulation specialists (red team, purple team, penetration testing)
 
 Key collaborators include:
 
-- **Technical engineering and operations teams** – Support investigation, containment, and recovery of systems they design and run
-- **Architecture roles** – Design systems and controls that SecOps monitors and improves based on incident learnings
-- **Application and product teams** – Update software and services in response to incident insights
-- **Security Strategy, Integration, and Governance discipline** – Set priorities, metrics, and accountability for SecOps investments
+- **Technical engineering and operations teams** – Enable logging and support investigation, containment, and recovery of systems they design and run.
+- **Architecture roles** – Continuously improve the design of systems and controls based on incident learnings from SecOps threat intelligence. 
+- **Application and product teams** – Update software and services in response to incident insights.
+- **Security Strategy, Integration, and Governance discipline** – Set priorities, metrics, and accountability for SecOps investments. Provide support and coordination during major incidents.
 
 
 Effective SecOps depends on tight feedback loops between incident response and system design.
@@ -113,9 +115,9 @@ SecOps operates as part of a broader security operating model and is tightly int
 
 - **Security Posture Management discipline**: Focuses on preventing incidents; SecOps manages the incidents that still occur.
 - **Access and Identities discipline**: Identity telemetry is a primary detection and investigation signal.
-- **Data Security disciplin**e: SecOps investigates data theft, extortion, insider risk, and privacy** incidents.
+- **Data Security discipline**: SecOps investigates data theft, extortion, insider risk, and privacy incidents.
 - **Security Architecture discipline**: Ensures detection and response mechanisms align with intended system design.
-- **Strategy, Integration, and Governance discipline**:Defines SecOps priorities, metrics, and success criterias.
+- **Strategy, Integration, and Governance discipline**:Defines SecOps priorities, metrics, and success criteria.
 
 
 ## Alignment with technology pillars
@@ -124,11 +126,11 @@ The SecOps discipline operates across all technology pillars and must detect and
 
 - **Identities**: This is a top priority for SecOps because identities are primary attack entry points. Almost all multi-stage attacks rely on identity attacks (pass-the-hash/ticket/etc.) to laterally traverse and gain access to additional organizational assets, often using privileged accounts associated with IT administrators or administrative service accounts.
 - **Endpoints**: Endpoints are common footholds, a base of operations, and local attack tool storage for attackers. It's critical to quickly locate compromised endpoints to contain damage and gain insights into attackers objectives and capabilities.
-**Infrastructure**: Effective detection and response is important because threat actors frequently target high-value cloud and on-premises infrastructure assets that enable broad compromise when breached.
-**Apps** | Rapidly detecting and responding to attacks on email, collaboration, line of business, and other apps is critical because attackers often use them to enter and laterally traverse an organization to access business assets.
-**Data** | Attackers often target data for intellectual property theft, encryption to gain leverage for extortion or ransomware, planning future attacks, and other purposes. Additionally, SecOps may be involved in or collaborate on data related investigations related to privacy, insider risk, and others.
-**Network**| Just like legitimate communications, threat actor communications and attack operations travel over network connections. SecOps focuses on network sensor and data is still valuable for context and containment, even as encryption reduces visibility.
-**AI** |  As AI emerges as an attack surface, new tools and skills are needed for effective detection and investigatation. AI attack volume is increasing as threat actors adopt AI technology. SecOps can also take advantage of AI to automate analysis and other processes.
+- **Infrastructure**: Effective detection and response is important because threat actors frequently target high-value cloud and on-premises infrastructure assets that enable broad compromise when breached.
+- **Apps**: Rapidly detecting and responding to attacks on email, collaboration, line of business, and other apps is critical because attackers often use them to enter and laterally traverse an organization to access business assets.
+- **Data**: Attackers often target data for intellectual property theft, encryption to gain leverage for extortion or ransomware, planning future attacks, and other purposes. Additionally, SecOps may be involved in or collaborate on data related investigations related to privacy, insider risk, and others.
+- **Network**: Just like legitimate communications, threat actor communications and attack operations travel over network connections. SecOps focuses on network sensor and data is still valuable for context and containment, even as encryption reduces visibility.
+- **AI**: As AI emerges as an attack surface, new tools and skills are needed for effective detection and investigatation. AI attack volume is increasing as threat actors adopt AI technology. SecOps can also take advantage of AI to automate analysis and other processes.
 
 
 ## What's next?

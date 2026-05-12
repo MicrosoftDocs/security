@@ -1,11 +1,11 @@
 ---
 title: Build an enterprise access architecture across the security adoption Identities and Access discipline
 description: Learn how to design an architecture for enterprise access within the security adoption Identities and Access discipline
-ms.date: 01/29/2026
+ms.date: 05/12/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand how I can design an enterprise access architecture across the security adoption Identities and Access discipline
@@ -13,13 +13,16 @@ ms.topic: conceptual
 
 # Design an enterprise access architecture
 
-The [Security Architecture discipline](security-adoption-discipline-architecture.md)  establishes the cross‑organizational patterns and principles that govern how security controls are designed, integrated, and enforced. A critical part of this discipline is defining how access to business assets is structured and controlled across the enterprise.
+This article describes how to design an enterprise access model as part of an [Access and Identities discipline](security-adoption-discipline-identity-access.md).
 
-As you establish the Security Architecture discipline, article provides architecture guidance for establishing an enterprise access architecture—a coherent, Zero Trust–aligned model for understanding, designing, and governing all access paths to digital assets.
+It provides guidance for establishing an enterprise access architecture based on a coherent, Zero Trust model for understanding, designing, and governing all access paths to digital assets.
+
 
 ## Why an enterprise access architecture?
 
-Modern enterprises operate in environments where access is no longer limited to internal users on corporate networks. Access is exercised by:
+Consistent and comprehensive policy enforcement is critical in preventing threat actors from using weak access controls to access your environment, and from escalating privileges during an attack.  
+
+Modern enterprises operate in complex environments where access isn't limited to internal users on corporate networks. Access is exercised by:
 
 - Employees, partners, and customers
 - Applications, services, and automation
@@ -121,9 +124,9 @@ Effective enterprise access architectures consistently apply the following princ
 
 ## Evolution from the legacy AD tier model
 
-The enterprise access architecture evolves the intent of the legacy Active Directory tier model, which focused on preventing privilege escalation in on‑premises Windows environments.
+The enterprise access architecture evolves the scope of the legacy Active Directory tier model, which focused on preventing privilege escalation in on‑premises Windows environments.
 
-While effective for its time, the tier model does not fully address modern realities such as:
+While effective for its time, the tier model did not fully address modern realities such as:
 
 - Cloud services and SaaS platforms
 - External users and zero‑perimeter access
@@ -137,7 +140,7 @@ While effective for its time, the tier model does not fully address modern reali
 
 The enterprise access architecture preserves the security intent of the tier model while expanding it for modern environments.
 
-- **Tier 0 > Control plane**: Ecompasses the full control plane, including identity systems, centralized access enforcement, and network controls.
+- **Tier 0 > Control plane**: Encompasses the full control plane, including identity systems, centralized access enforcement, and network controls.
 - **Tier 1 > Management and data/workload planes**: Separates into the management plane (protect enterprise-wide IT management functions) and per-workload administration performed by IT teams/business unities. This separation improves protection for high-value systems and DevOps operations.
 - **Tier 2 > General access pathways**: Covers users access (B2B, B2C, public) and expands to include application/API access pathways, and their attack surfaces.
 

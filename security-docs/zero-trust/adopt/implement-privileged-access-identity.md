@@ -12,13 +12,14 @@ ms.topic: conceptual
 
 # Phase 1 - Secure the identity control plane
 
+
+This article helps you to implement Phase 1 of the [Implement a privileged access architecture](implement-privileged-access.md) solution. 
+
+During Phase 1 you secure the identity control plane by defining and protecting privileged identities, role assignments, and authorized elevation paths.
+
 Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
 
-This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access business scenario](../security-adoption-discipline-identity-access-privileged-model.md).
-
-This article describes Phase 1 of the implementation, which secures the identity control plane by defining and protecting privileged identities, role assignments, and authorized elevation paths.
-
-Implement this phase first. later phases (devices, Conditional Access enforcement, and monitoring) depend on having clean, well-governed privileged identities and explicit elevation paths.
+Implement Phase 1 first. Later phases to secure privileged access devices, enforce Conditional Access policy, and monitor access depend on having clean, well-governed privileged identities and explicit elevation paths.
 
 ## Protection goals
 
@@ -101,7 +102,7 @@ Establish a complete inventory of privileged identities and access paths. Audit 
 
 **Source** | **Details**
 --- | ---
-**Microsoft Entra directory roles** | Any role that can modify security, identity, or access, including Global Administrator, Privileged Role Administrator, Exchange, SharePoint, and other service admins.<br/><br/>For each role:<br/>- Identify direct vs. group‑based assignments.<br/>- Identify permanent vs. PIM‑eligible assignments<br/>- Capture current activation state
+**Microsoft Entra directory roles** | Identify [privileged roles](/entra/identity/role-based-access-control/permissions-reference) that can directly or indirectly lead to tenant dominance by altering identity, access, or trust boundaries in the identity control plane. <br/><br/>For each role:<br/>- Identify direct versus group‑based assignments.<br/>- Identify permanent versus PIM‑eligible assignments<br/>- Capture current activation state.
 **Group-based privilege** | Find out who is privileged indirectly and would be missed if you only look at users.<br/><br/>- Review nested group membership<br/>- Identify users, service principals, and managed identities<br/>- Record how privilege is inherited
 **Azure RBAC roles** | Find out what these privileged identities can do outside the directory itself.<br/><br/>Audit assignments at management group, subscription, and resource scopes<br/>Identify identities with broad or cascading permissions
 **Non-human identities** | Find out which non-human identities are part of the privileged access service, including:<br/><br/>Service principals and managed identities<br/>Automation accounts and scripts<br/>Application permissions with tenant or resource control.
@@ -166,8 +167,21 @@ Now that you know which identities are privileged, let's check what they can do 
     1. Review sign-in logs for information about apps, client endpoints, and authentication flows.
     1. Correlate information with audit and activity logs to check whether an account is used, and whether it changed policy, modified resources/subscriptions, or perfromance some other activity.
 
+## Step 2: Assess your existing cofiguration
 
-## Step 2: Establish dedicated administrative identities
+With your inventory in place, you can use the [Zero Trust Assessment tool](assessment/overview.md) to evaluate how privileged access is configured across your environment and identify gaps in control. 
+
+While the Assessment tool doesn't replace  a full inventory, it uses role and policy data as input to help you understand: 
+
+- Whether privileged roles are protected (MFA, Conditional Access).
+- Whether privileged access is governed (PIM, JIT/JEA patterns).
+- Whether policies are consistently applied.
+- Where gaps exist across identities, devices, and access policies 
+
+[Learn more](/entra/fundamentals/configure-security?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json) about assessing identity with the tool. 
+
+
+## Step 3: Establish dedicated administrative identities
 
 Remove privileged roles from standard user accounts. 
 
@@ -194,7 +208,7 @@ This provides you with a clean admin identity with no privilege.
 
 
 
-## Step 3: Create identities for PAWs
+## Step 4: Create identities for PAWs
 
 In later procedures you set up a privileged admin workstation (PAW). 
 
@@ -228,7 +242,7 @@ Configure a group that controls who can sign in to the PAWs
 1. Add only PAW sign-in identities to the group, not admins by default.
 
 
-## Step 4: Create administrative control groups
+## Step 5: Create administrative control groups
 
 Create security groups that define who is eligible for privileged roles.
 These groups:
@@ -254,7 +268,7 @@ This group will later be:
 - Assigned directory roles via PIM as **eligible** (not active)
 - Use as the primary targeting mechanism for privileged access policies
 
-## Step 5: Configure PIM
+## Step 6: Configure PIM
 
 If Privileged Identity Management isn't already enabled, do that now. 
 
@@ -320,7 +334,7 @@ At the completion of Step 5, The following is configured:
 - Privilege is requested, approved, time‑bound, logged
 - Elevation paths are explicit and reviewable
 
-## Step 6: Configure emergency accounts
+## Step 7: Configure emergency accounts
 
 If you don't already have emergency access accounts in place, configure them now. They're required to recover from identity lockout scenarios caused by Conditional Access, MFA outages, or misconfiguration.
 

@@ -40,6 +40,20 @@ This diagram illustrates how these elements come together in an adoption model.
 
 :::image type="content" source="media/adoption-guidance-context.png" alt-text="Diagram showing how the adoption model includes learnings and guidance from Microsoft and external sources." lightbox="media/adoption-guidance-context.png":::
 
+## How the adoption model integrates existing guidance
+
+This adoption model brings together Microsoft security guidance that has historically been published across multiple frameworks and resources, aligning it into a single, actionable structure.
+
+It integrates and builds on established guidance, and including these content sources:
+
+- [Microsoft Cybersecurity Reference Architecture (MCRA)](microsoft-reference-architecture.md)
+- [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/practices).
+- [Zero Trust](workshop-business-overview.md) and [CISO](workshop-business-ciso.md) workshops
+- The [Immutable Laws of Security](security-adoption-discipline-architecture-tips.md)
+- [Privileged access/workstation guidance](security-adoption-discipline-identity-access-privileged-model.md).
+- [Incident response playbooks](security-operations-playbook-phishing.md)
+
+By organizing this guidance around common business scenarios, disciplines, and implementation steps, the model helps you move from isolated recommendations to a cohesive approach for planning, implementing, and measuring security improvements. We'll further enrich our adoption model content over time.
 
 ## Adoption model structure
 

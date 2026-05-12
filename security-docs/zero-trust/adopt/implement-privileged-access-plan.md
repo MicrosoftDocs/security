@@ -15,39 +15,38 @@ ms.custom: sfi-image-nochange
 
 # Plan implementation
 
-This planning article is for implementers and security architects who need to translate the privileged access architecture into a practical rollout plan (scope, prerequisites, sequencing, and ownership) before making configuration changes.
+This planning article is for implementers and security architects who translate the privileged access architecture into a practical rollout plan (scope, prerequisites, sequencing, and ownership).
 
-This article is the first step in the [Implement a privileged access architecture](implement-privileged-access.md) solution guidance. You’ll identify which privileged access paths matter most, decide which paths are allowed vs. blocked, and map those decisions directly to the phased implementation articles.
+This article is the first step in the [Implement a privileged access architecture](implement-privileged-access.md) solution. During planning you identify which privileged access paths matter most, decide which paths are allowed and which are blocked, and map those decisions directly to the phased implementation to follow.
 
 ## Before you start
 
-- Our adoption and implementation model starts with a set of critical business scenarios aimed at business leaders and decision makers. Learn more about the [**Secure and govern privileged access to critical systems**](../security-adoption-scenario-privileged-access.md) business scenario.
+- Our adoption model defines a set of critical business scenarios aimed at business leaders and decision makers. Learn more about the [**Secure and govern privileged access to critical systems**](../security-adoption-scenario-privileged-access.md) business outcome.
 - We use [security disciplines](../security-adoption-discipline-overview.md) to help teams deliver security outcomes across the business. Learn about the [disciplines associated with privileged access architecture](../security-adoption-discipline-identity-access-privileged-model.md)
 
 
 ## Planning outcomes
 
-After you complete planning you should have: 
+You should finish planning with:
 
 - A shared understanding of which privileged access paths matter most in your environment.
 - Agreement on which access paths are allowed, restricted, or eliminated.
 - A defined implementation sequence for reducing risk without breaking operations.
 - Clear ownership for approving, changing, and reviewing privileged access decisions.
-- A direct mapping from planning decisions to implementation phases.
+- Direct mapping from planning decisions to implementation phases.
 
 ## Implementation goals
 
-Implementation planning translates design goals into enforceable decisions. While multiple security disciplines contribute to this work, the planning focus is on outputs, not on restating each discipline’s role.
+Implementation planning translates design goals into enforceable decisions. 
 
-The table below shows how planning goals relate to disciplines and downstream implementation.
+Multiple security disciplines and technologies drive outcomes for this solution. The table below shows how planning goals relate to disciplines and downstream implementation.
 
-**Implementation goal** | **Disciplines involved** | **Planning otucome** 
+**Implementation goal** | **Disciplines involved** | **Planning outcome** 
 --- | --- | ---
-**Limit exposure of privileged credentials**<br/><br/>reduces exposure by minimizing when, where, and how privileged credentials can be used. | Strategy and governance<br/> Access and identities<br/>End-to-end architecture. | A documented list of roles, actions, and systems that constitute privileged access (for example: Entra Global Admins, subscription owners, identity platform operators, production DB admins). Clear rules for when elevation is allowed, how long, and with what approval, so implementation teams can enforce just‑in‑time access and eliminate standing privilege.
-**Isolate and monitor privilege access paths**<br/><br/>These paths enforce stronger authentication and device trust, are continuously monitored for anomalous behavior, and receive priority detection and response because of their high impact. | Security architecture<br/> Access and identities<br/>SecOps | An explicit definition of privileged access paths that are allowed, restricted, or eliminated (for example: PAWs only, approved portals and APIs, no legacy protocols, no direct admin access from personal devices). This gives implementation teams a concrete allow/block model for Conditional Access, interface security, and monitoring.
-**Reduce the privileged attack surface**<br/><br/> Reducing the number of privileged identities, roles, and assignments lowers attacker opportunity and return on investment. | Strategy and governance<br/>Access and identities<br/> posture management. | A completed privileged role rationalization outcome: which roles are required, which can be removed, and which workflows must change to avoid standing privilege. Planning must produce agreement on roles to remove from permanent assignment and success measures (for example, reduction in standing privileged roles).
-**Separate productivity and administrative workflows**<br/><br/> Using the same accounts or devices for everyday productivity and administrative tasks creates a bridge between common attack vectors and enterprise‑wide control. | End-to-end architecture<br/> Infrastructure<br/>Access and identities. | A decision on where privileged work may occur: whether dedicated admin accounts and devices are required, which activities are prohibited from standard productivity environments, and which workflows must move to privileged devices or sessions. This enables device deployment and access enforcement phases without ambiguity.
-
+**Limit exposure of privileged credentials**<br/><br/>Minimize when, where, and how privileged credentials can be used. | Strategy and Governance<br/><br/> Access and Identities<br/>Security Architecture. | A documented list of roles, actions, and systems that constitute privileged access.<br/><br/> Clear rules for when elevation is allowed, how long, and with what approval.<br/><br/> Aids enforcement of just‑in‑time access and eliminates standing privilege.
+**Isolate and monitor privilege access paths**<br/><br/>Enforce strong authentication and device trust.<br/><br/>Continuously monitor for anomalous behavior. <br/><br/>Prioritize detection and response because of high impact. | Security Architecture<br/><br/> Access and Identities<br/><br/>SecOps | Explicitly defined privileged access paths that are allowed, restricted, or eliminated.<br/><br/> For example, PAWs only, approved portals and APIs, no legacy protocols, no direct admin access from personal devices.<br/><br/> Provides a solid allow/block model for Conditional Access, interface security, and monitoring.
+**Reduce the privileged attack surface**<br/><br/> Reduce the attack surface by minimizing the number of privileged identities, roles, and assignments. | Strategy, Integration, Governance<br/>Access and Identities<br/><br/>Security Posture Management. | Complete privileged role rationalization.<br/><br/>Which roles are required or can be removed, and which workflows must change to avoid standing privilege.<br/><br/> Agreement on which roles to remove from permanent assignment.<br/><br/>Success measurements. For example, reduction in standing privileged roles.
+**Separate productivity and administrative workflows**<br/><br/> Seperate workflows to eliminate the bridge between common attack vectors and enterprise-wide control.  | Security Architecture<br/> Infrastructure<br/>Access and Ientities. | Decisions on where privileged work can occur.<br/><br/>Whether dedicated admin accounts and devices are required.<br/><br/>Which activities are prohibited from standard productivity environments.<br/><br/>Which workflows must move to privileged devices or sessions.<br/><br/>These decisions enables device deployment and access enforcement phases without ambiguity.
 
 
 ## Use security levels for planning

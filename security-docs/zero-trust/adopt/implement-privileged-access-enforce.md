@@ -116,7 +116,7 @@ Ensure that administrative portals are reachable only from compliant PAWs.
 
 ## Step 3 - Block privileged access from non-PAW devices
 
-Ensure that even compliant non‑PAW devices can't be used for privileged access.
+Ensure that privileged access to administrative portals is blocked from non‑PAW devices, even if those devices meet general compliance requirements.
 
 1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Protection** > **Conditional Access** > **Policies**.
 1. Select **Create new policy** to create a third policy.
@@ -124,19 +124,43 @@ Ensure that even compliant non‑PAW devices can't be used for privileged access
     - Include privileged directory roles such as Global Administrator, Security Administrator.
     - Exclude the emergency breakglass group.
 1. In **Assigments** > **Cloud apps** include the same administrative portals.
-1. In **Access controls**, select **Block access**.
+1. Under **Conditions**, select **Filter for devices**.
+1. Configure the device filter to target non‑PAW devices:
+    - Select **Include filtered devices**:
+    - Configure a rule such as: device.extensionAttribute1 -ne "PAW". Adjust the attribute and value to match how PAWs are identified in your environment.
+1. Select **Done** to apply the device filter condition.
+1. Under **Access controls**, select **Block access**.
+1. Select **Create** to enable the policy.
 
+## Step 4 - Restrict PAW network access
 
-## Step 4 - Enforce firewall-based network restriction for PAWs
+Limit PAW network access to only required administrative and management endpoints. This configuration relies on explicit firewall rules to allow required endpoints, rather than broad protocol-based allowances.
 
-Limit PAW network access to required administrative endpoints.
+1. In the Microsoft Intune admin center, navigate to **Endpoint security** > **Firewall**.
+1. Select **Create Policy**.
+1. Configure the policy:
+    - **Platform**: Windows 10 and later.
+    - **Profile**: Microsoft Default Firewall
+1. Configure the firewall profile settings:
+    - **Inbound connections**: Block
+    - **Outbound connections**: Allow (default, controled by rules below)
+1. Under **Settings**, configure **Firewall** rules. Use **reusable settings or firewall rule collections to define allowed traffic.
+1. Create **outbound allow rules** for required services, such as:
+    - DNS
+    - DHCP
+    - NTP
+    - Required Microsoft cloud management endpoints such as Intune and Microsoft Entra ID.
+    - Required administrative endpoints.
 
-1. In the Microsoft Intune admin center, navigate to **Endpoint security** > **Firewall**.
-2. Create an **Endpoint Protection** profile.
-1. Configure **Firewall behavior (Privileged profile)**:
-    - **Inbound traffic**: Block
-    - **Outbound traffic**: Block except DNS, DHCP, NTP, HTTP/HTTPS, and required Microsoft cloud management endpoints.
-1. Assign the profile to **Secure Workstation Devices**.
+    Each rule should:
+
+    - Specify **Direction**: **Outbound**.
+    - Specify **Action**: **Allow**
+    - Define **destination endpoints** (IP ranges, FQDNs, or service tags where supported)
+
+1. Ensure no broad allow rules such as untrestricted HTTP/HTTPS are configured.
+1. Assign the policy to **Secure Workstation Devices (PAWS)**.
+1. Select **Create** to deploy the policy.
 
 This completes the privileged access enforcement layer.
 The next article can build on this to cover measurement, monitoring, and success criteria.

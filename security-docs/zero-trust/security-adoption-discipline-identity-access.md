@@ -170,14 +170,9 @@ The Access and Identities discipline spans all technology pillars and serves as 
 
 ## What's next?
 
-Microsoft Unified offers cybersecurity reference architectures, Zero Trust guidance, and expert-led workshops to help organizations with end to end security architecture.
-
-- **Architecture and strategy workshops** - The Security Adoption Framework (SAF) - Access and Identities workshop focuses on accelerating Access and Identity modernization. This workshop is available as a less than four-hour discussion focused on key learnings and best practices.
-- **Technology adoption workshops** - Microsoft Unified has workshops to help organizations learn about, plan, implement, and optimize the use of Microsoft Access and Identity technologies including Microsoft Entra and Microsoft Intune.
+- Microsoft Unified offers cybersecurity reference architectures, Zero Trust guidance, and expert-led workshops to help organizations with end to end security architecture. [Learn more](workshop-business-overview.md
 
 
-:::image type="content" source="./media/security-adoption-discipline-access-workshop.png" alt-text="Diagram of Microsoft Unified workshops for Access and Identity technology adoption, showing key phases and activities." lightbox="./media/security-adoption-discipline-access-workshop.png":::
+    :::image type="content" source="./media/security-adoption-discipline-access-workshop.png" alt-text="Diagram of Microsoft Unified workshops for Access and Identity technology adoption, showing key phases and activities." lightbox="./media/security-adoption-discipline-access-workshop.png":::
 
-## What's next?
-
-Make sure you've [reviewed the other security disciplines](security-adoption-discipline-overview.md).
+- Review [other security disciplines](security-adoption-discipline-overview.md).

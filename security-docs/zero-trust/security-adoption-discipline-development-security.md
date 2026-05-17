@@ -148,39 +148,32 @@ Organizations that shift from DevOps to DevSecOps can:
 
 ## Integrated process for security development
 
-Code security must integrate with existing development processes to be effective and sustainable.
-
-Organizations should:
-
-- Map workflows from idea to production
-- Define roles, tools, and processes
-- Establish remediation paths for issues and defects
+Security must be embedded into existing development processes to be effective, scalable, and sustainable. Rather than introducing separate or parallel workflows, integrate security practices directly into how applications are designed, built, deployed, and operated.
 
 
-The following diagram shows an example method of integrating secure development and operations practices into the innovation process.
+- Map end-to-end workflows from idea through development, deployment, and ongoing operations.
+- Define clear roles, tools, and responsibilities for security at each stage of the lifecycle.
+- Establish consistent remediation paths for vulnerabilities, defects, and design issues.
 
-![Diagram of a high security DevSecOps process.](./media/integrated-process-security-development.png)
+Tailor security practices to the risk level of each workload. Business-critical applications require greater rigor, while lower-risk scenarios can follow streamlined approaches.
 
-The example process shown in this diagram is suitable for business-critical functions that require the highest level of security rigor (for example, APIs and applications that process financial transactions or business critical information).
+At a minimum, ensure you:
 
-Consider developing simpler, streamlined versions of this process for different use cases, as demonstrated in the following diagram:
-
-![Diagram of simplified security DevSecOps process.](./media/security-processes-business-agility-balance.png)
-
-Identify the steps involved in your organization's development workflows, people, and technologies that are necessary to progress from idea to production and ongoing operations. Also identify the process for resolving major and minor changes and bug fixes during the development lifecycle.
-
-
+- Identify the stages, people, and technologies involved in your development lifecycle.
+- Define how security activities integrate into each stage, rather than treating them as separate checkpoints.
+- Establish processes for handling both major changes and routine fixes throughout the lifecycle.
 
 ## Automate security into development and deployment  
 
-Automating security ensures consistent, scalable, and reliable execution.
+Automation is essential to enforce security consistently and at scale across development and operations.
 
-- Integrate security tools into CI/CD pipelines
-- Automate threat modeling, scanning, and validation
-- Use Infrastructure as Code (IaC) for repeatable secure deployments
+- Integrate security controls and tooling directly into CI/CD pipelines.
+- Automate key activities such as threat modeling, code scanning, validation, and policy enforcement.
+- Use Infrastructure as Code (IaC) to enable repeatable, secure deployments.
 
-Azure landing zones provide a standardized foundation for security, governance, platform automation, and DevOps workflows.
+Platform foundations such as Azure landing zones can support this approach by
 
+Platform foundations such as [Azure landing zones](azure/cloud-adoption-framework/ready/landing-zone/design-area/platform-automation-devops) can support this approach by providing standardized patterns for security, governance, and DevOps integration.
 
 ## Tips on navigating the journey
 

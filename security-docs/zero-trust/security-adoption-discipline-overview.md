@@ -73,15 +73,16 @@ The following table shows the disciplines, the category they belong to, and the 
 **[Security Architecture](security-adoption-discipline-architecture.md)**<br/>Planning and oversight. | Ensures that security controls, technologies, and processes work together as a cohesive system. It aligns architecture decisions across identity, data, applications, infrastructure, and operations to deliver consistent outcomes. | All pillars.
 **[Access and Identity](security-adoption-discipline-identity-access.md)**<br/>Technical strategy | Secures how users, devices, applications, and workloads access organizational assets. This discipline drives a consistent, identity‑centric approach using Zero Trust principles across all access paths, inlcuding networking and privileged access. | Identity, networks, endpoints.
 **[Infrastructure Security](security-adoption-discipline-infrastructure.md)**<br/> Technical strategy | Ensures that the workloads and platforms that run the business are secure across hybrid and multicloud environments for new development and legacy apps.  | Infrastructure.
-**[Development Security](security-adoption-discipline-devops.md)**<br/> Technical strategy | Ensures applications and services are designed, built, and maintained securely as pat of oa DevSecOps approach and a security development lifecycle (SDL). This includes secure coding practices, and application security testing. | Apps.
-**[Data Security](security-adoption-discipline-data.md)**<br/> Technical strategy | Protects data assets such as intellectual property, trade secrets, and regulated information. This discipline applies security controls throughout the full data lifecycle, regardless of where data is stored or how it moves. It is a critical enabler of safe Generative AI usage. | Data.**[OT/IoT Security](security-discipline-iot.md)**<br/> Technical strategy | Secures OT/IoT systems that interact with physical processes and the physical world, including industrial control systems and SCADA environments. | Endpoints.
+**[Development Security](security-adoption-discipline-development.md)**<br/> Technical strategy | Ensures applications and services are designed, built, and maintained securely as pat of a DevSecOps approach and a security development lifecycle (SDL). This includes secure coding practices, and application security testing. | Apps.
+**[Data Security](security-adoption-discipline-data.md)**<br/> Technical strategy | Protects data assets such as intellectual property, trade secrets, and regulated information. This discipline applies security controls throughout the full data lifecycle, regardless of where data is stored or how it moves. It is a critical enabler of safe Generative AI usage. | Data.
+**[OT/IoT Security](security-adoption-discipline-iot.md)**<br/> Technical strategy | Secures OT/IoT systems that interact with physical processes and the physical world, including industrial control systems and SCADA environments. | Endpoints.
 **[Security Posture Management](security-adoption-discipline-posture.md)**<br/>Operational | Continuously discovers, measures, and prioritizes security risks. It helps organizations focus remediation efforts on the most impactful vulnerabilities and attack paths. | All pillars.
-**[SecOps](security-adoption-discipline-security-operations.md)**<br/>Operational  | Detects, responds to, and recovers from active threats. This discipline focuses on rapid response, to minimize the time attackers have access after compromise, and thus limiting their business impact. | All pillars.
+**[SecOps](security-adoption-discipline-security-operations.md)**<br/> Operational  | Detects, responds to, and recovers from active threats. This discipline focuses on rapid response, to minimize the time attackers have access after compromise, and thus limiting their business impact. | All pillars.
 
 
 ## What's next
 
 - [Get started](security-adoption-model.md) with security adoption.
 - [Select a business scenario](security-adoption-business-scenarios-overview.md).
-- 
+- [Learn about Microsoft's security workshops](workshop-business-overview.md)
 

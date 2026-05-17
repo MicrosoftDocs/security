@@ -79,7 +79,13 @@ Rather than choosing between speed and security, DevSecOps focuses on securing k
 **Secure the pipeline** – Validate the pipeline process and protect CI/CD systems from compromise and unauthorized change. Ensure traceability of changes to the pipeline and the software going through the pipeline.
 **Secure operations** – Ensure deployed workloads follow configuration, patching, and operational best practices.
 
-Teams improve outcomes by continuously refining collaboration between development, security, and operations, balancing delivery goals with risk reduction. This continuous incremental improvement should be applied to both work production (software code produced in the lifecycle) as well as the maturing of the development lifecycle itself.
+Teams improve outcomes by continuously refining collaboration between development, security, and operations, balancing functional delivery goals with reliability and risk reduction.
+
+:::image type="content" source="./media/security-adoption-discipline-dev-overview.png
+" alt-text="DevSecOps strategy that combines the best elements of traditional quality controls and agile development." lightbox="./media/security-adoption-discipline-dev-overview.png
+":::
+
+This continuous incremental improvement should be applied to both work production (software code produced in the lifecycle) as well as the maturing of the development lifecycle itself.
 
 
 ## Define a DevSecOps process

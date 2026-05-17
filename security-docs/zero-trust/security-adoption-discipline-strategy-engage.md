@@ -26,7 +26,7 @@ The Security Strategy, Integration, and Governance discipline establishes:
 
 As part of establishing this discipline, security leaders must be able to engage business stakeholders effectively. This article provides guidance and actionable insights to help security leaders communicate with business leaders, align priorities, and drive sustained security transformation.
 
-This video from the [CISO Workshop](workshop-business-ciso-video.md##engaging-business-leaders-on-security) illustrates the use of communication techniques in action:
+This video from the [CISO Workshop](workshop-business-ciso-video.md#engaging-business-leaders-on-security) illustrates the use of communication techniques in action:
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=2e4ab785-460f-4a81-83e7-efabfa6ccd04]
 

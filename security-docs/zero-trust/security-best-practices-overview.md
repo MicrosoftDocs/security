@@ -16,7 +16,7 @@ ms.date: 04/29/2026
 
 Microsoft security best practices are designed to help organizations protect their digital estates by reducing risk, improving resilience, and enabling secure productivity. 
 
-- At the core of these best practices is the [Zero Trust security model](/zero-trust-overview). Zero Trust assumes that threats exist both inside and outside the network, and emphasizes verifying every access request, enforcing least privilege access, and segmenting resources as we assume breach.
+- At the core of these best practices is the [Zero Trust security model](zero-trust-overview.md). Zero Trust assumes that threats exist both inside and outside the network, and emphasizes verifying every access request, enforcing least privilege access, and segmenting resources as we assume breach.
 
 Zero Trust principles are reinforced through a combination of engineering best practices, frameworks, benchmarks, and assessment tools.
 
@@ -30,7 +30,7 @@ Zero Trust principles are reinforced through a combination of engineering best p
     All of these recommendations and best practices are included in the [Zero Trust Assessment tool](assessment/overview.md).
 
 - The **[Microsoft Cloud Security Benchmark (MCSB)](/security/benchmark/azure/overview)** provides a series of best practices and recommendations for improving the security of workloads, data, and services on Azure. 
-- Other Microsoft Defender products such as [Defender for Cloud](/defender-for-cloud/concept-cloud-security-posture-management) and [Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management), and [Microsoft Purview Compliance Manager](/purview/compliance-manager) also monitor and assess your enterprise security posture, providing actionable security and compliance insights and recommendations.
+- Other Microsoft Defender products such as [Defender for Cloud](/azure/defender-for-cloud/concept-cloud-security-posture-management) and [Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management), and [Microsoft Purview Compliance Manager](/purview/compliance-manager) also monitor and assess your enterprise security posture, providing actionable security and compliance insights and recommendations.
 - External best practices and framework also emphasize Zero Trust security principles. [Learn more](security-zero-trust-frameworks.md).
 
 

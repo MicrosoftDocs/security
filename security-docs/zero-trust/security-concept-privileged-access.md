@@ -5,8 +5,6 @@ ms.date: 02/24/2025
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
-ms.collection:
-  - zerotrust-ramp
 ---
 
 # Overview - privileged access
@@ -103,4 +101,4 @@ As shown in the diagram, all administrative actions flow through the PAW and are
 
 ## Next steps
 
-Understand the [identity control plane](security-concept-privileged-access-identity.md)
+Deploy a [privileged access architecture](implement-privileged-access.md)

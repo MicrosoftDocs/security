@@ -153,7 +153,4 @@ Microsoft Unified offers cybersecurity reference architectures, Zero Trust guida
 
 - Learn more about [Microsoft Cybersecurity Reference Architectures](microsoft-reference-architecture.md).
 - Learn more about [Security Adoption Framework (SAF) workshops](workshop-business-overview.md).
-
-## What's next?
-
-Make sure you've [reviewed the other security disciplines](security-adoption-discipline-overview.md).
+- [Review other security disciplines](security-adoption-discipline-overview.md).

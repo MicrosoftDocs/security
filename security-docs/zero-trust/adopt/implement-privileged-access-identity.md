@@ -169,7 +169,7 @@ Now that you know which identities are privileged, let's check what they can do 
 
 ## Step 2: Assess your existing cofiguration
 
-With your inventory in place, you can use the [Zero Trust Assessment tool](assessment/overview.md) to evaluate how privileged access is configured across your environment and identify gaps in control. 
+With your inventory in place, you can use the [Zero Trust Assessment tool](/assessment/overview.md) to evaluate how privileged access is configured across your environment and identify gaps in control. 
 
 While the Assessment tool doesn't replace  a full inventory, it uses role and policy data as input to help you understand: 
 

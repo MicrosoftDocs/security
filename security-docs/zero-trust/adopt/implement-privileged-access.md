@@ -34,13 +34,13 @@ This architecture is implemented using Microsoft Entra ID, Microsoft Intune, and
 
 ## Privileged access risk
 
-Privileged identities (human and non‑human) control high‑value assets and security enforcement mechanisms. When compromised, the resulting business impact is severe.
-What attackers can do with privileged access
+Privileged identities (human and non‑human) control high‑value assets and security enforcement mechanisms. When compromised, the resulting business impact is severe. With privileged access attackers can:
 
-- Exfiltrate, encrypt, or destroy data
-- Shut down or disrupt business operations
-- Disable detection and enforcement controls
-- Subvert identity systems and create persistent access
+
+- Exfiltrate, encrypt, or destroy data.
+- Shut down or disrupt business operations.
+- Disable detection and enforcement controls.
+- Subvert identity systems and create persistent access.
 
 ### Common attacks
 
@@ -61,10 +61,10 @@ Privileged access risk is unique and systemic for a number of reasons.
 **Operates in the control plane** | Privileged accounts operate in the control plane, not just the workload plane.<br/><br/> Privileged identities can modify identity, change security configurations, disable or bypass enforcement controls, and tamper with business-critical data.<br/><br/>Once attackers obtain privileged access, they can undermine the very mechanisms designed to detect and stop them. This makes traditional containment strategies far less effective and allows compromise to persist undetected. 
 **High business impact by design** | Privileged access exists to manage critical systems, so abuse of that access has immediate and severe consequences.<br/><br/>With privileged access, attackers can:<br/><br/>- Exfiltrate or destroy sensitive data<br/>- Shut down or manipulate business operations<br/>- Encrypt entire environments for extortion (human‑operated ransomware)<br/>- Subvert systems in ways that can cause real‑world harm.<br/><br/>These outcomes are not theoretical. They have been observed repeatedly across industries, making privileged access one of the most reliable ways attackers achieve maximum impact.
 **Loud and disruptive** | Unlike stealthy data theft, many privileged access attacks—especially human‑operated ransomware—are intentionally disruptive. They halt operations, break customer‑facing services, and force executive‑level decision‑making under extreme time pressure.<br/><br/>Because all organizations are financially and operationally motivated to restore service quickly, these attacks are universally applicable and highly effective, regardless of industry or size.
-**Risk growing not shrinking** | Attackers are flexible and technology‑agnostic. They don't target a single product or control, but exploit whatever privileged access path is weakest in the moment. <br/><br/>The privileged access attack surface is broad and interconnected, spanning:<br/><br/>- - Accounts and identity systems<br/> - Workstations and devices<br/>- Intermediary systems such as remote access tools and PAM/PIM solutions.<br/>- Management interfaces, portals, APIs, and elevation paths.<br/><br/>Compromise of any one of these elements can provide a path to full enterprise control, and new access paths are continuously introduced as environments evolve.
+**Risk growing not shrinking** | Attackers are flexible and technology‑agnostic. They don't target a single product or control, but exploit whatever privileged access path is weakest in the moment. <br/><br/>The privileged access attack surface is broad and interconnected, spanning:<br/><br/>- Accounts and identity systems<br/>- Workstations and devices<br/>- Intermediary systems such as remote access tools and PAM/PIM solutions.<br/>- Management interfaces, portals, APIs, and elevation paths.<br/><br/>Compromise of any one of these elements can provide a path to full enterprise control, and new access paths are continuously introduced as environments evolve.
 **Single‑solution approaches fail** | Deploying only one class of control such as PAM/PIM, network restrictions, or detection tooling, does not sufficiently reduce risk. These controls address parts of the problem, not the system.<br/><br/> If privileged access is not protected end‑to‑end, attackers simply route around isolated defenses and exploit an unprotected link in the access path.<br/><br/>This is why privileged access must be treated as a complete system—from identity and device trust, through elevation and execution, to monitoring and response—rather than as a collection of independent tools.
 
-:::image type="content" source="../media/implement-privileged-assets-attacks.png" alt-text="Diagram showing privileged identity attackers." lightbox="../media/implement-privileged-assets-attacks.png":::
+
 
 
 ## Architectural principles and outcomes
@@ -83,7 +83,7 @@ Implementing the strategy based on these principles creates a number of clear ou
 **Outcome** | **Architecture** | **Success criteria**
 --- | --- | ---
 **Privileged access is enforced as an end‑to‑end system** | Privileged risk is controlled across the entire access path: identity, role assignment, device, execution environment, elevation workflow, intermediary systems, management interfaces, monitoring and response. Privileged work occurs only through explicit, authorized elevation paths with Zero Trust validation (identity assurance, device trust, session context). | Each session validates that each user account and device are trusted at a sufficient level before allowing access. <br/><br/>Measure examples:% of privileged sign-ins meet requirements such as MFA and required device trust,<br/>% of privileged actions performed via approval elevation workflow vs standing privilege.
-**Protect and monitor identity systems** |  Protect identity systems that host or confer privilege (directories, identity management, admin accounts etc.).<br/><br/>Governance, policy enforcement, logging, and analytics are centralized to reduce drift and improve visibility.  | Each of these systems is protected at a level appropriate for the potential business impact of accounts hosted in it.<br/><br/>Measure examples: % of privileged identities covered by regular access review<br/>Completion rate of preiodic privileged access reviews (who reviewed, who revoked).
+**Protect and monitor identity systems** |  Protect identity systems that host or confer privilege (directories, identity management, admin accounts etc.).<br/><br/>Governance, policy enforcement, logging, and analytics are centralized to reduce drift and improve visibility.  | Each of these systems is protected at a level appropriate for the potential business impact of accounts hosted in it.<br/><br/>Measure examples: % of privileged identities covered by regular access review<br/>Completion rate of periodic privileged access reviews (who reviewed, who revoked).
 **Mitigate lateral traversal** |  Privileged work is isolated from high‑exposure environments. Local administrator credentials, service account secrets, and elevation mechanisms are protected so that compromise of a single device, account, or credential does not enable broader administrative control. | Compromising a single device won’t immediately lead to control of many or all other devices in the environment.<br/><br/>Measure example: % of privileged actions from admin workstations only.
 **Respond quickly to threats** | Privileged activity is a priority signal for detection and response. Monitoring and incident response processes are designed to disrupt multi‑stage attacks and limit adversary dwell time targeting privileged access. | Your incident response can reliably stop multi-stage attacks before they reach privileged access and can contain privileged misuse fast when it occurs.<br/><br/>Measure example: Man time to remediate (MTTR) privileged incidents is reduced to minutes rather than hours or days. Unexpected or new privileged access paths are quickly identified and closed. 
 
@@ -93,7 +93,7 @@ Track these measures monthly for progress, and review quarterly as part of privi
 
 Privileged access is best understood as access paths that form a complete chain from identity to execution, as illustrated in this diagram.
 
-:::image type="content" source="./media/security-adoption-discipline-access-enterprise-privileged-path.png" alt-text="Diagram showing how privileged access pathways are limited and protected." lightbox="./media/security-adoption-discipline-access-enterprise-privileged-path.png"::
+:::image type="content" source="../media/security-adoption-discipline-access-enterprise-privileged-path.png" alt-text="Diagram showing how privileged access pathways are limited and protected." lightbox="../media/security-adoption-discipline-access-enterprise-privileged-path.png":::
 
 If any link in the chain is weak, the entire path is vulnerable.
 
@@ -107,7 +107,7 @@ If any link in the chain is weak, the entire path is vulnerable.
 In a typical privileged access path:
 
 1. A dedicated admin identity signs in.
-1. Sign in is from a hardened Privileged Access Workstation (PAW.
+1. Sign in is from a hardened Privileged Access Workstation (PAW).
 1. Sign-in activates a role through Privileged Identity Management (PIM)
 1. Sign-in uses a specific administrative interface (portal, API, CLI).
 1. The signed-in identity performs a privileged action.
@@ -151,14 +151,14 @@ Our implementation guidance treats identity systems and elevation paths as part 
 The privileged access architecture is implemented using a phased adoption model aligned to Microsoft best practices.
 
 1. Kick off adoption with our [structured adoption model](../security-adoption-model.md). Adoption guidance helps business leaders to identify critical business-level outcomes for secure identity, and to understand the access and identity discipline, including the teams and efforts needed to drive identity initiatives such as privileged access.
-1. Plan the solution. Planning helps you to identity design goals, assign security levels to determine privileged access strategy, and plan for implementation.
+1. Plan the solution. Planning helps you to identify design goals, assign security levels to determine privileged access strategy, and plan for implementation.
 1. Follow the implementation phases summarized in the following table.  Each phase has a specific objective and is implemented using concrete configuration steps in the corresponding articles.
 
 ### Implementation phases
 
 **Phase** | **Mitigate Risk** | **Apply Zero Trust principles** 
 --- | --- | ---
-**Phase 1. Secure the identity control plane**<br/><br/>Create:<br/>- Dedicated admin identities.<br/><br/>Security groups for role assignment.<br/><br/>- Emergency break-glass accounts if you don't have them. | Reduces the risk of credential theft, privilege misuse, and unathorized elevation.  | **Verify explicitly**<br/>Use strong authentication.<br/><br/>**Use least privilege**<br/>Restrict admin roles/enable just-in-time privilege.<br/><br/>**Assume breach**.<br/>Use break-glass accounts for recovery.
+**Phase 1. Secure the identity control plane**<br/><br/>Create:<br/>- Dedicated admin identities.<br/><br/>Security groups for role assignment.<br/><br/>- Emergency break-glass accounts if you don't have them. | Reduces the risk of credential theft, privilege misuse, and unauthorized elevation.  | **Verify explicitly**<br/>Use strong authentication.<br/><br/>**Use least privilege**<br/>Restrict admin roles/enable just-in-time privilege.<br/><br/>**Assume breach**.<br/>Use break-glass accounts for recovery.
 **Phase 2. Deploy and harden privileged access devices**<br/><br/>Provision dedicated privileged access workstations (PAWs).<br/><br/>Apply OS hardening and security baselines.<br/><br/> Enforce patching, endpoint protection, and disk encryption.<br/><br/>Minimize installs of apps and services. | Reduces the risk of credential compromise and device-based attacks. | **Verify explicitly**<br/>Ensure devices are enrolled, trusted, and compliant before granting access.<br/><br/>**Assume breach**<br/> Minimize potential compromise paths by hardening devices and isolating administrative credentials.<br/><br/>**Use least-privileged access**.<br/>Restrict what administrators can do on these dedicated devices.
 **Phase 3. Enforce privileged access policies**<br/><br/>Configure Conditional Access for privileged roles.<br/><br/>Require compliant devices and strong authentication.<br/><br/>Enforce context‑aware access conditions. Restrict access to approved interfaces | Prevents unauthorized access, and credential replay. | **Assume breach**. Prevent misuse of credentials if accounts are stolen by restricting where and how access is granted.<br/><br/>**Use least privilege**. Enforce role-based and context-aware permissions.
 **Phase 4. Monitor and continually validate**<br/><br/>Investigate incidents and remediate quickly.<br/><br/>Continuously reassess trust and coverage. | Detect, investigate, and respond to privileged threats.<br/><br/>Monitor privileged role activations and sessions.<br/><br/>Detect anomalies and suspicious patterns.<br/><br/>Reduce the impact of undetected compromise and prolonged attacker dwell time. | **Assume breach**.Continuously monitor for attacker activity and anomalous behavior.<br/><br/>**Verify explicitly**.Evaluate trust continuously and investigate suspicious access patterns.

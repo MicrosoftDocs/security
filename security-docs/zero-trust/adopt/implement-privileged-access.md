@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Overview - Implement a privileged access architecture
 
-This article introduces an end-to-end solution for implementing a privileged access architecture. It's aimed at security/identity planners and implementers.
+This article introduces an end-to-end solution for implementing a privileged access architecture. It's aimed at security and identity planners and implementers.
 
 In the Microsoft security adoption model, implementation solutions provide prescriptive deployment guidance. Implementation solutions align to [business scenarios](../security-adoption-business-scenarios-overview.md) that define high priority security outcomes.
 
@@ -115,7 +115,7 @@ In a typical privileged access path:
 
 ## Solution components
 
-The privileged access solution is built on three tightly coupled elements that ensure **privileged actions by the right identities, from trusted devices, under enforced conditions**.
+The privileged access solution is built on three tightly coupled elements that ensure:  **privileged actions by the right identities, from trusted devices, under enforced conditions**.
 
 1. **Privileged identities**
     - Dedicated admin accounts that are allowed to perform privileged actions.

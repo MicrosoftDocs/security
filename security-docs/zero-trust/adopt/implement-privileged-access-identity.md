@@ -1,7 +1,7 @@
 ---
 title: Phase 1-Secure the identity control plane
 description: Learn how to configure the identity control plan in a privileged access architecture
-ms.date: 05/05/2025
+ms.date: 05/17/2025
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
@@ -17,7 +17,7 @@ This article is part of the [Implement a privileged access architecture](impleme
 Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
 
 
-This article helps you to implement Phase 1 of the [Implement a privileged access architecture](implement-privileged-access.md) solution. 
+This article helps you implement Phase 1 of the [Implement a privileged access architecture](implement-privileged-access.md) solution. 
 
 During Phase 1, secure the identity control plane by defining and protecting privileged identities, role assignments, and authorized elevation paths.
 
@@ -27,7 +27,7 @@ Implement Phase 1 first. Later phases then secure privileged access devices, enf
 
 Phase 1 ensures that privileged access is:
 
-- **Explicit**: Privilege is granted only through defined elevation paths. It's never implicit or accidental.
+- **Explicit**: Grant privilege only through defined elevation paths. Never make it implicit or accidental.
 - **Temporary**: Privilege expires automatically.
 - **Strongly authenticated**: Require strong authentication for elevation.
 - **Auditable**: All privilege changes and elevations are logged.
@@ -156,7 +156,7 @@ Now that you know which identities are privileged, let's check what they can do 
 1. If identities weren't found at the management group or subscription level, you can check at the resource groups level with the same procedure in Azure portal > **Resource groups**.
 1. You might also want to check whether principals have control on strategic individual resources such as Key vaults, storage accounts, virtual machines, or automation accounts. To do that, check **Access control (IAM)** > **Assigned to** for each individual resource.
 
-### Record results.
+### Record results
 
 1. For each account you identified, capture audit details in a mapping table.
 1. Identify high-risk accounts with broad privileges, and create a mapping table that will provide information about role scope (blast radius) and type of work.
@@ -385,7 +385,7 @@ At the completion of Step 6, The following is configured:
 - Emergency access is isolated, monitored, and rarely used
 
 
-## Next steps
+## What's next?
 
 After securing the identity control plan, restrict where privilege can be exercised with [secure Privileged Access Workstations (PAWs)](implement-privileged-access-devices.md).
 

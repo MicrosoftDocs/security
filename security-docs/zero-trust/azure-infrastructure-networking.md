@@ -15,30 +15,6 @@ ms.custom: sfi-image-nochange
 
 # Apply Zero Trust principles to a hub virtual network in Azure
 
-<!---
-
-Writers notes:
-
-For updates to product names, please also update the appropriate figures.
-
-To update figures that are not screen shots, your options are:
-
-- Locate the source Visio file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended).
-- Use a published Visio file in the Microsoft Download Center (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads).
-- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file (last resort).
-
-For updates to figures that are included in download files (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads), please: 
-
-- Update the corresponding files (Visio, PowerPoint, PDF) as needed.
-- Publish the Visio and PDF files in the Microsoft Download Center and update the refresh date (such as March 2024) for the download in this article and the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article.
-
-For new articles in this content set, please:
-
-- Add cross-links in the "Next steps" section FROM all the other articles in this content set TO the new article.
-- Add a link to the Zero Trust Guidance Center page (index.yml).
-- Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed.
-
---->
 
 **Summary:** To apply Zero Trust principles to a hub virtual network in Azure, you must secure Azure Firewall Premium, deploy Azure DDoS Protection Standard, configure network gateway routing to the firewall, and configure threat protection.
 
@@ -422,4 +398,4 @@ Refer to these links to learn about the various services and technologies mentio
 
 - [Building the first layer of defense with Azure security services](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)
 
-- [Microsoft Cybersecurity Reference Architectures](microsoft-reference-architecture.md
+- [Microsoft Cybersecurity Reference Architectures](microsoft-reference-architecture.md)

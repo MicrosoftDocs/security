@@ -110,9 +110,6 @@ These recommendations are based on Microsoft’s experience guiding organization
 
 Microsoft offers expert‑led SecOps adoption workshops through Microsoft Unified to help accelerate SecOps strategy, architecture, and operational modernization.
 
-
-:::image type="content" source="media/adoption/disciplines/secops-workshop-visual-summary.png" alt-text="Diagram showing visual sample of SecOps workshop content." lightbox="media/adoption/disciplines/secops-workshop-visual-summary.png":::
-
 ### Available workshop formats
 
 Microsoft Unified offers the following:

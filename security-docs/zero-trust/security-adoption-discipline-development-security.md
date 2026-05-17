@@ -173,7 +173,7 @@ Automation is essential to enforce security consistently and at scale across dev
 
 Platform foundations such as Azure landing zones can support this approach by
 
-Platform foundations such as [Azure landing zones](azure/cloud-adoption-framework/ready/landing-zone/design-area/platform-automation-devops) can support this approach by providing standardized patterns for security, governance, and DevOps integration.
+Platform foundations such as [Azure landing zones](/azure/cloud-adoption-framework/ready/landing-zone/design-area/platform-automation-devops) can support this approach by providing standardized patterns for security, governance, and DevOps integration.
 
 ## Tips on navigating the journey
 

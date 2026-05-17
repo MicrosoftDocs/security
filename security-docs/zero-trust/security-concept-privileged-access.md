@@ -101,4 +101,4 @@ As shown in the diagram, all administrative actions flow through the PAW and are
 
 ## Next steps
 
-Deploy a [privileged access architecture](implement-privileged-access.md)
+Deploy a [privileged access architecture](adopt/implement-privileged-access.md)

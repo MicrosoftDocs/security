@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Overview - Implement a privileged access architecture
 
-This article introduces an end-to-end solution for implementing a privileged access architecture. It's aimed at security/identity planners and implementers.
+This article introduces an end-to-end solution for implementing a privileged access architecture. It's aimed at security and identity planners and implementers.
 
 In the Microsoft security adoption model, implementation solutions provide prescriptive deployment guidance. Implementation solutions align to [business scenarios](../security-adoption-business-scenarios-overview.md) that define high priority security outcomes.
 

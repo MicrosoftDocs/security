@@ -27,7 +27,7 @@ Implement Phase 1 first. Later phases to secure privileged access devices, enfor
 
 Phase 1 ensures that privileged access is:
 
-- **Explicit**: Privilege is granted only through defined elevation paths. It's never implicit or accidental.
+- **Explicit**: Grant privilege only through defined elevation paths. Never make it implicit or accidental.
 - **Temporary**: Privilege expires automatically.
 - **Strongly authenticated**: Elevation requires strong authentication.
 - **Auditable**: All privilege changes and elevations are logged.

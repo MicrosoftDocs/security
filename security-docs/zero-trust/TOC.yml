@@ -163,9 +163,9 @@
     - name: Overview
       href: workshop-business-overview.md
     - name: CISO workshop
-      href: workshop-business-ciso.md
+      href: workshop-business-security-leaders.md
     - name: CISO workshop videos
-      href: workshop-business-ciso-video.md
+      href: workshop-business-security-leaders-video.md
 
   - name: Business scenarios
     items:

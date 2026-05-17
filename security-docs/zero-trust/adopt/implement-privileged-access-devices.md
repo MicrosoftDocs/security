@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Phase 2: Configure and secure privileged workstations
 
-This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access architecture](security-adoption-scenario-privileged-access.md) under the *[Protect critical business assets](security-adotpion-scenario-secure-assets.md)* business scenario.
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access architecture](../security-adoption-scenario-privileged-access.md)(security-adoption-scenario-privileged-access.md) under the *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* business scenario.
 
 Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
 
@@ -91,7 +91,7 @@ Devices are centrally managed, monitored, and recoverable
 Before configuring procedures in this article:
 
 - Make sure that [Phase 1 instructions](implement-privileged-access-identity.md) are complete.
-- Learn about [device security in the privileged access story](security-concept-privileged-access.md).
+- Learn about [device security in the privileged access story](../security-concept-privileged-access.md).
 - The following services should be available:
     - Microsoft Entra ID as the identity provider.
     - Microsoft Intune for device management.

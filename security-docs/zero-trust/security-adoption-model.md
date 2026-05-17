@@ -48,7 +48,7 @@ It integrates and builds on established guidance, and including these content so
 
 - [Microsoft Cybersecurity Reference Architecture (MCRA)](microsoft-reference-architecture.md)
 - [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/practices).
-- [Zero Trust](workshop-business-overview.md) and [CISO](workshop-business-ciso.md) workshops
+- [Zero Trust](workshop-business-overview.md) and [CISO](workshop-business-security-leaders.md) workshops
 - The [Immutable Laws of Security](security-adoption-discipline-architecture-tips.md)
 - [Privileged access/workstation guidance](security-adoption-discipline-identity-access-privileged-model.md).
 - [Incident response playbooks](security-operations-playbook-phishing.md)

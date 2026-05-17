@@ -146,6 +146,6 @@ Workshops available include:
 
 Contact your customer success account manager for more information.
 
-The CISO workshop is also available for self-service as a series of videos. [Learn more](workshop-business-ciso.md)
+The CISO workshop is also available for self-service as a series of videos. [Learn more](workshop-business-security-leaders.md)
 
 

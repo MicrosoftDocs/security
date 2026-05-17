@@ -81,8 +81,7 @@ Rather than choosing between speed and security, DevSecOps focuses on securing k
 
 Teams improve outcomes by continuously refining collaboration between development, security, and operations, balancing functional delivery goals with reliability and risk reduction.
 
-:::image type="content" source="./media/security-adoption-discipline-dev-overview.png
-" alt-text="DevSecOps strategy that combine traditional development practices with Agile techniques." lightbox="./media/security-adoption-discipline-dev-overview.png":::
+:::image type="content" source="./media/security-adoption-discipline-dev-overview.png" alt-text="DevSecOps strategy that combines traditional development practices with Agile techniques." lightbox="./media/security-adoption-discipline-dev-overview.png":::
 
 This continuous incremental improvement should be applied to both work production (software code produced in the lifecycle) as well as the maturing of the development lifecycle itself.
 

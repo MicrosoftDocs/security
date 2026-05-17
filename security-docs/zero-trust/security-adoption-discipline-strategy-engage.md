@@ -26,7 +26,7 @@ The Security Strategy, Integration, and Governance discipline establishes:
 
 As part of establishing this discipline, security leaders must be able to engage business stakeholders effectively. This article provides guidance and actionable insights to help security leaders communicate with business leaders, align priorities, and drive sustained security transformation.
 
-This video from the [CISO Workshop](workshop-business-ciso-video.md#engaging-business-leaders-on-security) illustrates the use of communication techniques in action:
+This video from the [CISO Workshop](workshop-business-security-leaders-video.md#engaging-business-leaders-on-security) illustrates the use of communication techniques in action:
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=2e4ab785-460f-4a81-83e7-efabfa6ccd04]
 
@@ -133,9 +133,9 @@ The CISO Workshop helps accelerate modernization of security strategy, integrati
 
 Contact your customer success account manager for more information.
 
-The CISO workshop is also available for self-service as a series of videos. [Learn more](workshop-business-ciso.md):
+The CISO workshop is also available for self-service as a series of videos. [Learn more](workshop-business-security-leaders.md):
 
-- The CISO workshop slides for [Engaging security leaders](workshop-business-ciso-video.md#engaging-business-leaders-on-security )include a sample narrative and slides that you can use to get started. 
+- The CISO workshop slides for [Engaging security leaders](workshop-business-security-leaders-video.md#engaging-business-leaders-on-security )include a sample narrative and slides that you can use to get started.
 - You can download and customize this [PowerPoint Presentation](https://arch-center.azureedge.net/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) from the CISO Workshop to get started with productively engaging business leaders on security. 
 
 

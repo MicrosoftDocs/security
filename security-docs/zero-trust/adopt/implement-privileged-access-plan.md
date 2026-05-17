@@ -46,7 +46,7 @@ Multiple security disciplines and technologies drive outcomes for this solution.
 **Limit exposure of privileged credentials**<br/><br/>Minimize when, where, and how privileged credentials can be used. | Strategy and Governance<br/><br/> Access and Identities<br/>Security Architecture. | A documented list of roles, actions, and systems that constitute privileged access.<br/><br/> Clear rules for when elevation is allowed, how long, and with what approval.<br/><br/> Aids enforcement of just‑in‑time access and eliminates standing privilege.
 **Isolate and monitor privilege access paths**<br/><br/>Enforce strong authentication and device trust.<br/><br/>Continuously monitor for anomalous behavior. <br/><br/>Prioritize detection and response because of high impact. | Security Architecture<br/><br/> Access and Identities<br/><br/>SecOps | Explicitly defined privileged access paths that are allowed, restricted, or eliminated.<br/><br/> For example, PAWs only, approved portals and APIs, no legacy protocols, no direct admin access from personal devices.<br/><br/> Provides a solid allow/block model for Conditional Access, interface security, and monitoring.
 **Reduce the privileged attack surface**<br/><br/> Reduce the attack surface by minimizing the number of privileged identities, roles, and assignments. | Strategy, Integration, Governance<br/>Access and Identities<br/><br/>Security Posture Management. | Complete privileged role rationalization.<br/><br/>Which roles are required or can be removed, and which workflows must change to avoid standing privilege.<br/><br/> Agreement on which roles to remove from permanent assignment.<br/><br/>Success measurements. For example, reduction in standing privileged roles.
-**Separate productivity and administrative workflows**<br/><br/> Seperate workflows to eliminate the bridge between common attack vectors and enterprise-wide control.  | Security Architecture<br/> Infrastructure<br/>Access and Ientities. | Decisions on where privileged work can occur.<br/><br/>Whether dedicated admin accounts and devices are required.<br/><br/>Which activities are prohibited from standard productivity environments.<br/><br/>Which workflows must move to privileged devices or sessions.<br/><br/>These decisions enables device deployment and access enforcement phases without ambiguity.
+**Separate productivity and administrative workflows**<br/><br/> Separate workflows to eliminate the bridge between common attack vectors and enterprise-wide control.  | Security Architecture<br/> Infrastructure<br/>Access and Identities. | Decisions on where privileged work can occur.<br/><br/>Whether dedicated admin accounts and devices are required.<br/><br/>Which activities are prohibited from standard productivity environments.<br/><br/>Which workflows must move to privileged devices or sessions.<br/><br/>These decisions enables device deployment and access enforcement phases without ambiguity.
 
 
 ## Use security levels for planning
@@ -106,13 +106,13 @@ Implementation enforces the decisions produced during design and planning.
 --- | ---
 **Privileged role definitions and scope** |[Phase 1: Secure the identity control plane](implement-privileged-access-identity.md). Secure role assignments, PIM configuration, approval workflows, and auditing.
 **Privileged device requirements** | [Phase 2: Secure devices](implement-privileged-access-devices.md). Deploy and enforce use of hardened privileged access workstations (PAWs)
-***Approved and blocked access paths** | [Phase 3: Configure policy](implement-privileged-access-enforce.md). Configure Conditional Access, interface restrictions, protocol blocking.
+**Approved and blocked access paths** | [Phase 3: Configure policy](implement-privileged-access-enforce.md). Configure Conditional Access, interface restrictions, protocol blocking.
 **Accepted trade-offs and exceptions** | [Phase 1: Secure the identity control plane](implement-privileged-access-identity.md) and [Phase 3: Configure policy](implement-privileged-access-enforce.md). Logging, review workflows, break-glass accounts.
 **Monitoring for privileged access** | [Phase 4: Monitoring and threat detection](implement-privileged-access-monitor.md). Detection rules, alert prioritization, validation of approved paths.
 
 Before implementing each phase make sure you've completed the corresponding planning actions.
 
-## Next steps
+## What's next?
 
 Begin implementation with [Phase 1 - Configure the identity control plane ](implement-privileged-access-identity.md). This phase establishes the foundation where privileged identities, role assignments, and authorized elevation paths are defined and protected. 
 

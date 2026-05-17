@@ -15,9 +15,9 @@ ms.custom: sfi-image-nochange
 
 # Phase 3 - Enforce privileged access policies
 
-Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access architecture](security-adoption-scenario-privileged-access.md) under the *[Protect critical business assets](security-adotpion-scenario-secure-assets.md)* business scenario.
 
-This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access business scenario](../security-adoption-discipline-identity-access-privileged-model.md)
+Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
 
 
 This article describes Phase 3 of the implementation. It enforces privileged access policy to restrict where privileged identities can be used. 
@@ -30,7 +30,7 @@ Phase 3 enforces the following protection goals:
 
 - Ensure privileged credentials can't be used from non-PAW devices.
 - Admin portals and interfaces are only reachable from compliant, low-risk devices.
-- Privileged access requires strong user authenticatin and verified device trust.
+- Privileged access requires strong user authentication and verified device trust.
 - Restrict access to administrative interfaces (portals, APIs, PowerShell) to approved PAWs
 - Stolen credentials cannot be reused from standard or unmanaged endpoints.
 - Privileged access paths are explicit, auditable, and enforceable.
@@ -80,7 +80,7 @@ Before configuring procedures in this article:
 
 - Complete [Phase 1 instructions](implement-privileged-access-identity.md) to secure the identity control plan.
 - Complete [Phase 2](implement-privileged-access-devices.md) to deploy and harden PAWs.
-- MAke sure that device compliance and Defender for Endpoint integration is active.
+- Make sure that device compliance and Defender for Endpoint integration is active.
 
 ## Step 1 — Require MFA and device trust for privileged access
 
@@ -143,7 +143,7 @@ Limit PAW network access to only required administrative and management endpoint
     - **Profile**: Microsoft Default Firewall
 1. Configure the firewall profile settings:
     - **Inbound connections**: Block
-    - **Outbound connections**: Allow (default, controled by rules below)
+    - **Outbound connections**: Allow (default, controlled by rules below)
 1. Under **Settings**, configure **Firewall** rules. Use **reusable settings or firewall rule collections to define allowed traffic.
 1. Create **outbound allow rules** for required services, such as:
     - DNS

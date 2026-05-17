@@ -15,15 +15,16 @@ ms.collection:
 
 # Phase 4 - Monitor and protect privileged access against threats
 
-Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access architecture](security-adoption-scenario-privileged-access.md) under the *[Protect critical business assets](security-adotpion-scenario-secure-assets.md)* business scenario.
 
-This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access business scenario](../security-adoption-discipline-identity-access-privileged-model.md).
 
-This article describes Phase 4 of the solution. It establishes monitoring for privileged access to protect against threats. 
+Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity sytems, cloud control planes, and business-critical assets.
+
+
 
 This article describes Phase 4, which establishes monitoring and response for privileged access. It focuses on detecting compromise attempts, validating ongoing compliance and enforcement, and enabling rapid containment when indicators of attack or misconfiguration appear.
 
-This phase operationalizes Zero Trust’s assume breach principle by continuously monitoring device behaviour, application execution, and privileged workflows, and by enabling rapid response when indicators of attack or misconfiguration appear.
+This phase operationalizes Zero Trust's assume breach principle by continuously monitoring device behavior, application execution, and privileged workflows, and by enabling rapid response when indicators of attack or misconfiguration appear.
 
 
 
@@ -32,10 +33,10 @@ This phase operationalizes Zero Trust’s assume breach principle by continuousl
 Phase 4 is designed to:
 
 - Detect compromise of PAWs.
-- Detected misuse of privileged devices and identities.
+- Detect misuse of privileged devices and identities.
 - Detect drift that weakens device signals.
 - Enable rapid containment before blast radius.
-- Provide evidence that privileged access controls are working as designed
+- Provide evidence that privileged access controls are working as designed.
 
 ## Protection scope
 
@@ -52,7 +53,7 @@ Phase 4 monitors the same privileged access elements enforced earlier:
         - The goal is detecting unexpected execution on privileged devices.
     - Network behavior. PAW firewall posture, outbound attempts, and Defender telemetry are monitored to detect abuse or misconfiguration.
 - **Privileged access paths**: Monitor interfaces and execution paths attackers would abuse after credential theft.
-    - Interfaces (admikn portals, APIs, PowerShell)
+    - Interfaces (admin portals, APIs, PowerShell)
     - Access paths enforced by conditional access.
     - Abuse detection after credential theft.
 
@@ -62,9 +63,9 @@ Phase 4 monitors the same privileged access elements enforced earlier:
 **Risk** | **Why it matters** | **Phase 4 mitigation**
 --- | --- | ---
 **Undetected PAW compromise** | A compromised PAW undermines the entire privileged access strategy by becoming a trusted launch point for attacker activity. | Microsoft Defender for Endpoint continuously monitors PAWs for malware, exploit behavior, and persistence techniques; changes in device risk are surfaced immediately for investigation and response.
-**PAW configuration drift weakening posture** |Over time, misconfiguration or failed policy application can silently erode device trust assumptions used in Phase 3 enforcement.| Intune compliance reporting and Defender posture signals surface drift from hardened baselines, enabling remediation before access controls are weakened.
+**PAW configuration drift weakening posture** |Over time, misconfiguration or failed policy application can silently erode device trust assumptions used in Phase 3 enforcement.| Intune compliance reporting and Defender posture signals surface drift from hardened baselines, enabling remediation before access controls are weakened.
 **Malicious or unexpected app execution on PAWs** |Execution of unauthorized tools, scripts, or binaries can indicate attacker activity or misuse of privileged access. | AppLocker telemetry collected by Defender for Endpoint makes application execution on PAWs observable and auditable, enabling detection of suspicious activity.
-**Abuse of privileged roles after credential theft** | Attackers may delay or disguise use of stolen credentials to evade initial detection. | Phase 4 correlates privileged role activation, admin portal access, and device risk changes to identify suspicious privileged workflows.
+**Abuse of privileged roles after credential theft** | Attackers may delay or disguise use of stolen credentials to evade initial detection. | Phase 4 correlates privileged role activation, admin portal access, and device risk changes to identify suspicious privileged workflows.
 **Blind spots in privileged access enforcement** | Without monitoring, organizations cannot verify that Conditional Access and PAW restrictions are working as intended.| Entra sign‑in logs, Conditional Access insights, and Defender telemetry provide visibility into allowed and blocked privileged access attempts.
 **Delayed response to active privileged access threats** | Slow containment increases blast radius and business impact. | Defender for Endpoint enables investigation, device isolation, and remediation actions using high‑confidence signals from privileged devices and workflows.
 
@@ -92,7 +93,7 @@ Before you start configuring Phase 4:
 
 ## Step 1: Monitor PAW security posture
 
-Use Microsoft Defender for Endpoint to monitor PAWs for threats, vulnerabilities, and configuration drift. Regular monitoring ensure that changes is PAW risk or posture are visible as soon as they occur.
+Use Microsoft Defender for Endpoint to monitor PAWs for threats, vulnerabilities, and configuration drift. Regular monitoring ensures that changes in PAW risk or posture are visible as soon as they occur.
 
 ### Review PAW risk and exposure
 
@@ -108,7 +109,7 @@ Use Microsoft Defender for Endpoint to monitor PAWs for threats, vulnerabilities
 
 1. In the Microsoft Defender portal, select **Vulnerability management**.
 1. Review exposure score trends for PAWs.
-1. Review security recommendations affect credential protection and exploit mitigation.
+1. Review security recommendations affecting credential protection and exploit mitigation.
 1. Prioritize remediation for:
     - Disabled credential protections
     - Missing security updates
@@ -144,7 +145,7 @@ Application execution on PAWs must be observable and auditable. AppLocker polici
 
 1. In the Microsoft Defender portal, select **Advanced hunting**.
 1. Run a query to review application control activity (for example, AppLocker events).
-1. AFter running the query, investigate:
+1. After running the query, investigate:
 
     - Blocked executables
     - Unexpected scripts or binaries
@@ -220,4 +221,3 @@ Phase 4 is the final stage in the solution guide.
 ## Next steps
 
 Check out our other solution guides.
-

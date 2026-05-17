@@ -61,7 +61,7 @@ The following diagram from the [Microsoft Cybersecurity Reference Architecture (
 
 ## Manage change
 
-OT and IoT Security modernization focuses on improving organizational ability to discover, monitor, and protect specialized OT/IoT devices that often aren't included in IT security efforts, controls, or scope. Unlike IT environments, most OT/IoT systems are long-live, safety-critical, and difficult ot change. 
+OT and IoT Security modernization focuses on improving organizational ability to discover, monitor, and protect specialized OT/IoT devices that often aren't included in IT security efforts, controls, or scope. Unlike IT environments, most OT/IoT systems are long-live, safety-critical, and difficult to change.
 
 Key change principles include:
 
@@ -175,7 +175,7 @@ Key internal collaborators include:
 - **Infrastructure, platform, networking engineering/ops teams** – Coordinate network segmentation and connectivity between IT/OT environments.
 - **SecOps** – Monitor OT/IoT threats and respond to incidents.
 - **Security compliance management, compliance and audit team** – Ensure compliance with industry-specific regulations (NERC CIP, IEC 62443, NIST CSF).
-- **CISO, seecurity directors/managers** – Define strategic priorities, risk tolerance, and compliance objectives for OT/IoT security.
+- **CISO, security directors/managers** – Define strategic priorities, risk tolerance, and compliance objectives for OT/IoT security.
 
 No role operates in isolation. Security professionals must understand cybersecurity principles ***and*** OT/IoT operational requirements.
 

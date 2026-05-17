@@ -5,48 +5,8 @@ ms.date: 05/05/2025
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: how-to
-ms.collection: 
-  - zerotrust-adopt
 ---
 
-<!---
-
-Writers notes:
-
-For updates to product names, please also update the appropriate figures.
-
-To update figures that are not screen shots, your options are:
-
-- Locate the source Visio file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended).
-- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
-
-For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
-
-- Locate the source PowerPoint file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended) 
-- Download a copy of the PowerPoint file from the article.
-
-After updating, republish the updated slide deck in the Download Center.
-
-For updates that affect text in the Excel Business Scenario Objectives workbook of the Plan phase, your options are:
-
-- Locate the source Excel file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended). 
-- Download a copy of the Excel file from the article.
-
-After updating, republish the updated Excel file in the Download Center.
-
-For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
-
-- Locate the source Visio file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended). 
-- Download a copy of the Visio file from the article.
-
-After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
-
-For new articles in this content set, please:
-
-- Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
-- Add a link to the Zero Trust Guidance Center page (index.yml).
-
---->
 
 # Identify and protect sensitive business data
 
@@ -54,7 +14,7 @@ As part of Zero Trust adoption guidance, this article describes the business sce
 
 Digital transformation has led organizations to deal with increasing volumes of data. However, external collaborators such as partners, vendors, and customers access much of that shared data outside the corporate network. This shift has created a complex data landscape, especially when you consider the proliferation of hybrid workforces and cloud migrations, growing cyberthreats, evolving security, and changing regulatory requirements around how data is governed and protected.
 
-With hybrid work models, corporate assets and data are on the move. Your organization needs to control wherever the data is stored and transferred on devices, inside apps, and with partners. For modern-day security, however, you can no longer rely on traditional network protection controls.
+With hybrid work models, corporate assets and data are on the move. Your organization needs to control wherever the data is stored and transferred on devices, inside apps, and with partners. For modern-day security you can no longer rely on traditional network protection controls.
 
 | Traditional data protection with network controls | Modern data protection with Zero Trust |
 | --- | --- |
@@ -189,7 +149,7 @@ The following actions apply:
 
   The four stages recommended represent an incremental adoption plan. Adjust this plan based on your organization’s priorities and the composition of your digital estate. Be sure to take account of any timeline milestones or obligations for completing this work.
 
-- Inventory any data sets or dedicated projects that require compartmentalized protection (for example, tented or special projects).
+- Inventory any data sets or dedicated projects that require compartmentalized protection.
 
   Not every organization requires compartmentalized protection.
 
@@ -255,7 +215,7 @@ The following table lists resources for discovering sensitive business data.
 
 | Resource | Description |
 | --- | --- |
-| [Deploy an information protection solution with Microsoft 365 Purview](/microsoft-365/compliance/information-protection-solution) | Introduces a framework, process, and capabilities you can use to accomplish your specific business objectives for information protection. |
+| [Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution) | Introduces a framework, process, and capabilities you can use to accomplish your specific business objectives for information protection. |
 | [Sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about) | Start here to get started with sensitive information types. This library includes many articles for experimenting with and optimizing SITs. |
 | [Content explorer](/microsoft-365/compliance/data-classification-content-explorer) | Scan your Microsoft 365 environment for the occurrence of SITs and view the results in the content explorer tool. |
 | [Trainable classifiers](/microsoft-365/compliance/classifier-learn-about) | Trainable classifiers allow you to bring samples of the type of content you want to discover (seeding) and then let the machine learning engine learn how to discover more of this data. You participate in the classifier training by validating the results until the accuracy is improved. |
@@ -426,7 +386,7 @@ This list summarizes the high-level methodical process for doing this work:
 - Introduce classification into Office apps.
 - Move on to protection of data on devices by experimenting with and then rolling out endpoint DLP.
 - Extend the capabilities you’ve refined within your Microsoft 365 estate to data in cloud apps by using Defender for Cloud Apps.
-- Discover and apply protection to data on-premises using Microsoft Purview Information Protection scanner
+- Discover and apply protection to data on-premises using Microsoft Purview Information Protection scanner.
 - Use Microsoft Purview data governance to discover and protect data in cloud data storage services, including Azure Blobs, Cosmos DB, SQL databases, and Amazon Web Services S3 repositories.
 
 This diagram shows the process.

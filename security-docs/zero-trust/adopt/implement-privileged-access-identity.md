@@ -12,12 +12,14 @@ ms.topic: conceptual
 
 # Phase 1 - Secure the identity control plane
 
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access architecture](security-adoption-scenario-privileged-access.md) under the *[Protect critical business assets](security-adotpion-scenario-secure-assets.md)* business scenario.
+
+Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
+
 
 This article helps you to implement Phase 1 of the [Implement a privileged access architecture](implement-privileged-access.md) solution. 
 
 During Phase 1 you secure the identity control plane by defining and protecting privileged identities, role assignments, and authorized elevation paths.
-
-Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
 
 Implement Phase 1 first. Later phases to secure privileged access devices, enforce Conditional Access policy, and monitor access depend on having clean, well-governed privileged identities and explicit elevation paths.
 
@@ -62,7 +64,7 @@ These components operate in the control plane. If they are compromised, attacker
 **Weak or implicit elevation paths** | Attackers use same paths as admins. | Define secure, explicit, auditable elevation workflows
 **Bypassing downstream protections** | Privilege gained before device or policy enforcement.| Identity control plane secured first.
 **Irrecoverable identity compromise** | No safe way to regain control. | Create protected emergency access accounts.
-**Low identity security posture** | Weak identity controls undermine all later phases.| RRaise identity systems to highest security level.
+**Low identity security posture** | Weak identity controls undermine all later phases.| Raise identity systems to highest security level.
 
 
 ## Phase outcomes
@@ -123,7 +125,7 @@ Audit who can change identity, authentication, or tenant-wide configuration.
 
 1. For each privileged role, first check direct assignments. For each directly assigned principal (user, group, or service principal (app/managed identity)), check how the role is granted and current state.
     - A permanent assignment means that the role is always on. An identity signs in and is already privileged with an **Active (permanent)** status. This is obviously high-risk.
-    - A PIM eligible assignment means that the role is available but not active until it's activated. The user must activate the role. It's usually time-limited and often requires a justification. Status can be **Active** or **Eligible** if the user can become privileged but isn't currently actvated.
+    - A PIM eligible assignment means that the role is available but not active until it's activated. The user must activate the role. It's usually time-limited and often requires a justification. Status can be **Active** or **Eligible** if the user can become privileged but isn't currently activated.
 
 1. Now switch to group assignments. This is important since it checks indirectly assigned privileged inherited via groups. 
 1. Open each group that's assigned the privileged role.
@@ -134,7 +136,7 @@ Audit who can change identity, authentication, or tenant-wide configuration.
     - What's the current state?
 
 
-After completing this step, you've captured the identity control plane, and have an authoritative prviileged identity inventory for Microsoft Entra. 
+After completing this step, you've captured the identity control plane, and have an authoritative privileged identity inventory for Microsoft Entra.
 
 
 ### Identify Azure RBAC roles
@@ -165,9 +167,9 @@ Now that you know which identities are privileged, let's check what they can do 
 
 1. If you want to add more about observed behavior for an account you can:
     1. Review sign-in logs for information about apps, client endpoints, and authentication flows.
-    1. Correlate information with audit and activity logs to check whether an account is used, and whether it changed policy, modified resources/subscriptions, or perfromance some other activity.
+    1. Correlate information with audit and activity logs to check whether an account is used, and whether it changed policy, modified resources/subscriptions, or performance some other activity.
 
-## Step 2: Assess your existing cofiguration
+## Step 2: Assess your existing configuration
 
 With your inventory in place, you can use the [Zero Trust Assessment tool](/assessment/overview.md) to evaluate how privileged access is configured across your environment and identify gaps in control. 
 
@@ -196,11 +198,11 @@ Remove all privileged role assignments from standard user identities.
 
 ### Create admin accounts
 
-1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Mmicrosoft Entra ID** > **Users**.
+1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Microsoft Entra ID** > **Users**.
 1. Select **New user** and configure the user settings. then select **Create**.
     - Name: Secure Workstation Administrator.
     - User principle name: secure-ws-admin@contoso.com
-    - Authentication method: Password (|temporary).
+    - Authentication method: Password (temporary).
     - Directory roles: None
     - Usage location: Set to operational location.
 
@@ -254,10 +256,10 @@ These groups:
 
 Membership changes are treated as privileged actions and reviewed regularly
 
-1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Mmicrosoft Entra ID** > **Groups** > **New group**. 
+1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Microsoft Entra ID** > **Groups** > **New group**.
 1. Configure the group settings, and then select **Create**.
     - **Group type**: Security
-    - **Name****: Secure Workstation Admins
+    - **Name**: Secure Workstation Admins
     - **Membership type**: Assigned
 
 1. Add dedicated admin identities. Don't use standard accounts and treat membership changes as sensitive. Review regularly. 
@@ -340,7 +342,7 @@ If you don't already have emergency access accounts in place, configure them now
 
 Ensure you're signed in as a Global Administrator or Privileged Role Administrator to create at least two emergency access accounts.
 
-1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Users** > All users**.
+1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Users** > **All users**.
 1. Select **New user**, and create a cloud-only user.
 
 - Use the *.onmicrosoft.com domain

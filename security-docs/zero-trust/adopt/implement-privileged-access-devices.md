@@ -15,9 +15,9 @@ ms.custom: sfi-image-nochange
 
 # Phase 2: Configure and secure privileged workstations
 
-Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access architecture](security-adoption-scenario-privileged-access.md) under the *[Protect critical business assets](security-adotpion-scenario-secure-assets.md)* business scenario.
 
-This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access business scenario](../security-adoption-scenario-privileged-access.md).
+Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
 
 This article describes Phase 2 of the solution.  It deploys and hardens Privileged Access Workstations (PAWs) so privileged activity originates only from trusted devices. It builds on Phase 1 and produces the device trust signals (Intune compliance and Microsoft Defender for Endpoint risk) used for enforcement in Phase 3. 
 
@@ -80,7 +80,7 @@ After completing Phase 2:
 
 - One or more dedicated PAW devices are set up. 
 - Privileged administrative work originates only from PAWs
-- - PAWs are isolated from productivity usage
+- PAWs are isolated from productivity usage
 Devices are centrally managed, monitored, and recoverable
 - Device trust assumptions are explicit and enforceable
 - Later phases can safely apply Conditional Access and monitoring
@@ -91,8 +91,7 @@ Devices are centrally managed, monitored, and recoverable
 Before configuring procedures in this article:
 
 - Make sure that [Phase 1 instructions](implement-privileged-access-identity.md) are complete.
-- Learn about [device security in the privileged access story](../../privileged-access-workstations/privileged-access-devices.md).
-- 
+- Learn about [device security in the privileged access story](security-concept-privileged-access.md).
 - The following services should be available:
     - Microsoft Entra ID as the identity provider.
     - Microsoft Intune for device management.
@@ -122,7 +121,7 @@ This group will contain PAW devices, and will be used for:
 
 Create as follows:
 
-1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Mmicrosoft Entra ID** > **Groups** > **New group**. 
+1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Microsoft Entra ID** > **Groups** > **New group**. 
 1. Configure the group settings, and then select **Create**.
     - **Group type**: Security
     - **Group name**: Secure Workstation Devices
@@ -259,7 +258,7 @@ Conditional Access and compliance depend on Defender risk signals. Without Defen
     - Profile type: Endpoint detection and response
     - Name: PAW - Defender for Endpoint
 
-1. In **Configuration settings** eable **Sample sharing for all files**.
+1. In **Configuration settings** enable **Sample sharing for all files**.
 1. Assign to the **Secure Workstation Devices** account.
 1. Create the profile. 
 
@@ -282,4 +281,4 @@ After configuring the procedure, PAWs can reach only administrative endpoints re
 
 ## Next steps
 
-With PAWS configured and hardened,   the next step is to [enforce privileged access using Conditional Access and policy](implement-privileged-access-enforce.md).
+With PAWs configured and hardened,   the next step is to [enforce privileged access using Conditional Access and policy](implement-privileged-access-enforce.md).

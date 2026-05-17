@@ -45,7 +45,7 @@ A mature Data Security discipline delivers these core outcomes:
 - **Data integrity**: Prevent unauthorized alteration or corruption of data. 
 - **Data availability**: Ensure data is accessible to authorized users when needed. 
 
-Failure in these outcomes can lead to data theft and abuse, disrupt business operations, enable fraud, expose regulated data, aor even cause physical harm to people.
+Failure in these outcomes can lead to data theft and abuse, disrupt business operations, enable fraud, expose regulated data, or even cause physical harm to people.
 
 By establishing clear ownership, classification, and protection strategies, data security becomes an enabler of business outcomes rather than a constraint.
 
@@ -72,11 +72,11 @@ Modern data security strategies emphasize:
 **Focus** | **Details**
 --- | ---
 **Prioritize critical data** | Protect the most business‑critical data first.
-**Collaborate, coverage, visiblity** | Collaborate across the business for full visibility of structured and unstructured data across devices, apps, and clouds, preventing data silos.
+**Collaborate, coverage, visibility** | Collaborate across the business for full visibility of structured and unstructured data across devices, apps, and clouds, preventing data silos.
 **Discover data** | Know where data exists and what value or sensitivity it has.
 **Classify data** | Apply consistent labels so security controls can be applied automatically.
 **Lifecycle protection** | Secure data regardless of the location, technical platform, device, or environment.<br/><br/>Apply this strategy throughout the lifecycle of the data:  **create**, **consume**, **store**, **share**, and **dispose**. Secure data during creation and generation, storage at rest,  during access/sharing/use, and in transit, as well as data that is no longer active and archived or deleted. 
-**Monitoring and enforcement*** | Implement real-time visibility and automated enforcement to detect and respond to real-time unauthorized access or exfiltration.
+**Monitoring and enforcement** | Implement real-time visibility and automated enforcement to detect and respond to real-time unauthorized access or exfiltration.
 **Learn and improve** | Continuously improve data security. Adapt strategy and data controls as data formats, platforms, and use cases evolve, including AI.
 
 This approach enables protection that scales with business and technology change.

@@ -19,9 +19,9 @@ Privileged access is the highest-impact security risk in most organizations beca
 
 This article helps you to implement Phase 1 of the [Implement a privileged access architecture](implement-privileged-access.md) solution. 
 
-During Phase 1 you secure the identity control plane by defining and protecting privileged identities, role assignments, and authorized elevation paths.
+During Phase 1, secure the identity control plane by defining and protecting privileged identities, role assignments, and authorized elevation paths.
 
-Implement Phase 1 first. Later phases to secure privileged access devices, enforce Conditional Access policy, and monitor access depend on having clean, well-governed privileged identities and explicit elevation paths.
+Implement Phase 1 first. Later phases then secure privileged access devices, enforce Conditional Access policy, and monitor access depend on having clean, well-governed privileged identities and explicit elevation paths.
 
 ## Protection goals
 
@@ -29,7 +29,7 @@ Phase 1 ensures that privileged access is:
 
 - **Explicit**: Privilege is granted only through defined elevation paths. It's never implicit or accidental.
 - **Temporary**: Privilege expires automatically.
-- **Strongly authenticated**: Elevation requires strong authentication.
+- **Strongly authenticated**: Require strong authentication for elevation.
 - **Auditable**: All privilege changes and elevations are logged.
 - **Recoverable**: Emergency access exists without weakening controls.
 

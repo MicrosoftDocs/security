@@ -29,7 +29,7 @@ The objective is to reduce risk by:
 - Controlling where and how those actions can occur.
 - Continuously monitoring and responding to privileged activity.
 
-This architecture is implemented using Microsoft Entra ID, Microsoft Intune, and Microsoft Defender for Endpoint. It's deployed in phases: establishing a secure foundation (identity control plane and trusted devices), enforcing policy controls, and operationalizing monitoring and response.
+Implement this architecture using Microsoft Entra ID, Microsoft Intune, and Microsoft Defender for Endpoint. Deploy it in phases: establishing a secure foundation (identity control plane and trusted devices), enforcing policy controls, and operationalizing monitoring and response.
 
 
 ## Privileged access risk
@@ -46,8 +46,8 @@ Privileged identities (human and non‑human) control high‑value assets and se
 
 Attacks follow two common patterns:
 
-- **Targeted data theft**: Attackers locate and exfiltrate sensitive intellectual property, financial data, or strategic plans. Stolen data is sold, leaked, or used for competitive advantage.
-- **Human-operated ransomware**: Attackers leverage privileged access to encrypt systems, halt operations, and extort the organization—forcing executive decisions under extreme time pressure.
+- **Targeted data theft**: Cyberattackers locate and exfiltrate sensitive intellectual property, financial data, or strategic plans. Stolen data is sold, leaked, or used for competitive advantage.
+- **Human-operated ransomware**: Cyberattackers leverage privileged access to encrypt systems, halt operations, and extort the organization - forcing executive decisions under extreme time pressure.
 
 :::image type="content" source="../media/implement-privileged-assets-attacks.png" alt-text="Diagram showing classifications for privileged identities." lightbox="../media/implement-privileged-assets-attacks.png":::
 
@@ -59,7 +59,7 @@ Privileged access risk is unique and systemic for a number of reasons.
 **Risk** | **Details**
 --- | ---
 **Operates in the control plane** | Privileged accounts operate in the control plane, not just the workload plane.<br/><br/> Privileged identities can modify identity, change security configurations, disable or bypass enforcement controls, and tamper with business-critical data.<br/><br/>Once attackers obtain privileged access, they can undermine the very mechanisms designed to detect and stop them. This makes traditional containment strategies far less effective and allows compromise to persist undetected. 
-**High business impact by design** | Privileged access exists to manage critical systems, so abuse of that access has immediate and severe consequences.<br/><br/>With privileged access, attackers can:<br/><br/>- Exfiltrate or destroy sensitive data<br/>- Shut down or manipulate business operations<br/>- Encrypt entire environments for extortion (human‑operated ransomware)<br/>- Subvert systems in ways that can cause real‑world harm.<br/><br/>These outcomes are not theoretical. They have been observed repeatedly across industries, making privileged access one of the most reliable ways attackers achieve maximum impact.
+**High business impact by design** | Privileged access exists to manage critical systems, so abuse of that access has immediate and severe consequences.<br/><br/>With privileged access, attackers can:<br/><br/>- Exfiltrate or destroy sensitive data<br/>- Shut down or manipulate business operations<br/>- Encrypt entire environments for extortion (human‑operated ransomware)<br/>- Subvert systems in ways that can cause real‑world harm.<br/><br/>These outcomes aren't theoretical. They're observed repeatedly across industries, making privileged access one of the most reliable ways attackers achieve maximum impact.
 **Loud and disruptive** | Unlike stealthy data theft, many privileged access attacks—especially human‑operated ransomware—are intentionally disruptive. They halt operations, break customer‑facing services, and force executive‑level decision‑making under extreme time pressure.<br/><br/>Because all organizations are financially and operationally motivated to restore service quickly, these attacks are universally applicable and highly effective, regardless of industry or size.
 **Risk growing not shrinking** | Attackers are flexible and technology‑agnostic. They don't target a single product or control, but exploit whatever privileged access path is weakest in the moment. <br/><br/>The privileged access attack surface is broad and interconnected, spanning:<br/><br/>- Accounts and identity systems<br/>- Workstations and devices<br/>- Intermediary systems such as remote access tools and PAM/PIM solutions.<br/>- Management interfaces, portals, APIs, and elevation paths.<br/><br/>Compromise of any one of these elements can provide a path to full enterprise control, and new access paths are continuously introduced as environments evolve.
 **Single‑solution approaches fail** | Deploying only one class of control such as PAM/PIM, network restrictions, or detection tooling, does not sufficiently reduce risk. These controls address parts of the problem, not the system.<br/><br/> If privileged access is not protected end‑to‑end, attackers simply route around isolated defenses and exploit an unprotected link in the access path.<br/><br/>This is why privileged access must be treated as a complete system—from identity and device trust, through elevation and execution, to monitoring and response—rather than as a collection of independent tools.

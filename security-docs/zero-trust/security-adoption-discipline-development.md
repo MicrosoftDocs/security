@@ -97,7 +97,8 @@ Development (Dev) – The first production release focuses on delivering a minim
 DevOps – After initial release, teams focus on rapid iteration, operational stability, and governance through continuous delivery.
 DevSecOps – As collaboration matures, development, security, and operations work together to continuously refine processes and balance speed, risk, and reliability.
 
-:::image type="content" source="./media/security-adoption-discipline-dev-agile.png" alt-text="DevSecOps strategy that combines the best elements of traditional quality controls and agile development." lightbox="./media/security-adoption-discipline-dev-agile.png":::
+
+:::image type="content" source="./media/security-adoption-discipline-dev-agile.png" alt-text="DevSecOps strategy that combines traditional quality controls and agile development." lightbox="./media/security-adoption-discipline-dev-agile.png":::
 
 This progression allows organizations to improve security outcomes without sacrificing agility or innovation.
 
@@ -165,7 +166,7 @@ Together, these disciplines ensure software security supports broader business a
 
 Executing the strategy for the development security discipline requires security controls across multiple technology pillars.
 
-:::image type="content" source="./media/security-adoption-discipline-dev-pillars.png" alt-text="Development Security - mapping to technology pillars" lightbox="./media/security-adoption-discipline-dev-pillars.png":::
+:::image type="content" source="./media/security-adoption-discipline-dev-pillars.png" alt-text="Development Security - mapping to technology pillars." lightbox="./media/security-adoption-discipline-dev-pillars.png":::
 
 
 **Pillar** | **Role of DevSecOps**

@@ -140,7 +140,7 @@ Identity systems and elevation paths are foundational components of every privil
 
 Our implementation guidance treats identity systems and elevation paths as part of the privileged attack surface and identity control plane.
 
-**Area**| **Details** | **Risk mitigation**
+**Area** | **Details** | **Risk mitigation**
 --- | --- | ---
 **Identity systems** | Where privileged identities, roles, and administrative permissions are defined and managed.<br/><br/>This includes directories, role assignments, administrative groups, and tenant‑level configuration. | Privileged identities operate in the control plane. If identity systems are compromised, attackers can create, modify, or persist privileged access—bypassing device controls, access conditions, and monitoring.<br/><br/>Securing the identity control plane is the highest implementation priority.
 **Authorized elevation paths** | How a user transitions from a non‑privileged state to perform privileged actions.<br/><br/> For example time‑bound role activation, approval workflows, and scoped administrative sessions.  | Ensures elevation requires strong authentication, and that privileged elevation is intentional, temporary, monitored, and only happens from approved devices and interfaces<br/><br/>By forcing elevation through approved workflows, devices, and interfaces, you prevent standing privilege and reduce abuse, lateral movement, and silent persistence.

@@ -30,8 +30,8 @@ Phase 1 ensures that privileged access is:
 - **Explicit**: Grant privilege only through defined elevation paths. Never make it implicit or accidental.
 - **Temporary**: Privilege expires automatically.
 - **Strongly authenticated**: Require strong authentication for elevation.
-- **Auditable**: All privilege changes and elevations are logged.
-- **Recoverable**: Emergency access exists without weakening controls.
+- **Auditable**: Log all privilege changes and elevations.
+- **Recoverable**: Provide emergency access without weakening controls.
 
 ### Protection scope
 
@@ -49,10 +49,10 @@ Phase 1 focuses on two foundational components of privileged access:
     - Time‑bound role activation using - Privileged Identity Management (PIM)
     - Approval workflows for sensitive roles
     - Explicit administrative sessions
-**Emergency recovery access**: Configuring break-glass accounts if these don't already exist.
+- **Emergency recovery access**: Configuring break-glass accounts if these don't already exist.
 
 
-These components operate in the control plane. If they are compromised, attackers can grant themselves privileged access without touching devices or access policies.
+These components operate in the control plane. If they're compromised, bad actors can grant themselves privileged access without touching devices or access policies.
 
 ## Risks mitigated
 

@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 In a Zero Trust framework, identity is the foundational control plane. Every access decision to a device, application, or data resource begins with verifying who the user is, what their privileges are, and whether their context meets policy.
 
-The Identity pillar in the Zero Trust Workshop ensures that organizations align with Zero Trust principles — *verify explicitly, enforce least privilege, and assume breach* — across all identities. It provides a **prioritized and actionable implementation backlog** for modernizing identity capabilities.
+The Identity pillar in the Zero Trust Workshop ensures that organizations align with Zero Trust principles (erify explicitly, enforce least privilege, and assume breach) across all identities. It provides a **prioritized and actionable implementation backlog** for modernizing identity capabilities.
 
 Identity pillar workshop guidance focuses on assessing your current identity posture, identifying gaps, and defining prioritized actions to modernize identity controls, reduce risk, and enable secure, seamless access across your environment.
 

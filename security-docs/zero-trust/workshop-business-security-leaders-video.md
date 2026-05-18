@@ -26,7 +26,7 @@ We recommend participating in an expert-led workshop to:
 
 If you have [Microsoft Unified](https://www.microsoft.com/unifiedsupport/overview), contact your Customer Success Account Manager (CSAM) to request an expert-led workshop delivery.
 
-If you're unable to organize an expert-led workshop, the workshop is available as a series of publically-available prerecorded videos. summarized in this article. A [pdf slide presentation of accompanying materials](https://arch-center.azureedge.net/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) is also available for download/review.
+If you're unable to organize an expert-led workshop, the workshop is available as a series of publically available prerecorded videos summarized in this article. A [pdf slide presentation of accompanying materials](https://arch-center.azureedge.net/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) is also available for download/review.
 
 > [!TIP]
 > Our SAF workshops align with our structured security adoption model. Learn more about our [Zero Trust security adoption guidance](security-adoption-model.md).

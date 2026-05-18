@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Data security in the Microsoft Zero Trust Workshop
 
-In a Zero Trust framework, data is a critical security boundary. Protecting infrastructure or identities alone is not sufficient—organizations must understand what data they have, where it resides, how sensitive it is, and how it is accessed and used. The Data pillar focuses on discovering, classifying, protecting, and governing data to reduce risk, enforce least privilege, and monitor for inappropriate use.
+In a Zero Trust framework, data is a critical security boundary. Protecting infrastructure or identities alone isn't sufficient—organizations must understand what data they have, where it resides, how sensitive it is, and how it's accessed and used. The Data pillar focuses on discovering, classifying, protecting, and governing data to reduce risk, enforce least privilege, and monitor for inappropriate use.
 
 Data pillar workshop guidance focuses on understanding the data estate, defining classification and protection policies, enforcing controls on data usage and sharing, and monitoring for data risks across users, endpoints, and applications.
 

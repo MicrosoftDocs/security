@@ -41,7 +41,7 @@ Learn how to run your own workshop and download the Excel assessment tool at [ht
 
 Architecture diagrams like those included in our Zero Trust guidance help communicate how to apply the principles of Zero Trust to specific environments, from Microsoft 365 to specialized environments built in Azure or even Amazon Web Services (AWS). These illustrations help provide deeper technical guidance and recommendations. They provide a supported starting-point that you can adjust for your own environments. They help communicate design decisions and the relationships between components and security capabilities in an environment.
 
-### Visio templates, Visio stencils, and Microsoft icon sets
+### Templates, stencils, icons
 
 To help you work with reference architectures in the Zero Trust guidance center, you can download co-branded Visio template files along with Microsoft icon sets.
 

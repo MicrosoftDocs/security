@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # SecOps in the Microsoft Zero Trust Workshop
 
-Security operations (SecOps) is foundational to Zero Trust because it ensures not only that threats are prevented, but also that they are continuously detected, investigated, and responded to. In a Zero Trust model, organizations assume breach, making strong SecOps capabilities essential to contain attacks, reduce impact, and maintain resilience.
+Security operation (SecOps) is foundational to Zero Trust because it ensures not only that threats are prevented, but also that they are continuously detected, investigated, and responded to. In a Zero Trust model, organizations assume breach, making strong SecOps capabilities essential to contain attacks, reduce impact, and maintain resilience.
 
 SecOps pillar guidance focuses on collecting and correlating security signals across the environment, detecting and analyzing threats, orchestrating and automating response actions, proactively hunting for threats, and continuously improving security operations.
 

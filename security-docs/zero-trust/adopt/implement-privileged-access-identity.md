@@ -48,7 +48,7 @@ Phase 1 focuses on two foundational components of privileged access:
     - Time‑bound role activation using - Privileged Identity Management (PIM)
     - Approval workflows for sensitive roles
     - Explicit administrative sessions
-- **Emergency recovery access**: Configuring break-glass accounts if these don't already exist.
+- **Emergency recovery access**: Configuring break glass accounts if these don't already exist.
 
 
 These components operate in the control plane. If they're compromised, bad actors can grant themselves privileged access without touching devices or access policies.
@@ -127,7 +127,7 @@ Audit who can change identity, authentication, or tenant-wide configuration.
     - A PIM eligible assignment means that the role is available but not active until it's activated. The user must activate the role. It's usually time-limited and often requires a justification. Status can be **Active** or **Eligible** if the user can become privileged but isn't currently activated.
 
 1. Now switch to group assignments. This is important since it checks indirectly assigned privileged inherited via groups. 
-1. Open each group that's assigned the privileged role.
+1. Open each group that has the privileged role assigned.
 1. Expand group members, expand nested groups, and record Users, Service Principals and Managed identities. 
 1. For each identity confirm how the privilege is held:
     - Is the role assigned via group or nested group?
@@ -172,12 +172,12 @@ Now that you know which identities are privileged, let's check what they can do 
 
 With your inventory in place, you can use the [Zero Trust Assessment tool](../assessment/overview.md) to evaluate how privileged access is configured across your environment and identify gaps in control. 
 
-While the Assessment tool doesn't replace  a full inventory, it uses role and policy data as input to help you understand: 
+While the Assessment tool doesn't replace  a full inventory, it uses role and policy data as input to help you understand whether:
 
-- Whether privileged roles are protected (MFA, Conditional Access).
-- Whether privileged access is governed (PIM, JIT/JEA patterns).
-- Whether policies are consistently applied.
-- Where gaps exist across identities, devices, and access policies 
+- Privileged roles are protected (MFA, Conditional Access).
+- Privileged access is governed (PIM, JIT/JEA patterns).
+- Policies are consistently applied.
+- Gaps exist across identities, devices, and access policies.
 
 [Learn more](/entra/fundamentals/configure-security?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json) about assessing identity with the tool. 
 
@@ -217,8 +217,8 @@ If you want to define identities that can access PAWs but that can't perform pri
 
 - Create an identity that can only sign into PAWs.
 - Create a security group that controls who is allowed to sign into the PAWs. 
-    - This group never grants admin rights, it's used for conditional access (allow only Secure Workstation Users to sign in to PAWs, block other users ) and to apply specific group-based PAW licensing.
-    - Typical members of this group include SOC analyst, operators, and auditors.
+    - This group never grants admin rights, it's used for conditional access (*allow only Secure Workstation Users to sign in to PAWs*, *block other users* ) and to apply specific group-based PAW licensing.
+    - Typical members of this group include SOC analysts, operators, and auditors.
 
 
 ### Create a sign-in identity

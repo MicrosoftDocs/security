@@ -24,7 +24,7 @@ As a business leader, you must meet your fiduciary duty to protect against secur
 Organizations face two intersecting challenges: defending against increasingly sophisticated threats while meeting expanding regulatory and compliance obligations.
 
 - **Security posture**: Your security posture represents your organization’s overall ability to prevent, detect, and respond to cyber threats. A strong security posture is measurable, quantifiable, and continuously improving as risks and technologies evolve.
-- **Regulatory compliance**: Regulatory compliance means adhering to laws, regulations, and industry standards such as GDPR, CCPA, HIPAA, and data residency requirements. Compliance is not a one‑time effort—it requires sustained controls, evidence, and operational discipline.
+- **Regulatory compliance**: Regulatory compliance requires adherement to laws, regulations, and industry standards such as GDPR, CCPA, HIPAA, and data residency requirements. Compliance is not a one‑time effort—it requires sustained controls, evidence, and operational discipline.
 
 You can meet both of these requirements with:
 

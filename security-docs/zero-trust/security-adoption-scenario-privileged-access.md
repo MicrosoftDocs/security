@@ -86,7 +86,7 @@ Implementing a modern privileged access strategy delivers measurable business ou
 
 - **Reduce the risk of high-risk breaches**: Privileged accounts enable broad system access. Securing them significantly reduces the likelihood and impact of human-operated ransomware and large‑scale disruption.
 - **Control administrative attack paths**: Limiting and isolating privileged access paths makes it harder for attackers to escalate privileges. By strictly controlling administrative pathways, organizations make it more difficult and costly for attackers to move across the environment.
-- **Protect high‑value systems and devices**: Protecting identity and administrative systems, and secure devices reduce the risk of compromize from less secure devices and systems.  
+- **Protect high‑value systems and devices**: Protecting identity and administrative systems, and secure devices reduces the risk of compromise from less secure devices and systems.  
 - **Strengthen governance and compliance**: Privileged access controls provide visibility into privileged access use and risk management. This visibility support auditing, accountability, and alignment with compliance requirements.
 
     Structured security levels simplify adoption, reduce configuration errors, and provide consistent control enforcement across the organization.

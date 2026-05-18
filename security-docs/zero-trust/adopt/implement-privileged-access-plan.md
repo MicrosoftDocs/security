@@ -15,9 +15,15 @@ ms.custom: sfi-image-nochange
 
 # Plan implementation
 
-This planning article is for implementers and security architects who translate the privileged access architecture into a practical rollout plan (scope, prerequisites, sequencing, and ownership).
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide. 
 
-This article is the first step in the [Implement a privileged access architecture](implement-privileged-access.md) solution. During planning you identify which privileged access paths matter most, decide which paths are allowed and which are blocked, and map those decisions directly to the phased implementation to follow.
+Privileged access presents a critical security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business‑critical assets.
+
+Learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access.md) plays a critical role in your business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* - by reducing this risk and strengthening control over sensitive systems.
+
+Planning is the first step. This article is aimed at implementers and security architects who translate the privileged access architecture into a practical rollout plan (scope, prerequisites, sequencing, and ownership).
+
+During planning you identify which privileged access paths matter most, decide which paths are allowed and which are blocked, and map those decisions directly to the phased implementation to follow.
 
 ## Before you start
 

@@ -15,9 +15,11 @@ ms.custom: sfi-image-nochange
 
 # Phase 2: Configure and secure privileged workstations
 
-This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access architecture](../security-adoption-scenario-privileged-access.md) under the *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* business scenario.
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide. 
 
-Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
+Privileged access presents a critical security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business‑critical assets.
+
+Learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access.md) plays a critical role in your business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* - by reducing this risk and strengthening control over sensitive systems.
 
 This article describes Phase 2 of the solution.  It deploys and hardens Privileged Access Workstations (PAWs) so privileged activity originates only from trusted devices. It builds on Phase 1 and produces the device trust signals (Intune compliance and Microsoft Defender for Endpoint risk) used for enforcement in Phase 3. 
 
@@ -164,7 +166,7 @@ PAWs must be managed from first boot. Unmanaged devices cannot be trusted for pr
     - Allow Windows MDM
     - Block or restrict BYOD / personally owned devices
 
-PAWS are always managed, never unmanaged.
+PAWs are always managed, never unmanaged.
 
 
 ### Provision PAWs consistently
@@ -193,7 +195,7 @@ Prevent PAWs from being used before they’re fully hardened. This prevents earl
 
 1. In the Microsoft Intune Admin Center, go to **Devices** >  **Windows** > **Windows enrollment** > **Enrollment status**.
 1. Select **Create profile** and create a profile with the following settings:
-    - **Show app and profile installation progress**:Yes
+    - **Show app and profile installation progress**: Yes
     - **Block device use until all apps and profiles are installed**: Yes
     
 1. Assign to **Secure Workstation Devices** and select **Create**.
@@ -238,7 +240,7 @@ PAWs must be patched quickly and predictably. Delays or user‑controlled deferr
 1. In **Assignments**, assign to secure workstation devices.
 1. Create the profile.
 
-After completing this procedure, PAWs stay patched with minimal exposure window and no user bypass.
+After you complete this procedure, PAWs stay patched with minimal exposure window and no user bypass.
 
 ### Onboard to Defender for Endpoint
 
@@ -262,7 +264,7 @@ Conditional Access and compliance depend on Defender risk signals. Without Defen
 1. Assign to the **Secure Workstation Devices** account.
 1. Create the profile. 
 
-After configuring the procedure, PAWs emit device risk, malware, and EDR telemetry used by Conditional Access and SecOps.
+After you configure the procedure, PAWs emit device risk, malware, and EDR telemetry used by Conditional Access and SecOps.
 
 ### Enforce firewall and network restrictions
 

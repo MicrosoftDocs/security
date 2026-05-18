@@ -15,9 +15,16 @@ ms.custom: sfi-image-nochange
 
 # Overview - Implement a privileged access architecture
 
-This article introduces an end-to-end solution for implementing a privileged access architecture. It's aimed at security and identity planners and implementers.
+This article introduces an end-to-end solution for implementing a privileged access architecture. It's aimed at security/identity planners and implementers.
 
-In the Microsoft security adoption model, implementation solutions provide prescriptive deployment guidance. Implementation solutions align to [business scenarios](../security-adoption-business-scenarios-overview.md) that define high priority security outcomes.
+In the Microsoft security adoption model:
+
+- Implementation solutions provide prescriptive deployment guidance.
+- Solutions align to [business scenarios](../security-adoption-business-scenarios-overview.md) that define high priority security outcomes. 
+
+Before you begin implementation, learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access.md) plays a critical role in the business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* - by reducing this risk and strengthening control over sensitive systems.
+
+## Solution goals
 
 Privileged access represents one of the highest-impact risks in any organization because it provides direct control over identity systems, cloud control planes, and critical business resources.
 
@@ -29,7 +36,9 @@ The objective is to reduce risk by:
 - Controlling where and how those actions can occur.
 - Continuously monitoring and responding to privileged activity.
 
-Implement this architecture using Microsoft Entra ID, Microsoft Intune, and Microsoft Defender for Endpoint. Deploy it in phases: establishing a secure foundation (identity control plane and trusted devices), enforcing policy controls, and operationalizing monitoring and response.
+Implement this architecture using Microsoft Entra ID, Microsoft Intune, and Microsoft Defender for Endpoint. 
+
+Deploy the solution in phases. Start by establishing a secure foundation (identity control plane and trusted devices), enforce policy controls, and then set up monitoring and response operations. 
 
 
 ## Privileged access risk

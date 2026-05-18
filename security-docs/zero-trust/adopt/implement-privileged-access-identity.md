@@ -12,16 +12,15 @@ ms.topic: conceptual
 
 # Phase 1 - Secure the identity control plane
 
-This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access architecture](../security-adoption-scenario-privileged-access.md) under the *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* business scenario.
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide. 
 
-Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
+Privileged access presents a critical security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business‑critical assets.
 
+Learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access.md) plays a critical role in your business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* - by reducing this risk and strengthening control over sensitive systems.
 
-This article helps you implement Phase 1 of the [Implement a privileged access architecture](implement-privileged-access.md) solution. 
+This article helps you implement Phase 1 of the [Implement a privileged access architecture](implement-privileged-access.md) solution. This phase secures the identity control plane by defining and protecting privileged identities, role assignments, and authorized elevation paths.
 
-During Phase 1, secure the identity control plane by defining and protecting privileged identities, role assignments, and authorized elevation paths.
-
-Implement Phase 1 first. Later phases then secure privileged access devices, enforce Conditional Access policy, and monitor access depend on having clean, well-governed privileged identities and explicit elevation paths.
+It's important to implement Phase 1 first. Later phases that secure privileged access devices, enforce Conditional Access policies, and monitor privileged access depend on having a clean, well-governed identity control plane.
 
 ## Protection goals
 

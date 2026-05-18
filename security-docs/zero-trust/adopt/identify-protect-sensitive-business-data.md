@@ -12,7 +12,7 @@ ms.topic: how-to
 
 As part of Zero Trust adoption guidance, this article describes the business scenario of safeguarding your most critical data assets. This scenario focuses on how to identify and protect sensitive business data.
 
-Digital transformation has led organizations to deal with increasing volumes of data. However, external collaborators such as partners, vendors, and customers access much of that shared data outside the corporate network. This shift has created a complex data landscape, especially when you consider the proliferation of hybrid workforces and cloud migrations, growing cyberthreats, evolving security, and changing regulatory requirements around how data is governed and protected.
+With digital transformation organizations deal with increasing volumes of data. However, external collaborators such as partners, vendors, and customers access much of that shared data outside the corporate network. This shift has created a complex data landscape, especially when you consider the proliferation of hybrid workforces and cloud migrations, growing cyberthreats, evolving security, and changing regulatory requirements around how data is governed and protected.
 
 With hybrid work models, corporate assets and data are on the move. Your organization needs to control wherever the data is stored and transferred on devices, inside apps, and with partners. For modern-day security you can no longer rely on traditional network protection controls.
 
@@ -38,7 +38,7 @@ The following table provides reasons why business leaders across an organization
 | Chief Marketing Officer (CMO) | Product planning, messaging, branding, and upcoming product announcements must be released at the right time and in the right way to maximize impact. Untimely leakage can reduce investment returns and tip off competitors to upcoming plans. |
 | Chief Information Officer (CIO) | While traditional approaches for protecting information relied on limiting access to it, protecting sensitive data adequately by using modern technologies enables more flexible collaboration with external parties, as needed, without increasing risk. Your IT departments can fulfill their mandate to ensure productivity while minimizing risk. |
 | Chief Information Security Officer (CISO) | As the primary function of this role, securing sensitive business data is an integral part of information security. This outcome directly affects the organization’s larger cybersecurity strategy. Advanced security technology and tools provide the ability to monitor data and prevent leakage and loss. |
-| Chief Technology Officer (CTO) | Intellectual property can differentiate a successful business from a failing one. Protecting this data from oversharing, unauthorized access, and theft is key to ensure future growth of the organization. | 
+| Chief Technology Officer (CTO) | Intellectual property can differentiate a successful business from a failing one. A key to future growth is to protect this data from oversharing, unauthorized access, and theft. | 
 |Chief Operations Officer (COO) | Operations data, procedures, and production plans are a key strategic advantage to an organization. These plans can also reveal strategic vulnerabilities that can be exploited by competitors. Protecting this data from theft, oversharing, and misuse is critical to the continued success of the business. |
 | Chief Financial Officer (CFO) | Publicly traded companies have a duty to protect specific financial data before it's made public. Other financial data can reveal plans and strategic strengths or weaknesses. This data must all be protected to both ensure compliance with existing regulations and maintain strategic advantages. |
 | Chief Compliance Officer (CCO) | Regulations across the world mandate protection of PII of customers or employees and other sensitive data. The CCO is responsible for ensuring the organization abides by such regulations. A comprehensive information protection strategy is key to achieving that goal. |
@@ -127,7 +127,7 @@ If this staged approach works for your organization, you can use:
 
 - This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png" alt-text="The progress tracking worksheet for your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png":::
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png" alt-text="Progress tracking worksheet for identity and sensitive data protection." lightbox="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png":::
 
 ### Understand your organization
 
@@ -201,7 +201,7 @@ The Stage 1 deployment objectives include the process of taking inventory of you
 
 ##### Discover and identify sensitive business data
 
-Starting with Microsoft 365, some of the primary tools you use to identify sensitive information that needs to be protected are sensitive information types (SITs) and other classifiers, including trainable classifiers and fingerprints. These identifiers help find common sensitive data types, such as credit card numbers or governmental identification numbers, and identifying sensitive documents and emails using machine learning and other methods. You can also create custom SITs to identify data that is unique to your environment, including using exact data matching to differentiate data pertaining to specific people—for example, customer PII—that needs special protection.
+Starting with Microsoft 365, some of the primary tools you use to identify sensitive information that needs to be protected are sensitive information types (SITs) and other classifiers, including trainable classifiers and fingerprints. These identifiers help find common sensitive data types, such as credit card numbers or governmental identification numbers. They also help you to identify sensitive documents and emails using machine learning and other techniques. You can also create custom SITs to identify data that is unique to your environment, including using exact data matching to differentiate data pertaining to specific people—for example, customer PII—that needs special protection.
 
 When data is added to your Microsoft 365 environment or modified, it's automatically analyzed for sensitive content using any SITs that are presently defined in your tenant.
 

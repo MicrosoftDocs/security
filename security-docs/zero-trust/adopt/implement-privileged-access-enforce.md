@@ -1,7 +1,7 @@
 ---
 title: Phase 3-Enforce privileged access policies
 description: Learn how to configure Conditional Access to control privileged access
-ms.date: 05/05/2025
+ms.date: 05/18/2025
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
@@ -15,10 +15,11 @@ ms.custom: sfi-image-nochange
 
 # Phase 3 - Enforce privileged access policies
 
-This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access architecture](../security-adoption-scenario-privileged-access.md) under the *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* business scenario.
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide. 
 
-Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business-critical assets.
+Privileged access presents a critical security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business‑critical assets.
 
+Learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access.md) plays a critical role in your business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* - by reducing this risk and strengthening control over sensitive systems.
 
 This article describes Phase 3 of the implementation. It enforces privileged access policy to restrict where privileged identities can be used. 
 
@@ -88,10 +89,10 @@ Ensure privileged access requires strong user authentication and trusted devices
 
 1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Protection** > **Conditional Access** > **Policies**.
 1. Select **Create new policy**. 
-1. In **Assigments** > **Users** configure these settings:
+1. In **Assigmnents** > **Users** configure these settings:
     - Include privileged directory roles such as Global Administrator, Security Administrator.
-    - Exclude the emergency breakglass group.
-1. In **Assigments** > **Cloud apps** include cloud management applications such as the Azure portal, Entra admin center, Microsoft 365 admin center, and Defender portals.
+    - Exclude the emergency break glass group.
+1. In **Assignments** > **Cloud apps** include cloud management applications such as the Azure portal, Entra admin center, Microsoft 365 admin center, and Defender portals.
 1. In **Access controls**, grant access with these settings:
     - Require multi‑factor authentication
     - Require device to be marked as compliant
@@ -104,10 +105,10 @@ Ensure that administrative portals are reachable only from compliant PAWs.
 
 1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Protection** > **Conditional Access** > **Policies**.
 1. Select **Create new policy** to create an additional policy.
-1. In **Assigments** > **Users** configure these settings:
+1. In **Assignments** > **Users** configure these settings:
     - Include privileged directory roles such as Global Administrator, Security Administrator.
-    - Exclude the emergency breakglass group.
-1. In **Assigments** > **Cloud apps** include administrative portals and management interfaces.
+    - Exclude the emergency break glass group.
+1. In **Assignments** > **Cloud apps** include administrative portals and management interfaces.
 1. In **Access controls**, grant access with these settings:
     - Require device to be marked as compliant
     - Require Microsoft Defender for Endpoint device risk = Low
@@ -120,10 +121,10 @@ Ensure that privileged access to administrative portals is blocked from non‑PA
 
 1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Protection** > **Conditional Access** > **Policies**.
 1. Select **Create new policy** to create a third policy.
-1. In **Assigments** > **Users** configure these settings:
+1. In **Assignments** > **Users** configure these settings:
     - Include privileged directory roles such as Global Administrator, Security Administrator.
     - Exclude the emergency breakglass group.
-1. In **Assigments** > **Cloud apps** include the same administrative portals.
+1. In **Assignments** > **Cloud apps** include the same administrative portals.
 1. Under **Conditions**, select **Filter for devices**.
 1. Configure the device filter to target non‑PAW devices:
     - Select **Include filtered devices**:
@@ -158,7 +159,7 @@ Limit PAW network access to only required administrative and management endpoint
     - Specify **Action**: **Allow**
     - Define **destination endpoints** (IP ranges, FQDNs, or service tags where supported)
 
-1. Ensure no broad allow rules such as untrestricted HTTP/HTTPS are configured.
+1. Ensure no broad allow rules such as unrestricted HTTP/HTTPS are configured.
 1. Assign the policy to **Secure Workstation Devices (PAWS)**.
 1. Select **Create** to deploy the policy.
 

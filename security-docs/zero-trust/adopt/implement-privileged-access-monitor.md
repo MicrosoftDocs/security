@@ -15,12 +15,11 @@ ms.collection:
 
 # Phase 4 - Monitor and protect privileged access against threats
 
-This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide, which provides phased implementation guidance aligned to the [privileged access architecture](../security-adoption-scenario-privileged-access.md) under the *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* business scenario.
+This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide. 
 
+Privileged access presents a critical security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business‑critical assets.
 
-Privileged access is the highest-impact security risk in most organizations because it enables direct control over identity sytems, cloud control planes, and business-critical assets.
-
-
+Learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access.md) plays a critical role in your business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* - by reducing this risk and strengthening control over sensitive systems.
 
 This article describes Phase 4, which establishes monitoring and response for privileged access. It focuses on detecting compromise attempts, validating ongoing compliance and enforcement, and enabling rapid containment when indicators of attack or misconfiguration appear.
 

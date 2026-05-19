@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 # Adopt and secure AI and data 
 
-This article explains how to rapidly and securely adopt AI using Zero Trust principles, as part of the Microsoft [security adoption model]((security-adoption-model.md)).
+This article explains how to rapidly and securely adopt AI using Zero Trust principles, as part of the Microsoft [security adoption model](security-adoption-model.md).
 
 This business scenario helps you achieve the following outcome:
 

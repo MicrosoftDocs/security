@@ -12,13 +12,13 @@ ms.collection:
 
 # Overview - Technology pillars
 
-This article summarizes technology pillars in our [Zero Trust adoption model](security-adoption-model.md).
+This article summarizes technology pillars in our [Zero Trust adoption model](../security-adoption-model.md).
 
 Technology pillars represent the core areas of your security architecture. They group related capabilities and controls into logical domains such as identity, endpoints, data, apps, infrastructure, networks, and security operations.
 
 Each pillar answers the same fundamental question:
 
-    **How do we apply Zero Trust principles to this part of the environment?**
+**How do we apply Zero Trust principles to this part of the environment?**
 
 Instead of thinking in terms of individual products or features, pillars provide a stable way to organize security design and implementation across your environment.
 
@@ -28,11 +28,11 @@ Instead of thinking in terms of individual products or features, pillars provide
 
 Our structured adoption model focuses on three components:
 
-- [Business scenarios](security-adoption-business-scenarios-overview.md) - Define the most critical security outcomes for the organization. They focus on **why** we're adopting Zero Trust security.
-- [Security disciplines](security-adoption-discipline-overview.md) - Guide teams to define strategy, architecture,  processes, and controls across common areas of security so that we can deliver the business scenarios. They focus on **what** Zero Trust capabilities are required.
+- [Business scenarios](../security-adoption-business-scenarios-overview.md) - Define the most critical security outcomes for the organization. They focus on **why** we're adopting Zero Trust security.
+- [Security disciplines](../security-adoption-discipline-overview.md) - Guide teams to define strategy, architecture,  processes, and controls across common areas of security so that we can deliver the business scenarios. They focus on **what** Zero Trust capabilities are required.
 - **[Technology pillars]** - Secure specific areas of the organization such as identity, data, and devices. They focus on **where** security capabilities are implemented.
 
-As adoption becomes deployment, [technical solutions](implement-overview.md) provide instructions for implementing security controls across technology pillars. They focus on **how** security is implemented
+As adoption becomes deployment, [technical solutions](../implement-overview.md) provide instructions for implementing security controls across technology pillars. They focus on **how** security is implemented
 
 In the Zero Trust adoption model, technology pillars sit between strategy and implementation.
 
@@ -55,7 +55,7 @@ Technology pillars don't define outcomes (business solutions) or steps (technica
 
 ## What's next?
 
-- [Review](implement-overview.md) technical solutions.
-- [Learn about](security-adoption-model.md) our Zero Trust adoption model.
-- [Review](security-adoption-business-scenarios-overview.md) critical security business scenarios.
+- [Review](../implement-overview.md) technical solutions.
+- [Learn about](../security-adoption-model.md) our Zero Trust adoption model.
+- [Review](../security-adoption-business-scenarios-overview.md) critical security business scenarios.
 

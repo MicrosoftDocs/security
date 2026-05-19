@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 # Enable business scenarios with Microsoft technologies
 
-This article shows how [business scenarios](security-adoption-business-scenario-overview.md) are implemented with Microsoft technologies. 
+This article shows how [business scenarios](security-adoption-business-scenarios-overview.md) are implemented with Microsoft technologies. 
 
 We capture the business outcome for each scenario, the disciplines responsible for delivering the outcomes, and the Microsoft technologies that enable it.
 

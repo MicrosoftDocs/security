@@ -144,7 +144,7 @@ This video provides a review of maturity model for the real-world journey to imp
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=ba9abbea-fcd9-4aef-92c2-8cd2a88621c5]
 
-## Video - Summary/Next steps
+## Summary
 
 Wrap-up of the workshop with key quick wins and next steps.
 

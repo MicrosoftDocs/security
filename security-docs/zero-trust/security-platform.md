@@ -13,22 +13,21 @@ ms.topic: conceptual
 
 # Microsoft security services
 
-This article describes the Microsoft security platform and explains how our services work together as a unified system to deliver protection across identities, devices, applications, data, and infrastructure.
-
+This article describes Microsoft security services and how they work together as a unified system to deliver protection across [technology pillars](deploy/overview.md) that include identities, devices, applications, data, AI, and infrastructure.
 
 Modern enterprise security has shifted from perimeter-based protection to an identity-driven, cloud-integrated model. Organizations must secure users, devices, applications, and data across hybrid and multicloud environments while continuously adapting to evolving threats.
 
-The Microsoft security platform is an integrated set of cloud-based services that work together to share signals, apply consistent policies, enforce controls, and coordinate detection and response across the environment.
+Microsoft provides a integrated set of cloud-based services that work together to share signals, apply consistent policies, enforce controls, and coordinate detection and response across the environment.
 
 
 ## Security outcomes
 
-The Microsoft security platform is designed to deliver the following outcomes:
+Integrated Microsoft security delivers the following outcomes:
 
-- **Unified signal visibility**: Telemetry is continuously collected and centralized across identities, devices, applications, data, and infrastructure.
+- **Unified signal visibility**: Telemetry is continuously collected and centralized across identities, devices, applications, data, and infrastructure, and converted into centralized, actionable signals.
 - **Identity-driven decision making**: Access and enforcement decisions are based on identity, device state, risk signals, and session context.
 - **Consistent enforcement**: Zero Trust controls are applied across endpoints, cloud services, and applications at access time and during use.
-- **Integrated detection and response**: Signals and alerts are correlated across domains to detect and respond to threats as unified incidents.
+- **Integrated detection and response**: Signals and alerts are correlated across domains to detect and respond to threats as unified operations.
 - **Continuous validation and improvement**: Detection and risk signals feed back into policy decisions to strengthen protection over time.
 
 ## Core security services
@@ -38,17 +37,17 @@ Core security services span multiple technology pillars, each contributing signa
 
 **Pillar<br/>Primary service** | **Protection** | **Primary portal**
 --- | --- | --- 
-**Identity and access**<br/><br/>Microsoft Entra<br/>Microsoft Defender for Identity. | Microsoft Entra controls access for users, workloads, and applications. It evaluates identity, device, and session signals to make access decisions. Defender for Identity monitors hybrid identity infrastructure to detect attacks. | [Microsoft Entra admin center](https://entra.microsoft.com/)<br/>[Microsoft Defender portal](https://sip.security.microsoft.com/)
-**Devices/endpoints**<br/><br/>Microsoft Defender for Endpoint<br/>Microsoft Intune | Defender for Endpoint collects endpoint telemetry and detects threats. Microsoft Intune assesses device compliance and enforces policy. | Microsoft Defender portal <br/>[Microsoft Intune admin center](https://intune.microsoft.com/)
-**Email and collaboration**<br/><br/>Defender for Office 365 | Protects Exchange and collaboration services (Microsoft Teams, SharePoint, OneDrive) from malware, malicious links/attachments, and business email compromise. | Microsoft Defender portal
+**Identity and access**<br/><br/>Microsoft Entra<br/><br/>Microsoft Defender for Identity. | Microsoft Entra controls access for users, workloads, and applications. It evaluates identity, device, and session signals to make access decisions.<br/><br/>Defender for Identity monitors hybrid identity infrastructure to detect attacks. | [Microsoft Entra admin center](https://entra.microsoft.com/)<br/><br/>[Microsoft Defender portal](https://sip.security.microsoft.com/)
+**Devices/endpoints**<br/><br/>Microsoft Defender for Endpoint<br/><br/>Microsoft Intune | Defender for Endpoint collects endpoint telemetry and detects threats.<br/>Microsoft Intune assesses device compliance and enforces policy. | [Microsoft Defender portal](https://sip.security.microsoft.com/) <br/><br/>[Microsoft Intune admin center](https://intune.microsoft.com/)
+**Email and collaboration**<br/><br/>Defender for Office 365 | Protects Exchange and collaboration services (Microsoft Teams, SharePoint, OneDrive) from malware, malicious links/attachments, and business email compromise. | [Microsoft Defender portal](https://sip.security.microsoft.com/)
 **Data**<br/><br/>Microsoft Purview | Enforces data protection and data loss prevention (DLP) policies across endpoints and cloud services. | [Microsoft Purview portal](https://sip.purview.microsoft.com/)
-**Infrastructure/cloud workloads**<br/><br/>Microsoft Defender for Cloud  | Improves security posture and provides threat detection across cloud and hybrid workloads. | Azure portal<br/>Microsoft Defender portal
+**Infrastructure/cloud workloads**<br/><br/>Microsoft Defender for Cloud  | Improves security posture and provides threat detection across cloud and hybrid workloads. | [Microsoft Azure portal](https://ms.portal.azure.com/)<br/>[Microsoft Defender portal](https://sip.security.microsoft.com/)
 **Networks**<br/><br/>Azure networking services | Segment and protect networks. | [Microsoft Azure portal](https://ms.portal.azure.com/)
-**SaaS/cloud apps**<br/><br/>Microsoft Defender for Cloud Apps | Provides visibility into cloud app usage and monitors user activity to detect risky behavior. | Microsoft Defender portal
-**Posture/risk**<br/><br/>Microsoft Security Exposure Management | *Identifies, prioritizes, and reduces exposure across identities, devices, cloud resources, and applications. | Microsoft Defender portal
+**SaaS/cloud apps**<br/><br/>Microsoft Defender for Cloud Apps | Provides visibility into cloud app usage and monitors user activity to detect risky behavior. | [Microsoft Defender portal](https://sip.security.microsoft.com/)
+**Posture/risk**<br/><br/>Microsoft Security Exposure Management | Identifies, prioritizes, and reduces exposure across identities, devices, cloud resources, and applications. | [Microsoft Defender portal](https://sip.security.microsoft.com/)
 **Threat detection/response** <br/><br/>Microsoft Defender XDR | Correlates signals across Defender services and produces unified incidents for investigation and response. | Microsoft Defender portal
-**Security operations**<br/><br/>Microsoft Sentinel | Aggregates telemetry from Microsoft and third-party sources for centralized analysis, investigation, and response. | Microsoft Azure portal<br/>Microsoft Defender portal.
-**Developer/app security**<br/><br/>Defender for DevOps (in Defender for Cloud), GitHub Advanced Security | Secures code, dependencies, and build pipelines, and enforces security governance across DevOps workflows. | Microsoft Defender portal<br/>GitHub interface
+**Security operations**<br/><br/>Microsoft Sentinel | Aggregates telemetry from Microsoft and third-party sources for centralized analysis, investigation, and response. | [Microsoft Azure portal](https://ms.portal.azure.com/)<br/>[Microsoft Defender portal](https://sip.security.microsoft.com/)
+**Developer/app security**<br/><br/>Defender for DevOps (in Defender for Cloud)<br/>GitHub Advanced Security | Secures code, dependencies, and build pipelines, and enforces security governance across DevOps workflows. | [Microsoft Defender portal](https://sip.security.microsoft.com/)<br/>GitHub interface
 
 ## Network protection services
 
@@ -114,7 +113,7 @@ The table summarizes how security services consume signals and context from each
 
 ## What's next?
 
-- To kick off by assessing your current security posture, start with [Zero Trust assessment](assessment/overview.md).
-- To get started with structured adoption, follow our [Zero Trust adoption path](security-adoption-model.md).
-- To dive into critical security outcomes that business leaders typically focus on, start with our [business scenarios](security-adoption-business-scenarios-overview.md).
-To start directly with implementation for business solutions and technical pillars such as devices and data, review [implementing technical solutions](implement-overview.md).
+- To kick off with a [Zero Trust assessment](assessment/overview.md) of your current security posture.
+- Follow our structured [adoption model](security-adoption-model.md) to get started with Zero Trust adoption.
+- Dive into critical security outcomes for business leaders with our adoption [business scenarios](security-adoption-business-scenarios-overview.md).
+Start by[implementing technical solutions](implement-overview.md) for business solutions and technology pillars such as data and devices.

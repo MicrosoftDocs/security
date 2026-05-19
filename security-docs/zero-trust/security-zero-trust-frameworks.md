@@ -12,17 +12,17 @@ ms.topic: conceptual
 ---
 # Align adoption with Zero Trust frameworks 
 
-This article explains the role played by well known Zero Trust frameworks, and how **Microsoft's Zero Trust adoption model helps you to move from understanding to adoption at scale**. 
+This article provides an overview of well known Zero Trust frameworks, and shows how [Microsoft's Zero Trust adoption model](security-adoption-model.md) helps you to move from framework understanding to adoption at scale. 
 
-Zero Trust isn't a single framework. It's a security model that aligns with multiple industry and government standards. These standards aren't competing solutions. Each addresses a different aspect of Zero Trust, such as definingcore concepts, assessing progress, or coordinating adoption across an organization.
+Zero Trust isn't a single framework. It's a security model that aligns with multiple industry and government standards. These standards aren't competing solutions. Each addresses a different aspect of Zero Trust, such as defining core concepts, assessing progress, or coordinating adoption across an organization.
 
-While industry frameworks help define what Zero Trust should achieve, organizations still need a way to translate that guidance into a specific strategy and architecture to enable planning, design, and deployment.
+While industry frameworks help define what Zero Trust should achieve, organizations still need a way to translate that guidance into a specific strategy and architecture for solution planning, design, and deployment.
 
 Microsoft's Zero Trust adoption model does just that. It provides a reference strategy and architecture that aligns to and builds on industry frameworks to accelerate Zero Trust adoption and implementation.
 
 
 > [!TIP]
-> Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model described here aligns with the expert-led guidance from Microsoft Unified available in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
+> Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model guidance aligns with the expert-led guidance from Microsoft Unified delivered in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
 
 ## NIST Zero Trust
 
@@ -47,23 +47,32 @@ Key architectural concepts focus on:
 - Centralized policy decision logic that evaluates signals against organizational policy.
 - Policy enforcement functionality close to protected resources applies the decision.
 
-NIST SP 800-270 doesn't define technology pillars or security domains such as identity, endpoints, or data protection. 
+The Zero Trust conceptual architecture defined by NIST focuses on how access decisions are evaluated and enforced using policy engines, enforcement points, and contextual signals. 
 
+Note that:
 
-The Zero Trust conceptual architecture defined by NIST focuses on how access decisions are evaluated and enforced using policy engines, enforcement points, and contextual signals. Identity, device posture, applications, and data are modeled as subjects, resources, and sources of context that inform trust decisions, rather than as separate architectural domains.
+- NIST SP 800-270 doesn't define technology pillars or security domains such as identity, endpoints, or data protection. 
+- Identity, device posture, applications, and data are modeled as subjects, resources, and sources of context that inform trust decisions, rather than as separate architectural domains.
 
-Microsoft’s [security adoption model](security-adoption-model.md) builds on this architecture by applying its principles and components within an operational framework. While NIST defines how trust decisions are made and enforced, the adoption model organizes these capabilities across security disciplines and technology pillars to guide business planning, ownership, solution design, implementation, and progress tracking.
+Microsoft’s [security adoption model](security-adoption-model.md) builds on this architecture by applying its principles and components within an operational framework.
+
+While NIST defines how trust decisions are made and enforced, our adoption model organizes these capabilities across security disciplines and technology pillars to guide business planning, ownership, solution design, implementation, and progress tracking.
 
 
 ### Implementation
 
-Implementation guidance is provided by [NIST SP 1800-35 Implementing a Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/1800/35/final).
+Implementation guidance is provided in [NIST SP 1800-35 Implementing a Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/1800/35/final).
 
-For implementation guidance, NIST collaborated with 24 vendors, including Microsoft, on developing a guide with practical steps for organizations eager to implement cybersecurity reference designs for Zero Trust.
+For this implementation guidance:
 
-Microsoft participated as one of the vendors providing technology to implement Zero Trust capabilities across identity and access management, endpoint management and configuration, threat protection and monitoring, and secure access to distributed resources.
+- NIST collaborated with 24 vendors, including Microsoft, on developing a guide with practical steps for organizations eager to implement cybersecurity reference designs for Zero Trust.
+- Microsoft participated as one of the vendors providing technology to implement Zero Trust capabilities across:
+    - Identity and access management.
+    - Endpoint management and configuration.
+    - Threat protection and monitoring.
+    - Secure access to distributed resources.
 
-This diagram is the result of the NIST SP 1800-35 collaboration and can be downloaded from [Microsoft Cybersecurity Reference Architectures (MCRAs)](https://aka.ms/MCRA). Learn more about [MCRAs](microsoft-reference-architecture.md)
+This diagram is the result of the NIST SP 1800-35 collaboration. It can be downloaded from [Microsoft Cybersecurity Reference Architecture (MCRA)](https://aka.ms/MCRA). Learn more about [MCRA](microsoft-reference-architecture.md)
 
 :::image type="content" source="./media/adoption-map-national-institute.png" alt-text="Diagram showing Microsoft products mapped to NIST Zero Trust Architecture." lightbox="./media/adoption-map-national-institute.png":::
 

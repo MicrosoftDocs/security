@@ -145,8 +145,6 @@
 - name: Adopt Zero Trust security
   expanded: false
   items:
-  - name: Overview - old 
-    href: adopt/zero-trust-adoption-overview.md
   - name: Follow a security adoption model
     href: security-adoption-model.md
   - name: Start a security adoption journey

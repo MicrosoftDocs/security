@@ -18,19 +18,19 @@ ms.topic: conceptual
 
 Without a structured approach to adoption, security modernization programs can become fragmented, reactive, and difficult to sustain.
 
-Our structured security adoption model provides a standardized, repeatable, role-aware process that helps you to you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multi-platform environments.
+Our **structured security adoption model** provides a standardized, repeatable, role-aware process that helps you to you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multi-platform environments.
 
 Our adoption model aligns critical business outcomes, security disciplines, and solution implementations so that business leaders, security managers, architects and practitioners can move forward together at a controlled and sustainable pace across the organization.
 
 
 > [!TIP]
-> Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model guidance aligns with the expert-led guidance from Microsoft Unified available in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
+> Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model guidance aligns with the expert-led guidance from Microsoft Unified delivered in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
 
 ## Why use an adoption model?
 
 A structured adoption model helps you to:
 
-- **Align with security best practices** - Align with Zero Trust principles, [Microsoft Secure Future Initiative (SFI) patterns](sfi/secure-future-initiative-overview.md), other best practices, and [open standards and guidance](security-zero-trust-frameworks.md).
+- **Align with security best practices** - Align with Zero Trust principles, [Microsoft Secure Future Initiative (SFI) patterns](sfi/secure-future-initiative-overview.md), [open standards and guidance](security-zero-trust-frameworks.md), and other security best practices.
 - **Maximize existing investments** - Get value from your existing tools, before introducing new capabilities.
 - **Deliver an end-to-end security strategy** - Connect business priorities to security architecture, controls, processes, and operations.
 - **Adapt continuously** - Evolve security posture and strategy as threats, business needs, and technologies change.

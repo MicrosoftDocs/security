@@ -24,7 +24,7 @@ This article describes three common patterns for starting a Zero Trust security 
 Use this guidance to choose a starting point, rather than a pattern. It's important that your starting point enables progress without disrupting critical business operations.
 
 > [!TIP]
-> Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model and journey described here aligns with the expert-led guidance from Microsoft Unified available in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
+> Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model guidance aligns with the expert-led guidance from Microsoft Unified delivered in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
 
 
 ## Select a pattern

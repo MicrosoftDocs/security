@@ -1,7 +1,7 @@
 ---
 title: Align business outcomes and scenarios with Microsoft technologies
 description: Learn how business security outcomes are enabled with Microsoft security technologies.
-ms.date: 04/29/2026
+ms.date: 05/19/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman

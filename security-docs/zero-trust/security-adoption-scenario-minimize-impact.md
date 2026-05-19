@@ -34,7 +34,7 @@ This article is part of a [structured adoption model](security-adoption-model.md
     Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
 
 - Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
-- 
+ 
 This approach ensures that security incident response and recovery are integrated into your overall Zero Trust architecture, enabling faster detection, containment, and recovery.
 
 ## Why minimizing attack damage requires a new approach

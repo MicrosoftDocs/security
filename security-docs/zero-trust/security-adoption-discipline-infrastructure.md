@@ -54,16 +54,13 @@ To apply the Infrastructure and Networking Security discipline effectively, focu
 - **Define an infrastructure security strategy aligned to business risk**  
   Establish a clear approach for securing platforms, workloads, and network environments in a way that protects critical systems and reduces the most significant risks.
 
-- **Ensure consistent protection across hybrid and multicloud environments**  
+1. **Ensure consistent protection across hybrid and multicloud environments**  
   Apply a unified approach to securing infrastructure across on-premises, cloud, and edge environments to reduce gaps and inconsistencies.
-
-- **Establish standardized security configurations and practices**  
+1. **Establish standardized security configurations and practices**  
   Provide clear guidance to ensure that infrastructure and network controls are implemented consistently across environments and workloads.
-
-- **Align infrastructure security with business-critical services and scenarios**  
+1. **Align infrastructure security with business-critical services and scenarios**  
   Prioritize protections for the systems and services that support critical business operations and key scenarios such as secure remote work and protection of critical assets.
-
-- **Continuously monitor and improve infrastructure security posture**  
+1. **Continuously monitor and improve infrastructure security posture**  
   Use insights from vulnerabilities, misconfigurations, and operational signals to strengthen protections and reduce risk over time.
 
 

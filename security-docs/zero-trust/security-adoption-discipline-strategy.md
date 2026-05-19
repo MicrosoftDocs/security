@@ -53,29 +53,21 @@ The Security Strategy, Integration, and Governance discipline provides direction
 - **Adapt to change**: Continuously update strategy, roadmaps, architectures, and governance to address evolving threats, new technologies (including AI), regulatory changes, and shifting business priorities.
 - **Reduce incident impact**: Improve consistency, coordination, and accountability across the security program, reducing the frequency and severity of incidents and improving recovery outcomes.
 
-## How to apply this discipline
-
-To apply this discipline effectively, focus on establishing a consistent approach across the organization:
 
 
 ## How to apply this discipline
 
 To apply the Strategy, Integration, and Governance discipline effectively, focus on establishing clear direction, accountability, and alignment across the organization:
 
-- **Define security strategy aligned to business priorities and risk**  
-  Establish clear objectives that reflect organizational goals, critical assets, and the most significant risks to the business.
-
-- **Establish governance and accountability across teams**  
-  Define roles, responsibilities, and decision-making structures to ensure security efforts are coordinated and consistently executed.
-
-- **Set policies and standards that guide consistent execution**  
-  Provide clear expectations that ensure security controls and 
-ractices are applied consistently across the organization.
-
-**Align security efforts across disciplines and initiatives**  
+1. **Define security strategy aligned to business priorities and risk**  
+  Establish clear objectives that reflect organizational goals, critical assets, and the most significant risks to the business
+1. **Establish governance and accountability across teams**  
+  Define roles, responsibilities, and decision-making structures to ensure security efforts are coordinated and consistently executed
+1. **Set policies and standards that guide consistent execution**  
+  Provide clear expectations that ensure security controls and practices are applied consistently across the organization.
+1. **Align security efforts across disciplines and initiatives**  
   Ensure that architecture, operations, and engineering efforts work toward shared outcomes rather than operating in isolation.
-
-- **Measure progress and continuously improve**  
+1. **Measure progress and continuously improve**  
   Use metrics, risk insights, and operational feedback to track effectiveness, drive prioritization, and refine strategy over time.
 
 ## Manage organizational change

@@ -70,19 +70,15 @@ By aligning SecOps to Zero Trust principles, organizations move from reactive in
 
 To apply the SecOps discipline effectively, focus on establishing a coordinated approach to detecting, responding to, and recovering from threats across the organization:
 
-- **Define a threat detection and response strategy aligned to business risk**  
+1. **Define a threat detection and response strategy aligned to business risk**  
   Establish a clear approach for identifying, prioritizing, and responding to threats based on their potential business impact.
-
-- **Ensure consistent detection and response across the environment**  
+1. **Ensure consistent detection and response across the environment**  
   Apply a unified approach to monitoring, investigation, and response across identities, devices, applications, and infrastructure.
-
-- **Standardize processes for detection, response, and recovery**  
+1. **Standardize processes for detection, response, and recovery**  
   Provide clear guidance to ensure incidents are handled consistently, reducing response time and limiting impact.
-
-- **Align SecOps with business priorities and critical scenarios**  
+1. **Align SecOps with business priorities and critical scenarios**  
   Prioritize detection and response efforts to focus on protecting critical assets and minimizing the impact of security incidents.
-
-- **Continuously improve through insights and feedback**  
+1. **Continuously improve through insights and feedback**  
   Use learnings from incidents, threat intelligence, and operational metrics to strengthen detection capabilities and improve response over time.
 
 

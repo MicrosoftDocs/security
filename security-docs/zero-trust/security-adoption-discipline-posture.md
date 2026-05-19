@@ -63,19 +63,15 @@ Security posture acts as the operational extension of governance, translating en
 
 To apply the Security Posture Management discipline effectively, focus on establishing a continuous, risk-driven approach to understanding and improving your organization’s security posture:
 
-- **Define a posture management strategy aligned to business risk**  
+1. **Define a posture management strategy aligned to business risk**  
   Establish a clear approach for identifying, measuring, and prioritizing security risks based on their potential impact on the business.
-
-- **Ensure continuous visibility across the environment**  
+1. **Ensure continuous visibility across the environment**  
   Maintain an up-to-date understanding of assets, configurations, and exposures across identities, devices, applications, infrastructure, and data.
-
-- **Standardize how security risks are assessed and prioritized**  
+1. **Standardize how security risks are assessed and prioritized**  
   Provide clear guidance to ensure that vulnerabilities, misconfigurations, and risks are evaluated consistently and addressed based on impact.
-
-- **Align posture management with business priorities and critical assets**  
+1. **Align posture management with business priorities and critical assets**  
   Focus remediation efforts on the most important risks affecting high-value assets and key business scenarios.
-
-- **Continuously improve posture through measurement and remediation**  
+1. **Continuously improve posture through measurement and remediation**  
   Use insights from assessments, risk trends, and remediation efforts to reduce exposure and strengthen security over time.
 
 

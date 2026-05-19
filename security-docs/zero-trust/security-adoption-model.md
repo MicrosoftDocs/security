@@ -18,9 +18,9 @@ ms.topic: conceptual
 
 Without a structured approach to adoption, security modernization programs can become fragmented, reactive, and difficult to sustain.
 
-Our **structured security adoption model** provides a standardized, repeatable, role-aware process that helps you to you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multi-platform environments.
+Our *structured security adoption model provides a standardized, repeatable, role-aware process that helps you to you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multi-platform environments.
 
-Our adoption model aligns critical business outcomes, security disciplines, and solution implementations so that business leaders, security managers, architects and practitioners can move forward together at a controlled and sustainable pace across the organization.
+The adoption model aligns critical business outcomes, security disciplines, and solution implementations so that business leaders, security managers, architects and practitioners can move forward together at a controlled and sustainable pace across the organization.
 
 
 > [!TIP]
@@ -30,7 +30,7 @@ Our adoption model aligns critical business outcomes, security disciplines, and 
 
 A structured adoption model helps you to:
 
-- **Align with security best practices** - Align with Zero Trust principles, [Microsoft Secure Future Initiative (SFI) patterns](sfi/secure-future-initiative-overview.md), [open standards and guidance](security-zero-trust-frameworks.md), and other security best practices.
+- **Align with security best practices** - Align with [Zero Trust principles](zero-trust-overview.md), [Microsoft Secure Future Initiative (SFI) patterns](sfi/secure-future-initiative-overview.md), [open standards and guidance](security-zero-trust-frameworks.md), and [other security best practices](/security-best-practices-overview.md).
 - **Maximize existing investments** - Get value from your existing tools, before introducing new capabilities.
 - **Deliver an end-to-end security strategy** - Connect business priorities to security architecture, controls, processes, and operations.
 - **Adapt continuously** - Evolve security posture and strategy as threats, business needs, and technologies change.

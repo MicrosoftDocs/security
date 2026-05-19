@@ -52,12 +52,26 @@ The mission is to protect OT systems and IoT devices that control physical proce
 - Reduced likelihood and impact of outages, safety incidents, and physical damage.
 - Compliance with industry and regulatory requirements.
 
-
-
 The following diagram from the [Microsoft Cybersecurity Reference Architecture (MCRA)](microsoft-reference-architecture.md) illustrates the range of OT and IoT Devices that must be secured.  
 
 :::image type="content" source="./media/internet-of-things-devices.png" alt-text="OT and IoT device types" lightbox="./media/internet-of-things-devices.png":::
 
+## How to apply this discipline
+
+To apply the OT/IoT discipline effectively, focus on establishing a coordinated approach to securing connected devices and operational environments while maintaining safety and availability:
+
+1. **Define an OT/IoT security strategy aligned to operational risk**  
+  Establish a clear approach for identifying, prioritizing, and mitigating risks to critical operational processes, industrial systems, and connected devices based on their potential safety and business impact.
+1. **Gain comprehensive visibility into OT and IoT assets**  
+  Maintain an accurate inventory of devices, networks, and communication flows to understand what exists in the environment and identify unmanaged or vulnerable systems.
+1. **Segment and protect OT/IoT environments**  
+  Implement network segmentation and access controls to isolate critical systems, limit lateral movement, and reduce exposure to threats across IT and OT boundaries.
+1. **Standardize monitoring and threat detection for OT/IoT**  
+  Apply consistent monitoring and detection capabilities across connected devices and industrial systems to identify anomalies, unsafe conditions, and potential compromises.
+1. **Align OT/IoT security with operational requirements and safety priorities**  
+ Ensure that security controls support operational continuity and safety requirements, prioritizing protections for critical processes and minimizing disruptions to industrial operations.
+1. **Continuously improve through insights and operational feedba**  
+  Use learnings from incidents, device telemetry, and operational metrics to strengthen visibility, improve detection, and refine security controls over time.
 
 ## Manage change
 

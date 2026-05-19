@@ -66,16 +66,13 @@ The Security Architecture discipline provides technical clarity and structure fo
 To apply the Security Architecture discipline effectively, focus on establishing a consistent approach across the organization:
 
 
-- **Establish architectural principles and design patterns**  
+1. **Establish architectural principles and design patterns**  
   Provide clear guidance that ensures security controls and technologies are designed and implemented consistently across systems and environments.
-
-- **Integrate architecture into design, implementation, and operations**  
+1. **Integrate architecture into design, implementation, and operations**  
   Ensure that architectural guidance is embedded into decision-making processes, not treated as a static or isolated activity.
-
-- **Align architecture across disciplines and technology areas**  
+1. **Align architecture across disciplines and technology areas**  
   Ensure that identity, infrastructure, applications, and data protections work together as part of a cohesive system rather than independent solutions.
-
-- **Continuously refine architecture based on risk and feedback**  
+1. **Continuously refine architecture based on risk and feedback**  
   Use insights from security posture, incidents, and changing business requirements to evolve architecture over time.
 
 

@@ -20,6 +20,8 @@ Microsoft security best practices are designed to help organizations protect the
 
 Zero Trust principles are reinforced through a combination of engineering best practices, frameworks, benchmarks, and assessment tools.
 
+## Best practices and recommendations
+
 - **[Microsoft's Secure Future Initiative (SFI)](sfi/secure-future-initiative-overview.md)**
     
     A series of best practices and security learning based on Microsoft's multi-year efforts to increasingly secure the way in which we design, build, test, and operate our products. SFI provides a series of best practice patterns that you can learn from and implement. SFI tackles security by pillars. Objectives for each pillar align to one or more [NIST Cybersecurity Framework functions](sfi/secure-future-initiative-overview.md#sfi-pillars-zero-trust-and-nist).

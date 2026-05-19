@@ -13,6 +13,12 @@ ms.topic: conceptual
 
 # Secure and govern privileged access
 
+This article explains how to secure and govern privileged access using Zero Trust principles, as part of the Microsoft [security adoption model](security-adoption-model.md).
+
+This business scenario helps you achieve the following outcome:
+
+**Minimize business damage from security incidents**
+
 This article introduces the business outcome *Securing and governing privileged administrative access* within the [Secure critical business assets](security-adoption-scenario-secure-assets.md) business scenario.
 
 As a business leader, you're obligated to protect organization assets against all types of risk, including attacks by criminal and nation state threat actors. One of the common methods threat actors use to gain access to large parts of a digital estate is by targeting IT administrators who have broad access to systems and data in order to operate and maintain them.

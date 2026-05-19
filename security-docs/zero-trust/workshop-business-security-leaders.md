@@ -17,7 +17,7 @@ ms.reviewer: mas
 
 The CISO Workshop is one of our [Security Adoption Framework (SAF) workshops](workshop-business-overview.md) that are designed to help organizations modernize their security programs using Zero Trust strategy, security best practices, and real‑world lessons learned. 
 
-The CISO workshop is designed to support security and technology leaders as they align security strategy with evolving business priorities, technology platforms, and the threat landscape.
+The workshop is designed to support security and technology leaders as they align security strategy with evolving business priorities, technology platforms, and the threat landscape.
 
 > [!TIP]
 > Our Security Adoption Framework (SAF) workshops align with guidance in our [structured security adoption model](security-adoption-model.md).

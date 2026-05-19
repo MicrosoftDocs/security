@@ -12,31 +12,25 @@ ms.topic: conceptual
 
 # Enable business scenarios with Microsoft technologies
 
-This article shows how business scenarios are implemented with Microsoft technologies. We capture the business outcome for each scenario, the disciplines responsible for delivering the outcomes, and the Microsoft technologies that enable it.
+This article shows how [business scenarios](security-adoption-business-scenario-overview.md) are implemented with Microsoft technologies. 
 
-Business scenarios are the starting point for security adoption and modernization. They express the organizational outcomes that business leaders want to achieve, such as minimizing business damage, enabling secure remote work, or improving compliance.
-
-Within our structured adoption model, business scenarios lead to implementation through a number of layers:
-
-- Business scenarios (Why?) – The outcome that the organization needs to achieve.
-- Security disciplines (Who/How?) – The teams involved, and how they deliver the outcome.
-- Technology pillars (Where?) – The assets and resources being protected in the business scenario, including identity, devices, data, infrastructure, networking, DevOps, SecOps, and AI.
-- Implementation solutions (With what?) - The services we configure to protect the technical pillars and implement the business solution. Every scenario has an implementation solution aligned to it.
-
-This alignment helps business leaders, security leaders, and technology teams make consistent decisions, prioritize investments, and measure progress—without requiring everyone to be a product expert.
+We capture the business outcome for each scenario, the disciplines responsible for delivering the outcomes, and the Microsoft technologies that enable it.
 
 
 ## Minimize business damage
 
-The following table summarizes the business outcome, the security disciplines the scenario maps to, and the Microsoft technologies that implement the scenario.
+### Outcome
 
-**Outcome** | **Discipline** | **Technology**
---- | --- | ---
-Minimize business damage by detecting, investigating, and responding to security incidents quickly and consistently across the enterprise. | Security operations (SecOps) | Microsoft Defender XDR and Microsoft Sentinel.
+Minimize business damage by detecting, investigating, and responding to security incidents quickly and consistently across the enterprise.
+
+
+### Primary discipline
+
+Security operations (SecOps). [Learn more](security-adoption-discipline-security-operations.md).
 
 ### Primary technologies
 
-Primary technologies for this business solution are Microsoft Defender services, and Microsoft Sentinel.
+Primary technologies for this business solution are Microsoft Defender XDR services, and Microsoft Sentinel.
 
 #### Microsoft Defender 
 
@@ -59,11 +53,13 @@ Review the business scenario [Minimizing business damage from security incidents
 
 ## Enable secure work from anywhere
 
-The following table summarizes the business outcome, the security disciplines the scenario maps to, and the Microsoft technologies that implement the scenario.
+### Outcome
 
-**Outcome** | **Discipline** | **Technology**
---- | --- | ---
-Enable productivity while enforcing Zero Trust access decisions based on identity, device health, risk, and data sensitivity. | Access and identities | Microsoft Entra and Microsoft Intune.
+Enable productivity while enforcing Zero Trust access decisions based on identity, device health, risk, and data sensitivity.
+
+### Primary discipline
+
+Access and identities. [Learn more](security-adoption-discipline-identity-access.md).
 
 ### Primary technologies
 
@@ -84,13 +80,17 @@ Microsoft Intune technologies are a primary enabler for this business scenario. 
 
 Review the business scenario [Enabling people to do their job securely](security-adoption-scenario-remote-work.md).
 
-## Continuously improve security posture/compliance
+## Continuously improve posture and compliance
 
-The following table summarizes the business outcome, the security disciplines the scenario maps to, and the Microsoft technologies that implement the scenario.
+### Outcome
 
-**Outcome** | **Discipline** | **Technology**
---- | --- | ---
-Reduce exposure and improve compliance by providing clear visibility into attack paths, misconfigurations, and vulnerabilities across the digital estate. | Posture management: Continuous visibility, risk assessment, prioritization, and improvement tracking.<br/>Development security: Effective identification and remediation of vulnerabilities across the development lifecycle.<br/>Data security: Protect sensitive and personal data. Ensure proper handling, governance, and compliance with regulatory requirements. | Microsoft Security Exposure Management, GitHub Advanced Security, and Microsoft Priva.
+Reduce exposure and improve compliance by providing clear visibility into attack paths, misconfigurations, and vulnerabilities across the digital estate.
+
+### Primary discipline
+
+- Posture management: Continuous visibility, risk assessment, prioritization, and improvement tracking. [Learn more](security-adoption-discipline-posture.md).
+- Development security: Effective identification and remediation of vulnerabilities across the development lifecycle. [Learn more](security-adoption-discipline-development.md).
+- Data security: Protect sensitive and personal data. [Learn more](security-adoption-discipline-data.md).
 
 ### Primary technologies
 
@@ -126,11 +126,16 @@ Review the business scenario [Continuously improving security posture and compli
 
 ## Protect critical assets
 
-The following table summarizes the business outcome, the security disciplines the scenario maps to, and the Microsoft technologies that implement the scenario.
+### Outcome
 
-**Outcome** | **Discipline** | **Technology**
---- | --- | ---
-Identify where sensitive data resides and applying appropriate protection controls throughout its lifecycle. | Data security: Provide comprehensive data governance, protection, and compliance. | Microsoft Purview.
+Identify where sensitive data resides and applying appropriate protection controls throughout its lifecycle.
+
+
+### Primary discipline
+
+Data security: Provide comprehensive data governance, protection, and compliance. [Learn more](security-adoption-discipline-data.md)
+
+
 
 ### Primary technologies
 
@@ -151,11 +156,14 @@ Review the business scenario [Identifying and protecting critical business asset
 
 ## Rapidly and securely adopt AI
 
-The following table summarizes the business outcome, the security disciplines the scenario maps to, and the Microsoft technologies that implement the scenario.
+### Outcome
 
-**Outcome** | **Discipline** | **Technology**
---- | --- | ---
-Enable teams to innovate with AI quickly while protecting data, code, and intellectual property. | Data security: Control data used by and produced through AI. Include discovery, classification, sensitivity labels, DLP, and governance for AI interactions. | Microsoft Purview and GitHub Advanced Security.
+Enable teams to innovate with AI quickly while protecting data, code, and intellectual property.
+
+
+### Primary discipline
+
+Data security: Control data used by and produced through AI. Include discovery, classification, sensitivity labels, DLP, and governance for AI interactions. Enable teams to innovate with AI quickly while protecting data, code, and intellectual property.
 
 ### Primary technologies
 

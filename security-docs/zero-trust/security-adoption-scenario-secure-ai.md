@@ -13,17 +13,33 @@ ms.topic: conceptual
 
 # Adopt and secure AI and data 
 
+This article explains how to rapidly and securely adopt AI using Zero Trust principles, as part of the Microsoft [security adoption model]((security-adoption-model.md)).
+
+This business scenario helps you achieve the following outcome:
+
+**Rapidly and securely adopt AI technology** 
+
+As a business leader, you're under pressure to adopt AI quickly for competitive advantage, while protecting your organization from new and evolving risks. 
+
 This business scenario is part of our [structured adoption model](security-adoption-model.md) that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
 
-Use this guidance to achieve the following business outcome: **Rapidly and securely adopt AI technology**. 
+This guidance helps organizations adopt AI quickly and confidently while maintaining strong security, protecting sensitive data, and preserving business resilience.
 
-As a business leader, you're under pressure to adopt AI quickly for competitive advantage, while protecting your organization from new and evolving risks. This article helps you and your security teams enable AI adoption without compromising security, data protection, or business resilience.
 
-> [!NOTE]
-> - Microsoft's [security adoption guidance](security-adoption-model.md) connects the security modernization journey from strategy through end-to-end implementation.
-> - The model defines [business scenarios](security-adoption-business-scenarios-overview.md) help leaders identity and prioritize critical security business outcomes.
-> - [Security disciplines](security-adoption-discipline-overview.md) translate business outcomes into cohesive architectures and processes.
-> - Finally [implementation solutions](implement-overview.md) provide prescriptive steps for end-to-end deployment of business scenarios. 
+## How this guidance works
+
+This article is part of a [structured adoption model](security-adoption-model.md) that connects security strategy to implementation:
+
+- Start with a [business scenarios](security-adoption-business-scenarios-overview.md) like this one to define the outcome you want to achieve.
+- Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
+
+    Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
+    Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
+
+- Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
+
+This approach ensures that AI adoption is secured as part of your overall Zero Trust architecture, rather than as a separate effort.
+
 
 ## Why AI adoption requires a new approach
 

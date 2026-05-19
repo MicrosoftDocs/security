@@ -15,24 +15,28 @@ ms.reviewer: mas
 ---
 # CISO workshop videos
 
-The [CISO Workshop](workshop-business-security-leaders.md) is one of our Security Adoption Framework (SAF) workshops that are designed to help organizations modernize their security programs using Zero Trust strategy, security best practices, and real‑world lessons learned.
+The CISO Workshop is one of our [Security Adoption Framework (SAF) workshops](workshop-business-overview.md) that are designed to help organizations modernize their security programs using Zero Trust strategy, security best practices, and real‑world lessons learned. 
 
-The CISO Workshop is designed to support security and technology leaders as they align security strategy with evolving business priorities, technology platforms, and the threat landscape.
+The workshop is designed to support security and technology leaders as they align security strategy with evolving business priorities, technology platforms, and the threat landscape.
 
-We recommend participating in an expert-led workshop to:
+> [!TIP]
+> Our Security Adoption Framework (SAF) workshops align with guidance in our [structured security adoption model](security-adoption-model.md).
+
+## Expert-led workshops
+
+We recommend participating in an expert-led CISO workshop to:
 
 - Learn from Microsoft's internal security team and real-world engagements.
 - Make informed decisions about security modernization, prioritize the right initiatives, and make sure that strategy is clearly connected to design and implementation across the business.
 
 If you have [Microsoft Unified](https://www.microsoft.com/unifiedsupport/overview), contact your Customer Success Account Manager (CSAM) to request an expert-led workshop delivery.
 
-If you're unable to organize an expert-led workshop, the workshop is available as a series of publically available prerecorded videos summarized in this article. A [pdf slide presentation of accompanying materials](https://arch-center.azureedge.net/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) is also available for download/review.
+## Workshop videos
 
-> [!TIP]
-> Our SAF workshops align with our structured security adoption model. Learn more about our [Zero Trust security adoption guidance](security-adoption-model.md).
+If you're unable to organize an expert-led workshop, it's available as a series of publically available prerecorded videos summarized in this article. A [pdf slide presentation of accompanying materials](https://arch-center.azureedge.net/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) is also available for download/review.
 
 
-## Introduction and overview
+## Video - Introduction and overview
 
 This video introduces the CISO workshop and provides an overview of its content.
 
@@ -140,7 +144,7 @@ This video provides a review of maturity model for the real-world journey to imp
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=ba9abbea-fcd9-4aef-92c2-8cd2a88621c5]
 
-## Summary and next steps
+## Video - Summary/Next steps
 
 Wrap-up of the workshop with key quick wins and next steps.
 

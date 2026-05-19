@@ -13,11 +13,34 @@ ms.topic: conceptual
 
 # Strengthen security posture and compliance
 
+This article explains how to strengthen posture and compliance using Zero Trust principles, as part of the Microsoft [security adoption model]((security-adoption-model.md).
+
+This business scenario helps you achieve the following outcome:
+
+**Continuously improve security posture and compliance**
+
+As a business leader, you must meet your fiduciary duty to protect against security risk. Protection must cover security incidents from evolving threats, as well as meeting regulatory compliance requirements, often with the same limited resources.
+
+
 This business scenario is part of our [structured adoption model](security-adoption-model.md) that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
 
-Use this guidance to achieve the following business outcome: **Continuously improving security posture and compliance**.
 
-As a business leader, you must meet your fiduciary duty to protect against security risk. Protection must cover security incidents from evolving threats, as well as meeting regulatory compliance requirements, often with the same limited resources. This article helps you and your security team strengthen your security posture while achieving compliance efficiently.
+This guidance helps your organization to improve security posture and maintain compliance by continuously identifying risk, prioritizing remediation, and strengthening protections across the organization.
+
+## How this guidance works
+
+This article is part of a [structured adoption model](security-adoption-model.md) that connects security strategy to implementation:
+
+- Start with a [business scenario](security-adoption-business-scenarios-overview.md) like this one to define the outcome you want to achieve.
+- Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
+
+    Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
+    Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
+
+- Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
+
+This approach ensures that security posture improvement and compliance are continuously maintained as part of your overall Zero Trust architecture, rather than as a separate effort.
+
 
 ## Why security posture requires a new approach
 

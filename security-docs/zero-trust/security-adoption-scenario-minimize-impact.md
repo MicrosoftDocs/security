@@ -13,12 +13,31 @@ ms.topic: conceptual
 
 # Minimize damage from security incidents
 
-This business scenario is part of our structured adoption model that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
+This article explains how to strengthen posture and compliance using Zero Trust principles, as part of the Microsoft [security adoption model](security-adoption-model.md).
+
+This business scenario helps you achieve the following outcome:
+
+**Minimize business damage from security incidents**
 
 Use this guidance to achieve the following business outcome: **Minimizing business damage from security incidents**.
 
-As a business leader, you know attacks are inevitable. What matters is how quickly you can detect, contain, and recover from them. This article helps you and your security team build the resilience needed to minimize business impact. 
+As a business leader, you know attacks are inevitable. What matters is how quickly you can detect, contain, and recover from security incidents quickly to reduce operational disruption, financial loss, and reputational impact.
 
+This guidance helps your organization to reduce the business impact of security incidents by strengthening resilience, improving response effectiveness, and accelerating recovery across the enterprise.
+
+## How this guidance works
+
+This article is part of a [structured adoption model](security-adoption-model.md) that connects security strategy to implementation:
+
+- Start with a [business scenario](security-adoption-business-scenarios-overview.md) like this one to define the outcome you want to achieve.
+- Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
+
+    Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
+    Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
+
+- Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
+- 
+This approach ensures that security incident response and recovery are integrated into your overall Zero Trust architecture, enabling faster detection, containment, and recovery.
 
 ## Why minimizing attack damage requires a new approach
 

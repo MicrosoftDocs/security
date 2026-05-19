@@ -15,23 +15,29 @@ ms.topic: conceptual
 
 This article explains how to secure and govern privileged access using Zero Trust principles, as part of the Microsoft [security adoption model](security-adoption-model.md).
 
-This business scenario helps you achieve the following outcome:
+Use this guidance to achieve the following business outcome: 
 
-**Minimize business damage from security incidents**
+**Secure privileged access as a key outcome of protecting critical assets** 
 
-This article introduces the business outcome *Securing and governing privileged administrative access* within the [Secure critical business assets](security-adoption-scenario-secure-assets.md) business scenario.
+As a business leader, you must ensure that the systems, data, and access pathways that drive your organization are protected against targeted and high-impact threats. Not all assets carry equal importance. Some represent concentrated risk and require stronger, more focused protection.
 
-As a business leader, you're obligated to protect organization assets against all types of risk, including attacks by criminal and nation state threat actors. One of the common methods threat actors use to gain access to large parts of a digital estate is by targeting IT administrators who have broad access to systems and data in order to operate and maintain them.
+A key outcome of protecting critical business assets is securing the privileged access that controls them. Privileged identities and access pathways represent concentrated risk because they provide administrative control over critical systems and data. If compromised, they can enable widespread impact across the organization.
 
-The article explains why privilege access is a critical risk path, describes a Zero Trust approach, and summarizes the business outcomes we want to achieve, and the relevant security disciplines and technology pillars.
+This guidance helps you organization reduce rusk by strengthening control over privileged access, ensuring that your most sensitive systems and data are only accessible through tightly governed and securely enforced access pathways.
 
-As 
+## How this guidance works
 
-> [!NOTE]
-> - Microsoft's [security adoption model](security-adoption-model.md) connects the security modernization journey from strategy through end-to-end implementation.
-> - The model defines [business scenarios](security-adoption-business-scenarios-overview.md) help leaders identity and prioritize critical security business outcomes.
-> - [Security disciplines](security-adoption-discipline-overview.md) translate business outcomes into cohesive architectures and processes.
-> - Finally [implementation solutions](implement-overview.md) provide prescriptive steps for end-to-end deployment of business scenarios. 
+This article is part of a [structured adoption model](security-adoption-model.md) that connects security strategy to implementation:
+
+- Start with a [business scenarios](security-adoption-business-scenarios-overview.md) like this one to define the outcome you want to achieve.
+- Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
+
+    Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
+    Work through each discipline to understand what needs to be planned, designed, and implemented across the organization.
+
+- Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
+- 
+This approach ensures that security investments are focused on the assets that matter most to the business and that access to those assets is consistently controlled to reduce the risk of high-impact compromise.
 
 ## Privileged access
 

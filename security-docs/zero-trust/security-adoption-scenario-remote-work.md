@@ -13,11 +13,34 @@ ms.topic: conceptual
 
 # Enable secure remote work
 
-This business scenario is part of our [structured adoption model](security-adoption-model.md) that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
+This article explains how to enable secure remote work using Zero Trust principles, as part of the Microsoft [security adoption model]((security-adoption-model.md).
 
-Use this guidance to achieve the following business outcome: **Enabling people to do their job securely from anywhere**.
 
-As a business leader, you must enable your workforce to work productively from anywhere - home, office, or on the road - without compromising security. This article helps you and your security team plan enable secure remote work in a way that balances flexibility, productivity, and risk. 
+This business scenario helps you achieve the following outcome:
+
+**Enable people to do their job securely from anywhere**.
+
+As a business leader, you must ensure that employees can securely access the systems, data, and applications they need to work from any location. Remote work expands the attack surface by operating outside traditional network boundaries, increasing exposure to identity-based attacks, compromised devices, and unauthorized access.
+
+A key outcome of enabling secure remote work is ensuring that employees can securely access organizational resources without increasing the risk of unauthorized access or disruption. This requires consistent verification of users, devices, and access conditions to ensure that only trusted access is allowed.
+
+This scenario focuses on establishing secure, consistent access to applications and data across remote and hybrid environments, ensuring that employees can work productively while organizational resources remain protected and governed.
+
+This enables employees to work from anywhere while reducing the risk of data exposure, operational disruption, and unauthorized access.
+
+## How this guidance works
+
+This article is part of a [structured adoption model](security-adoption-model.md) that connects security strategy to implementation:
+
+- Start with a [business scenarios](security-adoption-business-scenarios-overview.md) like this one to define the outcome you want to achieve.
+- Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
+
+    Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
+    Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
+
+- Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity, endpoints, and data.
+
+This approach ensures that users can work from anywhere while access to organizational resources is continuously verified and protected, reducing risk without limiting productivity.
 
 ## Why hybrid remote work requires a new approach
 

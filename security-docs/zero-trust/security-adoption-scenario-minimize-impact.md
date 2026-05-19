@@ -19,8 +19,6 @@ This business scenario helps you achieve the following outcome:
 
 **Minimize business damage from security incidents**
 
-Use this guidance to achieve the following business outcome: **Minimizing business damage from security incidents**.
-
 As a business leader, you know attacks are inevitable. What matters is how quickly you can detect, contain, and recover from security incidents quickly to reduce operational disruption, financial loss, and reputational impact.
 
 This guidance helps your organization to reduce the business impact of security incidents by strengthening resilience, improving response effectiveness, and accelerating recovery across the enterprise.

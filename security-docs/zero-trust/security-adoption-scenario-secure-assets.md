@@ -13,11 +13,33 @@ ms.topic: conceptual
 
 # Identify and protect critical assets
 
-This business scenario is part of our [structured adoption model](security-adoption-model.md)  that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
+This article explains how to identify and protect critical business assets using Zero Trust principles, as part of the [Microsoft security adoption model](security-adoption-model.md).
 
-Use this guidance to achieve the following business outcome: **Identifying and protecting critical business assets**.
+This business scenario helps you achieve the following outcome:
 
-As a business leader, you need to ensure that the most valuable assets (data, systems, and access rights) that run your business are protected against sophisticated threats. This article helps you and your security team identify and safeguard what matters most. 
+**Identity and protect critical business assets**
+
+As a business leader, you must ensure that the systems, data, and operations that drive your organization are protected against targeted and high-impact threats. Not all assets carry equal importance—some represent concentrated risk and require stronger, more focused protection.
+
+A key outcome of protecting critical business assets is securing the privileged access that controls them. Privileged identities and access pathways represent concentrated risk because they provide administrative control over critical systems and data. If compromised, they can enable widespread impact across the organization.
+
+This scenario focuses on ensuring that critical assets are protected and that access to those assets is tightly governed and consistently controlled, so that only trusted and authorized access is allowed.
+
+This enables your organization to reduce the risk of high-impact attacks, protecting business operations, revenue, and reputation from disruption or compromise.
+
+## How this guidance works
+
+This article is part of a [structured adoption model](security-adoption-model.md) that connects security strategy to implementation:
+
+- Start with a [business scenarios](security-adoption-business-scenarios-overview.md) like this one to define the outcome you want to achieve.
+- Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
+
+    Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
+    Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
+
+- Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
+
+This approach ensures that security investments are focused on the assets that matter most to the business while access to those assets is consistently governed, reducing the risk of high-impact compromise and strengthening overall organizational resilience.
 
 ## Why critical asset protection requires a new approach
 

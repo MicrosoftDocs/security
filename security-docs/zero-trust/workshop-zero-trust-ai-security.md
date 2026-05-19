@@ -20,7 +20,7 @@ AI pillar guidance focuses on governing AI usage, protecting data interactions w
 The AI workshop covers the implementation areas summarized in the table.
 
 **Area** | **Details**
---- | ---::
+--- | ---
 **Discover and govern AI usage**  |   Identify where AI tools and services are being used across the organization, including approved and unapproved applications. <br/><br/>Classify AI applications, establish governance policies, and control which services are allowed and how they can be used.
 **Control access to AI applications and services**  |   Enforce identity and context-based access to AI systems. <br/><br/>Apply Conditional Access, session controls, and application governance policies to ensure that only authorized users on trusted devices can access AI applications.
 **Apply SaaS and application governance to AI tools**  |   Manage AI applications as cloud services by applying app discovery, session controls, and usage restrictions. <br/><br/>Enforce policies that govern how users interact with AI applications, including blocking or limiting high-risk scenarios.

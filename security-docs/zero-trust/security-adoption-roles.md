@@ -47,7 +47,7 @@ This diagram from the [Open Group security roles and glossary standard](https://
 Managing security risk effectively requires accountability and collaboration:
 
 - Collaboration between accountable and responsible parties is critical.
-- Making good security decisions requires a healthy and relationship where accountable decision-makers and security experts can safely share ideas and challenge assumptions.
+- Making good security decisions requires a healthy and relationship. Accountable decision-makers and security experts must be able to share ideas safely and challenge assumptions.
 
 With these tenets in mind, security risk should be managed in a similar way to financial and legal risk. Each role has policies and education/training that guide their daily decisions, rather than assigning responsibility and even blame to security teams only.
 
@@ -60,7 +60,7 @@ When roles are clearly defined, aligned, and connected:
 - Leadership sets priorities and accountability.
 - Business and risk functions align security to outcomes.
 - Architecture and technical leadership design scalable solutions.
-- Engineering and operations implement and sustain controls.
+- Engineering and operations implement and sustain security controls.
 - Security operations validate effectiveness.
 - Everyone participates in protecting the organization.
 

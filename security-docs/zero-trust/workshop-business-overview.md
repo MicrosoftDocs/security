@@ -15,18 +15,18 @@ This article summarizes our available Security Adoption Framework (SAF) workshop
 
 ## What are SAF workshops?
 
-Security adoption is complex and time-consuming. Our SAF workshops focus on high-level security strategy and business alignment to help you navigate complexity, and to accelerate security modernization with technical expertise, security maturity models, reference plans, architectural deep dives, assessments, and more.
+Security adoption is complex and time-consuming. Our SAF workshops focus on high-level security strategy and business alignment to help business and security leaders navigate complexity, and accelerate security modernization with technical expertise, security maturity models, reference plans, architectural deep dives, assessments, and more.
 
 
 > [!TIP]
-> Our Security Adoption Framework (SAF) workshops align with our structured security adoption model. Learn more about our [Zero Trust security adoption guidance](security-adoption-model.md).
+> Our Security Adoption Framework (SAF) workshops align with guidance in our [structured security adoption model](security-adoption-model.md).
 
 ## What SAF workshops do we have?
 
-We offer all of our SAF as expert-led, and provide a subset of self-help resources for some popular workshops.
+We offer all of our SAF workshops as expert-led. We also provide a subset of self-help resources for some popular workshops.
 
-- **Expert-led**: Expert facilitated workshops focus on security architecture, strategy, and technology adoption. They're available as [Microsoft Unified](https://www.microsoft.com/microsoft-unified) engagements. 
-- **Free**:  We publish free videos and downloadable files for some workshops. Use these self-service resources to accelerate your organization's security journey without a formal engagement.
+- **Expert-led**: Expert-facilitated workshops that focus on security architecture, strategy, and technology adoption. They're available as [Microsoft Unified](https://www.microsoft.com/microsoft-unified) engagements. 
+- **Self-led**:  We publish free videos and downloadable files for some workshops. Use these self-service resources to accelerate your organization's security journey without a formal engagement.
 
 
 :::image type="content" source="./media/workshops-unified.png" alt-text="Diagram showing how the adoption framework connects the business with security and technology." lightbox="./media/workshops-unified.png":::
@@ -41,15 +41,15 @@ There are a two types of SAF workshops available through [Microsoft Unified](htt
 
 :::image type="content" source="./media/workshop-unified-engagement.png" alt-text="Diagram showing how the adoption workshop shows how to achieve outcomes." lightbox="./media/workshop-unified-engagement.png":::
 
-### How do I get the workshop?
+## How do I get a workshop?
 
 Most of the workshops are available as engagements via a premium support and services offering.
 
 Contact your Microsoft Customer Success Account Manager (CSAM) to learn more about scheduling these workshops.
 
-### Architecture and strategy workshops
+## Architecture and strategy workshops
 
-Architecture and strategy Workshop engagements range from a couple of hours to days. For example:
+Expert-led architecture and strategy Workshop engagements range from a couple of hours to days. For example:
 
 - A Topic Summary engagement is a discussion workshop that takes less than four hours, and focuses on key learnings and best practices.
 - A full Security Architecture Design Session (Security ADS) is a two-day detailed workshop focusing on a Microsoft case study, maturity model discussion, and reference modernization plans.
@@ -68,13 +68,13 @@ The best workshop for you depends upon where you are in your security adoption j
 **Improve data security and prepare for AI**<br/>Four hours | **Security Adoption workshop - architecture design (Data)** | Learn how to build a data strategy to address challenges such as securing data through the lifecycle (wherever it goes), supporting AI security with data classification and protection, and meeting evolving compliance and regulatory compliance.  | Relevant for the Data security discipline.
 **Establish and improve SecOps**<br/> Four hours to two days | **Security Adoption workshop - architecture design (modern security operations)** | Learn how to build a SecOps strategy that can handle challenges such as the difficulty in SecOps detecting and keeping up with ever-shifting threats, noisy detections and high false positives, Analyst recruitment, attrition and fatigue, custom tooling and integration, and manual repetitive incident handling. | Relevant for the SecOps discipline.
 
-### Technology adoption workshops
+## Technology adoption workshops
 
 These workshops help you to plan, implement, and optimize using Microsoft security products. These workshops show you how to plan, implement, and operate these technologies to align with Microsoft security best practices.
 
 :::image type="content" source="./media/workshop-unified-technologies.png" alt-text="Diagram showing how the adoption workshops help you plan and deploy Microsoft technologies." lightbox="./media/workshop-unified-technologies.png":::
 
-## What should we start with?
+## Where should we start?
 
 The most effective starting points for these engagements are one of three options:
 
@@ -86,7 +86,7 @@ Each of these engagements helps educate your team and kick off the larger securi
 
 :::image type="content" source="./media/workshops-get-started.png" alt-text="Diagram showing how security adoption connects the business with security and technology." lightbox="./media/workshops-get-started.png":::
 
-## Publically available workshop resources
+## Public workshop resources
 
 The table summarizes publically available SAF workshop resources.
 

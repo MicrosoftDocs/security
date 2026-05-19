@@ -1,7 +1,7 @@
 ---
 title: Establish a Security Strategy, Integration, and Governance discipline
 description: Use the Microsoft security adoption model to modernize security strategy, integration, and governance across the enterprise, based on Zero Trust principles.
-ms.date: 05/11/2026
+ms.date: 05/19/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman

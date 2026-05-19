@@ -30,9 +30,10 @@ Our structured adoption model focuses on three components:
 
 - [Business scenarios](../security-adoption-business-scenarios-overview.md) - Define the most critical security outcomes for the organization. They focus on **why** we're adopting Zero Trust security.
 - [Security disciplines](../security-adoption-discipline-overview.md) - Guide teams to define strategy, architecture,  processes, and controls across common areas of security so that we can deliver the business scenarios. They focus on **what** Zero Trust capabilities are required.
-- **[Technology pillars]** - Secure specific areas of the organization such as identity, data, and devices. They focus on **where** security capabilities are implemented.
+- **Technology pillars** - Secure specific areas of the organization such as identity, data, and devices. They focus on **where** security capabilities are implemented.
+- [Technical solutions](../implement-overview.md) - As adoption moves towards deployment,  technical solutoins provide detailed guidance for implementing security controls across technology pillars. They focus on **how** security is implemented.
 
-As adoption becomes deployment, [technical solutions](../implement-overview.md) provide instructions for implementing security controls across technology pillars. They focus on **how** security is implemented
+
 
 In the Zero Trust adoption model, technology pillars sit between strategy and implementation.
 
@@ -52,6 +53,10 @@ Technology pillars don't define outcomes (business solutions) or steps (technica
 | [![Data storage disks icon.](../media/icon-infrastructure-small.png)](infrastructure.md) <br> [Infrastructure](infrastructure.md) | Secure compute resources. Harden servers, VMs, containers, and services through configuration, access control, and monitoring. |
 | [![Network diagram icon.](../media/icon-networks-small.png)](networks.md) <br> [Network](networks.md) | Control connectivity and movement. Segment and monitor traffic to prevent lateral movement and enforce secure communication.|
 | [![Gear icon.](../media/icon-visibility-automation-orchestration-small.png)](visibility-automation-orchestration.md) <br> [SecOps](visibility-automation-orchestration.md) |Integrate and operationalize all pillars. Detect, investigate, and respond using signals from across the environment. |
+
+## Zero Trust implementation workshops
+
+Microsoft's Zero Trust implementation workshops are available for each pillar. [Learn more](workshop-zero-trust-overview.md).
 
 ## What's next?
 

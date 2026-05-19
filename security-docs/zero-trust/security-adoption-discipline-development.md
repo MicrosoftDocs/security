@@ -67,6 +67,27 @@ Key principles include:
 Over time, consistent integration reduces fire drills and accelerates delivery rather than slowing it.
 
 
+## How to apply this discipline
+
+To apply the Development Security discipline effectively, focus on establishing a consistent approach to building and maintaining secure applications and services across the organization:
+
+- **Define a secure development strategy aligned to business risk**  
+  Establish a clear approach for how applications and services are designed, built, and maintained to reduce the risk of compromise and protect critical business functionality.
+
+- **Embed security into development and engineering processes**  
+  Ensure security practices are integrated into planning, design, development, and deployment activities rather than applied after the fact.
+
+- **Establish standardized secure development practices**  
+  Provide clear guidance to ensure that secure coding, testing, and release practices are applied consistently across teams and projects.
+
+- **Align development security with critical assets and business scenarios**  
+  Prioritize protections for applications and services that support high-value assets and key business operations.
+
+- **Continuously improve based on risk, vulnerabilities, and feedback**  
+  Use insights from vulnerabilities, incidents, and testing results to strengthen development practices and reduce risk over time.
+
+
+
 ## Manage change
 
 

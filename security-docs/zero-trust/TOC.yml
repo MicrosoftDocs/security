@@ -319,7 +319,7 @@
   - name: Overview
     href: workshop-zero-trust-overview.md
   - name: Launch the Zero Trust Workshop
-    href: https://zerotrust.microsoft.com
+    href: https://aka.ms/ztworkshop
   - name: Identity workshop
     href: workshop-zero-trust-identity.md
   - name: Devices workshop

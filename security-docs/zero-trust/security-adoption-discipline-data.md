@@ -51,6 +51,27 @@ By establishing clear ownership, classification, and protection strategies, data
 
 :::image type="content" source="./media/security-adoption-discipline-data-safety.png" alt-text="Diagram of the CIA triad illustrating confidentiality, integrity, and availability as core data security principles." lightbox="./media/security-adoption-discipline-data-safety.png":::
 
+
+w to apply this discipline
+
+To apply the Data Security discipline effectively, focus on establishing a consistent approach to protecting data based on its sensitivity and business impact:
+
+- **Define a data protection strategy aligned to business priorities and risk**  
+  Establish a clear approach for identifying, classifying, and protecting data based on its value and the risks associated with its exposure or misuse.
+
+- **Apply protection consistently across the data lifecycle**  
+  Ensure that data is protected wherever it resides, moves, or is used, including across devices, applications, and cloud environments.
+
+- **Establish standardized data protection policies and controls**  
+  Provide clear guidance to ensure sensitive data is handled, accessed, and shared in a consistent and secure manner across the organization.
+
+- **Align data protection with critical business assets and scenarios**  
+  Prioritize controls that protect high-value and regulated data, especially in scenarios such as protecting critical assets and enabling secure collaboration.
+
+- **Continuously monitor and improve data protection**  
+  Use insights from data usage, risk signals, and security events to refine protections and reduce the risk of data exposure or loss over time.
+
+
 ### Manage change
 
 Traditional data security approaches often rely on a single control point, such as network‑based data loss prevention (DLP). This model is ineffective in modern environments because it:

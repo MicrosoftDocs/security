@@ -12,9 +12,9 @@ ms.topic: conceptual
 
 # Overview - security disciplines
 
-Security disciplines are groupings of related security work that help organizations plan, implement, and operate security consistently across their entire technology estate. 
+This article provides an overview of security disciplines in the [Microsoft security adoption model](security-adoption-model.md).
 
-Disciplines provide a structured way to translate business security goals and risk tolerance into coordinated technical implementation across the organization.
+Security disciplines are **structured areas of accountability** that help organizations translate business security goals into coordinated action across the enterprise. They provide a consistent way to organize strategy, architecture, and operations to manage risk and protect critical business outcomes.
 
 Rather than treating security as isolated controls or individual tools, security disciplines organize processes, skills, and technologies into repeatable capability areas. This helps ensure that security investments deliver measurable, end‑to‑end outcomes, not fragmented improvements.
 
@@ -24,17 +24,18 @@ Collectively, the security disciplines form a complete security operating model 
 - Coherent, end‑to‑end architectures.
 - Consistent technical implementation and operations.
 
+Security disciplines are applied through business scenarios, such as securing remote work or protecting critical assets. These scenarios define where security efforts should be focused to reduce risk and support the business.
 
 > [!TIP]
 > Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model, including security discipline guidance, that we describe here aligns with the expert-led guidance available in the workshops. Learn more about our [SAF workshops](workshop-business-overview.md).
 
 ## Security disciplines in adoption
 
-In the adoption model, security disciplines provide an organizational structure between business scenarios and technical implementation.
+In our [security adoption model](security-adoption-model.md), security disciplines provide an organizational structure between business scenarios and technical implementation.
 
-- [**Business scenarios**](security-adoption-business-scenarios-overview.md)  define why security investment is needed and what outcomes matter.
-- Security disciplines define who owns which areas of security work and how responsibilities are organized.
-- [Technical solutions](implement-overview.md) define how security is implemented using specific technologies.
+- [**Business scenarios**](security-adoption-business-scenarios-overview.md)  define **why** security investment is needed and what outcomes matter.
+- Security disciplines defines ownership and accountability across teams, clarifying **who** is responsible for delivering each area of security capability across the organization.
+- [Technical solutions](implement-overview.md) define **how** security is implemented across specific [technology pillars](deploy/overview.md).
 
 :::image type="content" source="./media/disciplines.png" alt-text="Diagram showing how disciplines bridge business outcomes and technical implementation, organized by discipline type." lightbox="./media/disciplines.png":::
 
@@ -45,8 +46,6 @@ Security disciplines are used throughout in our structured adoption model. They 
 - Business leaders and program owners use disciplines to understand how security business scenarios come to life to protect assets and manage business risk. 
 - Security leaders and architects use disciplines to shape end‑to‑end designs and ensure consistency across technology pillars.
 - Implementation and operations teams use disciplines to guide tooling choices, control deployment, detection, and ongoing improvement.
-
-
 
 
 

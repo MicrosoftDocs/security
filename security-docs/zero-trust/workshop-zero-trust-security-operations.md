@@ -15,30 +15,23 @@ Security operation (SecOps) is foundational to Zero Trust because it ensures not
 
 SecOps pillar guidance focuses on collecting and correlating security signals across the environment, detecting and analyzing threats, orchestrating and automating response actions, proactively hunting for threats, and continuously improving security operations.
 
-The SecOps workshop covers the following implementation areas:
+## Workshop implementation
 
-- **Centralize security data and telemetry**  
-  Integrate logs and signals from identity, devices, network, data, and infrastructure into centralized platforms for unified visibility. Ensure comprehensive coverage of security-relevant events across the environment.
-- **Detect threats and generate high-quality alerts**  
-  Use analytics rules, behavioral detection, and threat intelligence to identify potential compromises. Generate high-confidence alerts and continuously refine detections to improve signal quality and reduce false positives.
-- **Correlate alerts into incidents and prioritize response**  
-  Group related alerts into incidents and apply prioritization based on risk, severity, and potential impact. Provide a structured approach to triage and incident management.
-- **Investigate and respond to incidents**  
-  Execute structured investigation workflows to understand the scope and impact of incidents. Contain threats through actions such as isolating devices or disabling accounts, and ensure consistent remediation processes.
-- **Automate response and orchestration**  
-  Use automation tools and playbooks to standardize and accelerate response actions. Enable automated containment and remediation where appropriate, reducing response time and limiting attacker movement.
-- **Proactively hunt for threats**  
-  Perform threat hunting using queries and analytics to identify suspicious patterns and attacker behaviors that may not yet trigger alerts. Continuously refine hunting hypotheses based on emerging threats.
-- **Leverage threat intelligence**  
-  Incorporate internal and external threat intelligence to enrich detections and investigations. Use indicators and contextual data to improve understanding of attacker behavior and enhance detection coverage.
-- **Identify exposure and prioritize risk remediation**  
-  Analyze attack paths, misconfigurations, and security exposures across the environment. Use exposure management capabilities to prioritize remediation and reduce the likelihood and impact of potential attacks.
-- **Continuously tune and optimize detections**  
-  Review and refine alerting, suppression rules, and detection logic to reduce noise and improve operational efficiency. Ensure SecOps focuses on high-value, actionable signals.
-- **Correlate signals across domains for full attack visibility**  
-  Combine identity, device, network, data, and infrastructure signals to detect complex, multi-stage attack chains. Use cross-domain visibility to improve investigation depth and response effectiveness.
-- **Continuously improve SecOps processes**  
-  Regularly update playbooks, runbooks, and detection strategies based on incident learnings and evolving threats. Incorporate feedback loops from incidents, threat hunting, and exposure analysis into ongoing operational improvements.
+The SecOps workshop covers the implementation areas summarized in the table.
+
+**Area** | **Details**
+--- | ---:
+**Centralize security data and telemetry**  |  Integrate logs and signals from identity, devices, network, data, and infrastructure into centralized platforms for unified visibility.<br/><br/> Ensure comprehensive coverage of security-relevant events across the environment.
+**Detect threats and generate high-quality alerts**  |   Use analytics rules, behavioral detection, and threat intelligence to identify potential compromises. <br/><br/> Generate high-confidence alerts and continuously refine detections to improve signal quality and reduce false positives.
+**Correlate alerts into incidents and prioritize response**  |   Group related alerts into incidents and apply prioritization based on risk, severity, and potential impact. <br/><br/> Provide a structured approach to triage and incident management.
+**Investigate and respond to incidents**  |  Execute structured investigation workflows to understand the scope and impact of incidents. <br/><br/> Contain threats through actions such as isolating devices or disabling accounts, and ensure consistent remediation processes.
+**Automate response and orchestration**  |  Use automation tools and playbooks to standardize and accelerate response actions.<br/><br/>  Enable automated containment and remediation where appropriate, reducing response time and limiting attacker movement.
+**Proactively hunt for threats** |   Perform threat hunting using queries and analytics to identify suspicious patterns and attacker behaviors that may not yet trigger alerts. <br/><br/> Continuously refine hunting hypotheses based on emerging threats.
+**Leverage threat intelligence**  |  Incorporate internal and external threat intelligence to enrich detections and investigations.<br/><br/>  Use indicators and contextual data to improve understanding of attacker behavior and enhance detection coverage.
+**Identify exposure and prioritize risk remediation**  |  Analyze attack paths, misconfigurations, and security exposures across the environment. <br/><br/> Use exposure management capabilities to prioritize remediation and reduce the likelihood and impact of potential attacks.
+**Continuously tune and optimize detections**  |  Review and refine alerting, suppression rules, and detection logic to reduce noise and improve operational efficiency.<br/><br/>  Ensure SecOps focuses on high-value, actionable signals.
+**Correlate signals across domains for full attack visibility**  |  Combine identity, device, network, data, and infrastructure signals to detect complex, multi-stage attack chains.<br/><br/>  Use cross-domain visibility to improve investigation depth and response effectiveness.
+**Continuously improve SecOps processes**  |  Regularly update playbooks, runbooks, and detection strategies based on incident learnings and evolving threats.<br/><br/>  Incorporate feedback loops from incidents, threat hunting, and exposure analysis into ongoing operational improvements.
 
 
 ## What's next?

@@ -66,6 +66,26 @@ Within our security adoption model, SecOps guidance focuses on the operational c
 By aligning SecOps to Zero Trust principles, organizations move from reactive incident handling to a resilient operating model where every incident strengthens detection, response, and prevention across the enterprise.
 
 
+# How to apply this discipline
+
+To apply the SecOps discipline effectively, focus on establishing a coordinated approach to detecting, responding to, and recovering from threats across the organization:
+
+- **Define a threat detection and response strategy aligned to business risk**  
+  Establish a clear approach for identifying, prioritizing, and responding to threats based on their potential business impact.
+
+- **Ensure consistent detection and response across the environment**  
+  Apply a unified approach to monitoring, investigation, and response across identities, devices, applications, and infrastructure.
+
+- **Standardize processes for detection, response, and recovery**  
+  Provide clear guidance to ensure incidents are handled consistently, reducing response time and limiting impact.
+
+- **Align SecOps with business priorities and critical scenarios**  
+  Prioritize detection and response efforts to focus on protecting critical assets and minimizing the impact of security incidents.
+
+- **Continuously improve through insights and feedback**  
+  Use learnings from incidents, threat intelligence, and operational metrics to strengthen detection capabilities and improve response over time.
+
+
 ## Manage change
 
 SecOps modernization is a continuous improvement journey, not a one-time tooling deployment. The goal is to steadily improve the organization’s ability to reduce attacker impact when compromises occur.

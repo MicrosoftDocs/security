@@ -53,6 +53,27 @@ The following diagram illustrates these two complementary goals:
 
 :::image type="content" source="./media/security-adoption-discipline-access-strategy.png" alt-text="Diagram of two strategic goals for access security: securing general access and securing privileged access." lightbox="./media/security-adoption-discipline-access-strategy.png":::
 
+
+## How to apply this discipline
+
+To apply the Access and Identity discipline effectively, focus on establishing a consistent, identity-centric approach to how access is managed across the organization:
+
+- **Define an identity-centric access model aligned to business risk**  
+  Establish a clear approach for how users, devices, applications, and workloads access organizational resources based on risk and business impact.
+
+- **Ensure consistent verification of access across all environments**  
+  Apply a uniform approach to validating identity, device, and access conditions regardless of location, application, or network.
+
+- **Standardize access controls and policies across the organization**  
+  Provide clear guidance to ensure that access decisions are applied consistently and reduce fragmentation across systems and environments.
+
+- **Align access management with business scenarios and critical assets**  
+  Prioritize access controls that protect high-value assets and support key scenarios such as secure remote work and protection of critical systems.
+
+- **Continuously monitor and refine access based on risk and activity**  
+  Use insights from access patterns, risk signals, and security events to strengthen controls and reduce exposure over time.
+
+
 ## Manage change
 
 Traditional access control models focused on network perimeters, layering identity systems and VPNs around a trusted internal network. These models no longer meet the needs of modern enterprises that operate across cloud, SaaS, mobile, AI, and hybrid environments. Legacy approaches often result in:

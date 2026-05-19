@@ -21,7 +21,6 @@ Identity pillar workshop guidance focuses on assessing your current identity pos
 
 The Identity workshop covers the implementation areas summarized in the table.
 
-## Workshop implementation
 
 **Area** | **Details**
 --- | ---

@@ -56,7 +56,7 @@ Technology pillars don't define outcomes (business solutions) or steps (technica
 
 ## Zero Trust implementation workshops
 
-Microsoft's Zero Trust implementation workshops are available for each pillar. [Learn more](workshop-zero-trust-overview.md).
+Microsoft's Zero Trust implementation workshops are available for each pillar. [Learn more](../workshop-zero-trust-overview.md).
 
 ## What's next?
 

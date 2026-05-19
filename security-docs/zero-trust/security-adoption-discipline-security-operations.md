@@ -66,7 +66,7 @@ Within our security adoption model, SecOps guidance focuses on the operational c
 By aligning SecOps to Zero Trust principles, organizations move from reactive incident handling to a resilient operating model where every incident strengthens detection, response, and prevention across the enterprise.
 
 
-# How to apply this discipline
+## How to apply this discipline
 
 To apply the SecOps discipline effectively, focus on establishing a coordinated approach to detecting, responding to, and recovering from threats across the organization:
 

@@ -313,7 +313,8 @@
       items:
       - name: Overview
         href: security-adoption-discipline-posture.md
-
+  - name: Technology pillars
+    href: deploy/overview.md
 
 - name: Zero Trust workshops
   items:
@@ -365,6 +366,8 @@
        href: assessment/glossary.md
 - name: Implement Zero Trust solutions
   href: implement-overview.md
+- name: Technology pillars
+  href: deploy/overview.md
 - name: Adopt and secure AI and data
   items:
   - name: Secure AI

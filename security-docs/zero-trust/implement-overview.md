@@ -11,53 +11,59 @@ ms.topic: conceptual
 #customer intent: As a business leader or security adopter, I want to get an overview of the Zero Trust implmentation solutions offered by Microsoft.
 ---
 
-# Overview - Implement Zero Trust security
+# Overview - Implement Zero Trust solutions
 
-This article provides an overview of Microsoft security solutions and how they support Zero Trust adoption.
+This article provides an overview of Microsoft Zero Trust security solutions.
 
-Our Zero Trust adoption model focuses on essential business outcomes ([business scenarios](security-adoption-business-scenarios-overview.md), and the security capabilities, architecture, and planning ([disciplines](security-adoption-discipline-overview.md)) required to support them. 
+## Security adoption
 
-Technical solutions help you to deploy and implement Microsoft security products in order to deliver those outcomes.
+Microsoft's structured adoption model for Zero Trust security focuses on three  components:
 
+- [Business scenarios](security-adoption-business-scenarios-overview.md) help business leaders to define critical security outcomes across the organization. They focus on **why** we're adopting Zero Trust security.
+- [Security disciplines](security-adoption-discipline-overview.md) define the strategy, architecture, and processes required to support the security outcomes. They focus on **what** capabilities are needed.
+- [Technology pillars](deploy/overview.md) focus on implementing security for specific areas such as identity, data, and devices.  They focus on **where** security capabilities are applied.
 
-## Zero Trust adoption journey
-
-Adopting Zero Trust security requires moving from business leadership strategy to planning, architecture, and design, and finally to implementation.  Technical solutions:
-
-- Translate business scenarios into actionable steps.
-- Deliver security architect and controls across different disciplines and teams.
-- Implement security solutions using Microsoft guidance and best practices.
+Technical solutions are the final step in the security adoption and deployment journey and focus on **how**. They connect the business scenarios, discipline strategies and architectures, together with relevant technology pillars into step-by-step product-level implementation guides.
 
 
-## How technical solutions work
+## Technical solutions
 
-Technical solutions connect business outcomes, architecture, and technology into a coordinated approach.
+Technical solutions do the following:
 
-Each technical solution:
+- Align to business scenarios.
+- Translate and break down business scenarios into actionable steps.
+- Implement security architectures and controls from across security disciplines.
+- Base implementation guidance on Microsoft security best practices.
+- Enforce security controls across [technology pillars](deploy/overview.md).
 
-- Aligns to a business scenario.
-- Brings together security disciplines to design and plan security capabilities.
-- Applies Microsoft security technologies for implementation.
-- Enforces controls across technology pillars, such as identities, endpoints (devices), applications, infrastructure, networks, and data.
+## How solutions use technology pillars
 
+Technology pillars define where security controls are applied, but they aren't implemented on their own.
 
-## Technology pillars
+Technical solutions use technology pillars in two ways:
 
-implementation solutions describe how to configure security controls.
+- **Organize implementation around a primary pillar**.
+    Each solution focuses on securing a specific area, such as identity, endpoints, or data.
+- **Apply controls across multiple pillars**
+    Implementing a solution requires integrating capabilities from other pillars. For example, securing identity also depends on device compliance, application access, and security operations.
 
-These security controls are designed and implemented across multiple technology domains, represented by technology pillars. These pillars organize security controls based on the types of assets and environments they protect, such as identities, devices, applications, infrastructure, networks, and data.
+To summarize:
 
-Because modern environments are interconnected, implementation solutions usually span multiple pillars to provide coordinated, end-to-end protection across the organization.
-
-:::image type="content" source="./media/diagram-zero-trust-security-elements.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
+- Technology pillars provide the structure and scope.
+- Solutions provide the end-to-end implementation.
 
 ## Choose your starting point
 
-You can start implementing Zero Trust using a [business scenario](security-adoption-business-scenarios-overview.md) that's important for your business. However, you might want to focus on mproving security for a domain, such as "securing endpoints across the organzation"", and start with a specific technology pillar 
+You can implement Zero Trust solutions from a couple of starting points:
 
-Both approaches use the same technical solutions and technologies. Scenario-based adoption ensures alignment to business priorities, while technology-focused adoption helps address immediate risks in specific areas.
+- You can start with a [business scenario](security-adoption-business-scenarios-overview.md) that's important for your business. For example *Improve security posture and compliance across the organization*.
+- Alternatively you might want to focus on mproving security for a specific domain, and start with a specific technology pillar. For example *Secure endpoints across the organzation*.
 
-### Start with business scenario solutions
+Both approaches use the same set of Microsoft security technologies. 
+
+Scenario-based adoption ensures alignment to business priorities, while technology-focused adoption helps address immediate risks in specific areas of security.
+
+### Start with business scenarios
 
 The table summarizes technical solutions based on business scenarios. Follow any of the solutions for end-to-end implmentation guidance.
 
@@ -71,17 +77,24 @@ The table summarizes technical solutions based on business scenarios. Follow any
 [Minimize attack impact](adopt/rapidly-modernize-security-posture.md) | Minimize business damage from security incidents
 
 
-### Start with technology pillar solutions
+### Start with technology pillars
 
 The table summarizes technical solutions based on specific technology pillars. Follow any of the solutions for end-to-end implmentation guidance.
 
+Each solution is organized by a primary technology pillar but integrates controls from multiple pillars.
+
 **Solution** | **Technology pillar**
 --- | --- 
-[Secure identity with Zero Trust](identity.md) | [![Fingerprint icon](./media/icon-identity-small.png)] Identities: Whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles.
-[Secure endpoints with Zero Trust](endpoints.md) | [![Endpoints icon.](./media/icon-endpoints-small.png)] Endpoints: Once an identity has been granted access to a resource, data can flow to a variety of different endpoints (devices), from IoT devices to smartphones, BYOD to partner-managed devices, and on-premises workloads to cloud-hosted servers. This diversity creates a massive attack surface area. Monitor and enforce device health and compliance for secure access.
-[Secure data with Zero Trust](data.md) | [![Ones and zeroes icon.](./media/icon-data-small.png)](data.md) Data: Ultimately, security teams are protecting data. Where possible, data should remain safe even if it leaves the devices, apps, infrastructure, and networks the organization controls. Classify, label, and encrypt data, and restrict access based on those attributes.
-[Secure apps with Zero Trust](applications.md) | [![Application window icon.](./media/icon-applications-small.png)] Apps: Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises workloads, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.
-[Secure infrastructure with Zero Trust](infrastructure.md) | [![Data storage disks icon.](./media/icon-infrastructure-small.png)] Infrastructure: Whether on-premises servers, cloud-based VMs, containers, or micro-services—represents a critical threat vector. Assess for version, configuration, and JIT access to harden defense. Use telemetry to detect attacks and anomalies, and automatically block and flag risky behavior and take protective actions.
-[Secure networks with Zero Trust](networks.md) |  [![Network diagram icon.](./media/icon-networks-small.png)] Networks: All data is ultimately accessed over network infrastructure. Networking controls can provide critical controls to enhance visibility and help prevent attackers from moving laterally across the network. Segment networks (and do deeper in-network micro-segmentation) and deploy real-time threat protection, end-to-end encryption, monitoring, and analytics. |
-[SecOps](visibility-automation-orchestration.md) |  [![Gear icon.](./media/icon-visibility-automation-orchestration-small.png)] SecOps: In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints (devices), data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
+[Secure identity with Zero Trust](identity.md) | **Identity** - Define the Zero Trust control plane across people, services, and devices. Verify every access request using strong authentication, enforce conditional access, and apply least privilege based on risk, compliance, and typical behavior.
+[Secure endpoints with Zero Trust](endpoints.md) | **Devices** - Protect all devices accessing your environment—from IoT and mobile to partner-managed and cloud-hosted systems. Enforce device health and compliance, and continuously monitor endpoint risk before granting or maintaining access.
+[Secure data with Zero Trust](data.md) | **Data** - Protect data at all times, regardless of location. Classify and label sensitive information, encrypt it, and enforce access controls and usage restrictions based on data sensitivity.
+[Secure apps with Zero Trust](applications.md) | **Apps** - Secure applications and APIs as the interface to data. Discover and govern shadow IT, enforce in-app permissions, apply real-time access controls, monitor for abnormal behavior, and validate secure configuration.
+[Secure infrastructure with Zero Trust](infrastructure.md) | **Infrastructure** - Protect compute resources including servers, VMs, containers, and microservices. Assess configurations, enforce just-in-time (JIT) access, and use telemetry to detect and automatically respond to threats and anomalies.
+[Secure networks with Zero Trust](networks.md) |  **Networks** - Secure the transport layer for all access. Use segmentation and micro-segmentation to limit lateral movement, and apply encryption, monitoring, analytics, and real-time threat protection across network traffic.
+[Secure SecOps](visibility-automation-orchestration.md) | **SecOps** - Integrate signals across all pillars to detect, investigate, and respond to threats. Correlate alerts, automate responses, and use centralized visibility to continuously validate trust and improve security posture.
 
+## What's next?
+
+- [Review](deploy/overview.md) technology pillars.
+- [Learn about](security-adoption-model.md) our Zero Trust adoption model.
+- [Review](security-adoption-business-scenarios-overview.md) critical security business scenarios.

@@ -17,15 +17,14 @@ This article provides an overview of core Zero Trust principles as a modern secu
 
 Zero Trust is a modern security approach based on a simple idea: **never trust, always verify**.
 
-Access is granted only we verify:
+Access is granted only after we verify:
 
 - Who is requesting access?
-- What device they're using?
+- What device are they using?
 - What's their location and behavior?
 - What's their risk level?
 
-Verification doesn’t happen once. It's continuous, ensuring that trust is maintained throughout the session.
-
+Verification doesn’t happen only once. It's continuous, ensuring that trust is maintained throughout a session.
 
 ## Zero Trust principles
 
@@ -34,8 +33,8 @@ Zero Trust is built on three principles that govern access decisions and securit
 **Principle** | **Implementation**
 --- | ---
 **Verify explicitly** | Every access request is **authenticated and authorized using all available signals**.
-**Use least privilege access** | User and workloads get **only the access they need**, for the **shortest time required**. 
-**Assume breach** | Security controls are designed with the expectation that attackers might be inside the environment. Controls focus on limiting breach impact, and enabling rapid threat detection and response.
+**Use least privilege access** | User and workloads get **only the access they need, for the shortest time required**. 
+**Assume breach** | Security controls are designed with the expectation that **attackers might be operating inside the environment**. Controls focus on limiting breach impact, and enabling rapid threat detection and response.
 
 ## Zero Trust outcomes
 
@@ -52,7 +51,7 @@ When applied consistently, Zero Trust leads to clear, consistent, and measurable
 
 Traditional security models rely on network boundaries, assume that assets inside the perimeter are safer than those outside, and see security as the responsibility of the security team.
 
-While such models were effective against older threats such as network scanning and direct exploitation, they're insufficient because modern attacks use identity compromise, phishing, and session hijacking and aren't dependent on network location.
+While such models were effective against older threats such as network scanning and direct exploitation, they're insufficient today because modern attacks use identity compromise, phishing, and session hijacking, and aren't dependent on network location.
 
 Zero Trust replaces this model by:
 
@@ -66,21 +65,34 @@ Zero Trust replaces this model by:
 
 Key shifts to Zero Trust security mean that:
 
-- **Protection follows the asset**: Assets aren't inherently protected by where they reside. Every access request is explicitly validated, access to sensitive resources is tightly restricted, and activity is continuously monitored for threats.
-- **Access is always validated and monitored**: Security decisions are based on current conditions.
-- **Security isn't just technology**: People and processes introduce risk. Human behavior such as using unauthorized data, sharing credentials, insufficient security hygiene, and other shortcuts can introduce exposure that attackers exploit. Processes such as system deployment, data sharing, and security control enforcement directly influence risk. 
-- **Everyone shares in responsibility**: We must recognize that security is everyone's job. Continuous verification and least privilege help reduce the impact of human factors. Security controls must align with real‑world usage and decision‑making.
+- **Protection follows the asset**
+    Assets aren't inherently protected by where they reside. Every access request is explicitly validated, access to sensitive resources is tightly restricted, and activity is continuously monitored for threats.
+- **Access is always validated and monitored**
+    Security decisions are based on current conditions.
+- **Security isn't only technology**
+    People and processes introduce risk.
+    - Human behavior such as using unauthorized data, credential sharing, lack of security hygiene, and other security shortcuts potentially introduce exposure that attackers exploit.
+    - Processes such as system deployment, data sharing, and security control enforcement directly influence risk. 
+- **Everyone shares in responsibility**
+    We must recognize that security is everyone's job.
+    - Continuous verification and least privilege help reduce the impact of human factors.
+    - Security controls must align with real‑world usage and decision‑making.
 
 
 ## Structured adoption journey
 
-Adopting Zero Trust is a gradual, long‑term effort. Every organization starts the journey from a different place, influenced by security maturity, existing technology, and risk profile.
+Adopting Zero Trust security is a gradual, long‑term effort.
 
-A structured approach to adoption ensures that Zero Trust principles are applied consistently as security matures. This structured approach focuses on three areas:
+Every organization starts the journey from a different place, influenced by security maturity, existing technology, and risk profile.
 
-- **Business scenarios** help business leaders to define and prioritize security outcomes for the organization, focusing on the most critical areas of risk. 
-- **Security disciplines** guide teams to define strategy, architecture,  processes, and controls across common areas of security. Each business scenario usually maps to one or more security disciplines. 
-- **Technology pillars** focus on specific areas of security such as identity, data, and devices. Implementation guidance might be aimed at a specific business scenario, or might focus on a specific technology pillar.
+A structured approach to adoption ensures that Zero Trust principles are applied consistently as security matures. Our structured adoption model focuses on three components:
+
+- **Business scenarios**
+    Help business leaders to define and prioritize security outcomes for the organization, focusing on the most critical areas of risk. 
+- **Security disciplines**
+    Guide teams to define strategy, architecture,  processes, and controls across common areas of security. Each business scenario usually maps to one or more security disciplines. 
+- **Technology pillars**
+    Focus on specific areas of security such as identity, data, and devices. Implementation guidance might be aimed at a specific business scenario, or might focus on a specific technology pillar.
 
 :::image type="content" source="./media/zero-trust-principles-adoption.png" alt-text="Diagram of Zero Trust principles applied to security adoption, showing connections between business scenarios, security disciplines, and technology pillars." lightbox="./media/zero-trust-principles-adoption.png":::
 

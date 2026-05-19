@@ -184,16 +184,16 @@ Executing the strategy for the development security discipline requires security
 
 :::image type="content" source="./media/security-adoption-discipline-dev-pillars.png" alt-text="Development Security - mapping to technology pillars." lightbox="./media/security-adoption-discipline-dev-pillars.png":::
 
+Alignment with technology pillars includes:
 
-**Pillar** | **Role of DevSecOps**
---- | ---
-**Identities** | Protect developer and workload identities and credentials.
-**Endpoints**|  Secure developer workstations and build systems.
-**Infrastructure**| Protect platforms hosting code, pipelines, and workloads.
-**Apps** | Primary focus of development security practices.
-**Data** | Protect data used, generated, and stored by applications.
-**Network**| Design software to operate securely on untrusted networks.
-**AI** |  Secure AI components and models used in modern applications.
+
+- **Identities**: Protects developer and workload identities and credentials.
+- **Endpoints**: Secures developer workstations and build systems.
+- **Infrastructure**: Protects platforms hosting code, pipelines, and workloads.
+- **Apps**: Provides a primary focus for development security practices.
+- **Data**: Protects data used, generated, and stored by applications.
+- **Network**: Designs software to operate securely on untrusted networks.
+- **AI**: Secures AI components and models used in modern applications.
 
 This breadth ensures the discipline addresses real-world attack paths.
 

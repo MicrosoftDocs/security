@@ -207,15 +207,13 @@ OT and IoT security must integrate tightly with other disciplines:
 
 Executing the strategy of the OT and IoT security discipline requires security controls across multiple technology pillars.
 
-**Pillar** | **Role of OT/IoT security**
---- | ---
-**Identities** |  Identity controls for OT/IoT environments must account for machine identities, service accounts used by automation systems, and human operators who require access to industrial controls.
-**Endpoints**| OT endpoints including industrial workstations, engineering stations, and operator terminals require specialized security to protect these specialized systems without impeding real-time operations.
-**Infrastructure**| OT infrastructure including industrial control systems, SCADA servers, historians, and PLCs requires visibility and protection while maintaining operational requirements and air-gap architectures where appropriate.
-**Apps** | Applications that interface with OT/IoT devices must be secured to prevent unauthorized control of physical systems. This includes human-machine interfaces (HMI), SCADA applications, and industrial software.
-**Data** |  Operational data from sensors, control systems, and industrial processes must be protected both at rest and in transit, while maintaining the integrity critical for safe operations.
-**Network**|  Network segmentation between IT and OT environments is critical, along with monitoring of industrial protocols (Modbus, OPC, DNP3) and secure remote access for vendors and operators.
-**AI** | AI and machine learning can enhance OT security through anomaly detection in industrial processes, predictive maintenance, and automated threat identification while respecting operational constraints.
+- **Identities**: Identity controls for OT/IoT environments must account for machine identities, service accounts used by automation systems, and human operators who require access to industrial controls.
+- **Endpoints**: OT endpoints including industrial workstations, engineering stations, and operator terminals require specialized security to protect these specialized systems without impeding real-time operations.
+- **Infrastructure**: OT infrastructure including industrial control systems, SCADA servers, historians, and PLCs requires visibility and protection while maintaining operational requirements and air-gap architectures where appropriate.
+- **Apps**: Applications that interface with OT/IoT devices must be secured to prevent unauthorized control of physical systems. This includes human-machine interfaces (HMI), SCADA applications, and industrial software.
+- **Data**: Operational data from sensors, control systems, and industrial processes must be protected both at rest and in transit, while maintaining the integrity critical for safe operations.
+- **Networks**: Network segmentation between IT and OT environments is critical, along with monitoring of industrial protocols (Modbus, OPC, DNP3) and secure remote access for vendors and operators.
+- **AI**: AI and machine learning can enhance OT security through anomaly detection in industrial processes, predictive maintenance, and automated threat identification while respecting operational constraints.
 
 
 ## Microsoft resources

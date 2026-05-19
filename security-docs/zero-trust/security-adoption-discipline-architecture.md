@@ -150,17 +150,15 @@ The following diagram illustrates these relationships.
 
 ## Alignment with technology pillars
 
-Security architecture ensures that controls across all technology pillars align to a coherent Zero Trust‑based design and remain consistent over time.
+Security architecture ensures that controls across all technology pillars align to a coherent Zero Trust‑based design and remain consistent over time. Alignment with technology pillars is as follows:
 
-**Pillar** | **Security Architecture role**
---- | ---
-**Identities** | Ensure identity systems and privileged access controls align to Zero Trust and protect access to all assets.
-**Endpoints**| Secure devices used as operational footholds by attackers through consistent lifecycle management.
-**Infrastructure**| Protect cloud and on‑premises platforms that underpin workloads and identity systems.
-**Apps** | Apply consistent security controls across SaaS, packaged, and custom applications and their communication channels.
-**Data** | Protect business‑critical data from theft, manipulation, and extortion.
-**Network**|  Ensure network controls support identity‑centric access models while mitigating classic network‑based attacks.
-**AI** | Integrate new skills, tools, and controls to manage AI‑related risks and attacker use of AI.
+- **Identities**: Ensurea identity systems and privileged access controls align to Zero Trust and protect access to all assets.
+- **Endpoints**: Secures devices used as operational footholds by attackers through consistent lifecycle management.
+- **Infrastructure**: Protects cloud and on‑premises platforms that underpin workloads and identity systems.
+- **Apps**: Applies consistent security controls across SaaS, packaged, and custom applications and their communication channels.
+- **Data**: Protects business‑critical data from theft, manipulation, and extortion.
+- **Network**: Ensures network controls support identity‑centric access models while mitigating classic network‑based attacks.
+- **AI**: Integrates new skills, tools, and controls to manage AI‑related risks and attacker use of AI.
 
 ## What's next?
 

@@ -173,16 +173,15 @@ The Access and Identities discipline spans all technology pillars and serves as 
 
 :::image type="content" source="./media/security-adoption-discipline-access-pillar.png" alt-text="Diagram of technology pillars showing how access and identity protections span identities, endpoints, and infrastructure." lightbox="./media/security-adoption-discipline-access-pillar.png":::
 
+The discipline aligns as follows:
 
-**Pillar** | *Access and Identities role**
---- | ---
-**Identities** | Authentication, authorization, lifecycle management, and privilege control define who can access assets and under what conditions.
-**Endpoints**| DEndpoint posture and credential protection influence access trust decisions. Compromised devices undermine identity controls.
-**Infrastructure**| Identity systems and administrative interfaces run on infrastructure and require strong privileged access protection.
-**Apps** | Applications must use modern identity patterns and enforce least‑privilege access for users, APIs, and pipelines.
-**Data** | Identity‑based access controls govern who can read, modify, or exfiltrate sensitive data.
-**Network**|  Network controls complement identity‑centric access by mitigating legacy attacks and supporting Security Service Edge (SSE) patterns.
-**AI** | AI agents and services introduce new identity types that require lifecycle management, least privilege, and monitoring.
+- **Identities**: Authentication, authorization, lifecycle management, and privilege controls define who can access assets and under what conditions.
+- **Endpoints**: Endpoint posture and credential protection influence access trust decisions. Compromised devices undermine identity controls.
+- **Infrastructure**: Identity systems and administrative interfaces run on infrastructure and require strong privileged access protection.
+- **Apps**: Applications must use modern identity patterns and enforce least‑privilege access for users, APIs, and pipelines.
+- **Data**: Identity‑based access controls govern who can read, modify, or exfiltrate sensitive data.
+- **Network**: Network controls complement identity‑centric access by mitigating legacy attacks and supporting Security Service Edge (SSE) patterns.
+- **AI**: AI agents and services introduce new identity types that require lifecycle management, least privilege, and monitoring.
 
 
 ## What's next?

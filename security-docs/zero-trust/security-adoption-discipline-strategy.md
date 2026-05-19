@@ -140,14 +140,14 @@ At the technology pillar level, the Security Strategy, Integration and Governanc
 - Implementation remains consistent over time and doesn't drift.
 - Continuous improvement is driven across strategy, integration, and governance.
 
-**Pillar** | **Strategy, Integration, Governance**
---- | ---
-**Identities** | Defines identity risk priorities, access policies (including privileged access), lifecycle standards, and success measures aligned to Zero Trust.
-**Endpoints/Infrastructure**| Sets lifecycle, maintenance, and retirement requirements to manage security risk across endpoints and infrastructure platforms.
-**Apps** | Establish consistent sourcing, development, deployment, and lifecycle standards across SaaS and custom applications.
-**Data** | Define data protection priorities, classification, access models, and governance aligned to business value and risk.
-**Network**|  Ensure network configurations and controls support identity‑centric strategies while managing legacy and modern network risks.
-**AI** | Update security strategy, skills, tooling, and governance to address risks introduced by AI usage and AI‑assisted threats.
+It aligns with these technology pillars:
+
+- **Identities**: Defines identity risk priorities, access policies (including privileged access), lifecycle standards, and success measures aligned to Zero Trust.
+- **Endpoints/Infrastructure**: Sets lifecycle, maintenance, and retirement requirements to manage security risk across endpoints and infrastructure platforms.
+- **Apps**: Establishes consistent sourcing, development, deployment, and lifecycle standards across SaaS and custom applications.
+- **Data**: Defines data protection priorities, classification, access models, and governance aligned to business value and risk.
+- **Network**: Ensures network configurations and controls support identity‑centric strategies while managing legacy and modern network risks.
+- **AI**: Updates security strategy, skills, tooling, and governance to address risks introduced by AI usage and AI‑assisted threats.
 
 ## What's next?
 

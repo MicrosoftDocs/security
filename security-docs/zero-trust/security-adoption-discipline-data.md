@@ -143,7 +143,7 @@ Data travels across systems, users, and environments. As a result, the Data Secu
 
 :::image type="content" source="./media/security-adoption-discipline-data-technology.png" alt-text="Diagram of Zero Trust foundation with layers for enterprise collaboration, critical data, and technology pillars." lightbox="./media/security-adoption-discipline-data-technology.png":::
 
-
+Aligned technology pillars include:
 
 - **Identities**: Data security relies on identity security controls to enforce secure access to data through strong identity and access controls.
 - **Endpoints**: Data security relies on endpoint security controls to prevent data theft from compromised or unmanaged devices.

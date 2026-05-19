@@ -183,10 +183,10 @@ Security Posture spans all technology pillars:
 - **Identities** – This pillar is a top-priority for security posture because identity is a High-risk entry point that's foundational to nearly all attacks. Almost all multistage attacks rely on identity attacks, such as pass-the-hash, ticket, and other methods, to laterally traverse and gain access to additional organizational assets. These attacks often use privileged accounts associated with IT administrators or administrative service accounts.
 - **Endpoints**: Endpoints are a common attacker foothold and staging environment. It's critical to quickly find and fix endpoint vulnerabilities.
 - **Infrastructure**:  Rapidly finding and mitigating infrastructure vulnerabilities is important since infrastructure has broad impact due to shared dependencies for hosted workloads and data. 
-- **Apps** | Rapidly finding and mitigating these vulnerabilities is important because threat actors often target email, collaboration, line of business, and other apps to enter and laterally traverse across an organization to access business assets.
-- **Data** | Data provides a high-value target for theft, extortion, and disruption. Attackers often target data for intellectual property theft, encryption to gain leverage for extortion or ransomware, planning future attacks, and other purposes.
+- **Apps**: Rapidly finding and mitigating these vulnerabilities is important because threat actors often target email, collaboration, line of business, and other apps to enter and laterally traverse across an organization to access business assets.
+- **Data**: Data provides a high-value target for theft, extortion, and disruption. Attackers often target data for intellectual property theft, encryption to gain leverage for extortion or ransomware, planning future attacks, and other purposes.
 - **Networks**: Threat actors attack operations that rely on network connectivity. Network security conotrols restrict communication paths, constrain attacker movement and detect abnormal flows.
-- **AI** | Emerging AI attack surfaces require new discovery and protection capabilities.
+- **AI**: Emerging AI attack surfaces require new discovery and protection capabilities.
 
 The discipline builds consistent skills, tooling, and processes across all pillars.
 

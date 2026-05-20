@@ -23,27 +23,27 @@ This guidance helps you to identify, avoid, and correct common SecOps antipatter
 
 ## What is a SecOps antipattern?
 
-An **antipatterns** is recurring behaviors that's commonly used but is ultimately ineffective. Antipatterns undermine effectiveness or actively increase risk, and are frequently responsible for slow response times, analyst burnout, repeated incidents, and higher business impact.
+An **antipattern** is recurring behavior that's commonly used but is ultimately ineffective. Antipatterns undermine effectiveness or actively increase risk, and are frequently responsible for slow response times, analyst burnout, repeated incidents, and higher business impact.
 
-In SecOps, antipatterns typically emerge when teams prioritize tools, data, or organizational silos over measurable security outcomes. Left uncorrected, these behaviors slow detection and response, obscure attacker activity, and prevent organizations from learning from incidents.
+In SecOps, antipatterns typically emerge when teams prioritize tools, data, or organizational silos over measurable security outcomes. Left uncorrected, these behaviors slow detection and response, obscure attacker activity, and hinder organizational learning from incidents.
 
 Avoiding SecOps antipatterns helps organizations:
 
-- Detect and contain attacks faster
-- Reduce operational noise and analyst fatigue
-- Improve collaboration across security, IT, and engineering teams
-- Turn incidents into durable risk reduction rather than repeated work
+- Detect and contain attacks faster.
+- Reduce operational noise and analyst fatigue.
+- Improve collaboration across security, IT, and engineering teams.
+- Turn incidents into durable risk reduction rather than repeated work.
 
-Use the antipatterns in this article to learn from others’ mistakes rather than repeating them.
+Use the antipatterns in this article to learn from known mistakes rather than repeating them.
 
 ## Avoid antipatterns
 
 Every SecOps antipattern grows from a tool‑first mindset. High‑performing SecOps programs start by:
 
-- Clearly defining the SecOps mission
-- Identifying outcomes and success metrics
-- Aligning people and processes before technology
-- Building learning loops that improve prevention and response over time
+- Clearly defining the SecOps mission.
+- Identifying outcomes and success metrics.
+- Aligning people and processes before technology.
+- Building learning loops that improve prevention and response over time.
 
 Our [structured security adoption model](security-adoption-model.md) helps you to avoid antipattern pitfalls by anchoring SecOps decisions to business outcomes rather than tool accumulation.
 

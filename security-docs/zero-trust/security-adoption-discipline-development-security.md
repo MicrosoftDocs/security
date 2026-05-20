@@ -13,11 +13,11 @@ ms.topic: conceptual
 
 # Shift DevOps to DevSecOps
 
-As you create or modernize a [Development Security discipline](security-adoption-discipline-development.md), this article outlines how integrating security into development practices enables organizations to shift from DevOps to DevSecOps, and deliver applications more securely.
+As you create or modernize a [Development Security discipline](security-adoption-discipline-development.md), this article outlines how integrating security into development practices enables the shift from developer operations (DevOps) to developer-security-operations (DevSecOps), and helps secure application delivery.
 
-Modern organizations rely on rapid software development to deliver innovation, respond to changing business requirements, and maintain competitive advantage. DevOps practices enable this agility by allowing teams to continuously build, test, and release application workloads through automated integration and deployment pipelines.
+Modern organizations rely on rapid software development to deliver innovation, respond to changing business requirements, and maintain competitive advantage. DevOps enables this agility through continuous integration and delivery. However, increased speed also introduces new security risks.
 
-While DevOps improves delivery speed and responsiveness, it also introduces new security risks. Continuous release cycles reduce the time between design decisions and production deployment, increasing the likelihood that the following weaknesses are introduced into production environments:
+Continuous release cycles reduce the time between design decisions and production deployment, increasing the likelihood that weaknesses are introduced into production environments, including:
 
 - Application design weaknesses
 - Vulnerable dependencies
@@ -25,22 +25,23 @@ While DevOps improves delivery speed and responsiveness, it also introduces new 
 - Infrastructure automation flaws
 - Poor secrets management or hygiene.
 
-## DevOps risks
+## DevOps risk
 
-Modern DevOps environments expand the attack surface across development, pipeline, and production systems. DevOps tools are key entry points for bad actors, from pipeline automation to code validation and code repositories. If malicious code is introduced before it reaches production systems, it can often pass through existing security checks.
+Modern DevOps environments expand the attack surface across development, pipeline, and production systems. DevOps tools such as source code repositories, pipelines, and automation systems are high-value targets for attackers.
 
-Attacks can:
+If malicious code is introduced early, it might pass through existing security checks and reach production systems.
 
-- Inject malicious code into build artifacts.
-- Compromise developer identities or service accounts.
-- Access or exfiltrate production data.
+Common attack objectives include:
 
-Custom applications and supporting development environments are common targets for attackers seeking access to:
+- Injecting malicious code into build artifacts.
+- Compromising developer identities or service accounts.
+- Accessing or exfiltrating production data.
+
+Attackers often target custom applications and development environments to gain access to:
 
 - Sensitive organizational or customer data.
 - Proprietary business logic and intellectual property.
 - Production infrastructure through compromised development systems.
-- Potential security risks are summarized in the following diagram.
 - Downstream customers through software supply chain compromise.
 
 Potential security risks are summarized in the following diagram:
@@ -48,51 +49,64 @@ Potential security risks are summarized in the following diagram:
 :::image type="content" source="./media/develop/secure-devops-environments/diagram-enterprise-devops-overview-inline.png" alt-text="Diagram illustrates DevOps environments and security threats." lightbox="./media/develop/secure-devops-environments/diagram-enterprise-devops-overview-expanded.png":::
 
 
-## App/development risk
+### Application and development risk
 
 Application workloads can be compromised through weaknesses introduced during development or through compromise of the infrastructure used to build and deploy them.
 
 
-**Risk** | **Target** | **Outcome**
+**Risk** | **Target** | **Potential outcome**
 --- | --- | ---
-**App design/implementation** | Security issues introduced during design or development may expose workloads to attack techniques such as:<br/><br/>- Improper input validation<br/>- Insecure authentication or authorization logic<br/>- Weak or improperly implemented cryptography<br/>- Exposure of sensitive data through application logic | These weaknesses might allow attackers to:<br/><br/>- Access or manipulate application data<br/>- Execute unauthorized operations<br/>- Maintain persistent access through implanted logic flaws
-**Dev infrastructure/automation** | Attacks might target:<br/><br/>- Source code repos<br/>- Build pipelines<br/>- Deployment automation<br/>- Infrastructure-as-code (IaC) templates<br/>- Develop endpoints or service identities | Compromise might allow attackers to:<br/><br/>- Insert malicious code into build artifacts<br/>- Modify deployment configurations<br/>- Maintain persistent access through implanted logic flaw<br/>sObtain credentials or secrets used in production environments.
+**App design/implementation** | Security issues introduced during design or development may expose workloads to attack techniques such as:<br/><br/>- Improper input validation<br/>- Insecure authentication or authorization logic<br/>- Weak or improperly implemented cryptography<br/>- Exposure of sensitive data through application logic | These weaknesses might allow attackers to:<br/><br/>- Access or manipulate application data<br/>- Execute unauthorized operations<br/>- Maintain persistent access through implanted logic flaws.
+**Dev infrastructure/automation** | Attacks might target:<br/><br/>- Source code repos<br/>- Build pipelines<br/>- Deployment automation<br/>- Infrastructure-as-code (IaC) templates<br/>- Develop endpoints or service identities | Compromise might allow attackers to:<br/><br/>- Insert malicious code into build artifacts<br/>- Modify deployment configurations<br/>- Maintain persistent access through implanted logic flaw<br/>- Obtain credentials or secrets used in production environments.
 **Dev software supply chain** | Applications commonly rely on:<br/><br/>- Third‑party libraries<br/>- Open‑source packages<br/>- Container images<br/>- Platform services | Vulnerabilities or malicious code introduced through these dependencies might affect:<br/><br/>- Organizational production workloads<br/>- Customer or partner environments
 
-Integrating security into development processes reduces the likelihood that these risks propagate into production releases.
+Integrating security into development processes reduces the likelihood that these risks propagate into production release.
 
 ## Shifting left
 
-Shift left is a security engineering approach that integrates security earlier in the development lifecycle and operations processes. By moving security activities closer to the beginning—during envisioning, design, implementation, and operations—organizations can identify and address issues earlier and at lower cost.
+Shift left is a security engineering approach that integrates security earlier in the development lifecycle. 
 
-As organizations adopt DevOps and cloud technologies, security must be built in from the start using practices such as the [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/practices), rather than added late in the process where it becomes expensive and difficult to fix. To sustain this approach, organizations incorporate governance, risk, and compliance (GRC) into their strategy.
 
-DevSecOps extends DevOps by integrating security into every stage of the lifecycle, from idea inception through design, development, and operations. It reduces friction between development, operations, and security teams, aligning them around shared goals of innovation speed, reliability, and security resilience, and enabling teams to address the most important issues early and continuously.
+Instead of validating security late in the process, organizations embed it into:
+
+- Envisioning  
+- Design  
+- Development  
+- Operations  
+
+This reduces remediation cost and risk exposure.
+
+To support this approach, organizations should"
+
+- Use structured best practices such as the [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/practices) early in the process, rather than late when issues become expensive and difficult to fix.
+- To sustain this approach, integrate governance, risk, and compliance (GRC) into development strategy.
+
 
 ## What is DevSecOps?
 
-DevSecOps delivers on the Shift Left approach by extending DevOps by integrating security into every stage of the software development lifecycle rather than applying it at the end of development.
+DevSecOps delivers on the Shift Left approach by extending DevOps and embedding security into every stage of the software development lifecycle - from idea inception through design, development, and operations.
 
-In traditional development approaches, security validation was often performed as a final quality gate before release. This created delays, increased remediation cost, and allowed vulnerabilities to persist until late in the lifecycle. DevSecOps shifts security earlier and embeds it continuously into development and operational processes.
+- In traditional development approaches, security validation was often performed as a final quality gate before release. This created delays, increased remediation cost, and allowed vulnerabilities to persist until late in the lifecycle.
+- DevSecOps shifts security earlier and embeds it continuously into development and operational processes.
+- DevSecOps reduces friction between development, operations, and security teams, aligning them around shared goals of innovation speed, reliability, and security resilience, and enabling teams to address the most important issues early and continuously.
+- DevSecOps integrates security into:
 
-DevSecOps integrates security into:
+    - Architectural design
+    - Application implementation
+    - Infrastructure automation
+    - Deployment and operational processes
 
-- Architectural design
-- Application implementation
-- Infrastructure automation
-- Deployment and operational processes
+### Benefits
 
-This approach enables development, security, and operations teams to:
+DevSecOps enables development, security, and operations teams to:
 
-- Identify and remediate issues earlier in the lifecycle
-- Reduce production exposure windows
-- Maintain delivery velocity while managing risk
+- Identify and remediate issues earlier in the lifecycle.
+- Reduce exposure in production.
+- Maintain delivery speed while managing risk.
 
 Security becomes part of how software is built and delivered, rather than a control applied after delivery.
 
 :::image type="content" source="./media/development-security-operations.png" alt-text="Graphic showing how development, security, and operations fit together" lightbox="./media/development-security-operations.png":::
-
-
 
 
 ## Secure innovation lifecycle
@@ -113,51 +127,29 @@ After initial release, development becomes iterative as workloads evolve with:
 
 :::image type="content" source="./media/develop-security-agile.png" alt-text="Diagram showing how DevSecOps keeps the development cycle agile and continuously improving" lightbox="./media/develop-security-agile.png":::
 
-## Integrated development
+## Integrate security into development
 
-Traditionally, security validation was performed after development as a final gate before release. In modern development environments, delaying validation increases:
 
+Traditional development approaches validate security late in the lifecycle, as a final gate before release after design and implementation are complete. In modern development environments, delaying validation increases:
+
+- Vulnerability complexity
 - Remediation cost
-- Operational disruption
-- Exposure to active exploitation
+- Operational delays and disruption
+- Increased risk exposure to active exploitation
 
-DevSecOps enables continuous integration of security throughout development and operations, ensuring issues are addressed early and consistently.
+DevSecOps integrates security continuously throughout development and operations, to address issues earlier, reduce risk, and improve consistency.
 
+### Key practices
 
+Security must be embedded into existing development processes to be effective, scalable, and sustainable. It should be integrated directly into how apps are designed, built, deployed, and operated, not implemented in a separate or parallel workflow. We recommend:
 
-## Shift left and secure-by-design
+- Mapping end-to-end workflows from idea through development, deployment, and ongoing operations.
+- Defining clear roles, tools, and responsibilities for security at each stage of the lifecycle.
+- Establishing consistent remediation paths for vulnerabilities, defects, and design issues.
 
-In traditional waterfall design models, security validation typically occurs late in the lifecycle as part of final testing, after design and implementation are complete.
+Tailor security practices based on workload risk. Business-critical applications require greater rigor, while lower-risk scenarios can follow streamlined approaches.
 
-This late-stage approach often results in vulnerabilities being discovered when they are more complex and costly to fix, driving rework, delays, and increased risk exposure compared to integrating security earlier in the lifecycle.
-
-As security is modernized, organizations should adopt a shift-left approach, integrating security earlier in development and operations processes.
-
-DevSecOps builds on DevOps by further integrating security teams, processes, and tooling into the development lifecycle. Teams align around shared goals of innovation, reliability, and security resilience.
-
-
-## Expected outcomes
-
-Organizations that shift from DevOps to DevSecOps can:
-
-- Reduce the likelihood that vulnerabilities are introduced into production workloads
-- Limit the ability of attackers to exploit development infrastructure or automation
-- Improve resilience of applications to evolving attack techniques
-- Support regulatory and organizational compliance requirements
-- Sustain innovation velocity without increasing operational or security risk
-
-## Integrated process for security development
-
-Security must be embedded into existing development processes to be effective, scalable, and sustainable. Rather than introducing separate or parallel workflows, integrate security practices directly into how applications are designed, built, deployed, and operated.
-
-
-- Map end-to-end workflows from idea through development, deployment, and ongoing operations.
-- Define clear roles, tools, and responsibilities for security at each stage of the lifecycle.
-- Establish consistent remediation paths for vulnerabilities, defects, and design issues.
-
-Tailor security practices to the risk level of each workload. Business-critical applications require greater rigor, while lower-risk scenarios can follow streamlined approaches.
-
-At a minimum, ensure you:
+At a minimum, ensure that you:
 
 - Identify the stages, people, and technologies involved in your development lifecycle.
 - Define how security activities integrate into each stage, rather than treating them as separate checkpoints.
@@ -174,6 +166,18 @@ Automation is essential to enforce security consistently and at scale across dev
 Platform foundations such as Azure landing zones can support this approach by
 
 Platform foundations such as [Azure landing zones](/azure/cloud-adoption-framework/ready/landing-zone/design-area/platform-automation-devops) can support this approach by providing standardized patterns for security, governance, and DevOps integration.
+
+## Expected outcomes
+
+Organizations that shift from DevOps to DevSecOps can:
+
+- Reduce the likelihood that vulnerabilities are introduced into production workloads
+- Limit the ability of attackers to exploit development infrastructure or automation
+- Improve resilience of applications to evolving attack techniques
+- Support regulatory and organizational compliance requirements
+- Sustain innovation velocity without increasing operational or security risk
+
+
 
 ## Tips on navigating the journey
 
@@ -196,7 +200,7 @@ It's critical to carefully prioritize what is most important and to manage expec
 Focus on a crawl, walk, run strategy, where the most important and foundational elements come first, will serve your organization well
 
 
-### Change takes introduces (temporary) friction
+### Change introduces (temporary) friction
 
 All new technologies, methodologies, and other changes will always introduce friction and confusion. Its critical to focus on healthy friction that drives critical thinking to reduce risk while avoiding unhealthy friction that slows down processes with limited benefit or risk reduction.
 
@@ -225,3 +229,5 @@ If you are considering an SRE model, we recommend that you start by embedding se
 This incrementally adds security responsibilities to your operations and development personnel, which moves teams closer to an SRE end-state.  
 
 ## What's next?
+
+[Learn about](security-adoption-discipline-development-imperatives.md) secure development best practices.

@@ -13,13 +13,13 @@ ms.topic: conceptual
 
 # Phishing investigation playbook
 
-Phishing attacks are one of the most common initial access techniques used by adversaries. A successful phishing attack can lead to credential compromise, malware execution, data exfiltration, and lateral movement across identity, email, and endpoint environments.
-
-This article is part of the incident response playbook guidance in the[Security Operations (SecOps)](security-adoption-discipline-security-operations.md) discipline. It provides scenario‑specific guidance aligned with Zero Trust principles.
+This article demonstrates a phishing playbook. It's part of the incident response playbook guidance in the [Security Operations (SecOps)](security-adoption-discipline-security-operations.md) discipline.
 
 This playbook is intended for all roles responsible for building or executing incident response playbooks, including SecOps analysts, incident responders, identity administrators, and IT operations staff.
 
-The guidance in this article describes what to investigate and why. Product‑specific examples (such as Microsoft Defender XDR or Microsoft Sentinel) are provided as reference implementatins.
+Phishing attacks are one of the most common initial access techniques used by adversaries. A successful phishing attack can lead to credential compromise, malware execution, data exfiltration, and lateral movement across identity, email, and endpoint environments.
+
+The guidance in this article describes what to investigate and why. Product‑specific examples (such as Microsoft Defender XDR or Microsoft Sentinel) are provided as reference implementations.
 
 ## Before you start
 
@@ -27,17 +27,15 @@ Before starting a phishing investigation, ensure that the following baseline rea
 
 **Area** | **Requirement** | **Details**
 --- | --- | ---
-**Account information** | Have at least one identifiers for the suspected target user | Identifiers can be: user principal name (UPN), email address, or username/alias.<br/><br/>This information is required to correlate email activity, sign‑ins, and downstream actions.
-**Microsoft 365 audit/logging** |  Mailbox auditing should be enabled organization‑wide to ensure that mailbox access and actions are recorded. | Verify that mailbox auditing on by default is enabled by running the following command in Exchange Online PowerShell: - *Get-OrganizationConfig | Format-List AuditDisabled*. <br/><br/>A value of False indicates that mailbox auditing is enabled for all mailboxes.
-**Microsoft 365 audit/logging** | Message trace logs are required to identify the original phishing message, deliver status, all recipients, message routing details.<br/><br/>Message trace is available in [Exchange Admin Center](https://admin.exchange.microsoft.com/#/messagetrace), Microsoft Defender portal (**Email & collaboration** > **Exchange message trace**) | To work effectively with message trace data, investigators must be able to retrieve and interpret Message‑ID values, which are obtained from raw email headers.
+**Account information** | Have at least one identifier for the suspected target user | Identifiers can be: user principal name (UPN), email address, or username/alias.<br/><br/>This information is required to correlate email activity, sign‑ins, and downstream actions.
+**Microsoft 365 audit/logging** |  Mailbox auditing should be enabled organization‑wide to ensure that mailbox access and actions are recorded. | Verify that mailbox auditing on by default is enabled by running the following command in Exchange Online PowerShell: *Get-OrganizationConfig \| Format-List AuditDisable*/. <br/><br/>A value of False indicates that mailbox auditing is enabled for all mailboxes.
+**Microsoft 365 audit/logging** | Message trace logs are required to identify the original phishing message, deliver status, all recipients, message routing details. | Message trace is available in [Exchange Admin Center](https://admin.exchange.microsoft.com/#/messagetrace), Microsoft Defender portal (Email & collaboration > Exchange message trace).<br/><br/>To work effectively with message trace data, investigators must be able to retrieve and interpret Message‑ID values, which are obtained from raw email headers.
 **Microsoft 365 audit/logging** | Unified audit logs are required to review user and administrative activity across Microsoft 365 workloads. | Ensure investigators can search the unified audit log to review actions such as mailbox access,  mail item actions, administrative changes, and sign‑in–related events.
-**Microsoft Entra logs** | Microsoft Entra ID sign‑in and audit logs are retained for a limited period (30 or 90 days, depending on licensing). | To support investigations, historical analysis, and post‑incident review, export logs to a long‑term repository such as 
-Microsoft Sentinel, Azure Monitor, or a third-party sIEM.
-A third‑party SIEM.
+**Microsoft Entra logs** | Microsoft Entra ID sign‑in and audit logs are retained for a limited period (30 or 90 days, depending on licensing). | To support investigations, historical analysis, and post‑incident review, export logs to a long‑term repository such as Microsoft Sentinel, Azure Monitor, or a third-party SIEM.
 **Permissions** | Ensure investigators have sufficient permissions to access required data without over‑privileging accounts. | Microsoft Entra ID: minimum recommended role is Security Reader.<br/><br/>Defender portal and Microsoft Compliance portal: Security Reader.<br/><br/>These roles provide read‑only access to email, alerts, and audit data.
-**Endpoint visibility** | Microsoft Defender for Endpoint | If Defender for Endpoint is installed, use it to:<br/><br/>Validate whether users interacted with phishing content.<br/>Identify payload execution.<br/>Correlate endpoint activity with email events.
-**Hardware** | A system capable of running PowerShell.
-**Software** | The following PowerShell modules are commonly used during phishing investigations:<br/><br/>Microsoft Graph PowerShell SDK<br/>Exchange Online PowerShell module<br/>Microsoft Entra Incident Response PowerShell module.<br/><br/>Ensure all modules are installed and kept up to date.
+**Endpoint visibility** | Microsoft Defender for Endpoint | If Defender for Endpoint is installed, use it to:<br/><br/>- Validate whether users interacted with phishing content.<br/>- Identify payload execution.<br/>- Correlate endpoint activity with email events.
+**Hardware** | A system capable of running PowerShell. | 
+**Software** | These PowerShell modules are commonly used during phishing investigations | Microsoft Graph PowerShell SDK<br/>Exchange Online PowerShell module<br/>Microsoft Entra Incident Response PowerShell module.<br/><br/>Ensure all modules are installed and kept up to date.
 
 ## Workflow
 
@@ -136,5 +134,5 @@ Recovery actions may include:
 
 ## What's next?
 
-Review other playbooks: TBD
+[Learn more](security-adoption-discipline-security-operations.md) about the SecOps discipline.
 

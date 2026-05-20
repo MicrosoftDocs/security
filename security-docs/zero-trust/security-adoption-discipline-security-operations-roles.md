@@ -13,9 +13,9 @@ ms.topic: conceptual
 
 # Understand SecOps roles
 
-As you develop the [Security Operations (SecOps)](security-adoption-discipline-security-operations.md), this article explains the roles, responsibilities, and internal partnerships required to operate an effective, modern SecOps model aligned to Zero Trust principles.
+As you develop a [Security Operations (SecOps)](security-adoption-discipline-security-operations.md) discipline, this article explains the roles, responsibilities, and internal partnerships required to operate an effective, modern SecOps model aligned to Zero Trust principles.
 
-SecOps is a specialized discipline focused on detecting, investigating, and responding to active threats in near real-time. SecOps operates in continuous conflict with adversaries who actively adapt their techniques.
+SecOps is a specialized discipline focused on detecting, investigating, and responding to active threats in near real-time. It operates in continuous conflict with adversaries who actively adapt their techniques.
 
 This guidance is intended for anyone planning or participating in SecOps modernization, including security leaders, SecOps practitioners, architects, engineers, and partner teams.
 

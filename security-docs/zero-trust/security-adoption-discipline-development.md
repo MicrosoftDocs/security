@@ -49,7 +49,6 @@ Organizations that mature this discipline achieve:
 
 Development Security ensures that security posture improves continuously with each release, rather than being periodically reset.
 
-:::image type="content" source="./media/security-adoption-discipline-dev.png" alt-text="DevSecOps ensures software is secure, function, and reliable." lightbox="./media/security-adoption-discipline-dev.png":::
 
 ### Changes in team work
 

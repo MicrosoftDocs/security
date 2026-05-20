@@ -13,17 +13,16 @@ ms.topic: conceptual
 
 # Adopt secure development planning imperatives
 
-Organizations rely on rapid software development to drive innovation, meet business requirements, and maintain competitive advantage. DevOps practices improve delivery speed and responsiveness through continuous integration and deployment, but they also change the organization’s risk profile.
+This article defines the key imperatives for integrating security into development practices as part of the [Development Security discipline](security-adoption-discipline-development.md).
 
-Release cycles accelerate the introduction of design flaws, insecure dependencies, configuration errors, and weaknesses in infrastructure into production environments unless security is integrated throughout the development process. 
 
-[DevSecOps practices](security-adoption-discipline-development-security.md) integrate security into every stage of the software lifecycle—from idea and design through build, deployment, and operations, replacing late-stage validation with continuous security integration.
+Modern organizations rely on rapid software development to deliver innovation, meet business requirements, , maintain competitive advantage, and respond to changing business needs. While DevOps enables this agility, it also introduces new security risks as code, infrastructure, and deployment processes evolve more quickly.
 
-Securely adopting DevOps practices requires embedding security into both applications and infrastructure. This article defines planning imperatives to ensure development practices produce workloads that meet production viability requirements and can be safely deployed.
+To securely adopt DevOps practices, organizations must integrate security into development strategy, workflows, and delivery processes, and adopt DevSecOps practices that secure application delivery across the lifecycle.
 
 ## Outcomes
 
-Adopting the planning imperatives summarizes in this article enables organizations to:
+Adopting the planning imperatives in this article enables organizations to:
 
 - Reduce the introduction of security weaknesses into production workloads.
 - Improve consistency of production readiness decisions.
@@ -232,3 +231,5 @@ Workflow alignment ensures that security requirements are consistently enforced 
 
 
 ## What's next
+
+[Learn about](secure-dev-environment-zero-trust.md) securing the developer environment.

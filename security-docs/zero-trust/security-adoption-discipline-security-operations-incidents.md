@@ -13,11 +13,13 @@ ms.topic: conceptual
 
 # Plan incident response 
 
-Incident response is a core capability of the [Security Operations (SecOps)](security-adoption-discipline-security-operations.md) discipline.
+This article helps with designing incident response solutions. It's intended for all roles involved in planning or design, including security operations (SecOps) leaders and architects, IT leaders, and business stakeholders.
+
+Incident response is a core capability of the [SecOps](security-adoption-discipline-security-operations.md) discipline.
 
 Effective incident response enables organizations to investigate, contain, and recover from active cyberattacks while minimizing business, operational, legal, and reputational impact—aligned with Zero Trust principles.
 
-This article is intended for all roles involved in planning or and designing incident response solutions, including SecOps leaders and architects, IT leaders, and business stakeholders. 
+
 
 ## Incident response overview 
 
@@ -25,10 +27,12 @@ Incident response is the practice of investigating and remediating active attack
 
 Incident response has the largest direct influence on critical SecOps metrics, particularly:
 
-- Mean Time to Acknowledge (MTTA)
-- Mean Time to Remediate (MTTR)
+- **Mean Time to Acknowledge (MTTA)**. The time it takes your team to acknowledge an alert or incident after it's generated.
+- **Mean Time to Remediate (MTTR)**. The time it takes to fix a security incident after it's been acknowleged.
 
-Reducing these metrics lowers organizational risk and limits attacker impact. Successful incident response depends on close collaboration between incident responders, threat hunting, threat intelligence, IT operations, legal, communications, and leadership teams.
+Reducing these metrics lowers organizational risk and limits attacker impact.
+
+Successful incident response depends on close collaboration between incident responders, threat hunting, threat intelligence, IT operations, legal, communications, and leadership teams.
 
 ## Incident response playbooks
 
@@ -58,20 +62,17 @@ Playbooks complement, but do not replace, incident response plans, recovery proc
 Regardless of the specific tools or processes you use, effective incident response requires consistent application of the following principles.
 
 - **Stay calm and focused**: Security incidents are disruptive and emotionally charged. Maintain focus on the highest-impact actions first.
+- **Balance urgency with precision**: Act quickly to contain threats, but validate actions to avoid unintended damage, loss of evidence, or incomplete remediation.
 - **Do no harm**: Ensure response actions do not:
 
     - Destroy forensic evidence
     - Cause unnecessary business disruption
     - Prevent root-cause analysis and learning
-
-    Balance urgency with precision.
 - **Involve legal early**: Legal guidance is critical for:
-
     - Law enforcement involvement
     - Regulatory and privacy notifications
     - External communications
     - Preserving privilege
-
 - **Control information sharing**: Public or customer-facing communications should occur only with legal guidance, to avoid liability and misinformation.
 - **Get help when needed**: Large or sophisticated attacks often require deep, specialized expertise, including external responders, vendors, or professional services.
 
@@ -82,8 +83,8 @@ Incident response is similar to treating a critical medical condition: the syste
 
 During incidents, SecOps teams must consistently balance:
 
-- Speed vs. accuracy – Acting fast without escalating impact
-- Transparency vs. liability – Sharing information appropriately with investigators, leadership, and customers
+- **Speed vs. accuracy** – Acting fast without escalating impact
+- **Transparency vs. liability** – Sharing information appropriately with investigators, leadership, and customers
 
 It's important to follow recommended actions that reduce risk, and avoid common pitfalls, while meeting stakeholder expectations.
 
@@ -197,3 +198,7 @@ Post-incident activities include:
 - Improving response processes and playbooks
 
 These improvements reduce manual effort and shorten response times in future incidents.
+
+## What's next
+
+[Review](security-operations-playbook-phishing.md) a sample phishing playbook.

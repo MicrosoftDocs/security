@@ -153,3 +153,7 @@ The enterprise access architecture is not an implementation guide. Instead, it p
 - A framework for evaluating and improving access‑related security decisions over time
 
 Detailed implementation guidance is covered in related discipline and solution articles.
+
+## What's next?
+
+[Review](security-adoption-discipline-identity-access-privileged-model.md) privileged access architecture.

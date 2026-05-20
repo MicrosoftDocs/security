@@ -16,7 +16,7 @@ ms.topic: conceptual
 
 This article describes how to design a privileged access architecture as part of an [Access and Identities discipline](security-adoption-discipline-identity-access.md).  
 
-This article helps security architects and designers who need to translate the [privileged access business outcome](security-adoption-scenario-privileged-access.md) into an end-to-end architecture that can be implemented and operated.
+It provides guidance for security architects and designers who need to translate the [secure privileged access business outcome](security-adoption-scenario-privileged-access.md) into an end-to-end architecture that can be implemented and operated.
 
 ## Why a privileged access architecture?
 
@@ -28,14 +28,21 @@ The goal of this article is to help you design an architecture that:
 - Makes those paths enforceable across identity, devices, and interfaces.
 - Makes privileged activity observable for response and continuous improvement.
 
-## Privileged access architecture
+## Privileged access design
 
-A privileged access architecture defines how high impact administrative access is intentionally designed, constrained, and governed across the organization. Its purpose is to prevent loss of control over business critical systems by ensuring that only explicitly authorized, trustworthy access paths are used, and that those paths are continuously validated and monitored.
+A privileged access architecture:
 
-Designing privileged access is not a single technical decision and it isn't owned by a single technical function. It's a result of coordinated design decisions across multiple security disciplines, each contributing a distinct part of the overall control system. Together, these disciplines ensure that privileged access is intentional, enforceable, observable, and sustainable.
+- Defines how high impact administrative access is intentionally designed, constrained, and governed across the organization.
+- Prevents loss of control over business critical systems by ensuring that only explicitly authorized, trustworthy access paths are used, and that those paths are continuously validated and monitored.
+
+Designing privileged access is not a single technical decision and it isn't owned by a single technical function.It's a result of coordinated design decisions across multiple security disciplines, each contributing a distinct part of the overall control system.
+
+## Privileged access disciplines
+
+The disciplines summarized in the table work together to ensure that privileged access is intentional, enforceable, observable, and sustainable.
  
 
-**Discipline** | **Role in scenario**
+**Discipline** | **Role**
 --- | ---
 **Security strategy, integration and governance** | Defines why privileged access exists and what must be protected. It sets priorities, risk tolerance, and success criteria. These decisions establish the scope and intent of the privileged access architecture before any controls are designed.
 **End-to-end security architecture** | Translates strategy into a coherent technical design. It ensures privileged access controls work together across identities, endpoints, apps, and infrastructure, instead of as isolated tools. This discipline defines the closed‑loop model authorized access paths that are enforced, validated, and continuously monitored across control, management, and workload planes.
@@ -198,6 +205,6 @@ Within a privileged access architecture, this discipline enables the organizatio
 **Decide on a feedback loop to strategy** | Decide how incidents drive changes to strategy and architecture. | Prevents repeating the same failures.
 
 
-## Next steps
+## What's next?
 
-Next, kick off deployment with [Implement a privileged access architecture](security-adoption-scenario-privileged-access.md).
+Kick off deployment with [Implement a privileged access architecture](security-adoption-scenario-privileged-access.md).

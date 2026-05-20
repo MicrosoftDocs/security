@@ -241,10 +241,6 @@
         href: security-adoption-discipline-development-security.md
       - name: Review secure development imperatives
         href: security-adoption-discipline-development-imperatives.md
-      - name: Secure the developer environment
-        href: develop/secure-dev-environment-zero-trust.md
-      - name: Embed Zero Trust in developer workflow
-        href: develop/embed-zero-trust-dev-workflow.md
       - name: Identity/Access development
         items:
         - name: Best practices for Identity/Access development
@@ -595,73 +591,67 @@
   - name: Secure development/DevOps
     expanded: false
     items:
-      - name: Overview
-        items:
-        - name: Secure development
-          items:
-          - name: Overview
-            href: develop/overview.md
-          - name: Standards-based development
-            href: develop/identity-standards-based-development-methodologies.md
-          - name: App development
-            items:
-            - name: Secure applications
-              href: develop/identity-zero-trust-compliance.md
-            - name: App registration, authorization, access
-              href: develop/identity-developer-administrator-responsibilities.md
-            - name: App identitiy/access best practices
-              href: develop/identity-iam-development-best-practices.md
-          - name: Secure identity in apps
-            items: 
-            - name: Overview
-              href: develop/identity.md
-            - name: App integration
-              href: develop/integrate-apps-microsoft-identity-platform.md
-            - name: App registration
-              href: develop/app-registration.md
-            - name: Identity and account types for apps
-              href: develop/identity-supported-account-types.md
-            - name: User authentication
-              href: develop/user-authentication.md
-            - name: Resource access authorization
-              href: develop/acquire-application-authorization-to-access-resources.md
-            - name: Delegated permissions
-              href: develop/developer-strategy-delegated-permission.md
-            - name: Application permissions
-              href: develop/developer-strategy-application-permissions.md
-            - name: Permissions that require admin consent
-              href: develop/permissions-require-admin-consent.md
-            - name: Overprivileged permissions
-              href: develop/overprivileged-permissions.md
-            - name: Application identity
-              href: develop/identity-non-user-applications.md
-            - name: Token management
-              href: develop/token-management.md
-            - name: Token customization
-              href: develop/zero-trust-token-customization.md
-            - name: Secure apps with Continuous Access Evaluation
-              href: develop/secure-with-cae.md
-            - name: Group claims and app roles in tokens
-              href: develop/configure-tokens-group-claims-app-roles.md
-            - name: API protection
-              href: develop/protect-api.md
-            - name: Protected API example
-              href: develop/protected-api-example.md  
-            - name: API call to another API
-              href: develop/api-calls-api.md
-            - name: Authorization best practices
-              href: develop/developer-strategy-authorization-best-practices.md
-        - name: Secure DevOps
-          items:
-          - name: Overview
-            href: develop/secure-devops-environments-zero-trust.md
-          - name: Secure DevOps platform 
-            href: develop/secure-devops-platform-environment-zero-trust.md
-          - name: Secure dev environment
-            href: develop/secure-dev-environment-zero-trust.md
-          - name: Embed Zero Trust in developer workflow
-          href: develop/embed-zero-trust-dev-workflow.md
-
+    - name: Zero trust development
+      href: develop/overview.md
+    - name: Standards-based development
+      href: develop/identity-standards-based-development-methodologies.md
+    - name: Secure the developer environment
+      href: develop/secure-dev-environment-zero-trust.md
+    - name: Secure the DevOps environment
+      href: develop/secure-devops-environments-zero-trust.md
+    - name: Secure the DevOps platform 
+      href: develop/secure-devops-platform-environment-zero-trust.md
+    - name: Embed Zero Trust in developer workflow
+      href: develop/embed-zero-trust-dev-workflow.md
+    - name: Secure app development
+      items:
+      - name: Secure applications
+        href: develop/identity-zero-trust-compliance.md
+      - name: App registration, authorization, access
+        href: develop/identity-developer-administrator-responsibilities.md
+      - name: App identitiy/access best practices
+        href: develop/identity-iam-development-best-practices.md
+      - name: Secure identity in apps
+        items: 
+        - name: Overview
+          href: develop/identity.md
+        - name: App integration
+          href: develop/integrate-apps-microsoft-identity-platform.md
+        - name: App registration
+          href: develop/app-registration.md
+        - name: Identity and account types for apps
+          href: develop/identity-supported-account-types.md
+        - name: User authentication
+          href: develop/user-authentication.md
+        - name: Resource access authorization
+          href: develop/acquire-application-authorization-to-access-resources.md
+        - name: Delegated permissions
+          href: develop/developer-strategy-delegated-permission.md
+        - name: Application permissions
+          href: develop/developer-strategy-application-permissions.md
+        - name: Permissions that require admin consent
+          href: develop/permissions-require-admin-consent.md
+        - name: Overprivileged permissions
+          href: develop/overprivileged-permissions.md
+        - name: Application identity
+          href: develop/identity-non-user-applications.md
+        - name: Token management
+          href: develop/token-management.md
+        - name: Token customization
+          href: develop/zero-trust-token-customization.md
+        - name: Secure apps with Continuous Access Evaluation
+          href: develop/secure-with-cae.md
+        - name: Group claims and app roles in tokens
+          href: develop/configure-tokens-group-claims-app-roles.md
+        - name: API protection
+          href: develop/protect-api.md
+        - name: Protected API example
+          href: develop/protected-api-example.md  
+        - name: API call to another API
+          href: develop/api-calls-api.md
+        - name: Authorization best practices
+          href: develop/developer-strategy-authorization-best-practices.md
+      
 - name: Resources
   expanded: false
   items:

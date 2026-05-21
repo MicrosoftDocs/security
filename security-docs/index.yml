@@ -104,7 +104,7 @@ sections:
       - componentType: icon-card
         title: Get In the Loop
         summary: Catch up on the latest product drops, security updates, and demos—all in one place.
-        url: https://aka.ms/SecurityProductDrops_April26
+        url: https://aka.ms/SecurityProductDrops_May26
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/whats-new-1-magenta.png

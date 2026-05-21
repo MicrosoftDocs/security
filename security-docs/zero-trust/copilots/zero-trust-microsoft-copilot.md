@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to Microsoft 365 Copilot Chat for web-grounded prompts?
-description: How to apply Zero Trust principles to Microsoft 365 Copilot Chat for web-grounded prompts. 
-ms.date: 03/04/2025
+description: How to apply Zero Trust principles to Microsoft 365 Copilot Chat for web-grounded prompts.
+ms.date: 05/21/2026
 ms.update-cycle: 180-days
 ms.service: security
 ms.subservice: zero-trust
@@ -29,7 +29,7 @@ ms.custom: [copilot-learning-hub]
 
 Microsoft 365 Copilot Chat is an AI companion in the Microsoft 365 Copilot app, in Edge, and at the following URLs — M365copilot.com and Copilot.cloud.microsoft. It's provided for Entra account users with a [qualifying license](/copilot/manage#microsoft-365--chat-eligibility). Copilot Chat includes enterprise data protection. Enterprise data protection is not included in Copilot Chat for personal use (consumer version). This article helps you implement security protections to keep your organization and data safe while using Copilot Chat. By implementing these protections, you're building a foundation of Zero Trust.
 
-Zero Trust security recommendations for Copilot Chat focus on protection for user accounts, user devices, and your organization data that can be summarized by Copilot Chat in Edge. 
+Zero Trust security recommendations for Copilot Chat focus on protection for user accounts, user devices, and your organization data that can be summarized by Copilot Chat in Edge.
 
 ## How does Zero Trust help with AI?
 
@@ -37,7 +37,7 @@ Security, especially data protection, is often a top concern when introducing AI
 
 As a leader in security, Microsoft provides a practical roadmap and clear guidance for implementing Zero Trust. Microsoft’s set of Copilots are built on top of existing platforms, which inherit the protections applied to those platforms. For the details of applying Zero Trust to Microsoft’s platforms, see the [Zero Trust Guidance Center](/security/zero-trust/). By implementing these protections, you're building a foundation of Zero Trust security.
 
-This article draws from that guidance to prescribe the Zero Trust protections that relate to Copilot. 
+This article draws from that guidance to prescribe the Zero Trust protections that relate to Copilot.
 
 ## What’s included in this article
 
@@ -52,7 +52,7 @@ This article walks through the security recommendations that apply in two stages
 
 ## Stage 1. Start with security recommendations for web-grounded prompts to the Internet
 
-The simplest configuration of Copilot provides AI assistance with web-grounded prompts. 
+The simplest configuration of Copilot provides AI assistance with web-grounded prompts.
 
 :::image type="content" source="../media/copilot/microsoft-copilot-web-grounded-prompts.svg" alt-text="Diagram of Microsoft Copilot and the processing of Web-grounded prompts." lightbox="../media/copilot/microsoft-copilot-web-grounded-prompts.svg":::
 
@@ -74,7 +74,7 @@ Use this stage to implement identity and access policies for users and devices t
 ### Additional recommendations for Microsoft 365 E3
 
 - For user account authentication and access, also configure the identity and access policies to [Block clients that don’t support modern authentication](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common#block-clients-that-dont-support-multifactor-authentication).
-- [Use Windows protection capabilities](zero-trust-microsoft-365-copilot.md#windows-protection-capabilities). 
+- [Use Windows protection capabilities](zero-trust-microsoft-365-copilot.md#windows-protection-capabilities).
 
 ### Additional recommendations for Microsoft 365 E5
 
@@ -86,7 +86,7 @@ Implement the recommendations for E3 and configure the following identity and ac
 
 ## Stage 2. Add security protections for Edge browser summarization
 
-From the Microsoft Edge sidebar, Microsoft 365 Copilot Chat helps you get answers and inspirations from across the web and, if enabled, from some types of information displayed in open browser tabs. 
+From the Microsoft Edge sidebar, Microsoft 365 Copilot Chat helps you get answers and inspirations from across the web and, if enabled, from some types of information displayed in open browser tabs.
 
 :::image type="content" source="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg" alt-text="Diagram of Web-grounded prompts in Edge with browser tab summarization enabled." lightbox="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg":::
 
@@ -137,7 +137,7 @@ For more information about Copilot in Edge, see:
 
 - Implement Intune [app protection policies (APP)](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common#app-protection-policies) for data protection. APP can prevent the inadvertent or intentional copying of Copilot-generated content to apps on a device that aren’t included in the list of permitted apps. APP can limit the blast radius of an attacker using a compromised device.
 
-- **E3**: [Purchase](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365#Pricing) and [deploy](/defender-xdr/pilot-deploy-defender-office-365) Microsoft Defender for Office 365 Plan 1 or Plan 2, which adds Safe Attachments, Safe Links, impersonation protection, and phishing email thresholds.
+- **E3**: [Deploy](/defender-xdr/pilot-deploy-defender-office-365) Microsoft Defender for Office 365 Plan 1 (included), which provides Safe Attachments, Safe Links, impersonation protection, and phishing email thresholds. Optionally, [purchase](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365#Pricing) Plan 2 for advanced investigation and response.
 - **E5**: [Configure Microsoft Defender for Office 365 Plan 2](/defender-office-365/mdo-deployment-guide).
 
 ## Next steps

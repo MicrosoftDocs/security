@@ -1,11 +1,11 @@
 ---
 title: Strengthen security posture and compliance
 description: Use the Microsoft security adoption model to improve security posture based on Zero Trust principles and security best practices.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand I can use the Microsoft security adoption model to optimize my organizational security posture and compliance
@@ -19,13 +19,13 @@ This business scenario helps you achieve the following outcome:
 
 **Continuously improve security posture and compliance**
 
-As a business leader, you must meet your fiduciary duty to protect against security risk. Protection must cover security incidents from evolving threats, as well as meeting regulatory compliance requirements, often with the same limited resources.
+As a business leader, you must meet your fiduciary duty to protect against security risk. Protection must cover security incidents from evolving threats, and meet regulatory compliance requirements, often with the same limited resources.
 
 
 This business scenario is part of our [structured adoption model](security-adoption-model.md) that helps you to achieve business goals using a modern security approach grounded in Zero Trust principles. 
 
 
-This guidance helps your organization to improve security posture and maintain compliance by continuously identifying risk, prioritizing remediation, and strengthening protections across the organization.
+This guidance helps your organization improve security posture and maintain compliance by continuously identifying risk, prioritizing remediation, and strengthening protection across the organization.
 
 ## How this guidance works
 
@@ -35,7 +35,7 @@ This article is part of a [structured adoption model](security-adoption-model.md
 - Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
 
     Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
-    Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
+    Work through each discipline to understand what needs to be planned, designed, and implemented across the organization.
 
 - Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
 
@@ -47,7 +47,7 @@ This approach ensures that security posture improvement and compliance are conti
 Organizations face two intersecting challenges: defending against increasingly sophisticated threats while meeting expanding regulatory and compliance obligations.
 
 - **Security posture**: Your security posture represents your organization’s overall ability to prevent, detect, and respond to cyber threats. A strong security posture is measurable, quantifiable, and continuously improving as risks and technologies evolve.
-- **Regulatory compliance**: Regulatory compliance requires adherement to laws, regulations, and industry standards such as GDPR, CCPA, HIPAA, and data residency requirements. Compliance is not a one‑time effort—it requires sustained controls, evidence, and operational discipline.
+- **Regulatory compliance**: Regulatory compliance requires adherement to laws, regulations, and industry standards such as GDPR, CCPA, HIPAA, and data residency requirements. Compliance isn't a one‑time effort—it requires sustained controls, evidence, and operational discipline.
 
 You can meet both of these requirements with:
 
@@ -96,7 +96,7 @@ Security disciplines represent the structured areas of accountability required t
 **Discipline** | **Action**
 --- | ---
 [**SecOps**](security-adoption-discipline-security-operations.md) | Prioritize monitoring and mitigation based on the most frequent and impactful security incidents, using threat intelligence from SecOps and external sources. Continuously improve detection and response capabilities.
-[**Security posture management**](security-adoption-discipline-posture.md) | Continuously assess, measure, and improve security posture across the organization. <br/><br/>mplement tools like [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) and Secure Score to track progress.<br/><br/> Prioritize remediation based on risk and business impact.
+[**Security posture management**](security-adoption-discipline-posture.md) | Continuously assess, measure, and improve security posture across the organization. <br/><br/>Implement tools like [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) and Secure Score to track progress.<br/><br/> Prioritize remediation based on risk and business impact.
 
 ## Required technology pillars
 
@@ -106,15 +106,15 @@ Technology pillars represent the core Microsoft security capabilities that suppo
 
 **Pillar** | **Security Exposure Management** | **GitHub Advanced Security** | **Priva**
 --- | --- | --- | ---
-**Identity** | Microsoft Security Exposure Management identifies identity-related risks including overprivileged accounts, stale credentials, and attack paths that use identity misconfigurations. | By detecting hard‑coded credentials and API keys in source code, GitHub Advanced Security reduces identity‑based risk caused by credential exposure. Integration with repository access controls ensures only authorized users can modify sensitive code. | Microsoft Priva integrates with Microsoft Entra to track which identities access personal data and supports subject rights requests to help individuals exercise control over their personal information. 
+**Identity** | Microsoft Security Exposure Management identifies identity-related risks including overprivileged accounts, stale credentials, and attack paths that use identity misconfigurations. | GitHub Advanced Security detects hard‑coded credentials and API keys in source code to reduce identity‑based risk caused by credential exposure. Integration with repository access controls ensures only authorized users can modify sensitive code. | Microsoft Priva integrates with Microsoft Entra to track which identities access personal data and supports subject rights requests to help individuals exercise control over their personal information. 
 **Endpoints** |  Microsoft Security Exposure Management aggregates endpoint vulnerabilities, misconfigurations, and exposure risks, providing a unified view of device security posture. | NA |  Microsoft Priva monitors personal data handling on endpoints and helps identify privacy risks from data stored on user devices.
 **Networks** | Microsoft Security Exposure Management maps network attack surfaces, identifies exposed services, and highlights network segmentation gaps that could enable lateral movement. | NA |  Microsoft Priva helps identify when personal data moves across network boundaries and supports data transfer assessments for cross-border compliance.
 **Apps** | Microsoft Security Exposure Management discovers application vulnerabilities, risky configurations, and shadow IT to help secure the application attack surface. | Code scanning (SAST) in GitHub Advanced Security identifies security vulnerabilities and coding errors before release, reducing the number of exploitable flaws in deployed applications. Security campaigns and Copilot Autofix help teams remediate issues at scale, supporting consistent application security standards.|  Microsoft Priva discovers personal data across Microsoft 365 applications and provides visibility into how personal information is used within collaboration tools.
-**Data** |  Microsoft Security Exposure Management identifies data exposure risks including overshared files, sensitive data in vulnerable locations, and data-related attack paths. | Secret scanning detects exposed credentials, tokens, and connection strings in repositories, while push protection helps prevent new leaks before they are committed. This reduces the risk of data access via leaked secrets and supports compliance with data protection requirements.| Microsoft Priva provides privacy-focused capabilities including personal data discovery, privacy risk management, subject rights request automation, and consent management.
+**Data** |  Microsoft Security Exposure Management identifies data exposure risks including overshared files, sensitive data in vulnerable locations, and data-related attack paths. | Secret scanning detects exposed credentials, tokens, and connection strings in repositories, while push protection helps prevent new leaks before they're committed. This reduces the risk of data access via leaked secrets and supports compliance with data protection requirements.| Microsoft Priva provides privacy-focused capabilities including personal data discovery, privacy risk management, subject rights request automation, and consent management.
 **Infrastructure** | Microsoft Security Exposure Management provides visibility into cloud and on-premises infrastructure vulnerabilities, misconfigurations, and compliance gaps across multicloud environments. | Dependency scanning and dependency review identify known vulnerabilities in open‑source components and configuration files before infrastructure or applications are deployed, reducing inherited risk and supporting secure‑by‑default infrastructure posture.| Microsoft Priva extends privacy visibility to data stored across cloud infrastructure, helping organizations maintain privacy compliance in multicloud environments.
 **AI** | Microsoft Security Exposure Management applies AI to model attack paths, prioritize risks based on exploitability and business impact, and provide intelligent recommendations for posture improvements. | GitHub Advanced Security scans AI‑assisted and human‑written code alike, helping teams maintain security standards as AI accelerates development. AI‑assisted remediation accelerates fixing vulnerabilities without bypassing security controls.| Microsoft Priva supports privacy compliance for AI workloads by helping organizations understand how personal data is used in AI training and inference scenarios.
 
 
-## What's next?
+## Next steps
 
 [Review security disciplines](security-adoption-discipline-overview.md).

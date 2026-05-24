@@ -60,7 +60,7 @@ We recommend Windows 11 or Windows 10 (version 2004 or later), as Azure is desig
 - Join Microsoft Entra ID directly.
 - Configure on-premises Active Directory domain-joined devices to [automatically and silently register with Microsoft Entra ID](/entra/identity/devices/hybrid-join-plan)
 
-For personal (bring your own device or BYOD) Windows devices, users can use **Add work or school account**. Google Chrome users on Windows 11 or Windows 10 devices need to [install an extension](https://chromewebstore.google.com/detail/microsoft-single-sign-on/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) to get the same smooth sign-in experience as Microsoft Edge users.
+For personal (bring your own device (BYOD)) Windows devices, users can use **Add work or school account**. Google Chrome users on Windows 11 or Windows 10 devices need to [install an extension](https://chromewebstore.google.com/detail/microsoft-single-sign-on/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) to get the same smooth sign-in experience as Microsoft Edge users.
 
 ### iOS/iPadOS devices
 

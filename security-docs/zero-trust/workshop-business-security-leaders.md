@@ -83,7 +83,7 @@ There are also a number of free videos available for this workshop.
 > [!NOTE]
 > The Architecture Design session modules discussed in the video aren't yet published for the free workshop.
 
-## What's next?
+## Next steps
 
 Reach out to Microsoft Unified, or take a look at our [free CISO workshop videos](workshop-business-security-leaders-video.md).
 

@@ -1,7 +1,7 @@
 ---
 title: Enable secure remote work
 description: Use the Microsoft security adoption model to enable secure remote work based on Zero Trust principles.
-ms.date: 04/27/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -36,7 +36,7 @@ This article is part of a [structured adoption model](security-adoption-model.md
 - Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
 
     Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
-    Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
+    Work through each discipline to understand what needs to be planned, designed, and implemented across the organization.
 
 - Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity, endpoints, and data.
 
@@ -60,7 +60,7 @@ The value of secure remote work varies by role, but benefits the entire organiza
 | --- | --- |
 |**Business leadership**| Secure remote work enables business continuity and resilience by allowing employees to work productively from any location without increasing security or compliance risk. By shifting from perimeter-based security to an identity- and data-centric Zero Trust model, organizations reduce the likelihood of data breaches and regulatory violations while maintaining agility during disruptions. This approach supports workforce flexibility, protects organizational reputation, and enables expansion without geographic constraints.|
 |**Technology roles**| Secure remote work provides a scalable, centralized framework to manage and protect a distributed environment. Identity, device, and application–based controls improve visibility across users and endpoints, while automated policy enforcement reduces operational overhead. Centralized management and automation simplify access control, accelerate incident response and recovery, and enable IT teams to support remote work reliably without increasing complexity or operational risk.|
-|**Security roles**| Secure remote work allows security teams to modernize architecture and operations using Zero Trust principles, enabling business agility while improving visibility into risk and threats. Comprehensive identity, device, and application telemetry delivers actionable insights beyond traditional network data. Asset- and data-centric controls protect sensitive information across all locations, reducing the likelihood of breaches and regulatory violations through strong identity verification, device health validation, and contextual access enforcement.|
+|**Security roles**| Secure remote work allows security teams to modernize architecture and operations using Zero Trust principles, enabling business agility while improving visibility into risk and threats. Comprehensive identity, device, and application telemetry deliver actionable insights beyond traditional network data. Asset- and data-centric controls protect sensitive information across all locations, reducing the likelihood of breaches and regulatory violations through strong identity verification, device health validation, and contextual access enforcement.|
 
 ## Align security disciplines
 
@@ -100,7 +100,7 @@ Security disciplines represent the structured areas of accountability required t
 Technology pillars represent the core Microsoft security capabilities that support this business scenario.
 
 
-**Technlogy pillar** | **Microsoft Entra** | **Microsoft Intune**
+**Technology pillar** | **Microsoft Entra** | **Microsoft Intune**
 --- | --- | ---
 **Cross-pillar** | Enforces access decisions using identity, authentication, and risk signals across all technology pillars. | Provides device compliance and security signals that are used to enforce access decisions across all technology pillars.
 **Identity** | Manages identities, authentication, and identity protection, including risk detection and Conditional Access policy evaluation. |  Integrates with Microsoft Entra to ensure only authenticated users can enroll and manage devices.
@@ -111,6 +111,6 @@ Technology pillars represent the core Microsoft security capabilities that suppo
 **Infrastructure** | Microsoft Entra Workload ID helps secure the applications, service principals, and managed identities used to access your apps and infrastructure. | Extends management and security policies to cloud PCs, virtual desktops, and hybrid endpoints.
 **AI** | Microsoft Entra Agent ID extends the comprehensive security capabilities of Microsoft Entra to agents, enabling organizations to build, discover, govern, and protect agent identities. | Microsoft Intune applies AI-driven insights through endpoint analytics to proactively identify device health issues, optimize user experience, and recommend security improvements.
 
-## What's next?
+## Next steps
 
 [Learn how to implement secure remote work](deploy/identity.md) to design a privileged access architecture.

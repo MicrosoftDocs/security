@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.topic: article
 ms.service: security
 ms.subservice: zero-trust
-ms.date: 04/05/2026
+ms.date: 05/24/2026
 
 #customer intent: As a security business leader and adopter, I want to understand the Zero Trust principles that underline Microsoft's security adoption and implementation guidance.
 ---
@@ -51,7 +51,7 @@ When applied consistently, Zero Trust leads to clear, consistent, and measurable
 
 Traditional security models rely on network boundaries, assume that assets inside the perimeter are safer than those outside, and see security as the responsibility of the security team.
 
-While such models were effective against older threats such as network scanning and direct exploitation, they're insufficient today because modern attacks use identity compromise, phishing, and session hijacking, and aren't dependent on network location.
+While such models were effective against older threats such as network scanning and direct exploitation, they aren't sufficient today because modern attacks use identity compromise, phishing, and session hijacking, and aren't dependent on network location.
 
 Zero Trust replaces this model by:
 
@@ -96,7 +96,7 @@ A structured approach to adoption ensures that Zero Trust principles are applied
 
 :::image type="content" source="./media/zero-trust-principles-adoption.png" alt-text="Diagram of Zero Trust principles applied to security adoption, showing connections between business scenarios, security disciplines, and technology pillars." lightbox="./media/zero-trust-principles-adoption.png":::
 
-## What's next?
+## Next steps
 
 - To get started with structured adoption, follow our [Zero Trust adoption path](security-adoption-model.md).
 - To dive into critical security outcomes, start with our [business scenarios](security-adoption-business-scenarios-overview.md).

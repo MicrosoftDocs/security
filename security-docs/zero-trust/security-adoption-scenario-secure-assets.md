@@ -1,11 +1,11 @@
 ---
 title: Identify and protect critical business assets
 description: Use the Microsoft security adoption model to secure critical assets based on Zero Trust principles and security best practices.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand I can use the Microsoft security adoption model to protect my critical organizational resources and assets.
@@ -35,7 +35,7 @@ This article is part of a [structured adoption model](security-adoption-model.md
 - Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
 
     Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
-    Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
+    Work through each discipline to understand what needs to be planned, designed, and implemented across the organization.
 
 - Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
 
@@ -51,7 +51,7 @@ This diagram illustrates how these business critical assets must be secured at a
 
 Not all systems and data carry equal business impact. Business‑critical assets fall into two categories:
 
-- **High value assets** - High‑value assets are systems and data whose compromise could cause severe financial or operational damage, up to and including bankruptcy or insolvency, and are . These assets are often targeted for theft, extortion, or destruction.
+- **High value assets** - High‑value assets are systems and data whose compromise could cause severe financial or operational damage, up to and including bankruptcy or insolvency. These assets are often targeted for theft, extortion, or destruction.
 - **Privileged access** -  Privileged access represents concentrated risk—identities, accounts, and tools that control high‑value assets. Compromise of privileged access (via IT admin accounts, workstations, and other systems) enables widespread impact and must be protected at the same level or above the level of high‑value assets.
 
 ## Business value 
@@ -111,6 +111,6 @@ Technology pillars represent the core Microsoft security capabilities that suppo
 **AI** | Microsoft Purview provides AI security and governance capabilities including AI Hub for visibility into AI usage, sensitivity labels for AI-generated content, and compliance controls for Copilot and other AI services. | Microsoft Entra secures access to AI services by enforcing identity verification, access policies, and governance over who can access and configure AI workloads.
 
 
-## What's next?
+## Next steps
 
 [Learn about protecting privileged access](security-adoption-scenario-privileged-access.md).

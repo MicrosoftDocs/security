@@ -4,9 +4,10 @@ description: Learn how Microsoft expert-led workshops simplify security moderniz
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 05/05/2026
+ms.date: 05/24/2026
 ms.author: raynew
 author: rayne-wiselman
+#customer intent: As a security leader, I want to understand to to leverage the security adoption workshops to adopt and modernize security across my organization. 
 ---
 
 # Microsoft security adoption workshops
@@ -97,6 +98,6 @@ The table summarizes publically available SAF workshop resources.
 [**SecOps Workshop**](workshop-business-security-operations.md) | This workshop helps accelerate and modernization SecOps across the business. It aligns to the [security operations (SecOps/SOC)*](security-adoption-discipline-security-operations.md) discipline that we use during security adoption.
 [**Microsoft Cybersecurity Reference Architectures (MCRA)**](microsoft-reference-architecture.md) | MRCA provides a set of technical architectures that can help to you plan and adopt recommended security architectures. It aligns to the [security architecture](security-adoption-discipline-architecture.md) discipline. 
 
-## What next?
+## Next steps
 
 Reach out to Microsoft Unified, or take a look at our [free CISO workshop videos](workshop-business-security-leaders-video.md).

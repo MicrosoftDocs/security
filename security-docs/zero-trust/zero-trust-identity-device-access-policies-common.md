@@ -2,31 +2,15 @@
 title: Zero Trust Identity and Device Access Policies for Microsoft 365
 description: Learn about Zero Trust identity and device access policies for Microsoft 365, including configurations and benefits for secure deployments.
 ms.subservice: zero-trust
-
 ms.service: security
 ms.topic: best-practice
 ms.reviewer: martincoetzer
-ms.custom:
-  - it-pro
-  - goldenconfig
-ms.collection:
-  - M365-identity-device-management
-  - m365-security
-  - remotework
-  - m365solution-identitydevice
-  - m365solution-scenario
-  - zerotrust-solution
-  - tier2
 ms.date: 06/18/2025
 ---
 
-# Common security policies for Microsoft 365 organizations
+# Common security policies for Microsoft 365 
 
-Many organizations have questions when deploying Microsoft 365 in a secure fashion. The Conditional Access, app protection, and device compliance policies in this article are based on Microsoft's recommendations and the three guiding principles of [Zero Trust](zero-trust-overview.md):
-
-- Verify explicitly
-- Use least privilege
-- Assume breach
+Many organizations have questions when deploying Microsoft 365 in a secure fashion. The Conditional Access, app protection, and device compliance policies in this article are based on Microsoft's recommendations and the three guiding principles of [Zero Trust](zero-trust-overview.md).
 
 Organizations can use these policies as is or customize them to fit their needs. Test your policies in a nonproduction environment to identify potential effects and communicate them to users before rolling them out to production. Testing is critical to identify and communicate possible effects to users.
 

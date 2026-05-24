@@ -1,12 +1,14 @@
 ---
 title: Microsoft Zero Trust Workshop
 description: Learn about the Microsoft Zero Trust Workshop
-ms.date: 04/18/2024
+ms.date: 05/24/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
+
+#customer intent: As a security implementer, I want to understand how the Zero Trust implementation workshops can help me to deploy security controls that align with Zero Trust principles and security best practices.
 ---
 
 # The Microsoft Zero Trust Workshop
@@ -92,3 +94,6 @@ The Workshop has a number of components:
 
 The Workshop is maintained and regularly updated by Microsoft on GitHub as a community-style resource. It's provided "as-is" with best effort, and isn't formally supported via Microsoft support. For questions on the preview Zero Trust Assessment tool, [raise an issue on the assessment github page](https://github.com/microsoft/zerotrustassessment/issues).
 
+## Next steps
+
+Begin the [SecOps workshop](https://zerotrust.microsoft.com/).

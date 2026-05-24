@@ -1,12 +1,14 @@
 ---
 title: Microsoft Zero Trust Workshop - Devices
 description: Learn about the Devices pillar in the Microsoft Zero Trust Workshop
-ms.date: 04/18/2024
+ms.date: 05/24/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
+
+#customer intent: As a security implementer, I want to understand how the Device Security Zero Trust workshop can help with devices deployment that's aligned with Zero Trust principles and security best practices.
 ---
 
 # Device security in the Microsoft Zero Trust Workshop
@@ -37,6 +39,6 @@ The Devices workshop covers the implementation areas summarized in the table.
 
 The Zero Trust Assessment tool can assess your device configuration against a range of security best practices. [Learn more](/security/zero-trust/assessment/overview).
 
-## What's next?
+## Next steps
 
 [Run an assessment](assessment/get-started.md), and begin the [Devices workshop](https://zerotrust.microsoft.com/).

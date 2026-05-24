@@ -552,6 +552,8 @@
       href: secure-iaas-apps.md
     - name: Deploy Azure Storage with Zero Trust
       href: azure-infrastructure-storage.md
+    - name: Protect Microsoft 365 workloads with Zero Trust
+      href: microsoft-365-zero-trust.md
     - name: Integrate with Microsoft solutions
       href: integrate/infrastructure.md
   - name: Secure networks
@@ -655,7 +657,7 @@
 - name: Resources
   expanded: false
   items:
-  - name: Illustrations for IT architects and implementers
+  - name: Zero Trust illustrations
     href: zero-trust-tech-illus.md
   - name: Zero Trust Essentials Video Series
     href: https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu

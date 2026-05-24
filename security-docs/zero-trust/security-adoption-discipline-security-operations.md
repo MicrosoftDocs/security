@@ -125,7 +125,7 @@ Key collaborators include:
 Effective SecOps depends on tight feedback loops between incident response and system design.
 
 
-## Alignment with other disciples
+## Alignment with other disciplines
 
 SecOps operates as part of a broader security operating model and is tightly integrated with other disciplines:
 

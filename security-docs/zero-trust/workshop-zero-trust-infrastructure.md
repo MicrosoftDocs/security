@@ -1,12 +1,14 @@
 ---
 title: Microsoft Zero Trust Workshop - Infrastructure
 description: Learn about the Infrastructure pillar in the Microsoft Zero Trust Workshop
-ms.date: 04/18/2024
+ms.date: 05/24/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
+
+#customer intent: As a security implementer, I want to understand how the Infrastructure Security Zero Trust workshop can help with infrastructure deployment that's aligned with Zero Trust principles and security best practices.
 ---
 
 # Infrastructure security in the Microsoft Zero Trust Workshop
@@ -31,6 +33,6 @@ The Infrastructure workshop covers the implementation areas summarized in the ta
 **Integrate infrastructure signals into security operations (SecOps)**  |  Stream posture findings, runtime alerts, and threat signals into centralized monitoring and response systems. <br/><br/>Correlate infrastructure data with identity, device, network, and data signals to support investigation and response.
 
 
-## What's next?
+## Next steps
 
 Begin the [Infrastructure workshop](https://zerotrust.microsoft.com/).

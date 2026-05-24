@@ -1,7 +1,7 @@
 ---
 title: Learn about the Microsoft business planning SecOps workshop
 description: Learn how the Microsoft SecOps business planning workshop can help you on your journey to modernize security operations.
-ms.date: 04/18/2024
+ms.date: 05/24/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
@@ -64,7 +64,7 @@ The workshop should include stakeholders who collectively represent all aspects 
 
 ## SecOps workshop agenda
 
-A SecOps adoption workshop typically covers the following topics. The intent is to create shared understanding and direction—not to deep‑dive into detailed implementation.
+A SecOps adoption workshop typically covers the following articles. The intent is to create shared understanding and direction—not to deep‑dive into detailed implementation.
 
 1. **Define SecOps mission and success** - Align on what success looks like for SecOps and how it supports organizational goals, risk management, and Zero Trust outcomes. Starting here anchors all later discussions.
 1. **Review the current SecOps/SOC approach** - Establish a common view of the existing SecOps environment, including:
@@ -122,7 +122,7 @@ Microsoft Unified offers the following:
 
 Contact your Microsoft representative (customer success account manager) for more information on these workshops. 
 
-## What's next?
+## Next steps
 
 - [Review the SecOps discipline](security-adoption-discipline-security-operations.md).
 - [Review common business scenarios](security-adoption-business-scenarios-overview.md) to get started with security adoption.

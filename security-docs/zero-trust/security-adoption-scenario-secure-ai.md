@@ -1,11 +1,11 @@
 ---
 title: Adopt and secure AI and data 
 description: Use the Microsoft security adoption model to rapidly adopt and secure AI based on Zero Trust principles.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand I can use the Microsoft security adoption model to quickly adopt and secure AI, including data.
@@ -34,7 +34,7 @@ This article is part of a [structured adoption model](security-adoption-model.md
 - Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
 
     Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
-    Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
+    Work through each discipline to understand what needs to be planned, designed, and implemented across the organization.
 
 - Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
 
@@ -53,7 +53,7 @@ Generative AI technologies and AI agents are powerful business enablers, but the
 
 To enable AI safely while managing these risks, organizations must do two things in parallel:
 
-- **Secure AI technology** - Adopt new security controls and practices specifically designed for AI, while reprioritizing existing security investments. For example:
+- **Secure AI technology** - Adopt new security controls and practices designed for AI, while reprioritizing existing security investments. For example:
 
     - Classify and protect sensitive data to prevent unauthorized disclosure through AI models, applications, or users.
     - Apply Zero Trust principles to AI identities, access, and data flows.
@@ -109,7 +109,7 @@ Security disciplines represent the structured areas of accountability required t
 
 **Discipline** | **Action**
 --- | ---
-[**SecOps**](security-adoption-discipline-security-operations.md) | Prepare for higher quality and higher volume of established attack techniques.<br/><br/> Integrate AI analysis to amplify and augment human activities and skills for investigating, hunting for, and simulating threats.<br/><br/>Use AI to increase skills readiness of junior analysts. Prioritize security activities using business priorities as well as threat intelligence insights.
+[**SecOps**](security-adoption-discipline-security-operations.md) | Prepare for higher quality and higher volume of established attack techniques.<br/><br/> Integrate AI analysis to amplify and augment human activities and skills for investigating, hunting for, and simulating threats.<br/><br/>Use AI to increase skills readiness of junior analysts. Prioritize security activities using business priorities and threat intelligence insights.
 [**Security posture management**](security-adoption-discipline-posture.md) | Focus on rapidly building and maturing this discipline to address increasing quality and volume of attacks accelerated by AI.<br/><br/> Integrate use of AI to more quickly analyze data, identify mitigations, and increase skills readiness of posture management professionals.
 
 ## Required technical pillars
@@ -120,6 +120,6 @@ Technology pillars represent the core Microsoft security capabilities that suppo
 --- | --- | ---
 **AI** | Microsoft Purview provides AI security and governance capabilities including AI Hub for visibility into AI usage, sensitivity labels for AI-generated content, and compliance controls for Copilot and other AI services. | GitHub Advanced Security applies AI-powered code analysis through Copilot Autofix to automatically suggest security fixes for identified vulnerabilities, accelerating remediation.
 
-## What's next?
+## Next steps
 
 [Learn how to secure Microsoft Copilot](copilots/apply-zero-trust-copilots-overview.md).

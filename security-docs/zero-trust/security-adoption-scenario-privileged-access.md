@@ -1,7 +1,7 @@
 ---
 title: Secure and govern privileged admin access to critical systems
 description: Use the Microsoft security adoption model to secure and govern privileged admin access to critical systems across the organization.
-ms.date: 04/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -23,7 +23,7 @@ As a business leader, you must ensure that the systems, data, and access pathway
 
 A key outcome of protecting critical business assets is securing the privileged access that controls them. Privileged identities and access pathways represent concentrated risk because they provide administrative control over critical systems and data. If compromised, they can enable widespread impact across the organization.
 
-This guidance helps you organization reduce rusk by strengthening control over privileged access, ensuring that your most sensitive systems and data are only accessible through tightly governed and securely enforced access pathways.
+This guidance helps your organization reduce risk by strengthening control over privileged access, ensuring that your most sensitive systems and data are only accessible through tightly governed and securely enforced access pathways.
 
 ## How this guidance works
 
@@ -98,7 +98,7 @@ Implementing a modern privileged access strategy delivers measurable business ou
 
 - **Reduce the risk of high-risk breaches**: Privileged accounts enable broad system access. Securing them significantly reduces the likelihood and impact of human-operated ransomware and large‑scale disruption.
 - **Control administrative attack paths**: Limiting and isolating privileged access paths makes it harder for attackers to escalate privileges. By strictly controlling administrative pathways, organizations make it more difficult and costly for attackers to move across the environment.
-- **Protect high‑value systems and devices**: Protecting identity and administrative systems, and secure devices reduces the risk of compromise from less secure devices and systems.  
+- **Protect high‑value systems and devices**: Protecting identity and administrative systems, and securing devices reduces the risk of compromise from less secure devices and systems.  
 - **Strengthen governance and compliance**: Privileged access controls provide visibility into privileged access use and risk management. This visibility support auditing, accountability, and alignment with compliance requirements.
 
     Structured security levels simplify adoption, reduce configuration errors, and provide consistent control enforcement across the organization.
@@ -140,7 +140,7 @@ Security disciplines represent the structured areas of accountability required t
 [**SecOps**](security-adoption-discipline-security-operations.md) | Monitor and investigate privileged activity to quickly detect, contain, and respond to misuse or compromise of administrative access.
 [**Security posture management**](security-adoption-discipline-posture.md) | Continuously assess privileged access configurations and exposure to identify risks, enforce best practices, and drive ongoing security improvement.
 
-## What's next?
+## Next steps
 
 [Learn how relevant disciplines work together](security-adoption-discipline-identity-access-privileged-model.md) to design a privileged access architecture.
 

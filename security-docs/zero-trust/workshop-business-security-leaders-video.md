@@ -1,15 +1,13 @@
 ---
 title: Microsoft security CISO workshop videos
 description: Review the videos for the Microsoft security CISO workshop.
-
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: conceptual
-ms.date: 09/30/2025
-ms.author: joflore
+ms.date: 05/24/2026
+ms.author: raynew
 author: MicrosoftGuyJFlo
-ms.reviewer: mas
-# edited: YES
+
 
 #customer intent: As a security leader, I want to use the self-service CISO workshop videos to understand how to get started with Zero Trust security modernization. 
 ---
@@ -74,7 +72,7 @@ These videos discuss how to engage business leaders on security, align to busine
 
 ### Engaging business leaders on security
 
-Engaging business leaders on security topics can be tricky. This video uses a role playing approach to help security leaders take a straightforward approach with business leaders in their language. This video discusses attacks and risks in business language, recommendations for measuring security program success, and asking for key business leader support that security teams need. This conversation helps you position security as an enabler and a partner to the larger organization.  
+Engaging business leaders on security articles can be tricky. This video uses a role playing approach to help security leaders take a straightforward approach with business leaders in their language. This video discusses attacks and risks in business language, recommendations for measuring security program success, and asking for key business leader support that security teams need. This conversation helps you position security as an enabler and a partner to the larger organization.  
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=2e4ab785-460f-4a81-83e7-efabfa6ccd04]
 
@@ -150,6 +148,6 @@ Wrap-up of the workshop with key quick wins and next steps.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=407fd10c-ef1d-4a4b-829d-2ecec1457952]
 
-## What's next?
+## Next steps
 
 There are a number of approaches to get started with security adoption. [Review the options](security-adoption-journey.md).

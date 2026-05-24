@@ -1,10 +1,11 @@
 ---
 title: Privileged access
 description: Get a primer overview of privileged access
-ms.date: 02/24/2025
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
+#customer intent: As a business leader or security adopter, I want understand the important of privileged access in our security priorities
 ---
 
 # Overview - privileged access
@@ -29,20 +30,20 @@ Once privileged access is obtained, the attacker can operate with  speed and sca
 This is why modern security models treat privileged access differently:
 
 - **It must be explicitly controlled**.
-    For example, define privileged roles and onboarding through identity governance and privileged identity management (PIM), requiring approval and time-bound elevation nstead of permanent role assignments.
+    For example, define privileged roles and onboarding through identity governance and privileged identity management (PIM), requiring approval and time-bound elevation instead of permanent role assignments.
 - **It must be isolated from normal activity**.
     For example, use separate administrative accounts and dedicated privileged access devices (PAWs) so privileged actions never occur from standard user sessions or unmanaged devices.
 - **It must be continuously monitored**.
     For example, send privileged sign-ins, role activations, and policy changes to monitoring tools like Microsoft Sentinel to detect unusual usage patterns and trigger alerts or automated response.
 - **It must be agreed that privileged access is a primary target of compromise**.
-    For example, protect all privileged accounts with strong multifactor authentication (MFA), no standing access, and break-glass account controls, assuming attackers will attempt credential theft and privilege escalation.
+    For example, protect all privileged accounts with strong multifactor authentication (MFA), no standing access, and break-glass account controls, assuming attackers attempt credential theft and privilege escalation.
     
 
 Protecting privileged access requires looking beyond just roles and accounts to understanding all components that have privileged access. This includes:
 
 - The identity control plane.
 - Privileged devices, apps, and interfaces.
-- Intermediary systems such as VPNs, PIM and privileged access management (PAM) systems.
+- Intermediary systems such as VPNs, PIM, and privileged access management (PAM) systems.
 
 Together, these define how control is exercised—and how it must be protected. 
 
@@ -75,7 +76,7 @@ These roles and permissions can be used to delegate management of directory reso
 
 ## Privileged access workstations
 
-A Privileged Access Workstation (PAW) is a dedicated, hardened device used only for performing administrative tasks. It is separate from normal user devices and is tightly secured to reduce the risk of credential theft, malware, or lateral movement.
+A Privileged Access Workstation (PAW) is a dedicated, hardened device used only for performing administrative tasks. It's separate from regular user devices and is tightly secured to reduce the risk of credential theft, malware, or lateral movement.
 PAWs enforce key protections such as:
 
 - Strong authentication (for example, Windows Hello for Business)
@@ -94,11 +95,11 @@ As shown in the diagram, all administrative actions flow through the PAW and are
 **Control** | **Implementation**
 --- | ---
 **Explicitly controlled** | Administrative access is granted only through policy-based identity controls, requiring strong authentication and approved, time-bound elevation.<br/></br> Device state must also meet compliance requirements before access is allowed.
-**Isolated from normal activity** | Privileged operations are restricted to a dedicated PAW device with tightly controlled usage and connectivity. The PAW is not used for general productivity and has restricted internet access and secure remote connectivity to sensitive systems.
+**Isolated from normal activity** | Privileged operations are restricted to a dedicated PAW device with tightly controlled usage and connectivity. The PAW isn't used for general productivity, with restricted internet access and secure remote connectivity to sensitive systems.
 **Continuously monitored** |All identity activity, device state, and endpoint behavior are continuously collected and analyzed, enabling detection of abnormal privileged activity and rapid response.
-**Assumed to be targeted** | The environment is hardened and continuously validated, assuming attackers will target privileged access. Devices are kept up to date, secure bootstrapping is enforced.
+**Assumed to be targeted** | The environment is hardened and continuously validated, assuming attackers target privileged access. Devices are kept up to date, secure bootstrapping is enforced.
 
 
 ## Next steps
 
-Deploy a [privileged access architecture](adopt/implement-privileged-access.md)
+Deploy a [privileged access architecture](adopt/implement-privileged-access.md).

@@ -1,7 +1,7 @@
 ---
 title: Phishing investigation playbook
 description: Understand how to use a phishing investigation playbook.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: MicrosoftGuyJFlo
@@ -114,7 +114,7 @@ Use this checklist as a quality gate during the investigation.
 
 Based on findings:
 
-1. Remove phishing messages from all mailboxesDisable or reset .
+1. Remove phishing messages from all mailboxesDisable or reset.
 1. compromised accounts.
 1. Revoke active sessions and tokens.
 1. Block malicious senders, domains, and URLs.
@@ -132,7 +132,7 @@ Recovery actions may include:
 - Updating detections and alerts
 - Updating or refining phishing response playbooks
 
-## What's next?
+## Next steps
 
 [Learn more](security-adoption-discipline-security-operations.md) about the SecOps discipline.
 

@@ -1,17 +1,19 @@
 ---
 title: Microsoft Zero Trust Workshop - AI security
 description: Learn about the AI security pillar in the Microsoft Zero Trust Workshop
-ms.date: 04/18/2024
+ms.date: 05/24/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
+
+#customer intent: As a security implementer, I want to understand how the AI Security Zero Trust workshop can help with an AI deployment that's aligned with Zero Trust principles and security best practices.
 ---
 
 # AI security in the Microsoft Zero Trust Workshop
 
-In a Zero Trust architecture, AI introduces new risks and considerations across data, identities, applications, and user interactions. Securing AI is not only about protecting the underlying models and services, but also ensuring that how AI systems are accessed, used, and governed aligns with Zero Trust principles. The AI pillar focuses on controlling access to AI systems, protecting sensitive data used by AI, and monitoring AI usage to reduce risk.
+In a Zero Trust architecture, AI introduces new risks and considerations across data, identities, applications, and user interactions. Securing AI isn't only about protecting the underlying models and services, but also ensuring that how AI systems are accessed, used, and governed aligns with Zero Trust principles. The AI pillar focuses on controlling access to AI systems, protecting sensitive data used by AI, and monitoring AI usage to reduce risk.
 
 AI pillar guidance focuses on governing AI usage, protecting data interactions with AI systems, enforcing access controls, preventing data leakage, and monitoring AI-related activity across the organization.
 
@@ -34,6 +36,6 @@ The AI workshop covers the implementation areas summarized in the table.
 **Establish AI governance and risk management processes**  |  Define policies, roles, and oversight mechanisms for responsible AI use. <br/><br/>Address AI-specific risks such as prompt injection, data exposure, and misuse. <br/><br/>Continuously assess risks related to AI adoption and update controls as the threat landscape evolves.
 
 
-## What's next?
+## Next steps
 
 Begin the [AI workshop](https://zerotrust.microsoft.com/).

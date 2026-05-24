@@ -1,7 +1,7 @@
 ---
 title: Minimize business damage from security incidents
 description: Use the Microsoft security adoption model to minimize impact from security threats based on Zero Trust principles and security best practices.
-ms.date: 05/1/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -31,7 +31,7 @@ This article is part of a [structured adoption model](security-adoption-model.md
 - Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
 
     Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
-    Work through each discpline to understand what needs to be planned, designed, and implemented across the organization.
+    Work through each discipline to understand what needs to be planned, designed, and implemented across the organization.
 
 - Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
  
@@ -45,7 +45,8 @@ Security success is attacker failure, but you can't guarantee that you stop ever
 - **Respond** effectively when they happen to limit damage, and rapidly recover business assets and services.
 - **Learn** to apply lessons learned and continuously increase resilience.
 
-:::image type="content" source="./media/security-adoption-minimize-damage-success.png" alt-text="Diagram showing security success equals attacker failure through a continuous cycle of prevent attacks, respond and recover when attacks succeed, and learn to improve resilience." lightbox="./media/security-adoption-minimize-damage-success.png":::
+:::image type="content" source="./media/security-adoption-minimize-damage-success.png" alt-text="Diagram showing security success equals attacker failure through a continuous cycle of prevent attacks, respond and recover when attacks succeed, and learn to improve resilience" lightbox="./media/security-adoption-minimize-damage-success.png":::
+
 
 
 
@@ -110,6 +111,6 @@ Technology pillars represent the core Microsoft security capabilities that suppo
 **AI** | Applies AI-driven investigation and automated attack disruption across correlated signals to accelerate detection and response. | Applies analytics and machine learning to prioritize threats and reduce noise across large-scale data sets.
 
 
-## What's next?
+## Next steps
 
 [Review security disciplines](security-adoption-discipline-overview.md).

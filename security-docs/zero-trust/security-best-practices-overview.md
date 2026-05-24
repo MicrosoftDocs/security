@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.topic: article 
 ms.service: security
 ms.subservice: zero-trust
-ms.date: 04/29/2026
+ms.date: 05/24/2026
 
 #customer intent: As a Microsoft security platform adopter, I want to understand the range of security best practices that drive Microsoft security guidance.
 ---
@@ -28,7 +28,7 @@ Zero Trust principles are reinforced through a combination of engineering best p
 
 - **[Microsoft Entra security recommendations](/entra/fundamentals/configure-security)** 
     
-    Check identity and app security configuration and posture. Recommendations ap to SFI themes. These best practices are included in the [Zero Trust Assessment tool](assessment/overview.md). 
+    Check identity and app security configuration and posture. Recommendations aligns to SFI themes. These best practices are included in the [Zero Trust Assessment tool](assessment/overview.md). 
 
 - **[Microsoft Intune device security recommendations](/intune/intune-service/protect/zero-trust-configure-security)**
 
@@ -52,9 +52,9 @@ Zero Trust principles are reinforced through a combination of engineering best p
 - External best practices and framework also provide Zero Trust security principles and guidance. [Learn more](security-zero-trust-frameworks.md).
 
 
-## What's next?
+## Next steps
 
-Use the links above to dig more deeply into different types of security best practices. Or:
+Use the links provided in this article to dig more deeply into different types of security best practices. Or:
 
 - To kick off by assessing your current security posture, start with [Zero Trust assessment](assessment/overview.md).
 - To get started with structured adoption, follow our [Zero Trust adoption path](security-adoption-model.md).

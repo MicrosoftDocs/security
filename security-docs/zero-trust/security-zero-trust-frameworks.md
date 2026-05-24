@@ -1,7 +1,7 @@
 ---
 title: Align security adoption with industry Zero Trust frameworks
 description: Learn how to Microsoft's security adoption model aligns with industry-driven Zero Trust frameworks.
-ms.date: 04/27/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -26,7 +26,7 @@ Microsoft's Zero Trust adoption model does just that. It provides a reference st
 
 ## NIST Zero Trust
 
-[NIST Special Publication (SP) 800‑207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) establishes an industry-recognized definition of Zero Trust architecture. It explains what Zero Trust is and how trust decisions are made, independent of any specific vendor, product, or deployment roadmap.
+[National Institute of Standards and Technology (NIST) Special Publication (SP) 800‑207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) establishes an industry-recognized definition of Zero Trust architecture. It explains what Zero Trust is and how trust decisions are made, independent of any specific vendor, product, or deployment roadmap.
 
 NIST SP 800-207 is most useful when organizations need a common, authoritative definition of Zero Trust concepts that can be shared across security, IT, and architecture teams.
 
@@ -85,7 +85,7 @@ The [Cybersecurity and Infrastructure Security Agency (CISA) Zero Trust Maturity
 
 ### CISA features
 
-Unlike NIST, CISA does not define a reference architecture and instead evaluates capabilities independently of specific design patterns.
+Unlike NIST, CISA doesn't define a reference architecture and instead evaluates capabilities independently of specific design patterns.
 
 - The model uses pillar-based domains, including Identity, Devices, Networks/Environment, Applications/Workloads, and Data. 
 - It also defines three cross-cutting capabilities - Visibility and Analytics, Automation and Orchestration, and Governance.
@@ -97,10 +97,10 @@ Unlike NIST, CISA does not define a reference architecture and instead evaluates
 The model aligns with and informs the Microsoft security adoption model, while Microsoft further extends it by introducing disciplines such as Architecture to bridge conceptual frameworks like NIST SP 800‑207 with practical implementation.
 
 **CISA** | **Adoption discipline/pillar** | **Details**
---- | --- | --
-**Identity**<br/>Identity covers authentication, authorization, identity risk, lifecycle. Apps and workloads covers app access controls,workload identity, and secure app interaction. |  **Discipline**: Identity and Access<br/><br/>**Technology**: Identity | Access control in Microsoft spans both identity and application layers while CISA separates these.
-**Governance**<br/>Enterprise-wide policies, controls, and enforcement. |  **Discipline**: Strategy, Integratation, Governance<br/>Security Architecture<br/><br/>**Technology**: All. | CISA’s policy and control capabilities map directly to SecOps outcomes. Microsoft adds additional focus on other aspects of governance (business alignment, risk management, roles, and more), and dedicated focus on architectural discipline and reference architectures.
-**Devices**<br/>Device inventory, posture, compliance; network segmentation, secure connectivity, environmental controls. Including non‑traditional, constrained, and specialized devices. | **Discipline**: Identity and Access, Infrastructure security, OT/IoT security<br/><br/>**Technology**: Endpoints | Infrastructure trust is established through device health and controlled connectivity, aligning with the Zero Trust goal to minimize blast radius and lateral movement.<br/><br/>Microsoft considers OT/IoT devices as a dinstinct discipline due to unique ownership, and risk management reasons.
+--- | --- | ---
+**Identity**<br/>Identity covers authentication, authorization, identity risk, lifecycle. Apps and workloads cover app access controls, workload identity, and secure app interaction. |  **Discipline**: Identity and Access<br/><br/>**Technology**: Identity | Access control in Microsoft spans both identity and application layers while CISA separates them.
+**Governance**<br/>Enterprise-wide policies, controls, and enforcement. |  **Discipline**: Strategy, Integration, Governance<br/>Security Architecture<br/><br/>**Technology**: All. | CISA’s policy and control capabilities map directly to SecOps outcomes. Microsoft adds extra focus on other aspects of governance (business alignment, risk management, roles, and more), and dedicated focus on architectural discipline and reference architectures.
+**Devices**<br/>Device inventory, posture, compliance; network segmentation, secure connectivity, environmental controls. Including nontraditional, constrained, and specialized devices. | **Discipline**: Identity and Access, Infrastructure security, OT/IoT security<br/><br/>**Technology**: Endpoints | Infrastructure trust is established through device health and controlled connectivity, aligning with the Zero Trust goal to minimize blast radius and lateral movement.<br/><br/>Microsoft considers OT/IoT devices as a distinct discipline due to unique ownership, and risk management reasons.
 **Apps and workloads**<br/>Apps & Workloads covers application access controls, workload identity, and secure application interaction. | **Discipline**: Development Security<br/><br/>**Technology**: Apps | CISA’s workload focus aligns with DevSecOps goals by embedding security into application and service lifecycles, rather than treating it as a post‑deployment activity. 
 **Networks**<br/>Network segmentation, secure connectivity, environmental controls. |  **Discipline**: Identity and Access<br/><br/>**Technology**: Networks | Microsoft combines all access (identity, apps, and networks) into a single discipline to help drive clear strategy, architecture, and policy consistency across technologies.
 **Data**<br/>Data classification, inventory, access control, encryption, and protection independent of network location. | **Discipline**: Data Security<br/><br/>**Technology**: Data  | Both models place data as a primary protection target, and reinforce the Zero Trust shift from perimeter security to data‑centric controls.
@@ -140,16 +140,16 @@ This diagram shows how these capabilities align to the functions of the NIST Cyb
 The model maps to our recommended adoption model.
 
 **Open Group** | **Adoption discipline** | **Alignment**
---- | --- | --
+--- | --- | ---
 **Zero Trust Strategy & Governance**<br/><br/>Defines how organizations establish Zero Trust as a business‑aligned strategy, including governance, risk management, policy ownership, and alignment of people, process, and technology. | Strategy, Integration, and Governance | Both Open Group and Microsoft explicitly position Zero Trust as an enterprise strategy, not a technical control set. This directly supports executive alignment, ownership, and integration across the organization.
 **Capability-based Zero Trust architecture**<br/><br/>Provides architectural building blocks and capability groupings to design Zero Trust architectures, without prescribing specific technologies or products. | Security architecture | This fills the space between NIST’s abstract architecture and implementation guidance, enabling architects to translate Zero Trust principles into enterprise‑scale designs.
 **Identity, Authentication, Authorization, and Policy Enforcement capabilities**<br/><br/>Defines capabilities required to verify identity, evaluate trust dynamically, and enforce access decisions consistently across environments. | Identity and access | Aligns directly to access security as an adoption discipline: who can access what, under which conditions, and how that decision is enforced.
 **Data‑centric protection capabilities**<br/><br/>Emphasizes protection of information regardless of location, including data classification, protection, and policy‑driven access. | Data security | Mirrors Zero Trust’s shift from perimeter security to data‑centric security, aligning naturally with data protection as an adoption domain.
-**Visibility, monitoring, analytics, and response capabilities**<br/><br/>Includes capabilities for collecting telemetry, monitoring trust signals, and adapting policy based on observed risk. | SecOps | Enables continuous evaluation and enforcement — core to Zero Trust operations and security monitoring at scale.
+**Visibility, monitoring, analytics, and response capabilities**<br/><br/>Includes capabilities for collecting telemetry, monitoring trust signals, and adapting policy based on observed risk. | SecOps | Enables continuous evaluation and enforcement—core to Zero Trust operations and security monitoring at scale.
 **Application and service interaction security capabilities**<br/><br/>Addresses how applications and services participate in Zero Trust, including secure interactions, service identity, and runtime enforcement. | Dev security | Supports integrating Zero Trust into modern application lifecycles and service‑to‑service communication.
 **Platform and environment security capabilities**<br/><br/>Covers secure operation of platforms, networks, and environments that host workloads, without treating the network as a trust boundary. | Infrastructure security | Aligns infrastructure security with Zero Trust principles by treating infrastructure as enforceable but not inherently trusted.
 **Extended environment and non‑traditional asset support**<br/><br/>Explicitly recognizes IT/OT/IoT convergence and the need for Zero Trust capabilities across constrained and heterogeneous environments. | Infrastructure (OT/IoT security) | Matches adoption reality where OT/IoT require distinct ownership but must still align to enterprise Zero Trust strategy.
-**Capability‑based maturity and continuous improvement**<br/><br/>Provides a capability model intended to assess current state, guide improvement, and adapt over time as threats and technology evolve. | Security posture | Positions Zero Trust as an ongoing program, not a one‑time deployment — aligning directly with posture management goals.
+**Capability‑based maturity and continuous improvement**<br/><br/>Provides a capability model intended to assess current state, guide improvement, and adapt over time as threats and technology evolve. | Security posture | Positions Zero Trust as an ongoing program, not a one‑time deployment—aligning directly with posture management goals.
 
 ### Map Microsoft technologies to the model
 
@@ -165,6 +165,6 @@ The US Department of Defense released a DoD Zero Trust Strategy and Roadmap.
 
 For information on how to configure Microsoft cloud services for the DoD Zero Trust Strategy, see [Configure Microsoft services for the DoD Zero Trust strategy](dod-zero-trust-strategy-intro.md).
 
-## What's next?
+## Next steps
 
 [Pick a business scenario](security-adoption-business-scenarios-overview.md) and learn how security disciplines map to the scenario.

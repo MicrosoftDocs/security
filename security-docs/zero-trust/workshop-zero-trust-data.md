@@ -1,12 +1,14 @@
 ---
 title: Microsoft Zero Trust Workshop - Data
 description: Learn about the Data pillar in the Microsoft Zero Trust Workshop
-ms.date: 04/18/2024
+ms.date: 05/24/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
+
+#customer intent: As a security implementer, I want to understand how the Data Security Zero Trust workshop can help with a data deployment that's aligned with Zero Trust principles and security best practices.
 ---
 
 # Data security in the Microsoft Zero Trust Workshop
@@ -38,6 +40,6 @@ The Data workshop covers the implementation areas summarized in the table.
 The Zero Trust Assessment tool  can assess your data configuration against a range of security best practices. [Learn more](/security/zero-trust/assessment/overview).
 
 
-## What's next?
+## Next steps
 
 [Run an assessment](assessment/get-started.md), and begin the [Data workshop](https://zerotrust.microsoft.com/).

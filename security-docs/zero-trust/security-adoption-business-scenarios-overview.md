@@ -1,7 +1,7 @@
 ---
 title: Adopt security business scenarios in the Microsoft security adoption model
 description: Learn how to get started with common business scenarios in the Microsoft security adoption model
-ms.date: 04/27/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -73,12 +73,12 @@ Our security adoption model intentionally separates intent, design, and executio
 - **Technology pillars** represent the core areas of a security architecture such as identity, data, and devices. They provide stable boundaries in which to design and implement security controls across the organization.
 - **Technical solutions** show how to implement a business scenario using Microsoft security products. Technical solutions usually focus on a specific technology pillar and integrate other pillars as needed to provide and end-to-end implementation.
 
-A single business scenario might be supported by multiple security disciplines, multiple technology pillars, and multiple technical solutions. You can learn more about how these components integrate on a per-business scenario basis. 
+A single business scenario is often supported by multiple security disciplines, multiple technology pillars, and multiple technical solutions. You can learn more about how these components integrate on a per-business scenario basis. 
 
 
 ## How do I use the model?
 
-1. Select one or more business scenarios that most closely matches your piroritized business goals.
+1. Select one or more business scenarios that most closely matches your prioritized business goals.
 1. Review security disciplines associated with the scenario.
 1. Deploy a scenario using its mapped technology pillars and technical solutions.
 
@@ -92,15 +92,15 @@ Each business scenario includes:
 - **Business value** - Explains why the scenario matters to business leaders, technology roles, and security teams, supporting prioritization and executive alignment.
 - **Technical strategy and architecture** - Describes how planning, and oversight, technical strategy, and operational security disciplines work together to enable the scenario and its outcome.
 
-## What's next?
+## Next steps
 
 Start with a set of common business scenarios and learn how to map them across the adoption model.
 
-- [I want to rapidly and securely adopt AI (including protecting data)](security-adoption-scenario-secure-ai.md)
-- [I want people to do their job securely from anywhere](security-adoption-scenario-remote-work.md)
-- [I want to minimize business damage from security incidents](security-adoption-scenario-minimize-impact.md)
-- [I want to identify and protect critical business assets](security-adoption-scenario-secure-assets.md)
-- [I want to continuously improve my security posture and compliance](security-adoption-scenario-improve-posture.md)
+- [I want to rapidly and securely adopt AI (including protecting data)](security-adoption-scenario-secure-ai.md).
+- [I want people to do their job securely from anywhere](security-adoption-scenario-remote-work.md).
+- [I want to minimize business damage from security incidents](security-adoption-scenario-minimize-impact.md).
+- [I want to identify and protect critical business assets](security-adoption-scenario-secure-assets.md).
+- [I want to continuously improve my security posture and compliance](security-adoption-scenario-improve-posture.md).
 
 
 

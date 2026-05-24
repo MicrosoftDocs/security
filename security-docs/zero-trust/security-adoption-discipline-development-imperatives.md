@@ -1,11 +1,11 @@
 ---
 title: Adopt secure development planning imperatives
 description: Modernize and secure development processes and functions using key imperatives.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand the key imperatives for modernizing and securing dev functions and processes across the business.
@@ -16,7 +16,7 @@ ms.topic: conceptual
 This article defines the key imperatives for integrating security into development practices as part of the [Development Security discipline](security-adoption-discipline-development.md).
 
 
-Modern organizations rely on rapid software development to deliver innovation, meet business requirements, , maintain competitive advantage, and respond to changing business needs. While DevOps enables this agility, it also introduces new security risks as code, infrastructure, and deployment processes evolve more quickly.
+Modern organizations rely on rapid software development to deliver innovation, meet business requirements, maintain competitive advantage, and respond to changing business needs. While DevOps enables this agility, it also introduces new security risks as code, infrastructure, and deployment processes evolve more quickly.
 
 To securely adopt DevOps practices, organizations must integrate security into development strategy, workflows, and delivery processes, and adopt DevSecOps practices that secure application delivery across the lifecycle.
 
@@ -43,7 +43,7 @@ Organizations must account for security risks across:
 - Developer environments and service identities
 - Third-party dependencies and supply chain components
 
-Recognizing this full scope helps organizations define security requirements that reflect how modern workloads are actually delivered, rather than limiting security to application code review late in the lifecycle.
+Recognizing this full scope helps organizations define security requirements that reflect how modern workloads are delivered, rather than limiting security to application code review late in the lifecycle.
 
 ## Account for key risks
 
@@ -75,7 +75,7 @@ Organizations must define security requirements alongside functional requirement
 
 Security outcomes are shared responsibilities owned by engineering and operations roles, supported by security specialists.
 
-Security enables innovation, it is not a gate applied after delivery.
+Security enables innovation, it isn't a gate applied after delivery.
 
 Organizations must adopt a continuous Secure Development Lifecycle (SDL) approach that includes:
 
@@ -144,7 +144,7 @@ Organizations must define how development, security, and operational requirement
 Organizations must define shared delivery objectives and performance metrics that:
 
 - Align to shared performance and delivery objectives across development, security, and operations.
-- Aren't dominated by a single domain.
+- Avoid domination by a single domain.
 - Prioritize outcomes based on:
     - Organizational risk tolerance.
     - Regulatory obligations.
@@ -164,7 +164,7 @@ Effective DevSecOps requires shared ownership across development, security, and 
 
 ## Apply policy-driven security guardrails
 
-Policy-driven guardrails must be establish to enforce controls without introducing excessive friction. Guardrails should include:
+Policy-driven guardrails should enforce controls without introducing excessive friction. Guardrails should include:
 
 - Identity and access requirements.
 - Configuration and compliance standards.
@@ -174,7 +174,7 @@ Guardrails should be:
 
 - Integrated into platform foundations (for example landing zones).
 - Embedded into development/deployment workflows.
-- Enforced automatically where possible.
+- Enforced automatically when possible.
 
 This approach ensures security requirements are consistently applied while maintaining delivery velocity.
 
@@ -182,7 +182,7 @@ For a balanced approach to security and speed of innovation, review adoption usi
 
 ## Sustain and improve
 
-Security does not remain effective as a static set of controls and must evolve over time.
+Security doesn't remain effective as a static set of controls and must evolve over time.
 
 Organizations must continuously evaluate and update development security practices in response to changes in:
 
@@ -201,7 +201,7 @@ Security practices must evolve alongside the systems they protect.
 Teams must align to: 
 
 - **Define common goals**: Development, security, and operations leaders should collaboratively define delivery objectives and performance metrics for workload delivery, to support consistent release planning.
-- **Prevent single‑domain decision dominance**: Delivery decisions should account for development, security, and operational requirements to avoid imbalances that may negatively impact workload reliability, compliance, or business functionality.
+- **Prevent single‑domain decision dominance**: Delivery decisions should account for development, security, and operational requirements to avoid imbalances that might negatively impact workload reliability, compliance, or business functionality.
 - **Prioritize continuous improvement over static release criteria**: Development security practices should be iteratively refined over time as application delivery models, threat conditions, and organizational priorities evolve.
 - **Establish shared delivery context across stakeholder roles**: Development, security, and operations teams should maintain a shared understanding of:
     - Business urgency and delivery timelines
@@ -230,6 +230,6 @@ Security findings must be:
 Workflow alignment ensures that security requirements are consistently enforced throughout delivery.
 
 
-## What's next
+## Next steps
 
 [Learn about](secure-dev-environment-zero-trust.md) securing the developer environment.

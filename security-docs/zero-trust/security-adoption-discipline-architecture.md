@@ -1,11 +1,11 @@
 ---
 title: Modernize end-to-end security architecture
 description: Follow the end-to-end security architecture discipline in the Microsoft security adoption model to modernize security architectures.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 #customer intent: As a business leader or security adopter, I want to understand how I can use the Microsoft secrity adoption model to modernize security architectures and frameworks across the business.
 
@@ -32,7 +32,7 @@ These limitations make it difficult to manage security as a system. Instead, org
 
 The Security Architecture discipline modernizes this model by establishing a coherent, end‑to‑end technical vision that connects people, processes, and technology. Rather than focusing on individual controls in isolation, this discipline ensures that all security controls and capabilities work together as an integrated system aligned to Zero Trust principles.
 
-Without an effective Security Achitecture discipline in place, organizations commonly experience:
+Without an effective Security Architecture discipline in place, organizations commonly experience:
 
 - Security and technology teams operating in silos.
 - Fragmented and duplicated security solutions.
@@ -69,7 +69,7 @@ To apply the Security Architecture discipline effectively, focus on establishing
 1. **Establish architectural principles and design patterns**  
   Provide clear guidance that ensures security controls and technologies are designed and implemented consistently across systems and environments.
 1. **Integrate architecture into design, implementation, and operations**  
-  Ensure that architectural guidance is embedded into decision-making processes, not treated as a static or isolated activity.
+  Ensure that architectural guidance is embedded into decision-making processes, not treated as a static, or isolated activity.
 1. **Align architecture across disciplines and technology areas**  
   Ensure that identity, infrastructure, applications, and data protections work together as part of a cohesive system rather than independent solutions.
 1. **Continuously refine architecture based on risk and feedback**  
@@ -78,12 +78,12 @@ To apply the Security Architecture discipline effectively, focus on establishing
 
 ## Manage change through architecture
 
-To provide this support and move modernization forward, a modern Security Architecture discipline must focus on a number of areas.
+To provide this support and move modernization forward, a modern Security Architecture discipline must focus on many areas.
 
 ### Comprehensive coverage
 
 Security architecture must account for end‑to‑end complexity across the organization. This requires integrating individual security disciplines into a coherent whole and maintaining a shared understanding of how security technologies and controls work together to protect business assets.
-Comprehensive coverage reduces blind spots, prevents silos, and ensures security decisions consider the broader system—not just individual components.
+Comprehensive coverage reduces low visibility areas, prevents silos, and ensures security decisions consider the broader system—not just individual components.
 
 
 ### Ruthless prioritization
@@ -114,9 +114,9 @@ The following graphic shows how the Security Architecture discipline focuses acr
 
 ## Discipline roles and collaborators
 
-The Security Architecture discipline is primarily owned by security architects and enterprise architects.
+Security architects and enterprise architects primarily own the Security Architecture discipline.
 
-In larger organizations, these responsibilities are distributed across formal roles and supported by documented architecture processes. In smaller organizations, roles may be combined and handled more informally. In all cases, documenting security architecture as it develops—formally or informally—is strongly recommended.
+In larger organizations, these responsibilities are distributed across formal roles and supported by documented architecture processes. In smaller organizations, roles might be combined and handled more informally. In all cases, documenting security architecture as it develops, formally or informally, is recommended.
 
 
 Effective delivery depends on close collaboration with:
@@ -128,7 +128,7 @@ Effective delivery depends on close collaboration with:
 
 The Security Architecture discipline provides the technical clarity that keeps design, engineering, and operations teams aligned to a common vision, ensuring architectural decisions reinforce—not fragment—the security program.
 
-The following diagram shows the breadth of security architecture and contrasts iit with engineering and technical experts who tend to focus on single technologies.
+The following diagram shows the breadth of security architecture and contrasts it with engineering and technical experts who tend to focus on single technologies.
 
 :::image type="content" source="./media/security-adoption-discipline-architecture-collaboration.png" alt-text="This diagram shows how Security Architecture works across the organization" lightbox="./media/security-adoption-discipline-architecture-collaboration.png":::
 
@@ -152,7 +152,7 @@ The following diagram illustrates these relationships.
 
 Security architecture ensures that controls across all technology pillars align to a coherent Zero Trust‑based design and remain consistent over time. Alignment with technology pillars is as follows:
 
-- **Identities**: Ensurea identity systems and privileged access controls align to Zero Trust and protect access to all assets.
+- **Identities**: Ensures identity systems and privileged access controls align to Zero Trust and protect access to all assets.
 - **Endpoints**: Secures devices used as operational footholds by attackers through consistent lifecycle management.
 - **Infrastructure**: Protects cloud and on‑premises platforms that underpin workloads and identity systems.
 - **Apps**: Applies consistent security controls across SaaS, packaged, and custom applications and their communication channels.
@@ -160,8 +160,7 @@ Security architecture ensures that controls across all technology pillars align 
 - **Network**: Ensures network controls support identity‑centric access models while mitigating classic network‑based attacks.
 - **AI**: Integrates new skills, tools, and controls to manage AI‑related risks and attacker use of AI.
 
-## What's next?
-
+## Next steps
 Microsoft Unified offers cybersecurity reference architectures, Zero Trust guidance, and expert-led workshops to help organizations with end to end security architecture.
 
 - Learn more about [Microsoft Cybersecurity Reference Architectures](microsoft-reference-architecture.md).

@@ -41,7 +41,7 @@ For new articles in this content set, please:
 
 
 
-With the modern cloud, mobile devices, and other endpoints evolution, relying only on corporate firewalls and perimeter networks is no longer sufficient. An end-to-end Zero Trust strategy assumes that security breaches are inevitable. That means you must verify each request as if it originates from an uncontrolled network. Networking still plays an important role in Zero Trust to connect and protect infrastructure, applications, and data. In the Zero Trust model, there are three key objectives when it comes to securing your networks:
+With the modern cloud, mobile devices, and other endpoints evolution, relying only on corporate firewalls and perimeter networks is no longer sufficient. An end-to-end Zero Trust strategy assumes that security breaches are inevitable. That means you must verify each request as if it originates from an uncontrolled network. Networking still plays an important role in Zero Trust to connect and protect infrastructure, applications, and data. In the Zero Trust model, there are three key objectives when it comes to secure your networks:
 
 - Be ready to handle attacks before they happen.
 - Minimize the extent of the damage and how fast it spreads.
@@ -205,7 +205,7 @@ When the "Private Traffic" routing policy is enabled, VNet traffic in and out of
 Each Azure Virtual WAN hub can have one or more VNets [connected](/azure/virtual-wan/virtual-wan-site-to-site-portal#vnet) with VNet peering. Based on the [landing zone](/azure/cloud-adoption-framework/ready/landing-zone/) model in the Cloud Adoption Framework, every VNet contains a landing zone workload, applications, and services supporting an organization. Azure Virtual WAN manages the connection, the route propagation and association, and the outbound and inbound routing, but can't affect intra-VNet security. Zero Trust principles must be applied inside each spoke VNet according to the guidance published in [Apply Zero Trust principles to a spoke virtual network](azure-infrastructure-iaas.md) and other articles depending on the resource type, such as virtual machines and storage. Consider the following elements:
 
 - **Micro-segmentation:** Even if Azure Virtual WAN attracts and filters outbound traffic, use of [network security groups (NSGs)](/azure/virtual-network/security-overview) and [application security groups (ASGs)](/azure/virtual-network/application-security-groups) to regulate intra-VNet flows is still recommended. 
-- **Local DMZ:** A DNAT rule created in the central firewall inside the Azure Virtual WAN Hub should filter and allow inbound non-http or https traffic. Inbound http or https traffic should be managed by a local [Azure Application Gateway and associated Web Application Firewall](/azure/active-directory/app-proxy/application-proxy-application-gateway-waf).
+- **Local DMZ:** A DNAT rule created in the central firewall inside the Azure Virtual WAN Hub should filter and allow inbound non-HTTP or HTTPS traffic. Inbound HTTP/HTTPS traffic should be managed by a local [Azure Application Gateway and associated Web Application Firewall](/azure/active-directory/app-proxy/application-proxy-application-gateway-waf).
 
    Although Azure Virtual WAN secure virtual hubs don't support [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview) yet, usage of DDoS to protect Internet-facing endpoints in spoke VNets is possible and highly recommended. For more information, see [Azure Firewall Manager known](/azure/firewall-manager/overview#known-issues) issues and [Hub virtual network and secured virtual hub comparison](/azure/firewall-manager/vhubs-and-vnets#comparison).
 
@@ -358,3 +358,7 @@ You can download the illustrations used in this article. Use the Visio file to m
 [PDF](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.pdf) | [Visio](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.vsdx)
 
 For additional technical illustrations, click [here](zero-trust-tech-illus.md).
+
+## Next steps
+
+[Learn about](/azure/networking/security/zero-trust-network-security) assessing your Zero Trust posture, including your network posture.

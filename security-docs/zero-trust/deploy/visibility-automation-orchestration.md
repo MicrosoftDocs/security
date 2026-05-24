@@ -3,14 +3,13 @@ title: Visibility, automation, and orchestration with Zero Trust
 description: Since Zero Trust doesn't assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
 ms.service: security
 ms.subservice: zero-trust
-manager: femila
 ms.date: 03/12/2025
 ms.topic: concept-article
 ms.collection:
   - zerotrust-pillar
 ---
 
-# Visibility, automation, and orchestration with Zero Trust
+# Integrated SecOps with Zero Trust
 
 :::image type="icon" source="../media/icon-visibility-automation-orchestration-medium.png":::
 
@@ -20,7 +19,7 @@ In our other Zero Trust guides, we defined the approach to implementing an end-t
 
 :::image type="content" source="../media/diagram-provide-integrated-capabilities-manage-threats.png" alt-text="Diagram of integrated capabilities to manage threats." border="true":::
 
-With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
+With each of these individual areas generating their own relevant alerts, we need an integrated security operations (SecOps) capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
 
 You want the ability to: 
 

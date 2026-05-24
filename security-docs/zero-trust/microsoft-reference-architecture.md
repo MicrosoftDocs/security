@@ -4,9 +4,14 @@ description:  Plan security modernization with the help of the MCRA reference ar
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 02/27/2025
-ms.reviewer: mas
+ms.date: 05/24/2026
+author: rayne-wiselman
+ms.author: raynew
+
+#customer intent: As a security or IT architect, I want to understand how I can use the MCRA to adopt recommendations and best practices for my security architectures.
 ---
+
+
 # Review Microsoft Cybersecurity Reference Architecture (MCRA)
 
 The Microsoft Cybersecurity Reference Architecture (MCRA) provides an extensive set of technical architectures for use during Zero Trust security adoption and modernization.
@@ -65,7 +70,7 @@ You typically use the architectures as a:
 - **Learning tool for security integration** - Architects and technical teams can identify and use integration points in Microsoft security capabilities and their existing capabilities.
 - **Learning tool for cybersecurity** - For people new to cybersecurity, the resources provide a learning tool as they take their first steps.
 
-## What's next?
+## Next steps
 
 - [Download the latest MCRAs](https://download.microsoft.com/download/956f9359-e6d5-4e77-a36c-117f94620eb3/MCRA-April-2025.pptx)
 - [Watch a prerecorded version of MCRA guidance](https://youtu.be/6iYxNm3TOiI?si=jOU3TScxup7pWDj0).

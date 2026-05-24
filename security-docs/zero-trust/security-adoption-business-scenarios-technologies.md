@@ -1,7 +1,7 @@
 ---
 title: Align business outcomes and scenarios with Microsoft technologies
 description: Learn how business security outcomes are enabled with Microsoft security technologies.
-ms.date: 05/19/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -104,7 +104,7 @@ Microsoft Security Exposure Management is a primary enabler for this business sc
 
 #### GitHub Advanced Security
 
-Security posture is not only about deployed assets—it is also shaped by how software is built. Shifting security earlier in the development lifecycle reduces downstream exposure, lowers remediation cost, and improves overall risk posture.
+Security posture isn't only about deployed assets—it's also shaped by how software is built. Shifting security earlier in the development lifecycle reduces downstream exposure, lowers remediation cost, and improves overall risk posture.
 
 GitHub Advanced Security is a primary enabler for this business scenario. It shifts security left by integrating security scanning directly into the development workflow, enabling developers to identify and fix vulnerabilities before code reaches production. 
 It improves security posture by:
@@ -149,7 +149,7 @@ Microsoft Purview is a primary enabler for this business scenario. It provides c
 
 #### Microsoft Entra
 
-Microsoft Entra partners with Purview to provides the identity control plane for this business scenario, ensuring that access to sensitive data is governed, verified, and continuously monitored. It enforces least-privilege access and secures privileged roles that can access or modify critical assets.
+Microsoft Entra partners with Purview provides the identity control plane for this business scenario, ensuring that access to sensitive data is governed, verified, and continuously monitored. It enforces least-privilege access and secures privileged roles that can access or modify critical assets.
 
 
 Review the business scenario [Identifying and protecting critical business assets](security-adoption-scenario-secure-assets.md).
@@ -176,7 +176,7 @@ Microsoft Purview is a primary enabler for this business scenario. It provides c
 
 Review the business scenario [Rapidly and securely adopt AI](security-adoption-scenario-secure-ai.md).
 
-## What's next?
+## Next steps
 
 - [Select a business scenario](security-adoption-business-scenarios-overview.md) to get started.
 - Review implementation instructions for:

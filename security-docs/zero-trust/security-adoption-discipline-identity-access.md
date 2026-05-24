@@ -1,11 +1,11 @@
 ---
 title: Establish an Access and Identities discipline
 description: Use the Microsoft security adoption model to modernize and secure identity and access across the business, based on Zero Trust principles.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand how I can use the Microsoft security adoption model to modernize and secure identity and access across the business.
@@ -37,7 +37,7 @@ This is a strategic priority because identities are the most common entry point 
 Without an effective Access and Identities discipline, organizations face increased risk from:
 
 - **External compromise**: Attackers can rapidly take over legitimate user or service identities, including privileged accounts, and use them to discover and exploit business assets.
-- **Insider abuse and privilege misuse**: Malicious, negligent or compromised insiders can abuse elevated privileges to access sensitive systems and data.
+- **Insider abuse and privilege misuse**: Malicious, negligent, or compromised insiders can abuse elevated privileges to access sensitive systems and data.
 - **Productivity loss and insecure workarounds**: Overly restrictive or inconsistent access controls frustrate users and drive the adoption of shadow IT with weaker controls and limited visibility, increasing risk and blast radius.
 
 ## Mission and outcomes
@@ -72,7 +72,7 @@ To apply the Access and Identity discipline effectively, focus on establishing a
 
 ## Manage change
 
-Traditional access control models focused on network perimeters, layering identity systems and VPNs around a trusted internal network. These models no longer meet the needs of modern enterprises that operate across cloud, SaaS, mobile, AI, and hybrid environments. Legacy approaches often result in:
+Traditional access control models focused on network perimeters, layering identity systems, and VPNs around a trusted internal network. These models no longer meet the needs of modern enterprises that operate across cloud, SaaS, mobile, AI, and hybrid environments. Legacy approaches often result in:
 
 - Fragmented solutions across identity, network, and application layers.
 - Weak or inconsistent privileged access protection.
@@ -87,7 +87,7 @@ The following diagram illustrates this limitation:
 A modern Access and Identities discipline goes beyond individual technologies. It focuses on business priorities, integration, and completeness across all access paths, while enforcing a single, coherent access strategy. Modern access control must be:
 
 - **Secure:** Explicitly validate users, devices, and workloads using rich signals. Prevent unauthorized privilege escalation, and protect privileged access.
-- **Consistent and comprehensive:** Cover all access paths—human and non‑human—and apply security assurances uniformly to eliminate gaps and improve user experience.
+- **Consistent and comprehensive:** Cover all access paths—human and nonhuman—and apply security assurances uniformly to eliminate gaps and improve user experience.
 - **Integrated:** Use centralized policy and a minimal number of policy engines to enforce controls consistently at scale, avoiding configuration drift. 
 - **Identity-centric**: Prioritize identity‑based controls, which provide richer context than network‑only signals. Use network controls as a complementary layer, not the primary trust boundary.
 
@@ -99,7 +99,7 @@ This diagram from the [Enterprise Access Model](security-adoption-discipline-ide
 ## Discipline roles and collaborators
 
 Planning and delivery of the Access and Identities discipline is typically owned by teams responsible for identity, access, and networking.
-In larger organizations, responsibilities are distributed across formal roles and processes. In smaller organizations, roles may be combined and handled more informally. In all cases, documenting access and identity strategy as it evolves is strongly recommended. 
+In larger organizations, responsibilities are distributed across formal roles and processes. In smaller organizations, roles might be combined and handled more informally. In all cases, documenting access and identity strategy as it evolves is recommended. 
 
 Primary roles include:
 
@@ -137,7 +137,7 @@ Access security starts with knowing who or what is requesting access:
 
 Access enforcement must cover all assets and access paths across the entire access cycle.
 
-- **Comprehensive coverage**: Enforce policy for cloud, on‑premises, SaaS, AI, IoT, and OT assets, across interactive access, APIs, and machine‑to‑machine communication.
+- **Comprehensive coverage**: Enforce policy for cloud, on‑premises, SaaS, AI, OT/IoT assets, across interactive access, APIs, and machine‑to‑machine communication.
 - **Intermediary systems**: Secure devices, directories, gateways, VPNs, and access proxies that mediate access.
 - **Consistent policy**: Apply policy uniformly across general access, privileged access, network access, external access, and workload‑level authorization models.
 - **Adaptive access**: Continuously evaluate whether identities are known, trusted, and allowed using real‑time signals, and terminate sessions if risk changes.
@@ -156,7 +156,7 @@ Access policy must reflect business value, sensitivity, and governance requireme
 
 ## Alignment with other disciplines
 
-The Access and Identities discpline does not operate independently. It aligns closely with other security disciplines, including:
+The Access and Identities discipline doesn't operate independently. It aligns closely with other security disciplines, including:
 
 - **Strategy, Integration, and Governance**.  Access decisions shape business risk and prioritization.
 - **Security Architecture**: Access controls enforce architectural decisions.
@@ -184,9 +184,9 @@ The discipline aligns as follows:
 - **AI**: AI agents and services introduce new identity types that require lifecycle management, least privilege, and monitoring.
 
 
-## What's next?
+## Next steps
 
-- Microsoft Unified offers cybersecurity reference architectures, Zero Trust guidance, and expert-led workshops to help organizations with end to end security architecture. [Learn more](workshop-business-overview.md
+- Microsoft Unified offers cybersecurity reference architectures, Zero Trust guidance, and expert-led workshops to help organizations with end to end security architecture. [Learn more](workshop-business-overview.md).
 
 
     :::image type="content" source="./media/security-adoption-discipline-access-workshop.png" alt-text="Diagram of Microsoft Unified workshops for Access and Identity technology adoption, showing key phases and activities." lightbox="./media/security-adoption-discipline-access-workshop.png":::

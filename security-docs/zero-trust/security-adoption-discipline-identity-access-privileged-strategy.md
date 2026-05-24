@@ -1,11 +1,11 @@
 ---
 title: Build a privileged access architecturestrategy across the security adoption Identities and Access discipline
 description: Learn how to design an strategy for privileged access within the security adoption Identities and Access discipline
-ms.date: 04/12/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand how I can design an privileged access architecture across the security adoption Identities and Access discipline
@@ -117,3 +117,12 @@ Implementing this strategy requires four complementary initiatives, each with cl
 **Protect and monitor identity systems** | Protect and monitor identity including directories, identity management, admin accounts, and consent grants. | Each of these systems is protected at a level appropriate for the potential business impact of accounts hosted in it.
 **Mitigate lateral traversal** | Protect against lateral traversal with local account passwords, service account passwords, or other secrets. | Compromising a single device won't immediately lead to control of many or all other devices in the environment
 **Response to threats quickly** | Deploy rapid threat response to limit adversary access and time in the environment. | Incident response processes impede adversaries from reliably conducting a multi-stage attack in the environment that would result in loss of privileged access.<br/><br/>Measured by reducing the mean time to remediate (MTTR) of incidents involving privileged access to near zero, and reducing MTTR of all incidents to a few minutes so adversaries don't have time to target privileged access.
+
+## Next steps
+
+- Microsoft Unified offers cybersecurity reference architectures, Zero Trust guidance, and expert-led workshops to help organizations with end to end security architecture. [Learn more](workshop-business-overview.md).
+
+
+    :::image type="content" source="./media/security-adoption-discipline-access-workshop.png" alt-text="Diagram of Microsoft Unified workshops for Access and Identity technology adoption, showing key phases and activities." lightbox="./media/security-adoption-discipline-access-workshop.png":::
+
+- Review [other security disciplines](security-adoption-discipline-overview.md).

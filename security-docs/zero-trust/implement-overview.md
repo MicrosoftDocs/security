@@ -1,11 +1,11 @@
 ---
-title: Microsoft sevcure Zero Trust implementation solutions
-description: Get an overview of Microsoft Zero Trust implmentation solutions
-ms.date: 01/29/2026
+title: Microsoft secure Zero Trust implementation solutions
+description: Get an overview of Microsoft Zero Trust implementation solutions
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to get an overview of the Zero Trust implmentation solutions offered by Microsoft.
@@ -21,9 +21,9 @@ Microsoft's structured adoption model for Zero Trust security focuses on three  
 
 - [Business scenarios](security-adoption-business-scenarios-overview.md) help business leaders to define critical security outcomes across the organization. They focus on **why** we're adopting Zero Trust security.
 - [Security disciplines](security-adoption-discipline-overview.md) define the strategy, architecture, and processes required to support the security outcomes. They focus on **what** capabilities are needed.
-- [Technology pillars](deploy/overview.md) focus on implementing security for specific areas such as identity, data, and devices.  They focus on **where** security capabilities are applied.
+- [Technology pillars](deploy/overview.md) focus on implementing security for specific areas such as identity, data, and devices. They focus on **where** security capabilities are applied.
 
-Technical solutions are the final step in the security adoption and deployment journey and focus on **how**. They connect the business scenarios, discipline strategies and architectures, together with relevant technology pillars into step-by-step product-level implementation guides.
+Technical solutions are the final step in the security adoption and deployment journey and focus on **how**. They connect the business scenarios, discipline strategies, and architectures, together with relevant technology pillars into step-by-step product-level implementation guides.
 
 
 ## Technical solutions
@@ -57,7 +57,7 @@ To summarize:
 You can implement Zero Trust solutions from a couple of starting points:
 
 - You can start with a [business scenario](security-adoption-business-scenarios-overview.md) that's important for your business. For example *Improve security posture and compliance across the organization*.
-- Alternatively you might want to focus on mproving security for a specific domain, and start with a specific technology pillar. For example *Secure endpoints across the organzation*.
+- Alternatively you might want to focus on improving security for a specific domain, and start with a specific technology pillar. For example *Secure endpoints across the organization*.
 
 Both approaches use the same set of Microsoft security technologies. 
 
@@ -65,7 +65,7 @@ Scenario-based adoption ensures alignment to business priorities, while technolo
 
 ### Start with business scenarios
 
-The table summarizes technical solutions based on business scenarios. Follow any of the solutions for end-to-end implmentation guidance.
+The table summarizes technical solutions based on business scenarios. Follow any of the solutions for end-to-end implementation guidance.
 
 **Solution** | **Business scenario** 
 --- | --- | --- 
@@ -79,7 +79,7 @@ The table summarizes technical solutions based on business scenarios. Follow any
 
 ### Start with technology pillars
 
-The table summarizes technical solutions based on specific technology pillars. Follow any of the solutions for end-to-end implmentation guidance.
+The table summarizes technical solutions based on specific technology pillars. Follow any of the solutions for end-to-end implementation guidance.
 
 Each solution is organized by a primary technology pillar but integrates controls from multiple pillars.
 
@@ -93,7 +93,7 @@ Each solution is organized by a primary technology pillar but integrates control
 [Secure networks with Zero Trust](networks.md) |  **Networks** - Secure the transport layer for all access. Use segmentation and micro-segmentation to limit lateral movement, and apply encryption, monitoring, analytics, and real-time threat protection across network traffic.
 [Secure SecOps](visibility-automation-orchestration.md) | **SecOps** - Integrate signals across all pillars to detect, investigate, and respond to threats. Correlate alerts, automate responses, and use centralized visibility to continuously validate trust and improve security posture.
 
-## What's next?
+## Next steps
 
 - [Review](deploy/overview.md) technology pillars.
 - [Learn about](security-adoption-model.md) our Zero Trust adoption model.

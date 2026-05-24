@@ -1,11 +1,11 @@
 ---
 title: Shift DevOps to DevSecOps
 description: Learn why we need to integrate security to DevOps modernization.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand the need for integrating security into DevOps, and shifting to DevSecOps.
@@ -193,21 +193,21 @@ Education and culture change takes time, focus, executive sponsorship, and regul
 
 ### Change takes time
 
-You can only move as fast as your team can adapt to the implications of doing things in new ways. Teams will always have to do their existing jobs while they transform.
+You can only move as fast as your team can adapt to the implications of doing things in new ways. Teams must do their existing jobs while they transform.
 
 It's critical to carefully prioritize what is most important and to manage expectations of how fast this change can happen.
 
-Focus on a crawl, walk, run strategy, where the most important and foundational elements come first, will serve your organization well
+Focusing on a crawl, walk, run strategy, where the most important and foundational elements come first, serves your organization well.
 
 
 ### Change introduces (temporary) friction
 
-All new technologies, methodologies, and other changes will always introduce friction and confusion. Its critical to focus on healthy friction that drives critical thinking to reduce risk while avoiding unhealthy friction that slows down processes with limited benefit or risk reduction.
+All new technologies, methodologies, and other changes introduce friction and confusion. It's critical to focus on healthy friction that drives critical thinking to reduce risk while avoiding unhealthy friction that slows down processes with limited benefit or risk reduction.
 
 ### Limited resources
 
 
-A challenge organizations usually face early on is to find talent and skills in both security and application development.
+A challenge that organizations usually face early on is to find talent and skills in both security and application development.
 
 As organizations begin to collaborate more effectively, they might find hidden talent, such as developers with a security mindset or security professionals with a development background.
 
@@ -216,18 +216,18 @@ As organizations begin to collaborate more effectively, they might find hidden t
 
 Apps are changing fast. In addition to new features, the technical definition and composition of an application is fundamentally changing with the introduction of technologies such as cloud, serverless, and AI.
 
-This shift is changing development practices, application security, and even empowers non-developers to create applications.
+This shift is changing development practices, application security, and even empowers nondevelopers to create applications.
 
-### Considering an SRE model
+### Consider an SRE model
 
 Some DevSecOps implementations combine operations and security responsibilities into a **site reliability engineer (SRE)** role.
 
 While such a model can work, it's often an extreme change from existing enterprise culture and practices. 
 
-If you are considering an SRE model, we recommend that you start by embedding security into DevOps using practical quick wins and incremental progress outlined in this guidance to ensure you are getting good return on investment (ROI) and meeting immediate needs. 
+If you're considering an SRE model, we recommend that you start by embedding security into DevOps using practical quick wins and incremental progress outlined in this guidance to ensure you're getting good return on investment (ROI) and meeting immediate needs. 
 
 This incrementally adds security responsibilities to your operations and development personnel, which moves teams closer to an SRE end-state.  
 
-## What's next?
+## Next steps
 
 [Learn about](security-adoption-discipline-development-imperatives.md) secure development best practices.

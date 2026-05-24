@@ -1,7 +1,7 @@
 ---
 title: Establish a Development Security discipline
 description: Use the Microsoft security adoption model to modernize and secure development processes and functions, based on Zero Trust principles.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -146,7 +146,7 @@ Over time, this continuous learning helps teams refine requirements, streamline 
 
 ## Discipline roles and collaborators
 
-The Dev Security ddiscipline is typically run by teams doing app and product development. 
+The Dev Security discipline is typically run by teams doing app and product development. 
 
 Primary roles in this discipline typically include:
 
@@ -222,3 +222,6 @@ For more information, see [Microsoft Security Development Lifecycle (SDL)](https
 Effective development security requires following a security development lifecycle (SDL) like the [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/)
 
 
+## Next steps
+
+[Learn about](security-adoption-discipline-development-security.md) the shift from DevOps to DevSecOps.

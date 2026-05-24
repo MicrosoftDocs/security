@@ -12,7 +12,7 @@ ms.topic: conceptual
 ---
 
 
-# Design an privileged access architecture
+# Design a privileged access architecture
 
 This article describes how to design a privileged access architecture as part of an [Access and Identities discipline](security-adoption-discipline-identity-access.md).  
 
@@ -35,7 +35,7 @@ A privileged access architecture:
 - Defines how high impact administrative access is intentionally designed, constrained, and governed across the organization.
 - Prevents loss of control over business critical systems by ensuring that only explicitly authorized, trustworthy access paths are used, and that those paths are continuously validated and monitored.
 
-Designing privileged access is not a single technical decision and it isn't owned by a single technical function.It's a result of coordinated design decisions across multiple security disciplines, each contributing a distinct part of the overall control system.
+Designing privileged access is not a single technical decision and isn't owned by a single technical function. It's a result of coordinated design decisions across multiple security disciplines, each contributing a distinct part of the overall control system.
 
 ## Privileged access disciplines
 
@@ -55,7 +55,7 @@ The disciplines summarized in the table work together to ensure that privileged 
 
 ## Strategy, integration, and governance
 
-A privileged access architecture must be anchored in a strong [security strategy, integration, and governance discipline](security-adoption-discipline-strategy.md) that defines why privileged access matters, how it should be applied across the organization, and how it's sustained over time.
+A privileged access architecture must be anchored in a strong [security strategy, integration, and governance discipline](security-adoption-discipline-strategy.md) that defines why privileged access matters, how to apply it across the organization, and how to sustain it over time.
 
 ### Mission and outcomes
 
@@ -73,7 +73,7 @@ Within a privileged access architecture, this discipline enables the organizatio
 
 **Decide** | **Details** | **Why?**
 --- | --- | ---
-**What does privileged access mean in your organization?** | Define which roles, actions, and systems count as high-impact.<br/><br/> For example: Entra Global Admins, Azure subscription owners, production DB admins, identity platform operators. | Without this, teams don’t know which accounts . Everything becomes “kind of privileged”.get PIM, PAWs, stricter CA, or monitoring
+**What does privileged access mean in your organization?** | Define which roles, actions, and systems count as high-impact.<br/><br/> For example: Entra Global Administrators, Azure subscription owners, production database administrators, and identity platform operators. | Without this definition, teams can’t clearly identify which accounts require stronger controls—everything becomes “somewhat privileged,” leading to inconsistent use of PIM, PAWs, stricter Conditional Access, and monitoring.
 **Which business-critical systems are in scope?** | List the systems where loss of admin control would cause real damage (identity systems, core infrastructure, production workloads, sensitive data platforms). | Prevents teams from protecting low‑value systems first or skipping high‑impact ones because “ownership wasn’t clear”.
 **Which privileged access paths are allowed, restricted, or eliminated?** | Decide how admins are allowed to reach those systems (for example: only from PAWs, only via approved portals, no legacy protocols, no direct RDP from personal devices). | Implementation teams need this to know which access patterns to block vs. design for. Otherwise, they preserve risky paths for “compatibility”.
 **Trade offs you're willing to accept** | Explicitly state where convenience wins and where it doesn’t (for example: emergency access allowed with logging vs. no standing admin access ever). | Stops endless debates during rollout and prevents security from being blamed for “breaking operations”.
@@ -153,7 +153,7 @@ Within a privileged access architecture, this discipline enables the organizatio
 **Define an isolation model** | Define how privileged environments are separated from standard environments. | Limits lateral movement and credential theft.
 **Define attack surface reduction expectations** | Define baseline hardening for admin devices and systems. |Prevents privileged access from running on insecure foundations.
 **Decide on enforcement mechanisms** |Decide how identity, device, and network controls are enforced by infrastructure. | Avoids architectures that rely on policy alone.
-**Identity platform constraints** | Document cloud, on‑prem, and hybrid limitations. | Prevents designs that can’t be implemented.
+**Identity platform constraints** | Document cloud, on-premises, and hybrid limitations. | Prevents designs that can’t be implemented.
 **Define infrastructure prerequisites** | Define what must exist before rollout (device management, identity integration). | Avoids failed or partial deployments.
 
 ## Security posture

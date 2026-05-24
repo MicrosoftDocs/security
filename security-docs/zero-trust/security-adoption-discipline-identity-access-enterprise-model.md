@@ -1,7 +1,7 @@
 ---
 title: Build an enterprise access architecture across the security adoption Identities and Access discipline
 description: Learn how to design an architecture for enterprise access within the security adoption Identities and Access discipline
-ms.date: 05/12/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -22,7 +22,7 @@ It provides guidance for establishing an enterprise access architecture based on
 
 Consistent and comprehensive policy enforcement is critical in preventing threat actors from using weak access controls to access your environment, and from escalating privileges during an attack.  
 
-Modern enterprises operate in complex environments where access isn't limited to internal users on corporate networks. Access is exercised by:
+Modern enterprises operate in complex environments where access isn't limited to internal users on corporate networks. People and processes who access include:
 
 - Employees, partners, and customers
 - Applications, services, and automation
@@ -34,20 +34,20 @@ The enterprise access architecture provides a single architectural model for rea
 - Establish a shared way to understand how access is granted, controlled, and monitored.
 - Unify general access and privileged access under Zero Trust principles.
 - Prevent unintended privilege escalation across systems and environments.
-- Support secure productivity across hybrid and multi‑cloud platforms.
+- Support secure productivity across hybrid and multicloud platforms.
 
-This architecture applies to logical access to digital assets. It does not address physical access to devices or facilities. Learn more about physical security in [Azure security fundamentals](/azure/security/fundamentals/physical-security).
+This architecture applies to logical access to digital assets. It doesn't address physical access to devices or facilities. Learn more about physical security in [Azure security fundamentals](/azure/security/fundamentals/physical-security).
 
 
 
 ## Architectural model overview
 
-The enterprise access architecture organizes access using a small number of foundational concepts:
+The enterprise access architecture organizes access using a few foundational concepts:
 
 - **Architectural planes**, which describe where control and value reside
 - **Access pathways** , which describe how users, systems, and administrators interact with assets.
 
-Together, these concepts describe where business value lives, how it is accessed, and how attackers attempt to gain control.
+Together, these concepts describe where business value lives, how it's accessed, and how attackers attempt to gain control.
 
 
 ### Data/Workload plane
@@ -57,7 +57,7 @@ The data and workload plane contains the systems where business value is created
 - Business applications and services
 - Data stores, models, and intellectual property
 
-Because this plane holds the highest concentration of business value, it is the primary objective of most attacks.
+Because this plane holds the highest concentration of business value, it's the primary objective of most attacks.
 
 :::image type="content" source="./media/security-adoption-discipline-access-enterprise-data-plane.png" alt-text="Picture of enterprise access architecture data plane." lightbox="./media/security-adoption-discipline-access-enterprise-data-plane.png":::
 
@@ -65,12 +65,12 @@ Because this plane holds the highest concentration of business value, it is the 
 
 ## Management plane
 
-The management plane enables organizations to deploy, configure, and operate workloads and platforms across on‑premises, cloud, and multi‑cloud environments.
+The management plane enables organizations to deploy, configure, and operate workloads and platforms across on‑premises, cloud, and multicloud environments.
 Access to this plane allows operators to influence workloads at scale, making it a high‑value target for attackers.
 
 ## Control plan
 
-The control plane enforces access decisions across the environment. It is typically anchored in enterprise identity systems and, where required, supporting network controls for constrained or legacy environments (for example, some OT systems).
+The control plane enforces access decisions across the environment. It's typically anchored in enterprise identity systems and, where required, supporting network controls for constrained or legacy environments (for example, some OT systems).
 
 Compromise of the control plane often enables indirect control of all other planes and therefore demands the strongest protections.
 
@@ -96,7 +96,7 @@ General access pathways include:
 
 :::image type="content" source="./media/security-adoption-discipline-access-enterprise-user-app.png" alt-text="Picture of enterprise access architecture user, agent, and app access." lightbox="./media/security-adoption-discipline-access-enterprise-user-app.png":::
 
-Each of these pathways significantly expand the attack surface and must be governed consistently.
+Each of these pathways significantly expands the attack surface and must be governed consistently.
 
 ## Privileged access
 
@@ -126,12 +126,12 @@ Effective enterprise access architectures consistently apply the following princ
 
 The enterprise access architecture evolves the scope of the legacy Active Directory tier model, which focused on preventing privilege escalation in on‑premises Windows environments.
 
-While effective for its time, the tier model did not fully address modern realities such as:
+While effective for its time, the tier model didn't fully address modern realities such as:
 
 - Cloud services and SaaS platforms
 - External users and zero‑perimeter access
 - APIs, service identities, and automation
-- AI agents and multi‑cloud environments
+- AI agents and multicloud environments
 
 
 :::image type="content" source="./media/security-adoption-discipline-access-enterprise-model.png" alt-text="Picture of enterprise access modern." lightbox="./media/security-adoption-discipline-access-enterprise-model.png":::
@@ -146,7 +146,7 @@ The enterprise access architecture preserves the security intent of the tier mod
 
 ## How to use this architecture
 
-The enterprise access architecture is not an implementation guide. Instead, it provides:
+The enterprise access architecture isn't an implementation guide. Instead, it provides:
 
 - A shared mental model for architects and security leaders
 - A foundation for aligning identity, privileged access, and Zero Trust strategies
@@ -154,6 +154,6 @@ The enterprise access architecture is not an implementation guide. Instead, it p
 
 Detailed implementation guidance is covered in related discipline and solution articles.
 
-## What's next?
+## Next steps
 
 [Review](security-adoption-discipline-identity-access-privileged-model.md) privileged access architecture.

@@ -1,11 +1,11 @@
 ---
 title: Establish a Data Security discipline during security adoption
 description: Use the Microsoft security adoption model to modernize secure data across the business, based on Zero Trust principles.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand how I can use the Microsoft security adoption model to secure data cross the business.
@@ -22,7 +22,7 @@ This article helps security and technology teams establish and modernize a Data 
 
 ## Why this discipline
 
-Data is the lifeblood of modern organizations. It underpins business operations, decision‑making, and innovation, but it is also one of the most valuable assets targeted by attackers.
+Data is the lifeblood of modern organizations. It underpins business operations, decision‑making, and innovation, but it's also one of the most valuable assets targeted by attackers.
 
 Traditional, network‑centric data protection approaches are no longer sufficient in environments that use cloud services, encryption, mobile devices, and distributed collaboration. A modern Data Security discipline moves beyond perimeter controls to identity‑aware, lifecycle‑based protection, aligned to business value and risk.
 Without effective data security, organizations face material business risk, including:
@@ -51,8 +51,6 @@ By establishing clear ownership, classification, and protection strategies, data
 
 :::image type="content" source="./media/security-adoption-discipline-data-safety.png" alt-text="Diagram of the CIA triad illustrating confidentiality, integrity, and availability as core data security principles." lightbox="./media/security-adoption-discipline-data-safety.png":::
 
-
-w to apply this discipline
 
 To apply the Data Security discipline effectively, focus on establishing a consistent approach to protecting data based on its sensitivity and business impact:
 
@@ -106,11 +104,11 @@ In the diagram:
 
 - The Zero Trust foundation, shown by a dotted line, establishes a modern identity boundary and data loss prevention between internal functions and the external environment. This foundation prevents unauthorized data loss, but enables collaboration with authorized external parties.
 - The enterprise collaboration environment, in lighter green, is where most of your organizational data is created, processed, and stored. Limit access to internal users only and apply least privilege by default.
-- Critical apps and data, in darker green, represents the most sensitive data in the organization that must be restricted to a limited set of authorized users and applications. You can share this data within the enterprise collaboration environment and with some authorized external parties, but it must be protected and monitored at all times.
+- Critical apps and data, in darker green, represent the most sensitive data in the organization that must be restricted to a limited set of authorized users and applications. You can share this data within the enterprise collaboration environment and with some authorized external parties, but it must be protected and monitored always.
 
 ## Discipline roles and collaborators
 
-Data security requires close collaboration across business, security, and technology teams. In larger organizations, roles are often distributed and formalized; in smaller organizations, responsibilities may be combined
+Data security requires close collaboration across business, security, and technology teams. In larger organizations, roles are often distributed and formalized; in smaller organizations, responsibilities might be combined.
 
 Primary roles in this discipline typically include:
 
@@ -153,13 +151,13 @@ Aligned technology pillars include:
 *- *Network**: Data security relies on data security controls to help discover and secure data as it is transferred between systems.
 - **AI**: Data security relies on AI security controls to protect data used to train, analyze, and generate AI outputs.
 
-## What's next?
+## Next steps
 
 Microsoft Unified offers expert-led workshops to help organizations accelerate modernization of Security Posture Management strategy, architecture, and technology. These workshops include:
 
-- **Architecture and strategy workshops** - The  Security Adoption Framework Data Security workshop  workshop focuses on data security modernization. This workshop is available as a less than four-hour discussion focused on key learnings and best practices.
+- **Architecture and strategy workshops** - The  Security Adoption Framework Data Security workshop focuses on data security modernization. This workshop is available as a less than four-hour discussion focused on key learnings and best practices.
 
-- **Technology adoption workshops** -  Microsoft Unified has workshops to help organizations learn about, plan, implement, and optimize the use of data techologies.
+- **Technology adoption workshops** -  Microsoft Unified has workshops to help organizations learn about, plan, implement, and optimize the use of data technologies.
 
 :::image type="content" source="./media/security-adoption-discipline-access-workshop.png" alt-text="Diagram of Microsoft Unified workshops for Access and Identity technology adoption, showing key phases and activities." lightbox="./media/security-adoption-discipline-access-workshop.png":::
 

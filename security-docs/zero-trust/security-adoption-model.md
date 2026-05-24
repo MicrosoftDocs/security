@@ -1,7 +1,7 @@
 ---
 title: Microsoft security adoption model
 description: Learn about the adoption model for Microsoft security.
-ms.date: 04/27/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -18,9 +18,9 @@ ms.topic: conceptual
 
 Without a structured approach to adoption, security modernization programs can become fragmented, reactive, and difficult to sustain.
 
-Our *structured security adoption model provides a standardized, repeatable, role-aware process that helps you to you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multi-platform environments.
+Our *structured security adoption model provides standardized, repeatable, role-aware processes that help you to you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multi-platform environments.
 
-The adoption model aligns critical business outcomes, security disciplines, and solution implementations so that business leaders, security managers, architects and practitioners can move forward together at a controlled and sustainable pace across the organization.
+The adoption model aligns critical business outcomes, security disciplines, and solution implementations so that business leaders, security managers, architects, and practitioners can move forward together at a controlled and sustainable pace across the organization.
 
 
 > [!TIP]
@@ -42,7 +42,7 @@ This diagram illustrates how these elements come together in an adoption model.
 
 ## How the adoption model integrates existing guidance
 
-This adoption model brings together Microsoft security guidance that has historically been published across multiple frameworks and resources, aligning it into a single, actionable structure.
+This adoption model brings together Microsoft security guidance that historically published across multiple frameworks and resources, aligning it into a single, actionable structure.
 
 It integrates and builds on established guidance, and including these content sources:
 
@@ -85,7 +85,7 @@ Structured adoption guidance focuses on:
 
 :::image type="content" source="./media/adoption-model.png" alt-text="Diagram showing how the Security Adoption Framework (SAF) connects the business with security and technology." lightbox="./media/adoption-model.png":::
 
-## What's next? 
+## Next steps
 
 Review options for [beginning your security adoption journey](security-adoption-journey.md).
 

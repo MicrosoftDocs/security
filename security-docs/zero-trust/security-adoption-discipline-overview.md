@@ -1,11 +1,11 @@
 ---
 title: Overview - Security disciplines
 description: Learn about security disciplines in the Microsoft security adoption model.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 #customer intent: As a business leader or security adopter, I want to understand which organizational disciplines are involved in planning, design, and deployment of business scenarios and outcomes.
 ---
@@ -34,7 +34,7 @@ Security disciplines are applied through business scenarios, such as securing re
 In our [security adoption model](security-adoption-model.md), security disciplines provide an organizational structure between business scenarios and technical implementation.
 
 - [**Business scenarios**](security-adoption-business-scenarios-overview.md)  define **why** security investment is needed and what outcomes matter.
-- Security disciplines defines ownership and accountability across teams, clarifying **who** is responsible for delivering each area of security capability across the organization.
+- Security disciplines define ownership and accountability across teams, clarifying **who** is responsible for delivering each area of security capability across the organization.
 - [Technical solutions](implement-overview.md) define **how** security is implemented across specific [technology pillars](deploy/overview.md).
 
 :::image type="content" source="./media/disciplines.png" alt-text="Diagram showing how disciplines bridge business outcomes and technical implementation, organized by discipline type." lightbox="./media/disciplines.png":::
@@ -70,7 +70,7 @@ The following table shows the disciplines, the category they belong to, and the 
 --- | --- | ---
 **[Security Strategy, Integration, and Governance](security-adoption-discipline-strategy.md)**<br/>Planning and oversight. | Establishes the overall security vision, priorities, policies and success measures. It ensures security efforts are aligned to business goals and risk tolerance, and that progress is measurable and governed. | All pillars.
 **[Security Architecture](security-adoption-discipline-architecture.md)**<br/>Planning and oversight. | Ensures that security controls, technologies, and processes work together as a cohesive system. It aligns architecture decisions across identity, data, applications, infrastructure, and operations to deliver consistent outcomes. | All pillars.
-**[Access and Identity](security-adoption-discipline-identity-access.md)**<br/>Technical strategy | Secures how users, devices, applications, and workloads access organizational assets. This discipline drives a consistent, identity‑centric approach using Zero Trust principles across all access paths, inlcuding networking and privileged access. | Identity, networks, endpoints.
+**[Access and Identity](security-adoption-discipline-identity-access.md)**<br/>Technical strategy | Secures how users, devices, applications, and workloads access organizational assets. This discipline drives a consistent, identity‑centric approach using Zero Trust principles across all access paths, including networking and privileged access. | Identity, networks, endpoints.
 **[Infrastructure Security](security-adoption-discipline-infrastructure.md)**<br/> Technical strategy | Ensures that the workloads and platforms that run the business are secure across hybrid and multicloud environments for new development and legacy apps.  | Infrastructure.
 **[Development Security](security-adoption-discipline-development.md)**<br/> Technical strategy | Ensures applications and services are designed, built, and maintained securely as pat of a DevSecOps approach and a security development lifecycle (SDL). This includes secure coding practices, and application security testing. | Apps.
 **[Data Security](security-adoption-discipline-data.md)**<br/> Technical strategy | Protects data assets such as intellectual property, trade secrets, and regulated information. This discipline applies security controls throughout the full data lifecycle, regardless of where data is stored or how it moves. It is a critical enabler of safe Generative AI usage. | Data.
@@ -79,7 +79,7 @@ The following table shows the disciplines, the category they belong to, and the 
 **[SecOps](security-adoption-discipline-security-operations.md)**<br/> Operational  | Detects, responds to, and recovers from active threats. This discipline focuses on rapid response, to minimize the time attackers have access after compromise, and thus limiting their business impact. | All pillars.
 
 
-## What's next
+## Next steps
 
 - [Get started](security-adoption-model.md) with security adoption.
 - [Select a business scenario](security-adoption-business-scenarios-overview.md).

@@ -1,7 +1,7 @@
 ---
 title: Establish a Security Posture discipline
 description: Use the Microsoft security adoption model to optimize security posture across the business, based on Zero Trust principles.
-ms.date: 05/12/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -79,7 +79,7 @@ To apply the Security Posture Management discipline effectively, focus on establ
 
 Modern Security Posture management represents a shift from static vulnerability reporting to continuous risk reduction.
 
-**Tradional approach** | **Modern discipline**
+**Traditional approach** | **Modern discipline**
 --- | ---
 Periodic vulnerability scans | Continuous asset and risk discovery.
 Compliance-driven prioritization | Threat-informed prioritization.
@@ -185,12 +185,12 @@ Security Posture spans all technology pillars:
 - **Infrastructure**:  Rapidly finding and mitigating infrastructure vulnerabilities is important since infrastructure has broad impact due to shared dependencies for hosted workloads and data. 
 - **Apps**: Rapidly finding and mitigating these vulnerabilities is important because threat actors often target email, collaboration, line of business, and other apps to enter and laterally traverse across an organization to access business assets.
 - **Data**: Data provides a high-value target for theft, extortion, and disruption. Attackers often target data for intellectual property theft, encryption to gain leverage for extortion or ransomware, planning future attacks, and other purposes.
-- **Networks**: Threat actors attack operations that rely on network connectivity. Network security conotrols restrict communication paths, constrain attacker movement and detect abnormal flows.
+- **Networks**: Threat actors attack operations that rely on network connectivity. Network security controls restrict communication paths, constrain attacker movement and detect abnormal flows.
 - **AI**: Emerging AI attack surfaces require new discovery and protection capabilities.
 
 The discipline builds consistent skills, tooling, and processes across all pillars.
 
-## What's next?
+## Next steps
 
 Microsoft Unified offers expert-led workshops to help organizations accelerate modernization of Security Posture Management strategy, architecture, and technology. These workshops include:
 

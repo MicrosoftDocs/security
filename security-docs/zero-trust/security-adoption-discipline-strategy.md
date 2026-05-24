@@ -1,7 +1,7 @@
 ---
 title: Establish a Security Strategy, Integration, and Governance discipline
 description: Use the Microsoft security adoption model to modernize security strategy, integration, and governance across the enterprise, based on Zero Trust principles.
-ms.date: 05/19/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -11,7 +11,7 @@ ms.topic: conceptual
 #customer intent: As a business leader or security adopter, I want to understand how to use the Microsoft security adoption model to establish a security strategy, integration, and governance across the business.
 ---
 
-# Establish Security Strategy, Integration and Governance
+# Establish Security Strategy, Integration, and Governance
 
 This article describes how to establish or modernize a Security Strategy, Integration, and Governance discipline. This discipline provides direction, coordination, and sustained oversight across a security modernization program, enabling organizations to move beyond fragmented controls toward a cohesive, outcome‑driven security posture.
 
@@ -22,7 +22,7 @@ This article describes how to establish or modernize a Security Strategy, Integr
 
 ## Why this discipline?
 
-Many organizations approach security governance through traditional governance, risk, and compliance (GRC) models that prioritize audits and external compliance. While necessary, these classic GRC approaches often fail to manage risks of real-world incidents that cause tha operational disruption, data loss, recovery costs, and reputational damage.
+Many organizations approach security governance through traditional governance, risk, and compliance (GRC) models that prioritize audits and external compliance. While necessary, these classic GRC approaches often fail to manage risks of real-world incidents that cause that operational disruption, data loss, recovery costs, and reputational damage.
 
 The Security Strategy, Integration, and Governance discipline modernizes this model by making security an integral part of organizational decision‑making and operations, rather than a standalone or reactive function.
 
@@ -36,7 +36,7 @@ Without effective strategy, integration and governance in place, security progra
 
 To be effective, this discipline ensures that Zero Trust principles are applied consistently across all security disciplines and across the full security lifecycle. Rather than enabling isolated technical solutions, SIG aligns decisions, controls, and operations to a shared security model.
 
-The following diagram illustrates how The Security Strategy, Integration and Governance discipline enables security resilience by consistently applying Zero Trust principles across security disciplines and across the full security lifecycle.
+The following diagram illustrates how the Security Strategy, Integration, and Governance discipline enables security resilience by consistently applying Zero Trust principles across security disciplines and across the full security lifecycle.
 
 :::image type="content" source="./media/security-strategy-governance.png" alt-text="Security Strategy, Integration, and Governance " lightbox="./media/security-strategy-governance.png":::
 
@@ -45,7 +45,7 @@ The following diagram illustrates how The Security Strategy, Integration and Gov
 
 The Security Strategy, Integration, and Governance discipline provides direction, integration, and oversight across the full lifecycle of the security program. It enables organizations to:
 
-- **Set clear security vision and direction**: Define security outcomes, priorities, and trade‑offs aligned to business objectives, risk tolerance, and regulatory obligations. Establish a shared understanding of what “good” security looks like for the organization, and how success is measured. Update that understanding as needed.
+- **Set clear security vision and direction**: Define security outcomes, priorities, and trade‑offs aligned to business objectives, risk tolerance, and regulatory obligations. Establish a shared understanding of what *good* security looks like for the organization, and how success is measured. Update that understanding as needed.
 - **Integrate security into the organization**: Embed security into business planning, technology strategy, architecture, development, operations, and partner ecosystems so it is not treated as an afterthought or standalone function.
 - **Govern security decisions and investments**: Establish decision rights, accountability, policies, standards, and success measures that drive consistent prioritization and execution across security and technology teams.
 - **Enable better, faster business decisions**: Act as a central hub for security risk context, helping leaders balance opportunity, risk, and cost and say “yes, safely” to new initiatives.
@@ -103,7 +103,7 @@ Effective delivery depends on close collaboration across the organization:
 
 ## Discipline components
 
-Security Strategy, Integration, and Governance encompasses a broad set of capabilities that together ensure consistent, measurable security outcomes.
+The Security Strategy, Integration, and Governance discipline encompasses a broad set of capabilities that together ensure consistent, measurable security outcomes.
 
 **Capability** | **Details**
 --- | ---
@@ -149,7 +149,7 @@ It aligns with these technology pillars:
 - **Network**: Ensures network configurations and controls support identity‑centric strategies while managing legacy and modern network risks.
 - **AI**: Updates security strategy, skills, tooling, and governance to address risks introduced by AI usage and AI‑assisted threats.
 
-## What's next?
+## Next steps
 
 We recommend taking the CISO workshop.
 

@@ -1,7 +1,7 @@
 ---
 title: Avoid common issues in SecOps modernization
 description: Understand common antipatterns in security operations modernization. 
-ms.date: 05/12/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -14,16 +14,15 @@ ms.topic: conceptual
 # Avoid antipatterns in SecOps modernization
 
 
-
 As you develop the [Security Operations (SecOps) discipline](security-adoption-discipline-security-operations.md) use this article to identify, avoid, and correct common SecOps antipatterns. 
 
 
-This guidance helps you to identify, avoid, and correct common SecOps antipatterns. It's intended for anyone planning or participating in SecOps modernization.
+This guidance helps identify, avoid, and correct common SecOps antipatterns for anyone planning or participating in SecOps modernization.
 
 
 ## What is a SecOps antipattern?
 
-An **antipattern** is recurring behavior that's commonly used but is ultimately ineffective. Antipatterns undermine effectiveness or actively increase risk, and are frequently responsible for slow response times, analyst burnout, repeated incidents, and higher business impact.
+An **antipattern** is common recurring behavior that's ultimately ineffective. Antipatterns undermine effectiveness or actively increase risk, and are frequently responsible for slow response times, analyst burnout, repeated incidents, and higher business impact.
 
 In SecOps, antipatterns typically emerge when teams prioritize tools, data, or organizational silos over measurable security outcomes. Left uncorrected, these behaviors slow detection and response, obscure attacker activity, and hinder organizational learning from incidents.
 
@@ -64,7 +63,7 @@ Without data, SecOps can't investigate what happened or why it happened.
 
 When SecOps lacks the telemetry required to detect or investigate attacks, incidents unfold without visibility or accountability.
 
-Without logs, there is no reliable way to:
+Without logs, there's no reliable way to:
 
 - Detect attacker activity
 - Reconstruct timelines
@@ -100,7 +99,7 @@ Telemetry is an enabler, not the goal. Detection is about distinguishing attacke
 
 #### How to correct 
 
-Align every data source to a defined detection or investigation outcome. If a log does not materially help detect or respond to an attack, it is an operational liability.
+Align every data source to a defined detection or investigation outcome. If a log doesn't materially help detect or respond to an attack, it's an operational liability.
 
 #### Key practices
 
@@ -108,7 +107,7 @@ Key best practices to avoid this antipattern:
 
 Detections are about separating threat actor behavior (abnormal) from regular user and system behavior (normal), so quality depends less on volume and more on relevance.
 
-- **Align goals:** Define specific detection outcomes for every major data source. Map data sources to specific protection goals. .
+- **Align goals:** Define specific detection outcomes for every major data source. Map data sources to specific protection goals.
 - **Avoid data sprawl:** Eliminate redundant or low-value logs that don't support detection or compliance requirements.
 - **Establish responsibility:** Assign responsibility for data quality, normalization, schema consistency, and retention.
 - **Measure detection value:** Track detections produced per data source to ensure investment aligns with operational impact.
@@ -120,7 +119,7 @@ When SecOps insights remain trapped inside the SOC, the organization gets stuck 
 
 :::image type="content" source="./media/security-adoption-discipline-operations-secrets.png" alt-text="Diagram for SecOps antipattern 'Keeping secrets from family'.":::
 
-If incident learnings are not shared:
+If incident learnings aren't shared:
 
 - Architects can’t fix systemic weaknesses
 - Engineers can’t prioritize preventive controls
@@ -130,7 +129,7 @@ SecOps becomes reactive firefighting instead of a learning function.
 
 #### How to correct
 
-If insights aren't captured and shared during alert and incident management and response, weakness are exploited again and agin, and opportunities for improvement are missed. 
+If insights aren't captured and shared during alert and incident management and response, weaknesses are exploited again and again, and opportunities for improvement are missed. 
 
 Effective SecOps requires closing these loops and making sure that information is shared with people who can perform root cause analysis and implement prevention, improved logging, and other measures as needed. 
 
@@ -151,7 +150,7 @@ Key best practices to avoid this antipattern:
 
 ### Network isn't the only source of truth
 
-Modern attacks routinely bypass traditional network perimeter control points using identity abuse, cloud APIs, SaaS integrations, social engineering (trickery) and other attacks.
+Modern attacks routinely bypass traditional network perimeter control points using identity abuse, cloud APIs, SaaS integrations, social engineering (trickery), and other attacks.
 
 
 :::image type="content" source="./media/security-adoption-discipline-operations-network.png" alt-text="Diagram explaining that networks aren't the only source of truth.":::
@@ -171,7 +170,7 @@ Correcting this problem is critical. It begins by acknowledging the importance o
 
 Key best practices to avoid this antipattern include:
 
-- **Broaden beyond network:** In addition to network tools, niclude tools and signals for identity, endpoint, application, data, and others to capture modern attack paths.
+- **Broaden beyond network:** In addition to network tools, include tools and signals for identity, endpoint, application, data, and others to capture modern attack paths.
 - **Correlate sources**: Correlate network data with identity and cloud signals
 - **Prioritize identity and control plane:** Monitor sign-in patterns, token usage, and privileged operations alongside network traffic.
 - **Adopt Zero Trust principles:** Treat every request as untrusted. Verify explicitly by using all available signals, not just network indicators.
@@ -209,7 +208,7 @@ This results in:
 
 - Weaknesses in basic core detections and incident response capabilities.
 - Diluted SecOps effectiveness because:
-    -  Organizations are impacted far more by common attack techniques than by advanced ones. 
+    - Common attack techniques impact organizations far more than advanced techniques.
     - SecOps often struggle to handle advanced cases when foundational detections, automation, or hygiene controls are still immature. 
 
 The outcome is a cycle of wasted resources and increased risk.
@@ -234,7 +233,7 @@ No single tool can detect or respond to the full spectrum of modern attacks.
 
 :::image type="content" source="./media/security-adoption-discipline-operations-tool.png" alt-text="Diagram for SecOps antipattern 'One tool to rule them all'.":::
 
-The appeal is understandable. A single tool promises simplicity and visibility. But modern attacks exploit multiple layers. Relying on only a SIEM, EDR, or firewall leaves blind spots across identity, cloud, data etc.
+The appeal is understandable. A single tool promises simplicity and visibility. But modern attacks exploit multiple layers. Relying on only a security information and event management (SIEM) system, endpoint detection and response (EDR) solution, or a firewall leaves spots with low visibility across identity, cloud, data, etc.
 
 A SIEM full of logs is powerful, but without identity signals, endpoint telemetry, and cloud control plane events, you miss critical context. Similarly, EDR alone can't detect credential abuse or SaaS data exfiltration. Effective defense requires a layered approach where tools work together, sharing data and automating response. 
 
@@ -263,7 +262,7 @@ Each new product promises better visibility or faster response, but without a un
 
 The remedy is a deliberate, outcome-driven tooling strategy. Each technology should have a defined purpose, mapped to a specific business or operational outcome - such as reducing mean time to detect, accelerating investigation, or improving containment consistency. 
 
-Consolidate tools where overlap exists, and use automation to bridge necessary systems rather than adding new layers of manual effort. Simplifying the toolset doesn't mean sacrificing capability; it means focusing on the tools that demonstrably advance detection, response, and recovery effectiveness.
+Consolidate tools where overlap exists, and use automation to bridge necessary systems rather than adding new layers of manual effort. Simplifying the toolset doesn't mean sacrificing capability; it means focus on the tools that demonstrably advance detection, response, and recovery effectiveness.
 
 #### Key practices
 
@@ -280,7 +279,7 @@ Key best practices to avoid this antipattern:
 
 
 
-## What's next?
+## Next steps
 
 - [Review the SecOps discipline](security-adoption-discipline-security-operations.md)
 - [Get started](security-adoption-business-scenarios-overview.md) with recommended business scenarios for security outcomes.

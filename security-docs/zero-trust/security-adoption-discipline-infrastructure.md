@@ -1,11 +1,11 @@
 ---
 title: Establish an Infrastructure and Networking discipline
 description: Use the Microsoft security adoption model to secure cloud infrastructure, including networks, based on Zero Trust principles.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand how I can use the Microsoft security adoption model to effectively secure cloud infrastructure and networking across the business.

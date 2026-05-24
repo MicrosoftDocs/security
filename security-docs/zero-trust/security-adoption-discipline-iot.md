@@ -1,11 +1,11 @@
 ---
 title: Integrate OT/IoT security into the Infrastructure/Networking discipline
 description: Use the Microsoft security adoption model to secure OT/IoT assets and resources across the business, based on Zero Trust principles.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: jraynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand how I can use the Microsoft security adoption model to secure OT/IoT assets across the business.
@@ -90,7 +90,7 @@ Key change principles include:
 
 The OT/IoT security strategy combines near‑term risk reduction with long‑term structural improvements to reduce the likelihood and impact of cybersecurity incidents that could cause human harm, physical damage, or business disruption.
 
-Unlike IT security, OT/IoT security have few viable security controls. Security strategy must acknowledge constraints, focus on consistently and effectively executing available on practical, sustainable controls without disrupting safety or availability.
+Unlike IT security, OT/IoT security has few viable security controls. Security strategy must acknowledge constraints, focus on consistently and effectively executing available on practical, sustainable controls without disrupting safety or availability.
 
 
 ## Strategic priorities
@@ -114,7 +114,7 @@ Effective isolation requires more than just simple network segmentation with fir
 
 The approach should include:
 
- - **Modelling business processes, technology, and threats**: Discover and document OT/IoT systems. How they're used in business workflows, how the technology is configured, and how threats actors might gain access. 
+ - **Modeling business processes, technology, and threats**: Discover and document OT/IoT systems. How they're used in business workflows, how the technology is configured, and how threats actors might gain access. 
  - **Accounting for people, process, and technology** - Take a holistic approach. For example:
 
     - **For technology**, block unauthorized communications, detect threats, and establish rigorous security controls for all bridging/transit devices.
@@ -122,7 +122,7 @@ The approach should include:
     - **For people**, train all stakeholders on what, why, and how to execute procedures.
 
  - **Apply to all layers** - Don't restrict analysis, design, and implementation to only one control such as networking. Consider the whole system, including identities and access, network connectivity, physical access, operating systems, and apps.
- - **Secure transient devices** - Device access to isolated OT/IoT environments must be strongly secured to ensure the safety of fragile environments. Apply rigorous people, process, and techology controls to:
+ - **Secure transient devices** - Device access to isolated OT/IoT environments must be strongly secured to ensure the safety of fragile environments. Apply rigorous people, process, and technology controls to:
     - All devices that are permanently connected to the environment, such as monitoring workstations.
     - Devices that transit in or out, such as vendor maintenance laptops. Ensure you follow [privileged device principles](security-adoption-scenario-privileged-access.md). 
 
@@ -132,7 +132,7 @@ This diagram shows key points for isolating high value assets.
 
 ### Long-term - purchase or replace
 
-Ensure OT/IoT security and productivity increase over time by including their requirements in procurement policy. Without this steps, OT/IoT operations costs and risks will grow over time.
+Ensure OT/IoT security and productivity increase over time by including their requirements in procurement policy. Without this step, OT/IoT operations costs and risks will grow over time.
 
 
 The diagram compares the outcome with and without the inclusion of security requirements. 
@@ -142,7 +142,7 @@ The diagram compares the outcome with and without the inclusion of security requ
 - In **A**, the organization makes a large purchase without security requirements. The example shows a  support contract ending early, and a vendor closing down. This might incur unbudgeted support expenses, and elevated risk.  
 - In **B** the organization includes security requirements during the procurement. Negotiation considers key factors that include:
 
-    - The vendor provides lifetime updates, or provide more modern operating systems for equipment in order to close a deal.
+    - The vendor provides lifetime updates, or provides more modern operating systems for equipment in order to close a deal.
     - The vendor provides lifetime support. Or at least are willing to extend regular support or provide a discount to close a deal.
     - The vendor must follow sound software development practices to reduce design flaws and risk early.
     - The vendor is subject to checks that estimate the ability of the vendor to provide continuity and stay in business.
@@ -184,7 +184,7 @@ Primary roles include:
 
 Key internal collaborators include:
 
-- **Front line workers (Business operations and engineering teams)** – Maintain production systems and ensure that operational processes run smoothly. They integrate logging and telemetry into SIEM and security systems.
+- **Front line workers (Business operations and engineering teams)** – Maintain production systems and ensure that operational processes run smoothly. They integrate logging and telemetry into security incident and event management (SIEM) and security systems.
 - **Front line workers (vendor management)** – Oversee third-party access to OT systems.
 - **Infrastructure, platform, networking engineering/ops teams** – Coordinate network segmentation and connectivity between IT/OT environments.
 - **SecOps** – Monitor OT/IoT threats and respond to incidents.
@@ -209,7 +209,7 @@ Executing the strategy of the OT and IoT security discipline requires security c
 
 - **Identities**: Identity controls for OT/IoT environments must account for machine identities, service accounts used by automation systems, and human operators who require access to industrial controls.
 - **Endpoints**: OT endpoints including industrial workstations, engineering stations, and operator terminals require specialized security to protect these specialized systems without impeding real-time operations.
-- **Infrastructure**: OT infrastructure including industrial control systems, SCADA servers, historians, and PLCs requires visibility and protection while maintaining operational requirements and air-gap architectures where appropriate.
+- **Infrastructure**: OT infrastructure including industrial control systems, SCADA servers, industrial data historians, and PLCs require visibility and protection while maintaining operational requirements and air-gap architectures where appropriate.
 - **Apps**: Applications that interface with OT/IoT devices must be secured to prevent unauthorized control of physical systems. This includes human-machine interfaces (HMI), SCADA applications, and industrial software.
 - **Data**: Operational data from sensors, control systems, and industrial processes must be protected both at rest and in transit, while maintaining the integrity critical for safe operations.
 - **Networks**: Network segmentation between IT and OT environments is critical, along with monitoring of industrial protocols (Modbus, OPC, DNP3) and secure remote access for vendors and operators.
@@ -231,10 +231,10 @@ This includes both primary enablement technology and key enabling technologies.
 [**Microsoft Entra**](/entra/fundamentals/whatis) | Provides identity management for OT operators, engineers, and service accounts accessing industrial systems.
 [**Microsoft Intune**](/intune/intune-service/fundamentals/what-is-intune) | Secures OT workstations and engineering stations used to manage industrial systems.
 [**Microsoft Defender XDR**](/defender-xdr/microsoft-365-defender) | Provides detection and response capabilities for OT workstations and IT systems connected to operational environments (via Microsoft Defender for IoT).
-[**Microsoft Sentinel**](/azure/sentinel/overview) | SIEM solution that correlates OT security alerts with IT security events for comprehensive threat detection.
+[**Microsoft Sentinel**](/azure/sentinel/overview) | A SIEM solution that correlates OT security alerts with IT security events for comprehensive threat detection.
 **Microsoft Azure** | Provides secure cloud infrastructure for OT data analytics, remote monitoring, and secure connectivity including [Azure IoT Hub](/azure/iot-hub/about-iot-hub), [Azure Firewall](/azure/firewall/overview), and [Azure Private Link](/azure/private-link/private-link-overview),
 [**Microsoft Azure Sphere**](/azure-sphere/product-overview/what-is-azure-sphere) | Provides a comprehensive IoT solution that provides a secured, connected microcontroller unit (MCU), a custom Linux-based OS, and a cloud-based security service.
 
-What's next?
+## Next steps
 
 [Learn about the infrastructure and networking discipline](security-adoption-discipline-infrastructure.md).

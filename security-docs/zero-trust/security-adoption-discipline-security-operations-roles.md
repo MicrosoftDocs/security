@@ -1,7 +1,7 @@
 ---
 title: Understand SecOps roles in the Microsoft security adoption model.
-description: Understand Secops roles and responsbilities.
-ms.date: 05/12/2026
+description: Understand Secops roles and responsibilities.
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -31,15 +31,15 @@ While SecOps is a dedicated security function, it relies heavily on the expertis
 
 A clear operating model ensures:
 
-- Incidents are handled by the right roles at the right time
-- Escalations are predictable and efficient
-- Learnings from incidents translate into improved security posture
+- Incidents are handled by the right roles at the right time.
+- Escalations are predictable and efficient.
+- Learnings from incidents translate into improved security posture,
 
 ## SecOps roles and operating model 
 
-These SecOps role definitions are based directly on The Open Group [Security Roles and Glossary Standard](https://publications.opengroup.org/s252), providing a common vocabulary and structure that scales from small teams to large, distributed SOCs.
+These SecOps role definitions are based directly on The Open Group [Security Roles and Glossary Standard](https://publications.opengroup.org/s252), providing a common vocabulary and structure that scales from small teams to large, distributed security operations centers (SOCs).
 
-In smaller organizations, these responsibilities may be combined into a few roles. In larger organizations, they are typically separated into specialized teams. Regardless of size, the functions and outcomes remain consistent.
+In smaller organizations, these responsibilities might be combined into a few roles. In larger organizations, they're typically separated into specialized teams. Regardless of size, the functions and outcomes remain consistent.
 
 SecOps roles and responsibilities are illustrated in this diagram:
 
@@ -54,8 +54,8 @@ In larger SecOps teams, specialized roles might be broken into dedicated teams. 
 - **Security Operations (SecOps) Manager**: Provides leadership and oversight for the SecOps function. Supports SecOps teams, aligns work to business priorities, and continuously improves effectiveness. 
 - **Triage (Tier 1) Analyst**: Acts as the first responder for alerts and incidents. This role rapidly handles well‑understood attack patterns and escalates complex cases for deeper investigation.
 - **Investigation (Tier 2) Analyst**: Leads response for complex or high‑impact incidents. This role investigates multi‑stage attacks, coordinates containment actions, and refines detection logic based on real incidents.
-- **Threat Hunter (Tier 3)**: Proactively searches for attackers who have evaded detections. Threat hunters reduce attacker dwell time and contribute deep expertise during major incidents.
-- **Detection Engineer**: Designs, tests, and improves detections to reduce blind spots. This role limits an attacker’s ability to operate undetected and improves detection and investigation procedures for analysts.
+- **Threat Hunter (Tier 3)**: Proactively searches for attackers who evaded detections. Threat hunters reduce attacker dwell time and contribute deep expertise during major incidents.
+- **Detection Engineer**: Designs, tests, and improves detections to reduce areas without full visibility. This role limits an attacker’s ability to operate undetected and improves detection and investigation procedures for analysts.
 - **SecOps Platform and Data Engineer**: Ensures that SecOps tooling and data pipelines are reliable, scalable, and continuously evolving. This role underpins the effectiveness of all other SecOps functions.
 - **Threat Intelligence Analyst**: Collects and analyzes threat information from internal and external sources and converts it into actionable insights for SecOps, security leadership, and partner teams.
 - **Incident Coordination and Management**: Coordinates technical and business response during major incidents. This role manages communications, decision‑making, and cross‑functional execution during crises. 
@@ -79,7 +79,7 @@ This structure ensures scale without sacrificing quality.
 
 ## SecOps key internal partners
 
-SecOps cannot operate effectively in isolation. Successful security operations depend on deep integration with teams that design, build, and operate the environment.
+SecOps can't operate effectively in isolation. Successful security operations depend on deep integration with teams that design, build, and operate the environment.
 
 SecOps data and insights—especially threat intelligence—are most valuable when they inform prioritization decisions across the organization.
 
@@ -105,7 +105,7 @@ Key roles include:
  - Security Architects
  - Infrastructure Architects
  - Data and AI Architects
- - Access Architects (identity, networks etc)
+ - Access Architects (identity, networks etc.)
  - Solution Architects
  - Software and Application Architects
 
@@ -119,7 +119,7 @@ They support SecOps by:
 - Ensuring applications generate appropriate telemetry
 - Using SecOps intelligence to prioritize security improvements
 
-## What's next?
+## Next steps
 
 Learn more about [security roles in the Open Group standard](https://publications.opengroup.org/standards/security/s252).
 

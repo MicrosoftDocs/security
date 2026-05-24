@@ -1,11 +1,11 @@
 ---
 title: Use the Microsoft security adoption model to modernize SecOps
 description: Use the Microsoft security adoption model to modernize security operations, based on Zero Trust principles.
-ms.date: 01/29/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: conceptual
 
 #customer intent: As a business leader or security adopter, I want to understand how I can use the Microsoft security adoption model to modernize security operations
@@ -49,7 +49,7 @@ SecOps teams may range from a single individual to large globally distributed 24
 
 ### Adopt Zero Trust in SecOps
 
-Security Operations (SecOps) is foundational to a Zero Trust strategy. Zero Trust assumes compromise and focuses on minimizing impact when controls fail. SecOps turns that assumption into action by continuously detecting, investigating, and responding to threats across the environment.
+Security Operation (SecOps) is foundational to a Zero Trust strategy. Zero Trust assumes compromise and focuses on minimizing impact when controls fail. SecOps turns that assumption into action by continuously detecting, investigating, and responding to threats across the environment.
 
 In a Zero Trust model, prevention alone is insufficient. Organizations must expect attackers to bypass controls and rely on SecOps to identify malicious activity early, contain attacks quickly, and generate insights that improve security posture over time.
 
@@ -99,7 +99,7 @@ Threat actors tend to reuse techniques that are cheap, effective, and reliable u
 
 ## Discipline roles and collaborators
 
-The SecOps discipline is typically led by a dedicated SecOps teams. In smaller organizations, SecOps responsibilities might be part-time or shared across roles but still require clear ownership.
+The SecOps discipline is typically led by a dedicated SecOps team. In smaller organizations, SecOps responsibilities might be part-time or shared across roles but still require clear ownership.
 
 Primary roles in this discipline typically include:
 
@@ -133,23 +133,23 @@ SecOps operates as part of a broader security operating model and is tightly int
 - **Access and Identities discipline**: Identity telemetry is a primary detection and investigation signal.
 - **Data Security discipline**: SecOps investigates data theft, extortion, insider risk, and privacy incidents.
 - **Security Architecture discipline**: Ensures detection and response mechanisms align with intended system design.
-- **Strategy, Integration, and Governance discipline**:Defines SecOps priorities, metrics, and success criteria.
+- **Strategy, Integration, and Governance discipline**: Defines SecOps priorities, metrics, and success criteria.
 
 
 ## Alignment with technology pillars
 
 The SecOps discipline operates across all technology pillars and must detect and contain attacks wherever they occur.
 
-- **Identities**: This is a top priority for SecOps because identities are primary attack entry points. Almost all multi-stage attacks rely on identity attacks (pass-the-hash/ticket/etc.) to laterally traverse and gain access to additional organizational assets, often using privileged accounts associated with IT administrators or administrative service accounts.
+- **Identities**: This is a top priority for SecOps because identities are primary attack entry points. Almost all multi-stage attacks rely on identity attacks (pass-the-hash/ticket/etc.) to laterally traverse and gain access to more organizational assets, often using privileged accounts associated with IT administrators or administrative service accounts.
 - **Endpoints**: Endpoints are common footholds, a base of operations, and local attack tool storage for attackers. It's critical to quickly locate compromised endpoints to contain damage and gain insights into attackers objectives and capabilities.
-- **Infrastructure**: Effective detection and response is important because threat actors frequently target high-value cloud and on-premises infrastructure assets that enable broad compromise when breached.
-- **Apps**: Rapidly detecting and responding to attacks on email, collaboration, line of business, and other apps is critical because attackers often use them to enter and laterally traverse an organization to access business assets.
+- **Infrastructure**: Effective detection and response are important because threat actors frequently target high-value cloud and on-premises infrastructure assets that enable broad compromise when breached.
+- **Apps**: Rapidly detection and response to attacks on email, collaboration, line of business, and other apps is critical because attackers often use them to enter and laterally traverse an organization to access business assets.
 - **Data**: Attackers often target data for intellectual property theft, encryption to gain leverage for extortion or ransomware, planning future attacks, and other purposes. Additionally, SecOps may be involved in or collaborate on data related investigations related to privacy, insider risk, and others.
 - **Network**: Just like legitimate communications, threat actor communications and attack operations travel over network connections. SecOps focuses on network sensor and data is still valuable for context and containment, even as encryption reduces visibility.
-- **AI**: As AI emerges as an attack surface, new tools and skills are needed for effective detection and investigatation. AI attack volume is increasing as threat actors adopt AI technology. SecOps can also take advantage of AI to automate analysis and other processes.
+- **AI**: As AI emerges as an attack surface, new tools and skills are needed for effective detection and investigation. AI attack volume is increasing as threat actors adopt AI technology. SecOps can also take advantage of AI to automate analysis and other processes.
 
 
-## What's next?
+## Next steps
 
 Microsoft Unified offers expert-led workshops to help organizations accelerate modernization of Security Posture Management strategy, architecture, and technology. These workshops include:
 

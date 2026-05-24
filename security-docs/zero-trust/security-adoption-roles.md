@@ -5,14 +5,14 @@ ms.author: raynew
 author: rayne-wiselman
 ms.topic: article
 ms.service: security
-ms.date: 04/27/2026
+ms.date: 05/24/2026
 
 #customer intent: As a Microsoft security platform adopter, I want to understand the roles involved in security modernization and adoption.
 ---
 
 # Review adoption roles and responsibilities
 
-Adopting a Zero Trust security model is a strategic transformation that affects the entire organization, and  requires clear ownership and coordination across business, security, and technology teams. It's not a single technology deployment or a one-time project. Successful adoption and operation depends on sustained leadership and the alignment of roles that plan, implement, and operationalize Zero Trust at scale.
+Adopting a Zero Trust security model is a strategic transformation that affects the entire organization, and  requires clear ownership and coordination across business, security, and technology teams. It's not a single technology deployment or a one-time project. Successful adoption and operation depend on sustained leadership and the alignment of roles that plan, implement, and operationalize Zero Trust at scale.
 
 This article describes the key organizational roles involved in Zero Trust adoption and explains how these roles work together to plan, implement, and operationalize Zero Trust at scale.
 
@@ -34,7 +34,7 @@ Security is fundamentally a human discipline that manages risk from human threat
 
 
 - Security is an intrinsic part of every business area. It has  fiduciary and risk implications, impacts business capabilities and execution, and all technologies.
-- Security is everyone's job. From the board of directors to technology teams, non-technical teams such as finance and legal, and information/frontline workers.
+- Security is everyone's job. From the board of directors to technology teams, nontechnical teams such as finance and legal, and information/frontline workers.
 - For effective security risk management, every person must understand security in the context of their role, and actively support security objectives.
 - Since anyone in the organization can create or amplify security risk, everyone must apply security principles in their daily actions and decisions.
 
@@ -76,7 +76,7 @@ Role terminology and definitions are based on the [Open Group Security Roles and
 
 ### Organizational leadership and governance
 
-**Purpose**: Establish organizational direction, priorities, and governance, including decison rights and accountabilities.
+**Purpose**: Establish organizational direction, priorities, and governance, including decision rights and accountabilities.
 Executive leadership establishes Zero Trust as an organizational priority and creates the conditions for long-term success.
 
 **Accountabilities include**:
@@ -122,7 +122,7 @@ Their involvement ensures Zero Trust is defensible, auditable, and aligned with 
 
 ### Other cross-functional disciplines 
 
-**Purpose**: Non-technical disciplines such as legal, finance, PR, and communications align  Zero Trust adoption across non-technical business support functions. Zero Trust impacts contracts, budgets, communications, and external trust.
+**Purpose**: Non-technical disciplines such as legal, finance, PR, and communications align  Zero Trust adoption across nontechnical business support functions. Zero Trust impacts contracts, budgets, communications, and external trust.
 
 **Accountabilities include**:
 
@@ -150,7 +150,7 @@ Strong technical leadership prevents siloed implementations and fragmented secur
 
 ### Architecture
 
-**Purpose**: Design scalable, coherent solutions that align to Zero Trust prinicples.
+**Purpose**: Design scalable, coherent solutions that align to Zero Trust principles.
 Security and enterprise architects collaboratively define enterprise-wide architecture and solutions. 
 
 **Accountabilities and responsibilities include**:
@@ -181,7 +181,7 @@ Zero Trust is strongest when applications assume no implicit trust.
 
 ### Security strategy roles and responsibilities 
 
-**Purpose**: Security strategy roles such as security education, insider risk, posture and compliance management help shape long-term security behavior and maturity.
+**Purpose**: Security strategy roles such as security education, insider risk, posture, and compliance management help shape long-term security behavior and maturity.
 These roles focus on people, policy, and sustained security effectiveness.
 
 **Responsibilities include**:
@@ -213,7 +213,7 @@ These teams make Zero Trust real and reliable.
 ### Security operations (SecOps / SOC)
 
 **Purpose**: Apply an asset-centric Zero Trust approach to threat detection and response.
-Security operations teams respond to attacks that evade preventatitive controls. 
+Security operations teams respond to attacks that evade preventative controls. 
 
 **Responsibilities include**:
 
@@ -226,7 +226,7 @@ Security operations teams respond to attacks that evade preventatitive controls.
 Zero Trust assumptions are tested and refined through daily operations.
 
 
-## What's next?
+## Next steps
 
 - [Select a business scenario](security-adoption-business-scenarios-overview.md), and then review the disciplines and roles associated with the scenario. 
 - Alternatively, review the [breadth of disciplines](security-adoption-discipline-overview.md) involved in security adoption.

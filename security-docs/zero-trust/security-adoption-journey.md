@@ -1,7 +1,7 @@
 ---
 title: Microsoft security adoption overview
 description: Learn how to apply a standard model to Microsoft security adoption
-ms.date: 04/27/2026
+ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
@@ -54,7 +54,7 @@ This approach works well for organizations where CISOs and security leaders have
 
 ## Build-up
 
-Build up is an incremental approach that starts with targeted improvements and expands over time. To use this pattern:
+Buildup is an incremental approach that starts with targeted improvements and expands over time. To use this pattern:
 
 1. Start with a high-impact quick win that addresses and urgent risk or operational gap. For example focuses on a specific discipline or pillar to begin.
 1. Demonstrate measurable value of the quick win to build credibility and support.
@@ -73,7 +73,7 @@ Scenario-driven adoption focuses on securing a specific business initiative and 
 
 This pattern is suitable when there's executive support and funding for a particular security initiative, but not for full security transformation. It helps organizations to connected disconnected programs and siloed efforts, improve collaboration, and defer lower-priority modernization until later.
 
-## What next?
+## Next steps
 
 What you do next depends on the model you're using.
 

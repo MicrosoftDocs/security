@@ -220,4 +220,4 @@ Phase 4 is the final stage in the solution guide.
 
 ## Next steps
 
-Check out our [other solution guides](security-adoption-business-scenarios-overview.md).
+Check out our [other solution guides](../security-adoption-business-scenarios-overview.md).

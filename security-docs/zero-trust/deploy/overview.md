@@ -4,11 +4,18 @@ description: Learn how to deploy Zero Trust solutions to keep your organization 
 ms.date: 02/26/2025
 ms.service: security
 ms.subservice: zero-trust
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: checklist
-ms.collection:
-  - highpri
-  - zerotrust-pillar
+
+#customer intent: As a security or IT architect, I want to understand how technology pillars across the organization are integrated into the security adoption model and implemented across business scenarios.
+
 ---
+
+
+
+
+
 
 # Overview - Technology pillars
 
@@ -31,7 +38,7 @@ Our structured adoption model focuses on three components:
 - [Business scenarios](../security-adoption-business-scenarios-overview.md) - Define the most critical security outcomes for the organization. They focus on **why** we're adopting Zero Trust security.
 - [Security disciplines](../security-adoption-discipline-overview.md) - Guide teams to define strategy, architecture,  processes, and controls across common areas of security so that we can deliver the business scenarios. They focus on **what** Zero Trust capabilities are required.
 - **Technology pillars** - Secure specific areas of the organization such as identity, data, and devices. They focus on **where** security capabilities are implemented.
-- [Technical solutions](../implement-overview.md) - As adoption moves towards deployment,  technical solutoins provide detailed guidance for implementing security controls across technology pillars. They focus on **how** security is implemented.
+- [Technical solutions](../implement-overview.md) - As adoption moves towards deployment,  technical solutions provide detailed guidance for implementing security controls across technology pillars. They focus on **how** security is implemented.
 
 
 

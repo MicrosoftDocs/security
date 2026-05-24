@@ -20,7 +20,7 @@ Security adoption is complex and time-consuming. Our SAF workshops focus on high
 
 
 > [!TIP]
-> Our Security Adoption Framework (SAF) workshops align with guidance in our [structured security adoption model](security-adoption-model.md).
+> Our Security Adoption Framework (SAF) workshops align with the detailed guidance in our [structured security adoption model](security-adoption-model.md).
 
 ## What SAF workshops do we have?
 

@@ -30,7 +30,7 @@ The adoption model aligns critical business outcomes, security disciplines, and 
 
 A structured adoption model helps you to:
 
-- **Align with security best practices** - Align with [Zero Trust principles](zero-trust-overview.md), [Microsoft Secure Future Initiative (SFI) patterns](sfi/secure-future-initiative-overview.md), [open standards and guidance](security-zero-trust-frameworks.md), and [other security best practices](/security-best-practices-overview.md).
+- **Align with security best practices** - Align with [Zero Trust principles](zero-trust-overview.md), [Microsoft Secure Future Initiative (SFI) patterns](sfi/secure-future-initiative-overview.md), [open standards and guidance](security-zero-trust-frameworks.md), and [other security best practices](security-best-practices-overview.md).
 - **Maximize existing investments** - Get value from your existing tools, before introducing new capabilities.
 - **Deliver an end-to-end security strategy** - Connect business priorities to security architecture, controls, processes, and operations.
 - **Adapt continuously** - Evolve security posture and strategy as threats, business needs, and technologies change.

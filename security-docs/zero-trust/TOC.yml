@@ -241,57 +241,8 @@
         href: security-adoption-discipline-development-security.md
       - name: Review secure development imperatives
         href: security-adoption-discipline-development-imperatives.md
-      - name: Identity/Access development
-        items:
-        - name: Best practices for Identity/Access development
-          href: develop/identity-iam-development-best-practices.md
-        - name: Integrate apps with Microsoft Entra
-          href: develop/integrate-apps-microsoft-identity-platform.md
-        - name: Register apps with Microsoft Entra
-          href: develop/app-registration.md
-        - name: Use industry standards
-          href: develop/identity-standards-based-development-methodologies.md
-        - name: Develop permissions and access
-          items:
-          - name: Build apps with Microsoft Entra security
-            href: develop/identity.md
-          - name: Choose an account type for an app
-            href: develop/identity-supported-account-types.md
-          - name: Authenticate users in your app
-            href: develop/user-authentication.md
-          - name: Access resources
-            href: develop/acquire-application-authorization-to-access-resources.md
-          - name: Delegate permissions
-            href: develop/developer-strategy-delegated-permission.md
-          - name: Configure app permissions
-            href: develop/developer-strategy-application-permissions.md
-          - name: Request admin consent
-            href: develop/permissions-require-admin-consent.md
-          - name: Restrict permissions
-            href: develop/overprivileged-permissions.md
-          - name: Authenticate apps
-            href: develop/identity-non-user-applications.md
-          - name: Use token claims
-            href: develop/token-management.md
-          - name: Customize tokens
-            href: develop/zero-trust-token-customization.md
-          - name: Use Continuous Access Evaluation
-            href: develop/secure-with-cae.md
-          - name: Configure group claims/app roles in tokens
-            href: develop/configure-tokens-group-claims-app-roles.md  
-          - name: Protect APIs
-            items:
-            - name: Overview
-              href: develop/protect-api.md
-            - name: Protected API example
-              href: develop/protected-api-example.md  
-            - name: Call another API
-              href: develop/api-calls-api.md
-        - name: Follow authorization best practices
-          href: develop/developer-strategy-authorization-best-practices.md
-
-     
-    - name: Infrastructure and networking
+ 
+    - name: Infrastructure 
       items:
       - name: Overview
         href: security-adoption-discipline-infrastructure.md

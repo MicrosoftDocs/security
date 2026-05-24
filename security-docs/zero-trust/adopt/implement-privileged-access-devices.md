@@ -20,7 +20,7 @@ Privileged access presents a critical security risk in most organizations becaus
 
 Learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access.md) plays a critical role in your business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* - by reducing this risk and strengthening control over sensitive systems.
 
-This article describes Phase 2 of the solution.  It deploys and hardens Privileged Access Workstations (PAWs) so privileged activity originates only from trusted devices. It builds on Phase 1 and produces the device trust signals (Intune compliance and Microsoft Defender for Endpoint risk) used for enforcement in Phase 3. 
+This article describes Phase 2 of the solution. It deploys and hardens Privileged Access Workstations (PAWs) so privileged activity originates only from trusted devices. It builds on Phase 1 and produces the device trust signals (Intune compliance and Microsoft Defender for Endpoint risk) used for enforcement in Phase 3. 
 
 ## Protection goals
 
@@ -34,13 +34,13 @@ Phase 2 ensures that privileged access:
 
 ## Protection scope
 
-Privileged access is only as trustworthy as the device from which it originates. Identity protections—such as MFA, approvals, and role activation—cannot compensate for a compromised workstation.
+Privileged access is only as trustworthy as the device from which it originates. Identity protections—such as MFA, approvals, and role activation—can't compensate for a compromised workstation.
 If an attacker controls the device used for privileged access, they can:
 
-- Steal authentication tokens after MFA is completed
-- Inject malicious processes into administrative sessions
-- Replay credentials or tokens from memory
-- Bypass approval workflows by operating as the legitimate user
+- Steal authentication tokens after MFA is completed.
+- Inject malicious processes into administrative sessions.
+- Replay credentials or tokens from memory.
+- Bypass approval workflows by operating as the legitimate user.
 
 For privileged roles, a single compromised workstation can enable rapid escalation to tenant‑wide or enterprise‑wide control. As a result, device security defines the upper bound of trust for privileged access.
 Privileged access policies therefore assume that administrative sessions originate from devices that meet the highest security bar. These devices form the trust boundary for privileged operations.
@@ -128,7 +128,7 @@ Create as follows:
     - **Group name**: Secure Workstation Devices
     - **Membership type**: Dynamic Devices
 
-1. Select **Add dynamic query** and add a rule with this syntax: *device.devicePhysicalIds -any _ -contains "[OrderID]:PAW"*
+1. Select **Add dynamic query** and add a rule with this syntax: *device.devicePhysicalIds -any _ -contains "[OrderID]: PAW"*
 
 1. Select **Save** > **Create**.
 

@@ -350,7 +350,7 @@ Ensure you're signed in as a Global Administrator or Privileged Role Administrat
 1. Select **New user**, and create a cloud-only user.
 
 - Use the *.onmicrosoft.com domain
-- Use a non‑obvious name (not “breakglass”)
+- Use a non‑obvious name (not “break glass”)
 
 1. Assign the Global Administrator role.
 - Do not make this role PIM‑eligible — it must be permanent.

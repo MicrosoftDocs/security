@@ -23,7 +23,7 @@ Learn how a [secure privileged access architecture](../security-adoption-scenari
 
 This article describes Phase 3 of the implementation. It enforces privileged access policy to restrict where privileged identities can be used. 
 
-Using the trusted device signals established in Phase 2, you configure Conditional Access so privileged roles, portals, and management interfaces can be used only from approved, low-risk PAWs.
+Using the trusted device signals established in Phase 2, you configure Conditional Access so privileged roles, portals, and management interfaces can be used only from approved, low-risk privileged access workstations (PAWs).
 
 ## Protection goals
 
@@ -33,7 +33,7 @@ Phase 3 enforces the following protection goals:
 - Admin portals and interfaces are only reachable from compliant, low-risk devices.
 - Privileged access requires strong user authentication and verified device trust.
 - Restrict access to administrative interfaces (portals, APIs, PowerShell) to approved PAWs
-- Stolen credentials cannot be reused from standard or unmanaged endpoints.
+- Stolen credentials can't be reused from standard or unmanaged endpoints.
 - Privileged access paths are explicit, auditable, and enforceable.
 
 ## Protection scope
@@ -92,9 +92,9 @@ Ensure privileged access requires strong user authentication and trusted devices
 1. In **Assignments** > **Users** configure these settings:
     - Include privileged directory roles such as Global Administrator, Security Administrator.
     - Exclude the emergency break glass group.
-1. In **Assignments** > **Cloud apps** include cloud management applications such as the Azure portal, Entra admin center, Microsoft 365 admin center, and Defender portals.
+1. In **Assignments** > **Cloud apps** include cloud management applications such as the Azure portal, Microsoft Entra admin center, Microsoft 365 admin center, and Defender portals.
 1. In **Access controls**, grant access with these settings:
-    - Require multi‑factor authentication
+    - Require multifactor authentication
     - Require device to be marked as compliant
     - Require Microsoft Defender for Endpoint device risk = Low
 1. Enable the policy.

@@ -409,7 +409,7 @@ The following diagram shows the recommended policies for Zero Trust.
 
 ## Step 7: Enable advanced threat detection and protection
 
-Your spoke VNet built on Azure may already be protected by Microsoft Defender for Cloud (MDC) as other resources from your IT business environment running on Azure or on-premises may also be protected.
+The spoke VNet built on Azure may already be protected by Microsoft Defender for Cloud (MDC) as other resources from your IT business environment running on Azure or on-premises may also be protected.
 
 As mentioned in the other articles from this series, Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) tool that offers Security Recommendations, Alerts, and advanced features such as [Adaptive Network Hardening](/azure/defender-for-cloud/adaptive-network-hardening) to assist you as you progress in your Cloud Security journey. To better visualize where Defender for Cloud fits into the greater Microsoft security landscape, see [Microsoft Cybersecurity Reference Architectures](microsoft-reference-architecture.md).
 

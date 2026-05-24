@@ -143,7 +143,7 @@ The following actions apply:
 
 - Inventory your data.
 
-  First, take stock of where all your data resides, which can be as simple as listing the apps and repositories with your data. After technologies like sensitivity labeling have been deployed, you may discover other locations where sensitive data is being stored. These locations are sometimes referred to as dark or grey IT. 
+  First, take stock of where all your data resides, which can be as simple as listing the apps and repositories with your data. After technologies like sensitivity labeling have been deployed, you might discover other locations where sensitive data is being stored. These locations are sometimes referred to as dark or grey IT. 
 
   It’s also helpful to estimate how much data you plan to inventory (the volume). Throughout the recommended technical process, you use the tool set to discover and identify business data. You’ll learn what kinds of data you have and where this data resides across services and cloud apps, enabling you to correlate the sensitivity of the data with the level of exposure of the locations in which it's present. 
 
@@ -184,7 +184,7 @@ This table summarizes roles that are recommended when building a sponsorship pro
 
 The [PowerPoint deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-protect-data-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/zero-trust-protect-data-stakeholders.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-protect-data-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for identity and protect sensitive data deployment." lightbox="../media/adoption-guide/zero-trust-protect-data-stakeholders.png":::
 
 ### Technical planning and skills readiness
 
@@ -359,7 +359,7 @@ In this stage, you extend the protections you developed in Microsoft 365 to data
 
 | Resource | Description |
 | --- | --- |
-| [Microsoft Purview data governance documentation](/azure/purview/) | Learn how to use the Microsoft Purview governance portal so your organization can find, understand, govern, and consume data sources. Tutorials, REST API reference, and other documentation show you how to plan and configure your data repository where you can discover available data sources and manage rights use. |
+| [Microsoft Purview data governance documentation](/azure/purview/) | Learn how to use the Microsoft Purview portal to help your organization find, understand, govern, and consume data sources. Tutorials, REST API reference, and other documentation show you how to plan and configure your data repository where you can discover available data sources and manage rights use. |
 
 ### Cloud adoption plan
 

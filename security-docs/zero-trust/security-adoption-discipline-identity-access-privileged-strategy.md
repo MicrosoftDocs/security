@@ -12,13 +12,13 @@ ms.topic: conceptual
 ---
 
 
-# Establish an privileged access strategy
+# Establish a privileged access strategy
 
 [Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help teams to consistently deliver security outcomes across the entire technology estate. They're used in our security adoption model to provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and technical implementation, ensuring that security investments translate into real, measurable outcomes. 
 
 The Security Architecture discipline establishes a cross-organizational strategy for controlling and governing access paths to business assets.
 
-As you establish the Security Architecture discipline, this article provides guidance for creating an privileged access architecture.
+As you establish the Security Architecture discipline, this article provides guidance for creating a privileged access architecture.
 
 ## Privileged access strategy
 

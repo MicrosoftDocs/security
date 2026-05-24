@@ -153,7 +153,7 @@ For a multi-tier virtual-machine based application, the recommendation is to cre
 
 In the diagram:
 
-- Each tier of the application is hosted in a dedicated subnet such as, front end tier, app tier, and data tier.
+- Each tier of the application is hosted in a dedicated subnet such as front end tier, app tier, and data tier.
 - A network security group is configured for each of these subnets.
 
 Configuring network security groups in a different way than shown in the figure can result in incorrect configuration of some or all of the network security groups and can create issues in troubleshooting. It can also make it difficult to monitor and log.
@@ -225,9 +225,9 @@ This message gives the following two warnings:
 - Azure Load Balancers won't, by default, be able to access resources using this network security group.
 - Other resources on this VNet won't, by default, be able to access resources using this network security group.
 
-For our purpose in Zero Trust, this is how it should be. It means that just because something is on this VNet, doesn't mean that it has immediate access to your resources. For each traffic pattern, you'll need to create a rule explicitly allowing it and you should do so with the least amount of permissions. Therefore, if you've specific outbound connections for management&ndash;such as to Active Directory Domain Services (AD DS) domain controllers, private DNS virtual machines, or to specific external websites&ndash;they need to be controlled here.
+For our purpose in Zero Trust, this is how it should be. It means that just because something is on this VNet, doesn't mean that it has immediate access to your resources. For each traffic pattern, you'll need to create a rule explicitly allowing it and you should do so with the least number of permissions. Therefore, if you've specific outbound connections for management&ndash;such as to Active Directory Domain Services (AD DS) domain controllers, private DNS virtual machines, or to specific external websites&ndash;they need to be controlled here.
 
-### Alternative Deny Rules
+### Other Deny rules
 
 If you're using Azure Firewall to manage your outbound connections, then instead of performing a deny outbound all, you can leave all outbound open. As a part of the Azure Firewall implementation, you'll set up a route table that sends the default route (0.0.0.0/0) to the firewall, which handles traffic outside of the VNet.
 
@@ -237,7 +237,7 @@ Read more about [Azure Firewall](/azure/firewall/overview) and [Route Tables](/a
 
 ### Virtual machine management rules
 
-To configure virtual machines with Microsoft Entra Login, Anti-Malware, and automatic updates enabled, you'll need to allow the following outbound connections. Many of these are by FQDN, meaning that either Azure Firewall is needed for FQDN rules, or you'll make a more complex plan. Azure Firewall is recommended.
+To configure virtual machines with Microsoft Entra Login, anti-malware, and automatic updates enabled, you'll need to allow the following outbound connections. Many of these are by FQDN, meaning that either Azure Firewall is needed for FQDN rules, or you'll make a more complex plan. Azure Firewall is recommended.
 
 The outbound connections are:
 
@@ -259,7 +259,7 @@ The outbound connections are:
 
 ### Deploy application specific rules for application security groups
 
-Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here's an example diagram of using application security groups to define network traffic patterns in the network security groups for a spoke VNet that is used along with a hub VNet. This is the recommended configuration.
+Define traffic patterns with the least number of permissions and only following explicitly allowed paths. Here's an example diagram of using application security groups to define network traffic patterns in the network security groups for a spoke VNet that is used along with a hub VNet. This is the recommended configuration.
 
 :::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.svg" alt-text="Diagram of the recommended configuration of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.svg":::
 
@@ -372,7 +372,7 @@ To enable Network Security Group Flow Logging, you can follow the [Tutorial: Log
 
 ### Protect inbound web traffic with IDPS
 
-In addition to the controls in your spoke virtual network, you can also use an Azure Firewall in order to apply additional inspection. While the Web Application Firewall function for Azure Front Door and Application Gateway inspects traffic for common web attacks, using Azure Firewall can provide a deeper level of inspection.
+In addition to the controls in the spoke virtual network, you can also use an Azure Firewall in order to apply additional inspection. While the Web Application Firewall function for Azure Front Door and Application Gateway inspects traffic for common web attacks, using Azure Firewall can provide a deeper level of inspection.
 
 To use every signal available and maintain central visibility into network traffic, routing traffic from your Application Gateway to Azure Firewall is recommended. It can then inspect the traffic for additional signals, and capture the behavior in its logs. You can read more about this configuration in the article [Zero-trust network for web applications with Azure Firewall and Application Gateway](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall). For more information on how to set up this behavior, see [Configure Azure Firewall Premium for Zero Trust](./azure-infrastructure-networking.md#configure-azure-firewall-premium-for-zero-trust).
 
@@ -419,7 +419,7 @@ Here's an example in the Microsoft Defender for Cloud portal.
 
 :::image type="content" source="media/spoke/dfc-recs.png" alt-text="Screenshot of example Microsoft Defender for Cloud recommendations." lightbox="media/spoke/dfc-recs.png":::
 
-If you choose to onboard one of the Defender for Cloud plans that offer Advanced Workload Protections, it includes Adaptive Network Hardening Recommendations to improve your existing network security group rules. Here's an example.
+If you choose to deploy a Defender for Cloud plan that offers Advanced Workload Protections, it includes Adaptive Network Hardening Recommendations to improve your existing network security group rules. Here's an example.
 
 :::image type="content" source="media/spoke/network-hardening.png" alt-text="Screenshot of example network hardening recommendations." lightbox="media/spoke/network-hardening.png":::
 

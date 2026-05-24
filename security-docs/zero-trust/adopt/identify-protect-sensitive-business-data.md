@@ -1,10 +1,14 @@
 ---
 title: Identify and protect sensitive business data with Zero Trust
 description: Learn how to identify and protect sensitive business data with Zero Trust.  
-ms.date: 05/05/2025
+ms.date: 05/24/2025
 ms.service: security
 ms.subservice: zero-trust
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: how-to
+
+# Customer intent: As a security implementer, I want to understand how to identity and protect the most sensitive business data.
 ---
 
 
@@ -39,7 +43,7 @@ The following table provides reasons why business leaders across an organization
 | Chief Information Officer (CIO) | While traditional approaches for protecting information relied on limiting access to it, protecting sensitive data adequately by using modern technologies enables more flexible collaboration with external parties, as needed, without increasing risk. Your IT departments can fulfill their mandate to ensure productivity while minimizing risk. |
 | Chief Information Security Officer (CISO) | As the primary function of this role, securing sensitive business data is an integral part of information security. This outcome directly affects the organization’s larger cybersecurity strategy. Advanced security technology and tools provide the ability to monitor data and prevent leakage and loss. |
 | Chief Technology Officer (CTO) | Intellectual property can differentiate a successful business from a failing one. A key to future growth is to protect this data from oversharing, unauthorized access, and theft. | 
-|Chief Operations Officer (COO) | Operations data, procedures, and production plans are a key strategic advantage to an organization. These plans can also reveal strategic vulnerabilities that can be exploited by competitors. Protecting this data from theft, oversharing, and misuse is critical to the continued success of the business. |
+|Chief Operations Officer (COO) | Operations data, procedures, and production plans are a key strategic advantage to an organization. These plans can also reveal strategic vulnerabilities that can be exploited by competitors. Data protection from theft, oversharing, and misuse is critical to the continued success of the business. |
 | Chief Financial Officer (CFO) | Publicly traded companies have a duty to protect specific financial data before it's made public. Other financial data can reveal plans and strategic strengths or weaknesses. This data must all be protected to both ensure compliance with existing regulations and maintain strategic advantages. |
 | Chief Compliance Officer (CCO) | Regulations across the world mandate protection of PII of customers or employees and other sensitive data. The CCO is responsible for ensuring the organization abides by such regulations. A comprehensive information protection strategy is key to achieving that goal. |
 | Chief Privacy Officer (CPO) | A CPO is typically responsible for ensuring protection of personal data. In organizations that deal with large amounts of customer personal data and organizations operating in regions with strict privacy regulations, failure to protect sensitive data can result in steep fines. These organizations also risk losing customer trust as a consequence. CPOs must also prevent personal data from being misused in ways that violate customer agreements or laws, which can include improper sharing of the data within the organization and with partners. |
@@ -123,7 +127,7 @@ If this staged approach works for your organization, you can use:
 
 - This [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to present and track your progress through these stages and objectives for business leaders and other stakeholders. Here's the slide for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png" alt-text="The PowerPoint slide for the stages of your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png":::
+  :::image type="content" source="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png" alt-text="The PowerPoint slide for the stages of identifying and protecting sensitive business data." lightbox="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png":::
 
 - This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
@@ -218,7 +222,7 @@ The following table lists resources for discovering sensitive business data.
 | [Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution) | Introduces a framework, process, and capabilities you can use to accomplish your specific business objectives for information protection. |
 | [Sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about) | Start here to get started with sensitive information types. This library includes many articles for experimenting with and optimizing SITs. |
 | [Content explorer](/microsoft-365/compliance/data-classification-content-explorer) | Scan your Microsoft 365 environment for the occurrence of SITs and view the results in the content explorer tool. |
-| [Trainable classifiers](/microsoft-365/compliance/classifier-learn-about) | Trainable classifiers allow you to bring samples of the type of content you want to discover (seeding) and then let the machine learning engine learn how to discover more of this data. You participate in the classifier training by validating the results until the accuracy is improved. |
+| [Trainable classifiers](/microsoft-365/compliance/classifier-learn-about) | Trainable classifiers allow you to bring samples of the type of content you want to discover (seeding) so that the engine for machine learning can learn how to discover more of this data. You participate in the classifier training by validating the results until the accuracy is improved. |
 | [Exact data matching](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview) | Exact data matching allows you to find sensitive data that matches existing records—for example, your customers’ PII as recorded in your line of business apps—which enables you to precisely target such data with information protection policies, virtually eliminating false positives. |
 | [Content search](/microsoft-365/compliance/search-for-content) | Use Content search for advanced searches, including custom filters. You can use keywords and Boolean search operators. You can also build search queries using Keyword Query Language (KQL). |
 | RaMP checklist: [Data protection: Know your data](/security/zero-trust/data-compliance-gov-data#1-know-your-data) | A checklist of implementation steps with step owners and links to documentation. |

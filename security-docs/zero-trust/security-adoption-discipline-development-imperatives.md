@@ -232,4 +232,4 @@ Workflow alignment ensures that security requirements are consistently enforced 
 
 ## Next steps
 
-[Learn about](/develop/overview.md) development using Zero Trust principles
+[Learn about](develop/overview.md) development using Zero Trust principles

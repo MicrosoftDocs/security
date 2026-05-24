@@ -7,9 +7,9 @@ author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
-ms.collection: 
-  - zerotrust-adopt
 ms.custom: sfi-image-nochange
+
+# Customer intent: As a security architect or implementer, I want to understand high level steps and best practices for planning a privileged access architecture,.
 ---
 
 
@@ -68,7 +68,7 @@ Privileged access risk is unique and systemic for a number of reasons.
 **Risk** | **Details**
 --- | ---
 **Operates in the control plane** | Privileged accounts operate in the control plane, not just the workload plane.<br/><br/> Privileged identities can modify identity, change security configurations, disable or bypass enforcement controls, and tamper with business-critical data.<br/><br/>Once attackers obtain privileged access, they can undermine the very mechanisms designed to detect and stop them. This makes traditional containment strategies far less effective and allows compromise to persist undetected. 
-**High business impact by design** | Privileged access exists to manage critical systems, so abuse of that access has immediate and severe consequences.<br/><br/>With privileged access, attackers can:<br/><br/>- Exfiltrate or destroy sensitive data<br/>- Shut down or manipulate business operations<br/>- Encrypt entire environments for extortion (human‑operated ransomware)<br/>- Subvert systems in ways that can cause real‑world harm.<br/><br/>These outcomes aren't theoretical. They're observed repeatedly across industries, making privileged access one of the most reliable ways attackers achieve maximum impact.
+**High business impact by design** | Privileged access exists to manage critical systems, so abuse of that access has immediate and severe consequences.<br/><br/>With privileged access, attackers can:<br/><br/>- Exfiltrate or destroy sensitive data<br/>- Shut down or manipulate business operations<br/>- Encrypt entire environments for extortion (human‑operated ransomware)<br/>- Subvert systems in ways that can cause real‑world harm.<br/><br/>These outcomes aren't theoretical. They're observed repeatedly across industries, making privileged access one of the most reliable ways for attackers to achieve maximum impact.
 **Loud and disruptive** | Unlike stealthy data theft, many privileged access attacks—especially human‑operated ransomware—are intentionally disruptive. They halt operations, break customer‑facing services, and force executive‑level decision‑making under extreme time pressure.<br/><br/>Because all organizations are financially and operationally motivated to restore service quickly, these attacks are universally applicable and highly effective, regardless of industry or size.
 **Risk growing not shrinking** | Attackers are flexible and technology‑agnostic. They don't target a single product or control, but exploit whatever privileged access path is weakest in the moment. <br/><br/>The privileged access attack surface is broad and interconnected, spanning:<br/><br/>- Accounts and identity systems<br/>- Workstations and devices<br/>- Intermediary systems such as remote access tools and PAM/PIM solutions.<br/>- Management interfaces, portals, APIs, and elevation paths.<br/><br/>Compromise of any one of these elements can provide a path to full enterprise control, and new access paths are continuously introduced as environments evolve.
 **Single‑solution approaches fail** | Deploying only one class of control such as PAM/PIM, network restrictions, or detection tooling, does not sufficiently reduce risk. These controls address parts of the problem, not the system.<br/><br/> If privileged access is not protected end‑to‑end, attackers simply route around isolated defenses and exploit an unprotected link in the access path.<br/><br/>This is why privileged access must be treated as a complete system—from identity and device trust, through elevation and execution, to monitoring and response—rather than as a collection of independent tools.
@@ -94,7 +94,7 @@ Implementing the strategy based on these principles creates a number of clear ou
 **Privileged access is enforced as an end‑to‑end system** | Privileged risk is controlled across the entire access path: identity, role assignment, device, execution environment, elevation workflow, intermediary systems, management interfaces, monitoring, and response. Privileged work occurs only through explicit, authorized elevation paths with Zero Trust validation (identity assurance, device trust, session context). | Each session validates that each user account and device are trusted at a sufficient level before allowing access. <br/><br/>Measure examples: % of privileged sign-ins meet requirements such as MFA and required device trust,<br/>% of privileged actions performed via approval elevation workflow vs standing privilege.
 **Protect and monitor identity systems** |  Protect identity systems that host or confer privilege (directories, identity management, admin accounts etc.).<br/><br/>Governance, policy enforcement, logging, and analytics are centralized to reduce drift and improve visibility.  | Each of these systems is protected at a level appropriate for the potential business impact of accounts hosted in it.<br/><br/>Measure examples: % of privileged identities covered by regular access review<br/>Completion rate of periodic privileged access reviews (who reviewed, who revoked).
 **Mitigate lateral traversal** |  Isolate privileged work from high‑exposure environments. Protect local administrator credentials, service account secrets, and elevation mechanisms so that compromise of a single device, account, or credential doesn't enable broader administrative control. | Compromising a single device doesn't immediately lead to control of many or all other devices in the environment.<br/><br/>Measure example: % of privileged actions from admin workstations only.
-**Respond quickly to threats** | Privileged activity is a priority signal for detection and response. Design monitoring and incident response processes to disrupt multistage attacks and limit adversary dwell time targeting privileged access. | Your incident response can reliably stop multistage attacks before they reach privileged access and can contain privileged misuse fast when it occurs.<br/><br/>Measure example: Man time to remediate (MTTR) privileged incidents is reduced to minutes rather than hours or days. Unexpected or new privileged access paths are quickly identified and closed. 
+**Respond quickly to threats** | Privileged activity is a priority signal for detection and response. Design monitoring and incident response to disrupt multistage attacks and limit adversary dwell time targeting privileged access. | Your incident response can reliably stop multistage attacks before they reach privileged access and can contain privileged misuse fast when it occurs.<br/><br/>Measure example: Man time to remediate (MTTR) privileged incidents is reduced to minutes rather than hours or days. Unexpected or new privileged access paths are quickly identified and closed. 
 
 Track these measures monthly for progress, and review quarterly as part of privileged access governance.
 
@@ -116,7 +116,7 @@ If any link in the chain is weak, the entire path is vulnerable.
 In a typical privileged access path:
 
 1. A dedicated admin identity signs in.
-1. Sign in is from a hardened Privileged Access Workstation (PAW).
+1. The sign-in is from a hardened Privileged Access Workstation (PAW).
 1. The sign-in activates a role through Privileged Identity Management (PIM).
 1. The sign-in uses a specific administrative interface, such as a portal, API, or CLI.
 1. The signed-in identity performs a privileged action.
@@ -128,7 +128,7 @@ The privileged access solution is built on three tightly coupled elements that e
 
 1. **Privileged identities**
     - Dedicated admin accounts that are allowed to perform privileged actions.
-    - Identities protected with strong authentication and passwordless where possible.
+    - Identities protected with strong authentication and passwordless if possible.
     - Limited privileged role assignment.
     - Just-in-time privileged elevation with approval.
 

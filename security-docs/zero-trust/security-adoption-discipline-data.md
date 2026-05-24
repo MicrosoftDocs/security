@@ -47,7 +47,7 @@ A mature Data Security discipline delivers these core outcomes:
 
 Failure in these outcomes can lead to data theft and abuse, disrupt business operations, enable fraud, expose regulated data, or even cause physical harm to people.
 
-By establishing clear ownership, classification, and protection strategies, data security becomes an enabler of business outcomes rather than a constraint.
+When you establish clear ownership, classification, and protection strategies, data security becomes an enabler of business outcomes rather than a constraint.
 
 :::image type="content" source="./media/security-adoption-discipline-data-safety.png" alt-text="Diagram of the CIA triad illustrating confidentiality, integrity, and availability as core data security principles." lightbox="./media/security-adoption-discipline-data-safety.png":::
 

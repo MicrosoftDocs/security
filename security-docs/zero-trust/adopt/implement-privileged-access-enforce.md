@@ -7,9 +7,9 @@ author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
-ms.collection: 
-  - zerotrust-adopt
 ms.custom: sfi-image-nochange
+
+# Customer intent: As a security implementer, I want to understand how to enforce access policies in our privileged access architecture.
 ---
 
 
@@ -89,7 +89,7 @@ Ensure privileged access requires strong user authentication and trusted devices
 
 1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Protection** > **Conditional Access** > **Policies**.
 1. Select **Create new policy**. 
-1. In **Assigmnents** > **Users** configure these settings:
+1. In **Assignments** > **Users** configure these settings:
     - Include privileged directory roles such as Global Administrator, Security Administrator.
     - Exclude the emergency break glass group.
 1. In **Assignments** > **Cloud apps** include cloud management applications such as the Azure portal, Entra admin center, Microsoft 365 admin center, and Defender portals.
@@ -123,7 +123,7 @@ Ensure that privileged access to administrative portals is blocked from non‑PA
 1. Select **Create new policy** to create a third policy.
 1. In **Assignments** > **Users** configure these settings:
     - Include privileged directory roles such as Global Administrator, Security Administrator.
-    - Exclude the emergency breakglass group.
+    - Exclude the emergency break glass group.
 1. In **Assignments** > **Cloud apps** include the same administrative portals.
 1. Under **Conditions**, select **Filter for devices**.
 1. Configure the device filter to target non‑PAW devices:

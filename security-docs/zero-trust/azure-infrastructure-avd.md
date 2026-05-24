@@ -110,7 +110,7 @@ This article walks through the steps to apply the principles of Zero Trust acros
 | 3 | Apply Zero Trust principles to Azure Virtual Desktop storage resources. | Verify explicitly <br> Use least privileged access <br> Assume breach |
 | 4 | Apply Zero Trust principles to hub and spoke Azure Virtual Desktop VNets. |  Verify explicitly <br> Use least privileged access <br> Assume breach |
 | 5 | Apply Zero Trust principles to Azure Virtual Desktop session host. | Verify explicitly <br> Use least privileged access <br> Assume breach |
-| 6 | Deploy security, governance, and compliance to Azure Virtual Desktop. | Assume breach |
+| 6 | Deploy security, governance, and compliance with Azure Virtual Desktop. | Assume breach |
 | 7 | Deploy secure management and monitoring to Azure Virtual Desktop. | Assume breach |
 
 ## Step 1: Secure your identities with Zero Trust
@@ -156,7 +156,7 @@ Session hosts are virtual machines that run inside a spoke VNet. Implement the s
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. You can use Microsoft Defender for Endpoint for session hosts. For more information, see [virtual desktop infrastructure (VDI) devices](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi).
 
-## Step 6: Deploy security, governance, and compliance to Azure Virtual Desktop
+## Step 6: Deploy security, governance, and compliance with Azure Virtual Desktop
 
 Azure Virtual Desktop service allows you to use [Azure Private Link](/azure/virtual-desktop/private-link-overview) to privately connect to your resources by [creating private endpoints](/azure/virtual-desktop/private-link-setup). 
 

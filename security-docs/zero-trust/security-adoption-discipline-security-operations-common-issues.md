@@ -233,7 +233,7 @@ No single tool can detect or respond to the full spectrum of modern attacks.
 
 :::image type="content" source="./media/security-adoption-discipline-operations-tool.png" alt-text="Diagram for SecOps antipattern 'One tool to rule them all'.":::
 
-The appeal is understandable. A single tool promises simplicity and visibility. But modern attacks exploit multiple layers. Relying on only a security information and event management (SIEM) system, endpoint detection and response (EDR) solution, or a firewall leaves spots with low visibility across identity, cloud, data, etc.
+The appeal is understandable. A single tool promises simplicity and visibility. But modern attacks exploit multiple layers. However, reliance on only a security information and event management (SIEM) system, endpoint detection and response (EDR) solution, or a firewall leaves spots with low visibility across identity, cloud, data, etc.
 
 A SIEM full of logs is powerful, but without identity signals, endpoint telemetry, and cloud control plane events, you miss critical context. Similarly, EDR alone can't detect credential abuse or SaaS data exfiltration. Effective defense requires a layered approach where tools work together, sharing data and automating response. 
 

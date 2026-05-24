@@ -21,7 +21,7 @@ For updates to product names, please also update the appropriate figures.
 To update figures that are not screen shots, your options are:
 
 - Locate the source Visio file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended).
-- Use a published Visio file in the Microsoft Download Center (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads).
+- Use a published Visio file in the Microsoft Download Center (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for the downloads).
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file (last resort).
 
 For updates to figures that are included in download files (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads), please: 
@@ -116,7 +116,7 @@ In this diagram, the Azure infrastructure is contained within a Microsoft Entra 
 
 - Microsoft Defender for Cloud and Azure Monitor
 
-   For each Azure subscription, a set of Azure Monitor solutions and Defender for Cloud is available. If you manage these subscriptions through a Management Group, you're able to consolidate in a single portal for all the functionality of Azure Monitor and Defender for Cloud. For example, Secure Score, provided by Defender for Cloud, are consolidated for all your subscriptions, using a Management Group as the scope.
+   For each Azure subscription, a set of Azure Monitor solutions and Defender for Cloud is available. If you manage these subscriptions through a Management Group, you can consolidate in a single portal for Azure Monitor and Defender for Cloud functionality. For example, Secure Score, provided by Defender for Cloud, are consolidated for all your subscriptions, using a Management Group as the scope.
 
 - Storage resource group (1)
 
@@ -212,7 +212,7 @@ The following are the recommended training modules for Zero Trust.
 
 |Training  |[Configure Azure Policy](/training/modules/configure-azure-policy/)|
 |---------|---------|
-|:::image type="icon" source="media/azure-policy-configure.png" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets. <li>Implement Azure Policy with policy and initiative definitions. <li>Scope Azure policies and determine compliance.|
+|:::image type="icon" source="media/azure-policy-configure.png" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets. <li>Implement Azure Policy with policy and initiative definitions. <li>Scope Azure policies, and determine compliance.|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-azure-policy/1-introduction)
 

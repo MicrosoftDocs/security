@@ -46,7 +46,7 @@ In the Zero Trust adoption model, technology pillars sit between strategy and im
 
 Technology pillars don't define outcomes (business solutions) or steps (technical solutions), but they do:
 
-- Define technical boundaries where security controls are applied. These hese boundaries are used by solutions to organize implementation guidance and logic.
+- Define technical boundaries where security controls are applied. These boundaries are used by solutions to organize implementation guidance and logic.
 - Act as the bridge between intent (why) and implementation (how).
 
 ## Pillars

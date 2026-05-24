@@ -155,7 +155,7 @@ To configure Azure Firewall Premium to a Zero Trust configuration, make the foll
 
 ### Additional configuration
 
-With the Azure Firewall Premium configured, you can now perform the following configuration:
+After Azure Firewall Premium is configured, you can now perform the following configuration:
 
 - Configure Application Gateways to route traffic to your Azure Firewall by assigning the appropriate route tables and [following this guidance](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall#hub-and-spoke-example).
 - Create alerts for firewall events and metrics by [following these instructions](/azure/firewall/firewall-diagnostics).
@@ -303,7 +303,7 @@ To view all the Azure policies that provide network recommendations used by Micr
 
 1. If you select in the ASC Default, you'll be able to review all the policies available, including the policies that evaluate network resources.
 
-1. Additionally, there are network resources evaluated by other regulatory compliances including PCI, ISO and the Microsoft cloud security benchmark. You can enable any of them and track for network recommendations.
+1. Additionally, there are network resources evaluated by other regulatory compliance standards including PCI, ISO and the Microsoft cloud security benchmark. You can enable any of them and track for network recommendations.
 
 ### Network recommendations
 

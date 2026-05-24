@@ -1,17 +1,16 @@
 ---
 title: Secure devices and workstations
 description: Learn how to secure devices and workstations in a privileged access architecture
-ms.date: 05/05/2025
+ms.date: 05/25/2025
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
-ms.collection: 
-  - zerotrust-adopt
 ms.custom: sfi-image-nochange
----
 
+# Customer intent: As a security implementer, I want to understand how to configure privileged workstations in our privileged access architecture.
+---
 
 # Phase 2: Configure and secure privileged workstations
 
@@ -279,7 +278,7 @@ Most PAW compromise paths are outbound. Restricting egress is critical.
 
 1. Assign to**Secure Workstation Devices**.
 
-After configuring the procedure, PAWs can reach only administrative endpoints required for management tasks.
+After you configure the procedure, PAWs can reach only administrative endpoints required for management tasks.
 
 ## Next steps
 

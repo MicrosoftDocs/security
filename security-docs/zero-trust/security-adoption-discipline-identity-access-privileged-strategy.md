@@ -1,6 +1,6 @@
 ---
-title: Build a privileged access architecturestrategy across the security adoption Identities and Access discipline
-description: Learn how to design an strategy for privileged access within the security adoption Identities and Access discipline
+title: Build a privileged access architecture strategy across the security adoption Identities and Access discipline
+description: Learn how to design a strategy for privileged access within the security adoption Identities and Access discipline
 ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
@@ -8,7 +8,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.topic: conceptual
 
-#customer intent: As a business leader or security adopter, I want to understand how I can design an privileged access architecture across the security adoption Identities and Access discipline
+#customer intent: As a business leader or security adopter, I want to understand how I can design a privileged access architecture across the security adoption Identities and Access discipline
 ---
 
 
@@ -48,7 +48,7 @@ Design a privileged access architecture around the following principles:
 
 - **Treat privileged access as an end-to-end system**: Privileged access risk spans identities and role assignments, devices and execution environments, intermediary components such as gateways and management agents, elevation workflows and approval processes, and monitoring/response mechanisms. Attackers will find and chain weaknesses across these elements. A resilient strategy assumes attackers are goal‑oriented and technology‑agnostic and therefore requires a complete, integrated approach.
 - **Assume attackers are persistent, adaptive, and goal‑oriented**: Attackers do not target technologies, they target outcomes. They'll probe for small weaknesses, combine multiple techniques, and shift to the easiest available path when blocked. They are looking for a good return on their investment. The strategy must be resilient to this behavior by eliminating entire classes of unauthorized access paths, not just hardening individual components.
-- **Understand no single control is sufficient**: A sustainable strategy must blend multiple technologies and controls into a holistic approach that covers multiple attacker entry points. There's no silver bullet. Implementing a Privileged Identity Management / Privileged Access Management (PIM/PAM) solution is valuable, but not sufficient on its own, because attackers don’t operate within the boundaries of a single product. A resilient strategy builds a solution that works across identitie, devices, intermediaries, workflows, and detection/response. Single‑layer defenses leave exploitable gaps.
+- **Understand no single control is sufficient**: A sustainable strategy must blend multiple technologies and controls into a holistic approach that covers multiple attacker entry points. There's no silver bullet. Implementing a Privileged Identity Management / Privileged Access Management (PIM/PAM) solution is valuable, but not sufficient on its own, because attackers don’t operate within the boundaries of a single product. A resilient strategy builds a solution that works across identities, devices, intermediaries, workflows, and detection/response. Single‑layer defenses leave exploitable gaps.
 - **Apply Zero Trust principles consistently**: The strategy must apply Zero Trust principles across the entire privileged access lifecycle, as a design requirement.
     - Explicit verification for every privileged session.
     - Least privilege through Just‑Enough‑Access and Just‑In‑Time processes.
@@ -73,7 +73,7 @@ Design choices should:
 
 ## Understand privilege access pathways
 
-We recommend deploying a "closed loop" system for privileged acccess, so that only trustworthy clean devices, accounts, and intermediately systems are allowed. There are two goals around privileged access pathways:
+We recommend deploying a "closed loop" system for privileged access, so that only trustworthy clean devices, accounts, and intermediately systems are allowed. There are two goals around privileged access pathways:
 
 - Strictly limit the ability to perform privileged actions to a few authorized pathways.
 - Protect and closely monitor those pathways. 

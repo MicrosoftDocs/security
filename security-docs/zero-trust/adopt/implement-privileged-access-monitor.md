@@ -1,13 +1,14 @@
 ---
 title: Phase 4 - Monitor privileged access
 description: Learn how to monitor privileged access and protect against threats
-ms.date: 05/05/2025
+ms.date: 05/24/2025
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
-ms.collection: 
+
+# Customer intent: As a security implementer, I want to understand how to monitor my privileged access architecture over time.
 ---
 
 
@@ -65,7 +66,7 @@ Phase 4 monitors the same privileged access elements enforced earlier:
 **PAW configuration drift weakening posture** |Over time, misconfiguration or failed policy application can silently erode device trust assumptions used in Phase 3 enforcement.| Intune compliance reporting and Defender posture signals surface drift from hardened baselines, enabling remediation before access controls are weakened.
 **Malicious or unexpected app execution on PAWs** |Execution of unauthorized tools, scripts, or binaries can indicate attacker activity or misuse of privileged access. | AppLocker telemetry collected by Defender for Endpoint makes application execution on PAWs observable and auditable, enabling detection of suspicious activity.
 **Abuse of privileged roles after credential theft** | Attackers may delay or disguise use of stolen credentials to evade initial detection. | Phase 4 correlates privileged role activation, admin portal access, and device risk changes to identify suspicious privileged workflows.
-**Blind spots in privileged access enforcement** | Without monitoring, organizations cannot verify that Conditional Access and PAW restrictions are working as intended.| Entra sign‑in logs, Conditional Access insights, and Defender telemetry provide visibility into allowed and blocked privileged access attempts.
+**Blind spots in privileged access enforcement** | If there's no monitoring, you can't verify that Conditional Access and PAW restrictions are working as intended.| Entra sign‑in logs, Conditional Access insights, and Defender telemetry provide visibility into allowed and blocked privileged access attempts.
 **Delayed response to active privileged access threats** | Slow containment increases blast radius and business impact. | Defender for Endpoint enables investigation, device isolation, and remediation actions using high‑confidence signals from privileged devices and workflows.
 
 
@@ -180,7 +181,7 @@ Verify that privileged access is occurring only from PAWs and that enforcement b
 
 ## Step 5: Detect configuration drift on PAWs
 
-Use Intune compliance reporting to detect drift from hardened PAW baselines.
+Use Intune compliance reporting to detect posture drift from hardened PAW baselines.
 
 1. In the Intune admin center navigate to **Devices** > **Compliance policies**.
 1. Review compliance status for the PAW device group.
@@ -219,4 +220,4 @@ Phase 4 is the final stage in the solution guide.
 
 ## Next steps
 
-Check out our other solution guides.
+Check out our [other solution guides](security-adoption-business-scenarios-overview.md).

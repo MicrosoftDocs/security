@@ -149,7 +149,7 @@ Microsoft Purview is a primary enabler for this business scenario. It provides c
 
 #### Microsoft Entra
 
-Microsoft Entra partners with Purview provides the identity control plane for this business scenario, ensuring that access to sensitive data is governed, verified, and continuously monitored. It enforces least-privilege access and secures privileged roles that can access or modify critical assets.
+Microsoft Entra partners with Purview to provide the identity control plane for this business scenario, ensuring that access to sensitive data is governed, verified, and continuously monitored. It enforces least-privilege access and secures privileged roles that can access or modify critical assets.
 
 
 Review the business scenario [Identifying and protecting critical business assets](security-adoption-scenario-secure-assets.md).

@@ -1,7 +1,7 @@
 ---
 title: Plan a privileged access architecture
 description: Learn how to plan a privileged access architecture
-ms.date: 05/05/2025
+ms.date: 05/24/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
@@ -10,7 +10,10 @@ ms.topic: conceptual
 ms.collection: 
   - zerotrust-adopt
 ms.custom: sfi-image-nochange
+
+# Customer intent: As a security architect, I want to understand best practices for planning a privileged access architecture, before we start implementing.
 ---
+
 
 
 # Plan implementation
@@ -118,7 +121,7 @@ Implementation enforces the decisions produced during design and planning.
 
 Before implementing each phase make sure you've completed the corresponding planning actions.
 
-## What's next?
+## Next steps
 
 Begin implementation with [Phase 1 - Configure the identity control plane ](implement-privileged-access-identity.md). This phase establishes the foundation where privileged identities, role assignments, and authorized elevation paths are defined and protected. 
 

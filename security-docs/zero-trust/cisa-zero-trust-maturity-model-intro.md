@@ -44,7 +44,7 @@ Each pillar has three **cross-cutting capabilities**, which emphasize activities
 
 * **Visibility and analytics**: Visibility refers to observable artifacts from the characteristics of, and events in, enterprise-wide environments. The focus on cyber-related data analysis helps inform policy decisions, facilitate response activities, and build a risk profile to develop proactive security measures.  
 * **Automation and orchestration**: Zero Trust uses automated tools and workflows for security response functions across products and services. It helps enterprises maintain oversight, security, and development process interaction for such functions, products, and services. 
-* **Governance**: In this document, governance is the enforcement of enterprise cybersecurity policies, procedures, and processes, in and across pillars. Governances mitigates security risks in support of Zero Trust principles and to fulfill federal requirements. 
+* **Governance**: In this document, governance is the enforcement of enterprise cybersecurity policies, procedures, and processes, in and across pillars. Governance mitigates security risks in support of Zero Trust principles and to fulfill federal requirements. 
 
    > [!NOTE]
    > Visibility and analytics, automation and orchestration, and governance capabilities enable organizations to integrate advancements across pillars. The following image illustrates the pillars and cross-cutting capabilities. 
@@ -59,7 +59,10 @@ The pillars span the ZTMM journey's four stages.
 
 * **Traditional**: Manually configured lifecycles, for instance from establishment to decommission, and attribute assignments such as security and logging. Static security policies and solutions address pillars with dependencies on external systems. Least privilege is established at provisioning. Siloed pillars of policy enforcement; manual response and mitigation deployment, and limited correlation of dependencies, logs, and telemetry. 
 * **Initial**: Start automation of attribute assignment, lifecycle configuration, policy decisions, and enforcement. Initial cross-pillar solutions and external systems integration. Some responsive changes to least privilege after provisioning. Aggregated visibility for internal systems. 
-* **Advanced**: Where applicable, automate controls for lifecycles, also configuration, and policy assignment with cross-pillar coordination. Centralize visibility and identity control, and policy enforcement integrated across pillars. Base responses to predefined mitigations, changes to least privilege on risk and posture assessments. Create enterprise-wide awareness, including externally hosted resources. 
+* **Advanced**: Where applicable, automate control of identity and access lifecycles, as well as configuration and policy assignment, with coordination across security pillars. Centralize visibility, identity control, and policy enforcement across the environment.
+
+    Base responses on predefined mitigations, and dynamically adjust access toward least privilege based on risk signals and posture assessments. Extend awareness and governance across the entire enterprise, including externally hosted resources. 
+
 * **Optimal**: Automated, just-in-time (JIT) lifecycles and attribute assignments to assets and resources that can self-report with dynamic policies, based on automated and observed triggers. Use dynamic least privileged access, just-enough access (JEA) and within thresholds for assets and their dependencies; Enable cross-pillar interoperability with continuous monitoring, and centralized visibility with comprehensive situational awareness. 
 
 ### Maturity model criteria

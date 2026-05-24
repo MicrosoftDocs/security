@@ -1,13 +1,16 @@
 ---
 title: Phase 1-Secure the identity control plane
 description: Learn how to configure the identity control plan in a privileged access architecture
-ms.date: 05/17/2025
+ms.date: 05/24/2025
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
 ms.topic: conceptual
+
+# Customer intent: As a security implementer, I want to understand how to secure the identity control plane in our privileged access architecture.
 ---
+
 
 
 # Phase 1 - Secure the identity control plane
@@ -70,7 +73,7 @@ These components operate in the control plane. If they're compromised, bad actor
 
 After completing this phase:
 
-- All privileged access is tied to known, explicit identities and roles.
+- All privileged access is tied to known and explicit identities and roles.
 - All privilege is temporary, auditable, and intentional.
 - Standing administrative access is removed.
 - Identity systems are treated as privileged assets.
@@ -217,7 +220,9 @@ If you want to define identities that can access PAWs but that can't perform pri
 
 - Create an identity that can only sign into PAWs.
 - Create a security group that controls who is allowed to sign into the PAWs. 
-    - This group never grants admin rights, it's used for conditional access (*allow only Secure Workstation Users to sign in to PAWs*, *block other users* ) and to apply specific group-based PAW licensing.
+    - This group never grants admin rights. It's used for:
+        - Conditional Access, including *allow only Secure Workstation Users to sign in to PAWs*, and *block other users*.
+        - Applying specific group-based PAW licensing.
     - Typical members of this group include SOC analysts, operators, and auditors.
 
 
@@ -278,7 +283,7 @@ Ensure you're signed in as a Global Administrator or Privileged Role Administrat
 
 ### Enable PIM for directory roles
 
-1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Identity governance** > **Privileged Identity Management**.. 
+1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Identity governance** > **Privileged Identity Management**. 
 1. Select **Microsoft Entra roles**.
 
 ## Remove permanent roles
@@ -384,7 +389,7 @@ At the completion of Step 6, The following is configured:
 - Emergency access is isolated, monitored, and rarely used
 
 
-## What's next?
+## Next steps
 
 After securing the identity control plan, restrict where privilege can be exercised with [secure Privileged Access Workstations (PAWs)](implement-privileged-access-devices.md).
 

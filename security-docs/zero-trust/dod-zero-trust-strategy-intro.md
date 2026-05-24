@@ -26,7 +26,7 @@ The strategy has four goals.
 * **Technology Acceleration** - Zero Trust technologies deploy at a pace equal to, or that exceeds, industry advancements to remain ahead of the changing threat environment.
 * **Zero Trust Enablement** - DoD Zero Trust execution integrates with DoD, and component-level processes, resulting in seamless and coordinated Zero Trust execution.
 
-Microsoft has an expanding array of Zero Trust capabilities powered by a unified identity platform and pre-integrated, fit-for-purpose security tools. They offer repeatable, comprehensive coverage across the seven pillars of the DoD Zero Trust Strategy for target and advanced activities.
+Microsoft has an expanding array of Zero Trust capabilities powered by a unified identity platform and pre-integrated, fit-for-purpose security tools. These security tools provide comprehensive coverage across the seven pillars of the DoD Zero Trust Strategy for target and advanced activities.
 
 ## Pillars, capabilities, and activities
 

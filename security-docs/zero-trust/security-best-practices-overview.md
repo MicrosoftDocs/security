@@ -8,7 +8,7 @@ ms.service: security
 ms.subservice: zero-trust
 ms.date: 05/24/2026
 
-#customer intent: As a Microsoft security platform adopter, I want to understand the range of security best practices that drive Microsoft security guidance.
+#customer intent: As a Microsoft security adopter, I want to understand the range of security best practices that drive Microsoft security guidance.
 ---
 
 

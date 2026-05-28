@@ -4,7 +4,7 @@ description:  Plan security modernization with the help of the MCRA reference ar
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 05/24/2026
+ms.date: 05/26/2026
 author: rayne-wiselman
 ms.author: raynew
 
@@ -39,7 +39,7 @@ Key changes in the latest release from the earlier April 2025 version.
 **Data Security Reference Architecture** | Added new diagram.
 **Standards Mapping** | Updated proposed drafts of Zero Trust Reference Model standard (The Open Group), and Microsoft mapping to them.
 **AI** | Updated most slides in the section.
-**People** | Updated roles list from The Open Group.<br/>Dded example guidance from CEO role.
+**People** | Updated roles list from The Open Group.<br/>Added example guidance from CEO role.
 **Microsoft Products** | Updated design to align to [security adoption model](security-adoption-model.md).
 **New solution/service** | Added Microsoft Agent 365 to attack chain, standards mappings, role mappings, product references, and reference architectures (Capabilities, Identity, Security Operations, and Data Security).
 **New solution/service** | Added Microsoft Foundry to Infrastructure and Multicloud reference architectures.

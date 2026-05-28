@@ -16,10 +16,6 @@ ai-usage: ai-assisted
 
 # Configure Microsoft Entra for Zero Trust: AI (Preview)
 
-The recommendations included in this AI pillar is one part of a broader Zero Trust strategy. The complete program includes identity, devices, network, applications, infrastructure, and data protection, plus continuous monitoring and response. For the main guidance, see the [Zero Trust guidance center](/security/zero-trust).
-
-The [Zero Trust Assessment](/security/zero-trust/assessment/overview) helps you evaluate whether core security controls are configured and effective across your environment. It applies Zero Trust principles of verify explicitly, use least privilege, and assume breach through practical checks that improve security posture over time.
-
 AI agents acquire access tokens for organizational resources on every interaction, including mail, files, line-of-business APIs, and downstream agents. Unlike interactive users, agents usually don't present the same sign-in signals, such as user MFA, managed device state, or location context. Securing the AI control plane is therefore essential to your Zero Trust journey.
 
 Agent issues commonly appear in three areas:

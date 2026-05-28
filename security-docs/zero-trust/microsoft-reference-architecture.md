@@ -12,7 +12,7 @@ ms.author: raynew
 ---
 
 
-# Review Microsoft Cybersecurity Reference Architecture (MCRA)
+# Review Microsoft Cybersecurity Reference Architectures (MCRA)
 
 The Microsoft Cybersecurity Reference Architecture (MCRA) provides an extensive set of technical architectures for use during Zero Trust security adoption and modernization.
 
@@ -24,24 +24,32 @@ The MCRA is a component of our structured [security adoption model](security-ado
 
 ## Recent MCRA updates
 
-[Download the latest version of MCRA](https://download.microsoft.com/download/956f9359-e6d5-4e77-a36c-117f94620eb3/MCRA-April-2025.pptx), published in April 2025.
+[Download the latest version of MCRA](https://download.microsoft.com/download/956f9359-e6d5-4e77-a36c-117f94620eb3/MCRA-April-2025.pptx), published in June 2026.
 
 :::image type="content" source="./media/reference-architecture-overview.png" alt-text="Screenshot of some of the diagrams included in the updated Microsoft Cybersecurity Reference Architecture." lightbox="./media/reference-architecture-overview.png":::
 
 ### Key changes
 
-Key changes in the latest release from the earlier December 2023 version.
+Key changes in the latest release from the earlier April 2025 version.
 
-**Change** | **What** | **Where**
---- | --- | ---
-**New sections/slides** | *Introduction*: New and updated.<br/><br/>*Standards Mapping*: New section with proposed drafts of Zero Trust Reference Model standard (The Open Group), and Microsoft mapping to them.<br/><br/>*AI*: New section.<br/><br/>*Threats*: Includes a new Prioritization slide from the upcoming draft Security Matrix standard from The Open Group.<br/><br/>*People*: Added roles list from The Open Group.<br><br/>*Closing*: Updated the section to show the full security modernization journey and associated Microsoft Unified engagements.
-**New solutions/services** | Microsoft Security Exposure Management, Windows LAPS, passkeys, and Microsoft Entra Verified ID added to main Capabilities diagram.<br/><br/>Microsoft Entra ID Governance added to Adaptive Access diagram.<br/><br/>Microsoft Security Copilot now shows broader capabilities beyond SecOps.<br/><br/>Across slides: Threat intelligence daily signals updated to 78+ trillion.
-**Replaced/removed** | Replaced several references of Secure Score with Security Exposure Management.<br/><br/>Removed Microsoft Entra Permission Management (deprecated capability).
+**Change/Update* | **Details**
+--- | ---
+**Main Menu** | Updated design to align to [security adoption model](security-adoption-model.md).
+**Introduction** | Updated *Antipatterns* and *Security is hard* slide.<br/>Added two assumptions, and Zero Trust description.
+**Data Security Reference Architecture** | Added new diagram.
+**Standards Mapping** | Updated proposed drafts of Zero Trust Reference Model standard (The Open Group), and Microsoft mapping to them.
+**AI** | Updated most slides in the section.
+**People** | Updated roles list from The Open Group.<br/>Dded example guidance from CEO role.
+**Microsoft Products** | Updated design to align to [security adoption model](security-adoption-model.md).
+**New solution/service** | Added Microsoft Agent 365 to attack chain, standards mappings, role mappings, product references, and reference architectures (Capabilities, Identity, Security Operations, and Data Security).
+**New solution/service** | Added Microsoft Foundry to Infrastructure and Multicloud reference architectures.
+**Cross-slide** |  Threat intelligence daily signals updated to 100+
+ trillion.
 
 
 ## MCRA structure
 
-MCRAs illustrate how Microsoft capabilities work together and include:
+MCRA illustrates how Microsoft capabilities work together and includes:
 
 - Antipatterns (common mistakes) and best practices.
 - Threat trends and attack patterns.

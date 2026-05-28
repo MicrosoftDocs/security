@@ -40,4 +40,4 @@ The Zero Trust Assessment tool  can assess your networking configuration against
 
 ## Next steps
 
-[Run an assessment](assessment/get-started.md), and begin the [Devices workshop](https://zerotrust.microsoft.com/).
+[Run an assessment](assessment/get-started.md), and begin the [Networking workshop](https://zerotrust.microsoft.com/).

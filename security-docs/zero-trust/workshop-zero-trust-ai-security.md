@@ -1,7 +1,7 @@
 ---
 title: Microsoft Zero Trust Workshop - AI security
 description: Learn about the AI security pillar in the Microsoft Zero Trust Workshop
-ms.date: 05/24/2026
+ms.date: 05/28/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew

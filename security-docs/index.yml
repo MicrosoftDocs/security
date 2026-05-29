@@ -93,7 +93,7 @@ sections:
         url: /training/modules/purview-dspm-assess-data-security-posture/ 
         icon:
           componentType: image
-          src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
+          src: /security/media/hubpage/ignite-glyphs/tutorial-1-purple.png
       - componentType: icon-card
         title: Generate playbooks using AI in Microsoft Sentinel
         summary: Learn how to generate playbooks by using AI, configure required integrations, and deploy your automation workflows.
@@ -193,28 +193,28 @@ sections:
         url: /training/paths/ai-security-fundamentals/?wt.mc_id=securityhub_fundamentals_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/generic-trophy.svg
+          src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
       - componentType: icon-card
         title: Understand data security investigations
         summary: Learn concepts that define data security investigations, how they differ from alerts and audit, and when deeper, data-focused investigation adds value to security decisions.
         url: /training/modules/purview-data-security-investigations-understand/?wt.mc_id=securityhub_securityinvestigations_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/generic-badge.svg
+          src: /security/media/hubpage/ignite-glyphs/tutorial-1-purple.png
       - componentType: icon-card
         title: Mitigate incidents using Microsoft Defender
         summary: Investigate and respond to incidents using Microsoft Sentinel and Defender XDR. Correlate alerts, hunt threats, manage incidents, and stop attacks faster with unified security operations workflows.
         url: /training/modules/mitigate-incidents-microsoft-365-defender/?wt.mc_id=securityhub_defendertraining_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/training-clipboard.png
+          src: /security/media/hubpage/ignite-glyphs/reference-2-yellow.png
       - componentType: icon-card
         title: Plan, implement, and administer Conditional Access
         summary: Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe.
         url: /training/modules/plan-implement-administer-conditional-access//?wt.mc_id=securityhub_conditionalaccess_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/training-whiteboard.png
+          src: /security/media/hubpage/ignite-glyphs/concept-1-yellow.png
 
 # Microsoft Security product documentation 
   - componentType: grid

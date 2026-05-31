@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 
 
-# Plan implementation
+# Plan a privileged access implementation
 
 This article is part of the [Implement a privileged access architecture](implement-privileged-access.md) solution guide. 
 

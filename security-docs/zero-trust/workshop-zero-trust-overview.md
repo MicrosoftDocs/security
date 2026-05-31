@@ -53,13 +53,12 @@ Typically a Workshop focuses on four phases, with repeating cycles per pillar.
 
 When run as a [formal engagement](https://microsoft.github.io/zerotrustassessment/docs/workshop-guidance/delivery-guide#engagement-model) the Workshop runs as follows:
 
-
 **Phase** | **Details** | **Outcome**
 --- | --- | ---
 **Phase 1 - Kickoff/Orientation** | Initial scoping call to introduce Zero Trust principles and Microsoft Zero Trust architecture, clarify scope, context and goals, and understand assessment logistics and prerequisites. | Workshop engagement is clear to all stakeholders.<br/><br/>Logistics are in place.
 **Phase 2 - Assessment (optional)** | [Run the Zero Trust assessment tool](/security/zero-trust/assessment/get-started) to capture current baseline posture.<br/><br/>Walk through assessment findings. | Findings are clearly understood and gaps are identified.
 **Phase 3 - Roadmap** | Define a with a customized and concrete deployment plan based on a baseline adoption roadmap. | Customer has a tailed adoption roadmap for Zero Trust security.
-**Phase 4 Closeout**: Gather feedback and identify additional technology pillar workshops. 
+**Phase 4 Closeout** |  Gather feedback | Identify additional technology pillar workshops.
 
 Learn more about [Workshop delivery](https://microsoft.github.io/zerotrustassessment/docs/workshop-guidance/delivery-guide).
 

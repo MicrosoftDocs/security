@@ -26,9 +26,9 @@ highlightedContent:
       url: /security/zero-trust/security-adoption-business-scenarios-overview
       itemType: concept
     - title: Assess your security posture
-      url: /security/zero-trust/assess/zero-trust-assessment-progress-tracking-resources
+      url: /security/zero-trust/assessment/overview
       itemType: get-started
-    - title: Accelerate security deployment with Zero Trust assessment
+    - title: Accelerate security deployment with a Zero Trust assessment
       url: https://microsoft.github.io/zerotrustassessment/
       itemType: deploy
     - title: Implement security solutions

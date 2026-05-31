@@ -31,10 +31,10 @@ The Workshop helps you to:
 
 ## What's in the Workshop?
 
-The Zero Trust Workshop focuses on a couple of components.
+The Zero Trust Workshop contains a number of components
 
 **Component** | **Details**
---- | ___
+--- | ---
 [**Assessment tool**](assessment/overview.md) | An assessment tool (PowerShell module) that you run in your environment to assess and improve your security posture and baseline. It provides the technical backbone of the Workshop and ensures that Workshop findings and outcomes are based on real data and analysis. The assessment:<br/><br/>- Collects configuration data from your tenant.<br/><br/>- Checks your environment configuration against a broad range of Zero Trust best practices.<br/><br/>- Produces scores, gaps, and recommendations for each Zero Trust pillar and Microsoft Secure Future Initiative (SFI) pillar.
 [**Workshop tool**](https://microsoft.github.io/zerotrustassessment/docs/videos/IntroductionToZT) | A single-page app that helps you to document your Zero Trust progress, and develop an actionable roadmap for your journey.
 **Workshop guidance** | Workshop articles provide written guidance for facilitators and Workshop participants. Guidance focus on the Zero Trust pillars:<br/><br/>- [**Identity**](workshop-zero-trust-identity.md), the primary Zero Trust control plane protecting users, admins, service accounts, and workload identities.<br/><br/>- [**Devices**](workshop-zero-trust-devices.md), ensuring that all endpoints access corporate resources and healthy, compliant, and monitored.<br/><br/>- [**Data**](workshop-zero-trust-data.md), protecting sensitive information, including documents, emails, databases, structured and unstructured data.<br/><br/>- [**Networking**](workshop-zero-trust-networking.md), related to infrastructure, protecting network traffic, segmentation boundaries, and connectivity.<br/><br/>- [**Infrastructure**](workshop-zero-trust-infrastructure.md), protecting multicloud and hybrid resources, including compute and storage.<br/><br/>- [**SecOps**](workshop-zero-trust-security-operations.md), providing threat protection, detection, and response across the business.<br/><br/>- [**AI**](workshop-zero-trust-ai-security.md), focusing on security for AI models and datasets.
@@ -46,7 +46,7 @@ The Workshop can be run as follows:
 
 - By Microsoft or a partner for an expert-led engagement.
 - In self-service mode, using Microsoft workshop guidance accompanied by the assessment tool.
-- 
+
 ## How is a Workshop structured?
 
 Typically a Workshop focuses on four phases, with repeating cycles per pillar.
@@ -58,7 +58,7 @@ When run as a [formal engagement](https://microsoft.github.io/zerotrustassessmen
 --- | --- | ---
 **Phase 1 - Kickoff/Orientation** | Initial scoping call to introduce Zero Trust principles and Microsoft Zero Trust architecture, clarify scope, context and goals, and understand assessment logistics and prerequisites. | Workshop engagement is clear to all stakeholders.<br/><br/>Logistics are in place.
 **Phase 2 - Assessment (optional)** | [Run the Zero Trust assessment tool](/security/zero-trust/assessment/get-started) to capture current baseline posture.<br/><br/>Walk through assessment findings. | Findings are clearly understood and gaps are identified.
-**Phase 3 - Roadmap** | Define a with a customized and concrete deployment plan based on a baseline adoption roadmap. | Customer has a tailed adoption roadmap for Zero Trust security. 
+**Phase 3 - Roadmap** | Define a with a customized and concrete deployment plan based on a baseline adoption roadmap. | Customer has a tailed adoption roadmap for Zero Trust security.
 **Phase 4 Closeout**: Gather feedback and identify additional technology pillar workshops. 
 
 Learn more about [Workshop delivery](https://microsoft.github.io/zerotrustassessment/docs/workshop-guidance/delivery-guide).
@@ -87,4 +87,6 @@ The Workshop is maintained and regularly updated by Microsoft on GitHub as a com
 
 ## Next steps
 
-Begin the [SecOps workshop](https://zerotrust.microsoft.com/).
+- [Get an introduction](https://microsoft.github.io/zerotrustassessment/docs/videos/IntroductionToZT) to the Zero Trust workshop.
+- [Start the Zero Trust Workshop](https://microsoft.github.io/zerotrustassessment/).
+- Read the [Workshop delivery guide](https://microsoft.github.io/zerotrustassessment/docs/workshop-guidance/delivery-guide).

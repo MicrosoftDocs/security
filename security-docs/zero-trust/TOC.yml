@@ -362,9 +362,9 @@
     - name: Deploy information protection
       href: /purview/information-protection-solution?toc=/security/zero-trust/toc.json&bc=/security/zero-trust/toc.json
   
-- name: Enable secure work
+- name: Enable and secure remote work
   items:  
-  - name: Secure remote/hybrid/work
+  - name: Overview
     href: adopt/secure-remote-hybrid-work.md
   - name: Deploy identity in Microsoft 365
     items:

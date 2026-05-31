@@ -19,7 +19,7 @@
     href: prioritizing-defense/minimize-internet-exposure.md
   - name: Implement baseline security measures
     href: prioritizing-defense/baseline-security-measures.md
-- name: Explore security best practices
+- name: Explore SFI and security best practices
   items:
   - name: Overview
     href: security-best-practices-overview.md

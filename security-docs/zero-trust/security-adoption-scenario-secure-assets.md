@@ -11,13 +11,13 @@ ms.topic: conceptual
 #customer intent: As a business leader or security adopter, I want to understand I can use the Microsoft security adoption model to protect my critical organizational resources and assets.
 ---
 
-# Identify and protect critical assets
+# Identify and protect critical business assets
 
 This article explains how to identify and protect critical business assets using Zero Trust principles, as part of the [Microsoft security adoption model](security-adoption-model.md).
 
 This business scenario helps you achieve the following outcome:
 
-**Identity and protect critical business assets**
+**Identify and protect critical business assets**
 
 As a business leader, you must ensure that the systems, data, and operations that drive your organization are protected against targeted and high-impact threats. Not all assets carry equal importance—some represent concentrated risk and require stronger, more focused protection.
 

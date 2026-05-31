@@ -11,7 +11,7 @@ ms.topic: conceptual
 #customer intent: As a business leader or security adopter, I want to understand I can use the Microsoft security adoption model to quickly adopt and secure AI, including data.
 ---
 
-# Adopt and secure AI and data 
+# Accelerate and secure AI adoption
 
 This article explains how to rapidly and securely adopt AI using Zero Trust principles, as part of the Microsoft [security adoption model](security-adoption-model.md).
 

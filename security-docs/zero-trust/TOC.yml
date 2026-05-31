@@ -1,4 +1,4 @@
-- name: Zero Trust Guidance Center
+- name: Security Guidance Center
   href: index.yml
 - name: Zero Trust security
   href: zero-trust-overview.md
@@ -171,19 +171,19 @@
       href: security-adoption-business-scenarios-overview.md
     - name: Enable scenarios with Microsoft technologies
       href: security-adoption-business-scenarios-technologies.md
-    - name: Accelerate and secure AI adoption
+    - name: Adopt and secure AI
       href: security-adoption-scenario-secure-ai.md
-    - name: Enable and secure hybrid work
+    - name: Enable and secure remote work
       href: security-adoption-scenario-remote-work.md
-    - name: Secure critical business assets
+    - name: Protect critical business assets
       items:
       - name: Overview
         href: security-adoption-scenario-secure-assets.md
       - name: Secure and govern privileged access 
         href: security-adoption-scenario-privileged-access.md
-    - name: Strengthen security posture and compliance
+    - name: Strengthen posture and compliance
       href: security-adoption-scenario-improve-posture.md
-    - name: Minimize the impact of security incidents
+    - name: Minimize damage from security incidents
       href: security-adoption-scenario-minimize-impact.md
   
   - name: Security disciplines

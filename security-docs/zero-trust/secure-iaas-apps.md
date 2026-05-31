@@ -37,7 +37,7 @@ For new articles in this content set, please:
 
 --->
 
-# Apply Zero Trust principles to IaaS applications in Amazon Web Services
+# Apply Zero Trust principles to AWS resources
 
 
 
@@ -57,7 +57,7 @@ AWS is one of the public cloud providers available in the market, along with Mic
 - Azure and AWS are integrated to run workloads and IT business solutions.
 - You secure an AWS IaaS workload using Microsoft products.
 
-AWS virtual machines, called Amazon Elastic Compute Cloud (Amazon EC2), run on top of an AWS virtual network, called Amazon Virtual Private Cloud (Amazon VPC). Users and cloud administrators set up an Amazon VPC in their AWS environment and add Amazon EC2 virtual machines.
+AWS virtual machines (Amazon Elastic Compute Cloud (Amazon EC2)) run on top of an AWS virtual network, called Amazon Virtual Private Cloud (Amazon VPC). Users and cloud administrators set up an Amazon VPC in their AWS environment and add Amazon EC2 virtual machines.
 
 AWS CloudTrail logs AWS account activity in the AWS environment. Amazon EC2, Amazon VPC, and AWS CloudTrail are common in AWS environments. Collecting logs from these services is essential to understanding what is going on in your AWS environment and the actions to take to avoid or mitigate attacks.
 
@@ -341,7 +341,7 @@ By implementing continuous checks on Azure Resource Manager (ARM), Bicep, or Ter
 
 You implement the Zero Trust **use least-privilege access** principle by:
 
-- Conducting robust reviews of your infrastructure configurations with least-privilege identity access and networking set up.
+- Conducting robust reviews of your infrastructure configurations with least-privilege identity access and networking setup.
 - Assigning users role-based access control (RBAC) to resources at the repository level, team level, or organization level.
 
 **Prerequisites:**

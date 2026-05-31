@@ -35,7 +35,7 @@ Key changes in the latest release from the earlier April 2025 version.
 **Change/Update* | **Details**
 --- | ---
 **Main Menu** | Updated design to align to [security adoption model](security-adoption-model.md).
-**Introduction** | Updated *Antipatterns* and *Security is hard* slide.<br/>Added two assumptions, and Zero Trust description.
+**Introduction** | Updated these slides: *Antipatterns*, *Security is hard*<br/>Added two assumptions, and Zero Trust description.
 **Data Security Reference Architecture** | Added new diagram.
 **Standards Mapping** | Updated proposed drafts of Zero Trust Reference Model standard (The Open Group), and Microsoft mapping to them.
 **AI** | Updated most slides in the section.
@@ -43,8 +43,7 @@ Key changes in the latest release from the earlier April 2025 version.
 **Microsoft Products** | Updated design to align to [security adoption model](security-adoption-model.md).
 **New solution/service** | Added Microsoft Agent 365 to attack chain, standards mappings, role mappings, product references, and reference architectures (Capabilities, Identity, Security Operations, and Data Security).
 **New solution/service** | Added Microsoft Foundry to Infrastructure and Multicloud reference architectures.
-**Cross-slide** |  Threat intelligence daily signals updated to 100+
- trillion.
+**Cross-slide** |  Threat intelligence daily signals updated to 100+ trillion.
 
 
 ## MCRA structure

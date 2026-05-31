@@ -26,7 +26,7 @@ These laws describe uncomfortable truths about security that help you to plan ef
 **Immutable law** | **Architecture impact**
 --- | ---
 **1. If a bad actor can persuade you to run their program, it’s not your computer** | Unauthorized code execution causes loss of control. Prevention alone is insufficient.
-**2. If a bad actor can alter the operating system, it’s not your computer** | Control‑plane compromise is systemic risk. This applies whether the control plan is a local operating system, an identity management system, a security tool, or anything else with system/root level access.
+**2. If a bad actor can alter the operating system, it’s not your computer** | Control‑plane compromise is systemic risk. This applies whether the control plane is a local operating system, an identity management system, a security tool, or anything else with system/root level access.
 **3. If a bad actor has unrestricted physical access, it’s not your computer** | Physical exposure must be assumed, not treated as an exception.
 **4. If a bad actor can run active content on your website, it’s not your website** | Execution boundaries define trust boundaries.
 **5. Weak passwords trump strong security** | Identity failures defeat layered controls.

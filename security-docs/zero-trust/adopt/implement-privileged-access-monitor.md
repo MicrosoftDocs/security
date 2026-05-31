@@ -1,7 +1,7 @@
 ---
 title: Phase 4 - Monitor privileged access
 description: Learn how to monitor privileged access and protect against threats
-ms.date: 05/24/2025
+ms.date: 05/24/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
@@ -20,7 +20,7 @@ This article is part of the [Implement a privileged access architecture](impleme
 
 Privileged access presents a critical security risk in most organizations because it enables direct control over identity systems, cloud control planes, and business‑critical assets.
 
-Learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access.md) plays a critical role in your business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* - by reducing this risk and strengthening control over sensitive systems.
+Learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access.md) plays a critical role in the business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)*, by reducing risk and strengthening control over sensitive systems.
 
 This article describes Phase 4, which establishes monitoring and response for privileged access. It focuses on detecting compromise attempts, validating ongoing compliance and enforcement, and enabling rapid containment when indicators of attack or misconfiguration appear.
 
@@ -35,7 +35,7 @@ Phase 4 is designed to:
 - Detect compromise of PAWs.
 - Detect misuse of privileged devices and identities.
 - Detect drift that weakens device signals.
-- Enable rapid containment before blast radius.
+- Enable rapid containment before the blast radius expands.
 - Provide evidence that privileged access controls are working as designed.
 
 ## Protection scope
@@ -47,14 +47,14 @@ Phase 4 monitors the same privileged access elements enforced earlier:
     - Vulnerabilities and misconfigurations.
     - Integrity issues and configuration drift (Intune compliance).
 - **Privileged workflows**: Monitor for:
-    - Role activation and admin portal usage (correlation of Entra sign-in logs, conditional access decisions, and PIM usage)
+    - Role activation and admin portal usage (correlation of Entra sign-in logs, Conditional Access decisions, and PIM usage)
     - Application execution related to PAWs:
-        - AppLocker telemetry on PAWs is monitored using Defender for Endpoint.
+        - Application control and execution telemetry on PAWs is monitored using Microsoft Defender for Endpoint.
         - The goal is detecting unexpected execution on privileged devices.
     - Network behavior. PAW firewall posture, outbound attempts, and Defender telemetry are monitored to detect abuse or misconfiguration.
 - **Privileged access paths**: Monitor interfaces and execution paths attackers would abuse after credential theft.
     - Interfaces (admin portals, APIs, PowerShell)
-    - Access paths enforced by conditional access.
+    - Access paths enforced by Conditional Access.
     - Abuse detection after credential theft.
 
 
@@ -63,10 +63,10 @@ Phase 4 monitors the same privileged access elements enforced earlier:
 **Risk** | **Why it matters** | **Phase 4 mitigation**
 --- | --- | ---
 **Undetected PAW compromise** | A compromised PAW undermines the entire privileged access strategy by becoming a trusted launch point for attacker activity. | Microsoft Defender for Endpoint continuously monitors PAWs for malware, exploit behavior, and persistence techniques; changes in device risk are surfaced immediately for investigation and response.
-**PAW configuration drift weakening posture** |Over time, misconfiguration or failed policy application can silently erode device trust assumptions used in Phase 3 enforcement.| Intune compliance reporting and Defender posture signals surface drift from hardened baselines, enabling remediation before access controls are weakened.
-**Malicious or unexpected app execution on PAWs** |Execution of unauthorized tools, scripts, or binaries can indicate attacker activity or misuse of privileged access. | AppLocker telemetry collected by Defender for Endpoint makes application execution on PAWs observable and auditable, enabling detection of suspicious activity.
+**PAW configuration drift weakening posture** | Over time, misconfiguration or failed policy application can silently erode device trust assumptions used in Phase 3 enforcement.| Intune compliance reporting and Defender posture signals surface drift from hardened baselines, enabling remediation before access controls are weakened.
+**Malicious or unexpected app execution on PAWs** | Execution of unauthorized tools, scripts, or binaries can indicate attacker activity or misuse of privileged access. | AppLocker telemetry collected by Defender for Endpoint makes application execution on PAWs observable and auditable, enabling detection of suspicious activity.
 **Abuse of privileged roles after credential theft** | Attackers may delay or disguise use of stolen credentials to evade initial detection. | Phase 4 correlates privileged role activation, admin portal access, and device risk changes to identify suspicious privileged workflows.
-**Blind spots in privileged access enforcement** | If there's no monitoring, you can't verify that Conditional Access and PAW restrictions are working as intended.| Entra sign‑in logs, Conditional Access insights, and Defender telemetry provide visibility into allowed and blocked privileged access attempts.
+**Blind spots in privileged access enforcement** | If there's no monitoring, you can't verify that Conditional Access and PAW restrictions are working as intended. | Entra sign‑in logs, Conditional Access insights, and Defender telemetry provide visibility into allowed and blocked privileged access attempts.
 **Delayed response to active privileged access threats** | Slow containment increases blast radius and business impact. | Defender for Endpoint enables investigation, device isolation, and remediation actions using high‑confidence signals from privileged devices and workflows.
 
 
@@ -76,18 +76,18 @@ Phase 4 monitors the same privileged access elements enforced earlier:
 When Phase 4 is implemented:
 
 - PAWs are continuously monitored for threats, integrity issues, and configuration drift.
-- Application execution on PAWs is observable and auditable
+- Application execution on PAWs is observable and auditable.
 - Suspicious activity involving privileged access is detected quickly.
-- Security teams can contain and remediate incidents using endpoint and identity signals
-- Monitoring data feeds measurement and success criteria for the privileged access strategy
+- Security teams can contain and remediate incidents using endpoint and identity signals.
+- Monitoring data feeds measurement and success criteria for the privileged access strategy.
 
 ## Prerequisites
 
 Before you start configuring Phase 4:
 
-- Complete [Phase 1 instructions](implement-privileged-access-identity.md) to secure the identity control plan.
+- Complete [Phase 1 instructions](implement-privileged-access-identity.md) to secure the identity control plane.
 - Complete [Phase 2](implement-privileged-access-devices.md) to deploy and harden PAWs.
-- Complete [Phase 3](implement-privileged-access-enforce.md) so that conditional access enforcement in active.
+- Complete [Phase 3](implement-privileged-access-enforce.md) so that Conditional Acess enforcement in active.
 - Make sure that device compliance and Defender for Endpoint integration is active.
 
 
@@ -97,8 +97,8 @@ Use Microsoft Defender for Endpoint to monitor PAWs for threats, vulnerabilities
 
 ### Review PAW risk and exposure
 
-1. In the Microsoft Defender portal, select **Endpoints** > **Device inventory**
-1. Filter devices by the PAW device group.
+1. In the Microsoft Defender portal, select **Endpoints** > **Device inventory**.
+1. Filter incidents to those involving PAW devices, using the same identifiers or grouping method established for PAWs in earlier phases.
 1. For each PAW review:
     - Device risk level
     - Exposure score
@@ -123,7 +123,7 @@ Use Defender for Endpoint alerts and device timelines to investigate suspicious 
 ### Investigate PAW security alerts
 
 1. In the Microsoft Defender portal, select **Incidents & alerts**.
-1. Filter incidents by the PAW device group.
+1. Filter incidents to those involving PAW devices, using device names, tags, or other identifiers that distinguish PAWs in your environment.
 1. Open an incident and review:
     - Device timeline
     - Process execution
@@ -165,17 +165,15 @@ Verify that privileged access is occurring only from PAWs and that enforcement b
     - Conditional access policies protecting privileged access
     - Device platform = Windows
 1. Validate that:
-    - Privileged access succeeds from compliant PAWs
-    - Access is blocked when device risk increases
-    - Emergency access accounts are excluded as intended
+    - Privileged access succeeds from compliant PAWs.
+    - Access is blocked when device risk increases.
+    - Emergency access accounts are excluded as intended.
 
 ### Review conditional access insights
 
-1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com) > **Conditional Access**, select **Insights and reporting**.
-1. Review:
-
-    - Blocked attempts from non‑PAW devices
-    - Policy impact for privileged access policies
+1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com) > **Conditional Access**, review Conditional Access insights and reporting for privileged access policies, including:
+    - Blocked attempts from non‑PAW devices.
+    - Policy impact for privileged access policies.
 
 
 
@@ -211,11 +209,11 @@ Use Intune compliance reporting to detect posture drift from hardened PAW baseli
 
 Phase 4 is the final stage in the solution guide. 
 
-- PAWs are continuously monitored for threats and misconfiguration
-- Application execution on PAWs is observable and auditable
-- Suspicious privileged access activity is detected quickly
-- Security teams can investigate, contain, and remediate incidents effectively
-- Monitoring data feeds directly into measuring the success of the privileged access strategy
+- PAWs are continuously monitored for threats and misconfiguration.
+- Application execution on PAWs is observable and auditable.
+- Suspicious privileged access activity is detected quickly.
+- Security teams can investigate, contain, and remediate incidents effectively.
+- Monitoring data feeds directly into measuring the success of the privileged access strategy.
 
 
 ## Next steps

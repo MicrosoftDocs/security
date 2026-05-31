@@ -80,11 +80,11 @@ Privileged (control plane administrators) | PAW
 After completing Phase 2:
 
 - One or more dedicated PAW devices are set up. 
-- Privileged administrative work originates only from PAWs
-- PAWs are isolated from productivity usage
-Devices are centrally managed, monitored, and recoverable
-- Device trust assumptions are explicit and enforceable
-- Later phases can safely apply Conditional Access and monitoring
+- Privileged administrative work originates only from PAWs.
+- PAWs are isolated from productivity usage.
+- Devices are centrally managed, monitored, and recoverable.
+- Device trust assumptions are explicit and enforceable.
+- Later phases can safely apply Conditional Access and monitoring.
 
 
 ## Prerequisites
@@ -104,7 +104,7 @@ Before configuring procedures in this article:
     - Virtualization-based security (VBS/HVCI)
     - Firmware and drivers serviced through Windows Update.
 
-Devices that don't meet this bar must not be used for privileged access
+Devices that don't meet this bar must not be used for privileged access.
 
 
 ## Step 1: Define PAW provisioning/lifecycle
@@ -113,7 +113,7 @@ Define which devices are PAWs, how they are created, enrolled, managed, and prev
 
 ### Create a PAW device group
 
-This group will contain PAW devices, and will be used for:
+This group will contain PAW devices, and is used for:
 
 - Enrollment targeting
 - Hardening profiles
@@ -132,22 +132,22 @@ Create as follows:
 
 1. Select **Save** > **Create**.
 
-Any device enrolled with an autopilot group tag that equals "PAW" becomes a privileged access workstation.
+Devices enrolled with the PAW Autopilot group tag are identified by the PAW dynamic device rule and treated as privileged access workstations.
 
 ### Control who can create PAWs
 
 Ensure PAWs are enrolled intentionally and securely.
 
 - Restrict who can join devices to Microsoft Entra ID.
-- Require MFA to join devices
-- Remove automatic local administrator rights on join
+- Require MFA to join devices.
+- Remove automatic local administrator rights on join.
 
 
 1. In the Entra Admin Center, navigate to **Devices** > **Device settings**.
 1. In **Users may join devices to Microsoft Entra ID** > **Selected**, select **Secure Workstation Users**.
 1. In **Require Multi-Factor Auth to join devices**, select **Yes**.
 1. In **Additional local administrator on Microsoft Entra joined devices**, select **None**.
-1. Save the settings
+1. Save the settings.
 
 With this in place, only PAW users can enroll PAWs, MFA is required, and no PAW user becomes a local administrator by default.
 
@@ -162,8 +162,8 @@ PAWs must be managed from first boot. Unmanaged devices cannot be trusted for pr
 1. Open **Microsoft Entra ID** > **Mobility (MDM and MAM)** > **Microsoft Intune**.
 1. Set **MDM user scope** to **All** and save.
 1. Configure **Enrollment restrictions**:
-    - Allow Windows MDM
-    - Block or restrict BYOD / personally owned devices
+    - Allow Windows device enrollment.
+    - Block or restrict personally owned devices.
 
 PAWs are always managed, never unmanaged.
 
@@ -172,7 +172,7 @@ PAWs are always managed, never unmanaged.
 
 Use Windows Autopilot to enforce consistent, repeatable PAW provisioning that ensures PAWs start in a known-good state.
 
-- Create a dedicated Autopilot deployment profile, and assign it to the PAW device group.
+Create a dedicated Autopilot deployment profile, and assign it to the PAW device group.
 
 
 1. In the Microsoft Intune Admin Center, go to **Devices** >  **Windows** > **Windows enrollment** > **Deployment profiles**.
@@ -203,7 +203,7 @@ Prevent PAWs from being used before they’re fully hardened. This prevents earl
 
 1. To recover and rebuild PAWs:
     - Reset / reprovision PAWs via Autopilot when compromised.
-    - Treat PAWs as replaceable, not manually repaired
+    - Treat PAWs as replaceable, not manually repaired.
 1. To identity and track PAWs use:
 
     - Device group membership
@@ -225,15 +225,13 @@ PAWs must be patched quickly and predictably. Delays or user‑controlled deferr
 
 
 1. In the Microsoft Intune Admin Center, go to **Devices** > **Windows** > **Software updates** > **Windows Update rings**.
-1. Select **Create profile**
+1. Select **Create profile**.
 1. Configure the following settings:
     - Name: PAW – Windows Update Ring
-    - Servicing channel: Semi‑Annual
     - Quality update deferral (days): 3
     - Feature update deferral (days): 3
     - Automatic update behavior: Auto install and reboot without end‑user control
     - Block user from pausing updates: Block
-    - Require user’s approval to restart outside of work hours: Required
     - Set deadline for pending restarts: 3 days
 
 1. In **Assignments**, assign to secure workstation devices.
@@ -254,13 +252,13 @@ Conditional Access and compliance depend on Defender risk signals. Without Defen
 ###  Create an onboarding profile
 
 1. In the Microsoft Intune Admin Center, go to **Endpoint security** > **Endpoint detection and response**.
-1. Set **Create profile** and configure the following settings:
+1. Select **Create profile** and configure the following settings:
     - Platform: Windows 10 and later
     - Profile type: Endpoint detection and response
     - Name: PAW - Defender for Endpoint
 
 1. In **Configuration settings** enable **Sample sharing for all files**.
-1. Assign to the **Secure Workstation Devices** account.
+1. Assign to the **Secure Workstation Devices** group.
 1. Create the profile. 
 
 After you configure the procedure, PAWs emit device risk, malware, and EDR telemetry used by Conditional Access and SecOps.
@@ -270,12 +268,8 @@ After you configure the procedure, PAWs emit device risk, malware, and EDR telem
 Most PAW compromise paths are outbound. Restricting egress is critical.
 
 1. In the Microsoft Intune Admin Center, go to **Endpoint security** > **Firewall**.
-1. Create an **Endpoint protection** profile and configure firewall behavior:
-    - Inbound connections: Block
-    - Outbound connections: 
-        - Enterprise/Specialized: Allow
-        - Privileged: Block by default. Allow only required services (DNS, DHCP, HTTPS)
-
+1. Create an **Endpoint protection** profile.
+1. Configure outbound firewall rules to allow only required services such as DNS, DHCP, NTP, and approved administrative and management endpoints. Block unnecessary outbound traffic by default.
 1. Assign to**Secure Workstation Devices**.
 
 After you configure the procedure, PAWs can reach only administrative endpoints required for management tasks.

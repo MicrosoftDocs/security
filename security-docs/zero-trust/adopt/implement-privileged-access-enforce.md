@@ -21,7 +21,7 @@ Privileged access presents a critical security risk in most organizations becaus
 
 Learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access.md) plays a critical role in your business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets.md)* - by reducing this risk and strengthening control over sensitive systems.
 
-This article describes Phase 3 of the implementation. It enforces privileged access policy to restrict where privileged identities can be used. 
+This article describes Phase 3 of the implementation. It enforces privileged access policies to restrict where privileged identities can be used. 
 
 Using the trusted device signals established in Phase 2, you configure Conditional Access so privileged roles, portals, and management interfaces can be used only from approved, low-risk privileged access workstations (PAWs).
 
@@ -32,7 +32,7 @@ Phase 3 enforces the following protection goals:
 - Ensure privileged credentials can't be used from non-PAW devices.
 - Admin portals and interfaces are only reachable from compliant, low-risk devices.
 - Privileged access requires strong user authentication and verified device trust.
-- Restrict access to administrative interfaces (portals, APIs, PowerShell) to approved PAWs
+- Restrict access to administrative interfaces (portals, APIs, PowerShell) to approved PAWs.
 - Stolen credentials can't be reused from standard or unmanaged endpoints.
 - Privileged access paths are explicit, auditable, and enforceable.
 
@@ -53,14 +53,14 @@ Phase 3 doesn't reconfigure devices or identities. It enforces policy using the 
 
 | **Risk** | **Why it matters** | **Phase 3 mitigation** |
 |------|----------------|--------------------|
-| **Privileged credentials reused from non‑PAW devices** | MFA and approvals do not prevent attackers from reusing stolen tokens or credentials on compromised standard workstations | Conditional Access requires privileged roles to authenticate from compliant, low‑risk PAWs only |
-| **Privileged access from high‑risk or unpatched devices** | A vulnerable device allows attackers to immediately exercise administrative control | Access decisions evaluate Intune compliance and Microsoft Defender for Endpoint risk level before granting privileged access |
-| **Administrative portals accessible** from unmanaged or BYOD devices | Cloud control planes become reachable from devices outside organizational control | Conditional Access restricts administrative portals to PAWs, blocking access from non‑PAW devices |
-| **Bypass of protected portals using alternate interfaces** | Attackers can avoid controls by using PowerShell, APIs, or alternative admin endpoints | Enforcement applies consistently across administrative interfaces, not just primary portals |
-| **Privileged role activation from compromised workstations** | Approval workflows can be hijacked if role activation occurs on an unsafe device | PIM role activation and role usage are enforced through the same Conditional Access device trust requirements |
-| **Credentials alone grant privileged access** | Identity‑only protections assume a trustworthy execution environment | Phase 3 binds identity, device, and interface conditions so credentials alone are insufficient |
-| **Lack of visibility into enforcement** | Without policy enforcement, it’s difficult to prove privileged access is constrained | Conditional Access decisions and Defender telemetry provide auditable, observable enforcement evidence |
-| **Rapid escalation after workstation compromise** | Attackers pivot quickly from a compromised device to enterprise‑wide control | Phase 3 ensures stolen credentials are unusable outside PAWs, breaking common escalation paths |
+| **Privileged credentials reused from non‑PAW devices** | MFA and approvals do not prevent attackers from reusing stolen tokens or credentials on compromised standard workstations. | Conditional Access requires privileged roles to authenticate from compliant, low‑risk PAWs only. |
+| **Privileged access from high‑risk or unpatched devices** | A vulnerable device allows attackers to immediately exercise administrative control. | Access decisions evaluate Intune compliance and Microsoft Defender for Endpoint risk level before granting privileged access. |
+| **Administrative portals accessible** from unmanaged or BYOD devices | Cloud control planes become reachable from devices outside organizational control. | Conditional Access restricts administrative portals to PAWs, blocking access from non‑PAW devices. |
+| **Bypass of protected portals using alternate interfaces** | Attackers can avoid controls by using PowerShell, APIs, or alternative admin endpoints. | Enforcement applies consistently across administrative interfaces, not just primary portals. |
+| **Privileged role activation from compromised workstations** | Approval workflows can be hijacked if role activation occurs on an unsafe device. | PIM role activation and role usage are enforced through the same Conditional Access device trust requirements. |
+| **Credentials alone grant privileged access** | Identity‑only protections assume a trustworthy execution environment. | Phase 3 binds identity, device, and interface conditions so credentials alone are insufficient. |
+| **Lack of visibility into enforcement** | Without policy enforcement, it’s difficult to prove privileged access is constrained. | Conditional Access decisions and Defender telemetry provide auditable, observable enforcement evidence. |
+| **Rapid escalation after workstation compromise** | Attackers pivot quickly from a compromised device to enterprise‑wide control. | Phase 3 ensures stolen credentials are unusable outside PAWs, breaking common escalation paths. |
 
 
 
@@ -68,24 +68,24 @@ Phase 3 doesn't reconfigure devices or identities. It enforces policy using the 
 
 After completing Phase 3:
 
-- Privileged roles and admin portals are only accessible from compliant, low‑risk PAWs
-- Conditional Access blocks privileged access from non‑PAW devices
-- Device compliance and Microsoft Defender for Endpoint risk signals are required inputs to access decisions
-- Privileged access is enforced across identity, device, and interface layers
-- Access attempts are logged, observable, and auditable
+- Privileged roles and admin portals are only accessible from compliant, low‑risk PAWs.
+- Conditional Access blocks privileged access from non‑PAW devices.
+- Device compliance and Microsoft Defender for Endpoint risk signals are required inputs to access decisions.
+- Privileged access is enforced across identity, device, and interface layers.
+- Access attempts are logged, observable, and auditable.
 
 
 ## Prerequisites
 
 Before configuring procedures in this article:
 
-- Complete [Phase 1 instructions](implement-privileged-access-identity.md) to secure the identity control plan.
+- Complete [Phase 1 instructions](implement-privileged-access-identity.md) to secure the identity control plane.
 - Complete [Phase 2](implement-privileged-access-devices.md) to deploy and harden PAWs.
 - Make sure that device compliance and Defender for Endpoint integration is active.
 
 ## Step 1 — Require MFA and device trust for privileged access
 
-Ensure privileged access requires strong user authentication and trusted devices
+Ensure privileged access requires strong user authentication and trusted devices.
 
 1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Protection** > **Conditional Access** > **Policies**.
 1. Select **Create new policy**. 
@@ -108,7 +108,7 @@ Ensure that administrative portals are reachable only from compliant PAWs.
 1. In **Assignments** > **Users** configure these settings:
     - Include privileged directory roles such as Global Administrator, Security Administrator.
     - Exclude the emergency break glass group.
-1. In **Assignments** > **Cloud apps** include administrative portals and management interfaces.
+1. In **Assignments** > **Cloud apps** include the administrative applications used for privileged access in your environment.
 1. In **Access controls**, grant access with these settings:
     - Require device to be marked as compliant
     - Require Microsoft Defender for Endpoint device risk = Low
@@ -123,12 +123,12 @@ Ensure that privileged access to administrative portals is blocked from non‑PA
 1. Select **Create new policy** to create a third policy.
 1. In **Assignments** > **Users** configure these settings:
     - Include privileged directory roles such as Global Administrator, Security Administrator.
-    - Exclude the emergency break glass group.
+    - Exclude designated emergency access accounts.
 1. In **Assignments** > **Cloud apps** include the same administrative portals.
 1. Under **Conditions**, select **Filter for devices**.
 1. Configure the device filter to target non‑PAW devices:
     - Select **Include filtered devices**:
-    - Configure a rule such as: device.extensionAttribute1 -ne "PAW". Adjust the attribute and value to match how PAWs are identified in your environment.
+    - Configure a device filter that identifies non-PAW devices based on the attribute or rule your organization uses to distinguish PAWs. Make sure this matches the identification method established in [Phase 2](implement-privileged-access-devices.md).
 1. Select **Done** to apply the device filter condition.
 1. Under **Access controls**, select **Block access**.
 1. Select **Create** to enable the policy.
@@ -141,11 +141,10 @@ Limit PAW network access to only required administrative and management endpoint
 1. Select **Create Policy**.
 1. Configure the policy:
     - **Platform**: Windows 10 and later.
-    - **Profile**: Microsoft Default Firewall
 1. Configure the firewall profile settings:
     - **Inbound connections**: Block
     - **Outbound connections**: Allow (default, controlled by rules below)
-1. Under **Settings**, configure **Firewall** rules. Use **reusable settings or firewall rule collections to define allowed traffic.
+1. Under **Settings**, configure **Firewall** rules. Use firewall rules to define the traffic required for privileged administration.
 1. Create **outbound allow rules** for required services, such as:
     - DNS
     - DHCP
@@ -160,7 +159,7 @@ Limit PAW network access to only required administrative and management endpoint
     - Define **destination endpoints** (IP ranges, FQDNs, or service tags where supported)
 
 1. Ensure no broad allow rules such as unrestricted HTTP/HTTPS are configured.
-1. Assign the policy to **Secure Workstation Devices (PAWS)**.
+1. Assign the policy to **Secure Workstation Devices (PAWs)**.
 1. Select **Create** to deploy the policy.
 
 This completes the privileged access enforcement layer.

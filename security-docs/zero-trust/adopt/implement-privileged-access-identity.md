@@ -1,6 +1,6 @@
 ---
 title: Phase 1-Secure the identity control plane
-description: Learn how to configure the identity control plan in a privileged access architecture
+description: Learn how to configure the identity control plane in a privileged access architecture
 ms.date: 05/24/2025
 ms.service: security
 author: rayne-wiselman
@@ -51,10 +51,10 @@ Phase 1 focuses on two foundational components of privileged access:
     - Time‑bound role activation using - Privileged Identity Management (PIM)
     - Approval workflows for sensitive roles
     - Explicit administrative sessions
-- **Emergency recovery access**: Configuring break glass accounts if these don't already exist.
+- **Emergency recovery access**: Configuring break-glass accounts if they don't already exist.
 
 
-These components operate in the control plane. If they're compromised, bad actors can grant themselves privileged access without touching devices or access policies.
+These components operate in the control plane. If they're compromised, attackers can grant themselves privileged access without touching devices or access policies.
 
 ## Risks mitigated
 
@@ -107,9 +107,9 @@ Establish a complete inventory of privileged identities and access paths. Audit 
 **Source** | **Details**
 --- | ---
 **Microsoft Entra directory roles** | Identify [privileged roles](/entra/identity/role-based-access-control/permissions-reference) that can directly or indirectly lead to tenant dominance by altering identity, access, or trust boundaries in the identity control plane. <br/><br/>For each role:<br/>- Identify direct versus group‑based assignments.<br/>- Identify permanent versus PIM‑eligible assignments<br/>- Capture current activation state.
-**Group-based privilege** | Find out who is privileged indirectly and would be missed if you only look at users.<br/><br/>- Review nested group membership<br/>- Identify users, service principals, and managed identities<br/>- Record how privilege is inherited
-**Azure RBAC roles** | Find out what these privileged identities can do outside the directory itself.<br/><br/>Audit assignments at management group, subscription, and resource scopes<br/>Identify identities with broad or cascading permissions
-**Non-human identities** | Find out which non-human identities are part of the privileged access service, including:<br/><br/>Service principals and managed identities<br/>Automation accounts and scripts<br/>Application permissions with tenant or resource control.
+**Group-based privilege** | Find out who is privileged indirectly and would be missed if you only look at users.<br/><br/>- Review nested group membership<br/>- Identify users, service principals, and managed identities<br/>- Record how privilege is inherited.
+**Azure RBAC roles** | Find out what these privileged identities can do outside the directory itself.<br/><br/>Audit assignments at management group, subscription, and resource scopes.<br/><br/>Identify identities with broad or cascading permissions.
+**Non-human identities** | Find out which non-human identities are part of the privileged access path, including:<br/><br/>Service principals and managed identities<br/>Automation accounts and scripts<br/>Application permissions with tenant or resource control.
 
 The result is an authoritative privileged identity inventory.
 
@@ -123,15 +123,15 @@ Audit who can change identity, authentication, or tenant-wide configuration.
 
     - Privileged roles are any that can assign roles, modify security/authentication, or manage apps, devices, or security policies.
     - A full list of privileged built-in roles is also available [in the documentation](/entra/identity/role-based-access-control/permissions-reference).
-    - If you can't check all roles at minimum audit:  Global Admin, Privileged Role Admin, Exchange Admin, SharePoint Admin.
+   
 
 1. For each privileged role, first check direct assignments. For each directly assigned principal (user, group, or service principal (app/managed identity)), check how the role is granted and current state.
     - A permanent assignment means that the role is always on. An identity signs in and is already privileged with an **Active (permanent)** status. This is obviously high-risk.
-    - A PIM eligible assignment means that the role is available but not active until it's activated. The user must activate the role. It's usually time-limited and often requires a justification. Status can be **Active** or **Eligible** if the user can become privileged but isn't currently activated.
+    - A PIM eligible assignment means that the role is available but not active until it's activated. The user must activate the role. It's usually time-limited and often requires justification. Status can be **Active** or **Eligible** if the user can become privileged but isn't currently activated.
 
-1. Now switch to group assignments. This is important since it checks indirectly assigned privileged inherited via groups. 
+1. Now switch to group assignments. This is important since it checks privilege that is indirectly assigned via groups. 
 1. Open each group that has the privileged role assigned.
-1. Expand group members, expand nested groups, and record Users, Service Principals and Managed identities. 
+1. Expand group members, expand nested groups, and record users, service principals and managed identities. 
 1. For each identity confirm how the privilege is held:
     - Is the role assigned via group or nested group?
     - Is the role permanent or PIM eligible?
@@ -156,7 +156,7 @@ Now that you know which identities are privileged, let's check what they can do 
 
     Identities with Azure RBAC roles assigned at the subscription level are privileged and can grant or delegate access.
 1. If identities weren't found at the management group or subscription level, you can check at the resource groups level with the same procedure in Azure portal > **Resource groups**.
-1. You might also want to check whether principals have control on strategic individual resources such as Key vaults, storage accounts, virtual machines, or automation accounts. To do that, check **Access control (IAM)** > **Assigned to** for each individual resource.
+1. You might also want to check whether principals have control on strategic individual resources such as Key Vaults, storage accounts, virtual machines, or automation accounts. To do that, check **Access control (IAM)** > **Assigned to** for each individual resource.
 
 ### Record results
 
@@ -169,7 +169,7 @@ Now that you know which identities are privileged, let's check what they can do 
 
 1. If you want to add more about observed behavior for an account you can:
     1. Review sign-in logs for information about apps, client endpoints, and authentication flows.
-    1. Correlate information with audit and activity logs to check whether an account is used, and whether it changed policy, modified resources/subscriptions, or performance some other activity.
+    1. Correlate information with audit and activity logs to check whether an account is used, and whether it changed policy, modified resources/subscriptions, or performed some other activity.
 
 ## Step 2: Assess your existing configuration
 
@@ -203,9 +203,9 @@ Remove all privileged role assignments from standard user identities.
 1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Microsoft Entra ID** > **Users**.
 1. Select **New user** and configure the user settings. then select **Create**.
     - Name: Secure Workstation Administrator.
-    - User principle name: secure-ws-admin@contoso.com
+    - User principal name: secure-ws-admin@contoso.com
     - Authentication method: Password (temporary).
-    - Directory roles: None
+    - Directory roles: Don't assign.
     - Usage location: Set to operational location.
 
 This provides you with a clean admin identity with no privilege. 
@@ -229,10 +229,10 @@ If you want to define identities that can access PAWs but that can't perform pri
 ### Create a sign-in identity
 
 1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Microsoft Entra ID** > **Users**.
-1. Select **New user** and configure the user settings. then select **Create**.
-    - Name: Secure Workstation User.
-    - User principle name: secure-ws-user@contoso.com
-    - Directory roles: None
+1. Select **New user** and configure the user settings. Then select **Create**.
+    - Name: Secure Workstation User
+    - User principal name: secure-ws-user@contoso.com
+    - Directory roles: Don't assign
 
 ### Create a PAW access security group
 
@@ -240,10 +240,10 @@ Configure a group that controls who can sign in to the PAWs
 
 1. In the [Microsoft Entra Admin Center](https://entra.microsoft.com), navigate to **Microsoft Entra ID** > **Groups** > **New group**. 
 1. Configure the group settings, and then select **Create**.
-    - Group: Security
-    - User principle name: Secure Workstation Users
+    - Group type: Security
+    - Group name: Secure Workstation Users
     - Membership: Assigned
-    - Directory roles: None
+   
 
 1. Add only PAW sign-in identities to the group, not admins by default.
 
@@ -315,7 +315,7 @@ For each privileged role, do the following:
     - Require MFA on activation
     - Require justification
     - Set maximum activation duration (for example: 1–4 hours for high‑impact roles)
-    - Require approval (for Global Admin, Privileged Role Admin, Security Admin)
+    - Require approval (for Global Administrator, Privileged Role Administrator, Security Administrator)
     - Select one or more approvers
 
 1. Select **Update**.
@@ -334,7 +334,7 @@ Create a role-assignable security group and assign it to an Entra role (e.g., Ex
 This group becomes the authorization boundary for privileged access.
 
 
-At the completion of Step 5, The following is configured:
+At the completion of Step 6, The following is configured:
 
 - No standing administrative access
 - Privilege is requested, approved, time‑bound, logged
@@ -382,7 +382,7 @@ Make sure not to exclude regular admin accounts — only the emergency accounts.
 1. Review usage periodically.
 
 
-At the completion of Step 6, The following is configured:
+At the completion of Step 7, The following is configured:
 
 - The identity control plane is recoverable
 - Later phases (PAWs, Conditional Access) won’t risk permanent lockout
@@ -391,5 +391,5 @@ At the completion of Step 6, The following is configured:
 
 ## Next steps
 
-After securing the identity control plan, restrict where privilege can be exercised with [secure Privileged Access Workstations (PAWs)](implement-privileged-access-devices.md).
+After securing the identity control plane, restrict where privilege can be exercised with [secure Privileged Access Workstations (PAWs)](implement-privileged-access-devices.md).
 

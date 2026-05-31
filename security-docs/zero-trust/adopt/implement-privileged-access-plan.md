@@ -30,7 +30,7 @@ During planning you identify which privileged access paths matter most, decide w
 
 ## Before you start
 
-- Our adoption model defines a set of critical business scenarios aimed at business leaders and decision makers. Learn more about the [**Secure and govern privileged access to critical systems**](../security-adoption-scenario-privileged-access.md) business outcome.
+- Our adoption model defines a set of critical business scenarios aimed at business leaders and decision makers. Learn more about the business outcome [securing and governing privileged access to critical systems](../security-adoption-scenario-privileged-access.md).
 - We use [security disciplines](../security-adoption-discipline-overview.md) to help teams deliver security outcomes across the business. Learn about the [disciplines associated with privileged access architecture](../security-adoption-discipline-identity-access-privileged-model.md)
 
 
@@ -82,7 +82,7 @@ Key planning principles:
 - Security levels guide:
     - Enforcement patterns
     - Configuration profiles
-    - Conditional access decisions
+    - Conditional Access decisions
     - Implementation sequencing
 
 This allows you to modernize privileged access incrementally while ensuring the highest‑risk paths are addressed first.
@@ -119,7 +119,7 @@ Implementation enforces the decisions produced during design and planning.
 **Accepted trade-offs and exceptions** | [Phase 1: Secure the identity control plane](implement-privileged-access-identity.md) and [Phase 3: Configure policy](implement-privileged-access-enforce.md). Logging, review workflows, break-glass accounts.
 **Monitoring for privileged access** | [Phase 4: Monitoring and threat detection](implement-privileged-access-monitor.md). Detection rules, alert prioritization, validation of approved paths.
 
-Before implementing each phase make sure you've completed the corresponding planning actions.
+Before implementing each phase, make sure you've completed the corresponding planning actions.
 
 ## Next steps
 

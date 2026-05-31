@@ -1,7 +1,6 @@
 ---
 title: "Zero Trust deployment plan with Microsoft 365"
 ms.subservice: zero-trust
-manager: rkarlin
 description: Learn how to apply Zero Trust security principles with Microsoft 365 to defend against threats and protect sensitive data.
 ms.topic: solution-overview
 ms.service: security
@@ -16,7 +15,7 @@ ms.collection:
 ms.date: 04/14/2025
 ---
 
-# Zero Trust deployment plan with Microsoft 365
+# Zero Trust deployment with Microsoft 365
 
 This article provides a deployment plan for building **Zero Trust** security with Microsoft 365. Zero Trust is a security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 
@@ -101,7 +100,7 @@ Go to [**_Zero Trust identity and device access protection_**](zero-trust-identi
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
-|Recommended identity and device access policies for three levels of protection: <ul><li>Starting point</li><li>Enterprise (recommended)</li><li>Specialized</li></ul> <br> Additional recommendations for: <ul><li>External users (guests)</li><li>Microsoft Teams</li><li>SharePoint</li></ul>|Microsoft E3 or E5 <br><br> Microsoft Entra ID in either of these modes: <ul><li>Cloud-only</li><li>Hybrid with password hash sync (PHS) authentication</li><li>Hybrid with pass-through authentication (PTA)</li><li>Federated</li></ul>|Device enrollment for policies that require managed devices. See [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) to enroll devices.|
+|Recommended identity and device access policies for three levels of protection: <ul><li>Starting point</li><li>Enterprise (recommended)</li><li>Specialized</li></ul> <br> More recommendations for: <ul><li>External users (guests)</li><li>Microsoft Teams</li><li>SharePoint</li></ul>|Microsoft E3 or E5 <br><br> Microsoft Entra ID in either of these modes: <ul><li>Cloud-only</li><li>Hybrid with password hash sync (PHS) authentication</li><li>Hybrid with pass-through authentication (PTA)</li><li>Federated</li></ul>|Device enrollment for policies that require managed devices. See [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) to enroll devices.|
 
 #### Phase 2 — Enroll devices into management with Intune
 

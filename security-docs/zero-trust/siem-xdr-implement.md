@@ -1,30 +1,19 @@
 ---
 title: Zero Trust Security with Microsoft Sentinel and Defender XDR
 description: Transform your security posture with Microsoft Sentinel and Defender XDR. Benefit from AI-powered threat detection and incident response for Zero Trust.
-author: batamig
-ms.author: bagol
 ms.subservice: zero-trust
 manager: raynemw
 ms.date: 02/05/2025
 ms.topic: how-to
 ms.service: security
-ms.collection: 
-  - zerotrust-solution
-  - msftsolution-secops
-  - msftsolution-overview
-  - zerotrust-azure
-  - usx-security
-appliesto: 
-    - Microsoft Sentinel in the Microsoft Defender portal
-    - Microsoft Sentinel in the Azure portal
-ms.localizationpriority: medium
+
 
 #customerIntent: As a security analyst, I want to use Microsoft Sentinel and Defender XDR for incident response so that I can effectively detect and mitigate threats under a Zero Trust model.
 ---
 
 # Zero Trust security with Microsoft Sentinel and Defender XDR
 
-Microsoft Defender XDR is an XDR solution that complements Microsoft Sentinel. An XDR pulls raw telemetry data from multiple services like cloud applications, email security, identity, and access management.
+Microsoft Defender XDR is an extended detection and response (XDR) solution that complements Microsoft Sentinel. An XDR pulls raw telemetry data from multiple services like cloud applications, email security, identity, and access management.
 
 Using artificial intelligence (AI) and machine learning, the XDR performs automatic analysis, investigation, and real-time response. It also correlates security alerts into larger incidents, giving security teams greater visibility into attacks and prioritizing incidents to help analysts gauge threat risk levels.
 

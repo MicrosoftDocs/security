@@ -163,7 +163,7 @@ For step-by-step replication guidance for encrypted virtual machines, see the fo
 
 Configuration-based services are Azure services that don't have data aside from their configuration in the management plane. These resources are generally infrastructure-based and are foundational services that support workloads. Examples include VNets, load balancers, network gateways, and application gateways.
 
-Because these services are stateless, there's no operating data to protect. The best option for protecting these services is to have [infrastructure as code (IaC) deployment](/devops/deliver/what-is-infrastructure-as-code) templates such as [Bicep](/azure/azure-resource-manager/bicep/), that can restore the state of these services after a destructive attack. You can also use scripts for deployments, but IaC deployments work better to restore functionality in an existing environment where only a few services are impacted.
+Because these services are stateless, there's no operating data to protect. The best option for protecting these services is to have [infrastructure as code (IaC) deployment](/devops/deliver/what-is-infrastructure-as-code) templates such as [Bicep](/azure/azure-resource-manager/bicep/) that can restore the state of these services after a destructive attack. You can also use scripts for deployments, but IaC deployments work better to restore functionality in an existing environment where only a few services are impacted.
 
 As long as a resource configured the same way can be deployed, services can continue to operate. Rather than try to back up and maintain copies of these resources, you can use the programmatic deployment to recover from an attack.
 

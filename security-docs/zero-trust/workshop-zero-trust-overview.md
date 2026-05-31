@@ -13,40 +13,31 @@ ms.topic: conceptual
 
 # The Microsoft Zero Trust Workshop
 
-The [Microsoft Zero Trust Workshop](https://microsoft.github.io/zerotrustassessment/docs/intro) provides a guidance tool for organizations on a security journey. The Workshop helps you to develop  an actionable and orderly Zero Trust security strategy and deployment plan across your IT landscape. 
+The [Microsoft Zero Trust Workshop](https://microsoft.github.io/zerotrustassessment/docs/intro) provides a guidance tool for organizations on a security journey. The Workshop helps you to define a coherent, actionable security strategy and deployment plan based on Zero Trust principles, across the IT landscape. 
 
 ## Why use the Workshop?
 
-Implementing security based on Zero Trust principles can be overwhelming. Often organizations struggle to know where to start, what to enable first, or how to measure  existing posture or progress. The Workshop helps you to understand and identify:
+Implementing security based on Zero Trust principles can be overwhelming. It's difficult to know where to start, what to enable first, or how to measure existing state or progress.
 
-- Microsoft's Zero Trust approach to security.
-- The state of your current security posture.
-- An actionable implementation roadmap based on real assessment data. 
-- Alignment with Microsoft security solutions. Recommendations and implementation best pracitces are practical, and tied to Microsoft tools and services.
-- Progress tracking, with an interactive and continuous improvement plan. 
+The Workshop helps you to:
+
+- Understand how Microsoft aligns security adoption to Zero Trust principles. 
+- Assess the state of your current security posture.
+- Define an actionable implementation roadmap based on real assessment data. 
+- Align with Microsoft security solutions.
+- Get practical recommendations and best practices for deploying security with Microsoft tools and services.
+- Track progress with an interactive and continuous improvement plan. 
 
 
 ## What's in the Workshop?
 
 The Zero Trust Workshop focuses on a couple of components.
 
-- **Assessment tool**:  [Learn more](assessment/overview.md).
-- [**Zero Trust Assessment tool**](assessment/overview.md): An assessment tool (PowerShell module) that you run in your environment to assess and improve your security posture and baseline.
-    - The tool provides the technical backbone of the workshop.
-    - It ensures that workshop findings and outcomes are based on real data and analysis. - - The assessment:
-        - Collects configuration data from your tenant.
-        - Checks your environment configuration against a broad range of Zero Trust best practices.
-        - Produces scores, gaps, and recommendations for each Zero Trust pillar and Microsoft Secure Future Initiative (SFI) pillar.
-        - The tool requires read-only permissions for a tenant configuration.
-- [**Workshop tool**](https://microsoft.github.io/zerotrustassessment/docs/videos/IntroductionToZT): A single-page app that helps you to document your Zero Trust progress, and develop an actionable roadmap for your journey. Get a [quick video introduction] to the Workshop.
-_ **Workshop guidance**: Workshop articles provide written guidance for facilitators and Workshop participants. They focus on the Zero Trust pillars:
-    - [**Identity**](workshop-zero-trust-identity.md), the primary Zero Trust control plane protecting users, admins, service accounts, and workload identities.
-    - [**Devices**](workshop-zero-trust-devices.md), ensuring that all endpoints access corporate resources and healthy, compliant, and monitored.
-    - [**Data**](workshop-zero-trust-data.md), protecting sensitive information, including documents, emails, databases, structured and unstructured data.
-    - [**Networking**](workshop-zero-trust-networking.md), related to infrastructure, protecting network traffic, segmentation boundaries, and connectivity.
-    - [**Infrastructure**](workshop-zero-trust-infrastructure.md), protecting multicloud and hybrid resources, including compute and storage.
-    - [**SecOps**](workshop-zero-trust-security-operations.md), providing threat protection, detection, and response across the business.
-    - [**AI**](workshop-zero-trust-ai-security.md), focusing on security for AI models and datasets
+**Component** | **Details**
+--- | ___
+[**Assessment tool**](assessment/overview.md) | An assessment tool (PowerShell module) that you run in your environment to assess and improve your security posture and baseline. It provides the technical backbone of the Workshop and ensures that Workshop findings and outcomes are based on real data and analysis. The assessment:<br/><br/>- Collects configuration data from your tenant.<br/><br/>- Checks your environment configuration against a broad range of Zero Trust best practices.<br/><br/>- Produces scores, gaps, and recommendations for each Zero Trust pillar and Microsoft Secure Future Initiative (SFI) pillar.
+[**Workshop tool**](https://microsoft.github.io/zerotrustassessment/docs/videos/IntroductionToZT) | A single-page app that helps you to document your Zero Trust progress, and develop an actionable roadmap for your journey.
+**Workshop guidance** | Workshop articles provide written guidance for facilitators and Workshop participants. Guidance focus on the Zero Trust pillars:<br/><br/>- [**Identity**](workshop-zero-trust-identity.md), the primary Zero Trust control plane protecting users, admins, service accounts, and workload identities.<br/><br/>- [**Devices**](workshop-zero-trust-devices.md), ensuring that all endpoints access corporate resources and healthy, compliant, and monitored.<br/><br/>- [**Data**](workshop-zero-trust-data.md), protecting sensitive information, including documents, emails, databases, structured and unstructured data.<br/><br/>- [**Networking**](workshop-zero-trust-networking.md), related to infrastructure, protecting network traffic, segmentation boundaries, and connectivity.<br/><br/>- [**Infrastructure**](workshop-zero-trust-infrastructure.md), protecting multicloud and hybrid resources, including compute and storage.<br/><br/>- [**SecOps**](workshop-zero-trust-security-operations.md), providing threat protection, detection, and response across the business.<br/><br/>- [**AI**](workshop-zero-trust-ai-security.md), focusing on security for AI models and datasets.
 
 
 ## How is the Workshop run?

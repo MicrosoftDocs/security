@@ -13,52 +13,64 @@ ms.topic: conceptual
 
 # The Microsoft Zero Trust Workshop
 
-The [Microsoft Zero Trust Workshop](https://microsoft.github.io/zerotrustassessment/docs/intro) provides a guidance tool for organizations on their Zero Trust security journey. It's intended to help you develop an actionable and orderly strategy for implementing a secure Zero Trust security posture across your IT landscape. The workshop aids in understanding and identifying:
-
-- Microsoft's Zero Trust approach to security.
-- The state of your current security posture.
-- An actionable roadmap for implementing Zero Trust security.
-- Security best practices and implementation steps.
+The [Microsoft Zero Trust Workshop](https://microsoft.github.io/zerotrustassessment/docs/intro) provides a guidance tool for organizations on a security journey. The Workshop helps you to develop  an actionable and orderly Zero Trust security strategy and deployment plan across your IT landscape. 
 
 ## Why use the Workshop?
 
-- Implementing security based on Zero Trust principles can be overwhelming. Often organizations struggle to know where to start, what to enable first, or how to measure their existing posture or progress. The Workshop helps you to:
-- Assess your current Zero Trust posture. It turns strategy into actionable steps based on real assessment data.
-- Keep progress on track and build an interactive and continuous improvement plan for security. 
-- Align with Microsoft security solutions. Recommendations and implementation steps are practical, and tied to Microsoft tools and services.
+Implementing security based on Zero Trust principles can be overwhelming. Often organizations struggle to know where to start, what to enable first, or how to measure  existing posture or progress. The Workshop helps you to understand and identify:
+
+- Microsoft's Zero Trust approach to security.
+- The state of your current security posture.
+- An actionable implementation roadmap based on real assessment data. 
+- Alignment with Microsoft security solutions. Recommendations and implementation best pracitces are practical, and tied to Microsoft tools and services.
+- Progress tracking, with an interactive and continuous improvement plan. 
+
 
 ## What's in the Workshop?
 
-The Zero Trust workshop provides:
+The Zero Trust Workshop focuses on a couple of components.
 
-- A single-page app that helps you to document your current Zero Trust progress, and develop an actionable roadmap for your Zero Trust journey. Get a [quick video introduction](https://microsoft.github.io/zerotrustassessment/docs/videos/IntroductionToZT) to the Workshop.
-- An assessment tool (provided as a PowerShell module) to assess and improve your security posture and baseline. [Learn more](assessment/overview.md).
+- **Assessment tool**:  [Learn more](assessment/overview.md).
+- [**Zero Trust Assessment tool**](assessment/overview.md): An assessment tool (PowerShell module) that you run in your environment to assess and improve your security posture and baseline.
+    - The tool provides the technical backbone of the workshop.
+    - It ensures that workshop findings and outcomes are based on real data and analysis. - - The assessment:
+        - Collects configuration data from your tenant.
+        - Checks your environment configuration against a broad range of Zero Trust best practices.
+        - Produces scores, gaps, and recommendations for each Zero Trust pillar and Microsoft Secure Future Initiative (SFI) pillar.
+        - The tool requires read-only permissions for a tenant configuration.
+- [**Workshop tool**](https://microsoft.github.io/zerotrustassessment/docs/videos/IntroductionToZT): A single-page app that helps you to document your Zero Trust progress, and develop an actionable roadmap for your journey. Get a [quick video introduction] to the Workshop.
+_ **Workshop guidance**: Workshop articles provide written guidance for facilitators and Workshop participants. They focus on the Zero Trust pillars:
+    - [**Identity**](workshop-zero-trust-identity.md), the primary Zero Trust control plane protecting users, admins, service accounts, and workload identities.
+    - [**Devices**](workshop-zero-trust-devices.md), ensuring that all endpoints access corporate resources and healthy, compliant, and monitored.
+    - [**Data**](workshop-zero-trust-data.md), protecting sensitive information, including documents, emails, databases, structured and unstructured data.
+    - [**Networking**](workshop-zero-trust-networking.md), related to infrastructure, protecting network traffic, segmentation boundaries, and connectivity.
+    - [**Infrastructure**](workshop-zero-trust-infrastructure.md), protecting multicloud and hybrid resources, including compute and storage.
+    - [**SecOps**](workshop-zero-trust-security-operations.md), providing threat protection, detection, and response across the business.
+    - [**AI**](workshop-zero-trust-ai-security.md), focusing on security for AI models and datasets
+
 
 ## How is the Workshop run?
 
 The Workshop can be run as follows:
 
-- By Microsoft or a partner for a more formal expert-led engagement.
-- In self-service mode, using Microsoft workshop guidance accompanied by a posture assessment.
-
-When run as a formal engagement there are two parts to the workshop: 
-
-- For the first part we assess your environment with programmatic checks to help identify gaps and areas for improvement. 
-- The second part of the engagement helps you to identify security projects and initiatives for security modernization and implementation. [Get detailed information about the engagement model](https://microsoft.github.io/zerotrustassessment/docs/workshop-guidance/delivery-guide#engagement-model).
+- By Microsoft or a partner for an expert-led engagement.
+- In self-service mode, using Microsoft workshop guidance accompanied by the assessment tool.
 - 
 ## How is a Workshop structured?
 
 Typically a Workshop focuses on four phases, with repeating cycles per pillar.
 
+When run as a [formal engagement](https://microsoft.github.io/zerotrustassessment/docs/workshop-guidance/delivery-guide#engagement-model) the Workshop runs as follows:
+
+
 **Phase** | **Details** | **Outcome**
 --- | --- | ---
-**Phase 1 - Kickoff/Orientation**: Introduce Zero Trust principles and Microsoft Zero Trust architecture.<br/><br/> Clarify context and goals.<br/><br/>Understand assessment logistics and prerequisites.<br/><br/>Validate stakeholders. | Workshop engagement is understood by all stakeholders.<br/><br/>Logistics are in place.
-**Phase 2 - Assessment**: [Run the Zero Trust assessment tool](/security/zero-trust/assessment/get-started) to assess current state of the Identity and Device pillars.<br/><br/>Evaluate the state of the other pillars manually. The Workshop Excel workbook helps you to assess your current security state using the workbook as a checklist/guide. Walk through each pillar sheet, and use the implementation controls/recommendations to assess your current state, identify gaps, estimate maturity levels, and identify recommendations. | Findings are clearly understood and gaps are identified.
-**Phase 2 - Pillar workshops**: Run a workshop for each pillar in accordance with your requirements. Each pillar workshop provides a comprehensive guidance that focuses on implementation tasks for securing each pillar in accordance with security best practices from Microsoft and from external standards such as the NIST CyberSecurity Framework (CSF). | A tailored adoption roadmap for evolving and improving Zero Trust security for specific pillars.
+**Phase 1 - Kickoff/Orientation**: Initial scoping call to introduce Zero Trust principles and Microsoft Zero Trust architecture, clarify scope, context and goals, and understand assessment logistics and prerequisites. | Workshop engagement is clear to all stakeholders.<br/><br/>Logistics are in place.
+**Phase 2 - Assessment (optional)**: [Run the Zero Trust assessment tool](/security/zero-trust/assessment/get-started) to capture current baseline posture.<br/><br/>Walk through assessment findings. | Findings are clearly understood and gaps are identified.
+**Phase 3 - Roadmap**: Define a with a customized and concrete deployment plan based on a baseline adoption roadmap. | Customer has a tailed adoption roadmap for Zero Trust security. 
+**Phase 4 Closeout**: Gather feedback and identify additional technology pillar workshops. 
 
 Learn more about [Workshop delivery](https://microsoft.github.io/zerotrustassessment/docs/workshop-guidance/delivery-guide).
-
-
 
 
 ## Who's the Workshop intended for?
@@ -77,18 +89,6 @@ The Workshop is intended for a variety of stakeholders. Attendance at pillar wor
 - **Decision makers/Budget stakeholders**: With focus on the roadmap strategy - CTO, CIO, business app owners.
 - **Risk program owners**: Enterprise risk managers, governance and compliance leaders, data protection officers, specific business risk owners.
 - **Cross-functional staff**: People who operate systems across the business - infrastructure/network owners, cloud engineers, security engineers, helpdesk leads.
-
-
-## How is the Workshop structured?
-
-The Workshop has a number of components:
-
-**Component** | **Goal**
---- | ---
-[**Zero Trust Assessment tool**](assessment/overview.md). | The assessment tool provides the technical backbone of the workshop. It ensures that workshop findings and outcomes are based on real data and analysis. It:<br/><br/>Collects configuration data from your tenant.<br/>Checks your environment configuration against a broad range of Zero Trust best practices.<br/>Produces scores, gaps, and recommendations for each Zero Trust pillar and Microsoft Secure Future Initiative (SFI) pillar.<br/><br/> The Zero Trust assessment tool is currently available for the assessment of identity, devices, network, and data posture.<br/><br/> The tool requires read-only permissions for a tenant configuration. 
-**Workshop session guides** | The guides provide written guidance for facilitators and structured learning for Workshop participants. They focus on the Zero Trust pillars:<br/><br/>[Identity](workshop-zero-trust-identity.md), the primary Zero Trust control plane protecting users, admins, service accounts, and workload identities.<br/><br/>[Devices](workshop-zero-trust-devices.md), ensuring that all endpoints access corporate resources and healthy, compliant, and monitored.<br/><br/>Data, protecting sensitive information, including documents, emails, databases, structured and unstructured data.<br/><br/>[Infrastructure](workshop-zero-trust-infrastructure.md), protecting multicloud and hybrid resources, including compute and storage.<br/><br/>[Networking](workshop-zero-trust-networking.md), related to infrastructure, protecting network traffic, segmentation boundaries, and connectivity.<br/><br/>[AI](workshop-zero-trust-ai-security.md), focusing on security for AI models and datasets.<br/><br/>[SecOps](workshop-zero-trust-security-operations.md), providing threat protection, detection, and response across the business.
-
-
 
 ## How is the Workshop maintained?
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Zero Trust Workshop - Data
 description: Learn about the Data pillar in the Microsoft Zero Trust Workshop
-ms.date: 05/24/2026
+ms.date: 05/31/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew

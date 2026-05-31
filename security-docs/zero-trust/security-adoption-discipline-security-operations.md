@@ -17,6 +17,24 @@ This article helps security and technology teams establish and modernize a Secur
 
 [Security disciplines](security-adoption-discipline-overview.md) are groupings of related security work that help organizations consistently deliver security outcomes across the entire technology estate. Within the security adoption model, disciplines help provide a bridge between [business scenarios](security-adoption-business-scenarios-overview.md) and [technical implementation](implement-overview.md), ensuring that security investments translate into real measurable outcomes as part of the [security adoption model](security-adoption-model.md).
 
+## What's SecOps?
+
+SecOps maintain and restore the security assurances of the system as live adversaries attack it. The NIST Cybersecurity Framework describes the SecOps functions of Detect, Respond, and Recover well.
+
+- **Detect** - SecOps must detect the presence of adversaries in the system, who are incentivized to stay hidden in most cases, allowing them to achieve their objectives unimpeded. This can take the form of reacting to an alert of suspicious activity or proactively hunting for anomalous events in the enterprise activity logs.
+- **Respond** - Upon detection of potential adversary action or campaign, SecOps must rapidly investigate to identify whether it's an actual attack (true positive) or a false alarm (false positive) and then enumerate the scope and goal of the adversary operation.
+- **Recover** - The ultimate goal of SecOps is to preserve or restore the security assurances (confidentiality, integrity, availability) of business services during and after an attack.
+
+### Risk mitigation
+
+The most significant security risk most organizations face is from human attack operators. 
+
+With notable exceptions, risk from automated/repeated attacks have been mitigated significantly for most organizations by signature and machine learning based approaches built into anti-malware. 
+
+While human attack operators are challenging to face because of their adaptability, they're operating at the same "human speed" as defenders, which help level the playing field.
+
+SecOps has a critical role to play in limiting the time and access an attacker can get to valuable systems and data. Each minute that an attacker has in the environment allows them to continue to conduct attack operations and access sensitive or valuable systems.
+
 
 ## Why this discipline?
 

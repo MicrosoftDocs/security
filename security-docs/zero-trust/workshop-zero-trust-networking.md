@@ -1,7 +1,7 @@
 ---
 title: Microsoft Zero Trust Workshop - Networking
 description: Learn about the Networking pillar in the Microsoft Zero Trust Workshop
-ms.date: 05/24/2026
+ms.date: 05/31/2026
 ms.service: security
 author: rayne-wiselman
 ms.author: raynew
@@ -26,6 +26,7 @@ The Network workshop covers the implementation areas summarized in the table.
 **Implement Zero Trust network access (ZTNA) for applications**  | Replace implicit trust in the corporate network with identity and context-based access decisions. <br/><br/>Connect users directly to applications using identity-aware access controls, and continuously evaluate sessions based on identity, device posture, risk signals, and location.
 **Enable secure private access to internal applications**  |   Provide access to internal and private applications without exposing them to the public internet. <br/><br/>Use application proxies and identity-aware gateways to eliminate broad network-level access and reduce attack surface.
 **Secure outbound internet access**  |   Use a secure web gateway (SWG) or similar cloud-delivered controls to inspect, filter, and control outbound traffic. <br/><br/>Apply policies based on user identity, device state, and risk to prevent access to malicious or inappropriate destinations.
+**Protect internet-facing applications and endpoints** | Reduce exposure of public-facing applications and services by applying layered protections against volumetric, protocol, and application-layer attacks. Use traffic filtering, request inspection, rate controls, and automated mitigation to improve resilience and availability.
 **Segment networks and application access**  |   Implement segmentation and micro-segmentation across on-premises and cloud environments to limit connectivity between users, devices, and applications. <br/><br/>Restrict lateral movement by granting access only to explicitly authorized resources.
 **Encrypt and protect all network traffic**  |  Ensure that all traffic—internal, external, and east-west—is encrypted in transit. <br/><br/>Use secure protocols and identity-aware gateways to maintain confidentiality and integrity of communications.
 **Move enforcement closer to applications and data**  |   Shift enforcement from traditional perimeter controls to application-level and identity-aware controls.<br/><br/> Use reverse proxies, application gateways, and session-based controls to enforce policy at the point of access.

@@ -21,7 +21,7 @@ Implementing security based on Zero Trust principles can be overwhelming. It's d
 
 The Workshop helps you to:
 
-- Understand how Microsoft aligns security adoption to Zero Trust principles. 
+- Understand how Microsoft implements security with Zero Trust principles. 
 - Assess the state of your current security posture.
 - Define an actionable implementation roadmap based on real assessment data. 
 - Align with Microsoft security solutions.

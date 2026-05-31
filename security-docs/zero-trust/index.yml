@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Zero Trust Guidance Center
-summary: Zero Trust security “assumes breach,” “never trusts,” and “always verifies.” The Zero Trust Guidance Center helps you adopt Zero Trust security, deliver security business outcomes, and protect technology pillars such as identity, devices, and data across your organization.
+summary: Zero Trust security “assumes breach,” “never trusts,” and “always verifies.” The Zero Trust Guidance Center helps you adopt security, deliver secure business outcomes, and protect technology pillars such as identity, devices, and data across your organization.
 brand: azure
 
 metadata:
@@ -16,7 +16,7 @@ metadata:
 ## HIGHLIGHTED CONTENT ##############################################
 highlightedContent:
   items:
-    - title: Follow the Zero Trust adoption model
+    - title: Adopt security with Zero Trust principles
       url: /security/zero-trust/security-adoption-model
       itemType: get-started
     - title: Review SFI patterns and best practices
@@ -25,13 +25,13 @@ highlightedContent:
     - title: Prioritize business outcomes with scenarios
       url: /security/zero-trust/security-adoption-business-scenarios-overview
       itemType: concept
-    - title: Assess your Zero Trust posture
-      url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources
+    - title: Assess your security posture
+      url: /security/zero-trust/assess/zero-trust-assessment-progress-tracking-resources
       itemType: get-started
-    - title: Accelerate Zero Trust deployment
+    - title: Accelerate security deployment with Zero Trust assessment
       url: https://microsoft.github.io/zerotrustassessment/
       itemType: deploy
-    - title: Implement Zero Trust security solutions
+    - title: Implement security solutions
       url: /security/zero-trust/implement-overview
       itemType: how-to-guide
 

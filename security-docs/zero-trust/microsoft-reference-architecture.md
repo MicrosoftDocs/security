@@ -4,15 +4,15 @@ description:  Plan security modernization with the help of the MCRA reference ar
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 05/26/2026
+ms.date: 05/29/2026
 author: rayne-wiselman
 ms.author: raynew
 
-#customer intent: As a security or IT architect, I want to understand how I can use the MCRA to adopt recommendations and best practices for my security architectures.
+#customer intent: As a security architect or IT architect, I want to understand how I can use the MCRA to adopt recommendations and best practices for my security architectures.
 ---
 
 
-# Review Microsoft Cybersecurity Reference Architectures (MCRA)
+# Review Microsoft Cybersecurity Reference Architectures (MCRAs)
 
 The Microsoft Cybersecurity Reference Architecture (MCRA) provides an extensive set of technical architectures for use during Zero Trust security adoption and modernization.
 
@@ -24,7 +24,7 @@ The MCRA is a component of our structured [security adoption model](security-ado
 
 ## Recent MCRA updates
 
-[Download the latest version of MCRA](https://download.microsoft.com/download/956f9359-e6d5-4e77-a36c-117f94620eb3/MCRA-April-2025.pptx), published in June 2026.
+[Download the latest version of the MCRAs](https://www.microsoft.com/en-us/download/details.aspx?id=108680), published in June 2026.
 
 :::image type="content" source="./media/reference-architecture-overview.png" alt-text="Screenshot of some of the diagrams included in the updated Microsoft Cybersecurity Reference Architecture." lightbox="./media/reference-architecture-overview.png":::
 
@@ -79,6 +79,5 @@ You typically use the architectures as a:
 
 ## Next steps
 
-- [Download the latest MCRAs](https://download.microsoft.com/download/956f9359-e6d5-4e77-a36c-117f94620eb3/MCRA-April-2025.pptx)
-- [Watch a prerecorded version of MCRA guidance](https://youtu.be/6iYxNm3TOiI?si=jOU3TScxup7pWDj0).
+- [Download the latest MCRAs](https://www.microsoft.com/en-us/download/details.aspx?id=108680).
 - Continue your [security adoption journey](security-adoption-journey.md).

@@ -4,11 +4,11 @@ description:  Plan security modernization with the help of the MCRA reference ar
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 05/26/2026
+ms.date: 05/29/2026
 author: rayne-wiselman
 ms.author: raynew
 
-#customer intent: As a security or IT architect, I want to understand how I can use the MCRA to adopt recommendations and best practices for my security architectures.
+#customer intent: As a security architect or IT architect, I want to understand how I can use the MCRA to adopt recommendations and best practices for my security architectures.
 ---
 
 

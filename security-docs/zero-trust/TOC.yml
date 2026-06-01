@@ -308,12 +308,14 @@
      - name: Assessment terminology
        href: assessment/glossary.md
 - name: Implement Zero Trust solutions
-  href: implement-overview.md
-- name: Technology pillars
-  href: deploy/overview.md
-- name: Adopt and secure AI and data
   items:
-  - name: Secure AI
+  - name: Overview
+    href: implement-overview.md
+  - name: Technology pillars
+    href: deploy/overview.md
+- name: Secure AI and data
+  items:
+  - name: Adopt and secure AI
     items:
     - name: Build a strong AI posture
       href: /security/security-for-ai/posture

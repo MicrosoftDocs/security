@@ -21,6 +21,8 @@
        href: /azure/networking/security/zero-trust-network-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
      - name: Data
        href: /purview/configure-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
+     - name: AI
+       href: /entra/fundamentals/zero-trust-ai.md?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
 - name: Reference
   items:
   - name: Assessment terminology

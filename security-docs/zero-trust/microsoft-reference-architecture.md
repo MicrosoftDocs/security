@@ -80,5 +80,4 @@ You typically use the architectures as a:
 ## Next steps
 
 - [Download the latest MCRAs](https://www.microsoft.com/en-us/download/details.aspx?id=108680).
-- [Watch a prerecorded version of MCRA guidance](https://youtu.be/6iYxNm3TOiI?si=jOU3TScxup7pWDj0).
 - Continue your [security adoption journey](security-adoption-journey.md).

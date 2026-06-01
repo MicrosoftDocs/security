@@ -24,7 +24,7 @@ The MCRA is a component of our structured [security adoption model](security-ado
 
 ## Recent MCRA updates
 
-[Download the latest version of the MCRAs](https://www.microsoft.com/en-us/download/details.aspx?id=108680), published in June 2026.
+[Download the latest version of the MCRAs](https://download.microsoft.com/download/692e68d0-ddaf-44d7-8136-378f01d9f4a1/MCRA-June-2026.pptx), published in June 2026.
 
 :::image type="content" source="./media/reference-architecture-overview.png" alt-text="Screenshot of some of the diagrams included in the updated Microsoft Cybersecurity Reference Architecture." lightbox="./media/reference-architecture-overview.png":::
 
@@ -79,5 +79,5 @@ You typically use the architectures as a:
 
 ## Next steps
 
-- [Download the latest MCRAs](https://www.microsoft.com/en-us/download/details.aspx?id=108680).
+- [Download the latest MCRAs](https://download.microsoft.com/download/692e68d0-ddaf-44d7-8136-378f01d9f4a1/MCRA-June-2026.pptx).
 - Continue your [security adoption journey](security-adoption-journey.md).

@@ -36,7 +36,7 @@ This article also includes information and resources for Microsoft partners.
 
 |Cybersecurity playbook|Description|
 |---|---|
-|:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Screenshot of cybersecurity playbook for small business.":::|In this library: <ul><li>[Downloadable poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) that guides you through the process of configuring Business Premium for Zero Trust.</li><li>Guidance for small and medium-sized businesses who aren't security experts and need some help getting started.</li><li>Steps to secure unmanaged, personally owned devices (also known as bring your own device or BYOD) and managed devices (typically, company-owned devices).</li><li>Recommendations and best practices for all users, including admins and security operations personnel.</li></ul>|
+|:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Screenshot of cybersecurity playbook for small business.":::|In this library: <ul><li>[Downloadable poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) that guides you through the process of configuring Business Premium for Zero Trust.</li><li>Guidance for small and medium-sized businesses who aren't security experts and need some help getting started.</li><li>Steps to secure unmanaged, personally owned devices (also known as bring your own device (BYOD)) and managed devices (typically, company-owned devices).</li><li>Recommendations and best practices for all users, including admins and security operations personnel.</li></ul>|
 
 For more information, see the following resources:
 
@@ -53,7 +53,7 @@ For more information, see the following resources:
 
 Business Premium includes Microsoft Defender for Business, which provides comprehensive security for devices with a simplified configuration experience that's optimized for small and medium-sized businesses. Capabilities include threat and vulnerability management, next-generation protection (antivirus and firewall), automated investigation and remediation, and more.
 
-Business Premium also includes advanced anti-phishing, anti-spam, and anti-malware protection for email content and Office files (Safe Links and Safe Attachments) with Microsoft Defender for Office 365 Plan 1. With these capabilities, your email and collaboration content is more secure and better protected.
+Business Premium also includes advanced anti-phishing, anti-spam, and anti-malware protection for email content and Office files (Safe Links and Safe Attachments) with Microsoft Defender for Office 365 Plan 1. With these capabilities, your email and collaboration content are more secure and better protected.
 
 For more information, see the following resources:
 
@@ -95,7 +95,7 @@ The Defender for Endpoint APIs can be used to integrate device security capabili
 
 You or your small business customers likely use other Software as a Service (SaaS) applications, such as Salesforce, Adobe Creative Cloud, and DocuSign. You can integrate these applications with Microsoft Entra ID and include these applications in your MFA and Conditional Access policies.
 
-The Microsoft Entra application gallery is a collection of software as a service (SaaS) applications that are pre-integrated with Microsoft Entra ID. All you need to do is find the application in the gallery and add it to your environment. Then, the application is available to include in the scope of your MFA and Conditional Access rules. See [Overview of the Microsoft Entra application gallery](/entra/identity/enterprise-apps/overview-application-gallery).
+The Microsoft Entra application gallery is a collection of software as a service (SaaS) applications that are preintegrated with Microsoft Entra ID. All you need to do is find the application in the gallery and add it to your environment. Then, the application is available to include in the scope of your MFA and Conditional Access rules. See [Overview of the Microsoft Entra application gallery](/entra/identity/enterprise-apps/overview-application-gallery).
 
 After you add SaaS apps to your environment, these apps are automatically be protected with Microsoft Entra MFA and the other protections provided by security defaults. If you're using Conditional Access policies instead of security defaults, you need to add these apps to the scope of your Conditional Access and related policies. See [Turn on MFA in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-conditional-access).
 

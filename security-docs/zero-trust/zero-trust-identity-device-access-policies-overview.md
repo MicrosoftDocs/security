@@ -4,22 +4,9 @@ description: Describes Microsoft recommendations and core concepts for deploying
 author: chrisda
 ms.author: chrisda
 ms.subservice: zero-trust
-manager: dansimp
 ms.service: security
 ms.topic: solution-overview
 ms.reviewer: martincoetzer
-ms.custom:
-  - it-pro
-  - goldenconfig
-ms.collection:
-  - M365-identity-device-management
-  - m365-security
-  - m365solution-identitydevice
-  - m365solution-overview
-  - m365solution-zero-trust
-  - zerotrust-solution
-  - highpri
-  - tier1
 ms.date: 03/12/2025
 ---
 
@@ -145,7 +132,7 @@ Microsoft Entra ID provides a full suite of identity management capabilities. We
 |[Multifactor authentication (MFA)](/entra/identity/authentication/concept-mfa-howitworks)|MFA requires users to provide two forms of verification, such as a user password plus a notification from the Microsoft Authenticator app or a phone call. MFA greatly reduces the risk that stolen credentials can be used to access your environment. Microsoft 365 uses the Microsoft Entra multifactor authentication service for MFA-based sign-ins.|Microsoft 365 E3 or E5|
 |[Conditional Access](/entra/identity/conditional-access/policy-all-users-device-compliance)|Microsoft Entra ID evaluates the conditions of the user sign-in and uses Conditional Access policies to determine the allowed access. For example, in this guidance we show you how to create a Conditional Access policy to require device compliance for access to sensitive data. This configuration greatly reduces the risk that a hacker with their own device and stolen credentials can access your sensitive data. It also protects sensitive data on the devices, because the devices must meet specific requirements for health and security.|Microsoft 365 E3 or E5|
 |[Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups)|Conditional Access policies, device management with Intune, and even permissions to files and sites in your organization rely on the assignment to user accounts or Microsoft Entra groups. We recommend that you create Microsoft Entra groups that correspond to the implemented levels of protection. For example, members of your executive staff are likely high value targets for hackers. You should add these user accounts to a Microsoft Entra group and assign this group to Conditional Access policies and other policies that enforce a higher level of protection.|Microsoft 365 E3 or E5|
-|[Device enrollment](/entra/identity/devices/overview)|You enroll a device into Microsoft Entra ID to create an identity for the device. This identity is used to authenticate the device when a user signs in and to apply Conditional Access policies that require domain-joined or compliant PCs. For this guidance, we use device enrollment to automatically enroll domain-joined Windows computers. Device enrollment is a prerequisite for managing devices with Intune.|Microsoft 365 E3 or E5|
+|[Device enrollment](/entra/identity/devices/overview)|You enroll a device into Microsoft Entra ID to create an identity for the device. This identity is used to authenticate the device when a user signs in and to apply Conditional Access policies that require domain-joined or compliant machines. For this guidance, we use device enrollment to automatically enroll domain-joined Windows computers. Device enrollment is a prerequisite for managing devices with Intune.|Microsoft 365 E3 or E5|
 |[Microsoft Entra ID Protection](/entra/id-protection/overview-identity-protection)|Enables you to detect potential vulnerabilities affecting your organization's identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply Conditional Access policies for multifactor authentication. This guidance also includes a Conditional Access policy that requires users to change their password if high-risk activity is detected for their account.|Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Microsoft Entra ID P2 licenses|
 |[Self-service password reset (SSPR)](/entra/identity/authentication/concept-sspr-howitworks)|Allow your users to reset their passwords securely and without help-desk intervention, by providing verification of multiple authentication methods that the administrator can control.|Microsoft 365 E3 or E5|
 |[Microsoft Entra password protection](/entra/identity/authentication/concept-password-ban-bad)|Detect and block known weak passwords, password variants, and other weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in a Microsoft Entra organization. You can also define specific entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.|Microsoft 365 E3 or E5|

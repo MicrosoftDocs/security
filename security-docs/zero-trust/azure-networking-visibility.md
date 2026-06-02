@@ -58,7 +58,7 @@ This article is a part of a [series of articles](azure-networking-overview.md) t
 The types of network traffic covered in this article are:
 
 - Centralized
-- East-west traffic, which are traffic flows between your Azure virtual networks (VNets) and your Azure services and on-premises network
+- East-west traffic, which is traffic flows between your Azure virtual networks (VNets) and your Azure services and on-premises network
 - North-south, which are traffic flows between your Azure environment and the Internet
 
 ## Reference architecture

@@ -1,60 +1,24 @@
 ---
 title: Identify and protect sensitive business data with Zero Trust
 description: Learn how to identify and protect sensitive business data with Zero Trust.  
-ms.date: 05/05/2025
+ms.date: 05/24/2025
 ms.service: security
 ms.subservice: zero-trust
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: how-to
-ms.collection: 
-  - zerotrust-adopt
+
+# Customer intent: As a security implementer, I want to understand how to identity and protect the most sensitive business data.
 ---
 
-<!---
-
-Writers notes:
-
-For updates to product names, please also update the appropriate figures.
-
-To update figures that are not screen shots, your options are:
-
-- Locate the source Visio file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended).
-- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
-
-For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
-
-- Locate the source PowerPoint file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended) 
-- Download a copy of the PowerPoint file from the article.
-
-After updating, republish the updated slide deck in the Download Center.
-
-For updates that affect text in the Excel Business Scenario Objectives workbook of the Plan phase, your options are:
-
-- Locate the source Excel file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended). 
-- Download a copy of the Excel file from the article.
-
-After updating, republish the updated Excel file in the Download Center.
-
-For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
-
-- Locate the source Visio file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended). 
-- Download a copy of the Visio file from the article.
-
-After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
-
-For new articles in this content set, please:
-
-- Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
-- Add a link to the Zero Trust Guidance Center page (index.yml).
-
---->
 
 # Identify and protect sensitive business data
 
 As part of Zero Trust adoption guidance, this article describes the business scenario of safeguarding your most critical data assets. This scenario focuses on how to identify and protect sensitive business data.
 
-Digital transformation has led organizations to deal with increasing volumes of data. However, external collaborators such as partners, vendors, and customers access much of that shared data outside the corporate network. This shift has created a complex data landscape, especially when you consider the proliferation of hybrid workforces and cloud migrations, growing cyberthreats, evolving security, and changing regulatory requirements around how data is governed and protected.
+With digital transformation organizations deal with increasing volumes of data. However, external collaborators such as partners, vendors, and customers access much of that shared data outside the corporate network. This shift has created a complex data landscape, especially when you consider the proliferation of hybrid workforces and cloud migrations, growing cyberthreats, evolving security, and changing regulatory requirements around how data is governed and protected.
 
-With hybrid work models, corporate assets and data are on the move. Your organization needs to control wherever the data is stored and transferred on devices, inside apps, and with partners. For modern-day security, however, you can no longer rely on traditional network protection controls.
+With hybrid work models, corporate assets and data are on the move. Your organization needs to control wherever the data is stored and transferred on devices, inside apps, and with partners. For modern-day security you can no longer rely on traditional network protection controls.
 
 | Traditional data protection with network controls | Modern data protection with Zero Trust |
 | --- | --- |
@@ -78,8 +42,8 @@ The following table provides reasons why business leaders across an organization
 | Chief Marketing Officer (CMO) | Product planning, messaging, branding, and upcoming product announcements must be released at the right time and in the right way to maximize impact. Untimely leakage can reduce investment returns and tip off competitors to upcoming plans. |
 | Chief Information Officer (CIO) | While traditional approaches for protecting information relied on limiting access to it, protecting sensitive data adequately by using modern technologies enables more flexible collaboration with external parties, as needed, without increasing risk. Your IT departments can fulfill their mandate to ensure productivity while minimizing risk. |
 | Chief Information Security Officer (CISO) | As the primary function of this role, securing sensitive business data is an integral part of information security. This outcome directly affects the organization’s larger cybersecurity strategy. Advanced security technology and tools provide the ability to monitor data and prevent leakage and loss. |
-| Chief Technology Officer (CTO) | Intellectual property can differentiate a successful business from a failing one. Protecting this data from oversharing, unauthorized access, and theft is key to ensure future growth of the organization. | 
-|Chief Operations Officer (COO) | Operations data, procedures, and production plans are a key strategic advantage to an organization. These plans can also reveal strategic vulnerabilities that can be exploited by competitors. Protecting this data from theft, oversharing, and misuse is critical to the continued success of the business. |
+| Chief Technology Officer (CTO) | Intellectual property can differentiate a successful business from a failing one. A key to future growth is to protect this data from oversharing, unauthorized access, and theft. | 
+|Chief Operations Officer (COO) | Operations data, procedures, and production plans are a key strategic advantage to an organization. These plans can also reveal strategic vulnerabilities that can be exploited by competitors. Data protection from theft, oversharing, and misuse is critical to the continued success of the business. |
 | Chief Financial Officer (CFO) | Publicly traded companies have a duty to protect specific financial data before it's made public. Other financial data can reveal plans and strategic strengths or weaknesses. This data must all be protected to both ensure compliance with existing regulations and maintain strategic advantages. |
 | Chief Compliance Officer (CCO) | Regulations across the world mandate protection of PII of customers or employees and other sensitive data. The CCO is responsible for ensuring the organization abides by such regulations. A comprehensive information protection strategy is key to achieving that goal. |
 | Chief Privacy Officer (CPO) | A CPO is typically responsible for ensuring protection of personal data. In organizations that deal with large amounts of customer personal data and organizations operating in regions with strict privacy regulations, failure to protect sensitive data can result in steep fines. These organizations also risk losing customer trust as a consequence. CPOs must also prevent personal data from being misused in ways that violate customer agreements or laws, which can include improper sharing of the data within the organization and with partners. |
@@ -163,11 +127,11 @@ If this staged approach works for your organization, you can use:
 
 - This [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to present and track your progress through these stages and objectives for business leaders and other stakeholders. Here's the slide for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png" alt-text="The PowerPoint slide for the stages of your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png":::
+  :::image type="content" source="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png" alt-text="The PowerPoint slide for the stages of identifying and protecting sensitive business data." lightbox="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png":::
 
 - This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png" alt-text="The progress tracking worksheet for your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png":::
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png" alt-text="Progress tracking worksheet for identity and sensitive data protection." lightbox="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png":::
 
 ### Understand your organization
 
@@ -179,7 +143,7 @@ The following actions apply:
 
 - Inventory your data.
 
-  First, take stock of where all your data resides, which can be as simple as listing the apps and repositories with your data. After technologies like sensitivity labeling have been deployed, you may discover other locations where sensitive data is being stored. These locations are sometimes referred to as dark or grey IT. 
+  First, take stock of where all your data resides, which can be as simple as listing the apps and repositories with your data. After technologies like sensitivity labeling have been deployed, you might discover other locations where sensitive data is being stored. These locations are sometimes referred to as dark or grey IT. 
 
   It’s also helpful to estimate how much data you plan to inventory (the volume). Throughout the recommended technical process, you use the tool set to discover and identify business data. You’ll learn what kinds of data you have and where this data resides across services and cloud apps, enabling you to correlate the sensitivity of the data with the level of exposure of the locations in which it's present. 
 
@@ -189,7 +153,7 @@ The following actions apply:
 
   The four stages recommended represent an incremental adoption plan. Adjust this plan based on your organization’s priorities and the composition of your digital estate. Be sure to take account of any timeline milestones or obligations for completing this work.
 
-- Inventory any data sets or dedicated projects that require compartmentalized protection (for example, tented or special projects).
+- Inventory any data sets or dedicated projects that require compartmentalized protection.
 
   Not every organization requires compartmentalized protection.
 
@@ -220,7 +184,7 @@ This table summarizes roles that are recommended when building a sponsorship pro
 
 The [PowerPoint deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-protect-data-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/zero-trust-protect-data-stakeholders.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-protect-data-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for identity and protect sensitive data deployment." lightbox="../media/adoption-guide/zero-trust-protect-data-stakeholders.png":::
 
 ### Technical planning and skills readiness
 
@@ -241,7 +205,7 @@ The Stage 1 deployment objectives include the process of taking inventory of you
 
 ##### Discover and identify sensitive business data
 
-Starting with Microsoft 365, some of the primary tools you use to identify sensitive information that needs to be protected are sensitive information types (SITs) and other classifiers, including trainable classifiers and fingerprints. These identifiers help find common sensitive data types, such as credit card numbers or governmental identification numbers, and identifying sensitive documents and emails using machine learning and other methods. You can also create custom SITs to identify data that is unique to your environment, including using exact data matching to differentiate data pertaining to specific people—for example, customer PII—that needs special protection.
+Starting with Microsoft 365, some of the primary tools you use to identify sensitive information that needs to be protected are sensitive information types (SITs) and other classifiers, including trainable classifiers and fingerprints. These identifiers help find common sensitive data types, such as credit card numbers or governmental identification numbers. They also help you to identify sensitive documents and emails using machine learning and other techniques. You can also create custom SITs to identify data that is unique to your environment, including using exact data matching to differentiate data pertaining to specific people—for example, customer PII—that needs special protection.
 
 When data is added to your Microsoft 365 environment or modified, it's automatically analyzed for sensitive content using any SITs that are presently defined in your tenant.
 
@@ -255,10 +219,10 @@ The following table lists resources for discovering sensitive business data.
 
 | Resource | Description |
 | --- | --- |
-| [Deploy an information protection solution with Microsoft 365 Purview](/microsoft-365/compliance/information-protection-solution) | Introduces a framework, process, and capabilities you can use to accomplish your specific business objectives for information protection. |
+| [Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution) | Introduces a framework, process, and capabilities you can use to accomplish your specific business objectives for information protection. |
 | [Sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about) | Start here to get started with sensitive information types. This library includes many articles for experimenting with and optimizing SITs. |
 | [Content explorer](/microsoft-365/compliance/data-classification-content-explorer) | Scan your Microsoft 365 environment for the occurrence of SITs and view the results in the content explorer tool. |
-| [Trainable classifiers](/microsoft-365/compliance/classifier-learn-about) | Trainable classifiers allow you to bring samples of the type of content you want to discover (seeding) and then let the machine learning engine learn how to discover more of this data. You participate in the classifier training by validating the results until the accuracy is improved. |
+| [Trainable classifiers](/microsoft-365/compliance/classifier-learn-about) | Trainable classifiers allow you to bring samples of the type of content you want to discover (seeding) so that the engine for machine learning can learn how to discover more of this data. You participate in the classifier training by validating the results until the accuracy is improved. |
 | [Exact data matching](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview) | Exact data matching allows you to find sensitive data that matches existing records—for example, your customers’ PII as recorded in your line of business apps—which enables you to precisely target such data with information protection policies, virtually eliminating false positives. |
 | [Content search](/microsoft-365/compliance/search-for-content) | Use Content search for advanced searches, including custom filters. You can use keywords and Boolean search operators. You can also build search queries using Keyword Query Language (KQL). |
 | RaMP checklist: [Data protection: Know your data](/security/zero-trust/data-compliance-gov-data#1-know-your-data) | A checklist of implementation steps with step owners and links to documentation. |
@@ -395,7 +359,7 @@ In this stage, you extend the protections you developed in Microsoft 365 to data
 
 | Resource | Description |
 | --- | --- |
-| [Microsoft Purview data governance documentation](/azure/purview/) | Learn how to use the Microsoft Purview governance portal so your organization can find, understand, govern, and consume data sources. Tutorials, REST API reference, and other documentation show you how to plan and configure your data repository where you can discover available data sources and manage rights use. |
+| [Microsoft Purview data governance documentation](/azure/purview/) | Learn how to use the Microsoft Purview portal to help your organization find, understand, govern, and consume data sources. Tutorials, REST API reference, and other documentation show you how to plan and configure your data repository where you can discover available data sources and manage rights use. |
 
 ### Cloud adoption plan
 
@@ -426,7 +390,7 @@ This list summarizes the high-level methodical process for doing this work:
 - Introduce classification into Office apps.
 - Move on to protection of data on devices by experimenting with and then rolling out endpoint DLP.
 - Extend the capabilities you’ve refined within your Microsoft 365 estate to data in cloud apps by using Defender for Cloud Apps.
-- Discover and apply protection to data on-premises using Microsoft Purview Information Protection scanner
+- Discover and apply protection to data on-premises using Microsoft Purview Information Protection scanner.
 - Use Microsoft Purview data governance to discover and protect data in cloud data storage services, including Azure Blobs, Cosmos DB, SQL databases, and Amazon Web Services S3 repositories.
 
 This diagram shows the process.

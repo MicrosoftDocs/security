@@ -22,7 +22,7 @@
      - name: Data
        href: /purview/configure-security?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
      - name: AI
-       href: /entra/fundamentals/zero-trust-ai.md?toc=/security/zero-trust/assessment/toc.json&bc=/security/zero-trust/assessment/toc.json
+       href: /entra/fundamentals/zero-trust-ai
 - name: Reference
   items:
   - name: Assessment terminology

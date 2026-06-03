@@ -78,6 +78,8 @@
       items: 
       - name: Overview   
         href: sfi/secure-future-initiative-threat-overview.md  
+      - name: Manage memory safety in agentic systems 
+        href: sfi/manage-agentic-memory-safety.md
       - name: Complete AI threat modeling
         href: sfi/threat-modeling-ai.md   
       - name: Implement AI observability          

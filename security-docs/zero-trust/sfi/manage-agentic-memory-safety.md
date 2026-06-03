@@ -1,5 +1,5 @@
 --- 
-title: Manage AI memory safeyt in agentic systems
+title: Manage AI memory safety in agentic systems
 description: Learn how to manage AI memory safely in agentic AI systems
 ms.date: 06/03/2026
 ms.service: security
@@ -28,9 +28,9 @@ Persistence fundamentally changes the threat model: attackers no longer need to 
 
 Key challenges include:
 
-- **Transient threats become persistent**: A single compromised interaction can silently shape all future behavior long after the original session ends. Hallucinations become persisted hallucinations; cross-prompt injection (XPIA) becomes continuous XPIA with automatic exfiltration or override of system instructions.
-- **Expanded blast radius**: Persistent state means more surface area for exfiltration, corruption, and manipulation. Additional storage of potentially sensitive data creates additional attack surface and increases operational complexity for deletion, correction, and transparency.
-- **Delayed and cross-context effects**: Corruption effects may be delayed or triggered later ("delayed tool invocation"), and cross-context recall can unintentionally disclose information. Attackers can break up harmful instructions across turns to assemble a payload over time.
+- **Transient threats become persistent**: A single compromised interaction can silently shape all future behavior long after the original session ends. Hallucinations become persisted hallucinations; cross-prompt injection (XPIA) becomes continuous XPIA with automatic exfiltration or overrides of system instructions.
+- **Expanded blast radius**: Persistent state means more surface area for exfiltration, corruption, and manipulation. More storage of potentially sensitive data creates extra attack surface and increases operational complexity for deletion, correction, and transparency.
+- **Delayed and cross-context effects**: Corruption effects might be delayed or triggered later ("delayed tool invocation"), and cross-context recall can unintentionally disclose information. Attackers can break up harmful instructions across turns to assemble a payload over time.
 - **Single-turn defenses are insufficient**: Attackers are already thinking across turns. Memory-aware attacks exploit the temporal gap between exposure and execution.
 
 These challenges underscore the need for treating memory as a first-class security concern with protections applied at multiple layers rather than relying solely on model behavior or single-turn detection.
@@ -52,14 +52,14 @@ Organizations can use these functions to structure ongoing assessments as follow
 
 - **Enforce isolation architecturally**:
     - Isolate memory by user, agent, and tenant using deterministic controls like ACLs, scoped tokens, encryption at rest and in transit.
-    -  Do not rely on model prompting for boundary enforcement.
-    - Scope sub-agent access to only the memory they require.
+    -  Don't rely on model prompting for boundary enforcement.
+    - Scope subagent access to only the memory they require.
 
 - **Treat retrieval as a risk decision**. 
     - Memory is candidate context, not authoritative truth.
     - At retrieval time:
         - Validate relevance and freshness.
-        - Revaluate for sensitive or malicious content (e.g., Prompt Shields).
+        - Revaluate for sensitive or malicious content (for example, Prompt Shields).
         - Prevent memory from overriding safety controls or system instructions.
         - Guard against cross-context information disclosure.
 

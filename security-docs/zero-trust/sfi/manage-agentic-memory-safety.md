@@ -22,7 +22,9 @@ ms.collection:
 
 Memory gives AI agents the ability to retain and recall information across interactions to influence future behavior. This persistence delivers personalization and agentic coherence as agents build durable knowledge that strengthens their performance over time. This is the feeling of “learning”.
 
-However, persistent memory doesn't just store information, it acts as a configuration layer for the AI system. A memory created today can influence tool selection, refusal behavior, and reasoning later, often outside the original context, session, or application. Persistence fundamentally changes the threat model: attackers no longer need to succeed in a single prompt. By influencing memory, they can shape behavior gradually over time, exploiting the temporal gap between exposure and execution.
+However, persistent memory doesn't just store information, it acts as a configuration layer for the AI system.A memory created today can influence tool selection, refusal behavior, and reasoning later, often outside the original context, session, or application.
+
+Persistence fundamentally changes the threat model: attackers no longer need to succeed in a single prompt. By influencing memory, they can shape behavior gradually over time, exploiting the temporal gap between exposure and execution.
 
 Key challenges include:
 
@@ -43,20 +45,20 @@ Organizations can use these functions to structure ongoing assessments as follow
     -  Verify the caller is authorized (least privilege).
     - Confirm user intent—avoid implicit or autonomous memory creation from untrusted sources.
     - This is also a good time to sanitize inputs using a data handling taxonomy or to achieve governance goals. As an example:
-        - Block from memory: Credentials, API keys, payment data, government IDs, known malicious patterns.
-        - Never infer: For sensitive attributes (health, race, religion, politics), only add to memory if explicitly provided by the user.
-        - General data: Preferences, tasks, context—allowed with standard safeguards and purpose limited to the service.
+        - **Block from memory**: Credentials, API keys, payment data, government IDs, known malicious patterns.
+        - **Never infer**: For sensitive attributes (health, race, religion, politics), only add to memory if explicitly provided by the user.
+        - **General data**: Preferences, tasks, context—allowed with standard safeguards and purpose limited to the service.
     - Label provenance on every memory entry: source, identity, timestamp, model version.
 
 - **Enforce isolation architecturally**:
-    - Isolate memory by user, agent, and tenant using deterministic controls like ACLs, scoped tokens, encryption at rest and in transit
+    - Isolate memory by user, agent, and tenant using deterministic controls like ACLs, scoped tokens, encryption at rest and in transit.
     -  Do not rely on model prompting for boundary enforcement.
     - Scope sub-agent access to only the memory they require.
 
 - **Treat retrieval as a risk decision**. 
     - Memory is candidate context, not authoritative truth.
     - At retrieval time:
-        - Validate relevance and freshnessevalu.
+        - Validate relevance and freshness.
         - Revaluate for sensitive or malicious content (e.g., Prompt Shields).
         - Prevent memory from overriding safety controls or system instructions.
         - Guard against cross-context information disclosure.
@@ -89,8 +91,8 @@ Organizations can adopt similar practices using the following actions.
 | Multi-agent or shared-memory architectures | Enforce isolation to the agent and user with allowances for the tenant. Isolate with deterministic access controls and verifiable agent identity. | [Agent identities in Microsoft Entra Agent ID](/entra/agent-id/agent-identities) |
 | Agentic AI with using persistent context (includes agents.md, ai notes, etc.) | Apply retrieval-time Prompt Shields to detect indirect attacks before injecting memory into reasoning context. | [Prompt Shields in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/jailbreak-detection) |
 | Detecting memory poisoning and XPIA | Enable AI workload threat protection to detect credential theft, jailbreak persistence, and data exfiltration patterns. | [AI threat protection in Defender for Cloud](/azure/defender-for-cloud/ai-threat-protection) |
-| User trust and transparency | Provide in-product memory review, edit, and deletion UX; notify users when memory is created or influences output. | [Microsoft Entra Agent ID](/entra/agent-id/identity-professional/microsoft-entra-agent-identities-for-ai-agents) |
-| Red teaming memory systems | Test for multi-turn poisoning, delayed tool invocation, cross-context leakage, and payload assembly across sessions. | [AI Red Team AGent (PyRIT)](/azure/foundry/concepts/ai-red-teaming-agent) |
+| User trust and transparency | Provide in-product memory review, edit, and deletion UX; notify users when memory is created or influences output. | [Guidelines for human-AI interaction](https://www.microsoft.com/research/project/guidelines-for-human-ai-interaction/?msockid=3867c9cd6a036861120cdcb96b93697a) |
+| Red teaming memory systems | Test for multi-turn poisoning, delayed tool invocation, cross-context leakage, and payload assembly across sessions. | [AI Red Team Agent (PyRIT)](/azure/foundry/concepts/ai-red-teaming-agent) |
 | Incident response for AI systems with memory enabled | Log all memory CRUD events with full provenance; retain for audit, incident reconstruction, and rollback. | [Observability for generative AI and AI agentic systems](observability-ai-systems.md) |
 
 
@@ -126,4 +128,8 @@ Track these KPIs to measure progress:
 
 ## Summary
 
-Persistent memory introduces durable, cross-context influence into AI systems—turning transient threats into persistent ones and expanding the blast radius of compromise. By gating writes on intent and provenance, enforcing architectural isolation, treating retrieval as a risk decision, and maintaining full lifecycle observability, organizations can enable AI personalization while limiting the impact of corruption, poisoning, and unintended disclosure. As memory becomes foundational to agentic AI, these controls must be enforced as infrastructure-level requirements rather than optional model behaviors.
+Persistent memory introduces durable, cross-context influence into AI systems—turning transient threats into persistent ones and expanding the blast radius of compromise.
+
+By gating writes on intent and provenance, enforcing architectural isolation, treating retrieval as a risk decision, and maintaining full lifecycle observability, organizations can enable AI personalization while limiting the impact of corruption, poisoning, and unintended disclosure.
+
+As memory becomes foundational to agentic AI, these controls must be enforced as infrastructure-level requirements rather than optional model behaviors.

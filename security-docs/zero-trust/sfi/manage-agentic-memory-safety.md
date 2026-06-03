@@ -20,9 +20,9 @@ ms.collection:
 
 ## Context and problem
 
-Memory gives AI agents the ability to retain and recall information across interactions to influence future behavior. This persistence delivers personalization and agentic coherence as agents build durable knowledge that strengthens their performance over time. This is the feeling of “learning”.
+Memory gives AI agents the ability to retain and recall information across interactions to influence future behavior. This persistence delivers personalization and agentic coherence as agents build durable knowledge that strengthens their performance over time. This is the feeling of "learning".
 
-However, persistent memory doesn't just store information, it acts as a configuration layer for the AI system.A memory created today can influence tool selection, refusal behavior, and reasoning later, often outside the original context, session, or application.
+However, persistent memory doesn't just store information, it acts as a configuration layer for the AI system. A memory created today can influence tool selection, refusal behavior, and reasoning later, often outside the original context, session, or application.
 
 Persistence fundamentally changes the threat model: attackers no longer need to succeed in a single prompt. By influencing memory, they can shape behavior gradually over time, exploiting the temporal gap between exposure and execution.
 
@@ -87,13 +87,13 @@ Organizations can adopt similar practices using the following actions.
 
 | Use case | Recommended actions | Resource |
 |------------------|---------------------|----------|
-| Memory systems handling sensitive data | Classify or govern data at write time; block inappropriste or harmful data before writing to memory. | [Microsoft Purview data security posture management for AI](/purview/data-security-posture-management-learn-about) |
+| Memory systems handling sensitive data | Classify or govern data at write time; block inappropriate or harmful data before writing to memory. | [Microsoft Purview data security posture management for AI](/purview/data-security-posture-management-learn-about) |
 | Multi-agent or shared-memory architectures | Enforce isolation to the agent and user with allowances for the tenant. Isolate with deterministic access controls and verifiable agent identity. | [Agent identities in Microsoft Entra Agent ID](/entra/agent-id/agent-identities) |
 | Agentic AI with using persistent context (includes agents.md, ai notes, etc.) | Apply retrieval-time Prompt Shields to detect indirect attacks before injecting memory into reasoning context. | [Prompt Shields in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/jailbreak-detection) |
 | Detecting memory poisoning and XPIA | Enable AI workload threat protection to detect credential theft, jailbreak persistence, and data exfiltration patterns. | [AI threat protection in Defender for Cloud](/azure/defender-for-cloud/ai-threat-protection) |
 | User trust and transparency | Provide in-product memory review, edit, and deletion UX; notify users when memory is created or influences output. | [Guidelines for human-AI interaction](https://www.microsoft.com/research/project/guidelines-for-human-ai-interaction/?msockid=3867c9cd6a036861120cdcb96b93697a) |
 | Red teaming memory systems | Test for multi-turn poisoning, delayed tool invocation, cross-context leakage, and payload assembly across sessions. | [AI Red Team Agent (PyRIT)](/azure/foundry/concepts/ai-red-teaming-agent) |
-| Incident response for AI systems with memory enabled | Log all memory CRUD events with full provenance; retain for audit, incident reconstruction, and rollback. | [Observability for generative AI and AI agentic systems](observability-ai-systems.md) |
+| Incident response for AI systems with memory enabled | Log all memory CRUD events with full provenance; retain for audit, incident reconstruction, and roll back. | [Observability for generative AI and AI agentic systems](observability-ai-systems.md) |
 
 
 ## Outcomes
@@ -120,7 +120,7 @@ Track these KPIs to measure progress:
 
 - Accuracy and satisfaction scored for AI responses formed using memory.
 - Percentage (%) of memory CRUD operations logged with full provenance (source, identity, timestamp, model version).
--  Percentage (%)of memory-specific threat scenarios (poisoning, XPIA persistence, cross-context leakage) covered by active detection rules.
+-  Percentage (%) of memory-specific threat scenarios (poisoning, XPIA persistence, cross-context leakage) covered by active detection rules.
 - Mean time to detect and remediate memory corruption or poisoning incidents.
 - Percentage (%) of memory systems providing user-facing view, edit, and delete controls.
 

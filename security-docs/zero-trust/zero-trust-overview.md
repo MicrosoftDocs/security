@@ -37,7 +37,7 @@ Zero Trust is built on three principles that govern access decisions and securit
 **Assume breach** | Security controls are designed with the expectation that **attackers might be operating inside the environment**. Controls focus on limiting breach impact, and enabling rapid threat detection and response.
 
 
-:::image type="content" source="./media/zero-trust-principles.png" alt-text="Diagram of Zero Trust security model highlighting the need to challenge traditional security assumptions." lightbox="./media/zero-trust-principles.png":::
+:::image type="content" source="./media/zero-trust-principles.png" alt-text="Diagram of Zero Trust security model highlighting the Zero Trust security principles." lightbox="./media/zero-trust-principles.png":::
 
 
 ## Zero Trust outcomes

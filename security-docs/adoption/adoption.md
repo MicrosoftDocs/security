@@ -9,7 +9,7 @@ ms.reviewer: mas
 ---
 # Security Adoption Resources
 
-Navigating the continuously changing threat landscape, technology platforms, and business requirements is often challenging for many organizations.
+Navigating the continuously changing threat landscape, technology platforms, and business requirements is often challenging for many organizations. test PR
 
 The Security Adoption Framework (SAF) provides guidance for organizations through end-to-end security modernization across a 'hybrid of everything' multicloud and multi-platform technical estate.
 

@@ -192,7 +192,7 @@ Microsoft 365 E3 includes Microsoft Entra ID P1 licenses. With this plan, Micros
 
 Ensure that you include Microsoft 365 Services and your other SaaS apps in the scope of these policies.
 
-If your environment includes hybrid identities with on-premises Active Directory Domain Services, be sure to deploy [Microsoft Entra Password Protection](/entra/identity/authentication/concept-password-ban-bad-on-premises). This capability detects and blocks known weak passwords and their variants and can also block more weak terms within passwords that are specific to your organization.
+If your environment includes hybrid identities with on-premises Active Directory Domain Services, be sure to deploy [Microsoft Entra Password Protection](/entra/identity/authentication/concept-password-ban-bad-on-premises). This capability detects and blocks known weak passwords and their variants. It can also block more weak terms within passwords that are specific to your organization.
 
 ### Next steps with E5
 

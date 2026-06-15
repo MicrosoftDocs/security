@@ -148,7 +148,7 @@ First, apply oversharing controls that work with Copilot, as appropriate for you
 
 Next, invest in data classification and protection with Microsoft Purview capabilities.
 
-[Sensitivity labels](/purview/sensitivity-labels) form the cornerstone of protecting your data. Before you create the labels to denote the sensitivity of items and the protection actions that are applied, you must understand your organization’s existing classification taxonomy and how it maps to labels that users see and apply in apps. After creating the sensitivity labels, publish them, and provide guidance to users how and when to apply them in Word, Excel, PowerPoint, and Outlook.
+[Sensitivity labels](/purview/sensitivity-labels) form the cornerstone of protecting your data. Before you create the labels to denote the sensitivity of items and the protection actions that are applied, understand your organization’s existing classification taxonomy and how it maps to labels that users see and apply in apps. After creating the sensitivity labels, publish them, and provide guidance to users on how and when to apply them in Word, Excel, PowerPoint, and Outlook.
 
 For more information, see:
 

@@ -29,7 +29,7 @@ ms.custom: [copilot-learning-hub]
 
 Microsoft 365 Copilot Chat is an AI companion in the Microsoft 365 Copilot app, in Edge, and at the following URLs — M365copilot.com and Copilot.cloud.microsoft. It's provided for Entra account users with a [qualifying license](/copilot/manage#microsoft-365--chat-eligibility). Copilot Chat includes enterprise data protection. Enterprise data protection is not included in Copilot Chat for personal use (consumer version). This article helps you implement security protections to keep your organization and data safe while using Copilot Chat. By implementing these protections, you're building a foundation of Zero Trust.
 
-Zero Trust security recommendations for Copilot Chat focus on protection for user accounts, user devices, and your organization data that can be summarized by Copilot Chat in Edge.
+Zero Trust security recommendations for Copilot Chat focus on protection for user accounts, user devices, and your organization data that Copilot Chat can summarize in Edge.
 
 ## How does Zero Trust help with AI?
 

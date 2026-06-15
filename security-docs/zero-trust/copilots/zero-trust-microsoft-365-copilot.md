@@ -360,7 +360,7 @@ For collaborating with people outside your organization, see these resources:
 
 ## Step 7. Deploy or validate minimum user permissions to data
 
-To prevent your organization’s data from being at risk of overexposure or oversharing, the next step is to ensure that all users have Just Enough Access (JEA) to perform their jobs and no more. Users shouldn't discover data they aren't supposed to be able to view or share data that they shouldn't be sharing.
+To prevent your organization’s data from being at risk of overexposure or oversharing, ensure that all users have just enough access (JEA) to perform their jobs and no more. Users shouldn't discover data they aren't supposed to view or share data that they shouldn't be sharing.
 
 To prevent oversharing, implement permissions requirements and organizational policies that all users must follow and train your users to use them. For example, put controls in place, like requiring site access reviews by site owners or restricting access to defined security groups from one central place.
 

@@ -235,7 +235,7 @@ To prevent bad actors from compromising devices or using compromised devices to 
 
 Microsoft 365 E3 includes Microsoft Intune for managing devices.
 
-Next, begin to enroll devices into management. Once enrolled, set up compliance policies and then require healthy and compliant devices. Finally, you can deploy device profiles, also known as configuration profiles, to manage settings and features on devices.
+Next, begin to enroll devices into management. Once enrolled, set up compliance policies and then require healthy and compliant devices. Finally, deploy device profiles, also known as configuration profiles, to manage settings and features on devices.
 
 To deploy these protections, use the following set of articles.
 

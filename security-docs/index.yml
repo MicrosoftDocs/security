@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 05/05/2026
+  ms.date: 04/06/2026
   ms.collection: # na
   brand: azure
 sections:
@@ -81,34 +81,67 @@ sections:
     title: ""
     blocks:
       - componentType: icon-card
-        title: Secure autonomous agentic AI systems
-        summary: Apply solutions to operationalize mitigation across identity, governance, runtime enforcement, and detection.
-        url: /security/zero-trust/sfi/secure-agentic-systems
+        title: Enable Defender for AI Services workload protection in Microsoft Defender for Cloud
+        summary: Enable and configure the Defender for AI Services plan in Microsoft Defender for Cloud to detect threats targeting Azure AI services workloads.
+        url: /training/modules/implement-defender-cloud-ai-services/
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
+      - componentType: icon-card
+        title: Assess data security posture in Microsoft Purview
+        summary: Work with Microsoft Purview Data Security Posture Management to protect your data.
+        url: /training/modules/purview-dspm-assess-data-security-posture/ 
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/tutorial-1-purple.png
+      - componentType: icon-card
+        title: Generate playbooks using AI in Microsoft Sentinel
+        summary: Learn how to generate playbooks by using AI, configure required integrations, and deploy your automation workflows.
+        url: /azure/sentinel/automation/generate-playbook
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
+      - componentType: icon-card
+        title: Apply data security and compliance to Microsoft Agent 365
+        summary: Use Microsoft Purview to manage data security & compliance for Microsoft Agent 365.
+        url: /purview/ai-agent-365
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/concept-1-yellow.png
+
+# Put security into practice
+  - componentType: grid
+    title: Put security into practice
+    summary: Move from reading to improving your security posture. Explore practice-based quickstarts, tutorials, and guided modules that help you deploy, configure, and validate protections with Microsoft Security—so you can make meaningful progress in your environment, one focused step at a time.
+    blocks:
       - componentType: icon-card
-        title: "Quickstart: Build agents using MCP tools (Security Copilot)"
-        summary: Build a Security Copilot agent that calls MCP tools — quickstart with sample code.
-        url: /copilot/security/developer/mcp-quickstart
+        title: "Quickstart: Helm install for Defender for Containers"
+        summary: Deploy the Defender for Containers sensor with Helm.
+        url: /azure/defender-for-cloud/deploy-helm
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/quickstart-2-rainbow.png
       - componentType: icon-card
-        title: AI Agent Service Security Controls
+        title: "Tutorial: Defender for Cloud + GHAS sandbox"
+        summary: Try Defender for Cloud +GHAS in a sandbox before you roll it out.
+        url: /azure/defender-for-cloud/github-advanced-security-deploy-sandbox
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/tutorial-1-purple.png
+      - componentType: icon-card
+        title: "Module: AI Agent Service Security Controls"
         summary: Configure RBAC and security controls for Azure AI Agent Service in this 20-minute module.
         url: /training/modules/intro-ai-agent-service-security-controls/
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
       - componentType: icon-card
-        title: Get In the Loop
-        summary: Catch up on the latest product drops, security updates, and demos—all in one place.
-        url: https://aka.ms/SecurityProductDrops_May26
+        title: "Documentation: Security Analyst Agent in Defender"
+        summary: Investigate with the Security Analyst Agent to quickly identify, assess, and prioritize risks.
+        url: /defender-xdr/security-analyst-agent
         icon:
           componentType: image
-          src: /security/media/hubpage/ignite-glyphs/whats-new-1-magenta.png
-
+          src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
 
 # Modules
 #  - componentType: cards
@@ -160,28 +193,28 @@ sections:
         url: /training/paths/ai-security-fundamentals/?wt.mc_id=securityhub_fundamentals_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/generic-trophy.svg
+          src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
       - componentType: icon-card
         title: Understand data security investigations
         summary: Learn concepts that define data security investigations, how they differ from alerts and audit, and when deeper, data-focused investigation adds value to security decisions.
         url: /training/modules/purview-data-security-investigations-understand/?wt.mc_id=securityhub_securityinvestigations_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/generic-badge.svg
+          src: /security/media/hubpage/ignite-glyphs/tutorial-1-purple.png
       - componentType: icon-card
         title: Mitigate incidents using Microsoft Defender
         summary: Investigate and respond to incidents using Microsoft Sentinel and Defender XDR. Correlate alerts, hunt threats, manage incidents, and stop attacks faster with unified security operations workflows.
         url: /training/modules/mitigate-incidents-microsoft-365-defender/?wt.mc_id=securityhub_defendertraining_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/training-clipboard.png
+          src: /security/media/hubpage/ignite-glyphs/reference-2-yellow.png
       - componentType: icon-card
         title: Plan, implement, and administer Conditional Access
         summary: Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe.
         url: /training/modules/plan-implement-administer-conditional-access//?wt.mc_id=securityhub_conditionalaccess_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/training-whiteboard.png
+          src: /security/media/hubpage/ignite-glyphs/concept-1-yellow.png
 
 # Microsoft Security product documentation 
   - componentType: grid

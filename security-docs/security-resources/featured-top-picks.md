@@ -5,12 +5,21 @@ ms.service: security
 ms.topic: whats-new
 author: ttorble
 ms.author: ralyon
-ms.date: 05/05/2026
+ms.date: 04/06/2026
 ---
 
 # Featured top picks
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
+
+## May 2026
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| May 5   | [Secure autonomous agentic AI systems](/security/zero-trust/sfi/secure-agentic-systems) | Apply solutions to operationalize mitigation across identity, governance, runtime enforcement, and detection. |
+|         | [Quickstart: Build agents using MCP tools (Security Copilot)](/copilot/security/developer/mcp-quickstart) | Build a Security Copilot agent that calls MCP tools — quickstart with sample code. |
+|         | [AI Agent Service Security Controls](/training/modules/intro-ai-agent-service-security-controls/) | Configure RBAC and security controls for Azure AI Agent Service in this 20-minute module. |
+|         | [Get In the Loop](https://aka.ms/SecurityProductDrops_May26) | Catch up on the latest product drops, security updates, and demos—all in one place. |
 
 ## April 2026
 | Featured date  | Title  | Description  |

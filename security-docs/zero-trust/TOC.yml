@@ -19,7 +19,7 @@
     href: prioritizing-defense/minimize-internet-exposure.md
   - name: Implement baseline security measures
     href: prioritizing-defense/baseline-security-measures.md
-- name: Explore SFI and security best practices
+- name: Explore SFI and best practices
   items:
   - name: Overview
     href: security-best-practices-overview.md
@@ -77,7 +77,19 @@
       expand: false
       items: 
       - name: Overview   
-        href: sfi/secure-future-initiative-threat-overview.md                
+        href: sfi/secure-future-initiative-threat-overview.md  
+      - name: Manage memory safety in agentic systems 
+        href: sfi/manage-agentic-memory-safety.md
+      - name: Complete AI threat modeling
+        href: sfi/threat-modeling-ai.md   
+      - name: Implement AI observability          
+        href: sfi/observability-ai-systems.md
+      - name: Identify risk for autonomous agentic AI 
+        href: sfi/manage-agentic-risk.md
+      - name: Secure autonomous agentic AI systems
+        href: sfi/secure-agentic-systems.md
+      - name: Defend against indirect prompt injection attacks
+        href: sfi/defend-indirect-prompt-injection.md              
       - name: Complete production infrastructure inventory
         href: sfi/complete-production-infrastructure-inventory.md
       - name: Security log retention standards
@@ -90,7 +102,9 @@
       expand: false
       items:  
       - name: Overview   
-        href: sfi/secure-future-initiative-response-overview.md               
+        href: sfi/secure-future-initiative-response-overview.md   
+      - name: Respond to incidents in AI systems
+        href: sfi/incident-response-ai-systems.md                         
       - name: Accelerate vulnerability mitigation
         href: sfi/accelerate-vulnerability-mitigation.md
   - name: Microsoft Entra ID best practices

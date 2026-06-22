@@ -13,36 +13,36 @@ ms.topic: conceptual
 
 # Minimize damage from security incidents
 
-This article explains how to strengthen posture and compliance using Zero Trust principles, as part of the Microsoft [security adoption model](security-adoption-model.md).
+This article explains how to manage security incidents and minimize their impact by using Zero Trust principles, as part of the Microsoft [security adoption model](security-adoption-model.md).
 
 This business scenario helps you achieve the following outcome:
 
 **Minimize business damage from security incidents**
 
-As a business leader, you know attacks are inevitable. What matters is how quickly you can detect, contain, and recover from security incidents quickly to reduce operational disruption, financial loss, and reputational impact.
+As a business leader, you know that cyberattacks are inevitable. What matters is how quickly you can detect, contain, and recover from security incidents to reduce operational disruption, financial loss, and reputational impact.
 
-This guidance helps your organization to reduce the business impact of security incidents by strengthening resilience, improving response effectiveness, and accelerating recovery across the enterprise.
+This guidance helps your organization reduce the business impact of security incidents by strengthening resilience, improving response effectiveness, and accelerating recovery across the enterprise.
 
 ## How this guidance works
 
 This article is part of a [structured adoption model](security-adoption-model.md) that connects security strategy to implementation:
 
 - Start with a [business scenario](security-adoption-business-scenarios-overview.md) like this one to define the outcome you want to achieve.
-- Identity the [security disciplines](security-adoption-discipline-overview.md)  that apply to this scenario. 
+- Identify the [security disciplines](security-adoption-discipline-overview.md) that apply to this scenario. 
 
     Use those disciplines to define the required strategy, architecture, processes, and controls for the scenario.
     Work through each discipline to understand what needs to be planned, designed, and implemented across the organization.
 
-- Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
+- Use [technical solutions](implement-overview.md) to implement those requirements by using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
  
 This approach ensures that security incident response and recovery are integrated into your overall Zero Trust architecture, enabling faster detection, containment, and recovery.
 
 ## Why minimizing attack damage requires a new approach
 
-Security success is attacker failure, but you can't guarantee that you stop every attack. Because you inevitably experience damage from successful cybersecurity attacks, it's critical to focus on building resilience by ensuring that you can:
+Security success is attacker failure, but you can't guarantee that you stop every attack. Because damage from successful cybersecurity attacks is inevitable, focus on building resilience by ensuring that you can:
 
 - **Prevent** as many attacks as possible.
-- **Respond** effectively when they happen to limit damage, and rapidly recover business assets and services.
+- **Respond** effectively when attacks happen to limit damage, and rapidly recover business assets and services.
 - **Learn** to apply lessons learned and continuously increase resilience.
 
 :::image type="content" source="./media/security-adoption-minimize-damage-success.png" alt-text="Diagram showing security success equals attacker failure through a continuous cycle of prevent attacks, respond and recover when attacks succeed, and learn to improve resilience" lightbox="./media/security-adoption-minimize-damage-success.png":::
@@ -74,7 +74,7 @@ Security disciplines represent the structured areas of accountability required t
 **Discipline** | **Action**
 --- | ---
 **[Strategy, integration, and governance](security-adoption-discipline-strategy.md)** | Set up cross-team processes and governance to guide the prevention, response, and learning across the security, technology, and business teams. 
-**[End-to-end security architecture](security-adoption-discipline-architecture.md)**| Ensure that technical controls and capabilities are integrated to rapidly apply lessons learned across the organization. This integration includes establishing effective security controls across all processes, people, and technology - both existing technology and new technology like Artificial Intelligence.<br/><br/>Require the logging of activity and detection of anomalous activity (potential attacks) to enable effective response and recovery.<br/><br/>  Prioritize security activities using threat intelligence insights from SecOps. 
+**[End-to-end security architecture](security-adoption-discipline-architecture.md)** | Ensure that technical controls and capabilities are integrated to rapidly apply lessons learned across the organization. This integration includes establishing effective security controls across all processes, people, and technology - both existing technology and new technology like Artificial Intelligence.<br/><br/>Require the logging of activity and detection of anomalous activity (potential attacks) to enable effective response and recovery.<br/><br/>  Prioritize security activities using threat intelligence insights from SecOps. 
 
 ### Technical strategy disciplines
 

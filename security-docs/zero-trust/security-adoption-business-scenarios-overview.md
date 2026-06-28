@@ -6,7 +6,7 @@ ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
 ms.author: raynew
-ms.topic: conceptual
+ms.topic: concept-article
 
 #customer intent: As a security business leader or adopter, I want to understand how to driven security adoptions by focusing on common security business outcomes.
 ---

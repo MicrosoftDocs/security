@@ -3,7 +3,7 @@ title: Microsoft security CISO workshop videos
 description: Review the videos for the Microsoft security CISO workshop.
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/24/2026
 ms.author: raynew
 author: MicrosoftGuyJFlo

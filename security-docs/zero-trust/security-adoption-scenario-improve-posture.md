@@ -6,7 +6,7 @@ ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
 ms.author: raynew
-ms.topic: conceptual
+ms.topic: concept-article
 
 #customer intent: As a business leader or security adopter, I want to understand I can use the Microsoft security adoption model to optimize my organizational security posture and compliance
 ---

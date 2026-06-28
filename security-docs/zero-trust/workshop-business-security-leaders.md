@@ -4,7 +4,7 @@ description: "Discover the CISO Workshop: A comprehensive guide to modernizing s
 
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/30/2025
 ms.author: joflore
 author: MicrosoftGuyJFlo

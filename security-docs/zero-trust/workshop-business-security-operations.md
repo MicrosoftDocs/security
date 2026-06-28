@@ -6,7 +6,7 @@ ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 
 #customer intent: As a business leader or security adopter, I want to leverage Microsoft training and workshops that can facilitate our security journey, and modernize SecOps
 ---

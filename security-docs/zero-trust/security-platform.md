@@ -6,7 +6,7 @@ ms.service: security
 ms.subservice: zero-trust
 ms.author: raynew
 author: rayne-wiselman
-ms.topic: conceptual
+ms.topic: concept-article
 
 #customer intent: As a security adopter, I want to understand the Microsoft security platform technologies.
 ---

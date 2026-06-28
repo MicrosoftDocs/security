@@ -6,7 +6,7 @@ ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 
 # Customer intent: As a security implementer, I want to understand how to secure the identity control plane in our privileged access architecture.
 ---

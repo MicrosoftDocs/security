@@ -6,7 +6,7 @@ ms.service: security
 ms.subservice: zero-trust
 author: MicrosoftGuyJFlo
 ms.author: joflore
-ms.topic: conceptual
+ms.topic: concept-article
 
 #customer intent: As a business leader or security adopter, I want plan our SecOps approach to incident response.
 ---

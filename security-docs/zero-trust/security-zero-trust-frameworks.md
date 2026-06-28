@@ -6,7 +6,7 @@ ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
 ms.author: raynew
-ms.topic: conceptual
+ms.topic: concept-article
 
 #customer intent: As a Microsoft security platform adopter, I want to understand how Microsoft's security adoption model aligns with external Zero Trust frameworks.
 ---

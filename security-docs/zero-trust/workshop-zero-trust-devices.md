@@ -6,7 +6,7 @@ ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 
 #customer intent: As a security implementer, I want to understand how the Device Security Zero Trust workshop can help with devices deployment that's aligned with Zero Trust principles and security best practices.
 ---

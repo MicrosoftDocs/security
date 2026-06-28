@@ -6,7 +6,7 @@ ms.service: security
 ms.subservice: zero-trust
 author: rayne-wiselman
 ms.author: raynew
-ms.topic: conceptual
+ms.topic: concept-article
 
 #customer intent: As a security business leader, I want to understand how I can get started on an organizational security journey.
 ---

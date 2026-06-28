@@ -6,7 +6,7 @@ ms.service: security
 author: rayne-wiselman
 ms.author: raynew
 ms.subservice: zero-trust
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: sfi-image-nochange
 
 # Customer intent: As a security architect or implementer, I want to understand high level steps and best practices for planning a privileged access architecture,.

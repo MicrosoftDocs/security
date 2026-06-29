@@ -15,7 +15,6 @@ sections:
   # Intro
   # Hero with background image - default transform
   - componentType: hero-learn
-    supertitle: Microsoft Learn
     title: Microsoft Security 
   # size: small
     summary: "Empower your organization with AI-driven cybersecurity. Microsoft's integrated security solutions built on Zero Trust principles help you stay ahead of evolving risks. Learn how to predict and protect against threats with Microsoft Defender and Microsoft Sentinel, protect workloads and AI with Microsoft Defender for Cloud. Secure AI with Microsoft Security Copilot, Microsoft Entra, and Microsoft Purview. Explore our curated resources on the Security hub." 

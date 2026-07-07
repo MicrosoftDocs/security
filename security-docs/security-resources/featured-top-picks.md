@@ -5,12 +5,22 @@ ms.service: security
 ms.topic: whats-new
 author: ttorble
 ms.author: ralyon
-ms.date: 04/06/2026
+ms.date: 07/07/2026
 ---
 
 # Featured top picks
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
+
+## June 2026
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| June 4  | [Enable Defender for AI Services workload protection in Microsoft Defender for Cloud](/training/modules/implement-defender-cloud-ai-services/) | Enable and configure the Defender for AI Services plan in Microsoft Defender for Cloud to detect threats targeting Azure AI services workloads. |
+|         | [Assess data security posture in Microsoft Purview](/training/modules/purview-dspm-assess-data-security-posture/) | Work with Microsoft Purview Data Security Posture Management to protect your data. |
+|         | [Generate playbooks using AI in Microsoft Sentinel](/azure/sentinel/automation/generate-playbook) | Learn how to generate playbooks by using AI, configure required integrations, and deploy your automation workflows. |
+|         | [Apply data security and compliance to Microsoft Agent 365](/purview/ai-agent-365) | Use Microsoft Purview to manage data security & compliance for Microsoft Agent 365. |
+
 
 ## May 2026
 

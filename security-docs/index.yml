@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 04/06/2026
+  ms.date: 07/07/2026
   ms.collection: # na
   brand: azure
 sections:
@@ -22,49 +22,6 @@ sections:
      componentType: hero-image
      lightImageSrc: /security/media/security-hub/hero-security-hub.png
      darkImageSrc: /security/media/security-hub/hero-security-hub.png
-# Spotlight selections
-#  - componentType: testimonials-section
-#    title: 'Discover top picks'
-#    cards:
-#      - avatarUrl: /security/media/hubpage/applied-skills.png
-#        componentType: testimonial-card
-#        name: Secure AI solutions in the cloud
-#        role: Applied Skills
-#        feedback: Validate your technical skills and open doors to new possibilities of advancement with Microsoft Defender for Cloud and Microsoft Foundry.
-#        link:
-#          componentType: link
-#          url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
-#          text: Start learning
-#      - avatarUrl: /security/media/hubpage/applied-skills.png
-#        componentType: testimonial-card
-#        name: Get started with identities and access using Microsoft Entra
-#        role: Applied Skills
-#        feedback: Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra.
-#        link:
-#          componentType: link
-#          url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
-#          text: Validate your skills
-#      - avatarUrl: /security/media/hubpage/document-icon.png 
-#        componentType: testimonial-card
-#        name: Microsoft Security Copilot for Developers
-#        role: Documentation
-#        feedback: Learn to create, publish, and test agents in Security Copilot using natural language, lite experience forms, YAMLs, and MCPs. Designed for developers to streamline security workflows.
-#        link:
-#          componentType: link
-#          url: /copilot/security/developer/
-#          text: Get started
-#      - avatarUrl: /security/media/hubpage/generic-badge.svg
-#        componentType: testimonial-card
-#        name: Mitigate incidents using Microsoft Defender
-#        role: Training
-#        feedback: Learn how the Microsoft Defender portal provides a unified view of incidents from the Microsoft Defender family of products.
-#        link:
-#          componentType: link
-#          url: /training/modules/mitigate-incidents-microsoft-365-defender/
-#          text: Learn more
-#    backgroundImage:
-#      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
-#      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
 
 # New top picks tiles from 4 February 2026
   - componentType: markdown
@@ -76,34 +33,42 @@ sections:
         :::column-end:::
       :::row-end:::
 
+# July 7 tile 1 depends on whether links are live. If they're not live, comment out tile 1 and restore previous currently commented out.
   - componentType: grid
     title: ""
     blocks:
       - componentType: icon-card
-        title: Enable Defender for AI Services workload protection in Microsoft Defender for Cloud
-        summary: Enable and configure the Defender for AI Services plan in Microsoft Defender for Cloud to detect threats targeting Azure AI services workloads.
-        url: /training/modules/implement-defender-cloud-ai-services/
+        title: Enter the Microsoft Defender Challenge
+        summary: Complete the Microsoft Defender Skilling Challenge and submit an entry for a chance to win one of 500 50%-discounted SC-200 or SC-500 Microsoft Certification exam vouchers.
+        url: /security/challenge/defender-challenge
         icon:
           componentType: image
-          src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
+          src: /security/media/hubpage/ignite-glyphs/announcements-2-orange.png
+#      - componentType: icon-card
+#        title: Enable Defender for AI Services workload protection in Microsoft Defender for Cloud
+#        summary: Enable and configure the Defender for AI Services plan in Microsoft Defender for Cloud to detect threats targeting Azure AI services workloads.
+#        url: /training/modules/implement-defender-cloud-ai-services/
+#        icon:
+#          componentType: image
+#          src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
       - componentType: icon-card
-        title: Assess data security posture in Microsoft Purview
-        summary: Work with Microsoft Purview Data Security Posture Management to protect your data.
-        url: /training/modules/purview-dspm-assess-data-security-posture/ 
-        icon:
-          componentType: image
-          src: /security/media/hubpage/ignite-glyphs/tutorial-1-purple.png
-      - componentType: icon-card
-        title: Generate playbooks using AI in Microsoft Sentinel
-        summary: Learn how to generate playbooks by using AI, configure required integrations, and deploy your automation workflows.
-        url: /azure/sentinel/automation/generate-playbook
+        title: Set up AI agent runtime protection with Defender for Endpoint
+        summary: Stop prompt injection at the device with Defender runtime protection for AI agents.
+        url: /defender-endpoint/configure-ai-agent-runtime-protection 
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
       - componentType: icon-card
-        title: Apply data security and compliance to Microsoft Agent 365
-        summary: Use Microsoft Purview to manage data security & compliance for Microsoft Agent 365.
-        url: /purview/ai-agent-365
+        title: Discover local AI agents on Windows endpoints
+        summary: Defender auto-discovers coding agents, IDE extensions, desktop AI assistants, local runtimes — they appear as assets in AI agent inventory, exposure map, and advanced hunting.
+        url: /defender-endpoint/discover-local-ai-agents
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/overview-magenta.png
+      - componentType: icon-card
+        title: Block risky Kubernetes deployments with misconfiguration enforcement
+        summary: Enable Kubernetes misconfiguration enforcement in Defender for Cloud + enablement guide.
+        url: /azure/defender-for-cloud/kubernetes-misconfiguration-enforcement
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/concept-1-yellow.png

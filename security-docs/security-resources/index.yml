@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page
   ms.author: ralyon
   author: ttorble
-  ms.date: 04/06/2026
+  ms.date: 07/07/2026
   
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -19,6 +19,18 @@ landingContent:
 # Start card title with a verb
   # Card 
     # Card 
+  - title: June top picks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Enable Defender for AI Services workload protection in Microsoft Defender for Cloud
+            url: /training/modules/implement-defender-cloud-ai-services/
+          - text: Assess data security posture in Microsoft Purview
+            url: /training/modules/purview-dspm-assess-data-security-posture/ 
+          - text: Generate playbooks using AI in Microsoft Sentinel
+            url: /azure/sentinel/automation/generate-playbook
+          - text: Apply data security and compliance to Microsoft Agent 365
+            url: /purview/ai-agent-365
   - title: May top picks
     linkLists:
       - linkListType: overview
@@ -31,18 +43,7 @@ landingContent:
             url: /training/modules/intro-ai-agent-service-security-controls/
           - text: Get In the Loop
             url: https://aka.ms/SecurityProductDrops_May26
-  - title: April top picks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Secure AI solutions in the cloud
-            url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
-          - text: Learn about Security Copilot agents
-            url: /copilot/security/security-copilot-inclusion?wt.mc_id=securityhub_inclusion_webpage_sci
-          - text: Configure your Microsoft Sentinel Environment
-            url: /training/paths/sc-200-configure-azure-sentinel-environment/
-          - text: "Build security skills: Download the kit"
-            url: https://aka.ms/SecuritySkillingKit?wt.mc_id=lfo_content_webpage_wwl   
+  
 
  # Card
  # - title: Discover more

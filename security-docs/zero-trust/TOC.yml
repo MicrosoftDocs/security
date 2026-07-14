@@ -42,6 +42,8 @@
         href: sfi/phishing-resistant-mfa.md
       - name: Adopt standard SDKs for identity
         href: sfi/adopt-standard-sdk-identity.md
+      - name: Least privilege for AI agents
+        href: sfi/least-privilege-for-ai-agents.md
     - name: Protect tenants and isolate systems
       expand: false
       items:                 
@@ -660,7 +662,6 @@
 
 
         
-
 
 
 

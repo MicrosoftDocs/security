@@ -626,6 +626,10 @@
 - name: Resources
   expanded: false
   items:
+  - name: Catalog of AI Attack Techniques
+    href: catalog-ai-attack-techniques/catalog-ai-attack-techniques.md
+  - name: Catalog of AI Defense Capabilities
+    href: catalog-ai-defense-capabilities/catalog-ai-defense-capabilities.md
   - name: Zero Trust illustrations
     href: zero-trust-tech-illus.md
   - name: Zero Trust Essentials Video Series

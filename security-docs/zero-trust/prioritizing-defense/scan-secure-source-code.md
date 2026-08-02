@@ -55,7 +55,7 @@ Secure your development lifecycle from code to cloud by connecting your source c
 
 ## Accelerate with AI-powered agents
 
-- The **Threat Hunting Agent** in Microsoft Defender enables analysts to investigate suspicious activity across code, pipelines, and runtime workloads using natural language queries, translating them into Kusto Query Language (KQL) and surfacing contextual insights without requiring manual query composition. For more information, see [Microsoft Security Copilot Threat Hunting Agent in advanced hunting](/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent).
+- The **Threat Hunting Assistant** in Microsoft Defender enables analysts to investigate suspicious activity across code, pipelines, and runtime workloads using natural language queries, translating them into Kusto Query Language (KQL) and surfacing contextual insights without requiring manual query composition. For more information, see [Microsoft Security Copilot Threat Hunting Assistant in advanced hunting](/defender-xdr/advanced-hunting-security-copilot-threat-hunting-assistant).
 
 ## Related content
 

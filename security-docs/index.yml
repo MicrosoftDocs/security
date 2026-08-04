@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 07/07/2026
+  ms.date: 08/04/2026
   ms.collection: # na
   brand: azure
 sections:
@@ -33,45 +33,46 @@ sections:
         :::column-end:::
       :::row-end:::
 
-# July 7 tile 1 depends on whether links are live. If they're not live, comment out tile 1 and restore previous currently commented out.
+# August 20 tile 2 swap for loop tile 5 (commented out below)
+# August 21 tile 1 swap for tile 4 (tile 4 replacement?)
   - componentType: grid
     title: ""
     blocks:
       - componentType: icon-card
         title: Enter the Microsoft Defender Challenge
-        summary: Complete the Microsoft Defender Skilling Challenge and submit an entry for a chance to win one of 500 50%-discounted SC-200 or SC-500 Microsoft Certification exam vouchers.
+        summary: Complete the challenge and submit your sweepstakes entry for a chance to win a 50%-discounted voucher for a security certification by August 21, 2026.
         url: /security/challenge/defender-challenge
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/announcements-2-orange.png
-#      - componentType: icon-card
-#        title: Enable Defender for AI Services workload protection in Microsoft Defender for Cloud
-#        summary: Enable and configure the Defender for AI Services plan in Microsoft Defender for Cloud to detect threats targeting Azure AI services workloads.
-#        url: /training/modules/implement-defender-cloud-ai-services/
-#        icon:
-#          componentType: image
-#          src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
       - componentType: icon-card
-        title: Set up AI agent runtime protection with Defender for Endpoint
-        summary: Stop prompt injection at the device with Defender runtime protection for AI agents.
-        url: /defender-endpoint/configure-ai-agent-runtime-protection 
+        title: Remediate Threats using Microsoft Defender 
+        summary: Join us August 19 for a Learn Live session, where you'll see how Microsoft Defender for Office 365 helps you investigate, contain, and remediate modern attacks.
+        url: https://aka.ms/LearnLive819/f
         icon:
           componentType: image
-          src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
+          src: /security/media/hubpage/calendar-event-icon.png
+#      - componentType: icon-card
+#        title: Enable Microsoft Security Adoption
+#        summary: Get the resources, skilling, and community to help you adopt Microsoft Security.
+#        url: https://adoption.microsoft.com/en-us/microsoft-security/
+#        icon:
+#          componentType: image
+#          src: /security/media/hubpage/ignite-glyphs/concept-1-yellow.png
       - componentType: icon-card
-        title: Discover local AI agents on Windows endpoints
-        summary: Defender auto-discovers coding agents, IDE extensions, desktop AI assistants, local runtimes — they appear as assets in AI agent inventory, exposure map, and advanced hunting.
-        url: /defender-endpoint/discover-local-ai-agents
+        title: Protect AI assets with Microsoft Defender
+        summary: Explore documentation on how Defender delivers discovery, posture, threat detection, investigation, and real-time protection for the AI agents in your tenant, including Copilot Studio.
+        url: /defender-xdr/security-for-ai/defender-security-for-ai
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/overview-magenta.png
       - componentType: icon-card
-        title: Block risky Kubernetes deployments with misconfiguration enforcement
-        summary: Enable Kubernetes misconfiguration enforcement in Defender for Cloud + enablement guide.
-        url: /azure/defender-for-cloud/kubernetes-misconfiguration-enforcement
+        title: Restore your tenant to a productive and secure state with Microsoft Entra Backup and Recovery
+        summary: Learn to recover critical Microsoft Entra directory objects to a previously known good state after accidental changes or security compromises.
+        url: /entra/backup/overview
         icon:
           componentType: image
-          src: /security/media/hubpage/ignite-glyphs/concept-1-yellow.png
+          src: /security/media/hubpage/ignite-glyphs/get-started-1-blue.png
 
 # Put security into practice
   - componentType: grid

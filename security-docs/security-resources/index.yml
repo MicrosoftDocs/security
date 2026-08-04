@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page
   ms.author: ralyon
   author: ttorble
-  ms.date: 07/07/2026
+  ms.date: 08/04/2026
   
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -19,6 +19,18 @@ landingContent:
 # Start card title with a verb
   # Card 
     # Card 
+  - title: July top picks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Enter the Microsoft Defender Challenge
+            url: /security/challenge/defender-challenge
+          - text: Set up AI agent runtime protection with Defender for Endpoint
+            url: /defender-endpoint/configure-ai-agent-runtime-protection
+          - text: Discover local AI agents on Windows endpoints
+            url: /defender-endpoint/discover-local-ai-agents
+          - text: Block risky Kubernetes deployments with misconfiguration enforcement
+            url: /azure/defender-for-cloud/kubernetes-misconfiguration-enforcement    
   - title: June top picks
     linkLists:
       - linkListType: overview
@@ -31,18 +43,7 @@ landingContent:
             url: /azure/sentinel/automation/generate-playbook
           - text: Apply data security and compliance to Microsoft Agent 365
             url: /purview/ai-agent-365
-  - title: May top picks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Secure autonomous agentic AI systems
-            url: /security/zero-trust/sfi/secure-agentic-systems
-          - text: "Quickstart: Build agents using MCP tools (Security Copilot)"
-            url: /copilot/security/developer/mcp-quickstart
-          - text: AI Agent Service Security Controls
-            url: /training/modules/intro-ai-agent-service-security-controls/
-          - text: Get In the Loop
-            url: https://aka.ms/SecurityProductDrops_May26
+
   
 
  # Card

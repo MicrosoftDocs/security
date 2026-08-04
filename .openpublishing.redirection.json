@@ -689,6 +689,31 @@
       "source_path": "security-docs/trusted-root/Audit-Requirements.md",
       "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/Testing.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements/blob/main/Testing%20Instructions.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/Incident-Reporting.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements/blob/main/Incident-Reporting.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/Participants-list.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements/blob/main/Participants%20List.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/new-ca-application.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/deprecation.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements",
+      "redirect_document_id": false
     }
   ]
 }

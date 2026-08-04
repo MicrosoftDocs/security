@@ -5,7 +5,8 @@ ms.service: security
 ms.topic: concept-article
 ms.author: ralyon
 author: raelyon
-ms.date: 06/16/2026
+ms.date: 07/29/2026
+ai-usage: ai-assisted
 ---
 
 # Microsoft Defender Challenge
@@ -20,6 +21,12 @@ Complete the Microsoft Defender Skilling Challenge and submit an entry for a cha
 ## About the challenge
 
 The Microsoft Defender Skilling Challenge is your opportunity to deepen your expertise across the Microsoft Defender product family - including Microsoft Defender XDR, Microsoft Sentinel, and Microsoft Defender for Cloud. Work through curated learning modules, sharpen your security skills, and enter the sweepstakes for a chance to earn a discounted Microsoft Certification exam voucher toward the SC-200 or SC-500 exam.
+
+## Learn Live: Remediating Threats Using Microsoft Defender
+
+Join the free Microsoft Learn Live session **"Remediating Threats Using Microsoft Defender"** on **August 19, 2026**. This interactive session provides hands-on guidance on investigating incidents, remediating threats, and automating response actions across Microsoft Defender capabilities — a great complement to the challenge content.
+
+[Register for the Learn Live event](https://reactor.microsoft.com/reactor/events/27333/)
 
 ## How to enter
 

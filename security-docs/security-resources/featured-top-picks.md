@@ -5,12 +5,21 @@ ms.service: security
 ms.topic: whats-new
 author: ttorble
 ms.author: ralyon
-ms.date: 07/07/2026
+ms.date: 08/04/2026
 ---
 
 # Featured top picks
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
+
+## July 2026
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| July 7  | [Enter the Microsoft Defender Challenge](/security/challenge/defender-challenge) | Complete the Microsoft Defender Skilling Challenge and submit an entry for a chance to win one of 500 50%-discounted SC-200 or SC-500 Microsoft Certification exam vouchers. |
+|         | [Set up AI agent runtime protection with Defender for Endpoint](/defender-endpoint/configure-ai-agent-runtime-protection) | Stop prompt injection at the device with Defender runtime protection for AI agents. |
+|         | [Discover local AI agents on Windows endpoints](/defender-endpoint/discover-local-ai-agents) | Defender auto-discovers coding agents, IDE extensions, desktop AI assistants, local runtimes — they appear as assets in AI agent inventory, exposure map, and advanced hunting. |
+|         | [Block risky Kubernetes deployments with misconfiguration enforcement](/azure/defender-for-cloud/kubernetes-misconfiguration-enforcement) | Enable Kubernetes misconfiguration enforcement in Defender for Cloud + enablement guide. |
 
 ## June 2026
 

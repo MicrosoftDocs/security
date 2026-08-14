@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 Complete the Microsoft Defender Skilling Challenge and submit an entry for a chance to win one of 500 50%-discounted SC-200 or SC-500 Microsoft Certification exam vouchers. Challenge entry period: July 20-August 21, 2026.
 
 > [!div class="nextstepaction"]
-> [Start the challenge](/challenges/6381s7tkn541nz)
+> [Start the challenge](/challenges/j1dmt3td3q3jne)
 
 ## About the challenge
 

@@ -4,14 +4,14 @@ description: Learn about the adoption model for Microsoft security.
 ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: rayne-wiselman
-ms.author: raynew
+author: MarkSimos
+ms.author: mas
 ms.topic: concept-article
 
 #customer intent: As a Microsoft security platform adopter, I want to understand how an adoption model can help me to modernize, adopt, and implement security across my business
 ---
 
-# Follow a security adoption model
+# Security Adoption Framework (SAF)
 
 
 **Adopting Zero Trust security across your organization** is a complex, multiyear effort that spans business strategy and planning, technical design and architecture, deployment, and operations.

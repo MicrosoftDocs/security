@@ -1,5 +1,5 @@
 ---
-title: Microsoft security adoption model
+title: Microsoft Security Adoption Framework (SAF)
 description: Learn about the adoption model for Microsoft security.
 ms.date: 05/24/2026
 ms.service: security
@@ -18,7 +18,7 @@ ms.topic: concept-article
 
 Without a structured approach to adoption, security modernization programs can become fragmented, reactive, and difficult to sustain.
 
-Our structured security adoption model provides standardized, repeatable, role-aware processes that help you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multiplatform environments.
+The Microsoft Security Adoption Framework (SAF) provides a structured security adoption model with standardized, repeatable, role-aware processes that help you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multiplatform environments.
 
 The adoption model aligns critical business outcomes, security disciplines, and solution implementations so that business leaders, security managers, architects, and practitioners can move forward together at a controlled and sustainable pace across the organization.
 
@@ -46,7 +46,7 @@ A structured adoption model helps you to:
 - **Adapt continuously** - Evolve security posture and strategy as threats, business needs, and technologies change.
 - **Prioritize action** - Provide practical role-specific guidance for teams and stakeholders, grounded in best practices, lessons learned, and real-world examples.
 
-This diagram illustrates how these elements come together in an adoption model.
+This diagram illustrates how SAF brings these elements together into a single adoption model.
 
 :::image type="content" source="./media/adoption-guidance-context.png" alt-text="Diagram showing how the adoption model includes learnings and guidance from Microsoft and external sources." lightbox="./media/adoption-guidance-context.png":::
 

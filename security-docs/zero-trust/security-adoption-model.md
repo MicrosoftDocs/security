@@ -13,7 +13,7 @@ ms.topic: concept-article
 
 # Microsoft Security Adoption Framework (SAF)
 
-Organizations must follow Zero Trust principles to build effective security foundations and to defend against attacks in the age of artificial intelligence (AI) and AI Agents. 
+Organizations must follow Zero Trust principles to build effective security foundations and to defend against attacks in the age of artificial intelligence (AI) and AI Agents.
 
 **Adopting Zero Trust security principles across your organization** is a complex, multiyear effort that spans business strategy and planning, technical design and architecture, deployment, and operations.
 

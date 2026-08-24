@@ -1,26 +1,28 @@
 ---
-title: Microsoft security adoption model
+title: Microsoft Security Adoption Framework (SAF)
 description: Learn about the adoption model for Microsoft security.
 ms.date: 05/24/2026
 ms.service: security
 ms.subservice: zero-trust
-author: rayne-wiselman
-ms.author: raynew
+author: MarkSimos
+ms.author: mas
 ms.topic: concept-article
 
 #customer intent: As a Microsoft security platform adopter, I want to understand how an adoption model can help me to modernize, adopt, and implement security across my business
 ---
 
-# Follow a security adoption model
+# Microsoft Security Adoption Framework (SAF)
 
+To build effective security foundations and defend against attacks in the age of artificial intelligence (AI) and AI agents, organizations must follow Zero Trust principles.
 
-**Adopting Zero Trust security across your organization** is a complex, multiyear effort that spans business strategy and planning, technical design and architecture, deployment, and operations.
+**Adopting Zero Trust security principles across your organization** is a complex, multiyear effort that spans business strategy and planning, technical design and architecture, deployment, and operations.
 
-Without a structured approach to adoption, security modernization programs can become fragmented, reactive, and difficult to sustain.
+Without a structured adoption approach, security modernization programs can become fragmented, reactive, and difficult to sustain.
 
-Our structured security adoption model provides standardized, repeatable, role-aware processes that help you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multiplatform environments.
+The Microsoft Security Adoption Framework (SAF) provides you with a structured security adoption model with standardized, repeatable, role-aware processes that help you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multiplatform environments.
 
-The adoption model aligns critical business outcomes, security disciplines, and solution implementations so that business leaders, security managers, architects, and practitioners can move forward together at a controlled and sustainable pace across the organization.
+This framework aligns critical business outcomes, security disciplines, and solution implementations so that business leaders, security managers, architects, and practitioners can move forward together at a controlled and sustainable pace across the organization.
+
 
 > [!TIP]
 > Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model guidance aligns with the expert-led guidance from Microsoft Unified delivered in those workshops. Learn more about [SAF workshops](workshop-business-overview.md).
@@ -36,6 +38,7 @@ The adoption model is built on three core components that help organizations mov
 
 :::image type="content" source="./media/adoption-navigation-structure.png" alt-text="Diagram showing overall structure of the Microsoft Security Adoption Framework (SAF)." lightbox="./media/adoption-navigation-structure.png":::
 
+
 ## Why use an adoption model?
 
 A structured adoption model helps you to:
@@ -46,10 +49,9 @@ A structured adoption model helps you to:
 - **Adapt continuously** - Evolve security posture and strategy as threats, business needs, and technologies change.
 - **Prioritize action** - Provide practical role-specific guidance for teams and stakeholders, grounded in best practices, lessons learned, and real-world examples.
 
-This diagram illustrates how these elements come together in an adoption model.
+This diagram illustrates how SAF brings these elements together into a single adoption model.
 
 :::image type="content" source="./media/adoption-guidance-context.png" alt-text="Diagram showing how the adoption model includes learnings and guidance from Microsoft and external sources." lightbox="./media/adoption-guidance-context.png":::
-
 
 ## Enable roles with the adoption model
 

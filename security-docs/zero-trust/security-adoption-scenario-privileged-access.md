@@ -36,7 +36,7 @@ This article is part of a [structured adoption model](security-adoption-model.md
     Work through each discipline to understand what needs to be planned, designed, and implemented across the organization.
 
 - Use [technical solutions](implement-overview.md) to implement those requirements using Microsoft technologies, applying controls across [technology pillars](deploy/overview.md) such as identity and data.
-- 
+
 This approach ensures that security investments are focused on the assets that matter most to the business and that access to those assets is consistently controlled to reduce the risk of high-impact compromise.
 
 ## Privileged access

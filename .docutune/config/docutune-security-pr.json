@@ -1,0 +1,13 @@
+{
+  "Docsets": [
+    {
+      "DocsetName": "security-docs",
+      "BuildSourceFolder": "security-docs"
+    }
+  ],
+  "MetadataDelimiter": "\"",
+  "Exclude": [],
+  "PreloadTOCFiles": [],
+  "TermFiles": [],
+  "ApplyPolicies": []
+}

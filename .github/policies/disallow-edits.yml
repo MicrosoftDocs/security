@@ -1,0 +1,20 @@
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+resource: repository
+
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+      - description: Close PRs that introduce an index file into the repository.
+        if:
+          - payloadType: Pull_Request
+          - isAction:
+              action: Opened
+          - or:
+              - filesMatchPattern:
+                  pattern: security-docs/index.yml
+        then:
+          - addReply:
+              reply: >-
+                @${issueAuthor} - You tried to add an index file to this repository; this is not permitted so your pull request will be closed automatically. 
+          - closePullRequest

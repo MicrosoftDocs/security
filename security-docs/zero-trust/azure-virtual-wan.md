@@ -41,7 +41,7 @@ For new articles in this content set, please:
 
 
 
-With the modern cloud, mobile devices, and other endpoints evolution, relying only on corporate firewalls and perimeter networks is no longer sufficient. An end-to-end Zero Trust strategy assumes that security breaches are inevitable. That means you must verify each request as if it originates from an uncontrolled network. Networking still plays an important role in Zero Trust to connect and protect infrastructure, applications, and data. In the Zero Trust model, there are three key objectives when it comes to securing your networks:
+With the modern cloud, mobile devices, and other endpoints evolution, relying only on corporate firewalls and perimeter networks is no longer sufficient. An end-to-end Zero Trust strategy assumes that security breaches are inevitable. That means you must verify each request as if it originates from an uncontrolled network. Networking still plays an important role in Zero Trust to connect and protect infrastructure, applications, and data. In the Zero Trust model, there are three key objectives to secure your networks:
 
 - Be ready to handle attacks before they happen.
 - Minimize the extent of the damage and how fast it spreads.
@@ -54,8 +54,8 @@ This article provides steps to apply the [principles of Zero Trust](zero-trust-o
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
 | Verify explicitly |Always authenticate and authorize based on all available data points. | Use Azure Firewall with Transport Layer Security (TLS) inspection to verify risk and threats based on all available data. Conditional Access controls are intended to provide authentication and authorization by diverse data points and the Azure Firewall doesn't perform user authentication. |
-| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | User access is beyond the scope of Azure network infrastructure deployments. Using Identity solutions like Privileged Access Management, Conditional Access, and other controls are the way to deliver on this principle. |
-| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Each spoke VNet has no access to other spoke VNets unless the traffic gets routed through the firewall integrated inside each Azure Virtual WAN hub. The firewall is set to deny by default, allowing only traffic allowed by specified rules. In the event of a compromise or breach of one application/workload, it has limited ability to spread due to the Azure Firewall performing traffic inspection and only forwarding allowed traffic. Only resources in the same workload are exposed to the breach in the same application. |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | User access is beyond the scope of Azure network infrastructure deployments. Use identity solutions such as Privileged Access Management, Conditional Access, and other controls to deliver on this principle. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Each spoke virtual network has no access to other spoke VNets unless the traffic gets routed through the firewall integrated inside each Azure Virtual WAN hub. The firewall is set to deny by default, allowing only traffic allowed by specified rules. In the event of a compromise or breach of one application/workload, it has limited ability to spread due to the Azure Firewall performing traffic inspection and only forwarding allowed traffic. Only resources in the same workload are exposed to the breach in the same application. |
 
 For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
 
@@ -93,7 +93,7 @@ The Azure Virtual WAN with secured hubs reference architecture includes:
 - At least one Azure Firewall [Premium policy](/azure/firewall-manager/policy-overview#basic-standard-and-premium-policies).
 - Point-to-site (P2S) and site-to-site (S2S) VPN and ExpressRoute gateways.
 - P2S, S2S, and ExpressRoute-connected branches.
-- A shared services VNet containing core infrastructure resources that can't be deployed into a Virtual WAN hub, such as custom DNS VMs or Azure DNS Private Resolver, Active Directory Domain Services [AD DS] domain controllers, Azure Bastion, and other shared resources.
+- A shared services virtual network containing core infrastructure resources that can't be deployed into a Virtual WAN hub, such as custom DNS VMs or Azure DNS Private Resolver, Active Directory Domain Services [AD DS] domain controllers, Azure Bastion, and other shared resources.
 - Workload VNets with Azure Application Gateway, Azure web application firewall (WAF), and Private Endpoints if needed.
 
 Azure Virtual WAN supports the integration of a limited set of [third party firewalls](/azure/virtual-wan/about-nva-hub) inside its hubs as an alternative to native Azure Firewall. This article only describes Azure Firewall. What is included in the **VNet-Shared Services** spoke in the reference architecture is just an example of what you could deploy. Microsoft manages Azure Virtual WAN hubs and you can't install anything else within them except what Azure Firewall and supported NVAs explicitly allow.
@@ -132,7 +132,7 @@ The following diagram shows the logical architecture of Azure infrastructure for
 
 :::image type="content" source="media/vwan/logical-arch-vwan.svg" alt-text="Diagram of the components of Azure Virtual WAN topology and Azure subscriptions." lightbox="media/vwan/logical-arch-vwan.svg":::
 
-The majority of resources are contained inside the connectivity subscription. You deploy all Virtual WAN resources into a single resource group in the connectivity subscription, including when you're deploying across multiple regions. Azure VNet spokes are in the landing zone subscriptions. If you use [inheritance and hierarchy](/azure/firewall-manager/rule-hierarchy)  Azure Firewall policy, the parent policy and the child policy must be located in the same region. You can still apply a policy that you created in one region on a secured hub from another region.
+The majority of resources are contained inside the connectivity subscription. You deploy all Virtual WAN resources into a single resource group in the connectivity subscription, including when you're deploying across multiple regions. Azure virtual network spokes are in the landing zone subscriptions. If you use [inheritance and hierarchy](/azure/firewall-manager/rule-hierarchy)  Azure Firewall policy, the parent policy and the child policy must be located in the same region. You can still apply a policy that you created in one region on a secured hub from another region.
 
 ## What’s in this article?
 
@@ -190,7 +190,7 @@ Once you've upgraded all your Azure Virtual WAN hubs to secure hubs, you must co
  
 :::image type="content" source="media/vwan/example-routing-policy-configuration.png" alt-text="Example of the Azure Firewall routing policy." lightbox="media/vwan/example-routing-policy-configuration.png":::
 
-When the "Private Traffic" routing policy is enabled, VNet traffic in and out of the Virtual WAN Hub, including inter-hub traffic, is forwarded to the next-hop Azure Firewall or NVA that was specified in the policy. Users with [Role-Based Access Control (RBAC)](/azure/role-based-access-control/overview) privileges could override Virtual WAN route programming for spoke VNets and associate a custom [User Defined Route (UDR)](/azure/virtual-network/virtual-networks-udr-overview#user-defined) to bypass the hub firewall. To prevent this vulnerability, [RBAC permissions](/azure/virtual-network/manage-route-table#permissions) to assign UDRs to spoke VNet subnets should be restricted to central network administrators and not delegated to the landing zone owners of the spoke VNets. To associate a UDR with a VNet or subnet, a user must have the **Network Contributor** role or a custom role with the "Microsoft.Network/routeTables/join/action" action or permission.
+When the "Private Traffic" routing policy is enabled, virtual network traffic in and out of the Virtual WAN Hub, including inter-hub traffic, is forwarded to the next-hop Azure Firewall or NVA that was specified in the policy. Users with [Role-Based Access Control (RBAC)](/azure/role-based-access-control/overview) privileges could override Virtual WAN route programming for spoke VNets and associate a custom [User Defined Route (UDR)](/azure/virtual-network/virtual-networks-udr-overview#user-defined) to bypass the hub firewall. To prevent this vulnerability, [RBAC permissions](/azure/virtual-network/manage-route-table#permissions) to assign UDRs to spoke virtual network subnets should be restricted to central network administrators and not delegated to the landing zone owners of the spoke VNets. To associate a UDR with a virtual network or subnet, a user must have the **Network Contributor** role or a custom role with the "Microsoft.Network/routeTables/join/action" action or permission.
 
 >[!Note]
 >In this article, Azure Firewall is primarily considered for both Internet traffic and private traffic control. For Internet traffic, a third party, supported security NVA can be used or a [third party Security as a Service (SECaaS) provider](/azure/firewall-manager/deploy-trusted-security-partner). For private traffic, third party supported security NVAs can be used as an alternative to Azure Firewall.
@@ -202,10 +202,10 @@ When the "Private Traffic" routing policy is enabled, VNet traffic in and out of
 
 ## Step 4: Secure your spoke VNets
 
-Each Azure Virtual WAN hub can have one or more VNets [connected](/azure/virtual-wan/virtual-wan-site-to-site-portal#vnet) with VNet peering. Based on the [landing zone](/azure/cloud-adoption-framework/ready/landing-zone/) model in the Cloud Adoption Framework, every VNet contains a landing zone workload, applications, and services supporting an organization. Azure Virtual WAN manages the connection, the route propagation and association, and the outbound and inbound routing, but can't affect intra-VNet security. Zero Trust principles must be applied inside each spoke VNet according to the guidance published in [Apply Zero Trust principles to a spoke virtual network](azure-infrastructure-iaas.md) and other articles depending on the resource type, such as virtual machines and storage. Consider the following elements:
+Each Azure Virtual WAN hub can have one or more VNets [connected](/azure/virtual-wan/virtual-wan-site-to-site-portal#vnet) with virtual network peering. Based on the [landing zone](/azure/cloud-adoption-framework/ready/landing-zone/) model in the Cloud Adoption Framework, every virtual network contains a landing zone workload, applications, and services supporting an organization. Azure Virtual WAN manages the connection, the route propagation and association, and the outbound and inbound routing, but can't affect intra-VNet security. Zero Trust principles must be applied inside each spoke virtual network according to the guidance published in [Apply Zero Trust principles to a spoke virtual network](azure-infrastructure-iaas.md) and other articles depending on the resource type, such as virtual machines and storage. Consider the following elements:
 
 - **Micro-segmentation:** Even if Azure Virtual WAN attracts and filters outbound traffic, use of [network security groups (NSGs)](/azure/virtual-network/security-overview) and [application security groups (ASGs)](/azure/virtual-network/application-security-groups) to regulate intra-VNet flows is still recommended. 
-- **Local DMZ:** A DNAT rule created in the central firewall inside the Azure Virtual WAN Hub should filter and allow inbound non-http or https traffic. Inbound http or https traffic should be managed by a local [Azure Application Gateway and associated Web Application Firewall](/azure/active-directory/app-proxy/application-proxy-application-gateway-waf).
+- **Local DMZ:** A DNAT rule created in the central firewall inside the Azure Virtual WAN Hub should filter and allow inbound non-HTTP or HTTPS traffic. Inbound HTTP/HTTPS traffic should be managed by a local [Azure Application Gateway and associated Web Application Firewall](/azure/active-directory/app-proxy/application-proxy-application-gateway-waf).
 
    Although Azure Virtual WAN secure virtual hubs don't support [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview) yet, usage of DDoS to protect Internet-facing endpoints in spoke VNets is possible and highly recommended. For more information, see [Azure Firewall Manager known](/azure/firewall-manager/overview#known-issues) issues and [Hub virtual network and secured virtual hub comparison](/azure/firewall-manager/vhubs-and-vnets#comparison).
 
@@ -214,10 +214,10 @@ Each Azure Virtual WAN hub can have one or more VNets [connected](/azure/virtual
 Because the hub in Azure Virtual WAN is locked and managed by Azure, custom components can't be installed or enabled there. Some resources that are normally deployed inside the hub, in a classic hub and spoke model, must be placed in one or more spokes that act as shared resource networks. For example:
 
 - **Azure Bastion:** [Azure Bastion](/azure/bastion/vnet-peering) supports Azure Virtual WAN but must be deployed inside a spoke virtual network because the hub is restricted and managed by Azure. From the Azure Bastion spoke, users can reach resources in other VNets, but requires [IP-based connection](/azure/bastion/connect-ip-address) available with the Azure Bastion Standard SKU. 
-- **Custom DNS servers:** DNS server software can be installed on any virtual machine and act as DNS server for all the spokes in Azure Virtual WAN. The DNS server must be installed in a spoke VNet that serves all other spokes directly, or through DNS Proxy feature offered by the Azure Firewall that is integrated inside the Virtual WAN hub. 
+- **Custom DNS servers:** DNS server software can be installed on any virtual machine and act as DNS server for all the spokes in Azure Virtual WAN. The DNS server must be installed in a spoke virtual network that serves all other spokes directly, or through DNS Proxy feature offered by the Azure Firewall that is integrated inside the Virtual WAN hub. 
 - **Azure Private DNS Resolver:** Deployment of an [Azure Private DNS Resolver](/azure/dns/dns-private-resolver-overview) is supported inside one of the spoke VNets connected to Virtual WAN hubs. Azure Firewall that is integrated inside the Virtual WAN hub can use this resource as a custom DNS when you enable the DNS Proxy feature. 
-- **Private Endpoints:** This resource type [is compatible](/azure/virtual-wan/howto-private-link) with Virtual WAN but must be deployed inside a spoke VNet. This provides connectivity to any other virtual network or branch connected to the same Virtual WAN, if the integrated Azure Firewall allows the flow. Instructions on how to secure traffic to Private Endpoints using the Azure Firewall integrated inside a Virtual WAN hub can be found in [Secure traffic destined to private endpoints in Azure Virtual WAN](/azure/firewall-manager/private-link-inspection-secure-virtual-hub).
-- **Azure Private DNS Zone (links):** This type of resource doesn't live inside a virtual network but must be [linked](/azure/dns/private-dns-virtual-network-links) to them to function correctly. Private DNS Zones can't be linked to Virtual WAN hubs. Instead, they should be connected to the spoke VNet containing custom DNS servers or an Azure Private DNS Resolver ([recommended](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)) or directly to the spoke VNets that require the DNS records from that zone.
+- **Private Endpoints:** This resource type [is compatible](/azure/virtual-wan/howto-private-link) with Virtual WAN but must be deployed inside a spoke virtual network. This provides connectivity to any other virtual network or branch connected to the same Virtual WAN, if the integrated Azure Firewall allows the flow. Instructions on how to secure traffic to Private Endpoints using the Azure Firewall integrated inside a Virtual WAN hub can be found in [Secure traffic destined to private endpoints in Azure Virtual WAN](/azure/firewall-manager/private-link-inspection-secure-virtual-hub).
+- **Azure Private DNS Zone (links):** This type of resource doesn't live inside a virtual network but must be [linked](/azure/dns/private-dns-virtual-network-links) to them to function correctly. Private DNS Zones can't be linked to Virtual WAN hubs. Instead, they should be connected to the spoke virtual network containing custom DNS servers or an Azure Private DNS Resolver ([recommended](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)) or directly to the spoke VNets that require the DNS records from that zone.
 
 ## Step 5: Review your encryption
 
@@ -282,7 +282,7 @@ The following training modules help your team with the skills necessary to apply
 
 |Training  |[Introduction to Azure Firewall](/training/modules/introduction-azure-firewall/)|
 |---------|---------|
-|:::image type="icon" source="media/vwan/introduction-to-azure-firewall.svg" border="false"::: | Describe how Azure Firewall protects Azure VNet resources, including the Azure Firewall features, rules, deployment options, and administration with Azure Firewall Manager. |
+|:::image type="icon" source="media/vwan/introduction-to-azure-firewall.svg" border="false"::: | Describe how Azure Firewall protects Azure virtual network resources, including the Azure Firewall features, rules, deployment options, and administration with Azure Firewall Manager. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/introduction-azure-firewall/)
 
@@ -349,7 +349,7 @@ Refer to these links to learn about the various services and technologies mentio
 - [Zero Trust implementation guidance](zero-trust-overview.md)
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [Building the first layer of defense with Azure security services](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)
-- [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)
+- [Microsoft Cybersecurity Reference Architectures](microsoft-reference-architecture.md)
 
 ## Technical illustrations
 
@@ -357,4 +357,8 @@ You can download the illustrations used in this article. Use the Visio file to m
 
 [PDF](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.pdf) | [Visio](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.vsdx)
 
-For additional technical illustrations, click [here](zero-trust-tech-illus.md).
+Review [additional technical illustrations](zero-trust-tech-illus.md).
+
+## Next steps
+
+[Learn about](/azure/networking/security/zero-trust-network-security) assessing your Zero Trust posture, including your network posture.

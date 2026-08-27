@@ -4,21 +4,52 @@ description: Learn how to deploy Zero Trust solutions to keep your organization 
 ms.date: 02/26/2025
 ms.service: security
 ms.subservice: zero-trust
+author: rayne-wiselman
+ms.author: raynew
 ms.topic: checklist
-ms.collection:
-  - highpri
-  - zerotrust-pillar
+
+#customer intent: As a security or IT architect, I want to understand how technology pillars across the organization are integrated into the security adoption model and implemented across business scenarios.
+
 ---
 
-# Zero Trust deployment for technology pillars
 
-Because your organization might already have elements of Zero Trust protections already in place, this documentation set provides conceptual information to get you started and deployment plans and implementation recommendations for end-to-end adherence to Zero Trust principles. Each article acts as a checklist of deployment objectives with steps and links to more information.
 
-You deploy Zero Trust principles across your IT infrastructure by implementing Zero Trust controls and technologies across seven technology pillars. Six of these pillars are signal sources, a control plane for enforcement, and a critical resource to be defended. The seventh pillar is the pillar that collects signals from the first six pillars and provides visibility for security incidents and automation and orchestration for responding to and mitigating cybersecurity threats.
+
+
+
+# Overview - Technology pillars
+
+This article summarizes technology pillars in our [Zero Trust adoption model](../security-adoption-model.md).
+
+Technology pillars represent the core areas of your security architecture. They group related capabilities and controls into logical domains such as identity, endpoints, data, apps, infrastructure, networks, and security operations.
+
+Each pillar answers the same fundamental question:
+
+**How do we apply Zero Trust principles to this part of the environment?**
+
+Instead of thinking in terms of individual products or features, pillars provide a stable way to organize security design and implementation across your environment.
 
 :::image type="content" source="../media/diagram-zero-trust-security-elements.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
-The following articles provide conceptual information and deployment objectives for these seven technology pillars. Use these articles to assess your readiness and build a deployment plan to apply [Zero Trust principles](../zero-trust-overview.md).
+## Technology pillars in the adoption model
+
+Our structured adoption model focuses on three components:
+
+- [Business scenarios](../security-adoption-business-scenarios-overview.md) - Define the most critical security outcomes for the organization. They focus on **why** we're adopting Zero Trust security.
+- [Security disciplines](../security-adoption-discipline-overview.md) - Guide teams to define strategy, architecture,  processes, and controls across common areas of security so that we can deliver the business scenarios. They focus on **what** Zero Trust capabilities are required.
+- **Technology pillars** - Secure specific areas of the organization such as identity, data, and devices. They focus on **where** security capabilities are implemented.
+- [Technical solutions](../implement-overview.md) - As adoption moves towards deployment,  technical solutions provide detailed guidance for implementing security controls across technology pillars. They focus on **how** security is implemented.
+
+
+
+In the Zero Trust adoption model, technology pillars sit between strategy and implementation.
+
+Technology pillars don't define outcomes (business solutions) or steps (technical solutions), but they do:
+
+- Define technical boundaries where security controls are applied. These boundaries are used by solutions to organize implementation guidance and logic.
+- Act as the bridge between intent (why) and implementation (how).
+
+## Pillars
 
 | Technology pillar | Description |
 | --- | --- |

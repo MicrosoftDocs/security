@@ -19,9 +19,9 @@ ms.collection:
 
 The widespread increase in cloud adoption is transforming how organizations achieve business outcomes. This shift highlights the reliance on cloud-based apps resulting in higher demand for services such as Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS), and cloud-based app development platforms. SaaS apps play a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.
 
-While a multi-cloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure that apps hosted in the cloud and their data are protected. 
+While a multicloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure that apps hosted in the cloud and their data are protected. 
 
-To ensure that access and productivity are secure, implementation of SaaS apps need to align with the Zero Trust security model, which is based on these guiding principles.
+To ensure that access and productivity are secure, implementation of SaaS apps must align with the Zero Trust security model, which is based on these guiding principles.
 
 | Zero Trust principle | Definition | Met by... |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ The diagram shows:
 
 - Examples of third-party cloud apps that include SaaS apps and your custom PaaS apps.
 - The role of Microsoft Entra ID to include these apps in the scope of your strong authentication and other Conditional Access policies. For more information, see [Integrating all your apps with Microsoft Entra ID](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad).
-- The role of Microsoft Defender for Cloud Apps in discovering the cloud apps that your organization uses. You can approve apps, apply session controls, and discover sensitive data. For newly-discovered enterprise cloud apps that support federation, you can add them to Microsoft Entra ID to enforce strong authentication and other policies.
+- The role of Microsoft Defender for Cloud Apps in discovering the cloud apps that your organization uses. You can approve apps, apply session controls, and discover sensitive data. For newly discovered enterprise cloud apps that support federation, you can add them to Microsoft Entra ID to enforce strong authentication and other policies.
 - The role of Microsoft Purview Information Protection to protect cloud app data and prevent data loss in conjunction with Microsoft Defender for Cloud apps.
 
 ## Implementing the layers of protection for SaaS apps

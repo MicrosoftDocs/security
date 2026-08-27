@@ -5,12 +5,40 @@ ms.service: security
 ms.topic: whats-new
 author: ttorble
 ms.author: ralyon
-ms.date: 05/05/2026
+ms.date: 08/04/2026
 ---
 
 # Featured top picks
 
 This article brings together the history of top picks from the Security hub organized by publication date in descending order. Explore a curated selection of noteworthy security content to inspire your security learning journey.
+
+## July 2026
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| July 7  | [Enter the Microsoft Defender Challenge](/security/challenge/defender-challenge) | Complete the Microsoft Defender Skilling Challenge and submit an entry for a chance to win one of 500 50%-discounted SC-200 or SC-500 Microsoft Certification exam vouchers. |
+|         | [Set up AI agent runtime protection with Defender for Endpoint](/defender-endpoint/configure-ai-agent-runtime-protection) | Stop prompt injection at the device with Defender runtime protection for AI agents. |
+|         | [Discover local AI agents on Windows endpoints](/defender-endpoint/discover-local-ai-agents) | Defender auto-discovers coding agents, IDE extensions, desktop AI assistants, local runtimes — they appear as assets in AI agent inventory, exposure map, and advanced hunting. |
+|         | [Block risky Kubernetes deployments with misconfiguration enforcement](/azure/defender-for-cloud/kubernetes-misconfiguration-enforcement) | Enable Kubernetes misconfiguration enforcement in Defender for Cloud + enablement guide. |
+
+## June 2026
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| June 4  | [Enable Defender for AI Services workload protection in Microsoft Defender for Cloud](/training/modules/implement-defender-cloud-ai-services/) | Enable and configure the Defender for AI Services plan in Microsoft Defender for Cloud to detect threats targeting Azure AI services workloads. |
+|         | [Assess data security posture in Microsoft Purview](/training/modules/purview-dspm-assess-data-security-posture/) | Work with Microsoft Purview Data Security Posture Management to protect your data. |
+|         | [Generate playbooks using AI in Microsoft Sentinel](/azure/sentinel/automation/generate-playbook) | Learn how to generate playbooks by using AI, configure required integrations, and deploy your automation workflows. |
+|         | [Apply data security and compliance to Microsoft Agent 365](/purview/ai-agent-365) | Use Microsoft Purview to manage data security & compliance for Microsoft Agent 365. |
+
+
+## May 2026
+
+| Featured date  | Title  | Description  |
+|---------|---------|---------|
+| May 5   | [Secure autonomous agentic AI systems](/security/zero-trust/sfi/secure-agentic-systems) | Apply solutions to operationalize mitigation across identity, governance, runtime enforcement, and detection. |
+|         | [Quickstart: Build agents using MCP tools (Security Copilot)](/copilot/security/developer/mcp-quickstart) | Build a Security Copilot agent that calls MCP tools — quickstart with sample code. |
+|         | [AI Agent Service Security Controls](/training/modules/intro-ai-agent-service-security-controls/) | Configure RBAC and security controls for Azure AI Agent Service in this 20-minute module. |
+|         | [Get In the Loop](https://aka.ms/SecurityProductDrops_May26) | Catch up on the latest product drops, security updates, and demos—all in one place. |
 
 ## April 2026
 | Featured date  | Title  | Description  |

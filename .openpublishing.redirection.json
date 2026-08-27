@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "security-docs/zero-trust/siem-xdr-training.md",
+      "redirect_url": "security/zero-trust/security-adoption-discipline-architecture-tips",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/ten-laws-of-security.md",
+      "redirect_url": "security/zero-trust/security-adoption-discipline-security-operations",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "security-docs/zero-trust/zero-trust-assessment-progress-tracking-resources.md",
       "redirect_url": "security/zero-trust/assessment/get-started",
       "redirect_document_id": false
@@ -673,6 +683,36 @@
     {
       "source_path": "security-docs/zero-trust/data-compliance-gov-data.md",
       "redirect_url": "/security/zero-trust/deploy/data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/Audit-Requirements.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/Testing.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements/blob/main/Testing%20Instructions.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/Incident-Reporting.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements/blob/main/Incident-Reporting.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/Participants-list.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements/blob/main/Participants%20List.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/new-ca-application.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/trusted-root/deprecation.md",
+      "redirect_url": "https://github.com/TrustedRootProgram/Program-Requirements",
       "redirect_document_id": false
     }
   ]

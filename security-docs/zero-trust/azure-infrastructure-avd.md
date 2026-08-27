@@ -44,7 +44,7 @@ This article provides steps to apply the [principles of Zero Trust](zero-trust-o
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
 | Verify explicitly |Always authenticate and authorize based on all available data points. | Verify the identities and endpoints of Azure Virtual Desktop users and secure access to session hosts. |
-| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | <ul><li> Confine access to session hosts and their data. </li><li> Storage: Protect data in all three modes: data at rest, data in transit, data in use. </li><li> Virtual networks (VNets): Specify allowed network traffic flows between hub and spoke VNets with Azure Firewall. </li><li> Virtual machines: Use Role Based Access Control (RBAC). </li></ul>  |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | <ul><li> Confine access to session hosts and their data. </li><li> Storage: Protect data in all three modes: data at rest, data in transit, data in use. </li><li> Virtual networks (VNets): Specify allowed network traffic flows between hub and spoke VNets with Azure Firewall. </li><li> Virtual machines: Use role-based access control (RBAC). </li></ul>  |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | <ul><li> Isolate the components of an Azure Virtual Desktop deployment. </li><li> Storage: Use Defender for Storage for automated threat detection and protection. </li><li> VNets: Prevent traffic flows between workloads with Azure Firewall. </li><li> Virtual machines: Use double encryption for end-to-end encryption, enable encryption at host, secure maintenance for virtual machines, and Microsoft Defender for Servers for threat detection. </li><li> 	Azure Virtual Desktop: Use Azure Virtual Desktop security, governance, management, and monitoring features to improve defenses and collect session host analytics. </li></ul> |
 
 For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
@@ -60,7 +60,7 @@ The Azure environment for Azure Virtual Desktop includes:
 | Component | Description |
 | --- | --- |
 | A | Azure Storage Services for Azure Virtual Desktop user profiles. |
-| B | A connectivity hub VNet. |
+| B | A connectivity hub virtual network (VNet). |
 | C | A spoke VNet with Azure Virtual Desktop session host virtual machine-based workloads. |
 | D | An Azure Virtual Desktop Control Plane. |
 | E | An Azure Virtual Desktop Management Plane. |
@@ -81,7 +81,7 @@ The elements of the logical architecture are:
 
 - Azure subscription for your Azure Virtual Desktop
 
-  You can distribute the resources in more than one subscription, where each subscription may hold different roles, such as network subscription, or security subscription. This is described in [Cloud Adoption Framework and Azure Landing Zone](/azure/cloud-adoption-framework/scenarios/wvd/enterprise-scale-landing-zone). The different subscriptions may also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you have in each. One or more subscriptions can be managed together using a Management Group. This gives you the ability to apply permissions with RBAC and Azure policies to a group of subscriptions instead of setting up each subscription individually.
+  You can distribute the resources in more than one subscription, where each subscription might hold different roles, such as network subscription, or security subscription. This is described in [Cloud Adoption Framework and Azure Landing Zone](/azure/cloud-adoption-framework/scenarios/wvd/enterprise-scale-landing-zone). The different subscriptions might also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you have in each. One or more subscriptions can be managed together using a Management Group. This gives you the ability to apply permissions with RBAC and Azure policies to a group of subscriptions instead of setting up each subscription individually.
 
 - Azure Virtual Desktop resource group
 
@@ -110,7 +110,7 @@ This article walks through the steps to apply the principles of Zero Trust acros
 | 3 | Apply Zero Trust principles to Azure Virtual Desktop storage resources. | Verify explicitly <br> Use least privileged access <br> Assume breach |
 | 4 | Apply Zero Trust principles to hub and spoke Azure Virtual Desktop VNets. |  Verify explicitly <br> Use least privileged access <br> Assume breach |
 | 5 | Apply Zero Trust principles to Azure Virtual Desktop session host. | Verify explicitly <br> Use least privileged access <br> Assume breach |
-| 6 | Deploy security, governance, and compliance to Azure Virtual Desktop. | Assume breach |
+| 6 | Deploy security, governance, and compliance with Azure Virtual Desktop. | Assume breach |
 | 7 | Deploy secure management and monitoring to Azure Virtual Desktop. | Assume breach |
 
 ## Step 1: Secure your identities with Zero Trust
@@ -156,7 +156,7 @@ Session hosts are virtual machines that run inside a spoke VNet. Implement the s
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. You can use Microsoft Defender for Endpoint for session hosts. For more information, see [virtual desktop infrastructure (VDI) devices](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi).
 
-## Step 6: Deploy security, governance, and compliance to Azure Virtual Desktop
+## Step 6: Deploy security, governance, and compliance with Azure Virtual Desktop
 
 Azure Virtual Desktop service allows you to use [Azure Private Link](/azure/virtual-desktop/private-link-overview) to privately connect to your resources by [creating private endpoints](/azure/virtual-desktop/private-link-setup). 
 
@@ -234,7 +234,7 @@ You can download the illustrations used in this article. Use the Visio file to m
 
 [PDF](https://download.microsoft.com/download/4/e/f/4efdcc13-1a62-4f11-9f79-d4a7201d28f9/apply-zero-trust-to-Azure-Virtual-Desktop-diagrams.pdf) | [Visio](https://download.microsoft.com/download/4/e/f/4efdcc13-1a62-4f11-9f79-d4a7201d28f9/apply-zero-trust-to-Azure-Virtual-Desktop-diagrams.vsdx)
 
-For additional technical illustrations, click [here](zero-trust-tech-illus.md).
+Review [additional technical illustrations](zero-trust-tech-illus.md).
 
 ## References
 
@@ -250,4 +250,4 @@ Refer to the links below to learn about the various services and technologies me
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [Security baselines for Azure overview](/security/benchmark/azure/security-baselines-overview)
 - [Building the first layer of defense with Azure security services - Azure Architecture Center](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)
-- [Microsoft Cybersecurity Reference Architectures - Security documentation](/security/cybersecurity-reference-architecture/mcra)
+- [Microsoft Cybersecurity Reference Architectures - Security documentation](microsoft-reference-architecture.md)

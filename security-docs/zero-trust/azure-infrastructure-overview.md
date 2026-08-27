@@ -21,7 +21,7 @@ For updates to product names, please also update the appropriate figures.
 To update figures that are not screen shots, your options are:
 
 - Locate the source Visio file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended).
-- Use a published Visio file in the Microsoft Download Center (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads).
+- Use a published Visio file in the Microsoft Download Center (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for the downloads).
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file (last resort).
 
 For updates to figures that are included in download files (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads), please: 
@@ -67,9 +67,9 @@ For more information, see [Apply Zero Trust principles to Azure Virtual Desktop]
 > - [Microsoft Cloud Security Benchmark](/security/benchmark/azure/introduction)
 > - [Microsoft Cloud Security Baseline](/security/benchmark/azure/security-baselines-overview)
 
-To describe how to apply a Zero Trust approach, this guidance targets a common pattern used in production by many organizations: a virtual-machine-based application hosted in a VNet (and IaaS application). This is a common pattern for organizations migrating on-premises applications to Azure, which is sometimes referred to as "lift-and-shift." The reference architecture includes all components necessary to support this application, including storage services and a hub VNet.
+To describe how to apply a Zero Trust approach, this guidance targets a common pattern used in production by many organizations: a virtual-machine-based application hosted in a virtual network (and IaaS application). This is a common pattern for organizations migrating on-premises applications to Azure, which is sometimes referred to as "lift-and-shift." The reference architecture includes all components necessary to support this application, including storage services and a hub virtual network.
 
-The reference architecture reflects a common deployment pattern in production environments. It isn't based on the enterprise-scale landing zones recommended in the Cloud Adoption Framework (CAF), although many of the best practices in CAF are included in the reference architecture, such as using a dedicated VNet to host components that broker access to the application (hub VNet).
+The reference architecture reflects a common deployment pattern in production environments. It isn't based on the enterprise-scale landing zones recommended in the Cloud Adoption Framework (CAF), although many of the best practices in CAF are included in the reference architecture, such as using a dedicated virtual network to host components that broker access to the application (hub virtual network).
 
 If you're interested in learning about the guidance recommended in the Cloud Adoption Framework Azure landing zones, see these resources:
 
@@ -85,7 +85,7 @@ The following figure shows the reference architecture for this Zero Trust guidan
 This architecture contains:
 
 - Multiple IaaS components and elements, including different types of users and IT consumers accessing the app from different sites. such as Azure, the internet, on-premises, and branch offices.
-- A common three-tier application containing a front end tier, application tier, and data tier. All tiers run on virtual machines within a VNet named SPOKE. Access to the app is protected by another VNet named HUB that contains additional security services.
+- A common three-tier application containing a front end tier, application tier, and data tier. All tiers run on virtual machines within a virtual network named SPOKE. Access to the app is protected by another virtual network named HUB that contains additional security services.
 - Some of the most used PaaS services on Azure that support IaaS applications, including role-based access control (RBAC) and Microsoft Entra ID, which contribute to the Zero Trust security approach.
 - Storage Blobs and Storage Files that provide object storage for the applications and files shared by users.
 
@@ -112,11 +112,11 @@ In this diagram, the Azure infrastructure is contained within a Microsoft Entra 
 
 - Azure subscriptions
 
-   You can distribute the resources in more than one subscription, where each subscription may hold different roles, such as network subscription, or security subscription. This is described in the Cloud Adoption Framework and Azure Landing Zone documentation previously referenced. The different subscriptions may also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you'll have in each. One or more subscriptions can be managed together using a Management Group. This gives you the ability to apply permissions with role based access control (RBAC) and Azure policies to a group of subscriptions instead of setting up each subscription individually.
+   You can distribute the resources in more than one subscription, where each subscription might hold different roles, such as network subscription, or security subscription. This is described in the Cloud Adoption Framework and Azure Landing Zone documentation previously referenced. The different subscriptions can also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you'll have in each. One or more subscriptions can be managed together using a Management Group. This gives you the ability to apply permissions with role based access control (RBAC) and Azure policies to a group of subscriptions instead of setting up each subscription individually.
 
 - Microsoft Defender for Cloud and Azure Monitor
 
-   For each Azure subscription, a set of Azure Monitor solutions and Defender for Cloud is available. If you manage these subscriptions through a Management Group, you're able to consolidate in a single portal for all the functionality of Azure Monitor and Defender for Cloud. For example, Secure Score, provided by Defender for Cloud, are consolidated for all your subscriptions, using a Management Group as the scope.
+   For each Azure subscription, a set of Azure Monitor solutions and Defender for Cloud is available. If you manage these subscriptions through a Management Group, you can consolidate in a single portal for Azure Monitor and Defender for Cloud functionality. For example, Secure Score, provided by Defender for Cloud, are consolidated for all your subscriptions, using a Management Group as the scope.
 
 - Storage resource group (1)
 
@@ -126,7 +126,7 @@ In this diagram, the Azure infrastructure is contained within a Microsoft Entra 
 
    Virtual machines are contained in one resource group. You can also have each virtual machine type for workload tiers such as front end, application, and data in different resource groups to further isolate access control.
 
-- Spoke (3) and hub (4) VNet resource groups in separate subscriptions
+- Spoke (3) and hub (4) virtual network resource groups in separate subscriptions
 
    The network and other resources for each of the VNets in the reference architecture are isolated within dedicated resource groups for spoke and hub VNets. This organization works well when responsibility for these live on different teams. Another option is to organize these components by putting all network resources in one resource group and security resources in another. It depends on how your organization is set up to manage these resources.
 
@@ -174,8 +174,8 @@ Zero Trust involves applying multiple disciplines of security and information pr
 1. Isolate infrastructure into its own resource group
 1. Create a network security group for each subnet
 1. Create an application security group for each virtual machine role
-1. Secure traffic and resources within the VNet
-1. Secure access to the VNet and application
+1. Secure traffic and resources within the virtual network
+1. Secure access to the virtual network and application
 1. Enable advanced threat detection and protection
 
 **[Apply Zero Trust principles to a hub VNet in Azure](azure-infrastructure-networking.md)**
@@ -212,7 +212,7 @@ The following are the recommended training modules for Zero Trust.
 
 |Training  |[Configure Azure Policy](/training/modules/configure-azure-policy/)|
 |---------|---------|
-|:::image type="icon" source="media/azure-policy-configure.png" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets. <li>Implement Azure Policy with policy and initiative definitions. <li>Scope Azure policies and determine compliance.|
+|:::image type="icon" source="media/azure-policy-configure.png" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets. <li>Implement Azure Policy with policy and initiative definitions. <li>Scope Azure policies, and determine compliance.|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-azure-policy/1-introduction)
 
@@ -281,4 +281,4 @@ Refer to the following links to learn about the various services and technologie
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [Security baselines for Azure overview](/security/benchmark/azure/security-baselines-overview)
 - [Building the first layer of defense with Azure security services](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)
-- [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)
+- [Microsoft Cybersecurity Reference Architectures](microsoft-reference-architecture.md)

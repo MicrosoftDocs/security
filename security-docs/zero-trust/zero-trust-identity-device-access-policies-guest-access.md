@@ -8,20 +8,10 @@ ms.author: chrisda
 ms.subservice: zero-trust
 manager: dansimp
 ms.reviewer: martincoetzer
-ms.custom:
-  - it-pro
-  - goldenconfig
-ms.collection:
-  - M365-identity-device-management
-  - m365-security
-  - m365solution-identitydevice
-  - m365solution-scenario
-  - zerotrust-solution
-  - tier2
 ms.date: 03/10/2025
 ---
 
-# Policies for allowing guest access and B2B external user access
+# Policies for allowing guest/external access 
 
 This article discusses adjusting the recommended Zero Trust identity and device access policies to allow access for guests and external users that have a Microsoft Entra Business-to-Business (B2B) account. This guidance builds on the [common identity and device access policies](zero-trust-identity-device-access-policies-common.md).
 

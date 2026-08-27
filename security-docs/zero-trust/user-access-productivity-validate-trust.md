@@ -3,14 +3,11 @@ title: RaMP Checklist—Explicitly validate trust for all access requests
 description: Use the steps in this guidance to deploy explicit validation for all access requests that adheres to Zero Trust principles.
 ms.date: 02/24/2025
 ms.service: security
+ms.topic: overview
 ms.subservice: zero-trust
-
-ms.topic: concept-article
-ms.collection:
-  - zerotrust-ramp
 ---
 
-# RaMP Checklist — Explicitly validate trust for all access requests
+# RaMP Checklist—Explicitly validate trust for all access requests
 
 <!---
 
@@ -38,9 +35,9 @@ To be productive, your employees (users) must be able to use:
 - Their account credentials to verify their identity.
 - Their endpoint (device), such as a PC, tablet, or phone.
 - The applications you have provided them to do their jobs.
-- A network over which traffic flows between devices and applications, whether they're on premises or in the cloud.
+- A network over which traffic flows between devices and applications, whether they're on-premises or in the cloud.
 
-Each one of these elements are the targets of attackers and must be protected with the "never trust, always verify" central principle of Zero Trust.
+Each one of these elements is the targets of attackers and must be protected with the "never trust, always verify" central principle of Zero Trust.
 
 This checklist includes using Zero Trust to explicitly validate trust for all access requests for:
 

@@ -4,6 +4,8 @@
   items:
     - name: What's new for AI security?
       href: whats-new.md
+    - name: Responsible AI
+      href: transparency-application-cards-security.md
     - name: Build a strong security posture for AI
       href: posture.md
     - name: Prepare for AI security

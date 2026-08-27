@@ -8,14 +8,13 @@ metadata:
   ms.topic: marketing-hub
   ms.author: saadad
   author: sadadow
-  ms.date: 05/05/2026
+  ms.date: 08/04/2026
   ms.collection: # na
   brand: azure
 sections:
   # Intro
   # Hero with background image - default transform
   - componentType: hero-learn
-    supertitle: Microsoft Learn
     title: Microsoft Security 
   # size: small
     summary: "Empower your organization with AI-driven cybersecurity. Microsoft's integrated security solutions built on Zero Trust principles help you stay ahead of evolving risks. Learn how to predict and protect against threats with Microsoft Defender and Microsoft Sentinel, protect workloads and AI with Microsoft Defender for Cloud. Secure AI with Microsoft Security Copilot, Microsoft Entra, and Microsoft Purview. Explore our curated resources on the Security hub." 
@@ -23,49 +22,6 @@ sections:
      componentType: hero-image
      lightImageSrc: /security/media/security-hub/hero-security-hub.png
      darkImageSrc: /security/media/security-hub/hero-security-hub.png
-# Spotlight selections
-#  - componentType: testimonials-section
-#    title: 'Discover top picks'
-#    cards:
-#      - avatarUrl: /security/media/hubpage/applied-skills.png
-#        componentType: testimonial-card
-#        name: Secure AI solutions in the cloud
-#        role: Applied Skills
-#        feedback: Validate your technical skills and open doors to new possibilities of advancement with Microsoft Defender for Cloud and Microsoft Foundry.
-#        link:
-#          componentType: link
-#          url: /credentials/applied-skills/secure-ai-solutions-in-the-cloud/
-#          text: Start learning
-#      - avatarUrl: /security/media/hubpage/applied-skills.png
-#        componentType: testimonial-card
-#        name: Get started with identities and access using Microsoft Entra
-#        role: Applied Skills
-#        feedback: Open doors to new possibilities of advancement by demonstrating your ability to manage identities and access in Microsoft Entra.
-#        link:
-#          componentType: link
-#          url: /credentials/applied-skills/get-started-with-identities-and-access-using-microsoft-entra/
-#          text: Validate your skills
-#      - avatarUrl: /security/media/hubpage/document-icon.png 
-#        componentType: testimonial-card
-#        name: Microsoft Security Copilot for Developers
-#        role: Documentation
-#        feedback: Learn to create, publish, and test agents in Security Copilot using natural language, lite experience forms, YAMLs, and MCPs. Designed for developers to streamline security workflows.
-#        link:
-#          componentType: link
-#          url: /copilot/security/developer/
-#          text: Get started
-#      - avatarUrl: /security/media/hubpage/generic-badge.svg
-#        componentType: testimonial-card
-#        name: Mitigate incidents using Microsoft Defender
-#        role: Training
-#        feedback: Learn how the Microsoft Defender portal provides a unified view of incidents from the Microsoft Defender family of products.
-#        link:
-#          componentType: link
-#          url: /training/modules/mitigate-incidents-microsoft-365-defender/
-#          text: Learn more
-#    backgroundImage:
-#      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
-#      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
 
 # New top picks tiles from 4 February 2026
   - componentType: markdown
@@ -77,38 +33,73 @@ sections:
         :::column-end:::
       :::row-end:::
 
+# August 20 tile 2 swap for loop tile 5 (commented out below)
+# August 21 tile 1 swap for tile 4 (tile 4 replacement?)
   - componentType: grid
     title: ""
     blocks:
       - componentType: icon-card
-        title: Secure autonomous agentic AI systems
-        summary: Apply solutions to operationalize mitigation across identity, governance, runtime enforcement, and detection.
-        url: /security/zero-trust/sfi/secure-agentic-systems
+        title: Restore your tenant to a productive and secure state with Microsoft Entra Backup and Recovery
+        summary: Learn to recover critical Microsoft Entra directory objects to a previously known good state after accidental changes or security compromises.
+        url: /entra/backup/overview
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/get-started-1-blue.png
+      - componentType: icon-card
+        title: Enable Microsoft Security Adoption
+        summary: Get the resources, skilling, and community to help you adopt Microsoft Security.
+        url: https://adoption.microsoft.com/en-us/microsoft-security/
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/concept-1-yellow.png
       - componentType: icon-card
-        title: "Quickstart: Build agents using MCP tools (Security Copilot)"
-        summary: Build a Security Copilot agent that calls MCP tools — quickstart with sample code.
-        url: /copilot/security/developer/mcp-quickstart
+        title: Protect AI assets with Microsoft Defender
+        summary: Explore documentation on how Defender delivers discovery, posture, threat detection, investigation, and real-time protection for the AI agents in your tenant, including Copilot Studio.
+        url: /defender-xdr/security-for-ai/defender-security-for-ai
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/overview-magenta.png
+      - componentType: icon-card
+        title: Experience Microsoft Security Copilot through guided simulations
+        summary: Explore use cases of Microsoft Security Copilot in the standalone and embedded experiences through interactive guides.
+        url: /training/modules/security-copilot-interactive-guides/
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
+
+# Put security into practice
+  - componentType: grid
+    title: Put security into practice
+    summary: Move from reading to improving your security posture. Explore practice-based quickstarts, tutorials, and guided modules that help you deploy, configure, and validate protections with Microsoft Security—so you can make meaningful progress in your environment, one focused step at a time.
+    blocks:
+      - componentType: icon-card
+        title: "Quickstart: Helm install for Defender for Containers"
+        summary: Deploy the Defender for Containers sensor with Helm.
+        url: /azure/defender-for-cloud/deploy-helm
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/quickstart-2-rainbow.png
       - componentType: icon-card
-        title: AI Agent Service Security Controls
+        title: "Tutorial: Defender for Cloud + GHAS sandbox"
+        summary: Try Defender for Cloud +GHAS in a sandbox before you roll it out.
+        url: /azure/defender-for-cloud/github-advanced-security-deploy-sandbox
+        icon:
+          componentType: image
+          src: /security/media/hubpage/ignite-glyphs/tutorial-1-purple.png
+      - componentType: icon-card
+        title: "Module: AI Agent Service Security Controls"
         summary: Configure RBAC and security controls for Azure AI Agent Service in this 20-minute module.
         url: /training/modules/intro-ai-agent-service-security-controls/
         icon:
           componentType: image
           src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
       - componentType: icon-card
-        title: Get In the Loop
-        summary: Catch up on the latest product drops, security updates, and demos—all in one place.
-        url: https://aka.ms/SecurityProductDrops_May26
+        title: "Documentation: Security Analyst Agent in Defender"
+        summary: Investigate with the Security Analyst Agent to quickly identify, assess, and prioritize risks.
+        url: /defender-xdr/security-analyst-agent
         icon:
           componentType: image
-          src: /security/media/hubpage/ignite-glyphs/whats-new-1-magenta.png
-
+          src: /security/media/hubpage/ignite-glyphs/how-to-guide-2-orange.png
 
 # Modules
 #  - componentType: cards
@@ -160,28 +151,28 @@ sections:
         url: /training/paths/ai-security-fundamentals/?wt.mc_id=securityhub_fundamentals_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/generic-trophy.svg
+          src: /security/media/hubpage/ignite-glyphs/training-1-purple.png
       - componentType: icon-card
         title: Understand data security investigations
         summary: Learn concepts that define data security investigations, how they differ from alerts and audit, and when deeper, data-focused investigation adds value to security decisions.
         url: /training/modules/purview-data-security-investigations-understand/?wt.mc_id=securityhub_securityinvestigations_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/generic-badge.svg
+          src: /security/media/hubpage/ignite-glyphs/tutorial-1-purple.png
       - componentType: icon-card
         title: Mitigate incidents using Microsoft Defender
         summary: Investigate and respond to incidents using Microsoft Sentinel and Defender XDR. Correlate alerts, hunt threats, manage incidents, and stop attacks faster with unified security operations workflows.
         url: /training/modules/mitigate-incidents-microsoft-365-defender/?wt.mc_id=securityhub_defendertraining_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/training-clipboard.png
+          src: /security/media/hubpage/ignite-glyphs/reference-2-yellow.png
       - componentType: icon-card
         title: Plan, implement, and administer Conditional Access
         summary: Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe.
         url: /training/modules/plan-implement-administer-conditional-access//?wt.mc_id=securityhub_conditionalaccess_webpage_sci
         icon:
           componentType: image
-          src: /security/media/hubpage/training-whiteboard.png
+          src: /security/media/hubpage/ignite-glyphs/concept-1-yellow.png
 
 # Microsoft Security product documentation 
   - componentType: grid
